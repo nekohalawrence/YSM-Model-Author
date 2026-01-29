@@ -51,7 +51,7 @@
 - 0041：[#提可拉](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0041)
 - 0042：[#天弓干亦](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0042)
 - 0043：[#完全凍結ALL](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0043)
-- 0044：[- 平台： #bilibili](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0044)
+- 0044：[#韦懦夫斯菲尔](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0044)
 - 0045：[#雾雨波波沙](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0045)
 - 0046：[#小萌新idjdkd](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0046)
 - 0047：[#Nicy_奈汐](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0047)
