@@ -198,7 +198,7 @@ for author_id in os.listdir(ROOT_DIR):
             file_path = os.path.join(model_path, f)
             if f.lower().startswith('preview') and f.lower().endswith(('.jpg', '.png', '.jpeg', '.webp')):
                 preview_img = f"{ROOT_DIR}/{author_id}/{model}/{f}"
-            elif f.lower() == 'tags.txt':
+            elif f.lower() == 'tags.md':
                 try:
                     with open(file_path, 'r', encoding='utf-8') as tf:
                         tags = [t.strip() for t in tf.read().replace('\n', ',').split(',') if t.strip()]
