@@ -18,19 +18,56 @@ html_template = """
         body { font-family: -apple-system, "Microsoft YaHei", "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; background: #f4f6f8; color: #333; height: 100vh; overflow: hidden; }
         .app-container { display: grid; grid-template-columns: 260px 1fr; height: 100vh; }
         
-        /* 侧边栏样式 */
+        /* --- 侧边栏样式 (优化阅读体验) --- */
         .sidebar { background: white; border-right: 1px solid #e1e4e8; overflow-y: auto; display: flex; flex-direction: column; padding: 20px 10px; }
         .sidebar-title { font-size: 1.1em; font-weight: bold; padding: 0 10px 15px; border-bottom: 1px solid #eee; margin-bottom: 10px; }
         .author-list { list-style: none; padding: 0; margin: 0; }
-        .author-item { display: block; padding: 10px; border-radius: 6px; cursor: pointer; color: #555; transition: background 0.2s; font-size: 0.95em; }
+        
+        .author-item { 
+            display: flex; 
+            align-items: center; /* 垂直居中 */
+            padding: 8px 12px; 
+            border-radius: 6px; 
+            cursor: pointer; 
+            transition: background 0.2s; 
+            margin-bottom: 2px;
+            color: #444;
+        }
         .author-item:hover { background: #f0f2f5; color: #0366d6; }
         
-        /* 主内容区样式 */
+        /* ID 样式：辅助视觉，灰色，等宽 */
+        .author-id-tag {
+            font-family: Consolas, monospace;
+            font-size: 0.85em;
+            color: #999;
+            background: #f6f8fa;
+            padding: 2px 6px;
+            border-radius: 4px;
+            margin-right: 10px;
+            min-width: 35px; /* 保持对齐 */
+            text-align: center;
+        }
+        
+        /* 名字样式：主要视觉，加粗 */
+        .author-name-text {
+            font-size: 0.95em;
+            font-weight: 600;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        /* hover 时让 ID 颜色也变深一点 */
+        .author-item:hover .author-id-tag {
+            background: #e1ecf4;
+            color: #0366d6;
+        }
+
+        /* --- 主内容区样式 --- */
         .main-content { padding: 30px; overflow-y: auto; position: relative; }
         .search-container { margin-bottom: 25px; max-width: 800px; }
         .search-box { width: 100%; padding: 12px 15px; font-size: 16px; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); outline: none; }
         
-        /* 卡片网格 */
         .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
         
         .card { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08); display: flex; flex-direction: column; }
@@ -43,14 +80,12 @@ html_template = """
         .author-info { font-size: 0.9em; color: #666; margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid #f0f0f0; }
         .author-name { font-weight: 600; color: #444; }
         
-        /* 社交链接区域分类 */
         .social-section { margin-bottom: 8px; }
         .social-label { font-size: 0.75em; color: #999; margin-bottom: 4px; display: block; }
         .social-links { display: flex; flex-wrap: wrap; gap: 6px; }
         .social-link { text-decoration: none; font-size: 0.75em; padding: 3px 8px; border-radius: 4px; background: #f0f2f5; color: #555; border: 1px solid #e1e4e8; display: flex; align-items: center; }
         .social-link:hover { transform: translateY(-1px); }
         
-        /* 平台颜色 */
         .bilibili { color: #fb7299; background: #fff0f6; border-color: #ffcce0; }
         .youtube { color: #ff0000; background: #fff0f0; border-color: #ffcccc; }
         .afdian { color: #946ce6; background: #f6f0ff; border-color: #e6ccff; }
@@ -61,7 +96,6 @@ html_template = """
         .tags { margin-top: auto; margin-bottom: 10px; }
         .tag { display: inline-block; background: #e8f0fe; color: #1967d2; padding: 2px 8px; border-radius: 12px; font-size: 0.8em; margin-right: 5px; margin-bottom: 5px; }
         
-        /* 折叠的文件列表 */
         details.file-list { margin-top: 10px; border: 1px solid #eee; border-radius: 6px; }
         details.file-list summary { padding: 8px 12px; cursor: pointer; font-size: 0.9em; color: #555; background: #fafbfc; list-style: none; user-select: none; }
         details.file-list summary:hover { background: #f0f2f5; }
@@ -80,7 +114,10 @@ html_template = """
         <aside class="sidebar">
             <div class="sidebar-title">作者列表</div>
             <ul class="author-list">
-                <li class="author-item" onclick="filterByAuthor('')">全部显示</li>
+                <li class="author-item" onclick="filterByAuthor('')">
+                    <span class="author-id-tag">ALL</span>
+                    <span class="author-name-text">全部显示</span>
+                </li>
                 AUTHORS_PLACEHOLDER
             </ul>
         </aside>
@@ -111,11 +148,8 @@ html_template = """
                         <div class="author-info">
                             作者: <span class="author-name">${item.author_name}</span>
                         </div>
-                        
                         ${renderSocials(item.socials)}
-
                         <div class="tags">${item.tags.map(t => `<span class="tag">${t}</span>`).join('')}</div>
-                        
                         <details class="file-list">
                             <summary>显示下载文件 (${item.files.length})</summary>
                             <div class="file-items">
@@ -129,28 +163,13 @@ html_template = """
 
         function renderSocials(socials) {
             let html = '';
-            
-            // 辅助函数：生成链接HTML
             const makeLink = (s) => `<a href="${s.url}" target="_blank" class="social-link ${s.platform}">${s.platform}</a>`;
-            
-            // 1. 联系方式 (Contact)
             const contacts = socials.filter(s => ['bilibili', 'youtube', 'twitter', 'pixiv'].includes(s.platform));
-            if (contacts.length > 0) {
-                html += `<div class="social-section"><span class="social-label">联系</span><div class="social-links">${contacts.map(makeLink).join('')}</div></div>`;
-            }
-
-            // 2. 赞助 (Sponsor)
+            if (contacts.length > 0) html += `<div class="social-section"><span class="social-label">联系</span><div class="social-links">${contacts.map(makeLink).join('')}</div></div>`;
             const sponsors = socials.filter(s => ['afdian', 'patreon', 'ko-fi'].includes(s.platform));
-            if (sponsors.length > 0) {
-                html += `<div class="social-section"><span class="social-label">赞助</span><div class="social-links">${sponsors.map(makeLink).join('')}</div></div>`;
-            }
-
-            // 3. 其他 (Other)
+            if (sponsors.length > 0) html += `<div class="social-section"><span class="social-label">赞助</span><div class="social-links">${sponsors.map(makeLink).join('')}</div></div>`;
             const others = socials.filter(s => ['sketchfab', 'other'].includes(s.platform));
-            if (others.length > 0) {
-                html += `<div class="social-section"><span class="social-label">其他</span><div class="social-links">${others.map(makeLink).join('')}</div></div>`;
-            }
-
+            if (others.length > 0) html += `<div class="social-section"><span class="social-label">其他</span><div class="social-links">${others.map(makeLink).join('')}</div></div>`;
             return html;
         }
 
@@ -182,52 +201,25 @@ def parse_readme(file_path, default_id):
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
             lines = f.readlines()
-            
             for line in lines:
                 clean_line = line.strip()
-                
-                # 1. 解析作者名称 (简体/繁体/英文)
                 if 'name' not in info or info['name'] == default_id:
-                    name_match = re.search(r'[\*\-]?\s*(?:作者名称|作者|Author)[:：]\s*(.*)', clean_line)
-                    if name_match:
-                        raw_name = name_match.group(1).strip().replace('*', '').replace('`', '').replace('#', '')
-                        if raw_name: info['name'] = raw_name
-
-                # 2. 解析社交链接
-                # 逻辑：寻找包含平台关键字的行 -> 分割冒号 -> 检查冒号后面是否有链接
+                    match = re.search(r'[\*\-]?\s*(?:作者名称|作者|Author)[:：]\s*(.*)', clean_line)
+                    if match:
+                        raw = match.group(1).strip().replace('*', '').replace('`', '').replace('#', '')
+                        if raw: info['name'] = raw
+                
                 platforms = ['bilibili', 'youtube', 'afdian', 'patreon', 'ko-fi', 'twitter', 'pixiv', 'sketchfab']
-                
-                # 检查这一行包含哪个平台
-                found_platform = next((p for p in platforms if p.lower() in clean_line.lower()), None)
-                
-                if found_platform:
-                    # 按照中文或英文冒号分割
+                found = next((p for p in platforms if p.lower() in clean_line.lower()), None)
+                if found:
                     parts = re.split(r'[:：]', clean_line, 1)
-                    
                     if len(parts) > 1:
-                        content_after_colon = parts[1].strip()
-                        
-                        # 在冒号后面寻找链接
-                        # 优先找 Markdown 链接 [name](url)
-                        link_match = re.search(r'\[.*?\]\((https?://.*?)\)', content_after_colon)
-                        
-                        # 如果找不到 Markdown 链接，找纯 URL
-                        if not link_match:
-                            link_match = re.search(r'(https?://[^\s]+)', content_after_colon)
-                            
+                        content = parts[1].strip()
+                        link_match = re.search(r'\[.*?\]\((https?://.*?)\)', content) or re.search(r'(https?://[^\s]+)', content)
                         if link_match:
-                            # 提取 URL (如果是 markdown 组2，如果是纯 url 组1)
-                            url = link_match.group(1)
-                            url = url.rstrip(')') # 清理可能残留的括号
-                            
-                            info['socials'].append({ 
-                                "platform": found_platform, 
-                                "url": url 
-                            })
-
-    except Exception as e:
-        print(f"Error parsing {file_path}: {e}")
-        
+                            url = link_match.group(1).rstrip(')')
+                            info['socials'].append({ "platform": found, "url": url })
+    except: pass
     return info
 
 models_data = []
@@ -241,7 +233,6 @@ for author_id in os.listdir(ROOT_DIR):
     author_path = os.path.join(ROOT_DIR, author_id)
     if not os.path.isdir(author_path): continue
     
-    # 寻找 Readme
     readme_path = None
     for name in ['README.txt', 'readme.txt', 'README.md', 'readme.md']:
         p = os.path.join(author_path, name)
@@ -249,20 +240,15 @@ for author_id in os.listdir(ROOT_DIR):
             readme_path = p
             break
             
-    # 解析元数据
     author_meta = parse_readme(readme_path, author_id)
     authors_set[author_id] = author_meta['name']
 
-    # 遍历模型
     for model in os.listdir(author_path):
         model_path = os.path.join(author_path, model)
         if not os.path.isdir(model_path): continue
         if model.lower().startswith('readme'): continue
         
-        preview_img = ""
-        tags = []
-        files = []
-        
+        preview_img, tags, files = "", [], []
         for f in os.listdir(model_path):
             file_path = os.path.join(model_path, f)
             if f.lower().startswith('preview') and f.lower().endswith(('.jpg', '.png', '.jpeg', '.webp')):
@@ -285,14 +271,19 @@ for author_id in os.listdir(ROOT_DIR):
             "files": files
         })
 
-# 生成侧边栏作者列表
+# --- 作者列表生成逻辑 ---
 authors_html = ""
-# 按作者名字排序
-sorted_authors = sorted(authors_set.items(), key=lambda item: item[1])
+# 保持按 ID 排序
+sorted_authors = sorted(authors_set.items(), key=lambda item: item[0])
+
 for aid, aname in sorted_authors:
-    display = aname if aname == aid else f"{aname} <small>#{aid}</small>"
-    # 点击时传入名字进行搜索
-    authors_html += f'<li class="author-item" onclick="filterByAuthor(\'{aname}\')">{display}</li>\n'
+    # 左右结构：左边是小badge，右边是名字
+    authors_html += f'''
+    <li class="author-item" onclick="filterByAuthor('{aname}')">
+        <span class="author-id-tag">{aid}</span>
+        <span class="author-name-text">{aname}</span>
+    </li>
+    '''
 
 final_html = html_template.replace('DATA_PLACEHOLDER', json.dumps(models_data, ensure_ascii=False))
 final_html = final_html.replace('AUTHORS_PLACEHOLDER', authors_html)
@@ -300,4 +291,4 @@ final_html = final_html.replace('AUTHORS_PLACEHOLDER', authors_html)
 with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
     f.write(final_html)
 
-print(f"Build successful. Processed {len(models_data)} models.")
+print(f"Build successful.")
