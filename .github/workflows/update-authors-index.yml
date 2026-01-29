@@ -1,0 +1,120 @@
+name: Auto Update Authors List from models Sub-READMEs
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  update-authors:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Generate and update authors list in both READMEs
+        run: |
+          python - << 'EOF'
+          import os
+          import re
+
+          readme_path = "README.md"
+          readme_cn_path = "README-CN.md"
+          models_dir = "models"
+
+          if not os.path.isdir(models_dir):
+              print(f"Error: {models_dir} directory not found.")
+              exit(1)
+
+          if not os.path.isfile(readme_cn_path):
+              print(f"Error: {readme_cn_path} not found.")
+              exit(1)
+
+          folder_pattern = re.compile(r"^(\d{4})$")
+          authors = []
+
+          for folder in sorted(os.listdir(models_dir)):
+              full_folder_path = os.path.join(models_dir, folder)
+              if not (os.path.isdir(full_folder_path) and folder_pattern.match(folder)):
+                  continue
+
+              readme_file = None
+              for fname in ["README.md", "readme.md", "Readme.md"]:
+                  path = os.path.join(full_folder_path, fname)
+                  if os.path.isfile(path):
+                      readme_file = path
+                      break
+
+              link = f"https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/{models_dir}/{folder}"
+
+              if not readme_file:
+                  authors.append(f"- {folder}： [无 README 或未找到作者名]({link})")
+                  continue
+
+              with open(readme_file, "r", encoding="utf-8") as f:
+                  content = f.read()
+
+              match = re.search(r"-\s*作者名称：\s*(.+?)(?:\n|$)", content, re.DOTALL | re.MULTILINE)
+              
+              if match:
+                  author_name = match.group(1).strip()
+                  authors.append(f"- {folder}：[{author_name}]({link})")
+              else:
+                  lines = [line.strip() for line in content.splitlines() if line.strip()]
+                  if lines:
+                      fallback_name = lines[0].strip('# *-').strip()
+                      authors.append(f"- {folder}：[{fallback_name} (从首行推测)]({link})")
+                  else:
+                      authors.append(f"- {folder}： [未匹配到作者名称]({link})")
+
+          new_list = "\n".join(authors) if authors else "models/ 目录下暂无符合条件的作者文件夹"
+          block = "<!-- AUTHORS_LIST_START -->\n" + new_list + "\n<!-- AUTHORS_LIST_END -->"
+
+          def update_readme(path, is_cn):
+              with open(path, "r", encoding="utf-8") as f:
+                  content = f.read()
+
+              start = "<!-- AUTHORS_LIST_START -->"
+              end = "<!-- AUTHORS_LIST_END -->"
+
+              if start not in content or end not in content:
+                  print(f"Error: Markers not found in {path}")
+                  exit(1)
+
+              before = content.split(start, 1)[0] + start + "\n"
+              after = "\n" + end + content.split(end, 1)[1]
+
+              updated = before + new_list + after
+              
+              if updated != content:
+                  with open(path, "w", encoding="utf-8") as f:
+                      f.write(updated)
+                  print(f"Updated {path} with {len(authors)} authors.")
+                  return True
+              else:
+                  print(f"No changes in {path}")
+                  return False
+
+          changed = update_readme(readme_path, False) or update_readme(readme_cn_path, True)
+
+          EOF
+
+      - name: Commit and push changes if any
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add README.md README-CN.md
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: auto-update authors list in README.md and README-CN.md"
+            git push
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
