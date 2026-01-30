@@ -20,6 +20,9 @@ jobs:
         with:
           python-version: '3.x'
 
+      - name: Install Dependencies
+        run: pip install jinja2 Pillow
+
       - name: Build Website
         run: python .github/scripts/build_site.py
 
