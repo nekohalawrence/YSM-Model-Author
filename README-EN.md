@@ -1,4 +1,4 @@
-[中文](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/blob/main/README.md) ,
+[中文](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/blob/main/README.md), English
 
 # FREE-YSM-AUTHOR
 
