@@ -25,15 +25,15 @@ jobs:
           import re
 
           readme_path = "README.md"
-          readme_cn_path = "README-CN.md"
+          readme_en_path = "README-EN.md"
           models_dir = "models"
 
           if not os.path.isdir(models_dir):
               print(f"Error: {models_dir} directory not found.")
               exit(1)
 
-          if not os.path.isfile(readme_cn_path):
-              print(f"Error: {readme_cn_path} not found.")
+          if not os.path.isfile(readme_en_path):
+              print(f"Error: {readme_en_path} not found.")
               exit(1)
 
           folder_pattern = re.compile(r"^(\d{4})$")
@@ -101,7 +101,7 @@ jobs:
                   print(f"No changes in {path}")
                   return False
 
-          changed = update_readme(readme_path, False) or update_readme(readme_cn_path, True)
+          changed = update_readme(readme_path, False) or update_readme(readme_en_path, True)
 
           EOF
 
