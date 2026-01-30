@@ -120,16 +120,21 @@ for author_dir in ROOT_DIR.iterdir():
         if not model_dir.is_dir(): continue
         if model_dir.name.lower().startswith('readme'): continue
         
-        preview_img, tags, files = "", [], []
+        previews, tags, files = [], [], []
         
-        # 查找预览图
-        for f in model_dir.iterdir():
-            if f.name.lower().startswith('preview') and f.suffix.lower() in ['.jpg', '.png', '.jpeg', '.webp']:
-                # 生成缩略图
-                final_thumb = generate_thumbnail(f)
-                # 转换为 POSIX 路径 (Web URL)
-                preview_img = final_thumb.as_posix()
-                break
+        # 查找预览图 (新逻辑：查找 previews 文件夹)
+        previews_dir = model_dir / 'previews'
+        if previews_dir.exists() and previews_dir.is_dir():
+            for f in sorted(previews_dir.iterdir()):
+                if f.is_file() and f.suffix.lower() in ['.jpg', '.png', '.jpeg', '.webp']:
+                    # 跳过生成的缩略图，防止重复
+                    if f.name.startswith('thumb_'): continue
+                    
+                    thumb = generate_thumbnail(f)
+                    previews.append({
+                        "url": f.as_posix(),      # 原图 (用于放大)
+                        "thumb": thumb.as_posix() # 缩略图 (用于卡片显示)
+                    })
         
         # 查找标签
         tag_file = model_dir / 'tags.md'
@@ -149,7 +154,7 @@ for author_dir in ROOT_DIR.iterdir():
             "author_name": author_meta['name'],
             "socials": author_meta['socials'],
             "name": model_dir.name,
-            "preview": preview_img,
+            "previews": previews,
             "tags": tags,
             "files": files,
             "mtime": model_dir.stat().st_mtime # 添加修改时间用于排序

@@ -58,9 +58,15 @@
         /* Card */
         .card { background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 10px; overflow: hidden; display: flex; flex-direction: column; transition: transform 0.2s; }
         .card:hover { transform: translateY(-3px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-        .card-img-container { width: 100%; height: 180px; background: var(--hover-bg); position: relative; overflow: hidden; }
-        .card-img-container img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; }
-        .card:hover .card-img-container img { transform: scale(1.05); }
+        .card-img-container { width: 100%; height: 220px; background: #000; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+        .card-img-container img { width: 100%; height: 100%; object-fit: contain; cursor: zoom-in; transition: opacity 0.2s; }
+        
+        .preview-nav { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; padding: 10px; cursor: pointer; font-size: 18px; z-index: 2; opacity: 0; transition: opacity 0.2s; }
+        .card-img-container:hover .preview-nav { opacity: 1; }
+        .prev-btn { left: 0; }
+        .next-btn { right: 0; }
+        .preview-count { position: absolute; bottom: 5px; right: 5px; background: rgba(0,0,0,0.6); color: white; padding: 2px 6px; border-radius: 4px; font-size: 12px; pointer-events: none; }
+        .no-preview { color: #888; font-size: 0.9em; }
         
         .card-body { padding: 15px; flex-grow: 1; display: flex; flex-direction: column; }
         .model-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 5px; }
@@ -71,7 +77,8 @@
         .author-name { font-weight: 600; color: var(--text-color); }
         
         /* Socials */
-        .social-section { margin-bottom: 8px; }
+        .social-group { margin-bottom: 8px; }
+        .social-group-title { font-size: 0.75em; color: var(--text-secondary); margin-bottom: 4px; font-weight: 600; }
         .social-links { display: flex; flex-wrap: wrap; gap: 6px; }
         .social-link { text-decoration: none; font-size: 0.75em; padding: 3px 8px; border-radius: 4px; background: var(--hover-bg); color: var(--text-secondary); border: 1px solid var(--border-color); }
         .social-link:hover { filter: brightness(0.95); }
@@ -86,10 +93,20 @@
         .download-btn { display: block; text-decoration: none; color: var(--text-color); font-size: 0.9em; padding: 6px 8px; border-radius: 4px; }
         .download-btn:hover { background: var(--hover-bg); color: var(--accent-color); }
 
+        /* Lightbox */
+        .lightbox { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 2000; justify-content: center; align-items: center; opacity: 0; transition: opacity 0.3s; }
+        .lightbox.active { display: flex; opacity: 1; }
+        .lightbox img { max-width: 95%; max-height: 95%; object-fit: contain; box-shadow: 0 0 20px rgba(0,0,0,0.5); }
+        .lightbox-close { position: absolute; top: 20px; right: 30px; color: white; font-size: 40px; cursor: pointer; user-select: none; }
+
         @media (max-width: 768px) { .app-container { grid-template-columns: 1fr; } .sidebar { display: none; } .main-content { padding: 15px; } }
     </style>
 </head>
 <body>
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close">&times;</span>
+        <img id="lightbox-img" src="" onclick="event.stopPropagation()">
+    </div>
     <div class="app-container">
         <aside class="sidebar">
             <div class="sidebar-header">
@@ -119,6 +136,7 @@
         
         // State
         let currentFilter = { text: '', author: '' };
+        let currentIndices = {}; // Track carousel index for each model
         
         // DOM Elements
         const grid = document.getElementById('grid');
@@ -178,10 +196,23 @@
                 return;
             }
 
-            grid.innerHTML = items.map(item => `
+            grid.innerHTML = items.map(item => {
+                const hasPreviews = item.previews && item.previews.length > 0;
+                const currentIdx = currentIndices[item.author_id + '-' + item.name] || 0;
+                const currentThumb = hasPreviews ? item.previews[currentIdx].thumb : '';
+                const currentOriginal = hasPreviews ? item.previews[currentIdx].url : '';
+                
+                return `
                 <div class="card">
                     <div class="card-img-container">
-                        <img src="${item.preview}" loading="lazy" onerror="this.src='https://via.placeholder.com/300x180?text=No+Preview'">
+                        ${hasPreviews ? `
+                            <img id="img-${item.author_id}-${item.name}" src="${currentThumb}" onclick="openLightbox('${currentOriginal}')">
+                            ${item.previews.length > 1 ? `
+                                <button class="preview-nav prev-btn" onclick="switchPreview('${item.author_id}', '${item.name}', -1, event)">❮</button>
+                                <button class="preview-nav next-btn" onclick="switchPreview('${item.author_id}', '${item.name}', 1, event)">❯</button>
+                                <div class="preview-count" id="count-${item.author_id}-${item.name}">${currentIdx + 1}/${item.previews.length}</div>
+                            ` : ''}
+                        ` : '<div class="no-preview">暂无预览图</div>'}
                     </div>
                     <div class="card-body">
                         <div class="model-header">
@@ -201,14 +232,31 @@
                         </details>
                     </div>
                 </div>
-            `).join('');
+            `}).join('');
         }
 
         function renderSocials(socials) {
             if (!socials || socials.length === 0) return '';
-            return `<div class="social-section"><div class="social-links">
-                ${socials.map(s => `<a href="${s.url}" target="_blank" class="social-link">${s.platform}</a>`).join('')}
-            </div></div>`;
+            
+            const groups = {
+                '联系': ['bilibili', 'youtube', 'twitter', 'pixiv'],
+                '赞助': ['afdian', 'patreon', 'ko-fi'],
+                '其他': ['sketchfab', 'other']
+            };
+            
+            const grouped = { '联系': [], '赞助': [], '其他': [] };
+            
+            socials.forEach(s => {
+                let key = '其他';
+                if (groups['联系'].includes(s.platform.toLowerCase())) key = '联系';
+                else if (groups['赞助'].includes(s.platform.toLowerCase())) key = '赞助';
+                grouped[key].push(s);
+            });
+
+            return Object.entries(grouped).map(([name, links]) => links.length ? `
+                <div class="social-group"><div class="social-group-title">${name}</div><div class="social-links">
+                ${links.map(s => `<a href="${s.url}" target="_blank" class="social-link">${s.platform}</a>`).join('')}
+                </div></div>` : '').join('');
         }
 
         window.filterByAuthor = function(name) {
@@ -222,6 +270,35 @@
 
         window.handleSort = function() {
             renderModels();
+        }
+
+        window.switchPreview = function(authorId, modelName, dir, event) {
+            event.stopPropagation();
+            const key = authorId + '-' + modelName;
+            const model = modelsData.find(m => m.author_id === authorId && m.name === modelName);
+            if (!model || !model.previews) return;
+
+            let idx = (currentIndices[key] || 0) + dir;
+            if (idx < 0) idx = model.previews.length - 1;
+            if (idx >= model.previews.length) idx = 0;
+            currentIndices[key] = idx;
+
+            const imgEl = document.getElementById(`img-${key}`);
+            const countEl = document.getElementById(`count-${key}`);
+            if (imgEl) {
+                imgEl.src = model.previews[idx].thumb;
+                imgEl.onclick = () => openLightbox(model.previews[idx].url);
+            }
+            if (countEl) countEl.innerText = `${idx + 1}/${model.previews.length}`;
+        }
+
+        window.openLightbox = function(url) {
+            document.getElementById('lightbox-img').src = url;
+            document.getElementById('lightbox').classList.add('active');
+        }
+
+        window.closeLightbox = function() {
+            document.getElementById('lightbox').classList.remove('active');
         }
 
         searchInput.addEventListener('input', (e) => {
