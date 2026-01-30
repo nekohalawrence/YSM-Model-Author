@@ -86,6 +86,23 @@
 - 0077：[#旭门只玩驹](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0077)
 <!-- AUTHORS_LIST_END -->
 
+## Project Structure
+
+> It may be subject to change in the future.
+
+```
+models/                    <-- Root directory of models
+  ├─ 0000/                 <-- First-level folder: Author ID
+  │    ├── 模型名称1/       <-- Second-level folder: model name
+  │    │    ├─ preview.jpg <-- (Mandatory) Preview image, with a fixed name
+  │    │    ├─ tags.txt    <-- (Optional) Tag file, containing: anime, mecha, red
+  │    │    ├─ v1.0.zip    <-- model files, can have multiple
+  │    │    └── v2.0.zip
+  │    └── Model Name 2/
+  │    └── README.md       <-- Author metadata
+  └── 0001/
+```
+
 ## Notes
 
 - The prefix ABC is a personal preference ranking (level of production quality/finish), and has no other meaning.
