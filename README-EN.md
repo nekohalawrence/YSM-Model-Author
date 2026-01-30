@@ -1,9 +1,10 @@
+[中文](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/blob/main/README.md) ,
 
 # FREE-YSM-AUTHOR
 
-> 收集并按作者分类的免费模型，~绝无付费模型。~
+> Free models collected and categorized by author, containing ~absolutely no paid models.~
 
-## 作者索引
+## Author Index
 
 <!-- AUTHORS_LIST_START -->
 - 0000：[#-OMEGAZERO-](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0000)
@@ -50,7 +51,7 @@
 - 0041：[#提可拉](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0041)
 - 0042：[#天弓干亦](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0042)
 - 0043：[#完全凍結ALL](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0043)
-- 0044：[- 平台： #bilibili](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0044)
+- 0044：[#韦懦夫斯菲尔](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0044)
 - 0045：[#雾雨波波沙](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0045)
 - 0046：[#小萌新idjdkd](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0046)
 - 0047：[#Nicy_奈汐](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0047)
@@ -85,33 +86,16 @@
 - 0077：[#旭门只玩驹](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0077)
 <!-- AUTHORS_LIST_END -->
 
-## 项目结构
+## Notes
 
-> 后续可能会更改
+- The prefix ABC is a personal preference ranking (level of production quality/finish), and has no other meaning.
+- The compressed package contains the project source files, while `.ysm` is the encrypted model file.
 
-```
-models/                         <-- 模型根目录
-  ├── 0000/                     <-- 第一级文件夹：作者ID
-  │    ├── 模型名称1/            <-- 第二级文件夹：模型名
-  │    │    ├── preview.jpg     <-- (必须) 预览图，名字固定
-  │    │    ├── tags.txt        <-- (选填) 标签文件，里面写：二次元, 机甲, 红色
-  │    │    ├── v1.0.zip        <-- 模型文件，可以有多个
-  │    │    └── v2.0.zip
-  │    └── 模型名称2/
-  │    └── README.md            <-- 作者元信息   
-  └── 0001/
-```
+## Postscript
 
-## 注意事项
+- This project is mainly for my personal storage and use.
+- I’m not very familiar with how to use GitHub. If you want to modify anything, you can only tell me through an issue, or you can clone the repository yourself and make changes.
 
-* 前缀 ABC 是个人偏好的等级划分（制作质量/完成度），并无其他含义。
-* 压缩包内包含项目源码文件，而 `.ysm` 是加密后的模型文件。
+## Thanks to the project
 
-## 后记
-
-* 本项目主要用于个人存储和使用。
-* 我对 GitHub 的使用不太熟悉。如果你想修改任何内容，只能通过 Issue 告知我，或者你可以自行克隆仓库并进行更改。
-
-## 致谢项目
-
-* [https://github.com/Elaina69/Yes-Steve-Model-Repo](https://github.com/Elaina69/Yes-Steve-Model-Repo)
+- https://github.com/Elaina69/Yes-Steve-Model-Repo
