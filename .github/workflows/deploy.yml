@@ -21,7 +21,7 @@ jobs:
           python-version: '3.x'
 
       - name: Build Website
-        run: python build_site.py
+        run: python .github/scripts/build_site.py
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
