@@ -2,7 +2,7 @@ name: Auto Update Authors List from models Sub-READMEs
 
 on:
   push:
-    branches: [ main ]
+    paths: ['models/**']
   workflow_dispatch:
 
 jobs:
