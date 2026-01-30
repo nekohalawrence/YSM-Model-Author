@@ -93,6 +93,23 @@
         .download-btn { display: block; text-decoration: none; color: var(--text-color); font-size: 0.9em; padding: 6px 8px; border-radius: 4px; }
         .download-btn:hover { background: var(--hover-bg); color: var(--accent-color); }
 
+        /* Tag Filter */
+        .tag-filter-container { margin-bottom: 20px; display: flex; flex-wrap: wrap; gap: 8px; }
+        .filter-tag { 
+            cursor: pointer; 
+            padding: 4px 10px; 
+            border-radius: 15px; 
+            background: var(--card-bg); 
+            border: 1px solid var(--border-color); 
+            font-size: 0.85em; 
+            color: var(--text-secondary);
+            transition: all 0.2s;
+            user-select: none;
+        }
+        .filter-tag:hover { background: var(--hover-bg); }
+        .filter-tag.active { background: var(--tag-bg); color: var(--tag-text); border-color: var(--tag-bg); font-weight: 600; }
+        .clear-tags { font-size: 0.85em; color: var(--text-secondary); cursor: pointer; text-decoration: underline; align-self: center; margin-left: 10px; }
+
         /* Lightbox */
         .lightbox { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 2000; justify-content: center; align-items: center; opacity: 0; transition: opacity 0.3s; }
         .lightbox.active { display: flex; opacity: 1; }
@@ -126,6 +143,7 @@
                     <option value="name_asc">🔤 名称 (A→Z)</option>
                 </select>
             </div>
+            <div id="tagFilter" class="tag-filter-container"></div>
             <div id="grid" class="grid"></div>
         </main>
     </div>
@@ -135,7 +153,7 @@
         const authorsData = {{ authors_json }};
         
         // State
-        let currentFilter = { text: '', author: '' };
+        let currentFilter = { text: '', author: '', tags: [] };
         let currentIndices = {}; // Track carousel index for each model
         
         // DOM Elements
@@ -147,6 +165,7 @@
         // Init
         function init() {
             renderAuthors();
+            renderTags();
             renderModels();
             
             // Theme Check
@@ -171,6 +190,24 @@
             authorList.innerHTML = html;
         }
 
+        function renderTags() {
+            const allTags = new Set();
+            modelsData.forEach(m => m.tags.forEach(t => allTags.add(t)));
+            const sortedTags = Array.from(allTags).sort();
+            
+            if (sortedTags.length === 0) return;
+
+            let html = sortedTags.map(t => {
+                const isActive = currentFilter.tags.includes(t);
+                return `<span class="filter-tag ${isActive ? 'active' : ''}" onclick="toggleTag('${t}')">${t}</span>`;
+            }).join('');
+            
+            if (currentFilter.tags.length > 0) {
+                html += `<span class="clear-tags" onclick="clearTags()">清除筛选</span>`;
+            }
+            document.getElementById('tagFilter').innerHTML = html;
+        }
+
         function renderModels() {
             // Filter
             let items = modelsData.filter(item => {
@@ -179,7 +216,8 @@
                     item.author_name.toLowerCase().includes(currentFilter.text) ||
                     item.tags.some(t => t.toLowerCase().includes(currentFilter.text));
                 const matchAuthor = !currentFilter.author || item.author_name === currentFilter.author;
-                return matchText && matchAuthor;
+                const matchTags = currentFilter.tags.length === 0 || currentFilter.tags.every(ft => item.tags.includes(ft));
+                return matchText && matchAuthor && matchTags;
             });
 
             // Sort
@@ -220,7 +258,7 @@
                             <span class="model-date">${new Date(item.mtime * 1000).toLocaleDateString()}</span>
                         </div>
                         <div class="author-info">
-                            作者: <span class="author-name">${item.author_name}</span>
+                            作者: <span class="author-id-tag">${item.author_id}</span><span class="author-name">${item.author_name}</span>
                         </div>
                         ${renderSocials(item.socials)}
                         <div class="tags">${item.tags.map(t => `<span class="tag">${t}</span>`).join('')}</div>
@@ -265,6 +303,23 @@
             document.querySelectorAll('.author-item').forEach(el => {
                 el.classList.toggle('active', el.innerText.includes(name) && name !== '' || (name === '' && el.innerText.includes('ALL')));
             });
+            renderModels();
+        }
+
+        window.toggleTag = function(t) {
+            const idx = currentFilter.tags.indexOf(t);
+            if (idx > -1) {
+                currentFilter.tags.splice(idx, 1);
+            } else {
+                currentFilter.tags.push(t);
+            }
+            renderTags();
+            renderModels();
+        }
+
+        window.clearTags = function() {
+            currentFilter.tags = [];
+            renderTags();
             renderModels();
         }
 
