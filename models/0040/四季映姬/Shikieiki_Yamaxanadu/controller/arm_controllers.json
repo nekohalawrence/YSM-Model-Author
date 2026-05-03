@@ -1,0 +1,55 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"player.post_swing": {
+			"states": {
+				"default": {
+					"on_exit": ["v.swing_sword = 0;"],
+					"transitions": [
+						{"normal_attack": "v.swing_sword == 1 && v.roaming.sword_attack_se == 1"},
+						{"combo1": "v.swing_sword == 1 && v.roaming.sword_attack_se == 0 && !ctrl.jump"},
+						{"jump_attack": "v.swing_sword == 1 && v.roaming.sword_attack_se == 0 && ctrl.jump"}
+					]
+				},
+				"normal_attack": {
+					"animations": ["normal_attack"],
+					"transitions": [
+						{"default": "v.swing_sword == 1 || query.all_animations_finished || !query.equipped_item_all_tags('mainhand', 'swords')"}
+					]
+				},
+				"combo1": {
+					"animations": [
+						{"sword_combo1": "ctrl.idle"},
+						{"sword_move_combo1": "!ctrl.idle"}
+					],
+					"on_entry": ["v.is_combo = 1;"],
+					"on_exit": ["v.swing_sword = 0;"],
+					"transitions": [
+						{"combo2": "v.swing_sword == 1 && v.is_combo == 1 && !ctrl.jump"},
+						{"default": "v.is_combo == 0 || !query.equipped_item_all_tags('mainhand', 'swords')"},
+						{"jump_attack": "v.swing_sword == 1 && ctrl.jump"}
+					]
+				},
+				"combo2": {
+					"animations": [
+						{"sword_combo2": "ctrl.idle"},
+						{"sword_move_combo2": "!ctrl.idle"}
+					],
+					"on_exit": ["v.swing_sword = 0;"],
+					"transitions": [
+						{"default": "v.is_combo == 0 || !query.equipped_item_all_tags('mainhand', 'swords')"},
+						{"jump_attack": "v.swing_sword == 1 && ctrl.jump"},
+						{"combo1": "v.swing_sword == 1 && !ctrl.jump"}
+					]
+				},
+				"jump_attack": {
+					"animations": ["sword_jump_attack"],
+					"on_entry": ["v.is_combo = 1;"],
+					"transitions": [
+						{"default": "v.swing_sword == 1 || v.is_combo == 0 || !query.equipped_item_all_tags('mainhand', 'swords')"}
+					]
+				}
+			}
+		}
+	}
+}

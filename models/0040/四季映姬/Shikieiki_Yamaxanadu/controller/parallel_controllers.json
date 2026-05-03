@@ -1,0 +1,99 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"player.pre_parallel_0": {
+			"states": {
+				"default": {
+					"animations": ["pre_parallel0", "pre_parallel1", "pre_parallel2", "pre_parallel3", "pre_parallel4", "pre_parallel5", "pre_parallel6", "pre_parallel7"]
+				}
+			}
+		},
+		"player.pre_parallel_1": {
+			"states": {
+				"default": {}
+			}
+		},
+		"player.pre_parallel_2": {
+			"states": {
+				"default": {}
+			}
+		},
+		"player.pre_parallel_3": {
+			"states": {
+				"default": {}
+			}
+		},
+		"player.pre_parallel_4": {
+			"states": {
+				"default": {}
+			}
+		},
+		"player.pre_parallel_5": {
+			"states": {
+				"default": {}
+			}
+		},
+		"player.pre_parallel_6": {
+			"states": {
+				"default": {}
+			}
+		},
+		"player.pre_parallel_7": {
+			"states": {
+				"default": {}
+			}
+		},
+		"player.parallel_0": {
+			"states": {
+				"default": {
+					"animations": ["parallel0", "parallel1", "parallel2", "parallel3", "parallel4", "parallel5", "parallel6", "parallel7"]
+				}
+			}
+		},
+		"player.parallel_1": {
+			"states": {
+				"default": {
+					"transitions": [
+						{"suit_switch": ""}
+					]
+				},
+				"suit_switch": {
+					"animations": [
+						{"suit1": "v.roaming.suit_type == 1"},
+						{"suit2": "v.roaming.suit_type == 2"},
+						{"suit3": "v.roaming.suit_type == 3"},
+						{"suit4": "v.roaming.suit_type == 4"}
+					],
+					"transitions": [
+						{"default": "v.roaming.suit_type == 0"}
+					]
+				}
+			}
+		},
+		"player.parallel_3": {
+			"states": {
+				"default": {}
+			}
+		},
+		"player.parallel_4": {
+			"states": {
+				"default": {}
+			}
+		},
+		"player.parallel_5": {
+			"states": {
+				"default": {}
+			}
+		},
+		"player.parallel_6": {
+			"states": {
+				"default": {}
+			}
+		},
+		"player.parallel_7": {
+			"states": {
+				"default": {}
+			}
+		}
+	}
+}
