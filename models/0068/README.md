@@ -2,7 +2,7 @@
 
 - 作者名称： #AnluoSakura
 - 平台： #bilibili #afdian 
-- 作品类型： 
+- 作品类型: 
 
 ## 联系方式
 
