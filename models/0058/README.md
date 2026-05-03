@@ -2,13 +2,8 @@
 
 - 作者名称： #艺方像素
 - 平台： #bilibili
-- 作品类型： 
-- QQ： 1320812591
 
-## 联系方式
-
-### 社交媒体
-
+- QQ: 1320812591
 - [bilibili](https://www.bilibili.com/)：[艺方像素](https://space.bilibili.com/107318873)
 - [YouTube](https://www.youtube.com/)：
 
