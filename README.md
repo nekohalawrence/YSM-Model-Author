@@ -96,7 +96,7 @@
 - 0072：[#Eiven-ly #Eiven](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0072)
 - 0073：[#MicroCraft_](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0073)
 - 0075：[#Wadanohara_Rika](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0075)
-- 0076：[#White_clams白蛤蜊](models/0076)
+- 0076：[#White_clams白蛤蜊](models/0076/README)
 - 0077：[#旭门只玩驹](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0077)
 <!-- AUTHORS_LIST_END -->
 
