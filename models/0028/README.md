@@ -4,3 +4,5 @@
 - 平台： #bilibili #afdian 
 	- [bilibili](https://www.bilibili.com/)：[喵 Kuroneko](https://space.bilibili.com/323374106)
 	- [afdian](https://afdian.com/)：[KuroNeko](https://afdian.com/a/QwQlalalaKuroNe)
+- 群聊
+	- qq：1050145781
