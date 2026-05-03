@@ -2,21 +2,5 @@
 
 - 作者名称： #赤恒-AzaMire
 - 平台： #bilibili
-- 作品类型：
+	- [bilibili](https://www.bilibili.com/)：[赤恒-AzaMire](https://space.bilibili.com/235888316)
 
-## 联系方式
-
-### 社交媒体
-
-- [bilibili](https://www.bilibili.com/)：[赤恒-AzaMire](https://space.bilibili.com/235888316)
-- [YouTube](https://www.youtube.com/)：
-
-### 赞助平台
-
-- [afdian](https://afdian.com/)：
-- [Ko-fi](https://ko-fi.com/)：
-- [Patreon](https://www.patreon.com/home)：
-
-### 其他
-
-- [Sketchfab](https://sketchfab.com/)：
