@@ -2,13 +2,7 @@
 
 - 作者名称： #omo-仙贝2号 #omo #FujiwaranoMoku114514 | 1959304255
 - 平台： #bilibili #afdian #patreon
-- 作品类型：
-
-## 联系方式
-
-### 社交媒体
-
-- [bilibili](https://www.bilibili.com/)：[omo 仙贝 2 号](https://space.bilibili.com/1959304255)
+	- [bilibili](https://www.bilibili.com/)：[omo 仙贝 2 号](https://space.bilibili.com/1959304255)
 - [YouTube](https://www.youtube.com/)：
 
 ### 赞助平台
