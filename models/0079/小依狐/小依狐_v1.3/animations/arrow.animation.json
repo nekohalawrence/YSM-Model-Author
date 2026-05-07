@@ -1,0 +1,1 @@
+{"format_version":"1.8.0","animations":{"parallel0":{"animation_length":10000.0,"loop":"hold_on_last_frame","bones":{"ysmGlowAmmo":{"rotation":{"0.0":0.0,"0.25":[360.0,0.0,0.0]},"scale":{"1.0":{"post":0.0,"pre":1.0}}},"ysmGlowTX":{"rotation":{"0.0":0.0,"0.3333":[360.0,0.0,0.0]},"scale":{"0.0":[0.0,1.0,1.0],"0.0833":[8.0,1.0,1.0],"0.25":[8.0,1.0,1.0],"0.3333":[8.0,0.0,0.0]}}}}}}
