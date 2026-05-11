@@ -60,18 +60,13 @@ jobs:
               with open(readme_file, "r", encoding="utf-8") as f:
                   content = f.read()
 
-              match = re.search(r"-\s*作者名称：\s*(.+?)(?:\n|$)", content, re.DOTALL | re.MULTILINE)
+              match = re.search(r"-\s*作者名称[:：]\s*(.+?)(?:\n|$)", content, re.DOTALL | re.MULTILINE)
               
               if match:
                   author_name = match.group(1).strip()
                   authors.append(f"- {folder}：[{author_name}]({link})")
               else:
-                  lines = [line.strip() for line in content.splitlines() if line.strip()]
-                  if lines:
-                      fallback_name = lines[0].strip('# *-').strip()
-                      authors.append(f"- {folder}：[{fallback_name} (从首行推测)]({link})")
-                  else:
-                      authors.append(f"- {folder}： [未匹配到作者名称]({link})")
+                  authors.append(f"- {folder}：[暂无]({link})")
 
           new_list = "\n".join(authors) if authors else "models/ 目录下暂无符合条件的作者文件夹"
           block = "<!-- AUTHORS_LIST_START -->\n" + new_list + "\n<!-- AUTHORS_LIST_END -->"
