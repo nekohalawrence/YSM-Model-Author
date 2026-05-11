@@ -104,11 +104,11 @@ jobs:
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add README.md README-CN.md
+          git add README.md README-EN.md
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "chore: auto-update authors list in README.md and README-CN.md"
+            git commit -m "chore: auto-update authors list in README.md and README-EN.md"
             git push
           fi
         env:
