@@ -60,7 +60,7 @@
 - 0031：[#泥泞中的小猫](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0031)
 - 0032：[#你个人机cc #你个人妻cc](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0032)
 - 0033：[#胖狐狸工作室](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0033)
-- 0034：[#平衡芝光](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0034)
+	- 0034：[#平衡芝光](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0034)
 - 0035：[#谱露阿凯 #饭](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0035)
 - 0036：[#日月明567](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0036)
 - 0037：[#史莱姆坍缩](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0037)
