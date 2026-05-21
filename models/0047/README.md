@@ -1,6 +1,6 @@
 # 0047
 
-- 作者名称: #Nicy_奈汐
+- 作者名称: #Nicy_奈汐 | #苏溟0w0
 - 平台: #bilibili #afdian 
 	- [bilibili](https://www.bilibili.com/)：[Nicy_奈汐](https://space.bilibili.com/3494363390806334)
 	- [afdian](https://afdian.com/)：
