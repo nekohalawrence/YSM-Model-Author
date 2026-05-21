@@ -68,8 +68,8 @@
 - 0035：[#谱露阿凯 | #饭](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0035)
 - 0036：[#日月明567](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0036)
 - 0037：[#史莱姆坍缩](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0037)
-- 0038：[#试刀 #试Tj](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0038)
-- 0039：[#松鼠式坦克兵工 #松鼠式坦克](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0039)
+- 0038：[#试刀 | #试Tj](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0038)
+- 0039：[#松鼠式坦克兵工 | #松鼠式坦克](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0039)
 - 0040：[#碎de帆](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0040)
 - 0041：[#提可拉](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0041)
 - 0042：[#天弓干亦](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0042)
@@ -77,7 +77,7 @@
 - 0044：[#韦懦夫斯菲尔](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0044)
 - 0045：[#雾雨波波沙](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0045)
 - 0046：[#小萌新idjdkd](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0046)
-- 0047：[#Nicy_奈汐](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0047)
+- 0047：[#Nicy_奈汐 | #苏溟0w0](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0047)
 - 0048：[#星屑海螺| #磁小轨制作组（星屑海螺）](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0048)
 - 0049：[#星语TAT](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0049)
 - 0050：[#荨蒿栗里](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0050)
@@ -112,6 +112,11 @@
 - 0080：[Nona_Reeves](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0080)
 - 0081：[窝窝头](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0081)
 - 0082：[#树枝没虈枝](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0082)
+- 0083：[#晓苯升易](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0083)
+- 0084：[#幻古诗](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0084)
+- 0085： [无 README 或未找到作者名](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0085)
+- 0086： [无 README 或未找到作者名](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0086)
+- 0087： [无 README 或未找到作者名](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0087)
 <!-- AUTHORS_LIST_END -->
 
 ## 项目结构
