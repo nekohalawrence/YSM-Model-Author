@@ -32,7 +32,7 @@
 <!-- AUTHORS_LIST_START -->
 - 0000：[#-OMEGAZERO-](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0000)
 - 0001：[#02Bunny](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0001)
-- 0002：[#映素 #映素作坊](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0002)
+- 0002：[#映素 | #映素作坊](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0002)
 - 0003：[#XGancheng_Tao](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0003)
 - 0004：[#未认证创作者](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0004)
 - 0005：[#omo仙贝2号| #omo | #FujiwaranoMoku114514](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0005)
@@ -52,7 +52,7 @@
 - 0019：[#江竹雨offical](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0019)
 - 0020：[#就叫纸板| #纸板](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0020)
 - 0021：[#酷酷の霜叶小姐姐](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0021)
-- 0022：[#快乐的小盛子](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0022)
+- 0022：[#Tu_tou](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0022)
 - 0023：[#狸民limin| #狸民| #limin](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0023)
 - 0024：[#栗坂猫厘子](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0024)
 - 0025：[#绫独之落](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0025)
@@ -64,7 +64,7 @@
 - 0031：[#泥泞中的小猫](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0031)
 - 0032：[#你个人机cc #你个人妻cc](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0032)
 - 0033：[#胖狐狸工作室](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0033)
-	- 0034：[#平衡芝光](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0034)
+- 0034：[#平衡芝光](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0034)
 - 0035：[#谱露阿凯 #饭](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0035)
 - 0036：[#日月明567](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0036)
 - 0037：[#史莱姆坍缩](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0037)
@@ -109,6 +109,9 @@
 - 0077：[#旭门只玩驹](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0077)
 - 0078：[苏溟 0w0](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0078)
 - 0079：[小多利鸭](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0079)
+- 0080：[Nona_Reeves](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0080)
+- 0081：[窝窝头](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0081)
+- 0082：[#树枝没虈枝](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0082)
 <!-- AUTHORS_LIST_END -->
 
 ## 项目结构
