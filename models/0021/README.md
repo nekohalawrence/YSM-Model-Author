@@ -1,6 +1,12 @@
-# 作者
+# 0021
 
-- 作者名称： #酷酷の霜叶小姐姐
+- 作者名称: #酷酷の霜叶小姐姐
+- 平台: #bilibili #afdian 
+	- [bilibili](https://www.bilibili.com/)：
+	- [afdian](https://afdian.com/)：
+
+
+- 作者名称： 
 - 平台： #bilibili
 - 作品类型：
 
