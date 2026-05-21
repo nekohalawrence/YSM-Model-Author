@@ -1,6 +1,12 @@
-# 作者
+# 0
 
-- 作者名称： #寒叔hs #烈鸟比百
+- 作者名称: #寒叔hs | #烈鸟比百
+- 平台: #bilibili #afdian 
+	- [bilibili](https://www.bilibili.com/)：
+	- [afdian](https://afdian.com/)：
+
+
+- 作者名称： 
 - 平台： #bilibili
 - 作品类型： #原神 #明日方舟 #Genshin-Impact #Arknights
 
