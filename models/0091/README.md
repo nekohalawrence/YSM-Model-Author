@@ -1,6 +1,5 @@
 # 0091
 
-- 作者名称: 
-- 平台: #bilibili #afdian 
-	- [bilibili](https://www.bilibili.com/)：
-	- [afdian](https://afdian.com/)：
+- 作者名称: #trita
+- 平台: #qq 
+	- QQ: 3490790346
