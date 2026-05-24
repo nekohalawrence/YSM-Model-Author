@@ -109,7 +109,7 @@
 - 0077：[#旭门只玩驹](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0077)
 - 0078：[苏溟 0w0](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0078)
 - 0079：[小多利鸭](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0079)
-- 0080：[Nona_Reeves](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0080)
+- 0080：[#Nona_Reeves](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0080)
 - 0081：[#窝窝头](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0081)
 - 0082：[#树枝没虈枝](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0082)
 - 0083：[#晓苯升易](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0083)
@@ -117,14 +117,15 @@
 - 0085：[#汪](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0085)
 - 0086：[#深海沉光](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0086)
 - 0087：[#Nss](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0087)
-- 0088：[- 平台: #bilibili #afdian #qq](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0088)
+- 0088：[#无名氏](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0088)
 - 0089：[#踽魍估恶真君](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0089)
 - 0090：[#九碳糖](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0090)
-- 0091：[- 平台: #bilibili #afdian](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0091)
+- 0091：[#trita](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0091)
 - 0092：[#菊姥爷](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0092)
 - 0093：[#苏依凛](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0093)
 - 0094：[#墨染逝羽 | #Feather_aya](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0094)
 - 0095：[#源石姬变体 | #raw_chicken](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0095)
+- 0096： [无 README 或未找到作者名](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0096)
 <!-- AUTHORS_LIST_END -->
 
 ## 项目结构
