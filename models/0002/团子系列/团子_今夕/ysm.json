@@ -1,0 +1,248 @@
+{
+	"spec": 2,
+	"metadata": {
+		"name": "§6§l§o团子 §e§l§o今汐",
+		"tips": "§6§l§o团子 §e§l§o今汐",
+		"license": {
+			"type": "All Rights Reserved"
+		},
+		"authors": [
+			{
+				"name": "荒漠",
+				"role": "模型",
+				"avatar": "avatar/Dog.jpg",
+				"comment": "很可能是会说话的狗"
+			},
+			{
+				"name": "Wone_J",
+				"avatar": "avatar/Wone_J.png",
+				"role": "动作/适配",
+				"contact": {
+					"Bili": "https://space.bilibili.com/13505331",
+					"Afdian": "https://afdian.com/a/Wone_J"
+				},
+				"comment": "南北绿豆"
+			}
+		],
+		"link": {
+			"home": "https://modrinth.com/mod/yes-steve-model",
+			"donate": "https://afdian.com/a/ysmmod"
+		}
+	},
+	"properties": {
+		"height_scale": 0.7,
+		"width_scale": 0.7,
+		"extra_animation": {
+			"表情设置": "#§9表情切换",
+			"模型设置": "#§9模型配置",
+			"#§e角色动作": "§e角色动作",
+			"#§e舞蹈动画": "§e舞蹈动画",
+			"#§e默认模型动画": "§e默认模型动画",
+			"§ckei": "§6§o§l团子 今汐",
+			"§c-交流群- 881319606": "§c§o-交流群- 881319606",
+			"": "§c§o-映素作坊-"
+		},
+		"extra_animation_buttons": [
+			{
+				"id": "§9表情切换",
+				"name": "§9表情切换",
+				"config_forms": [
+					{
+						"type": "range",
+						"title": "眼睛切换",
+						"description": "眼睛切换",
+						"value": "v.roaming.eyes",
+						"step": 1,
+						"min": 0,
+						"max": 7
+					},
+					{
+						"type": "range",
+						"title": "嘴部切换",
+						"description": "嘴部切换",
+						"value": "v.roaming.mouth",
+						"step": 1,
+						"min": 0,
+						"max": 6
+					},
+					{
+						"type": "range",
+						"title": "脸部切换",
+						"description": "脸部切换",
+						"value": "v.roaming.face",
+						"step": 1,
+						"min": 0,
+						"max": 3
+					},
+					{
+						"type": "range",
+						"title": "眼睛大小",
+						"description": "眼睛大小",
+						"value": "v.eye",
+						"step": 0.1,
+						"min": 0,
+						"max": 1.5
+					},
+					{
+						"type": "checkbox",
+						"title": "高光开关",
+						"description": "高光开关",
+						"value": "v.EyesBase2"
+					}
+				]
+			},
+			{
+				"id": "§9模型配置",
+				"name": "§9模型配置",
+				"config_forms": [
+					{
+						"type": "range",
+						"title": "模型大小切换",
+						"description": "模型大小切换",
+						"value": "v.bodysize",
+						"step": 0.1,
+						"min": 0,
+						"max": 3
+					},
+					{
+						"type": "range",
+						"title": "X轴缩放切换",
+						"description": "X轴缩放切换",
+						"value": "v.Xbodysize",
+						"step": 0.1,
+						"min": -4,
+						"max": 4
+					},
+					{
+						"type": "range",
+						"title": "Y轴缩放切换",
+						"description": "Y轴缩放切换",
+						"value": "v.Ybodysize",
+						"step": 0.1,
+						"min": -4,
+						"max": 4
+					},
+					{
+						"type": "range",
+						"title": "Z轴缩放切换",
+						"description": "Z轴缩放切换",
+						"value": "v.Zbodysize",
+						"step": 0.1,
+						"min": -4,
+						"max": 4
+					},
+					{
+						"type": "range",
+						"title": "X轴位移",
+						"description": "X轴位移",
+						"value": "v.Xmove",
+						"step": 1,
+						"min": -16,
+						"max": 16
+					},
+					{
+						"type": "range",
+						"title": "Y轴位移",
+						"description": "Y轴位移",
+						"value": "v.Ymove",
+						"step": 1,
+						"min": -16,
+						"max": 16
+					},
+					{
+						"type": "range",
+						"title": "Z轴位移",
+						"description": "Z轴位移",
+						"value": "v.Zmove",
+						"step": 1,
+						"min": -16,
+						"max": 16
+					}
+				]
+			}
+		],
+		"extra_animation_classify": [
+			{
+				"id": "§e舞蹈动画",
+				"extra_animation": {
+					"波奇酱": "§e波奇酱",
+					"蹦跶": "§e蹦跶",
+					"跳舞1": "§e跳舞1",
+					"跳舞2": "§e跳舞2",
+					"跳舞3": "§e跳舞3"
+				}
+			},
+			{
+				"id": "§e角色动作",
+				"extra_animation": {
+					"封面": "封面",
+					"睡觉": "睡觉",
+					"漂浮": "漂浮",
+					"飞行": "飞行"
+				}
+			},
+			{
+				"id": "§e默认模型动画",
+				"extra_animation": {
+					"extra1": "挥手",
+					"extra2": "拍手",
+					"extra3": "YES",
+					"extra4": "NO",
+					"extra5": "耶"
+				}
+			}
+		],
+		"preview_animation": "gui",
+		"disable_preview_rotation": true,
+		"gui_no_lighting": false,
+		"gui_foreground": "textures/gui/foreground.png",
+		"gui_background": "textures/gui/background.png",
+		"default_texture": "default",
+		"render_layers_first": false,
+		"free": false,
+		"all_cutout": false
+	},
+	"files": {
+		"player": {
+			"model": {
+				"main": "models/main.json",
+				"arm": "models/arm.json"
+			},
+			"animation": {
+				"main": "animations/main.animation.json",
+				"arm": "animations/arm.animation.json",
+				"extra": "animations/extra.animation.json",
+				"tac": "animations/tac.animation.json",
+				"carryon": "animations/carryon.animation.json",
+				"parcool": "animations/parcool.animation.json",
+				"swem": "animations/swem.animation.json",
+				"slashblade": "animations/slashblade.animation.json",
+				"tlm": "animations/tlm.animation.json",
+				"fp_arm": "animations/fp.arm.animation.json"
+			},
+			"animation_controllers": ["controller/parallel_controllers.json"],
+			"texture": [
+				{
+					"uv": "textures/default.png"
+				}
+			]
+		},
+		"projectiles": [
+			{
+				"match": ["minecraft:arrow"],
+				"model": "models/arrow.json",
+				"animation": "animations/arrow.animation.json",
+				"texture": {
+					"uv": "textures/arrow.png"
+				}
+			},
+			{
+				"match": ["minecraft:fishing_bobber"],
+				"model": "models/fishing_bobber.json",
+				"texture": {
+					"uv": "textures/fishing_bobber.png"
+				}
+			}
+		]
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"metadata.name": "Default",
+	"metadata.tips": "Default Model",
+	"metadata.authors.0.name": "Null",
+	"metadata.authors.0.role": "Author",
+	"metadata.authors.0.comment": "Miao~",
+	"properties.extra_animation.extra0": "Moriya Step",
+	"properties.extra_animation.extra1": "Wave",
+	"properties.extra_animation.extra2": "Clap",
+	"properties.extra_animation.extra3": "YES",
+	"properties.extra_animation.extra4": "NO",
+	"properties.extra_animation.extra5": "Yep",
+	"properties.extra_animation.extra6": "Swing",
+	"properties.extra_animation.extra7": "Dance",
+	"properties.extra_animation_buttons.extra_config.config_forms.0.title": "Headdress",
+	"properties.extra_animation_buttons.extra_config.config_forms.0.description": "Used to hide/show the red bow headdress",
+	"files.player.texture.default": "Default",
+	"files.player.texture.blue": "Blue"
+}
