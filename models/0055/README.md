@@ -1,4 +1,10 @@
-# 作者
+# 
+
+- 作者名称: 
+- 平台: #bilibili #afdian 
+	- [bilibili](https://www.bilibili.com/)：
+	- [afdian](https://afdian.com/)：
+
 
 - 作者名称： #伊蕾娜家的咸鱼
 - 平台： #bilibili
