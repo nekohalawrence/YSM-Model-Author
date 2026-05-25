@@ -1,6 +1,12 @@
-# 作者
+ # 
 
-- 作者名称： #ccci202
+- 作者名称: #ccci202
+- 平台: #bilibili #afdian 
+	- [bilibili](https://www.bilibili.com/)：
+	- [afdian](https://afdian.com/)：
+
+
+- 作者名称： 
 - 平台： #bilibili #afdian 
 - 作品类型： 
 
