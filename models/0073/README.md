@@ -1,6 +1,14 @@
-# 作者
+# 
 
-- 作者名称： #MicroCraft_
+- 作者名称: 
+- 平台: #bilibili #afdian 
+	- [bilibili](https://www.bilibili.com/)：
+	- [afdian](https://afdian.com/)：
+- 群聊
+	- QQ: 
+
+
+- 作者名称： 
 - 平台： #bilibili
 - 作品类型： 
 
