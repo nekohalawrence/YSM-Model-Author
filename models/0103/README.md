@@ -1,8 +1,8 @@
-# 01
+# 0103
 
-- 作者名称: 
+- 作者名称: #浅陌菌
 - 平台: #bilibili #afdian 
-	- [bilibili](https://www.bilibili.com/)：
-	- [afdian](https://afdian.com/)：
+	- [bilibili](https://www.bilibili.com/)：[浅陌菌](https://space.bilibili.com/24513198)
+	- [afdian](https://afdian.com/)：[浅陌菌](https://afdian.com/a/tc_fox)
 - 群聊
 	- QQ: 
