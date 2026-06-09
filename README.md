@@ -126,6 +126,13 @@
 - 0094：[#墨染逝羽 | #Feather_aya](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0094)
 - 0095：[#源石姬变体 | #raw_chicken](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0095)
 - 0096：[#未知](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0096)
+- 0097：[#艾雷克亚](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0097)
+- 0098：[#coldM00N](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0098)
+- 0099：[#Dumnheint](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0099)
+- 0100：[#京泉](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0100)
+- 0101：[#獒子coco](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0101)
+- 0102：[#Dreamer](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0102)
+- 0103：[#浅陌菌](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0103)
 <!-- AUTHORS_LIST_END -->
 
 ## 项目结构
