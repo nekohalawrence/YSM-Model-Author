@@ -1,0 +1,69 @@
+{
+  "spec": 2,
+  "metadata": {
+    "name": "Neuro",
+    "tips": "",
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "authors": [
+      {
+        "name": "映素作坊",
+        "role": "模型",
+        "avatar": "avatar/L3.png",
+        "contact": {
+          "Afdian": "https://afdian.com/a/6TGESILA",
+          "Bilibili": "https://space.bilibili.com/17798027"
+        },
+        "comment": "官方出品，把这些模型上市！"
+      },
+      {
+        "name": "浅陌菌",
+        "role": "适配",
+        "avatar": "avatar/tcfox.png",
+        "contact": {
+          "Bilibili": "https://space.bilibili.com/24513198",
+          "Afdian（不及时更新）": "https://afdian.com/a/tc_fox"
+        },
+        "comment": "最美好的前途，可不要对我冷酷"
+      }
+    ],
+    "link": {
+      "home": "https://space.bilibili.com/17798027",
+      "donate": "https://afdian.com/a/6TGESILA"
+    }
+  },
+  "properties": {
+    "height_scale": 0.7,
+    "width_scale": 0.7,
+    "extra_animation": {
+      "extra.疑问": "表情-疑问",
+      "extra.流汗": "表情-流汗",
+      "extra.生气": "表情-生气",
+      "extra2": "坐",
+      "extra3": "你好",
+      "extra4": "对的",
+      "extra5": "不对",
+      "extra6": "摇啊摇"
+    },
+    "preview_animation": "idle",
+    "default_texture": "texture"
+  },
+  "files": {
+    "player": {
+      "model": {
+        "main": "models/main.json",
+        "arm": "models/arm.json"
+      },
+      "animation": {
+        "main": "animations/main.animation.json",
+        "arm": "animations/arm.animation.json",
+        "extra": "animations/extra.animation.json"
+      },
+      "texture": [
+        "textures/texture.png",
+        "textures/texture1.png"
+      ]
+    }
+  }
+}
