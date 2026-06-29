@@ -138,6 +138,7 @@
 - 0102：[#Dreamer](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0102)
 - 0103：[#浅陌菌](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0103)
 - 0104：[#科列夫斯基](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0104)
+- 0105：[#超级大鸡腿丶 | #Nss](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0105)
 <!-- AUTHORS_LIST_END -->
 
 ## 项目结构
