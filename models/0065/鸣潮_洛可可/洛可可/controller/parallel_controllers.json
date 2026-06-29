@@ -1,0 +1,294 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"player.pre_parallel_0": {
+			"states": {
+				"default": {
+					"animations": ["hair_physics", "pre_parallel1", "pre_parallel2", "pre_parallel3", "pre_parallel4", "pre_parallel5", "pre_parallel6", "pre_parallel7"]
+				}
+			}
+		},
+		"player.pre_parallel_1": {
+			"states": {
+				"default": {}
+			}
+		},
+		"player.pre_parallel_2": {
+			"states": {
+				"default": {
+					"animations": ["empty"],
+					"transitions": [
+						{"walk": "q.ground_speed!=0&&ysm.input_vertical>0&&ctrl.walk"},
+						{"后退": "q.ground_speed!=0&&ysm.input_vertical<-0.05&&ctrl.walk"}
+					],
+					"blend_transition": 0.2,
+					"blend_via_shortest_path": true
+				},
+				"walk": {
+					"animations": ["走"],
+					"transitions": [
+						{"default": "!ctrl.walk"},
+						{"后退": "q.ground_speed!=0&&ysm.input_vertical<-0.05&&ctrl.walk"}
+					],
+					"blend_transition": 0.2,
+					"blend_via_shortest_path": true
+				},
+				"后退": {
+					"animations": ["后退"],
+					"transitions": [
+						{"default": "!ctrl.walk"},
+						{"walk": "q.ground_speed!=0&&ysm.input_vertical>0&&ctrl.walk"}
+					],
+					"blend_transition": 0.2,
+					"blend_via_shortest_path": true
+				}
+			}
+		},
+		"player.pre_parallel_4": {
+			"states": {
+				"default": {}
+			}
+		},
+		"player.pre_parallel_5": {
+			"states": {
+				"default": {}
+			}
+		},
+		"player.pre_parallel_6": {
+			"states": {
+				"default": {}
+			}
+		},
+		"player.pre_parallel_7": {
+			"states": {
+				"default": {}
+			}
+		},
+		"player.parallel_0": {
+			"states": {
+				"default": {
+					"animations": ["parallel0", "parallel1", "parallel2", "parallel3", "parallel4", "parallel5", "parallel6", "parallel7"]
+				}
+			}
+		},
+		"player.parallel_2": {
+			"states": {
+				"default": {}
+			}
+		},
+		"player.parallel_4": {
+			"states": {
+				"default": {}
+			}
+		},
+		"player.parallel_5": {
+			"states": {
+				"default": {}
+			}
+		},
+		"player.parallel_6": {
+			"states": {
+				"default": {}
+			}
+		},
+		"player.parallel_7": {
+			"states": {
+				"default": {}
+			}
+		},
+		"player.parallel_8": {
+			"states": {
+				"default": {}
+			}
+		},
+		"player.post_main": {
+			"states": {
+				"default": {
+					"animations": ["new_idle_empty"],
+					"transitions": [
+						{"idle1": "v.next_idle == 1 && ctrl.idle && !ctrl.playing_extra_animation"},
+						{"idle2": "v.next_idle == 2 && ctrl.idle && !ctrl.playing_extra_animation"},
+						{"idle3": "v.next_idle == 3 && ctrl.idle && !ctrl.playing_extra_animation"},
+						{"idle4": "v.next_idle == 4 && ctrl.idle && !ctrl.playing_extra_animation"}
+					],
+					"blend_transition": 0.2,
+					"blend_via_shortest_path": true
+				},
+				"idle1": {
+					"animations": ["new_idle_1"],
+					"on_exit": ["v.next_idle = 0;"],
+					"transitions": [
+						{"default": "q.all_animations_finished || !ctrl.idle || ctrl.playing_extra_animation"}
+					],
+					"blend_transition": 0.2,
+					"blend_via_shortest_path": true
+				},
+				"idle2": {
+					"animations": ["new_idle_2"],
+					"on_exit": ["v.next_idle = 0;"],
+					"transitions": [
+						{"default": "q.all_animations_finished || !ctrl.idle || ctrl.playing_extra_animation"}
+					],
+					"blend_transition": 0.2,
+					"blend_via_shortest_path": true
+				},
+				"idle3": {
+					"animations": ["new_idle_3"],
+					"on_exit": ["v.next_idle = 0;"],
+					"transitions": [
+						{"default": "q.all_animations_finished || !ctrl.idle || ctrl.playing_extra_animation"}
+					],
+					"blend_transition": 0.2,
+					"blend_via_shortest_path": true
+				},
+				"idle4": {
+					"animations": ["new_idle_4"],
+					"on_exit": ["v.next_idle = 0;"],
+					"transitions": [
+						{"default": "q.all_animations_finished || !ctrl.idle || ctrl.playing_extra_animation"}
+					],
+					"blend_transition": 0.2,
+					"blend_via_shortest_path": true
+				}
+			}
+		},
+		"player.pre_parallel_3": {
+			"states": {
+				"default": {
+					"animations": ["empty"],
+					"transitions": [
+						{"起跳": "ctrl.jump"}
+					]
+				},
+				"起跳": {
+					"animations": ["jump起跳"],
+					"transitions": [
+						{"跳跃": "q.all_animations_finished"}
+					],
+					"blend_transition": 0.05,
+					"blend_via_shortest_path": true
+				},
+				"跳跃": {
+					"animations": ["jump"],
+					"transitions": [
+						{"落地": "q.vertical_speed<-10&&!ctrl.jump&&query.is_on_ground "},
+						{"default": "!ctrl.jump"}
+					],
+					"blend_transition": 0.05,
+					"blend_via_shortest_path": true
+				},
+				"落地": {
+					"animations": ["jump落地"],
+					"transitions": [
+						{"default": "q.all_animations_finished"}
+					],
+					"blend_transition": 0.05,
+					"blend_via_shortest_path": true
+				}
+			}
+		},
+		"player.parallel_3": {
+			"states": {
+				"default": {}
+			}
+		},
+		"player.post_swing": {
+			"states": {
+				"default": {
+					"animations": ["attack_empty"],
+					"on_exit": ["v.swing_sword=0;"],
+					"transitions": [
+						{"attack1": "v.swing_sword"},
+						{"fishing": "ysm.is_fishing"}
+					]
+				},
+				"attack1": {
+					"animations": ["sword_attack_01"],
+					"on_exit": ["v.swing_sword=0;"],
+					"transitions": [
+						{"attack2": "v.swing_sword"},
+						{"default": "q.all_animations_finished"}
+					],
+					"blend_transition": 0.05,
+					"blend_via_shortest_path": true
+				},
+				"attack2": {
+					"animations": ["sword_attack_02"],
+					"on_exit": ["v.swing_sword=0;"],
+					"transitions": [
+						{"attack3": "v.swing_sword"},
+						{"default": "q.all_animations_finished"}
+					],
+					"blend_transition": 0.05,
+					"blend_via_shortest_path": true
+				},
+				"attack3": {
+					"animations": ["sword_attack_03"],
+					"on_exit": ["v.swing_sword=0;"],
+					"transitions": [
+						{"default": "q.all_animations_finished"},
+						{"attack4": "v.swing_sword"}
+					],
+					"blend_transition": {
+						"0.0": 1,
+						"0.0056": 0.96985,
+						"0.0111": 0.88302,
+						"0.0167": 0.75,
+						"0.0222": 0.58682,
+						"0.0278": 0.41318,
+						"0.0333": 0.25,
+						"0.0389": 0.11698,
+						"0.0445": 0.03015,
+						"0.05": 0
+					},
+					"blend_via_shortest_path": true
+				},
+				"attack4": {
+					"animations": ["sword_attack_04"],
+					"on_exit": ["v.swing_sword=0;"],
+					"transitions": [
+						{"default": "q.all_animations_finished"},
+						{"attack1": "v.swing_sword"}
+					],
+					"blend_transition": {
+						"0.0": 1,
+						"0.0056": 0.96985,
+						"0.0111": 0.88302,
+						"0.0167": 0.75,
+						"0.0222": 0.58682,
+						"0.0278": 0.41318,
+						"0.0333": 0.25,
+						"0.0389": 0.11698,
+						"0.0445": 0.03015,
+						"0.05": 0
+					},
+					"blend_via_shortest_path": true
+				},
+				"fishing": {
+					"animations": ["swing:fishing_rod"],
+					"transitions": [
+						{"not_fishing": "!ysm.is_fishing"}
+					]
+				},
+				"not_fishing": {
+					"animations": ["swing:fishing_rod2"],
+					"transitions": [
+						{"default": "q.all_animations_finished"},
+						{"fishing": "ysm.is_fishing"}
+					]
+				}
+			}
+		},
+		"player.parallel_1": {
+			"states": {
+				"default": {
+					"animations": [
+						{"隐藏袜子": "v.socks==1"},
+						{"隐藏鞋子": "v.shoe==1"},
+						{"隐藏帽子": "v.hat==1"}
+					]
+				}
+			}
+		}
+	}
+}

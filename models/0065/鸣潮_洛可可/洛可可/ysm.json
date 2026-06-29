@@ -1,0 +1,262 @@
+{
+	"spec": 2,
+	"metadata": {
+		"name": "§9§l洛可可",
+		"tips": "§e§l愚人剧团副手、万能道具师兼即兴喜剧演员。 面容平静、波澜不惊的她乘着箱子划过船舱，井井有条地打理着剧团的一切。\n此模型为免费模型，禁止商业用途，如需服务器使用与我联系",
+		"license": {
+			"type": "CC BY-NC-ND 4.0"
+		},
+		"authors": [
+			{
+				"name": "烛火的次元宇宙",
+				"role": "模型",
+				"avatar": "avatar/zh.png",
+				"contact": {
+					"Afdian": "http://afdian.com/a/zhuhuo",
+					"Bilibili": "https://space.bilibili.com/57715833?spm_id_from=333.1007.0.0"
+				},
+				"comment": "还在成长的MC/YSM模型作者"
+			},
+			{
+				"name": "烛火的次元宇宙",
+				"role": "动画",
+				"avatar": "avatar/zh.png"
+			}
+		],
+		"link": {
+			"home": "https://space.bilibili.com/57715833?spm_id_from=333.33.0.0",
+			"donate": "http://afdian.com/a/zhuhuo"
+		}
+	},
+	"properties": {
+		"height_scale": 0.7,
+		"width_scale": 0.7,
+		"extra_animation": {
+			"空动画1": "#§l比例位置配置",
+			"空动画3": "#§l表情配置",
+			"YES": "§l是",
+			"NO": "§l否",
+			"#§l表情轮盘": "§l表情轮盘",
+			"#§l舞蹈轮盘": "§l舞蹈轮盘",
+			"#§l姿势合集": "§l姿势轮盘",
+			"待机动画": "§l待机动画"
+		},
+		"extra_animation_buttons": [
+			{
+				"id": "§l比例位置配置",
+				"name": "§l比例位置配置",
+				"config_forms": [
+					{
+						"type": "range",
+						"title": "§l模型主体大小",
+						"description": "",
+						"value": "v.player_root_size",
+						"step": 0.05,
+						"min": -0.2,
+						"max": 0.5
+					},
+					{
+						"type": "range",
+						"title": "§l模型上下比例大小",
+						"description": "",
+						"value": "v.player_y_size",
+						"step": 0.05,
+						"min": -0.5,
+						"max": 0.75
+					},
+					{
+						"type": "range",
+						"title": "§l模型左右比例大小",
+						"description": "",
+						"value": "v.player_x_size",
+						"step": 0.05,
+						"min": -0.2,
+						"max": 1
+					},
+					{
+						"type": "range",
+						"title": "§l§o模型前后比例大小",
+						"description": "",
+						"value": "v.player_z_size",
+						"step": 0.05,
+						"min": -0.9,
+						"max": 1
+					},
+					{
+						"type": "range",
+						"title": "§l模型上下位置",
+						"description": "",
+						"value": "v.position_y",
+						"step": 1,
+						"min": -30,
+						"max": 30
+					},
+					{
+						"type": "range",
+						"title": "§l模型左右位置",
+						"description": "",
+						"value": "v.position_x",
+						"step": 1,
+						"min": -30,
+						"max": 30
+					},
+					{
+						"type": "range",
+						"title": "§l模型前后位置",
+						"description": "",
+						"value": "v.position_z",
+						"step": 1,
+						"min": -30,
+						"max": 30
+					},
+					{
+						"type": "radio",
+						"title": "§l重置大小",
+						"description": "",
+						"value": "0",
+						"labels": {
+							"§l点击重置大小": "v.player_root_size=0;v.player_y_size=0;v.player_x_size=0;v.player_z_size=0"
+						}
+					},
+					{
+						"type": "radio",
+						"title": "§l重置位置",
+						"description": "",
+						"value": "0",
+						"labels": {
+							"§l点击重置位置": "v.position_y=0;v.position_x=0;v.position_z=0"
+						}
+					}
+				]
+			},
+			{
+				"id": "§l表情配置",
+				"name": "§l表情配置",
+				"config_forms": [
+					{
+						"type": "range",
+						"title": "§l切换眼型",
+						"description": "",
+						"value": "v.yj",
+						"step": 1,
+						"min": 0,
+						"max": 12
+					},
+					{
+						"type": "range",
+						"title": "§l切换嘴型",
+						"description": "",
+						"value": "v.zb",
+						"step": 1,
+						"min": 0,
+						"max": 15
+					}
+				]
+			}
+		],
+		"preview_animation": "gui",
+		"default_texture": "texture",
+		"render_layers_first": false,
+		"free": true,
+		"disable_preview_rotation": true,
+		"all_cutout": false,
+		"extra_animation_classify": [
+			{
+				"id": "§l坐姿动画",
+				"extra_animation": {
+					"坐姿1": "§l坐姿1",
+					"坐姿2": "§l坐姿2",
+					"坐姿3": "§l坐姿3",
+					"坐姿4": "§l坐姿4",
+					"坐姿5": "§l坐姿5",
+					"坐姿6": "§l坐姿6",
+					"坐姿7": "§l坐姿7",
+					"坐姿8": "§l坐姿8",
+					"坐姿9": "§l坐姿9",
+					"坐姿10": "§l坐姿10",
+					"边缘坐姿1": "§l边缘坐姿1",
+					"边缘坐姿2": "§l边缘坐姿2",
+					"边缘坐姿3": "§l边缘坐姿3",
+					"边缘坐姿4": "§l边缘坐姿4",
+					"边缘坐姿5": "§l边缘坐姿5"
+				}
+			},
+			{
+				"id": "§lPOSE动画",
+				"extra_animation": {
+					"POSE1": "§lPOSE1",
+					"POSE2": "§lPOSE2",
+					"POSE3": "§lPOSE3",
+					"POSE4": "§lPOSE4",
+					"POSE5": "§lPOSE5",
+					"POSE6": "§lPOSE6",
+					"POSE7": "§lPOSE7",
+					"POSE8": "§lPOSE8",
+					"POSE9": "§lPOSE9",
+					"POSE10": "§lPOSE10",
+					"POSE11": "§lPOSE11",
+					"POSE12": "§lPOSE12"
+				}
+			},
+			{
+				"id": "§l姿势合集",
+				"extra_animation": {
+					"#§l坐姿动画": "§l坐姿动画",
+					"#§lPOSE动画": "§lPOSE动画",
+					"立绘POSE": "§l立绘POSE"
+				}
+			},
+			{
+				"id": "§l舞蹈轮盘",
+				"extra_animation": {
+					"星瞳舞蹈": "§l舞蹈1",
+					"恋爱循环": "§l恋爱循环",
+					"星辉闪耀": "§l星辉闪耀",
+					"鹿乃子虎视眈眈": "§l鹿乃子虎视眈眈",
+					"I Can't Wait": "§lI Can't Wait"
+				}
+			},
+			{
+				"id": "§l表情轮盘",
+				"extra_animation": {
+					"打招呼": "§l打招呼",
+					"拍手": "§l拍手",
+					"庆祝": "§l庆祝",
+					"问号": "§l问号",
+					"生气": "§l生气",
+					"流汗": "§l流汗",
+					"惊讶": "§l惊讶"
+				}
+			}
+		],
+		"gui_no_lighting": false
+	},
+	"files": {
+		"player": {
+			"model": {
+				"main": "models/main.json",
+				"arm": "models/arm.json"
+			},
+			"animation": {
+				"main": "animations/main.animation.json",
+				"arm": "animations/arm.animation.json",
+				"extra": "animations/extra.animation.json",
+				"tac": "animations/tac.animation.json",
+				"carryon": "animations/carryon.animation.json",
+				"parcool": "animations/parcool.animation.json",
+				"swem": "animations/swem.animation.json",
+				"slashblade": "animations/slashblade.animation.json",
+				"tlm": "animations/tlm.animation.json",
+				"immersive_melodies": "animations/im.animation.json",
+				"irons_spell_books": "animations/iss.animation.json",
+				"fp_arm": "animations/fp.arm.animation.json"
+			},
+			"animation_controllers": ["controller/parallel_controllers.json"],
+			"texture": [
+				{
+					"uv": "textures/texture.png"
+				}
+			]
+		}
+	}
+}
