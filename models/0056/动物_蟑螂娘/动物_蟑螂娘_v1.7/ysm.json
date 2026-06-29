@@ -1,0 +1,232 @@
+{
+	"spec": 2,
+	"metadata": {
+		"name": "蜚蠊姬",
+		"tips": "【打不死的巷街霸主】\n生物娘化——蟑螂娘\n生存大师  暗巷美食家 城市精灵的具象化，会出现在各个地方\n适配YSM1.20.1-2.4.2",
+		"license": {
+			"type": "All Rights Reserved",
+			"desc": "共享模型 做来给大伙玩的"
+		},
+		"authors": [
+			{
+				"name": "哥斯拉",
+				"role": "模型",
+				"avatar": "avatar/gsl.png",
+				"contact": {
+					"Afdian": "https://afdian.com/a/6TGESILA",
+					"Bilibili": "https://space.bilibili.com/17798027"
+				},
+				"comment": "一个MC模型/YSM作者，想法很多，时间很少"
+			},
+			{
+				"name": "Mo红",
+				"avatar": "avatar/QQ图片20250920012356.png",
+				"role": "蟑螂娘提供",
+				"comment": "要来了蟑螂娘 拿来进行阴间创作"
+			},
+			{
+				"name": "三角初华",
+				"avatar": "avatar/QQ图片20250920011430.png",
+				"role": "其实是裤管做的动作",
+				"comment": "我怎么变成蟑螂了我怎么变成蟑螂了我怎么变成蟑螂了"
+			}
+		],
+		"link": {
+			"home": "https://modrinth.com/mod/yes-steve-model",
+			"donate": "https://afdian.com/a/ysmmod"
+		}
+	},
+	"properties": {
+		"height_scale": 0.7,
+		"width_scale": 0.7,
+		"extra_animation": {
+			"#舞蹈": "舞蹈",
+			"#动作": "动作",
+			"#Pose": "Pose",
+			"extra2": "#调整",
+			"sign1": "#调整2",
+			"henshin": "#变身！",
+			"——DANCE——": "---蜚蠊姬---",
+			"zlw": "蟑螂舞"
+		},
+		"extra_animation_classify": [
+			{
+				"id": "舞蹈",
+				"extra_animation": {
+					"#return": "返回按钮",
+					"dance_s1": "pockdance",
+					"dance_s2": "鹿乃子虎视眈眈",
+					"dance_s3": "dance",
+					"dance_s4": "alice didida",
+					"dance_s5": "摇啊摇",
+					"dance_s6": "开车车",
+					"dance_s7": "致命公司摇",
+					"dance_l1": "萝莉摇",
+					"dance_l2": "星辉闪耀",
+					"dance_l3": "橙色正义",
+					"dance_l4": "跺脚曳步",
+					"dance_l5": "催眠术",
+					"dance_l6": "互联网过度依存",
+					"dance_l7": "快远离互联网",
+					"dance_l8": "谎言舞者"
+				}
+			},
+			{
+				"id": "动作",
+				"extra_animation": {
+					"#return": "返回按钮",
+					"action1": "坐下",
+					"action2": "打招呼",
+					"action3": "鼓掌",
+					"action4": "点头",
+					"action5": "摇头",
+					"action6": "胜利",
+					"action7": "鬼脸",
+					"action8": "似了"
+				}
+			},
+			{
+				"id": "Pose",
+				"extra_animation": {
+					"#return": "返回按钮",
+					"Pose_Yeah": "pose",
+					"Pose_Set": "坐下",
+					"Pose_shy": "害羞",
+					"haqi": "哈气",
+					"paxia": "趴下埋头",
+					"paxia2": "趴下露头",
+					"tangxia": "睡大觉",
+					"suile": "碎了"
+				}
+			}
+		],
+		"extra_animation_buttons": [
+			{
+				"id": "调整",
+				"name": "选择表情",
+				"config_forms": [
+					{
+						"type": "radio",
+						"title": "选择表情",
+						"description": "可选择表情哦",
+						"value": "v.roaming.exp",
+						"labels": {
+							"无表情": "v.roaming.exp=0;",
+							"笑容": "v.roaming.exp=1;",
+							"笑容2": "v.roaming.exp=2;",
+							"生气": "v.roaming.exp=3;",
+							"哭哭": "v.roaming.exp=4;",
+							"脸红": "v.roaming.exp=5;",
+							"惊讶嘴": "v.roaming.exp=6;",
+							"打颤嘴": "v.roaming.exp=7;",
+							"笑容3": "v.roaming.exp=8;",
+							"慌张": "v.roaming.exp=9;",
+							"小猫嘴": "v.roaming.exp=10;"
+						}
+					},
+					{
+						"type": "radio",
+						"title": "选择表情符号",
+						"description": "可选择表情符号哦",
+						"value": "v.roaming.exps",
+						"labels": {
+							"关闭符号": "v.roaming.exps=0;",
+							"问号1": "v.roaming.exps=1;",
+							"问号2": "v.roaming.exps=2;",
+							"感叹号": "v.roaming.exps=3;",
+							"冒汗": "v.roaming.exps=4;",
+							"音符": "v.roaming.exps=5;"
+						}
+					},
+					{
+						"type": "checkbox",
+						"title": "黑脸",
+						"description": " (阴沉的黑脸)",
+						"value": "v.exps6"
+					},
+					{
+						"type": "checkbox",
+						"title": "生气符号",
+						"description": " (显示生气符号)",
+						"value": "v.exps7"
+					}
+				]
+			},
+			{
+				"id": "调整2",
+				"name": "调整选项2",
+				"config_forms": [
+					{
+						"type": "range",
+						"title": "身体大小/BodySize: ",
+						"description": "Change the player size (改变玩家大小)",
+						"value": "v.player_size",
+						"step": 0.05,
+						"min": 0.2,
+						"max": 5
+					},
+					{
+						"type": "range",
+						"title": "头部大小/HeadSize: ",
+						"description": "Change the head size (改变头部大小)",
+						"value": "v.head_size",
+						"step": 0.05,
+						"min": 0.7,
+						"max": 2
+					},
+					{
+						"type": "range",
+						"title": "角色位置/Position: ",
+						"description": "Change the head size (改变头部大小)",
+						"value": "v.player_loca",
+						"step": 0.5,
+						"min": -5,
+						"max": 5
+					},
+					{
+						"type": "checkbox",
+						"title": "切换Q版体型",
+						"description": " (切换成Q版体型)",
+						"value": "v.qqq"
+					},
+					{
+						"type": "checkbox",
+						"title": "蟑螂宠物",
+						"description": "切换蟑螂宠物的显示",
+						"value": "v.zl"
+					}
+				]
+			}
+		],
+		"preview_animation": "gui",
+		"default_texture": "default",
+		"free": true,
+		"disable_preview_rotation": true,
+		"render_layers_first": false,
+		"all_cutout": false
+	},
+	"files": {
+		"player": {
+			"model": {
+				"main": "models/main.json",
+				"arm": "models/arm.json"
+			},
+			"animation": {
+				"main": "animations/main.animation.json",
+				"arm": "animations/arm.animation.json",
+				"extra": "animations/extra.animation.json",
+				"tac": "animations/tac.animation.json",
+				"carryon": "animations/carryon.animation.json"
+			},
+			"texture": [
+				{
+					"uv": "textures/cockroach1.png"
+				},
+				{
+					"uv": "textures/cockroach2.png"
+				}
+			],
+			"animation_controllers": ["controller/parallel_controllers.json"]
+		}
+	}
+}

@@ -1,0 +1,353 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"拆件": {
+			"loop": true,
+			"bones": {
+				"UpperBody": {
+					"position": [0, 19, 0]
+				},
+				"Head": {
+					"position": [0, 20, 0]
+				},
+				"RightArm": {
+					"position": [-12, 0, 0]
+				},
+				"Skirt3": {
+					"position": [-33, 0, 0]
+				},
+				"Skirt": {
+					"position": [0, -16, 0]
+				},
+				"RightLeg": {
+					"position": [-18, 0, 0]
+				},
+				"Hair": {
+					"position": [-18, 0, 0]
+				}
+			}
+		},
+		"poss": {
+			"loop": true,
+			"bones": {
+				"AllBody": {
+					"rotation": [5, 20, 0]
+				},
+				"UpperBody": {
+					"rotation": [-2.5, 0, 0]
+				},
+				"AllHead": {
+					"rotation": [-5, 0, 0]
+				},
+				"Head": {
+					"rotation": [4.95968, -1.83883, 2.31213]
+				},
+				"LeftEyebrow": {
+					"position": [0, -1, 0]
+				},
+				"RightEyelidBase": {
+					"position": [0.125, 0, 0]
+				},
+				"RightPupil": {
+					"position": [0.225, 0, 0]
+				},
+				"LeftEyelid": {
+					"position": [0, 0, 1]
+				},
+				"LeftArm": {
+					"rotation": [34.64947, 52.44773, -0.06366]
+				},
+				"LeftForeArm": {
+					"rotation": [-80, 0, 0]
+				},
+				"RightArm": {
+					"rotation": [17.39638, -1.61888, 7.32417]
+				},
+				"RightForeArm": {
+					"rotation": [-17.5, 0, 0]
+				},
+				"Skirt": {
+					"rotation": [-15, 0, 0]
+				},
+				"LeftLeg": {
+					"rotation": [-2.09165, -25.16767, -9.15211]
+				},
+				"LeftFoot": {
+					"rotation": [0.04358, 0.43346, 8.23116],
+					"position": [0.01525, 0.17367, 0.01519]
+				},
+				"RightLeg": {
+					"rotation": [-9.12938, -2.10527, 0.84284]
+				},
+				"RightFoot": {
+					"rotation": [7.5, 0, 0],
+					"position": [0, 0.24407, -0.05411]
+				},
+				"Chest": {
+					"rotation": [0, 17.5, 0],
+					"position": [2.75795, 1, 5.4216]
+				},
+				"Weapon": {
+					"rotation": [119.65098, 31.3213, 16.48457],
+					"position": [-19.83291, 3.66612, 3.78032]
+				},
+				"RightPupil2": {
+					"position": [0.225, 0, 0]
+				},
+				"Mouth1": {
+					"position": [0, 0.075, -1],
+					"scale": [0.4, 1, 1]
+				},
+				"Mouth1-1": {
+					"scale": [0.4, 1, 1]
+				},
+				"Mouth0": {
+					"scale": [0.4, 1, 1]
+				},
+				"Mouth0-1": {
+					"scale": [0.4, 1, 1]
+				},
+				"Mouth0-2": {
+					"position": [-0.35833, 0.00732, 0.93357],
+					"scale": [0.4, 1, 1]
+				},
+				"Gun": {
+					"rotation": [-243.46641, 2.11089, -24.91643],
+					"position": [-11.35, 19.9, -4.1]
+				},
+				"shengqi": {
+					"scale": 0
+				}
+			}
+		},
+		"晕": {
+			"loop": true,
+			"bones": {
+				"RightEyebrow": {
+					"rotation": [0, 0, -5]
+				},
+				"LeftEyebrow": {
+					"rotation": [0, 0, 5]
+				},
+				"RightPupil": {
+					"position": [0, 0, 1]
+				},
+				"LeftPupil": {
+					"position": [0, 0, 1]
+				},
+				"Mouth2": {
+					"position": [0, 0, 1]
+				},
+				"han": {
+					"position": [0, 0, -1]
+				},
+				"mouth4": {
+					"position": [0, 0, -1],
+					"scale": [0.9, 0.3, 1]
+				},
+				"RightPupil2": {
+					"position": [0, 0, -1]
+				},
+				"LeftPupil2": {
+					"position": [0, 0, -1]
+				},
+				"shengqi": {
+					"scale": 0
+				}
+			}
+		},
+		"恶心": {
+			"loop": true,
+			"bones": {
+				"mouth5": {
+					"position": [0, 0, -1]
+				},
+				"heixian": {
+					"position": [0, 0, -1],
+					"scale": 1
+				},
+				"RightEyebrow": {
+					"rotation": [0, 0, -5]
+				},
+				"LeftEyebrow": {
+					"rotation": [0, 0, 5]
+				},
+				"shengqi": {
+					"scale": 0
+				}
+			}
+		},
+		"害羞": {
+			"loop": true,
+			"bones": {
+				"mouth4": {
+					"position": [0, 0, -1],
+					"scale": 1
+				},
+				"RightEyebrow": {
+					"rotation": [0, 0, -5]
+				},
+				"LeftEyebrow": {
+					"rotation": [0, 0, 5]
+				},
+				"RightPupil": {
+					"scale": 0
+				},
+				"RightPupil2": {
+					"position": [0, 0, -1]
+				},
+				"LeftPupil2": {
+					"position": [0, 0, -1]
+				},
+				"LeftPupil": {
+					"scale": 0
+				},
+				"shengqi": {
+					"scale": 0
+				},
+				"hy": {
+					"position": [0, 0, -1]
+				}
+			}
+		},
+		"笑": {
+			"loop": true,
+			"bones": {
+				"Mouth2": {
+					"position": [0, 0, -1]
+				},
+				"shengqi": {
+					"scale": 0
+				}
+			}
+		},
+		"微笑": {
+			"loop": true,
+			"bones": {
+				"Mouth3": {
+					"position": [0, 0, -1]
+				},
+				"shengqi": {
+					"scale": 0
+				}
+			}
+		},
+		"生气": {
+			"loop": true,
+			"bones": {
+				"Mouth0-2": {
+					"position": [0, 0, -1]
+				},
+				"RightEyebrow": {
+					"rotation": [0, 0, 10],
+					"position": [0, -0.2, 0]
+				},
+				"LeftEyebrow": {
+					"rotation": [0, 0, -10],
+					"position": [0, -0.2, 0]
+				},
+				"RightEyelid": {
+					"scale": [1, 0.8, 1]
+				},
+				"LeftEyelid": {
+					"scale": [1, 0.8, 1]
+				},
+				"shengqi": {
+					"scale": 1
+				}
+			}
+		},
+		"眯眯眼生气": {
+			"loop": true,
+			"bones": {
+				"Mouth3": {
+					"position": [0, 0, -1]
+				},
+				"heixian": {
+					"position": [0, 0, -1]
+				},
+				"RightEyebrow": {
+					"rotation": [0, 0, 5],
+					"position": [0, -1, 0]
+				},
+				"LeftEyebrow": {
+					"rotation": [0, 0, -5],
+					"position": [0, -1, 0]
+				},
+				"RightEyelid": {
+					"scale": [1, 0, 1]
+				},
+				"LeftEyelid": {
+					"scale": [1, 0, 1]
+				},
+				"shengqi": {
+					"scale": 1
+				},
+				"heixian2": {
+					"scale": 0
+				}
+			}
+		},
+		"眯眯眼笑": {
+			"loop": true,
+			"bones": {
+				"Mouth3": {
+					"position": [0, 0, -1]
+				},
+				"RightEyebrow": {
+					"rotation": [0, 0, 0],
+					"position": [0, -1, 0]
+				},
+				"LeftEyebrow": {
+					"rotation": [0, 0, 0],
+					"position": [0, -1, 0]
+				},
+				"RightEyelid": {
+					"scale": [1, 0, 1]
+				},
+				"LeftEyelid": {
+					"scale": [1, 0, 1]
+				},
+				"shengqi": {
+					"scale": 0
+				}
+			}
+		},
+		"不满": {
+			"loop": true,
+			"bones": {
+				"RightEyebrow": {
+					"rotation": [0, 0, 5],
+					"position": [0, -0.1, 0]
+				},
+				"LeftEyebrow": {
+					"rotation": [0, 0, -5],
+					"position": [0, -0.1, 0]
+				},
+				"shengqi": {
+					"scale": 1
+				},
+				"juezui": {
+					"position": [0, 0, -1]
+				}
+			}
+		},
+		"哭哭": {
+			"loop": true,
+			"bones": {
+				"mouth5": {
+					"position": [0, 0, -1]
+				},
+				"Eyes": {
+					"scale": 0
+				},
+				"kuku": {
+					"position": [0, 0, -1]
+				},
+				"shengqi": {
+					"scale": 0
+				}
+			}
+		}
+	}
+}

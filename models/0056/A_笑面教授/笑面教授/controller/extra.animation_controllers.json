@@ -1,0 +1,128 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"player.parallel_7": {
+			"initial_state": "自选",
+			"states": {
+				"自选": {
+					"animations": [
+						{"m": "v.roaming.mouth==0"},
+						{"微笑": "v.roaming.mouth==1"},
+						{"笑": "v.roaming.mouth==2"},
+						{"哦": "v.roaming.mouth==3"},
+						{"哼": "v.roaming.mouth==4"},
+						{"无口": "v.roaming.mouth==5"},
+						{"w": "v.roaming.mouth==6"},
+						{"呃": "v.roaming.mouth==7"},
+						{"呃啊": "v.roaming.mouth==8"},
+						{"啊": "v.roaming.mouth==9"},
+						{"汗": "v.roaming.face==1"},
+						{"黑线": "v.roaming.face==2"},
+						{"阴暗": "v.roaming.face==3"},
+						{"愤怒": "v.roaming.face==4"},
+						{"哭哭眼": "v.roaming.face==5"},
+						{"脸红": "v.roaming.face==6"}
+					],
+					"transitions": [
+						{"预设": "v.roaming.yushe"}
+					]
+				},
+				"预设": {
+					"animations": [
+						{"晕": "v.roaming.yushe==1"},
+						{"恶心": "v.roaming.yushe==2"},
+						{"害羞": "v.roaming.yushe==3"},
+						{"生气": "v.roaming.yushe==4"},
+						{"眯眯眼生气": "v.roaming.yushe==5"},
+						{"眯眯眼微笑": "v.roaming.yushe==6"},
+						{"眯眯眼笑": "v.roaming.yushe==7"},
+						{"不满": "v.roaming.yushe==8"},
+						{"哭哭": "v.roaming.yushe==9"}
+					],
+					"transitions": [
+						{"自选": "!v.roaming.yushe"}
+					]
+				}
+			}
+		},
+		"player.post_swing": {
+			"states": {
+				"default": {
+					"animations": ["empty"],
+					"on_exit": ["v.swing_sword=0;"],
+					"transitions": [
+						{"挥剑1": "v.swing_sword"}
+					]
+				},
+				"挥剑1": {
+					"animations": ["挥剑1"],
+					"on_exit": ["v.swing_sword=0;"],
+					"transitions": [
+						{"挥剑2": "v.swing_sword"},
+						{"default": "q.all_animations_finished"}
+					]
+				},
+				"挥剑2": {
+					"animations": ["挥剑2"],
+					"on_exit": ["v.swing_sword=0;"],
+					"transitions": [
+						{"挥剑3": "v.swing_sword"},
+						{"default": "q.all_animations_finished"}
+					]
+				},
+				"挥剑3": {
+					"animations": ["挥剑3"],
+					"on_exit": ["v.swing_sword=0;"],
+					"transitions": [
+						{"挥剑2": "v.swing_sword"},
+						{"default": "q.all_animations_finished"}
+					]
+				}
+			}
+		},
+		"player.post_use": {
+			"states": {
+				"default": {
+					"animations": ["empty"],
+					"transitions": [
+						{"shield": "ctrl.use('mainhand',':shield')||ctrl.use('offhand',':shield')"}
+					]
+				},
+				"shield": {
+					"animations": [
+						{"use_mainhand:shield": "ctrl.use('mainhand',':shield')"},
+						{"use_offhand:shield": "ctrl.use('offhand',':shield')"}
+					],
+					"transitions": [
+						{"default": "!(ctrl.use('mainhand',':shield')||ctrl.use('offhand',':shield'))"},
+						{"block": "ysm.in_shield_block_cooldown"}
+					],
+					"blend_transition": 0.05,
+					"blend_via_shortest_path": true
+				},
+				"block": {
+					"animations": [
+						{"block_mainhand:shield": "ctrl.use('mainhand',':shield')"},
+						{"block_offhand:shield": "ctrl.use('offhand',':shield')"}
+					],
+					"transitions": [
+						{"shield": "!ysm.in_shield_block_cooldown&&q.all_animations_finished"}
+					],
+					"blend_transition": {
+						"0.0": 1,
+						"0.0111": 0.96571,
+						"0.0222": 0.8738,
+						"0.0333": 0.74074,
+						"0.0444": 0.58299,
+						"0.0556": 0.41701,
+						"0.0667": 0.25926,
+						"0.0778": 0.1262,
+						"0.0889": 0.03429,
+						"0.1": 0
+					},
+					"blend_via_shortest_path": true
+				}
+			}
+		}
+	}
+}

@@ -7,6 +7,10 @@
 - 群聊
 	- QQ:530621549
 
+## 动画/动作
+
+- [星语TAT](models/0049/README)
+
 ## 下载
 
 - 百度网盘: https://pan.baidu.com/s/1vTVSij_YDqx6xvUgBHsAPg?pwd=kpsh

@@ -1,0 +1,158 @@
+{
+	"spec": 2,
+	"metadata": {
+		"name": "笑面教授",
+		"tips": "fuwafuwa",
+		"license": {
+			"type": "All Rights Reserved",
+			"desc:": ""
+		},
+		"authors": [
+			{
+				"name": "哥斯拉",
+				"avatar": "avatar/gsl.png",
+				"role": "模型"
+			},
+			{
+				"name": "星屑海螺",
+				"avatar": "avatar/星屑海螺.png",
+				"role": "动画适配"
+			}
+		]
+	},
+	"files": {
+		"player": {
+			"model": {
+				"main": "models/main.json",
+				"arm": "models/arm.json"
+			},
+			"animation": {
+				"main": "animations/main.animation.json",
+				"extra": "animations/extra.animation.json",
+				"arm": "animations/arm.animation.json"
+			},
+			"texture": [
+				{
+					"uv": "textures/texture.png"
+				}
+			],
+			"animation_controllers": ["controller/extra.animation_controllers.json"]
+		}
+	},
+	"properties": {
+		"height_scale": 0.7,
+		"width_scale": 0.7,
+		"extra_animation": {
+			"——自选表情嘴": "#表情配置",
+			"——预设表情": "#预设表情配置",
+			"#舞蹈": "舞蹈",
+			"poss": "poss",
+			"坐": "坐",
+			"躺": "躺",
+			"wink": "wink",
+			"#默认轮盘": "默认轮盘"
+		},
+		"preview_animation": "gui",
+		"gui_no_lighting": true,
+        "gui_foreground": "textures/gui/foreground.png",
+        "gui_background": "textures/gui/background.png",
+		"default_texture": "texture",
+		"free": false,
+		"render_layers_first": false,
+		"disable_preview_rotation": true,
+		"all_cutout": false,
+		"extra_animation_buttons": [
+			{
+				"id": "表情配置",
+				"name": "自选表情配置",
+				"config_forms": [
+					{
+						"type": "radio",
+						"title": "面部表情",
+						"description": "面部表情",
+						"value": "v.roaming.face",
+						"labels": {
+							"无": "v.roaming.face=0",
+							"汗": "v.roaming.face=1",
+							"黑线": "v.roaming.face=2",
+							"阴险": "v.roaming.face=3",
+							"愤怒喵": "v.roaming.face=4",
+							"哭哭眼": "v.roaming.face=5",
+							"脸红": "v.roaming.face=6"
+						}
+					},
+					{
+						"type": "radio",
+						"title": "嘴部表情",
+						"description": "嘴部表情",
+						"value": "v.roaming.mouth",
+						"labels": {
+							"默认": "v.roaming.mouth=0",
+							"微笑": "v.roaming.mouth=1",
+							"笑": "v.roaming.mouth=2",
+							"哦？": "v.roaming.mouth=3",
+							"哼": "v.roaming.mouth=4",
+							"无表情": "v.roaming.mouth=5",
+							"W": "v.roaming.mouth=6",
+							"呃": "v.roaming.mouth=7",
+							"呃啊": "v.roaming.mouth=8",
+							"啊": "v.roaming.mouth=9"
+						}
+					}
+				]
+			},
+			{
+				"id": "预设表情配置",
+				"name": "预设表情配置",
+				"config_forms": [
+					{
+						"type": "radio",
+						"title": "预设表情",
+						"description": "提前做好的表情",
+						"value": "v.roaming.yushe",
+						"labels": {
+							"无": "v.roaming.yushe=0",
+							"晕": "v.roaming.yushe=1",
+							"恶心": "v.roaming.yushe=2",
+							"害羞": "v.roaming.yushe=3",
+							"生气": "v.roaming.yushe=4",
+							"眯眯眼生气": "v.roaming.yushe=5",
+							"眯眯眼微笑": "v.roaming.yushe=6",
+							"眯眯眼笑": "v.roaming.yushe=7",
+							"不满": "v.roaming.yushe=8",
+							"哭哭": "v.roaming.yushe=9"
+						}
+					}
+				]
+			}
+		],
+		"extra_animation_classify": [
+			{
+				"id": "舞蹈",
+				"extra_animation": {
+					"萝莉摇": "萝莉摇",
+					"摇可乐": "摇可乐",
+					"星辉闪耀": "星辉闪耀",
+					"重度依赖": "重度依赖",
+					"doodle": "doodle",
+					"鹿乃子摇": "鹿乃子摇",
+					"摇啊摇": "摇啊摇",
+					"快远离互联网": "快远离互联网"
+				}
+			},
+			{
+				"id": "默认轮盘",
+				"extra_animation": {
+					"extra0": "extra0",
+					"extra1": "extra1",
+					"extra2": "extra2",
+					"extra3": "extra3",
+					"extra4": "extra4",
+					"extra5": "extra5",
+					"extra6": "extra6",
+					"extra7": "extra7"
+				}
+			}
+		]
+	}
+}

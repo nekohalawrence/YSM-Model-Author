@@ -1,0 +1,418 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"player.pre_parallel_0": {
+			"states": {
+				"default": {
+					"animations": ["hair_physics", "pre_parallel1", "pre_parallel2", "pre_parallel3", "pre_parallel4", "pre_parallel5", "pre_parallel6", "pre_parallel7"]
+				}
+			}
+		},
+		"player.pre_parallel_1": {},
+		"player.pre_parallel_2": {
+			"states": {
+				"default": {
+					"animations": []
+				}
+			}
+		},
+		"player.pre_parallel_3": {
+			"states": {
+				"default": {
+					"animations": []
+				}
+			}
+		},
+		"player.pre_parallel_4": {
+			"states": {
+				"default": {
+					"animations": []
+				}
+			}
+		},
+		"player.pre_parallel_5": {
+			"states": {
+				"default": {
+					"animations": []
+				}
+			}
+		},
+		"player.pre_parallel_6": {
+			"states": {
+				"default": {
+					"animations": []
+				}
+			}
+		},
+		"player.pre_parallel_7": {
+			"initial_state": "停止音乐",
+			"states": {
+				"停止音乐": {
+					"animations": ["sound_null"],
+					"transitions": [
+						{
+							"竹节虫2": "v.sound1==1?1"
+						}
+					]
+				},
+				"竹节虫2": {
+					"animations": ["sound1"],
+					"transitions": [
+						{
+							"停止音乐": "v.sound1==0?1"
+						}
+					]
+				}
+			}
+		},
+		"player.parallel_0": {
+			"states": {
+				"default": {
+					"animations": ["parallel0", "parallel1", "parallel2", "parallel3", "parallel4", "parallel5", "parallel6", "parallel7"]
+				}
+			}
+		},
+		"player.parallel_4": {
+			"states": {
+				"default": {
+					"animations": []
+				}
+			}
+		},
+		"player.parallel_5": {
+			"states": {
+				"default": {
+					"animations": []
+				}
+			}
+		},
+		"player.parallel_6": {
+			"states": {
+				"default": {
+					"animations": []
+				}
+			}
+		},
+		"player.parallel_2": {
+			"states": {
+				"default": {
+					"animations": ["attack_empty"],
+					"on_exit": ["v.swing_sword=0;v.attack=math.mod(v.attack+1,3);"],
+					"transitions": [
+						{
+							"attack1": "v.swing_sword&&v.attack==0&&!v.jump"
+						},
+						{
+							"attack2": "v.swing_sword&&v.attack==1&&!v.jump"
+						},
+						{
+							"attack3": "v.swing_sword&&v.attack==2&&!v.jump"
+						},
+						{
+							"attack_jump": "v.swing_sword&&v.jump"
+						}
+					]
+				},
+				"attack1": {
+					"animations": [
+						{
+							"sword_attack_01": "!ctrl.idle"
+						},
+						{
+							"sword_idle_attack_01": "ctrl.idle"
+						}
+					],
+					"on_exit": ["v.swing_sword=0;v.attack=math.mod(v.attack+1,3);"],
+					"transitions": [
+						{
+							"attack2": "v.swing_sword&&v.attack==1&&!v.jump"
+						},
+						{
+							"default": "q.all_animations_finished"
+						},
+						{
+							"attack_jump": "v.swing_sword&&v.jump"
+						}
+					],
+					"blend_transition": 0.05,
+					"blend_via_shortest_path": true
+				},
+				"attack2": {
+					"animations": [
+						{
+							"sword_attack_02": "!ctrl.idle"
+						},
+						{
+							"sword_idle_attack_02": "ctrl.idle"
+						}
+					],
+					"on_exit": ["v.swing_sword=0;v.attack=math.mod(v.attack+1,3);"],
+					"transitions": [
+						{
+							"attack3": "v.swing_sword&&v.attack==2&&!v.jump"
+						},
+						{
+							"default": "q.all_animations_finished"
+						},
+						{
+							"attack_jump": "v.swing_sword&&v.jump"
+						}
+					],
+					"blend_transition": 0.05,
+					"blend_via_shortest_path": true
+				},
+				"attack3": {
+					"animations": [
+						{
+							"sword_attack_03": "!ctrl.idle"
+						},
+						{
+							"sword_idle_attack_03": "ctrl.idle"
+						}
+					],
+					"on_exit": ["v.swing_sword=0;v.attack=math.mod(v.attack+1,3);"],
+					"transitions": [
+						{
+							"default": "q.all_animations_finished"
+						},
+						{
+							"attack1": "v.swing_sword&&v.attack==0&&!v.jump"
+						},
+						{
+							"attack_jump": "v.swing_sword&&v.jump"
+						}
+					],
+					"blend_transition": {
+						"0.0": 1,
+						"0.0056": 0.96985,
+						"0.0111": 0.88302,
+						"0.0167": 0.75,
+						"0.0222": 0.58682,
+						"0.0278": 0.41318,
+						"0.0333": 0.25,
+						"0.0389": 0.11698,
+						"0.0445": 0.03015,
+						"0.05": 0
+					},
+					"blend_via_shortest_path": true
+				},
+				"attack_jump": {
+					"animations": ["sword_jump_attack"],
+					"on_exit": ["v.swing_sword=0;v.attack=math.mod(v.attack+1,3);"],
+					"transitions": [
+						{
+							"default": "q.all_animations_finished"
+						},
+						{
+							"attack1": "v.swing_sword&&!v.jump"
+						}
+					],
+					"blend_transition": 0.05,
+					"blend_via_shortest_path": true
+				}
+			}
+		},
+		"player.parallel_1": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"表情0": "v.roaming.exp==0?1"
+						},
+						{
+							"表情1": "v.roaming.exp==1?1"
+						},
+						{
+							"表情2": "v.roaming.exp==2?1"
+						},
+						{
+							"表情3": "v.roaming.exp==3?1"
+						},
+						{
+							"表情4": "v.roaming.exp==4?1"
+						},
+						{
+							"表情5": "v.roaming.exp==5?1"
+						},
+						{
+							"表情6": "v.roaming.exp==6?1"
+						},
+						{
+							"表情7": "v.roaming.exp==7?1"
+						},
+						{
+							"表情8": "v.roaming.exp==8?1"
+						},
+						{
+							"表情9": "v.roaming.exp==9?1"
+						},
+						{
+							"表情10": "v.roaming.exp==10?1"
+						},
+						{
+							"表情11": "v.roaming.exp==11?1"
+						}
+					]
+				},
+				"表情0": {
+					"animations": ["button_sound"],
+					"transitions": [
+						{
+							"default": "!(v.roaming.exp==0?1)"
+						}
+					]
+				},
+				"表情1": {
+					"animations": ["button_sound"],
+					"transitions": [
+						{
+							"default": "!(v.roaming.exp==1?1)"
+						}
+					]
+				},
+				"表情2": {
+					"animations": ["button_sound"],
+					"transitions": [
+						{
+							"default": "!(v.roaming.exp==2?1)"
+						}
+					]
+				},
+				"表情3": {
+					"animations": ["button_sound"],
+					"transitions": [
+						{
+							"default": "!(v.roaming.exp==3?1)"
+						}
+					]
+				},
+				"表情4": {
+					"animations": ["button_sound"],
+					"transitions": [
+						{
+							"default": "!(v.roaming.exp==4?1)"
+						}
+					]
+				},
+				"表情5": {
+					"animations": ["button_sound"],
+					"transitions": [
+						{
+							"default": "!(v.roaming.exp==5?1)"
+						}
+					]
+				},
+				"表情6": {
+					"animations": ["button_sound"],
+					"transitions": [
+						{
+							"default": "!(v.roaming.exp==6?1)"
+						}
+					]
+				},
+				"表情7": {
+					"animations": ["button_sound"],
+					"transitions": [
+						{
+							"default": "!(v.roaming.exp==7?1)"
+						}
+					]
+				},
+				"表情8": {
+					"animations": ["button_sound"],
+					"transitions": [
+						{
+							"default": "!(v.roaming.exp==8?1)"
+						}
+					]
+				},
+				"表情9": {
+					"animations": ["button_sound"],
+					"transitions": [
+						{
+							"default": "!(v.roaming.exp==9?1)"
+						}
+					]
+				},
+				"表情10": {
+					"animations": ["button_sound"],
+					"transitions": [
+						{
+							"default": "!(v.roaming.exp==10?1)"
+						}
+					]
+				},
+				"表情11": {
+					"animations": ["button_sound"],
+					"transitions": [
+						{
+							"default": "!(v.roaming.exp==11?1)"
+						}
+					]
+				}
+			}
+		},
+		"player.parallel_7": {
+			"initial_state": "spear",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"spear": "ctrl.hold('mainhand', ':spear')"
+						}
+					]
+				},
+				"spear": {
+					"animations": ["hold_mainhand:spear_use", ""],
+					"transitions": [
+						{
+							"spear_not_idle": "q.all_animations_finished"
+						},
+						{
+							"default": "!ctrl.hold('mainhand', ':spear')"
+						}
+					]
+				},
+				"spear_idle": {
+					"animations": ["hold_mainhand:spear_idle"],
+					"transitions": [
+						{
+							"spear_not_idle": "!ctrl.idle"
+						},
+						{
+							"default": "!ctrl.hold('mainhand', ':spear')"
+						},
+						{
+							"swing": "v.swing_spear"
+						}
+					],
+					"blend_transition": 0.3
+				},
+				"spear_not_idle": {
+					"animations": ["hold_mainhand:spear_not_idle"],
+					"transitions": [
+						{
+							"spear_idle": "ctrl.idle"
+						},
+						{
+							"default": "!ctrl.hold('mainhand', ':spear')"
+						},
+						{
+							"swing": "v.swing_spear"
+						}
+					],
+					"blend_transition": 0.3,
+					"blend_via_shortest_path": true
+				},
+				"swing": {
+					"animations": ["swing:spear_use"],
+					"transitions": [
+						{
+							"spear_idle": "q.all_animations_finished"
+						}
+					]
+				}
+			}
+		}
+	}
+}
