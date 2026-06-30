@@ -1,0 +1,65 @@
+name: Translate README to English
+
+on:
+  push:
+    paths:
+      - 'README.md'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  translate-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install translation dependency
+        run: pip install deep-translator
+
+      - name: Translate README.md to README-EN.md
+        run: |
+          python - <<'PY'
+          import os
+          from deep_translator import GoogleTranslator
+
+          source_path = 'README.md'
+          target_path = 'README-EN.md'
+
+          if not os.path.exists(source_path):
+              raise FileNotFoundError(f'{source_path} not found')
+
+          with open(source_path, 'r', encoding='utf-8') as f:
+              source_text = f.read()
+
+          translator = GoogleTranslator(source='zh-CN', target='en')
+          translated_text = translator.translate(source_text)
+
+          if not translated_text:
+              raise RuntimeError('Translation returned empty content')
+
+          with open(target_path, 'w', encoding='utf-8') as f:
+              f.write(translated_text)
+          print(f'Wrote translated README to {target_path}')
+          PY
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README-EN.md
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: auto-translate README.md to README-EN.md"
+            git push
+          fi
