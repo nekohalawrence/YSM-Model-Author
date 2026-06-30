@@ -9,4 +9,4 @@
 
 ## 动画/动作
 
-- [星语TAT](models/0049/README)
+- [0049-星语TAT](../0049/README)
