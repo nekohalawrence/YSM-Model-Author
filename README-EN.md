@@ -1,10 +1,37 @@
-[中文](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/blob/main/README.md), English
+中文, [English](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/blob/main/README-EN.md)
 
 # FREE-YSM-AUTHOR
 
-> Free models collected and categorized by author, containing ~absolutely no paid models.~
+> 收集并按作者分类的免费模型，~绝无付费模型。~
 
-## Author Index
+> 推荐一个 ysm 模型管理软件 [ysm-model-manager](https://github.com/eghrhegpe/ysm-model-manager)
+
+<details>
+
+<summary>更新/话痨日志</summary>
+
+# 2026-06-29
+
+- 将一些团队模型进行合并，只在创建此模型的作者放出对应的模型，其他作者作为对应的负责的部分进行附属。
+- 整理了许久感觉这个分类模式还是有点问题，找不到想用的模型，本质上是对免费模型的集合，很多付费模型是没有的，用作者来分免费模型的质量可用只有几家质量比较好，可能以模型的对象作为分类依据比较好。
+
+# 2026-05-21
+
+- 大部分模型在高版本无法使用，建议只用较新的加密模型（使用 ysmpaser 解密，较早的模型也是无法解密的），或者给源文件的模型。
+
+# 2026-05-11
+
+- 去除 pages 页面，决定在我能够学会一个合适的内容呈现形式时，再去实践。
+- 决定在今年年底之前，将所有作者的元信息进行更新，~如果有时间将为每一个模型附加预览图~。
+
+# 2026-05-03
+
+- 决定只更新一些较为优质的模型，其他模型不收集了。
+- 修改优质 mod 分支，只留下最新的 mod
+
+</details>
+
+## 作者索引
 
 <!-- AUTHORS_LIST_START -->
 - 0000：[#-OMEGAZERO-](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0000)
@@ -114,33 +141,33 @@
 - 0105：[#超级大鸡腿丶 | #Nss](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0105)
 <!-- AUTHORS_LIST_END -->
 
-## Project Structure
+## 项目结构
 
-> It may be subject to change in the future.
+> 后续可能会更改
 
 ```
-models/                    <-- Root directory of models
-  ├─ 0000/                 <-- First-level folder: Author ID
-  │    ├── 模型名称1/       <-- Second-level folder: model name
-  │    │    ├─ preview.jpg <-- (Mandatory) Preview image, with a fixed name
-  │    │    ├─ tags.txt    <-- (Optional) Tag file, containing: anime, mecha, red
-  │    │    ├─ v1.0.zip    <-- model files, can have multiple
+models/                         <-- 模型根目录
+  ├── 0000/                     <-- 第一级文件夹：作者ID
+  │    ├── 模型名称1/            <-- 第二级文件夹：模型名
+  │    │    ├── preview.jpg     <-- (必须) 预览图，名字固定
+  │    │    ├── tags.txt        <-- (选填) 标签文件，里面写：二次元, 机甲, 红色
+  │    │    ├── v1.0.zip        <-- 模型文件，可以有多个
   │    │    └── v2.0.zip
-  │    └── Model Name 2/
-  │    └── README.md       <-- Author metadata
+  │    └── 模型名称2/
+  │    └── README.md            <-- 作者元信息   
   └── 0001/
 ```
 
-## Notes
+## 注意事项
 
-- The prefix ABC is a personal preference ranking (level of production quality/finish), and has no other meaning.
-- The compressed package contains the project source files, while `.ysm` is the encrypted model file.
+* 前缀 ABC 是个人偏好的等级划分（制作质量/完成度），并无其他含义。
+* 压缩包内包含项目源码文件，而 `.ysm` 是加密后的模型文件。
 
-## Postscript
+## 后记
 
-- This project is mainly for my personal storage and use.
-- I’m not very familiar with how to use GitHub. If you want to modify anything, you can only tell me through an issue, or you can clone the repository yourself and make changes.
+* 本项目主要用于个人存储和使用。
+* 我对 GitHub 的使用不太熟悉。如果你想修改任何内容，只能通过 Issue 告知我，或者你可以自行克隆仓库并进行更改。
 
-## Thanks to the project
+## 致谢项目
 
-- https://github.com/Elaina69/Yes-Steve-Model-Repo
+* [https://github.com/Elaina69/Yes-Steve-Model-Repo](https://github.com/Elaina69/Yes-Steve-Model-Repo)

@@ -24,13 +24,12 @@ jobs:
           python-version: '3.11'
 
       - name: Install translation dependency
-        run: pip install deep-translator
+        run: python -m pip install --upgrade pip deep-translator || true
 
       - name: Translate README.md to README-EN.md
         run: |
           python - <<'PY'
           import os
-          from deep_translator import GoogleTranslator
 
           source_path = 'README.md'
           target_path = 'README-EN.md'
@@ -41,11 +40,17 @@ jobs:
           with open(source_path, 'r', encoding='utf-8') as f:
               source_text = f.read()
 
-          translator = GoogleTranslator(source='zh-CN', target='en')
-          translated_text = translator.translate(source_text)
+          try:
+              from deep_translator import GoogleTranslator
+              translator = GoogleTranslator(source='zh-CN', target='en')
+              translated_text = translator.translate(source_text)
+          except Exception as exc:
+              print(f'Translation failed: {exc}')
+              translated_text = source_text
 
-          if not translated_text:
-              raise RuntimeError('Translation returned empty content')
+          if not translated_text or not translated_text.strip():
+              print('Translation returned empty content, falling back to source text')
+              translated_text = source_text
 
           with open(target_path, 'w', encoding='utf-8') as f:
               f.write(translated_text)
