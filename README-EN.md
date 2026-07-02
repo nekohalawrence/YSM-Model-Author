@@ -1,37 +1,35 @@
-中文, [English](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/blob/main/README-EN.md)
+[中文](https://github.com/nekohalawrence/FREE-YSM-AUTHOR), English
 
 # FREE-YSM-AUTHOR
 
-> 收集并按作者分类的免费模型，~绝无付费模型。~
+> A collection of free models categorized by author. ~Absolutely no paid models.~
 
-> 推荐一个 ysm 模型管理软件 [ysm-model-manager](https://github.com/eghrhegpe/ysm-model-manager)
-
-<details>
-
-<summary>更新/话痨日志</summary>
+> Recommended YSM model management software: [ysm-model-manager](https://github.com/eghrhegpe/ysm-model-manager)
 
 # 2026-06-29
 
-- 将一些团队模型进行合并，只在创建此模型的作者放出对应的模型，其他作者作为对应的负责的部分进行附属。
-- 整理了许久感觉这个分类模式还是有点问题，找不到想用的模型，本质上是对免费模型的集合，很多付费模型是没有的，用作者来分免费模型的质量可用只有几家质量比较好，可能以模型的对象作为分类依据比较好。
+- Merged several team models. The models are now hosted only under the primary author who created them, while other contributing authors are attached as subsidiaries to their respective parts.
+- After organizing this for a while, I still feel there are issues with this classification approach, making it hard to find specific models. It is essentially a collection of free models (with many paid ones unavailable). Categorizing by author only highlights a few high-quality creators. It might be better to classify models based on the target object instead.
+    
 
 # 2026-05-21
 
-- 大部分模型在高版本无法使用，建议只用较新的加密模型（使用 ysmpaser 解密，较早的模型也是无法解密的），或者给源文件的模型。
+- Most models cannot be used in higher game versions. It is recommended to use only newer encrypted models (decrypted using ysmparser, as older models cannot be decrypted either) or the models provided with source files.
+    
 
 # 2026-05-11
 
-- 去除 pages 页面，决定在我能够学会一个合适的内容呈现形式时，再去实践。
-- 决定在今年年底之前，将所有作者的元信息进行更新，~如果有时间将为每一个模型附加预览图~。
+- Removed the Pages site. I decided to implement it later once I learn a suitable way to present the content.
+- Decided to update the metadata for all authors before the end of this year. ~If time permits, a preview image will be attached to each model.~
+    
 
 # 2026-05-03
 
-- 决定只更新一些较为优质的模型，其他模型不收集了。
-- 修改优质 mod 分支，只留下最新的 mod
+- Decided to only update high-quality models and stop collecting others.
+- Modified the premium mod branch to keep only the latest mods.
+    
 
-</details>
-
-## 作者索引
+## Author Index
 
 <!-- AUTHORS_LIST_START -->
 - 0000：[#-OMEGAZERO-](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0000)
@@ -140,34 +138,37 @@
 - 0104：[#科列夫斯基](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0104)
 - 0105：[#超级大鸡腿丶 | #Nss](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0105)
 <!-- AUTHORS_LIST_END -->
+    
 
-## 项目结构
+## Repository Structure
 
-> 后续可能会更改
+> Subject to change in the future
 
 ```
-models/                         <-- 模型根目录
-  ├── 0000/                     <-- 第一级文件夹：作者ID
-  │    ├── 模型名称1/            <-- 第二级文件夹：模型名
-  │    │    ├── preview.jpg     <-- (必须) 预览图，名字固定
-  │    │    ├── tags.txt        <-- (选填) 标签文件，里面写：二次元, 机甲, 红色
-  │    │    ├── v1.0.zip        <-- 模型文件，可以有多个
+models/                         <-- Root directory for models
+  ├── 0000/                     <-- 1st level folder: Author ID
+  │    ├── Model Name 1/        <-- 2nd level folder: Model Name
+  │    │    ├── preview.jpg     <-- (Required) Preview image, fixed name
+  │    │    ├── tags.txt        <-- (Optional) Tag file, contains: Anime, Mecha, Red
+  │    │    ├── v1.0.zip        <-- Model file, multiple files allowed
   │    │    └── v2.0.zip
-  │    └── 模型名称2/
-  │    └── README.md            <-- 作者元信息   
+  │    └── Model Name 2/
+  │    └── README.md            <-- Author metadata   
   └── 0001/
 ```
 
-## 注意事项
+## Notes
 
-* 前缀 ABC 是个人偏好的等级划分（制作质量/完成度），并无其他含义。
-* 压缩包内包含项目源码文件，而 `.ysm` 是加密后的模型文件。
+- The prefixes A, B, and C represent personal tier preferences (based on production quality/completion level) and carry no other meaning.
+- The compressed packages contain the project source files, whereas `.ysm` files are the encrypted model files.
+    
 
-## 后记
+## Afterword
 
-* 本项目主要用于个人存储和使用。
-* 我对 GitHub 的使用不太熟悉。如果你想修改任何内容，只能通过 Issue 告知我，或者你可以自行克隆仓库并进行更改。
+- This project is primarily intended for personal storage and usage.
+- I am not very familiar with using GitHub. If you would like to modify any content, please inform me via an Issue, or you can clone the repository and make the changes yourself.
+    
 
-## 致谢项目
+## Acknowledgments
 
-* [https://github.com/Elaina69/Yes-Steve-Model-Repo](https://github.com/Elaina69/Yes-Steve-Model-Repo)
+- [https://github.com/Elaina69/Yes-Steve-Model-Repo](https://github.com/Elaina69/Yes-Steve-Model-Repo)
