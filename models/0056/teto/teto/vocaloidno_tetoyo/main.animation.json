@@ -1,0 +1,493 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"idle": {
+			"loop": true,
+			"animation_length": 3
+		},
+		"walk": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"AllHead": {
+					"rotation": [0, 0, 0]
+				},
+				"Head": {
+					"rotation": {
+						"0.0": [1.82548, 1.99465, 2.24747],
+						"0.0417": [1.39867, 1.61791, 2.1297],
+						"0.0833": [1.11263, 1.15236, 1.91928],
+						"0.125": [0.99929, 0.59675, 1.58722],
+						"0.1667": [1.08903, -0.03657, 1.09688],
+						"0.2083": [1.38572, -0.71046, 0.42209],
+						"0.25": [1.82548, -1.35733, -0.38742],
+						"0.2917": [2.26523, -1.89491, -1.15298],
+						"0.3333": [2.56193, -2.26126, -1.7168],
+						"0.375": [2.65167, -2.43598, -2.06292],
+						"0.4167": [2.53832, -2.43176, -2.23817],
+						"0.4583": [2.25228, -2.27537, -2.28869],
+						"0.5": [1.82548, -1.99465, -2.24747],
+						"0.5417": [1.39867, -1.61791, -2.1297],
+						"0.5833": [1.11263, -1.15236, -1.91928],
+						"0.625": [0.99929, -0.59675, -1.58722],
+						"0.6667": [1.08903, 0.03657, -1.09688],
+						"0.7083": [1.38572, 0.71046, -0.42209],
+						"0.75": [1.82548, 1.35733, 0.38742],
+						"0.7917": [2.26523, 1.89491, 1.15298],
+						"0.8333": [2.56193, 2.26126, 1.7168],
+						"0.875": [2.65167, 2.43598, 2.06292],
+						"0.9167": [2.53832, 2.43176, 2.23817],
+						"0.9583": [2.25228, 2.27537, 2.28869],
+						"1.0": [1.82548, 1.99465, 2.24747]
+					},
+					"position": [0, 0, 0]
+				},
+				"bone": {
+					"rotation": {
+						"0.0": [0, 0, -10],
+						"0.5": [0, 0, 7.5],
+						"1.0": [0, 0, -10]
+					}
+				},
+				"ALLBodyssss": {
+					"rotation": {
+						"0.0": [0, 0, -10],
+						"0.5": [0, 0, 7.5],
+						"1.0": [0, 0, -10]
+					}
+				}
+			}
+		},
+		"run": {
+			"loop": true,
+			"animation_length": 0.6667,
+			"bones": {
+				"Head": {
+					"rotation": {
+						"0.0": [-15.25, 17.41, -0.82],
+						"0.0417": [-17.46, 16.61, -0.55],
+						"0.0833": [-19.35, 11.77, -0.43],
+						"0.125": [-18.37, 5.19, -0.07],
+						"0.1667": [-17.37, -0.92, 0.25],
+						"0.2083": [-16.44, -6.54, 0.53],
+						"0.25": [-15.64, -11.51, 0.75],
+						"0.2917": [-15.09, -15.48, 0.89],
+						"0.3333": [-15.25, -17.41, 0.82],
+						"0.375": [-17.46, -16.61, 0.55],
+						"0.4167": [-19.35, -11.77, 0.43],
+						"0.4583": [-18.37, -5.19, 0.07],
+						"0.5": [-17.37, 0.92, -0.25],
+						"0.5417": [-16.44, 6.54, -0.53],
+						"0.5833": [-15.64, 11.51, -0.75],
+						"0.625": [-15.09, 15.48, -0.89],
+						"0.6667": [-15.25, 17.41, -0.82]
+					}
+				},
+				"bone": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.6667": [0, 360, 0]
+					}
+				},
+				"ALLBodyssss": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.6667": [0, 360, 0]
+					}
+				}
+			}
+		},
+		"jump": {
+			"loop": true,
+			"animation_length": 0.75
+		},
+		"sneak": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"Root": {
+					"position": [0, 1.475, 0]
+				},
+				"ALLBodyssss": {
+					"rotation": {
+						"0.0": [0, 0, -10],
+						"0.5": [0, 0, 7.5],
+						"1.0": [0, 0, -10]
+					}
+				},
+				"yo": {
+					"scale": 1
+				}
+			}
+		},
+		"sneaking": {
+			"loop": true,
+			"bones": {
+				"Root": {
+					"position": [0, 1.475, 0]
+				},
+				"yo": {
+					"scale": 1
+				}
+			}
+		},
+		"swim": {
+			"loop": true,
+			"animation_length": 1
+		},
+		"swim_stand": {
+			"loop": true,
+			"animation_length": 1
+		},
+		"fly": {
+			"loop": true,
+			"animation_length": 0.75
+		},
+		"elytra_fly": {
+			"loop": true,
+			"animation_length": 0.3333
+		},
+		"sit": {
+			"loop": true
+		},
+		"ride": {
+			"loop": true
+		},
+		"ride_pig": {
+			"animation_length": 0.375
+		},
+		"boat": {
+			"loop": true
+		},
+		"climb": {
+			"loop": true,
+			"animation_length": 1
+		},
+		"climbing": {
+			"loop": true
+		},
+		"attacked": {
+			"animation_length": 0.4583,
+			"bones": {
+				"bone3": {
+					"scale": 1
+				}
+			}
+		},
+		"death": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"bones": {
+				"bone3": {
+					"scale": 1
+				}
+			}
+		},
+		"sleep": {
+			"animation_length": 0.375
+		},
+		"riptide": {
+			"loop": true,
+			"animation_length": 0.25
+		},
+		"use_mainhand": {
+			"animation_length": 0.375
+		},
+		"use_offhand": {
+			"animation_length": 0.375
+		},
+		"swing_hand": {
+			"animation_length": 0.375,
+			"bones": {
+				"ALLBodyssss": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.0833": [34.75, 0, 0],
+						"0.375": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.0833": [0, 2.83991, -4.12771],
+						"0.375": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"swing_offhand": {
+			"animation_length": 0.375
+		},
+		"ladder_up": {
+			"loop": true,
+			"animation_length": 1
+		},
+		"ladder_stillness": {
+			"loop": true,
+			"animation_length": 1
+		},
+		"ladder_down": {
+			"loop": true,
+			"animation_length": 1
+		},
+		"parallel0": {
+			"loop": true,
+			"bones": {
+				"RightEyesBase": {
+					"position": ["ysm.head_yaw/180", "ysm.head_pitch/360", 0]
+				},
+				"LeftEyesBase": {
+					"position": ["ysm.head_yaw/180", "ysm.head_pitch/360", 0]
+				}
+			}
+		},
+		"parallel1": {
+			"loop": true,
+			"animation_length": 0.4583,
+			"timeline": {
+				"0.0": [
+					"v.L1_F=2;",
+					"v.L1_C=0.6;",
+					"v.L1_R=90;",
+					"v.L1_K1=v.L1_C/math.pi/v.L1_F;",
+					"v.L1_K2=1/math.pow(2*math.pi*v.L1_F,2);",
+					"v.L1_K3=v.L1_R*v.L1_C/2/math.pi/v.L1_F;"
+				],
+				"0.0417": [
+					"v.L2_F=2;",
+					"v.L2_C=0.6;",
+					"v.L2_R=60;",
+					"v.L2_K1=v.L2_C/math.pi/v.L2_F;",
+					"v.L2_K2=1/math.pow(2*math.pi*v.L2_F,2);",
+					"v.L2_K3=v.L2_R*v.L2_C/2/math.pi/v.L2_F;"
+				],
+				"0.0833": [
+					"v.L3_F=2;",
+					"v.L3_C=0.6;",
+					"v.L3_R=15;",
+					"v.L3_K1=v.L3_C/math.pi/v.L3_F;",
+					"v.L3_K2=1/math.pow(2*math.pi*v.L3_F,2);",
+					"v.L3_K3=v.L3_R*v.L3_C/2/math.pi/v.L3_F;"
+				],
+				"0.125": [
+					"v.L4_F=2;",
+					"v.L4_C=0.5;",
+					"v.L4_R=28;",
+					"v.L4_K1=v.L4_C/math.pi/v.L4_F;",
+					"v.L4_K2=1/math.pow(2*math.pi*v.L4_F,2);",
+					"v.L4_K3=v.L4_R*v.L4_C/2/math.pi/v.L4_F;"
+				],
+				"0.1667": [
+					"v.L5_F=2;",
+					"v.L5_C=0.5;",
+					"v.L5_R=28;",
+					"v.L5_K1=v.L5_C/math.pi/v.L5_F;",
+					"v.L5_K2=1/math.pow(2*math.pi*v.L5_F,2);",
+					"v.L5_K3=v.L5_R*v.L5_C/2/math.pi/v.L5_F;"
+				],
+				"0.2083": [
+					"v.L6_F=1.2;",
+					"v.L6_C=0.8;",
+					"v.L6_R=10;",
+					"v.L6_K1=v.L6_C/math.pi/v.L6_F;",
+					"v.L6_K2=1/math.pow(2*math.pi*v.L6_F,2);",
+					"v.L6_K3=v.L6_R*v.L6_C/2/math.pi/v.L6_F;"
+				],
+				"0.25": [
+					"v.L7_F=5;",
+					"v.L7_C=0.2;",
+					"v.L7_R=160;",
+					"v.L7_K1=v.L7_C/math.pi/v.L7_F;",
+					"v.L7_K2=1/math.pow(2*math.pi*v.L7_F,2);",
+					"v.L7_K3=v.L7_R*v.L7_C/2/math.pi/v.L7_F;"
+				],
+				"0.2917": [
+					"v.L8_F=5;",
+					"v.L8_C=0.2;",
+					"v.L8_R=160;",
+					"v.L8_K1=v.L8_C/math.pi/v.L8_F;",
+					"v.L8_K2=1/math.pow(2*math.pi*v.L8_F,2);",
+					"v.L8_K3=v.L8_R*v.L8_C/2/math.pi/v.L8_F;"
+				],
+				"0.3333": [
+					"v.L9_F=1.2;",
+					"v.L9_C=0.6;",
+					"v.L9_R=10;",
+					"v.L9_K1=v.L9_C/math.pi/v.L9_F;",
+					"v.L9_K2=1/math.pow(2*math.pi*v.L9_F,2);",
+					"v.L9_K3=v.L9_R*v.L9_C/2/math.pi/v.L9_F;"
+				],
+				"0.375": [
+					"v.L10_F=1.2;",
+					"v.L10_C=0.6;",
+					"v.L10_R=10;",
+					"v.L10_K1=v.L10_C/math.pi/v.L10_F;",
+					"v.L10_K2=1/math.pow(2*math.pi*v.L10_F,2);",
+					"v.L10_K3=v.L10_R*v.L10_C/2/math.pi/v.L10_F;"
+				],
+				"0.4167": [
+					"v.L11_F=1.2;",
+					"v.L11_C=0.6;",
+					"v.L11_R=10;",
+					"v.L11_K1=v.L11_C/math.pi/v.L11_F;",
+					"v.L11_K2=1/math.pow(2*math.pi*v.L11_F,2);",
+					"v.L11_K3=v.L11_R*v.L11_C/2/math.pi/v.L11_F;"
+				],
+				"0.4583": [
+					"v.L12_F=5;",
+					"v.L12_C=0.8;",
+					"v.L12_R=200;",
+					"v.L12_K1=v.L12_C/math.pi/v.L12_F;",
+					"v.L12_K2=1/math.pow(2*math.pi*v.L12_F,2);",
+					"v.L12_K3=v.L12_R*v.L12_C/2/math.pi/v.L12_F;"
+				]
+			}
+		},
+		"parallel2": {
+			"loop": true,
+			"animation_length": 0.01,
+			"timeline": {
+				"0.0": [
+					"v.L1_P1=v.L1_P0+0.01*v.L1_P0dot;",
+					"v.L2_P1=v.L2_P0+0.01*v.L2_P0dot;",
+					"v.L3_P1=v.L3_P0+0.01*v.L3_P0dot;",
+					"v.L4_P1=v.L4_P0+0.01*v.L4_P0dot;",
+					"v.L5_P1=v.L5_P0+0.01*v.L5_P0dot;",
+					"v.L6_P1=v.L6_P0+0.01*v.L6_P0dot;",
+					"v.L6_P10=v.L6_P00+0.01*v.L6_P00dot;",
+					"v.L7_P1=v.L7_P0+0.01*v.L7_P0dot;",
+					"v.L8_P1=v.L8_P0+0.01*v.L8_P0dot;",
+					"v.L9_P1=v.L9_P0+0.01*v.L9_P0dot;",
+					"v.L10_P1=v.L10_P0+0.01*v.L10_P0dot;",
+					"v.L11_P1=v.L11_P0+0.01*v.L11_P0dot;",
+					"v.L12_P1=v.L12_P0+0.01*v.L12_P0dot;",
+					"'头发垂直速度物理';",
+					"v.L1_P1dot=v.L1_P0dot+0.01*(v.L1_K3*math.clamp(q.vertical_speed+v.hv,-30,1)-v.L1_P1-v.L1_K1*v.L1_P0dot)/v.L1_K2;",
+					"'头发水平速度物理';",
+					"v.L2_P1dot=v.L2_P0dot+0.01*(v.L2_K3*math.clamp(2*q.ground_speed+v.hg,0,30)-v.L2_P1-v.L2_K1*v.L2_P0dot)/v.L2_K2;",
+					"'头发水平角速度物理';",
+					"v.L3_P1dot=v.L3_P0dot+0.01*(v.L3_K3*math.clamp(q.yaw_speed,-600,600)-v.L3_P1-v.L3_K1*v.L3_P0dot)/v.L3_K2;",
+					"'胸部水平角速度物理';",
+					"v.L4_P1dot=v.L4_P0dot+0.01*(v.L4_K3*math.clamp((math.min(q.yaw_speed,-300)+math.max(q.yaw_speed,300)),-300,300)-v.L4_P1-v.L4_K1*v.L4_P0dot)/v.L4_K2;",
+					"'玩家头发垂直角度物理';",
+					"v.L5_P1dot=v.L5_P0dot+0.01*(v.L5_K3*(ysm.head_pitch>-40?ysm.head_pitch:-40)-v.L5_P1-v.L5_K1*v.L5_P0dot)/v.L5_K2;",
+					"'玩家头部水平角度物理';",
+					"v.L6_P1dot=v.L6_P0dot+0.01*(v.L6_K3*ysm.head_yaw-v.L6_P1-v.L6_K1*v.L6_P0dot)/v.L6_K2;",
+					"'玩家头部垂直角度物理';",
+					"v.L6_P10dot=v.L6_P00dot+0.01*(v.L6_K3*ysm.head_pitch-v.L6_P10-v.L6_K1*v.L6_P00dot)/v.L6_K2;",
+					"'胸部垂直速度物理';",
+					"v.L7_P1dot=v.L7_P0dot+0.01*(v.L7_K3*math.clamp(q.vertical_speed+v.bv,-30,30)-v.L7_P1-v.L7_K1*v.L7_P0dot)/v.L7_K2;",
+					"'胸部水平速度物理';",
+					"v.L8_P1dot=v.L8_P0dot+0.01*(v.L8_K3*math.clamp(q.ground_speed+v.bg,0,20)-v.L8_P1-v.L8_K1*v.L8_P0dot)/v.L8_K2;",
+					"'玩家x坐标增量物理';",
+					"v.L9_P1dot=v.L9_P0dot+0.01*(v.L9_K3*(100*query.position_delta(0))-v.L9_P1-v.L9_K1*v.L9_P0dot)/v.L9_K2;",
+					"'玩家y坐标增量物理';",
+					"v.L10_P1dot=v.L10_P0dot+0.01*(v.L10_K3*(100*query.position_delta(1))-v.L10_P1-v.L10_K1*v.L10_P0dot)/v.L10_K2;",
+					"'玩家z坐标增量物理';",
+					"v.L11_P1dot=v.L11_P0dot+0.01*(v.L11_K3*(100*query.position_delta(2))-v.L11_P1-v.L11_K1*v.L11_P0dot)/v.L11_K2;",
+					"'玩家下落速度物理重锤相关';",
+					"v.L12_P1dot=v.L12_P0dot+0.01*(v.L12_K3*(math.clamp(q.vertical_speed,-30,0))-v.L12_P1-v.L12_K1*v.L12_P0dot)/v.L12_K2;"
+				],
+				"0.0101": [
+					"v.L1_P0=v.L1_P1;",
+					"v.L2_P0=v.L2_P1;",
+					"v.L3_P0=v.L3_P1;",
+					"v.L4_P0=v.L4_P1;",
+					"v.L5_P0=v.L5_P1;",
+					"v.L6_P0=v.L6_P1;",
+					"v.L6_P00=v.L6_P10;",
+					"v.L7_P0=v.L7_P1;",
+					"v.L8_P0=v.L8_P1;",
+					"v.L9_P0=v.L9_P1;",
+					"v.L10_P0=v.L10_P1;",
+					"v.L11_P0=v.L11_P1;",
+					"v.L12_P0=v.L12_P1;",
+					"v.L1_P0dot=v.L1_P1dot;",
+					"v.L2_P0dot=v.L2_P1dot;",
+					"v.L3_P0dot=v.L3_P1dot;",
+					"v.L4_P0dot=v.L4_P1dot;",
+					"v.L5_P0dot=v.L5_P1dot;",
+					"v.L6_P0dot=v.L6_P1dot;",
+					"v.L6_P00dot=v.L6_P10dot;",
+					"v.L7_P0dot=v.L7_P1dot;",
+					"v.L8_P0dot=v.L8_P1dot;",
+					"v.L9_P0dot=v.L9_P1dot;",
+					"v.L10_P0dot=v.L10_P1dot;",
+					"v.L11_P0dot=v.L11_P1dot;",
+					"v.L12_P0dot=v.L12_P1dot;"
+				]
+			}
+		},
+		"parallel3": {
+			"loop": true
+		},
+		"parallel4": {
+			"loop": true
+		},
+		"parallel5": {
+			"loop": true
+		},
+		"parallel6": {
+			"loop": true
+		},
+		"parallel7": {
+			"loop": true
+		},
+		"pre_parallel0": {
+			"loop": true,
+			"bones": {
+				"bone3": {
+					"scale": 0
+				},
+				"yo": {
+					"scale": 0
+				}
+			}
+		},
+		"pre_parallel1": {
+			"loop": true,
+			"animation_length": 4
+		},
+		"pre_parallel2": {
+			"loop": true
+		},
+		"pre_parallel3": {
+			"loop": true
+		},
+		"pre_parallel4": {
+			"loop": true
+		},
+		"pre_parallel5": {
+			"loop": true
+		},
+		"pre_parallel6": {
+			"loop": true
+		},
+		"pre_parallel7": {
+			"loop": true
+		},
+		"empty": {
+			"loop": true,
+			"animation_length": 2
+		},
+		"passenger$touhou_little_maid:maid": {
+			"loop": true,
+			"bones": {
+				"Head": {
+					"rotation": [10, 0, 0]
+				},
+				"LeftHandLocator": {
+					"scale": 0
+				},
+				"RightHandLocator": {
+					"scale": 0
+				},
+				"clothe": {
+					"rotation": [7.5, 0, 0]
+				},
+				"Root": {
+					"rotation": [2, 0, 0]
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

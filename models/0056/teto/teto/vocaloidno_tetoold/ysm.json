@@ -1,0 +1,67 @@
+{
+  "spec": 2,
+  "metadata": {
+    "name": "重音teto",
+    "tips": "很酷的女人 有着两个红色大钻头\n持有武器的时候拿的是法棍",
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "authors": [
+      {
+        "name": "哥斯拉",
+        "role": "模型",
+        "avatar": "avatar/gsl.png",
+        "contact": {
+          "Afdian": "https://afdian.net/a/6TGESILA",
+          "Bilibili": "https://space.bilibili.com/17798027"
+        },
+        "comment": "一个MC模型/YSM作者，想法很多，时间很少"
+      }
+    ],
+    "link": {
+      "home": "",
+      "donate": ""
+    }
+  },
+  "properties": {
+    "height_scale": 0.7,
+    "width_scale": 0.7,
+    "extra_animation": {
+      "extra0": "淑女摇",
+      "extra1": "谎言舞者2",
+      "extra2": "鼓掌",
+      "extra3": "星慧闪耀",
+      "extra4": "坐下",
+      "extra5": "橙色正义",
+      "extra6": "谎言舞者1",
+      "extra7": "催眠术"
+    },
+    "preview_animation": "stage",
+    "default_texture": "texture01",
+    		"disable_preview_rotation": true,
+    		"gui_foreground": "foreground.png", 
+        		"gui_background": "background.png" 
+  },
+  "files": {
+    "player": {
+      "model": {
+        "main": "main.json",
+        "arm": "arm.json"
+      },
+      "animation": {
+        "main": "main.animation.json",
+        "arm": "arm.animation.json",
+        "extra": "extra.animation.json",
+        "carryon": "carryon.animation.json"
+      },
+      "texture": [
+        "texture01.png",
+        "texture02.png"
+      ]
+    },
+    "arrow": {
+      "model": "arrow.json",
+      "texture": "arrow.png"
+    }
+  }
+}
