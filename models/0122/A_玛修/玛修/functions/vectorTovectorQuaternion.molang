@@ -1,0 +1,31 @@
+
+t.From=args[0];
+t.To=args[1];
+
+t.targetNorm =math.sqrt(t.To.x * t.To.x + t.To.y * t.To.y + t.To.z * t.To.z);
+t.To.x = t.To.x / t.targetNorm;
+t.To.y = t.To.y / t.targetNorm;
+t.To.z = t.To.z / t.targetNorm;
+t.fromNorm =math.sqrt(t.From.x * t.From.x + t.From.y * t.From.y + t.From.z * t.From.z);
+t.From.x = t.From.x / t.fromNorm;
+t.From.y = t.From.y / t.fromNorm;
+t.From.z = t.From.z / t.fromNorm;
+t.thetaHalf =math.acos(t.To.x * t.From.x +t.To.y * t.From.y +t.To.z * t.From.z )* 180 / math.pi/2;
+t.cosThetaHalf = math.cos(t.thetaHalf);
+t.sinThetaHalf = math.sin(t.thetaHalf);
+t.crossX = t.From.y * t.To.z - t.From.z * t.To.y;
+t.crossY = t.From.z * t.To.x - t.From.x * t.To.z;
+t.crossZ = t.From.x * t.To.y - t.From.y * t.To.x;
+t.crossNorm = math.sqrt(t.crossX * t.crossX + t.crossY * t.crossY + t.crossZ * t.crossZ);
+(t.crossNorm<0.000000001)?(t.axisX = 1):0;
+(t.crossNorm<0.000000001)?(t.axisY = 0):0;
+(t.crossNorm<0.000000001)?(t.axisZ = 0):0;
+(t.crossNorm>=0.000000001)?(t.axisX = t.crossX / t.crossNorm):0;
+(t.crossNorm>=0.000000001)?(t.axisY = t.crossY / t.crossNorm):0;
+(t.crossNorm>=0.000000001)?(t.axisZ = t.crossZ / t.crossNorm):0;
+t.vtvq.w = t.cosThetaHalf;
+t.vtvq.x = t.sinThetaHalf * t.axisX;
+t.vtvq.y = t.sinThetaHalf * t.axisY;
+t.vtvq.z = t.sinThetaHalf * t.axisZ;
+
+return t.vtvq;

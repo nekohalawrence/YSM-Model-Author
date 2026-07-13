@@ -1,0 +1,7 @@
+
+t.fgt=args[0];
+t.stop_group.x=(t.fgt.z*math.sin(q.eye_target_y_rotation)+t.fgt.x*math.cos(q.eye_target_y_rotation))/16*0.7+q.position(0);
+t.stop_group.y=(t.fgt.y-(ctrl.sneak||ctrl.sneaking)*3)*0.7/16+q.position(1);
+t.stop_group.z=(t.fgt.x*math.sin(q.eye_target_y_rotation)-t.fgt.z*math.cos(q.eye_target_y_rotation))/16*0.7+q.position(2);
+
+return t.stop_group;

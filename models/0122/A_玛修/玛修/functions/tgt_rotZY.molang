@@ -1,0 +1,8 @@
+
+t.d0=args[0];
+t.d1=args[1];
+t.target_rotYX.x=0;
+t.target_rotYX.y=-math.atan2(t.d1.z-t.d0.z, math.sqrt(math.pow(t.d1.x-t.d0.x,2)+math.pow(t.d1.y-t.d0.y,2))) * 180 / math.pi;
+t.target_rotYX.z=-math.atan2(t.d1.x-t.d0.x, t.d1.y-t.d0.y) * 180 / math.pi;
+
+return t.target_rotYX;

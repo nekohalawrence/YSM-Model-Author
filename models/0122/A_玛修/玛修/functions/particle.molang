@@ -1,0 +1,14 @@
+
+
+t.rot=!args[6]?0:(q.body_y_rotation-q.eye_target_y_rotation);
+t.x=(ysm.bone_pivot_abs(args[1]).z*math.sin( t.rot)+ysm.bone_pivot_abs(args[1]).x*math.cos( t.rot))/16*0.7;
+t.y=ysm.bone_pivot_abs(args[1]).y*0.7/16;
+t.z=(ysm.bone_pivot_abs(args[1]).x*math.sin( t.rot)-ysm.bone_pivot_abs(args[1]).z*math.cos( t.rot))/16*0.7;
+t.dx=args[2];
+t.dy=args[3];
+t.dz=args[4];
+
+ysm.bone_scale(args[1]).x&&ysm.bone_scale(args[1]).y&&ysm.bone_scale(args[1]).z?ysm.particle(args[0], t.x,t.y,t.z ,t.dx,t.dy,t.dz,args[5],args[6], args[7]):0;
+      
+            
+     

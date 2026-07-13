@@ -1,0 +1,7 @@
+
+t.vect=args[0];
+t.quat=args[1];
+t.positions_r.x = t.vect.x* (1 - 2 * t.quat.y* t.quat.y - 2 * t.quat.z* t.quat.z) + t.vect.y * (2 * t.quat.x * t.quat.y - 2 * t.quat.w* t.quat.z) +t.vect.z * (2 * t.quat.x * t.quat.z + 2 * t.quat.w* t.quat.y);
+t.positions_r.y = t.vect.x* (2 * t.quat.x * t.quat.y + 2 * t.quat.w* t.quat.z) + t.vect.y * (1 - 2 * t.quat.x * t.quat.x - 2 * t.quat.z* t.quat.z) +t.vect.z * (2 * t.quat.y* t.quat.z - 2 * t.quat.w* t.quat.x);
+t.positions_r.z = t.vect.x* (2 * t.quat.x * t.quat.z - 2 * t.quat.w* t.quat.y) + t.vect.y * (2 * t.quat.y* t.quat.z + 2 * t.quat.w* t.quat.x) +t.vect.z * (1 - 2 * t.quat.x * t.quat.x - 2 * t.quat.y* t.quat.y);
+return t.positions_r;

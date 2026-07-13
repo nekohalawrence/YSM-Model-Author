@@ -1,0 +1,58 @@
+
+t.positions_t=args[0];
+t.coll_box_a_position=args[1];
+t.coll_box_x_position=args[2];
+t.coll_box_y_position=args[3];
+t.coll_box_z_position=args[4];
+
+t.all_positions_r.x=t.positions_t.x;
+t.all_positions_r.y=t.positions_t.y;
+t.all_positions_r.z=t.positions_t.z;
+
+t.collbox_len_x = math.sqrt(
+  (t.coll_box_x_position.x - t.coll_box_a_position.x) * (t.coll_box_x_position.x - t.coll_box_a_position.x) +
+  (t.coll_box_x_position.y - t.coll_box_a_position.y) * (t.coll_box_x_position.y - t.coll_box_a_position.y) +
+  (t.coll_box_x_position.z - t.coll_box_a_position.z) * (t.coll_box_x_position.z - t.coll_box_a_position.z)
+);
+
+t.collbox_len_y = math.sqrt(
+  (t.coll_box_y_position.x - t.coll_box_a_position.x) * (t.coll_box_y_position.x - t.coll_box_a_position.x) +
+  (t.coll_box_y_position.y - t.coll_box_a_position.y) * (t.coll_box_y_position.y - t.coll_box_a_position.y) +
+  (t.coll_box_y_position.z - t.coll_box_a_position.z) * (t.coll_box_y_position.z - t.coll_box_a_position.z)
+);
+
+t.collbox_len_z = math.sqrt(
+  (t.coll_box_z_position.x - t.coll_box_a_position.x) * (t.coll_box_z_position.x - t.coll_box_a_position.x) +
+  (t.coll_box_z_position.y - t.coll_box_a_position.y) * (t.coll_box_z_position.y - t.coll_box_a_position.y) +
+  (t.coll_box_z_position.z - t.coll_box_a_position.z) * (t.coll_box_z_position.z - t.coll_box_a_position.z)
+);
+
+(t.collbox_len_z==0||t.collbox_len_x==0||t.collbox_len_y==0)?(return t.all_positions_r):0;
+
+t.coll_dict_len_x =(t.positions_t.x - t.coll_box_a_position.x) * (t.coll_box_x_position.x - t.coll_box_a_position.x) +(t.positions_t.y - t.coll_box_a_position.y) * (t.coll_box_x_position.y - t.coll_box_a_position.y) +(t.positions_t.z - t.coll_box_a_position.z) * (t.coll_box_x_position.z - t.coll_box_a_position.z);
+t.coll_dict_len_x =t.coll_dict_len_x/ t.collbox_len_x;
+t.coll_dict_len_y =(t.positions_t.x - t.coll_box_a_position.x) * (t.coll_box_y_position.x - t.coll_box_a_position.x) +(t.positions_t.y - t.coll_box_a_position.y) * (t.coll_box_y_position.y - t.coll_box_a_position.y) +(t.positions_t.z - t.coll_box_a_position.z) * (t.coll_box_y_position.z - t.coll_box_a_position.z);
+t.coll_dict_len_y =t.coll_dict_len_y/ t.collbox_len_y;
+t.coll_dict_len_z =(t.positions_t.x - t.coll_box_a_position.x) * (t.coll_box_z_position.x - t.coll_box_a_position.x) +(t.positions_t.y - t.coll_box_a_position.y) * (t.coll_box_z_position.y - t.coll_box_a_position.y) +(t.positions_t.z - t.coll_box_a_position.z) * (t.coll_box_z_position.z - t.coll_box_a_position.z);
+t.coll_dict_len_z =t.coll_dict_len_z/ t.collbox_len_z;
+
+t.coll_dict_len_max = math.max(math.max(math.abs(t.coll_dict_len_x) - math.abs(t.collbox_len_x), math.abs(t.coll_dict_len_y) - math.abs(t.collbox_len_y)), math.abs(t.coll_dict_len_z) - math.abs(t.collbox_len_z));
+ (t.coll_dict_len_max < 0)? {
+ (t.coll_dict_len_max == math.abs(t.coll_dict_len_x) - math.abs(t.collbox_len_x))? {
+      t.all_positions_r.x=t.positions_t.x + math.abs(t.coll_dict_len_max) * (t.coll_box_x_position.x - t.coll_box_a_position.x) * (t.coll_dict_len_x>0?1:-1) / t.collbox_len_x;
+      t.all_positions_r.y=t.positions_t.y + math.abs(t.coll_dict_len_max) * (t.coll_box_x_position.y - t.coll_box_a_position.y) * (t.coll_dict_len_x>0?1:-1) / t.collbox_len_x;
+      t.all_positions_r.z=t.positions_t.z + math.abs(t.coll_dict_len_max) * (t.coll_box_x_position.z - t.coll_box_a_position.z) * (t.coll_dict_len_x>0?1:-1) / t.collbox_len_x;
+ }:0;
+ (t.coll_dict_len_max == math.abs(t.coll_dict_len_y) - math.abs(t.collbox_len_y)) ?{
+      t.all_positions_r.x=t.positions_t.x + math.abs(t.coll_dict_len_max) * (t.coll_box_y_position.x - t.coll_box_a_position.x) * (t.coll_dict_len_y>0?1:-1) / t.collbox_len_y;
+      t.all_positions_r.y=t.positions_t.y + math.abs(t.coll_dict_len_max) * (t.coll_box_y_position.y - t.coll_box_a_position.y) * (t.coll_dict_len_y>0?1:-1) / t.collbox_len_y;
+      t.all_positions_r.z=t.positions_t.z + math.abs(t.coll_dict_len_max) * (t.coll_box_y_position.z - t.coll_box_a_position.z) * (t.coll_dict_len_y>0?1:-1) / t.collbox_len_y;
+ }:0;
+ (t.coll_dict_len_max == math.abs(t.coll_dict_len_z) - math.abs(t.collbox_len_z)) ?{
+      t.all_positions_r.x=t.positions_t.x + math.abs(t.coll_dict_len_max) * (t.coll_box_z_position.x - t.coll_box_a_position.x) * (t.coll_dict_len_z>0?1:-1) / t.collbox_len_z;
+      t.all_positions_r.y=t.positions_t.y + math.abs(t.coll_dict_len_max) * (t.coll_box_z_position.y - t.coll_box_a_position.y) * (t.coll_dict_len_z>0?1:-1) / t.collbox_len_z;
+      t.all_positions_r.z=t.positions_t.z + math.abs(t.coll_dict_len_max) * (t.coll_box_z_position.z - t.coll_box_a_position.z) * (t.coll_dict_len_z>0?1:-1) / t.collbox_len_z;
+    
+  }:0;
+}:0;
+return t.all_positions_r;

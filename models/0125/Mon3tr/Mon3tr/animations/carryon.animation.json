@@ -1,0 +1,221 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"carryon:block": {
+			"loop": true,
+			"bones": {
+				"Root": {
+					"rotation": [2, 0, 0]
+				},
+				"UpBody": {
+					"rotation": [-15, 0, 0]
+				},
+				"Head": {
+					"rotation": [25, 0, 0]
+				},
+				"LeftArm": {
+					"rotation": [-25, 5, 5],
+					"position": [0, -0.5, 0]
+				},
+				"LeftForeArm": {
+					"rotation": [-5, 0, 0]
+				},
+				"LeftHandLocator": {
+					"scale": 0
+				},
+				"RightArm": {
+					"rotation": [-25, -5, -5],
+					"position": [0, -0.5, 0]
+				},
+				"RightForeArm": {
+					"rotation": [-5, 0, 0]
+				},
+				"RightHandLocator": {
+					"scale": 0
+				},
+				"RightDown": {
+					"rotation": [-48.47328, 8.27969, 7.26742]
+				},
+				"RightDZ": {
+					"rotation": [77.68939, -25.9752, -68.69659]
+				},
+				"LeftDown": {
+					"rotation": [-42, 0, 0]
+				},
+				"LeftDZ": {
+					"rotation": [77.68939, 25.9752, 68.69659]
+				}
+			}
+		},
+		"carryon:entity": {
+			"loop": true,
+			"bones": {
+				"Root": {
+					"rotation": [2, 0, 0]
+				},
+				"UpBody": {
+					"rotation": [-20, 0, 0]
+				},
+				"Head": {
+					"rotation": [30, 0, 0]
+				},
+				"LeftArm": {
+					"rotation": [-45, 5, -5],
+					"position": [0, -0.5, 0]
+				},
+				"LeftForeArm": {
+					"rotation": [-5, 0, 0]
+				},
+				"LeftHandLocator": {
+					"scale": 0
+				},
+				"RightArm": {
+					"rotation": [-45, -5, 5],
+					"position": [0, -0.5, 0]
+				},
+				"RightForeArm": {
+					"rotation": [-5, 0, 0]
+				},
+				"RightHandLocator": {
+					"scale": 0
+				},
+				"LeftHand": {
+					"rotation": [0, 0, 0]
+				}
+			}
+		},
+		"carryon:player": {
+			"loop": true,
+			"bones": {
+				"Root": {
+					"rotation": [2, 0, 0]
+				},
+				"UpBody": {
+					"rotation": [-10, 0, 0]
+				},
+				"Head": {
+					"rotation": [10, 0, 0]
+				},
+				"LeftArm": {
+					"rotation": [0, 0, -11],
+					"position": [0, 0, 0]
+				},
+				"LeftForeArm": {
+					"rotation": [0, 0, 0]
+				},
+				"LeftHandLocator": {
+					"scale": 0
+				},
+				"RightArm": {
+					"rotation": [0, 0, 11],
+					"position": [0, 0, 0]
+				},
+				"RightForeArm": {
+					"rotation": [0, 0, 0]
+				},
+				"RightHandLocator": {
+					"scale": 0
+				},
+				"RightUZ": {
+					"rotation": [-44.95003, -24.20094, 58.97161]
+				},
+				"RightDown": {
+					"rotation": [-68.47328, 8.27969, 7.26742]
+				},
+				"RightDZ": {
+					"rotation": [77.68939, -25.9752, -68.69659]
+				},
+				"LeftUZ": {
+					"rotation": [-47.61595, 33.73611, -62.99741]
+				},
+				"LeftDown": {
+					"rotation": [-73, 0, 0]
+				},
+				"LeftDZ": {
+					"rotation": [77.68939, 25.9752, 68.69659]
+				}
+			}
+		},
+		"carryon:princess": {
+			"loop": true,
+			"bones": {
+				"Root": {
+					"rotation": [0, -90, -115],
+					"position": [16.7, 25.5, 6]
+				},
+				"AllBody": {
+					"rotation": [0, 0, 0]
+				},
+				"UpBody": {
+					"rotation": [50, 0, 0],
+					"position": [0, 1, 0.75]
+				},
+				"Head": {
+					"rotation": [27.5, 0, 0]
+				},
+				"LongHair": {
+					"rotation": [37.5, 0, 0]
+				},
+				"LeftArm": {
+					"rotation": [-16.77609, 44.19145, -7.81185]
+				},
+				"LeftForeArm": {
+					"rotation": [-97.5, 0, 0]
+				},
+				"RightArm": {
+					"rotation": [-16.36648, -42.10287, -4.20805]
+				},
+				"RightForeArm": {
+					"rotation": [-127.5, 0, 0]
+				},
+				"LeftLeg": {
+					"rotation": [-7.61435, 9.91358, -1.31845]
+				},
+				"LeftLowerLeg": {
+					"rotation": [65, 0, 0]
+				},
+				"LeftFoot": {
+					"rotation": [27.5, 0, 0]
+				},
+				"RightLeg": {
+					"rotation": [-2.17539, -10.01806, -1.21764]
+				},
+				"RightLowerLeg": {
+					"rotation": [65, 0, 0]
+				},
+				"RightFoot": {
+					"rotation": [7.5, 0, 0]
+				},
+				"FrontSkirt": {
+					"rotation": [-7, 0, 0]
+				},
+				"LeftSkirt": {
+					"rotation": [-38, 0, 0]
+				},
+				"RightSkirt": {
+					"rotation": [-38, 0, 0]
+				},
+				"ZhuaZi": {
+					"rotation": [11, 0, 0]
+				},
+				"RightUp": {
+					"rotation": [44, -25, 0],
+					"position": [0, 0, -7.80469]
+				},
+				"RightDZ": {
+					"rotation": [-11, -46, 0]
+				},
+				"LeftUp": {
+					"rotation": [44, 25, 0],
+					"position": [0, 0, -7.80469]
+				},
+				"LeftDown": {
+					"rotation": [0, 17.5, 0]
+				},
+				"LeftDZ": {
+					"rotation": [-11, 46, 0]
+				}
+			}
+		}
+	}
+}

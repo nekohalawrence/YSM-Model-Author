@@ -1,0 +1,59 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"parallel0": {
+			"loop": true,
+			"animation_length": 6,
+			"bones": {
+				"ysmGlowCl": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"6.0": [0, -1080, 0]
+					}
+				},
+				"ysmGlowCl2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"6.0": [0, -1080, 0]
+					}
+				},
+				"ysmGlowCl3": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"6.0": [0, 1080, 0]
+					}
+				},
+				"ysmGlowCl4": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"6.0": [0, 720, 0]
+					}
+				},
+				"ysmGlowCl5": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"6.0": [0, -1080, 0]
+					}
+				},
+				"ysmGlowCl6": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"6.0": [0, 1080, 0]
+					}
+				},
+				"ysmGlowPart1": {
+					"position": [-3, 0, 3]
+				},
+				"ysmGlowPart2": {
+					"position": [-3, 0, -3]
+				},
+				"ysmGlowPart3": {
+					"position": [3, 0, -3]
+				},
+				"ysmGlowPart4": {
+					"position": [3, 0, 3]
+				}
+			}
+		}
+	}
+}

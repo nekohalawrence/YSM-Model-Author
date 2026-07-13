@@ -1,0 +1,155 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"water": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"TuoWei5": {
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.125": [1, 1, 1.2175],
+						"0.25": [1, 1, 1],
+						"0.375": [1, 1, 1.2175],
+						"0.5": [1, 1, 1],
+						"0.625": [1, 1, 1.2175],
+						"0.75": [1, 1, 1],
+						"0.875": [1, 1, 1.2175],
+						"1.0": [1, 1, 1]
+					}
+				},
+				"Downbone": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [360, 0, 0]
+					}
+				}
+			}
+		},
+		"fire": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"TuoWei5": {
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.125": [1, 1, 1.2175],
+						"0.25": [1, 1, 1],
+						"0.375": [1, 1, 1.2175],
+						"0.5": [1, 1, 1],
+						"0.625": [1, 1, 1.2175],
+						"0.75": [1, 1, 1],
+						"0.875": [1, 1, 1.2175],
+						"1.0": [1, 1, 1]
+					}
+				},
+				"Downbone": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [360, 0, 0]
+					}
+				}
+			}
+		},
+		"ground": {
+			"loop": true,
+			"animation_length": 1000.0833,
+			"bones": {
+				"ysmGlowArrow": {
+					"scale": {
+						"1000.0": {
+							"pre": [0, 0, 0],
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"TuoWei5": {
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.125": [1, 1, 0]
+					}
+				},
+				"TuoWei6": {
+					"scale": 1
+				},
+				"Downbone": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.0833": [0, 0, -2.5],
+						"0.25": [0, 0, 2.5],
+						"0.3333": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"air": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"TuoWei5": {
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.125": [1, 1, 1.2175],
+						"0.25": [1, 1, 1],
+						"0.375": [1, 1, 1.2175],
+						"0.5": [1, 1, 1],
+						"0.625": [1, 1, 1.2175],
+						"0.75": [1, 1, 1],
+						"0.875": [1, 1, 1.2175],
+						"1.0": [1, 1, 1]
+					}
+				},
+				"Downbone": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0": [360, 0, 0]
+					}
+				}
+			}
+		},
+		"parallel0": {
+			"loop": true,
+			"animation_length": 0.25,
+			"bones": {
+				"TuoWei6": {
+					"scale": "v.tuowei==6"
+				},
+				"TuoWei7": {
+					"scale": "v.tuowei==7"
+				},
+				"TuoWei8": {
+					"scale": "v.tuowei==8"
+				},
+				"TuoWei9": {
+					"scale": "v.tuowei==9"
+				},
+				"TuoWei": {
+					"scale": "v.tuowei==0"
+				}
+			}
+		},
+		"parallel1": {
+			"loop": true
+		},
+		"parallel2": {
+			"loop": true
+		},
+		"parallel3": {
+			"loop": true
+		},
+		"parallel4": {
+			"loop": true
+		},
+		"parallel5": {
+			"loop": true
+		},
+		"parallel6": {
+			"loop": true
+		},
+		"parallel7": {
+			"loop": true
+		}
+	},
+	"geckolib_format_version": 2
+}

@@ -1,0 +1,6 @@
+
+t.d=args[0];
+t.r.y = math.asin(-t.d.r20)*180/math.pi;
+t.r.z = math.atan2(t.d.r10, t.d.r00)*180/math.pi;
+t.r.x = math.atan2(t.d.r21, t.d.r22)*180/math.pi; 
+return t.r;

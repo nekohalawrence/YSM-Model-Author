@@ -1,0 +1,21 @@
+
+t.d=args[0];
+t.c = math.cos(t.d);
+t.s = math.sin(t.d);
+t.r.r00=t.c;
+t.r.r01=-t.s;
+t.r.r02=0; 
+t.r.r03=0;
+t.r.r10=t.s;
+t.r.r11=t.c;
+t.r.r12=0;
+t.r.r13=0;
+t.r.r20=0;
+t.r.r21=0;
+t.r.r22=1; 
+t.r.r23=0;
+t.r.r30=0;
+t.r.r31=0;
+t.r.r32=0; 
+t.r.r33=1;
+return t.r;

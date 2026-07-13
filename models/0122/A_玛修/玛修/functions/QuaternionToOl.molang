@@ -1,0 +1,11 @@
+
+t.quat=args[0];
+t.sinr_cp = 2 * (t.quat.w * t.quat.x + t.quat.y * t.quat.z);
+t.cosr_cp = 1 - 2 * (t.quat.x * t.quat.x + t.quat.y * t.quat.y);
+t.sinp = 2 * (t.quat.w * t.quat.y - t.quat.z * t.quat.x);
+t.siny_cp = 2 * (t.quat.w * t.quat.z + t.quat.x * t.quat.y);
+t.cosy_cp = 1 - 2 * (t.quat.y * t.quat.y + t.quat.z * t.quat.z);
+t.rot.x = math.atan2(t.sinr_cp, t.cosr_cp)* 180 / math.pi;
+t.rot.y = math.asin(t.sinp)* 180 / math.pi;
+t.rot.z = math.atan2(t.siny_cp, t.cosy_cp)* 180 / math.pi;
+return t.rot;

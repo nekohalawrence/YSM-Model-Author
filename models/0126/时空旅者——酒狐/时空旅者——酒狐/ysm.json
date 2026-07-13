@@ -1,0 +1,208 @@
+{
+	"spec": 2,
+	"metadata": {
+		"name": "时空旅者——酒狐",
+		"tips": "这是只跨越万千时间线来到这里的酒狐。\n现在，她只想懒懒地呆在你身旁。她不想再失去她的狗修金了......",
+		"license": {
+			"type": "CC BY-NC-SA 4.0",
+			"desc": "Lay了......"
+		},
+		"authors": [
+			{
+				"name": "伊蕾娜家的咸鱼",
+				"role": "模型",
+				"avatar": "avatar/xy.png",
+				"comment": "幸福往往是摸得透彻，而敬业的心却常常隐藏",
+				"contact": {
+					"Bilibili": "https://space.bilibili.com/20682514"
+				}
+			},
+			{
+				"name": "浅陌菌",
+				"role": "模型",
+				"avatar": "avatar/nico.png",
+				"comment": "最美好的前途，可不要对我冷酷",
+				"contact": {
+					"Bilibili": "https://space.bilibili.com/14975572"
+				}
+			},
+			{
+				"name": "星屑海螺",
+				"role": "动画",
+				"avatar": "avatar/hl.png",
+				"contact": {
+					"Afdian": "https://afdian.com/a/lucia2048",
+					"Bilibili": "https://space.bilibili.com/14975572"
+				},
+				"comment": "漂泊于群星之中"
+			},
+			{
+				"name": "墨染逝羽",
+				"role": "模型",
+				"avatar": "avatar/mrsy.png",
+				"comment": "事到如今，先摸鱼吧",
+				"contact": {
+					"Bilibili": "https://space.bilibili.com/5718046"
+				}
+			},
+			{
+				"name": "无欲诗人",
+				"avatar": "avatar/wysr.png",
+				"role": "模型，动画，纹理修改",
+				"comment": "懒，懒得写简介......"
+			}
+		]
+	},
+	"properties": {
+		"extra_animation": {
+			"extra0": "休息一下",
+			"extra1": "打招呼",
+			"extra2": "鼓掌",
+			"extra3": "是的",
+			"extra4": "不行",
+			"extra5": "卖萌",
+			"#随身听": "随身听（记得开锁定）",
+			"extra7": "#各项配置",
+			"extra8": "！？往日钟钟？！",
+			"extra9": "Oiia",
+			"extra10": "哈 基 咪",
+			"extra11": "!?强 强?!",
+			"extra13": "御币摇",
+			"extra17": "摸摸头"
+		},
+		"preview_animation": "gui",
+		"free": true,
+		"disable_preview_rotation": true,
+		"height_scale": 0.7,
+		"width_scale": 0.7,
+		"extra_animation_buttons": [
+			{
+				"id": "各项配置",
+				"name": "各项配置",
+				"config_forms": [
+					{
+						"type": "radio",
+						"title": "表情配置",
+						"description": "替换表情",
+						"value": "v.t",
+						"labels": {
+							"无": "v.t=0",
+							"惊讶": "v.t=1",
+							"开心": "v.t=2",
+							"微笑": "v.t=3",
+							"呆呆": "v.t=4",
+							"哭哭": "v.t=5",
+							"生气": "v.t=6",
+							"紧张": "v.t=7",
+							"墨镜": "v.t=8",
+							"宕机": "v.t=9"
+						}
+					},
+					{
+						"type": "radio",
+						"title": "靴子",
+						"description": "穿脱靴子",
+						"value": "v.sd",
+						"labels": {
+							"穿鞋": "v.sd=0",
+							"脱鞋": "v.sd=1"
+						}
+					},
+					{
+						"type": "radio",
+						"title": "服饰选择",
+						"description": "选择服饰",
+						"value": "v.sg",
+						"labels": {
+							"常服": "v.sg=0",
+							"学徒": "v.sg=1"
+						}
+					},
+					{
+						"type": "checkbox",
+						"title": "头饰替换",
+						"description": "穿脱兜帽/学徒帽",
+						"value": "v.st"
+					},
+					{
+						"type": "checkbox",
+						"title": "摸鱼去喽~",
+						"description": "显隐形",
+						"value": "v.se"
+					},
+					{
+						"type": "checkbox",
+						"title": "小酒狐（跟随挂件.jpg）",
+						"description": "显隐小酒狐",
+						"value": "v.sl"
+					}
+				]
+			}
+		],
+		"render_layers_first": false,
+		"all_cutout": false,
+		"extra_animation_classify": [
+			{
+				"id": "随身听",
+				"extra_animation": {
+					"extra12": "Ai dua em ve(低皮质醇)",
+					"extra14": "Better Call Saul",
+					"extra15": "Between Two Worlds",
+					"extra16": "Drown"
+				}
+			}
+		],
+		"default_texture": "时空旅者",
+		"gui_no_lighting": false,
+		"gui_background": "textures/gui/背景.png",
+		"gui_foreground": "textures/gui/前景.png"
+	},
+	"files": {
+		"player": {
+			"model": {
+				"main": "models/main.json",
+				"arm": "models/arm.json"
+			},
+			"animation": {
+				"main": "animations/main.animation.json",
+				"extra": "animations/extra.animation.json",
+				"tac": "animations/tac.animation.json",
+				"carryon": "animations/carryon.animation.json",
+				"tlm": "animations/tlm.animation.json",
+				"arm": "animations/arm.animation.json",
+				"fp_arm": "animations/fp.arm.animation.json"
+			},
+			"texture": [
+				{
+					"uv": "textures/时空旅者.png"
+				}
+			],
+			"animation_controllers": ["controller/controller.json"]
+		},
+		"vehicles": {
+			"minecraft:horse": {
+				"model": "models/Motorcycle.json",
+				"texture": {
+					"uv": "textures/Motorcycle.png"
+				},
+				"animation": "animations/vehicle/horse.animation.json"
+			}
+		},
+		"projectiles": {
+			"minecraft:arrow": {
+				"model": "models/arrow.json",
+				"texture": {
+					"uv": "textures/arrow.png"
+				},
+				"animation": "animations/arrow.animation.json"
+			},
+			"minecraft:trident": {
+				"model": "models/spear.json",
+				"texture": {
+					"uv": "textures/spear.png"
+				},
+				"animation": "animations/spear.animation.json"
+			}
+		}
+	}
+}

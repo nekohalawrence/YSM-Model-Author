@@ -1,0 +1,7 @@
+
+t.fgt=args[0];
+t.stop_group.x=(-t.fgt.x+q.position(0))*16/0.7*math.cos(query.body_y_rotation)+(-t.fgt.z+q.position(2))*16/0.7*math.sin(query.body_y_rotation);
+t.stop_group.y=(t.fgt.y-q.position(1))*16/0.7+(ctrl.sneak||ctrl.sneaking)*3;
+t.stop_group.z=(t.fgt.x-q.position(0))*16/0.7*math.sin(query.body_y_rotation)-(t.fgt.z-q.position(2))*16/0.7*math.cos(query.body_y_rotation);
+
+return t.stop_group;

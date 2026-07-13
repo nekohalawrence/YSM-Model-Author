@@ -1,0 +1,8 @@
+
+t.q1=args[0];
+t.q2=args[1];
+t.r_quat.w = t.q1.w * t.q2.w - t.q1.x * t.q2.x - t.q1.y * t.q2.y - t.q1.z * t.q2.z;
+t.r_quat.x = t.q1.w * t.q2.x + t.q1.x * t.q2.w + t.q1.y * t.q2.z - t.q1.z * t.q2.y;
+t.r_quat.y = t.q1.w * t.q2.y - t.q1.x * t.q2.z + t.q1.y * t.q2.w + t.q1.z * t.q2.x;
+t.r_quat.z = t.q1.w * t.q2.z + t.q1.x * t.q2.y - t.q1.y * t.q2.x + t.q1.z * t.q2.w;
+return t.r_quat;

@@ -1,0 +1,21 @@
+{
+	"metadata.name": "§2Mon3tr",
+	"metadata.tips": "干员Mon3tr归队！！！Default Model",
+	"metadata.authors.0.name": "辅助heroNull",
+	"metadata.authors.0.role": "Author",
+	"metadata.authors.0.comment": "§d兴趣使然的创作者",
+	"properties.extra_animation.extra0": "Moriya Step",
+	"properties.extra_animation.extra1": "服饰",
+	"properties.extra_animation.extra2": "Clap",
+	"properties.extra_animation.extra3": "YES",
+	"properties.extra_animation.extra4": "NO",
+	"properties.extra_animation.extra5": "Yep",
+	"properties.extra_animation.extra6": "Swing",
+	"properties.extra_animation.extra7": "Dance",
+	"properties.extra_animation_buttons.extra_config.config_forms.0.title": "Headdress",
+	"properties.extra_animation_buttons.extra_config.config_forms.0.description": "Used to hide/show the red bow headdress",
+	"files.player.texture.default": "default",
+	"files.player.texture.blue": "Blue",
+	"properties.extra_animation_buttons.服饰.config_forms.title": "外套",
+	"properties.extra_animation_buttons.服饰.config_forms.description": "点击以关闭外套显示"
+}

@@ -1,0 +1,78 @@
+{
+  "spec": 2,
+  "metadata": {
+    "name": "Nemesis_t",
+    "tips": "本模型为基于こぬい的角色的二次创作 ©こまいぬ通り/Nemesis",
+    "license": {
+      "type": "CC BY-SA"
+    },
+    "authors": [
+      {
+        "name": "Anrieal",
+        "role": "模型 动画",
+        "avatar": "avatar/wingNA.png",
+        "contact": {
+          "CF": "https://www.curseforge.com/members/anrieal/projects"
+        },
+        "comment": "在想什么?下一个向量?!"
+      },
+      {
+        "name": "こまいぬ通り",
+        "role": "原始模型指向",
+        "avatar": "avatar/konui.png",
+        "contact": {
+          "Booth": "https://booth.pm/zh-cn/items/5986971"
+        },
+        "comment": "指向了原始模型的链接"
+      }
+    ],
+    "link": {
+
+    }
+  },
+  "properties": {
+    "height_scale": 0.7,
+    "width_scale": 0.7,
+    "extra_animation": {
+      "extra0": "",
+      "extra1": "",
+      "extra2": "",
+      "extra3": "",
+      "extra4": "",
+      "extra5": "",
+      "extra6": "",
+      "extra7": ""
+    },
+    
+    "extra_animation_classify": [],
+    "preview_animation": "idle",
+    "disable_preview_rotation": false,
+    "default_texture": "default",
+    "render_layers_first": false,
+    "free": true
+  },
+  "files": {
+    "player": {
+      "model": {
+        "main": "models/main.json",
+        "arm": "models/arm.json"
+      },
+      "animation": {
+        "main": "animations/main.animation.json",
+        "arm": "animations/arm.animation.json",
+        "extra": "animations/extra.animation.json",
+        "tac": "animations/tac.animation.json"
+      },
+      "animation_controllers": [],
+      "texture": [
+        "textures/nemesis.png",
+        "textures/nemesis.png"
+      ]
+    },
+    "arrow": {
+      "model": "models/arrow.json",
+      "animation": "animations/arrow.animation.json",
+      "texture": "textures/arrow.png"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+
+t.target_rotYX.x=-math.atan2(ysm.bone_pivot_abs(args[1]).y-ysm.bone_pivot_abs(args[0]).y, math.sqrt(math.pow(ysm.bone_pivot_abs(args[1]).x-ysm.bone_pivot_abs(args[0]).x,2)+math.pow(ysm.bone_pivot_abs(args[1]).z-ysm.bone_pivot_abs(args[0]).z,2))) * 180 / math.pi;
+t.target_rotYX.y=-math.atan2(ysm.bone_pivot_abs(args[1]).x-ysm.bone_pivot_abs(args[0]).x, ysm.bone_pivot_abs(args[1]).z-ysm.bone_pivot_abs(args[0]).z) * 180 / math.pi;
+t.target_rotYX.z=0;
+
+return t.target_rotYX;

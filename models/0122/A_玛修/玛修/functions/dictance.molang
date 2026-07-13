@@ -1,0 +1,5 @@
+
+t.d1=args[0];
+t.d2=args[1];
+
+return math.sqrt((t.d1.x-t.d2.x)*(t.d1.x-t.d2.x)+(t.d1.y-t.d2.y)*(t.d1.y-t.d2.y)+(t.d1.z-t.d2.z)*(t.d1.z-t.d2.z))

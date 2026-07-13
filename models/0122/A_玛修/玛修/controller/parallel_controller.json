@@ -1,0 +1,555 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"player.post_main": {
+			"initial_state": "空闲",
+			"states": {
+				"空闲": {
+					"animations": ["empty"],
+					"transitions": [
+						{"下落初期": "!ctrl.fly&&!ctrl.elytra_fly&&ctrl.jump&&q.vertical_speed<=0&&!ysm.keyboard(32) && !ysm.on_ladder"},
+						{"起跳": "!ctrl.fly&&!ctrl.elytra_fly&&ctrl.jump&&q.vertical_speed>0&&v.jumping&&!ysm.on_ladder"},
+						{"鞘翅": "ctrl.elytra_fly"},
+						{"奔跑": "ctrl.run&&!ctrl.tac_hold_gun&&(ctrl.parcool_state=='')&&(!ctrl.hold('mainhand','$slashblade:slashblade'))"},
+						{"待机1": "v.idle == 1 && ctrl.idle && !ctrl.playing_extra_animation && !ysm.has_mainhand && !ysm.has_offhand"},
+						{"待机2": "v.idle == 2 && ctrl.idle && !ctrl.playing_extra_animation && !ysm.has_mainhand && !ysm.has_offhand"},
+						{"待机3": "v.idle == 3 && ctrl.idle && !ctrl.playing_extra_animation && !ysm.has_mainhand && !ysm.has_offhand"}
+					],
+					"blend_transition": 0.1,
+					"blend_via_shortest_path": true
+				},
+				"待机1": {
+					"animations": ["idle1"],
+					"on_exit": ["v.idle=0;"],
+					"transitions": [
+						{"空闲": "q.all_animations_finished || !ctrl.idle || ctrl.playing_extra_animation"}
+					],
+					"blend_transition": 0.1,
+					"blend_via_shortest_path": true
+				},
+				"待机2": {
+					"animations": ["idle2"],
+					"on_exit": ["v.idle=0;"],
+					"transitions": [
+						{"空闲": "q.all_animations_finished || !ctrl.idle || ctrl.playing_extra_animation"}
+					],
+					"blend_transition": 0.1,
+					"blend_via_shortest_path": true
+				},
+				"待机3": {
+					"animations": ["idle3"],
+					"on_exit": ["v.idle=0;"],
+					"transitions": [
+						{"空闲": "q.all_animations_finished || !ctrl.idle || ctrl.playing_extra_animation"}
+					],
+					"blend_transition": 0.1,
+					"blend_via_shortest_path": true
+				},
+				"起跳": {
+					"animations": ["jumpNormal", "jumpeffect"],
+					"on_exit": ["v.jumping=0;"],
+					"transitions": [
+						{"落地小": "q.is_on_ground&&q.vertical_speed>=-16"},
+						{"下落": "q.all_animations_finished||q.vertical_speed<-30"},
+						{"落地": "q.is_on_ground&&q.ground_speed<1&&q.vertical_speed<-16"},
+						{"落地翻滚": "q.is_on_ground&&q.ground_speed>=1&&q.vertical_speed<-16"},
+						{"空闲": "(ctrl.fly||ctrl.elytra_fly||q.is_in_water||(ctrl.parcool_state!='')||ctrl.ladder_up||ctrl.ladder_down||ctrl.ladder_stillness||(ctrl.slashblade_animation!='')||ctrl.carryon_is_princess)||ysm.on_ladder"}
+					],
+					"blend_transition": 0.15,
+					"blend_via_shortest_path": true
+				},
+				"下落初期": {
+					"animations": ["jumpfall"],
+					"on_exit": ["v.jumping=0;"],
+					"transitions": [
+						{"空闲": "ctrl.fly||ctrl.elytra_fly||q.is_in_water||(ctrl.parcool_state!='')||ctrl.ladder_up||ctrl.ladder_down||ctrl.ladder_stillness||(ctrl.slashblade_animation!='')||ctrl.carryon_is_princess||q.vertical_speed==0||ysm.on_ladder"},
+						{"下落": "q.all_animations_finished||q.vertical_speed<-30"},
+						{"落地": "q.is_on_ground&&(q.ground_speed<1)&&q.vertical_speed<-16"},
+						{"落地翻滚": "q.is_on_ground&&(q.ground_speed>=1)&&q.vertical_speed<-16"},
+						{"落地小": "q.is_on_ground&&q.vertical_speed>=-16"}
+					],
+					"blend_transition": 0.3,
+					"blend_via_shortest_path": true
+				},
+				"下落": {
+					"animations": ["fall"],
+					"transitions": [
+						{"落地": "q.is_on_ground&&(q.ground_speed<1)"},
+						{"落地翻滚": "q.is_on_ground&&(q.ground_speed>=1)"},
+						{"空闲": "ctrl.fly||ctrl.elytra_fly||q.is_in_water||(ctrl.parcool_state!='')||ctrl.ladder_up||ctrl.ladder_down||ctrl.ladder_stillness||(ctrl.slashblade_animation!='')||ctrl.carryon_is_princess||q.vertical_speed==0||ysm.on_ladder"}
+					],
+					"blend_transition": 0.05,
+					"blend_via_shortest_path": true
+				},
+				"落地小": {
+					"animations": ["landNormal"],
+					"transitions": [
+						{"空闲": "q.all_animations_finished||ctrl.sneak||ctrl.sneaking||ctrl.walk"},
+						{"起跳": "!ctrl.fly&&ctrl.jump&&q.vertical_speed>0"},
+						{"奔跑": "ctrl.run&&!ctrl.tac_hold_gun"},
+						{"下落初期": "!ctrl.fly&&ctrl.jump&&q.vertical_speed<=0&&!ysm.keyboard(32)"}
+					],
+					"blend_transition": 0.05,
+					"blend_via_shortest_path": true
+				},
+				"落地": {
+					"animations": ["land"],
+					"transitions": [
+						{"空闲": "q.all_animations_finished"}
+					],
+					"blend_transition": 0.1,
+					"blend_via_shortest_path": true
+				},
+				"落地翻滚": {
+					"animations": ["land_to_roll"],
+					"transitions": [
+						{"空闲": "q.all_animations_finished"}
+					],
+					"blend_transition": 0.1,
+					"blend_via_shortest_path": true
+				},
+				"鞘翅": {
+					"animations": ["empty"],
+					"transitions": [
+						{"空闲": "!ctrl.elytra_fly&&!q.is_on_ground"},
+						{"落地翻滚": "!ctrl.elytra_fly&&q.is_on_ground"}
+					],
+					"blend_transition": 0.1,
+					"blend_via_shortest_path": true
+				},
+				"奔跑": {
+					"animations": ["runNormal"],
+					"transitions": [
+						{"急停": "!ctrl.run&&!ctrl.jump&&q.is_on_ground"},
+						{"起跳": "!ctrl.fly&&!ctrl.elytra_fly&&ctrl.jump&&q.vertical_speed>0"},
+						{"下落初期": "!ctrl.fly&&!ctrl.elytra_fly&&ctrl.jump&&q.vertical_speed<=0&&!ysm.keyboard(32)"},
+						{"空闲": "ctrl.tac_hold_gun||ctrl.hold('mainhand','$slashblade:slashblade')"}
+					],
+					"blend_transition": 0.1,
+					"blend_via_shortest_path": true
+				},
+				"急停": {
+					"animations": [
+						{"stop": "!ctrl.use('mainhand',':bow')&&!ctrl.use('mainhand',':shield')"}
+					],
+					"transitions": [
+						{"空闲": "q.all_animations_finished||ctrl.jump||ctrl.sneak||ctrl.sneaking||(ctrl.parcool_state!='')"},
+						{"奔跑": "ctrl.run&&!ctrl.tac_hold_gun"}
+					],
+					"blend_transition": 0.1,
+					"blend_via_shortest_path": true
+				}
+			}
+		},
+		"player.pre_parallel_3": {
+			"states": {
+				"default": {
+					"animations": [
+						{"": "v.roaming.emotion==0||ysm.rendering_in_inventory"},
+						{"EyeExpression1_Gentle": "v.roaming.emotion==1"},
+						{"EyeExpression2_><": "v.roaming.emotion==2"},
+						{"EyeExpression3_QQ": "v.roaming.emotion==3"},
+						{"EyeExpression4_Serious": "v.roaming.emotion==4"},
+						{"EyeExpression5_ClosedEyes": "v.roaming.emotion==5"},
+						{"": "v.roaming.mouth==0||ysm.rendering_in_inventory"},
+						{"MouthExpression1_Scared": "v.roaming.mouth==1"},
+						{"MouthExpression2_△": "v.roaming.mouth==2"},
+						{"MouthExpression3_Smile": "v.roaming.mouth==3"},
+						{"MouthExpression4_Unpleasant": "v.roaming.mouth==4"},
+						{"MouthExpression5_OpenedMouth": "v.roaming.mouth==5"},
+						{"MouthExpression6_Neko": "v.roaming.mouth==6"},
+						{"MouthExpression7_PuffedCheeks": "v.roaming.mouth==7"},
+						{"MouthExpression8_Worried": "v.roaming.mouth==8"},
+						{"MouthExpression9_TongueOut": "v.roaming.mouth==9"},
+						{"MouthExpression10_Blank": "v.roaming.mouth==10"},
+						{"FaceExpression1_MoreBlush": "v.blush==1"},
+						{"FaceExpression2_NoBlush": "v.blush==2"},
+						{"FaceExpression3_NormalPupils": "v.roaming.emotion==0&&v.roaming.pupil!=0"},
+						{"FaceExpression4_GentlePupils": "v.roaming.emotion==1&&v.roaming.pupil!=0"},
+						{"FaceExpression5_SeriousPupils": "v.roaming.emotion==4&&v.roaming.pupil!=0"},
+						{"FaceExpression6_Heart": "v.speffect==1"},
+						{"FaceExpression7_Sweat": "v.speffect==2"},
+						{"FaceExpression8_ZZZ": "v.speffect==3"},
+						{"FaceExpression9_Stunned": "v.speffect==4"},
+						"BlueFloatingEffect",
+						"PurpleFloatingParticle1",
+						"PurpleFloatingParticle2",
+						"GoldenFloatingEffect_Elytra",
+						{"DownBodyClothPhy": "!tlm.is_statue&&!tlm.is_garage_kit"},
+						"DownBodySkirtPhy"
+					]
+				}
+			}
+		},
+		"player.post_use": {
+			"states": {
+				"default": {
+					"animations": ["use_mainhand:empty"],
+					"transitions": [
+						{"usemainbow": "ctrl.use('mainhand', ':bow')"},
+						{"useoffbow": "ctrl.use('offhand', ':bow')"},
+						{"usemainshield": "ctrl.use('mainhand', ':shield')"},
+						{"useoffshield": "ctrl.use('offhand', ':shield')"}
+					],
+					"blend_transition": 0.15,
+					"blend_via_shortest_path": true
+				},
+				"usemainbow": {
+					"animations": [
+						{"mainbowuse": "ctrl.idle"},
+						{"mainbowuse_!idle": "!ctrl.idle"},
+						"mainbowuse_effect"
+					],
+					"transitions": [
+						{"mainbowleave": "!ctrl.hold('mainhand', ':bow')"},
+						{"mainshoot": "!ctrl.use('mainhand', ':bow')&&ctrl.hold('mainhand', ':bow')"}
+					],
+					"blend_transition": 0.1,
+					"blend_via_shortest_path": true
+				},
+				"useoffbow": {
+					"animations": ["offbowuse", "offbowuse_effect"],
+					"transitions": [
+						{"offshoot": "!ctrl.use('offhand', ':bow')&&ctrl.hold('offhand', ':bow')"},
+						{"offbowleave": "!ctrl.hold('offhand', ':bow')"}
+					],
+					"blend_transition": 0.1,
+					"blend_via_shortest_path": true
+				},
+				"usemainshield": {
+					"animations": [
+						{"mainshielduse": "ctrl.idle"},
+						{"mainshielduse_!idle": "!ctrl.idle"}
+					],
+					"transitions": [
+						{"mainshieldleave": "!ctrl.hold('mainhand', ':shield')"},
+						{"mainguard": "!ctrl.use('mainhand', ':shield')&&ctrl.hold('mainhand', ':shield')"}
+					],
+					"blend_transition": 0.1,
+					"blend_via_shortest_path": true
+				},
+				"useoffshield": {
+					"animations": ["offshielduse"],
+					"transitions": [
+						{"offshieldleave": "!ctrl.hold('offhand', ':shield')"},
+						{"offguard": "!ctrl.use('offhand', ':shield')&&ctrl.hold('offhand', ':shield')"}
+					],
+					"blend_transition": 0.05,
+					"blend_via_shortest_path": true
+				},
+				"mainbowleave": {
+					"animations": [
+						{"mainbowuse_leave": "ctrl.idle"},
+						{"mainbowuse_leave_!idle": "!ctrl.idle"}
+					],
+					"transitions": [
+						{"default": "q.all_animations_finished"}
+					],
+					"blend_transition": 0.05,
+					"blend_via_shortest_path": true
+				},
+				"offbowleave": {
+					"animations": ["offbowuse_leave"],
+					"transitions": [
+						{"default": "q.all_animations_finished"}
+					],
+					"blend_transition": 0.05,
+					"blend_via_shortest_path": true
+				},
+				"mainshieldleave": {
+					"animations": [
+						{"mainshielduse_leave": "ctrl.idle"},
+						{"mainshielduse_leave_!idle": "!ctrl.idle"}
+					],
+					"transitions": [
+						{"default": "q.all_animations_finished"}
+					],
+					"blend_transition": 0.05,
+					"blend_via_shortest_path": true
+				},
+				"offshieldleave": {
+					"animations": ["offshielduse_leave"],
+					"on_exit": ["v.shielduseleave=1;"],
+					"transitions": [
+						{"default": "q.all_animations_finished"}
+					],
+					"blend_transition": 0.05,
+					"blend_via_shortest_path": true
+				},
+				"mainshoot": {
+					"animations": [
+						{"mainbowshoot": "ctrl.idle"},
+						{"mainbowshoot_!idle": "!ctrl.idle"}
+					],
+					"transitions": [
+						{"default": "q.all_animations_finished"},
+						{"mainbowleave": "!ctrl.hold('mainhand', ':bow')"}
+					],
+					"blend_transition": 0.15,
+					"blend_via_shortest_path": true
+				},
+				"offshoot": {
+					"animations": ["offbowshoot"],
+					"transitions": [
+						{"default": "q.all_animations_finished"},
+						{"offbowleave": "!ctrl.hold('offhand', ':bow')"}
+					],
+					"blend_transition": 0.15,
+					"blend_via_shortest_path": true
+				},
+				"mainguard": {
+					"animations": [
+						{"mainshieldguardend": "ctrl.idle"},
+						{"mainshieldguardend_!idle": "!ctrl.idle"}
+					],
+					"transitions": [
+						{"default": "q.all_animations_finished"},
+						{"mainshieldleave": "!ctrl.hold('mainhand', ':shield')"}
+					],
+					"blend_transition": 0.15,
+					"blend_via_shortest_path": true
+				},
+				"offguard": {
+					"animations": ["offshieldguardend"],
+					"transitions": [
+						{"default": "q.all_animations_finished"},
+						{"offshieldleave": "!ctrl.hold('offhand', ':shield')"}
+					]
+				}
+			}
+		},
+		"player.post_swing": {
+			"states": {
+				"default": {
+					"animations": ["use_mainhand:empty"],
+					"on_exit": ["v.swing_sword=0;"],
+					"transitions": [
+						{"attack1": "v.swing_sword&&!v.jump"},
+						{"attack_jump": "v.swing_sword&&v.jump"}
+					]
+				},
+				"attack1": {
+					"animations": [
+						{"swing_sword1": "ctrl.idle"},
+						{"swing_sword1_!idle": "!ctrl.idle&&v.stop==0"}
+					],
+					"on_exit": ["v.swing_sword=0;"],
+					"transitions": [
+						{"attack2": "v.swing_sword&&!v.jump"},
+						{"default": "q.all_animations_finished"},
+						{"attack_jump": "v.swing_sword&&v.jump"}
+					],
+					"blend_transition": 0.05,
+					"blend_via_shortest_path": true
+				},
+				"attack2": {
+					"animations": [
+						{"swing_sword2": "ctrl.idle"},
+						{"swing_sword2_!idle": "!ctrl.idle&&v.stop==0"}
+					],
+					"on_exit": ["v.swing_sword=0;"],
+					"transitions": [
+						{"attack3": "v.swing_sword&&!v.jump"},
+						{"default": "q.all_animations_finished"},
+						{"attack_jump": "v.swing_sword&&v.jump"}
+					],
+					"blend_transition": 0.05,
+					"blend_via_shortest_path": true
+				},
+				"attack3": {
+					"animations": [
+						{"swing_sword3": "ctrl.idle"},
+						{"swing_sword3_!idle": "!ctrl.idle&&v.stop==0"}
+					],
+					"on_exit": ["v.swing_sword=0;"],
+					"transitions": [
+						{"default": "q.all_animations_finished"},
+						{"attack1": "v.swing_sword&&!v.jump"},
+						{"attack_jump": "v.swing_sword&&v.jump"}
+					],
+					"blend_transition": {
+						"0.0": 1,
+						"0.0056": 0.96985,
+						"0.0111": 0.88302,
+						"0.0167": 0.75,
+						"0.0222": 0.58682,
+						"0.0278": 0.41318,
+						"0.0333": 0.25,
+						"0.0389": 0.11698,
+						"0.0445": 0.03015,
+						"0.05": 0
+					},
+					"blend_via_shortest_path": true
+				},
+				"attack_jump": {
+					"animations": ["swing_sword_jump"],
+					"on_exit": ["v.swing_sword=0;"],
+					"transitions": [
+						{"default": "q.all_animations_finished"},
+						{"attack1": "v.swing_sword&&!v.jump"}
+					],
+					"blend_transition": 0.15,
+					"blend_via_shortest_path": true
+				}
+			}
+		},
+		"player.post_hold": {
+			"states": {
+				"default": {
+					"animations": ["hold_offhand:empty"],
+					"transitions": [
+						{"offhandbow": "ctrl.hold('offhand', ':bow')"},
+						{"offhandshield": "ctrl.hold('offhand', ':shield')"},
+						{"noleaveanimation": "!ctrl.hold('offhand', ':bow')||!ctrl.hold('offhand', ':shield')"}
+					]
+				},
+				"offhandbow": {
+					"animations": [
+						"hold_offhand:bow_",
+						{"BlueFloatingEffectMolangLoop": "v.blueeffect_1==1"}
+					],
+					"on_exit": ["v.blueeffect_1=0;"],
+					"transitions": [
+						{"offhandbowleave": "!ctrl.hold('offhand', ':bow')"}
+					]
+				},
+				"offhandbowleave": {
+					"animations": ["hold_offhand:bow_leave"],
+					"transitions": [
+						{"default": "q.all_animations_finished"},
+						{"offhandbow": "ctrl.hold('offhand', ':bow')"}
+					],
+					"blend_transition": 0.1,
+					"blend_via_shortest_path": true
+				},
+				"offhandshield": {
+					"animations": [
+						"hold_offhand:shield_",
+						{"BlueFloatingEffectMolangLoop": "v.blueeffect_1==1"},
+						"SmallBlueFloatingEnergyShield"
+					],
+					"on_exit": ["v.blueeffect_1=0;"],
+					"transitions": [
+						{"offhandshieldleave": "!ctrl.hold('offhand', ':shield')"}
+					]
+				},
+				"offhandshieldleave": {
+					"animations": ["hold_offhand:shield_leave"],
+					"transitions": [
+						{"default": "q.all_animations_finished"},
+						{"offhandshield": "ctrl.hold('offhand', ':shield')"}
+					],
+					"blend_transition": 0.1,
+					"blend_via_shortest_path": true
+				},
+				"noleaveanimation": {
+					"animations": ["empty"],
+					"transitions": [
+						{"default": "ctrl.hold('offhand', ':bow')||ctrl.hold('offhand', ':shield')"}
+					],
+					"blend_transition": 0.1,
+					"blend_via_shortest_path": true
+				}
+			}
+		},
+		"player.pre_hold": {
+			"states": {
+				"default": {
+					"animations": ["hold_mainhand:empty"],
+					"transitions": [
+						{"mainhandbow": "ctrl.hold('mainhand', ':bow')&&!ctrl.hold('mainhand', '#irons_spellbooks:staff')"},
+						{"mainhandshield": "ctrl.hold('mainhand', ':shield')"},
+						{"mainhandsword": "ctrl.hold('mainhand', ':sword')"}
+					],
+					"blend_transition": 0.1,
+					"blend_via_shortest_path": true
+				},
+				"mainhandbow": {
+					"animations": [
+						"hold_mainhand:bow_",
+						{"BlueFloatingEffectMolangLoop": "v.blueeffect_1==1"}
+					],
+					"on_exit": ["v.blueeffect_1=0;"],
+					"transitions": [
+						{"mainhandbowleave": "!ctrl.hold('mainhand', ':bow')"}
+					]
+				},
+				"mainhandbowleave": {
+					"animations": ["hold_mainhand:bow_leave"],
+					"transitions": [
+						{"default": "q.all_animations_finished"}
+					],
+					"blend_transition": 0.1,
+					"blend_via_shortest_path": true
+				},
+				"mainhandshield": {
+					"animations": ["hold_mainhand:shield_"],
+					"transitions": [
+						{"mainhandshieldleave": "!ctrl.hold('mainhand', ':shield')"}
+					]
+				},
+				"mainhandshieldleave": {
+					"animations": ["hold_mainhand:shield_leave"],
+					"transitions": [
+						{"default": "q.all_animations_finished"}
+					],
+					"blend_transition": 0.1,
+					"blend_via_shortest_path": true
+				},
+				"mainhandsword": {
+					"animations": ["hold_mainhand:sword_"],
+					"transitions": [
+						{"mainhandswordleave": "!ctrl.hold('mainhand', ':sword')"}
+					]
+				},
+				"mainhandswordleave": {
+					"animations": ["hold_mainhand:sword_leave"],
+					"transitions": [
+						{"default": "q.all_animations_finished"}
+					],
+					"blend_transition": 0.1,
+					"blend_via_shortest_path": true
+				}
+			}
+		},
+		"player.parallel_4": {
+			"states": {
+				"default": {
+					"animations": ["empty2"],
+					"on_exit": ["v.extra6=0;"],
+					"transitions": [
+						{"extra6": "v.extra6==1&&ctrl.idle"}
+					]
+				},
+				"extra6": {
+					"animations": ["extra6_"],
+					"on_exit": ["v.extra6=0;"],
+					"transitions": [
+						{"Float": "q.all_animations_finished"},
+						{"default": "!ctrl.idle"}
+					],
+					"blend_transition": 0.1,
+					"blend_via_shortest_path": true
+				},
+				"Float": {
+					"animations": ["Floating_saintquartz1"],
+					"on_exit": ["v.extra6=0;"],
+					"transitions": [
+						{"default": "q.all_animations_finished"},
+						{"extra6": "v.extra6==1&&ctrl.idle"}
+					]
+				}
+			}
+		},
+		"player.parallel_5": {
+			"states": {
+				"default": {
+					"animations": [
+						{"Phy_parallel": "!tlm.is_statue&&!tlm.is_garage_kit"},
+						{"NoPhy_parallel": "tlm.is_statue||tlm.is_garage_kit"}
+					]
+				}
+			}
+		}
+	}
+}

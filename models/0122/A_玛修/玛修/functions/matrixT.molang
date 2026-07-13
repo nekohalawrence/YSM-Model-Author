@@ -1,0 +1,19 @@
+
+t.d=args[0];
+t.r.r00=t.r.r00;
+t.r.r01=t.r.r10;
+t.r.r02=t.r.r20; 
+t.r.r03=t.r.r30;
+t.r.r10=t.r.r01;
+t.r.r11=t.r.r11;
+t.r.r12=t.r.r21;
+t.r.r13=t.r.r31;
+t.r.r20=t.r.r02;
+t.r.r21=t.r.r12;
+t.r.r22=t.r.r22; 
+t.r.r23=t.r.r32;
+t.r.r30=t.r.r03;
+t.r.r31=t.r.r13;
+t.r.r32=t.r.r23; 
+t.r.r33=t.r.r33;
+return t.r;

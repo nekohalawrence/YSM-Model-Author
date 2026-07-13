@@ -1,0 +1,18 @@
+
+t.x=(ysm.bone_pivot_abs(args[1]).z*math.sin(q.eye_target_y_rotation)+ysm.bone_pivot_abs(args[1]).x*math.cos(q.eye_target_y_rotation))/16*0.7;
+t.y=ysm.bone_pivot_abs(args[1]).y*0.7/16;
+t.z=(ysm.bone_pivot_abs(args[1]).x*math.sin(q.eye_target_y_rotation)-ysm.bone_pivot_abs(args[1]).z*math.cos(q.eye_target_y_rotation))/16*0.7;
+t.dx=(ysm.bone_pivot_abs(args[2]).z*math.sin(q.eye_target_y_rotation)+ysm.bone_pivot_abs(args[2]).x*math.cos(q.eye_target_y_rotation))/16*0.7;
+t.dy=ysm.bone_pivot_abs(args[2]).y*0.7/16;
+t.dz=(ysm.bone_pivot_abs(args[2]).x*math.sin(q.eye_target_y_rotation)-ysm.bone_pivot_abs(args[2]).z*math.cos(q.eye_target_y_rotation))/16*0.7;
+
+
+
+t.n=0;
+loop(args[4]+1,{
+(args[4]!=0)&&args[6]&&ysm.bone_scale(args[2]).x&&ysm.bone_scale(args[2]).y&&ysm.bone_scale(args[2]).z&&ysm.bone_scale(args[1]).x&&ysm.bone_scale(args[1]).y&&ysm.bone_scale(args[1]).z?ysm.abs_particle(args[0], t.x/args[4]*(args[4]-t.n)+t.dx/args[4]*t.n, t.y/args[4]*(args[4]-t.n)+t.dy/args[4]*t.n, t.z/args[4]*(args[4]-t.n)+t.dz/args[4]*t.n ,0 ,0 ,0 ,args[3],1, args[5]):0;
+(args[4]==0)&&args[6]&&ysm.bone_scale(args[2]).x&&ysm.bone_scale(args[2]).y&&ysm.bone_scale(args[2]).z&&ysm.bone_scale(args[1]).x&&ysm.bone_scale(args[1]).y&&ysm.bone_scale(args[1]).z?ysm.abs_particle(args[0], t.x, t.y, t.z ,t.dx-t.x, t.dy-t.y, t.dz-t.z ,args[3],0, args[5]):0;
+t.n=t.n+1;
+});
+
+      

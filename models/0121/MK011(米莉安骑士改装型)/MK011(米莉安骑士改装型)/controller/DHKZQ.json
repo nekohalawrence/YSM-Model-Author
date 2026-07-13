@@ -1,0 +1,40 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"player.parallel_1": {
+			"states": {
+				"default": {
+					"animations": ["empty"],
+					"on_exit": ["v.sword=0;"],
+					"transitions": [
+						{"sword1": "v.sword"}
+					]
+				},
+				"sword1": {
+					"animations": ["sword1"],
+					"on_exit": ["v.sword=0;"],
+					"transitions": [
+						{"sword2": "v.sword"},
+						{"default": "q.all_animations_finished"}
+					]
+				},
+				"sword2": {
+					"animations": ["sword2"],
+					"on_exit": ["v.sword=0;"],
+					"transitions": [
+						{"sword3": "v.sword"},
+						{"default": "q.all_animations_finished"}
+					]
+				},
+				"sword3": {
+					"animations": ["sword3"],
+					"on_exit": ["v.sword=0;"],
+					"transitions": [
+						{"sword1": "v.sword"},
+						{"default": "q.all_animations_finished"}
+					]
+				}
+			}
+		}
+	}
+}

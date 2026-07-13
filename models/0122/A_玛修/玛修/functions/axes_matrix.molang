@@ -1,0 +1,22 @@
+
+t.d=args[0];
+t.dx=args[1];
+t.dy=args[2];
+t.dz=args[3];
+t.r.r00=t.dx.x-t.d.x;
+t.r.r01=t.dy.x-t.d.x;
+t.r.r02=t.dz.x-t.d.x; 
+t.r.r03=t.d.x;
+t.r.r10=t.dx.y-t.d.y;
+t.r.r11=t.dy.y-t.d.y;
+t.r.r12=t.dz.y-t.d.y;
+t.r.r13=t.d.y;
+t.r.r20=t.dx.z-t.d.z;
+t.r.r21=t.dy.z-t.d.z;
+t.r.r22=t.dz.z-t.d.z; 
+t.r.r23=t.d.z;
+t.r.r30=0;
+t.r.r31=0;
+t.r.r32=0; 
+t.r.r33=1;
+return t.r;

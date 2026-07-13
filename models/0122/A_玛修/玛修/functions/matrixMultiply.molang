@@ -1,0 +1,21 @@
+
+
+    t.dt=args[0];
+    t.dc=args[1];
+    t.r.r00=t.dt.r00*t.dc.r00+t.dt.r01*t.dc.r10+t.dt.r02*t.dc.r20+t.dt.r03*t.dc.r30;
+    t.r.r01=t.dt.r00*t.dc.r01+t.dt.r01*t.dc.r11+t.dt.r02*t.dc.r21+t.dt.r03*t.dc.r31;
+    t.r.r02=t.dt.r00*t.dc.r02+t.dt.r01*t.dc.r12+t.dt.r02*t.dc.r22+t.dt.r03*t.dc.r32;
+    t.r.r03=t.dt.r00*t.dc.r03+t.dt.r01*t.dc.r13+t.dt.r02*t.dc.r23+t.dt.r03*t.dc.r33;
+    t.r.r10=t.dt.r10*t.dc.r00+t.dt.r11*t.dc.r10+t.dt.r12*t.dc.r20+t.dt.r13*t.dc.r30;
+    t.r.r11=t.dt.r10*t.dc.r01+t.dt.r11*t.dc.r11+t.dt.r12*t.dc.r21+t.dt.r13*t.dc.r31;
+    t.r.r12=t.dt.r10*t.dc.r02+t.dt.r11*t.dc.r12+t.dt.r12*t.dc.r22+t.dt.r13*t.dc.r32;
+    t.r.r13=t.dt.r10*t.dc.r03+t.dt.r11*t.dc.r13+t.dt.r12*t.dc.r23+t.dt.r13*t.dc.r33;
+    t.r.r20=t.dt.r20*t.dc.r00+t.dt.r21*t.dc.r10+t.dt.r22*t.dc.r20+t.dt.r23*t.dc.r30;
+    t.r.r21=t.dt.r20*t.dc.r01+t.dt.r21*t.dc.r11+t.dt.r22*t.dc.r21+t.dt.r23*t.dc.r31;
+    t.r.r22=t.dt.r20*t.dc.r02+t.dt.r21*t.dc.r12+t.dt.r22*t.dc.r22+t.dt.r23*t.dc.r32;
+    t.r.r23=t.dt.r20*t.dc.r03+t.dt.r21*t.dc.r13+t.dt.r22*t.dc.r23+t.dt.r23*t.dc.r33;
+    t.r.r30=t.dt.r30*t.dc.r00+t.dt.r31*t.dc.r10+t.dt.r32*t.dc.r20+t.dt.r33*t.dc.r30;
+    t.r.r31=t.dt.r30*t.dc.r01+t.dt.r31*t.dc.r11+t.dt.r32*t.dc.r21+t.dt.r33*t.dc.r31;
+    t.r.r32=t.dt.r30*t.dc.r02+t.dt.r31*t.dc.r12+t.dt.r32*t.dc.r22+t.dt.r33*t.dc.r32;
+    t.r.r33=t.dt.r30*t.dc.r03+t.dt.r31*t.dc.r13+t.dt.r32*t.dc.r23+t.dt.r33*t.dc.r33;
+    return t.r;

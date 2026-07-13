@@ -1,0 +1,16 @@
+
+t.ol_x=args[0];
+t.ol_y=args[1];
+t.ol_z=args[2];
+t.ribbonphy_cx = math.cos(t.ol_x/2);
+t.ribbonphy_sx = math.sin(t.ol_x/2);
+t.ribbonphy_cy = math.cos(t.ol_y/2);
+t.ribbonphy_sy = math.sin(t.ol_y/2);
+t.ribbonphy_cz = math.cos(t.ol_z/2);
+t.ribbonphy_sz = math.sin(t.ol_z/2);
+t.ribbonphy_q.w = t.ribbonphy_cx * t.ribbonphy_cy * t.ribbonphy_cz + t.ribbonphy_sx * t.ribbonphy_sy * t.ribbonphy_sz;
+t.ribbonphy_q.x = t.ribbonphy_sx * t.ribbonphy_cy * t.ribbonphy_cz - t.ribbonphy_cx * t.ribbonphy_sy * t.ribbonphy_sz;
+t.ribbonphy_q.y = t.ribbonphy_cx * t.ribbonphy_sy * t.ribbonphy_cz + t.ribbonphy_sx * t.ribbonphy_cy * t.ribbonphy_sz;
+t.ribbonphy_q.z = t.ribbonphy_cx * t.ribbonphy_cy * t.ribbonphy_sz - t.ribbonphy_sx * t.ribbonphy_sy * t.ribbonphy_cz;
+
+return t.ribbonphy_q;

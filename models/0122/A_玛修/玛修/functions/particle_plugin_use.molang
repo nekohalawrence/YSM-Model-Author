@@ -1,0 +1,21 @@
+
+
+t.dac=args[11];
+t.dc=args[4];
+t.ca.x=args[1];
+t.ca.y=args[2];
+t.ca.z=args[3];
+t.dt=fn.translate(t.ca);
+t.r=fn.matrixMultiply(t.dc,t.dt);
+t.rot=(ysm.shoot_item_id)?(90-q.eye_target_y_rotation):(q.body_y_rotation);
+
+t.x=(t.r.r23*math.sin(t.rot)+t.r.r03*math.cos(t.rot))/16*0.7;
+t.y=t.r.r13*0.7/16;
+t.z=(t.r.r03*math.sin(t.rot)-t.r.r23*math.cos(t.rot))/16*0.7;
+
+t.dx=args[5]+4.5*args[12]*(args[13]*t.x-(t.dac.z*math.sin(t.rot)+t.dac.x*math.cos(t.rot))/16*0.7);
+t.dy=args[6]+4.5*args[12]*(args[13]*t.y-t.dac.y*0.7/16);
+t.dz=args[7]+4.5*args[12]*(args[13]*t.z-(t.dac.x*math.sin(t.rot)-t.dac.z*math.cos(t.rot))/16*0.7);
+
+(ysm.shoot_item_id)?ysm.abs_particle(args[0], t.z,t.y,-t.x ,t.dx,t.dy,t.dz,args[8],args[9], args[10]):ysm.abs_particle(args[0], t.x,t.y,t.z ,t.dx,t.dy,t.dz,args[8],args[9], args[10]);
+

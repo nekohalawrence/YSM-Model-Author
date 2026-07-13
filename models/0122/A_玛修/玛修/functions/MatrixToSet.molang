@@ -1,0 +1,6 @@
+
+t.d=args[0];
+t.r.y = t.d.r13;
+t.r.z = t.d.r23;
+t.r.x = t.d.r03; 
+return t.r;

@@ -1,0 +1,149 @@
+{
+	"spec": 2,
+	"metadata": {
+		"name": "Mon3tr",
+		"tips": "干员Mon3tr归队！！！",
+		"license": {
+			"type": "CC-BY-NC",
+			"desc": "创作共用-署名-非商业性"
+		},
+		"authors": [
+			{
+				"name": "辅助hero（b站：辅助EinHeld）",
+				"role": "模型 动画 贴图",
+				"avatar": "avatar/OIP-C (1).webp",
+				"contact": {
+					"Bilibili": "https://space.bilibili.com/483015918"
+				},
+				"comment": "兴趣使然的创作者"
+			}
+		],
+		"link": {
+			"home": "https://modrinth.com/mod/yes-steve-model",
+			"donate": "https://afdian.com/a/ysmmod"
+		}
+	},
+	"properties": {
+		"height_scale": 1,
+		"width_scale": 1,
+		"extra_animation": {
+			"extra1": "#服饰",
+			"extra2": "#Face",
+			"extra3": ""
+		},
+		"extra_animation_buttons": [
+			{
+				"id": "服饰",
+				"name": "服饰",
+				"config_forms": [
+					{
+						"type": "checkbox",
+						"title": "外套",
+						"description": "点击以关闭外套显示",
+						"value": "v.WaiTao"
+					},
+					{
+						"type": "radio",
+						"title": "底裤选择器",
+						"description": "选择Mon3tr底裤",
+						"value": "v.DiKu",
+						"labels": {
+							"黑色安全裤": "v.DiKu=0",
+							"凯尔希圣遗物": "v.DiKu=1"
+						}
+					},
+					{
+						"type": "checkbox",
+						"title": "待机源石爪",
+						"description": "开启以常态显示源石爪子",
+						"value": "v.ZhuaZi"
+					}
+				]
+			},
+			{
+				"id": "Face",
+				"name": "表情设置",
+				"config_forms": [
+					{
+						"type": "range",
+						"title": "嘴巴",
+						"description": "设定嘴巴类型",
+						"value": "v.face",
+						"step": 1,
+						"min": 0,
+						"max": 1
+					}
+				]
+			}
+		],
+		"preview_animation": "gui",
+		"disable_preview_rotation": true,
+		"gui_no_lighting": false,
+		"gui_foreground": "textures/gui/foreground.png",
+		"gui_background": "textures/gui/background.png",
+		"default_texture": "default",
+		"render_layers_first": false,
+		"free": true,
+		"all_cutout": false
+	},
+	"files": {
+		"player": {
+			"model": {
+				"main": "models/main.json",
+				"arm": "models/arm.json"
+			},
+			"animation": {
+				"main": "animations/main.animation.json",
+				"arm": "animations/arm.animation.json",
+				"extra": "animations/extra.animation.json",
+				"tac": "animations/tac.animation.json",
+				"carryon": "animations/carryon.animation.json",
+				"parcool": "animations/parcool.animation.json",
+				"swem": "animations/swem.animation.json",
+				"slashblade": "animations/slashblade.animation.json",
+				"tlm": "animations/tlm.animation.json",
+				"fp_arm": "animations/fp.arm.animation.json"
+			},
+			"animation_controllers": ["controller/main.animation_controllers.json"],
+			"texture": [
+				{
+					"uv": "textures/default.png"
+				}
+			]
+		},
+		"projectiles": [
+			{
+				"model": "models/arrow.json",
+				"animation": "animations/arrow.animation.json",
+				"texture": {
+					"uv": "textures/arrow.png"
+				},
+				"match": ["minecraft:arrow"]
+			},
+			{
+				"model": "models/fishing_bobber.json",
+				"texture": {
+					"uv": "textures/fishing_bobber.png"
+				},
+				"match": ["minecraft:fishing_bobber"]
+			}
+		],
+		"vehicles": [
+			{
+				"model": "models/boat.json",
+				"animation": "animations/boat.animation.json",
+				"texture": {
+					"uv": "textures/boat.png"
+				},
+				"match": ["minecraft:boat"]
+			},
+			{
+				"model": "models/minecart.json",
+				"texture": {
+					"uv": "textures/minecart.png"
+				},
+				"match": ["minecraft:minecart"]
+			}
+		]
+	}
+}
