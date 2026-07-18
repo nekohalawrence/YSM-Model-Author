@@ -141,11 +141,11 @@
 - 0105：[#超级大鸡腿丶 | #Nss](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0105)
 - 0106：[#ナヒーダ](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0106)
 - 0107：[#宇宙影帝の终焉](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0107)
-- 0108：[- 平台: #bilibili #afdian](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0108)
+- 0108：[#原原本本空空](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0108)
 - 0109：[#水神](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0109)
 - 0110：[#Nona_reeves #映素](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0110)
 - 0111：[#奶油桃NaytoTime](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0111)
-- 0112：[#大莫家 #MCZ工作室](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0112)
+- 0112：[#大莫家 #MCZ工作室 #犟猫](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0112)
 - 0113：[#秋风](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0113)
 - 0114：[#迷糊晓雾](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0114)
 - 0115：[#落阳不养羊](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0115)
@@ -161,6 +161,9 @@
 - 0125：[#辅助EinHeld](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0125)
 - 0126：[#空洞qwq](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0126)
 - 0127：[#总督神绮](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0127)
+- 0128：[#Ark样本](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0128)
+- 0129：[#Dr观星](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0129)
+- 0130：[#断罪千念](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/tree/main/models/0130)
 <!-- AUTHORS_LIST_END -->
 
 ## 项目结构
