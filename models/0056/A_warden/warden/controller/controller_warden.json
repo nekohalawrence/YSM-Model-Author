@@ -1,0 +1,185 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"player.parallel_2": {
+			"initial_state": "缓冲",
+			"states": {
+				"缓冲": {
+					"animations": ["nope"],
+					"transitions": [
+						{"左手手刀起始": "ctrl.hold('mainhand', ':sword')"},
+						{"左手拳击起始": "ctrl.hold('mainhand', '#minecraft:pickaxes')"}
+					]
+				},
+				"左手拳击起始": {
+					"animations": ["左手拳击起始"],
+					"transitions": [
+						{"左手拳击待机": "q.all_animations_finished"}
+					]
+				},
+				"左手拳击待机": {
+					"animations": ["左手拳击待机"],
+					"transitions": [
+						{"缓冲": "!ctrl.hold('mainhand', '#minecraft:pickaxes')"},
+						{"左手拳击攻击": "ctrl.swing('mainhand', '#minecraft:pickaxes')"},
+						{"双手防御": "ctrl.use('offhand', '$minecraft:shield')||ctrl.use('mainhand', '$minecraft:shield')"}
+					]
+				},
+				"左手拳击攻击": {
+					"animations": ["左手拳击挥动"],
+					"transitions": [
+						{"左手拳击待机": "q.all_animations_finished"}
+					]
+				},
+				"左手手刀起始": {
+					"animations": ["左手手刀起始"],
+					"transitions": [
+						{"左手手刀待机": "q.all_animations_finished\n"}
+					]
+				},
+				"左手手刀待机": {
+					"animations": ["左手手刀待机"],
+					"transitions": [
+						{"缓冲": "!ctrl.hold('mainhand', ':sword')"},
+						{"左手手刀攻击": "ctrl.swing('mainhand', ':sword')"},
+						{"双手防御": "ctrl.use('offhand', '$minecraft:shield')||ctrl.use('mainhand', '$minecraft:shield')"}
+					]
+				},
+				"左手手刀攻击": {
+					"animations": ["左手手刀挥动"],
+					"transitions": [
+						{"左手手刀待机": "q.all_animations_finished"}
+					]
+				},
+				"双手防御": {
+					"animations": ["双手防御"],
+					"transitions": [
+						{"左手手刀待机": "ctrl.hold('mainhand', ':sword')&&!ctrl.use('offhand', '$minecraft:shield')&&!ctrl.use('mainhand', '$minecraft:shield')"},
+						{"左手拳击待机": "ctrl.hold('mainhand', '#minecraft:pickaxes')&&!ctrl.use('offhand', '$minecraft:shield')&&!ctrl.use('mainhand', '$minecraft:shield')\n"}
+					]
+				}
+			}
+		},
+		"player.parallel_0": {
+			"states": {
+				"default": {
+					"animations": ["parallel0", "parallel1", "parallel2", "parallel3", "parallel4", "parallel5", "parallel6", "parallel7"]
+				}
+			}
+		},
+		"player.parallel_1": {
+			"initial_state": "slower",
+			"states": {
+				"slower": {
+					"animations": ["vibrate_slower"],
+					"transitions": [
+						{"fast": "v.vibrate==1"}
+					],
+					"blend_transition": 0.2
+				},
+				"fast": {
+					"animations": ["vibrate_fast"],
+					"transitions": [
+						{"slower": "v.vibrate==0"}
+					],
+					"blend_transition": 0.2
+				}
+			}
+		},
+		"player.parallel_3": {
+			"initial_state": "缓冲",
+			"states": {
+				"缓冲": {
+					"animations": ["nope"],
+					"transitions": [
+						{"右手拳击起始": "ctrl.hold('mainhand', '#minecraft:axes')||ctrl.hold('mainhand', '#minecraft:shovels')||ctrl.hold('mainhand', '#minecraft:hoes')||ctrl.hold('mainhand', '$minecraft:mace')"}
+					]
+				},
+				"右手拳击起始": {
+					"animations": ["右手拳击起始"],
+					"transitions": [
+						{"右手拳击待机": "q.all_animations_finished"}
+					]
+				},
+				"右手拳击待机": {
+					"animations": ["右手拳击循环"],
+					"transitions": [
+						{"缓冲": "!ctrl.hold('mainhand', '#minecraft:axes')&&!ctrl.hold('mainhand', '#minecraft:shovels')&&!ctrl.hold('mainhand', '#minecraft:hoes')&&!ctrl.hold('mainhand', '$minecraft:mace')\n"},
+						{"直拳": "ctrl.swing('mainhand', '$minecraft:mace')"},
+						{"上勾拳": "ctrl.swing('mainhand', '#minecraft:hoes')"},
+						{"右勾拳": "ctrl.swing('mainhand', '#minecraft:shovels')\n"},
+						{"双手防御": "ctrl.use('offhand', '$minecraft:shield')||ctrl.use('mainhand', '$minecraft:shield')\n"},
+						{"肘击": "ctrl.swing('mainhand', '#minecraft:axes')"}
+					]
+				},
+				"直拳": {
+					"animations": ["直拳"],
+					"transitions": [
+						{"右手拳击待机": "q.all_animations_finished"}
+					],
+					"blend_via_shortest_path": true
+				},
+				"上勾拳": {
+					"animations": ["上勾拳"],
+					"transitions": [
+						{"右手拳击待机": "q.all_animations_finished"}
+					]
+				},
+				"右勾拳": {
+					"animations": ["右勾拳"],
+					"transitions": [
+						{"右手拳击待机": "q.all_animations_finished"}
+					]
+				},
+				"肘击": {
+					"animations": ["肘击"],
+					"transitions": [
+						{"右手拳击待机": "q.all_animations_finished"}
+					]
+				},
+				"双手防御": {
+					"animations": ["双手防御"],
+					"transitions": [
+						{"右手拳击待机": "!ctrl.use('offhand', '$minecraft:shield')&&!ctrl.use('mainhand', '$minecraft:shield')"}
+					]
+				}
+			}
+		},
+		"player.parallel_4": {
+			"initial_state": "缓冲",
+			"states": {
+				"缓冲": {
+					"transitions": [
+						{"跳跃": "ctrl.jump&&query.vertical_speed>0"},
+						{"飞行": "ctrl.fly"},
+						{"跳跃下坠": "ctrl.jump&&query.vertical_speed<0"}
+					],
+					"blend_transition": 0.1
+				},
+				"跳跃": {
+					"animations": ["jump"],
+					"transitions": [
+						{"跳跃下坠": "ctrl.jump&&q.all_animations_finished"},
+						{"飞行": "ctrl.fly"},
+						{"缓冲": "!ctrl.jump"}
+					],
+					"blend_transition": 0.1
+				},
+				"跳跃下坠": {
+					"animations": ["jump_fall"],
+					"transitions": [
+						{"缓冲": "!ctrl.jump"}
+					],
+					"blend_transition": 0.1
+				},
+				"飞行": {
+					"animations": ["fly"],
+					"transitions": [
+						{"跳跃下坠": "!ctrl.fly"}
+					],
+					"blend_transition": 0.1
+				}
+			}
+		}
+	}
+}

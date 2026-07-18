@@ -1,0 +1,16 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"画画": {
+			"loop": true,
+			"bones": {
+				"LeftArm": {
+					"rotation": [0, 0, -75]
+				},
+				"RightArm": {
+					"rotation": [0, 0, 75]
+				}
+			}
+		}
+	}
+}

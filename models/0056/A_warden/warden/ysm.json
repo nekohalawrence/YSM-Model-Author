@@ -1,0 +1,133 @@
+{
+  "spec": 2,
+  "metadata": {
+    "name": "坚守者娘",
+    "tips": "随着创造她的存在也消失，她成为了这片遗址的看守者，长年孤独地履行着自己的职责。",
+    "license": {
+      "type": "all rights reserved"
+    },
+    "authors": [
+      {
+        "name": "哥斯拉",
+        "role": "模型",
+        "avatar": "avatar/gsl.png",
+        "contact": {
+          "Afdian": "https://afdian.com/a/6TGESILA",
+          "Bilibili": "https://space.bilibili.com/17798027"
+        },
+        "comment": "稳步提升 勿忘初心"
+      },
+      {
+        "name": "02Bunny",
+        "role": "模型",
+        "avatar": "avatar/02bunny.png",
+        "comment": ""
+      },
+      {
+        "name": "雷切克",
+        "role": "动画",
+        "avatar": "avatar/receke.png",
+        "contact": {
+          "Afdian": "https://afdian.com/a/Receke",
+          "Bilibili": "https://space.bilibili.com/33150006"
+        },
+        "comment": "动画师缚丝刘经理"
+      }
+    ],
+    "link": {
+      "home": "https://space.bilibili.com/17798027",
+      "donate": "https://afdian.com/a/6TGESILA"
+    }
+  },
+  "properties": {
+    "height_scale": 0.7,
+    "width_scale": 0.7,
+    "extra_animation": {
+      "extra0": "#模型配置",
+      "#坚守者默认动作": "§b坚守者动作合集",
+      "extra1": "§3提裙礼",
+      "extra5": "§3坐下_1",
+      "extra6": "§3坐下_2",
+      "extra7": "§3悬浮坐下",
+      "extra8": "§e一小杯民主"
+    },
+    "extra_animation_classify": [
+      {
+        "id": "坚守者默认动作",
+        "extra_animation": {
+          "#return": "§c返回按钮",
+          "extra2": "§3坚守者出现",
+          "extra3": "§3坚守者消失",
+          "extra4": "§3坚守者搜索"
+        }
+      }
+    ],
+    "extra_animation_buttons": [
+      {
+        "id":"模型配置",
+        "name": "模型配置",
+        "config_forms": [
+          {
+            "type": "range",
+            "title": "角色大小",
+            "description": "用以调整角色大小",
+            "value": "v.player_size",
+            "step": 0.05,
+            "min": 1,
+            "max": 1.6
+          },
+          {
+            "type": "radio",
+            "title": "震动频率",
+            "description": "手臂装饰的震动频率",
+            "value": "v.vibrate",
+            "labels": {
+              "缓慢": "v.vibrate=0;",
+              "快速": "v.vibrate=1;"
+            }
+          },
+          {
+            "type": "checkbox",
+            "title": "隐藏悬浮臂",
+            "description": " 注：悬浮臂有替换工具动画，如有动画缺失优先检查此选项",
+             "value": "v.hover"
+          },
+          {
+            "type": "checkbox",
+            "title": "显示眼罩",
+            "description": " 开关坚守者眼罩",
+             "value": "v.patch"
+          }
+        ]
+      }
+    ],
+    "preview_animation": "stage",
+    "default_texture": "warden",
+    "render_layers_first": false,
+    "free": true,
+    "disable_preview_rotation": true
+  },
+  "files": {
+    "player": {
+      "model": {
+        "main": "models/main.json",
+        "arm": "models/arm.json"
+      },
+      "animation": {
+        "main": "animations/main.animation.json",
+        "arm": "animations/arm.animation.json",
+        "extra": "animations/extra.animation.json",
+        "tac": "animations/tac.animation.json",
+        "carryon": "animations/carryon.animation.json",
+        "parcool": "animations/parcool.animation.json",
+        "swem": "animations/swem.animation.json"
+      },
+      "animation_controllers":[
+        "controller/controller_warden.json"
+      ],
+      "texture": [
+        "textures/warden.png"
+      ]
+    }
+  }
+}

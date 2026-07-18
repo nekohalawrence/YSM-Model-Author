@@ -1,0 +1,291 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"forward": {
+			"loop": true,
+			"animation_length": 2,
+			"bones": {
+				"LeftFrontWheel": {
+					"rotation": ["(q.anim_time / 0.4) * 180", 0, 0]
+				},
+				"LeftBackWheel": {
+					"rotation": ["(q.anim_time / 0.4) * 180", 0, 0]
+				},
+				"RightBackWheel": {
+					"rotation": ["(q.anim_time / 0.4) * 180", 0, 0]
+				},
+				"RightFrontWheel": {
+					"rotation": ["(q.anim_time / 0.4) * 180", 0, 0]
+				},
+				"DaLun": {
+					"rotation": ["(q.ground_speed * q.anim_time / 0.4) * 180", 0, 0]
+				},
+				"HouLu": {
+					"rotation": ["(q.ground_speed * q.anim_time / 0.4) * 180", 0, 0]
+				},
+				"QianLu": {
+					"rotation": ["(q.ground_speed * q.anim_time / 0.4) * 180", 0, 0]
+				},
+				"UpWheel": {
+					"rotation": ["(q.ground_speed * q.anim_time / 0.4) * 180", 0, 0]
+				},
+				"BackWheel": {
+					"rotation": ["(q.ground_speed * q.anim_time / 0.4) * 180", 0, 0]
+				},
+				"ShangWheel": {
+					"rotation": ["(q.ground_speed * q.anim_time / 0.4) * 180", 0, 0]
+				},
+				"qvbing": {
+					"rotation": ["(q.anim_time / 0.4) * 360", 0, 0]
+				},
+				"UpWheel2": {
+					"rotation": ["(q.ground_speed * q.anim_time / 0.4) * 180", 0, 0]
+				},
+				"HuoSai": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.0417": [0, 0, 0],
+						"0.0833": [0, 0, 1.08],
+						"0.125": [0, 0, 2.04],
+						"0.1667": [0, 0, 3],
+						"0.2083": [0, 0, 3],
+						"0.25": [0, 0, 2.75],
+						"0.2917": [0, 0, 1.5],
+						"0.3333": [0, 0, 0.5],
+						"0.375": [0, 0, -0.25],
+						"0.4167": [0, 0, -0.25],
+						"0.4583": [0, 0, 0],
+						"0.5": [0, 0, 1.08],
+						"0.5417": [0, 0, 2.54],
+						"0.5833": [0, 0, 3.5],
+						"0.625": [0, 0, 3.25],
+						"0.6667": [0, 0, 2.25],
+						"0.7083": [0, 0, 1.25],
+						"0.75": [0, 0, 0],
+						"0.7917": [0, 0, -0.25],
+						"0.8333": [0, 0, -0.5],
+						"0.875": [0, 0, 0.75],
+						"0.9167": [0, 0, 2.08],
+						"0.9583": [0, 0, 2.79],
+						"1.0": [0, 0, 3.5],
+						"1.0417": [0, 0, 3],
+						"1.0833": [0, 0, 1.75],
+						"1.125": [0, 0, 0.25],
+						"1.1667": [0, 0, -0.5],
+						"1.2083": [0, 0, -0.25],
+						"1.25": [0, 0, -0.25],
+						"1.2917": [0, 0, 1],
+						"1.3333": [0, 0, 2.08],
+						"1.375": [0, 0, 3.04],
+						"1.4167": [0, 0, 3.25],
+						"1.4583": [0, 0, 2.5],
+						"1.5": [0, 0, 1.25],
+						"1.5417": [0, 0, 0.25],
+						"1.5833": [0, 0, 0],
+						"1.625": [0, 0, -0.25],
+						"1.6667": [0, 0, 0.25],
+						"1.7083": [0, 0, 1.25],
+						"1.75": [0, 0, 2.83],
+						"1.7917": [0, 0, 3.54],
+						"1.8333": [0, 0, 3.25],
+						"1.875": [0, 0, 2.25],
+						"1.9167": [0, 0, 0.75],
+						"1.9583": [0, 0, 0],
+						"2.0": [0, 0, 0]
+					}
+				},
+				"LianGan": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.0417": [13.13, 0, 0],
+						"0.0833": [20.42, 0, 0],
+						"0.125": [21.46, 0, 0],
+						"0.1667": [12.5, 0, 0],
+						"0.2083": [-7.5, 0, 0],
+						"0.25": [-15, 0, 0],
+						"0.2917": [-20, 0, 0],
+						"0.3333": [-20, 0, 0],
+						"0.375": [-7.5, 0, 0],
+						"0.4167": [5, 0, 0],
+						"0.4583": [13.13, 0, 0],
+						"0.5": [20.42, 0, 0],
+						"0.5417": [21.46, 0, 0],
+						"0.5833": [12.5, 0, 0],
+						"0.625": [-7.5, 0, 0],
+						"0.6667": [-15, 0, 0],
+						"0.7083": [-20, 0, 0],
+						"0.75": [-20, 0, 0],
+						"0.7917": [-7.5, 0, 0],
+						"0.8333": [5, 0, 0],
+						"0.875": [13.13, 0, 0],
+						"0.9167": [20.42, 0, 0],
+						"0.9583": [21.46, 0, 0],
+						"1.0": [12.5, 0, 0],
+						"1.0417": [-7.5, 0, 0],
+						"1.0833": [-15, 0, 0],
+						"1.125": [-20, 0, 0],
+						"1.1667": [-20, 0, 0],
+						"1.2083": [-7.5, 0, 0],
+						"1.25": [5, 0, 0],
+						"1.2917": [13.13, 0, 0],
+						"1.3333": [20.42, 0, 0],
+						"1.375": [21.46, 0, 0],
+						"1.4167": [12.5, 0, 0],
+						"1.4583": [-7.5, 0, 0],
+						"1.5": [-15, 0, 0],
+						"1.5417": [-20, 0, 0],
+						"1.5833": [-20, 0, 0],
+						"1.625": [-7.5, 0, 0],
+						"1.6667": [5, 0, 0],
+						"1.7083": [13.13, 0, 0],
+						"1.75": [20.42, 0, 0],
+						"1.7917": [21.46, 0, 0],
+						"1.8333": [12.5, 0, 0],
+						"1.875": [-7.5, 0, 0],
+						"1.9167": [-15, 0, 0],
+						"1.9583": [-20, 0, 0],
+						"2.0": [0, 0, 0]
+					}
+				},
+				"chandonggan": {
+					"rotation": ["(q.ground_speed * q.anim_time / 0.4) * 180", 0, 0]
+				},
+				"danggan": {
+					"rotation": [37.5, 0, 0]
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "car_run"
+				}
+			}
+		},
+		"has_ride": {
+			"loop": true,
+			"animation_length": 2.9167,
+			"sound_effects": {
+				"0.0": {
+					"effect": "car_idle"
+				}
+			}
+		},
+		"parallel0": {
+			"loop": true,
+			"animation_length": 0.5,
+			"bones": {
+				"Car": {
+					"position": [0, "-query.vertical_speed", 0],
+					"scale": {
+						"0.0": {
+							"post": [1, 1, 1],
+							"lerp_mode": "catmullrom"
+						},
+						"0.125": {
+							"post": [1.1, 0.6, 1.1],
+							"lerp_mode": "catmullrom"
+						},
+						"0.25": {
+							"post": [1.1, 0.6, 1.1],
+							"lerp_mode": "catmullrom"
+						},
+						"0.375": {
+							"post": [1, 1, 1],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"DuLunChe": {
+					"rotation": ["-query.vertical_speed", 0, 0]
+				},
+				"GuoLu2": {
+					"rotation": {
+						"0.0": [0, 0, -18],
+						"0.0417": [0, 0, -30.5],
+						"0.0833": [0, 0, -19.36],
+						"0.125": [0, 0, -41.72],
+						"0.1667": [0, 0, -19.08],
+						"0.2083": [0, 0, -31.44],
+						"0.25": [0, 0, -4.52],
+						"0.2917": [0, 0, -31.77],
+						"0.3333": [0, 0, -19.02],
+						"0.375": [0, 0, -51.26],
+						"0.4167": [0, 0, -15.17],
+						"0.4583": [0, 0, -39.08],
+						"0.5": [0, 0, -18]
+					}
+				}
+			},
+			"timeline": {
+				"0.0": [
+					"ysm.particle('minecraft:dust_color_transition 1 1 1 5 1 1 1', 0.2, 2.5, -1.1, 0, 0, 0, 20, 0, 40);",
+					"ysm.particle('minecraft:dust_color_transition 1 1 1 5 1 1 1', 0.2, 2.5, -1.1, 0, 0, 0, 20, 0, 40);",
+					"ysm.particle('minecraft:dust_color_transition 1 1 1 5 1 1 1', 0.2, 2.5, -1.1, 0, 0, 0, 20, 0, 40);",
+					"ysm.particle('minecraft:dust_color_transition 1 1 1 5 1 1 1', 0.2, 2.5, -1.1, 0, 0, 0, 20, 0, 40);",
+					"ysm.particle('minecraft:dust_color_transition 1 1 1 5 1 1 1', 0.2, 2.5, -1.1, 0, 0, 0, 20, 0, 40);",
+					"ysm.particle('minecraft:dust_color_transition 1 1 1 5 1 1 1', 0.2, 2.5, -1.1, 0, 0, 0, 20, 0, 40);",
+					"ysm.particle('minecraft:dust_color_transition 1 1 1 5 1 1 1', 0.2, 2.5, -1.1, 0, 0, 0, 20, 0, 40);",
+					"ysm.particle('minecraft:dust_color_transition 1 1 1 5 1 1 1', 0.2, 2.5, -1.1, 0, 0, 0, 20, 0, 40);"
+				],
+				"0.0417": [
+					"ysm.particle('minecraft:dust_color_transition 1 1 1 5 1 1 1', 0.2, 2.6, -1.1, 0, 0, 0, 20, 0, 40);",
+					"ysm.particle('minecraft:dust_color_transition 1 1 1 5 1 1 1', 0.2, 2.6, -1.1, 0, 0, 0, 20, 0, 40);",
+					"ysm.particle('minecraft:dust_color_transition 1 1 1 5 1 1 1', 0.2, 2.6, -1.1, 0, 0, 0, 20, 0, 40);",
+					"ysm.particle('minecraft:dust_color_transition 1 1 1 5 1 1 1', 0.2, 2.6, -1.1, 0, 0, 0, 20, 0, 40);",
+					"ysm.particle('minecraft:dust_color_transition 1 1 1 5 1 1 1', 0.2, 2.6, -1.1, 0, 0, 0, 20, 0, 40);",
+					"ysm.particle('minecraft:dust_color_transition 1 1 1 5 1 1 1', 0.2, 2.6, -1.1, 0, 0, 0, 20, 0, 40);",
+					"ysm.particle('minecraft:dust_color_transition 1 1 1 5 1 1 1', 0.2, 2.6, -1.1, 0, 0, 0, 20, 0, 40);",
+					"ysm.particle('minecraft:dust_color_transition 1 1 1 5 1 1 1', 0.2, 2.6, -1.1, 0, 0, 0, 20, 0, 40);"
+				],
+				"0.0833": [
+					"ysm.particle('minecraft:dust_color_transition 1 1 1 5 1 1 1', 0.2, 2.5, -1.1, 0, 0, 0, 20, 0, 40);",
+					"ysm.particle('minecraft:dust_color_transition 1 1 1 5 1 1 1', 0.2, 2.5, -1.1, 0, 0, 0, 20, 0, 40);",
+					"ysm.particle('minecraft:dust_color_transition 1 1 1 5 1 1 1', 0.2, 2.5, -1.1, 0, 0, 0, 20, 0, 40);",
+					"ysm.particle('minecraft:dust_color_transition 1 1 1 5 1 1 1', 0.2, 2.5, -1.1, 0, 0, 0, 20, 0, 40);",
+					"ysm.particle('minecraft:dust_color_transition 1 1 1 5 1 1 1', 0.2, 2.5, -1.1, 0, 0, 0, 20, 0, 40);",
+					"ysm.particle('minecraft:dust_color_transition 1 1 1 5 1 1 1', 0.2, 2.5, -1.1, 0, 0, 0, 20, 0, 40);",
+					"ysm.particle('minecraft:dust_color_transition 1 1 1 5 1 1 1', 0.2, 2.5, -1.1, 0, 0, 0, 20, 0, 40);",
+					"ysm.particle('minecraft:dust_color_transition 1 1 1 5 1 1 1', 0.2, 2.5, -1.1, 0, 0, 0, 20, 0, 40);"
+				],
+				"0.125": [
+					"ysm.particle('minecraft:dust_color_transition 1 1 1 5 1 1 1', 0.2, 2.5, -1.1, 0, 0, 0, 20, 0, 40);",
+					"ysm.particle('minecraft:dust_color_transition 1 1 1 5 1 1 1', 0.2, 2.5, -1.1, 0, 0, 0, 20, 0, 40);",
+					"ysm.particle('minecraft:dust_color_transition 1 1 1 5 1 1 1', 0.2, 2.5, -1.1, 0, 0, 0, 20, 0, 40);",
+					"ysm.particle('minecraft:dust_color_transition 1 1 1 5 1 1 1', 0.2, 2.5, -1.1, 0, 0, 0, 20, 0, 40);",
+					"ysm.particle('minecraft:dust_color_transition 1 1 1 5 1 1 1', 0.2, 2.5, -1.1, 0, 0, 0, 20, 0, 40);",
+					"ysm.particle('minecraft:dust_color_transition 1 1 1 5 1 1 1', 0.2, 2.5, -1.1, 0, 0, 0, 20, 0, 40);",
+					"ysm.particle('minecraft:dust_color_transition 1 1 1 5 1 1 1', 0.2, 2.5, -1.1, 0, 0, 0, 20, 0, 40);",
+					"ysm.particle('minecraft:dust_color_transition 1 1 1 5 1 1 1', 0.2, 2.5, -1.1, 0, 0, 0, 20, 0, 40);"
+				],
+				"0.1667": [
+					"ysm.particle('minecraft:dust_color_transition 1 1 1 5 1 1 1', 0.2, 2.6, -1.1, 0, 0, 0, 20, 0, 40);",
+					"ysm.particle('minecraft:dust_color_transition 1 1 1 5 1 1 1', 0.2, 2.6, -1.1, 0, 0, 0, 20, 0, 40);",
+					"ysm.particle('minecraft:dust_color_transition 1 1 1 5 1 1 1', 0.2, 2.6, -1.1, 0, 0, 0, 20, 0, 40);",
+					"ysm.particle('minecraft:dust_color_transition 1 1 1 5 1 1 1', 0.2, 2.6, -1.1, 0, 0, 0, 20, 0, 40);",
+					"ysm.particle('minecraft:dust_color_transition 1 1 1 5 1 1 1', 0.2, 2.6, -1.1, 0, 0, 0, 20, 0, 40);",
+					"ysm.particle('minecraft:dust_color_transition 1 1 1 5 1 1 1', 0.2, 2.6, -1.1, 0, 0, 0, 20, 0, 40);",
+					"ysm.particle('minecraft:dust_color_transition 1 1 1 5 1 1 1', 0.2, 2.6, -1.1, 0, 0, 0, 20, 0, 40);",
+					"ysm.particle('minecraft:dust_color_transition 1 1 1 5 1 1 1', 0.2, 2.6, -1.1, 0, 0, 0, 20, 0, 40);"
+				],
+				"0.2083": [
+					"ysm.particle('minecraft:dust_color_transition 1 1 1 5 1 1 1', 0.2, 2.5, -1.1, 0, 0, 0, 20, 0, 40);",
+					"ysm.particle('minecraft:dust_color_transition 1 1 1 5 1 1 1', 0.2, 2.5, -1.1, 0, 0, 0, 20, 0, 40);",
+					"ysm.particle('minecraft:dust_color_transition 1 1 1 5 1 1 1', 0.2, 2.5, -1.1, 0, 0, 0, 20, 0, 40);",
+					"ysm.particle('minecraft:dust_color_transition 1 1 1 5 1 1 1', 0.2, 2.5, -1.1, 0, 0, 0, 20, 0, 40);",
+					"ysm.particle('minecraft:dust_color_transition 1 1 1 5 1 1 1', 0.2, 2.5, -1.1, 0, 0, 0, 20, 0, 40);",
+					"ysm.particle('minecraft:dust_color_transition 1 1 1 5 1 1 1', 0.2, 2.5, -1.1, 0, 0, 0, 20, 0, 40);",
+					"ysm.particle('minecraft:dust_color_transition 1 1 1 5 1 1 1', 0.2, 2.5, -1.1, 0, 0, 0, 20, 0, 40);",
+					"ysm.particle('minecraft:dust_color_transition 1 1 1 5 1 1 1', 0.2, 2.5, -1.1, 0, 0, 0, 20, 0, 40);"
+				]
+			}
+		},
+		"parallel1": {
+			"loop": true,
+			"bones": {
+				"Car": {
+					"rotation": [0, "(q.anim_time / 0.4) * 30", 0]
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

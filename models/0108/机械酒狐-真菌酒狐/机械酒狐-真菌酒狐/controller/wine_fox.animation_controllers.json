@@ -1,0 +1,152 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"player.post_main": {
+			"states": {
+				"default": {
+					"animations": ["new_idle_empty"],
+					"transitions": [
+						{"idle1": "v.next_idle == 1 && ctrl.idle && !ctrl.playing_extra_animation"},
+						{"idle2": "v.next_idle == 2 && ctrl.idle && !ctrl.playing_extra_animation"},
+						{"idle3": "v.next_idle == 3 && ctrl.idle && !ctrl.playing_extra_animation"},
+						{"idle4": "v.next_idle == 4 && ctrl.idle && !ctrl.playing_extra_animation"}
+					],
+					"blend_transition": 0.2
+				},
+				"idle1": {
+					"animations": ["new_idle_1"],
+					"on_exit": ["v.next_idle = 0;"],
+					"transitions": [
+						{"default": "q.all_animations_finished || !ctrl.idle || ctrl.playing_extra_animation"}
+					],
+					"blend_transition": 0.2
+				},
+				"idle2": {
+					"animations": ["new_idle_2"],
+					"on_exit": ["v.next_idle = 0;"],
+					"transitions": [
+						{"default": "q.all_animations_finished || !ctrl.idle || ctrl.playing_extra_animation"}
+					],
+					"blend_transition": 0.2
+				},
+				"idle3": {
+					"animations": ["new_idle_3"],
+					"on_exit": ["v.next_idle = 0;"],
+					"transitions": [
+						{"default": "q.all_animations_finished || !ctrl.idle || ctrl.playing_extra_animation"}
+					],
+					"blend_transition": 0.2
+				},
+				"idle4": {
+					"animations": ["new_idle_4"],
+					"on_exit": ["v.next_idle = 0;"],
+					"transitions": [
+						{"default": "q.all_animations_finished || !ctrl.idle || ctrl.playing_extra_animation"}
+					],
+					"blend_transition": 0.2
+				}
+			}
+		},
+		"player.parallel_0": {
+			"states": {
+				"default": {
+					"animations": ["拳击-待机"],
+					"transitions": [
+						{"jump_attack": "v.swing_sword && ctrl.jump"},
+						{"attack1": "v.swing_sword && v.kouxie == 1 && !ctrl.jump"},
+						{"attack2": "v.swing_sword && v.kouxie == 2 && !ctrl.jump"},
+						{"attack3": "v.swing_sword && v.kouxie == 3 && !ctrl.jump"},
+						{"attack4": "v.swing_sword && v.kouxie == 4 && !ctrl.jump"},
+						{"attack5": "v.swing_sword && v.kouxie == 5 && !ctrl.jump"},
+						{"attack6": "v.swing_sword && v.kouxie == 6 && !ctrl.jump"}
+					],
+					"blend_transition": 0.05,
+					"blend_via_shortest_path": true
+				},
+				"attack1": {
+					"animations": ["拳击-刺拳"],
+					"on_entry": ["v.current_attack = 1;"],
+					"on_exit": ["v.swing_sword = 0; v.current_attack = 0;"],
+					"transitions": [
+						{"jump_attack": "v.swing_sword && ctrl.jump"},
+						{"default": "query.all_animations_finished"},
+						{"attack2": "v.swing_sword && v.kouxie == 2 && !ctrl.jump"}
+					],
+					"blend_transition": 0.05,
+					"blend_via_shortest_path": true
+				},
+				"attack2": {
+					"animations": ["拳击-勾拳"],
+					"on_entry": ["v.current_attack = 2;"],
+					"on_exit": ["v.swing_sword = 0; v.current_attack = 0;"],
+					"transitions": [
+						{"jump_attack": "v.swing_sword && ctrl.jump"},
+						{"default": "query.all_animations_finished"},
+						{"attack3": "v.swing_sword && v.kouxie == 3 && !ctrl.jump"}
+					],
+					"blend_transition": 0.05,
+					"blend_via_shortest_path": true
+				},
+				"attack3": {
+					"animations": ["拳击-上击拳"],
+					"on_entry": ["v.current_attack = 3;"],
+					"on_exit": ["v.swing_sword = 0; v.current_attack = 0;"],
+					"transitions": [
+						{"jump_attack": "v.swing_sword && ctrl.jump"},
+						{"default": "query.all_animations_finished"},
+						{"attack4": "v.swing_sword && v.kouxie == 4 && !ctrl.jump"}
+					],
+					"blend_transition": 0.05,
+					"blend_via_shortest_path": true
+				},
+				"attack4": {
+					"animations": ["拳击-刺拳-右"],
+					"on_entry": ["v.current_attack = 4;"],
+					"on_exit": ["v.swing_sword = 0; v.current_attack = 0;"],
+					"transitions": [
+						{"jump_attack": "v.swing_sword && ctrl.jump"},
+						{"default": "query.all_animations_finished"},
+						{"attack5": "v.swing_sword && v.kouxie == 5 && !ctrl.jump"}
+					],
+					"blend_transition": 0.05,
+					"blend_via_shortest_path": true
+				},
+				"attack5": {
+					"animations": ["拳击-勾拳-左"],
+					"on_entry": ["v.current_attack = 5;"],
+					"on_exit": ["v.swing_sword = 0; v.current_attack = 0;"],
+					"transitions": [
+						{"jump_attack": "v.swing_sword && ctrl.jump"},
+						{"default": "query.all_animations_finished"},
+						{"attack6": "v.swing_sword && v.kouxie == 6 && !ctrl.jump"}
+					],
+					"blend_transition": 0.05,
+					"blend_via_shortest_path": true
+				},
+				"attack6": {
+					"animations": ["拳击-上击拳-右"],
+					"on_entry": ["v.current_attack = 6;"],
+					"on_exit": ["v.swing_sword = 0; v.current_attack = 0;"],
+					"transitions": [
+						{"jump_attack": "v.swing_sword && ctrl.jump"},
+						{"default": "query.all_animations_finished"},
+						{"attack1": "v.swing_sword && v.kouxie == 1 && !ctrl.jump"}
+					],
+					"blend_transition": 0.05,
+					"blend_via_shortest_path": true
+				},
+				"jump_attack": {
+					"animations": ["拳击-下砸"],
+					"on_entry": ["v.current_attack = 0;"],
+					"on_exit": ["v.swing_sword = 0; v.current_attack = 0;"],
+					"transitions": [
+						{"default": "query.all_animations_finished"},
+						{"missing_state": "v.swing_sword && ctrl.jump"}
+					],
+					"blend_transition": 0.05,
+					"blend_via_shortest_path": true
+				}
+			}
+		}
+	}
+}

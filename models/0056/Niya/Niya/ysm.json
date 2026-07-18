@@ -1,0 +1,100 @@
+{
+  "spec": 2,
+  "metadata": {
+    "name": "Niya",
+    "tips": "基于哥斯拉、星屑海螺、浅陌菌、祸御神四位作者的模型进行修改，遵守CC BY-NC-SA 4.0协议",
+    "license": {
+      "type": "CC BY-NC-SA 4.0"
+    },
+    "authors": [
+      {
+        "name": "哥斯拉",
+        "role": "模型",
+        "avatar": "avatar/gsl.png",
+        "contact": {
+          "Afdian": "https://afdian.com/a/6TGESILA",
+          "Bilibili": "https://space.bilibili.com/17798027"
+        },
+        "comment": "一个MC模型/YSM作者，想法很多，时间很少"
+      },
+      {
+        "name": "星屑海螺",
+        "role": "动画",
+        "avatar": "avatar/hl.png",
+        "contact": {
+          "Afdian": "https://afdian.com/a/lucia2048",
+          "Bilibili": "https://space.bilibili.com/14975572"
+        },
+        "comment": "漂泊于群星之中"
+      },
+      {
+        "name": "浅陌菌",
+        "role": "模型",
+        "avatar": "avatar/nico.png",
+        "comment": "最美好的前途，可不要对我冷酷",
+        "contact": {
+          "Bilibili": "https://space.bilibili.com/14975572"
+        }
+      },
+      {
+        "name": "祸御神",
+        "role": "动画",
+        "avatar": "avatar/hys.png",
+        "comment": "五十代精神病人",
+        "contact": {
+          "Bilibili": "https://space.bilibili.com/164557734"
+        }
+      },
+      {
+        "name": "Kria月明",
+        "role": "模型/动画",
+        "avatar": "avatar/YueMing.png",
+        "comment": "你好",
+        "contact": {
+          "Bilibili": "https://space.bilibili.com/182808322"
+        }
+      }
+    ],
+    "link": {
+      "home": "https://modrinth.com/mod/yes-steve-model",
+      "donate": "https://afdian.com/a/ysmmod"
+    }
+  },
+  "properties": {
+    "extra_animation": {
+      "extra0": "变身",
+      "extra1": "打招呼",
+      "extra2": "鼓掌",
+      "extra3": "是的",
+      "extra4": "不行",
+      "extra5": "卖萌",
+      "extra6": "御笔摇",
+      "extra7": "舞蹈"
+    },
+    "preview_animation": "gui",
+    "free": true
+  },
+  "files": {
+    "player": {
+      "model": {
+        "main": "models/main.json",
+        "arm": "models/arm.json"
+      },
+      "animation": {
+        "main": "animations/main.animation.json",
+        "arm": "animations/arm.animation.json",
+        "extra": "animations/extra.animation.json",
+        "tac": "animations/tac.animation.json",
+        "carryon": "animations/carryon.animation.json"
+      },
+      "texture": [
+        "textures/skin.png"
+      ]
+    },
+    "arrow": {
+      "model": "models/arrow.json",
+      "texture": "textures/arrow.png",
+      "animation": "animations/arrow.animation.json"
+    }
+  }
+}

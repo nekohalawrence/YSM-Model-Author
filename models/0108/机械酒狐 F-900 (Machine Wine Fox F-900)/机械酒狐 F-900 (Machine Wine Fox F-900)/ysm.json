@@ -1,0 +1,352 @@
+{
+	"spec": 2,
+	"metadata": {
+		"name": "Machine Wine Fox（机械酒狐）",
+		"tips": "大正女仆酒狐的机械仿制版-3.3.k",
+		"license": {
+			"type": "CC BY-NC-SA 4.0"
+		},
+		"authors": [
+			{
+				"name": "完美冻结",
+				"role": "模型原作",
+				"avatar": "avatar/wmdj.jpg",
+				"contact": {
+					"Afdian": "https://afdian.com/a/6TGESILA",
+					"Bilibili": "https://space.bilibili.com/17798027"
+				},
+				"comment": "OwO"
+			},
+			{
+				"name": "哥斯拉（映素团队）",
+				"role": "模型修改",
+				"avatar": "avatar/gsl.png",
+				"contact": {
+					"Afdian": "https://afdian.com/a/6TGESILA",
+					"Bilibili": "https://space.bilibili.com/17798027"
+				},
+				"comment": "一个MC模型/YSM作者，想法很多，时间很少"
+			},
+			{
+				"name": "白帆小喵",
+				"role": "新版材质",
+				"avatar": "avatar/bfxm.jpg",
+				"comment": "一只爱玩mc的小猫咪罢了qwq",
+				"contact": {
+					"Bilibili": "https://space.bilibili.com/492836494"
+				}
+			},
+			{
+				"name": "蓝玫瑰",
+				"role": "UI 材质/贴图",
+				"avatar": "avatar/lmg.png",
+				"contact": {
+					"Bilibili": "https://space.bilibili.com/11814817"
+				},
+				"comment": "8月24号，传奇永不落幕"
+			},
+			{
+				"name": "墨染逝羽",
+				"role": "面具模型",
+				"avatar": "avatar/mrsy.png",
+				"comment": "事到如今，先摸鱼吧",
+				"contact": {
+					"Bilibili": "https://space.bilibili.com/5718046"
+				}
+			},
+			{
+				"name": "Maks怜悯",
+				"role": "载具模型",
+				"avatar": "avatar/maks.jpg",
+				"comment": "ysm人偶制作中～",
+				"contact": {
+					"Bilibili": "https://space.bilibili.com/352177387"
+				}
+			},
+			{
+				"name": "浅陌菌",
+				"role": "模型修改",
+				"avatar": "avatar/nico.png",
+				"comment": "最美好的前途，可不要对我冷酷",
+				"contact": {
+					"Bilibili": "https://space.bilibili.com/14975572"
+				}
+			},
+			{
+				"name": "祸御神",
+				"role": "动画修改",
+				"avatar": "avatar/hys.png",
+				"comment": "五十代精神病人",
+				"contact": {
+					"Bilibili": "https://space.bilibili.com/164557734"
+				}
+			},
+			{
+				"name": "羊毛",
+				"role": "音效/动画修改",
+				"avatar": "avatar/wool.png",
+				"comment": "喵喵喵喵",
+				"contact": {
+					"Bilibili": "https://space.bilibili.com/85335217"
+				}
+			},
+			{
+				"name": "原原本本空空",
+				"avatar": "avatar/2026-02-21_15.43.37.png",
+				"role": "模型修改",
+				"contact": {
+					"QQ": "2676531571"
+				},
+				"comment": "故事中制造机械酒狐的人"
+			}
+		],
+		"link": {
+			"home": "https://modrinth.com/mod/yes-steve-model",
+			"donate": "https://afdian.com/a/ysmmod"
+		}
+	},
+	"properties": {
+		"extra_animation": {
+			"#舞蹈": "舞蹈",
+			"extra2": "鼓掌",
+			"extra7": "#223",
+			"extra0": "开坦克",
+			"extra5": "摇摇摇~",
+			"extra11": "#服装",
+			"extra12": "蒋将！抱抱猫awa",
+			"extra13": "蒋将！抱抱抱猫猫~"
+		},
+		"preview_animation": "gui",
+		"disable_preview_rotation": true,
+		"free": true,
+		"height_scale": 0.7,
+		"width_scale": 0.7,
+		"render_layers_first": false,
+		"all_cutout": false,
+		"gui_no_lighting": false,
+		"default_texture": "skin",
+		"extra_animation_buttons": [
+			{
+				"id": "服装",
+				"name": "衣柜",
+				"config_forms": [
+					{
+						"type": "radio",
+						"title": "人物形态",
+						"description": "你有点怀旧呦awa",
+						"value": "v.roaming.luzi",
+						"labels": {
+							"人形": "v.roaming.luzi=0",
+							"小炉子": "v.roaming.luzi=1"
+						}
+					},
+					{
+						"type": "radio",
+						"title": "§b终末环（",
+						"description": "不是终末环（",
+						"value": "v.roaming.zmh",
+						"labels": {
+							"[空置]": "v.roaming.zmh=0",
+							"游丝摆轮": "v.roaming.zmh=1",
+							"损坏时钟": "v.roaming.zmh=2"
+						}
+					},
+					{
+						"type": "radio",
+						"title": "头顶部件",
+						"description": "支持模块化！",
+						"value": "v.roaming.qidi",
+						"labels": {
+							"气阀": "v.roaming.qidi=0",
+							"汽笛": "v.roaming.qidi=1",
+							"警灯": "v.roaming.qidi=2",
+							"[空置]": "v.roaming.qidi=3"
+						}
+					},
+					{
+						"type": "radio",
+						"title": "瞳孔颜色",
+						"description": "wink ~",
+						"value": "v.roaming.tongkong",
+						"labels": {
+							"玫瑰石英": "v.roaming.tongkong=0",
+							"红宝石": "v.roaming.tongkong=1",
+							"绿宝石": "v.roaming.tongkong=2",
+							"琥珀": "v.roaming.tongkong=3",
+							"黄玉": "v.roaming.tongkong=4",
+							"钻石": "v.roaming.tongkong=5",
+							"紫水晶": "v.roaming.tongkong=6",
+							"青金石": "v.roaming.tongkong=7",
+							"遮光玻璃": "v.roaming.tongkong=8",
+							"石英": "v.roaming.tongkong=9",
+							"[空置]": "v.roaming.tongkong=10"
+						}
+					},
+					{
+						"type": "radio",
+						"title": "鞘翅选项",
+						"description": "你有点怀旧哦awa",
+						"value": "v.roaming.qiaochi",
+						"labels": {
+							"帆布翼": "v.roaming.qiaochi=0",
+							"小黄铜翼": "v.roaming.qiaochi=1"
+						}
+					},
+					{
+						"type": "radio",
+						"title": "§b衣柜（",
+						"description": "我们需要更多的衣服！",
+						"value": "v.roaming.cloth",
+						"labels": {
+							"巫女服~": "v.roaming.cloth=0",
+							"老大喵awa": "v.roaming.cloth=1",
+							"机械师！": "v.roaming.cloth=2",
+							"赛车服": "v.roaming.cloth=3"
+						}
+					},
+					{
+						"type": "checkbox",
+						"title": "§b机械臂",
+						"description": "我们需要更多的机械臂（",
+						"value": "v.roaming.JXB"
+					},
+					{
+						"type": "checkbox",
+						"title": "停靠平台",
+						"description": "鹦鹉歇脚的地方",
+						"value": "v.roaming.YingWu"
+					},
+					{
+						"type": "checkbox",
+						"title": "§b伞",
+						"description": "机械酒狐是1000%防水的！",
+						"value": "v.roaming.XSQ"
+					},
+					{
+						"type": "checkbox",
+						"title": "§b坦克机枪手",
+						"description": "§b我们有最好的机枪手(感谢机枪手赞助的车车)",
+						"value": "v.roaming.jqw"
+					},
+					{
+						"type": "checkbox",
+						"title": "浮游机炮",
+						"description": "浮游机炮",
+						"value": "v.roaming.minigunn"
+					}
+				]
+			},
+			{
+				"id": "223",
+				"name": "你还得练（",
+				"config_forms": [
+					{
+						"type": "checkbox",
+						"title": "更复杂的结构",
+						"description": "超强动力！",
+						"value": "v.roaming.fuzalunxi"
+					},
+					{
+						"type": "checkbox",
+						"title": "额外机械酒狐",
+						"description": "曲柄驱动酒狐",
+						"value": "v.roaming.xzjh"
+					}
+				]
+			}
+		],
+		"gui_foreground": "textures/gui/foreground.png",
+		"extra_animation_classify": [
+			{
+				"id": "舞蹈",
+				"extra_animation": {
+					"extra4": "乱舞",
+					"extra3": "Get Down",
+					"extra6": "赤石科技，震撼人心"
+				}
+			}
+		]
+	},
+	"files": {
+		"player": {
+			"model": {
+				"main": "models/main.json",
+				"arm": "models/arm.json"
+			},
+			"animation": {
+				"main": "animations/main.animation.json",
+				"extra": "animations/extra.animation.json",
+				"tac": "animations/tac.animation.json",
+				"carryon": "animations/carryon.animation.json",
+				"tlm": "animations/tlm.animation.json",
+				"fp_arm": "animations/arm.animation.json",
+				"arm": "animations/arm.animation.json",
+				"irons_spell_books": "animations/iss.animation.json",
+				"parcool": "animations/parcool.animation.json"
+			},
+			"animation_controllers": ["controller/wine_fox.animation_controllers.json"],
+			"texture": [
+				{
+					"uv": "textures/skin.png"
+				},
+				{
+					"uv": "textures/skin_white.png"
+				},
+				{
+					"uv": "textures/skin-hiet.png"
+				}
+			]
+		},
+		"projectiles": [
+			{
+				"model": "models/arrow.json",
+				"animation": "animations/arrow.animation.json",
+				"texture": {
+					"uv": "textures/arrow.png"
+				},
+				"match": ["minecraft:arrow"]
+			},
+			{
+				"model": "models/trident.json",
+				"texture": {
+					"uv": "textures/trident.png"
+				},
+				"match": ["minecraft:trident"],
+				"animation": "animations/trident.animation.json"
+			},
+			{
+				"match": ["minecraft:firework_rocket"],
+				"model": "models/firework_rocket.json",
+				"texture": {
+					"uv": "textures/firework_rocket.png"
+				},
+				"animation": "animations/yanhuahuokjian.json"
+			}
+		],
+		"vehicles": [
+			{
+				"model": "models/horse.json",
+				"texture": {
+					"uv": "textures/horse.png"
+				},
+				"animation": "animations/vehicle/horse.animation.json",
+				"match": ["minecraft:horse"]
+			},
+			{
+				"model": "models/minecart.json",
+				"texture": {
+					"uv": "textures/minecart.png"
+				},
+				"match": ["minecraft:minecart"]
+			},
+			{
+				"model": "models/boat.json",
+				"texture": {
+					"uv": "textures/boat.png"
+				},
+				"match": ["minecraft:boat"],
+				"animation": "animations/boat.animation.json"
+			}
+		]
+	}
+}
