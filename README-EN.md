@@ -6,6 +6,15 @@
 
 > Recommended YSM model management software: [ysm-model-manager](https://github.com/eghrhegpe/ysm-model-manager)
 
+<details>
+
+<summary>Update/Chatty Log</summary>
+
+# 2026-07-18
+- Some creators belong to the same team. I wonder if there is a good classification method. If you have one, please provide it to me
+- Reorganized a large number of models
+- The organized model includes new models and a reclassification of [existing models](https://github.com/Elaina69/Yes-Steve-Model-Repo)
+
 # 2026-06-29
 
 - Merged several team models. The models are now hosted only under the primary author who created them, while other contributing authors are attached as subsidiaries to their respective parts.
@@ -28,6 +37,8 @@
 - Decided to only update high-quality models and stop collecting others.
 - Modified the premium mod branch to keep only the latest mods.
     
+</details>
+
 
 ## Author Index
 
