@@ -6,11 +6,20 @@
 
 > Recommended YSM model management software: [ysm-model-manager](https://github.com/eghrhegpe/ysm-model-manager)
 
+> Note that some models in this repository are **18+**, and it is recommended to use them after careful consideration. I have not labeled all **r18** models as `nsfw`
+
 <details>
 
 <summary>Update/Chatty Log</summary>
 
+# 2026-07-19
+
+- Convert some models with source files into zip files for convenient downloading
+- Fixed some incorrect or duplicate authors
+- Re-categorize the authors for the old models
+
 # 2026-07-18
+
 - Some creators belong to the same team. I wonder if there is a good classification method. If you have one, please provide it to me
 - Reorganized a large number of models
 - The organized model includes new models and a reclassification of [existing models](https://github.com/Elaina69/Yes-Steve-Model-Repo)
@@ -38,7 +47,6 @@
 - Modified the premium mod branch to keep only the latest mods.
     
 </details>
-
 
 ## Author Index
 

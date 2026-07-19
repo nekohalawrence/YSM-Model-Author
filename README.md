@@ -6,14 +6,23 @@
 
 > 推荐一个 ysm 模型管理软件 [ysm-model-manager](https://github.com/eghrhegpe/ysm-model-manager)
 
+> 注意，此存储库，有些模型是 **18+**，建议斟酌后使用，我并没有为所有的 **r18** 的模型标注 `nsfw`
+
 <details>
 
 <summary>更新/话痨日志</summary>
 
+# 2026-07-19
+
+- 将一些有源文件的模型转为压缩包，方便下载
+- 修正了一些错误或重复的作者
+- 重新为旧的模型进行作者分类
+
 # 2026-07-18
+
 - 有些创作者属于同一个团队，不知道有没有好的分类方法，如果你有的话，可以提供给我
 - 重新整理了大量的模型
-- 整理的模型中包含新的模型，和[已有模型](https://github.com/Elaina69/Yes-Steve-Model-Repo)的重新分类
+- 整理的模型中包含新的模型，和 [已有模型](https://github.com/Elaina69/Yes-Steve-Model-Repo) 的重新分类
 
 # 2026-06-29
 
