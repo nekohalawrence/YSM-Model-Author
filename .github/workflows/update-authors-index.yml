@@ -37,7 +37,7 @@ jobs:
               exit(1)
 
           folder_pattern = re.compile(r"^(\d{4})$")
-          authors = []
+          rows = []
 
           for folder in sorted(os.listdir(models_dir)):
               full_folder_path = os.path.join(models_dir, folder)
@@ -54,24 +54,36 @@ jobs:
               link = f".../../{models_dir}/{folder}"
 
               if not readme_file:
-                  authors.append(f"- {folder}： [无 README 或未找到作者名]({link})")
+                  author_name = "暂无"
+                  model_count = 0
+                  rows.append((folder, author_name, model_count, link))
                   continue
 
               with open(readme_file, "r", encoding="utf-8") as f:
                   content = f.read()
 
               match = re.search(r"-\s*作者名称[:：]\s*(.+?)(?:\n|$)", content, re.DOTALL | re.MULTILINE)
-              
-              if match:
-                  author_name = match.group(1).strip()
-                  authors.append(f"- {folder}：[{author_name}]({link})")
-              else:
-                  authors.append(f"- {folder}：[暂无]({link})")
+              author_name = match.group(1).strip() if match else "暂无"
 
-          new_list = "\n".join(authors) if authors else "models/ 目录下暂无符合条件的作者文件夹"
-          block = "<!-- AUTHORS_LIST_START -->\n" + new_list + "\n<!-- AUTHORS_LIST_END -->"
+              model_count = sum(
+                  1
+                  for entry in os.scandir(full_folder_path)
+                  if entry.is_dir() and not entry.name.startswith('.')
+              )
+              rows.append((folder, author_name, model_count, link))
 
-          def update_readme(path, is_cn):
+          lines = [
+              "| 序号 | 作者名称 | 模型数量 |",
+              "| --- | --- | ---: |",
+          ]
+
+          for index, (folder, author_name, model_count, link) in enumerate(rows, start=1):
+              safe_author_name = author_name.replace("|", "\\|")
+              lines.append(f"| {index} | [{safe_author_name}]({link}) | {model_count} |")
+
+          new_list = "\n".join(lines) if rows else "| 序号 | 作者名称 | 模型数量 |\n| --- | --- | ---: |\n| - | 暂无 | 0 |"
+
+          def update_readme(path):
               with open(path, "r", encoding="utf-8") as f:
                   content = f.read()
 
@@ -86,17 +98,18 @@ jobs:
               after = "\n" + end + content.split(end, 1)[1]
 
               updated = before + new_list + after
-              
+
               if updated != content:
                   with open(path, "w", encoding="utf-8") as f:
                       f.write(updated)
-                  print(f"Updated {path} with {len(authors)} authors.")
+                  print(f"Updated {path} with {len(rows)} rows.")
                   return True
               else:
                   print(f"No changes in {path}")
                   return False
 
-          changed = update_readme(readme_path, False) or update_readme(readme_en_path, True)
+          update_readme(readme_path)
+          update_readme(readme_en_path)
 
           EOF
 
