@@ -72,18 +72,28 @@ jobs:
               )
               rows.append((folder, author_name, model_count, link))
 
-          lines = [
-              "| 编号 | 作者名称 | 模型数量 |",
-              "| --- | --- | ---: |",
-          ]
+          def build_table(is_en):
+              if is_en:
+                  header = "| ID | Author Name | Model Count |"
+                  separator = "| --- | --- | ---: |"
+                  empty_row = "| - | None | 0 |"
+              else:
+                  header = "| 编号 | 作者名称 | 模型数量 |"
+                  separator = "| --- | --- | ---: |"
+                  empty_row = "| - | 暂无 | 0 |"
 
-          for folder, author_name, model_count, link in rows:
-              safe_author_name = author_name.replace("|", "\\|")
-              lines.append(f"| {folder} | [{safe_author_name}]({link}) | {model_count} |")
+              lines = [header, separator]
+              for folder, author_name, model_count, link in rows:
+                  safe_author_name = author_name.replace("|", "\\|")
+                  if is_en:
+                      author_label = safe_author_name if safe_author_name != "暂无" else "None"
+                      lines.append(f"| {folder} | [{author_label}]({link}) | {model_count} |")
+                  else:
+                      lines.append(f"| {folder} | [{safe_author_name}]({link}) | {model_count} |")
 
-          new_list = "\n".join(lines) if rows else "| 编号 | 作者名称 | 模型数量 |\n| --- | --- | ---: |\n| - | 暂无 | 0 |"
+              return "\n".join(lines) if rows else f"{header}\n{separator}\n{empty_row}"
 
-          def update_readme(path):
+          def update_readme(path, is_en):
               with open(path, "r", encoding="utf-8") as f:
                   content = f.read()
 
@@ -97,6 +107,7 @@ jobs:
               before = content.split(start, 1)[0] + start + "\n"
               after = "\n" + end + content.split(end, 1)[1]
 
+              new_list = build_table(is_en)
               updated = before + new_list + after
 
               if updated != content:
@@ -108,8 +119,8 @@ jobs:
                   print(f"No changes in {path}")
                   return False
 
-          update_readme(readme_path)
-          update_readme(readme_en_path)
+          update_readme(readme_path, False)
+          update_readme(readme_en_path, True)
 
           EOF
 
