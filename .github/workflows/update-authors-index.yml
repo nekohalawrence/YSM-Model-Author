@@ -73,15 +73,15 @@ jobs:
               rows.append((folder, author_name, model_count, link))
 
           lines = [
-              "| 序号 | 作者名称 | 模型数量 |",
+              "| 编号 | 作者名称 | 模型数量 |",
               "| --- | --- | ---: |",
           ]
 
-          for index, (folder, author_name, model_count, link) in enumerate(rows, start=1):
+          for folder, author_name, model_count, link in rows:
               safe_author_name = author_name.replace("|", "\\|")
-              lines.append(f"| {index} | [{safe_author_name}]({link}) | {model_count} |")
+              lines.append(f"| {folder} | [{safe_author_name}]({link}) | {model_count} |")
 
-          new_list = "\n".join(lines) if rows else "| 序号 | 作者名称 | 模型数量 |\n| --- | --- | ---: |\n| - | 暂无 | 0 |"
+          new_list = "\n".join(lines) if rows else "| 编号 | 作者名称 | 模型数量 |\n| --- | --- | ---: |\n| - | 暂无 | 0 |"
 
           def update_readme(path):
               with open(path, "r", encoding="utf-8") as f:
