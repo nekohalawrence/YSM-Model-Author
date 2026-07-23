@@ -1,4 +1,4 @@
-# A_ 纸板 - 兔女郎
+# A_纸板-兔女郎
 
 > 此 README 由 `.github/scripts/generate_model_readmes.py` 自动生成。
 
