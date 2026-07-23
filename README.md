@@ -6,6 +6,14 @@
 - 注意，此存储库，有些模型是 **18+**，建议斟酌后使用，我并没有为所有的 **r18** 的模型标注 `nsfw`
 
 <details>
+<summary>命名规则</summary>
+
+- Ash Arms: 灰烬战线
+- Blue_Archive: 碧蓝档案
+
+</details>
+
+<details>
 <summary>工具推荐</summary>
 
 - [ysm-model-manager](https://github.com/eghrhegpe/ysm-model-manager)
@@ -18,7 +26,6 @@
 </details>
 
 <details>
-
 <summary>更新/话痨日志</summary>
 
 # 2026-07-23
@@ -27,6 +34,7 @@
 - 夸克云: https://pan.quark.cn/s/77a16d314a11 提取码：ajVD
 - 模型暂时不放进存储库，有需要的自行下载
 - 准备添加一个 aciton 为每一个模型添加 `README.md`，方便查看模型预览图，如果你有好的方法可以通过 issue 告知我（本人并不会编程，都是 AI 帮我写的😭）
+- 为了统一命名，之后所有的文件夹中的游戏名称除了只有中国有的游戏，都将改成英文，之后会出一个列表对照翻译。
 
 # 2026-07-19
 
@@ -72,7 +80,6 @@
 </details>
 
 <details>
-
 <summary>作者索引</summary>
 
 <!-- AUTHORS_LIST_START -->
