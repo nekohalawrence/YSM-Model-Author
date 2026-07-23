@@ -9,6 +9,7 @@
 <summary>命名规则</summary>
 
 - Ash Arms: 灰烬战线
+- Blue_Archive: 碧蓝档案
 
 </details>
 
