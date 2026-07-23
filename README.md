@@ -6,6 +6,13 @@
 - 注意，此存储库，有些模型是 **18+**，建议斟酌后使用，我并没有为所有的 **r18** 的模型标注 `nsfw`
 
 <details>
+<summary>命名规则</summary>
+
+- Ash Arms: 灰烬战线
+
+</details>
+
+<details>
 <summary>工具推荐</summary>
 
 - [ysm-model-manager](https://github.com/eghrhegpe/ysm-model-manager)
@@ -18,7 +25,6 @@
 </details>
 
 <details>
-
 <summary>更新/话痨日志</summary>
 
 # 2026-07-23
@@ -73,7 +79,6 @@
 </details>
 
 <details>
-
 <summary>作者索引</summary>
 
 <!-- AUTHORS_LIST_START -->
