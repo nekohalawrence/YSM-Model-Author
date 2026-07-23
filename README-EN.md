@@ -44,15 +44,18 @@
 - Merged several team models. The models are now hosted only under the primary author who created them, while other contributing authors are attached as subsidiaries to their respective parts.
 - After organizing this for a while, I still feel there are issues with this classification approach, making it hard to find specific models. It is essentially a collection of free models (with many paid ones unavailable). Categorizing by author only highlights a few high-quality creators. It might be better to classify models based on the target object instead.
     
+
 # 2026-05-21
 
 - Most models cannot be used in higher game versions. It is recommended to use only newer encrypted models (decrypted using ysmparser, as older models cannot be decrypted either) or the models provided with source files.
     
+
 # 2026-05-11
 
 - Removed the Pages site. I decided to implement it later once I learn a suitable way to present the content.
 - Decided to update the metadata for all authors before the end of this year. ~If time permits, a preview image will be attached to each model.~
     
+
 # 2026-05-03
 
 - Decided to only update high-quality models and stop collecting others.
@@ -75,6 +78,7 @@
 <summary>Author Index</summary>
 
 <!-- AUTHORS_LIST_START -->
+
 | ID | Author Name | Model Count |
 | --- | --- | ---: |
 | 0000 | [#-OMEGAZERO-](.../../models/0000) | 1 |
@@ -217,6 +221,7 @@
 | 0138 | [#夜森岚_Noxsil](.../../models/0138) | 1 |
 | 0139 | [#穿越小魔王](.../../models/0139) | 2 |
 | 0140 | [#TUTU秃](.../../models/0140) | 1 |
+
 <!-- AUTHORS_LIST_END -->
 
 </details>

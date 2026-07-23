@@ -1,0 +1,38 @@
+name: Generate model preview READMEs
+
+on:
+  push:
+    paths:
+      - 'models/**'
+  workflow_dispatch:
+
+jobs:
+  generate-readmes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Generate model README.md files
+        run: |
+          python .github/scripts/generate_model_readmes.py
+
+      - name: Commit and push changes if any
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add models/**/*.md
+          if git diff --cached --quiet; then
+            echo "No README updates"
+          else
+            git commit -m "chore: auto-generate model preview READMEs"
+            git push
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
