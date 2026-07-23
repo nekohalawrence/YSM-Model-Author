@@ -23,16 +23,24 @@ jobs:
         run: |
           python .github/scripts/generate_model_readmes.py
 
+      - name: Debug generated files
+        run: |
+          echo "Working directory: $(pwd)"
+          echo "Listing generated model README files:"
+          find models -path 'models/*/*/README.md' | sort || true
+
       - name: Commit and push changes if any
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add models/**/*.md
+          git add -A models
+          echo "Git status after staging:"
+          git status --short
           if git diff --cached --quiet; then
             echo "No README updates"
           else
             git commit -m "chore: auto-generate model preview READMEs"
-            git push
+            git push origin HEAD:main
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
