@@ -2,15 +2,30 @@
 
 # FREE-YSM-AUTHOR
 
-> 收集并按作者分类的免费模型，~绝无付费模型。~
+- 收集并按作者分类的免费模型，~绝无付费模型。~
+- 注意，此存储库，有些模型是 **18+**，建议斟酌后使用，我并没有为所有的 **r18** 的模型标注 `nsfw`
 
-> 推荐一个 ysm 模型管理软件 [ysm-model-manager](https://github.com/eghrhegpe/ysm-model-manager)
+<details>
+<summary>工具推荐</summary>
 
-> 注意，此存储库，有些模型是 **18+**，建议斟酌后使用，我并没有为所有的 **r18** 的模型标注 `nsfw`
+- [ysm-model-manager](https://github.com/eghrhegpe/ysm-model-manager)
+	- 介绍: ysm 模型管理软件
+- [YSMParser](https://github.com/OpenYSM/YSMParser)
+	- 介绍: A Parser to recover Yes-Steve-Model Encrypted Binaries.
+- [OpenYSM](https://github.com/OpenYSM/OpenYSM)
+	- 介绍: YSM 的开源替代，性能可能会更好
+
+</details>
 
 <details>
 
 <summary>更新/话痨日志</summary>
+
+# 2026-07-23
+
+- [LuckyPotion](https://space.bilibili.com/1739798750) 感谢这位大佬公开了，开源团队做的二次售卖的模型集合，我可能会在之后慢慢更新各类模型的预览图。
+- 夸克云: https://pan.quark.cn/s/77a16d314a11 提取码：ajVD
+- 模型暂时不放进存储库，有需要的自行下载
 
 # 2026-07-19
 
@@ -45,9 +60,22 @@
 
 </details>
 
-## 作者索引
+<details>
+
+<summary>作者推荐</summary>
+
+> 推荐一些低价优质模型作者
+
+- 0076: [#White_clams白蛤蜊](.../../models/0076)
+
+</details>
+
+<details>
+
+<summary>作者索引</summary>
 
 <!-- AUTHORS_LIST_START -->
+
 | 编号 | 作者名称 | 模型数量 |
 | --- | --- | ---: |
 | 0000 | [#-OMEGAZERO-](.../../models/0000) | 1 |
@@ -186,7 +214,10 @@
 | 0134 | [#黑喵みそ](.../../models/0134) | 3 |
 | 0135 | [#Lvara](.../../models/0135) | 1 |
 | 0136 | [#Fllz](.../../models/0136) | 2 |
+
 <!-- AUTHORS_LIST_END -->
+
+</details>
 
 ## 项目结构
 

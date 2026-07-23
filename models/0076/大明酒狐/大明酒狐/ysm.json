@@ -1,0 +1,166 @@
+{
+	"spec": 2,
+	"metadata": {
+		"name": "§4万历§6酒狐",
+		"tips": "酒狐显\"摆\"戴\"高帽\"，服装与乌纱为晚明样式，不完全符合历史，但争取复原款式喵。\n万历朝公侯酒狐-《大明会典》 国公、侯爵、伯爵、驸马 专属白泽补\n 注:帽翅虽然可切换早期，乌纱样式有所不同，且早期服饰没有朝天摆 没有花补子 非大袖 纯娱乐",
+		"license": {
+			"type": "CC BY-NC-SA 4.0"
+		},
+		"authors": [
+			{
+				"name": "白蛤蜊",
+				"role": "新衣服模型，材质，新功能",
+				"avatar": "avatar/2.png",
+				"contact": {
+					"Afdian": "https://www.ifdian.net/a/whiteclams",
+					"Bilibili": "https://space.bilibili.com/168185637?spm_id_from=333.788.0.0"
+				},
+				"comment": "喵喵喵？！"
+			}
+		],
+		"link": {
+			"home": "https://modrinth.com/mod/yes-steve-model",
+			"donate": "https://afdian.com/a/ysmmod"
+		}
+	},
+	"properties": {
+		"extra_animation": {
+			"extra0": "变身",
+			"extra1": "#§5模型配置",
+			"extra2": "鼓掌",
+			"extra3": "Get Down",
+			"extra4": "乱舞",
+			"extra5": "卖萌",
+			"extra6": "御笔摇",
+			"extra7": "舞蹈"
+		},
+		"preview_animation": "gui",
+		"disable_preview_rotation": true,
+		"free": true,
+		"height_scale": 0.7,
+		"width_scale": 0.7,
+		"extra_animation_buttons": [
+			{
+				"id": "§5模型配置",
+				"name": "§5模型配置",
+				"config_forms": [
+					{
+						"type": "checkbox",
+						"title": "乌纱帽切换",
+						"description": "乌纱帽切换",
+						"value": "v.roaming.hat"
+					},
+					{
+						"type": "checkbox",
+						"title": "酒狐长发",
+						"description": "酒狐长发",
+						"value": "v.roaming.hair"
+					},
+					{
+						"type": "range",
+						"title": "万历高帽",
+						"description": "万历高帽",
+						"value": "v.hat_scale",
+						"step": 0.1,
+						"min": 1,
+						"max": 3
+					},
+					{
+						"type": "checkbox",
+						"title": "束发",
+						"description": "网巾效果不好，故而只有束发",
+						"value": "v.roaming.hair2"
+					},
+					{
+						"type": "radio",
+						"title": "帽翅",
+						"description": "1",
+						"value": "v.roaming.mc",
+						"labels": {
+							"万历": "v.roaming.mc=0",
+							"洪武": "v.roaming.mc=1",
+							"正德/嘉靖(前)": "v.roaming.mc=2",
+							"崇祯": "v.roaming.mc=3"
+						}
+					}
+				]
+			}
+		],
+		"render_layers_first": false,
+		"all_cutout": false,
+		"gui_no_lighting": false
+	},
+	"files": {
+		"player": {
+			"model": {
+				"main": "models/main.json",
+				"arm": "models/arm.json"
+			},
+			"animation": {
+				"main": "animations/main.animation.json",
+				"extra": "animations/extra.animation.json",
+				"tac": "animations/tac.animation.json",
+				"carryon": "animations/carryon.animation.json",
+				"tlm": "animations/tlm.animation.json",
+				"fp_arm": "animations/fp.arm.animation.json"
+			},
+			"animation_controllers": ["controller/wine_fox.animation_controllers.json"],
+			"texture": [
+				{
+					"uv": "textures/skin.png"
+				}
+			]
+		},
+		"projectiles": [
+			{
+				"model": "models/arrow.json",
+				"animation": "animations/arrow.animation.json",
+				"texture": {
+					"uv": "textures/arrow.png"
+				},
+				"match": ["minecraft:arrow"]
+			},
+			{
+				"model": "models/trident.json",
+				"texture": {
+					"uv": "textures/trident.png"
+				},
+				"match": ["minecraft:trident"]
+			}
+		],
+		"vehicles": [
+			{
+				"model": "models/foxcar.json",
+				"texture": {
+					"uv": "textures/foxcar.png",
+					"specular": "textures/foxcar_s.png"
+				},
+				"animation": "animations/vehicle/horse.animation.json",
+				"match": ["minecraft:horse"]
+			},
+			{
+				"model": "models/foxcar.json",
+				"texture": {
+					"uv": "textures/foxcar.png",
+					"specular": "textures/foxcar_s.png"
+				},
+				"animation": "animations/vehicle/mule.animation.json",
+				"match": ["minecraft:mule"]
+			},
+			{
+				"model": "models/minecart.json",
+				"texture": {
+					"uv": "textures/minecart.png"
+				},
+				"match": ["minecraft:minecart"]
+			},
+			{
+				"model": "models/boat.json",
+				"texture": {
+					"uv": "textures/boat.png"
+				},
+				"match": ["minecraft:boat"]
+			}
+		]
+	}
+}
