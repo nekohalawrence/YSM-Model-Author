@@ -1,4 +1,4 @@
-# Blue_Archive_chise_swimsuit
+# azurlane_莫加多尔
 
 > 此 README 由 `.github/scripts/generate_model_readmes.py` 自动生成。
 
