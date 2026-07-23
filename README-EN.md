@@ -26,6 +26,7 @@
 - [LuckyPotion](https://space.bilibili.com/1739798750) thanks this expert for publicly sharing a collection of author payment models developed by a certain team. I may gradually update preview images of various models in the future.
 - Quark Cloud: https://pan.quark.cn/s/77a16d314a11, extraction code: ajVD
 - The model will not be put into the repository for the time being. If needed, please download it yourself
+- I'm planning to add an action to generate a `README.md` for each model, making it easier to view the model preview images. If you have any good methods, feel free to share them with me via an issue (I'm not a programmer, and it's all done by AI for me 😭)
 
 # 2026-07-19
 
