@@ -80,7 +80,6 @@
 <summary>Author Index</summary>
 
 <!-- AUTHORS_LIST_START -->
-
 | ID | Author Name | Model Count |
 | --- | --- | ---: |
 | 0000 | [#-OMEGAZERO-](.../../models/0000) | 1 |
@@ -223,7 +222,6 @@
 | 0138 | [#夜森岚_Noxsil](.../../models/0138) | 1 |
 | 0139 | [#穿越小魔王](.../../models/0139) | 2 |
 | 0140 | [#TUTU秃](.../../models/0140) | 1 |
-
 <!-- AUTHORS_LIST_END -->
 
 </details>
