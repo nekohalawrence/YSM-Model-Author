@@ -2,15 +2,30 @@
 
 # FREE-YSM-AUTHOR
 
-> A collection of free models categorized by author. ~Absolutely no paid models.~
+- A collection of free models categorized by author. ~Absolutely no paid models.~
+- Note that some models in this repository are **18+**, and it is recommended to use them after careful consideration. I have not labeled all **r18** models as `nsfw`
 
-> Recommended YSM model management software: [ysm-model-manager](https://github.com/eghrhegpe/ysm-model-manager)
+<details>
+<summary>Tool Recommendations</summary>
 
-> Note that some models in this repository are **18+**, and it is recommended to use them after careful consideration. I have not labeled all **r18** models as `nsfw`
+- [ysm-model-manager](https://github.com/eghrhegpe/ysm-model-manager)
+ - Introduction: ysm model management software
+- [YSMParser](https://github.com/OpenYSM/YSMParser)
+ - Introduction: A Parser to recover Yes-Steve-Model Encrypted Binaries
+- [OpenYSM](https://github.com/OpenYSM/OpenYSM)
+ - Introduction: An open-source alternative to YSM, potentially offering better performance
+
+</details>
 
 <details>
 
 <summary>Update/Chatty Log</summary>
+
+# 2026-07-23
+
+- [LuckyPotion](https://space.bilibili.com/1739798750) Thanks to this expert for making public the collection of models for secondary sales developed by the open-source team. I might gradually update preview images of various models in the future.
+- Quark Cloud: https://pan.quark.cn/s/77a16d314a11, extraction code: ajVD
+- The model will not be put into the repository for the time being. If needed, please download it yourself
 
 # 2026-07-19
 
@@ -29,18 +44,15 @@
 - Merged several team models. The models are now hosted only under the primary author who created them, while other contributing authors are attached as subsidiaries to their respective parts.
 - After organizing this for a while, I still feel there are issues with this classification approach, making it hard to find specific models. It is essentially a collection of free models (with many paid ones unavailable). Categorizing by author only highlights a few high-quality creators. It might be better to classify models based on the target object instead.
     
-
 # 2026-05-21
 
 - Most models cannot be used in higher game versions. It is recommended to use only newer encrypted models (decrypted using ysmparser, as older models cannot be decrypted either) or the models provided with source files.
     
-
 # 2026-05-11
 
 - Removed the Pages site. I decided to implement it later once I learn a suitable way to present the content.
 - Decided to update the metadata for all authors before the end of this year. ~If time permits, a preview image will be attached to each model.~
     
-
 # 2026-05-03
 
 - Decided to only update high-quality models and stop collecting others.
@@ -48,7 +60,19 @@
     
 </details>
 
-## Author Index
+
+<details>
+
+<summary>Author Recommendation</summary>
+
+> Recommend some low-cost yet high-quality model authors
+
+- 0076: [#White_clams白蛤蜊](.../../models/0076)
+
+</details>
+
+<details>
+<summary>Author Index</summary>
 
 <!-- AUTHORS_LIST_START -->
 | ID | Author Name | Model Count |
@@ -194,7 +218,8 @@
 | 0139 | [#穿越小魔王](.../../models/0139) | 2 |
 | 0140 | [#TUTU秃](.../../models/0140) | 1 |
 <!-- AUTHORS_LIST_END -->
-    
+
+</details>
 
 ## Repository Structure
 
