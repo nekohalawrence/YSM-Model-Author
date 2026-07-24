@@ -8,8 +8,11 @@
 <details>
 <summary>命名规则</summary>
 
-- Ash Arms: 灰烬战线
-- Blue_Archive: 碧蓝档案
+- Arknights: 明日方舟, AK
+- Ash_Arms: 灰烬战线
+- Blue_Archive: 碧蓝档案, BA
+- Wuthering_Waves: 鸣潮, WuWa
+- Neon Genesis Evangelion(NGE): 新世纪福音战士, EVA
 
 </details>
 
