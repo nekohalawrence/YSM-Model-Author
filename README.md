@@ -10,9 +10,13 @@
 
 - Arknights: 明日方舟, AK
 - Ash_Arms: 灰烬战线
+- Atomic_Heart: 原子之心
 - Blue_Archive: 碧蓝档案, BA
+- Genshin_Impact: 原神. Genshin
 - Wuthering_Waves: 鸣潮, WuWa
 - Neon Genesis Evangelion(NGE): 新世纪福音战士, EVA
+- Zenless_Zone_Zero: 绝区零, ZZZ
+
 
 </details>
 
