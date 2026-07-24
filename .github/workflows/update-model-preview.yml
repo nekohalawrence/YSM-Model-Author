@@ -39,6 +39,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "No README updates"
           else
+            git pull --rebase --autostash origin main
             git commit -m "chore: auto-generate model preview READMEs"
             git push origin HEAD:main
           fi

@@ -132,8 +132,9 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
+            git pull --rebase --autostash origin main
             git commit -m "chore: auto-update authors list in README.md and README-EN.md"
-            git push
+            git push origin HEAD:main
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
