@@ -1,4 +1,4 @@
-# 今汐
+# Wuthering_Waves_今汐
 
 > 此 README 由 `.github/scripts/generate_model_readmes.py` 自动生成。
 

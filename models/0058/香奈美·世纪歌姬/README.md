@@ -1,4 +1,4 @@
-# A_Endfield_莱万汀_v2
+# 香奈美·世纪歌姬
 
 > 此 README 由 `.github/scripts/generate_model_readmes.py` 自动生成。
 

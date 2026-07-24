@@ -1,4 +1,4 @@
-# A_Endfield_莱万汀_v2
+# Arknights_红豆(悠然假日)-Vigna(Coral-Coast)
 
 > 此 README 由 `.github/scripts/generate_model_readmes.py` 自动生成。
 
@@ -9,5 +9,7 @@
 ![preview01.png](preview01.png)
 
 ![preview02.png](preview02.png)
+
+![preview03.png](preview03.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
