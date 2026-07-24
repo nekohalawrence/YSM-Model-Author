@@ -1,4 +1,4 @@
-# 克洛琳德
+# Genshin_Impact_克洛琳德
 
 > 此 README 由 `.github/scripts/generate_model_readmes.py` 自动生成。
 

@@ -1,4 +1,4 @@
-# A_鸣潮×2077_丽贝卡
+# A_Wuthering_Waves×2077_丽贝卡
 
 > 此 README 由 `.github/scripts/generate_model_readmes.py` 自动生成。
 

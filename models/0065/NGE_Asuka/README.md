@@ -1,4 +1,4 @@
-# A_Endfield_莱万汀_v2
+# NGE_Asuka
 
 > 此 README 由 `.github/scripts/generate_model_readmes.py` 自动生成。
 
