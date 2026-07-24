@@ -1,6 +1,8 @@
 # 0015
 
-- 作者名称: #寒叔hs | #烈鸟比百
+## 模型
+
+- 作者名称: #寒叔hs | #烈鸟比百 | #Frosty_Uncle
 - 平台: #bilibili #afdian #youtube 
 	- [bilibili](https://www.bilibili.com/)：[寒叔hs](https://space.bilibili.com/329066935)
 	- [afdian](https://afdian.com/)：[烈鸟比百](https://afdian.com/a/Aigoblin)
