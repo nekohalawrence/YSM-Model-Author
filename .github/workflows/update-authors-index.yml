@@ -44,6 +44,8 @@ jobs:
               if not (os.path.isdir(full_folder_path) and folder_pattern.match(folder)):
                   continue
 
+              # Only check the README file directly under the numeric folder.
+              # Do not inspect README files in nested subdirectories.
               readme_file = None
               for fname in ["README.md", "readme.md", "Readme.md"]:
                   path = os.path.join(full_folder_path, fname)
