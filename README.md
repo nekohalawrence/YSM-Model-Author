@@ -8,8 +8,19 @@
 <details>
 <summary>命名规则</summary>
 
-- Ash Arms: 灰烬战线
-- Blue_Archive: 碧蓝档案
+- Arknights: 明日方舟, AK
+- Arknights_Endfield: 明日方舟：终末地
+- Ash_Arms: 灰烬战线
+- Atomic_Heart: 原子之心
+- Azur_Lane: 碧蓝航线
+- Honkai_Impact_3: 崩坏3, HI3
+- Blue_Archive: 碧蓝档案, BA
+- Genshin_Impact: 原神. Genshin
+- Neon Genesis Evangelion(NGE): 新世纪福音战士, EVA
+- Strinova: 卡拉比丘
+- Wuthering_Waves: 鸣潮, WuWa
+- Zenless_Zone_Zero: 绝区零, ZZZ
+
 
 </details>
 
