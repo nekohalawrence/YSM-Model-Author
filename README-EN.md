@@ -6,6 +6,24 @@
 - Note that some models in this repository are **18+**, and it is recommended to use them after careful consideration. I have not labeled all **r18** models as `nsfw`
 
 <details>
+<summary>Naming Conventions</summary>
+
+- Arknights: 明日方舟, AK
+- Arknights_Endfield: 明日方舟：终末地
+- Ash_Arms: 灰烬战线
+- Atomic_Heart: 原子之心
+- Azur_Lane: 碧蓝航线
+- Honkai_Impact_3: 崩坏3, HI3
+- Blue_Archive: 碧蓝档案, BA
+- Genshin_Impact: 原神. Genshin
+- Neon Genesis Evangelion(NGE): 新世纪福音战士, EVA
+- Strinova: 卡拉比丘
+- Wuthering_Waves: 鸣潮, WuWa
+- Zenless_Zone_Zero: 绝区零, ZZZ
+
+</details>
+
+<details>
 <summary>Tool Recommendations</summary>
 
 - [ysm-model-manager](https://github.com/eghrhegpe/ysm-model-manager)
@@ -28,6 +46,7 @@
 - panbaidu: https://pan.baidu.com/s/1FFSrd_YG-1Eat_DQD7hziw extraction code: xiao
 - The model will not be put into the repository for the time being. If needed, please download it yourself
 - I'm planning to add an action to generate a `README.md` for each model, making it easier to view the model preview images. If you have any good methods, feel free to share them with me via an issue (I'm not a programmer, and it's all done by AI for me 😭)
+- For uniform naming, all game names in folders, except those exclusive to China, will be changed to English. A list for cross-reference translation will be provided later.
 
 # 2026-07-19
 
