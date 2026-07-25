@@ -1,5 +1,10 @@
 [中文](https://github.com/nekohalawrence/FREE-YSM-AUTHOR), English
 
+# !!!  Major mistakes have occurred
+
+- I found that most of the models were corrupted when viewed through Obsidian!!!!!!!!!!!!. I only realized the reason now, as the history on Git had not been deleted.
+- If you find any unavailable models, please inform me via an issue. Thank you
+
 # FREE-YSM-AUTHOR
 
 - A collection of free models categorized by author. ~Absolutely no paid models.~
@@ -8,18 +13,25 @@
 <details>
 <summary>Naming Conventions</summary>
 
-- Arknights: 明日方舟, AK
-- Arknights_Endfield: 明日方舟：终末地
-- Ash_Arms: 灰烬战线
-- Atomic_Heart: 原子之心
-- Azur_Lane: 碧蓝航线
-- Honkai_Impact_3: 崩坏3, HI3
-- Blue_Archive: 碧蓝档案, BA
-- Genshin_Impact: 原神. Genshin
-- Neon Genesis Evangelion(NGE): 新世纪福音战士, EVA
-- Strinova: 卡拉比丘
-- Wuthering_Waves: 鸣潮, WuWa
-- Zenless_Zone_Zero: 绝区零, ZZZ
+- Arknights, 明日方舟, AK
+- Arknights_Endfield, 明日方舟：终末地
+- Ash_Arms, 灰烬战线
+- Atomic_Heart, 原子之心
+- Azur_Lane, 碧蓝航线
+- Battlefield_1. 战地_1, BF_1
+- Command & Conquer, 命令与征服, CNC
+- Command_&_Conquer: Red_Alert_2, Red_Alert_2, RA2, 命令与征服：红色警戒 2
+- Command_&_Conquer: Red_Alert_3, Red_Alert_3, RA3, 命令与征服：红色警戒 3
+- Command & Conquer Generals: Zero Hour, ZH, Zero Hour, 命令与征服：绝命时刻
+- Girls'_Frontline,少女前线, GF
+- Honkai_Impact_3, 崩坏3, HI3
+- Blue_Archive, 碧蓝档案, BA, 蔚蓝档案
+- Genshin_Impact, 原神, Genshin
+- Neon_Genesis_Evangelion, NGE, 新世纪福音战士, EVA
+- Snowbreak: Containment Zone, 尘白禁区, snowbreak
+- Strinova, 卡拉比丘
+- Wuthering_Waves, 鸣潮, WuWa
+- Zenless_Zone_Zero, 绝区零, ZZZ
 
 </details>
 
@@ -27,17 +39,25 @@
 <summary>Tool Recommendations</summary>
 
 - [ysm-model-manager](https://github.com/eghrhegpe/ysm-model-manager)
- - Introduction: ysm model management software
+	- 介绍: ysm 模型管理软件
 - [YSMParser](https://github.com/OpenYSM/YSMParser)
- - Introduction: A Parser to recover Yes-Steve-Model Encrypted Binaries
+	- 介绍: A Parser to recover Yes-Steve-Model Encrypted Binaries.
 - [OpenYSM](https://github.com/OpenYSM/OpenYSM)
- - Introduction: An open-source alternative to YSM, potentially offering better performance
+	- 介绍: YSM 的开源替代，性能可能会更好
+- [ModernYSM](https://github.com/OpenYSMDev/ModernYSM)
+ - 介绍: OpenYSM 是一款基于 Yes Steve Model 的模组，它修改了原版玩家模型，其核心使用 GeckoLib 库，并采用了 Minecraft 基岩版的模型和动画文件。这使得玩家可以根据自己的喜好自定义玩家模型和动画。
 
 </details>
 
 <details>
 
 <summary>Update/Chatty Log</summary>
+
+# 2026-07-25
+
+- There are too many strange games
+- Please note that some models without preview images are unusable. I saved them while viewing the author's information, which resulted in some characters being modified and the original file being corrupted, making the model unusable.
+- A major mistake occurred. I discovered that most of the models viewed through Obsidian were corrupted!!!!!!!!!!!!. Only now have I realized the reason: the history on Git was not deleted.
 
 # 2026-07-23
 
