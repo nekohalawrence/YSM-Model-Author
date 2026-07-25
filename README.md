@@ -13,7 +13,7 @@
 - Ash_Arms: 灰烬战线
 - Atomic_Heart: 原子之心
 - Azur_Lane: 碧蓝航线
-- Honkai_Impact_3: 崩坏3, HI3
+- Honkai_Impact_3: 崩坏 3, HI3
 - Blue_Archive: 碧蓝档案, BA
 - Genshin_Impact: 原神. Genshin
 - Neon Genesis Evangelion(NGE): 新世纪福音战士, EVA
@@ -96,6 +96,7 @@
 <summary>作者索引</summary>
 
 <!-- AUTHORS_LIST_START -->
+
 | 编号 | 作者名称 | 模型数量 |
 | --- | --- | ---: |
 | 0000 | [#-OMEGAZERO-](.../../models/0000) | 1 |
@@ -241,6 +242,7 @@
 | 0141 | [#映白L #映白](.../../models/0141) | 8 |
 | 0142 | [#Omegaff0048 \| #FF0048](.../../models/0142) | 3 |
 | 0143 | [#yuoke \| #bili_yuoyuoyuo](.../../models/0143) | 1 |
+
 <!-- AUTHORS_LIST_END -->
 
 </details>
