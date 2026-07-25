@@ -1,5 +1,10 @@
 中文, [English](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/blob/main/README-EN.md)
 
+# !!! 出现重大失误
+
+- 我发现通过obsidian的查看大部分模型都损坏了！！！！！！！！，现在才发现原因，git上的历史没有删除。
+- 如果你发现不可用的模型请通过issue告诉我，感谢了
+
 # FREE-YSM-AUTHOR
 
 - 收集并按作者分类的免费模型，~绝无付费模型。~
@@ -8,19 +13,31 @@
 <details>
 <summary>命名规则</summary>
 
+## 游戏
+
 - Arknights, 明日方舟, AK
 - Arknights_Endfield, 明日方舟：终末地
 - Ash_Arms, 灰烬战线
 - Atomic_Heart, 原子之心
 - Azur_Lane, 碧蓝航线
+- Battlefield_1. 战地_1, BF_1
+- Command & Conquer, 命令与征服, CNC
+- Command_&_Conquer: Red_Alert_2, Red_Alert_2, RA2, 命令与征服：红色警戒 2
+- Command_&_Conquer: Red_Alert_3, Red_Alert_3, RA3, 命令与征服：红色警戒 3
+- Command & Conquer Generals: Zero Hour, ZH, Zero Hour, 命令与征服：绝命时刻
 - Girls'_Frontline,少女前线, GF
 - Honkai_Impact_3, 崩坏3, HI3
-- Blue_Archive, 碧蓝档案, BA
+- Blue_Archive, 碧蓝档案, BA, 蔚蓝档案
 - Genshin_Impact, 原神, Genshin
-- Neon Genesis Evangelion(NGE), 新世纪福音战士, EVA
+- Neon_Genesis_Evangelion, NGE, 新世纪福音战士, EVA
+- Snowbreak: Containment Zone, 尘白禁区, snowbreak
 - Strinova, 卡拉比丘
 - Wuthering_Waves, 鸣潮, WuWa
 - Zenless_Zone_Zero, 绝区零, ZZZ
+
+## 动画
+
+- Bocchi_the_Rock!, BtR, 孤独摇滚！
 
 </details>
 
@@ -40,6 +57,12 @@
 
 <details>
 <summary>更新/话痨日志</summary>
+
+# 2026-07-25
+
+- 奇奇怪怪的游戏太多了
+- 注意，有些没有预览图的模型是不可用的，我在查看作者的时候保存了，导致修改了部分字符，破坏了原本的文件，导致该模型不可用。
+- 出现重大失误，我发现通过obsidian的查看大部分模型都损坏了！！！！！！！！，现在才发现原因，git上的历史没有删除。
 
 # 2026-07-23
 
