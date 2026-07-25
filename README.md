@@ -42,7 +42,8 @@
 # 2026-07-23
 
 - [LuckyPotion](https://space.bilibili.com/1739798750) 感谢这位大佬公开了，某团队做的一些作者付费模型集合，我可能会在之后慢慢更新各类模型的预览图。
-- 夸克云: https://pan.quark.cn/s/77a16d314a11 提取码：ajVD
+- 夸克云: https://pan.quark.cn/s/77a16d314a11 提取码：ajVD （已失效）
+- 百度云: https://pan.baidu.com/s/1FFSrd_YG-1Eat_DQD7hziw 提取码: xiao
 - 模型暂时不放进存储库，有需要的自行下载
 - 准备添加一个 aciton 为每一个模型添加 `README.md`，方便查看模型预览图，如果你有好的方法可以通过 issue 告知我（本人并不会编程，都是 AI 帮我写的😭）
 - 为了统一命名，之后所有的文件夹中的游戏名称除了只有中国有的游戏，都将改成英文，之后会出一个列表对照翻译。
