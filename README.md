@@ -25,10 +25,11 @@
 - Command_&_Conquer: Red_Alert_2, Red_Alert_2, RA2, 命令与征服：红色警戒 2
 - Command_&_Conquer: Red_Alert_3, Red_Alert_3, RA3, 命令与征服：红色警戒 3
 - Command & Conquer Generals: Zero Hour, ZH, Zero Hour, 命令与征服：绝命时刻
-- Girls'_Frontline,少女前线, GF
 - Honkai_Impact_3, 崩坏 3, HI3
+- Honkai: Star Rail, HSR, 崩坏：星穹铁道
 - Blue_Archive, 碧蓝档案, BA, 蔚蓝档案
 - Genshin_Impact, 原神, Genshin
+- Girls'_Frontline,少女前线, GF
 - Neon_Genesis_Evangelion, NGE, 新世纪福音战士, EVA
 - Snowbreak: Containment Zone, 尘白禁区, snowbreak
 - Strinova, 卡拉比丘
