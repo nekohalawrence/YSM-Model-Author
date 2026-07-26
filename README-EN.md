@@ -40,13 +40,13 @@
 <summary>Tool Recommendations</summary>
 
 - [ysm-model-manager](https://github.com/eghrhegpe/ysm-model-manager)
-	- 介绍: ysm 模型管理软件
+	- Introduction: ysm model management software
 - [YSMParser](https://github.com/OpenYSM/YSMParser)
-	- 介绍: A Parser to recover Yes-Steve-Model Encrypted Binaries.
+	- Introduction: A Parser to recover Yes-Steve-Model Encrypted Binaries
 - [OpenYSM](https://github.com/OpenYSM/OpenYSM)
-	- 介绍: YSM 的开源替代，性能可能会更好
+	- Introduction: An open-source alternative to YSM, potentially offering better performance
 - [ModernYSM](https://github.com/OpenYSMDev/ModernYSM)
- - 介绍: OpenYSM 是一款基于 Yes Steve Model 的模组，它修改了原版玩家模型，其核心使用 GeckoLib 库，并采用了 Minecraft 基岩版的模型和动画文件。这使得玩家可以根据自己的喜好自定义玩家模型和动画。
+	- Introduction: OpenYSM is a mod based on the Yes Steve Model. It modifies the original player model, utilizes the GeckoLib library at its core, and adopts the models and animation files from the Minecraft Bedrock Edition. This allows players to customize their player models and animations according to their preferences.
 
 </details>
 
