@@ -1,6 +1,8 @@
 # 0044
 
-- 作者名称: #韦懦夫斯菲尔
+## 模型
+
+- 作者名称: #韦懦夫斯菲尔 | #汪
 - 平台: #bilibili #afdian 
 	- [bilibili](https://www.bilibili.com/)：[韦懦夫斯菲尔](https://space.bilibili.com/3546753760496536)
 	- [afdian](https://afdian.com/)：

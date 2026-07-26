@@ -30,13 +30,8 @@ def should_generate(readme_path: Path) -> bool:
     return START_MARKER in text and END_MARKER in text
 
 
-def build_readme_content(model_dir: Path, image_paths: list[Path]) -> str:
-    title = model_dir.name
+def build_preview_section(image_paths: list[Path], model_dir: Path) -> str:
     lines = [
-        f"# {title}",
-        "",
-        "> 此 README 由 `.github/scripts/generate_model_readmes.py` 自动生成。",
-        "",
         "## 预览图",
         "",
         START_MARKER,
@@ -53,6 +48,30 @@ def build_readme_content(model_dir: Path, image_paths: list[Path]) -> str:
         "",
     ])
     return "\n".join(lines)
+
+
+def build_readme_content(model_dir: Path, image_paths: list[Path], existing_content: str | None = None) -> str:
+    title = model_dir.name
+    preview_section = build_preview_section(image_paths, model_dir).rstrip()
+
+    if existing_content is None or not existing_content.strip():
+        lines = [
+            f"# {title}",
+            "",
+            "> 此 README 由 `.github/scripts/generate_model_readmes.py` 自动生成。",
+            "",
+            preview_section,
+        ]
+        return "\n".join(lines).rstrip() + "\n"
+
+    existing_content = existing_content.rstrip()
+    pattern = re.compile(rf"{re.escape(START_MARKER)}.*?{re.escape(END_MARKER)}", re.S)
+    if START_MARKER in existing_content and END_MARKER in existing_content:
+        updated_content = pattern.sub(preview_section, existing_content, count=1)
+    else:
+        updated_content = existing_content + "\n\n" + preview_section
+
+    return updated_content.rstrip() + "\n"
 
 
 def is_author_dir(path: Path) -> bool:
@@ -83,13 +102,10 @@ def main() -> int:
                 continue
 
             readme_path = model_dir / 'README.md'
-            if readme_path.exists() and not should_generate(readme_path):
-                skipped += 1
-                continue
+            existing_content = readme_path.read_text(encoding='utf-8', errors='ignore') if readme_path.exists() else None
 
-            new_content = build_readme_content(model_dir, preview_images)
+            new_content = build_readme_content(model_dir, preview_images, existing_content)
             if readme_path.exists():
-                existing_content = readme_path.read_text(encoding='utf-8', errors='ignore')
                 if existing_content == new_content:
                     continue
                 action = 'Updated'
