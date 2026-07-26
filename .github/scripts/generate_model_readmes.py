@@ -7,6 +7,7 @@ IMAGE_EXTS = {'.png', '.jpg', '.jpeg', '.webp', '.gif'}
 PREVIEW_MARKER = re.compile(r'preview', re.I)
 START_MARKER = '<!-- GENERATED MODEL PREVIEW README START -->'
 END_MARKER = '<!-- GENERATED MODEL PREVIEW README END -->'
+PREVIEW_HEADING = '## 预览图'
 
 
 def is_preview_image(path: Path) -> bool:
@@ -23,31 +24,47 @@ def collect_preview_images(model_dir: Path) -> list[Path]:
     return images
 
 
-def should_generate(readme_path: Path) -> bool:
-    if not readme_path.exists():
-        return True
-    text = readme_path.read_text(encoding='utf-8', errors='ignore')
-    return START_MARKER in text and END_MARKER in text
-
-
 def build_preview_section(image_paths: list[Path], model_dir: Path) -> str:
     lines = [
-        "## 预览图",
-        "",
+        PREVIEW_HEADING,
+        '',
         START_MARKER,
-        "",
+        '',
     ]
 
     for image_path in image_paths:
         rel_path = image_path.relative_to(model_dir).as_posix()
-        lines.append(f"![{image_path.name}]({rel_path})")
-        lines.append("")
+        lines.append(f'![{image_path.name}]({rel_path})')
+        lines.append('')
 
     lines.extend([
         END_MARKER,
-        "",
+        '',
     ])
-    return "\n".join(lines)
+    return '\n'.join(lines)
+
+
+def strip_existing_preview_sections(content: str) -> str:
+    lines = content.splitlines()
+    cleaned_lines: list[str] = []
+    index = 0
+
+    while index < len(lines):
+        line = lines[index]
+        if line.strip() == PREVIEW_HEADING:
+            index += 1
+            while index < len(lines):
+                next_line = lines[index]
+                if next_line.startswith('## ') and next_line.strip() != PREVIEW_HEADING:
+                    break
+                index += 1
+            continue
+
+        cleaned_lines.append(line)
+        index += 1
+
+    cleaned_content = '\n'.join(cleaned_lines).strip()
+    return re.sub(r'\n{3,}', '\n\n', cleaned_content)
 
 
 def build_readme_content(model_dir: Path, image_paths: list[Path], existing_content: str | None = None) -> str:
@@ -56,22 +73,24 @@ def build_readme_content(model_dir: Path, image_paths: list[Path], existing_cont
 
     if existing_content is None or not existing_content.strip():
         lines = [
-            f"# {title}",
-            "",
-            "> 此 README 由 `.github/scripts/generate_model_readmes.py` 自动生成。",
-            "",
+            f'# {title}',
+            '',
+            '> 此 README 由 `.github/scripts/generate_model_readmes.py` 自动生成。',
+            '',
             preview_section,
         ]
-        return "\n".join(lines).rstrip() + "\n"
+        return '\n'.join(lines).rstrip() + '\n'
 
-    existing_content = existing_content.rstrip()
-    pattern = re.compile(rf"{re.escape(START_MARKER)}.*?{re.escape(END_MARKER)}", re.S)
-    if START_MARKER in existing_content and END_MARKER in existing_content:
-        updated_content = pattern.sub(preview_section, existing_content, count=1)
+    cleaned_content = strip_existing_preview_sections(existing_content.rstrip())
+    if cleaned_content and cleaned_content != existing_content.rstrip():
+        content_to_use = cleaned_content
     else:
-        updated_content = existing_content + "\n\n" + preview_section
+        content_to_use = existing_content.rstrip()
 
-    return updated_content.rstrip() + "\n"
+    if not content_to_use.strip():
+        content_to_use = f'# {title}'
+
+    return (content_to_use + '\n\n' + preview_section).rstrip() + '\n'
 
 
 def is_author_dir(path: Path) -> bool:

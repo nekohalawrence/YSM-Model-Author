@@ -298,7 +298,7 @@ models/                         <-- Root directory for models
   ├── 0000/                     <-- 1st level folder: Author ID
   │    ├── Model Name 1/        <-- 2nd level folder: Model Name
   │    │    ├── preview.jpg     <-- (Required) Preview image, fixed name
-  │    │    ├── tags.txt        <-- (Optional) Tag file, contains: Anime, Mecha, Red
+  │    │    ├── README.md       <-- Model Metadata
   │    │    ├── v1.0.zip        <-- Model file, multiple files allowed
   │    │    └── v2.0.zip
   │    └── Model Name 2/
