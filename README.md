@@ -16,29 +16,31 @@
 ## 游戏
 
 - Arknights, 明日方舟, AK
-- Arknights_Endfield, 明日方舟：终末地
-- Ash_Arms, 灰烬战线
-- Atomic_Heart, 原子之心
-- Azur_Lane, 碧蓝航线
-- Battlefield_1. 战地 _1, BF_1
+- Arknights-Endfield, 明日方舟：终末地
+- Ash-Arms, 灰烬战线
+- Atomic-Heart, 原子之心
+- Azur-Lane, 碧蓝航线
+- Battlefield-1, 战地-1, BF-1
 - Command & Conquer, 命令与征服, CNC
-- Command_&_Conquer: Red_Alert_2, Red_Alert_2, RA2, 命令与征服：红色警戒 2
-- Command_&_Conquer: Red_Alert_3, Red_Alert_3, RA3, 命令与征服：红色警戒 3
+- Command-&-Conquer: Red-Alert-2, Red-Alert-2, RA2, 命令与征服：红色警戒 2
+- Command-&-Conquer: Red-Alert-3, Red-Alert-3, RA3, 命令与征服：红色警戒 3
 - Command & Conquer Generals: Zero Hour, ZH, Zero Hour, 命令与征服：绝命时刻
-- Honkai_Impact_3, 崩坏 3, HI3
+- Doki-Doki-Literature-Club!, DDLC, 心跳文学部！
+- Honkai-Impact-3, 崩坏 3, HI3
 - Honkai: Star Rail, HSR, 崩坏：星穹铁道
-- Blue_Archive, 碧蓝档案, BA, 蔚蓝档案
-- Genshin_Impact, 原神, Genshin
-- Girls'_Frontline,少女前线, GF
-- Neon_Genesis_Evangelion, NGE, 新世纪福音战士, EVA
+- Blue-Archive, 碧蓝档案, BA, 蔚蓝档案
+- Genshin-Impact, 原神, Genshin
+- Girls'-Frontline,少女前线, GF
+- Neon-Genesis-Evangelion, NGE, 新世纪福音战士, EVA
 - Snowbreak: Containment Zone, 尘白禁区, snowbreak
 - Strinova, 卡拉比丘
-- Wuthering_Waves, 鸣潮, WuWa
-- Zenless_Zone_Zero, 绝区零, ZZZ
+- Wuthering-Waves, 鸣潮, WuWa
+- Zenless-Zone-Zero, 绝区零, ZZZ
 
 ## 动画
 
-- Bocchi_the_Rock!, BtR, 孤独摇滚！
+- Bocchi-the-Rock!, BtR, 孤独摇滚！
+- Fox-Spirit-Matchmaker, 狐妖小红娘
 
 
 </details>
