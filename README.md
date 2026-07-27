@@ -52,6 +52,8 @@
 	- 介绍: ysm 模型管理软件
 - [YSMParser](https://github.com/OpenYSM/YSMParser)
 	- 介绍: A Parser to recover Yes-Steve-Model Encrypted Binaries.
+- [YSMParser](https://github.com/OpenYSMDev/YSMParser)
+	- 介绍: .ysm模型一键解密、转换为Blockbench工程，全版本加密格式支持。
 - [OpenYSM](https://github.com/OpenYSM/OpenYSM)
 	- 介绍: YSM 的开源替代，性能可能会更好
 - [ModernYSM](https://github.com/OpenYSMDev/ModernYSM)
@@ -70,7 +72,7 @@
 
 - 奇奇怪怪的游戏太多了
 - 注意，有些没有预览图的模型是不可用的，我在查看作者的时候保存了，导致修改了部分字符，破坏了原本的文件，导致该模型不可用。
-- 出现重大失误，我发现通过 obsidian 的查看大部分模型都损坏了！！！！！！！！，现在才发现原因，git 上的历史没有删除。
+- 出现重大失误，我发现通过 obsidian 查看的大部分模型都损坏了！！！！！！！！，现在才发现原因，git 上的历史没有删除。
 
 # 2026-07-23
 
