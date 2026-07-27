@@ -1,38 +1,46 @@
 [中文](https://github.com/nekohalawrence/FREE-YSM-AUTHOR), English
 
-# !!!  Major mistakes have occurred
+# !!! Critical Mistake
 
-- I found that most of the models were corrupted when viewed through Obsidian!!!!!!!!!!!!. I only realized the reason now, as the history on Git had not been deleted.
-- If you find any unavailable models, please inform me via an issue. Thank you
+- I’ve discovered that most models viewed through Obsidian are corrupted!!!!!!!! I’ve only just identified the root cause. Git history has not been deleted.
+- If you encounter any unusable models, please let me know via an issue. Thanks a lot.
 
 # FREE-YSM-AUTHOR
 
-- A collection of free models categorized by author. ~Absolutely no paid models.~
-- Note that some models in this repository are **18+**, and it is recommended to use them after careful consideration. I have not labeled all **r18** models as `nsfw`
+- Free models sorted by creator. ~No paid models included.~
+- Warning: This repository contains some 18+ models. Please exercise caution before use. I have not tagged all R18 models with the nsfw label.
 
 <details>
 <summary>Naming Conventions</summary>
 
+## game
+
 - Arknights, 明日方舟, AK
-- Arknights_Endfield, 明日方舟：终末地
-- Ash_Arms, 灰烬战线
-- Atomic_Heart, 原子之心
-- Azur_Lane, 碧蓝航线
-- Battlefield_1. 战地 _1, BF_1
+- Arknights-Endfield, 明日方舟：终末地
+- Ash-Arms, 灰烬战线
+- Atomic-Heart, 原子之心
+- Azur-Lane, 碧蓝航线
+- Battlefield-1, 战地-1, BF-1
 - Command & Conquer, 命令与征服, CNC
-- Command_&_Conquer: Red_Alert_2, Red_Alert_2, RA2, 命令与征服：红色警戒 2
-- Command_&_Conquer: Red_Alert_3, Red_Alert_3, RA3, 命令与征服：红色警戒 3
+- Command-&-Conquer: Red-Alert-2, Red-Alert-2, RA2, 命令与征服：红色警戒 2
+- Command-&-Conquer: Red-Alert-3, Red-Alert-3, RA3, 命令与征服：红色警戒 3
 - Command & Conquer Generals: Zero Hour, ZH, Zero Hour, 命令与征服：绝命时刻
-- Honkai_Impact_3, 崩坏 3, HI3
+- Doki-Doki-Literature-Club!, DDLC, 心跳文学部！
+- Honkai-Impact-3, 崩坏 3, HI3
 - Honkai: Star Rail, HSR, 崩坏：星穹铁道
-- Blue_Archive, 碧蓝档案, BA, 蔚蓝档案
-- Genshin_Impact, 原神, Genshin
-- Girls'_Frontline,少女前线, GF
-- Neon_Genesis_Evangelion, NGE, 新世纪福音战士, EVA
+- Blue-Archive, 碧蓝档案, BA, 蔚蓝档案
+- Genshin-Impact, 原神, Genshin
+- Girls'-Frontline,少女前线, GF
+- Neon-Genesis-Evangelion, NGE, 新世纪福音战士, EVA
 - Snowbreak: Containment Zone, 尘白禁区, snowbreak
 - Strinova, 卡拉比丘
-- Wuthering_Waves, 鸣潮, WuWa
-- Zenless_Zone_Zero, 绝区零, ZZZ
+- Wuthering-Waves, 鸣潮, WuWa
+- Zenless-Zone-Zero, 绝区零, ZZZ
+
+## anime
+
+- Bocchi-the-Rock!, BtR, 孤独摇滚！
+- Fox-Spirit-Matchmaker, 狐妖小红娘
 
 </details>
 
@@ -43,6 +51,8 @@
 	- Introduction: ysm model management software
 - [YSMParser](https://github.com/OpenYSM/YSMParser)
 	- Introduction: A Parser to recover Yes-Steve-Model Encrypted Binaries
+- [YSMParser](https://github.com/OpenYSMDev/YSMParser)
+	- Introduction: The .ysm model supports one-click decryption and conversion to a Blockbench project, with support for all version encryption formats.
 - [OpenYSM](https://github.com/OpenYSM/OpenYSM)
 	- Introduction: An open-source alternative to YSM, potentially offering better performance
 - [ModernYSM](https://github.com/OpenYSMDev/ModernYSM)
@@ -54,11 +64,15 @@
 
 <summary>Update/Chatty Log</summary>
 
+# 2026-07-27
+
+- Added: Touhou Maid Resource Pack and TACZ Gun Pack
+
 # 2026-07-25
 
-- There are too many strange games
-- Please note that some models without preview images are unusable. I saved them while viewing the author's information, which resulted in some characters being modified and the original file being corrupted, making the model unusable.
-- A major mistake occurred. I discovered that most of the models viewed through Obsidian were corrupted!!!!!!!!!!!!. Only now have I realized the reason: the history on Git was not deleted.
+- There are way too many obscure games.
+- Warning: Some models without preview images are unusable. I saved files while checking the original authors, which altered certain characters and corrupted the original files, rendering these models invalid.
+- Major mistake discovered! I just found out the majority of models viewed via Obsidian are corrupted!!!!!!! The commit history on Git remains intact and hasn’t been deleted.
 
 # 2026-07-23
 
