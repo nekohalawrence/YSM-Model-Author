@@ -2,7 +2,7 @@
 
 ## 模型
 
-- 作者名称: #獒子coco | #獒子酱的杂货店 | #獒子獒子獒
+- 作者名称: #失踪的李元
 - 平台: #bilibili #afdian 
-	- [bilibili](https://www.bilibili.com/)：[獒子獒子獒](https://space.bilibili.com/19140392)
-	- [afdian](https://afdian.com/)：[獒子酱的杂货店](https://afdian.com/a/AOZICOCO)
+	- [bilibili](https://www.bilibili.com/)：[失踪的李元](https://space.bilibili.com/505613984)
+	- [afdian](https://afdian.com/)：[失踪的李元](https://afdian.com/a/ly3064421540)
