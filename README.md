@@ -22,8 +22,6 @@
 - Azur-Lane, 碧蓝航线
 - Battlefield-1, 战地 -1, BF-1
 - Blue-Archive, 碧蓝档案, BA, 蔚蓝档案
-
-
 - Command & Conquer, 命令与征服, CNC
 - Command-&-Conquer: Red-Alert-2, Red-Alert-2, RA2, 命令与征服：红色警戒 2
 - Command-&-Conquer: Red-Alert-3, Red-Alert-3, RA3, 命令与征服：红色警戒 3
