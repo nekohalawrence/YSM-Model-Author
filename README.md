@@ -21,19 +21,24 @@
 - Atomic-Heart, 原子之心
 - Azur-Lane, 碧蓝航线
 - Battlefield-1, 战地 -1, BF-1
+- Blue-Archive, 碧蓝档案, BA, 蔚蓝档案
+
+
 - Command & Conquer, 命令与征服, CNC
 - Command-&-Conquer: Red-Alert-2, Red-Alert-2, RA2, 命令与征服：红色警戒 2
 - Command-&-Conquer: Red-Alert-3, Red-Alert-3, RA3, 命令与征服：红色警戒 3
 - Command & Conquer Generals: Zero Hour, ZH, Zero Hour, 命令与征服：绝命时刻
 - Doki-Doki-Literature-Club!, DDLC, 心跳文学部！
+- Fate-Grand-Order, FGO, 命运 - 冠位指定
 - Honkai-Impact-3, 崩坏 3, HI3
-- Honkai: Star Rail, HSR, 崩坏：星穹铁道
-- Blue-Archive, 碧蓝档案, BA, 蔚蓝档案
+- Honkai-Star-Rail, HSR, 崩坏：星穹铁道
 - Genshin-Impact, 原神, Genshin
 - Girls'-Frontline,少女前线, GF
+- Goddess of Victory: Nikke, Nikke, 胜利女神：妮姬
 - Neon-Genesis-Evangelion, NGE, 新世纪福音战士, EVA
 - Snowbreak: Containment Zone, 尘白禁区, snowbreak
 - Strinova, 卡拉比丘
+- Umamusume: Pretty Derby, 闪耀！优俊少女, UmaMusume, UM, 赛马娘
 - Wuthering-Waves, 鸣潮, WuWa
 - Zenless-Zone-Zero, 绝区零, ZZZ
 
