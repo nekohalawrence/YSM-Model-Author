@@ -20,7 +20,7 @@
 - Ash-Arms, 灰烬战线
 - Atomic-Heart, 原子之心
 - Azur-Lane, 碧蓝航线
-- Battlefield-1, 战地-1, BF-1
+- Battlefield-1, 战地 -1, BF-1
 - Command & Conquer, 命令与征服, CNC
 - Command-&-Conquer: Red-Alert-2, Red-Alert-2, RA2, 命令与征服：红色警戒 2
 - Command-&-Conquer: Red-Alert-3, Red-Alert-3, RA3, 命令与征服：红色警戒 3
@@ -53,7 +53,7 @@
 - [YSMParser](https://github.com/OpenYSM/YSMParser)
 	- 介绍: A Parser to recover Yes-Steve-Model Encrypted Binaries.
 - [YSMParser](https://github.com/OpenYSMDev/YSMParser)
-	- 介绍: .ysm模型一键解密、转换为Blockbench工程，全版本加密格式支持。
+	- 介绍: .ysm 模型一键解密、转换为 Blockbench 工程，全版本加密格式支持。
 - [OpenYSM](https://github.com/OpenYSM/OpenYSM)
 	- 介绍: YSM 的开源替代，性能可能会更好
 - [ModernYSM](https://github.com/OpenYSMDev/ModernYSM)
@@ -130,6 +130,7 @@
 <summary>作者索引</summary>
 
 <!-- AUTHORS_LIST_START -->
+
 | 编号 | 作者名称 | 模型数量 |
 | --- | --- | ---: |
 | 0000 | [#-OMEGAZERO-](.../../models/0000) | 1 |
@@ -295,7 +296,7 @@
 | 0161 | [#-_-_-_-_草-_-_-_- \| #ckdr251](.../../models/0161) | 1 |
 | 0162 | [#失踪的李元](.../../models/0162) | 1 |
 | 0163 | [#Rhein雨倩 \| #雨倩先生](.../../models/0163) | 2 |
-| 0164 | [#toolat嫌晚 \| #toolat洗碗]](.../../models/0164) | 1 |
+| 0164 | [#toolat 嫌晚 \| #toolat洗碗]](.../../models/0164) | 1 |
 | 0165 | [#默栖 \| #某嘞个默栖 \| #默嘞个某栖](.../../models/0165) | 7 |
 | 0166 | [#棒锤锤 \| #棒锤锤QWQ](.../../models/0166) | 4 |
 | 0167 | [#炼狱在旅行](.../../models/0167) | 1 |
@@ -305,6 +306,7 @@
 | 0171 | [#艾卡斯特](.../../models/0171) | 2 |
 | 0172 | [#艾卡](.../../models/0172) | 1 |
 | 0173 | [#流风LFly](.../../models/0173) | 1 |
+
 <!-- AUTHORS_LIST_END -->
 
 </details>
