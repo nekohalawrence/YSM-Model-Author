@@ -18,8 +18,6 @@
 - Arknights, 明日方舟, AK
 - Arknights-Endfield, 明日方舟：终末地, AKE
 - Ash-Arms, 灰烬战线
-- Atomic-Heart, 原子之心
-- Azur-Lane, 碧蓝航线
 - Atomic-Heart, 原子之心, AH 
 - Azur-Lane, 碧蓝航线, AL
 - Azur-Promilia, AP, 蓝色星原
