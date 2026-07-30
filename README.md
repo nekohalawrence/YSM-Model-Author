@@ -20,6 +20,7 @@
 - Ash-Arms, 灰烬战线
 - Atomic-Heart, 原子之心, AH 
 - Azur-Lane, 碧蓝航线, AL
+- Azur-Promilia, AP, 蓝色星原
 - Battlefield-1, 战地 -1, BF-1
 - Blue-Archive, 碧蓝档案, BA, 蔚蓝档案
 - Command & Conquer, 命令与征服, CNC
