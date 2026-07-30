@@ -16,10 +16,13 @@
 ## game
 
 - Arknights, 明日方舟, AK
-- Arknights-Endfield, 明日方舟：终末地
+- Arknights-Endfield, 明日方舟：终末地, AKE
 - Ash-Arms, 灰烬战线
 - Atomic-Heart, 原子之心
 - Azur-Lane, 碧蓝航线
+- Atomic-Heart, 原子之心, AH 
+- Azur-Lane, 碧蓝航线, AL
+- Azur-Promilia, AP, 蓝色星原
 - Battlefield-1, 战地 -1, BF-1
 - Blue-Archive, 碧蓝档案, BA, 蔚蓝档案
 - Command & Conquer, 命令与征服, CNC
@@ -30,20 +33,23 @@
 - Fate-Grand-Order, FGO, 命运 - 冠位指定
 - Honkai-Impact-3, 崩坏 3, HI3
 - Honkai-Star-Rail, HSR, 崩坏：星穹铁道
-- Genshin-Impact, 原神, Genshin
+- Genshin-Impact, 原神, Genshin, GI
 - Girls'-Frontline,少女前线, GF
 - Goddess of Victory: Nikke, Nikke, 胜利女神：妮姬
 - Neon-Genesis-Evangelion, NGE, 新世纪福音战士, EVA
 - Snowbreak: Containment Zone, 尘白禁区, snowbreak
 - Strinova, 卡拉比丘
 - Umamusume: Pretty Derby, 闪耀！优俊少女, UmaMusume, UM, 赛马娘
-- Wuthering-Waves, 鸣潮, WuWa
+- Wuthering-Waves, 鸣潮, WuWa, WW
 - Zenless-Zone-Zero, 绝区零, ZZZ
 
 ## anime
 
 - Bocchi-the-Rock!, BtR, 孤独摇滚！
-- Fox-Spirit-Matchmaker, 狐妖小红娘
+- Dragon Raja, DR, 龙族
+- Fox-Spirit-Matchmaker, 狐妖小红娘, FSM
+- Frieren-Beyond-Journey's-End, 葬送的芙莉莲, Frieren
+- MushokuTensei, 无职转生～到了异世界就拿出真本事～, 無職転生 ～異世界行ったら本気だす～
 
 </details>
 
@@ -67,15 +73,19 @@
 
 <summary>Update/Chatty Log</summary>
 
+# 2026-07-30
+
+- format: Noticed that the names of some games or animations are excessively long, making it hard to view the character names. Therefore, the names of subsequent games and animations will be abbreviated.
+
 # 2026-07-27
 
-- Added: Touhou Maid Resource Pack and TACZ Gun Pack
+- feat: Added Touhou Maid Pack and TACZ Gun Pack
 
 # 2026-07-25
 
-- There are way too many obscure games.
-- Warning: Some models without preview images are unusable. I saved files while checking the original authors, which altered certain characters and corrupted the original files, rendering these models invalid.
-- Major mistake discovered! I just found out the majority of models viewed via Obsidian are corrupted!!!!!!! The commit history on Git remains intact and hasn’t been deleted.
+- ps: There are tons of obscure games.
+- ps: Note: Some models without preview images are unusable. When I saved files while checking author information, partial characters were modified, corrupting the original files and rendering these models invalid.
+- ps: Critical error discovered! Most models viewed via Obsidian are damaged!!!!!!!! I have now identified the cause: Git history was not cleared.
 
 # 2026-07-23
 
