@@ -16,10 +16,10 @@
 ## 游戏
 
 - Arknights, 明日方舟, AK
-- Arknights-Endfield, 明日方舟：终末地
+- Arknights-Endfield, 明日方舟：终末地, AKE
 - Ash-Arms, 灰烬战线
-- Atomic-Heart, 原子之心
-- Azur-Lane, 碧蓝航线
+- Atomic-Heart, 原子之心, AH 
+- Azur-Lane, 碧蓝航线, AL
 - Battlefield-1, 战地 -1, BF-1
 - Blue-Archive, 碧蓝档案, BA, 蔚蓝档案
 - Command & Conquer, 命令与征服, CNC
@@ -30,21 +30,23 @@
 - Fate-Grand-Order, FGO, 命运 - 冠位指定
 - Honkai-Impact-3, 崩坏 3, HI3
 - Honkai-Star-Rail, HSR, 崩坏：星穹铁道
-- Genshin-Impact, 原神, Genshin
+- Genshin-Impact, 原神, Genshin, GI
 - Girls'-Frontline,少女前线, GF
 - Goddess of Victory: Nikke, Nikke, 胜利女神：妮姬
 - Neon-Genesis-Evangelion, NGE, 新世纪福音战士, EVA
 - Snowbreak: Containment Zone, 尘白禁区, snowbreak
 - Strinova, 卡拉比丘
 - Umamusume: Pretty Derby, 闪耀！优俊少女, UmaMusume, UM, 赛马娘
-- Wuthering-Waves, 鸣潮, WuWa
+- Wuthering-Waves, 鸣潮, WuWa, WW
 - Zenless-Zone-Zero, 绝区零, ZZZ
 
 ## 动画
 
 - Bocchi-the-Rock!, BtR, 孤独摇滚！
-- Fox-Spirit-Matchmaker, 狐妖小红娘
-
+- Dragon Raja, DR, 龙族
+- Fox-Spirit-Matchmaker, 狐妖小红娘, FSM
+- Frieren-Beyond-Journey's-End, 葬送的芙莉莲, Frieren
+- MushokuTensei, 无职转生～到了异世界就拿出真本事～, 無職転生 ～異世界行ったら本気だす～
 
 </details>
 
@@ -67,15 +69,19 @@
 <details>
 <summary>更新/话痨日志</summary>
 
+# 2026-07-30
+
+- format: 注意到有些游戏或动画的名称**太长了**，不容易看到**人物**名称，故之后的游戏或动画名称改为**简写**
+
 # 2026-07-27
 
-- 增添了，车万女仆包和 tacz 枪包
+- feat: 增添了，车万女仆包和 tacz 枪包
 
 # 2026-07-25
 
-- 奇奇怪怪的游戏太多了
-- 注意，有些没有预览图的模型是不可用的，我在查看作者的时候保存了，导致修改了部分字符，破坏了原本的文件，导致该模型不可用。
-- 出现重大失误，我发现通过 obsidian 查看的大部分模型都损坏了！！！！！！！！，现在才发现原因，git 上的历史没有删除。
+- ps: 奇奇怪怪的游戏太多了
+- ps: 注意，有些没有预览图的模型是不可用的，我在查看作者的时候保存了，导致修改了部分字符，破坏了原本的文件，导致该模型不可用。
+- ps: 出现重大失误，我发现通过 obsidian 查看的大部分模型都损坏了！！！！！！！！，现在才发现原因，git 上的历史没有删除。
 
 # 2026-07-23
 
