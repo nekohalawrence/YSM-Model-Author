@@ -20,14 +20,14 @@
 - Ash-Arms, 灰烬战线
 - Atomic-Heart, 原子之心
 - Azur-Lane, 碧蓝航线
-- Battlefield-1, 战地-1, BF-1
+- Battlefield-1, 战地 -1, BF-1
 - Blue-Archive, 碧蓝档案, BA, 蔚蓝档案
 - Command & Conquer, 命令与征服, CNC
 - Command-&-Conquer: Red-Alert-2, Red-Alert-2, RA2, 命令与征服：红色警戒 2
 - Command-&-Conquer: Red-Alert-3, Red-Alert-3, RA3, 命令与征服：红色警戒 3
 - Command & Conquer Generals: Zero Hour, ZH, Zero Hour, 命令与征服：绝命时刻
 - Doki-Doki-Literature-Club!, DDLC, 心跳文学部！
-- Fate-Grand-Order, FGO, 命运-冠位指定
+- Fate-Grand-Order, FGO, 命运 - 冠位指定
 - Honkai-Impact-3, 崩坏 3, HI3
 - Honkai-Star-Rail, HSR, 崩坏：星穹铁道
 - Genshin-Impact, 原神, Genshin
@@ -39,7 +39,6 @@
 - Umamusume: Pretty Derby, 闪耀！优俊少女, UmaMusume, UM, 赛马娘
 - Wuthering-Waves, 鸣潮, WuWa
 - Zenless-Zone-Zero, 绝区零, ZZZ
-
 
 ## anime
 
@@ -138,6 +137,7 @@
 <summary>Author Index</summary>
 
 <!-- AUTHORS_LIST_START -->
+
 | ID | Author Name | Model Count |
 | --- | --- | ---: |
 | 0000 | [#-OMEGAZERO-](.../../models/0000) | 1 |
@@ -303,7 +303,7 @@
 | 0161 | [#-_-_-_-_草-_-_-_- \| #ckdr251](.../../models/0161) | 1 |
 | 0162 | [#失踪的李元](.../../models/0162) | 1 |
 | 0163 | [#Rhein雨倩 \| #雨倩先生](.../../models/0163) | 2 |
-| 0164 | [#toolat嫌晚 \| #toolat洗碗]](.../../models/0164) | 1 |
+| 0164 | [#toolat 嫌晚 \| #toolat洗碗]](.../../models/0164) | 1 |
 | 0165 | [#默栖 \| #某嘞个默栖 \| #默嘞个某栖](.../../models/0165) | 7 |
 | 0166 | [#棒锤锤 \| #棒锤锤QWQ](.../../models/0166) | 4 |
 | 0167 | [#炼狱在旅行](.../../models/0167) | 1 |
@@ -315,6 +315,7 @@
 | 0173 | [#流风LFly](.../../models/0173) | 1 |
 | 0174 | [#鹘鸦Yata](.../../models/0174) | 1 |
 | 0175 | [#集栎 \| #Nebulathus](.../../models/0175) | 1 |
+
 <!-- AUTHORS_LIST_END -->
 
 </details>
