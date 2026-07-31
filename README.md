@@ -48,6 +48,11 @@
 - Fox-Spirit-Matchmaker, 狐妖小红娘, FSM
 - Frieren-Beyond-Journey's-End, 葬送的芙莉莲, Frieren
 - MushokuTensei, 无职转生～到了异世界就拿出真本事～, 無職転生 ～異世界行ったら本気だす～
+- Onii-chan wa Oshimai!, お兄ちゃんはおしまい！, ONIMAI, 别当欧尼酱了！
+
+## 其他
+
+- VOCALOID, 博歌乐, V家, 术力口, VOC
 
 </details>
 
