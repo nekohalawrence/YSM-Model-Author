@@ -52,7 +52,7 @@
 
 ## 其他
 
-- VOCALOID, 博歌乐, V家, 术力口, VOC
+- VOCALOID, 博歌乐, V 家, 术力口, VOC
 
 </details>
 
@@ -334,19 +334,41 @@
 
 ## 项目结构
 
-> 后续可能会更改
+> 下面是当前仓库的主要目录说明，后续可能会根据内容继续调整。
 
-```
-models/                         <-- 模型根目录
-  ├── 0000/                     <-- 第一级文件夹：作者ID
-  │    ├── 模型名称1/            <-- 第二级文件夹：模型名
-  │    │    ├── preview.jpg     <-- (必须) 预览图，名字固定
-  │    │    ├── README.md       <-- 模型元信息
-  │    │    ├── v1.0.zip        <-- 模型文件，可以有多个
-  │    │    └── v2.0.zip
-  │    └── 模型名称2/
-  │    └── README.md            <-- 作者元信息   
-  └── 0001/
+```text
+FREE-YSM-AUTHOR/
+│
+├── blockbench-model/                 # Blockbench 源工程文件（.bbmodel，含模型源文件）
+│
+├── models/                           # YSM 主模型库：按作者编号分组（0000 ~ 9999）
+│   ├── 0000/                         # ── 作者编号目录 ──
+│   │   ├── README.md                 #     作者元信息（作者名称、平台、模型数量）
+│   │   └── <模型名称>/                # ── 单个模型目录 ──
+│   │       ├── README.md             #     模型元信息
+│   │       ├── preview.jpg / .png    #     预览图
+│   │       ├── *.ysm                 #     加密模型文件
+│   │       ├── *.zip                 #     含源文件的压缩包
+│   ├── 0001/
+│   │   └── …（同 0000 结构）
+│   └── 9999/
+│
+├── non-ysm-model/                    # 非 YSM 格式模型资源
+│   └── 0000/
+│       ├── README.md
+│       └── *.zip                     # 模型压缩包
+│
+├── other-ysm-models/                 # 其他 YSM 模型集合
+│   └── <模型名称>/                    # 每个模型一个目录
+│       ├── README.md
+│       ├── preview01.png / .jpg
+│       └── *.ysm
+│
+├── Real-Camera-Setting/              # 真实相机（Real Camera）绑定配置
+│
+├── TACZ-Gun-Pack/                    # TACZ 枪械包资源（*.zip）
+│
+└── LM-Maid-Pack/                    # TLM 女仆相关资源包（*.zip）
 ```
 
 ## 注意事项

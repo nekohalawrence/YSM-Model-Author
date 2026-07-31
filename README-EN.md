@@ -337,16 +337,38 @@
 > Subject to change in the future
 
 ```
-models/                         <-- Root directory for models
-  ├── 0000/                     <-- 1st level folder: Author ID
-  │    ├── Model Name 1/        <-- 2nd level folder: Model Name
-  │    │    ├── preview.jpg     <-- (Required) Preview image, fixed name
-  │    │    ├── README.md       <-- Model Metadata
-  │    │    ├── v1.0.zip        <-- Model file, multiple files allowed
-  │    │    └── v2.0.zip
-  │    └── Model Name 2/
-  │    └── README.md            <-- Author metadata   
-  └── 0001/
+FREE-YSM-AUTHOR/
+│
+├── blockbench-model/                 # Blockbench source project files (.bbmodel, including model source files)
+│
+├── models/                           # YSM main model library: grouped by author ID (0000 ~ 9999)
+│   ├── 0000/                         # ── Author ID directory ──
+│   │   ├── README.md                 #     Author metadata (author name, platform, model count)
+│   │   └── <Model Name>/             # ── Single model directory ──
+│   │       ├── README.md             #     Model metadata
+│   │       ├── preview.jpg / .png    #     Preview image
+│   │       ├── *.ysm                 #     Encrypted model file
+│   │       ├── *.zip                 #     Archive containing source files
+│   ├── 0001/
+│   │   └── …(same structure as 0000)
+│   └── 9999/
+│
+├── non-ysm-model/                    # Non-YSM format model resources
+│   └── 0000/
+│       ├── README.md
+│       └── *.zip                     # Model archive
+│
+├── other-ysm-models/                 # Other YSM model collections
+│   └── <Model Name>/                 # One directory per model
+│       ├── README.md
+│       ├── preview01.png / .jpg
+│       └── *.ysm
+│
+├── Real-Camera-Setting/              # Real Camera binding configuration
+│
+├── TACZ-Gun-Pack/                    # TACZ gun pack resources (*.zip)
+│
+└── LM-Maid-Pack/                    # TLM maid-related resource packs (*.zip)
 ```
 
 ## Notes

@@ -2,7 +2,12 @@
 import re
 from pathlib import Path
 
-ROOT_DIR = Path(__file__).resolve().parents[2] / "models"
+WORKSPACE_ROOT = Path(__file__).resolve().parents[2]
+ROOT_DIRS = [
+    WORKSPACE_ROOT / 'models',
+    WORKSPACE_ROOT / 'other-models',
+    WORKSPACE_ROOT / 'other-ysm-models',
+]
 IMAGE_EXTS = {'.png', '.jpg', '.jpeg', '.webp', '.gif'}
 PREVIEW_MARKER = re.compile(r'preview', re.I)
 START_MARKER = '<!-- GENERATED MODEL PREVIEW README START -->'
@@ -97,25 +102,36 @@ def is_author_dir(path: Path) -> bool:
     return path.is_dir() and path.name.isdigit() and len(path.name) == 4
 
 
-def main() -> int:
-    if not ROOT_DIR.is_dir():
-        print(f"Error: models directory not found at {ROOT_DIR}")
-        return 1
-
-    updated = 0
-    skipped = 0
-    created = 0
-
-    for author_dir in sorted(ROOT_DIR.iterdir()):
-        if not is_author_dir(author_dir):
-            continue
-
-        for model_dir in sorted(author_dir.iterdir()):
+def iter_model_dirs(root_dir: Path):
+    if root_dir.name == 'models':
+        for author_dir in sorted(root_dir.iterdir()):
+            if not is_author_dir(author_dir):
+                continue
+            for model_dir in sorted(author_dir.iterdir()):
+                if not model_dir.is_dir():
+                    continue
+                if model_dir.name.startswith('.') or model_dir.name == 'previews':
+                    continue
+                yield model_dir
+    else:
+        for model_dir in sorted(root_dir.iterdir()):
             if not model_dir.is_dir():
                 continue
             if model_dir.name.startswith('.') or model_dir.name == 'previews':
                 continue
+            yield model_dir
 
+
+def main() -> int:
+    updated = 0
+    skipped = 0
+    created = 0
+
+    for root_dir in ROOT_DIRS:
+        if not root_dir.is_dir():
+            continue
+
+        for model_dir in iter_model_dirs(root_dir):
             preview_images = collect_preview_images(model_dir)
             if not preview_images:
                 continue
@@ -134,7 +150,7 @@ def main() -> int:
                 created += 1
 
             readme_path.write_text(new_content, encoding='utf-8')
-            print(f"{action} {readme_path.relative_to(ROOT_DIR.parent)}")
+            print(f"{action} {readme_path.relative_to(root_dir.parent)}")
 
     print(f"Summary: created={created}, updated={updated}, skipped={skipped}")
     return 0

@@ -4,6 +4,8 @@ on:
   push:
     paths:
       - 'models/**'
+      - 'other-models/**'
+      - 'other-ysm-models/**'
   workflow_dispatch:
 
 jobs:

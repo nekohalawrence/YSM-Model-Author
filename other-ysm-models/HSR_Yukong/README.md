@@ -1,4 +1,4 @@
-# Genshin_Impact_甘雨-ganyu
+# HSR_Yukong
 
 > 此 README 由 `.github/scripts/generate_model_readmes.py` 自动生成。
 
@@ -9,7 +9,5 @@
 ![preview0.png](preview0.png)
 
 ![preview01.png](preview01.png)
-
-![preview02.png](preview02.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
