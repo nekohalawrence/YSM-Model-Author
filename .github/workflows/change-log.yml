@@ -34,25 +34,45 @@ jobs:
           import subprocess
           from datetime import date
 
-          readme_path = 'README.md'
+          readme_paths = ['README.md', 'README-EN.md']
           models_dir = 'models'
           start_marker = '<!-- CHANGELOG_AUTOGEN_START -->'
           end_marker = '<!-- CHANGELOG_AUTOGEN_END -->'
           auto_marker = '<!-- AUTO_LOGS_START -->'
           manual_marker = '<!-- MANUAL_LOGS_START -->'
 
-          if not os.path.isfile(readme_path):
-              raise SystemExit(f'Readme not found: {readme_path}')
+          for readme_path in readme_paths:
+              if not os.path.isfile(readme_path):
+                  raise SystemExit(f'Readme not found: {readme_path}')
 
           env_before = os.getenv('GITHUB_EVENT_BEFORE', '')
           env_sha = os.getenv('GITHUB_SHA', '')
+          event_path = os.getenv('GITHUB_EVENT_PATH', '')
           changed_entries = []
 
-          if env_before and env_sha and env_before != '0000000000000000000000000000000000000000':
+          if event_path and os.path.isfile(event_path):
+              try:
+                  import json
+                  with open(event_path, 'r', encoding='utf-8') as event_file:
+                      event_data = json.load(event_file)
+                  commits = event_data.get('commits', [])
+                  for commit in commits:
+                      for path in commit.get('added', []):
+                          changed_entries.append(f'A\t{path}')
+                      for path in commit.get('modified', []):
+                          changed_entries.append(f'M\t{path}')
+                      for path in commit.get('removed', []):
+                          changed_entries.append(f'D\t{path}')
+              except Exception:
+                  changed_entries = []
+
+          if not changed_entries and env_before and env_sha and env_before != '0000000000000000000000000000000000000000':
               proc = subprocess.run(['git', 'diff', '--name-status', env_before, env_sha], capture_output=True, text=True, check=True)
               changed_entries = [line.strip() for line in proc.stdout.splitlines() if line.strip()]
-          else:
-              print('No prior commit available to diff from; skipping changelog generation.')
+
+          if not changed_entries:
+              print('No changed files detected for this push. Nothing to update.')
+              raise SystemExit(0)
 
           def file_category(path):
               ext = os.path.splitext(path)[1].lower()
@@ -111,152 +131,184 @@ jobs:
                       break
               return None
 
-          new_entries = []
+          new_entries_zh = []
+          new_entries_en = []
           for folder in sorted(changed_authors):
               author_name = find_author_name(folder) or folder
               author_text = author_name.replace('|', '\\|')
               stats = changed_authors[folder]
-              details = []
-              if stats['model']:
-                  details.append(f"{stats['model']} 个模型文件")
-              if stats['readme']:
-                  details.append(f"{stats['readme']} 个 README")
-              if stats['image']:
-                  details.append(f"{stats['image']} 张预览图")
-              if stats['other']:
-                  details.append(f"{stats['other']} 个其他文件")
-              status_parts = []
-              if stats['added']:
-                  status_parts.append(f"新增 {stats['added']}")
-              if stats['modified']:
-                  status_parts.append(f"更新 {stats['modified']}")
-              if stats['deleted']:
-                  status_parts.append(f"删除 {stats['deleted']}")
-              summary = '、'.join(details) if details else '若干文件'
-              if status_parts:
-                  summary += f"（{'，'.join(status_parts)}）"
-              new_entries.append(f"- chore: models/{folder}: [#{folder} - {author_text}](.../../{models_dir}/{folder}) - 更新了 {summary}")
 
-          if not new_entries:
+              zh_details = []
+              en_details = []
+              if stats['model']:
+                  zh_details.append(f"{stats['model']} 个模型文件")
+                  en_details.append(f"{stats['model']} model file{'s' if stats['model'] != 1 else ''}")
+              if stats['readme']:
+                  zh_details.append(f"{stats['readme']} 个 README")
+                  en_details.append(f"{stats['readme']} README file{'s' if stats['readme'] != 1 else ''}")
+              if stats['image']:
+                  zh_details.append(f"{stats['image']} 张预览图")
+                  en_details.append(f"{stats['image']} preview image{'s' if stats['image'] != 1 else ''}")
+              if stats['other']:
+                  zh_details.append(f"{stats['other']} 个其他文件")
+                  en_details.append(f"{stats['other']} other file{'s' if stats['other'] != 1 else ''}")
+
+              zh_status = []
+              en_status = []
+              if stats['added']:
+                  zh_status.append(f"新增 {stats['added']}")
+                  en_status.append(f"added {stats['added']}")
+              if stats['modified']:
+                  zh_status.append(f"更新 {stats['modified']}")
+                  en_status.append(f"modified {stats['modified']}")
+              if stats['deleted']:
+                  zh_status.append(f"删除 {stats['deleted']}")
+                  en_status.append(f"deleted {stats['deleted']}")
+
+              zh_summary = '、'.join(zh_details) if zh_details else '若干文件'
+              if zh_status:
+                  zh_summary += f"（{'，'.join(zh_status)}）"
+              en_summary = ', '.join(en_details) if en_details else 'several files'
+              if en_status:
+                  en_summary += f" ({', '.join(en_status)})"
+
+              entry_base = f"- chore: models/{folder}: [#{folder} - {author_text}](.../../{models_dir}/{folder})"
+              new_entries_zh.append(f"{entry_base} - 更新了 {zh_summary}")
+              new_entries_en.append(f"{entry_base} - updated {en_summary}")
+
+          if not new_entries_zh:
               print('No author names could be determined for changed folders. Nothing to update.')
               raise SystemExit(0)
 
           today = date.today().isoformat()
 
-          with open(readme_path, 'r', encoding='utf-8') as f:
-              content = f.read()
+          file_updates = {
+              'README.md': new_entries_zh,
+              'README-EN.md': new_entries_en,
+          }
 
-          if start_marker not in content or end_marker not in content:
-              raise SystemExit('Change log markers not found in README.md')
+          for readme_path, new_entries in file_updates.items():
+              with open(readme_path, 'r', encoding='utf-8') as f:
+                  content = f.read()
 
-          prefix, rest = content.split(start_marker, 1)
-          block, suffix = rest.split(end_marker, 1)
+              if start_marker not in content or end_marker not in content:
+                  raise SystemExit(f'Change log markers not found in {readme_path}')
 
-          def parse_sections(block_text):
-              sections = []
-              current_heading = None
-              current_lines = []
-              for line in block_text.splitlines():
-                  if line.startswith('# '):
-                      if current_heading is not None:
-                          sections.append((current_heading, current_lines))
-                      current_heading = line.strip()
-                      current_lines = []
+              prefix, rest = content.split(start_marker, 1)
+              block, suffix = rest.split(end_marker, 1)
+
+              def parse_sections(block_text):
+                  pre_heading_lines = []
+                  sections = []
+                  current_heading = None
+                  current_lines = []
+                  for line in block_text.splitlines():
+                      if line.startswith('# '):
+                          if current_heading is not None:
+                              sections.append((current_heading, current_lines))
+                          else:
+                              if current_lines:
+                                  pre_heading_lines.extend(current_lines)
+                          current_heading = line.strip()
+                          current_lines = []
+                      else:
+                          if current_heading is not None:
+                              current_lines.append(line)
+                          else:
+                              pre_heading_lines.append(line)
+                  if current_heading is not None:
+                      sections.append((current_heading, current_lines))
+                  return pre_heading_lines, sections
+
+              def split_section_lines(lines):
+                  auto_lines = []
+                  manual_lines = []
+                  state = 'manual'
+                  for line in lines:
+                      if line.strip() == auto_marker:
+                          state = 'auto'
+                          continue
+                      if line.strip() == manual_marker:
+                          state = 'manual'
+                          continue
+                      if state == 'auto':
+                          auto_lines.append(line)
+                      else:
+                          manual_lines.append(line)
+                  return auto_lines, manual_lines
+
+              def dedupe_lines(lines):
+                  seen = set()
+                  out = []
+                  for line in lines:
+                      if line not in seen:
+                          seen.add(line)
+                          out.append(line)
+                  return out
+
+              pre_heading_lines, sections = parse_sections(block)
+              updated = False
+              new_sections = []
+              today_found = False
+              today_heading = f'# {today}'
+              for heading, lines in sections:
+                  if heading == today_heading:
+                      auto_lines, manual_lines = split_section_lines(lines)
+                      combined_auto = dedupe_lines(auto_lines + new_entries)
+                      new_lines = [auto_marker]
+                      if combined_auto:
+                          new_lines.extend(combined_auto)
+                      new_lines.extend(['', manual_marker])
+                      if manual_lines:
+                          new_lines.extend(manual_lines)
+                      new_sections.append((heading, new_lines))
+                      today_found = True
+                      updated = True
                   else:
-                      if current_heading is not None:
-                          current_lines.append(line)
-                      elif line.strip():
-                          current_lines.append(line)
-              if current_heading is not None:
-                  sections.append((current_heading, current_lines))
-              return sections
+                      new_sections.append((heading, lines))
 
-          def split_section_lines(lines):
-              auto_lines = []
-              manual_lines = []
-              state = 'manual'
-              for line in lines:
-                  if line.strip() == auto_marker:
-                      state = 'auto'
-                      continue
-                  if line.strip() == manual_marker:
-                      state = 'manual'
-                      continue
-                  if state == 'auto':
-                      auto_lines.append(line)
-                  else:
-                      manual_lines.append(line)
-              return auto_lines, manual_lines
-
-          def dedupe_lines(lines):
-              seen = set()
-              out = []
-              for line in lines:
-                  if line not in seen:
-                      seen.add(line)
-                      out.append(line)
-              return out
-
-          sections = parse_sections(block)
-          updated = False
-          new_sections = []
-          today_found = False
-          today_heading = f'# {today}'
-          for heading, lines in sections:
-              if heading == today_heading:
-                  auto_lines, manual_lines = split_section_lines(lines)
-                  combined_auto = dedupe_lines(auto_lines + new_entries)
-                  new_lines = [auto_marker]
-                  if combined_auto:
-                      new_lines.extend(combined_auto)
-                  new_lines.extend(['', manual_marker])
-                  if manual_lines:
-                      new_lines.extend(manual_lines)
-                  new_sections.append((heading, new_lines))
-                  today_found = True
+              if not today_found:
+                  new_sections.append((today_heading, [auto_marker] + new_entries + ['', manual_marker]))
                   updated = True
-              else:
-                  new_sections.append((heading, lines))
 
-          if not today_found:
-              new_sections.append((today_heading, [auto_marker] + new_entries + ['', manual_marker]))
-              updated = True
+              new_sections.sort(key=lambda item: item[0], reverse=True)
 
-          new_sections.sort(key=lambda item: item[0], reverse=True)
-
-          def render_sections(sections_list):
-              lines = []
-              for heading, section_lines in sections_list:
-                  if not section_lines:
+              def render_sections(sections_list, pre_lines):
+                  lines = []
+                  if pre_lines:
+                      lines.extend(pre_lines)
+                      lines.append('')
+                  for heading, section_lines in sections_list:
+                      if not section_lines:
+                          lines.extend([heading, ''])
+                          continue
                       lines.extend([heading, ''])
-                      continue
-                  lines.extend([heading, ''])
-                  lines.extend(section_lines)
-                  lines.append('')
-              return '\n'.join(lines).rstrip() + '\n'
+                      lines.extend(section_lines)
+                      lines.append('')
+                  return '\n'.join(lines).rstrip() + '\n'
 
-          new_block = render_sections(new_sections)
-          updated_content = prefix + start_marker + '\n' + new_block + end_marker + suffix
-
-          if updated_content != content:
-              with open(readme_path, 'w', encoding='utf-8') as f:
-                  f.write(updated_content)
-              print(f'Updated changelog with {len(new_entries)} author(s).')
-          else:
-              print('README changelog already up to date.')
+              new_block = render_sections(new_sections, pre_heading_lines)
+              updated_content = prefix + start_marker + '\n' + new_block + end_marker + suffix
+ 
+              if updated_content != content:
+                  with open(readme_path, 'w', encoding='utf-8') as f:
+                      f.write(updated_content)
+                  print(f'Updated {readme_path} changelog with {len(new_entries)} author(s).')
+              else:
+                  print(f'{readme_path} changelog already up to date.')
           EOF
 
       - name: Commit and push changelog update if needed
         run: |
           git config user.name 'GitHub Actions'
           git config user.email 'actions@github.com'
-          git add README.md
-          if git diff --staged --quiet; then
+          git add README.md README-EN.md
+          if git diff --cached --quiet; then
             echo 'No changes to commit.'
           else
-            git pull --rebase --autostash origin main
             git commit -m 'chore: auto-update changelog entries for modified author folders'
-            git push origin HEAD:main
+            git pull --rebase origin main
+            git push --force-with-lease origin HEAD:main
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

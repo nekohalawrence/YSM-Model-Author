@@ -135,12 +135,12 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git add README.md README-EN.md
-          if git diff --staged --quiet; then
+          if git diff --cached --quiet; then
             echo "No changes to commit"
           else
-            git pull --rebase --autostash origin main
             git commit -m "chore: auto-update authors list in README.md and README-EN.md"
-            git push origin HEAD:main
+            git pull --rebase origin main
+            git push --force-with-lease origin HEAD:main
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

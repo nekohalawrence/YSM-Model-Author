@@ -301,8 +301,14 @@
 
 <summary>Update/Chatty Log</summary>
 
+<!-- CHANGELOG_AUTOGEN_START -->
+<!-- Auto-generated log area; manual logs should be placed after MANUAL_LOGS_START in the same date section. -->
+
 # 2026-07-30
 
+<!-- AUTO_LOGS_START -->
+
+<!-- MANUAL_LOGS_START -->
 - format: Noticed that the names of some games or animations are excessively long, making it hard to view the character names. Therefore, the names of subsequent games and animations will be abbreviated.
 
 # 2026-07-27
@@ -358,6 +364,7 @@
 - Decided to only update high-quality models and stop collecting others.
 - Modified the premium mod branch to keep only the latest mods.
     
+<!-- CHANGELOG_AUTOGEN_END -->
 </details>
 
 ## Repository Structure
