@@ -1,6 +1,9 @@
 # 0080
 
+## 模型
+
 - 作者名称: #Nona_Reeves
-- 平台: #bilibili #afdian 
-	- [bilibili](https://www.bilibili.com/)：
-	- [afdian](https://afdian.com/)：
+- 平台: #QQ
+	- QQ: 1926615510
+- 团队: #映素作坊 | #映素
+
