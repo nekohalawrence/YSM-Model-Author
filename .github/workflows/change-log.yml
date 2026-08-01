@@ -66,10 +66,24 @@ jobs:
               except Exception:
                   changed_entries = []
 
+          def normalize_git_path(path):
+              path = path.strip()
+              if path.startswith('"') and path.endswith('"'):
+                  path = path[1:-1]
+              return path.replace('\\', '/')
+ 
           if not changed_entries and env_before and env_sha and env_before != '0000000000000000000000000000000000000000':
               proc = subprocess.run(['git', 'diff', '--name-status', env_before, env_sha], capture_output=True, text=True, check=True)
-              changed_entries = [line.strip() for line in proc.stdout.splitlines() if line.strip()]
-
+              for line in proc.stdout.splitlines():
+                  if not line.strip():
+                      continue
+                  parts = line.strip().split('\t')
+                  if len(parts) < 2:
+                      continue
+                  status = parts[0]
+                  path = normalize_git_path(parts[-1])
+                  changed_entries.append(f'{status}\t{path}')
+ 
           if not changed_entries:
               print('No changed files detected for this push. Nothing to update.')
               raise SystemExit(0)
