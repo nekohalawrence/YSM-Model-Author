@@ -218,7 +218,19 @@ jobs:
                               pre_heading_lines.append(line)
                   if current_heading is not None:
                       sections.append((current_heading, current_lines))
-                  return pre_heading_lines, sections
+
+                  merged = []
+                  heading_to_index = {}
+                  for heading, lines in sections:
+                      if heading in heading_to_index:
+                          idx = heading_to_index[heading]
+                          if merged[idx][1] and lines:
+                              merged[idx][1].append('')
+                          merged[idx][1].extend(lines)
+                      else:
+                          heading_to_index[heading] = len(merged)
+                          merged.append([heading, list(lines)])
+                  return pre_heading_lines, [(heading, lines) for heading, lines in merged]
 
               def split_section_lines(lines):
                   auto_lines = []
