@@ -28,8 +28,8 @@
 - Command-&-Conquer: Red-Alert-2, Red-Alert-2, RA2, 命令与征服：红色警戒 2
 - Command-&-Conquer: Red-Alert-3, Red-Alert-3, RA3, 命令与征服：红色警戒 3
 - Command & Conquer Generals: Zero Hour, ZH, Zero Hour, 命令与征服：绝命时刻
+- Dohna Dohna: Let's Do Bad Things Together ドーナドーナ いっしょにわるいことしよう, 多娜多娜 一起干坏事吧！, DOHNA
 - Doki-Doki-Literature-Club!, DDLC, 心跳文学部！
-- Dohna Dohna: Let's Do Bad Things Togetherドーナドーナ いっしょにわるいことしよう, 多娜多娜 一起干坏事吧！, DOHNA
 - Fate-Grand-Order, FGO, 命运 - 冠位指定
 - Honkai-Impact-3, 崩坏 3, HI3
 - Honkai-Star-Rail, HSR, 崩坏：星穹铁道
@@ -50,16 +50,19 @@
 - Fox-Spirit-Matchmaker, 狐妖小红娘, FSM
 - Frieren-Beyond-Journey's-End, 葬送的芙莉莲, Frieren
 - MushokuTensei, 无职转生～到了异世界就拿出真本事～, 無職転生 ～異世界行ったら本気だす～
+- Make Heroine ga Oosugiru!, MHO, 負けヒロインが多すぎる！
 - Onii-chan wa Oshimai!, お兄ちゃんはおしまい！, ONIMAI, 别当欧尼酱了！
+- Saekano: How to Raise a Boring Girlfriend, 路人女主的养成方法, SAEKANO
 
 ## 画师
+
 - Mochiyama Kingyo, もち山金魚
 
 ## 其他
 
 - Original Character, 原创角色, OC
 - VOCALOID, 博歌乐, V 家, 术力口, VOC
-- Touhou-Project, TH, TOUHOU, 东方-Project
+- Touhou-Project, TH, TOUHOU, 东方 -Project
 - Kemomimi Gakuen, ケモミミ学園, 兽耳学园, 兽耳学院, KG
 - Virtual YouTuber, バーチャルユーチューバー, VTuber
 - Virtual Streamer, VStreamer
@@ -84,6 +87,10 @@
 
 <details>
 <summary>更新/话痨日志</summary>
+
+<!-- CHANGELOG_AUTOGEN_START -->
+<!-- 自动生成日志区域，仅由 GitHub Actions 更新。手工日志请添加到此区域之后，避免被覆盖。 -->
+<!-- CHANGELOG_AUTOGEN_END -->
 
 # 2026-07-30
 
