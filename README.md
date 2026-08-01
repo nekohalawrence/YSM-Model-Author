@@ -89,7 +89,10 @@
 <summary>更新/话痨日志</summary>
 
 <!-- CHANGELOG_AUTOGEN_START -->
-<!-- 自动生成日志区域，仅由 GitHub Actions 更新。手工日志请添加到此区域之后，避免被覆盖。 -->
+# 2026-08-01
+
+- [#omo仙贝2号\| #omo \| #FujiwaranoMoku114514](.../../models/0005)
+- [#Dr观星 \| #Dr-观星](.../../models/0129)
 <!-- CHANGELOG_AUTOGEN_END -->
 
 # 2026-07-30
