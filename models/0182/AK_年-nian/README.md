@@ -1,4 +1,4 @@
-# Blue_Archive_ 狐坂若藻
+# AK_年-nian
 
 > 此 README 由 `.github/scripts/generate_model_readmes.py` 自动生成。
 
@@ -7,9 +7,5 @@
 <!-- GENERATED MODEL PREVIEW README START -->
 
 ![preview01.png](preview01.png)
-
-![preview02.png](preview02.png)
-
-![preview03.png](preview03.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
