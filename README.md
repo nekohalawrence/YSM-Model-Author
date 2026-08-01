@@ -89,10 +89,13 @@
 <summary>更新/话痨日志</summary>
 
 <!-- CHANGELOG_AUTOGEN_START -->
+<!-- 自动生成日志区域；手工日志请放在对应日期段落的 MANUAL_LOGS_START 之后。 -->
 # 2026-08-01
 
-- [#omo仙贝2号\| #omo \| #FujiwaranoMoku114514](.../../models/0005)
-- [#Dr观星 \| #Dr-观星](.../../models/0129)
+<!-- AUTO_LOGS_START -->
+- chore: models/0005: [#0005 - omo仙贝2号 \| #omo \| #FujiwaranoMoku114514](.../../models/0005) - 更新了 1 个模型文件（更新 1）
+- chore: models/0129: [#0129 - Dr观星 \| #Dr-观星](.../../models/0129) - 更新了 1 个模型文件（更新 1）
+<!-- MANUAL_LOGS_START -->
 <!-- CHANGELOG_AUTOGEN_END -->
 
 # 2026-07-30

@@ -34,20 +34,21 @@ jobs:
           models_dir = 'models'
           start_marker = '<!-- CHANGELOG_AUTOGEN_START -->'
           end_marker = '<!-- CHANGELOG_AUTOGEN_END -->'
+          auto_marker = '<!-- AUTO_LOGS_START -->'
+          manual_marker = '<!-- MANUAL_LOGS_START -->'
 
           if not os.path.isfile(readme_path):
               raise SystemExit(f'Readme not found: {readme_path}')
 
           env_before = os.getenv('GITHUB_EVENT_BEFORE', '')
           env_sha = os.getenv('GITHUB_SHA', '')
-          changed_files = []
+          changed_entries = []
 
           if env_before and env_sha and env_before != '0000000000000000000000000000000000000000':
               proc = subprocess.run(['git', 'diff', '--name-status', env_before, env_sha], capture_output=True, text=True, check=True)
               changed_entries = [line.strip() for line in proc.stdout.splitlines() if line.strip()]
           else:
               print('No prior commit available to diff from; skipping changelog generation.')
-              changed_entries = []
 
           def file_category(path):
               ext = os.path.splitext(path)[1].lower()
@@ -106,7 +107,7 @@ jobs:
                       break
               return None
 
-          rows = []
+          new_entries = []
           for folder in sorted(changed_authors):
               author_name = find_author_name(folder) or folder
               author_text = author_name.replace('|', '\\|')
@@ -130,14 +131,13 @@ jobs:
               summary = '、'.join(details) if details else '若干文件'
               if status_parts:
                   summary += f"（{'，'.join(status_parts)}）"
-              rows.append(f"- chore: file: {folder} [#{author_text}](.../../{models_dir}/{folder}) - 更新了 {summary}")
+              new_entries.append(f"- chore: models/{folder}: [#{folder} - {author_text}](.../../{models_dir}/{folder}) - 更新了 {summary}")
 
-          if not rows:
+          if not new_entries:
               print('No author names could be determined for changed folders. Nothing to update.')
               raise SystemExit(0)
 
           today = date.today().isoformat()
-          today_block = f"# {today}\n\n" + '\n'.join(rows) + '\n'
 
           with open(readme_path, 'r', encoding='utf-8') as f:
               content = f.read()
@@ -146,52 +146,98 @@ jobs:
               raise SystemExit('Change log markers not found in README.md')
 
           prefix, rest = content.split(start_marker, 1)
-          middle, suffix = rest.split(end_marker, 1)
-          existing = middle.strip()
+          block, suffix = rest.split(end_marker, 1)
 
-          def merge_block(existing_text, new_block):
-              if not existing_text:
-                  return new_block
+          def parse_sections(block_text):
               sections = []
-              current = []
-              for line in existing_text.splitlines():
+              current_heading = None
+              current_lines = []
+              for line in block_text.splitlines():
                   if line.startswith('# '):
-                      if current:
-                          sections.append(current)
-                      current = [line]
+                      if current_heading is not None:
+                          sections.append((current_heading, current_lines))
+                      current_heading = line.strip()
+                      current_lines = []
                   else:
-                      if current:
-                          current.append(line)
-                      else:
-                          current = [line]
-              if current:
-                  sections.append(current)
-              new_lines = [line for line in new_block.splitlines() if line.strip()]
-              merged = []
-              inserted = False
-              for section in sections:
-                  if section[0] == f"# {today}":
-                      existing_items = [line for line in section[1:] if line.strip()]
-                      items = existing_items.copy()
-                      for line in new_lines[1:]:
-                          if line not in items:
-                              items.append(line)
-                      merged.append([section[0]] + [''] + items)
-                      inserted = True
-                  else:
-                      merged.append(section)
-              if not inserted:
-                  merged.append(new_lines)
-              text = '\n\n'.join('\n'.join(section).rstrip() for section in merged)
-              return text + '\n'
+                      if current_heading is not None:
+                          current_lines.append(line)
+                      elif line.strip():
+                          current_lines.append(line)
+              if current_heading is not None:
+                  sections.append((current_heading, current_lines))
+              return sections
 
-          new_middle = merge_block(existing, today_block)
-          updated_content = prefix + start_marker + '\n' + new_middle + end_marker + suffix
+          def split_section_lines(lines):
+              auto_lines = []
+              manual_lines = []
+              state = 'manual'
+              for line in lines:
+                  if line.strip() == auto_marker:
+                      state = 'auto'
+                      continue
+                  if line.strip() == manual_marker:
+                      state = 'manual'
+                      continue
+                  if state == 'auto':
+                      auto_lines.append(line)
+                  else:
+                      manual_lines.append(line)
+              return auto_lines, manual_lines
+
+          def dedupe_lines(lines):
+              seen = set()
+              out = []
+              for line in lines:
+                  if line not in seen:
+                      seen.add(line)
+                      out.append(line)
+              return out
+
+          sections = parse_sections(block)
+          updated = False
+          new_sections = []
+          today_found = False
+          today_heading = f'# {today}'
+          for heading, lines in sections:
+              if heading == today_heading:
+                  auto_lines, manual_lines = split_section_lines(lines)
+                  combined_auto = dedupe_lines(auto_lines + new_entries)
+                  new_lines = [auto_marker]
+                  if combined_auto:
+                      new_lines.extend(combined_auto)
+                  new_lines.extend(['', manual_marker])
+                  if manual_lines:
+                      new_lines.extend(manual_lines)
+                  new_sections.append((heading, new_lines))
+                  today_found = True
+                  updated = True
+              else:
+                  new_sections.append((heading, lines))
+
+          if not today_found:
+              new_sections.append((today_heading, [auto_marker] + new_entries + ['', manual_marker]))
+              updated = True
+
+          new_sections.sort(key=lambda item: item[0], reverse=True)
+
+          def render_sections(sections_list):
+              lines = []
+              for heading, section_lines in sections_list:
+                  if not section_lines:
+                      lines.extend([heading, ''])
+                      continue
+                  lines.extend([heading, ''])
+                  lines.extend(section_lines)
+                  lines.append('')
+              return '\n'.join(lines).rstrip() + '\n'
+
+          new_block = render_sections(new_sections)
+          updated_content = prefix + start_marker + '\n' + new_block + end_marker + suffix
 
           if updated_content != content:
               with open(readme_path, 'w', encoding='utf-8') as f:
                   f.write(updated_content)
-              print(f'Updated changelog with {len(rows)} author(s).')
+              print(f'Updated changelog with {len(new_entries)} author(s).')
           else:
               print('README changelog already up to date.')
           EOF
