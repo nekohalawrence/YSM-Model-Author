@@ -8,8 +8,15 @@
 # FREE-YSM-AUTHOR
 
 - Free models sorted by creator. ~No paid models included.~
-- Warning: This repository contains some 18+ models. Please exercise caution before use. I have not tagged all R18 models with the nsfw label.
-- Do not sell any models from this repository. You will be held responsible for all consequences.
+
+## Notes
+
+- This project is mainly for personal storage and usage.
+- The prefix ABC is a personal rating system (for production quality / completion level) and carries no other meaning.
+- The archive contains the project source files, while `.ysm` refers to encrypted model files.
+- I am not very familiar with GitHub operations. If you wish to modify any content, please inform me via Issue, or you may clone the repository and make changes on your own.
+- This repository contains some **18+** models. Please use them cautiously. I have not marked all R18 models with the `nsfw` tag.
+- Do not sell any models from this repository in any form. You will be held responsible for all consequences.
 
 <details>
 <summary>Naming Conventions</summary>
@@ -28,6 +35,7 @@
 - Command-&-Conquer: Red-Alert-2, Red-Alert-2, RA2, 命令与征服：红色警戒 2
 - Command-&-Conquer: Red-Alert-3, Red-Alert-3, RA3, 命令与征服：红色警戒 3
 - Command & Conquer Generals: Zero Hour, ZH, Zero Hour, 命令与征服：绝命时刻
+- Dohna Dohna: Let's Do Bad Things Together ドーナドーナ いっしょにわるいことしよう, 多娜多娜 一起干坏事吧！, DOHNA
 - Doki-Doki-Literature-Club!, DDLC, 心跳文学部！
 - Fate-Grand-Order, FGO, 命运 - 冠位指定
 - Honkai-Impact-3, 崩坏 3, HI3
@@ -35,6 +43,7 @@
 - Genshin-Impact, 原神, Genshin, GI
 - Girls'-Frontline,少女前线, GF
 - Goddess of Victory: Nikke, Nikke, 胜利女神：妮姬
+- MiSide, 米塔
 - Neon-Genesis-Evangelion, NGE, 新世纪福音战士, EVA
 - Snowbreak: Containment Zone, 尘白禁区, snowbreak
 - Strinova, 卡拉比丘
@@ -49,6 +58,22 @@
 - Fox-Spirit-Matchmaker, 狐妖小红娘, FSM
 - Frieren-Beyond-Journey's-End, 葬送的芙莉莲, Frieren
 - MushokuTensei, 无职转生～到了异世界就拿出真本事～, 無職転生 ～異世界行ったら本気だす～
+- Make Heroine ga Oosugiru!, MHO, 負けヒロインが多すぎる！
+- Onii-chan wa Oshimai!, お兄ちゃんはおしまい！, ONIMAI, 别当欧尼酱了！
+- Saekano: How to Raise a Boring Girlfriend, 路人女主的养成方法, SAEKANO
+
+## illustrator
+
+- Mochiyama Kingyo, もち山金魚
+
+## other
+
+- Original Character, 原创角色, OC
+- VOCALOID, 博歌乐, V 家, 术力口, VOC
+- Touhou-Project, TH, TOUHOU, 东方 -Project
+- Kemomimi Gakuen, ケモミミ学園, 兽耳学园, 兽耳学院, KG
+- Virtual YouTuber, バーチャルユーチューバー, VTuber
+- Virtual Streamer, VStreamer
 
 </details>
 
@@ -70,74 +95,12 @@
 
 <details>
 
-<summary>Update/Chatty Log</summary>
-
-# 2026-07-30
-
-- format: Noticed that the names of some games or animations are excessively long, making it hard to view the character names. Therefore, the names of subsequent games and animations will be abbreviated.
-
-# 2026-07-27
-
-- feat: Added Touhou Maid Pack and TACZ Gun Pack
-
-# 2026-07-25
-
-- ps: There are tons of obscure games.
-- ps: Note: Some models without preview images are unusable. When I saved files while checking author information, partial characters were modified, corrupting the original files and rendering these models invalid.
-- ps: Critical error discovered! Most models viewed via Obsidian are damaged!!!!!!!! I have now identified the cause: Git history was not cleared.
-
-# 2026-07-23
-
-- [LuckyPotion](https://space.bilibili.com/1739798750) thanks this expert for publicly sharing a collection of author payment models developed by a certain team. I may gradually update preview images of various models in the future.
-- Quark Cloud: https://pan.quark.cn/s/77a16d314a11, extraction code: ajVD
-- panbaidu: https://pan.baidu.com/s/1FFSrd_YG-1Eat_DQD7hziw extraction code: xiao
-- The model will not be put into the repository for the time being. If needed, please download it yourself
-- I'm planning to add an action to generate a `README.md` for each model, making it easier to view the model preview images. If you have any good methods, feel free to share them with me via an issue (I'm not a programmer, and it's all done by AI for me 😭)
-- For uniform naming, all game names in folders, except those exclusive to China, will be changed to English. A list for cross-reference translation will be provided later.
-
-# 2026-07-19
-
-- Convert some models with source files into zip files for convenient downloading
-- Fixed some incorrect or duplicate authors
-- Re-categorize the authors for the old models
-
-# 2026-07-18
-
-- Some creators belong to the same team. I wonder if there is a good classification method. If you have one, please provide it to me
-- Reorganized a large number of models
-- The organized model includes new models and a reclassification of [existing models](https://github.com/Elaina69/Yes-Steve-Model-Repo)
-
-# 2026-06-29
-
-- Merged several team models. The models are now hosted only under the primary author who created them, while other contributing authors are attached as subsidiaries to their respective parts.
-- After organizing this for a while, I still feel there are issues with this classification approach, making it hard to find specific models. It is essentially a collection of free models (with many paid ones unavailable). Categorizing by author only highlights a few high-quality creators. It might be better to classify models based on the target object instead.
-    
-
-# 2026-05-21
-
-- Most models cannot be used in higher game versions. It is recommended to use only newer encrypted models (decrypted using ysmparser, as older models cannot be decrypted either) or the models provided with source files.
-    
-
-# 2026-05-11
-
-- Removed the Pages site. I decided to implement it later once I learn a suitable way to present the content.
-- Decided to update the metadata for all authors before the end of this year. ~If time permits, a preview image will be attached to each model.~
-    
-
-# 2026-05-03
-
-- Decided to only update high-quality models and stop collecting others.
-- Modified the premium mod branch to keep only the latest mods.
-    
-</details>
-
-
-<details>
-
 <summary>Author Recommendation</summary>
 
-> Recommend some low-cost yet high-quality model authors
+> Recommend some high-quality model authors
 
+- 0067: [#Almeta_owx](.../../models/0067) 
+- 0068: [#AnluoSakura](.../../models/0068)
 - 0076: [#White_clams白蛤蜊](.../../models/0076)
 
 </details>
@@ -146,6 +109,7 @@
 <summary>Author Index</summary>
 
 <!-- AUTHORS_LIST_START -->
+
 | ID | Author Name | Model Count |
 | --- | --- | ---: |
 | 0000 | [#-OMEGAZERO-](.../../models/0000) | 1 |
@@ -311,7 +275,7 @@
 | 0161 | [#-_-_-_-_草-_-_-_- \| #ckdr251](.../../models/0161) | 1 |
 | 0162 | [#失踪的李元](.../../models/0162) | 1 |
 | 0163 | [#Rhein雨倩 \| #雨倩先生](.../../models/0163) | 2 |
-| 0164 | [#toolat嫌晚 \| #toolat洗碗]](.../../models/0164) | 1 |
+| 0164 | [#toolat 嫌晚 \| #toolat洗碗]](.../../models/0164) | 1 |
 | 0165 | [#默栖 \| #某嘞个默栖 \| #默嘞个某栖](.../../models/0165) | 7 |
 | 0166 | [#棒锤锤 \| #棒锤锤QWQ](.../../models/0166) | 4 |
 | 0167 | [#炼狱在旅行](.../../models/0167) | 1 |
@@ -328,8 +292,72 @@
 | 0178 | [#qidai \| #一点小期待](.../../models/0178) | 2 |
 | 0179 | [#Cookiebox](.../../models/0179) | 1 |
 | 0180 | [#杂果沙拉](.../../models/0180) | 1 |
+
 <!-- AUTHORS_LIST_END -->
 
+</details>
+
+<details>
+
+<summary>Update/Chatty Log</summary>
+
+# 2026-07-30
+
+- format: Noticed that the names of some games or animations are excessively long, making it hard to view the character names. Therefore, the names of subsequent games and animations will be abbreviated.
+
+# 2026-07-27
+
+- feat: Added Touhou Maid Pack and TACZ Gun Pack
+
+# 2026-07-25
+
+- ps: There are tons of obscure games.
+- ps: Note: Some models without preview images are unusable. When I saved files while checking author information, partial characters were modified, corrupting the original files and rendering these models invalid.
+- ps: Critical error discovered! Most models viewed via Obsidian are damaged!!!!!!!! I have now identified the cause: Git history was not cleared.
+
+# 2026-07-23
+
+- [LuckyPotion](https://space.bilibili.com/1739798750) thanks this expert for publicly sharing a collection of author payment models developed by a certain team. I may gradually update preview images of various models in the future.
+- Quark Cloud: https://pan.quark.cn/s/77a16d314a11, extraction code: ajVD
+- panbaidu: https://pan.baidu.com/s/1FFSrd_YG-1Eat_DQD7hziw extraction code: xiao
+- The model will not be put into the repository for the time being. If needed, please download it yourself
+- I'm planning to add an action to generate a `README.md` for each model, making it easier to view the model preview images. If you have any good methods, feel free to share them with me via an issue (I'm not a programmer, and it's all done by AI for me 😭)
+- For uniform naming, all game names in folders, except those exclusive to China, will be changed to English. A list for cross-reference translation will be provided later.
+
+# 2026-07-19
+
+- Convert some models with source files into zip files for convenient downloading
+- Fixed some incorrect or duplicate authors
+- Re-categorize the authors for the old models
+
+# 2026-07-18
+
+- Some creators belong to the same team. I wonder if there is a good classification method. If you have one, please provide it to me
+- Reorganized a large number of models
+- The organized model includes new models and a reclassification of [existing models](https://github.com/Elaina69/Yes-Steve-Model-Repo)
+
+# 2026-06-29
+
+- Merged several team models. The models are now hosted only under the primary author who created them, while other contributing authors are attached as subsidiaries to their respective parts.
+- After organizing this for a while, I still feel there are issues with this classification approach, making it hard to find specific models. It is essentially a collection of free models (with many paid ones unavailable). Categorizing by author only highlights a few high-quality creators. It might be better to classify models based on the target object instead.
+    
+
+# 2026-05-21
+
+- Most models cannot be used in higher game versions. It is recommended to use only newer encrypted models (decrypted using ysmparser, as older models cannot be decrypted either) or the models provided with source files.
+    
+
+# 2026-05-11
+
+- Removed the Pages site. I decided to implement it later once I learn a suitable way to present the content.
+- Decided to update the metadata for all authors before the end of this year. ~If time permits, a preview image will be attached to each model.~
+    
+
+# 2026-05-03
+
+- Decided to only update high-quality models and stop collecting others.
+- Modified the premium mod branch to keep only the latest mods.
+    
 </details>
 
 ## Repository Structure
@@ -370,18 +398,6 @@ FREE-YSM-AUTHOR/
 │
 └── LM-Maid-Pack/                    # TLM maid-related resource packs (*.zip)
 ```
-
-## Notes
-
-- The prefixes A, B, and C represent personal tier preferences (based on production quality/completion level) and carry no other meaning.
-- The compressed packages contain the project source files, whereas `.ysm` files are the encrypted model files.
-    
-
-## Afterword
-
-- This project is primarily intended for personal storage and usage.
-- I am not very familiar with using GitHub. If you would like to modify any content, please inform me via an Issue, or you can clone the repository and make the changes yourself.
-    
 
 ## Acknowledgments
 
