@@ -9,6 +9,7 @@
 
 - Free models sorted by creator. ~No paid models included.~
 - Warning: This repository contains some 18+ models. Please exercise caution before use. I have not tagged all R18 models with the nsfw label.
+- Do not sell any models from this repository. You will be held responsible for all consequences.
 
 <details>
 <summary>Naming Conventions</summary>
