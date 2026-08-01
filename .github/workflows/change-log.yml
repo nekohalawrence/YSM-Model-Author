@@ -50,7 +50,49 @@ jobs:
           event_path = os.getenv('GITHUB_EVENT_PATH', '')
           changed_entries = []
 
-          if event_path and os.path.isfile(event_path):
+          def normalize_git_path(path):
+              path = path.strip()
+              if path.startswith('"') and path.endswith('"'):
+                  path = path[1:-1]
+              return path.replace('\\', '/')
+ 
+          def append_changed_entry(status, path):
+              path = normalize_git_path(path)
+              if not path:
+                  return
+              changed_entries.append(f'{status}\t{path}')
+ 
+          if env_before and env_sha and env_before != '0000000000000000000000000000000000000000':
+              proc = subprocess.run([
+                  'git', 'diff', '--name-status', '--find-renames=50%', env_before, env_sha
+              ], capture_output=True, text=True, check=True)
+              for line in proc.stdout.splitlines():
+                  if not line.strip():
+                      continue
+                  parts = line.strip().split('\t')
+                  if len(parts) < 2:
+                      continue
+                  status = parts[0]
+                  if status.startswith(('R', 'C')) and len(parts) >= 3:
+                      old_path = normalize_git_path(parts[1])
+                      new_path = normalize_git_path(parts[2])
+                      old_author = None
+                      new_author = None
+                      if old_path.startswith(models_dir + '/'):
+                          old_author = old_path.split('/', 2)[1]
+                      if new_path.startswith(models_dir + '/'):
+                          new_author = new_path.split('/', 2)[1]
+                      if old_author and new_author and old_author != new_author:
+                          append_changed_entry('M', parts[1])
+                          append_changed_entry('M', parts[2])
+                      elif new_author:
+                          append_changed_entry('M', parts[2])
+                      elif old_author:
+                          append_changed_entry('M', parts[1])
+                  else:
+                      append_changed_entry(status, parts[-1])
+ 
+          if not changed_entries and event_path and os.path.isfile(event_path):
               try:
                   import json
                   with open(event_path, 'r', encoding='utf-8') as event_file:
@@ -64,25 +106,7 @@ jobs:
                       for path in commit.get('removed', []):
                           changed_entries.append(f'D\t{path}')
               except Exception:
-                  changed_entries = []
-
-          def normalize_git_path(path):
-              path = path.strip()
-              if path.startswith('"') and path.endswith('"'):
-                  path = path[1:-1]
-              return path.replace('\\', '/')
- 
-          if not changed_entries and env_before and env_sha and env_before != '0000000000000000000000000000000000000000':
-              proc = subprocess.run(['git', 'diff', '--name-status', env_before, env_sha], capture_output=True, text=True, check=True)
-              for line in proc.stdout.splitlines():
-                  if not line.strip():
-                      continue
-                  parts = line.strip().split('\t')
-                  if len(parts) < 2:
-                      continue
-                  status = parts[0]
-                  path = normalize_git_path(parts[-1])
-                  changed_entries.append(f'{status}\t{path}')
+                  pass
  
           if not changed_entries:
               print('No changed files detected for this push. Nothing to update.')
