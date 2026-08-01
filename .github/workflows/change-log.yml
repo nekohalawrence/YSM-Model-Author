@@ -1,4 +1,4 @@
-name: Auto Update Changelog
+﻿name: Auto Update Changelog
 
 on:
   push:
@@ -43,17 +43,50 @@ jobs:
           changed_files = []
 
           if env_before and env_sha and env_before != '0000000000000000000000000000000000000000':
-              proc = subprocess.run(['git', 'diff', '--name-only', env_before, env_sha], capture_output=True, text=True, check=True)
-              changed_files = [line.strip() for line in proc.stdout.splitlines() if line.strip()]
+              proc = subprocess.run(['git', 'diff', '--name-status', env_before, env_sha], capture_output=True, text=True, check=True)
+              changed_entries = [line.strip() for line in proc.stdout.splitlines() if line.strip()]
           else:
               print('No prior commit available to diff from; skipping changelog generation.')
+              changed_entries = []
 
-          changed_authors = set()
-          for path in changed_files:
+          def file_category(path):
+              ext = os.path.splitext(path)[1].lower()
+              if ext in {'.ysm', '.zip', '.7z', '.rar', '.tar', '.gz'}:
+                  return 'model'
+              if ext in {'.md'}:
+                  return 'readme'
+              if ext in {'.png', '.jpg', '.jpeg', '.webp', '.gif', '.bmp'}:
+                  return 'image'
+              return 'other'
+
+          changed_authors = {}
+          for entry in changed_entries:
+              parts = entry.split('\t')
+              if len(parts) < 2:
+                  continue
+              status, path = parts[0], parts[-1]
               normalized = path.replace('\\', '/')
-              parts = normalized.split('/')
-              if len(parts) >= 2 and parts[0] == models_dir and re.fullmatch(r'\d{4}', parts[1]):
-                  changed_authors.add(parts[1])
+              path_parts = normalized.split('/')
+              if len(path_parts) >= 2 and path_parts[0] == models_dir and re.fullmatch(r'\d{4}', path_parts[1]):
+                  folder = path_parts[1]
+                  info = changed_authors.setdefault(folder, {
+                      'added': 0,
+                      'modified': 0,
+                      'deleted': 0,
+                      'model': 0,
+                      'readme': 0,
+                      'image': 0,
+                      'other': 0,
+                  })
+                  if status == 'A':
+                      info['added'] += 1
+                  elif status == 'M':
+                      info['modified'] += 1
+                  elif status == 'D':
+                      info['deleted'] += 1
+                  else:
+                      info['modified'] += 1
+                  info[file_category(path)] += 1
 
           if not changed_authors:
               print('No changed author folders detected. Nothing to update.')
@@ -77,14 +110,34 @@ jobs:
           for folder in sorted(changed_authors):
               author_name = find_author_name(folder) or folder
               author_text = author_name.replace('|', '\\|')
-              rows.append(f'- [{author_text}](.../../{models_dir}/{folder})')
+              stats = changed_authors[folder]
+              details = []
+              if stats['model']:
+                  details.append(f"{stats['model']} 个模型文件")
+              if stats['readme']:
+                  details.append(f"{stats['readme']} 个 README")
+              if stats['image']:
+                  details.append(f"{stats['image']} 张预览图")
+              if stats['other']:
+                  details.append(f"{stats['other']} 个其他文件")
+              status_parts = []
+              if stats['added']:
+                  status_parts.append(f"新增 {stats['added']}")
+              if stats['modified']:
+                  status_parts.append(f"更新 {stats['modified']}")
+              if stats['deleted']:
+                  status_parts.append(f"删除 {stats['deleted']}")
+              summary = '、'.join(details) if details else '若干文件'
+              if status_parts:
+                  summary += f"（{'，'.join(status_parts)}）"
+              rows.append(f"- chore: file: {folder} [#{author_text}](.../../{models_dir}/{folder}) - 更新了 {summary}")
 
           if not rows:
               print('No author names could be determined for changed folders. Nothing to update.')
               raise SystemExit(0)
 
           today = date.today().isoformat()
-          auto_block = f'# {today}\n\n' + '\n'.join(rows) + '\n'
+          today_block = f"# {today}\n\n" + '\n'.join(rows) + '\n'
 
           with open(readme_path, 'r', encoding='utf-8') as f:
               content = f.read()
@@ -94,7 +147,46 @@ jobs:
 
           prefix, rest = content.split(start_marker, 1)
           middle, suffix = rest.split(end_marker, 1)
-          updated_content = prefix + start_marker + '\n' + auto_block + end_marker + suffix
+          existing = middle.strip()
+
+          def merge_block(existing_text, new_block):
+              if not existing_text:
+                  return new_block
+              sections = []
+              current = []
+              for line in existing_text.splitlines():
+                  if line.startswith('# '):
+                      if current:
+                          sections.append(current)
+                      current = [line]
+                  else:
+                      if current:
+                          current.append(line)
+                      else:
+                          current = [line]
+              if current:
+                  sections.append(current)
+              new_lines = [line for line in new_block.splitlines() if line.strip()]
+              merged = []
+              inserted = False
+              for section in sections:
+                  if section[0] == f"# {today}":
+                      existing_items = [line for line in section[1:] if line.strip()]
+                      items = existing_items.copy()
+                      for line in new_lines[1:]:
+                          if line not in items:
+                              items.append(line)
+                      merged.append([section[0]] + [''] + items)
+                      inserted = True
+                  else:
+                      merged.append(section)
+              if not inserted:
+                  merged.append(new_lines)
+              text = '\n\n'.join('\n'.join(section).rstrip() for section in merged)
+              return text + '\n'
+
+          new_middle = merge_block(existing, today_block)
+          updated_content = prefix + start_marker + '\n' + new_middle + end_marker + suffix
 
           if updated_content != content:
               with open(readme_path, 'w', encoding='utf-8') as f:
