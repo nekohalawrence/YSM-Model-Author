@@ -1,5 +1,9 @@
 ﻿name: Auto Update Changelog
 
+concurrency:
+  group: readme-auto-updates-${{ github.ref }}
+  cancel-in-progress: false
+
 on:
   push:
     paths: ['models/**']
