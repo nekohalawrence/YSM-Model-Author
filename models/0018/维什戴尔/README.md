@@ -1,4 +1,4 @@
-# Blue_Archive_ 狐坂若藻
+# 维什戴尔
 
 > 此 README 由 `.github/scripts/generate_model_readmes.py` 自动生成。
 

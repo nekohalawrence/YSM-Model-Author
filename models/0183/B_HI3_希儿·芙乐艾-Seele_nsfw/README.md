@@ -1,4 +1,4 @@
-# Blue_Archive_ 狐坂若藻
+# B_HI3_希儿·芙乐艾-Seele_nsfw
 
 > 此 README 由 `.github/scripts/generate_model_readmes.py` 自动生成。
 
@@ -11,5 +11,11 @@
 ![preview02.png](preview02.png)
 
 ![preview03.png](preview03.png)
+
+![preview04.png](preview04.png)
+
+![preview05.png](preview05.png)
+
+![preview06.png](preview06.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
