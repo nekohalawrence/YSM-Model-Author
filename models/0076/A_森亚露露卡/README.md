@@ -1,4 +1,4 @@
-# A_雨倩_兔女郎
+# A_森亚露露卡
 
 > 此 README 由 `.github/scripts/generate_model_readmes.py` 自动生成。
 
