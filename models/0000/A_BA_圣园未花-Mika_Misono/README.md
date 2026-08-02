@@ -1,8 +1,4 @@
-![preview](preview.png)
-
-![preview02](preview02.png)
-
-![preview03](preview03.png)
+# A_BA_ 圣园未花 -Mika_Misono
 
 ## 预览图
 

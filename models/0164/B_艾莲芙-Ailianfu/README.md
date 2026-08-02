@@ -1,4 +1,4 @@
-# 艾莲芙-Ailianfu
+# 艾莲芙 -Ailianfu
 
 > 此 README 由 `.github/scripts/generate_model_readmes.py` 自动生成。
 

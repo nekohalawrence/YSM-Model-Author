@@ -1,25 +1,25 @@
 中文, [English](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/blob/main/README-EN.md)
 
-# !!! 出现重大失误
-
-- 我发现通过 obsidian 的查看大部分模型都损坏了！！！！！！！！，现在才发现原因，git 上的历史没有删除。
-- 如果你发现不可用的模型请通过 issue 告诉我，感谢了
-
 # FREE-YSM-AUTHOR
 
-- 收集并按作者分类的免费模型，~绝无付费模型。~
+- 收集并按作者分类的 ysm 模型，tacz 枪包和TLM 女仆包等。
 
 ## 注意事项
 
-- 本项目主要用于个人存储和使用
-- 前缀 ABC 是个人偏好的等级划分（制作质量/完成度），并无其他含义。
-- 压缩包内包含项目源码文件，而 `.ysm` 是加密后的模型文件。。
-- 我对 GitHub 的使用不太熟悉。如果你想修改任何内容，只能通过 Issue 告知我，或者你可以自行克隆仓库并进行更改。
-- 此存储库，有些模型是 **18+**，建议斟酌后使用，我并没有为所有的 **r18** 的模型标注 `nsfw`
-- 请不要以任何形式**售卖**本存储库的模型，后果自负
+- ysm-model 注意事项
+	- 前缀 ABC 是个人偏好的等级划分（制作质量/完成度），并无其他含义。
+	- 压缩包内包含项目源码文件，而 `.ysm` 是加密后的模型文件。
+	- 此存储库，有些模型是 **18+**，建议斟酌后使用，我并没有为所有的 **r18** 的模型标注 `nsfw`。
+	- 请不要以任何形式**售卖**本存储库的模型，后果自负。
+- ysm-model 错误注意事项
+	- 我发现通过 obsidian （一款笔记软件） 查看的模型都损坏了！！！！！！！！。
+	- 如果你发现不可用的模型请通过 issue 告诉我，感谢了。
+- 其他注意事项
+	- 我对 GitHub 的使用不太熟悉。如果你想修改任何内容，只能通过 Issue 告知我，或者你可以自行克隆仓库并进行更改。
+
 
 <details>
-<summary>命名规则</summary>
+<summary>ysm-model 命名规则</summary>
 
 ## 游戏
 
@@ -89,7 +89,7 @@
 - [YSMParser](https://github.com/OpenYSMDev/YSMParser)
 	- 介绍: .ysm 模型一键解密、转换为 Blockbench 工程，全版本加密格式支持。
 - [OpenYSM](https://github.com/OpenYSM/OpenYSM)
-	- 介绍: YSM 的开源替代，性能可能会更好
+	- 介绍: OpenYSM 是一款基于 Yes Steve Model 的模组，它修改了原版玩家模型，其核心使用 GeckoLib 库，并采用了 Minecraft 基岩版的模型和动画文件。这使得玩家可以根据自己的喜好自定义玩家模型和动画。
 - [ModernYSM](https://github.com/OpenYSMDev/ModernYSM)
     - 介绍: OpenYSM 是一款基于 Yes Steve Model 的模组，它修改了原版玩家模型，其核心使用 GeckoLib 库，并采用了 Minecraft 基岩版的模型和动画文件。这使得玩家可以根据自己的喜好自定义玩家模型和动画。
 
@@ -97,7 +97,7 @@
 
 <details>
 
-<summary>作者推荐</summary>
+<summary>ysm 作者推荐</summary>
 
 > 推荐一些优质模型作者
 
@@ -108,7 +108,7 @@
 </details>
 
 <details>
-<summary>作者索引</summary>
+<summary>ysm 作者索引</summary>
 
 <!-- AUTHORS_LIST_START -->
 | 编号 | 作者名称 | 模型数量 |

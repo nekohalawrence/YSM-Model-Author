@@ -1,22 +1,21 @@
 [中文](https://github.com/nekohalawrence/FREE-YSM-AUTHOR), English
 
-# !!! Critical Mistake
-
-- I’ve discovered that most models viewed through Obsidian are corrupted!!!!!!!! I’ve only just identified the root cause. Git history has not been deleted.
-- If you encounter any unusable models, please let me know via an issue. Thanks a lot.
-
 # FREE-YSM-AUTHOR
 
-- Free models sorted by creator. ~No paid models included.~
+- Collected YSM models, TACZ gun packs, and TLM maid packs, etc., categorized by author.
 
 ## Notes
 
-- This project is mainly for personal storage and usage.
-- The prefix ABC is a personal rating system (for production quality / completion level) and carries no other meaning.
-- The archive contains the project source files, while `.ysm` refers to encrypted model files.
-- I am not very familiar with GitHub operations. If you wish to modify any content, please inform me via Issue, or you may clone the repository and make changes on your own.
-- This repository contains some **18+** models. Please use them cautiously. I have not marked all R18 models with the `nsfw` tag.
-- Do not sell any models from this repository in any form. You will be held responsible for all consequences.
+- ysm-model Notes
+    - The prefix ABC is a personal preference-based rating (production quality/completeness) and carries no other meaning.
+    - The archive contains the project's source code files, while the `.ysm` files are encrypted model files.
+    - Some models in this repository are **18+**. Please use them with discretion. I have not tagged all **r18** models with `nsfw`.
+    - Please do not **sell** the models in this repository in any form. You do so at your own risk.
+- ysm-model Error Notes
+    - I found that models viewed through Obsidian (a note-taking app) all appear corrupted!!!!!!!.
+    - If you find any unusable models, please let me know via an Issue. Thank you!
+- Other Notes
+    - I'm not very familiar with using GitHub. If you want to modify anything, you can only let me know via an Issue, or you can clone the repository yourself and make the changes.
 
 <details>
 <summary>Naming Conventions</summary>
@@ -87,7 +86,7 @@
 - [YSMParser](https://github.com/OpenYSMDev/YSMParser)
 	- Introduction: The .ysm model supports one-click decryption and conversion to a Blockbench project, with support for all version encryption formats.
 - [OpenYSM](https://github.com/OpenYSM/OpenYSM)
-	- Introduction: An open-source alternative to YSM, potentially offering better performance
+	- Introduction: OpenYSM is a mod based on the Yes Steve Model. It modifies the original player model, utilizes the GeckoLib library at its core, and adopts the models and animation files from the Minecraft Bedrock Edition. This allows players to customize their player models and animations according to their preferences.
 - [ModernYSM](https://github.com/OpenYSMDev/ModernYSM)
 	- Introduction: OpenYSM is a mod based on the Yes Steve Model. It modifies the original player model, utilizes the GeckoLib library at its core, and adopts the models and animation files from the Minecraft Bedrock Edition. This allows players to customize their player models and animations according to their preferences.
 
@@ -95,7 +94,7 @@
 
 <details>
 
-<summary>Author Recommendation</summary>
+<summary>YSM Author Recommendation</summary>
 
 > Recommend some high-quality model authors
 
@@ -106,9 +105,10 @@
 </details>
 
 <details>
-<summary>Author Index</summary>
+<summary>YSM Author Index</summary>
 
 <!-- AUTHORS_LIST_START -->
+
 | ID | Author Name | Model Count |
 | --- | --- | ---: |
 | 0000 | [#-OMEGAZERO-](.../../models/0000) | 1 |
@@ -274,7 +274,7 @@
 | 0161 | [#-_-_-_-_草-_-_-_- \| #ckdr251](.../../models/0161) | 1 |
 | 0162 | [#失踪的李元](.../../models/0162) | 1 |
 | 0163 | [#Rhein雨倩 \| #雨倩先生](.../../models/0163) | 2 |
-| 0164 | [#toolat嫌晚 \| #toolat洗碗]](.../../models/0164) | 1 |
+| 0164 | [#toolat 嫌晚 \| #toolat洗碗]](.../../models/0164) | 1 |
 | 0165 | [#默栖 \| #某嘞个默栖 \| #默嘞个某栖](.../../models/0165) | 7 |
 | 0166 | [#棒锤锤 \| #棒锤锤QWQ](.../../models/0166) | 4 |
 | 0167 | [#炼狱在旅行](.../../models/0167) | 1 |
@@ -294,6 +294,7 @@
 | 0181 | [#北上 \| #NorthWard](.../../models/0181) | 1 |
 | 0182 | [#不-择](.../../models/0182) | 1 |
 | 0183 | [#Aaaaaaafeng](.../../models/0183) | 7 |
+
 <!-- AUTHORS_LIST_END -->
 
 </details>
@@ -305,7 +306,6 @@
 <!-- CHANGELOG_AUTOGEN_START -->
 
 <!-- Auto-generated log area; manual logs should be placed after MANUAL_LOGS_START in the same date section. -->
-
 
 # 2026-08-01
 
@@ -320,29 +320,22 @@
 
 # 2026-07-30
 
-
 <!-- AUTO_LOGS_START -->
 
 <!-- MANUAL_LOGS_START -->
 - format: Noticed that the names of some games or animations are excessively long, making it hard to view the character names. Therefore, the names of subsequent games and animations will be abbreviated.
 
-
 # 2026-07-27
-
 
 - feat: Added Touhou Maid Pack and TACZ Gun Pack
 
-
 # 2026-07-25
-
 
 - ps: There are tons of obscure games.
 - ps: Note: Some models without preview images are unusable. When I saved files while checking author information, partial characters were modified, corrupting the original files and rendering these models invalid.
 - ps: Critical error discovered! Most models viewed via Obsidian are damaged!!!!!!!! I have now identified the cause: Git history was not cleared.
 
-
 # 2026-07-23
-
 
 - [LuckyPotion](https://space.bilibili.com/1739798750) thanks this expert for publicly sharing a collection of author payment models developed by a certain team. I may gradually update preview images of various models in the future.
 - Quark Cloud: https://pan.quark.cn/s/77a16d314a11, extraction code: ajVD
@@ -351,48 +344,36 @@
 - I'm planning to add an action to generate a `README.md` for each model, making it easier to view the model preview images. If you have any good methods, feel free to share them with me via an issue (I'm not a programmer, and it's all done by AI for me 😭)
 - For uniform naming, all game names in folders, except those exclusive to China, will be changed to English. A list for cross-reference translation will be provided later.
 
-
 # 2026-07-19
-
 
 - Convert some models with source files into zip files for convenient downloading
 - Fixed some incorrect or duplicate authors
 - Re-categorize the authors for the old models
 
-
 # 2026-07-18
-
 
 - Some creators belong to the same team. I wonder if there is a good classification method. If you have one, please provide it to me
 - Reorganized a large number of models
 - The organized model includes new models and a reclassification of [existing models](https://github.com/Elaina69/Yes-Steve-Model-Repo)
 
-
 # 2026-06-29
-
 
 - Merged several team models. The models are now hosted only under the primary author who created them, while other contributing authors are attached as subsidiaries to their respective parts.
 - After organizing this for a while, I still feel there are issues with this classification approach, making it hard to find specific models. It is essentially a collection of free models (with many paid ones unavailable). Categorizing by author only highlights a few high-quality creators. It might be better to classify models based on the target object instead.
     
 
-
 # 2026-05-21
-
 
 - Most models cannot be used in higher game versions. It is recommended to use only newer encrypted models (decrypted using ysmparser, as older models cannot be decrypted either) or the models provided with source files.
     
 
-
 # 2026-05-11
-
 
 - Removed the Pages site. I decided to implement it later once I learn a suitable way to present the content.
 - Decided to update the metadata for all authors before the end of this year. ~If time permits, a preview image will be attached to each model.~
     
 
-
 # 2026-05-03
-
 
 - Decided to only update high-quality models and stop collecting others.
 - Modified the premium mod branch to keep only the latest mods.
