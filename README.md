@@ -2,7 +2,7 @@
 
 # FREE-YSM-AUTHOR
 
-- 收集并按作者分类的 ysm 模型，tacz 枪包和TLM 女仆包等。
+- 收集并按作者分类的 ysm 模型，tacz 枪包和 TLM 女仆包等。
 
 ## 注意事项
 
@@ -44,10 +44,12 @@
 - Girls'-Frontline,少女前线, GF
 - Goddess of Victory: Nikke, Nikke, 胜利女神：妮姬
 - MiSide, 米塔
+- NEKOPARA, ネコぱら, 巧克力与香子兰, 猫娘乐园
 - Neon-Genesis-Evangelion, NGE, 新世纪福音战士, EVA
 - Senren＊Banka, せんれん＊ばんか, 千恋＊万花, SENREN
 - Snowbreak: Containment Zone, 尘白禁区, snowbreak
 - Strinova, 卡拉比丘
+- Sun Shower, 天气雨, 天気雨（てんきあめ / Tenkiame）
 - Umamusume: Pretty Derby, 闪耀！优俊少女, UmaMusume, UM, 赛马娘
 - Wuthering-Waves, 鸣潮, WuWa, WW
 - Yog-Sothoth's Yard, YogYard, 犹格索托斯的庭院：炼金旅社
@@ -55,14 +57,23 @@
 
 ## 动画
 
+- BanG Dream! It's MyGO!!!!!, 迷途之子！！！！！, MyGO
+- BanG Dream! Ave Mujica, 颂乐人偶, AveMujica
 - Bocchi-the-Rock!, BtR, 孤独摇滚！
 - Dragon Raja, DR, 龙族
+- Dungeon & Fighter, DNF, DFO, 地下城与勇士
 - Fox-Spirit-Matchmaker, 狐妖小红娘, FSM
 - Frieren-Beyond-Journey's-End, 葬送的芙莉莲, Frieren
-- MushokuTensei, 无职转生～到了异世界就拿出真本事～, 無職転生 ～異世界行ったら本気だす～
+- How Not to Summon a Demon Lord, 异界少女召唤术, 異世界魔王と召喚少女の奴隷魔術, 异世界魔王与召唤少女的奴隶魔术, HNTSADL
 - Make Heroine ga Oosugiru!, MHO, 負けヒロインが多すぎる！
+- MushokuTensei, 无职转生～到了异世界就拿出真本事～, 無職転生 ～異世界行ったら本気だす～
 - Onii-chan wa Oshimai!, お兄ちゃんはおしまい！, ONIMAI, 别当欧尼酱了！
+- Puella Magi Madoka Magica, PMMM, Madoka, 魔法少女まどか☆マギカ, 魔法少女小圆
 - Saekano: How to Raise a Boring Girlfriend, 路人女主的养成方法, SAEKANO
+
+## 小说
+
+- Reverend Insanity, 蛊真人, RI
 
 ## 画师
 
@@ -101,9 +112,12 @@
 
 > 推荐一些优质模型作者
 
+- 0065: [#雾雨波波沙](.../../models/0045) 
+- 0065: [#烛火的次元宇宙](.../../models/0065)
 - 0067: [#Almeta_owx](.../../models/0067) 
 - 0068: [#AnluoSakura](.../../models/0068)
 - 0076: [#White_clams白蛤蜊](.../../models/0076)
+
 
 </details>
 
@@ -111,6 +125,7 @@
 <summary>ysm 作者索引</summary>
 
 <!-- AUTHORS_LIST_START -->
+
 | 编号 | 作者名称 | 模型数量 |
 | --- | --- | ---: |
 | 0000 | [#-OMEGAZERO-](.../../models/0000) | 1 |
@@ -296,6 +311,7 @@
 | 0181 | [#北上 \| #NorthWard](.../../models/0181) | 1 |
 | 0182 | [#不-择](.../../models/0182) | 1 |
 | 0183 | [#Aaaaaaafeng](.../../models/0183) | 7 |
+
 <!-- AUTHORS_LIST_END -->
 
 </details>
@@ -308,8 +324,6 @@
 
 <!-- 自动生成日志区域；手工日志请放在对应日期段落的 MANUAL_LOGS_START 之后。 -->
 
-
-
 # 2026-08-02
 
 <!-- AUTO_LOGS_START -->
@@ -318,7 +332,6 @@
 <!-- MANUAL_LOGS_START -->
 
 # 2026-08-01
-
 
 <!-- AUTO_LOGS_START -->
 - chore: models/0005: [#0005 - omo仙贝2号 \| #omo \| #FujiwaranoMoku114514](.../../models/0005) - 更新了 1 个模型文件（更新 1）

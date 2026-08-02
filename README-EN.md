@@ -52,6 +52,8 @@
 
 ## anime
 
+- BanG Dream! It's MyGO!!!!!, 迷途之子！！！！！, MyGO
+- BanG Dream! Ave Mujica, 颂乐人偶, AveMujica
 - Bocchi-the-Rock!, BtR, 孤独摇滚！
 - Dragon Raja, DR, 龙族
 - Fox-Spirit-Matchmaker, 狐妖小红娘, FSM
