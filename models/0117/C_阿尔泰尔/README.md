@@ -6,6 +6,8 @@
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
+![preview.png](preview.png)
+
 ![preview01.png](preview01.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
