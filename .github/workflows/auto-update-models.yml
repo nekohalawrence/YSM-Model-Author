@@ -1,0 +1,64 @@
+name: Auto Update Models Information
+
+concurrency:
+  group: readme-auto-updates-${{ github.ref }}
+  cancel-in-progress: false
+
+on:
+  push:
+    paths:
+      - 'models/**'
+      - 'other-models/**'
+      - 'other-ysm-models/**'
+      - 'README.md'
+  workflow_dispatch:
+
+jobs:
+  update-all:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Dependencies
+        run: pip install openai
+
+      - name: Step 1 - Generate Model Preview READMEs
+        run: python .github/scripts/generate_model_readmes.py
+
+      - name: Step 2 - Auto Update Authors List
+        run: python .github/scripts/update_authors.py
+
+      - name: Step 3 - Generate Changelog Entries
+        env:
+          GITHUB_EVENT_BEFORE: ${{ github.event.before }}
+          GITHUB_SHA: ${{ github.sha }}
+        run: python .github/scripts/update_changelog.py
+
+      # 全局翻译步骤：跳过动态生成的列表，只翻译 README 本身的新增/修改文字
+      - name: Step 4 - Translate full README to README-EN.md
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        run: python .github/scripts/translate_readme.py
+
+      - name: Commit and push all changes
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: auto-update readmes, authors list, changelog, and EN translation"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
