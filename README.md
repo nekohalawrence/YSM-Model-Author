@@ -276,7 +276,7 @@
 | 0161 | [#-_-_-_-_草-_-_-_- \| #ckdr251](.../../models/0161) | 1 |
 | 0162 | [#失踪的李元](.../../models/0162) | 1 |
 | 0163 | [#Rhein雨倩 \| #雨倩先生](.../../models/0163) | 2 |
-| 0164 | [#toolat嫌晚 \| #toolat洗碗]](.../../models/0164) | 1 |
+| 0164 | [#toolat嫌晚 \| #toolat洗碗](.../../models/0164) | 1 |
 | 0165 | [#默栖 \| #某嘞个默栖 \| #默嘞个某栖](.../../models/0165) | 7 |
 | 0166 | [#棒锤锤 \| #棒锤锤QWQ](.../../models/0166) | 4 |
 | 0167 | [#炼狱在旅行](.../../models/0167) | 1 |
@@ -305,10 +305,20 @@
 
 <!-- CHANGELOG_AUTOGEN_START -->
 
+
 <!-- 自动生成日志区域；手工日志请放在对应日期段落的 MANUAL_LOGS_START 之后。 -->
 
 
+
+# 2026-08-02
+
+<!-- AUTO_LOGS_START -->
+- chore: models/0164: [#0164 - #toolat嫌晚 \| #toolat洗碗](.../../models/0164) - 更新了 1 个 README（更新 1）
+
+<!-- MANUAL_LOGS_START -->
+
 # 2026-08-01
+
 
 <!-- AUTO_LOGS_START -->
 - chore: models/0005: [#0005 - omo仙贝2号 \| #omo \| #FujiwaranoMoku114514](.../../models/0005) - 更新了 1 个模型文件（更新 1）
