@@ -1,21 +1,21 @@
-[中文](https://github.com/nekohalawrence/YSM-Model-Author/blob/main/README.md), English
+Chinese, [English](https://github.com/nekohalawrence/YSM-Model-Author/blob/main/README-EN.md)
 
 # YSM-Model-Author
 
-- Collects and categorizes YSM models by author, along with TACZ gun packs and TLM maid packs.
+- A collection of YSM models, TACZ gun packs, and TLM maid packs, organized by author.
 
 ## Notes
 
 - ysm-model notes
-	- The ABC prefix is a personal preference rating (build quality/completeness) and has no other meaning.
-	- The archive contains project source files, while `.ysm` files are encrypted model files.
-	- Some models in this repository are **18+**. Please use them at your discretion. I have not marked all **r18** models with `nsfw`.
-	- Please do not **sell** models from this repository in any form. You are solely responsible for any consequences.
+	- The ABC prefix is a personal preference-based quality rating (production quality/completeness) and carries no other meaning.
+	- The compressed archives contain project source files, while `.ysm` files are encrypted model files.
+	- Some models in this repository are **18+**. Please use them at your discretion. I have not marked all **R18** models with `nsfw`.
+	- Do not **sell** the models in this repository in any form. You bear the consequences of doing so.
 - ysm-model error notes
 	- I discovered that models viewed through Obsidian (a note-taking software) are all corrupted!!!!!!!!!
 	- If you find any unusable models, please let me know via an issue. Thank you.
 - Other notes
-	- I'm not very familiar with using GitHub. If you want to modify anything, you can only inform me via an Issue, or you can clone the repository and make changes yourself.
+	- I am not very familiar with using GitHub. If you want to modify anything, you can only notify me through Issues, or you can clone the repository and make changes yourself.
 
 <details>
 <summary>ysm-model naming conventions</summary>
@@ -25,7 +25,7 @@
 - Arknights, 明日方舟, AK
 - Arknights-Endfield, 明日方舟：终末地, AKE
 - Ash-Arms, 灰烬战线
-- Atomic-Heart, 原子之心, AH
+- Atomic-Heart, 原子之心, AH 
 - Azur-Lane, 碧蓝航线, AL
 - Azur-Promilia, AP, 蓝色星原
 - Battlefield-1, 战地 -1, BF-1
@@ -34,14 +34,16 @@
 - Command-&-Conquer: Red-Alert-2, Red-Alert-2, RA2, 命令与征服：红色警戒 2
 - Command-&-Conquer: Red-Alert-3, Red-Alert-3, RA3, 命令与征服：红色警戒 3
 - Command & Conquer Generals: Zero Hour, ZH, Zero Hour, 命令与征服：绝命时刻
+- Dead or Alive, DOA, 死或生
 - Dohna Dohna: Let's Do Bad Things Together ドーナドーナ いっしょにわるいことしよう, 多娜多娜 一起干坏事吧！, DOHNA
 - Doki-Doki-Literature-Club!, DDLC, 心跳文学部！
 - Fate-Grand-Order, FGO, 命运 - 冠位指定
 - Food Girls, 食用系少女
 - Honkai-Impact-3, 崩坏 3, HI3
 - Honkai-Star-Rail, HSR, 崩坏：星穹铁道
+- Hyperdimension Neptunia, HDN, 超次元游戏
 - Genshin-Impact, 原神, Genshin, GI
-- Girls'-Frontline, 少女前线, GF
+- Girls'-Frontline,少女前线, GF
 - Goddess of Victory: Nikke, Nikke, 胜利女神：妮姬
 - MiSide, 米塔
 - NEKOPARA, ネコぱら, 巧克力与香子兰, 猫娘乐园
@@ -82,7 +84,7 @@
 ## Other
 
 - Original Character, 原创角色, OC
-- VOCALOID, 博歌乐, V 家, 术力口, VOC
+- VOCALOID, 博歌乐, V 家, 术力口, VOC, 虚拟歌手, 虚拟歌姬
 - Touhou-Project, TH, TOUHOU, 东方 -Project
 - Kemomimi Gakuen, ケモミミ学園, 兽耳学园, 兽耳学院, KG
 - Virtual YouTuber, バーチャルユーチューバー, VTuber
@@ -110,13 +112,14 @@
 
 <summary>Recommended YSM Authors</summary>
 
-> Recommending some high-quality model authors
+> Some recommended high-quality model authors
 
-- 0065: [#雾雨波波沙](.../../models/0045)
+- 0065: [#雾雨波波沙](.../../models/0045) 
 - 0065: [#烛火的次元宇宙](.../../models/0065)
-- 0067: [#Almeta_owx](.../../models/0067)
+- 0067: [#Almeta_owx](.../../models/0067) 
 - 0068: [#AnluoSakura](.../../models/0068)
 - 0076: [#White_clams白蛤蜊](.../../models/0076)
+
 
 </details>
 
@@ -128,7 +131,7 @@
 | --- | --- | ---: |
 | 0000 | [#-OMEGAZERO-](.../../models/0000) | 1 |
 | 0001 | [#02Bunny \| #蓝玫瑰](.../../models/0001) | 8 |
-| 0002 | [#映素 \| #映素作坊](.../../models/0002) | 13 |
+| 0002 | [#映素 \| #映素作坊](.../../models/0002) | 14 |
 | 0003 | [#XGancheng_Tao](.../../models/0003) | 2 |
 | 0004 | [#XG残党](.../../models/0004) | 1 |
 | 0005 | [#omo仙贝2号\| #omo \| #FujiwaranoMoku114514](.../../models/0005) | 23 |
@@ -227,10 +230,10 @@
 | 0099 | [#Dumnheint](.../../models/0099) | 1 |
 | 0100 | [#京泉](.../../models/0100) | 1 |
 | 0101 | [#獒子coco \| #獒子酱的杂货店 \| #獒子獒子獒](.../../models/0101) | 3 |
-| 0102 | [#Dreamer #普通的木屐](.../../models/0102) | 8 |
-| 0103 | [#浅陌菌](.../../models/0103) | 11 |
+| 0102 | [#Dreamer #普通的木屐](.../../models/0102) | 27 |
+| 0103 | [#浅陌菌](.../../models/0103) | 19 |
 | 0104 | [#科列夫斯基](.../../models/0104) | 1 |
-| 0105 | [#超级大鸡腿丶 \| #Nss](.../../models/0105) | 4 |
+| 0105 | [#超级大鸡腿丶 \| #Nss](.../../models/0105) | 5 |
 | 0106 | [#ナヒーダ](.../../models/0106) | 1 |
 | 0107 | [#宇宙影帝の终焉](.../../models/0107) | 7 |
 | 0108 | [#原原本本空空](.../../models/0108) | 3 |
@@ -238,7 +241,7 @@
 | 0110 | [#Nona_reeves #映素](.../../models/0110) | 1 |
 | 0111 | [#奶油桃NaytoTime](.../../models/0111) | 5 |
 | 0112 | [#大莫家 \| #MCZ工作室 \| #mcz莫莫\| #犟猫](.../../models/0112) | 19 |
-| 0113 | [#秋风](.../../models/0113) | 1 |
+| 0113 | [#秋风 \| #每天都睡不醒的秋风 \| #睡不死死不睡的秋风](.../../models/0113) | 1 |
 | 0114 | [#迷糊晓雾](.../../models/0114) | 1 |
 | 0115 | [#荒漠](.../../models/0115) | 1 |
 | 0116 | [#1111111re](.../../models/0116) | 6 |
@@ -317,9 +320,11 @@
 </details>
 
 <details>
-<summary>Update/Changelog</summary>
+<summary>Update/Rambling Log</summary>
 
 <!-- CHANGELOG_AUTOGEN_START -->
+
+
 
 <!-- Auto-generated log area; manual logs should be placed after the MANUAL_LOGS_START of the corresponding date section. -->
 
@@ -352,12 +357,12 @@
 
 <!-- MANUAL_LOGS_START -->
 
-- feat: Added automatic changelog generation action
+- feat: Added an automated log generation action
 <!-- CHANGELOG_AUTOGEN_END -->
 
 # 2026-07-30
 
-- format: Noticed that some game or anime names are **too long**, making it hard to see **character** names. Therefore, game or anime names will be changed to **abbreviations** from now on.
+- format: Noticed that some game or anime names are **too long**, making it hard to see the **character** names. Therefore, game or anime names will be changed to **abbreviations** from now on.
 
 # 2026-07-27
 
@@ -366,21 +371,21 @@
 # 2026-07-25
 
 - ps: There are too many weird games
-- ps: Note that some models without preview images are unusable. I saved them while browsing authors, which modified some characters and corrupted the original files, making those models unusable.
-- ps: A major mistake occurred. I discovered that most models viewed through Obsidian are corrupted!!!!!!!!! I only now found the reason — the history on git was not deleted.
+- ps: Note that some models without preview images are unusable. I saved them while browsing authors, which modified some characters and corrupted the original files, rendering those models unusable.
+- ps: A major mistake occurred. I discovered that most models viewed through Obsidian are corrupted!!!!!!!!! I only now found the reason; the history on git has not been deleted.
 
 # 2026-07-23
 
-- [LuckyPotion](https://space.bilibili.com/1739798750) Thanks to this person for publicly sharing a collection of paid models made by a certain team. I may gradually update preview images for various models in the future.
+- [LuckyPotion](https://space.bilibili.com/1739798750) Thanks to this person for publicly sharing a collection of paid models made by some team. I may gradually update preview images for various models in the future.
 - Quark Cloud: https://pan.quark.cn/s/77a16d314a11 Extraction code: ajVD (expired)
 - Baidu Cloud: https://pan.baidu.com/s/1FFSrd_YG-1Eat_DQD7hziw Extraction code: xiao
 - Models are temporarily not included in the repository. Download them yourself if needed.
-- Planning to add an action to generate a `README.md` for each model to make it easier to view model preview images. If you have a good method, you can let me know via an issue (I don't know how to program — AI wrote everything for me 😭)
+- Planning to add an action to generate a `README.md` for each model to make it easier to view model preview images. If you have a good method, you can let me know via an issue (I don't know how to program; AI wrote everything for me 😭)
 - To standardize naming, all game names in folders will be changed to English from now on, except for games exclusive to China. A translation reference list will be provided later.
 
 # 2026-07-19
 
-- Converted some models with source files into archives for easier downloading
+- Converted some models with source files into compressed archives for easier downloading
 - Fixed some incorrect or duplicate authors
 - Re-categorized old models by author
 
@@ -393,16 +398,16 @@
 # 2026-06-29
 
 - Merged some team models. Only the author who created the model releases the corresponding model; other authors are attached as responsible for their respective parts.
-- After organizing for a while, I feel this categorization model still has some issues — it's hard to find the model you want. Essentially, this is a collection of free models; many paid models are not included. When categorizing free models by author, only a few have good quality. Categorizing by the model's subject might be better.
+- After organizing for a while, I feel this categorization model still has issues. It's hard to find the model you want. Essentially, this is a collection of free models; many paid models are not included. When categorizing by author, only a few have consistently good quality among free models. Categorizing by the model's subject might be better.
 
 # 2026-05-21
 
-- Most models cannot be used in newer versions. It is recommended to only use newer encrypted models (decrypt with ysmpaser; older models cannot be decrypted either), or use models with source files.
+- Most models cannot be used in newer versions. It is recommended to only use newer encrypted models (decrypt with ysmpaser; older models cannot be decrypted either), or models with source files.
 
 # 2026-05-11
 
-- Removed the pages section. Decided to implement it once I learn a suitable way to present content.
-- Decided to update metadata for all authors by the end of this year. ~If time permits, I will attach preview images to every model.~
+- Removed the pages section. Decided to implement it once I learn a suitable content presentation format.
+- Decided to update metadata for all authors by the end of this year. ~If time permits, I will attach preview images to each model.~
 
 # 2026-05-03
 
@@ -413,7 +418,7 @@
 
 ## Project Structure
 
-> Below is a description of the main directories in the current repository. It may be adjusted in the future as content evolves.
+> Below is a description of the main directories in the current repository. This may be adjusted as content continues to evolve.
 
 ```text
 FREE-YSM-AUTHOR/
@@ -427,7 +432,7 @@ FREE-YSM-AUTHOR/
 │   │       ├── README.md             #     Model metadata
 │   │       ├── preview.jpg / .png    #     Preview image
 │   │       ├── *.ysm                 #     Encrypted model file
-│   │       ├── *.zip                 #     Archive containing source files
+│   │       ├── *.zip                 #     Compressed archive with source files
 │   ├── 0001/
 │   │   └── …(same structure as 0000)
 │   └── 9999/
@@ -435,7 +440,7 @@ FREE-YSM-AUTHOR/
 ├── skin/                             # Vanilla Minecraft skins
 │   └── 0000/
 │       ├── README.md
-│       └── *.zip                     # Model archive
+│       └── *.zip                     # Model compressed archive
 │
 ├── other-ysm-models/                 # Other YSM model collections
 │   └── <model name>/                 # One directory per model
