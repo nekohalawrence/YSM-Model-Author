@@ -1,4 +1,4 @@
-# A_Mon3tr
+# A_WW_爱弥斯
 
 > 此 README 由 `.github/scripts/generate_model_readmes.py` 自动生成。
 

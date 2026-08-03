@@ -1,4 +1,4 @@
-# A_Mon3tr
+# A_AL_欧根亲王「微醺与试探的距离」
 
 > 此 README 由 `.github/scripts/generate_model_readmes.py` 自动生成。
 
@@ -13,5 +13,7 @@
 ![preview02.png](preview02.png)
 
 ![preview03.png](preview03.png)
+
+![preview04.png](preview04.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->

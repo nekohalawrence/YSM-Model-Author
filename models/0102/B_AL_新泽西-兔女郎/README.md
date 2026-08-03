@@ -1,4 +1,4 @@
-# A_Mon3tr
+# B_AL_新泽西-兔女郎
 
 > 此 README 由 `.github/scripts/generate_model_readmes.py` 自动生成。
 
