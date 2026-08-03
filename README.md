@@ -1,6 +1,6 @@
-中文, [English](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/blob/main/README-EN.md)
+中文, [English](https://github.com/nekohalawrence/YSM-Model-Author/blob/main/README-EN.md)
 
-# FREE-YSM-AUTHOR
+# YSM-Model-Author
 
 - 收集并按作者分类的 ysm 模型，tacz 枪包和 TLM 女仆包等。
 

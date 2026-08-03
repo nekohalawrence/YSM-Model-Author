@@ -1,6 +1,6 @@
-Chinese, [English](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/blob/main/README-EN.md)
+[中文](https://github.com/nekohalawrence/YSM-Model-Author/blob/main/README.md), English
 
-# FREE-YSM-AUTHOR
+# YSM-Model-Author
 
 - Collects and categorizes YSM models by author, along with TACZ gun packs and TLM maid packs.
 
