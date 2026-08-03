@@ -6,9 +6,16 @@
 - 平台: #bilibili #afdian 
 	- [bilibili](https://www.bilibili.com/)：[浅陌菌](https://space.bilibili.com/24513198)
 	- [afdian](https://afdian.com/)：[浅陌菌](https://afdian.com/a/tc_fox)
+- 团队: #艺方堂
 - 群聊
 	- QQ: 951920296
+	- QQ: 1063585053
 
 ## 动画
 
 - [0048-星屑海螺](../0048/README.md)
+- [0113-秋风](../../0113/README.md)
+
+## 形象
+
+- 遊記 Gnocchi

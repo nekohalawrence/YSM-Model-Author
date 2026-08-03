@@ -35,12 +35,14 @@
 - Command-&-Conquer: Red-Alert-2, Red-Alert-2, RA2, 命令与征服：红色警戒 2
 - Command-&-Conquer: Red-Alert-3, Red-Alert-3, RA3, 命令与征服：红色警戒 3
 - Command & Conquer Generals: Zero Hour, ZH, Zero Hour, 命令与征服：绝命时刻
+- Dead or Alive, DOA, 死或生
 - Dohna Dohna: Let's Do Bad Things Together ドーナドーナ いっしょにわるいことしよう, 多娜多娜 一起干坏事吧！, DOHNA
 - Doki-Doki-Literature-Club!, DDLC, 心跳文学部！
 - Fate-Grand-Order, FGO, 命运 - 冠位指定
 - Food Girls, 食用系少女
 - Honkai-Impact-3, 崩坏 3, HI3
 - Honkai-Star-Rail, HSR, 崩坏：星穹铁道
+- Hyperdimension Neptunia, HDN, 超次元游戏
 - Genshin-Impact, 原神, Genshin, GI
 - Girls'-Frontline,少女前线, GF
 - Goddess of Victory: Nikke, Nikke, 胜利女神：妮姬
@@ -83,7 +85,7 @@
 ## 其他
 
 - Original Character, 原创角色, OC
-- VOCALOID, 博歌乐, V 家, 术力口, VOC
+- VOCALOID, 博歌乐, V 家, 术力口, VOC, 虚拟歌手, 虚拟歌姬
 - Touhou-Project, TH, TOUHOU, 东方 -Project
 - Kemomimi Gakuen, ケモミミ学園, 兽耳学园, 兽耳学院, KG
 - Virtual YouTuber, バーチャルユーチューバー, VTuber
