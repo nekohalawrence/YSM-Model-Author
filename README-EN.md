@@ -2,7 +2,7 @@ Chinese, [English](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/blob/main/R
 
 # FREE-YSM-AUTHOR
 
-- Collects and categorizes YSM models by author, TACZ gun packs, TLM maid packs, etc.
+- Collects and categorizes YSM models by author, along with TACZ gun packs and TLM maid packs.
 
 ## Notes
 
@@ -10,12 +10,12 @@ Chinese, [English](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/blob/main/R
 	- The ABC prefix is a personal preference rating (build quality/completeness) and has no other meaning.
 	- The archive contains project source files, while `.ysm` files are encrypted model files.
 	- Some models in this repository are **18+**. Please use them at your discretion. I have not marked all **r18** models with `nsfw`.
-	- Please do not **sell** the models in this repository in any form. You bear the consequences yourself.
+	- Please do not **sell** models from this repository in any form. You are solely responsible for any consequences.
 - ysm-model error notes
-	- I discovered that models viewed through Obsidian (a note-taking app) are all corrupted!!!!!!!!!!!!
-	- If you find an unusable model, please let me know via an issue. Thank you.
+	- I discovered that models viewed through Obsidian (a note-taking software) are all corrupted!!!!!!!!!
+	- If you find any unusable models, please let me know via an issue. Thank you.
 - Other notes
-	- I'm not very familiar with using GitHub. If you want to modify anything, you can only notify me via an Issue, or you can clone the repository and make changes yourself.
+	- I'm not very familiar with using GitHub. If you want to modify anything, you can only inform me via an Issue, or you can clone the repository and make changes yourself.
 
 <details>
 <summary>ysm-model naming conventions</summary>
@@ -37,6 +37,7 @@ Chinese, [English](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/blob/main/R
 - Dohna Dohna: Let's Do Bad Things Together ドーナドーナ いっしょにわるいことしよう, 多娜多娜 一起干坏事吧！, DOHNA
 - Doki-Doki-Literature-Club!, DDLC, 心跳文学部！
 - Fate-Grand-Order, FGO, 命运 - 冠位指定
+- Food Girls, 食用系少女
 - Honkai-Impact-3, 崩坏 3, HI3
 - Honkai-Star-Rail, HSR, 崩坏：星穹铁道
 - Genshin-Impact, 原神, Genshin, GI
@@ -97,11 +98,11 @@ Chinese, [English](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/blob/main/R
 - [YSMParser](https://github.com/OpenYSM/YSMParser)
 	- Description: A Parser to recover Yes-Steve-Model Encrypted Binaries.
 - [YSMParser](https://github.com/OpenYSMDev/YSMParser)
-	- Description: One-click decryption of .ysm models and conversion to Blockbench projects, supporting all version encryption formats.
+	- Description: One-click decryption of .ysm models and conversion to Blockbench projects, with support for all encryption format versions.
 - [OpenYSM](https://github.com/OpenYSM/OpenYSM)
-	- Description: OpenYSM is a mod based on Yes Steve Model that modifies the original player model. Its core uses the GeckoLib library and adopts Minecraft Bedrock Edition model and animation files. This allows players to customize their player models and animations according to their preferences.
+	- Description: OpenYSM is a mod based on Yes Steve Model that modifies the vanilla player model. Its core uses the GeckoLib library and adopts Minecraft Bedrock Edition model and animation files. This allows players to customize player models and animations according to their preferences.
 - [ModernYSM](https://github.com/OpenYSMDev/ModernYSM)
-    - Description: OpenYSM is a mod based on Yes Steve Model that modifies the original player model. Its core uses the GeckoLib library and adopts Minecraft Bedrock Edition model and animation files. This allows players to customize their player models and animations according to their preferences.
+    - Description: OpenYSM is a mod based on Yes Steve Model that modifies the vanilla player model. Its core uses the GeckoLib library and adopts Minecraft Bedrock Edition model and animation files. This allows players to customize player models and animations according to their preferences.
 
 </details>
 
@@ -155,7 +156,7 @@ Chinese, [English](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/blob/main/R
 | 0027 | [#猫耳魂魄妖梦](.../../models/0027) | 4 |
 | 0028 | [#喵Kuroneko\| #KuroNeko](.../../models/0028) | 2 |
 | 0029 | [#墓野奈奈](.../../models/0029) | 4 |
-| 0030 | [#嗯嗯owo](.../../models/0030) | 14 |
+| 0030 | [#嗯嗯owo](.../../models/0030) | 22 |
 | 0031 | [#泥泞中的小猫 \| #PZGR.40](.../../models/0031) | 2 |
 | 0032 | [#你个人机cc \| #你个人妻cc](.../../models/0032) | 15 |
 | 0033 | [#胖狐狸工作室 \| #红色幽默](.../../models/0033) | 4 |
@@ -235,7 +236,7 @@ Chinese, [English](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/blob/main/R
 | 0108 | [#原原本本空空](.../../models/0108) | 3 |
 | 0109 | [#水神](.../../models/0109) | 1 |
 | 0110 | [#Nona_reeves #映素](.../../models/0110) | 1 |
-| 0111 | [#奶油桃NaytoTime](.../../models/0111) | 4 |
+| 0111 | [#奶油桃NaytoTime](.../../models/0111) | 5 |
 | 0112 | [#大莫家 \| #MCZ工作室 \| #mcz莫莫\| #犟猫](.../../models/0112) | 19 |
 | 0113 | [#秋风](.../../models/0113) | 1 |
 | 0114 | [#迷糊晓雾](.../../models/0114) | 1 |
@@ -316,14 +317,11 @@ Chinese, [English](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/blob/main/R
 </details>
 
 <details>
-<summary>Update/Rambling Log</summary>
+<summary>Update/Changelog</summary>
 
 <!-- CHANGELOG_AUTOGEN_START -->
 
-
-
-<!-- Auto-generated log area; manual logs should be placed after MANUAL_LOGS_START in the corresponding date section. -->
-
+<!-- Auto-generated log area; manual logs should be placed after the MANUAL_LOGS_START of the corresponding date section. -->
 
 # 2026-08-02
 
@@ -341,10 +339,7 @@ Chinese, [English](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/blob/main/R
 
 <!-- MANUAL_LOGS_START -->
 
-
-
 # 2026-08-01
-
 
 <!-- AUTO_LOGS_START -->
 - chore: models/0005: [#0005 - omo仙贝2号 \| #omo \| #FujiwaranoMoku114514](.../../models/0005) - updated 1 model file (updated 1)
@@ -357,12 +352,12 @@ Chinese, [English](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/blob/main/R
 
 <!-- MANUAL_LOGS_START -->
 
-- feat: Added automatic log generation action
+- feat: Added automatic changelog generation action
 <!-- CHANGELOG_AUTOGEN_END -->
 
 # 2026-07-30
 
-- format: Noticed that some game or anime names are **too long**, making it hard to see the **character** names. Therefore, game or anime names will be changed to **abbreviations** going forward.
+- format: Noticed that some game or anime names are **too long**, making it hard to see **character** names. Therefore, game or anime names will be changed to **abbreviations** from now on.
 
 # 2026-07-27
 
@@ -370,55 +365,55 @@ Chinese, [English](https://github.com/nekohalawrence/FREE-YSM-AUTHOR/blob/main/R
 
 # 2026-07-25
 
-- ps: There are too many weird games.
+- ps: There are too many weird games
 - ps: Note that some models without preview images are unusable. I saved them while browsing authors, which modified some characters and corrupted the original files, making those models unusable.
-- ps: A major mistake occurred. I discovered that most models viewed through Obsidian are corrupted!!!!!!!!!!!! I only just found the reason now; the history on git hasn't been deleted.
+- ps: A major mistake occurred. I discovered that most models viewed through Obsidian are corrupted!!!!!!!!! I only now found the reason — the history on git was not deleted.
 
 # 2026-07-23
 
-- [LuckyPotion](https://space.bilibili.com/1739798750) Thanks to this person for publicly releasing a collection of paid author models made by some team. I may gradually update preview images for various models later.
+- [LuckyPotion](https://space.bilibili.com/1739798750) Thanks to this person for publicly sharing a collection of paid models made by a certain team. I may gradually update preview images for various models in the future.
 - Quark Cloud: https://pan.quark.cn/s/77a16d314a11 Extraction code: ajVD (expired)
 - Baidu Cloud: https://pan.baidu.com/s/1FFSrd_YG-1Eat_DQD7hziw Extraction code: xiao
-- Models are temporarily not included in the repository; download them yourself if needed.
-- Planning to add an action to create a `README.md` for each model to make it easier to view model preview images. If you have a good method, you can let me know via an issue (I don't know how to code; AI wrote everything for me 😭).
-- To unify naming, all game names in folders will be changed to English except for games exclusive to China. A comparison translation list will be provided later.
+- Models are temporarily not included in the repository. Download them yourself if needed.
+- Planning to add an action to generate a `README.md` for each model to make it easier to view model preview images. If you have a good method, you can let me know via an issue (I don't know how to program — AI wrote everything for me 😭)
+- To standardize naming, all game names in folders will be changed to English from now on, except for games exclusive to China. A translation reference list will be provided later.
 
 # 2026-07-19
 
-- Converted some models with source files into archives for easier downloading.
-- Fixed some incorrect or duplicate authors.
-- Re-categorized old models by author.
+- Converted some models with source files into archives for easier downloading
+- Fixed some incorrect or duplicate authors
+- Re-categorized old models by author
 
 # 2026-07-18
 
-- Some creators belong to the same team. I don't know if there's a good categorization method; if you have one, feel free to provide it.
-- Reorganized a large number of models.
-- The reorganized models include new models and re-categorized [existing models](https://github.com/Elaina69/Yes-Steve-Model-Repo).
+- Some creators belong to the same team. I'm not sure if there's a good way to categorize them. If you have one, please share it with me.
+- Reorganized a large number of models
+- The reorganized models include new models and re-categorized [existing models](https://github.com/Elaina69/Yes-Steve-Model-Repo)
 
 # 2026-06-29
 
-- Merged some team models; only the author who created the model releases the corresponding model, while other authors are attached as responsible for their respective parts.
-- After organizing for a while, I feel this categorization model still has issues — it's hard to find the model you want. Essentially, this is a collection of free models; many paid models are not included. Categorizing free models by author only yields a few with good quality. It might be better to categorize by the model's subject.
+- Merged some team models. Only the author who created the model releases the corresponding model; other authors are attached as responsible for their respective parts.
+- After organizing for a while, I feel this categorization model still has some issues — it's hard to find the model you want. Essentially, this is a collection of free models; many paid models are not included. When categorizing free models by author, only a few have good quality. Categorizing by the model's subject might be better.
 
 # 2026-05-21
 
-- Most models cannot be used in higher versions. It's recommended to only use newer encrypted models (decrypt with ysmpaser; older models cannot be decrypted either), or use models with source files.
+- Most models cannot be used in newer versions. It is recommended to only use newer encrypted models (decrypt with ysmpaser; older models cannot be decrypted either), or use models with source files.
 
 # 2026-05-11
 
-- Removed the pages section. Decided to revisit it once I learn a suitable content presentation format.
+- Removed the pages section. Decided to implement it once I learn a suitable way to present content.
 - Decided to update metadata for all authors by the end of this year. ~If time permits, I will attach preview images to every model.~
 
 # 2026-05-03
 
 - Decided to only update some higher-quality models and stop collecting others.
-- Modified the high-quality mod branch to only keep the latest mod.
+- Modified the high-quality mod branch to only keep the latest mods.
 
 </details>
 
 ## Project Structure
 
-> Below is the main directory description of the current repository. It may be adjusted further based on content.
+> Below is a description of the main directories in the current repository. It may be adjusted in the future as content evolves.
 
 ```text
 FREE-YSM-AUTHOR/

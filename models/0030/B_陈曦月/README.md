@@ -1,4 +1,4 @@
-# Ahyra_艾伊拉
+# B_陈曦月
 
 > 此 README 由 `.github/scripts/generate_model_readmes.py` 自动生成。
 
