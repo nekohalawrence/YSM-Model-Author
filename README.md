@@ -46,6 +46,7 @@
 - Genshin-Impact, 原神, Genshin, GI
 - Girls'-Frontline,少女前线, GF
 - Goddess of Victory: Nikke, Nikke, 胜利女神：妮姬
+- Limbus Company, 边狱巴士, 边狱公司, LC
 - MiSide, 米塔
 - NEKOPARA, ネコぱら, 巧克力与香子兰, 猫娘乐园
 - Neon-Genesis-Evangelion, NGE, 新世纪福音战士, EVA
@@ -128,6 +129,7 @@
 <summary>ysm 作者索引</summary>
 
 <!-- AUTHORS_LIST_START -->
+
 | 编号 | 作者名称 | 模型数量 |
 | --- | --- | ---: |
 | 0000 | [#-OMEGAZERO-](.../../models/0000) | 1 |
@@ -316,6 +318,7 @@
 | 0184 | [#MC-ZBM](.../../models/0184) | 3 |
 | 0185 | [#滑滑滑纸隐 \| #滑纸隐](.../../models/0185) | 9 |
 | 0187 | [#爱听书的旅人 \| #爱听小说的旅人](.../../models/0187) | 1 |
+
 <!-- AUTHORS_LIST_END -->
 
 </details>
@@ -330,7 +333,6 @@
 
 <!-- 自动生成日志区域；手工日志请放在对应日期段落的 MANUAL_LOGS_START 之后。 -->
 
-
 # 2026-08-03
 
 <!-- AUTO_LOGS_START -->
@@ -343,7 +345,6 @@
 <!-- MANUAL_LOGS_START -->
 
 # 2026-08-02
-
 
 <!-- AUTO_LOGS_START -->
 - chore: models/0045: [#0045 - #雾雨波波沙](.../../models/0045) - 更新了 1 个模型文件（删除 1）
@@ -359,9 +360,7 @@
 
 <!-- MANUAL_LOGS_START -->
 
-
 # 2026-08-01
-
 
 <!-- AUTO_LOGS_START -->
 - chore: models/0005: [#0005 - omo仙贝2号 \| #omo \| #FujiwaranoMoku114514](.../../models/0005) - 更新了 1 个模型文件（更新 1）

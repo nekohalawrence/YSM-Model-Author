@@ -128,6 +128,7 @@
 <summary>YSM Author Index</summary>
 
 <!-- AUTHORS_LIST_START -->
+
 | ID | Author Name | Model Count |
 | --- | --- | ---: |
 | 0000 | [#-OMEGAZERO-](.../../models/0000) | 1 |
@@ -316,6 +317,7 @@
 | 0184 | [#MC-ZBM](.../../models/0184) | 3 |
 | 0185 | [#滑滑滑纸隐 \| #滑纸隐](.../../models/0185) | 9 |
 | 0187 | [#爱听书的旅人 \| #爱听小说的旅人](.../../models/0187) | 1 |
+
 <!-- AUTHORS_LIST_END -->
 
 </details>
@@ -330,7 +332,6 @@
 
 <!-- Auto-generated log area; manual logs should be placed after the MANUAL_LOGS_START of the corresponding date section. -->
 
-
 # 2026-08-03
 
 <!-- AUTO_LOGS_START -->
@@ -343,7 +344,6 @@
 <!-- MANUAL_LOGS_START -->
 
 # 2026-08-02
-
 
 <!-- AUTO_LOGS_START -->
 - chore: models/0045: [#0045 - #雾雨波波沙](.../../models/0045) - updated 1 model file (1 deletion)
@@ -359,9 +359,7 @@
 
 <!-- MANUAL_LOGS_START -->
 
-
 # 2026-08-01
-
 
 <!-- AUTO_LOGS_START -->
 - chore: models/0005: [#0005 - omo仙贝2号 \| #omo \| #FujiwaranoMoku114514](.../../models/0005) - updated 1 model file (1 update)
