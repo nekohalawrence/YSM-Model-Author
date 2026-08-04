@@ -1,4 +1,4 @@
-# AzurLane_海伦娜
+# C_OC_Wine Fox Roman
 
 > 此 README 由 `.github/scripts/generate_model_readmes.py` 自动生成。
 

@@ -1,4 +1,4 @@
-# AzurLane_海伦娜
+# C_HSR_白厄
 
 > 此 README 由 `.github/scripts/generate_model_readmes.py` 自动生成。
 
