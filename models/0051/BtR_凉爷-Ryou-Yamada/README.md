@@ -1,9 +1,9 @@
-# Bocchi_the_Rock_凉爷-Ryou-Yamada
+# BtR_凉爷-Ryou-Yamada
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Bocchi-the-Rock! #BtR #孤独摇滚！
 
 </details>
 

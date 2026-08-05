@@ -1,4 +1,4 @@
-# WW_椿-chun
+# WW_椿_Chun
 
 <details>
 <summary>模型信息</summary>

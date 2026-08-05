@@ -1,9 +1,9 @@
-# Bocchi_the_Rock_后藤一里-Hitori-Goto
+# BtR_后藤一里-Hitori-Goto
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Bocchi-the-Rock! #BtR #孤独摇滚！
 
 </details>
 

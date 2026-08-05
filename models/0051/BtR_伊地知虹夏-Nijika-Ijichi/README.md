@@ -1,9 +1,9 @@
-# Bocchi_the_Rock_伊地知虹夏-Nijika-Ijichi
+# BtR_伊地知虹夏-Nijika-Ijichi
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Bocchi-the-Rock! #BtR #孤独摇滚！
 
 </details>
 

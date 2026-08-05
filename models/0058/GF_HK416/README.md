@@ -1,9 +1,9 @@
-# HK416
+# GF_HK416
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Girls' Frontline #少女前线 #GFWhite Eternity #GF
 
 </details>
 

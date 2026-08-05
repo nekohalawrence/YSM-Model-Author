@@ -1,9 +1,9 @@
-# B_AK_迷迭香
+# AK_迷迭香_Rosmontis_LB
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Arknights #明日方舟 #AK
 
 </details>
 

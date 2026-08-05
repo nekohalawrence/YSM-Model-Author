@@ -1,9 +1,9 @@
-# 怨仇级航空母舰
+# AL_怨仇级航空母舰
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Azur-Lane #碧蓝航线 #AL
 
 </details>
 

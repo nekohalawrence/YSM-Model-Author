@@ -1,4 +1,4 @@
-# AK_迷迭香-Rosmontis
+# AK_迷迭香_Rosmontis
 
 <details>
 <summary>模型信息</summary>

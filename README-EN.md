@@ -2,7 +2,7 @@
 
 # YSM-Model-Author
 
-- A collection of YSM models, TACZ gun packs, and TLM maid packs, organized by author.
+- A collection of YSM models, TACZ gun packs, and TLM maid packs, categorized by author.
 
 
 <details>
@@ -27,23 +27,23 @@
 | 0013 | [#对羧基苯酚](.../../models/0013) | 1 |
 | 0014 | [#哈雷汰多](.../../models/0014) | 2 |
 | 0015 | [#寒叔hs \| #烈鸟比百 \| #Frosty_Uncle](.../../models/0015) | 68 |
-| 0016 | [#祸御神](.../../models/0016) | 9 |
+| 0016 | [#祸御神](.../../models/0016) | 44 |
 | 0017 | [#寄水晶](.../../models/0017) | 1 |
-| 0018 | [#夹心果风](.../../models/0018) | 6 |
+| 0018 | [#夹心果风](.../../models/0018) | 7 |
 | 0019 | [#江竹雨offical \| #AAA家电批发江竹雨](.../../models/0019) | 1 |
 | 0020 | [#就叫纸板\| #纸板](.../../models/0020) | 14 |
 | 0021 | [#酷酷の霜叶小姐姐](.../../models/0021) | 1 |
-| 0022 | [#Tu_tou](.../../models/0022) | 7 |
+| 0022 | [#Tu_tou](.../../models/0022) | 8 |
 | 0023 | [#狸民limin\| #狸民\| #limin](.../../models/0023) | 10 |
 | 0024 | [#栗坂猫厘子](.../../models/0024) | 3 |
 | 0025 | [#绫独之落](.../../models/0025) | 4 |
-| 0026 | [#雒仁](.../../models/0026) | 12 |
+| 0026 | [#雒仁](.../../models/0026) | 11 |
 | 0027 | [#猫耳魂魄妖梦](.../../models/0027) | 4 |
 | 0028 | [#喵Kuroneko\| #KuroNeko](.../../models/0028) | 2 |
 | 0029 | [#墓野奈奈](.../../models/0029) | 4 |
 | 0030 | [#嗯嗯owo](.../../models/0030) | 22 |
 | 0031 | [#泥泞中的小猫 \| #PZGR.40](.../../models/0031) | 2 |
-| 0032 | [#你个人机cc \| #你个人妻cc](.../../models/0032) | 15 |
+| 0032 | [#你个人机cc \| #你个人妻cc](.../../models/0032) | 16 |
 | 0033 | [#胖狐狸工作室 \| #红色幽默](.../../models/0033) | 4 |
 | 0034 | [#平衡芝光](.../../models/0034) | 9 |
 | 0035 | [#谱露阿凯 \| #饭](.../../models/0035) | 8 |
@@ -69,7 +69,7 @@
 | 0055 | [#伊蕾娜家的咸鱼](.../../models/0055) | 12 |
 | 0056 | [#伊洛是哥斯拉嘛 #伊洛是哥斯拉吗\|  #哥斯拉 \| #落阳不养羊 \| #晓苯升易 \| #黎家诚 \| #BradKidd](.../../models/0056) | 75 |
 | 0057 | [#忆尘yc27 \| #忆尘27](.../../models/0057) | 3 |
-| 0058 | [#艺方像素 \| #艺方堂 \| #尻](.../../models/0058) | 49 |
+| 0058 | [#艺方像素 \| #艺方堂 \| #尻](.../../models/0058) | 50 |
 | 0059 | [#瀛猫](.../../models/0059) | 12 |
 | 0060 | [#油七桶](.../../models/0060) | 4 |
 | 0061 | [#狱际星芒](.../../models/0061) | 8 |
@@ -104,7 +104,7 @@
 | 0091 | [#trita](.../../models/0091) | 2 |
 | 0092 | [#菊姥爷](.../../models/0092) | 9 |
 | 0093 | [#苏依凛](.../../models/0093) | 33 |
-| 0094 | [#墨染逝羽 \| #Feather_aya](.../../models/0094) | 4 |
+| 0094 | [#墨染逝羽 \| #Feather_aya](.../../models/0094) | 7 |
 | 0095 | [#源石姬变体 \| #raw_chicken \| #鸡姬](.../../models/0095) | 20 |
 | 0096 | [#Kria月明](.../../models/0096) | 1 |
 | 0097 | [#艾雷克亚](.../../models/0097) | 1 |
@@ -197,6 +197,7 @@
 | 0184 | [#MC-ZBM](.../../models/0184) | 3 |
 | 0185 | [#滑滑滑纸隐 \| #滑纸隐](.../../models/0185) | 9 |
 | 0187 | [#爱听书的旅人 \| #爱听小说的旅人](.../../models/0187) | 1 |
+| 0188 | [#鸢尾](.../../models/0188) | 1 |
 <!-- AUTHORS_LIST_END -->
 
 </details>
@@ -237,14 +238,16 @@ Personal Rating: LA, LB, LC, LD
 - Honkai-Impact-3, 崩坏 3, HI3
 - Honkai-Star-Rail, HSR, 崩坏：星穹铁道
 - Hyperdimension Neptunia, HDN, 超次元游戏
-- Genshin-Impact, 原神, Genshin, GI
-- Girls'-Frontline, 少女前线, GF
+- Genshin Impact, 原神, Genshin, GI
+- Girls' Frontline, 少女前线, GFWhite Eternity, GF
 - Girls' Frontline: Neural Cloud, Project Neural Cloud, 少女前线：云图计划, NC
 - Goddess of Victory: Nikke, Nikke, 胜利女神：妮姬
 - Limbus Company, 边狱巴士, 边狱公司, LC
 - MiSide, 米塔
+- NARUTO, Naruto Shippuden, NAR, 火影忍者: 疾风传
 - NEKOPARA, ネコぱら, 巧克力与香子兰, 猫娘乐园
 - Neon-Genesis-Evangelion, NGE, 新世纪福音战士, EVA
+- Neverness to Everness, NTE, 异环
 - Senren＊Banka, せんれん＊ばんか, 千恋＊万花, SENREN
 - Snowbreak: Containment Zone, 尘白禁区, snowbreak
 - Strinova, 卡拉比丘
@@ -291,7 +294,7 @@ Personal Rating: LA, LB, LC, LD
 - Myth, 神话
 - Original Character, 原创角色, OC
 - the Three Kingdoms period, TTKP
-- Touhou-Project, TH, TOUHOU, 东方Project
+- Touhou-Project, TH, TOUHOU, 东方 Project
 - Utauloid, UTAU, 虚拟歌手, 术力口
 - Virtual YouTuber, バーチャルユーチューバー, VTuber
 - Virtual Streamer, VStreamer
@@ -325,13 +328,13 @@ Personal Rating: LA, LB, LC, LD
 - [YSMParser](https://github.com/OpenYSMDev/YSMParser)
 	- Description: One-click decryption of .ysm models and conversion to Blockbench projects, with support for all encrypted format versions.
 - [YSMViewer](https://github.com/DrAbcOfficial/YSMViewer)
-	- Description: A cross-platform 3D model viewer for ".ysm" files — an encrypted binary format used to store player models in Minecraft. Built with Avalonia.
+	- Description: A cross-platform 3D model viewer for ".ysm" files — an encrypted binary format used to store player models in Minecraft. The viewer is built on Avalonia.
 - [YesSteveModel](https://github.com/YesSteveModel/YesSteveModel)
 	- Description: Open-sourced
 - [OpenYSM](https://github.com/OpenYSM/OpenYSM)
-	- Description: OpenYSM is a mod based on Yes Steve Model that modifies the vanilla player model. It uses the GeckoLib library at its core and adopts Minecraft Bedrock Edition model and animation files, allowing players to customize their player model and animations as they wish.
+	- Description: OpenYSM is a mod based on Yes Steve Model that modifies the vanilla player model. It uses the GeckoLib library at its core and adopts Minecraft Bedrock Edition model and animation files. This allows players to customize their player models and animations as they wish.
 - [ModernYSM](https://github.com/OpenYSMDev/ModernYSM)
-    - Description: OpenYSM is a mod based on Yes Steve Model that modifies the vanilla player model. It uses the GeckoLib library at its core and adopts Minecraft Bedrock Edition model and animation files, allowing players to customize their player model and animations as they wish.
+    - Description: OpenYSM is a mod based on Yes Steve Model that modifies the vanilla player model. It uses the GeckoLib library at its core and adopts Minecraft Bedrock Edition model and animation files. This allows players to customize their player models and animations as they wish.
 
 </details>
 
@@ -347,7 +350,9 @@ Personal Rating: LA, LB, LC, LD
 
 
 
+
 <!-- Auto-generated log area; manual logs should be placed after the MANUAL_LOGS_START of the corresponding date section. -->
+
 
 
 
@@ -368,16 +373,17 @@ Personal Rating: LA, LB, LC, LD
 - chore: models/0017: [#0017 - #寄水晶](.../../models/0017) - updated 1 README (1 update)
 - chore: models/0019: [#0019 - #江竹雨offical \| #AAA家电批发江竹雨](.../../models/0019) - updated 1 README (1 update)
 - chore: models/0020: [#0020 - #就叫纸板\| #纸板](.../../models/0020) - updated 1 model file (1 update)
+- chore: models/0022: [#0022 - #Tu_tou](.../../models/0022) - updated 1 README (1 update)
 - chore: models/0027: [#0027 - #猫耳魂魄妖梦](.../../models/0027) - updated 1 README (1 update)
 - chore: models/0033: [#0033 - #胖狐狸工作室 \| #红色幽默](.../../models/0033) - updated 1 README (1 update)
 - chore: models/0040: [#0040 - #碎de帆](.../../models/0040) - updated 3 READMEs (3 updates)
 - chore: models/0043: [#0043 - #完全凍結ALL \| #完全冻结 \| #绝对冻结](.../../models/0043) - updated 3 READMEs (3 updates)
 - chore: models/0049: [#0049 - #星语TAT](.../../models/0049) - updated 2 model files, 4 preview images, 3 READMEs (9 updates)
 - chore: models/0050: [#0050 - #荨蒿栗里 \| #荨蒿之栗里 \| #栗里](.../../models/0050) - updated 2 READMEs (2 updates)
-- chore: models/0051: [#0051 - #动员鼬](.../../models/0051) - updated 9 READMEs (9 updates)
+- chore: models/0051: [#0051 - #动员鼬](.../../models/0051) - updated 22 model files, 14 preview images, 18 READMEs (54 updates)
 - chore: models/0055: [#0055 - #伊蕾娜家的咸鱼](.../../models/0055) - updated 1 README (1 update)
 - chore: models/0056: [#0056 - #伊洛是哥斯拉嘛 #伊洛是哥斯拉吗\|  #哥斯拉 \| #落阳不养羊 \| #晓苯升易 \| #黎家诚 \| #BradKidd](.../../models/0056) - updated 27 READMEs (27 updates)
-- chore: models/0058: [#0058 - #艺方像素 \| #艺方堂 \| #尻](.../../models/0058) - updated 1 README (1 update)
+- chore: models/0058: [#0058 - #艺方像素 \| #艺方堂 \| #尻](.../../models/0058) - updated 1 model file, 1 preview image, 2 READMEs (4 updates)
 - chore: models/0067: [#0067 - #Almeta_owx](.../../models/0067) - updated 2 READMEs (2 updates)
 - chore: models/0080: [#0080 - #Nona_Reeves](.../../models/0080) - updated 1 README (1 update)
 - chore: models/0084: [#0084 - #幻古诗](.../../models/0084) - updated 1 README (1 update)
@@ -390,7 +396,7 @@ Personal Rating: LA, LB, LC, LD
 - chore: models/0103: [#0103 - #浅陌菌](.../../models/0103) - updated 1 README (1 update)
 - chore: models/0104: [#0104 - #科列夫斯基](.../../models/0104) - updated 1 README (1 update)
 - chore: models/0107: [#0107 - #宇宙影帝の终焉](.../../models/0107) - updated 1 README (1 update)
-- chore: models/0115: [#0115 - #荒漠](.../../models/0115) - updated 1 README (1 update)
+- chore: models/0115: [#0115 - #荒漠](.../../models/0115) - updated 1 model file, 3 preview images, 2 READMEs (6 updates)
 - chore: models/0117: [#0117 - #聚模道 \| #聚核重工Minecraft \| #语文喵喵拳](.../../models/0117) - updated 5 READMEs (5 updates)
 - chore: models/0123: [#0123 - #Anrieal](.../../models/0123) - updated 1 README (1 update)
 - chore: models/0124: [#0124 - #超吊的点点](.../../models/0124) - updated 1 README (1 update)
@@ -413,8 +419,11 @@ Personal Rating: LA, LB, LC, LD
 - chore: models/0179: [#0179 - #Cookiebox](.../../models/0179) - updated 1 README (1 update)
 - chore: models/0180: [#0180 - #杂果沙拉](.../../models/0180) - updated 1 README (1 update)
 - chore: models/0181: [#0181 - #北上 \| #NorthWard](.../../models/0181) - updated 1 README (1 update)
+- chore: models/0188: [#0188 - #鸢尾](.../../models/0188) - updated 1 README (1 addition)
 
 <!-- MANUAL_LOGS_START -->
+
+
 
 
 
@@ -422,8 +431,9 @@ Personal Rating: LA, LB, LC, LD
 
 
 
+
 <!-- AUTO_LOGS_START -->
-- chore: models/0049: [#0049 - #星语TAT](.../../models/0049) - updated 4 model files, 6 preview images, 1 README (6 added, 4 updated, 1 deleted)
+- chore: models/0049: [#0049 - #星语TAT](.../../models/0049) - updated 4 model files, 6 preview images, 1 README (6 additions, 4 updates, 1 deletion)
 - chore: models/0055: [#0055 - #伊蕾娜家的咸鱼](.../../models/0055) - updated 1 model file, 1 preview image, 1 README (3 updates)
 - chore: models/0059: [#0059 - #瀛猫](.../../models/0059) - updated 1 README (1 update)
 - chore: models/0062: [#0062 - #云曦-Yunxxi_ugo \| #云曦](.../../models/0062) - updated 4 model files, 1 README (1 update, 4 deletions)
@@ -436,14 +446,16 @@ Personal Rating: LA, LB, LC, LD
 
 
 
+
 # 2026-08-03
+
 
 
 
 <!-- AUTO_LOGS_START -->
 - chore: models/0002: [#0002 - #映素 \| #映素作坊](.../../models/0002) - updated 1 model file, 3 preview images, 3 READMEs (7 updates)
-- chore: models/0102: [#0102 - #Dreamer #普通的木屐](.../../models/0102) - updated 2 model files, 5 preview images, 3 READMEs (2 added, 7 updated, 1 deleted)
-- chore: models/0103: [#0103 - #浅陌菌](.../../models/0103) - updated 3 model files, 6 preview images, 3 READMEs (7 updated, 5 deleted)
+- chore: models/0102: [#0102 - #Dreamer #普通的木屐](.../../models/0102) - updated 2 model files, 5 preview images, 3 READMEs (2 additions, 7 updates, 1 deletion)
+- chore: models/0103: [#0103 - #浅陌菌](.../../models/0103) - updated 3 model files, 6 preview images, 3 READMEs (7 updates, 5 deletions)
 - chore: models/0105: [#0105 - #超级大鸡腿丶 \| #Nss](.../../models/0105) - updated 1 README (1 update)
 - chore: models/0113: [#0113 - #秋风 \| #每天都睡不醒的秋风 \| #睡不死死不睡的秋风](.../../models/0113) - updated 1 README (1 update)
 
@@ -451,7 +463,9 @@ Personal Rating: LA, LB, LC, LD
 
 
 
+
 # 2026-08-02
+
 
 
 
@@ -460,14 +474,15 @@ Personal Rating: LA, LB, LC, LD
 - chore: models/0065: [#0065 - #烛火的次元宇宙](.../../models/0065) - updated 1 model file, 1 README (2 deletions)
 - chore: models/0078: [#0078 - #LuXi233 \| #小早川希](.../../models/0078) - updated 1 README (1 update)
 - chore: models/0092: [#0092 - #菊姥爷](.../../models/0092) - updated 1 model file, 2 preview images, 1 README (4 updates)
-- chore: models/0117: [#0117 - #聚模道 \| #聚核重工Minecraft \| #语文喵喵拳](.../../models/0117) - updated 5 model files, 14 preview images, 3 READMEs (9 added, 13 updated)
+- chore: models/0117: [#0117 - #聚模道 \| #聚核重工Minecraft \| #语文喵喵拳](.../../models/0117) - updated 5 model files, 14 preview images, 3 READMEs (9 additions, 13 updates)
 - chore: models/0137: [#0137 - #Maks \| #Maks怜悯](.../../models/0137) - updated 1 README (1 update)
 - chore: models/0164: [#0164 - #toolat嫌晚 \| #toolat洗碗](.../../models/0164) - updated 1 README (1 update)
-- chore: models/0184: [#0184 - #MC-ZBM](.../../models/0184) - updated 1 README (1 added)
-- chore: models/0185: [#0185 - #滑滑滑纸隐 \| #滑纸隐](.../../models/0185) - updated 1 README (1 added)
-- chore: models/0187: [#0187 - #爱听书的旅人 \| #爱听小说的旅人](.../../models/0187) - updated 1 README (1 added)
+- chore: models/0184: [#0184 - #MC-ZBM](.../../models/0184) - updated 1 README (1 addition)
+- chore: models/0185: [#0185 - #滑滑滑纸隐 \| #滑纸隐](.../../models/0185) - updated 1 README (1 addition)
+- chore: models/0187: [#0187 - #爱听书的旅人 \| #爱听小说的旅人](.../../models/0187) - updated 1 README (1 addition)
 
 <!-- MANUAL_LOGS_START -->
+
 
 
 
@@ -475,18 +490,19 @@ Personal Rating: LA, LB, LC, LD
 
 
 
+
 <!-- AUTO_LOGS_START -->
 - chore: models/0005: [#0005 - omo仙贝2号 \| #omo \| #FujiwaranoMoku114514](.../../models/0005) - updated 1 model file (1 update)
 - chore: models/0129: [#0129 - Dr观星 \| #Dr-观星](.../../models/0129) - updated 1 model file (1 update)
 - chore: models/0058: [#0058 - #艺方像素 \| #艺方堂 \| #尻](.../../models/0058) - updated 23 model files, 10 READMEs, 23 preview images (56 updates)
-- chore: models/0067: [#0067 - #Almeta_owx](.../../models/0067) - updated 16 model files, 3 READMEs, 24 preview images (18 added, 23 updated, 2 deleted)
-- chore: models/0068: [#0068 - #AnluoSakura](.../../models/0068) - updated 14 model files, 1 README, 20 preview images (27 added, 8 updated)
-- chore: models/0076: [#0076 - #White_clams白蛤蜊 \| #白蛤蜊 \| #White_Clams白蛤蜊](.../../models/0076) - updated 19 model files, 3 READMEs, 73 preview images, 29 other files (78 added, 46 updated)
-- chore: models/0095: [#0095 - #源石姬变体 \| #raw_chicken \| #鸡姬](.../../models/0095) - updated 38 model files, 8 READMEs, 84 preview images (80 added, 49 updated, 1 deleted)
+- chore: models/0067: [#0067 - #Almeta_owx](.../../models/0067) - updated 16 model files, 3 READMEs, 24 preview images (18 additions, 23 updates, 2 deletions)
+- chore: models/0068: [#0068 - #AnluoSakura](.../../models/0068) - updated 14 model files, 1 README, 20 preview images (27 additions, 8 updates)
+- chore: models/0076: [#0076 - #White_clams白蛤蜊 \| #白蛤蜊 \| #White_Clams白蛤蜊](.../../models/0076) - updated 19 model files, 3 READMEs, 73 preview images, 29 other files (78 additions, 46 updates)
+- chore: models/0095: [#0095 - #源石姬变体 \| #raw_chicken \| #鸡姬](.../../models/0095) - updated 38 model files, 8 READMEs, 84 preview images (80 additions, 49 updates, 1 deletion)
 
 <!-- MANUAL_LOGS_START -->
 
-- feat: Added an automated changelog generation action
+- feat: Added automatic changelog generation action
 <!-- CHANGELOG_AUTOGEN_END -->
 
 # 2026-07-30
@@ -499,18 +515,18 @@ Personal Rating: LA, LB, LC, LD
 
 # 2026-07-25
 
-- ps: There are way too many obscure games.
+- ps: There are too many weird games out there.
 - ps: Note that some models without preview images are unusable. I saved them while browsing authors, which modified some characters and corrupted the original files, rendering those models unusable.
-- ps: A major mistake occurred — I discovered that most models viewed through Obsidian are corrupted!!!!!!! I've only now found the cause; the history on git was not deleted.
+- ps: A major mistake occurred. I discovered that most models viewed through Obsidian are corrupted!!!!!!!! Now I finally found the reason — the history on Git was not deleted.
 
 # 2026-07-23
 
-- [LuckyPotion](https://space.bilibili.com/1739798750) — Thanks to this person for publicly sharing a collection of paid models from certain authors made by a team. I may gradually update preview images for various models in the future.
+- [LuckyPotion](https://space.bilibili.com/1739798750) Thanks to this person for publicly sharing a collection of paid models by certain authors from a team. I may gradually update preview images for various models in the future.
 - Quark Cloud: https://pan.quark.cn/s/77a16d314a11 Extraction code: ajVD (expired)
 - Baidu Cloud: https://pan.baidu.com/s/1FFSrd_YG-1Eat_DQD7hziw Extraction code: xiao
-- Models are temporarily not stored in the repository; download them yourself if needed.
-- Planning to add an action to generate a `README.md` for each model to make preview images easier to view. If you have a better approach, feel free to let me know via an issue (I don't know how to code — everything is written by AI for me 😭).
-- For naming consistency, all game names in folders will be changed to English (except for games exclusive to China). A translation reference list will be provided later.
+- Models are temporarily not included in the repository; download them yourself if needed.
+- Planning to add an action to generate a `README.md` for each model to make preview images easier to view. If you have a better approach, please let me know via an issue (I don't know how to code — AI wrote everything for me 😭).
+- To standardize naming, all game names in folders will be changed to English, except for games exclusive to China. A translation reference list will be provided later.
 
 # 2026-07-19
 
@@ -520,34 +536,34 @@ Personal Rating: LA, LB, LC, LD
 
 # 2026-07-18
 
-- Some creators belong to the same team. I'm not sure if there's a good way to categorize them — if you have ideas, feel free to share.
+- Some creators belong to the same team. I'm not sure if there's a good way to categorize them. If you have suggestions, feel free to share.
 - Reorganized a large number of models.
-- The reorganized models include new models and re-categorized ones from the [existing repository](https://github.com/Elaina69/Yes-Steve-Model-Repo).
+- The reorganized models include new models and re-categorized models from the [existing repository](https://github.com/Elaina69/Yes-Steve-Model-Repo).
 
 # 2026-06-29
 
-- Merged some team models: only the author who created a model releases it, while other team members are listed as contributors for their respective parts.
-- After organizing for a while, I feel this categorization approach still has issues — it's hard to find the model you want. This is essentially a collection of free models; many paid models are not included. When categorizing by author, only a few authors consistently produce high-quality free models. Categorizing by the model's subject matter might work better.
+- Merged some team models. Only the author who created the model will release the corresponding model; other authors are listed as affiliates for their respective contributions.
+- After organizing for a while, I feel this categorization method still has issues — it's hard to find the model you want. Essentially, this is a collection of free models; many paid models are not included. Categorizing by author, only a few authors consistently produce high-quality free models. Categorizing by the model's subject might be a better approach.
 
 # 2026-05-21
 
-- Most models don't work on newer versions. It's recommended to only use newer encrypted models (decrypt with ysmpaser; older models cannot be decrypted either), or models with source files.
+- Most models are incompatible with newer versions. It's recommended to only use newer encrypted models (decrypt with ysmpaser; older models cannot be decrypted either), or use models with source files.
 
 # 2026-05-11
 
-- Removed the pages section. I'll revisit it once I learn a suitable way to present content.
-- Plan to update metadata for all authors by the end of this year, ~and attach preview images to each model if time permits~.
+- Removed the pages section. Decided to revisit this once I learn a suitable way to present content.
+- Decided to update metadata for all authors by the end of this year. ~If time permits, I will add preview images for each model~.
 
 # 2026-05-03
 
 - Decided to only update higher-quality models and stop collecting others.
-- Updated the quality mod branch to keep only the latest mods.
+- Modified the high-quality mod branch to keep only the latest mod.
 
 </details>
 
 ## Project Structure
 
-> Below is an overview of the main directories in this repository. The structure may be adjusted as content evolves.
+> Below is an overview of the main directories in this repository. This may be adjusted as content evolves.
 
 ```text
 FREE-YSM-AUTHOR/
@@ -587,18 +603,47 @@ FREE-YSM-AUTHOR/
 ## Notes
 
 - Usage notes
-	- The LA\B\C suffixes are personal preference ratings (build quality/completeness) and carry no other meaning.
+	- The LA\B\C suffix is a personal quality rating (craftsmanship/completeness) and carries no other meaning.
 	- Compressed archives contain project source files, while `.ysm` files are encrypted model files.
-	- Some models in this repository are **18+**. Please use them at your discretion. I have not tagged all **R18** models as `nsfw`.
+	- Some models in this repository are **18+**. Please use them at your discretion. I have not marked all **R18** models with `nsfw`.
 	- Please do not **sell** models from this repository in any form. You are solely responsible for any consequences.
 - Model notes
-	- I discovered that models viewed through Obsidian (a note-taking app) are corrupted!!!!!!!
-	- If you find an unusable model, please let me know via an issue. Thank you!
+	- I discovered that models viewed through Obsidian (a note-taking app) are corrupted!!!!!!!!
+	- If you find any unusable models, please let me know via an issue. Thanks!
 - Other notes
-	- I'm not very familiar with GitHub. If you want to change anything, you can only notify me via Issue, or you can clone the repository and make changes yourself.
+	- I'm not very familiar with GitHub. If you want to modify anything, you can only notify me via an Issue, or you can clone the repository and make changes yourself.
 
 ## Acknowledgements
 
 - [https://github.com/Elaina69/Yes-Steve-Model-Repo](https://github.com/Elaina69/Yes-Steve-Model-Repo): Source of most free models
-- @[LuckyPotion](https://space.bilibili.com/1739798750): Source of some specific authors' models
-- QQ-tomysh的住院楼-752713566: Source of some specific authors' models
+- @[LuckyPotion](https://space.bilibili.com/1739798750): Source of some specific author models
+- QQ-tomysh 的住院楼 -752713566: Source of some specific author models
+
+## Changelog
+
+<details>
+<summary>Click to view changelog</summary>
+
+<!-- CHANGELOG_AUTOGEN_START -->
+
+
+
+
+
+
+
+<!-- Auto-generated log area; manual logs should be placed after the MANUAL_LOGS_START of the corresponding date section. -->
+
+
+
+# 2026-08-05
+
+<!-- AUTO_LOGS_START -->
+- chore: models/0002: [#0002 - #映素 \| #映素作坊](.../../models/0002) - updated 13 model files, 4 preview images, 4 READMEs (21 updates)
+- chore: models/0004: [#0004 - #XG残党](.../../models/0004) - updated 1 model file, 2 preview images, 2 READMEs (5 updates)
+- chore: models/0005: [#0005 - #omo仙贝2号\| #omo \| #FujiwaranoMoku114514](.../../models/0005) - updated 20 model files, 10 preview images, 9 READMEs (39 updates)
+- chore: models/0006: [#0006 - #Nekuro \| #NekuroMC](.../../models/0006) - updated 6 model files, 3 preview images, 13 READMEs (22 updates)
+- chore: models/0007: [#0007 - #啊这-_-0](.../../models/0007) - updated 6 model files, 3 preview images, 3 READMEs (12 updates)
+- chore: models/0008: [#0008 - #白色北熊](.../../models/0008) - updated 1 README (1 update)
+- chore: models/0010: [#0010 - #波普Popu](.../../models/0010) - updated 1 README (1 update)
+- chore: models/0011: [#0011 - #池塘-tl \| #池塘](.../../models/0011) - updated 1 model

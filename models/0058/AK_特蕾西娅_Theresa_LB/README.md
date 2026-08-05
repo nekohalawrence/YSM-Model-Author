@@ -1,9 +1,9 @@
-# teleixiya-特蕾西娅
+# AK_特蕾西娅_Theresa_LB
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Arknights #明日方舟 #AK
 
 </details>
 

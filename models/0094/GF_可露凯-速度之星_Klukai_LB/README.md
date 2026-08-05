@@ -1,9 +1,9 @@
-# 可露凯-速度之星
+# GF_可露凯-速度之星_Klukai_LB
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Girls' Frontline #少女前线 #GFWhite Eternity #GF
 
 </details>
 

@@ -1,9 +1,9 @@
-# 舟·归溟幽灵鲨
+# AK_归溟幽灵鲨
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Arknights #明日方舟 #AK
 
 </details>
 

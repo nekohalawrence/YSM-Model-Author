@@ -3,7 +3,7 @@
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Genshin-Impact #原神 #Genshin #GI
+- 来源：#Genshin Impact #原神 #Genshin #GI
 
 </details>
 

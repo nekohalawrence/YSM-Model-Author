@@ -1,4 +1,4 @@
-# A_泡狐龙s_薄绿
+# 泡狐龙s_薄绿_LA
 
 <details>
 <summary>模型信息</summary>

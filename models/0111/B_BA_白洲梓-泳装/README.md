@@ -1,4 +1,4 @@
-# B_BA_白洲梓_泳装
+# B_BA_白洲梓-泳装
 
 <details>
 <summary>模型信息</summary>
