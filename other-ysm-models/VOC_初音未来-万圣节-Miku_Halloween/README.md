@@ -1,8 +1,14 @@
 # VOC_初音未来-万圣节-Miku_Halloween
 
-> 此 README 由 `.github/scripts/generate_model_readmes.py` 自动生成。
+<details>
+<summary>模型信息</summary>
 
-## 预览图
+- 来源：#VOCALOID #博歌乐 #V 家 #术力口 #VOC #虚拟歌手 #虚拟歌姬
+
+</details>
+
+<details open>
+<summary>预览图</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
@@ -11,3 +17,5 @@
 ![preview02.png](preview02.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
+
+</details>

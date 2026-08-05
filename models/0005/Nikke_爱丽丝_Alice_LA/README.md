@@ -1,10 +1,18 @@
-# A_nikke_alice
+# Nikke_爱丽丝_Alice_LA
 
-> 此 README 由 `.github/scripts/generate_model_readmes.py` 自动生成。
+<details>
+<summary>模型信息</summary>
 
-## 预览图
+- 来源：#Goddess of Victory: Nikke #Nikke #胜利女神：妮姬
+
+</details>
+
+<details open>
+<summary>预览图</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](preview.png)
 
 ![preview01.png](preview01.png)
 
@@ -17,3 +25,5 @@
 ![preview05.png](preview05.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
