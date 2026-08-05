@@ -340,6 +340,215 @@
 </details>
 
 
+<details>
+<summary>更新日志</summary>
+
+<!-- CHANGELOG_AUTOGEN_START -->
+
+
+
+
+
+
+
+<!-- 自动生成日志区域；手工日志请放在对应日期段落的 MANUAL_LOGS_START 之后。 -->
+
+
+
+# 2026-08-05
+
+<!-- AUTO_LOGS_START -->
+- chore: models/0002: [#0002 - #映素 \| #映素作坊](.../../models/0002) - 更新了 13 个模型文件、4 张预览图、4 个 README（更新 21）
+- chore: models/0004: [#0004 - #XG残党](.../../models/0004) - 更新了 1 个模型文件、2 张预览图、2 个 README（更新 5）
+- chore: models/0005: [#0005 - #omo仙贝2号\| #omo \| #FujiwaranoMoku114514](.../../models/0005) - 更新了 20 个模型文件、10 张预览图、9 个 README（更新 39）
+- chore: models/0006: [#0006 - #Nekuro \| #NekuroMC](.../../models/0006) - 更新了 6 个模型文件、3 张预览图、13 个 README（更新 22）
+- chore: models/0007: [#0007 - #啊这-_-0](.../../models/0007) - 更新了 6 个模型文件、3 张预览图、3 个 README（更新 12）
+- chore: models/0008: [#0008 - #白色北熊](.../../models/0008) - 更新了 1 个 README（更新 1）
+- chore: models/0010: [#0010 - #波普Popu](.../../models/0010) - 更新了 1 个 README（更新 1）
+- chore: models/0011: [#0011 - #池塘-tl \| #池塘](.../../models/0011) - 更新了 1 个模型文件（更新 1）
+- chore: models/0013: [#0013 - #对羧基苯酚](.../../models/0013) - 更新了 1 个 README（更新 1）
+- chore: models/0014: [#0014 - #哈雷汰多](.../../models/0014) - 更新了 1 个模型文件、1 个 README（更新 2）
+- chore: models/0015: [#0015 - #寒叔hs \| #烈鸟比百 \| #Frosty_Uncle](.../../models/0015) - 更新了 2 个模型文件（更新 1，删除 1）
+- chore: models/0017: [#0017 - #寄水晶](.../../models/0017) - 更新了 1 个 README（更新 1）
+- chore: models/0019: [#0019 - #江竹雨offical \| #AAA家电批发江竹雨](.../../models/0019) - 更新了 1 个 README（更新 1）
+- chore: models/0020: [#0020 - #就叫纸板\| #纸板](.../../models/0020) - 更新了 1 个模型文件（更新 1）
+- chore: models/0027: [#0027 - #猫耳魂魄妖梦](.../../models/0027) - 更新了 1 个 README（更新 1）
+- chore: models/0033: [#0033 - #胖狐狸工作室 \| #红色幽默](.../../models/0033) - 更新了 1 个 README（更新 1）
+- chore: models/0040: [#0040 - #碎de帆](.../../models/0040) - 更新了 3 个 README（更新 3）
+- chore: models/0043: [#0043 - #完全凍結ALL \| #完全冻结 \| #绝对冻结](.../../models/0043) - 更新了 3 个 README（更新 3）
+- chore: models/0049: [#0049 - #星语TAT](.../../models/0049) - 更新了 2 个模型文件、4 张预览图、3 个 README（更新 9）
+- chore: models/0050: [#0050 - #荨蒿栗里 \| #荨蒿之栗里 \| #栗里](.../../models/0050) - 更新了 2 个 README（更新 2）
+- chore: models/0051: [#0051 - #动员鼬](.../../models/0051) - 更新了 9 个 README（更新 9）
+- chore: models/0055: [#0055 - #伊蕾娜家的咸鱼](.../../models/0055) - 更新了 1 个 README（更新 1）
+- chore: models/0056: [#0056 - #伊洛是哥斯拉嘛 #伊洛是哥斯拉吗\|  #哥斯拉 \| #落阳不养羊 \| #晓苯升易 \| #黎家诚 \| #BradKidd](.../../models/0056) - 更新了 27 个 README（更新 27）
+- chore: models/0058: [#0058 - #艺方像素 \| #艺方堂 \| #尻](.../../models/0058) - 更新了 1 个 README（更新 1）
+- chore: models/0067: [#0067 - #Almeta_owx](.../../models/0067) - 更新了 2 个 README（更新 2）
+- chore: models/0080: [#0080 - #Nona_Reeves](.../../models/0080) - 更新了 1 个 README（更新 1）
+- chore: models/0084: [#0084 - #幻古诗](.../../models/0084) - 更新了 1 个 README（更新 1）
+- chore: models/0092: [#0092 - #菊姥爷](.../../models/0092) - 更新了 1 个 README（更新 1）
+- chore: models/0093: [#0093 - #苏依凛](.../../models/0093) - 更新了 11 个 README（更新 11）
+- chore: models/0095: [#0095 - #源石姬变体 \| #raw_chicken \| #鸡姬](.../../models/0095) - 更新了 4 个 README（更新 4）
+- chore: models/0096: [#0096 - #Kria月明](.../../models/0096) - 更新了 1 个 README（更新 1）
+- chore: models/0101: [#0101 - #獒子coco \| #獒子酱的杂货店 \| #獒子獒子獒](.../../models/0101) - 更新了 1 个 README（更新 1）
+- chore: models/0102: [#0102 - #Dreamer #普通的木屐](.../../models/0102) - 更新了 1 个 README（更新 1）
+- chore: models/0103: [#0103 - #浅陌菌](.../../models/0103) - 更新了 1 个 README（更新 1）
+- chore: models/0104: [#0104 - #科列夫斯基](.../../models/0104) - 更新了 1 个 README（更新 1）
+- chore: models/0107: [#0107 - #宇宙影帝の终焉](.../../models/0107) - 更新了 1 个 README（更新 1）
+- chore: models/0115: [#0115 - #荒漠](.../../models/0115) - 更新了 1 个 README（更新 1）
+- chore: models/0117: [#0117 - #聚模道 \| #聚核重工Minecraft \| #语文喵喵拳](.../../models/0117) - 更新了 5 个 README（更新 5）
+- chore: models/0123: [#0123 - #Anrieal](.../../models/0123) - 更新了 1 个 README（更新 1）
+- chore: models/0124: [#0124 - #超吊的点点](.../../models/0124) - 更新了 1 个 README（更新 1）
+- chore: models/0125: [#0125 - #辅助EinHeld](.../../models/0125) - 更新了 1 个 README（更新 1）
+- chore: models/0128: [#0128 - #Ark样本](.../../models/0128) - 更新了 1 个 README（更新 1）
+- chore: models/0132: [#0132 - #qf欸 #qf](.../../models/0132) - 更新了 1 个 README（更新 1）
+- chore: models/0136: [#0136 - #Fllz](.../../models/0136) - 更新了 2 个 README（更新 2）
+- chore: models/0142: [#0142 - #Omegaff0048 \| #FF0048](.../../models/0142) - 更新了 3 个 README（更新 3）
+- chore: models/0144: [#0144 - #叁雫MitsukuDayo](.../../models/0144) - 更新了 1 个 README（更新 1）
+- chore: models/0148: [#0148 - #黑喵](.../../models/0148) - 更新了 1 个 README（更新 1）
+- chore: models/0149: [#0149 - #安欣](.../../models/0149) - 更新了 3 个 README（更新 3）
+- chore: models/0151: [#0151 - #WisteriaZy \| #大触紫衣](.../../models/0151) - 更新了 1 个 README（更新 1）
+- chore: models/0157: [#0157 - #Deovolente \| #GhastRiv](.../../models/0157) - 更新了 1 个 README（更新 1）
+- chore: models/0160: [#0160 - #宅在佳 \| #宅在佳丶](.../../models/0160) - 更新了 1 个 README（更新 1）
+- chore: models/0167: [#0167 - #炼狱在旅行](.../../models/0167) - 更新了 1 个 README（更新 1）
+- chore: models/0168: [#0168 - #丁真蟹 \| #ZHEN](.../../models/0168) - 更新了 3 个 README（更新 3）
+- chore: models/0169: [#0169 - #ShiroKaze](.../../models/0169) - 更新了 2 个 README（更新 2）
+- chore: models/0176: [#0176 - #Bubuker #rintaroa #Torontopizza #rintaroA](.../../models/0176) - 更新了 1 个 README（更新 1）
+- chore: models/0178: [#0178 - #qidai \| #一点小期待](.../../models/0178) - 更新了 1 个 README（更新 1）
+- chore: models/0179: [#0179 - #Cookiebox](.../../models/0179) - 更新了 1 个 README（更新 1）
+- chore: models/0180: [#0180 - #杂果沙拉](.../../models/0180) - 更新了 1 个 README（更新 1）
+- chore: models/0181: [#0181 - #北上 \| #NorthWard](.../../models/0181) - 更新了 1 个 README（更新 1）
+
+<!-- MANUAL_LOGS_START -->
+
+
+
+# 2026-08-04
+
+
+
+<!-- AUTO_LOGS_START -->
+- chore: models/0049: [#0049 - #星语TAT](.../../models/0049) - 更新了 4 个模型文件、6 张预览图、1 个 README（新增 6，更新 4，删除 1）
+- chore: models/0055: [#0055 - #伊蕾娜家的咸鱼](.../../models/0055) - 更新了 1 个模型文件、1 张预览图、1 个 README（更新 3）
+- chore: models/0059: [#0059 - #瀛猫](.../../models/0059) - 更新了 1 个 README（更新 1）
+- chore: models/0062: [#0062 - #云曦-Yunxxi_ugo \| #云曦](.../../models/0062) - 更新了 4 个模型文件、1 个 README（更新 1，删除 4）
+- chore: models/0086: [#0086 - #深海沉光](.../../models/0086) - 更新了 1 个 README（更新 1）
+- chore: models/0122: [#0122 - #茶-GreenTea](.../../models/0122) - 更新了 1 个 README（更新 1）
+- chore: models/0141: [#0141 - #映白L #映白](.../../models/0141) - 更新了 1 个 README（更新 1）
+- chore: models/0165: [#0165 - #默栖 \| #某嘞个默栖 \| #默嘞个某栖](.../../models/0165) - 更新了 1 个 README（更新 1）
+
+<!-- MANUAL_LOGS_START -->
+
+
+
+# 2026-08-03
+
+
+
+<!-- AUTO_LOGS_START -->
+- chore: models/0002: [#0002 - #映素 \| #映素作坊](.../../models/0002) - 更新了 1 个模型文件、3 张预览图、3 个 README（更新 7）
+- chore: models/0102: [#0102 - #Dreamer #普通的木屐](.../../models/0102) - 更新了 2 个模型文件、5 张预览图、3 个 README（新增 2，更新 7，删除 1）
+- chore: models/0103: [#0103 - #浅陌菌](.../../models/0103) - 更新了 3 个模型文件、6 张预览图、3 个 README（更新 7，删除 5）
+- chore: models/0105: [#0105 - #超级大鸡腿丶 \| #Nss](.../../models/0105) - 更新了 1 个 README（更新 1）
+- chore: models/0113: [#0113 - #秋风 \| #每天都睡不醒的秋风 \| #睡不死死不睡的秋风](.../../models/0113) - 更新了 1 个 README（更新 1）
+
+<!-- MANUAL_LOGS_START -->
+
+
+
+# 2026-08-02
+
+
+
+<!-- AUTO_LOGS_START -->
+- chore: models/0045: [#0045 - #雾雨波波沙](.../../models/0045) - 更新了 1 个模型文件（删除 1）
+- chore: models/0065: [#0065 - #烛火的次元宇宙](.../../models/0065) - 更新了 1 个模型文件、1 个 README（删除 2）
+- chore: models/0078: [#0078 - #LuXi233 \| #小早川希](.../../models/0078) - 更新了 1 个 README（更新 1）
+- chore: models/0092: [#0092 - #菊姥爷](.../../models/0092) - 更新了 1 个模型文件、2 张预览图、1 个 README（更新 4）
+- chore: models/0117: [#0117 - #聚模道 \| #聚核重工Minecraft \| #语文喵喵拳](.../../models/0117) - 更新了 5 个模型文件、14 张预览图、3 个 README（新增 9，更新 13）
+- chore: models/0137: [#0137 - #Maks \| #Maks怜悯](.../../models/0137) - 更新了 1 个 README（更新 1）
+- chore: models/0164: [#0164 - #toolat嫌晚 \| #toolat洗碗](.../../models/0164) - 更新了 1 个 README（更新 1）
+- chore: models/0184: [#0184 - #MC-ZBM](.../../models/0184) - 更新了 1 个 README（新增 1）
+- chore: models/0185: [#0185 - #滑滑滑纸隐 \| #滑纸隐](.../../models/0185) - 更新了 1 个 README（新增 1）
+- chore: models/0187: [#0187 - #爱听书的旅人 \| #爱听小说的旅人](.../../models/0187) - 更新了 1 个 README（新增 1）
+
+<!-- MANUAL_LOGS_START -->
+
+
+
+# 2026-08-01
+
+
+
+<!-- AUTO_LOGS_START -->
+- chore: models/0005: [#0005 - omo仙贝2号 \| #omo \| #FujiwaranoMoku114514](.../../models/0005) - 更新了 1 个模型文件（更新 1）
+- chore: models/0129: [#0129 - Dr观星 \| #Dr-观星](.../../models/0129) - 更新了 1 个模型文件（更新 1）
+- chore: models/0058: [#0058 - #艺方像素 \| #艺方堂 \| #尻](.../../models/0058) - 更新了 23 个模型文件、10 个 README、23 张预览图（更新 56）
+- chore: models/0067: [#0067 - #Almeta_owx](.../../models/0067) - 更新了 16 个模型文件、3 个 README、24 张预览图（新增 18，更新 23，删除 2）
+- chore: models/0068: [#0068 - #AnluoSakura](.../../models/0068) - 更新了 14 个模型文件、1 个 README、20 张预览图（新增 27，更新 8）
+- chore: models/0076: [#0076 - #White_clams白蛤蜊 \| #白蛤蜊 \| #White_Clams白蛤蜊](.../../models/0076) - 更新了 19 个模型文件、3 个 README、73 张预览图、29 个其他文件（新增 78，更新 46）
+- chore: models/0095: [#0095 - #源石姬变体 \| #raw_chicken \| #鸡姬](.../../models/0095) - 更新了 38 个模型文件、8 个 README、84 张预览图（新增 80，更新 49，删除 1）
+
+<!-- MANUAL_LOGS_START -->
+
+- feat: 增添了自动日志生成 aciton
+<!-- CHANGELOG_AUTOGEN_END -->
+
+# 2026-07-30
+
+- format: 注意到有些游戏或动画的名称**太长了**，不容易看到**人物**名称，故之后的游戏或动画名称改为**简写**
+
+# 2026-07-27
+
+- feat: 增添了，车万女仆包和 tacz 枪包
+
+# 2026-07-25
+
+- ps: 奇奇怪怪的游戏太多了
+- ps: 注意，有些没有预览图的模型是不可用的，我在查看作者的时候保存了，导致修改了部分字符，破坏了原本的文件，导致该模型不可用。
+- ps: 出现重大失误，我发现通过 obsidian 查看的大部分模型都损坏了！！！！！！！！，现在才发现原因，git 上的历史没有删除。
+
+# 2026-07-23
+
+- [LuckyPotion](https://space.bilibili.com/1739798750) 感谢这位大佬公开了，某团队做的一些作者付费模型集合，我可能会在之后慢慢更新各类模型的预览图。
+- 夸克云: https://pan.quark.cn/s/77a16d314a11 提取码：ajVD （已失效）
+- 百度云: https://pan.baidu.com/s/1FFSrd_YG-1Eat_DQD7hziw 提取码: xiao
+- 模型暂时不放进存储库，有需要的自行下载
+- 准备添加一个 aciton 为每一个模型添加 `README.md`，方便查看模型预览图，如果你有好的方法可以通过 issue 告知我（本人并不会编程，都是 AI 帮我写的😭）
+- 为了统一命名，之后所有的文件夹中的游戏名称除了只有中国有的游戏，都将改成英文，之后会出一个列表对照翻译。
+
+# 2026-07-19
+
+- 将一些有源文件的模型转为压缩包，方便下载
+- 修正了一些错误或重复的作者
+- 重新为旧的模型进行作者分类
+
+# 2026-07-18
+
+- 有些创作者属于同一个团队，不知道有没有好的分类方法，如果你有的话，可以提供给我
+- 重新整理了大量的模型
+- 整理的模型中包含新的模型，和 [已有模型](https://github.com/Elaina69/Yes-Steve-Model-Repo) 的重新分类
+
+# 2026-06-29
+
+- 将一些团队模型进行合并，只在创建此模型的作者放出对应的模型，其他作者作为对应的负责的部分进行附属。
+- 整理了许久感觉这个分类模式还是有点问题，找不到想用的模型，本质上是对免费模型的集合，很多付费模型是没有的，用作者来分免费模型的质量可用只有几家质量比较好，可能以模型的对象作为分类依据比较好。
+
+# 2026-05-21
+
+- 大部分模型在高版本无法使用，建议只用较新的加密模型（使用 ysmpaser 解密，较早的模型也是无法解密的），或者给源文件的模型。
+
+# 2026-05-11
+
+- 去除 pages 页面，决定在我能够学会一个合适的内容呈现形式时，再去实践。
+- 决定在今年年底之前，将所有作者的元信息进行更新，~如果有时间将为每一个模型附加预览图~。
+
+# 2026-05-03
+
+- 决定只更新一些较为优质的模型，其他模型不收集了。
+- 修改优质 mod 分支，只留下最新的 mod
+
+</details>
+
 ## 项目结构
 
 > 下面是当前仓库的主要目录说明，后续可能会根据内容继续调整。
