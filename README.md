@@ -4,131 +4,12 @@
 
 - 收集并按作者分类的 ysm 模型，tacz 枪包和 TLM 女仆包等。
 
-## 注意事项
-
-- ysm-model 注意事项
-	- 前缀 ABC 是个人偏好的等级划分（制作质量/完成度），并无其他含义。
-	- 压缩包内包含项目源码文件，而 `.ysm` 是加密后的模型文件。
-	- 此存储库，有些模型是 **18+**，建议斟酌后使用，我并没有为所有的 **r18** 的模型标注 `nsfw`。
-	- 请不要以任何形式**售卖**本存储库的模型，后果自负。
-- ysm-model 错误注意事项
-	- 我发现通过 obsidian （一款笔记软件） 查看的模型都损坏了！！！！！！！！。
-	- 如果你发现不可用的模型请通过 issue 告诉我，感谢了。
-- 其他注意事项
-	- 我对 GitHub 的使用不太熟悉。如果你想修改任何内容，只能通过 Issue 告知我，或者你可以自行克隆仓库并进行更改。
-
 
 <details>
-<summary>ysm-model 命名规则</summary>
-
-## 游戏
-
-- Arknights, 明日方舟, AK
-- Arknights-Endfield, 明日方舟：终末地, AKE
-- Ash-Arms, 灰烬战线
-- Atomic-Heart, 原子之心, AH 
-- Azur-Lane, 碧蓝航线, AL
-- Azur-Promilia, AP, 蓝色星原
-- Battlefield-1, 战地 -1, BF-1
-- Blue-Archive, 碧蓝档案, BA, 蔚蓝档案
-- Command & Conquer, 命令与征服, CNC
-- Command-&-Conquer: Red-Alert-2, Red-Alert-2, RA2, 命令与征服：红色警戒 2
-- Command-&-Conquer: Red-Alert-3, Red-Alert-3, RA3, 命令与征服：红色警戒 3
-- Command & Conquer Generals: Zero Hour, ZH, Zero Hour, 命令与征服：绝命时刻
-- Dead or Alive, DOA, 死或生
-- Dohna Dohna: Let's Do Bad Things Together ドーナドーナ いっしょにわるいことしよう, 多娜多娜 一起干坏事吧！, DOHNA
-- Doki-Doki-Literature-Club!, DDLC, 心跳文学部！
-- Fate-Grand-Order, FGO, 命运 - 冠位指定
-- Food Girls, 食用系少女
-- Honkai-Impact-3, 崩坏 3, HI3
-- Honkai-Star-Rail, HSR, 崩坏：星穹铁道
-- Hyperdimension Neptunia, HDN, 超次元游戏
-- Genshin-Impact, 原神, Genshin, GI
-- Girls'-Frontline,少女前线, GF
-- Goddess of Victory: Nikke, Nikke, 胜利女神：妮姬
-- Limbus Company, 边狱巴士, 边狱公司, LC
-- MiSide, 米塔
-- NEKOPARA, ネコぱら, 巧克力与香子兰, 猫娘乐园
-- Neon-Genesis-Evangelion, NGE, 新世纪福音战士, EVA
-- Senren＊Banka, せんれん＊ばんか, 千恋＊万花, SENREN
-- Snowbreak: Containment Zone, 尘白禁区, snowbreak
-- Strinova, 卡拉比丘
-- Sun Shower, 天气雨, 天気雨（てんきあめ / Tenkiame）
-- Umamusume: Pretty Derby, 闪耀！优俊少女, UmaMusume, UM, 赛马娘
-- Wuthering-Waves, 鸣潮, WuWa, WW
-- Yog-Sothoth's Yard, YogYard, 犹格索托斯的庭院：炼金旅社
-- Zenless-Zone-Zero, 绝区零, ZZZ
-
-## 动画
-
-- BanG Dream! It's MyGO!!!!!, 迷途之子！！！！！, MyGO
-- BanG Dream! Ave Mujica, 颂乐人偶, AveMujica
-- Bocchi-the-Rock!, BtR, 孤独摇滚！
-- Dragon Raja, DR, 龙族
-- Dungeon & Fighter, DNF, DFO, 地下城与勇士
-- Fox-Spirit-Matchmaker, 狐妖小红娘, FSM
-- Frieren-Beyond-Journey's-End, 葬送的芙莉莲, Frieren
-- How Not to Summon a Demon Lord, 异界少女召唤术, 異世界魔王と召喚少女の奴隷魔術, 异世界魔王与召唤少女的奴隶魔术, HNTSADL
-- Make Heroine ga Oosugiru!, MHO, 負けヒロインが多すぎる！
-- MushokuTensei, 无职转生～到了异世界就拿出真本事～, 無職転生 ～異世界行ったら本気だす～
-- Onii-chan wa Oshimai!, お兄ちゃんはおしまい！, ONIMAI, 别当欧尼酱了！
-- Puella Magi Madoka Magica, PMMM, Madoka, 魔法少女まどか☆マギカ, 魔法少女小圆
-- Saekano: How to Raise a Boring Girlfriend, 路人女主的养成方法, SAEKANO
-
-## 小说
-
-- Reverend Insanity, 蛊真人, RI
-
-## 画师
-
-- Mochiyama Kingyo, もち山金魚
-
-## 其他
-
-- Original Character, 原创角色, OC
-- VOCALOID, 博歌乐, V 家, 术力口, VOC, 虚拟歌手, 虚拟歌姬
-- Touhou-Project, TH, TOUHOU, 东方 -Project
-- Kemomimi Gakuen, ケモミミ学園, 兽耳学园, 兽耳学院, KG
-- Virtual YouTuber, バーチャルユーチューバー, VTuber
-- Virtual Streamer, VStreamer
-
-</details>
-
-<details>
-<summary>工具推荐</summary>
-
-- [ysm-model-manager](https://github.com/eghrhegpe/ysm-model-manager)
-	- 介绍: ysm 模型管理软件
-- [YSMParser](https://github.com/OpenYSM/YSMParser)
-	- 介绍: A Parser to recover Yes-Steve-Model Encrypted Binaries.
-- [YSMParser](https://github.com/OpenYSMDev/YSMParser)
-	- 介绍: .ysm 模型一键解密、转换为 Blockbench 工程，全版本加密格式支持。
-- [OpenYSM](https://github.com/OpenYSM/OpenYSM)
-	- 介绍: OpenYSM 是一款基于 Yes Steve Model 的模组，它修改了原版玩家模型，其核心使用 GeckoLib 库，并采用了 Minecraft 基岩版的模型和动画文件。这使得玩家可以根据自己的喜好自定义玩家模型和动画。
-- [ModernYSM](https://github.com/OpenYSMDev/ModernYSM)
-    - 介绍: OpenYSM 是一款基于 Yes Steve Model 的模组，它修改了原版玩家模型，其核心使用 GeckoLib 库，并采用了 Minecraft 基岩版的模型和动画文件。这使得玩家可以根据自己的喜好自定义玩家模型和动画。
-
-</details>
-
-<details>
-
-<summary>ysm 作者推荐</summary>
-
-> 推荐一些优质模型作者
-
-- 0065: [#雾雨波波沙](.../../models/0045) 
-- 0065: [#烛火的次元宇宙](.../../models/0065)
-- 0067: [#Almeta_owx](.../../models/0067) 
-- 0068: [#AnluoSakura](.../../models/0068)
-- 0076: [#White_clams白蛤蜊](.../../models/0076)
-
-
-</details>
-
-<details>
-<summary>ysm 作者索引</summary>
+<summary>作者索引</summary>
 
 <!-- AUTHORS_LIST_START -->
+
 | 编号 | 作者名称 | 模型数量 |
 | --- | --- | ---: |
 | 0000 | [#-OMEGAZERO-](.../../models/0000) | 1 |
@@ -317,12 +198,132 @@
 | 0184 | [#MC-ZBM](.../../models/0184) | 3 |
 | 0185 | [#滑滑滑纸隐 \| #滑纸隐](.../../models/0185) | 9 |
 | 0187 | [#爱听书的旅人 \| #爱听小说的旅人](.../../models/0187) | 1 |
+
 <!-- AUTHORS_LIST_END -->
 
 </details>
 
+
 <details>
-<summary>更新/话痨日志</summary>
+<summary>模型分类</summary>
+
+> 文件夹命名规则
+
+```
+<作品缩写>_<中文角色名>-[皮肤标签]_<角色英文>-[皮肤标签]_<个人评定等级>
+
+个人评定等级: LA, LB, LC, LD
+```
+
+## 游戏
+
+- Arknights, 明日方舟, AK
+- Arknights-Endfield, 明日方舟：终末地, AKE
+- Ash-Arms, 灰烬战线
+- Atomic-Heart, 原子之心, AH 
+- Azur-Lane, 碧蓝航线, AL
+- Azur-Promilia, AP, 蓝色星原
+- Battlefield-1, 战地 -1, BF-1
+- Blue-Archive, 碧蓝档案, BA, 蔚蓝档案
+- Command & Conquer, 命令与征服, CNC
+- Command-&-Conquer: Red-Alert-2, Red-Alert-2, RA2, 命令与征服：红色警戒 2
+- Command-&-Conquer: Red-Alert-3, Red-Alert-3, RA3, 命令与征服：红色警戒 3
+- Command & Conquer Generals: Zero Hour, ZH, Zero Hour, 命令与征服：绝命时刻
+- Dead or Alive, DOA, 死或生
+- Dohna Dohna: Let's Do Bad Things Together ドーナドーナ いっしょにわるいことしよう, 多娜多娜 一起干坏事吧！, DOHNA
+- Doki-Doki-Literature-Club!, DDLC, 心跳文学部！
+- Fate-Grand-Order, FGO, 命运 - 冠位指定
+- Food Girls, 食用系少女
+- Honkai-Impact-3, 崩坏 3, HI3
+- Honkai-Star-Rail, HSR, 崩坏：星穹铁道
+- Hyperdimension Neptunia, HDN, 超次元游戏
+- Genshin-Impact, 原神, Genshin, GI
+- Girls'-Frontline,少女前线, GF
+- Goddess of Victory: Nikke, Nikke, 胜利女神：妮姬
+- Limbus Company, 边狱巴士, 边狱公司, LC
+- MiSide, 米塔
+- NEKOPARA, ネコぱら, 巧克力与香子兰, 猫娘乐园
+- Neon-Genesis-Evangelion, NGE, 新世纪福音战士, EVA
+- Senren＊Banka, せんれん＊ばんか, 千恋＊万花, SENREN
+- Snowbreak: Containment Zone, 尘白禁区, snowbreak
+- Strinova, 卡拉比丘
+- Sun Shower, 天气雨, 天気雨（てんきあめ / Tenkiame）
+- Ultraman Tiga, UT, 迪迦奥特曼
+- Umamusume: Pretty Derby, 闪耀！优俊少女, UmaMusume, UM, 赛马娘
+- Wuthering-Waves, 鸣潮, WuWa, WW
+- Yog-Sothoth's Yard, YogYard, 犹格索托斯的庭院：炼金旅社
+- Zenless-Zone-Zero, 绝区零, ZZZ
+
+## 动画
+
+- BanG Dream! It's MyGO!!!!!, 迷途之子！！！！！, MyGO
+- BanG Dream! Ave Mujica, 颂乐人偶, AveMujica
+- Bocchi-the-Rock!, BtR, 孤独摇滚！
+- Dragon Raja, DR, 龙族
+- Dungeon & Fighter, DNF, DFO, 地下城与勇士
+- Fox-Spirit-Matchmaker, 狐妖小红娘, FSM
+- Frieren-Beyond-Journey's-End, 葬送的芙莉莲, Frieren
+- How Not to Summon a Demon Lord, 异界少女召唤术, 異世界魔王と召喚少女の奴隷魔術, 异世界魔王与召唤少女的奴隶魔术, HNTSADL
+- Make Heroine ga Oosugiru!, MHO, 負けヒロインが多すぎる！
+- MushokuTensei, 无职转生～到了异世界就拿出真本事～, 無職転生 ～異世界行ったら本気だす～
+- Onii-chan wa Oshimai!, お兄ちゃんはおしまい！, ONIMAI, 别当欧尼酱了！
+- Puella Magi Madoka Magica, PMMM, Madoka, 魔法少女まどか☆マギカ, 魔法少女小圆
+- Saekano: How to Raise a Boring Girlfriend, 路人女主的养成方法, SAEKANO
+
+## 小说
+
+- Reverend Insanity, 蛊真人, RI
+
+## 画师
+
+- Mochiyama Kingyo, もち山金魚
+
+## 其他
+
+- Original Character, 原创角色, OC
+- VOCALOID, 博歌乐, V 家, 术力口, VOC, 虚拟歌手, 虚拟歌姬
+- Touhou-Project, TH, TOUHOU, 东方Project
+- Kemomimi Gakuen, ケモミミ学園, 兽耳学园, 兽耳学院, KG
+- Virtual YouTuber, バーチャルユーチューバー, VTuber
+- Virtual Streamer, VStreamer
+
+</details>
+
+
+<details>
+
+<summary>作者推荐</summary>
+
+> 推荐一些优质模型作者
+
+- 0065: [#雾雨波波沙](.../../models/0045) 
+- 0065: [#烛火的次元宇宙](.../../models/0065)
+- 0067: [#Almeta_owx](.../../models/0067) 
+- 0068: [#AnluoSakura](.../../models/0068)
+- 0076: [#White_clams白蛤蜊](.../../models/0076)
+
+</details>
+
+
+<details>
+<summary>工具推荐</summary>
+
+- [ysm-model-manager](https://github.com/eghrhegpe/ysm-model-manager)
+	- 介绍: ysm 模型管理软件
+- [YSMParser](https://github.com/OpenYSM/YSMParser)
+	- 介绍: A Parser to recover Yes-Steve-Model Encrypted Binaries.
+- [YSMParser](https://github.com/OpenYSMDev/YSMParser)
+	- 介绍: .ysm 模型一键解密、转换为 Blockbench 工程，全版本加密格式支持。
+- [OpenYSM](https://github.com/OpenYSM/OpenYSM)
+	- 介绍: OpenYSM 是一款基于 Yes Steve Model 的模组，它修改了原版玩家模型，其核心使用 GeckoLib 库，并采用了 Minecraft 基岩版的模型和动画文件。这使得玩家可以根据自己的喜好自定义玩家模型和动画。
+- [ModernYSM](https://github.com/OpenYSMDev/ModernYSM)
+    - 介绍: OpenYSM 是一款基于 Yes Steve Model 的模组，它修改了原版玩家模型，其核心使用 GeckoLib 库，并采用了 Minecraft 基岩版的模型和动画文件。这使得玩家可以根据自己的喜好自定义玩家模型和动画。
+
+</details>
+
+
+<details>
+<summary>更新日志</summary>
 
 <!-- CHANGELOG_AUTOGEN_START -->
 
@@ -331,7 +332,6 @@
 
 
 <!-- 自动生成日志区域；手工日志请放在对应日期段落的 MANUAL_LOGS_START 之后。 -->
-
 
 # 2026-08-04
 
@@ -349,7 +349,6 @@
 
 # 2026-08-03
 
-
 <!-- AUTO_LOGS_START -->
 - chore: models/0002: [#0002 - #映素 \| #映素作坊](.../../models/0002) - 更新了 1 个模型文件、3 张预览图、3 个 README（更新 7）
 - chore: models/0102: [#0102 - #Dreamer #普通的木屐](.../../models/0102) - 更新了 2 个模型文件、5 张预览图、3 个 README（新增 2，更新 7，删除 1）
@@ -359,9 +358,7 @@
 
 <!-- MANUAL_LOGS_START -->
 
-
 # 2026-08-02
-
 
 <!-- AUTO_LOGS_START -->
 - chore: models/0045: [#0045 - #雾雨波波沙](.../../models/0045) - 更新了 1 个模型文件（删除 1）
@@ -377,9 +374,7 @@
 
 <!-- MANUAL_LOGS_START -->
 
-
 # 2026-08-01
-
 
 <!-- AUTO_LOGS_START -->
 - chore: models/0005: [#0005 - omo仙贝2号 \| #omo \| #FujiwaranoMoku114514](.../../models/0005) - 更新了 1 个模型文件（更新 1）
@@ -490,6 +485,20 @@ FREE-YSM-AUTHOR/
 └── LM-Maid-Pack/                    # TLM 女仆相关资源包（*.zip）
 ```
 
+## 注意事项
+
+- 使用注意事项
+	- 后缀 LA\B\C 是个人偏好的等级划分（制作质量/完成度），并无其他含义。
+	- 压缩包内包含项目源码文件，而 `.ysm` 是加密后的模型文件。
+	- 此存储库，有些模型是 **18+**，建议斟酌后使用，我并没有为所有的 **r18** 的模型标注 `nsfw`。
+	- 请不要以任何形式**售卖**本存储库的模型，后果自负。
+- 模型注意事项
+	- 我发现通过 obsidian （一款笔记软件） 查看的模型都损坏了！！！！！！！！
+	- 如果你发现不可用的模型请通过 issue 告诉我，感谢了。
+- 其他注意事项
+	- 我对 GitHub 的使用不太熟悉。如果你想修改任何内容，只能通过 Issue 告知我，或者你可以自行克隆仓库并进行更改。
+
 ## 致谢项目
 
-- [https://github.com/Elaina69/Yes-Steve-Model-Repo](https://github.com/Elaina69/Yes-Steve-Model-Repo)
+- [https://github.com/Elaina69/Yes-Steve-Model-Repo](https://github.com/Elaina69/Yes-Steve-Model-Repo): 大部分模型的来源
+- @[LuckyPotion](https://space.bilibili.com/1739798750): 部分优质模型的来源
