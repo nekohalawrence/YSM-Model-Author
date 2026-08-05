@@ -308,7 +308,7 @@
 
 > 推荐一些优质模型作者
 
-- 0065: [#雾雨波波沙](.../../models/0045) 
+- 0045: [#雾雨波波沙](.../../models/0045) 
 - 0065: [#烛火的次元宇宙](.../../models/0065)
 - 0067: [#Almeta_owx](.../../models/0067) 
 - 0068: [#AnluoSakura](.../../models/0068)
@@ -326,6 +326,10 @@
 	- 介绍: A Parser to recover Yes-Steve-Model Encrypted Binaries.
 - [YSMParser](https://github.com/OpenYSMDev/YSMParser)
 	- 介绍: .ysm 模型一键解密、转换为 Blockbench 工程，全版本加密格式支持。
+- [YSMViewer](https://github.com/DrAbcOfficial/YSMViewer)
+	- 介绍: 一个用于“.ysm”文件的跨平台3D模型查看器——这是一种加密的二进制格式，用于存储《我的世界》中的玩家模型。该查看器基于Avalonia构建。
+- [YesSteveModel](https://github.com/YesSteveModel/YesSteveModel)
+	- 介绍: 开源了
 - [OpenYSM](https://github.com/OpenYSM/OpenYSM)
 	- 介绍: OpenYSM 是一款基于 Yes Steve Model 的模组，它修改了原版玩家模型，其核心使用 GeckoLib 库，并采用了 Minecraft 基岩版的模型和动画文件。这使得玩家可以根据自己的喜好自定义玩家模型和动画。
 - [ModernYSM](https://github.com/OpenYSMDev/ModernYSM)
