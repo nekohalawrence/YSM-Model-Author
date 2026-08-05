@@ -1,8 +1,14 @@
-# Wuthering_Waves_守岸人-The-Shorekeeper
+# WW_守岸人-The-Shorekeeper
 
-> 此 README 由 `.github/scripts/generate_model_readmes.py` 自动生成。
+<details>
+<summary>模型信息</summary>
 
-## 预览图
+- 来源：#Wuthering-Waves #鸣潮 #WuWa #WW
+
+</details>
+
+<details open>
+<summary>预览图</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
@@ -13,3 +19,5 @@
 ![preview03.png](preview03.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
+
+</details>

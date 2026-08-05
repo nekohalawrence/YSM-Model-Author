@@ -1,6 +1,14 @@
-# A_BA_ 圣园未花 -Mika_Misono
+# BA_圣园未花_Mika-Misono_LA
 
-## 预览图
+<details>
+<summary>模型信息</summary>
+
+- 来源：#Blue-Archive #碧蓝档案 #BA #蔚蓝档案
+
+</details>
+
+<details open>
+<summary>预览图</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
@@ -11,3 +19,5 @@
 ![preview03.png](preview03.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
+
+</details>

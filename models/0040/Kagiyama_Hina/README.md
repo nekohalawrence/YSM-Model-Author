@@ -1,11 +1,19 @@
 # Kagiyama_Hina
 
-> 此 README 由 `.github/scripts/generate_model_readmes.py` 自动生成。
+<details>
+<summary>模型信息</summary>
 
-## 预览图
+- 来源：#Unknown
+
+</details>
+
+<details open>
+<summary>预览图</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
 ![preview01.png](preview01.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
+
+</details>

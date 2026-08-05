@@ -1,8 +1,14 @@
 # B_BA_下江小春
 
-> 此 README 由 `.github/scripts/generate_model_readmes.py` 自动生成。
+<details>
+<summary>模型信息</summary>
 
-## 预览图
+- 来源：#Unknown
+
+</details>
+
+<details open>
+<summary>预览图</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
@@ -17,3 +23,5 @@
 ![preview06.jpg](preview06.jpg)
 
 <!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
