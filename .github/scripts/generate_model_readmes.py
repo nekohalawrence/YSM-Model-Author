@@ -3,6 +3,8 @@ import re
 from pathlib import Path
 
 WORKSPACE_ROOT = Path(__file__).resolve().parents[2]
+MAIN_README_PATH = WORKSPACE_ROOT / 'README.md'
+
 ROOT_DIRS = [
     WORKSPACE_ROOT / 'models',
     WORKSPACE_ROOT / 'other-models',
@@ -12,7 +14,50 @@ IMAGE_EXTS = {'.png', '.jpg', '.jpeg', '.webp', '.gif'}
 PREVIEW_MARKER = re.compile(r'preview', re.I)
 START_MARKER = '<!-- GENERATED MODEL PREVIEW README START -->'
 END_MARKER = '<!-- GENERATED MODEL PREVIEW README END -->'
-PREVIEW_HEADING = '## 预览图'
+
+
+def parse_categories_from_main_readme() -> dict[str, list[str]]:
+    """从主 README.md 的模型分类区块解析作品缩写与对应的标签列表"""
+    category_map: dict[str, list[str]] = {}
+    if not MAIN_README_PATH.exists():
+        return category_map
+
+    content = MAIN_README_PATH.read_text(encoding='utf-8', errors='ignore')
+    
+    match = re.search(r'<summary>\s*模型分类\s*</summary>(.*?)</details>', content, re.DOTALL)
+    if not match:
+        return category_map
+
+    category_block = match.group(1)
+    
+    for line in category_block.splitlines():
+        line = line.strip()
+        if not line.startswith('- '):
+            continue
+        
+        raw_items = line[2:].split(',')
+        tags = [f"#{item.strip()}" for item in raw_items if item.strip()]
+        
+        if not tags:
+            continue
+        
+        first_key = raw_items[0].strip().lower()
+        category_map[first_key] = tags
+        
+        for item in raw_items:
+            category_map[item.strip().lower()] = tags
+
+    return category_map
+
+
+def get_tags_for_model(model_folder_name: str, category_map: dict[str, list[str]]) -> str:
+    """根据模型文件夹名称前缀匹配标签，未匹配到则默认为 #Unknown"""
+    prefix = model_folder_name.split('_')[0].strip().lower()
+    
+    if prefix in category_map:
+        return ' '.join(category_map[prefix])
+    
+    return "#Unknown"
 
 
 def is_preview_image(path: Path) -> bool:
@@ -29,13 +74,32 @@ def collect_preview_images(model_dir: Path) -> list[Path]:
     return images
 
 
-def build_preview_section(image_paths: list[Path], model_dir: Path) -> str:
-    lines = [
-        PREVIEW_HEADING,
+def build_meta_and_preview_content(model_dir: Path, image_paths: list[Path], category_map: dict[str, list[str]]) -> str:
+    """构建包含元信息与预览图的内容（预览图默认展开）"""
+    title = model_dir.name
+    tags = get_tags_for_model(title, category_map)
+
+    lines = [f'# {title}', '']
+
+    # 元信息折叠块（默认收起）
+    lines.extend([
+        '<details>',
+        '<summary>模型信息</summary>',
+        '',
+        f'- 来源：{tags}',
+        '',
+        '</details>',
+        ''
+    ])
+
+    # 预览图折叠块（默认展开）
+    lines.extend([
+        '<details open>',
+        '<summary>预览图</summary>',
         '',
         START_MARKER,
-        '',
-    ]
+        ''
+    ])
 
     for image_path in image_paths:
         rel_path = image_path.relative_to(model_dir).as_posix()
@@ -45,57 +109,11 @@ def build_preview_section(image_paths: list[Path], model_dir: Path) -> str:
     lines.extend([
         END_MARKER,
         '',
+        '</details>',
+        ''
     ])
-    return '\n'.join(lines)
 
-
-def strip_existing_preview_sections(content: str) -> str:
-    lines = content.splitlines()
-    cleaned_lines: list[str] = []
-    index = 0
-
-    while index < len(lines):
-        line = lines[index]
-        if line.strip() == PREVIEW_HEADING:
-            index += 1
-            while index < len(lines):
-                next_line = lines[index]
-                if next_line.startswith('## ') and next_line.strip() != PREVIEW_HEADING:
-                    break
-                index += 1
-            continue
-
-        cleaned_lines.append(line)
-        index += 1
-
-    cleaned_content = '\n'.join(cleaned_lines).strip()
-    return re.sub(r'\n{3,}', '\n\n', cleaned_content)
-
-
-def build_readme_content(model_dir: Path, image_paths: list[Path], existing_content: str | None = None) -> str:
-    title = model_dir.name
-    preview_section = build_preview_section(image_paths, model_dir).rstrip()
-
-    if existing_content is None or not existing_content.strip():
-        lines = [
-            f'# {title}',
-            '',
-            '> 此 README 由 `.github/scripts/generate_model_readmes.py` 自动生成。',
-            '',
-            preview_section,
-        ]
-        return '\n'.join(lines).rstrip() + '\n'
-
-    cleaned_content = strip_existing_preview_sections(existing_content.rstrip())
-    if cleaned_content and cleaned_content != existing_content.rstrip():
-        content_to_use = cleaned_content
-    else:
-        content_to_use = existing_content.rstrip()
-
-    if not content_to_use.strip():
-        content_to_use = f'# {title}'
-
-    return (content_to_use + '\n\n' + preview_section).rstrip() + '\n'
+    return '\n'.join(lines).rstrip() + '\n'
 
 
 def is_author_dir(path: Path) -> bool:
@@ -124,8 +142,9 @@ def iter_model_dirs(root_dir: Path):
 
 def main() -> int:
     updated = 0
-    skipped = 0
     created = 0
+
+    category_map = parse_categories_from_main_readme()
 
     for root_dir in ROOT_DIRS:
         if not root_dir.is_dir():
@@ -139,7 +158,8 @@ def main() -> int:
             readme_path = model_dir / 'README.md'
             existing_content = readme_path.read_text(encoding='utf-8', errors='ignore') if readme_path.exists() else None
 
-            new_content = build_readme_content(model_dir, preview_images, existing_content)
+            new_content = build_meta_and_preview_content(model_dir, preview_images, category_map)
+
             if readme_path.exists():
                 if existing_content == new_content:
                     continue
@@ -152,7 +172,7 @@ def main() -> int:
             readme_path.write_text(new_content, encoding='utf-8')
             print(f"{action} {readme_path.relative_to(root_dir.parent)}")
 
-    print(f"Summary: created={created}, updated={updated}, skipped={skipped}")
+    print(f"Summary: created={created}, updated={updated}")
     return 0
 
 

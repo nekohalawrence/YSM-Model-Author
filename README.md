@@ -217,9 +217,11 @@
 
 ## 游戏
 
+- ‑as the Night's, Reincarnation‑, さくら、もゆ, 樱花摸鱼, 樱花、萌放, Sakura Moyu
 - Arknights, 明日方舟, AK
 - Arknights-Endfield, 明日方舟：终末地, AKE
 - Ash-Arms, 灰烬战线
+- Astral Party, 吉星派对, 星引擎 Party
 - Atomic-Heart, 原子之心, AH 
 - Azur-Lane, 碧蓝航线, AL
 - Azur-Promilia, AP, 蓝色星原
@@ -238,7 +240,8 @@
 - Honkai-Star-Rail, HSR, 崩坏：星穹铁道
 - Hyperdimension Neptunia, HDN, 超次元游戏
 - Genshin-Impact, 原神, Genshin, GI
-- Girls'-Frontline,少女前线, GF
+- Girls'-Frontline,少女前线, GFWhite Eternity
+- Girls' Frontline: Neural Cloud, Project Neural Cloud, 少女前线：云图计划, NC
 - Goddess of Victory: Nikke, Nikke, 胜利女神：妮姬
 - Limbus Company, 边狱巴士, 边狱公司, LC
 - MiSide, 米塔
@@ -248,8 +251,12 @@
 - Snowbreak: Containment Zone, 尘白禁区, snowbreak
 - Strinova, 卡拉比丘
 - Sun Shower, 天气雨, 天気雨（てんきあめ / Tenkiame）
+- Teaching Feeling, 奴隶少女希尔薇, TF
+- Tom Clancy's Rainbow Six Siege, R6S, 彩虹六号：围攻
 - Ultraman Tiga, UT, 迪迦奥特曼
 - Umamusume: Pretty Derby, 闪耀！优俊少女, UmaMusume, UM, 赛马娘
+- White Eternity, AstralAir no Shiroki Eien, アストラエアの白き永遠, 星辰恋曲的白色永恒, ASE
+- Wish upon a shooting star, 星空のメモリア, Hoshizora no Memoria, 星空的记忆, HNM
 - Wuthering-Waves, 鸣潮, WuWa, WW
 - Yog-Sothoth's Yard, YogYard, 犹格索托斯的庭院：炼金旅社
 - Zenless-Zone-Zero, 绝区零, ZZZ
@@ -267,8 +274,10 @@
 - Make Heroine ga Oosugiru!, MHO, 負けヒロインが多すぎる！
 - MushokuTensei, 无职转生～到了异世界就拿出真本事～, 無職転生 ～異世界行ったら本気だす～
 - Onii-chan wa Oshimai!, お兄ちゃんはおしまい！, ONIMAI, 别当欧尼酱了！
+- Plants vs. Zombies, PVZ, 植物大战僵尸
 - Puella Magi Madoka Magica, PMMM, Madoka, 魔法少女まどか☆マギカ, 魔法少女小圆
 - Saekano: How to Raise a Boring Girlfriend, 路人女主的养成方法, SAEKANO
+- Wandering Witch: The Journey of Elaina, 魔女の旅々, Majo no Tabitabi, 魔女之旅
 
 ## 小说
 
@@ -280,12 +289,15 @@
 
 ## 其他
 
-- Original Character, 原创角色, OC
-- VOCALOID, 博歌乐, V 家, 术力口, VOC, 虚拟歌手, 虚拟歌姬
-- Touhou-Project, TH, TOUHOU, 东方Project
 - Kemomimi Gakuen, ケモミミ学園, 兽耳学园, 兽耳学院, KG
+- Myth, 神话
+- Original Character, 原创角色, OC
+- the Three Kingdoms period, TTKP
+- Touhou-Project, TH, TOUHOU, 东方Project
+- Utauloid, UTAU, 虚拟歌手, 术力口
 - Virtual YouTuber, バーチャルユーチューバー, VTuber
 - Virtual Streamer, VStreamer
+- VOCALOID, 博歌乐, V 家, 术力口, VOC, 虚拟歌手, 虚拟歌姬
 
 </details>
 
@@ -498,7 +510,8 @@ FREE-YSM-AUTHOR/
 - 其他注意事项
 	- 我对 GitHub 的使用不太熟悉。如果你想修改任何内容，只能通过 Issue 告知我，或者你可以自行克隆仓库并进行更改。
 
-## 致谢项目
+## 致谢
 
-- [https://github.com/Elaina69/Yes-Steve-Model-Repo](https://github.com/Elaina69/Yes-Steve-Model-Repo): 大部分模型的来源
-- @[LuckyPotion](https://space.bilibili.com/1739798750): 部分优质模型的来源
+- [https://github.com/Elaina69/Yes-Steve-Model-Repo](https://github.com/Elaina69/Yes-Steve-Model-Repo): 大部分免费模型的来源
+- @[LuckyPotion](https://space.bilibili.com/1739798750): 部分特定作者模型的来源
+- QQ-tomysh的住院楼-752713566: 部分特定作者模型的来源
