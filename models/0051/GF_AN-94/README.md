@@ -1,9 +1,9 @@
-# Girls'_Frontline_AN-94
+# GF_AN-94
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Girls' Frontline #少女前线 #GFWhite Eternity #GF
 
 </details>
 

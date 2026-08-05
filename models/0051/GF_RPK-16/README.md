@@ -1,9 +1,9 @@
-# Girls'_Frontline_RPK-16
+# GF_RPK-16
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Girls' Frontline #少女前线 #GFWhite Eternity #GF
 
 </details>
 

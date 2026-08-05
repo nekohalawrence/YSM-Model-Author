@@ -1,4 +1,4 @@
-# A_天眼泡狐龙_酒狐
+# 天眼泡狐龙_酒狐_LA
 
 <details>
 <summary>模型信息</summary>

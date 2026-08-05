@@ -1,4 +1,4 @@
-# A_WW×2077_丽贝卡
+# WW×2077_丽贝卡_LA
 
 <details>
 <summary>模型信息</summary>

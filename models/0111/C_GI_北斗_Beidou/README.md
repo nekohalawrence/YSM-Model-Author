@@ -1,4 +1,4 @@
-# C_GI_北斗-beidou
+# C_GI_北斗_Beidou
 
 <details>
 <summary>模型信息</summary>

@@ -1,9 +1,9 @@
-# A_OC_星屑海螺
+# OC_星屑海螺_LA
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Original Character #原创角色 #OC
 
 </details>
 

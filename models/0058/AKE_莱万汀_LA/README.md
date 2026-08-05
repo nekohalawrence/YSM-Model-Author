@@ -1,9 +1,9 @@
-# A_AKE_莱万汀_v2
+# AKE_莱万汀_LA
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Arknights-Endfield #明日方舟：终末地 #AKE
 
 </details>
 

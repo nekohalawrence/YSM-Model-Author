@@ -1,9 +1,9 @@
-# Bocchi_the_Rock_喜多郁代-Kita-Ikuyo
+# BtR_喜多郁代-Kita-Ikuyo
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Bocchi-the-Rock! #BtR #孤独摇滚！
 
 </details>
 

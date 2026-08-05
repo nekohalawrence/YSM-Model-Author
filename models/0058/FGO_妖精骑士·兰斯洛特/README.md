@@ -1,4 +1,4 @@
-# fgo_妖精兰斯洛特
+# FGO_妖精骑士·兰斯洛特
 
 <details>
 <summary>模型信息</summary>

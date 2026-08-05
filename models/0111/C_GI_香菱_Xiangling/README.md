@@ -1,4 +1,4 @@
-# C_GI_香菱-xiangling
+# C_GI_香菱_Xiangling
 
 <details>
 <summary>模型信息</summary>

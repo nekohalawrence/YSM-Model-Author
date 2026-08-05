@@ -3,7 +3,7 @@
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Touhou-Project #TH #TOUHOU #东方Project
+- 来源：#Touhou-Project #TH #TOUHOU #东方 Project
 
 </details>
 

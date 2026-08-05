@@ -1,9 +1,9 @@
-# 博丽灵梦
+# Touhou_博丽灵梦_Reimu_LB
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Touhou-Project #TH #TOUHOU #东方 Project
 
 </details>
 
