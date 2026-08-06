@@ -9,6 +9,7 @@
 <summary>作者索引</summary>
 
 <!-- AUTHORS_LIST_START -->
+
 | 编号 | 作者名称 | 模型数量 |
 | --- | --- | ---: |
 | 0000 | [#-OMEGAZERO-](.../../models/0000) | 1 |
@@ -198,6 +199,7 @@
 | 0185 | [#滑滑滑纸隐 \| #滑纸隐](.../../models/0185) | 9 |
 | 0187 | [#爱听书的旅人 \| #爱听小说的旅人](.../../models/0187) | 1 |
 | 0188 | [#鸢尾](.../../models/0188) | 1 |
+
 <!-- AUTHORS_LIST_END -->
 
 </details>
@@ -235,6 +237,7 @@
 - Doki-Doki-Literature-Club!, DDLC, 心跳文学部！
 - Fate-Grand-Order, FGO, 命运 - 冠位指定
 - Food Girls, 食用系少女
+- Fox Hime Zero, FHZ
 - Honkai-Impact-3, 崩坏 3, HI3
 - Honkai-Star-Rail, HSR, 崩坏：星穹铁道
 - Hyperdimension Neptunia, HDN, 超次元游戏
@@ -242,7 +245,10 @@
 - Girls' Frontline,少女前线, GFWhite Eternity, GF
 - Girls' Frontline: Neural Cloud, Project Neural Cloud, 少女前线：云图计划, NC
 - Goddess of Victory: Nikke, Nikke, 胜利女神：妮姬
+- Granblue Fantasy: Relink, GBR, 碧蓝幻想：RELINK, Granblue
+- League of Legends, LOL, 英雄联盟
 - Limbus Company, 边狱巴士, 边狱公司, LC
+- Magical Girl Celesphonia, 魔法少女セレスフォニア, 魔法少女天穹法妮雅, MGC
 - MiSide, 米塔
 - NARUTO, Naruto Shippuden, NAR, 火影忍者: 疾风传
 - NEKOPARA, ネコぱら, 巧克力与香子兰, 猫娘乐园
@@ -254,6 +260,7 @@
 - Sun Shower, 天气雨, 天気雨（てんきあめ / Tenkiame）
 - Teaching Feeling, 奴隶少女希尔薇, TF
 - Tom Clancy's Rainbow Six Siege, R6S, 彩虹六号：围攻
+- Twinkle Star Knights, 闪耀星骑士, ティンクルスターナイツ, TSK
 - Ultraman Tiga, UT, 迪迦奥特曼
 - Umamusume: Pretty Derby, 闪耀！优俊少女, UmaMusume, UM, 赛马娘
 - White Eternity, AstralAir no Shiroki Eien, アストラエアの白き永遠, 星辰恋曲的白色永恒, ASE
@@ -267,16 +274,23 @@
 - BanG Dream! It's MyGO!!!!!, 迷途之子！！！！！, MyGO
 - BanG Dream! Ave Mujica, 颂乐人偶, AveMujica
 - Bocchi-the-Rock!, BtR, 孤独摇滚！
+- Date A Live, DAL, デート・ア・ライブ, 约会大作战
 - Dragon Raja, DR, 龙族
 - Dungeon & Fighter, DNF, DFO, 地下城与勇士
 - Fox-Spirit-Matchmaker, 狐妖小红娘, FSM
 - Frieren-Beyond-Journey's-End, 葬送的芙莉莲, Frieren
 - How Not to Summon a Demon Lord, 异界少女召唤术, 異世界魔王と召喚少女の奴隷魔術, 异世界魔王与召唤少女的奴隶魔术, HNTSADL
+- KonoSuba: God's Blessing on This Wonderful World!, KON, KonoSuba, この素晴らしい世界に祝福を！, 为美好的世界献上祝福！
+- LoveMe 枫与铃, らぶみー♡, 枫与铃, LoveMe
 - Make Heroine ga Oosugiru!, MHO, 負けヒロインが多すぎる！
+- MorotsuiKizoku, 没落贵族琉璃川椿, MKZ
 - MushokuTensei, 无职转生～到了异世界就拿出真本事～, 無職転生 ～異世界行ったら本気だす～
 - Onii-chan wa Oshimai!, お兄ちゃんはおしまい！, ONIMAI, 别当欧尼酱了！
 - Plants vs. Zombies, PVZ, 植物大战僵尸
 - Puella Magi Madoka Magica, PMMM, Madoka, 魔法少女まどか☆マギカ, 魔法少女小圆
+- Rascal Does Not Dream, 青春ブタ野郎はバニーガール先輩の夢を見ない, 青春猪头少年系列, 青春ブタ野郎シリーズ, RDND
+- Redo of Healer, ROH, 回复术士的重启人生, 回復術士のやり直し
+- Ringing Fate, 命运拳台, Ringing-Fate
 - Saekano: How to Raise a Boring Girlfriend, 路人女主的养成方法, SAEKANO
 - Wandering Witch: The Journey of Elaina, 魔女の旅々, Majo no Tabitabi, 魔女之旅
 
@@ -394,7 +408,7 @@ FREE-YSM-AUTHOR/
 
 - [https://github.com/Elaina69/Yes-Steve-Model-Repo](https://github.com/Elaina69/Yes-Steve-Model-Repo): 大部分免费模型的来源
 - @[LuckyPotion](https://space.bilibili.com/1739798750): 部分特定作者模型的来源
-- QQ-tomysh 的住院楼 -752713566: 部分特定作者模型的来源
+- QQ-tomysh 的住院楼 - 752713566: 部分特定作者模型的来源
 
 ## 更新日志
 
@@ -411,9 +425,6 @@ FREE-YSM-AUTHOR/
 
 
 <!-- 自动生成日志区域；手工日志请放在对应日期段落的 MANUAL_LOGS_START 之后。 -->
-
-
-
 
 # 2026-08-05
 
@@ -482,14 +493,7 @@ FREE-YSM-AUTHOR/
 
 <!-- MANUAL_LOGS_START -->
 
-
-
-
-
 # 2026-08-04
-
-
-
 
 <!-- AUTO_LOGS_START -->
 - chore: models/0049: [#0049 - #星语TAT](.../../models/0049) - 更新了 4 个模型文件、6 张预览图、1 个 README（新增 6，更新 4，删除 1）
@@ -503,13 +507,7 @@ FREE-YSM-AUTHOR/
 
 <!-- MANUAL_LOGS_START -->
 
-
-
-
 # 2026-08-03
-
-
-
 
 <!-- AUTO_LOGS_START -->
 - chore: models/0002: [#0002 - #映素 \| #映素作坊](.../../models/0002) - 更新了 1 个模型文件、3 张预览图、3 个 README（更新 7）
@@ -520,13 +518,7 @@ FREE-YSM-AUTHOR/
 
 <!-- MANUAL_LOGS_START -->
 
-
-
-
 # 2026-08-02
-
-
-
 
 <!-- AUTO_LOGS_START -->
 - chore: models/0045: [#0045 - #雾雨波波沙](.../../models/0045) - 更新了 1 个模型文件（删除 1）
@@ -542,13 +534,7 @@ FREE-YSM-AUTHOR/
 
 <!-- MANUAL_LOGS_START -->
 
-
-
-
 # 2026-08-01
-
-
-
 
 <!-- AUTO_LOGS_START -->
 - chore: models/0005: [#0005 - omo仙贝2号 \| #omo \| #FujiwaranoMoku114514](.../../models/0005) - 更新了 1 个模型文件（更新 1）
@@ -591,7 +577,7 @@ FREE-YSM-AUTHOR/
 
 - chore: 将一些有源文件的模型转为压缩包，方便下载
 - chore: 修正了一些错误或重复的作者
-- chore:  重新为旧的模型进行作者分类
+- chore: 重新为旧的模型进行作者分类
 
 # 2026-07-18
 
