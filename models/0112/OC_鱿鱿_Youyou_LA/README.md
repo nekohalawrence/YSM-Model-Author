@@ -1,9 +1,9 @@
-# 鱿鱿
+# OC_鱿鱿_Youyou_LA
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Original Character #原创角色 #OC
 
 </details>
 
@@ -11,6 +11,8 @@
 <summary>预览图</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](preview.png)
 
 ![preview01.png](preview01.png)
 

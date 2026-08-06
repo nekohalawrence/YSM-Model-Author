@@ -1,4 +1,4 @@
-# SAEKANO_英梨梨
+# Saekano_英梨梨_Eriri
 
 <details>
 <summary>模型信息</summary>

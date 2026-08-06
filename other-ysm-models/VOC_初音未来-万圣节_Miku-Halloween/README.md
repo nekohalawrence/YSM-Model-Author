@@ -1,4 +1,4 @@
-# VOC_初音未来-万圣节-Miku_Halloween
+# VOC_初音未来-万圣节_Miku-Halloween
 
 <details>
 <summary>模型信息</summary>

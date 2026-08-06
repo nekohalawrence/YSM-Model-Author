@@ -1,9 +1,9 @@
-# A_ZZZ_星见雅
+# ZZZ_星见雅_Hoshimi-Miyabi_LA
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Zenless-Zone-Zero #绝区零 #ZZZ
 
 </details>
 

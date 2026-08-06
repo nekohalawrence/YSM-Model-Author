@@ -1,4 +1,4 @@
-# BA_笑面教授-jiaoshou
+# BA_笑面教授_Niyaniya
 
 <details>
 <summary>模型信息</summary>

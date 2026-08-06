@@ -1,4 +1,4 @@
-# BA_空崎日奈
+# BA_空崎日奈_Sorasaki-Hina
 
 <details>
 <summary>模型信息</summary>

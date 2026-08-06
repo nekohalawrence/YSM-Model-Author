@@ -1,9 +1,9 @@
-# A_BA_小绿-冬装
+# BA_才羽绿-冬装_Saiba-Midori_LA
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Blue-Archive #碧蓝档案 #BA #蔚蓝档案
 
 </details>
 

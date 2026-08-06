@@ -1,4 +1,4 @@
-# BA_才羽绿-BA_midori
+# BA_才羽绿_Saiba-Midori
 
 <details>
 <summary>模型信息</summary>

@@ -1,4 +1,4 @@
-# BA_小涂真纪
+# BA_小涂真纪_Konuri-Maki
 
 <details>
 <summary>模型信息</summary>
@@ -11,6 +11,8 @@
 <summary>预览图</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](preview.png)
 
 ![preview01.png](preview01.png)
 

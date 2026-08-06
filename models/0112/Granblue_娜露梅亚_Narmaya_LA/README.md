@@ -1,9 +1,9 @@
-# A_娜露梅亚
+# Granblue_娜露梅亚_Narmaya_LA
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Granblue Fantasy: Relink #GBR #碧蓝幻想：RELINK #Granblue
 
 </details>
 
@@ -11,6 +11,8 @@
 <summary>预览图</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](preview.png)
 
 ![preview01.png](preview01.png)
 

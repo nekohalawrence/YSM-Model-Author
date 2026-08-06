@@ -1,4 +1,4 @@
-# HI3_帕朵菲莉丝-Pardofelis
+# HI3_帕朵菲莉丝_Pardofelis
 
 <details>
 <summary>模型信息</summary>

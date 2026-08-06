@@ -1,9 +1,9 @@
-# A_AL_天城-泳装
+# AL_天城-泳装_LA
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Azur-Lane #碧蓝航线 #AL
 
 </details>
 

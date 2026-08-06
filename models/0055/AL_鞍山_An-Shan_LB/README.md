@@ -1,9 +1,9 @@
-# B_AL_anshan
+# AL_鞍山_An-Shan_LB
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Azur-Lane #碧蓝航线 #AL
 
 </details>
 

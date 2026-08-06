@@ -1,4 +1,4 @@
-# BA_爱丽丝-太刀
+# BA_天童爱丽丝-太刀_Tendou-Arisu
 
 <details>
 <summary>模型信息</summary>

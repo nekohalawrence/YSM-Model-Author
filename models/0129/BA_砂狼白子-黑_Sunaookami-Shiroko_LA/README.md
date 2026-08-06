@@ -1,9 +1,9 @@
-# A_BA_砂狼白子-黑
+# BA_砂狼白子-黑_Sunaookami-Shiroko_LA
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Blue-Archive #碧蓝档案 #BA #蔚蓝档案
 
 </details>
 

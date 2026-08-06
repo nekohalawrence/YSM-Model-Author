@@ -1,4 +1,4 @@
-# A_黑天鹅
+# Unknown_黑天鹅_LA
 
 <details>
 <summary>模型信息</summary>
@@ -11,6 +11,8 @@
 <summary>预览图</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](preview.png)
 
 ![preview01.png](preview01.png)
 

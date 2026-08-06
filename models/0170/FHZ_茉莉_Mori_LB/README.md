@@ -1,9 +1,9 @@
-# Fox-hime-zero_茉莉-Mori
+# FHZ_茉莉_Mori_LB
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Fox Hime Zero #FHZ
 
 </details>
 

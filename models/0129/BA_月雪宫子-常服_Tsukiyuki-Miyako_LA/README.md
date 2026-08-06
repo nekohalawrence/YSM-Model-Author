@@ -1,9 +1,9 @@
-# A_BA_月雪宫子-常服
+# BA_月雪宫子-常服_Tsukiyuki-Miyako_LA
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Blue-Archive #碧蓝档案 #BA #蔚蓝档案
 
 </details>
 

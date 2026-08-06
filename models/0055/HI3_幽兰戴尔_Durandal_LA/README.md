@@ -1,9 +1,9 @@
-# A_HI3_幽兰戴尔
+# HI3_幽兰戴尔_Durandal_LA
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Honkai-Impact-3 #崩坏 3 #HI3
 
 </details>
 
@@ -11,6 +11,8 @@
 <summary>预览图</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](preview.png)
 
 ![preview01.png](preview01.png)
 

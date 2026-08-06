@@ -3,7 +3,7 @@
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#League of Legends #LOL #英雄联盟
 
 </details>
 

@@ -1,9 +1,9 @@
-# A_HI3_阿波尼亚
+# HI3_阿波尼亚_Aponia_LA
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Honkai-Impact-3 #崩坏 3 #HI3
 
 </details>
 
@@ -11,6 +11,8 @@
 <summary>预览图</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](preview.png)
 
 ![preview01.png](preview01.png)
 

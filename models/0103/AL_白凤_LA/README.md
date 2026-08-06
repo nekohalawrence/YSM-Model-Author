@@ -1,9 +1,9 @@
-# A_AL_白凤
+# AL_白凤_LA
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Azur-Lane #碧蓝航线 #AL
 
 </details>
 

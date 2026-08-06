@@ -1,9 +1,9 @@
-# B_BA_浦和花子
+# BA_浦和花子_Urawa-Hanako_LB
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Blue-Archive #碧蓝档案 #BA #蔚蓝档案
 
 </details>
 

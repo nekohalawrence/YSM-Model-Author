@@ -1,9 +1,9 @@
-# A_AL_列克星敦-II-Lexington-II
+# AL_列克星敦-II-Lexington-II_LA
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Azur-Lane #碧蓝航线 #AL
 
 </details>
 

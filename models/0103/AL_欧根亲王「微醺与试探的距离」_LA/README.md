@@ -1,9 +1,9 @@
-# A_AL_欧根亲王「微醺与试探的距离」
+# AL_欧根亲王「微醺与试探的距离」_LA
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Azur-Lane #碧蓝航线 #AL
 
 </details>
 

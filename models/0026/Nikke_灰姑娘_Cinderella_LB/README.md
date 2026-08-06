@@ -1,4 +1,4 @@
-# Nikke_灰姑娘-Cinderella
+# Nikke_灰姑娘_Cinderella_LB
 
 <details>
 <summary>模型信息</summary>
@@ -12,9 +12,13 @@
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
+![preview.png](preview.png)
+
 ![preview01.png](preview01.png)
 
 ![preview02.png](preview02.png)
+
+![preview03.png](preview03.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
 

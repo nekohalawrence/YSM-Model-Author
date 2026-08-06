@@ -1,4 +1,4 @@
-# BA_花岗柚子-yuzu
+# BA_花岗柚子_Hanaoka-Yuzu
 
 <details>
 <summary>模型信息</summary>

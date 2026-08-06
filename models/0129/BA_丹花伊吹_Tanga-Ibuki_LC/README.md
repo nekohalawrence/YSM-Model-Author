@@ -1,9 +1,9 @@
-# C_BA_丹花伊吹
+# BA_丹花伊吹_Tanga-Ibuki_LC
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Blue-Archive #碧蓝档案 #BA #蔚蓝档案
 
 </details>
 

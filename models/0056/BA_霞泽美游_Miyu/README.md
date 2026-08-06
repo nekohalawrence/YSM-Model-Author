@@ -1,4 +1,4 @@
-# BA_霞泽美游-Miyu
+# BA_霞泽美游_Miyu
 
 <details>
 <summary>模型信息</summary>

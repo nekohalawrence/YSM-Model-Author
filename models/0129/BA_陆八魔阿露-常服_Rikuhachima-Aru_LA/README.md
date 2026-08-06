@@ -1,9 +1,9 @@
-# A_BA_陆八魔阿露-常服
+# BA_陆八魔阿露-常服_Rikuhachima-Aru_LA
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Blue-Archive #碧蓝档案 #BA #蔚蓝档案
 
 </details>
 

@@ -1,9 +1,9 @@
-# B_BA_伊草遥香
+# BA_伊草遥香_Igusa Haruka_LB
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Blue-Archive #碧蓝档案 #BA #蔚蓝档案
 
 </details>
 

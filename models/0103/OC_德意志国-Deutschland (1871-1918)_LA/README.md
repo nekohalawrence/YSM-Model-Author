@@ -1,9 +1,9 @@
-# A_OC_德意志国-Deutschland (1871-1918)
+# OC_德意志国-Deutschland (1871-1918)_LA
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Original Character #原创角色 #OC
 
 </details>
 

@@ -1,9 +1,9 @@
-# A_AK_奇尔沙治
+# AL_奇尔沙治_Kearsarge_LA
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Azur-Lane #碧蓝航线 #AL
 
 </details>
 

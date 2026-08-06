@@ -1,4 +1,4 @@
-# A_minecraft_凋零娘-Wither
+# minecraft_凋零娘-Wither_LA
 
 <details>
 <summary>模型信息</summary>

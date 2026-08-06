@@ -1,9 +1,9 @@
-# A_WW_珂莱塔
+# WW_珂莱塔_LA
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Wuthering-Waves #鸣潮 #WuWa #WW
 
 </details>
 
