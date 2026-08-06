@@ -1,4 +1,4 @@
-# BA_砂狼白子
+# BA_砂狼白子_Sunaookami-Shiroko
 
 <details>
 <summary>模型信息</summary>

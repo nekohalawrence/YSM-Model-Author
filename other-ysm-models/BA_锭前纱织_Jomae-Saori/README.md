@@ -1,4 +1,4 @@
-# BA_锭前纱织-Saori
+# BA_锭前纱织_Jomae-Saori
 
 <details>
 <summary>模型信息</summary>

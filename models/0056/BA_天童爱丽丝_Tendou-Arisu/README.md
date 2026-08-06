@@ -1,4 +1,4 @@
-# BA_爱丽丝-Tendou-Arisu
+# BA_天童爱丽丝_Tendou-Arisu
 
 <details>
 <summary>模型信息</summary>

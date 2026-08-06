@@ -1,9 +1,9 @@
-# Unknown_天穹法尼雅-fania
+# MGC_天穹法尼雅_Fania
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Magical Girl Celesphonia #魔法少女セレスフォニア #魔法少女天穹法妮雅 #MGC
 
 </details>
 
@@ -11,6 +11,8 @@
 <summary>预览图</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](preview.png)
 
 ![preview01.png](preview01.png)
 

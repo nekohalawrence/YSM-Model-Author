@@ -1,4 +1,4 @@
-# BA_白洲梓-azusa
+# BA_白洲梓_Shirasu-Azusa
 
 <details>
 <summary>模型信息</summary>

@@ -1,9 +1,9 @@
-# B_BA_千世-泳装-chise_swimsuit
+# BA_和乐千世-泳装_Waraku-Chise-Swimsuit_LB
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Blue-Archive #碧蓝档案 #BA #蔚蓝档案
 
 </details>
 

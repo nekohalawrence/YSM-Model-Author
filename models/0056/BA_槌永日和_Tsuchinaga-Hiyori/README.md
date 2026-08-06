@@ -1,4 +1,4 @@
-# BA_槌永日和
+# BA_槌永日和_Tsuchinaga-Hiyori
 
 <details>
 <summary>模型信息</summary>

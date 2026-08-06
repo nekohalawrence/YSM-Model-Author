@@ -1,9 +1,9 @@
-# A_GI_甘雨-ganyu
+# GI_甘雨-Ganyu_LA
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Genshin Impact #原神 #Genshin #GI
 
 </details>
 

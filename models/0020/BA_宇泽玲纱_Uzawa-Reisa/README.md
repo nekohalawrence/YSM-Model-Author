@@ -1,4 +1,4 @@
-# BA_宇泽玲纱
+# BA_宇泽玲纱_Uzawa-Reisa
 
 <details>
 <summary>模型信息</summary>

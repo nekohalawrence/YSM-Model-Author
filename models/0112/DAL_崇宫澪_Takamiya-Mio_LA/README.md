@@ -1,9 +1,9 @@
-# A_崇宫澪
+# DAL_崇宫澪_Takamiya-Mio_LA
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Date A Live #DAL #デート・ア・ライブ #约会大作战
 
 </details>
 
@@ -12,9 +12,15 @@
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
+![preview.png](preview.png)
+
 ![preview01.png](preview01.png)
 
 ![preview02.png](preview02.png)
+
+![preview03.png](preview03.png)
+
+![preview04.png](preview04.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
 

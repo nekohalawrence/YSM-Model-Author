@@ -1,4 +1,4 @@
-# HI3_布洛妮娅
+# HI3_布洛妮娅_Bronya-Rand
 
 <details>
 <summary>模型信息</summary>

@@ -1,9 +1,9 @@
-# A_WW_千咲
+# WW_千咲_LA
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Wuthering-Waves #鸣潮 #WuWa #WW
 
 </details>
 

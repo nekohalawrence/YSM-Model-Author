@@ -1,4 +1,4 @@
-# BA_普拉娜
+# BA_普拉娜_Plana
 
 <details>
 <summary>模型信息</summary>

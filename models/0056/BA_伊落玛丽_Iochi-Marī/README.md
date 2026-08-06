@@ -1,4 +1,4 @@
-# BA_伊落玛丽-mari
+# BA_伊落玛丽_Iochi-Marī
 
 <details>
 <summary>模型信息</summary>

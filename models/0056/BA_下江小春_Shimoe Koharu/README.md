@@ -1,4 +1,4 @@
-# BA_下江小春
+# BA_下江小春_Shimoe Koharu
 
 <details>
 <summary>模型信息</summary>

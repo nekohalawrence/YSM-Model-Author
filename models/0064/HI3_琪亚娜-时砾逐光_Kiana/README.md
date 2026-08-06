@@ -1,4 +1,4 @@
-# HI3_琪亚娜-时砾逐光
+# HI3_琪亚娜-时砾逐光_Kiana
 
 <details>
 <summary>模型信息</summary>

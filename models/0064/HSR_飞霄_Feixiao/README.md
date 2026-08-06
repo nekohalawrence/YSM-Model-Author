@@ -1,9 +1,9 @@
-# 飞霄
+# HSR_飞霄_Feixiao
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Honkai-Star-Rail #HSR #崩坏：星穹铁道
 
 </details>
 

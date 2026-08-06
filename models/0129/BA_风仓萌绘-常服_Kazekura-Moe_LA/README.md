@@ -1,9 +1,9 @@
-# A_BA_风仓萌绘-常服
+# BA_风仓萌绘-常服_Kazekura-Moe_LA
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Blue-Archive #碧蓝档案 #BA #蔚蓝档案
 
 </details>
 

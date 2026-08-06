@@ -1,9 +1,9 @@
-# B_BA_普拉娜
+# BA_普拉娜_Plana_LB
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Blue-Archive #碧蓝档案 #BA #蔚蓝档案
 
 </details>
 

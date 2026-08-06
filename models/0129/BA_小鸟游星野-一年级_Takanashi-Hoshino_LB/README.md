@@ -1,9 +1,9 @@
-# B_BA_小鸟游星野-一年级
+# BA_小鸟游星野-一年级_Takanashi-Hoshino_LB
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Blue-Archive #碧蓝档案 #BA #蔚蓝档案
 
 </details>
 

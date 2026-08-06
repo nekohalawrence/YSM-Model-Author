@@ -1,4 +1,4 @@
-# BA_秤亚津子-atsuko
+# BA_秤亚津子_Hakari-Atsuko
 
 <details>
 <summary>模型信息</summary>

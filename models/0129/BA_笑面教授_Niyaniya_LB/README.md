@@ -1,9 +1,9 @@
-# B_BA_笑面教授
+# BA_笑面教授_Niyaniya_LB
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Blue-Archive #碧蓝档案 #BA #蔚蓝档案
 
 </details>
 

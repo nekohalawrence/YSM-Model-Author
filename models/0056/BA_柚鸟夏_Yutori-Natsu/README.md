@@ -1,4 +1,4 @@
-# BA_柚鸟夏-summersensei
+# BA_柚鸟夏_Yutori-Natsu
 
 <details>
 <summary>模型信息</summary>

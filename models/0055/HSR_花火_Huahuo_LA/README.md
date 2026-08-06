@@ -1,9 +1,9 @@
-# A_HSR_花火
+# HSR_花火_Huahuo_LA
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Honkai-Star-Rail #HSR #崩坏：星穹铁道
 
 </details>
 
@@ -11,6 +11,8 @@
 <summary>预览图</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](preview.png)
 
 ![preview01.png](preview01.png)
 

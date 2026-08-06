@@ -1,4 +1,4 @@
-# BA_戒野美咲
+# BA_戒野美咲_Imashino-Misaki
 
 <details>
 <summary>模型信息</summary>

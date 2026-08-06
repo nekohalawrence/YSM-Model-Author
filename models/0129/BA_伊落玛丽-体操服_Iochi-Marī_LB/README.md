@@ -1,9 +1,9 @@
-# B_BA_伊落玛丽-体操服
+# BA_伊落玛丽-体操服_Iochi-Marī_LB
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Blue-Archive #碧蓝档案 #BA #蔚蓝档案
 
 </details>
 

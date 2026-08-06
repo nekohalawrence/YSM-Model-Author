@@ -1,4 +1,4 @@
-# BA_生盐诺亚-noa05
+# BA_生盐诺亚_Ushio-Noa
 
 <details>
 <summary>模型信息</summary>

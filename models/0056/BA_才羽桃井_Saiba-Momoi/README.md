@@ -1,4 +1,4 @@
-# BA_才羽桃-BA_momoi
+# BA_才羽桃井_Saiba-Momoi
 
 <details>
 <summary>模型信息</summary>

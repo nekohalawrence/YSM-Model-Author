@@ -1,9 +1,9 @@
-# A_AL_TAC-50
+# AL_TAC-50_LA
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Azur-Lane #碧蓝航线 #AL
 
 </details>
 

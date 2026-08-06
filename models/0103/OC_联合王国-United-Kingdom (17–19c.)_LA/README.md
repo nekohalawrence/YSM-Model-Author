@@ -1,9 +1,9 @@
-# A_OC_联合王国-United-Kingdom (17–19c.)
+# OC_联合王国-United-Kingdom (17–19c.)_LA
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Original Character #原创角色 #OC
 
 </details>
 

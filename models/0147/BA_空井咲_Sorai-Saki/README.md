@@ -1,4 +1,4 @@
-# BA_空井咲希-r2
+# BA_空井咲_Sorai-Saki
 
 <details>
 <summary>模型信息</summary>

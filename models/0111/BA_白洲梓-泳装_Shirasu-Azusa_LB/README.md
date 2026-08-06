@@ -1,9 +1,9 @@
-# B_BA_白洲梓-泳装
+# BA_白洲梓-泳装_Shirasu-Azusa_LB
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Blue-Archive #碧蓝档案 #BA #蔚蓝档案
 
 </details>
 

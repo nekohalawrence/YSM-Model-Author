@@ -1,9 +1,9 @@
-# A_AL_武藏
+# AL_武藏_Musashi_LA
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Azur-Lane #碧蓝航线 #AL
 
 </details>
 

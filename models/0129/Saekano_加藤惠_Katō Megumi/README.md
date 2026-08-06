@@ -1,4 +1,4 @@
-# SAEKANO_加藤惠
+# Saekano_加藤惠_Katō Megumi
 
 <details>
 <summary>模型信息</summary>

@@ -1,9 +1,9 @@
-# A_MHO_八奈见杏菜
+# MHO_八奈见杏菜_Yanami-Anna_LA
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Make Heroine ga Oosugiru! #MHO #負けヒロインが多すぎる！
 
 </details>
 

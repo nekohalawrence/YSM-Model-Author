@@ -1,9 +1,9 @@
-# A_纸板-兔女郎
+# OC_纸板-兔女郎_LA
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Original Character #原创角色 #OC
 
 </details>
 

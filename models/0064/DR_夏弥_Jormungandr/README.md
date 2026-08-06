@@ -1,9 +1,9 @@
-# 卡塞尔学院-夏弥-DragonRaja_Xia-Mi
+# DR_夏弥_Jormungandr
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Dragon Raja #DR #龙族
 
 </details>
 
