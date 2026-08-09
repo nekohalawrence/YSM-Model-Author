@@ -1,14 +1,22 @@
 # Unknown_阿鲁比斯娘_Albs-Girl
 
 <details>
-<summary>模型信息</summary>
+<summary>Model Details</summary>
 
-- 来源：#Unknown
+- **Franchise / Category**: #Unknown
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0015 - #寒叔hs | #烈鸟比百 | #Frosty_Uncle](../)
+- **Author ID**: `0015`
 
 </details>
 
 <details open>
-<summary>预览图</summary>
+<summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 

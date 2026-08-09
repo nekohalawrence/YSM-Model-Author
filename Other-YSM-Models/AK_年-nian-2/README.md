@@ -1,14 +1,14 @@
 # AK_年-nian-2
 
 <details>
-<summary>模型信息</summary>
+<summary>Model Details</summary>
 
-- 来源：#Arknights #明日方舟 #AK
+- **Franchise / Category**: #Unknown
 
 </details>
 
 <details open>
-<summary>预览图</summary>
+<summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 

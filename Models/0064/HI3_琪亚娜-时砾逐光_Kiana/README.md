@@ -1,14 +1,22 @@
 # HI3_琪亚娜-时砾逐光_Kiana
 
 <details>
-<summary>模型信息</summary>
+<summary>Model Details</summary>
 
-- 来源：#Honkai-Impact-3 #崩坏 3 #HI3
+- **Franchise / Category**: #Unknown
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0064 - #纸盒ALifang | #Cc-纸盒 | #Cc纸盒](../)
+- **Author ID**: `0064`
 
 </details>
 
 <details open>
-<summary>预览图</summary>
+<summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 

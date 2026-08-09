@@ -1,14 +1,22 @@
 # HI3_ 布洛妮娅-绀海之约19C-bronya_zaychik
 
 <details>
-<summary>模型信息</summary>
+<summary>Model Details</summary>
 
-- 来源：#Honkai-Impact-3 #崩坏 3 #HI3
+- **Franchise / Category**: #Unknown
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0050 - #荨蒿栗里 | #荨蒿之栗里 | #栗里](../)
+- **Author ID**: `0050`
 
 </details>
 
 <details open>
-<summary>预览图</summary>
+<summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 

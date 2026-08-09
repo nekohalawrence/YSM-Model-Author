@@ -1,14 +1,22 @@
-# B_AK_佩佩-peipei
+# AK_佩佩_Pepe_LB
 
 <details>
-<summary>模型信息</summary>
+<summary>Model Details</summary>
 
-- 来源：#Unknown
+- **Franchise / Category**: #Unknown
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0062 - #云曦-Yunxxi_ugo | #云曦](../)
+- **Author ID**: `0062`
 
 </details>
 
 <details open>
-<summary>预览图</summary>
+<summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 

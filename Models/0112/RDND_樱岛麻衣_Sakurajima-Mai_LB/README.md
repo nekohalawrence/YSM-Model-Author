@@ -1,14 +1,22 @@
 # RDND_樱岛麻衣_Sakurajima-Mai_LB
 
 <details>
-<summary>模型信息</summary>
+<summary>Model Details</summary>
 
-- 来源：#Rascal Does Not Dream #青春ブタ野郎はバニーガール先輩の夢を見ない #青春猪头少年系列 #青春ブタ野郎シリーズ #RDND
+- **Franchise / Category**: #Unknown
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0112 - #大莫家 | #MCZ工作室 | #mcz莫莫| #犟猫](../)
+- **Author ID**: `0112`
 
 </details>
 
 <details open>
-<summary>预览图</summary>
+<summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 

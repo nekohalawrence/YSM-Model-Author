@@ -1,14 +1,22 @@
 # AveMujica_八幡海玲_LB
 
 <details>
-<summary>模型信息</summary>
+<summary>Model Details</summary>
 
-- 来源：#BanG Dream! Ave Mujica #颂乐人偶 #AveMujica
+- **Franchise / Category**: #Unknown
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0001 - #02Bunny | #蓝玫瑰](../)
+- **Author ID**: `0001`
 
 </details>
 
 <details open>
-<summary>预览图</summary>
+<summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 

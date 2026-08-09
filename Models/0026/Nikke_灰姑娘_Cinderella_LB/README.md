@@ -1,14 +1,22 @@
 # Nikke_灰姑娘_Cinderella_LB
 
 <details>
-<summary>模型信息</summary>
+<summary>Model Details</summary>
 
-- 来源：#Goddess of Victory: Nikke #Nikke #胜利女神：妮姬
+- **Franchise / Category**: #Unknown
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0026 - #雒仁](../)
+- **Author ID**: `0026`
 
 </details>
 
 <details open>
-<summary>预览图</summary>
+<summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 

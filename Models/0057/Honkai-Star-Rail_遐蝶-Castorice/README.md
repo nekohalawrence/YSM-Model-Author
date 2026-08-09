@@ -1,14 +1,22 @@
 # Honkai-Star-Rail_遐蝶-Castorice
 
 <details>
-<summary>模型信息</summary>
+<summary>Model Details</summary>
 
-- 来源：#Honkai-Star-Rail #HSR #崩坏：星穹铁道
+- **Franchise / Category**: #Honkai-Star-Rail #HSR | 崩坏：星穹铁道
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0057 - #忆尘yc27 | #忆尘27](../)
+- **Author ID**: `0057`
 
 </details>
 
 <details open>
-<summary>预览图</summary>
+<summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 

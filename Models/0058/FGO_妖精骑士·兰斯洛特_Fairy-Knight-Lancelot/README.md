@@ -1,16 +1,26 @@
-# FGO_妖精骑士·兰斯洛特
+# FGO_妖精骑士·兰斯洛特_Fairy-Knight-Lancelot
 
 <details>
-<summary>模型信息</summary>
+<summary>Model Details</summary>
 
-- 来源：#Fate-Grand-Order #FGO #命运 - 冠位指定
+- **Franchise / Category**: #Unknown
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0058 - #艺方像素 | #艺方堂 | #尻 | #艺方坊 | #艺方阁](../)
+- **Author ID**: `0058`
 
 </details>
 
 <details open>
-<summary>预览图</summary>
+<summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](preview.png)
 
 ![preview01.png](preview01.png)
 
@@ -19,6 +29,10 @@
 ![preview03.png](preview03.png)
 
 ![preview04.png](preview04.png)
+
+![preview05.png](preview05.png)
+
+![preview06.png](preview06.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
 

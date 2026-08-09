@@ -1,14 +1,22 @@
 # GF_M16A1
 
 <details>
-<summary>模型信息</summary>
+<summary>Model Details</summary>
 
-- 来源：#Girls' Frontline #少女前线 #GFWhite Eternity #GF
+- **Franchise / Category**: #White Eternity #GF
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0051 - #动员鼬](../)
+- **Author ID**: `0051`
 
 </details>
 
 <details open>
-<summary>预览图</summary>
+<summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 

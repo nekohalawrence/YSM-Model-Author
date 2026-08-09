@@ -1,14 +1,22 @@
 # KonoSuba_惠惠_Megumin_LA
 
 <details>
-<summary>模型信息</summary>
+<summary>Model Details</summary>
 
-- 来源：#KonoSuba: God's Blessing on This Wonderful World! #KON #KonoSuba #この素晴らしい世界に祝福を！ #为美好的世界献上祝福！
+- **Franchise / Category**: #KonoSuba: God's Blessing on This Wonderful World! #KonoSuba #KON | 为美好的世界献上祝福！ | この素晴らしい世界に祝福を！
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0112 - #大莫家 | #MCZ工作室 | #mcz莫莫| #犟猫](../)
+- **Author ID**: `0112`
 
 </details>
 
 <details open>
-<summary>预览图</summary>
+<summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 

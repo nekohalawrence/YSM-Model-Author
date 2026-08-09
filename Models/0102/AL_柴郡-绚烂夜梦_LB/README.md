@@ -1,14 +1,22 @@
-# B_AL_柴郡-绚烂夜梦
+# AL_柴郡-绚烂夜梦_LB
 
 <details>
-<summary>模型信息</summary>
+<summary>Model Details</summary>
 
-- 来源：#Unknown
+- **Franchise / Category**: #Unknown
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0102 - #Dreamer #普通的木屐](../)
+- **Author ID**: `0102`
 
 </details>
 
 <details open>
-<summary>预览图</summary>
+<summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 

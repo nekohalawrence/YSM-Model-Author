@@ -1,14 +1,22 @@
 # GF_丹德莱_Dandelion_LB
 
 <details>
-<summary>模型信息</summary>
+<summary>Model Details</summary>
 
-- 来源：#Girls' Frontline #少女前线 #GFWhite Eternity #GF
+- **Franchise / Category**: #White Eternity #GF
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0093 - #苏依凛](../)
+- **Author ID**: `0093`
 
 </details>
 
 <details open>
-<summary>预览图</summary>
+<summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 

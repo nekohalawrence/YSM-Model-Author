@@ -1,14 +1,22 @@
 # MGC_天穹法尼雅_Fania
 
 <details>
-<summary>模型信息</summary>
+<summary>Model Details</summary>
 
-- 来源：#Magical Girl Celesphonia #魔法少女セレスフォニア #魔法少女天穹法妮雅 #MGC
+- **Franchise / Category**: #Unknown
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0055 - #伊蕾娜家的咸鱼](../)
+- **Author ID**: `0055`
 
 </details>
 
 <details open>
-<summary>预览图</summary>
+<summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 

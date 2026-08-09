@@ -1,14 +1,22 @@
 # ASE_yuki
 
 <details>
-<summary>模型信息</summary>
+<summary>Model Details</summary>
 
-- 来源：#White Eternity #AstralAir no Shiroki Eien #アストラエアの白き永遠 #星辰恋曲的白色永恒 #ASE
+- **Franchise / Category**: #Unknown
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0007 - #啊这-_-0](../)
+- **Author ID**: `0007`
 
 </details>
 
 <details open>
-<summary>预览图</summary>
+<summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 

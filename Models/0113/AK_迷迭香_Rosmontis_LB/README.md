@@ -1,14 +1,22 @@
 # AK_迷迭香_Rosmontis_LB
 
 <details>
-<summary>模型信息</summary>
+<summary>Model Details</summary>
 
-- 来源：#Arknights #明日方舟 #AK
+- **Franchise / Category**: #Unknown
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0113 - #秋风 | #每天都睡不醒的秋风 | #睡不死死不睡的秋风](../)
+- **Author ID**: `0113`
 
 </details>
 
 <details open>
-<summary>预览图</summary>
+<summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 

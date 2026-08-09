@@ -1,14 +1,14 @@
 # ONIMAI_绪山真寻-Mahiro
 
 <details>
-<summary>模型信息</summary>
+<summary>Model Details</summary>
 
-- 来源：#Onii-chan wa Oshimai! #お兄ちゃんはおしまい！ #ONIMAI #别当欧尼酱了！
+- **Franchise / Category**: #Unknown
 
 </details>
 
 <details open>
-<summary>预览图</summary>
+<summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 

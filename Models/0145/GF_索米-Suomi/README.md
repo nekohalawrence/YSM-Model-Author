@@ -1,14 +1,22 @@
 # GF_索米-Suomi
 
 <details>
-<summary>模型信息</summary>
+<summary>Model Details</summary>
 
-- 来源：#Girls' Frontline #少女前线 #GFWhite Eternity #GF
+- **Franchise / Category**: #White Eternity #GF
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0145 - #咕咕鸡 | #咕咕叫的小菜鸡](../)
+- **Author ID**: `0145`
 
 </details>
 
 <details open>
-<summary>预览图</summary>
+<summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 

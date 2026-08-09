@@ -1,14 +1,22 @@
 # ZZZ_艾莲·乔_Ellen-Joe_LB
 
 <details>
-<summary>模型信息</summary>
+<summary>Model Details</summary>
 
-- 来源：#Zenless-Zone-Zero #绝区零 #ZZZ
+- **Franchise / Category**: #Unknown
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0016 - #祸御神](../)
+- **Author ID**: `0016`
 
 </details>
 
 <details open>
-<summary>预览图</summary>
+<summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
