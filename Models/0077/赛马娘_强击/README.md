@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 赛马娘_强击
 
 <details>
@@ -26,55 +25,3 @@
 <!-- GENERATED MODEL PREVIEW README END -->
 
 </details>
-=======
-# 赛马娘_强击
-
-<details>
-<summary>Model Details</summary>
-
-- **Franchise / Category**: #Umamusume: Pretty Derby #UmaMusume #UM | 闪耀！优俊少女 #赛马娘
-
-</details>
-
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0077 - #旭门只玩驹 | #Zeonjin-旭门只玩驹](../)
-- **Author ID**: `0077`
-
-</details>
-
-<details open>
-<summary>Preview Images</summary>
-
-
-</details>
-
-<details>
-<summary>Model Details</summary>
-
-- **Franchise / Category**: #Unknown
-
-</details>
-
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0077 - #旭门只玩驹 | #Zeonjin-旭门只玩驹](../)
-- **Author ID**: `0077`
-
-</details>
-
-## 预览图
-
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview.png](preview.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
-
-</details>
->>>>>>> 005e414481d902bbc24cf0981342dd0e61cfb719

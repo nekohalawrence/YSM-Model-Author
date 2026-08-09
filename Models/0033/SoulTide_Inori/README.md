@@ -18,29 +18,6 @@
 <details open>
 <summary>Preview Images</summary>
 
-
-</details>
-
-<details>
-<summary>Model Details</summary>
-
-- **Franchise / Category**: #Unknown
-
-</details>
-
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0033 - #胖狐狸工作室 | #红色幽默](../)
-- **Author ID**: `0033`
-
-</details>
-
-## 预览图
-
-<details open>
-<summary>Preview Images</summary>
-
 <!-- GENERATED MODEL PREVIEW README START -->
 
 ![preview01.png](preview01.png)

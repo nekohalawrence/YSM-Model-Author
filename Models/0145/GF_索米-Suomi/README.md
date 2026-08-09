@@ -18,29 +18,6 @@
 <details open>
 <summary>Preview Images</summary>
 
-
-</details>
-
-<details>
-<summary>Model Details</summary>
-
-- **Franchise / Category**: #White Eternity #GF
-
-</details>
-
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0145 - #咕咕鸡 | #咕咕叫的小菜鸡](../)
-- **Author ID**: `0145`
-
-</details>
-
-## 预览图
-
-<details open>
-<summary>Preview Images</summary>
-
 <!-- GENERATED MODEL PREVIEW README START -->
 
 ![preview01.png](preview01.png)
