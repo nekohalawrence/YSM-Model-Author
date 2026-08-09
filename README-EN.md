@@ -66,14 +66,14 @@
 | 0053 | [#羊毛毛毛毛_Official喵](.../../Models/0053) | 1 |
 | 0054 | [#一只霜狐Owo](.../../Models/0054) | 4 |
 | 0055 | [#伊蕾娜家的咸鱼](.../../Models/0055) | 12 |
-| 0056 | [None](.../../Models/0056) | 0 |
-| 0057 | [None](.../../Models/0057) | 0 |
+| 0056 | [#伊洛是哥斯拉嘛 #伊洛是哥斯拉吗\|  #哥斯拉 \| #落阳不养羊 \| #黎家诚 \| #BradKidd](.../../Models/0056) | 75 |
+| 0057 | [#忆尘yc27 \| #忆尘27](.../../Models/0057) | 3 |
 | 0058 | [#艺方像素 \| #艺方堂 \| #尻 \| #艺方坊 \| #艺方阁](.../../Models/0058) | 60 |
 | 0059 | [#瀛猫](.../../Models/0059) | 12 |
 | 0060 | [#油七桶](.../../Models/0060) | 4 |
 | 0061 | [#狱际星芒](.../../Models/0061) | 12 |
 | 0062 | [#云曦-Yunxxi_ugo \| #云曦](.../../Models/0062) | 7 |
-| 0063 | [None](.../../Models/0063) | 0 |
+| 0063 | [#再来几斤小莫莫](.../../Models/0063) | 1 |
 | 0064 | [#纸盒ALifang \| #Cc-纸盒 \| #Cc纸盒](.../../Models/0064) | 27 |
 | 0065 | [#烛火的次元宇宙](.../../Models/0065) | 19 |
 | 0066 | [#A_su杏仁](.../../Models/0066) | 3 |
@@ -83,7 +83,7 @@
 | 0070 | [#Dashcode \| #ASHES356](.../../Models/0070) | 2 |
 | 0071 | [#Dr咕咚](.../../Models/0071) | 1 |
 | 0072 | [#Eiven-ly \| #Eiven](.../../Models/0072) | 1 |
-| 0073 | [None](.../../Models/0073) | 0 |
+| 0073 | [#MicroCraft_ \| #MicroCraft](.../../Models/0073) | 3 |
 | 0074 | [#Killot \| #Killot945](.../../Models/0074) | 19 |
 | 0075 | [#Wadanohara_Rika](.../../Models/0075) | 1 |
 | 0076 | [#White_clams白蛤蜊 \| #白蛤蜊 \| #White_Clams白蛤蜊](.../../Models/0076) | 15 |
@@ -219,7 +219,7 @@ Personal Rating: LA, LB, LC, LD
 
 ## Games
 
-- ‑as the Night's, Reincarnation‑, Sakura Moyu | Sakura Moyu | さくら、もゆ
+- ‑as the Night's, Reincarnation‑, Sakura Moyu | Sakura Moyu | 樱花、萌放 | さくら、もゆ
 - Arknights, AK | Arknights
 - Arknights-Endfield, AKE | Arknights: Endfield
 - Ash-Arms | Ash Arms
@@ -235,7 +235,7 @@ Personal Rating: LA, LB, LC, LD
 - Command & Conquer Generals: Zero Hour, Zero Hour, ZH | Command & Conquer: Zero Hour
 - Delta Force, Delta-Force | Delta Force
 - Dead or Alive, DOA | Dead or Alive
-- Dohna Dohna: Let's Do Bad Things Together, DOHNA | Dohna Dohna: Let's Do Bad Things Together | ドーナドーナ いっしょにわるいことしよう
+- Dohna Dohna: Let's Do Bad Things Together, DOHNA | Dohna Dohna
 - Doki-Doki-Literature-Club!, DDLC | Doki Doki Literature Club!
 - Fate-Grand-Order, FGO | Fate/Grand Order
 - Food Girls | Food Girls
@@ -255,10 +255,10 @@ Personal Rating: LA, LB, LC, LD
 - Limbus Company, LC | Limbus Company
 - Magical Girl Celesphonia, MGC | Magical Girl Celesphonia | 魔法少女セレスフォニア
 - Magical Girl Witch Trial, MGWT | Magical Girl Witch Trial | 魔法少女ノ魔女裁判
-- Magia Record: Puella Magi Madoka Magica Side Story, Magia-Record | Magia Record: Puella Magi Madoka Magica Side Story | マギアレコード 魔法少女まどか☆マギカ外伝
+- Magia Record: Puella Magi Madoka Magica Side Story, Magia-Record | Magia Record | マギアレコード 魔法少女まどか☆マギカ外伝
 - MiSide | MiSide
 - NARUTO, Naruto Shippuden, NAR | Naruto: Shippuden
-- NEKOPARA | NEKOPARA
+- NEKOPARA | NEKOPARA | ネコぱら
 - Neon-Genesis-Evangelion, NGE, EVA | Neon Genesis Evangelion
 - Neverness to Everness, NTE | Neverness to Everness
 - Senren＊Banka, SENREN | Senren＊Banka | せんれん＊ばんか
@@ -269,7 +269,7 @@ Personal Rating: LA, LB, LC, LD
 - Tom Clancy's Rainbow Six Siege, R6S | Tom Clancy's Rainbow Six Siege
 - Twinkle Star Knights, TSK | Twinkle Star Knights | ティンクルスターナイツ
 - Umamusume: Pretty Derby, UmaMusume, UM | Umamusume: Pretty Derby
-- White Eternity, AstralAir no Shiroki Eien, ASE | AstralAir no Shiroki Eien | アストラエアの白き永遠
+- White Eternity, AstralAir no Shiroki Eien, ASE | White Eternity | アストラエアの白き永遠
 - Wish upon a shooting star, Hoshizora no Memoria, HNM | Hoshizora no Memoria | 星空のメモリア
 - Wuthering-Waves, WuWa, WW | Wuthering Waves
 - Yog-Sothoth's Yard, YogYard | Yog-Sothoth's Yard
@@ -289,7 +289,7 @@ Personal Rating: LA, LB, LC, LD
 - Girls Band Cry, GBC | Girls Band Cry
 - How Not to Summon a Demon Lord, HNTSADL | How Not to Summon a Demon Lord | 異世界魔王と召喚少女の奴隷魔術
 - Jujutsu Kaisen, JJK | Jujutsu Kaisen | 呪術廻戦
-- KonoSuba: God's Blessing on This Wonderful World!, KonoSuba, KON | KonoSuba: God's Blessing on This Wonderful World! | この素晴らしい世界に祝福を！
+- KonoSuba: God's Blessing on This Wonderful World!, KonoSuba, KON | KonoSuba | この素晴らしい世界に祝福を！
 - Love, Chunibyo & Other Delusions, LCOD | Love, Chunibyo & Other Delusions | 中二病でも恋がしたい！
 - LoveMe | Love Me | らぶみー♡
 - Majo no Tabitabim, MNT | Wandering Witch: The Journey of Elaina | 魔女の旅々, まじょのたびたび
@@ -317,8 +317,8 @@ Personal Rating: LA, LB, LC, LD
 
 - GuLuco
 - HarukaC
-- Mochiyama Kingyo | Mochiyama Kingyo
-- naga u, Naga-u | naga u
+- Mochiyama Kingyo | もち山金魚
+- naga u, Naga-u | ながユー
 
 ## Other
 
@@ -328,7 +328,7 @@ Personal Rating: LA, LB, LC, LD
 - the Three Kingdoms period, TTKP
 - Touhou-Project, TH, TOUHOU | Touhou Project
 - Utauloid, UTAU | UTAU
-- Virtual YouTuber, VTuber | Virtual YouTuber | バーチャルユーチューバー
+- Virtual YouTuber, VTuber | VTuber | バーチャルユーチューバー
 - Virtual Streamer, VStreamer
 - VOCALOID, VOC | VOCALOID
 
@@ -362,15 +362,15 @@ Personal Rating: LA, LB, LC, LD
 - [YesSteveModel](https://github.com/YesSteveModel/YesSteveModel)
 	- Description: Open-sourced
 - [OpenYSM](https://github.com/OpenYSM/OpenYSM)
-	- Description: OpenYSM is a mod based on Yes Steve Model that modifies the vanilla player model. It uses the GeckoLib library at its core and adopts Minecraft Bedrock Edition model and animation files, allowing players to customize their player model and animations as they wish.
+	- Description: OpenYSM is a mod based on Yes Steve Model that modifies the vanilla player model. It uses the GeckoLib library at its core and adopts Minecraft Bedrock Edition model and animation files, allowing players to customize their player models and animations as they wish.
 - [ModernYSM](https://github.com/OpenYSMDev/ModernYSM)
-    - Description: OpenYSM is a mod based on Yes Steve Model that modifies the vanilla player model. It uses the GeckoLib library at its core and adopts Minecraft Bedrock Edition model and animation files, allowing players to customize their player model and animations as they wish.
+    - Description: OpenYSM is a mod based on Yes Steve Model that modifies the vanilla player model. It uses the GeckoLib library at its core and adopts Minecraft Bedrock Edition model and animation files, allowing players to customize their player models and animations as they wish.
 
 </details>
 
 ## Project Structure
 
-> Below is an overview of the main directories in this repository. This may be adjusted as content evolves.
+> Below is a description of the main directories in this repository. This may be adjusted as content evolves.
 
 ```text
 YSM-Model-Author/
@@ -408,7 +408,7 @@ YSM-Model-Author/
 │   ├── ..../
 │   └── 9999/
 │
-├── First-Person-Mods/             # First-person mod configurations
+├── First-Person-Mods/             # First-person related mod configurations
 │
 ├── TACZ-Gun-Packs/                # TACZ gun pack resources (*.zip)
 │
@@ -419,15 +419,15 @@ YSM-Model-Author/
 ## Notes
 
 - Usage notes
-	- The LA\B\C suffix is a personal quality rating (craftsmanship/completeness) and carries no other meaning.
+	- The LA\B\C suffixes are personal preference ratings (based on build quality/completeness) and carry no other meaning.
 	- Archives contain project source files, while `.ysm` files are the encrypted model files.
-	- Some models in this repository are **18+**. Please use them at your discretion. I have not marked all **r18** models with `nsfw`.
+	- Some models in this repository are **18+**. Please use them at your discretion. I have not marked all **R18** models with the `nsfw` tag.
 	- Please do not **sell** models from this repository in any form. You are solely responsible for any consequences.
 - Model notes
-	- I discovered that models viewed through Obsidian (a note-taking app) are all corrupted!!!!!!!!
+	- I discovered that models viewed through Obsidian (a note-taking app) are all corrupted!!!!!!!
 	- If you find any unusable models, please let me know via an issue. Thank you!
 - Other notes
-	- I'm not very familiar with GitHub. If you'd like to modify anything, you can only notify me via an Issue, or you can clone the repository and make changes yourself.
+	- I'm not very familiar with GitHub. If you want to modify anything, you can only notify me via Issue, or you can clone the repository and make changes yourself.
 
 ## Acknowledgements
 
@@ -450,7 +450,7 @@ YSM-Model-Author/
 
 # 2026-07-30
 
-- format: Noticed that some game or anime names are **too long**, making it hard to see the **character** names. Henceforth, game/anime names will be changed to **abbreviations**
+- format: Noticed that some game or anime names are **too long**, making it hard to see **character** names. Henceforth, game/anime names will be changed to **abbreviations**
 
 # 2026-07-27
 
@@ -458,17 +458,17 @@ YSM-Model-Author/
 
 # 2026-07-25
 
-- ps: There are too many obscure games out there
+- ps: There are too many weird games out there
 - ps: Note that some models without preview images are unusable. I saved them while browsing authors, which modified some characters and corrupted the original files, rendering those models unusable.
-- ps: Major mistake discovered — I found that most models viewed through Obsidian are corrupted!!!!!!!! I've only now realized the cause; the history on git hasn't been deleted.
+- ps: Major mistake discovered — I found that most models viewed through Obsidian are corrupted!!!!!!!! I only now realized the cause; the history on git hasn't been deleted.
 
 # 2026-07-23
 
-- ps: Thanks to [LuckyPotion](https://space.bilibili.com/1739798750) for publicly sharing a collection of paid models from a certain team. I may gradually update preview images for various models in the future.
+- ps: [LuckyPotion](https://space.bilibili.com/1739798750) — thanks to this person for publicly sharing a collection of paid models from a certain team. I may gradually update preview images for various models in the future.
 - ps: Quark Cloud: https://pan.quark.cn/s/77a16d314a11 Extraction code: ajVD (expired)
 - ps: Baidu Cloud: https://pan.baidu.com/s/1FFSrd_YG-1Eat_DQD7hziw Extraction code: xiao
-- ps: Models are temporarily not added to the repository. Download them yourself if needed.
-- chore: Planning to add an action to generate a `README.md` for each model to make preview images easier to view. If you have a better approach, please let me know via an issue (I don't know how to code — AI wrote everything for me 😭)
+- ps: Models are temporarily not being added to the repository. Download them yourself if needed.
+- chore: Planning to add an action to generate a `README.md` for each model to make preview images easier to view. If you have a good approach, please let me know via issue (I don't know how to code — AI wrote everything for me 😭)
 - chore: For naming consistency, all game names in folders will be changed to English (except for games exclusive to China). A translation reference list will be provided later.
 
 # 2026-07-19
@@ -479,27 +479,27 @@ YSM-Model-Author/
 
 # 2026-07-18
 
-- ps: Some creators belong to the same team. I'm not sure if there's a good way to categorize them. If you have suggestions, feel free to share them.
+- ps: Some creators belong to the same team. I'm not sure if there's a good way to categorize them. If you have suggestions, feel free to share.
 - chore: Reorganized a large number of models
-- chore: The reorganized models include new models and re-categorized models from the [existing repository](https://github.com/Elaina69/Yes-Steve-Model-Repo)
+- chore: The reorganized models include new models and re-categorized [existing models](https://github.com/Elaina69/Yes-Steve-Model-Repo)
 
 # 2026-06-29
 
-- chore: Merged some team models — only the author who created a model will release it, while other authors are listed as contributors for their respective parts.
+- chore: Merged some team models — only the author who created a model will release it, while other authors are listed as sub-contributors for their respective parts.
 - ps: After much organizing, I feel this categorization approach still has issues — it's hard to find the model you want. Essentially, this is a collection of free models; many paid models are not included. When categorizing by author, only a few authors consistently produce high-quality free models. Categorizing by the model's subject might work better.
 
 # 2026-05-21
 
-- ps: Most models won't work on newer versions. It's recommended to only use newer encrypted models (which can be decrypted with ysmpaser; older models cannot be decrypted), or models that come with source files.
+- ps: Most models won't work on newer versions. It's recommended to only use newer encrypted models (decryptable with ysmpaser; older models cannot be decrypted), or models with source files provided.
 
 # 2026-05-11
 
 - chore: Removed the pages site. I'll revisit it once I learn a suitable way to present content.
-- chore: Plan to update metadata for all authors by the end of this year. ~If time permits, I'll add preview images for every model.~
+- chore: Plan to update metadata for all authors by the end of this year. ~If time permits, I will add preview images for every model.~
 
 # 2026-05-03
 
 - ps: Decided to only update higher-quality models and stop collecting others.
-- chore: Updated the quality mods branch to keep only the latest mods
+- chore: Updated the quality mod branch, keeping only the latest mod
 
 </details>

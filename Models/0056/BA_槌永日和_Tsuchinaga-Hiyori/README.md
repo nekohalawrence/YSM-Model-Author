@@ -10,7 +10,7 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0056 - 0056](../)
+- **Author**: [#0056 - #伊洛是哥斯拉嘛 #伊洛是哥斯拉吗|  #哥斯拉 | #落阳不养羊 | #黎家诚 | #BradKidd](../)
 - **Author ID**: `0056`
 
 </details>
