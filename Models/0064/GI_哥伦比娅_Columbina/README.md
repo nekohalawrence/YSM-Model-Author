@@ -1,14 +1,22 @@
 # GI_哥伦比娅_Columbina
 
 <details>
-<summary>模型信息</summary>
+<summary>Model Details</summary>
 
-- 来源：#Genshin Impact #原神 #Genshin #GI
+- **Franchise / Category**: #Unknown
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0064 - #纸盒ALifang | #Cc-纸盒 | #Cc纸盒](../)
+- **Author ID**: `0064`
 
 </details>
 
 <details open>
-<summary>预览图</summary>
+<summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 

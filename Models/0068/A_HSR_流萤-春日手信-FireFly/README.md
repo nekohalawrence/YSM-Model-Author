@@ -1,14 +1,22 @@
 # A_HSR_流萤-春日手信-FireFly
 
 <details>
-<summary>模型信息</summary>
+<summary>Model Details</summary>
 
-- 来源：#Unknown
+- **Franchise / Category**: #Unknown
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0068 - #AnluoSakura](../)
+- **Author ID**: `0068`
 
 </details>
 
 <details open>
-<summary>预览图</summary>
+<summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 

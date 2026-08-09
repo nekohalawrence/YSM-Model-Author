@@ -1,14 +1,22 @@
 # Snowbreak_里芙无限之视_Reeve_LA
 
 <details>
-<summary>模型信息</summary>
+<summary>Model Details</summary>
 
-- 来源：#Snowbreak: Containment Zone #尘白禁区 #snowbreak
+- **Franchise / Category**: #Unknown
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0005 - #omo仙贝2号| #omo | #FujiwaranoMoku114514](../)
+- **Author ID**: `0005`
 
 </details>
 
 <details open>
-<summary>预览图</summary>
+<summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 

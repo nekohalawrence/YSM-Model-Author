@@ -1,14 +1,14 @@
 # GI_荧-lumine
 
 <details>
-<summary>模型信息</summary>
+<summary>Model Details</summary>
 
-- 来源：#Genshin Impact #原神 #Genshin #GI
+- **Franchise / Category**: #Unknown
 
 </details>
 
 <details open>
-<summary>预览图</summary>
+<summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 

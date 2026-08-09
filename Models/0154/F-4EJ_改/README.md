@@ -1,14 +1,22 @@
 # F-4EJ_改
 
 <details>
-<summary>模型信息</summary>
+<summary>Model Details</summary>
 
-- 来源：#Unknown
+- **Franchise / Category**: #Unknown
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0154 - #银河铁道CRH2](../)
+- **Author ID**: `0154`
 
 </details>
 
 <details open>
-<summary>预览图</summary>
+<summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 

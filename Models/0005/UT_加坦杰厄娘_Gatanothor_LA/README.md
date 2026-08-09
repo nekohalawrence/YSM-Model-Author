@@ -1,14 +1,22 @@
 # UT_加坦杰厄娘_Gatanothor_LA
 
 <details>
-<summary>模型信息</summary>
+<summary>Model Details</summary>
 
-- 来源：#Ultraman Tiga #UT #迪迦奥特曼
+- **Franchise / Category**: #Unknown
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0005 - #omo仙贝2号| #omo | #FujiwaranoMoku114514](../)
+- **Author ID**: `0005`
 
 </details>
 
 <details open>
-<summary>预览图</summary>
+<summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
@@ -19,6 +27,20 @@
 ![preview03.png](preview03.png)
 
 ![preview04.png](preview04.png)
+
+![preview05.png](preview05.png)
+
+![preview06.png](preview06.png)
+
+![preview07.png](preview07.png)
+
+![preview08.png](preview08.png)
+
+![preview09.png](preview09.png)
+
+![preview10.png](preview10.png)
+
+![preview11.png](preview11.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
 

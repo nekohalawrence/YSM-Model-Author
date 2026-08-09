@@ -1,14 +1,22 @@
 # 兔女郎明日奈-asuna_ero_bunny
 
 <details>
-<summary>模型信息</summary>
+<summary>Model Details</summary>
 
-- 来源：#Unknown
+- **Franchise / Category**: #Unknown
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0161 - #-_-_-_-_草-_-_-_- | #ckdr251](../)
+- **Author ID**: `0161`
 
 </details>
 
 <details open>
-<summary>预览图</summary>
+<summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 

@@ -1,14 +1,22 @@
 # NGE_Asuka-Langley_LA
 
 <details>
-<summary>模型信息</summary>
+<summary>Model Details</summary>
 
-- 来源：#Neon-Genesis-Evangelion #NGE #新世纪福音战士 #EVA
+- **Franchise / Category**: #Neon-Genesis-Evangelion #NGE #EVA | 新世纪福音战士
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0005 - #omo仙贝2号| #omo | #FujiwaranoMoku114514](../)
+- **Author ID**: `0005`
 
 </details>
 
 <details open>
-<summary>预览图</summary>
+<summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 

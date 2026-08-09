@@ -1,14 +1,14 @@
 # VOC_初音未来-万圣节_Miku-Halloween
 
 <details>
-<summary>模型信息</summary>
+<summary>Model Details</summary>
 
-- 来源：#VOCALOID #博歌乐 #V 家 #术力口 #VOC #虚拟歌手 #虚拟歌姬
+- **Franchise / Category**: #Unknown
 
 </details>
 
 <details open>
-<summary>预览图</summary>
+<summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 

@@ -1,14 +1,22 @@
-# A_MushokuTensei_洛淇希-Roxy_Migurdia
+# MushokuTensei_洛淇希-Roxy_Migurdia_LA
 
 <details>
-<summary>模型信息</summary>
+<summary>Model Details</summary>
 
-- 来源：#Unknown
+- **Franchise / Category**: #Unknown
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0084 - #幻古诗](../)
+- **Author ID**: `0084`
 
 </details>
 
 <details open>
-<summary>预览图</summary>
+<summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
@@ -19,6 +27,8 @@
 ![preview03.png](preview03.png)
 
 ![preview04.png](preview04.png)
+
+![preview05.png](preview05.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
 

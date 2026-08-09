@@ -1,14 +1,22 @@
 # FHZ_茉莉_Mori_LB
 
 <details>
-<summary>模型信息</summary>
+<summary>Model Details</summary>
 
-- 来源：#Fox Hime Zero #FHZ
+- **Franchise / Category**: #Fox Hime Zero #FHZ
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0170 - #木宁苒](../)
+- **Author ID**: `0170`
 
 </details>
 
 <details open>
-<summary>预览图</summary>
+<summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 

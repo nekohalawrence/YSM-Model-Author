@@ -1,14 +1,22 @@
 # AL_恶毒-懒懒的白兔_LeMalin
 
 <details>
-<summary>模型信息</summary>
+<summary>Model Details</summary>
 
-- 来源：#Azur-Lane #碧蓝航线 #AL
+- **Franchise / Category**: #Unknown
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0020 - #就叫纸板| #纸板](../)
+- **Author ID**: `0020`
 
 </details>
 
 <details open>
-<summary>预览图</summary>
+<summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 

@@ -1,14 +1,22 @@
 # BtR_喜多郁代-Kita-Ikuyo
 
 <details>
-<summary>模型信息</summary>
+<summary>Model Details</summary>
 
-- 来源：#Bocchi-the-Rock! #BtR #孤独摇滚！
+- **Franchise / Category**: #Unknown
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0146 - #泉溪鸽](../)
+- **Author ID**: `0146`
 
 </details>
 
 <details open>
-<summary>预览图</summary>
+<summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 

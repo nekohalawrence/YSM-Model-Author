@@ -1,14 +1,22 @@
 # GI_芙宁娜_Furina_LA
 
 <details>
-<summary>模型信息</summary>
+<summary>Model Details</summary>
 
-- 来源：#Genshin Impact #原神 #Genshin #GI
+- **Franchise / Category**: #Unknown
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0094 - #墨染逝羽 | #Feather_aya](../)
+- **Author ID**: `0094`
 
 </details>
 
 <details open>
-<summary>预览图</summary>
+<summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 

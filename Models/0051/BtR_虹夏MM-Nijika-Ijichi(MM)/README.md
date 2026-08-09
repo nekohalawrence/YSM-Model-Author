@@ -1,14 +1,22 @@
 # BtR_虹夏MM-Nijika-Ijichi(MM)
 
 <details>
-<summary>模型信息</summary>
+<summary>Model Details</summary>
 
-- 来源：#Bocchi-the-Rock! #BtR #孤独摇滚！
+- **Franchise / Category**: #Unknown
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0051 - #动员鼬](../)
+- **Author ID**: `0051`
 
 </details>
 
 <details open>
-<summary>预览图</summary>
+<summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 

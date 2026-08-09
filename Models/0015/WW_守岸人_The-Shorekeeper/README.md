@@ -1,14 +1,22 @@
 # WW_守岸人_The-Shorekeeper
 
 <details>
-<summary>模型信息</summary>
+<summary>Model Details</summary>
 
-- 来源：#Wuthering-Waves #鸣潮 #WuWa #WW
+- **Franchise / Category**: #Unknown
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0015 - #寒叔hs | #烈鸟比百 | #Frosty_Uncle](../)
+- **Author ID**: `0015`
 
 </details>
 
 <details open>
-<summary>预览图</summary>
+<summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 

@@ -1,14 +1,22 @@
 # GI_申鹤-shenghe
 
 <details>
-<summary>模型信息</summary>
+<summary>Model Details</summary>
 
-- 来源：#Genshin Impact #原神 #Genshin #GI
+- **Franchise / Category**: #Unknown
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0043 - #完全凍結ALL | #完全冻结 | #绝对冻结](../)
+- **Author ID**: `0043`
 
 </details>
 
 <details open>
-<summary>预览图</summary>
+<summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 

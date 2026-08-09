@@ -1,14 +1,22 @@
 # MHO_八奈见杏菜_Yanami-Anna_LA
 
 <details>
-<summary>模型信息</summary>
+<summary>Model Details</summary>
 
-- 来源：#Make Heroine ga Oosugiru! #MHO #負けヒロインが多すぎる！
+- **Franchise / Category**: #Unknown
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0129 - #Dr观星 | #Dr-观星](../)
+- **Author ID**: `0129`
 
 </details>
 
 <details open>
-<summary>预览图</summary>
+<summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 

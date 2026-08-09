@@ -1,14 +1,22 @@
 # Saekano_英梨梨_Eriri
 
 <details>
-<summary>模型信息</summary>
+<summary>Model Details</summary>
 
-- 来源：#Saekano: How to Raise a Boring Girlfriend #路人女主的养成方法 #SAEKANO
+- **Franchise / Category**: #Unknown
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0129 - #Dr观星 | #Dr-观星](../)
+- **Author ID**: `0129`
 
 </details>
 
 <details open>
-<summary>预览图</summary>
+<summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 

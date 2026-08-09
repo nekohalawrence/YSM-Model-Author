@@ -1,14 +1,22 @@
 # C_小毛-粉色情兔
 
 <details>
-<summary>模型信息</summary>
+<summary>Model Details</summary>
 
-- 来源：#Unknown
+- **Franchise / Category**: #Unknown
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0117 - #聚模道 | #聚核重工Minecraft | #语文喵喵拳](../)
+- **Author ID**: `0117`
 
 </details>
 
 <details open>
-<summary>预览图</summary>
+<summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 

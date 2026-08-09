@@ -1,14 +1,22 @@
 # Touhou_卡娜·安娜贝拉尔-Kana-Anaberal
 
 <details>
-<summary>模型信息</summary>
+<summary>Model Details</summary>
 
-- 来源：#Touhou-Project #TH #TOUHOU #东方 Project
+- **Franchise / Category**: #Unknown
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0031 - #泥泞中的小猫 | #PZGR.40](../)
+- **Author ID**: `0031`
 
 </details>
 
 <details open>
-<summary>预览图</summary>
+<summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 

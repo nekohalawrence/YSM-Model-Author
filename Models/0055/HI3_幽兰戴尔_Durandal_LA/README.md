@@ -1,14 +1,22 @@
 # HI3_幽兰戴尔_Durandal_LA
 
 <details>
-<summary>模型信息</summary>
+<summary>Model Details</summary>
 
-- 来源：#Honkai-Impact-3 #崩坏 3 #HI3
+- **Franchise / Category**: #Unknown
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0055 - #伊蕾娜家的咸鱼](../)
+- **Author ID**: `0055`
 
 </details>
 
 <details open>
-<summary>预览图</summary>
+<summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 

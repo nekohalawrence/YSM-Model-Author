@@ -1,14 +1,22 @@
 # Wuthering-Waves_维里奈-verina
 
 <details>
-<summary>模型信息</summary>
+<summary>Model Details</summary>
 
-- 来源：#Wuthering-Waves #鸣潮 #WuWa #WW
+- **Franchise / Category**: #Wuthering-Waves #WuWa #WW | 鸣潮
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0175 - #集栎 | #Nebulathus](../)
+- **Author ID**: `0175`
 
 </details>
 
 <details open>
-<summary>预览图</summary>
+<summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 

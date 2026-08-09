@@ -1,14 +1,22 @@
 # 赛马娘_东海帝皇
 
 <details>
-<summary>模型信息</summary>
+<summary>Model Details</summary>
 
-- 来源：#Umamusume: Pretty Derby #闪耀！优俊少女 #UmaMusume #UM #赛马娘
+- **Franchise / Category**: #Umamusume: Pretty Derby #UmaMusume #UM | 闪耀！优俊少女 #赛马娘
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0077 - #旭门只玩驹 | #Zeonjin-旭门只玩驹](../)
+- **Author ID**: `0077`
 
 </details>
 
 <details open>
-<summary>预览图</summary>
+<summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 

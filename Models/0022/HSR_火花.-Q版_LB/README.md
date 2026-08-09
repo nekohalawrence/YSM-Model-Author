@@ -1,14 +1,22 @@
-# HSR_ 火花.-Q 版 _LB
+# HSR_火花.-Q版_LB
 
 <details>
-<summary>模型信息</summary>
+<summary>Model Details</summary>
 
-- 来源：#Honkai-Star-Rail #HSR #崩坏：星穹铁道
+- **Franchise / Category**: #Unknown
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0022 - #Tu_tou](../)
+- **Author ID**: `0022`
 
 </details>
 
 <details open>
-<summary>预览图</summary>
+<summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
