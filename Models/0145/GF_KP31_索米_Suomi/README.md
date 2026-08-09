@@ -1,4 +1,4 @@
-# GF_索米-Suomi
+# GF_KP31_索米_Suomi
 
 <details>
 <summary>Model Details</summary>

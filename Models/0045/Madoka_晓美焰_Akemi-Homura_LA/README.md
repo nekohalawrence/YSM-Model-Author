@@ -1,4 +1,4 @@
-# Madoka_晓美焰_LA
+# Madoka_晓美焰_Akemi-Homura_LA
 
 <details>
 <summary>Model Details</summary>

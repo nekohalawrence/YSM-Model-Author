@@ -1,9 +1,9 @@
-# C_OC_Wine Fox Roman
+# OC_Wine-Fox-Roman_LC
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Original Character #OC #原创角色
 
 </details>
 

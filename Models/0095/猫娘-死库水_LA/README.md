@@ -1,4 +1,4 @@
-# A_猫娘-死库水
+# 猫娘-死库水_LA
 
 <details>
 <summary>Model Details</summary>

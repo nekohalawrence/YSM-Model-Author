@@ -1,9 +1,9 @@
-# 可露凯
+# GF_HK416_可露凯_Klukai
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #White Eternity #GF
 
 </details>
 
@@ -19,6 +19,8 @@
 <summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](preview.png)
 
 ![preview01.png](preview01.png)
 

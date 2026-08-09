@@ -1,9 +1,9 @@
-# Honkai_Impact_3_希儿·绀海之忆-seeleseelesea
+# HI3_ 希儿·绀海之忆-seeleseelesea_LB
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Honkai-Impact-3 #HI3 #崩坏 3
 
 </details>
 

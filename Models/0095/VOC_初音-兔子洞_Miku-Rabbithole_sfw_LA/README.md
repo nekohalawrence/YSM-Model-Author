@@ -1,9 +1,9 @@
-# A_初音-兔子洞-miku-rabbithole_sfw
+# VOC_初音-兔子洞_Miku-Rabbithole_sfw_LA
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #VOCALOID #VOC #博歌乐 #V 家 #术力口 #虚拟歌手 #虚拟歌姬
 
 </details>
 

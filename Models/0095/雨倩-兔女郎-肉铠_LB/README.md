@@ -1,4 +1,4 @@
-# B_雨倩-兔女郎-肉铠
+# 雨倩-兔女郎-肉铠_LB
 
 <details>
 <summary>Model Details</summary>

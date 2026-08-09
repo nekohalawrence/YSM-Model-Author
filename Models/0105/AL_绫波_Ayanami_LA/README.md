@@ -1,9 +1,9 @@
-# A_AL_绫波
+# AL_绫波_Ayanami_LA
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Azur-Lane #AL #碧蓝航线
 
 </details>
 

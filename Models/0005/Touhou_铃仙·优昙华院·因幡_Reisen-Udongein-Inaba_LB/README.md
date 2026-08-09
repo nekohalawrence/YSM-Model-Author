@@ -1,4 +1,4 @@
-# Touhou_铃仙·优昙华院·因幡-Reisen-Udongein-Inaba_LB
+# Touhou_铃仙·优昙华院·因幡_Reisen-Udongein-Inaba_LB
 
 <details>
 <summary>Model Details</summary>

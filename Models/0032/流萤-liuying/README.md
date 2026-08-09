@@ -1,4 +1,4 @@
-# 流萤 -liuying
+# 流萤-liuying
 
 <details>
 <summary>Model Details</summary>

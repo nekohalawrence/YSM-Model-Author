@@ -1,4 +1,4 @@
-# B_柴郡-绚烂夜梦-cheshire
+# CL_柴郡-绚烂夜梦_Cheshire_LB
 
 <details>
 <summary>Model Details</summary>
@@ -10,7 +10,7 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0116 - #1111111re](../)
+- **Author**: [#0116 - #1111111re | #伊伊蕾](../)
 - **Author ID**: `0116`
 
 </details>
@@ -19,6 +19,8 @@
 <summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](preview.png)
 
 ![preview01.png](preview01.png)
 

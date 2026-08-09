@@ -1,9 +1,9 @@
-# Honkai_Impact_3_布朗尼·迷城骇兔-bronee
+# HI3_ 布朗尼·迷城骇兔-bronee_LB
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Honkai-Impact-3 #HI3 #崩坏 3
 
 </details>
 

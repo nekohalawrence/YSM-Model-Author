@@ -1,9 +1,9 @@
-# Honkai_Impact_3_希儿（魇月星渊）
+# HI3_ 希儿（魇月星渊）_LB
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Honkai-Impact-3 #HI3 #崩坏 3
 
 </details>
 

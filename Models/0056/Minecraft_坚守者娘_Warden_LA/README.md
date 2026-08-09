@@ -1,4 +1,4 @@
-# minecraft_坚守者娘-warden_LA
+# Minecraft_坚守者娘_Warden_LA
 
 <details>
 <summary>Model Details</summary>

@@ -1,16 +1,16 @@
-# B_KG_阿尔维娜酱-arvina_chan
+# KG_阿尔维娜酱-arvina_chan_LB
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Kemomimi Gakuen #KG #兽耳学园 #兽耳学院 #ケモミミ学園
 
 </details>
 
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0116 - #1111111re](../)
+- **Author**: [#0116 - #1111111re | #伊伊蕾](../)
 - **Author ID**: `0116`
 
 </details>

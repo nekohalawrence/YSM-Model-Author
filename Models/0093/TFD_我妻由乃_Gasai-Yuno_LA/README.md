@@ -1,9 +1,9 @@
-# A_我妻由乃
+# TFD_我妻由乃_Gasai-Yuno_LA
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #The Future Diary #TFD #未来日记 #未来日記
 
 </details>
 

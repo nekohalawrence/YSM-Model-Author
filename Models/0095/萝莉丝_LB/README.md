@@ -1,4 +1,4 @@
-# B_萝莉丝
+# 萝莉丝_LB
 
 <details>
 <summary>Model Details</summary>

@@ -1,9 +1,9 @@
-# A_AL_尼米
+# AL_尼米_Z23_LA
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Azur-Lane #AL #碧蓝航线
 
 </details>
 

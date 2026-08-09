@@ -1,16 +1,16 @@
-# B_惠惠
+# KonoSuba_惠惠_Megumin_LB
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #KonoSuba: God's Blessing on This Wonderful World! #KonoSuba #KON #为美好的世界献上祝福！ #この素晴らしい世界に祝福を！
 
 </details>
 
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0116 - #1111111re](../)
+- **Author**: [#0116 - #1111111re | #伊伊蕾](../)
 - **Author ID**: `0116`
 
 </details>

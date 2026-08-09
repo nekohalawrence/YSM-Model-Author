@@ -1,9 +1,9 @@
-# 犬走椛
+# Touhou_犬走椛_Inubashiri-Momizi_LA
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Touhou-Project #TH #TOUHOU #东方 Project
 
 </details>
 
@@ -19,6 +19,8 @@
 <summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](preview.png)
 
 ![preview01.png](preview01.png)
 
