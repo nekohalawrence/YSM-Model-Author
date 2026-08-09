@@ -6,3 +6,5 @@ _template
 .venv
 tests
 .aionrs/skills
+.github/scripts/__pycache__
+.reasonix

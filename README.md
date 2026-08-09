@@ -2,13 +2,13 @@
 
 # YSM-Model-Author
 
-- 收集并按作者分类的 ysm 模型，tacz 枪包和 TLM 女仆包等。
-
+- 收集并按作者分类的 YSM 模型，TACZ 枪包和 TLM 女仆包等。
 
 <details>
 <summary>作者索引</summary>
 
 <!-- AUTHORS_LIST_START -->
+
 | 编号 | 作者名称 | 模型数量 |
 | --- | --- | ---: |
 | 0000 | [#-OMEGAZERO-](.../../models/0000) | 1 |
@@ -198,10 +198,10 @@
 | 0185 | [#滑滑滑纸隐 \| #滑纸隐](.../../models/0185) | 9 |
 | 0187 | [#爱听书的旅人 \| #爱听小说的旅人](.../../models/0187) | 1 |
 | 0188 | [#鸢尾](.../../models/0188) | 1 |
+
 <!-- AUTHORS_LIST_END -->
 
 </details>
-
 
 <details>
 <summary>模型分类</summary>
@@ -209,111 +209,122 @@
 > 文件夹命名规则
 
 ```
-<作品缩写>_<中文角色名>-[皮肤标签]_<角色英文>-[皮肤标签]_<个人评定等级>
+<英文作品名称>_<中文角色名>-[中文皮肤]_<英文角色名>-[英文皮肤]_<个人评定等级>
 
 个人评定等级: LA, LB, LC, LD
 ```
 
 ## 游戏
 
-- ‑as the Night's, Reincarnation‑, さくら、もゆ, 樱花摸鱼, 樱花、萌放, Sakura Moyu
-- Arknights, 明日方舟, AK
-- Arknights-Endfield, 明日方舟：终末地, AKE
-- Ash-Arms, 灰烬战线
-- Astral Party, 吉星派对, 星引擎 Party
-- Atomic-Heart, 原子之心, AH 
-- Azur-Lane, 碧蓝航线, AL
-- Azur-Promilia, AP, 蓝色星原
-- Battlefield-1, 战地 -1, BF-1
-- Blue-Archive, 碧蓝档案, BA, 蔚蓝档案
-- Command & Conquer, 命令与征服, CNC
-- Command-&-Conquer: Red-Alert-2, Red-Alert-2, RA2, 命令与征服：红色警戒 2
-- Command-&-Conquer: Red-Alert-3, Red-Alert-3, RA3, 命令与征服：红色警戒 3
-- Command & Conquer Generals: Zero Hour, ZH, Zero Hour, 命令与征服：绝命时刻
-- Dead or Alive, DOA, 死或生
-- Dohna Dohna: Let's Do Bad Things Together ドーナドーナ いっしょにわるいことしよう, 多娜多娜 一起干坏事吧！, DOHNA
-- Doki-Doki-Literature-Club!, DDLC, 心跳文学部！
-- Fate-Grand-Order, FGO, 命运 - 冠位指定
-- Food Girls, 食用系少女
+- ‑as the Night's, Reincarnation‑, Sakura Moyu | 樱花摸鱼, 樱花、萌放 | さくら、もゆ
+- Arknights, AK | 明日方舟
+- Arknights-Endfield, AKE | 明日方舟：终末地
+- Ash-Arms | 灰烬战线
+- Astral Party | 吉星派对, 星引擎 Party
+- Atomic-Heart, AH | 原子之心
+- Azur-Lane, AL | 碧蓝航线
+- Azur-Promilia, AP | 蓝色星原
+- Battlefield-1, BF-1 | 战地 -1
+- Blue-Archive, BA | 碧蓝档案, 蔚蓝档案
+- Command & Conquer, CNC | 命令与征服
+- Command-&-Conquer: Red-Alert-2, Red-Alert-2, RA2 | 命令与征服：红色警戒 2
+- Command-&-Conquer: Red-Alert-3, Red-Alert-3, RA3 | 命令与征服：红色警戒 3
+- Command & Conquer Generals: Zero Hour, Zero Hour, ZH | 命令与征服：绝命时刻
+- Delta Force, Delta-Force | 三角洲行动
+- Dead or Alive, DOA | 死或生
+- Dohna Dohna: Let's Do Bad Things Together, DOHNA | 多娜多娜 一起干坏事吧！ | ドーナドーナ いっしょにわるいことしよう
+- Doki-Doki-Literature-Club!, DDLC | 心跳文学部！
+- Fate-Grand-Order, FGO | 命运 - 冠位指定
+- Food Girls | 食用系少女
 - Fox Hime Zero, FHZ
-- Honkai-Impact-3, 崩坏 3, HI3
-- Honkai-Star-Rail, HSR, 崩坏：星穹铁道
-- Hyperdimension Neptunia, HDN, 超次元游戏
-- Genshin Impact, 原神, Genshin, GI
-- Girls' Frontline,少女前线, GFWhite Eternity, GF
-- Girls' Frontline: Neural Cloud, Project Neural Cloud, 少女前线：云图计划, NC
-- Goddess of Victory: Nikke, Nikke, 胜利女神：妮姬
-- Granblue Fantasy: Relink, GBR, 碧蓝幻想：RELINK, Granblue
-- League of Legends, LOL, 英雄联盟
-- Limbus Company, 边狱巴士, 边狱公司, LC
-- Magical Girl Celesphonia, 魔法少女セレスフォニア, 魔法少女天穹法妮雅, MGC
-- MiSide, 米塔
-- NARUTO, Naruto Shippuden, NAR, 火影忍者: 疾风传
-- NEKOPARA, ネコぱら, 巧克力与香子兰, 猫娘乐园
-- Neon-Genesis-Evangelion, NGE, 新世纪福音战士, EVA
-- Neverness to Everness, NTE, 异环
-- Senren＊Banka, せんれん＊ばんか, 千恋＊万花, SENREN
-- Snowbreak: Containment Zone, 尘白禁区, snowbreak
-- Strinova, 卡拉比丘
-- Sun Shower, 天气雨, 天気雨（てんきあめ / Tenkiame）
-- Teaching Feeling, 奴隶少女希尔薇, TF
-- Tom Clancy's Rainbow Six Siege, R6S, 彩虹六号：围攻
-- Twinkle Star Knights, 闪耀星骑士, ティンクルスターナイツ, TSK
-- Ultraman Tiga, UT, 迪迦奥特曼
-- Umamusume: Pretty Derby, 闪耀！优俊少女, UmaMusume, UM, 赛马娘
-- White Eternity, AstralAir no Shiroki Eien, アストラエアの白き永遠, 星辰恋曲的白色永恒, ASE
-- Wish upon a shooting star, 星空のメモリア, Hoshizora no Memoria, 星空的记忆, HNM
-- Wuthering-Waves, 鸣潮, WuWa, WW
-- Yog-Sothoth's Yard, YogYard, 犹格索托斯的庭院：炼金旅社
-- Zenless-Zone-Zero, 绝区零, ZZZ
+- Honkai-Impact-3, HI3 | 崩坏 3
+- Honkai-Star-Rail, HSR | 崩坏：星穹铁道
+- Hyperdimension Neptunia, HDN | 超次元游戏
+- Genshin Impact, Genshin, GI | 原神
+- Girls' Frontline, GF | 少女前线
+- White Eternity, GF
+- GIRLS' FRONTLINE 2:EXILIUM, GF2 | 少女前线 2：追放, 少女前线 2, 少前 2：追放
+- Girls' Frontline: Neural Cloud, Project Neural Cloud, NC | 少女前线：云图计划
+- Goddess of Victory: Nikke, Nikke | 胜利女神：妮姬
+- Granblue Fantasy: Relink, GBR, Granblue | 碧蓝幻想：RELINK
+- League of Legends, LOL | 英雄联盟
+- Limbus Company, LC | 边狱巴士, 边狱公司
+- Magical Girl Celesphonia, MGC | 魔法少女天穹法妮雅 | 魔法少女セレスフォニア
+- Magical Girl Witch Trial, MGWT | 魔法少女的魔女审判 | 魔法少女ノ魔女裁判
+- Magia Record: Puella Magi Madoka Magica Side Story, Magia-Record | 魔法纪录 魔法少女小圆外传 | マギアレコード 魔法少女まどか☆マギカ外伝
+- MiSide | 米塔
+- NARUTO, Naruto Shippuden, NAR | 火影忍者: 疾风传
+- NEKOPARA | 巧克力与香子兰, 猫娘乐园 | ネコぱら
+- Neon-Genesis-Evangelion, NGE, EVA | 新世纪福音战士
+- Neverness to Everness, NTE | 异环
+- Senren＊Banka, SENREN | 千恋＊万花 | せんれん＊ばんか
+- Snowbreak: Containment Zone, snowbreak | 尘白禁区
+- Strinova | 卡拉比丘
+- Sun Shower | 天气雨 | 天気雨（てんきあめ / Tenkiame）
+- Teaching Feeling, TF | 奴隶少女希尔薇
+- Tom Clancy's Rainbow Six Siege, R6S | 彩虹六号：围攻
+- Twinkle Star Knights, TSK | 闪耀星骑士 | ティンクルスターナイツ
+- Umamusume: Pretty Derby, UmaMusume, UM | 闪耀！优俊少女, 赛马娘
+- White Eternity, AstralAir no Shiroki Eien, ASE | 星辰恋曲的白色永恒 | アストラエアの白き永遠
+- Wish upon a shooting star, Hoshizora no Memoria, HNM | 星空的记忆 | 星空のメモリア
+- Wuthering-Waves, WuWa, WW | 鸣潮
+- Yog-Sothoth's Yard, YogYard | 犹格索托斯的庭院：炼金旅社
+- Zenless-Zone-Zero, ZZZ | 绝区零
 
-## 动画
+## 动画/漫画
 
-- BanG Dream! It's MyGO!!!!!, 迷途之子！！！！！, MyGO
-- BanG Dream! Ave Mujica, 颂乐人偶, AveMujica
-- Bocchi-the-Rock!, BtR, 孤独摇滚！
-- Date A Live, DAL, デート・ア・ライブ, 约会大作战
-- Dragon Raja, DR, 龙族
-- Dungeon & Fighter, DNF, DFO, 地下城与勇士
-- Fox-Spirit-Matchmaker, 狐妖小红娘, FSM
-- Frieren-Beyond-Journey's-End, 葬送的芙莉莲, Frieren
-- How Not to Summon a Demon Lord, 异界少女召唤术, 異世界魔王と召喚少女の奴隷魔術, 异世界魔王与召唤少女的奴隶魔术, HNTSADL
-- KonoSuba: God's Blessing on This Wonderful World!, KON, KonoSuba, この素晴らしい世界に祝福を！, 为美好的世界献上祝福！
-- LoveMe 枫与铃, らぶみー♡, 枫与铃, LoveMe
-- Make Heroine ga Oosugiru!, MHO, 負けヒロインが多すぎる！
-- MorotsuiKizoku, 没落贵族琉璃川椿, MKZ
-- MushokuTensei, 无职转生～到了异世界就拿出真本事～, 無職転生 ～異世界行ったら本気だす～
-- Onii-chan wa Oshimai!, お兄ちゃんはおしまい！, ONIMAI, 别当欧尼酱了！
-- Plants vs. Zombies, PVZ, 植物大战僵尸
-- Puella Magi Madoka Magica, PMMM, Madoka, 魔法少女まどか☆マギカ, 魔法少女小圆
-- Rascal Does Not Dream, 青春ブタ野郎はバニーガール先輩の夢を見ない, 青春猪头少年系列, 青春ブタ野郎シリーズ, RDND
-- Redo of Healer, ROH, 回复术士的重启人生, 回復術士のやり直し
-- Ringing Fate, 命运拳台, Ringing-Fate
-- Saekano: How to Raise a Boring Girlfriend, 路人女主的养成方法, SAEKANO
-- Wandering Witch: The Journey of Elaina, 魔女の旅々, Majo no Tabitabi, 魔女之旅
+- BanG Dream! It's MyGO!!!!!, MyGO | 迷途之子！！！！！
+- BanG Dream! Ave Mujica, AveMujica | 颂乐人偶
+- Bocchi-the-Rock!, BtR | 孤独摇滚！
+- Date A Live, DAL | 约会大作战 | デート・ア・ライブ
+- Dragon Raja, DR | 龙族
+- Dungeon & Fighter, DNF, DFO | 地下城与勇士
+- Fox-Spirit-Matchmaker, FSM | 狐妖小红娘
+- Frieren-Beyond-Journey's-End, Frieren | 葬送的芙莉莲
+- Girls Band Cry, GBC | 哭泣少女乐队
+- How Not to Summon a Demon Lord, HNTSADL | 异界少女召唤术, 异世界魔王与召唤少女的奴隶魔术 | 異世界魔王と召喚少女の奴隷魔術
+- Jujutsu Kaisen, JJK | 咒术回战 | 呪術廻戦
+- KonoSuba: God's Blessing on This Wonderful World!, KonoSuba, KON | 为美好的世界献上祝福！ | この素晴らしい世界に祝福を！
+- LoveMe | 枫与铃 | らぶみー♡
+- Majo no Tabitabim, MNT | 魔女之旅 | 魔女の旅々, まじょのたびたび
+- Make Heroine ga Oosugiru!, MHO | 負けヒロインが多すぎる！
+- Mato Seihei no Sureibu, MSNS | 魔都精兵的奴隶 | 魔都精兵のスレイブ
+- MorotsuiKizoku, MKZ | 没落贵族琉璃川椿
+- MushokuTensei | 无职转生～到了异世界就拿出真本事～ | 無職転生 ～異世界行ったら本気だす～
+- Onii-chan wa Oshimai!, ONIMAI | 别当欧尼酱了！ | お兄ちゃんはおしまい！
+- Plants vs. Zombies, PVZ | 植物大战僵尸
+- Puella Magi Madoka Magica, PMMM, Madoka | 魔法少女小圆 | 魔法少女まどか☆マギカ
+- Rascal Does Not Dream, RDND | 青春猪头少年系列 | 青春ブタ野郎はバニーガール先輩の夢を見ない, 青春ブタ野郎シリーズ
+- Redo of Healer, ROH | 回复术士的重启人生 | 回復術士のやり直し
+- Ringing Fate, Ringing-Fate | 命运拳台
+- Saekano: How to Raise a Boring Girlfriend, SAEKANO | 路人女主的养成方法
+- Tokyo Ghoul, Tokyo-Ghoul | 东京食尸鬼 | 東京喰種トーキョーグール
+- Ultraman Tiga, UT | 迪迦奥特曼
+- Wandering Witch: The Journey of Elaina, Majo no Tabitabi | 魔女之旅 | 魔女の旅々
 
 ## 小说
 
-- Reverend Insanity, 蛊真人, RI
+- Reverend Insanity, RI | 蛊真人
 
-## 画师
+## 艺术家
 
-- Mochiyama Kingyo, もち山金魚
+- HarukaC
+- Mochiyama Kingyo | もち山金魚
+- naga u, Naga-u | ながユー
 
 ## 其他
 
-- Kemomimi Gakuen, ケモミミ学園, 兽耳学园, 兽耳学院, KG
-- Myth, 神话
-- Original Character, 原创角色, OC
+- Kemomimi Gakuen, KG | 兽耳学园, 兽耳学院 | ケモミミ学園
+- Myth | 神话
+- Original Character, OC | 原创角色
 - the Three Kingdoms period, TTKP
-- Touhou-Project, TH, TOUHOU, 东方 Project
-- Utauloid, UTAU, 虚拟歌手, 术力口
-- Virtual YouTuber, バーチャルユーチューバー, VTuber
+- Touhou-Project, TH, TOUHOU | 东方 Project
+- Utauloid, UTAU | 虚拟歌手, 术力口
+- Virtual YouTuber, VTuber | 虚拟主播 | バーチャルユーチューバー
 - Virtual Streamer, VStreamer
-- VOCALOID, 博歌乐, V 家, 术力口, VOC, 虚拟歌手, 虚拟歌姬
+- VOCALOID, VOC | 博歌乐, V 家, 术力口, 虚拟歌手, 虚拟歌姬
 
 </details>
-
 
 <details>
 
@@ -321,14 +332,13 @@
 
 > 推荐一些优质模型作者
 
-- 0045: [#雾雨波波沙](.../../models/0045) 
+- 0045: [#雾雨波波沙](.../../models/0045)
 - 0065: [#烛火的次元宇宙](.../../models/0065)
-- 0067: [#Almeta_owx](.../../models/0067) 
+- 0067: [#Almeta_owx](.../../models/0067)
 - 0068: [#AnluoSakura](.../../models/0068)
 - 0076: [#White_clams白蛤蜊](.../../models/0076)
 
 </details>
-
 
 <details>
 <summary>工具推荐</summary>
@@ -355,38 +365,47 @@
 > 下面是当前仓库的主要目录说明，后续可能会根据内容继续调整。
 
 ```text
-FREE-YSM-AUTHOR/
+YSM-Model-Author/
 │
-├── blockbench-model/                 # Blockbench 源工程文件（.bbmodel，含模型源文件）
-│
-├── models/                           # YSM 主模型库：按作者编号分组（0000 ~ 9999）
-│   ├── 0000/                         # ── 作者编号目录 ──
-│   │   ├── README.md                 #     作者元信息（作者名称、平台、模型数量）
-│   │   └── <模型名称>/                # ── 单个模型目录 ──
-│   │       ├── README.md             #     模型元信息
-│   │       ├── preview.jpg / .png    #     预览图
-│   │       ├── *.ysm                 #     加密模型文件
-│   │       ├── *.zip                 #     含源文件的压缩包
-│   ├── 0001/
-│   │   └── …（同 0000 结构）
+├── Models/                        # YSM 主模型库：按作者编号分组（0000 ~ 9999，当前收录至 0192）
+│   ├── 0000/                      # ── 作者编号目录 ──
+│   │   ├── README.md              #     作者元信息（作者名称、平台、角色、团队）
+│   │   └── <模型名称>/            # ── 单个模型目录 ──
+│   │       ├── README.md          #     模型元信息
+│   │       ├── preview*.png/.jpg  #     预览图
+│   │       ├── *.ysm              #     加密模型文件
+│   │       ├── *.zip              #     含源文件的压缩包
+│   │       ├── <语音包>/          #     附加资源（语音包等）
+│   │       └── *.txt              #     更新及使用说明
+│   ├── .../
 │   └── 9999/
 │
-├── skin/                             # 原版我的世界皮肤
+├── Skins/                         # 原版我的世界皮肤，按作者编号分组
 │   └── 0000/
-│       ├── README.md
-│       └── *.zip                     # 模型压缩包
+│   │   ├── README.md
+│   │   └── *.zip                  # 皮肤压缩包
+│   ├── ..../
+│   └── 9999/
 │
-├── other-ysm-models/                 # 其他 YSM 模型集合
-│   └── <模型名称>/                    # 每个模型一个目录
+├── Other-YSM-Models/              # 其他 YSM 模型集合：每个模型一个目录
+│   └── <模型名称>/
 │       ├── README.md
-│       ├── preview01.png / .jpg
+│       ├── preview*.png / .jpg
 │       └── *.ysm
 │
-├── Real-Camera-Setting/              # 真实相机（Real Camera）绑定配置
+├── Blockbench-Models/             # Blockbench 源工程文件（.bbmodel，含模型源文件）
+│   └── 0000/
+│   │   ├── README.md
+│   │   └── *.bbmodel              # 模型源文件
+│   ├── ..../
+│   └── 9999/
 │
-├── TACZ-Gun-Pack/                    # TACZ 枪械包资源（*.zip）
+├── First-Person-Mods/             # 第一人称相关模组配置
 │
-└── LM-Maid-Pack/                    # TLM 女仆相关资源包（*.zip）
+├── TACZ-Gun-Packs/                # TACZ 枪械包资源（*.zip）
+│
+└── TLM-Maid-Packs/                # TLM 女仆相关资源包（*.zip）
+
 ```
 
 ## 注意事项
@@ -413,162 +432,13 @@ FREE-YSM-AUTHOR/
 <details>
 <summary>下拉查看日志信息</summary>
 
-<!-- CHANGELOG_AUTOGEN_START -->
+# 2026-08-09
 
-
-
-
-
-
-
-
-
-<!-- 自动生成日志区域；手工日志请放在对应日期段落的 MANUAL_LOGS_START 之后。 -->
-
-
-# 2026-08-06
-
-<!-- AUTO_LOGS_START -->
-- chore: models/0020: [#0020 - #就叫纸板\| #纸板](.../../models/0020) - 更新了 1 个 README（更新 1）
-- chore: models/0056: [#0056 - #伊洛是哥斯拉嘛 #伊洛是哥斯拉吗\|  #哥斯拉 \| #落阳不养羊 \| #晓苯升易 \| #黎家诚 \| #BradKidd](.../../models/0056) - 更新了 1 个模型文件、3 张预览图、1 个 README（更新 5）
-- chore: models/0080: [#0080 - #Nona_Reeves](.../../models/0080) - 更新了 1 张预览图（新增 1）
-- chore: models/0103: [#0103 - #浅陌菌](.../../models/0103) - 更新了 1 个模型文件、4 张预览图、1 个 README（更新 6）
-- chore: models/0110: [#0110 - #Nona_reeves \| #Nona-Reeves](.../../models/0110) - 更新了 1 个 README（更新 1）
-
-<!-- MANUAL_LOGS_START -->
-
-# 2026-08-05
-
-
-<!-- AUTO_LOGS_START -->
-- chore: models/0002: [#0002 - #映素 \| #映素作坊](.../../models/0002) - 更新了 13 个模型文件、4 张预览图、4 个 README（更新 21）
-- chore: models/0004: [#0004 - #XG残党](.../../models/0004) - 更新了 1 个模型文件、2 张预览图、2 个 README（更新 5）
-- chore: models/0005: [#0005 - #omo仙贝2号\| #omo \| #FujiwaranoMoku114514](.../../models/0005) - 更新了 20 个模型文件、10 张预览图、9 个 README（更新 39）
-- chore: models/0006: [#0006 - #Nekuro \| #NekuroMC](.../../models/0006) - 更新了 6 个模型文件、3 张预览图、13 个 README（更新 22）
-- chore: models/0007: [#0007 - #啊这-_-0](.../../models/0007) - 更新了 6 个模型文件、3 张预览图、3 个 README（更新 12）
-- chore: models/0008: [#0008 - #白色北熊](.../../models/0008) - 更新了 1 个 README（更新 1）
-- chore: models/0010: [#0010 - #波普Popu](.../../models/0010) - 更新了 1 个 README（更新 1）
-- chore: models/0011: [#0011 - #池塘-tl \| #池塘](.../../models/0011) - 更新了 1 个模型文件（更新 1）
-- chore: models/0013: [#0013 - #对羧基苯酚](.../../models/0013) - 更新了 1 个 README（更新 1）
-- chore: models/0014: [#0014 - #哈雷汰多](.../../models/0014) - 更新了 1 个模型文件、1 个 README（更新 2）
-- chore: models/0015: [#0015 - #寒叔hs \| #烈鸟比百 \| #Frosty_Uncle](.../../models/0015) - 更新了 2 个模型文件（更新 1，删除 1）
-- chore: models/0017: [#0017 - #寄水晶](.../../models/0017) - 更新了 1 个 README（更新 1）
-- chore: models/0019: [#0019 - #江竹雨offical \| #AAA家电批发江竹雨](.../../models/0019) - 更新了 1 个 README（更新 1）
-- chore: models/0020: [#0020 - #就叫纸板\| #纸板](.../../models/0020) - 更新了 1 个模型文件（更新 1）
-- chore: models/0022: [#0022 - #Tu_tou](.../../models/0022) - 更新了 1 个 README（更新 1）
-- chore: models/0027: [#0027 - #猫耳魂魄妖梦](.../../models/0027) - 更新了 1 个 README（更新 1）
-- chore: models/0033: [#0033 - #胖狐狸工作室 \| #红色幽默](.../../models/0033) - 更新了 1 个 README（更新 1）
-- chore: models/0040: [#0040 - #碎de帆](.../../models/0040) - 更新了 3 个 README（更新 3）
-- chore: models/0043: [#0043 - #完全凍結ALL \| #完全冻结 \| #绝对冻结](.../../models/0043) - 更新了 3 个 README（更新 3）
-- chore: models/0049: [#0049 - #星语TAT](.../../models/0049) - 更新了 2 个模型文件、4 张预览图、3 个 README（更新 9）
-- chore: models/0050: [#0050 - #荨蒿栗里 \| #荨蒿之栗里 \| #栗里](.../../models/0050) - 更新了 2 个 README（更新 2）
-- chore: models/0051: [#0051 - #动员鼬](.../../models/0051) - 更新了 22 个模型文件、14 张预览图、27 个 README（更新 63）
-- chore: models/0055: [#0055 - #伊蕾娜家的咸鱼](.../../models/0055) - 更新了 1 个 README（更新 1）
-- chore: models/0056: [#0056 - #伊洛是哥斯拉嘛 #伊洛是哥斯拉吗\|  #哥斯拉 \| #落阳不养羊 \| #晓苯升易 \| #黎家诚 \| #BradKidd](.../../models/0056) - 更新了 27 个 README（更新 27）
-- chore: models/0058: [#0058 - #艺方像素 \| #艺方堂 \| #尻](.../../models/0058) - 更新了 1 个模型文件、1 张预览图、3 个 README（更新 5）
-- chore: models/0067: [#0067 - #Almeta_owx](.../../models/0067) - 更新了 2 个 README（更新 2）
-- chore: models/0080: [#0080 - #Nona_Reeves](.../../models/0080) - 更新了 1 个 README（更新 1）
-- chore: models/0084: [#0084 - #幻古诗](.../../models/0084) - 更新了 1 个 README（更新 1）
-- chore: models/0092: [#0092 - #菊姥爷](.../../models/0092) - 更新了 1 个 README（更新 1）
-- chore: models/0093: [#0093 - #苏依凛](.../../models/0093) - 更新了 11 个 README（更新 11）
-- chore: models/0095: [#0095 - #源石姬变体 \| #raw_chicken \| #鸡姬](.../../models/0095) - 更新了 4 个 README（更新 4）
-- chore: models/0096: [#0096 - #Kria月明](.../../models/0096) - 更新了 1 个 README（更新 1）
-- chore: models/0101: [#0101 - #獒子coco \| #獒子酱的杂货店 \| #獒子獒子獒](.../../models/0101) - 更新了 1 个 README（更新 1）
-- chore: models/0102: [#0102 - #Dreamer #普通的木屐](.../../models/0102) - 更新了 1 个 README（更新 1）
-- chore: models/0103: [#0103 - #浅陌菌](.../../models/0103) - 更新了 1 个 README（更新 1）
-- chore: models/0104: [#0104 - #科列夫斯基](.../../models/0104) - 更新了 1 个 README（更新 1）
-- chore: models/0107: [#0107 - #宇宙影帝の终焉](.../../models/0107) - 更新了 1 个 README（更新 1）
-- chore: models/0115: [#0115 - #荒漠](.../../models/0115) - 更新了 1 个模型文件、3 张预览图、3 个 README（更新 7）
-- chore: models/0117: [#0117 - #聚模道 \| #聚核重工Minecraft \| #语文喵喵拳](.../../models/0117) - 更新了 5 个 README（更新 5）
-- chore: models/0123: [#0123 - #Anrieal](.../../models/0123) - 更新了 1 个 README（更新 1）
-- chore: models/0124: [#0124 - #超吊的点点](.../../models/0124) - 更新了 1 个 README（更新 1）
-- chore: models/0125: [#0125 - #辅助EinHeld](.../../models/0125) - 更新了 1 个 README（更新 1）
-- chore: models/0128: [#0128 - #Ark样本](.../../models/0128) - 更新了 1 个 README（更新 1）
-- chore: models/0132: [#0132 - #qf欸 #qf](.../../models/0132) - 更新了 1 个 README（更新 1）
-- chore: models/0136: [#0136 - #Fllz](.../../models/0136) - 更新了 2 个 README（更新 2）
-- chore: models/0142: [#0142 - #Omegaff0048 \| #FF0048](.../../models/0142) - 更新了 3 个 README（更新 3）
-- chore: models/0144: [#0144 - #叁雫MitsukuDayo](.../../models/0144) - 更新了 1 个 README（更新 1）
-- chore: models/0148: [#0148 - #黑喵](.../../models/0148) - 更新了 1 个 README（更新 1）
-- chore: models/0149: [#0149 - #安欣](.../../models/0149) - 更新了 3 个 README（更新 3）
-- chore: models/0151: [#0151 - #WisteriaZy \| #大触紫衣](.../../models/0151) - 更新了 1 个 README（更新 1）
-- chore: models/0157: [#0157 - #Deovolente \| #GhastRiv](.../../models/0157) - 更新了 1 个 README（更新 1）
-- chore: models/0160: [#0160 - #宅在佳 \| #宅在佳丶](.../../models/0160) - 更新了 1 个 README（更新 1）
-- chore: models/0167: [#0167 - #炼狱在旅行](.../../models/0167) - 更新了 1 个 README（更新 1）
-- chore: models/0168: [#0168 - #丁真蟹 \| #ZHEN](.../../models/0168) - 更新了 3 个 README（更新 3）
-- chore: models/0169: [#0169 - #ShiroKaze](.../../models/0169) - 更新了 2 个 README（更新 2）
-- chore: models/0176: [#0176 - #Bubuker #rintaroa #Torontopizza #rintaroA](.../../models/0176) - 更新了 1 个 README（更新 1）
-- chore: models/0178: [#0178 - #qidai \| #一点小期待](.../../models/0178) - 更新了 1 个 README（更新 1）
-- chore: models/0179: [#0179 - #Cookiebox](.../../models/0179) - 更新了 1 个 README（更新 1）
-- chore: models/0180: [#0180 - #杂果沙拉](.../../models/0180) - 更新了 1 个 README（更新 1）
-- chore: models/0181: [#0181 - #北上 \| #NorthWard](.../../models/0181) - 更新了 1 个 README（更新 1）
-- chore: models/0188: [#0188 - #鸢尾](.../../models/0188) - 更新了 1 个 README（新增 1）
-
-<!-- MANUAL_LOGS_START -->
-
-
-# 2026-08-04
-
-
-<!-- AUTO_LOGS_START -->
-- chore: models/0049: [#0049 - #星语TAT](.../../models/0049) - 更新了 4 个模型文件、6 张预览图、1 个 README（新增 6，更新 4，删除 1）
-- chore: models/0055: [#0055 - #伊蕾娜家的咸鱼](.../../models/0055) - 更新了 1 个模型文件、1 张预览图、1 个 README（更新 3）
-- chore: models/0059: [#0059 - #瀛猫](.../../models/0059) - 更新了 1 个 README（更新 1）
-- chore: models/0062: [#0062 - #云曦-Yunxxi_ugo \| #云曦](.../../models/0062) - 更新了 4 个模型文件、1 个 README（更新 1，删除 4）
-- chore: models/0086: [#0086 - #深海沉光](.../../models/0086) - 更新了 1 个 README（更新 1）
-- chore: models/0122: [#0122 - #茶-GreenTea](.../../models/0122) - 更新了 1 个 README（更新 1）
-- chore: models/0141: [#0141 - #映白L #映白](.../../models/0141) - 更新了 1 个 README（更新 1）
-- chore: models/0165: [#0165 - #默栖 \| #某嘞个默栖 \| #默嘞个某栖](.../../models/0165) - 更新了 1 个 README（更新 1）
-
-<!-- MANUAL_LOGS_START -->
-
-
-# 2026-08-03
-
-
-<!-- AUTO_LOGS_START -->
-- chore: models/0002: [#0002 - #映素 \| #映素作坊](.../../models/0002) - 更新了 1 个模型文件、3 张预览图、3 个 README（更新 7）
-- chore: models/0102: [#0102 - #Dreamer #普通的木屐](.../../models/0102) - 更新了 2 个模型文件、5 张预览图、3 个 README（新增 2，更新 7，删除 1）
-- chore: models/0103: [#0103 - #浅陌菌](.../../models/0103) - 更新了 3 个模型文件、6 张预览图、3 个 README（更新 7，删除 5）
-- chore: models/0105: [#0105 - #超级大鸡腿丶 \| #Nss](.../../models/0105) - 更新了 1 个 README（更新 1）
-- chore: models/0113: [#0113 - #秋风 \| #每天都睡不醒的秋风 \| #睡不死死不睡的秋风](.../../models/0113) - 更新了 1 个 README（更新 1）
-
-<!-- MANUAL_LOGS_START -->
-
-
-# 2026-08-02
-
-
-<!-- AUTO_LOGS_START -->
-- chore: models/0045: [#0045 - #雾雨波波沙](.../../models/0045) - 更新了 1 个模型文件（删除 1）
-- chore: models/0065: [#0065 - #烛火的次元宇宙](.../../models/0065) - 更新了 1 个模型文件、1 个 README（删除 2）
-- chore: models/0078: [#0078 - #LuXi233 \| #小早川希](.../../models/0078) - 更新了 1 个 README（更新 1）
-- chore: models/0092: [#0092 - #菊姥爷](.../../models/0092) - 更新了 1 个模型文件、2 张预览图、1 个 README（更新 4）
-- chore: models/0117: [#0117 - #聚模道 \| #聚核重工Minecraft \| #语文喵喵拳](.../../models/0117) - 更新了 5 个模型文件、14 张预览图、3 个 README（新增 9，更新 13）
-- chore: models/0137: [#0137 - #Maks \| #Maks怜悯](.../../models/0137) - 更新了 1 个 README（更新 1）
-- chore: models/0164: [#0164 - #toolat嫌晚 \| #toolat洗碗](.../../models/0164) - 更新了 1 个 README（更新 1）
-- chore: models/0184: [#0184 - #MC-ZBM](.../../models/0184) - 更新了 1 个 README（新增 1）
-- chore: models/0185: [#0185 - #滑滑滑纸隐 \| #滑纸隐](.../../models/0185) - 更新了 1 个 README（新增 1）
-- chore: models/0187: [#0187 - #爱听书的旅人 \| #爱听小说的旅人](.../../models/0187) - 更新了 1 个 README（新增 1）
-
-<!-- MANUAL_LOGS_START -->
-
+- file: 删除了 日志生成的action
 
 # 2026-08-01
 
-
-<!-- AUTO_LOGS_START -->
-- chore: models/0005: [#0005 - omo仙贝2号 \| #omo \| #FujiwaranoMoku114514](.../../models/0005) - 更新了 1 个模型文件（更新 1）
-- chore: models/0129: [#0129 - Dr观星 \| #Dr-观星](.../../models/0129) - 更新了 1 个模型文件（更新 1）
-- chore: models/0058: [#0058 - #艺方像素 \| #艺方堂 \| #尻](.../../models/0058) - 更新了 23 个模型文件、10 个 README、23 张预览图（更新 56）
-- chore: models/0067: [#0067 - #Almeta_owx](.../../models/0067) - 更新了 16 个模型文件、3 个 README、24 张预览图（新增 18，更新 23，删除 2）
-- chore: models/0068: [#0068 - #AnluoSakura](.../../models/0068) - 更新了 14 个模型文件、1 个 README、20 张预览图（新增 27，更新 8）
-- chore: models/0076: [#0076 - #White_clams白蛤蜊 \| #白蛤蜊 \| #White_Clams白蛤蜊](.../../models/0076) - 更新了 19 个模型文件、3 个 README、73 张预览图、29 个其他文件（新增 78，更新 46）
-- chore: models/0095: [#0095 - #源石姬变体 \| #raw_chicken \| #鸡姬](.../../models/0095) - 更新了 38 个模型文件、8 个 README、84 张预览图（新增 80，更新 49，删除 1）
-
-<!-- MANUAL_LOGS_START -->
-
 - feat: 增添了自动日志生成 aciton
-<!-- CHANGELOG_AUTOGEN_END -->
 
 # 2026-07-30
 
