@@ -1,15 +1,17 @@
 # 0020
 
-## 模型
+## Author
 
-- 作者名称: #就叫纸板| #纸板
-- 平台: #bilibili
-	- [bilibili](https://www.bilibili.com/)：[就叫纸板](https://space.bilibili.com/29208164)
-	- [afdian](https://afdian.com/)：[纸板](https://afdian.com/a/15354qq)
-	- qq：3422714477
-	- QQ: 1535492940
+- **Name**: #就叫纸板| #纸板
+  - **Role**: 
+  - **SocialPlatform**: #Bilibili 
+    - **Bilibili**: [就叫纸板](https://space.bilibili.com/29208164)
+  - **SupportPlatform**: #Afdian 
+	- **Afdian**: [纸板](https://afdian.com/a/15354qq)
+  - **GroupChat**: #QQ 
+	- **QQ**: 3422714477
+	- **QQ**: 1535492940
 
 ## 动画
 
 - [0048-星屑海螺](../0048/README.md)
-

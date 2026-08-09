@@ -1,13 +1,14 @@
 # 0045
 
-## 模型
+## Author
 
-- 作者名称： #雾雨波波沙
-- 平台： #bilibili #pixiv
-	- [bilibili](https://www.bilibili.com/)：[雾雨波波沙](https://space.bilibili.com/36761228)
-	- [pixiv](https://www.pixiv.net/)： [雾雨波波沙](https://www.pixiv.net/users/26720481)
-- 群聊
-	- QQ:530621549
+- **Name**: #雾雨波波沙
+  - **Role**: 
+  - **SocialPlatform**: #Bilibili #pixiv
+    - **Bilibili**: [雾雨波波沙](https://space.bilibili.com/36761228)
+    - **pixiv**: [雾雨波波沙](https://www.pixiv.net/users/26720481)
+  - **GroupChat**: #QQ 
+	- **QQ**: 530621549
 
 ## 动画/动作
 
