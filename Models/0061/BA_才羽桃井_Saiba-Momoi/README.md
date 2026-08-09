@@ -10,8 +10,8 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0056 - 0056](../)
-- **Author ID**: `0056`
+- **Author**: [#0061 - #狱际星芒](../)
+- **Author ID**: `0061`
 
 </details>
 

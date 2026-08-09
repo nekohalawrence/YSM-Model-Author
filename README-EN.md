@@ -71,7 +71,7 @@
 | 0058 | [#艺方像素 \| #艺方堂 \| #尻 \| #艺方坊 \| #艺方阁](.../../Models/0058) | 60 |
 | 0059 | [#瀛猫](.../../Models/0059) | 12 |
 | 0060 | [#油七桶](.../../Models/0060) | 4 |
-| 0061 | [#狱际星芒](.../../Models/0061) | 11 |
+| 0061 | [#狱际星芒](.../../Models/0061) | 12 |
 | 0062 | [#云曦-Yunxxi_ugo \| #云曦](.../../Models/0062) | 7 |
 | 0063 | [None](.../../Models/0063) | 0 |
 | 0064 | [#纸盒ALifang \| #Cc-纸盒 \| #Cc纸盒](.../../Models/0064) | 27 |
@@ -295,7 +295,7 @@ Personal Rating: LA, LB, LC, LD
 - Majo no Tabitabim, MNT | Wandering Witch: The Journey of Elaina | 魔女の旅々, まじょのたびたび
 - Make Heroine ga Oosugiru!, MHO | Makeine: Too Many Losing Heroines! | 負けヒロインが多すぎる！
 - Mato Seihei no Sureibu, MSNS | Chained Soldier | 魔都精兵のスレイブ
-- MorotsuiKizoku, MKZ | Morotsui Kizoku: Tsubaki no Rurikawa
+- MorotsuiKizoku, MKZ | Morotsui Kizoku
 - MushokuTensei | Mushoku Tensei: Jobless Reincarnation | 無職転生 ～異世界行ったら本気だす～
 - Onii-chan wa Oshimai!, ONIMAI | Onimai: I'm Now Your Sister! | お兄ちゃんはおしまい！
 - Plants vs. Zombies, PVZ | Plants vs. Zombies
@@ -317,8 +317,8 @@ Personal Rating: LA, LB, LC, LD
 
 - GuLuco
 - HarukaC
-- Mochiyama Kingyo | もち山金魚
-- naga u, Naga-u | ながユー
+- Mochiyama Kingyo | Mochiyama Kingyo
+- naga u, Naga-u | naga u
 
 ## Other
 
@@ -391,7 +391,7 @@ YSM-Model-Author/
 ├── Skins/                         # Vanilla Minecraft skins, grouped by author ID
 │   └── 0000/
 │   │   ├── README.md
-│   │   └── *.zip                  # Skin archives
+│   │   └── *.zip                  # Skin archive
 │   ├── ..../
 │   └── 9999/
 │
@@ -404,7 +404,7 @@ YSM-Model-Author/
 ├── Blockbench-Models/             # Blockbench source project files (.bbmodel, containing model source files)
 │   └── 0000/
 │   │   ├── README.md
-│   │   └── *.bbmodel              # Model source files
+│   │   └── *.bbmodel              # Model source file
 │   ├── ..../
 │   └── 9999/
 │
@@ -418,16 +418,16 @@ YSM-Model-Author/
 
 ## Notes
 
-- Usage Notes
-	- The LA\B\C suffix is a personal preference rating (build quality/completeness) and carries no other meaning.
+- Usage notes
+	- The LA\B\C suffix is a personal quality rating (craftsmanship/completeness) and carries no other meaning.
 	- Archives contain project source files, while `.ysm` files are the encrypted model files.
-	- Some models in this repository are **18+**. Please use them at your discretion. I have not marked all **R18** models with the `nsfw` tag.
+	- Some models in this repository are **18+**. Please use them at your discretion. I have not marked all **r18** models with `nsfw`.
 	- Please do not **sell** models from this repository in any form. You are solely responsible for any consequences.
-- Model Notes
+- Model notes
 	- I discovered that models viewed through Obsidian (a note-taking app) are all corrupted!!!!!!!!
-	- If you find any unusable models, please let me know via an Issue. Thank you!
-- Other Notes
-	- I'm not very familiar with GitHub. If you'd like to modify anything, you can only notify me via Issues, or you can clone the repository and make changes yourself.
+	- If you find any unusable models, please let me know via an issue. Thank you!
+- Other notes
+	- I'm not very familiar with GitHub. If you'd like to modify anything, you can only notify me via an Issue, or you can clone the repository and make changes yourself.
 
 ## Acknowledgements
 
@@ -450,7 +450,7 @@ YSM-Model-Author/
 
 # 2026-07-30
 
-- format: Noticed that some game or anime names are **too long**, making it hard to see **character** names. Henceforth, game/anime names will be changed to **abbreviations**
+- format: Noticed that some game or anime names are **too long**, making it hard to see the **character** names. Henceforth, game/anime names will be changed to **abbreviations**
 
 # 2026-07-27
 
@@ -458,17 +458,17 @@ YSM-Model-Author/
 
 # 2026-07-25
 
-- ps: There are too many weird games out there
+- ps: There are too many obscure games out there
 - ps: Note that some models without preview images are unusable. I saved them while browsing authors, which modified some characters and corrupted the original files, rendering those models unusable.
-- ps: A major mistake occurred. I discovered that most models viewed through Obsidian are corrupted!!!!!!!! I've only now found the cause; the history on git hasn't been deleted.
+- ps: Major mistake discovered — I found that most models viewed through Obsidian are corrupted!!!!!!!! I've only now realized the cause; the history on git hasn't been deleted.
 
 # 2026-07-23
 
 - ps: Thanks to [LuckyPotion](https://space.bilibili.com/1739798750) for publicly sharing a collection of paid models from a certain team. I may gradually update preview images for various models in the future.
 - ps: Quark Cloud: https://pan.quark.cn/s/77a16d314a11 Extraction code: ajVD (expired)
 - ps: Baidu Cloud: https://pan.baidu.com/s/1FFSrd_YG-1Eat_DQD7hziw Extraction code: xiao
-- ps: Models are temporarily not being added to the repository. Download them yourself if needed.
-- chore: Planning to add an action to generate a `README.md` for each model to make preview images easier to view. If you have a good approach, please let me know via an Issue (I don't know how to code; AI wrote everything for me 😭)
+- ps: Models are temporarily not added to the repository. Download them yourself if needed.
+- chore: Planning to add an action to generate a `README.md` for each model to make preview images easier to view. If you have a better approach, please let me know via an issue (I don't know how to code — AI wrote everything for me 😭)
 - chore: For naming consistency, all game names in folders will be changed to English (except for games exclusive to China). A translation reference list will be provided later.
 
 # 2026-07-19
@@ -481,25 +481,25 @@ YSM-Model-Author/
 
 - ps: Some creators belong to the same team. I'm not sure if there's a good way to categorize them. If you have suggestions, feel free to share them.
 - chore: Reorganized a large number of models
-- chore: The reorganized models include new models and re-categorized [existing models](https://github.com/Elaina69/Yes-Steve-Model-Repo)
+- chore: The reorganized models include new models and re-categorized models from the [existing repository](https://github.com/Elaina69/Yes-Steve-Model-Repo)
 
 # 2026-06-29
 
-- chore: Merged some team models. Only the author who created a model will have it listed under their name; other authors are listed as sub-entries for their respective contributions.
-- ps: After organizing for a while, I feel this categorization model still has issues — it's hard to find the model you want. Essentially, this is a collection of free models; many paid models are not included. When categorizing by author, only a few authors consistently produce high-quality free models. Categorizing by the model's subject might work better.
+- chore: Merged some team models — only the author who created a model will release it, while other authors are listed as contributors for their respective parts.
+- ps: After much organizing, I feel this categorization approach still has issues — it's hard to find the model you want. Essentially, this is a collection of free models; many paid models are not included. When categorizing by author, only a few authors consistently produce high-quality free models. Categorizing by the model's subject might work better.
 
 # 2026-05-21
 
-- ps: Most models are unusable in newer versions. It's recommended to only use newer encrypted models (which can be decrypted with ysmpaser; older models cannot be decrypted), or models with source files provided.
+- ps: Most models won't work on newer versions. It's recommended to only use newer encrypted models (which can be decrypted with ysmpaser; older models cannot be decrypted), or models that come with source files.
 
 # 2026-05-11
 
-- chore: Removed the pages site. Decided to revisit this once I learn a suitable way to present content.
-- chore: Decided to update metadata for all authors by the end of this year. ~If time permits, I will add preview images for every model.~
+- chore: Removed the pages site. I'll revisit it once I learn a suitable way to present content.
+- chore: Plan to update metadata for all authors by the end of this year. ~If time permits, I'll add preview images for every model.~
 
 # 2026-05-03
 
 - ps: Decided to only update higher-quality models and stop collecting others.
-- chore: Updated the high-quality mod branch, keeping only the latest mod
+- chore: Updated the quality mods branch to keep only the latest mods
 
 </details>
