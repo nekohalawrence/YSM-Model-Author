@@ -18,6 +18,29 @@
 <details open>
 <summary>Preview Images</summary>
 
+
+</details>
+
+<details>
+<summary>Model Details</summary>
+
+- **Franchise / Category**: #Zenless-Zone-Zero #ZZZ
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0094 - #墨染逝羽 | #Feather_aya](../)
+- **Author ID**: `0094`
+
+</details>
+
+## 预览图
+
+<details open>
+<summary>Preview Images</summary>
+
 <!-- GENERATED MODEL PREVIEW README START -->
 
 ![preview.png](preview.png)

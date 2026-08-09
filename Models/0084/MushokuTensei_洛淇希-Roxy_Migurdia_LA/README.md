@@ -18,6 +18,29 @@
 <details open>
 <summary>Preview Images</summary>
 
+
+</details>
+
+<details>
+<summary>Model Details</summary>
+
+- **Franchise / Category**: #MushokuTensei
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0084 - #幻古诗](../)
+- **Author ID**: `0084`
+
+</details>
+
+## 预览图
+
+<details open>
+<summary>Preview Images</summary>
+
 <!-- GENERATED MODEL PREVIEW README START -->
 
 ![preview.png](preview.png)

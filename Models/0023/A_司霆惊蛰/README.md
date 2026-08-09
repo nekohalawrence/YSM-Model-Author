@@ -18,6 +18,29 @@
 <details open>
 <summary>Preview Images</summary>
 
+
+</details>
+
+<details>
+<summary>Model Details</summary>
+
+- **Franchise / Category**: #Unknown
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0023 - #狸民limin| #狸民| #limin](../)
+- **Author ID**: `0023`
+
+</details>
+
+## 预览图
+
+<details open>
+<summary>Preview Images</summary>
+
 <!-- GENERATED MODEL PREVIEW README START -->
 
 ![preview01.png](preview01.png)

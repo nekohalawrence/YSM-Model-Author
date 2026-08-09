@@ -18,6 +18,29 @@
 <details open>
 <summary>Preview Images</summary>
 
+
+</details>
+
+<details>
+<summary>Model Details</summary>
+
+- **Franchise / Category**: #Blue-Archive #BA
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0170 - #木宁苒](../)
+- **Author ID**: `0170`
+
+</details>
+
+## 预览图
+
+<details open>
+<summary>Preview Images</summary>
+
 <!-- GENERATED MODEL PREVIEW README START -->
 
 ![preview.png](preview.png)

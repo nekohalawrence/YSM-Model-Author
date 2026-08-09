@@ -18,6 +18,29 @@
 <details open>
 <summary>Preview Images</summary>
 
+
+</details>
+
+<details>
+<summary>Model Details</summary>
+
+- **Franchise / Category**: #Umamusume: Pretty Derby #UmaMusume #UM
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0056 - 0056](../)
+- **Author ID**: `0056`
+
+</details>
+
+## 预览图
+
+<details open>
+<summary>Preview Images</summary>
+
 <!-- GENERATED MODEL PREVIEW README START -->
 
 ![preview011.png](preview011.png)

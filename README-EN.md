@@ -66,14 +66,14 @@
 | 0053 | [#羊毛毛毛毛_Official喵](.../../Models/0053) | 1 |
 | 0054 | [#一只霜狐Owo](.../../Models/0054) | 4 |
 | 0055 | [#伊蕾娜家的咸鱼](.../../Models/0055) | 12 |
-| 0056 | [#伊洛是哥斯拉嘛 #伊洛是哥斯拉吗\|  #哥斯拉 \| #落阳不养羊 \| #黎家诚 \| #BradKidd](.../../Models/0056) | 77 |
-| 0057 | [#忆尘yc27 \| #忆尘27](.../../Models/0057) | 3 |
+| 0056 | [None](.../../Models/0056) | 0 |
+| 0057 | [None](.../../Models/0057) | 0 |
 | 0058 | [#艺方像素 \| #艺方堂 \| #尻 \| #艺方坊 \| #艺方阁](.../../Models/0058) | 60 |
 | 0059 | [#瀛猫](.../../Models/0059) | 12 |
 | 0060 | [#油七桶](.../../Models/0060) | 4 |
 | 0061 | [#狱际星芒](.../../Models/0061) | 11 |
 | 0062 | [#云曦-Yunxxi_ugo \| #云曦](.../../Models/0062) | 7 |
-| 0063 | [#再来几斤小莫莫](.../../Models/0063) | 1 |
+| 0063 | [None](.../../Models/0063) | 0 |
 | 0064 | [#纸盒ALifang \| #Cc-纸盒 \| #Cc纸盒](.../../Models/0064) | 27 |
 | 0065 | [#烛火的次元宇宙](.../../Models/0065) | 19 |
 | 0066 | [#A_su杏仁](.../../Models/0066) | 3 |
@@ -83,7 +83,7 @@
 | 0070 | [#Dashcode \| #ASHES356](.../../Models/0070) | 2 |
 | 0071 | [#Dr咕咚](.../../Models/0071) | 1 |
 | 0072 | [#Eiven-ly \| #Eiven](.../../Models/0072) | 1 |
-| 0073 | [#MicroCraft_ \| #MicroCraft](.../../Models/0073) | 3 |
+| 0073 | [None](.../../Models/0073) | 0 |
 | 0075 | [#Wadanohara_Rika](.../../Models/0075) | 1 |
 | 0076 | [#White_clams白蛤蜊 \| #白蛤蜊 \| #White_Clams白蛤蜊](.../../Models/0076) | 15 |
 | 0077 | [#旭门只玩驹 \| #Zeonjin-旭门只玩驹](.../../Models/0077) | 2 |
@@ -234,12 +234,12 @@ Personal Rating: LA, LB, LC, LD
 - Command & Conquer Generals: Zero Hour, Zero Hour, ZH | Command & Conquer: Zero Hour
 - Delta Force, Delta-Force | Delta Force
 - Dead or Alive, DOA | Dead or Alive
-- Dohna Dohna: Let's Do Bad Things Together, DOHNA | Dohna Dohna | ドーナドーナ いっしょにわるいことしよう
+- Dohna Dohna: Let's Do Bad Things Together, DOHNA | Dohna Dohna
 - Doki-Doki-Literature-Club!, DDLC | Doki Doki Literature Club!
 - Fate-Grand-Order, FGO | Fate/Grand Order
 - Food Girls | Food Girls
 - Fox Hime Zero, FHZ
-- Honkai-Impact-3, HI3 | Honkai Impact 3
+- Honkai-Impact-3, HI3 | Honkai Impact 3rd
 - Honkai-Star-Rail, HSR | Honkai: Star Rail
 - Hyperdimension Neptunia, HDN | Hyperdimension Neptunia
 - Genshin Impact, Genshin, GI | Genshin Impact
@@ -247,7 +247,7 @@ Personal Rating: LA, LB, LC, LD
 - White Eternity, GF
 - GIRLS' FRONTLINE 2:EXILIUM, GF2 | Girls' Frontline 2: Exilium
 - Girls' Frontline: Neural Cloud, Project Neural Cloud, NC | Girls' Frontline: Neural Cloud
-- Goddess of Victory: Nikke, Nikke | Goddess of Victory: NIKKE
+- Goddess of Victory: Nikke, Nikke | Goddess of Victory: Nikke
 - Granblue Fantasy: Relink, GBR, Granblue | Granblue Fantasy: Relink
 - League of Legends, LOL | League of Legends
 - Limbus Company, LC | Limbus Company
@@ -289,10 +289,10 @@ Personal Rating: LA, LB, LC, LD
 - KonoSuba: God's Blessing on This Wonderful World!, KonoSuba, KON | KonoSuba | この素晴らしい世界に祝福を！
 - LoveMe | LoveMe | らぶみー♡
 - Majo no Tabitabim, MNT | Wandering Witch | 魔女の旅々, まじょのたびたび
-- Make Heroine ga Oosugiru!, MHO | Makeine: Too Many Losing Heroines!
+- Make Heroine ga Oosugiru!, MHO | Makeine: Too Many Losing Heroines! | 負けヒロインが多すぎる！
 - Mato Seihei no Sureibu, MSNS | Chained Soldier | 魔都精兵のスレイブ
 - MorotsuiKizoku, MKZ | Morotsui Kizoku
-- MushokuTensei | Mushoku Tensei | 無職転生 ～異世界行ったら本気だす～
+- MushokuTensei | Mushoku Tensei: Jobless Reincarnation | 無職転生 ～異世界行ったら本気だす～
 - Onii-chan wa Oshimai!, ONIMAI | Onimai: I'm Now Your Sister! | お兄ちゃんはおしまい！
 - Plants vs. Zombies, PVZ | Plants vs. Zombies
 - Puella Magi Madoka Magica, PMMM, Madoka | Puella Magi Madoka Magica | 魔法少女まどか☆マギカ
@@ -302,7 +302,7 @@ Personal Rating: LA, LB, LC, LD
 - Saekano: How to Raise a Boring Girlfriend, SAEKANO | Saekano
 - Tokyo Ghoul, Tokyo-Ghoul | Tokyo Ghoul | 東京喰種トーキョーグール
 - Ultraman Tiga, UT | Ultraman Tiga
-- Wandering Witch: The Journey of Elaina, Majo no Tabitabi | Wandering Witch | 魔女の旅々
+- Wandering Witch: The Journey of Elaina, Majo no Tabitabi | Wandering Witch: The Journey of Elaina | 魔女の旅々
 
 ## Novels
 
@@ -364,7 +364,7 @@ Personal Rating: LA, LB, LC, LD
 
 ## Project Structure
 
-> Below is an overview of the main directories in this repository. The structure may be adjusted as content grows.
+> Below is an overview of the main directories in this repository. This may be adjusted as content continues to evolve.
 
 ```text
 YSM-Model-Author/
@@ -412,22 +412,22 @@ YSM-Model-Author/
 
 ## Notes
 
-- Usage Notes
+- Usage notes
 	- The LA\B\C suffixes are personal preference ratings (build quality/completeness) and carry no other meaning.
 	- Archives contain project source files, while `.ysm` files are the encrypted model files.
 	- Some models in this repository are **18+**. Please use them at your discretion. I have not marked all **R18** models with `nsfw`.
-	- Do not **sell** models from this repository in any form. You are solely responsible for any consequences.
-- Model Notes
+	- Please do not **sell** models from this repository in any form. You are solely responsible for any consequences.
+- Model notes
 	- I discovered that models viewed through Obsidian (a note-taking app) are all corrupted!!!!!!!!
 	- If you find any unusable models, please let me know via an issue. Thank you!
-- Other Notes
+- Other notes
 	- I'm not very familiar with GitHub. If you want to modify anything, you can only notify me via Issue, or you can clone the repository and make changes yourself.
 
 ## Acknowledgements
 
 - [https://github.com/Elaina69/Yes-Steve-Model-Repo](https://github.com/Elaina69/Yes-Steve-Model-Repo): Source of most free models
 - @[LuckyPotion](https://space.bilibili.com/1739798750): Source of some specific authors' models
-- QQ-tomysh's Hospital Ward - 752713566: Source of some specific authors' models
+- QQ-tomysh 的住院楼 - 752713566: Source of some specific authors' models
 
 ## Changelog
 
@@ -453,16 +453,16 @@ YSM-Model-Author/
 # 2026-07-25
 
 - ps: There are too many weird games out there
-- ps: Note that some models without preview images are unusable. I saved them while browsing authors, which modified some characters and corrupted the original files, rendering those models unusable.
-- ps: A major mistake occurred. I discovered that most models viewed through Obsidian are corrupted!!!!!!!! It took me this long to find the cause — the history on git was not deleted.
+- ps: Note that some models without preview images are unusable. When I was reviewing authors, I saved them, which modified some characters and corrupted the original files, rendering those models unusable.
+- ps: Major mistake — I discovered that most models viewed through Obsidian are corrupted!!!!!!!! I only just found the cause; the history on git hasn't been deleted.
 
 # 2026-07-23
 
 - ps: Thanks to [LuckyPotion](https://space.bilibili.com/1739798750) for publicly sharing a collection of paid models from a certain team. I may gradually update preview images for various models in the future.
 - ps: Quark Cloud: https://pan.quark.cn/s/77a16d314a11 Extraction code: ajVD (expired)
 - ps: Baidu Cloud: https://pan.baidu.com/s/1FFSrd_YG-1Eat_DQD7hziw Extraction code: xiao
-- ps: Models are not being added to the repository for now. Download them yourself if needed.
-- chore: Planning to add an action to generate a `README.md` for each model to make preview images easier to view. If you have a better approach, please let me know via issue (I don't know how to code — AI wrote everything for me 😭)
+- ps: Models are not being added to the repository for now; download them yourself if needed
+- chore: Planning to add an action to generate a `README.md` for each model to make preview images easier to view. If you have a better approach, please let me know via issue (I don't know how to code — AI writes everything for me 😭)
 - chore: For naming consistency, all folder game names will be changed to English except for games exclusive to China. A translation reference list will be provided later.
 
 # 2026-07-19
@@ -473,27 +473,27 @@ YSM-Model-Author/
 
 # 2026-07-18
 
-- ps: Some creators belong to the same team. I'm not sure if there's a good way to categorize them. If you have suggestions, feel free to share.
+- ps: Some creators belong to the same team. I'm not sure if there's a good way to categorize them — feel free to suggest one if you have it.
 - chore: Reorganized a large number of models
 - chore: The reorganized models include new models and re-categorized [existing models](https://github.com/Elaina69/Yes-Steve-Model-Repo)
 
 # 2026-06-29
 
 - chore: Merged some team models — only the author who created the model releases the corresponding model, while other authors are listed as sub-contributors for their respective parts.
-- ps: After organizing for a while, I feel this categorization approach still has issues — it's hard to find the models you want. Essentially, this is a collection of free models; many paid models are not included. Categorizing by author, only a few teams consistently produce high-quality free models. Categorizing by the model's subject matter might work better.
+- ps: After organizing for a while, I feel this categorization approach still has issues — it's hard to find the model you want. Essentially, this is a collection of free models; many paid models are not included. When categorizing by author, only a few have consistently good quality. Categorizing by the model's subject might work better.
 
 # 2026-05-21
 
-- ps: Most models are incompatible with newer versions. It's recommended to only use newer encrypted models (decrypt with ysmpaser — older models cannot be decrypted either), or models with source files provided.
+- ps: Most models don't work in newer versions. It's recommended to only use newer encrypted models (decrypt with ysmpaser — older models cannot be decrypted either), or models with source files provided.
 
 # 2026-05-11
 
 - chore: Removed the pages site. I'll revisit it once I figure out a suitable way to present content.
-- chore: Decided to update all author metadata by the end of this year. ~If time permits, I will add preview images for every model.~
+- chore: Decided to update all authors' metadata by the end of this year. ~If time permits, I will add preview images for every model~.
 
 # 2026-05-03
 
-- ps: Decided to only update higher-quality models and stop collecting others.
+- ps: Decided to only update some higher-quality models and stop collecting others.
 - chore: Updated the quality mods branch to only keep the latest mods
 
 </details>

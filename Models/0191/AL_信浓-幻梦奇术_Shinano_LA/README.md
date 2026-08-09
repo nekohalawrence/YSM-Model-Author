@@ -18,6 +18,29 @@
 <details open>
 <summary>Preview Images</summary>
 
+
+</details>
+
+<details>
+<summary>Model Details</summary>
+
+- **Franchise / Category**: #Azur-Lane #AL
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0191 - 0191](../)
+- **Author ID**: `0191`
+
+</details>
+
+## 预览图
+
+<details open>
+<summary>Preview Images</summary>
+
 <!-- GENERATED MODEL PREVIEW README START -->
 
 ![preview.png](preview.png)

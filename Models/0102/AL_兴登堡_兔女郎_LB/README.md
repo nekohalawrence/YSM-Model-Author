@@ -18,6 +18,29 @@
 <details open>
 <summary>Preview Images</summary>
 
+
+</details>
+
+<details>
+<summary>Model Details</summary>
+
+- **Franchise / Category**: #Azur-Lane #AL
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0102 - #Dreamer #普通的木屐](../)
+- **Author ID**: `0102`
+
+</details>
+
+## 预览图
+
+<details open>
+<summary>Preview Images</summary>
+
 <!-- GENERATED MODEL PREVIEW README START -->
 
 ![preview.png](preview.png)

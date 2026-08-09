@@ -18,6 +18,29 @@
 <details open>
 <summary>Preview Images</summary>
 
+
+</details>
+
+<details>
+<summary>Model Details</summary>
+
+- **Franchise / Category**: #MorotsuiKizoku #MKZ
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0112 - #大莫家 | #MCZ工作室 | #mcz莫莫| #犟猫](../)
+- **Author ID**: `0112`
+
+</details>
+
+## 预览图
+
+<details open>
+<summary>Preview Images</summary>
+
 <!-- GENERATED MODEL PREVIEW README START -->
 
 ![preview.png](preview.png)
