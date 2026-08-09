@@ -16,6 +16,10 @@ START_MARKER = '<!-- GENERATED MODEL PREVIEW README START -->'
 END_MARKER = '<!-- GENERATED MODEL PREVIEW README END -->'
 
 
+def normalize_category_key(value: str) -> str:
+    return re.sub(r'[\s\-_]+', '', value).lower()
+
+
 def parse_categories_from_main_readme() -> dict[str, list[str]]:
     """从主 README.md 的模型分类区块解析作品缩写与对应的标签列表"""
     category_map: dict[str, list[str]] = {}
@@ -23,40 +27,40 @@ def parse_categories_from_main_readme() -> dict[str, list[str]]:
         return category_map
 
     content = MAIN_README_PATH.read_text(encoding='utf-8', errors='ignore')
-    
+
     match = re.search(r'<summary>\s*模型分类\s*</summary>(.*?)</details>', content, re.DOTALL)
     if not match:
         return category_map
 
     category_block = match.group(1)
-    
+
     for line in category_block.splitlines():
         line = line.strip()
         if not line.startswith('- '):
             continue
-        
-        raw_items = line[2:].split(',')
-        tags = [f"#{item.strip()}" for item in raw_items if item.strip()]
-        
+
+        alias_part = line[2:].split('|', 1)[0].strip()
+        aliases = [item.strip() for item in re.split(r'\s*,\s*', alias_part) if item.strip()]
+        tags = [f"#{alias}" for alias in aliases]
+
         if not tags:
             continue
-        
-        first_key = raw_items[0].strip().lower()
-        category_map[first_key] = tags
-        
-        for item in raw_items:
-            category_map[item.strip().lower()] = tags
+
+        for alias in aliases:
+            category_map[alias.strip().lower()] = tags
+            category_map[normalize_category_key(alias)] = tags
 
     return category_map
 
 
 def get_tags_for_model(model_folder_name: str, category_map: dict[str, list[str]]) -> str:
     """根据模型文件夹名称前缀匹配标签，未匹配到则默认为 #Unknown"""
-    prefix = model_folder_name.split('_')[0].strip().lower()
-    
-    if prefix in category_map:
-        return ' '.join(category_map[prefix])
-    
+    prefix = model_folder_name.split('_')[0].strip()
+
+    for candidate in (prefix.lower(), normalize_category_key(prefix)):
+        if candidate in category_map:
+            return ' '.join(category_map[candidate])
+
     return "#Unknown"
 
 
@@ -95,13 +99,15 @@ def collect_preview_images(model_dir: Path) -> list[Path]:
     return images
 
 
-def build_meta_and_preview_content(model_dir: Path, image_paths: list[Path], category_map: dict[str, list[str]]) -> str:
+def build_meta_and_preview_content(model_dir: Path, image_paths: list[Path], category_map: dict[str, list[str]], include_title: bool = True) -> str:
     """构建标准化的英文模型 README 内容"""
     title = model_dir.name
     tags = get_tags_for_model(title, category_map)
     author_id, author_name = get_author_info(model_dir)
 
-    lines = [f'# {title}', '']
+    lines = []
+    if include_title:
+        lines.extend([f'# {title}', ''])
 
     # Model Details（模型详情）
     lines.extend([
@@ -129,6 +135,8 @@ def build_meta_and_preview_content(model_dir: Path, image_paths: list[Path], cat
 
     # Preview Images（预览图，默认展开）
     lines.extend([
+        '## 预览图',
+        '',
         '<details open>',
         '<summary>Preview Images</summary>',
         '',
@@ -151,12 +159,36 @@ def build_meta_and_preview_content(model_dir: Path, image_paths: list[Path], cat
     return '\n'.join(lines).rstrip() + '\n'
 
 
+def strip_existing_preview_blocks(content: str) -> str:
+    """移除旧的预览章节和生成标记块，保留手写内容。"""
+    cleaned = re.sub(r'\n?<!-- GENERATED MODEL PREVIEW README START -->.*?<!-- GENERATED MODEL PREVIEW README END -->\n?', '\n', content, flags=re.S)
+
+    lines = cleaned.splitlines()
+    preserved: list[str] = []
+    skip_preview = False
+
+    for line in lines:
+        if re.match(r'^\s*##+\s*(预览图|Preview Images)\s*$', line, re.I):
+            skip_preview = True
+            continue
+
+        if skip_preview:
+            if re.match(r'^\s*##+\s+', line):
+                skip_preview = False
+                preserved.append(line)
+            continue
+
+        preserved.append(line)
+
+    return '\n'.join(preserved).strip()
+
+
 def is_author_dir(path: Path) -> bool:
     return path.is_dir() and path.name.isdigit() and len(path.name) == 4
 
 
 def iter_model_dirs(root_dir: Path):
-    if root_dir.name == 'Models':
+    if root_dir.name.lower() == 'models':
         for author_dir in sorted(root_dir.iterdir()):
             if not is_author_dir(author_dir):
                 continue
@@ -181,7 +213,13 @@ def main() -> int:
 
     category_map = parse_categories_from_main_readme()
 
-    for root_dir in ROOT_DIRS:
+    root_dirs = []
+    if 'ROOT_DIR' in globals() and globals()['ROOT_DIR'] is not None:
+        root_dirs = [Path(globals()['ROOT_DIR'])]
+    else:
+        root_dirs = ROOT_DIRS
+
+    for root_dir in root_dirs:
         if not root_dir.is_dir():
             continue
 
@@ -193,7 +231,14 @@ def main() -> int:
             readme_path = model_dir / 'README.md'
             existing_content = readme_path.read_text(encoding='utf-8', errors='ignore') if readme_path.exists() else None
 
-            new_content = build_meta_and_preview_content(model_dir, preview_images, category_map)
+            if existing_content:
+                preserved_content = strip_existing_preview_blocks(existing_content).strip()
+                if preserved_content:
+                    new_content = preserved_content + '\n\n' + build_meta_and_preview_content(model_dir, preview_images, category_map, include_title=False)
+                else:
+                    new_content = build_meta_and_preview_content(model_dir, preview_images, category_map, include_title=True)
+            else:
+                new_content = build_meta_and_preview_content(model_dir, preview_images, category_map, include_title=True)
 
             if readme_path.exists():
                 if existing_content == new_content:
