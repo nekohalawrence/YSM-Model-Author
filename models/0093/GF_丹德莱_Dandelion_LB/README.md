@@ -1,9 +1,9 @@
-# 丹德莱
+# GF_丹德莱_Dandelion_LB
 
 <details>
 <summary>模型信息</summary>
 
-- 来源：#Unknown
+- 来源：#Girls' Frontline #少女前线 #GFWhite Eternity #GF
 
 </details>
 
@@ -11,6 +11,8 @@
 <summary>预览图</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](preview.png)
 
 ![preview01.png](preview01.png)
 
