@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Naruto_面麻_LC
 
 <details>
@@ -27,3 +28,57 @@
 <!-- GENERATED MODEL PREVIEW README END -->
 
 </details>
+=======
+# Naruto_面麻_LC
+
+<details>
+<summary>Model Details</summary>
+
+- **Franchise / Category**: #NARUTO #Naruto Shippuden #NAR | 火影忍者: 疾风传
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0016 - #祸御神](../)
+- **Author ID**: `0016`
+
+</details>
+
+<details open>
+<summary>Preview Images</summary>
+
+
+</details>
+
+<details>
+<summary>Model Details</summary>
+
+- **Franchise / Category**: #NARUTO #Naruto Shippuden #NAR
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0016 - #祸御神](../)
+- **Author ID**: `0016`
+
+</details>
+
+## 预览图
+
+<details open>
+<summary>Preview Images</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](preview.png)
+
+![preview01.png](preview01.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+>>>>>>> 005e414481d902bbc24cf0981342dd0e61cfb719

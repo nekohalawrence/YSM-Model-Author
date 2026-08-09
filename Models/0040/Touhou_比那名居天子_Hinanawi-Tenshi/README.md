@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Touhou_比那名居天子_Hinanawi-Tenshi
 
 <details>
@@ -25,3 +26,55 @@
 <!-- GENERATED MODEL PREVIEW README END -->
 
 </details>
+=======
+# Touhou_比那名居天子_Hinanawi-Tenshi
+
+<details>
+<summary>Model Details</summary>
+
+- **Franchise / Category**: #Unknown
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0040 - #碎de帆](../)
+- **Author ID**: `0040`
+
+</details>
+
+<details open>
+<summary>Preview Images</summary>
+
+
+</details>
+
+<details>
+<summary>Model Details</summary>
+
+- **Franchise / Category**: #Touhou-Project #TH #TOUHOU
+
+</details>
+
+<details>
+<summary>Author Details</summary>
+
+- **Author**: [#0040 - #碎de帆](../)
+- **Author ID**: `0040`
+
+</details>
+
+## 预览图
+
+<details open>
+<summary>Preview Images</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview01.png](preview01.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+>>>>>>> 005e414481d902bbc24cf0981342dd0e61cfb719
