@@ -1,10 +1,13 @@
 # 0102
 
-## 模型
+## Author
 
-- 作者名称: #Dreamer #普通的木屐
-- 平台: #bilibili #afdian #qq #wechat
-	- [bilibili](https://www.bilibili.com/)：[普通的木屐的MC工坊](https://afdian.com/a/CommonMuJi)
-	- [afdian](https://afdian.com/)：[普通的木屐](https://space.bilibili.com/768300)
-	- qq: 1776296661
-	- wechat: MC_CommonMuJi
+- **Name**: #Dreamer #普通的木屐
+  - **Role**: 
+  - **SocialPlatform**: #Bilibili #WeChat
+    - **Bilibili**: [普通的木屐的MC工坊](https://afdian.com/a/CommonMuJi)
+    - **WeChat**: MC_CommonMuJi
+  - **SupportPlatform**: #Afdian 
+	- **Afdian**: [普通的木屐](https://space.bilibili.com/768300)
+  - **GroupChat**: #QQ 
+	- **QQ**: 1776296661

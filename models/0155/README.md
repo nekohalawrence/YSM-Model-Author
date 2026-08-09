@@ -1,9 +1,10 @@
 # 0155
 
-## 模型
+## Author
 
-- 作者名称: #叶无道_M
-- 平台: #bilibili #afdian
-	- [bilibili](https://www.bilibili.com/)：[叶无道_M](https://space.bilibili.com/11897609)
-	- [afdian](https://afdian.com/)：[叶无道_M](https://afdian.com/a/YWDM333)
-
+- **Name**: #叶无道_M
+  - **Role**: 
+  - **SocialPlatform**: #Bilibili 
+    - **Bilibili**: [叶无道_M](https://space.bilibili.com/11897609)
+  - **SupportPlatform**: #Afdian 
+	- **Afdian**: [叶无道_M](https://afdian.com/a/YWDM333)

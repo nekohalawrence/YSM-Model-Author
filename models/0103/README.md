@@ -1,21 +1,36 @@
 # 0103
 
-## 模型
+## Author
 
-- 作者名称: #浅陌菌
-- 平台: #bilibili #afdian 
-	- [bilibili](https://www.bilibili.com/)：[浅陌菌](https://space.bilibili.com/24513198)
-	- [afdian](https://afdian.com/)：[浅陌菌](https://afdian.com/a/tc_fox)
-- 团队: #艺方堂
-- 群聊
-	- QQ: 951920296
-	- QQ: 1063585053
+- **Name**: #浅陌菌
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Team**: #艺方堂
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [浅陌菌](https://space.bilibili.com/24513198)
+  - **SupportPlatform**: #Afdian
+	- **Afdian**: [浅陌菌](https://afdian.com/a/tc_fox)
+  - **GroupChat**: #QQ
+	- **QQ**: 951920296
+	- **QQ**: 1063585053
 
-## 动画
+## Co-creator
 
-- [0048-星屑海螺](../0048/README.md)
-- [0113-秋风](../../0113/README.md)
+- **Name**: #星屑海螺| #磁小轨制作组（星屑海螺）| #不是海螺
+  - **Role**: #动画 | #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [星屑海螺](https://space.bilibili.com/14975572)
+  - **SupportPlatform**: #Afdian
+	- **Afdian**: [磁小轨制作组（星屑海螺）](https://afdian.com/a/lucia2048)
+  - **GroupChat**: #QQ
+	- **QQ**: 682546342
+- **Name**: #秋风 | #每天都睡不醒的秋风 | #睡不死死不睡的秋风
+  - **Role**: #动画 | #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [每天都睡不醒的秋风](https://space.bilibili.com/375227559)
+  - **SupportPlatform**: #Afdian
+	- **Afdian**: [睡不死死不睡的秋风](https://afdian.com/a/qf0224)
 
-## 形象
+## Author
 
-- 遊記 Gnocchi
+- **Name**: #遊記-Gnocchi
+  - **Role**: #形象 | #Image

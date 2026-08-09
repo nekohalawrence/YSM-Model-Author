@@ -1,10 +1,12 @@
 # 0125
 
-## 模型
+## Author
 
-- 作者名称: #辅助EinHeld
-- 平台: #bilibili #afdian 
-	- [bilibili](https://www.bilibili.com/)：[辅助EinHeld](https://space.bilibili.com/483015918)
-	- [afdian](https://afdian.com/)：
-- 群聊
-	- QQ: 
+- **Name**: #辅助EinHeld
+  - **Role**: 
+  - **SocialPlatform**: #Bilibili 
+    - **Bilibili**: [辅助EinHeld](https://space.bilibili.com/483015918)
+  - **SupportPlatform**: #Afdian 
+	- **Afdian**: 
+  - **GroupChat**: #QQ 
+	- **QQ**: 

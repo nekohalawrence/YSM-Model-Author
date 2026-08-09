@@ -1,11 +1,13 @@
 # 0062
 
-## 模型
+## Author
 
-- 作者名称: #云曦-Yunxxi_ugo | #云曦
-- 平台: #bilibili #afdian #QQ
-	- [bilibili](https://www.bilibili.com/)：[云曦-Yunxxi_ugo](https://space.bilibili.com/28954757)
-	- [afdian](https://afdian.com/)：[云曦](https://afdian.com/a/Yunxxi_ugo)
-	- QQ: 1922137073
-- 群聊: #QQ
-	- QQ: 924884449
+- **Name**: #云曦-Yunxxi_ugo | #云曦
+  - **Role**: 
+  - **SocialPlatform**: #Bilibili 
+    - **Bilibili**: [云曦-Yunxxi_ugo](https://space.bilibili.com/28954757)
+  - **SupportPlatform**: #Afdian 
+	- **Afdian**: [云曦](https://afdian.com/a/Yunxxi_ugo)
+  - **GroupChat**: #QQ 
+	- **QQ**: 1922137073
+	- **QQ**: 924884449

@@ -1,10 +1,12 @@
 # 0047
 
-## 模型
+## Author
 
-- 作者名称: #Nicy_奈汐 | #苏溟0w0 | #沐星喵OwO
-- 平台: #bilibili #afdian 
-	- [bilibili](https://www.bilibili.com/)：[苏溟0w0](https://space.bilibili.com/3494363390806334)
-	- [afdian](https://afdian.com/)：
-- 群聊
-	- QQ: 743807609
+- **Name**: #Nicy_奈汐 | #苏溟0w0 | #沐星喵OwO
+  - **Role**: 
+  - **SocialPlatform**: #Bilibili 
+    - **Bilibili**: [苏溟0w0](https://space.bilibili.com/3494363390806334)
+  - **SupportPlatform**: #Afdian 
+	- **Afdian**: 
+  - **GroupChat**: #QQ 
+	- **QQ**: 743807609

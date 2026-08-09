@@ -1,8 +1,12 @@
 # 0028
 
-- 作者名称： #喵Kuroneko| #KuroNeko
-- 平台： #bilibili #afdian 
-	- [bilibili](https://www.bilibili.com/)：[喵 Kuroneko](https://space.bilibili.com/323374106)
-	- [afdian](https://afdian.com/)：[KuroNeko](https://afdian.com/a/QwQlalalaKuroNe)
-- 群聊
-	- qq：1050145781
+## Author
+
+- **Name**: #喵Kuroneko| #KuroNeko
+  - **Role**: 
+  - **SocialPlatform**: #Bilibili 
+    - **Bilibili**: [喵 Kuroneko](https://space.bilibili.com/323374106)
+  - **SupportPlatform**: #Afdian 
+	- **Afdian**: [KuroNeko](https://afdian.com/a/QwQlalalaKuroNe)
+  - **GroupChat**: #QQ 
+	- **QQ**: 1050145781

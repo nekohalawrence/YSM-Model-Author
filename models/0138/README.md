@@ -1,10 +1,11 @@
 # 0138
 
-## 模型
+## Author
 
-- 作者名称: #夜森岚_Noxsil
-- 平台: #bilibili #QQ
-	- [bilibili](https://www.bilibili.com/)：[夜森岚_Noxsil](https://space.bilibili.com/3706963248548243)
-	- QQ: 3910084829
-- 群聊
-	- QQ: 
+- **Name**: #夜森岚_Noxsil
+  - **Role**: 
+  - **SocialPlatform**: #Bilibili 
+    - **Bilibili**: [夜森岚_Noxsil](https://space.bilibili.com/3706963248548243)
+  - **GroupChat**: #QQ 
+	- **QQ**: 3910084829
+	- **QQ**: 

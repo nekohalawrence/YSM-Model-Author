@@ -1,11 +1,13 @@
 # 0094
 
-## 模型
+## Author
 
-- 作者名称: #墨染逝羽 | #Feather_aya
-- 平台: #bilibili #afdian 
-	- [bilibili](https://www.bilibili.com/)：[墨染逝羽](https://space.bilibili.com/5718046)
-	- [afdian](https://afdian.com/)：[Feather_aya](https://afdian.com/a/FliegeSA)
+- **Name**: #墨染逝羽 | #Feather_aya
+  - **Role**: 
+  - **SocialPlatform**: #Bilibili 
+    - **Bilibili**: [墨染逝羽](https://space.bilibili.com/5718046)
+  - **SupportPlatform**: #Afdian 
+	- **Afdian**: [Feather_aya](https://afdian.com/a/FliegeSA)
 
 ## 动画
 

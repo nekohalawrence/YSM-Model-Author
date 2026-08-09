@@ -1,13 +1,15 @@
 # 0123
 
-## 模型
+## Author
 
-- 作者名称: #Anrieal
-- 平台: #bilibili #afdian 
-	- [bilibili](https://www.bilibili.com/)：[Anrieal](https://space.bilibili.com/1421932069)
-	- [afdian](https://afdian.com/)：
-- 群聊
-	- QQ: 
+- **Name**: #Anrieal
+  - **Role**: 
+  - **SocialPlatform**: #Bilibili 
+    - **Bilibili**: [Anrieal](https://space.bilibili.com/1421932069)
+  - **SupportPlatform**: #Afdian 
+	- **Afdian**: 
+  - **GroupChat**: #QQ 
+	- **QQ**: 
 
 ## 资源
 

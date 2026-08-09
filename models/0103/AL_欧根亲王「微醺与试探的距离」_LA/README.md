@@ -1,4 +1,4 @@
-# AL_欧根亲王「微醺与试探的距离」_LA
+# AL_ 欧根亲王「微醺与试探的距离」_LA
 
 <details>
 <summary>模型信息</summary>

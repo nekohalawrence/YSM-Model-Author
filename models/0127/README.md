@@ -1,10 +1,12 @@
 # 0127
 
-## 模型
+## Author
 
-- 作者名称: #总督神绮
-- 平台: #bilibili #afdian 
-	- [bilibili](https://www.bilibili.com/)：[总督神绮](https://space.bilibili.com/37854534)
-	- [afdian](https://afdian.com/)：[总督神绮](https://ifdian.net/a/sShinki)
-- 群聊
-	- QQ: 
+- **Name**: #总督神绮
+  - **Role**: 
+  - **SocialPlatform**: #Bilibili 
+    - **Bilibili**: [总督神绮](https://space.bilibili.com/37854534)
+  - **SupportPlatform**: #Afdian 
+	- **Afdian**: [总督神绮](https://ifdian.net/a/sShinki)
+  - **GroupChat**: #QQ 
+	- **QQ**: 

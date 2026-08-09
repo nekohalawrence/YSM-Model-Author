@@ -1,8 +1,10 @@
 # 0036
 
-## 模型
+## Author
 
-- 作者名称: #日月明567
-- 平台: #bilibili #afdian 
-	- [bilibili](https://www.bilibili.com/)：[日月明567](https://space.bilibili.com/1803539047)
-	- [afdian](https://afdian.com/)：[日月明567](https://afdian.com/a/rym567)
+- **Name**: #日月明567
+  - **Role**: 
+  - **SocialPlatform**: #Bilibili 
+    - **Bilibili**: [日月明567](https://space.bilibili.com/1803539047)
+  - **SupportPlatform**: #Afdian 
+	- **Afdian**: [日月明567](https://afdian.com/a/rym567)

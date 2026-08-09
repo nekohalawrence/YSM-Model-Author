@@ -1,8 +1,9 @@
 # 0003
 
-## 模型
+## Author
 
-- 作者名称: #XGancheng_Tao
-- 平台: #bilibili #afdian 
-	- [bilibili](https://www.bilibili.com/)：[XGancheng_Tao](https://space.bilibili.com/1406170630)
-	- [afdian](https://afdian.com/)：
+- **Name**: #XGancheng_Tao
+  - **Role**: 
+  - **SocialPlatform**: #Bilibili 
+    - **Bilibili**: [XGancheng_Tao](https://space.bilibili.com/1406170630)
+

@@ -1,9 +1,10 @@
 # 0080
 
-## 模型
+## Author
 
-- 作者名称: #Nona_Reeves
-- 平台: #QQ
-	- QQ: 1926615510
-- 团队: #映素作坊 | #映素
+- **Name**: #Nona_Reeves
+  - **Role**: 
+  - **Team**: #映素作坊 | #映素
+  - **GroupChat**: #QQ 
+	- **QQ**: 1926615510
 

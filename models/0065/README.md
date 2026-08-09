@@ -1,8 +1,10 @@
 # 0065
 
-## 模型
+## Author
 
-- 作者名称： #烛火的次元宇宙
-- 平台： #bilibili #afdian 
-	- [bilibili](https://www.bilibili.com/)：[烛火的次元宇宙](https://space.bilibili.com/57715833)
-	- [afdian](https://afdian.com/)：[烛火的次元宇宙](https://afdian.com/a/zhuhuo)
+- **Name**: #烛火的次元宇宙
+  - **Role**: 
+  - **SocialPlatform**: #Bilibili 
+    - **Bilibili**: [烛火的次元宇宙](https://space.bilibili.com/57715833)
+  - **SupportPlatform**: #Afdian 
+	- **Afdian**: [烛火的次元宇宙](https://afdian.com/a/zhuhuo)

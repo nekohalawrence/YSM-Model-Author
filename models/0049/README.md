@@ -1,9 +1,10 @@
 # 0049
 
-## 模型
+## Author
 
-- 作者名称： #星语TAT
-- 平台： #bilibili
-	- [bilibili](https://www.bilibili.com/)：[星语TAT](https://space.bilibili.com/316739550)
-- 群聊
-	- QQ: 1039376704
+- **Name**: #星语TAT
+  - **Role**: 
+  - **SocialPlatform**: #Bilibili 
+    - **Bilibili**: [星语TAT](https://space.bilibili.com/316739550)
+  - **GroupChat**: #QQ 
+	- **QQ**: 1039376704

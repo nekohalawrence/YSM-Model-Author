@@ -1,11 +1,13 @@
 # 0165
 
-## 模型
+## Author
 
-- 作者名称: #默栖 | #某嘞个默栖 | #默嘞个某栖
-- 平台: #bilibili #afdian
-	- [bilibili](https://www.bilibili.com/)：[某嘞个默栖](https://space.bilibili.com/477165698)
-	- [afdian](https://afdian.com/)：[默嘞个某栖](https://afdian.com/a/DLMoqi)
+- **Name**: #默栖 | #某嘞个默栖 | #默嘞个某栖
+  - **Role**: 
+  - **SocialPlatform**: #Bilibili 
+    - **Bilibili**: [某嘞个默栖](https://space.bilibili.com/477165698)
+  - **SupportPlatform**: #Afdian 
+	- **Afdian**: [默嘞个某栖](https://afdian.com/a/DLMoqi)
 
 ## 动画
 

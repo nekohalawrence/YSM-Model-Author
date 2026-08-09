@@ -1,8 +1,10 @@
 # 0042
 
-## 模型
+## Author
 
-- 作者名称: #天弓干亦 #筅袔
-- 平台: #bilibili #afdian 
-	- [bilibili](https://www.bilibili.com/)：[天弓干亦](https://space.bilibili.com/13098279)
-	- [afdian](https://afdian.com/)：
+- **Name**: #天弓干亦 #筅袔
+  - **Role**: 
+  - **SocialPlatform**: #Bilibili 
+    - **Bilibili**: [天弓干亦](https://space.bilibili.com/13098279)
+  - **SupportPlatform**: #Afdian 
+	- **Afdian**: 

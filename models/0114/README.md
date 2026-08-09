@@ -1,12 +1,14 @@
 # 0114
 
-## 模型
+## Author
 
-- 作者名称: #迷糊晓雾
-- 平台: #bilibili #afdian #QQ #e-mail
-	- [bilibili](https://www.bilibili.com/)：
-	- [afdian](https://afdian.com/)：
-	- QQ: 3313645023
-	- qq.com: 3313645023@qq.com
-- 群聊
-	- QQ: 
+- **Name**: #迷糊晓雾
+  - **Role**: 
+  - **SocialPlatform**: #Bilibili #e-mail
+    - **Bilibili**: 
+    - **E-mail**: 3313645023@qq.com
+  - **SupportPlatform**: #Afdian 
+	- **Afdian**: 
+  - **GroupChat**: #QQ 
+	- **QQ**: 3313645023
+	- **QQ**: 

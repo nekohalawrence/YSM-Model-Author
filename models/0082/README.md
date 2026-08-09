@@ -1,8 +1,11 @@
 # 0082
 
-## 模型
+## Author
 
-- 作者名称: #树枝没虈枝
-- 平台: #bilibili #afdian 
-	- [bilibili](https://www.bilibili.com/)：[树枝没虈枝](https://space.bilibili.com/3494364170946713)
-	- [afdian](https://afdian.com/)：
+- **Name**: #树枝没虈枝
+  - **Role**: 
+  - **SocialPlatform**: #Bilibili 
+    - **Bilibili**: [树枝没虈枝](https://space.bilibili.com/3494364170946713)
+  - **SupportPlatform**: #Afdian 
+	- **Afdian**: 
+

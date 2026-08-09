@@ -1,10 +1,12 @@
 # 0134
 
-## 模型
+## Author
 
-- 作者名称: #黑喵みそ
-- 平台: #bilibili #afdian 
-	- [bilibili](https://www.bilibili.com/)：
-	- [afdian](https://afdian.com/)：
-- 群聊
-	- QQ: 
+- **Name**: #黑喵みそ
+  - **Role**: 
+  - **SocialPlatform**: #Bilibili 
+    - **Bilibili**: 
+  - **SupportPlatform**: #Afdian 
+	- **Afdian**: 
+  - **GroupChat**: #QQ 
+	- **QQ**: 

@@ -1,7 +1,12 @@
 # 0088
 
-- 作者名称: #无名氏
-- 平台: #bilibili #afdian #qq 
-	- [bilibili](https://www.bilibili.com/)：
-	- [afdian](https://afdian.com/)：
-	- QQ: 2568904644
+## Author
+
+- **Name**: #无名氏
+  - **Role**: 
+  - **SocialPlatform**: #Bilibili 
+    - **Bilibili**: 
+  - **SupportPlatform**: #Afdian 
+	- **Afdian**: 
+  - **GroupChat**: #QQ 
+	- **QQ**: 2568904644

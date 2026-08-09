@@ -1,8 +1,8 @@
 # 0180
 
-## 模型
+## Author
 
-- 作者名称: #杂果沙拉
-- 平台: #bilibili 
-	- [bilibili](https://www.bilibili.com/)：[杂果沙拉](https://space.bilibili.com/21032727)
-
+- **Name**: #杂果沙拉
+  - **Role**: 
+  - **SocialPlatform**: #Bilibili 
+    - **Bilibili**: [杂果沙拉](https://space.bilibili.com/21032727)

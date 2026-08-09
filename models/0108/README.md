@@ -1,10 +1,12 @@
 # 0108
 
-## 模型
+## Author
 
-- 作者名称: #原原本本空空
-- 平台: #bilibili #afdian 
-	- [bilibili](https://www.bilibili.com/)：[原原本本空空](https://space.bilibili.com/407818720)
-	- [afdian](https://afdian.com/)：
-- 群聊
-	- QQ: 1082258207
+- **Name**: #原原本本空空
+  - **Role**: 
+  - **SocialPlatform**: #Bilibili 
+    - **Bilibili**: [原原本本空空](https://space.bilibili.com/407818720)
+  - **SupportPlatform**: #Afdian 
+	- **Afdian**: 
+  - **GroupChat**: #QQ 
+	- **QQ**: 1082258207

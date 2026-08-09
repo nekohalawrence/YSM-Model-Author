@@ -1,8 +1,12 @@
 # 0072
 
-- 作者名称: #Eiven-ly | #Eiven
-- 平台: #bilibili #afdian 
-	- [bilibili](https://www.bilibili.com/)：[Eiven-ly](https://space.bilibili.com/3546623741266008)
-	- [afdian](https://afdian.com/)：[Eiven](https://afdian.com/a/Eivenly)
-- 群聊
-	- QQ: 649086784
+## Author
+
+- **Name**: #Eiven-ly | #Eiven
+  - **Role**: 
+  - **SocialPlatform**: #Bilibili 
+    - **Bilibili**: [Eiven-ly](https://space.bilibili.com/3546623741266008)
+  - **SupportPlatform**: #Afdian 
+	- **Afdian**: [Eiven](https://afdian.com/a/Eivenly)
+  - **GroupChat**: #QQ 
+	- **QQ**: 649086784

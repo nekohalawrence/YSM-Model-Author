@@ -1,8 +1,10 @@
 # 0101
 
-## 模型
+## Author
 
-- 作者名称: #獒子coco | #獒子酱的杂货店 | #獒子獒子獒
-- 平台: #bilibili #afdian 
-	- [bilibili](https://www.bilibili.com/)：[獒子獒子獒](https://space.bilibili.com/19140392)
-	- [afdian](https://afdian.com/)：[獒子酱的杂货店](https://afdian.com/a/AOZICOCO)
+- **Name**: #獒子coco | #獒子酱的杂货店 | #獒子獒子獒
+  - **Role**: 
+  - **SocialPlatform**: #Bilibili 
+    - **Bilibili**: [獒子獒子獒](https://space.bilibili.com/19140392)
+  - **SupportPlatform**: #Afdian 
+	- **Afdian**: [獒子酱的杂货店](https://afdian.com/a/AOZICOCO)

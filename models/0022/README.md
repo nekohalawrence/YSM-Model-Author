@@ -1,11 +1,18 @@
 # 0022
 
-## 模型
+## Author
 
-- 作者名称: #Tu_tou
-- 平台： #bilibili
-- 群聊
-	- QQ: 126088260
-- 其他：
-	- 金主: #快乐的小盛子
-	- [bilibili](https://www.bilibili.com/)：[快乐的小盛子](https://space.bilibili.com/10544873)
+- **Name**: #Tu_tou
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**:
+  - **GroupChat**: #QQ
+	- **QQ**: 126088260
+
+## Co-creator
+
+- **Name**: #快乐的小盛子
+  - **Role**: #金主 | #Sponsor
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [快乐的小盛子](https://space.bilibili.com/10544873)
+

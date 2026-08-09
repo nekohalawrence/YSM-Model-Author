@@ -1,11 +1,13 @@
 # 0056
 
-## 模型
+## Author
 
-- 作者名称： #伊洛是哥斯拉嘛 #伊洛是哥斯拉吗|  #哥斯拉 | #落阳不养羊 | #晓苯升易 | #黎家诚 | #BradKidd
-- 平台： #bilibili #afdian
-	- [bilibili](https://www.bilibili.com/)：[伊洛是哥斯拉嘛](https://space.bilibili.com/17798027)
-	- [afdian](https://afdian.com/)：[映素作坊](https://afdian.com/a/6TGESILA)
+- **Name**: #伊洛是哥斯拉嘛 #伊洛是哥斯拉吗|  #哥斯拉 | #落阳不养羊 | #黎家诚 | #BradKidd
+  - **Role**: 
+  - **SocialPlatform**: #Bilibili 
+    - **Bilibili**: [伊洛是哥斯拉嘛](https://space.bilibili.com/17798027)
+  - **SupportPlatform**: #Afdian 
+	- **Afdian**: [映素作坊](https://afdian.com/a/6TGESILA)
 
 ## 动作
 
@@ -16,4 +18,3 @@
 ## 动画
 
 - [0063-再来几斤小莫莫](../../0063/README.md)
-

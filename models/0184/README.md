@@ -1,9 +1,8 @@
 # 0184
 
-## 模型
+## Author
 
-- 作者名称: #MC-ZBM
-- 平台: #bilibili 
-	- [bilibili](https://www.bilibili.com/)：[MC-ZBM](https://space.bilibili.com/604228173)
-
-
+- **Name**: #MC-ZBM
+  - **Role**: 
+  - **SocialPlatform**: #Bilibili 
+    - **Bilibili**: [MC-ZBM](https://space.bilibili.com/604228173)

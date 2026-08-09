@@ -1,6 +1,10 @@
 # 0081
 
-- 作者名称: #窝窝头
-- 平台: #bilibili #afdian 
-	- [bilibili](https://www.bilibili.com/)：[泛用型窝窝头](https://space.bilibili.com/357608680)
-	- [afdian](https://afdian.com/)：[窝窝头](https://afdian.com/a/WWTman)
+## Author
+
+- **Name**: #窝窝头
+  - **Role**: 
+  - **SocialPlatform**: #Bilibili 
+    - **Bilibili**: [泛用型窝窝头](https://space.bilibili.com/357608680)
+  - **SupportPlatform**: #Afdian 
+	- **Afdian**: [窝窝头](https://afdian.com/a/WWTman)

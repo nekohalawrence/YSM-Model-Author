@@ -1,7 +1,8 @@
 # 0096
 
-## 模型
+## Author
 
-- 作者名称: #Kria月明
-- 平台: #bilibili 
-	- [bilibili](https://www.bilibili.com/)：[Kria月明](https://space.bilibili.com/182808322)
+- **Name**: #Kria月明
+  - **Role**: 
+  - **SocialPlatform**: #Bilibili 
+    - **Bilibili**: [Kria月明](https://space.bilibili.com/182808322)

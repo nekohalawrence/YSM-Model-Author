@@ -1,9 +1,8 @@
-# 0150
+# 0151
 
-## 模型
+## Author
 
-- 作者名称: #WisteriaZy | #大触紫衣
-- 平台: #bilibili
-	- [bilibili](https://www.bilibili.com/)：[大触紫衣](https://space.bilibili.com/694519335)
-
-
+- **Name**: #WisteriaZy | #大触紫衣
+  - **Role**: 
+  - **SocialPlatform**: #Bilibili 
+    - **Bilibili**: [大触紫衣](https://space.bilibili.com/694519335)

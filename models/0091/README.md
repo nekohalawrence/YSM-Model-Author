@@ -1,5 +1,8 @@
 # 0091
 
-- 作者名称: #trita
-- 平台: #qq 
-	- QQ: 3490790346
+## Author
+
+- **Name**: #trita
+  - **Role**: 
+  - **GroupChat**: #QQ 
+	- **QQ**: 3490790346

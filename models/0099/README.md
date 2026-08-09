@@ -1,8 +1,12 @@
 # 0099
 
-- 作者名称: #Dumnheint
-- 平台: #bilibili #afdian 
-	- [bilibili](https://www.bilibili.com/)：[Dumrnheint](https://space.bilibili.com/36644599)
-	- [afdian](https://afdian.com/)：
-- 群聊
-	- QQ: 
+## Author
+
+- **Name**: #Dumnheint
+  - **Role**: 
+  - **SocialPlatform**: #Bilibili 
+    - **Bilibili**: [Dumrnheint](https://space.bilibili.com/36644599)
+  - **SupportPlatform**: #Afdian 
+	- **Afdian**: 
+  - **GroupChat**: #QQ 
+	- **QQ**: 

@@ -1,10 +1,11 @@
 # 0122
 
-## 模型
+## Author
 
-- 作者名称: #茶-GreenTea
-- 平台: #bilibili 
-	- [bilibili](https://www.bilibili.com/)：[茶-GreenTea](https://space.bilibili.com/458058211)
+- **Name**: #茶-GreenTea
+  - **Role**: 
+  - **SocialPlatform**: #Bilibili 
+    - **Bilibili**: [茶-GreenTea](https://space.bilibili.com/458058211)
 
 ## 动画
 

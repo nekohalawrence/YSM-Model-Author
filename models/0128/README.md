@@ -1,10 +1,12 @@
 # 0128
 
-## 模型
+## Author
 
-- 作者名称: #Ark样本
-- 平台: #bilibili #afdian 
-	- [bilibili](https://www.bilibili.com/)：[Ark样本](https://space.bilibili.com/3081780)
-	- [afdian](https://afdian.com/)：
-- 群聊
-	- QQ: 
+- **Name**: #Ark样本
+  - **Role**: 
+  - **SocialPlatform**: #Bilibili 
+    - **Bilibili**: [Ark样本](https://space.bilibili.com/3081780)
+  - **SupportPlatform**: #Afdian 
+	- **Afdian**: 
+  - **GroupChat**: #QQ 
+	- **QQ**: 

@@ -1,6 +1,6 @@
 # 0169
 
-## 模型
+## Author
 
-- 作者名称: #ShiroKaze
-- 平台: 
+- **Name**: #ShiroKaze
+  - **Role**: 

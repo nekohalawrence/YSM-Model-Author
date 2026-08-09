@@ -1,10 +1,12 @@
 # 0133
 
-## 模型
+## Author
 
-- 作者名称: #SI_VD
-- 平台: #bilibili #afdian 
-	- [bilibili](https://www.bilibili.com/)：[SI_VD](https://space.bilibili.com/1413470251)
-	- [afdian](https://afdian.com/)：[S/_VD Club](https://ifdian.net/a/3832254VD)
-- 群聊
-	- QQ: 
+- **Name**: #SI_VD
+  - **Role**: 
+  - **SocialPlatform**: #Bilibili 
+    - **Bilibili**: [SI_VD](https://space.bilibili.com/1413470251)
+  - **SupportPlatform**: #Afdian 
+	- **Afdian**: [S/_VD Club](https://ifdian.net/a/3832254VD)
+  - **GroupChat**: #QQ 
+	- **QQ**: 

@@ -1,13 +1,15 @@
 # 0105
 
-## 模型
+## Author
 
-- 作者名称: #超级大鸡腿丶 | #Nss
-- 平台: #bilibili #afdian 
-	- [bilibili](https://www.bilibili.com/)：
-	- [afdian](https://afdian.com/)：
-- 群聊
-	- QQ: 
+- **Name**: #超级大鸡腿丶 | #Nss
+  - **Role**: 
+  - **SocialPlatform**: #Bilibili 
+    - **Bilibili**: 
+  - **SupportPlatform**: #Afdian 
+	- **Afdian**: 
+  - **GroupChat**: #QQ 
+	- **QQ**: 
 
 ## 动画/动作
 

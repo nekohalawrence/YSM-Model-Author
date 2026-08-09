@@ -1,10 +1,12 @@
 # 0041
 
-## 模型
+## Author
 
-- 作者名称: #提可拉
-- 平台: #bilibili #afdian 
-	- [bilibili](https://www.bilibili.com/)：[提可拉](https://space.bilibili.com/326133289)
-	- [afdian](https://afdian.com/)：[提可拉](https://afdian.com/a/6Canim)
-- 群聊
-	- QQ: 881921312
+- **Name**: #提可拉
+  - **Role**: 
+  - **SocialPlatform**: #Bilibili 
+    - **Bilibili**: [提可拉](https://space.bilibili.com/326133289)
+  - **SupportPlatform**: #Afdian 
+	- **Afdian**: [提可拉](https://afdian.com/a/6Canim)
+  - **GroupChat**: #QQ 
+	- **QQ**: 881921312

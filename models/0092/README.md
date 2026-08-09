@@ -1,8 +1,10 @@
 # 0092
 
-## 模型
+## Author
 
-- 作者名称: #菊姥爷
-- 平台: #bilibili #afdian 
-	- [bilibili](https://www.bilibili.com/)：[菊姥爷](https://space.bilibili.com/376780490)
-	- [afdian](https://afdian.com/)：[julaoye](https://afdian.com/a/julaoye)
+- **Name**: #菊姥爷
+  - **Role**: 
+  - **SocialPlatform**: #Bilibili 
+    - **Bilibili**: [菊姥爷](https://space.bilibili.com/376780490)
+  - **SupportPlatform**: #Afdian 
+	- **Afdian**: [julaoye](https://afdian.com/a/julaoye)

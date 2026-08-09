@@ -1,5 +1,8 @@
 # 0040
 
-- 作者名称: #碎de帆
-- 平台: #bilibili
-	- [bilibili](https://www.bilibili.com/)：[碎de帆](https://space.bilibili.com/381524342)
+## Author
+
+- **Name**: #碎de帆
+  - **Role**: 
+  - **SocialPlatform**: #Bilibili 
+    - **Bilibili**: [碎de帆](https://space.bilibili.com/381524342)

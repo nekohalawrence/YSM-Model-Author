@@ -1,9 +1,12 @@
 # 0006
 
-## 模型
+## Author
 
-- 作者名称: #Nekuro | #NekuroMC
-- 平台: #youtube #ko-fi #sketchfab 
-	- [YouTube](https://www.youtube.com/)：[Nekuro](https://www.youtube.com/@NekuroMC)
-	- [Ko-fi](https://ko-fi.com/)：[NekuroMC](https://ko-fi.com/nekuromc/shop)
-	- [Sketchfab](https://sketchfab.com/)：[NekuroMC](https://sketchfab.com/NekuroMC/models)
+- **Name**: #Nekuro | #NekuroMC
+  - **Role**: 
+  - **SocialPlatform**: #YouTube #Sketchfab
+    - **YouTube**: [Nekuro](https://www.youtube.com/@NekuroMC)
+    - **Sketchfab**: [NekuroMC](https://sketchfab.com/NekuroMC/models)
+- **SupportPlatform**: #Afdian #ko-fi
+    - **Ko-fi**: [NekuroMC](https://ko-fi.com/nekuromc/shop)
+

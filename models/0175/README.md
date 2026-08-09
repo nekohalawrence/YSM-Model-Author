@@ -1,6 +1,6 @@
 # 0175
 
-## 模型
+## Author
 
-- 作者名称: #集栎 | #Nebulathus
-- 平台: 
+- **Name**: #集栎 | #Nebulathus
+  - **Role**: 

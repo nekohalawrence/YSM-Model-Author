@@ -1,8 +1,12 @@
 # 0100
 
-- 作者名称: #京泉
-- 平台: #bilibili #afdian 
-	- [bilibili](https://www.bilibili.com/)：
-	- [afdian](https://afdian.com/)：
-- 群聊
-	- QQ: 
+## Author
+
+- **Name**: #京泉
+  - **Role**: 
+  - **SocialPlatform**: #Bilibili 
+    - **Bilibili**: 
+  - **SupportPlatform**: #Afdian 
+	- **Afdian**: 
+  - **GroupChat**: #QQ 
+	- **QQ**: 

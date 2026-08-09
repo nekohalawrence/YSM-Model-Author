@@ -1,9 +1,10 @@
 # 0031
 
-## 模型
+## Author
 
-- 作者名称: #泥泞中的小猫 | #PZGR.40
-- 平台: #bilibili 
-	- [bilibili](https://www.bilibili.com/)：[泥泞中的小猫](https://space.bilibili.com/87435859)
-- 群聊: 
-	- QQ: 1012212180
+- **Name**: #泥泞中的小猫 | #PZGR.40
+  - **Role**: 
+  - **SocialPlatform**: #Bilibili 
+    - **Bilibili**: [泥泞中的小猫](https://space.bilibili.com/87435859)
+  - **GroupChat**: #QQ 
+	- **QQ**: 1012212180
