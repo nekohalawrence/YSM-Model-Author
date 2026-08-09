@@ -1,0 +1,61 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"player.pre_main": {
+			"states": {
+				"default": {
+					"animations": []
+				}
+			}
+		},
+		"player.post_main": {
+			"states": {
+				"default": {
+					"animations": []
+				}
+			}
+		},
+		"player.pre_hold": {
+			"states": {
+				"default": {
+					"animations": []
+				}
+			}
+		},
+		"player.post_hold": {
+			"states": {
+				"default": {
+					"animations": []
+				}
+			}
+		},
+		"player.pre_use": {
+			"states": {
+				"default": {
+					"animations": []
+				}
+			}
+		},
+		"player.post_use": {
+			"states": {
+				"default": {
+					"animations": []
+				}
+			}
+		},
+		"player.pre_swing": {
+			"states": {
+				"default": {
+					"animations": []
+				}
+			}
+		},
+		"player.post_swing": {
+			"states": {
+				"default": {
+					"animations": []
+				}
+			}
+		}
+	}
+}

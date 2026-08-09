@@ -1,0 +1,64 @@
+{
+	"spec": 2,
+	"metadata": {
+		"name": "革新计划",
+		"tips": "革新计划 黑喵みそ精修下的素体而成的模型喵 技术革新大胜利！",
+		"license": {
+			"type": "All Rights Reserved"
+		},
+		"authors": [
+			{
+				"name": "黑喵みそ",
+				"role": "模型",
+				"avatar": "avatar/b_7b1255f683ff1818871e624a7d2d38a9.png",
+				"comment": "くそったれ"
+			}
+		]
+	},
+	"properties": {
+		"height_scale": 0.7,
+		"width_scale": 0.7,
+		"extra_animation": {
+			"extra1": "",
+			"extra2": "",
+			"extra3": "",
+			"extra4": "",
+			"extra5": "",
+			"extra6": "",
+			"extra7": "",
+			"extra0": "",
+			"extra8": ""
+		},
+		"preview_animation": "idle",
+		"default_texture": "default",
+		"render_layers_first": false,
+		"free": true,
+		"disable_preview_rotation": false,
+		"all_cutout": false
+	},
+	"files": {
+		"player": {
+			"model": {
+				"main": "models/main.json",
+				"arm": "models/arm.json"
+			},
+			"animation": {
+				"main": "animations/main.animation.json",
+				"arm": "animations/arm.animation.json",
+				"extra": "animations/extra.animation.json",
+				"tac": "animations/tac.animation.json",
+				"carryon": "animations/carryon.animation.json",
+				"parcool": "animations/parcool.animation.json",
+				"swem": "animations/swem.animation.json",
+				"slashblade": "animations/slashblade.animation.json",
+				"tlm": "animations/tlm.animation.json"
+			},
+			"animation_controllers": ["controller/main.animation_controllers.json"],
+			"texture": [
+				{
+					"uv": "textures/default.png"
+				}
+			]
+		}
+	}
+}
