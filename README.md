@@ -8,6 +8,7 @@
 <summary>作者索引</summary>
 
 <!-- AUTHORS_LIST_START -->
+
 | 编号 | 作者名称 | 收录数量 |
 | --- | --- | ---: |
 | 0000 | [#-OMEGAZERO-](.../../Models/0000) | 1 |
@@ -22,7 +23,7 @@
 | 0009 | [#白亚奈Anay](.../../Models/0009) | 1 |
 | 0010 | [#波普Popu](.../../Models/0010) | 1 |
 | 0011 | [#池塘-tl \| #池塘](.../../Models/0011) | 2 |
-| 0012 | [#赤恒-AzaMire](.../../Models/0012) | 10 |
+| 0012 | [#赤恒-AzaMire](.../../Models/0012) | 11 |
 | 0013 | [#对羧基苯酚](.../../Models/0013) | 1 |
 | 0014 | [#哈雷汰多](.../../Models/0014) | 2 |
 | 0015 | [#寒叔hs \| #烈鸟比百 \| #Frosty_Uncle](.../../Models/0015) | 68 |
@@ -42,7 +43,7 @@
 | 0029 | [#墓野奈奈](.../../Models/0029) | 4 |
 | 0030 | [#嗯嗯owo](.../../Models/0030) | 22 |
 | 0031 | [#泥泞中的小猫 \| #PZGR.40](.../../Models/0031) | 2 |
-| 0032 | [#你个人机cc \| #你个人妻cc](.../../Models/0032) | 16 |
+| 0032 | [#你个人机cc \| #你个人妻cc](.../../Models/0032) | 17 |
 | 0033 | [#胖狐狸工作室 \| #红色幽默](.../../Models/0033) | 4 |
 | 0034 | [#平衡芝光](.../../Models/0034) | 9 |
 | 0035 | [#谱露阿凯 \| #饭](.../../Models/0035) | 8 |
@@ -66,14 +67,14 @@
 | 0053 | [#羊毛毛毛毛_Official喵](.../../Models/0053) | 1 |
 | 0054 | [#一只霜狐Owo](.../../Models/0054) | 4 |
 | 0055 | [#伊蕾娜家的咸鱼](.../../Models/0055) | 12 |
-| 0056 | [暂无](.../../Models/0056) | 0 |
-| 0057 | [暂无](.../../Models/0057) | 0 |
+| 0056 | [#伊洛是哥斯拉嘛 #伊洛是哥斯拉吗\|  #哥斯拉 \| #落阳不养羊 \| #黎家诚 \| #BradKidd](.../../Models/0056) | 77 |
+| 0057 | [#忆尘yc27 \| #忆尘27](.../../Models/0057) | 3 |
 | 0058 | [#艺方像素 \| #艺方堂 \| #尻 \| #艺方坊 \| #艺方阁](.../../Models/0058) | 60 |
 | 0059 | [#瀛猫](.../../Models/0059) | 12 |
 | 0060 | [#油七桶](.../../Models/0060) | 4 |
 | 0061 | [#狱际星芒](.../../Models/0061) | 11 |
 | 0062 | [#云曦-Yunxxi_ugo \| #云曦](.../../Models/0062) | 7 |
-| 0063 | [暂无](.../../Models/0063) | 0 |
+| 0063 | [#再来几斤小莫莫](.../../Models/0063) | 1 |
 | 0064 | [#纸盒ALifang \| #Cc-纸盒 \| #Cc纸盒](.../../Models/0064) | 27 |
 | 0065 | [#烛火的次元宇宙](.../../Models/0065) | 19 |
 | 0066 | [#A_su杏仁](.../../Models/0066) | 3 |
@@ -83,7 +84,7 @@
 | 0070 | [#Dashcode \| #ASHES356](.../../Models/0070) | 2 |
 | 0071 | [#Dr咕咚](.../../Models/0071) | 1 |
 | 0072 | [#Eiven-ly \| #Eiven](.../../Models/0072) | 1 |
-| 0073 | [暂无](.../../Models/0073) | 0 |
+| 0073 | [#MicroCraft_ \| #MicroCraft](.../../Models/0073) | 3 |
 | 0075 | [#Wadanohara_Rika](.../../Models/0075) | 1 |
 | 0076 | [#White_clams白蛤蜊 \| #白蛤蜊 \| #White_Clams白蛤蜊](.../../Models/0076) | 15 |
 | 0077 | [#旭门只玩驹 \| #Zeonjin-旭门只玩驹](.../../Models/0077) | 2 |
@@ -195,12 +196,14 @@
 | 0183 | [#Aaaaaaafeng](.../../Models/0183) | 7 |
 | 0184 | [#MC-ZBM](.../../Models/0184) | 3 |
 | 0185 | [#滑滑滑纸隐 \| #滑纸隐](.../../Models/0185) | 9 |
+| 0186 | [暂无](.../../Models/0186) | 0 |
 | 0187 | [#爱听书的旅人 \| #爱听小说的旅人](.../../Models/0187) | 1 |
 | 0188 | [#鸢尾](.../../Models/0188) | 1 |
 | 0189 | [#TIS长夜孤星](.../../Models/0189) | 1 |
 | 0190 | [#奈忒倪](.../../Models/0190) | 1 |
 | 0191 | [暂无](.../../Models/0191) | 0 |
 | 0192 | [#苏瑞铃 \| #苏瑞铃_official](.../../Models/0192) | 2 |
+
 <!-- AUTHORS_LIST_END -->
 
 </details>
@@ -222,7 +225,7 @@
 - Arknights, AK | 明日方舟
 - Arknights-Endfield, AKE | 明日方舟：终末地
 - Ash-Arms | 灰烬战线
-- Astral Party | 吉星派对, 星引擎 Party
+- Astral Party, Astral-Party, AstralParty | 吉星派对, 星引擎 Party
 - Atomic-Heart, AH | 原子之心
 - Azur-Lane, AL | 碧蓝航线
 - Azur-Promilia, AP | 蓝色星原
@@ -242,6 +245,7 @@
 - Honkai-Impact-3, HI3 | 崩坏 3
 - Honkai-Star-Rail, HSR | 崩坏：星穹铁道
 - Hyperdimension Neptunia, HDN | 超次元游戏
+- Identity V, Identity-V | 第五人格
 - Genshin Impact, Genshin, GI | 原神
 - Girls' Frontline, GF | 少女前线
 - White Eternity, GF
@@ -281,12 +285,14 @@
 - Date A Live, DAL | 约会大作战 | デート・ア・ライブ
 - Dragon Raja, DR | 龙族
 - Dungeon & Fighter, DNF, DFO | 地下城与勇士
+- Fate/kaleid liner, Fate | 魔法少女☆伊莉雅 | プリズマ☆イリヤ）
 - Fox-Spirit-Matchmaker, FSM | 狐妖小红娘
 - Frieren-Beyond-Journey's-End, Frieren | 葬送的芙莉莲
 - Girls Band Cry, GBC | 哭泣少女乐队
 - How Not to Summon a Demon Lord, HNTSADL | 异界少女召唤术, 异世界魔王与召唤少女的奴隶魔术 | 異世界魔王と召喚少女の奴隷魔術
 - Jujutsu Kaisen, JJK | 咒术回战 | 呪術廻戦
 - KonoSuba: God's Blessing on This Wonderful World!, KonoSuba, KON | 为美好的世界献上祝福！ | この素晴らしい世界に祝福を！
+- Love, Chunibyo & Other Delusions, LCOD | 中二病でも恋がしたい！ | 中二病也要谈恋爱！
 - LoveMe | 枫与铃 | らぶみー♡
 - Majo no Tabitabim, MNT | 魔女之旅 | 魔女の旅々, まじょのたびたび
 - Make Heroine ga Oosugiru!, MHO | 負けヒロインが多すぎる！
@@ -300,6 +306,7 @@
 - Redo of Healer, ROH | 回复术士的重启人生 | 回復術士のやり直し
 - Ringing Fate, Ringing-Fate | 命运拳台
 - Saekano: How to Raise a Boring Girlfriend, SAEKANO | 路人女主的养成方法
+- The Future Diary, TFD | 未来日记 | 未来日記
 - Tokyo Ghoul, Tokyo-Ghoul | 东京食尸鬼 | 東京喰種トーキョーグール
 - Ultraman Tiga, UT | 迪迦奥特曼
 - Wandering Witch: The Journey of Elaina, Majo no Tabitabi | 魔女之旅 | 魔女の旅々
@@ -310,6 +317,7 @@
 
 ## 艺术家
 
+- GuLuco
 - HarukaC
 - Mochiyama Kingyo | もち山金魚
 - naga u, Naga-u | ながユー
@@ -436,7 +444,7 @@ YSM-Model-Author/
 
 # 2026-08-09
 
-- file: 删除了 日志生成的action
+- file: 删除了 日志生成的 action
 
 # 2026-08-01
 

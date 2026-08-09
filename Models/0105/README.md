@@ -3,14 +3,13 @@
 ## Author
 
 - **Name**: #超级大鸡腿丶 | #Nss
-  - **Role**: 
-  - **SocialPlatform**: #Bilibili 
-    - **Bilibili**: 
-  - **SupportPlatform**: #Afdian 
-	- **Afdian**: 
-  - **GroupChat**: #QQ 
-	- **QQ**: 
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
 
-## 动画/动作
+## Co-creator
 
-- [0049-星语TAT](../0049/README.md)
+- **Name**: [#星语TAT](../../0049/README)
+  - **Role**: #动作 #动画 | #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [星语TAT](https://space.bilibili.com/316739550)
+  - **GroupChat**: #QQ
+	- **QQ**: 1039376704
