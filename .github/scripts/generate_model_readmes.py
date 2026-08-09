@@ -6,9 +6,9 @@ WORKSPACE_ROOT = Path(__file__).resolve().parents[2]
 MAIN_README_PATH = WORKSPACE_ROOT / 'README.md'
 
 ROOT_DIRS = [
-    WORKSPACE_ROOT / 'models',
-    WORKSPACE_ROOT / 'other-models',
-    WORKSPACE_ROOT / 'other-ysm-models',
+    WORKSPACE_ROOT / 'Models',
+    WORKSPACE_ROOT / 'Blockbench-Models',
+    WORKSPACE_ROOT / 'Other-YSM-Models',
 ]
 IMAGE_EXTS = {'.png', '.jpg', '.jpeg', '.webp', '.gif'}
 PREVIEW_MARKER = re.compile(r'preview', re.I)
@@ -60,6 +60,27 @@ def get_tags_for_model(model_folder_name: str, category_map: dict[str, list[str]
     return "#Unknown"
 
 
+def get_author_info(model_dir: Path) -> tuple[str, str]:
+    """从作者目录 README 中提取作者名称与 ID"""
+    author_dir = model_dir.parent
+    if not author_dir.is_dir() or not author_dir.name.isdigit() or len(author_dir.name) != 4:
+        return '', ''
+
+    author_name = author_dir.name
+    for candidate in ['README.md', 'readme.md', 'Readme.md']:
+        candidate_path = author_dir / candidate
+        if candidate_path.is_file():
+            text = candidate_path.read_text(encoding='utf-8', errors='ignore')
+            match = re.search(r'-\s*作者名称\s*[:：]\s*(.+?)(?:\n|$)', text)
+            if not match:
+                match = re.search(r'\*\*Name\*\*\s*[:：]\s*(.+?)(?:\n|$)', text)
+            if match:
+                author_name = match.group(1).strip()
+            break
+
+    return author_dir.name, author_name
+
+
 def is_preview_image(path: Path) -> bool:
     return path.is_file() and path.suffix.lower() in IMAGE_EXTS and PREVIEW_MARKER.search(path.stem)
 
@@ -75,27 +96,41 @@ def collect_preview_images(model_dir: Path) -> list[Path]:
 
 
 def build_meta_and_preview_content(model_dir: Path, image_paths: list[Path], category_map: dict[str, list[str]]) -> str:
-    """构建包含元信息与预览图的内容（预览图默认展开）"""
+    """构建标准化的英文模型 README 内容"""
     title = model_dir.name
     tags = get_tags_for_model(title, category_map)
+    author_id, author_name = get_author_info(model_dir)
 
     lines = [f'# {title}', '']
 
-    # 元信息折叠块（默认收起）
+    # Model Details（模型详情）
     lines.extend([
         '<details>',
-        '<summary>模型信息</summary>',
+        '<summary>Model Details</summary>',
         '',
-        f'- 来源：{tags}',
+        f'- **Franchise / Category**: {tags}',
         '',
         '</details>',
         ''
     ])
 
-    # 预览图折叠块（默认展开）
+    # Author Details（作者信息与跳转链接）
+    if author_id:
+        lines.extend([
+            '<details>',
+            '<summary>Author Details</summary>',
+            '',
+            f'- **Author**: [#{author_id} - {author_name}](../)',
+            f'- **Author ID**: `{author_id}`',
+            '',
+            '</details>',
+            ''
+        ])
+
+    # Preview Images（预览图，默认展开）
     lines.extend([
         '<details open>',
-        '<summary>预览图</summary>',
+        '<summary>Preview Images</summary>',
         '',
         START_MARKER,
         ''
@@ -121,7 +156,7 @@ def is_author_dir(path: Path) -> bool:
 
 
 def iter_model_dirs(root_dir: Path):
-    if root_dir.name == 'models':
+    if root_dir.name == 'Models':
         for author_dir in sorted(root_dir.iterdir()):
             if not is_author_dir(author_dir):
                 continue

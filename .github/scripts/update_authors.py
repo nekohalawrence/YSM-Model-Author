@@ -3,7 +3,7 @@ import re
 
 readme_path = "README.md"
 readme_en_path = "README-EN.md"
-models_dir = "models"
+models_dir = "Models"
 
 if not os.path.isdir(models_dir):
     print(f"Error: {models_dir} directory not found.")
@@ -12,6 +12,26 @@ if not os.path.isdir(models_dir):
 if not os.path.isfile(readme_en_path):
     print(f"Error: {readme_en_path} not found.")
     exit(1)
+
+def extract_primary_author_name(content: str) -> str:
+    """提取主作者名称，避开 Co-creator 区块"""
+    author_section_match = re.search(
+        r'##\s*Author\b(.*?)(?=\n##|\Z)', 
+        content, 
+        re.DOTALL | re.IGNORECASE
+    )
+    
+    target_text = author_section_match.group(1) if author_section_match else content
+
+    match = re.search(r'-\s*\*\*Name\*\*\s*[:：]\s*(.+?)(?:\n|$)', target_text, re.IGNORECASE)
+    if match:
+        return match.group(1).strip()
+
+    match = re.search(r'-\s*作者名称\s*[:：]\s*(.+?)(?:\n|$)', target_text, re.IGNORECASE)
+    if match:
+        return match.group(1).strip()
+
+    return "暂无"
 
 folder_pattern = re.compile(r"^(\d{4})$")
 rows = []
@@ -36,11 +56,11 @@ for folder in sorted(os.listdir(models_dir)):
         rows.append((folder, author_name, model_count, link))
         continue
 
-    with open(readme_file, "r", encoding="utf-8") as f:
+    with open(readme_file, "r", encoding="utf-8", errors="ignore") as f:
         content = f.read()
 
-    match = re.search(r"-\s*作者名称[:：]\s*(.+?)(?:\n|$)", content, re.DOTALL | re.MULTILINE)
-    author_name = match.group(1).strip() if match else "暂无"
+    # 使用隔离算法提取主作者
+    author_name = extract_primary_author_name(content)
 
     model_count = sum(
         1
@@ -51,11 +71,11 @@ for folder in sorted(os.listdir(models_dir)):
 
 def build_table(is_en):
     if is_en:
-        header = "| ID | Author Name | Model Count |"
+        header = "| ID | Author Name | Total Models |"  # Model Count -> Total Models
         separator = "| --- | --- | ---: |"
         empty_row = "| - | None | 0 |"
     else:
-        header = "| 编号 | 作者名称 | 模型数量 |"
+        header = "| 编号 | 作者名称 | 收录数量 |"     # 模型数量 -> 收录数量
         separator = "| --- | --- | ---: |"
         empty_row = "| - | 暂无 | 0 |"
 

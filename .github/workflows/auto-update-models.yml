@@ -7,9 +7,9 @@ concurrency:
 on:
   push:
     paths:
-      - 'models/**'
-      - 'other-models/**'
-      - 'other-ysm-models/**'
+      - 'Models/**'
+      - 'Blockbench-Models/**'
+      - 'Other-YSM-Models/**'
       - 'README.md'
   workflow_dispatch:
 
@@ -30,24 +30,21 @@ jobs:
       - name: Install Dependencies
         run: pip install openai
 
-      - name: Step 1 - Generate Model Preview READMEs
+      # 1. 自动生成各个模型的 preview README和模型信息
+      - name: Step 1 - Generate Model READMEs
         run: python .github/scripts/generate_model_readmes.py
 
+      # 2. 自动更新主 README 中的作者列表与模型统计
       - name: Step 2 - Auto Update Authors List
         run: python .github/scripts/update_authors.py
 
-      - name: Step 3 - Generate Changelog Entries
-        env:
-          GITHUB_EVENT_BEFORE: ${{ github.event.before }}
-          GITHUB_SHA: ${{ github.sha }}
-        run: python .github/scripts/update_changelog.py
-
-      # 全局翻译步骤：跳过动态生成的列表，只翻译 README 本身的新增/修改文字
-      - name: Step 4 - Translate full README to README-EN.md
+      # 3. 翻译 README.md (会自动将你在 README.md 中写的手动日志翻译并同步至 README-EN.md)
+      - name: Step 3 - Translate full README to README-EN.md
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: python .github/scripts/translate_readme.py
 
+      # 4. 统一提交推送
       - name: Commit and push all changes
         run: |
           git config user.name "GitHub Actions"
@@ -56,7 +53,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "chore: auto-update readmes, authors list, changelog, and EN translation"
+            git commit -m "chore: auto-update readmes, authors list, and EN translation"
             git pull --rebase origin main
             git push origin HEAD:main
           fi

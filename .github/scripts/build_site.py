@@ -22,7 +22,7 @@ except ImportError:
 # 切换工作目录到项目根目录 (假设脚本位于 .github/scripts/)
 os.chdir(Path(__file__).resolve().parents[2])
 
-ROOT_DIR = Path('models')
+ROOT_DIR = Path('Models')
 OUTPUT_FILE = Path('index.html')
 TEMPLATE_FILE = Path('.github/template/template.html')
 THUMBNAIL_SIZE = (400, 400)

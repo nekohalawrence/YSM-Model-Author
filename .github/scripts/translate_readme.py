@@ -25,7 +25,7 @@ def call_llm_translate(text):
         "Translate the input Chinese text into natural and clear English for a GitHub Markdown document.\n"
         "Rules:\n"
         "1. Keep all Markdown structure, HTML details elements, and URLs intact.\n"
-        "2. Do NOT translate file paths (models/0000), file extensions (.ysm), author IDs (#0001), or repository links.\n"
+        "2. Do NOT translate file paths (Models/0000), file extensions (.ysm), author IDs (#0001), or repository links.\n"
         "3. Translate commit/changelog descriptions naturally (e.g., '更新了 1 个模型文件' -> 'updated 1 model file')."
     )
     

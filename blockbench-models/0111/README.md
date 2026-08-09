@@ -3,7 +3,7 @@
 ## 模型
 
 - 作者名称: #奶油桃NaytoTime
-- 平台: #bilibili #afdian 
+- 平台: #Bilibili #Afdian 
 	- [bilibili](https://www.bilibili.com/)：[奶油桃NaytoTime](https://space.bilibili.com/74167922)
 	- [afdian](https://afdian.com/)：[行星图书馆-奶油桃NaytoTime](https://afdian.com/a/liberstellae)
 
