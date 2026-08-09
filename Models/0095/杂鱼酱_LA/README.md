@@ -1,4 +1,4 @@
-# A_杂鱼酱-重制版
+# 杂鱼酱_LA
 
 <details>
 <summary>Model Details</summary>

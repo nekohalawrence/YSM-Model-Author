@@ -1,4 +1,4 @@
-# BtR_波奇酱-Hitori-Goto
+# BtR_波奇酱_Hitori-Goto
 
 <details>
 <summary>Model Details</summary>

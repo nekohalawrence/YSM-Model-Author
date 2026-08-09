@@ -1,4 +1,4 @@
-# A_莉莉姆_nsfw
+# 莉莉姆_nsfw_LA
 
 <details>
 <summary>Model Details</summary>

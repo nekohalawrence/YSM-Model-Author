@@ -1,9 +1,9 @@
-# B_Avemujica_丰川祥子
+# Avemujica_丰川祥子_LB
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #BanG Dream! Ave Mujica #AveMujica #颂乐人偶
 
 </details>
 

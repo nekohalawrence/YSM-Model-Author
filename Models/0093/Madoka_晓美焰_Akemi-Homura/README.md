@@ -1,9 +1,9 @@
-# 晓美焰
+# Madoka_晓美焰_Akemi-Homura
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Puella Magi Madoka Magica #PMMM #Madoka #魔法少女小圆 #魔法少女まどか☆マギカ
 
 </details>
 
@@ -19,6 +19,8 @@
 <summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](preview.png)
 
 ![preview01.png](preview01.png)
 

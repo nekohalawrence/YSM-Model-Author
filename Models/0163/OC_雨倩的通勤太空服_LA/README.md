@@ -1,9 +1,9 @@
-# A_雨倩的通勤太空服
+# OC_雨倩的通勤太空服_LA
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Original Character #OC #原创角色
 
 </details>
 

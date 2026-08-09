@@ -1,9 +1,9 @@
-# Honkai_Impact_3_delta_1
+# HI3_ delta_1_LB
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Honkai-Impact-3 #HI3 #崩坏 3
 
 </details>
 

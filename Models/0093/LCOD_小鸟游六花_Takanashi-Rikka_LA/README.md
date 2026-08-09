@@ -1,9 +1,9 @@
-# A_小鸟游六花
+# LCOD_小鸟游六花_Takanashi-Rikka_LA
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Love #Chunibyo & Other Delusions #LCOD #中二病でも恋がしたい！ #中二病也要谈恋爱！
 
 </details>
 
@@ -19,6 +19,8 @@
 <summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](preview.png)
 
 ![preview01.png](preview01.png)
 

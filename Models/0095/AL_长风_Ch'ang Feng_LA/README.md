@@ -1,9 +1,9 @@
-# A_AL_长风
+# AL_长风_Ch'ang Feng_LA
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Azur-Lane #AL #碧蓝航线
 
 </details>
 

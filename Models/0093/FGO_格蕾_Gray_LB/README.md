@@ -1,9 +1,9 @@
-# 格蕾
+# FGO_格蕾_Gray_LB
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Fate-Grand-Order #FGO #命运 - 冠位指定
 
 </details>
 
@@ -19,6 +19,8 @@
 <summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](preview.png)
 
 ![preview01.png](preview01.png)
 

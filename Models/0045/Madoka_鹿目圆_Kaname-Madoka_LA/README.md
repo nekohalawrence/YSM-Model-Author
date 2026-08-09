@@ -1,4 +1,4 @@
-# Madoka_鹿目圆_LA
+# Madoka_鹿目圆_Kaname-Madoka_LA
 
 <details>
 <summary>Model Details</summary>

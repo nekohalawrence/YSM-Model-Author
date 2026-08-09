@@ -1,9 +1,9 @@
-# 芙莉莲
+# Frieren_芙莉莲_Frieren_LB
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Frieren-Beyond-Journey's-End #Frieren #葬送的芙莉莲
 
 </details>
 
@@ -21,6 +21,12 @@
 <!-- GENERATED MODEL PREVIEW README START -->
 
 ![preview.png](preview.png)
+
+![preview01.png](preview01.png)
+
+![preview02.png](preview02.png)
+
+![preview03.png](preview03.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
 

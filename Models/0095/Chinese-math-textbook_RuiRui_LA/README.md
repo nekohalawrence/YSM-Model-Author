@@ -1,4 +1,4 @@
-# A_Chinese-math-textbook_RuiRui
+# Chinese-math-textbook_RuiRui_LA
 
 <details>
 <summary>Model Details</summary>

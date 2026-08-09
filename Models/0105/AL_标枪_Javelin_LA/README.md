@@ -1,9 +1,9 @@
-# A_AL_标枪
+# AL_标枪_Javelin_LA
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Azur-Lane #AL #碧蓝航线
 
 </details>
 

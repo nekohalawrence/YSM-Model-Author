@@ -1,4 +1,4 @@
-# B_merlin_nsfw
+# merlin_nsfw_LB
 
 <details>
 <summary>Model Details</summary>

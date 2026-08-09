@@ -1,9 +1,9 @@
-# 伊蕾娜-女仆
+# MNT_伊蕾娜-女仆_Elaina_LB
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Majo no Tabitabim #MNT #魔女之旅 #魔女の旅々 #まじょのたびたび
 
 </details>
 

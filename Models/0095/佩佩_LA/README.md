@@ -1,4 +1,4 @@
-# A_佩佩
+# 佩佩_LA
 
 <details>
 <summary>Model Details</summary>

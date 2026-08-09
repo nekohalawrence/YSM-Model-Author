@@ -1,4 +1,4 @@
-# A_初音-雌小鬼
+# 初音-雌小鬼_LA
 
 <details>
 <summary>Model Details</summary>

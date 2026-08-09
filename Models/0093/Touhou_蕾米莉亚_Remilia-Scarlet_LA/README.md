@@ -1,9 +1,9 @@
-# 蕾米莉亚
+# Touhou_蕾米莉亚_Remilia-Scarlet_LA
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Touhou-Project #TH #TOUHOU #东方 Project
 
 </details>
 
@@ -19,6 +19,10 @@
 <summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
+
+![preview(1).png](preview(1).png)
+
+![preview.png](preview.png)
 
 ![preview01.png](preview01.png)
 

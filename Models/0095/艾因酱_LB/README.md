@@ -1,4 +1,4 @@
-# B_艾因酱
+# 艾因酱_LB
 
 <details>
 <summary>Model Details</summary>

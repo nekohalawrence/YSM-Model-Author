@@ -1,9 +1,9 @@
-# B_BA_railtwin_l_0
+# BA_railtwin_l_0_LB
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
 
 </details>
 

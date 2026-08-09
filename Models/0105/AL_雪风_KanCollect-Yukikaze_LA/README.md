@@ -1,9 +1,9 @@
-# A_AL_雪风
+# AL_雪风_KanCollect-Yukikaze_LA
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Azur-Lane #AL #碧蓝航线
 
 </details>
 

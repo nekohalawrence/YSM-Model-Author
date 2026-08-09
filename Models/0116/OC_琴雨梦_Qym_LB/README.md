@@ -1,16 +1,16 @@
-# B_琴雨梦
+# OC_琴雨梦_Qym_LB
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Original Character #OC #原创角色
 
 </details>
 
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0116 - #1111111re](../)
+- **Author**: [#0116 - #1111111re | #伊伊蕾](../)
 - **Author ID**: `0116`
 
 </details>

@@ -1,9 +1,9 @@
-# 莱娜
+# GF_UMP9_莱娜_Lenna_LB
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #White Eternity #GF
 
 </details>
 
@@ -20,7 +20,11 @@
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
+![preview.png](preview.png)
+
 ![preview01.png](preview01.png)
+
+![preview02.png](preview02.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
 

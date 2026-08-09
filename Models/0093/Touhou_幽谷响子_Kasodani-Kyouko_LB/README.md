@@ -1,9 +1,9 @@
-# 幽谷响子
+# Touhou_幽谷响子_Kasodani-Kyouko_LB
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Touhou-Project #TH #TOUHOU #东方 Project
 
 </details>
 
@@ -19,6 +19,8 @@
 <summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](preview.png)
 
 ![preview01.png](preview01.png)
 

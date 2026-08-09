@@ -1,4 +1,4 @@
-# A_双马尾粉猫猫
+# 双马尾粉猫猫_LA
 
 <details>
 <summary>Model Details</summary>
