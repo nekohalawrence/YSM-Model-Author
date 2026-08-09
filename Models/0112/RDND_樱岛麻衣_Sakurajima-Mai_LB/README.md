@@ -3,7 +3,7 @@
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Rascal Does Not Dream #RDND #青春猪头少年系列 #青春ブタ野郎はバニーガール先輩の夢を見ない #青春ブタ野郎シリーズ
 
 </details>
 

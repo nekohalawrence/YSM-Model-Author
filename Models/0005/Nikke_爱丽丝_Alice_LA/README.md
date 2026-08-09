@@ -3,7 +3,7 @@
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Goddess of Victory: Nikke #Nikke #胜利女神：妮姬
 
 </details>
 

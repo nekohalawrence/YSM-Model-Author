@@ -3,7 +3,7 @@
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Strinova #卡拉比丘
 
 </details>
 

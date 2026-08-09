@@ -3,7 +3,7 @@
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Fate-Grand-Order #FGO #命运 - 冠位指定
 
 </details>
 

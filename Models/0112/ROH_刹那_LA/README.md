@@ -3,7 +3,7 @@
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Redo of Healer #ROH #回复术士的重启人生 #回復術士のやり直し
 
 </details>
 

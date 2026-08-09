@@ -3,7 +3,7 @@
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Touhou-Project #TH #TOUHOU #东方 Project
 
 </details>
 

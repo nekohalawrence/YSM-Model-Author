@@ -3,7 +3,7 @@
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Mato Seihei no Sureibu #MSNS #魔都精兵的奴隶 #魔都精兵のスレイブ
 
 </details>
 

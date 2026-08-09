@@ -3,7 +3,7 @@
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Ultraman Tiga #UT #迪迦奥特曼
 
 </details>
 

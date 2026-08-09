@@ -3,7 +3,7 @@
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #LoveMe #枫与铃 #らぶみー♡
 
 </details>
 

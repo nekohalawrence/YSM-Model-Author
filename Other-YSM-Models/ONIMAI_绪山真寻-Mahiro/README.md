@@ -3,7 +3,7 @@
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Onii-chan wa Oshimai! #ONIMAI #别当欧尼酱了！ #お兄ちゃんはおしまい！
 
 </details>
 

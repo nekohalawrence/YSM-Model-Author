@@ -3,7 +3,7 @@
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Hyperdimension Neptunia #HDN #超次元游戏
 
 </details>
 

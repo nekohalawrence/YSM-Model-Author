@@ -3,7 +3,7 @@
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Magical Girl Celesphonia #MGC #魔法少女天穹法妮雅 #魔法少女セレスフォニア
 
 </details>
 

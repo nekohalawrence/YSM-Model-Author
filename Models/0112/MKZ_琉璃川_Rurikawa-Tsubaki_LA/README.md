@@ -3,7 +3,7 @@
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #MorotsuiKizoku #MKZ #没落贵族琉璃川椿
 
 </details>
 

@@ -3,7 +3,7 @@
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Wuthering-Waves #WuWa #WW #鸣潮
 
 </details>
 

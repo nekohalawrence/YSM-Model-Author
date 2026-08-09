@@ -3,7 +3,7 @@
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Saekano: How to Raise a Boring Girlfriend #SAEKANO #路人女主的养成方法
 
 </details>
 

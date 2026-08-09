@@ -3,7 +3,7 @@
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Wish upon a shooting star #Hoshizora no Memoria #HNM #星空的记忆 #星空のメモリア
 
 </details>
 

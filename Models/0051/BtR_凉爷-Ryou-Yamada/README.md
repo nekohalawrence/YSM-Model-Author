@@ -3,7 +3,7 @@
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Bocchi-the-Rock! #BtR #孤独摇滚！
 
 </details>
 

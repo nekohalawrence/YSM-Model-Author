@@ -3,7 +3,7 @@
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Teaching Feeling #TF #奴隶少女希尔薇
 
 </details>
 

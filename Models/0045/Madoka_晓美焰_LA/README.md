@@ -3,7 +3,7 @@
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Puella Magi Madoka Magica #PMMM #Madoka #魔法少女小圆 #魔法少女まどか☆マギカ
 
 </details>
 

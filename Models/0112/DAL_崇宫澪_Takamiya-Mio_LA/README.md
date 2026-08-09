@@ -3,7 +3,7 @@
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Date A Live #DAL #约会大作战 #デート・ア・ライブ
 
 </details>
 

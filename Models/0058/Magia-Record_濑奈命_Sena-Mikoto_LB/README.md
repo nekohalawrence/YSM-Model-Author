@@ -3,7 +3,7 @@
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Magia Record: Puella Magi Madoka Magica Side Story #Magia-Record #魔法纪录 魔法少女小圆外传 #マギアレコード 魔法少女まどか☆マギカ外伝
 
 </details>
 

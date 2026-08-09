@@ -3,7 +3,7 @@
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Utauloid #UTAU #虚拟歌手 #术力口
 
 </details>
 

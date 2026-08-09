@@ -3,7 +3,7 @@
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Snowbreak: Containment Zone #snowbreak #尘白禁区
 
 </details>
 

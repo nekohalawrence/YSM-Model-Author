@@ -3,7 +3,7 @@
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Dungeon & Fighter #DNF #DFO | 地下城与勇士
+- **Franchise / Category**: #Dungeon & Fighter #DNF #DFO #地下城与勇士
 
 </details>
 

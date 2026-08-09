@@ -3,7 +3,7 @@
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Granblue Fantasy: Relink #GBR #Granblue #碧蓝幻想：RELINK
 
 </details>
 

@@ -3,7 +3,7 @@
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Make Heroine ga Oosugiru! #MHO #負けヒロインが多すぎる！
 
 </details>
 

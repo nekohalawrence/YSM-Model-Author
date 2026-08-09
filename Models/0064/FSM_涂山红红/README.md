@@ -3,7 +3,7 @@
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Fox-Spirit-Matchmaker #FSM #狐妖小红娘
 
 </details>
 

@@ -3,7 +3,7 @@
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Neon-Genesis-Evangelion #NGE #EVA #新世纪福音战士
 
 </details>
 

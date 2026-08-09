@@ -3,7 +3,7 @@
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #KonoSuba: God's Blessing on This Wonderful World! #KonoSuba #KON | 为美好的世界献上祝福！ | この素晴らしい世界に祝福を！
+- **Franchise / Category**: #KonoSuba: God's Blessing on This Wonderful World! #KonoSuba #KON #为美好的世界献上祝福！ #この素晴らしい世界に祝福を！
 
 </details>
 

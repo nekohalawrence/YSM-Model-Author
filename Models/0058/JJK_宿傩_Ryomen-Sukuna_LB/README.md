@@ -3,7 +3,7 @@
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Jujutsu Kaisen #JJK #咒术回战 #呪術廻戦
 
 </details>
 

@@ -3,7 +3,7 @@
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #White Eternity #AstralAir no Shiroki Eien #ASE #星辰恋曲的白色永恒 #アストラエアの白き永遠
 
 </details>
 

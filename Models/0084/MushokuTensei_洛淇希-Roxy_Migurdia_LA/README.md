@@ -3,7 +3,7 @@
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #MushokuTensei #无职转生～到了异世界就拿出真本事～ #無職転生 ～異世界行ったら本気だす～
 
 </details>
 

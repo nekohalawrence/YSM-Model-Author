@@ -3,7 +3,7 @@
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Umamusume: Pretty Derby #UmaMusume #UM | 闪耀！优俊少女 #赛马娘
+- **Franchise / Category**: #Umamusume: Pretty Derby #UmaMusume #UM #闪耀！优俊少女 #赛马娘
 
 </details>
 

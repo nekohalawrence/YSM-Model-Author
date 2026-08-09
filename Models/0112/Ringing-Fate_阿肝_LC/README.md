@@ -3,7 +3,7 @@
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Ringing Fate #Ringing-Fate #命运拳台
 
 </details>
 

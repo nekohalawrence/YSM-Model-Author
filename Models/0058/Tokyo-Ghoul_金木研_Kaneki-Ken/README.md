@@ -3,7 +3,7 @@
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Tokyo Ghoul #Tokyo-Ghoul #东京食尸鬼 #東京喰種トーキョーグール
 
 </details>
 

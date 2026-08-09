@@ -3,7 +3,7 @@
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #How Not to Summon a Demon Lord #HNTSADL #异界少女召唤术 #异世界魔王与召唤少女的奴隶魔术 #異世界魔王と召喚少女の奴隷魔術
 
 </details>
 

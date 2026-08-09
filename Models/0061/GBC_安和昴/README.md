@@ -3,7 +3,7 @@
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Girls Band Cry #GBC #哭泣少女乐队
 
 </details>
 

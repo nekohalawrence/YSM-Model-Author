@@ -3,7 +3,7 @@
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #NARUTO #Naruto Shippuden #NAR | 火影忍者: 疾风传
+- **Franchise / Category**: #NARUTO #Naruto Shippuden #NAR #火影忍者: 疾风传
 
 </details>
 

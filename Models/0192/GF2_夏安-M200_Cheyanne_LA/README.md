@@ -3,7 +3,7 @@
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #GIRLS' FRONTLINE 2:EXILIUM #GF2 #少女前线 2：追放 #少女前线 2 #少前 2：追放
 
 </details>
 
