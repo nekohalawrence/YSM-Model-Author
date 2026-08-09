@@ -231,15 +231,15 @@ Personal Rating: LA, LB, LC, LD
 - Command & Conquer, CNC | Command & Conquer
 - Command-&-Conquer: Red-Alert-2, Red-Alert-2, RA2 | Command & Conquer: Red Alert 2
 - Command-&-Conquer: Red-Alert-3, Red-Alert-3, RA3 | Command & Conquer: Red Alert 3
-- Command & Conquer Generals: Zero Hour, Zero Hour, ZH | Command & Conquer: Zero Hour
+- Command & Conquer Generals: Zero Hour, Zero Hour, ZH | Command & Conquer: Generals – Zero Hour
 - Delta Force, Delta-Force | Delta Force
 - Dead or Alive, DOA | Dead or Alive
-- Dohna Dohna: Let's Do Bad Things Together, DOHNA | Dohna Dohna
+- Dohna Dohna: Let's Do Bad Things Together, DOHNA | Dohna Dohna: Let's Do Bad Things Together | ドーナドーナ いっしょにわるいことしよう
 - Doki-Doki-Literature-Club!, DDLC | Doki Doki Literature Club!
 - Fate-Grand-Order, FGO | Fate/Grand Order
 - Food Girls | Food Girls
 - Fox Hime Zero, FHZ
-- Honkai-Impact-3, HI3 | Honkai Impact 3rd
+- Honkai-Impact-3, HI3 | Honkai Impact 3
 - Honkai-Star-Rail, HSR | Honkai: Star Rail
 - Hyperdimension Neptunia, HDN | Hyperdimension Neptunia
 - Genshin Impact, Genshin, GI | Genshin Impact
@@ -247,13 +247,13 @@ Personal Rating: LA, LB, LC, LD
 - White Eternity, GF
 - GIRLS' FRONTLINE 2:EXILIUM, GF2 | Girls' Frontline 2: Exilium
 - Girls' Frontline: Neural Cloud, Project Neural Cloud, NC | Girls' Frontline: Neural Cloud
-- Goddess of Victory: Nikke, Nikke | Goddess of Victory: Nikke
+- Goddess of Victory: Nikke, Nikke | Goddess of Victory: NIKKE
 - Granblue Fantasy: Relink, GBR, Granblue | Granblue Fantasy: Relink
 - League of Legends, LOL | League of Legends
 - Limbus Company, LC | Limbus Company
 - Magical Girl Celesphonia, MGC | Magical Girl Celesphonia | 魔法少女セレスフォニア
 - Magical Girl Witch Trial, MGWT | Magical Girl Witch Trial | 魔法少女ノ魔女裁判
-- Magia Record: Puella Magi Madoka Magica Side Story, Magia-Record | Magia Record | マギアレコード 魔法少女まどか☆マギカ外伝
+- Magia Record: Puella Magi Madoka Magica Side Story, Magia-Record | Magia Record: Puella Magi Madoka Magica Side Story | マギアレコード 魔法少女まどか☆マギカ外伝
 - MiSide | MiSide
 - NARUTO, Naruto Shippuden, NAR | Naruto: Shippuden
 - NEKOPARA | NEKOPARA | ネコぱら
@@ -286,12 +286,12 @@ Personal Rating: LA, LB, LC, LD
 - Girls Band Cry, GBC | Girls Band Cry
 - How Not to Summon a Demon Lord, HNTSADL | How Not to Summon a Demon Lord | 異世界魔王と召喚少女の奴隷魔術
 - Jujutsu Kaisen, JJK | Jujutsu Kaisen | 呪術廻戦
-- KonoSuba: God's Blessing on This Wonderful World!, KonoSuba, KON | KonoSuba | この素晴らしい世界に祝福を！
+- KonoSuba: God's Blessing on This Wonderful World!, KonoSuba, KON | KonoSuba: God's Blessing on This Wonderful World! | この素晴らしい世界に祝福を！
 - LoveMe | LoveMe | らぶみー♡
-- Majo no Tabitabim, MNT | Wandering Witch | 魔女の旅々, まじょのたびたび
+- Majo no Tabitabim, MNT | Wandering Witch: The Journey of Elaina | 魔女の旅々, まじょのたびたび
 - Make Heroine ga Oosugiru!, MHO | Makeine: Too Many Losing Heroines! | 負けヒロインが多すぎる！
 - Mato Seihei no Sureibu, MSNS | Chained Soldier | 魔都精兵のスレイブ
-- MorotsuiKizoku, MKZ | Morotsui Kizoku
+- MorotsuiKizoku, MKZ | Morotsui Kizoku: Rurikawa Tsubaki
 - MushokuTensei | Mushoku Tensei: Jobless Reincarnation | 無職転生 ～異世界行ったら本気だす～
 - Onii-chan wa Oshimai!, ONIMAI | Onimai: I'm Now Your Sister! | お兄ちゃんはおしまい！
 - Plants vs. Zombies, PVZ | Plants vs. Zombies
@@ -299,7 +299,7 @@ Personal Rating: LA, LB, LC, LD
 - Rascal Does Not Dream, RDND | Rascal Does Not Dream | 青春ブタ野郎はバニーガール先輩の夢を見ない, 青春ブタ野郎シリーズ
 - Redo of Healer, ROH | Redo of Healer | 回復術士のやり直し
 - Ringing Fate, Ringing-Fate | Ringing Fate
-- Saekano: How to Raise a Boring Girlfriend, SAEKANO | Saekano
+- Saekano: How to Raise a Boring Girlfriend, SAEKANO | Saekano: How to Raise a Boring Girlfriend
 - Tokyo Ghoul, Tokyo-Ghoul | Tokyo Ghoul | 東京喰種トーキョーグール
 - Ultraman Tiga, UT | Ultraman Tiga
 - Wandering Witch: The Journey of Elaina, Majo no Tabitabi | Wandering Witch: The Journey of Elaina | 魔女の旅々
@@ -330,9 +330,9 @@ Personal Rating: LA, LB, LC, LD
 
 <details>
 
-<summary>Recommended Authors</summary>
+<summary>Author Recommendations</summary>
 
-> Some recommended high-quality model authors
+> Recommended high-quality model authors
 
 - 0045: [#雾雨波波沙](.../../models/0045)
 - 0065: [#烛火的次元宇宙](.../../models/0065)
@@ -343,7 +343,7 @@ Personal Rating: LA, LB, LC, LD
 </details>
 
 <details>
-<summary>Recommended Tools</summary>
+<summary>Tool Recommendations</summary>
 
 - [ysm-model-manager](https://github.com/eghrhegpe/ysm-model-manager)
 	- Description: YSM model management software
@@ -364,7 +364,7 @@ Personal Rating: LA, LB, LC, LD
 
 ## Project Structure
 
-> Below is an overview of the main directories in this repository. This may be adjusted as content continues to evolve.
+> Below is an overview of the main directories in this repository. The structure may be adjusted as content grows.
 
 ```text
 YSM-Model-Author/
@@ -398,7 +398,7 @@ YSM-Model-Author/
 ├── Blockbench-Models/             # Blockbench source project files (.bbmodel, containing model source files)
 │   └── 0000/
 │   │   ├── README.md
-│   │   └── *.bbmodel              # Model source files
+│   │   └── *.bbmodel              # Model source file
 │   ├── ..../
 │   └── 9999/
 │
@@ -419,7 +419,7 @@ YSM-Model-Author/
 	- Please do not **sell** models from this repository in any form. You are solely responsible for any consequences.
 - Model notes
 	- I discovered that models viewed through Obsidian (a note-taking app) are all corrupted!!!!!!!!
-	- If you find any unusable models, please let me know via an issue. Thank you!
+	- If you find any unusable models, please let me know via an Issue. Thank you!
 - Other notes
 	- I'm not very familiar with GitHub. If you want to modify anything, you can only notify me via Issue, or you can clone the repository and make changes yourself.
 
@@ -427,7 +427,7 @@ YSM-Model-Author/
 
 - [https://github.com/Elaina69/Yes-Steve-Model-Repo](https://github.com/Elaina69/Yes-Steve-Model-Repo): Source of most free models
 - @[LuckyPotion](https://space.bilibili.com/1739798750): Source of some specific authors' models
-- QQ-tomysh 的住院楼 - 752713566: Source of some specific authors' models
+- QQ-tomysh's Hospital Ward - 752713566: Source of some specific authors' models
 
 ## Changelog
 
@@ -444,7 +444,7 @@ YSM-Model-Author/
 
 # 2026-07-30
 
-- format: Noticed that some game or anime names are **too long**, making it hard to see the **character** names. Henceforth, game or anime names will be changed to **abbreviations**
+- format: Noticed that some game or anime names are **too long**, making it hard to see the **character** names. Henceforth, game/anime names will be changed to **abbreviations**
 
 # 2026-07-27
 
@@ -453,16 +453,16 @@ YSM-Model-Author/
 # 2026-07-25
 
 - ps: There are too many weird games out there
-- ps: Note that some models without preview images are unusable. When I was reviewing authors, I saved them, which modified some characters and corrupted the original files, rendering those models unusable.
-- ps: Major mistake — I discovered that most models viewed through Obsidian are corrupted!!!!!!!! I only just found the cause; the history on git hasn't been deleted.
+- ps: Note that some models without preview images are unusable. I saved them while browsing authors, which modified some characters and corrupted the original files, rendering those models unusable.
+- ps: Major mistake discovered — I found that most models viewed through Obsidian are corrupted!!!!!!!! I only just realized the cause; the history on git hasn't been deleted.
 
 # 2026-07-23
 
-- ps: Thanks to [LuckyPotion](https://space.bilibili.com/1739798750) for publicly sharing a collection of paid models from a certain team. I may gradually update preview images for various models in the future.
+- ps: Thanks to [LuckyPotion](https://space.bilibili.com/1739798750) for publicly releasing a collection of paid models from a certain team. I may gradually update preview images for various models in the future.
 - ps: Quark Cloud: https://pan.quark.cn/s/77a16d314a11 Extraction code: ajVD (expired)
 - ps: Baidu Cloud: https://pan.baidu.com/s/1FFSrd_YG-1Eat_DQD7hziw Extraction code: xiao
 - ps: Models are not being added to the repository for now; download them yourself if needed
-- chore: Planning to add an action to generate a `README.md` for each model to make preview images easier to view. If you have a better approach, please let me know via issue (I don't know how to code — AI writes everything for me 😭)
+- chore: Planning to add an action to generate a `README.md` for each model to make preview images easier to view. If you have a good approach, please let me know via Issue (I don't know how to code — AI writes everything for me 😭)
 - chore: For naming consistency, all folder game names will be changed to English except for games exclusive to China. A translation reference list will be provided later.
 
 # 2026-07-19
@@ -473,27 +473,27 @@ YSM-Model-Author/
 
 # 2026-07-18
 
-- ps: Some creators belong to the same team. I'm not sure if there's a good way to categorize them — feel free to suggest one if you have it.
+- ps: Some creators belong to the same team. I'm not sure if there's a good way to categorize them — if you have ideas, feel free to share
 - chore: Reorganized a large number of models
 - chore: The reorganized models include new models and re-categorized [existing models](https://github.com/Elaina69/Yes-Steve-Model-Repo)
 
 # 2026-06-29
 
-- chore: Merged some team models — only the author who created the model releases the corresponding model, while other authors are listed as sub-contributors for their respective parts.
-- ps: After organizing for a while, I feel this categorization approach still has issues — it's hard to find the model you want. Essentially, this is a collection of free models; many paid models are not included. When categorizing by author, only a few have consistently good quality. Categorizing by the model's subject might work better.
+- chore: Merged some team models — only the author who created the model releases the corresponding model, while other authors are listed as contributors for their respective parts.
+- ps: After organizing for a while, I feel this categorization approach still has issues — it's hard to find the model you want. Essentially, this is a collection of free models; many paid models are not included. When categorizing by author, only a few authors have consistently good quality. Categorizing by the model's subject might work better.
 
 # 2026-05-21
 
-- ps: Most models don't work in newer versions. It's recommended to only use newer encrypted models (decrypt with ysmpaser — older models cannot be decrypted either), or models with source files provided.
+- ps: Most models don't work on newer versions. It's recommended to only use newer encrypted models (decrypt with ysmpaser — older models cannot be decrypted either), or models with source files provided.
 
 # 2026-05-11
 
-- chore: Removed the pages site. I'll revisit it once I figure out a suitable way to present content.
-- chore: Decided to update all authors' metadata by the end of this year. ~If time permits, I will add preview images for every model~.
+- chore: Removed the pages site. I'll revisit it once I learn a suitable way to present content.
+- chore: Decided to update all author metadata by the end of this year. ~If time permits, I will add preview images for every model~.
 
 # 2026-05-03
 
-- ps: Decided to only update some higher-quality models and stop collecting others.
-- chore: Updated the quality mods branch to only keep the latest mods
+- ps: Decided to only update higher-quality models and stop collecting others.
+- chore: Updated the quality mods branch to keep only the latest mods
 
 </details>
