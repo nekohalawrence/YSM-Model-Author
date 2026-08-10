@@ -219,14 +219,14 @@ Personal Rating: LA, LB, LC, LD
 
 ## Games
 
-- ‑as the Night's, Reincarnation‑, Sakura Moyu | Sakura Moyu | さくら、もゆ
+- ‑as the Night's, Reincarnation‑, Sakura Moyu | Sakura, Moyu | さくら、もゆ
 - Arknights, AK | Arknights
 - Arknights-Endfield, AKE | Arknights: Endfield
 - Ash-Arms | Ash Arms
 - Astral Party, Astral-Party, AstralParty | Astral Party
 - Atomic-Heart, AH | Atomic Heart
 - Azur-Lane, AL | Azur Lane
-- Azur-Promilia, AP | Azur Promilia
+- Azur-Promilia, AP | Blue Star
 - Battlefield-1, BF-1 | Battlefield 1
 - Blue-Archive, BA | Blue Archive
 - Command & Conquer, CNC | Command & Conquer
@@ -235,7 +235,7 @@ Personal Rating: LA, LB, LC, LD
 - Command & Conquer Generals: Zero Hour, Zero Hour, ZH | Command & Conquer: Zero Hour
 - Delta Force, Delta-Force | Delta Force
 - Dead or Alive, DOA | Dead or Alive
-- Dohna Dohna: Let's Do Bad Things Together, DOHNA | Dohna Dohna | ドーナドーナ いっしょにわるいことしよう
+- Dohna Dohna: Let's Do Bad Things Together, DOHNA | Dohna Dohna: Let's Do Bad Things Together | ドーナドーナ いっしょにわるいことしよう
 - Doki-Doki-Literature-Club!, DDLC | Doki Doki Literature Club!
 - Fate-Grand-Order, FGO | Fate/Grand Order
 - Food Girls | Food Girls
@@ -255,10 +255,10 @@ Personal Rating: LA, LB, LC, LD
 - Limbus Company, LC | Limbus Company
 - Magical Girl Celesphonia, MGC | Magical Girl Celesphonia | 魔法少女セレスフォニア
 - Magical Girl Witch Trial, MGWT | Magical Girl Witch Trial | 魔法少女ノ魔女裁判
-- Magia Record: Puella Magi Madoka Magica Side Story, Magia-Record | Magia Record | マギアレコード 魔法少女まどか☆マギカ外伝
+- Magia Record: Puella Magi Madoka Magica Side Story, Magia-Record | Magia Record: Puella Magi Madoka Magica Side Story | マギアレコード 魔法少女まどか☆マギカ外伝
 - MiSide | MiSide
 - NARUTO, Naruto Shippuden, NAR | Naruto: Shippuden
-- NEKOPARA | NEKOPARA | ネコぱら
+- NEKOPARA | NEKOPARA
 - Neon-Genesis-Evangelion, NGE, EVA | Neon Genesis Evangelion
 - Neverness to Everness, NTE | Neverness to Everness
 - Senren＊Banka, SENREN | Senren＊Banka | せんれん＊ばんか
@@ -358,7 +358,7 @@ Personal Rating: LA, LB, LC, LD
 - [YSMParser](https://github.com/OpenYSMDev/YSMParser)
 	- Description: One-click decryption and conversion of .ysm models to Blockbench projects, with support for all encrypted format versions.
 - [YSMViewer](https://github.com/DrAbcOfficial/YSMViewer)
-	- Description: A cross-platform 3D model viewer for ".ysm" files — an encrypted binary format used to store player models in Minecraft. Built on Avalonia.
+	- Description: A cross-platform 3D model viewer for ".ysm" files — an encrypted binary format used to store player models in Minecraft. Built with Avalonia.
 - [YesSteveModel](https://github.com/YesSteveModel/YesSteveModel)
 	- Description: Open-sourced
 - [OpenYSM](https://github.com/OpenYSM/OpenYSM)
@@ -408,7 +408,7 @@ YSM-Model-Author/
 │   ├── ..../
 │   └── 9999/
 │
-├── First-Person-Mods/             # First-person mod configurations
+├── First-Person-Mods/             # First-person related mod configurations
 │
 ├── TACZ-Gun-Packs/                # TACZ gun pack resources (*.zip)
 │
@@ -419,15 +419,15 @@ YSM-Model-Author/
 ## Notes
 
 - Usage Notes
-	- The LA\B\C suffix is a personal quality rating (craftsmanship/completeness) and carries no other meaning.
+	- The LA\B\C suffixes are personal preference ratings (build quality/completeness) and carry no other meaning.
 	- Archives contain project source files, while `.ysm` files are the encrypted model files.
-	- Some models in this repository are **18+**. Please use them at your discretion. I have not marked all **R18** models with `nsfw`.
+	- Some models in this repository are **18+**. Please use them at your discretion; I have not marked all **R18** models with `nsfw`.
 	- Please do not **sell** models from this repository in any form. You are solely responsible for any consequences.
 - Model Notes
 	- I discovered that models viewed through Obsidian (a note-taking app) are all corrupted!!!!!!!!
-	- If you find any unusable models, please let me know via an Issue. Thank you!
+	- If you find any unusable models, please let me know via an issue. Thank you!
 - Other Notes
-	- I'm not very familiar with GitHub. If you want to modify anything, you can only notify me via Issues, or you can clone the repository and make changes yourself.
+	- I'm not very familiar with GitHub. If you'd like to modify anything, you can only notify me via Issue, or you can clone the repository and make changes yourself.
 
 ## Acknowledgements
 
@@ -458,35 +458,35 @@ YSM-Model-Author/
 
 # 2026-07-25
 
-- ps: There are too many obscure games out there
+- ps: There are too many weird games out there
 - ps: Note that some models without preview images are unusable. I saved them while browsing authors, which modified some characters and corrupted the original files, rendering those models unusable.
-- ps: Major mistake discovered — I found that most models viewed through Obsidian are corrupted!!!!!!!! I've only now realized the cause; the history on git hasn't been deleted.
+- ps: A major mistake occurred. I discovered that most models viewed through Obsidian are corrupted!!!!!!!! I've only now found the cause; the history on git hasn't been deleted.
 
 # 2026-07-23
 
-- ps: Thanks to [LuckyPotion](https://space.bilibili.com/1739798750) for publicly sharing a collection of paid models from a certain team. I may gradually update preview images for various models over time.
+- ps: Thanks to [LuckyPotion](https://space.bilibili.com/1739798750) for publicly sharing a collection of paid models from a certain team. I may gradually update preview images for various models in the future.
 - ps: Quark Cloud: https://pan.quark.cn/s/77a16d314a11 Extraction code: ajVD (expired)
 - ps: Baidu Cloud: https://pan.baidu.com/s/1FFSrd_YG-1Eat_DQD7hziw Extraction code: xiao
 - ps: Models are temporarily not being added to the repository. Download them yourself if needed.
-- chore: Planning to add an action to generate a `README.md` for each model to make preview images easier to view. If you have a good approach, please let me know via Issues (I don't know how to code — AI wrote everything for me 😭)
+- chore: Planning to add an action to generate a `README.md` for each model to make preview images easier to view. If you have a good approach, please let me know via issue (I don't know how to code; AI wrote everything for me 😭)
 - chore: For naming consistency, all game names in folders will be changed to English (except for games exclusive to China). A translation reference list will be provided later.
 
 # 2026-07-19
 
-- chore: Converted models with source files into archives for easier downloading
+- chore: Converted some models with source files into archives for easier downloading
 - chore: Fixed some incorrect or duplicate authors
 - chore: Re-categorized old models by author
 
 # 2026-07-18
 
-- ps: Some creators belong to the same team. I'm not sure if there's a good way to categorize them. If you have suggestions, feel free to share them.
+- ps: Some creators belong to the same team. I'm not sure if there's a good way to categorize them. If you have suggestions, feel free to share.
 - chore: Reorganized a large number of models
 - chore: The reorganized models include new models and re-categorized [existing models](https://github.com/Elaina69/Yes-Steve-Model-Repo)
 
 # 2026-06-29
 
-- chore: Merged some team models — only the author who created a model releases it, while other authors are listed as sub-entries for their respective contributions.
-- ps: After much organizing, I feel this categorization approach still has issues — it's hard to find the model you want. Essentially, this is a collection of free models; many paid models are not included. When categorizing by author, only a few authors consistently produce high-quality free models. Categorizing by the model's subject might work better.
+- chore: Merged some team models. Only the author who created a model will release it; other authors are listed as sub-entries for their respective contributions.
+- ps: After organizing for a while, I feel this categorization approach still has issues — it's hard to find the model you want. Essentially, this is a collection of free models; many paid models are not included. Categorizing by author works well for only a few high-quality free model creators. Categorizing by the model's subject might be a better approach.
 
 # 2026-05-21
 
@@ -494,12 +494,12 @@ YSM-Model-Author/
 
 # 2026-05-11
 
-- chore: Removed the Pages site. I'll revisit it once I learn a suitable way to present content.
-- chore: Plan to update metadata for all authors by the end of this year. ~If time permits, I'll add preview images for every model.~
+- chore: Removed the pages site. Decided to revisit this once I learn a suitable way to present content.
+- chore: Decided to update metadata for all authors by the end of this year. ~If time permits, I will add preview images for every model.~
 
 # 2026-05-03
 
 - ps: Decided to only update higher-quality models and stop collecting others.
-- chore: Updated the quality mods branch to keep only the latest mods
+- chore: Updated the high-quality mod branch, keeping only the latest mod
 
 </details>
