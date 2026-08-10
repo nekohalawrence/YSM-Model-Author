@@ -3,8 +3,7 @@
 ## Author
 
 - **Name**: #苏依凛
-  - **Role**: 
-  - **SocialPlatform**: #Bilibili 
+    - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
     - **Bilibili**: [苏依凛](https://space.bilibili.com/76987486)
   - **SupportPlatform**: #Afdian 
 	- **Afdian**: [苏依凛](https://afdian.com/a/supermonsterking)

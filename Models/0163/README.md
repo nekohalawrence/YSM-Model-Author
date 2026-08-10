@@ -3,8 +3,7 @@
 ## Author
 
 - **Name**: #Rhein雨倩 | #雨倩先生
-  - **Role**: 
-  - **SocialPlatform**: #Bilibili 
+    - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
     - **Bilibili**: [雨倩先生](https://space.bilibili.com/35515394)
   - **SupportPlatform**: #Afdian 
 	- **Afdian**: [雨倩先生/](https://afdian.com/a/Rheinyuq)

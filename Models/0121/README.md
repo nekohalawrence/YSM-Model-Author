@@ -3,8 +3,7 @@
 ## Author
 
 - **Name**: #准尉werner
-  - **Role**: 
-  - **SocialPlatform**: #Bilibili 
+    - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
     - **Bilibili**: [准尉werner](https://space.bilibili.com/23427031)
   - **SupportPlatform**: #Afdian 
 	- **Afdian**: 

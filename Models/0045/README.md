@@ -3,8 +3,7 @@
 ## Author
 
 - **Name**: #雾雨波波沙
-  - **Role**: 
-  - **SocialPlatform**: #Bilibili #pixiv
+    - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
     - **Bilibili**: [雾雨波波沙](https://space.bilibili.com/36761228)
     - **pixiv**: [雾雨波波沙](https://www.pixiv.net/users/26720481)
   - **GroupChat**: #QQ 

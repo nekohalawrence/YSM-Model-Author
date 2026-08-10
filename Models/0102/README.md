@@ -3,8 +3,7 @@
 ## Author
 
 - **Name**: #Dreamer #普通的木屐
-  - **Role**: 
-  - **SocialPlatform**: #Bilibili #WeChat
+    - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
     - **Bilibili**: [普通的木屐的MC工坊](https://afdian.com/a/CommonMuJi)
     - **WeChat**: MC_CommonMuJi
   - **SupportPlatform**: #Afdian 

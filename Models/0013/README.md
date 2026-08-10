@@ -3,8 +3,7 @@
 ## Author
 
 - **Name**: #对羧基苯酚
-  - **Role**: 
-  - **SocialPlatform**: #Bilibili 
+    - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
     - **Bilibili**: [对羧基苯酚](https://space.bilibili.com/3461562335496256)
   - **SupportPlatform**: #Afdian 
 	- **Afdian**: 

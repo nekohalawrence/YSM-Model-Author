@@ -3,8 +3,7 @@
 ## Author
 
 - **Name**: #ポーラーソース
-  - **Role**: 
-  - **SocialPlatform**: #Bilibili 
+    - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
     - **Bilibili**: 
   - **SupportPlatform**: #Afdian 
 	- **Afdian**: 

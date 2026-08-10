@@ -3,8 +3,7 @@
 ## Author
 
 - **Name**: #02Bunny | #蓝玫瑰
-  - **Role**: 
-  - **SocialPlatform**: #Bilibili 
+    - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
     - **Bilibili**: [02Bunny](https://space.bilibili.com/11814817)
   - **GroupChat**: #QQ 
 	- **QQ**: 584570528

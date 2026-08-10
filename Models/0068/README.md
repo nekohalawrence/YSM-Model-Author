@@ -3,8 +3,7 @@
 ## Author
 
 - **Name**: #AnluoSakura
-  - **Role**: 
-  - **SocialPlatform**: #Bilibili 
+    - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
     - **Bilibili**: [AnluoSakura](https://space.bilibili.com/1275761002)
   - **SupportPlatform**: #Afdian 
 	- **Afdian**: [AnluoSakura](https://afdian.com/a/AnluoSakura)

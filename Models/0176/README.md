@@ -3,8 +3,7 @@
 ## Author
 
 - **Name**: #Bubuker #rintaroa #Torontopizza #rintaroA
-  - **Role**: 
-  - **SocialPlatform**: #Twitter #YouTube #Discord
+    - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
     - **YouTube**: @rintaroA
     - **twitter**: Torontopizza
     - **Discord**: Bubuker

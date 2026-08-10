@@ -3,8 +3,7 @@
 ## Author
 
 - **Name**: #伊洛是哥斯拉嘛 #伊洛是哥斯拉吗|  #哥斯拉 | #落阳不养羊 | #黎家诚 | #BradKidd
-  - **Role**:
-  - **SocialPlatform**: #Bilibili
+    - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
     - **Bilibili**: [伊洛是哥斯拉嘛](https://space.bilibili.com/17798027)
   - **SupportPlatform**: #Afdian
 	- **Afdian**: [映素作坊](https://afdian.com/a/6TGESILA)

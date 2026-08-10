@@ -3,8 +3,7 @@
 ## Author
 
 - **Name**: #Lvara
-  - **Role**: 
-  - **SocialPlatform**: #Bilibili #E-mail
+    - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
     - **Bilibili**: [Lvara](https://space.bilibili.com/34068391)
     - **E-mail**: 1477827530@qq.com
   - **SupportPlatform**: #Afdian 

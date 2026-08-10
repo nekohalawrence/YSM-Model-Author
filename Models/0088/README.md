@@ -3,8 +3,7 @@
 ## Author
 
 - **Name**: #无名氏
-  - **Role**: 
-  - **SocialPlatform**: #Bilibili 
+    - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
     - **Bilibili**: 
   - **SupportPlatform**: #Afdian 
 	- **Afdian**: 

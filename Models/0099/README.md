@@ -3,8 +3,7 @@
 ## Author
 
 - **Name**: #Dumnheint
-  - **Role**: 
-  - **SocialPlatform**: #Bilibili 
+    - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
     - **Bilibili**: [Dumrnheint](https://space.bilibili.com/36644599)
   - **SupportPlatform**: #Afdian 
 	- **Afdian**: 

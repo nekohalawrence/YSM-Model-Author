@@ -3,8 +3,7 @@
 ## Author
 
 - **Name**: #白色北熊
-  - **Role**: 
-  - **SocialPlatform**: #Bilibili 
+    - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
     - **Bilibili**: [白色北熊](https://space.bilibili.com/175342453)
   - **SupportPlatform**: #Afdian 
 	- **Afdian**: [白色北熊](https://afdian.com/a/bx233)

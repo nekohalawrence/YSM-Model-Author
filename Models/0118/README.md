@@ -3,8 +3,7 @@
 ## Author
 
 - **Name**: #ガラスのような青空| #coldm00n
-  - **Role**: 
-  - **SocialPlatform**: #Bilibili 
+    - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
     - **Bilibili**: [ガラスのような青空](https://space.bilibili.com/11382763)
   - **SupportPlatform**: #Afdian 
 	- **Afdian**: [未认证创作者](https://afdian.com/a/coldMOON048)

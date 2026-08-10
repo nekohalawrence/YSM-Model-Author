@@ -3,8 +3,7 @@
 ## Author
 
 - **Name**: #韦懦夫斯菲尔 | #汪
-  - **Role**: 
-  - **SocialPlatform**: #Bilibili 
+    - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
     - **Bilibili**: [韦懦夫斯菲尔](https://space.bilibili.com/3546753760496536)
   - **SupportPlatform**: #Afdian 
 	- **Afdian**: 

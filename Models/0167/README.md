@@ -3,6 +3,5 @@
 ## Author
 
 - **Name**: #炼狱在旅行
-  - **Role**: 
-  - **SocialPlatform**: #Bilibili 
+    - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
     - **Bilibili**: [炼狱在旅行](https://space.bilibili.com/2137283416)

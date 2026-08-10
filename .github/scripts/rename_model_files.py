@@ -1,0 +1,119 @@
+import sys
+import re
+from pathlib import Path
+
+# 允许处理的文件后缀
+ALLOWED_EXTS = {'.ysm', '.zip', '.7z', '.rar', '.tar', '.gz', '.bbmodel'}
+
+def clean_folder_name(folder_name: str) -> str:
+    """去除文件夹名称末尾的评级标签 (_LA, _LB, _LC, _LD)"""
+    return re.sub(r'_(?:LA|LB|LC|LD)$', '', folder_name, flags=re.IGNORECASE)
+
+def parse_file_stem(file_stem: str, folder_name: str) -> tuple[str, str, str]:
+    """
+    智能解析文件名，分离为：变体名、版本号、副本序号
+    例如: "雪风-全年龄版2.6.1 (1)" -> ("_全年龄版", "_v2.6.1", "_1")
+    """
+    stem = file_stem
+
+    # 1. 提取末尾的副本序号 (如 (1)、（1）、_1、-1)
+    copy_tag = ""
+    copy_match = re.search(r'[\s_-]*[\(（](\d+)[\)）]$|[\s_-]+(\d+)$', stem)
+    if copy_match:
+        num = copy_match.group(1) or copy_match.group(2)
+        copy_tag = f"_{num}"
+        stem = stem[:copy_match.start()].rstrip('-_ ')
+
+    # 2. 提取版本号 (如 2.6.1、v2.6.1、V2.6.1)
+    version_tag = ""
+    version_match = re.search(r'(?:[_\s-]|[vV]|(?<=[^\d\.]))?(\d+(?:\.\d+)+)', stem)
+    if version_match:
+        version_num = version_match.group(1)
+        version_tag = f"_v{version_num}"
+        # 从 stem 中剔除版本号部分
+        stem = (stem[:version_match.start()] + stem[version_match.end():]).strip('-_ ')
+
+    # 3. 提取变体名称 (对比 folder_name，过滤已有的关键词)
+    clean_stem = re.sub(r'[-—\s+]+', '_', stem)
+    
+    # 提取文件夹中的关键词库（忽略评级 LA/LB/LC/LD）
+    folder_keywords = set(w.lower() for w in re.split(r'[-_\s]+', folder_name) if w)
+    folder_keywords.update({'la', 'lb', 'lc', 'ld'})
+
+    file_words = [w for w in re.split(r'[-_\s]+', clean_stem) if w]
+    variant_words = [w for w in file_words if w.lower() not in folder_keywords]
+
+    variant_tag = f"_{'_'.join(variant_words)}" if variant_words else ""
+
+    return variant_tag, version_tag, copy_tag
+
+
+def rename_to_folder_name(target_path: Path, apply_changes: bool = False):
+    """重命名主函数"""
+    if target_path.is_file():
+        files = [target_path]
+    elif target_path.is_dir():
+        files = [p for p in target_path.rglob('*') if p.is_file()]
+    else:
+        print(f"错误: 路径不存在 -> {target_path}")
+        return
+
+    renamed_count = 0
+    skipped_count = 0
+
+    print(f"{'='*20} {'执行模式: 真实修改 (--apply)' if apply_changes else '执行模式: 预览模式 (Dry-Run)'} {'='*20}\n")
+
+    for file_path in sorted(files):
+        if file_path.suffix.lower() not in ALLOWED_EXTS:
+            continue
+
+        folder_name = file_path.parent.name
+        base_folder_name = clean_folder_name(folder_name)
+        original_name = file_path.name
+        ext = file_path.suffix
+
+        # 解析文件名结构
+        variant_tag, version_tag, copy_tag = parse_file_stem(file_path.stem, folder_name)
+
+        # 拼接最终文件名并清洗多余的连续下划线
+        new_stem = f"{base_folder_name}{variant_tag}{version_tag}{copy_tag}"
+        new_stem = re.sub(r'_+', '_', new_stem).strip('_')
+        new_name = f"{new_stem}{ext}"
+
+        if original_name == new_name:
+            skipped_count += 1
+            continue
+
+        new_file_path = file_path.parent / new_name
+
+        # 同名冲突处理
+        if apply_changes and new_file_path.exists():
+            counter = 1
+            while new_file_path.exists():
+                new_file_path = file_path.parent / f"{new_stem}_{counter}{ext}"
+                counter += 1
+            new_name = new_file_path.name
+
+        print(f"[匹配] 目录: {folder_name}/")
+        print(f"  原名: {original_name}")
+        print(f"  新名: {new_name}\n")
+
+        if apply_changes:
+            file_path.rename(new_file_path)
+
+        renamed_count += 1
+
+    print(f"{'='*50}")
+    print(f"统计完成: 待修改/已修改 = {renamed_count}, 无需修改 = {skipped_count}")
+    if not apply_changes and renamed_count > 0:
+        print("\n提示: 当前为预览模式，磁盘文件未修改。如确认无误，请在命令末尾加上 --apply 执行！")
+
+
+if __name__ == '__main__':
+    default_dir = Path(__file__).resolve().parent / 'Models'
+    
+    apply_flag = '--apply' in sys.argv
+    args = [arg for arg in sys.argv[1:] if arg != '--apply']
+
+    target = Path(args[0]) if args else default_dir
+    rename_to_folder_name(target, apply_changes=apply_flag)

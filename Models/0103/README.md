@@ -3,7 +3,7 @@
 ## Author
 
 - **Name**: #浅陌菌
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+    - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **Team**: #艺方堂
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [浅陌菌](https://space.bilibili.com/24513198)

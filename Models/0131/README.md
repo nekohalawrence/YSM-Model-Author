@@ -3,8 +3,7 @@
 ## Author
 
 - **Name**: #星璇_tbod
-  - **Role**: 
-  - **SocialPlatform**: #Bilibili 
+    - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
     - **Bilibili**: [星璇_tbod](https://space.bilibili.com/2123185882)
   - **SupportPlatform**: #Afdian 
 	- **Afdian**: 

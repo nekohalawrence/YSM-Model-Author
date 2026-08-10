@@ -3,7 +3,7 @@
 ## Author
 
 - **Name**: #狱际星芒
-  - **Role**: #模型 #动作 | #Model #Motion
+    - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [狱际星芒](https://space.bilibili.com/349150095)
   - **SupportPlatform**: #Afdian

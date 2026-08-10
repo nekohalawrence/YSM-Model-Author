@@ -3,8 +3,7 @@
 ## Author
 
 - **Name**: #奶油桃NaytoTime
-  - **Role**: 
-  - **SocialPlatform**: #Bilibili 
+    - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
     - **Bilibili**: [奶油桃NaytoTime](https://space.bilibili.com/74167922)
   - **SupportPlatform**: #Afdian 
 	- **Afdian**: [行星图书馆-奶油桃NaytoTime](https://afdian.com/a/liberstellae)

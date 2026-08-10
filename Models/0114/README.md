@@ -3,8 +3,7 @@
 ## Author
 
 - **Name**: #迷糊晓雾
-  - **Role**: 
-  - **SocialPlatform**: #Bilibili #e-mail
+    - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
     - **Bilibili**: 
     - **E-mail**: 3313645023@qq.com
   - **SupportPlatform**: #Afdian 

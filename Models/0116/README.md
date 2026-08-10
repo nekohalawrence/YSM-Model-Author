@@ -3,7 +3,7 @@
 ## Author
 
 - **Name**: #1111111re | #伊伊蕾
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+    - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [1111111re](https://space.bilibili.com/35073555)
   - **SupportPlatform**: #Afdian

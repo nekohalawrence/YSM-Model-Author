@@ -3,8 +3,7 @@
 ## Author
 
 - **Name**: #Nekuro | #NekuroMC
-  - **Role**: 
-  - **SocialPlatform**: #YouTube #Sketchfab
+    - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
     - **YouTube**: [Nekuro](https://www.youtube.com/@NekuroMC)
     - **Sketchfab**: [NekuroMC](https://sketchfab.com/NekuroMC/models)
 - **SupportPlatform**: #Afdian #ko-fi
