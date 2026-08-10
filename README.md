@@ -8,6 +8,7 @@
 <summary>作者索引</summary>
 
 <!-- AUTHORS_LIST_START -->
+
 | 编号 | 作者名称 | 收录数量 |
 | --- | --- | ---: |
 | 0000 | [#-OMEGAZERO-](.../../Models/0000) | 1 |
@@ -202,6 +203,7 @@
 | 0190 | [#奈忒倪](.../../Models/0190) | 1 |
 | 0191 | [#新隆肰懿](.../../Models/0191) | 1 |
 | 0192 | [#苏瑞铃 \| #苏瑞铃_official](.../../Models/0192) | 2 |
+
 <!-- AUTHORS_LIST_END -->
 
 </details>
@@ -271,6 +273,7 @@
 - Strinova | 卡拉比丘
 - Sun Shower | 天气雨 | 天気雨（てんきあめ / Tenkiame）
 - Teaching Feeling, TF | 奴隶少女希尔薇
+- Tenshi Souzou, Tenshi | 天使嚣嚣 | 天使騒々 RE‑BIRTH!
 - Tom Clancy's Rainbow Six Siege, R6S | 彩虹六号：围攻
 - Twinkle Star Knights, TSK | 闪耀星骑士 | ティンクルスターナイツ
 - Undertale | 传说之下
@@ -284,6 +287,7 @@
 ## 动画/漫画/小说
 
 - A Certain Magical Index, Toaru Majutsu no Index, TMNI | 魔法禁书目录, 某魔法的禁书目录 | とある魔術の禁書目録
+- ATRI -My Dear Moments-, AIRI | 亚托莉‑我挚爱的时光‑ | ATRI ‑My Dear Moments‑
 - BanG Dream! It's MyGO!!!!!, MyGO | 迷途之子！！！！！
 - BanG Dream! Ave Mujica, AveMujica | 颂乐人偶
 - Bocchi-the-Rock!, BtR | 孤独摇滚！
@@ -312,7 +316,7 @@
 - Onii-chan wa Oshimai!, ONIMAI | 别当欧尼酱了！ | お兄ちゃんはおしまい！
 - Phineas and Ferb, PNF | 飞哥与小佛 | フィニアスとファーブ
 - Plants vs. Zombies, PVZ | 植物大战僵尸
-- Pop Team Epic, PTE | pop子和pipi美的日常 | ポプテピピック
+- Pop Team Epic, PTE | pop 子和 pipi 美的日常 | ポプテピピック
 - Puella Magi Madoka Magica, PMMM, Madoka | 魔法少女小圆 | 魔法少女まどか☆マギカ
 - Rascal Does Not Dream, RDND | 青春猪头少年系列 | 青春ブタ野郎はバニーガール先輩の夢を見ない, 青春ブタ野郎シリーズ
 - Redo of Healer, ROH | 回复术士的重启人生 | 回復術士のやり直し

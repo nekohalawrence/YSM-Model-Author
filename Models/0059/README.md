@@ -10,6 +10,10 @@
   - **GroupChat**: #QQ
 	- **QQ**: 1037786416
 
-## 动画
+## Co-creator
 
-- [0052-烟雨画桥](../../0052/README)
+- **Name**: [#゚烟雨画桥](../../0052/README)
+    - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+    - **Bilibili**: [゚烟雨画桥](https://space.bilibili.com/1268865161)
+  - **SupportPlatform**: #Afdian
+	- **Afdian**: [烟雨画桥](https://afdian.com/a/mj204)
