@@ -1,104 +1,222 @@
-import sys
+#!/usr/bin/env python3
 import re
 from pathlib import Path
 
-# 允许处理的文件后缀白名单
-ALLOWED_EXTS = {'.ysm', '.zip', '.7z', '.rar', '.tar', '.gz', '.bbmodel'}
+WORKSPACE_ROOT = Path(__file__).resolve().parents[2]
+MAIN_README_PATH = WORKSPACE_ROOT / 'README.md'
 
-def extract_version_and_clean_stem(file_stem: str) -> tuple[str, str]:
-    """提取版本号，并返回去除版本号后的干净 stem"""
-    match = re.search(r'(?:_|[vV])?(\d+(?:\.\d+)+)$', file_stem)
-    if match:
-        version = f"_v{match.group(1)}"
-        clean_stem = file_stem[:match.start()].rstrip('_')
-        return version, clean_stem
-    return "", file_stem
+ROOT_DIRS = [
+    WORKSPACE_ROOT / 'Models',
+    WORKSPACE_ROOT / 'Blockbench-Models',
+    WORKSPACE_ROOT / 'Other-YSM-Models',
+]
+IMAGE_EXTS = {'.png', '.jpg', '.jpeg', '.webp', '.gif'}
+PREVIEW_MARKER = re.compile(r'preview', re.I)
+START_MARKER = '<!-- GENERATED MODEL PREVIEW README START -->'
+END_MARKER = '<!-- GENERATED MODEL PREVIEW README END -->'
 
-def extract_variant(clean_stem: str, folder_name: str) -> str:
-    """智能提取变体名称（如：发光版、无帽子版、泳装等）"""
-    # 1. 若文件名本身就包含了完整的文件夹名前缀，直接截取后面的变体部分
-    if clean_stem.lower().startswith(folder_name.lower()):
-        variant = clean_stem[len(folder_name):].strip('-_ ')
-        return f"_{variant}" if variant else ""
 
-    # 2. 若文件名与文件夹名不完全一致，比对词组提取不在文件夹名中的变体词
-    folder_words = set(re.split(r'[-_\s]+', folder_name.lower()))
-    file_words = [w for w in re.split(r'[-_\s]+', clean_stem) if w]
+def parse_categories_from_main_readme() -> dict[str, list[str]]:
+    """从主 README.md 的模型分类区块解析作品缩写与对应的标签列表（支持 | 和 , 混合分隔）"""
+    category_map: dict[str, list[str]] = {}
+    if not MAIN_README_PATH.exists():
+        return category_map
+
+    content = MAIN_README_PATH.read_text(encoding='utf-8', errors='ignore')
     
-    variant_words = [word for word in file_words if word.lower() not in folder_words]
+    match = re.search(r'<summary>\s*模型分类\s*</summary>(.*?)</details>', content, re.DOTALL)
+    if not match:
+        return category_map
+
+    category_block = match.group(1)
     
-    if variant_words:
-        return f"_{'_'.join(variant_words)}"
+    for line in category_block.splitlines():
+        line = line.strip()
+        if not line.startswith('- '):
+            continue
         
-    return ""
+        # 1. 移除开头的 '- '，将 '|' 统一替换为 ',' 再进行切分
+        raw_text = line[2:].replace('|', ',')
+        raw_items = [item.strip() for item in raw_text.split(',') if item.strip()]
+        
+        if not raw_items:
+            continue
+        
+        # 2. 生成组合标签列表
+        tags = [f"#{item}" for item in raw_items]
+        
+        # 3. 将每一个别名/缩写词均注册为 Key（例如 ak, arknights, 明日方舟）
+        for item in raw_items:
+            category_map[item.lower()] = tags
 
-def rename_to_folder_name(target_path: Path, apply_changes: bool = False):
-    """重命名逻辑：文件夹名 + [变体名] + [版本号] + 后缀"""
-    if target_path.is_file():
-        files = [target_path]
-    elif target_path.is_dir():
-        files = [p for p in target_path.rglob('*') if p.is_file()]
+    return category_map
+
+
+def get_tags_for_model(model_folder_name: str, category_map: dict[str, list[str]]) -> str:
+    """根据模型文件夹名称前缀匹配标签，未匹配到则默认为 #Unknown"""
+    prefix = model_folder_name.split('_')[0].strip().lower()
+    
+    if prefix in category_map:
+        return ' '.join(category_map[prefix])
+    
+    return "#Unknown"
+
+
+def get_author_info(model_dir: Path) -> tuple[str, str]:
+    """从作者目录 README 中提取作者名称与 ID（避开 Co-creator）"""
+    author_dir = model_dir.parent
+    if not author_dir.is_dir() or not author_dir.name.isdigit() or len(author_dir.name) != 4:
+        return '', ''
+
+    author_name = author_dir.name
+    for candidate in ['README.md', 'readme.md', 'Readme.md']:
+        candidate_path = author_dir / candidate
+        if candidate_path.is_file():
+            text = candidate_path.read_text(encoding='utf-8', errors='ignore')
+            
+            # 区块隔离：优先在 ## Author 区域内匹配
+            author_section_match = re.search(r'##\s*Author\b(.*?)(?=\n##|\Z)', text, re.DOTALL | re.IGNORECASE)
+            target_text = author_section_match.group(1) if author_section_match else text
+
+            match = re.search(r'-\s*\*\*Name\*\*\s*[:：]\s*(.+?)(?:\n|$)', target_text, re.IGNORECASE)
+            if not match:
+                match = re.search(r'-\s*作者名称\s*[:：]\s*(.+?)(?:\n|$)', target_text, re.IGNORECASE)
+            if match:
+                author_name = match.group(1).strip()
+            break
+
+    return author_dir.name, author_name
+
+
+def is_preview_image(path: Path) -> bool:
+    return path.is_file() and path.suffix.lower() in IMAGE_EXTS and PREVIEW_MARKER.search(path.stem)
+
+
+def collect_preview_images(model_dir: Path) -> list[Path]:
+    images = []
+    for candidate in [model_dir, model_dir / 'previews']:
+        if candidate.is_dir():
+            for file_path in sorted(candidate.iterdir()):
+                if is_preview_image(file_path):
+                    images.append(file_path)
+    return images
+
+
+def build_meta_and_preview_content(model_dir: Path, image_paths: list[Path], category_map: dict[str, list[str]]) -> str:
+    """构建标准化的英文模型 README 内容"""
+    title = model_dir.name
+    tags = get_tags_for_model(title, category_map)
+    author_id, author_name = get_author_info(model_dir)
+
+    lines = [f'# {title}', '']
+
+    # Model Details（模型详情）
+    lines.extend([
+        '<details>',
+        '<summary>Model Details</summary>',
+        '',
+        f'- **Franchise / Category**: {tags}',
+        '',
+        '</details>',
+        ''
+    ])
+
+    # Author Details（作者信息与跳转链接）
+    if author_id:
+        lines.extend([
+            '<details>',
+            '<summary>Author Details</summary>',
+            '',
+            f'- **Author**: [#{author_id} - {author_name}](../)',
+            f'- **Author ID**: `{author_id}`',
+            '',
+            '</details>',
+            ''
+        ])
+
+    # Preview Images（预览图，默认展开）
+    lines.extend([
+        '<details open>',
+        '<summary>Preview Images</summary>',
+        '',
+        START_MARKER,
+        ''
+    ])
+
+    for image_path in image_paths:
+        rel_path = image_path.relative_to(model_dir).as_posix()
+        lines.append(f'![{image_path.name}]({rel_path})')
+        lines.append('')
+
+    lines.extend([
+        END_MARKER,
+        '',
+        '</details>',
+        ''
+    ])
+
+    return '\n'.join(lines).rstrip() + '\n'
+
+
+def is_author_dir(path: Path) -> bool:
+    return path.is_dir() and path.name.isdigit() and len(path.name) == 4
+
+
+def iter_model_dirs(root_dir: Path):
+    if root_dir.name == 'Models':
+        for author_dir in sorted(root_dir.iterdir()):
+            if not is_author_dir(author_dir):
+                continue
+            for model_dir in sorted(author_dir.iterdir()):
+                if not model_dir.is_dir():
+                    continue
+                if model_dir.name.startswith('.') or model_dir.name == 'previews':
+                    continue
+                yield model_dir
     else:
-        print(f"错误: 路径不存在 -> {target_path}")
-        return
+        for model_dir in sorted(root_dir.iterdir()):
+            if not model_dir.is_dir():
+                continue
+            if model_dir.name.startswith('.') or model_dir.name == 'previews':
+                continue
+            yield model_dir
 
-    renamed_count = 0
-    skipped_count = 0
 
-    print(f"{'='*20} {'执行模式: 真实重命名 (--apply)' if apply_changes else '执行模式: 预览模式 (Dry-Run)'} {'='*20}\n")
+def main() -> int:
+    updated = 0
+    created = 0
 
-    for file_path in sorted(files):
-        if file_path.suffix.lower() not in ALLOWED_EXTS:
+    category_map = parse_categories_from_main_readme()
+
+    for root_dir in ROOT_DIRS:
+        if not root_dir.is_dir():
             continue
 
-        folder_name = file_path.parent.name
-        original_name = file_path.name
-        ext = file_path.suffix
+        for model_dir in iter_model_dirs(root_dir):
+            preview_images = collect_preview_images(model_dir)
+            if not preview_images:
+                continue
 
-        # 1. 提取版本号与干净 stem
-        version_tag, clean_stem = extract_version_and_clean_stem(file_path.stem)
+            readme_path = model_dir / 'README.md'
+            existing_content = readme_path.read_text(encoding='utf-8', errors='ignore') if readme_path.exists() else None
 
-        # 2. 提取变体名称
-        variant_tag = extract_variant(clean_stem, folder_name)
+            new_content = build_meta_and_preview_content(model_dir, preview_images, category_map)
 
-        # 3. 拼接新文件名：文件夹名 + 变体名 + 版本号 + 后缀
-        new_stem = f"{folder_name}{variant_tag}{version_tag}"
-        new_name = f"{new_stem}{ext}"
+            if readme_path.exists():
+                if existing_content == new_content:
+                    continue
+                action = 'Updated'
+                updated += 1
+            else:
+                action = 'Created'
+                created += 1
 
-        if original_name == new_name:
-            skipped_count += 1
-            continue
+            readme_path.write_text(new_content, encoding='utf-8')
+            print(f"{action} {readme_path.relative_to(root_dir.parent)}")
 
-        new_file_path = file_path.parent / new_name
-
-        # 同名冲突防护
-        if apply_changes and new_file_path.exists():
-            counter = 1
-            while new_file_path.exists():
-                new_file_path = file_path.parent / f"{folder_name}{variant_tag}_{counter}{version_tag}{ext}"
-                counter += 1
-            new_name = new_file_path.name
-
-        print(f"[匹配] 目录: {folder_name}/")
-        print(f"  原名: {original_name}")
-        print(f"  新名: {new_name}\n")
-
-        if apply_changes:
-            file_path.rename(new_file_path)
-
-        renamed_count += 1
-
-    print(f"{'='*50}")
-    print(f"统计完成: 待修改/已修改 = {renamed_count}, 无需修改 = {skipped_count}")
-    if not apply_changes and renamed_count > 0:
-        print("\n提示: 当前处于预览模式，没有修改任何磁盘文件。如需真正修改，请在命令末尾加上 --apply 参数！")
+    print(f"Summary: created={created}, updated={updated}")
+    return 0
 
 
 if __name__ == '__main__':
-    default_dir = Path(__file__).resolve().parent / 'Models'
-    
-    apply_flag = '--apply' in sys.argv
-    args = [arg for arg in sys.argv[1:] if arg != '--apply']
-
-    target = Path(args[0]) if args else default_dir
-    rename_to_folder_name(target, apply_changes=apply_flag)
+    raise SystemExit(main())
