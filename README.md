@@ -8,6 +8,7 @@
 <summary>作者索引</summary>
 
 <!-- AUTHORS_LIST_START -->
+
 | 编号 | 作者名称 | 收录数量 |
 | --- | --- | ---: |
 | 0000 | [#-OMEGAZERO-](.../../Models/0000) | 1 |
@@ -202,6 +203,7 @@
 | 0190 | [#奈忒倪](.../../Models/0190) | 1 |
 | 0191 | [#新隆肰懿](.../../Models/0191) | 1 |
 | 0192 | [#苏瑞铃 \| #苏瑞铃_official](.../../Models/0192) | 2 |
+
 <!-- AUTHORS_LIST_END -->
 
 </details>
@@ -220,6 +222,7 @@
 ## 游戏
 
 - ‑as the Night's, Reincarnation‑, Sakura Moyu | 樱花摸鱼, 樱花、萌放 | さくら、もゆ
+- 300 Heroes, 300-Heroes | 300 英雄 | 300 ヒーローズ
 - Arknights, AK | 明日方舟
 - Arknights-Endfield, AKE | 明日方舟：终末地
 - Ash-Arms | 灰烬战线
@@ -229,6 +232,7 @@
 - Azur-Promilia, AP | 蓝色星原
 - Battlefield-1, BF-1 | 战地 -1
 - Blue-Archive, BA | 碧蓝档案, 蔚蓝档案
+- Black Rock Shooter, BRS | 黑岩射手 | ブラック★ロックシューター
 - Command & Conquer, CNC | 命令与征服
 - Command-&-Conquer: Red-Alert-2, Red-Alert-2, RA2 | 命令与征服：红色警戒 2
 - Command-&-Conquer: Red-Alert-3, Red-Alert-3, RA3 | 命令与征服：红色警戒 3
@@ -252,22 +256,26 @@
 - Goddess of Victory: Nikke, Nikke | 胜利女神：妮姬
 - Granblue Fantasy: Relink, GBR, Granblue | 碧蓝幻想：RELINK
 - League of Legends, LOL | 英雄联盟
+- Library of Ruina, LOR | 废墟图书馆
 - Limbus Company, LC | 边狱巴士, 边狱公司
 - Magical Girl Celesphonia, MGC | 魔法少女天穹法妮雅 | 魔法少女セレスフォニア
 - Magical Girl Witch Trial, MGWT | 魔法少女的魔女审判 | 魔法少女ノ魔女裁判
 - Magia Record: Puella Magi Madoka Magica Side Story, Magia-Record | 魔法纪录 魔法少女小圆外传 | マギアレコード 魔法少女まどか☆マギカ外伝
 - MiSide | 米塔
 - NARUTO, Naruto Shippuden, NAR | 火影忍者: 疾风传
+- Needy Girl Overdos, NEO | 主播女孩重度依赖 | ニーディーガール・オーバードーズ
 - NEKOPARA | 巧克力与香子兰, 猫娘乐园 | ネコぱら
 - Neon-Genesis-Evangelion, NGE, EVA | 新世纪福音战士
 - Neverness to Everness, NTE | 异环
 - Senren＊Banka, SENREN | 千恋＊万花 | せんれん＊ばんか
 - Snowbreak: Containment Zone, snowbreak | 尘白禁区
+- SPY×FAMILY | 间谍过家家
 - Strinova | 卡拉比丘
 - Sun Shower | 天气雨 | 天気雨（てんきあめ / Tenkiame）
 - Teaching Feeling, TF | 奴隶少女希尔薇
 - Tom Clancy's Rainbow Six Siege, R6S | 彩虹六号：围攻
 - Twinkle Star Knights, TSK | 闪耀星骑士 | ティンクルスターナイツ
+- Undertale | 传说之下
 - Umamusume: Pretty Derby, UmaMusume, UM | 闪耀！优俊少女, 赛马娘
 - White Eternity, AstralAir no Shiroki Eien, ASE | 星辰恋曲的白色永恒 | アストラエアの白き永遠
 - Wish upon a shooting star, Hoshizora no Memoria, HNM | 星空的记忆 | 星空のメモリア
@@ -275,11 +283,13 @@
 - Yog-Sothoth's Yard, YogYard | 犹格索托斯的庭院：炼金旅社
 - Zenless-Zone-Zero, ZZZ | 绝区零
 
-## 动画/漫画
+## 动画/漫画/小说
 
+- A Certain Magical Index, Toaru Majutsu no Index, TMNI | 魔法禁书目录, 某魔法的禁书目录 | とある魔術の禁書目録
 - BanG Dream! It's MyGO!!!!!, MyGO | 迷途之子！！！！！
 - BanG Dream! Ave Mujica, AveMujica | 颂乐人偶
 - Bocchi-the-Rock!, BtR | 孤独摇滚！
+- Cardcaptor Sakura, Cardcaptor | 魔卡少女樱, 百变小樱 | カードキャプターさくら
 - Date A Live, DAL | 约会大作战 | デート・ア・ライブ
 - Dragon Raja, DR | 龙族
 - Dungeon & Fighter, DNF, DFO | 地下城与勇士
@@ -287,31 +297,39 @@
 - Fox-Spirit-Matchmaker, FSM | 狐妖小红娘
 - Frieren-Beyond-Journey's-End, Frieren | 葬送的芙莉莲
 - Girls Band Cry, GBC | 哭泣少女乐队
+- Gonna Be the Twin‑Tail!!, Ore, Twintail ni Narimasu., GBTT | 我要成为双马尾！ | 俺、ツインテールになります。
+- Heaven's Lost Property, HLP | 天降之物 | そらのおとしもの
 - How Not to Summon a Demon Lord, HNTSADL | 异界少女召唤术, 异世界魔王与召唤少女的奴隶魔术 | 異世界魔王と召喚少女の奴隷魔術
 - Jujutsu Kaisen, JJK | 咒术回战 | 呪術廻戦
-- KonoSuba: God's Blessing on This Wonderful World!, KonoSuba, KON | 为美好的世界献上祝福！ | この素晴らしい世界に祝福を！
+- KonoSuba: God's Blessing on This Wonderful World!, Kono Subarashii Sekai ni Shukufuku wo!, KonoSuba, KON | 为美好的世界献上祝福！ | この素晴らしい世界に祝福を！
 - Love, Chunibyo & Other Delusions, LCOD | 中二病でも恋がしたい！ | 中二病也要谈恋爱！
 - LoveMe | 枫与铃 | らぶみー♡
 - Majo no Tabitabim, MNT | 魔女之旅 | 魔女の旅々, まじょのたびたび
 - Make Heroine ga Oosugiru!, MHO | 負けヒロインが多すぎる！
 - Mato Seihei no Sureibu, MSNS | 魔都精兵的奴隶 | 魔都精兵のスレイブ
+- Miss Kobayashi's Dragon Maidm, MKDM | 小林家的龙女仆 | 小林さんちのメイドラゴン
 - MorotsuiKizoku, MKZ | 没落贵族琉璃川椿
 - MushokuTensei | 无职转生～到了异世界就拿出真本事～ | 無職転生 ～異世界行ったら本気だす～
+- My Dress-Up Darling, MDUD, Kisekoi | 更衣人偶坠入爱河, 恋上换装娃娃 | その着せ替え人形は恋をする
 - Onii-chan wa Oshimai!, ONIMAI | 别当欧尼酱了！ | お兄ちゃんはおしまい！
+- Phineas and Ferb, PNF | 飞哥与小佛 | フィニアスとファーブ
 - Plants vs. Zombies, PVZ | 植物大战僵尸
+- Pop Team Epic, PTE | pop子和pipi美的日常 | ポプテピピック
 - Puella Magi Madoka Magica, PMMM, Madoka | 魔法少女小圆 | 魔法少女まどか☆マギカ
 - Rascal Does Not Dream, RDND | 青春猪头少年系列 | 青春ブタ野郎はバニーガール先輩の夢を見ない, 青春ブタ野郎シリーズ
 - Redo of Healer, ROH | 回复术士的重启人生 | 回復術士のやり直し
+- Reverend Insanity, RI | 蛊真人
 - Ringing Fate, Ringing-Fate | 命运拳台
 - Saekano: How to Raise a Boring Girlfriend, SAEKANO | 路人女主的养成方法
+- Steins;Gate, Steins-Gate | 命运石之门 | シュタインズ・ゲート
+- Sword Art Online, Sōdo Āto Onrain, SAO | 刀剑神域 | ソードアート・オンライン
 - The Future Diary, TFD | 未来日记 | 未来日記
+- The Lonely Snow Widow and the Cursed Ring, The Shy Snow Woman and the Cursed Ring, SSW | 不擅长人际交往的未亡人雪女与诅咒之戒 | 人付き合いが苦手な未亡人の雪女さんと呪いの指輪
+- To LOVE Ru, To-LOVE-Ru | 出包王女 | To LOVE る - とらぶる -
 - Tokyo Ghoul, Tokyo-Ghoul | 东京食尸鬼 | 東京喰種トーキョーグール
-- Ultraman Tiga, UT | 迪迦奥特曼
+- Ultraman Tiga, Ultraman, UT | 奥特曼, 迪迦奥特曼
 - Wandering Witch: The Journey of Elaina, Majo no Tabitabi | 魔女之旅 | 魔女の旅々
-
-## 小说
-
-- Reverend Insanity, RI | 蛊真人
+- Yosuga no Sora, YNS | 缘之空 | ヨスガノソラ
 
 ## 艺术家
 
@@ -323,6 +341,7 @@
 ## 其他
 
 - Kemomimi Gakuen, KG | 兽耳学园, 兽耳学院 | ケモミミ学園
+- Meme | 模因
 - Myth | 神话
 - Original Character, OC | 原创角色
 - the Three Kingdoms period, TTKP
@@ -340,11 +359,11 @@
 
 > 推荐一些优质模型作者
 
-- 0045: [#雾雨波波沙](.../../models/0045)
-- 0065: [#烛火的次元宇宙](.../../models/0065)
-- 0067: [#Almeta_owx](.../../models/0067)
-- 0068: [#AnluoSakura](.../../models/0068)
-- 0076: [#White_clams白蛤蜊](.../../models/0076)
+- 0045: [#雾雨波波沙](Models/0045)
+- 0065: [#烛火的次元宇宙](Models/0065)
+- 0067: [#Almeta_owx](Models/0067)
+- 0068: [#AnluoSakura](Models/0068)
+- 0076: [#White_clams白蛤蜊](Models/0076)
 
 </details>
 

@@ -12,7 +12,7 @@ def clean_folder_name(folder_name: str) -> str:
 def parse_file_stem(file_stem: str, folder_name: str) -> tuple[str, str, str]:
     """
     智能解析文件名，分离为：变体名、版本号、副本序号
-    例如: "雪风-全年龄版2.6.1 (1)" -> ("_全年龄版", "_v2.6.1", "_1")
+    例如: "兔子洞Ver1.1" -> ("" , "_v1.1", "")
     """
     stem = file_stem
 
@@ -22,23 +22,27 @@ def parse_file_stem(file_stem: str, folder_name: str) -> tuple[str, str, str]:
     if copy_match:
         num = copy_match.group(1) or copy_match.group(2)
         copy_tag = f"_{num}"
-        stem = stem[:copy_match.start()].rstrip('-_ ')
+        stem = stem[:copy_match.start()].strip('-_ ')
 
-    # 2. 提取版本号 (如 2.6.1、v2.6.1、V2.6.1)
+    # 2. 提取版本号（支持 Ver / ver / Version / v / V 等版本修饰前缀）
     version_tag = ""
-    version_match = re.search(r'(?:[_\s-]|[vV]|(?<=[^\d\.]))?(\d+(?:\.\d+)+)', stem)
+    version_match = re.search(
+        r'(?:[_\s-]|(?<=[^\w]))*(?:ver(?:sion)?|v|r)?[\s._-]*(\d+(?:\.\d+)+)',
+        stem,
+        re.IGNORECASE
+    )
     if version_match:
         version_num = version_match.group(1)
         version_tag = f"_v{version_num}"
-        # 从 stem 中剔除版本号部分
+        # 剔除整个匹配内容（包含 Ver/Version/v 等前缀）
         stem = (stem[:version_match.start()] + stem[version_match.end():]).strip('-_ ')
 
     # 3. 提取变体名称 (对比 folder_name，过滤已有的关键词)
     clean_stem = re.sub(r'[-—\s+]+', '_', stem)
     
-    # 提取文件夹中的关键词库（忽略评级 LA/LB/LC/LD）
+    # 提取文件夹中的关键词库（忽略评级与常用版本词）
     folder_keywords = set(w.lower() for w in re.split(r'[-_\s]+', folder_name) if w)
-    folder_keywords.update({'la', 'lb', 'lc', 'ld'})
+    folder_keywords.update({'la', 'lb', 'lc', 'ld', 'ver', 'version'})
 
     file_words = [w for w in re.split(r'[-_\s]+', clean_stem) if w]
     variant_words = [w for w in file_words if w.lower() not in folder_keywords]
@@ -75,7 +79,7 @@ def rename_to_folder_name(target_path: Path, apply_changes: bool = False):
         # 解析文件名结构
         variant_tag, version_tag, copy_tag = parse_file_stem(file_path.stem, folder_name)
 
-        # 拼接最终文件名并清洗多余的连续下划线
+        # 拼接最终文件名并清理多余下划线
         new_stem = f"{base_folder_name}{variant_tag}{version_tag}{copy_tag}"
         new_stem = re.sub(r'_+', '_', new_stem).strip('_')
         new_name = f"{new_stem}{ext}"

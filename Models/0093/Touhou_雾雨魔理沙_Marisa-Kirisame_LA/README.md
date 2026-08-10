@@ -1,4 +1,4 @@
-# Touhou_雾雨魔理沙_Marisa-Kirisame_LA
+# Touhou_ 雾雨魔理沙 _Marisa-Kirisame_LA
 
 <details>
 <summary>Model Details</summary>

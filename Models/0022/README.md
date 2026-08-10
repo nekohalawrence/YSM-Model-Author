@@ -12,7 +12,7 @@
 ## Co-creator
 
 - **Name**: #快乐的小盛子
-  - **Role**: #金主 | #Sponsor
+  - **Role**: #金主/赞助者 | #Sponsor
 - **SocialPlatform**: #Bilibili
   - **Bilibili**: [快乐的小盛子](https://space.bilibili.com/10544873)
 

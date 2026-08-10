@@ -8,7 +8,7 @@
   - **SupportPlatform**: #Afdian
 	- **Afdian**: [映素作坊](https://afdian.com/a/6TGESILA)
 
-## 动作
+## Co-creator
 
 - **Name**: [#星屑海螺| #磁小轨制作组（星屑海螺）| #不是海螺](../../0048/README.md))
   - **Role**: #动作 | #Motion

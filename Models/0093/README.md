@@ -2,7 +2,7 @@
 
 ## Author
 
-- **Name**: #苏依凛
+- **Name**: #苏依凛 | #炽湮
     - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
     - **Bilibili**: [苏依凛](https://space.bilibili.com/76987486)
   - **SupportPlatform**: #Afdian 
