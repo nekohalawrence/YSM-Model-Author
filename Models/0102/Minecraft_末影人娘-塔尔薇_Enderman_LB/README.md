@@ -1,4 +1,4 @@
-# Minecraft_末影人娘-塔尔薇_LB
+# Minecraft_末影人娘-塔尔薇_Enderman_LB
 
 <details>
 <summary>Model Details</summary>

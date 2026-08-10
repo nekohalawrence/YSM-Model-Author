@@ -1,9 +1,9 @@
-# A_JK_香奈美-JK_Kanami
+# Strinova_香奈美-JK_Kanami-JK_LA
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Strinova #卡拉比丘
 
 </details>
 

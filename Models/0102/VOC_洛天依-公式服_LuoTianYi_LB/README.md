@@ -1,4 +1,4 @@
-# VOC_ 洛天依 - 公式服 -LuoTianYi_LB
+# VOC_洛天依-公式服_LuoTianYi_LB
 
 <details>
 <summary>Model Details</summary>

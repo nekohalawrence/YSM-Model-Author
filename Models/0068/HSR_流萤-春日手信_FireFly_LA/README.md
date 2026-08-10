@@ -1,9 +1,9 @@
-# A_HSR_流萤-春日手信-FireFly
+# HSR_流萤-春日手信_FireFly_LA
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Honkai-Star-Rail #HSR #崩坏：星穹铁道
 
 </details>
 

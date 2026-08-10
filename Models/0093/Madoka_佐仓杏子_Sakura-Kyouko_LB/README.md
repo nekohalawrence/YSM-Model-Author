@@ -1,16 +1,16 @@
-# 佐仓杏子
+# Madoka_佐仓杏子_Sakura-Kyouko_LB
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Puella Magi Madoka Magica #PMMM #Madoka #魔法少女小圆 #魔法少女まどか☆マギカ
 
 </details>
 
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0093 - #苏依凛](../)
+- **Author**: [#0093 - #苏依凛 | #炽湮](../)
 - **Author ID**: `0093`
 
 </details>
@@ -19,6 +19,8 @@
 <summary>Preview Images</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](preview.png)
 
 ![preview01.png](preview01.png)
 

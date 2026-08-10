@@ -10,7 +10,7 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0191 - 0191](../)
+- **Author**: [#0191 - #新隆肰懿](../)
 - **Author ID**: `0191`
 
 </details>

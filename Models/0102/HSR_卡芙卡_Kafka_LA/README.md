@@ -1,9 +1,9 @@
-# ZZZ_卡芙卡_LA
+# HSR_卡芙卡_Kafka_LA
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Zenless-Zone-Zero #ZZZ #绝区零
+- **Franchise / Category**: #Honkai-Star-Rail #HSR #崩坏：星穹铁道
 
 </details>
 

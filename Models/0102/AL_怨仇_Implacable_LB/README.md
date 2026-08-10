@@ -1,4 +1,4 @@
-# AL_冤仇_LB
+# AL_怨仇_Implacable_LB
 
 <details>
 <summary>Model Details</summary>

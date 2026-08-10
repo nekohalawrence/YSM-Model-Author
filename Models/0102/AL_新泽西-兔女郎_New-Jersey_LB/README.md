@@ -1,4 +1,4 @@
-# AL_新泽西-兔女郎_LB
+# AL_新泽西-兔女郎_New-Jersey_LB
 
 <details>
 <summary>Model Details</summary>

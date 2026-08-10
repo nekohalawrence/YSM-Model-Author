@@ -1,4 +1,4 @@
-# AL_大凤_凤鸣春晓_LB
+# AL_大凤-凤鸣春晓_Taihou_LB
 
 <details>
 <summary>Model Details</summary>

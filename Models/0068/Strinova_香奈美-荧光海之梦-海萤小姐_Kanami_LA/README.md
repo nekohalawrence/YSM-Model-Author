@@ -1,9 +1,9 @@
-# A_香奈美_荧光海之梦-kanami
+# Strinova_香奈美-荧光海之梦-海萤小姐_Kanami_LA
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Strinova #卡拉比丘
 
 </details>
 

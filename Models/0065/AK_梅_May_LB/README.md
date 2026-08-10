@@ -1,9 +1,9 @@
-# B_AK_梅-May
+# AK_梅_May_LB
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Arknights #AK #明日方舟
 
 </details>
 

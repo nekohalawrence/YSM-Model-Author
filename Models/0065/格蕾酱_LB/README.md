@@ -1,4 +1,4 @@
-# B_格蕾酱
+# 格蕾酱_LB
 
 <details>
 <summary>Model Details</summary>

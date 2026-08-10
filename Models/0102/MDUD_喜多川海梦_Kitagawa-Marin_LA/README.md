@@ -1,9 +1,9 @@
-# Unknown_喜多川海梦
+# MDUD_喜多川海梦_Kitagawa-Marin_LA
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #My Dress-Up Darling #MDUD #Kisekoi #更衣人偶坠入爱河 #恋上换装娃娃 #その着せ替え人形は恋をする
 
 </details>
 

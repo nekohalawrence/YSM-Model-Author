@@ -1,9 +1,9 @@
-# B_YogYard_特莉波卡
+# YogYard_特莉波卡_Tlipoca_LB
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Yog-Sothoth's Yard #YogYard #犹格索托斯的庭院：炼金旅社
 
 </details>
 

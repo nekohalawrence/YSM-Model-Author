@@ -1,4 +1,4 @@
-# AL_纳希莫夫海军上将-nakhimov_LB
+# AL_纳希莫夫海军上将_Admiral-Nakhimov_LB
 
 <details>
 <summary>Model Details</summary>

@@ -1,9 +1,9 @@
-# Unknown_未亡人雪女-雪乃深冬
+# SSW_雪乃深冬-未亡人雪女_Yukino-Mifuyu
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #The Lonely Snow Widow and the Cursed Ring #The Shy Snow Woman and the Cursed Ring #SSW #不擅长人际交往的未亡人雪女与诅咒之戒 #人付き合いが苦手な未亡人の雪女さんと呪いの指輪
 
 </details>
 

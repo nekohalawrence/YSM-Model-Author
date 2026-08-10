@@ -1,9 +1,9 @@
-# B_OC_Eanes
+# OC_Eanes_LB
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Original Character #OC #原创角色
 
 </details>
 

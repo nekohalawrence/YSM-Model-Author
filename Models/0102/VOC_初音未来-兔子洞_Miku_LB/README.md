@@ -1,4 +1,4 @@
-# VOC_初音未来-兔子洞-miku_LB
+# VOC_初音未来-兔子洞_Miku_LB
 
 <details>
 <summary>Model Details</summary>

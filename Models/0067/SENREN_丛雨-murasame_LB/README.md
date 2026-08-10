@@ -1,9 +1,9 @@
-# B_SENREN_丛雨-murasame
+# SENREN_丛雨-murasame_LB
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Senren＊Banka #SENREN #千恋＊万花 #せんれん＊ばんか
 
 </details>
 

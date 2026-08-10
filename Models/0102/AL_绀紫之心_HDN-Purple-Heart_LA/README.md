@@ -1,9 +1,9 @@
-# HDN_绀紫之心_LA
+# AL_绀紫之心_HDN-Purple-Heart_LA
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Hyperdimension Neptunia #HDN #超次元游戏
+- **Franchise / Category**: #Azur-Lane #AL #碧蓝航线
 
 </details>
 

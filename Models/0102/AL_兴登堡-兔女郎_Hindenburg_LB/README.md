@@ -1,4 +1,4 @@
-# AL_兴登堡_兔女郎_LB
+# AL_兴登堡-兔女郎_Hindenburg_LB
 
 <details>
 <summary>Model Details</summary>

@@ -1,4 +1,4 @@
-# AL_尾长-愿望为爱_LB
+# AL_尾张-愿望为爱_Owari_LB
 
 <details>
 <summary>Model Details</summary>

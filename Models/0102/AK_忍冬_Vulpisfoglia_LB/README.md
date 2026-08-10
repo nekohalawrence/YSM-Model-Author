@@ -1,4 +1,4 @@
-# AK_忍冬_LB
+# AK_忍冬_Vulpisfoglia_LB
 
 <details>
 <summary>Model Details</summary>

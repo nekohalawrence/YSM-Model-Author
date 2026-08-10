@@ -1,9 +1,9 @@
-# A_HSR_花火
+# HSR_花火_Huahuo_LA
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Honkai-Star-Rail #HSR #崩坏：星穹铁道
 
 </details>
 

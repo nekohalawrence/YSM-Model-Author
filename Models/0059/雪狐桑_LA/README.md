@@ -1,4 +1,4 @@
-# A_雪狐桑
+# 雪狐桑_LA
 
 <details>
 <summary>Model Details</summary>

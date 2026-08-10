@@ -1,9 +1,9 @@
-# Unknown_埃及猫
+# Meme_埃及猫_Egyptian-Cat
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Meme #模因
 
 </details>
 

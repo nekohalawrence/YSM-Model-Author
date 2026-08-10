@@ -8,7 +8,6 @@
 <summary>作者索引</summary>
 
 <!-- AUTHORS_LIST_START -->
-
 | 编号 | 作者名称 | 收录数量 |
 | --- | --- | ---: |
 | 0000 | [#-OMEGAZERO-](.../../Models/0000) | 1 |
@@ -203,7 +202,6 @@
 | 0190 | [#奈忒倪](.../../Models/0190) | 1 |
 | 0191 | [#新隆肰懿](.../../Models/0191) | 1 |
 | 0192 | [#苏瑞铃 \| #苏瑞铃_official](.../../Models/0192) | 2 |
-
 <!-- AUTHORS_LIST_END -->
 
 </details>

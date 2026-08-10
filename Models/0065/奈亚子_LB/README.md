@@ -1,4 +1,4 @@
-# B_奈亚子
+# 奈亚子_LB
 
 <details>
 <summary>Model Details</summary>

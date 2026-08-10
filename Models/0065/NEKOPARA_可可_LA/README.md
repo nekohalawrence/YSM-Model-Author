@@ -1,9 +1,9 @@
-# A_NEKOPARA_可可
+# NEKOPARA_可可_LA
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #NEKOPARA #巧克力与香子兰 #猫娘乐园 #ネコぱら
 
 </details>
 

@@ -1,4 +1,4 @@
-# Avemujica_丰川祥子_LB
+# Avemujica_丰川祥子_Togawa-Sakiko_LB
 
 <details>
 <summary>Model Details</summary>

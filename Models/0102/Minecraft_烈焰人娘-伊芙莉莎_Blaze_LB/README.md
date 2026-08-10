@@ -1,4 +1,4 @@
-# Minecraft_烈焰人娘-伊芙莉莎_LB
+# Minecraft_烈焰人娘-伊芙莉莎_Blaze_LB
 
 <details>
 <summary>Model Details</summary>

@@ -1,9 +1,9 @@
-# B_女仆香奈美-Mini_Kanami
+# Strinova_香奈美-迷你_Kanami-Mini_LB
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Strinova #卡拉比丘
 
 </details>
 

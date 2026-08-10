@@ -1,4 +1,4 @@
-# Touhou_ 雾雨魔理沙 _Marisa-Kirisame_LA
+# Touhou_雾雨魔理沙_Marisa-Kirisame_LA
 
 <details>
 <summary>Model Details</summary>
@@ -10,7 +10,7 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0093 - #苏依凛](../)
+- **Author**: [#0093 - #苏依凛 | #炽湮](../)
 - **Author ID**: `0093`
 
 </details>

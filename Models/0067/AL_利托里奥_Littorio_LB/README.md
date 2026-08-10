@@ -1,9 +1,9 @@
-# B_利托里奥-Littorio
+# AL_利托里奥_Littorio_LB
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Azur-Lane #AL #碧蓝航线
 
 </details>
 

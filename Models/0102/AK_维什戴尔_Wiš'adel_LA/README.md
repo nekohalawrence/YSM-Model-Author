@@ -1,4 +1,4 @@
-# AK_维什戴尔_LA
+# AK_维什戴尔_Wiš'adel_LA
 
 <details>
 <summary>Model Details</summary>

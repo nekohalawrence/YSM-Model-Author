@@ -1,4 +1,4 @@
-# B_仲正一花
+# 仲正一花_LB
 
 <details>
 <summary>Model Details</summary>

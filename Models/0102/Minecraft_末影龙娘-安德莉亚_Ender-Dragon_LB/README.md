@@ -1,4 +1,4 @@
-# Minecraft_末影龙娘-安德莉亚_LB
+# Minecraft_末影龙娘-安德莉亚_Ender-Dragon_LB
 
 <details>
 <summary>Model Details</summary>

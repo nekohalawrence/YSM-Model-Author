@@ -1,9 +1,9 @@
-# B_shirayukinoa
+# Tenshi_白雪乃爱_Shirayuki-Noa_LB
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Tenshi Souzou #Tenshi #天使嚣嚣 #天使騒々 RE‑BIRTH!
 
 </details>
 

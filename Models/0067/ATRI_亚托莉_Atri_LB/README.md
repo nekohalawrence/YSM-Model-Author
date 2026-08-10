@@ -1,4 +1,4 @@
-# B_亚托莉
+# ATRI_亚托莉_Atri_LB
 
 <details>
 <summary>Model Details</summary>

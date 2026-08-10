@@ -1,4 +1,4 @@
-# A_早稻叽
+# 早稻叽_LA
 
 <details>
 <summary>Model Details</summary>

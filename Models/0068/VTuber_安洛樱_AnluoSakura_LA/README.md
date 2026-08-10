@@ -1,9 +1,9 @@
-# A_安洛樱
+# VTuber_安洛樱_AnluoSakura_LA
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Virtual YouTuber #VTuber #虚拟主播 #バーチャルユーチューバー
 
 </details>
 

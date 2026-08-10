@@ -1,9 +1,9 @@
-# AL_普瑞赛斯_LA
+# AK_普瑞赛斯_Priestess_LA
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Azur-Lane #AL #碧蓝航线
+- **Franchise / Category**: #Arknights #AK #明日方舟
 
 </details>
 

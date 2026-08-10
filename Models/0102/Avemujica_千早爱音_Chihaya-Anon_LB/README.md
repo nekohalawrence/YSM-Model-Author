@@ -1,4 +1,4 @@
-# Avemujica_千早爱音_LB
+# Avemujica_千早爱音_Chihaya-Anon_LB
 
 <details>
 <summary>Model Details</summary>

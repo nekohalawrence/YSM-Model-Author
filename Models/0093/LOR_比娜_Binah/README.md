@@ -1,16 +1,16 @@
-# binah
+# LOR_比娜_Binah
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Library of Ruina #LOR #废墟图书馆
 
 </details>
 
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0093 - #苏依凛](../)
+- **Author**: [#0093 - #苏依凛 | #炽湮](../)
 - **Author ID**: `0093`
 
 </details>
@@ -20,7 +20,11 @@
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
+![preview.png](preview.png)
+
 ![preview01.png](preview01.png)
+
+![preview02.png](preview02.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
 

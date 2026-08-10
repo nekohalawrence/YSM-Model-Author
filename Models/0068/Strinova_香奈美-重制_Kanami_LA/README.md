@@ -1,9 +1,9 @@
-# A_香奈美-重制-Kanami
+# Strinova_香奈美-重制_Kanami_LA
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Strinova #卡拉比丘
 
 </details>
 

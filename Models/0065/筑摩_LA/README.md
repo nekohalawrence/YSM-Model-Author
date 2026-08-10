@@ -1,4 +1,4 @@
-# A_筑摩
+# 筑摩_LA
 
 <details>
 <summary>Model Details</summary>

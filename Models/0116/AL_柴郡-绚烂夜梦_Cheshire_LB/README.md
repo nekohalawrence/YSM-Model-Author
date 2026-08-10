@@ -1,9 +1,9 @@
-# CL_柴郡-绚烂夜梦_Cheshire_LB
+# AL_柴郡-绚烂夜梦_Cheshire_LB
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Azur-Lane #AL #碧蓝航线
 
 </details>
 

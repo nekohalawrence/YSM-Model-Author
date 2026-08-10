@@ -1,4 +1,4 @@
-# AK_隐德来希_LB
+# AK_隐德来希_Entelechia_LB
 
 <details>
 <summary>Model Details</summary>

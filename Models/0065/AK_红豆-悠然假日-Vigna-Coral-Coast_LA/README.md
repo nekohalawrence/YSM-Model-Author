@@ -1,9 +1,9 @@
-# A_AK_红豆-悠然假日-Vigna-Coral-Coast
+# AK_红豆-悠然假日-Vigna-Coral-Coast_LA
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Arknights #AK #明日方舟
 
 </details>
 
