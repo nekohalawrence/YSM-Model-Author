@@ -4,6 +4,7 @@
 
 - **Name**: #茶-GreenTea
     - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
     - **Bilibili**: [茶-GreenTea](https://space.bilibili.com/458058211)
 
 ## 动画

@@ -4,6 +4,7 @@
 
 - **Name**: #白色北熊
     - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
     - **Bilibili**: [白色北熊](https://space.bilibili.com/175342453)
   - **SupportPlatform**: #Afdian 
 	- **Afdian**: [白色北熊](https://afdian.com/a/bx233)

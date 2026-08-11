@@ -4,6 +4,7 @@
 
 - **Name**: #小萌新idjdkd
     - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
     - **Bilibili**: [小萌新idjdkd](https://space.bilibili.com/1573788561)
   - **SupportPlatform**: #Afdian 
 	- **Afdian**: 

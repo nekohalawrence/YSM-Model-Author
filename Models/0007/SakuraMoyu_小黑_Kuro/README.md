@@ -1,4 +1,4 @@
-# SakuraMoyu_小黑_Kuro
+# SakuraMoyu_ 小黑 _Kuro
 
 <details>
 <summary>Model Details</summary>

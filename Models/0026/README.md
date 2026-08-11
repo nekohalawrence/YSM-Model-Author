@@ -4,6 +4,7 @@
 
 - **Name**: #雒仁
     - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
     - **Bilibili**: [雒仁](https://space.bilibili.com/13550783)
   - **SupportPlatform**: #Afdian 
 	- **Afdian**: [雒仁](https://afdian.com/a/luoren)

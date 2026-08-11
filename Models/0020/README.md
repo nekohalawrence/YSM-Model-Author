@@ -4,6 +4,7 @@
 
 - **Name**: #就叫纸板| #纸板
     - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
     - **Bilibili**: [就叫纸板](https://space.bilibili.com/29208164)
   - **SupportPlatform**: #Afdian 
 	- **Afdian**: [纸板](https://afdian.com/a/15354qq)

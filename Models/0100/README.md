@@ -7,5 +7,3 @@
     - **Bilibili**: 
   - **SupportPlatform**: #Afdian 
 	- **Afdian**: 
-  - **GroupChat**: #QQ 
-	- **QQ**: 

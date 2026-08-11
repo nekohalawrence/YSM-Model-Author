@@ -4,6 +4,7 @@
 
 - **Name**: #墨染逝羽 | #Feather_aya
     - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
     - **Bilibili**: [墨染逝羽](https://space.bilibili.com/5718046)
   - **SupportPlatform**: #Afdian 
 	- **Afdian**: [Feather_aya](https://afdian.com/a/FliegeSA)
