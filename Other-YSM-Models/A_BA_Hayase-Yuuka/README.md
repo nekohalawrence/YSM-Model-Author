@@ -12,7 +12,7 @@
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
-![preview.png](preview.png)
+![preview.png](previews/preview.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
 

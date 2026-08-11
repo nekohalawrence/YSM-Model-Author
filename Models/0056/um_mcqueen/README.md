@@ -20,7 +20,7 @@
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
-![preview011.png](preview011.png)
+![preview011.png](previews/preview011.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
 

@@ -9,3 +9,4 @@ tests
 .github/scripts/__pycache__
 .reasonix
 _Template
+reasonix.toml

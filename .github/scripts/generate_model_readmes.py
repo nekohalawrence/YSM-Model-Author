@@ -35,17 +35,14 @@ def parse_categories_from_main_readme() -> dict[str, list[str]]:
         if not line.startswith('- '):
             continue
         
-        # 1. 移除开头的 '- '，将 '|' 统一替换为 ',' 再进行切分
         raw_text = line[2:].replace('|', ',')
         raw_items = [item.strip() for item in raw_text.split(',') if item.strip()]
         
         if not raw_items:
             continue
         
-        # 2. 生成组合标签列表
         tags = [f"#{item}" for item in raw_items]
         
-        # 3. 将每一个别名/缩写词均注册为 Key（例如 ak, arknights, 明日方舟）
         for item in raw_items:
             category_map[item.lower()] = tags
 
@@ -74,7 +71,6 @@ def get_author_info(model_dir: Path) -> tuple[str, str]:
         if candidate_path.is_file():
             text = candidate_path.read_text(encoding='utf-8', errors='ignore')
             
-            # 区块隔离：优先在 ## Author 区域内匹配
             author_section_match = re.search(r'##\s*Author\b(.*?)(?=\n##|\Z)', text, re.DOTALL | re.IGNORECASE)
             target_text = author_section_match.group(1) if author_section_match else text
 
@@ -88,17 +84,25 @@ def get_author_info(model_dir: Path) -> tuple[str, str]:
     return author_dir.name, author_name
 
 
-def is_preview_image(path: Path) -> bool:
-    return path.is_file() and path.suffix.lower() in IMAGE_EXTS and PREVIEW_MARKER.search(path.stem)
-
-
 def collect_preview_images(model_dir: Path) -> list[Path]:
+    """收集模型目录下的预览图（支持 previews 文件夹与根目录图片）"""
     images = []
-    for candidate in [model_dir, model_dir / 'previews']:
-        if candidate.is_dir():
-            for file_path in sorted(candidate.iterdir()):
-                if is_preview_image(file_path):
-                    images.append(file_path)
+
+    # 1. 扫描模型根目录下的符合 preview 命名的图片
+    for file_path in sorted(model_dir.iterdir()):
+        if file_path.is_file() and file_path.suffix.lower() in IMAGE_EXTS:
+            if PREVIEW_MARKER.search(file_path.stem):
+                images.append(file_path)
+
+    # 2. 扫描 previews 文件夹（不区分大小写，如 previews, Previews）
+    # 位于 previews 文件夹内的图片无需文件名包含 preview
+    for sub_dir in model_dir.iterdir():
+        if sub_dir.is_dir() and sub_dir.name.lower() == 'previews':
+            for file_path in sorted(sub_dir.iterdir()):
+                if file_path.is_file() and file_path.suffix.lower() in IMAGE_EXTS:
+                    if file_path not in images:
+                        images.append(file_path)
+
     return images
 
 
@@ -170,14 +174,14 @@ def iter_model_dirs(root_dir: Path):
             for model_dir in sorted(author_dir.iterdir()):
                 if not model_dir.is_dir():
                     continue
-                if model_dir.name.startswith('.') or model_dir.name == 'previews':
+                if model_dir.name.startswith('.') or model_dir.name.lower() == 'previews':
                     continue
                 yield model_dir
     else:
         for model_dir in sorted(root_dir.iterdir()):
             if not model_dir.is_dir():
                 continue
-            if model_dir.name.startswith('.') or model_dir.name == 'previews':
+            if model_dir.name.startswith('.') or model_dir.name.lower() == 'previews':
                 continue
             yield model_dir
 

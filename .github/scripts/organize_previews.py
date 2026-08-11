@@ -3,7 +3,8 @@
 
 设计目标(与 generate_model_readmes.py 保持兼容):
 - 只处理文件名为 preview* 的图片(与 generate_model_readmes.py 的 is_preview_image 一致)
-- 移动后自动重跑 generate_model_readmes.py,使 README 引用更新为 previews/xxx.png
+- 移动后自动重跑 generate_model_readmes.py 更新 README 引用为 previews/xxx.png
+  注意:generate_model_readmes.py 会整体模板化重写模型 README,模板外的手工内容会被覆盖
 - 幂等:已有 previews/ 且顶层无 preview 图片的目录会被跳过
 - 安全:默认 dry-run,加 --apply 才真正移动;目标已存在同名文件时跳过并计数
 
@@ -61,6 +62,22 @@ def iter_model_dirs(root_dir: Path):
             if model_dir.name.startswith('.') or model_dir.name == PREVIEWS_DIRNAME:
                 continue
             yield model_dir
+
+
+def collect_deep_model_dirs(root_dir: Path):
+    """递归收集所有含顶层 preview 图片的目录(任意层级)。
+
+    除了标准的 作者目录/模型目录 两层结构,Models 下还存在「系列包」式的
+    嵌套变体目录(如 Models/0058/WW_抽象鸣潮系列/抽象鸣潮 嘉贝莉娜/)。
+    这些目录通常没有 README,generate_model_readmes.py 不会处理它们,
+    但它们同样携带 preview 图片,应一并为它们创建 previews/ 归类。
+    返回按路径排序的目录列表,不含 previews/ 目录本身。
+    """
+    dirs = set()
+    for p in root_dir.rglob('*'):
+        if p.is_file() and is_preview_image(p) and p.parent.name.lower() != PREVIEWS_DIRNAME.lower():
+            dirs.add(p.parent)
+    return sorted(dirs)
 
 
 def organize_model(model_dir: Path, apply: bool) -> dict:
@@ -150,7 +167,8 @@ def main() -> int:
         for root in roots:
             if not root.is_dir():
                 continue
-            model_dirs.extend(iter_model_dirs(root))
+            # 递归收集所有含 preview 图片的目录,覆盖系列包嵌套变体
+            model_dirs.extend(collect_deep_model_dirs(root))
 
     total_moved = 0
     total_conflicts = 0
@@ -190,10 +208,16 @@ def main() -> int:
         print('正在重跑 generate_model_readmes.py 更新 README 引用 ...')
         rc = run_generate_readmes()
         if rc != 0:
-            print('警告:generate_model_readmes.py 返回非零,请检查 README 引用', file=sys.stderr)
+            print('错误:generate_model_readmes.py 返回非零,README 引用可能未更新', file=sys.stderr)
+            return rc
     elif args.apply and total_moved > 0 and args.no_regenerate:
         print('提示:已跳过 README 重生成(--no-regenerate)。请手动运行 '
               'python .github/scripts/generate_model_readmes.py 更新引用。')
+
+    # 冲突文件会同时被顶层与 previews/ 收集,导致 README 重复引用,必须提示
+    if total_conflicts > 0:
+        print('警告:存在冲突文件未移动(见上),请手动处理以免 README 重复引用', file=sys.stderr)
+        return 3
 
     return 0
 

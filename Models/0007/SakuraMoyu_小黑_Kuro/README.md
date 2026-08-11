@@ -1,4 +1,4 @@
-# SakuraMoyu_ 小黑 _Kuro
+# SakuraMoyu_小黑_Kuro
 
 <details>
 <summary>Model Details</summary>
@@ -20,11 +20,11 @@
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
-![preview01.png](preview01.png)
+![preview01.png](previews/preview01.png)
 
-![preview02.png](preview02.png)
+![preview02.png](previews/preview02.png)
 
-![preview03.png](preview03.png)
+![preview03.png](previews/preview03.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
 

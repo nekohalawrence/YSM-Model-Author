@@ -20,13 +20,13 @@
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
-![preview (2).png](preview (2).png)
+![preview (2).png](previews/preview (2).png)
 
-![preview01.png](preview01.png)
+![preview01.png](previews/preview01.png)
 
-![preview02.png](preview02.png)
+![preview02.png](previews/preview02.png)
 
-![preview03.png](preview03.png)
+![preview03.png](previews/preview03.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
 
