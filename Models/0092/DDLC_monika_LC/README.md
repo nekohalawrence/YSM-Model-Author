@@ -1,9 +1,9 @@
-# C_DDLC_monika
+# DDLC_monika_LC
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Doki-Doki-Literature-Club! #DDLC #心跳文学部！
 
 </details>
 

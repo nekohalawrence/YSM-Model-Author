@@ -1,9 +1,9 @@
-# B_HI3_希儿·芙乐艾-Seele_nsfw
+# HI3_希儿·芙乐艾-Seele_nsfw_LB
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Honkai-Impact-3 #HI3 #崩坏 3
 
 </details>
 

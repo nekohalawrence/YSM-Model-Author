@@ -1,9 +1,9 @@
-# B_HI3_雷之律者
+# HI3_雷之律者_LB
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Honkai-Impact-3 #HI3 #崩坏 3
 
 </details>
 

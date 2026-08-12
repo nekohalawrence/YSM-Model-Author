@@ -1,9 +1,9 @@
-# B_OC_折原露露
+# OC_折原露露_LB
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Original Character #OC #原创角色
 
 </details>
 

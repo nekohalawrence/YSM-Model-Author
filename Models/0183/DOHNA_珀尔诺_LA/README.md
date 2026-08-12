@@ -1,9 +1,9 @@
-# A_DOHNA_珀尔诺
+# DOHNA_珀尔诺_LA
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Dohna Dohna: Let's Do Bad Things Together #DOHNA #多娜多娜 一起干坏事吧！ #ドーナドーナ いっしょにわるいことしよう
 
 </details>
 

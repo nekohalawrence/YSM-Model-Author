@@ -1,4 +1,4 @@
-# A_森亚露露卡
+# 森亚露露卡_LA
 
 <details>
 <summary>Model Details</summary>

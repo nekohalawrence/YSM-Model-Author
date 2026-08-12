@@ -1,4 +1,4 @@
-# C_Food-Girls_絢樱
+# Food-Girls_絢樱_LC
 
 <details>
 <summary>Model Details</summary>

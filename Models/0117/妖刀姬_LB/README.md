@@ -1,4 +1,4 @@
-# B_妖刀姬
+# 妖刀姬_LB
 
 <details>
 <summary>Model Details</summary>

@@ -1,4 +1,4 @@
-# B_菱钻奇宝-UM-Hishi-Miracle
+# 菱钻奇宝-UM-Hishi-Miracle_LB
 
 <details>
 <summary>Model Details</summary>

@@ -1,4 +1,4 @@
-# A_薇薇安-vivianfainal
+# 薇薇安-vivianfainal_LA
 
 <details>
 <summary>Model Details</summary>

@@ -1,9 +1,9 @@
-# A_BA_Hayase-Yuuka
+# BA_Hayase-Yuuka_LA
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
 
 </details>
 

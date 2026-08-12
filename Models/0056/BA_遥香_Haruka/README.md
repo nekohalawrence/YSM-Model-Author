@@ -1,4 +1,4 @@
-# BA_86_haruka
+# BA_遥香_Haruka
 
 <details>
 <summary>Model Details</summary>

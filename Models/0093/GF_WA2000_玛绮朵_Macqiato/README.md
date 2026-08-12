@@ -3,7 +3,7 @@
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #White Eternity #GF
+- **Franchise / Category**: #Girls' Frontline #GF #少女前线
 
 </details>
 

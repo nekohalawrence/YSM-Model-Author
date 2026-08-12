@@ -1,4 +1,4 @@
-# A_冰上梅露露
+# 冰上梅露露_LA
 
 <details>
 <summary>Model Details</summary>

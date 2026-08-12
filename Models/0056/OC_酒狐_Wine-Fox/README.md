@@ -1,9 +1,9 @@
-# momo_wine_fox
+# OC_酒狐_Wine-Fox
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Original Character #OC #原创角色
 
 </details>
 

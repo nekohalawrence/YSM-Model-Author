@@ -1,9 +1,9 @@
-# C_AK_红
+# AK_红_LC
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Arknights #AK #明日方舟
 
 </details>
 

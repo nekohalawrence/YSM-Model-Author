@@ -1,4 +1,4 @@
-# B_萌工
+# 萌工_LB
 
 <details>
 <summary>Model Details</summary>

@@ -1,9 +1,9 @@
-# A_AK_凯尔希
+# AK_凯尔希_LA
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Arknights #AK #明日方舟
 
 </details>
 

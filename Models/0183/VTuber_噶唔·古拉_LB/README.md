@@ -1,9 +1,9 @@
-# B_VTuber_噶唔·古拉
+# VTuber_噶唔·古拉_LB
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Virtual YouTuber #VTuber #虚拟主播 #バーチャルユーチューバー
 
 </details>
 

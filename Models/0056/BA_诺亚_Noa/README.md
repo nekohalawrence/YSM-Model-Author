@@ -1,4 +1,4 @@
-# BA_Noa
+# BA_诺亚_Noa
 
 <details>
 <summary>Model Details</summary>

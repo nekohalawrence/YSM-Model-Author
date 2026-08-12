@@ -1,4 +1,4 @@
-# C_minecraft_小凋零-wither
+# minecraft_小凋零-wither_LC
 
 <details>
 <summary>Model Details</summary>

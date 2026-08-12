@@ -1,9 +1,9 @@
-# C_GI_小神子
+# GI_小神子_LC
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Genshin Impact #Genshin #GI #原神
 
 </details>
 

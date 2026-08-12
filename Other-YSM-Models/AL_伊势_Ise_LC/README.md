@@ -1,9 +1,9 @@
-# C_AL_伊势-Ise
+# AL_伊势_Ise_LC
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Azur-Lane #AL #碧蓝航线
 
 </details>
 

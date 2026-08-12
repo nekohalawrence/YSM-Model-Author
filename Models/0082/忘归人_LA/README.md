@@ -1,4 +1,4 @@
-# A_忘归人
+# 忘归人_LA
 
 <details>
 <summary>Model Details</summary>

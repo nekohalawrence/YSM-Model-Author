@@ -1,4 +1,4 @@
-# B_伊内丝-原皮
+# 伊内丝-原皮_LB
 
 <details>
 <summary>Model Details</summary>

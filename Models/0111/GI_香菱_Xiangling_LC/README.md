@@ -1,9 +1,9 @@
-# C_GI_香菱_Xiangling
+# GI_香菱_Xiangling_LC
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Genshin Impact #Genshin #GI #原神
 
 </details>
 

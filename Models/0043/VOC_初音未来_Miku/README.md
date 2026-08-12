@@ -1,4 +1,4 @@
-# VOC_初音未来-miku
+# VOC_初音未来_Miku
 
 <details>
 <summary>Model Details</summary>

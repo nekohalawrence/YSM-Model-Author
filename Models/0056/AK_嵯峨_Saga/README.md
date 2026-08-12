@@ -1,9 +1,9 @@
-# 嵯峨
+# AK_嵯峨_Saga
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Arknights #AK #明日方舟
 
 </details>
 

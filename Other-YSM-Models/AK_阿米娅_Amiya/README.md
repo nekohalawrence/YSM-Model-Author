@@ -1,4 +1,4 @@
-# AK_阿米娅-amiya
+# AK_阿米娅_Amiya
 
 <details>
 <summary>Model Details</summary>

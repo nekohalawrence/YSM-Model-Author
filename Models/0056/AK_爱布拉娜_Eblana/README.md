@@ -1,4 +1,4 @@
-# AK_爱布拉娜-Eblana
+# AK_爱布拉娜_Eblana
 
 <details>
 <summary>Model Details</summary>

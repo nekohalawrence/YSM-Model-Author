@@ -1,9 +1,9 @@
-# B_ZZZ_可琳
+# ZZZ_可琳_LB
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Zenless-Zone-Zero #ZZZ #绝区零
 
 </details>
 

@@ -1,4 +1,4 @@
-# C_bengbeng
+# bengbeng_LC
 
 <details>
 <summary>Model Details</summary>

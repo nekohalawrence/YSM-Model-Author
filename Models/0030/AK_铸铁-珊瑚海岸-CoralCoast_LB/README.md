@@ -1,9 +1,9 @@
-# B_AK_铸铁-珊瑚海岸-CoralCoast
+# AK_铸铁-珊瑚海岸-CoralCoast_LB
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Arknights #AK #明日方舟
 
 </details>
 

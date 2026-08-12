@@ -1,4 +1,4 @@
-# B_大明酒狐
+# 大明酒狐_LB
 
 <details>
 <summary>Model Details</summary>

@@ -1,9 +1,9 @@
-# C_AK_泥岩-原皮
+# AK_泥岩-原皮_LC
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Arknights #AK #明日方舟
 
 </details>
 

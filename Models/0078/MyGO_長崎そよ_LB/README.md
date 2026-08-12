@@ -1,9 +1,9 @@
-# B_MyGO_長崎そよ
+# MyGO_長崎そよ_LB
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #BanG Dream! It's MyGO!!!!! #MyGO #迷途之子！！！！！
 
 </details>
 

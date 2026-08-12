@@ -1,4 +1,4 @@
-# B_蓝毒
+# 蓝毒_LB
 
 <details>
 <summary>Model Details</summary>

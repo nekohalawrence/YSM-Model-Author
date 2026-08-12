@@ -1,4 +1,4 @@
-# B_爱丽数码-常服-UM-Agnes-Digital
+# 爱丽数码-常服-UM-Agnes-Digital_LB
 
 <details>
 <summary>Model Details</summary>

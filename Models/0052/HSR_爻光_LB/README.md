@@ -1,9 +1,9 @@
-# B_HSR_爻光
+# HSR_爻光_LB
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Honkai-Star-Rail #HSR #崩坏：星穹铁道
 
 </details>
 

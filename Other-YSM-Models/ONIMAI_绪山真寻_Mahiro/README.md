@@ -1,4 +1,4 @@
-# ONIMAI_绪山真寻-Mahiro
+# ONIMAI_绪山真寻_Mahiro
 
 <details>
 <summary>Model Details</summary>

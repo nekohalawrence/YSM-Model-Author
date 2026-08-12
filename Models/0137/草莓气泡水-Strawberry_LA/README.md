@@ -1,4 +1,4 @@
-# A_草莓气泡水-Strawberry
+# 草莓气泡水-Strawberry_LA
 
 <details>
 <summary>Model Details</summary>

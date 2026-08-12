@@ -1,9 +1,9 @@
-# M4A1_MODIII
+# GF_M4A1_MODIII
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Girls' Frontline #GF #少女前线
 
 </details>
 

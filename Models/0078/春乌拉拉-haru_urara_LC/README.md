@@ -1,4 +1,4 @@
-# C_春乌拉拉-haru_urara
+# 春乌拉拉-haru_urara_LC
 
 <details>
 <summary>Model Details</summary>

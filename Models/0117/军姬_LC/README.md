@@ -1,4 +1,4 @@
-# C_军姬
+# 军姬_LC
 
 <details>
 <summary>Model Details</summary>

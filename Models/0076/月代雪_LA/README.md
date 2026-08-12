@@ -1,4 +1,4 @@
-# A_月代雪
+# 月代雪_LA
 
 <details>
 <summary>Model Details</summary>

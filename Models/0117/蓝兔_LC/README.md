@@ -1,4 +1,4 @@
-# C_蓝兔
+# 蓝兔_LC
 
 <details>
 <summary>Model Details</summary>

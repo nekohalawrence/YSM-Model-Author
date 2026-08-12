@@ -1,9 +1,9 @@
-# B_AK_安洁莉娜-Angelina
+# AK_安洁莉娜-Angelina_LB
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Arknights #AK #明日方舟
 
 </details>
 

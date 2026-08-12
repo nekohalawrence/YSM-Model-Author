@@ -1,4 +1,4 @@
-# HSR_白露-bailu-1
+# HSR_白露_Bailu-1
 
 <details>
 <summary>Model Details</summary>

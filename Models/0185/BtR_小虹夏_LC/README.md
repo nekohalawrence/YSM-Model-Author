@@ -1,9 +1,9 @@
-# C_BtR_小虹夏
+# BtR_小虹夏_LC
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Bocchi-the-Rock! #BtR #孤独摇滚！
 
 </details>
 

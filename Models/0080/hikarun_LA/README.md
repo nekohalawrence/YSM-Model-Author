@@ -1,4 +1,4 @@
-# A_hikarun
+# hikarun_LA
 
 <details>
 <summary>Model Details</summary>

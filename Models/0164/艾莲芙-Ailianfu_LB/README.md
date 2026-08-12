@@ -1,4 +1,4 @@
-# B_艾莲芙-Ailianfu
+# 艾莲芙-Ailianfu_LB
 
 <details>
 <summary>Model Details</summary>

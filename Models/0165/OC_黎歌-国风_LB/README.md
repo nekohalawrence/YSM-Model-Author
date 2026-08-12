@@ -1,9 +1,9 @@
-# B_OC_黎歌-国风
+# OC_黎歌-国风_LB
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Original Character #OC #原创角色
 
 </details>
 

@@ -1,4 +1,4 @@
-# BA_86_mutsuki
+# BA_睦月_Mutsuki
 
 <details>
 <summary>Model Details</summary>

@@ -1,4 +1,4 @@
-# mc_queen
+# Minecraft_Queen
 
 <details>
 <summary>Model Details</summary>

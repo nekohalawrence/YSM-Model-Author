@@ -1,4 +1,4 @@
-# BA_黑见茜香-Serika
+# BA_黑见茜香_Serika
 
 <details>
 <summary>Model Details</summary>

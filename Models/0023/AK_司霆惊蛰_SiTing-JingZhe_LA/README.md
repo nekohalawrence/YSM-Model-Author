@@ -1,9 +1,9 @@
-# A_司霆惊蛰
+# AK_司霆惊蛰_SiTing-JingZhe_LA
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Arknights #AK #明日方舟
 
 </details>
 

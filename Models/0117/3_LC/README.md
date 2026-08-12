@@ -1,4 +1,4 @@
-# C_3
+# 3_LC
 
 <details>
 <summary>Model Details</summary>

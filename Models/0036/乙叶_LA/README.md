@@ -1,4 +1,4 @@
-# A_乙叶
+# 乙叶_LA
 
 <details>
 <summary>Model Details</summary>

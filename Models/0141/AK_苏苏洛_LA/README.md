@@ -1,9 +1,9 @@
-# A_AK_苏苏洛
+# AK_苏苏洛_LA
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Arknights #AK #明日方舟
 
 </details>
 

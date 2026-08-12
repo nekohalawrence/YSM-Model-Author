@@ -1,4 +1,4 @@
-# B_小a-飞行员
+# 小a-飞行员_LB
 
 <details>
 <summary>Model Details</summary>

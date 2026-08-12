@@ -1,4 +1,4 @@
-# GI_荧-lumine
+# GI_荧_Lumine
 
 <details>
 <summary>Model Details</summary>

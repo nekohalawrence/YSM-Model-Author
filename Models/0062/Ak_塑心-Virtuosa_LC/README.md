@@ -1,9 +1,9 @@
-# C_Ak_塑心-Virtuosa
+# Ak_塑心-Virtuosa_LC
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Arknights #AK #明日方舟
 
 </details>
 

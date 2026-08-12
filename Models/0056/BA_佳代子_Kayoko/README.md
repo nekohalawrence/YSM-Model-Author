@@ -1,4 +1,4 @@
-# BA_86_kayoko
+# BA_佳代子_Kayoko
 
 <details>
 <summary>Model Details</summary>

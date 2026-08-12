@@ -1,4 +1,4 @@
-# B_青云天空-Sky
+# 青云天空-Sky_LB
 
 <details>
 <summary>Model Details</summary>

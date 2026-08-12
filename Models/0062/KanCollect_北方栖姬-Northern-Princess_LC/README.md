@@ -1,4 +1,4 @@
-# C_KanCollect_北方栖姬-Northern-Princess
+# KanCollect_北方栖姬-Northern-Princess_LC
 
 <details>
 <summary>Model Details</summary>

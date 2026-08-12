@@ -1,9 +1,9 @@
-# B_AL_海伦娜
+# AL_海伦娜_LB
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Azur-Lane #AL #碧蓝航线
 
 </details>
 

@@ -1,9 +1,9 @@
-# B_AK_泥岩_砾瓦
+# AK_泥岩_砾瓦_LB
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Arknights #AK #明日方舟
 
 </details>
 

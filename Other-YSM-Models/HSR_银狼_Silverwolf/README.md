@@ -1,4 +1,4 @@
-# HSR_银狼-silverwolf
+# HSR_银狼_Silverwolf
 
 <details>
 <summary>Model Details</summary>

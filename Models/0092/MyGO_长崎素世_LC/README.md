@@ -1,9 +1,9 @@
-# C_MyGO_长崎素世
+# MyGO_长崎素世_LC
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #BanG Dream! It's MyGO!!!!! #MyGO #迷途之子！！！！！
 
 </details>
 

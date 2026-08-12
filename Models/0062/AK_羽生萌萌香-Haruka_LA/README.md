@@ -1,9 +1,9 @@
-# A_AK_羽生萌萌香-Haruka
+# AK_羽生萌萌香-Haruka_LA
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Arknights #AK #明日方舟
 
 </details>
 

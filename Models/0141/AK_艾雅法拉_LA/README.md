@@ -1,9 +1,9 @@
-# A_AK_艾雅法拉
+# AK_艾雅法拉_LA
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Arknights #AK #明日方舟
 
 </details>
 

@@ -1,4 +1,4 @@
-# B_C酱-kinoko7stim
+# C酱-kinoko7stim_LB
 
 <details>
 <summary>Model Details</summary>

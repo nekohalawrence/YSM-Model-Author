@@ -1,9 +1,9 @@
-# A_AK_澄闪-原皮
+# AK_澄闪-原皮_LA
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Arknights #AK #明日方舟
 
 </details>
 

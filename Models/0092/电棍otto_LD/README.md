@@ -1,4 +1,4 @@
-# D_电棍otto
+# 电棍otto_LD
 
 <details>
 <summary>Model Details</summary>

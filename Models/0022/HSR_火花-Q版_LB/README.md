@@ -1,4 +1,4 @@
-# HSR_火花.-Q版_LB
+# HSR_火花-Q版_LB
 
 <details>
 <summary>Model Details</summary>

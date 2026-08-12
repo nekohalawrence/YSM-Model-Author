@@ -1,4 +1,4 @@
-# BA_168
+# BA_羽川莲实_Hanekawa-Hasumi
 
 <details>
 <summary>Model Details</summary>

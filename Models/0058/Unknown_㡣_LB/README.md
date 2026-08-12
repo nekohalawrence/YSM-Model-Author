@@ -10,7 +10,7 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0058 - #艺方像素 | #艺方堂 | #尻 | #艺方坊 | #艺方阁](../)
+- **Author**: [#0058 - [#艺方像素 | #艺方堂 | #尻 | #艺方坊 | #艺方阁](../../../../../../../../../../../../Models/0058/README.md)](../)
 - **Author ID**: `0058`
 
 </details>

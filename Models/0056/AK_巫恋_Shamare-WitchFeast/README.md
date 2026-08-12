@@ -1,4 +1,4 @@
-# AK_Shamare(WitchFeast)
+# AK_巫恋_Shamare-WitchFeast
 
 <details>
 <summary>Model Details</summary>

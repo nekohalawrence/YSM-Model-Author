@@ -1,4 +1,4 @@
-# C_小毛-粉色情兔
+# 小毛-粉色情兔_LC
 
 <details>
 <summary>Model Details</summary>

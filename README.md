@@ -247,8 +247,8 @@
 - Hyperdimension Neptunia, HDN | 超次元游戏
 - Identity V, Identity-V | 第五人格
 - Genshin Impact, Genshin, GI | 原神
+- Girl Cafe Gun, GCG | 双生视界, 少女咖啡槍II | ガルカフェ
 - Girls' Frontline, GF | 少女前线
-- White Eternity, GF
 - GIRLS' FRONTLINE 2:EXILIUM, GF2 | 少女前线 2：追放, 少女前线 2, 少前 2：追放
 - Girls' Frontline: Neural Cloud, Project Neural Cloud, NC | 少女前线：云图计划
 - Goddess of Victory: Nikke, Nikke | 胜利女神：妮姬
@@ -339,7 +339,7 @@
 - naga u, Naga-u | ながユー
 
 ## 其他
-
+- Animal | 动物 
 - Kemomimi Gakuen, KG | 兽耳学园, 兽耳学院 | ケモミミ学園
 - Meme | 模因
 - Myth | 神话

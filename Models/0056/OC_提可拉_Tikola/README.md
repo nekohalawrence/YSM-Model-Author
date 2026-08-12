@@ -1,9 +1,9 @@
-# 提可拉-tikola
+# OC_提可拉_Tikola
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Original Character #OC #原创角色
 
 </details>
 

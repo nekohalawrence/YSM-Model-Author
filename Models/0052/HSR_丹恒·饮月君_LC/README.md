@@ -1,9 +1,9 @@
-# C_HSR_丹恒·饮月君
+# HSR_丹恒·饮月君_LC
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Honkai-Star-Rail #HSR #崩坏：星穹铁道
 
 </details>
 

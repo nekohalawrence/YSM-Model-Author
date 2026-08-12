@@ -1,4 +1,4 @@
-# BA_86_aru
+# BA_阿露_Aru
 
 <details>
 <summary>Model Details</summary>

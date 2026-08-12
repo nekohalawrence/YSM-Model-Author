@@ -1,4 +1,4 @@
-# C_摩耶重炮-Topgun
+# 摩耶重炮-Topgun_LC
 
 <details>
 <summary>Model Details</summary>

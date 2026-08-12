@@ -1,4 +1,4 @@
-# C_银灰
+# 银灰_LC
 
 <details>
 <summary>Model Details</summary>

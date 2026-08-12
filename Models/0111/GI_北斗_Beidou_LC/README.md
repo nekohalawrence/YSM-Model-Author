@@ -1,9 +1,9 @@
-# C_GI_北斗_Beidou
+# GI_北斗_Beidou_LC
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Genshin Impact #Genshin #GI #原神
 
 </details>
 

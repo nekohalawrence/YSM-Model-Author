@@ -1,4 +1,4 @@
-# B_普鸭
+# 普鸭_LB
 
 <details>
 <summary>Model Details</summary>

@@ -1,9 +1,9 @@
-# B_GI_提纳里
+# GI_提纳里_LB
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Genshin Impact #Genshin #GI #原神
 
 </details>
 

@@ -1,4 +1,4 @@
-# 阿尔法零-arfaring
+# SP_阿尔法零_AlphaZero
 
 <details>
 <summary>Model Details</summary>

@@ -1,4 +1,4 @@
-# B_索菲
+# 索菲_LB
 
 <details>
 <summary>Model Details</summary>

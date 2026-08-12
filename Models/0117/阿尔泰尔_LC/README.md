@@ -1,4 +1,4 @@
-# C_阿尔泰尔
+# 阿尔泰尔_LC
 
 <details>
 <summary>Model Details</summary>

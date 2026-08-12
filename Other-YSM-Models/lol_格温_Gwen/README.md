@@ -1,4 +1,4 @@
-# lol_格温-gwen
+# lol_格温_Gwen
 
 <details>
 <summary>Model Details</summary>

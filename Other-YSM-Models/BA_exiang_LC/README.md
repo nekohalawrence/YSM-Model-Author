@@ -1,9 +1,9 @@
-# C_BA_exiang
+# BA_exiang_LC
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
 
 </details>
 

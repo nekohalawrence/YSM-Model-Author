@@ -1,4 +1,4 @@
-# B_号角
+# 号角_LB
 
 <details>
 <summary>Model Details</summary>

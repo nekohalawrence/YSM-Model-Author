@@ -1,4 +1,4 @@
-# B_晓歌
+# 晓歌_LB
 
 <details>
 <summary>Model Details</summary>

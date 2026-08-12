@@ -1,9 +1,9 @@
-# A_MiSide_小米塔
+# MiSide_小米塔_LA
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #MiSide #米塔
 
 </details>
 

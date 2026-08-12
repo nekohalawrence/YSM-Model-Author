@@ -1,9 +1,9 @@
-# B_VTuber_穆小泠
+# VTuber_穆小泠_LB
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Virtual YouTuber #VTuber #虚拟主播 #バーチャルユーチューバー
 
 </details>
 

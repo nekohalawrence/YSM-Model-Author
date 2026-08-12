@@ -1,4 +1,4 @@
-# 橘光-Tachibana_Hikari
+# 橘光_Tachibana_Hikari
 
 <details>
 <summary>Model Details</summary>

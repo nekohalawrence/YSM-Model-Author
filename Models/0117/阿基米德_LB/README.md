@@ -1,4 +1,4 @@
-# B_阿基米德
+# 阿基米德_LB
 
 <details>
 <summary>Model Details</summary>

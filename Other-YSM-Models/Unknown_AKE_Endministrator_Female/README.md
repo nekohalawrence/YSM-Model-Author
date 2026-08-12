@@ -1,9 +1,9 @@
-# AKE_endministrator_female
+# Unknown_AKE_Endministrator_Female
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Arknights-Endfield #AKE #明日方舟：终末地
+- **Franchise / Category**: #Unknown
 
 </details>
 

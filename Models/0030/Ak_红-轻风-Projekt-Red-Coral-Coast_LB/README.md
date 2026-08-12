@@ -1,9 +1,9 @@
-# B_Ak_红-轻风-Projekt-Red-Coral-Coast
+# Ak_红-轻风-Projekt-Red-Coral-Coast_LB
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Arknights #AK #明日方舟
 
 </details>
 

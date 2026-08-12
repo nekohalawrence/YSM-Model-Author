@@ -1,4 +1,4 @@
-# C_言
+# 言_LC
 
 <details>
 <summary>Model Details</summary>

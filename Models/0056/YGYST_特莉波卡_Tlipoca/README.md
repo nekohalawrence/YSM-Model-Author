@@ -1,4 +1,4 @@
-# 小死神_特莉波卡
+# YGYST_特莉波卡_Tlipoca
 
 <details>
 <summary>Model Details</summary>

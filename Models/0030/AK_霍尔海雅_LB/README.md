@@ -1,9 +1,9 @@
-# B_AK_霍尔海雅
+# AK_霍尔海雅_LB
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Arknights #AK #明日方舟
 
 </details>
 

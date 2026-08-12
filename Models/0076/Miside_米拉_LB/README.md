@@ -1,9 +1,9 @@
-# B_Miside_米拉
+# Miside_米拉_LB
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #MiSide #米塔
 
 </details>
 

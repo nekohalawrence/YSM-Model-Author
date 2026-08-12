@@ -1,9 +1,9 @@
-# B_LC_以实玛丽-Limbus_Ishmael
+# LC_以实玛丽-Limbus_Ishmael_LB
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Limbus Company #LC #边狱巴士 #边狱公司
 
 </details>
 

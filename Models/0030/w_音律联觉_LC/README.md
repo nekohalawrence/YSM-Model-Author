@@ -1,4 +1,4 @@
-# C_w_音律联觉
+# w_音律联觉_LC
 
 <details>
 <summary>Model Details</summary>

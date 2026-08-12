@@ -1,4 +1,4 @@
-# A_Mochiyama-Kingyo_方块-kipfel
+# Mochiyama-Kingyo_方块-kipfel_LA
 
 <details>
 <summary>Model Details</summary>

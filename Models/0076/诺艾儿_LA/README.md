@@ -1,4 +1,4 @@
-# A_诺艾儿
+# 诺艾儿_LA
 
 <details>
 <summary>Model Details</summary>

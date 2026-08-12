@@ -1,9 +1,9 @@
-# C_ZZZ_小课长
+# ZZZ_小课长_LC
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Zenless-Zone-Zero #ZZZ #绝区零
 
 </details>
 

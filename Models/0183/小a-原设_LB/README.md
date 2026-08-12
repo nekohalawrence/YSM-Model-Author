@@ -1,4 +1,4 @@
-# B_小a-原设
+# 小a-原设_LB
 
 <details>
 <summary>Model Details</summary>

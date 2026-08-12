@@ -1,4 +1,4 @@
-# B_孑遗千星
+# 孑遗千星_LB
 
 <details>
 <summary>Model Details</summary>

@@ -1,4 +1,4 @@
-# BA_狐坂若藻-Wakamo
+# BA_狐坂若藻_Wakamo
 
 <details>
 <summary>Model Details</summary>
