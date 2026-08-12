@@ -1,4 +1,4 @@
-# OC_斯塔
+# oc_斯塔
 
 <details>
 <summary>Model Details</summary>
