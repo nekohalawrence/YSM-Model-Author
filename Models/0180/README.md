@@ -3,6 +3,6 @@
 ## Author
 
 - **Name**: #杂果沙拉
-    - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [杂果沙拉](https://space.bilibili.com/21032727)

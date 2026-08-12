@@ -3,6 +3,6 @@
 ## Author
 
 - **Name**: #trita
-    - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **GroupChat**: #QQ
-	- **QQ**: 3490790346
+    - **QQ**: 3490790346

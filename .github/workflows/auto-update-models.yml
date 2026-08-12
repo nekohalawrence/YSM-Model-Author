@@ -36,7 +36,7 @@ jobs:
 
       # 2. 自动更新主 README 中的作者列表与模型统计
       - name: Step 2 - Auto Update Authors List
-        run: python .github/scripts/update_authors.py
+        run: python .github/scripts/update_readme_authors.py
 
       # 3. 翻译 README.md (会自动将你在 README.md 中写的手动日志翻译并同步至 README-EN.md)
       - name: Step 3 - Translate full README to README-EN.md

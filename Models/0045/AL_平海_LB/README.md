@@ -20,6 +20,8 @@
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
+![preview (2).png](previews/preview (2).png)
+
 ![preview.png](previews/preview.png)
 
 ![preview01.png](previews/preview01.png)

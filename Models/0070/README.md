@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #Dashcode | #ASHES356
-    - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [Dashcode](https://space.bilibili.com/51204057)
-  - **SupportPlatform**: #Afdian 
-	- **Afdian**: [ASHES356](https://afdian.com/a/ashes356)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [ASHES356](https://afdian.com/a/ashes356)

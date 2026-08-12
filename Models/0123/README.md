@@ -3,11 +3,9 @@
 ## Author
 
 - **Name**: #Anrieal
-    - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [Anrieal](https://space.bilibili.com/1421932069)
-  - **SupportPlatform**: #Afdian 
-	- **Afdian**: 
 
 ## 资源
 

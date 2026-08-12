@@ -3,11 +3,11 @@
 ## Author
 
 - **Name**: #AnluoSakura
-    - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [AnluoSakura](https://space.bilibili.com/1275761002)
   - **SupportPlatform**: #Afdian
-	- **Afdian**: [AnluoSakura](https://afdian.com/a/AnluoSakura)
+    - **Afdian**: [AnluoSakura](https://afdian.com/a/AnluoSakura)
 
 ## Co-creator
 
@@ -15,10 +15,11 @@
   - **Role**: #形象 | #Image
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [双月希瞳](https://space.bilibili.com/314164896)
+
 - **Name**: #Wone_J
   - **Role**: #动作 | #Motion
-- **SocialPlatform**: #Bilibili
-  - **Bilibili**: [Wone_J](https://space.bilibili.com/13505331)
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [Wone_J](https://space.bilibili.com/13505331)
 
 ## Download
 

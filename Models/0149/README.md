@@ -3,6 +3,6 @@
 ## Author
 
 - **Name**: #安欣
-    - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SupportPlatform**: #Afdian
-	- **Afdian**: [安欣](https://afdian.com/a/Anxin520X)
+    - **Afdian**: [安欣](https://afdian.com/a/Anxin520X)

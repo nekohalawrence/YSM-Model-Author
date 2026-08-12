@@ -3,11 +3,11 @@
 ## Author
 
 - **Name**: #白色北熊
-    - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [白色北熊](https://space.bilibili.com/175342453)
-  - **SupportPlatform**: #Afdian 
-	- **Afdian**: [白色北熊](https://afdian.com/a/bx233)
-  - **GroupChat**: #QQ 
-	- **QQ**: 2481612992
-	- **QQ**: 1067426280
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [白色北熊](https://afdian.com/a/bx233)
+  - **GroupChat**: #QQ
+    - **QQ**: 2481612992
+    - **QQ**: 1067426280

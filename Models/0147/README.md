@@ -3,6 +3,6 @@
 ## Author
 
 - **Name**: #清晨的一阵风
-    - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [清晨的一阵风](https://space.bilibili.com/510956578)
