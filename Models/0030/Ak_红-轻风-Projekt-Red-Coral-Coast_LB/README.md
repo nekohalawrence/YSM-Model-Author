@@ -10,8 +10,19 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0030 - #嗯嗯owo](../)
+- **Author**: [#0030 - #嗯嗯owo](../README.md)
 - **Author ID**: `0030`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 嗯嗯owo
+  - **Role**: 动画
+
+- **Name**: 嗯嗯owo
+  - **Role**: 材质
 
 </details>
 

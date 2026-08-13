@@ -10,7 +10,7 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0094 - #墨染逝羽 | #Feather_aya](../)
+- **Author**: [#0094 - #墨染逝羽](../README.md)
 - **Author ID**: `0094`
 
 </details>

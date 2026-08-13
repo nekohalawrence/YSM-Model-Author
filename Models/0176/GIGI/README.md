@@ -10,8 +10,16 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0176 - #Bubuker #rintaroa #Torontopizza #rintaroA](../)
+- **Author**: [#0176 - #Bubuker #rintaroa #Torontopizza #rintaroA](../README.md)
 - **Author ID**: `0176`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: Bee
+  - **Role**: Eternal return player
 
 </details>
 

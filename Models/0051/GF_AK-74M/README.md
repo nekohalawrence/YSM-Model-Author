@@ -10,8 +10,19 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0051 - #动员鼬](../)
+- **Author**: [#0051 - #动员鼬](../README.md)
 - **Author ID**: `0051`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 
+
+- **Name**: 
+
+- **Name**: 
 
 </details>
 

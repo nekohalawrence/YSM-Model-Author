@@ -10,7 +10,7 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0151 - #WisteriaZy | #大触紫衣](../)
+- **Author**: [#0151 - #WisteriaZy](../README.md)
 - **Author ID**: `0151`
 
 </details>

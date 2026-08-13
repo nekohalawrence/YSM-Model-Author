@@ -10,8 +10,17 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0023 - #狸民limin| #狸民| #limin](../)
+- **Author**: [#0023 - #狸民limin](../README.md)
 - **Author ID**: `0023`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 二氧化硫5704
+  - **Role**: 定制
+  - **OtherPlatform**: blibli: https://space.bilibili.com/UID:504163077
 
 </details>
 

@@ -10,8 +10,21 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0122 - #茶-GreenTea](../)
+- **Author**: [#0122 - #茶-GreenTea](../README.md)
 - **Author ID**: `0122`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 烟雨画桥
+  - **Role**: 物理/粒子插件作者
+  - **SocialPlatform**: Bilibili: https://space.bilibili.com/1268865161
+
+- **Name**: shercoo
+  - **Role**: 物理
+  - **SocialPlatform**: Bilibili: https://space.bilibili.com/14599323
 
 </details>
 

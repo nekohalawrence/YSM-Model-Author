@@ -10,8 +10,24 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0146 - #泉溪鸽](../)
+- **Author**: [#0146 - #泉溪鸽](../README.md)
 - **Author ID**: `0146`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 泉溪
+  - **Role**: 动画
+
+- **Name**: 泉溪
+  - **Role**: 动画
+
+- **Name**: 泉溪
+  - **Role**: 动画
+  - **SocialPlatform**: Bilibili: https://modrinth.com/mod/yes-steve-model
+  - **SupportPlatform**: Afdian: hhttps://modrinth.com/mod/yes-steve-model
 
 </details>
 

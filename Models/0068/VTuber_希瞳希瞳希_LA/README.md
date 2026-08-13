@@ -10,8 +10,21 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0068 - #AnluoSakura](../)
+- **Author**: [#0068 - #AnluoSakura](../README.md)
 - **Author ID**: `0068`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 双月希瞳
+  - **Role**: 定制/赞助
+  - **SocialPlatform**: BiliBili: https://space.bilibili.com/314164896
+
+- **Name**: Wone_J
+  - **Role**: 骷髅敲盾动画
+  - **SocialPlatform**: BiliBili: https://space.bilibili.com/13505331?spm_id_from=333.337.0.0
 
 </details>
 

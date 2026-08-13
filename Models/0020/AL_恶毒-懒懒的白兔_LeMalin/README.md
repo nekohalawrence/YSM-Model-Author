@@ -10,8 +10,18 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0020 - #就叫纸板| #纸板](../)
+- **Author**: [#0020 - #就叫纸板](../README.md)
 - **Author ID**: `0020`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 不是海螺
+  - **Role**: 动画
+  - **SocialPlatform**: Bilibili: https://space.bilibili.com/14975572
+  - **SupportPlatform**: 爱发电: https://afdian.com/a/lucia2048
 
 </details>
 

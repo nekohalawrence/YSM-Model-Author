@@ -10,8 +10,25 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0045 - #雾雨波波沙](../)
+- **Author**: [#0045 - #雾雨波波沙](../README.md)
 - **Author ID**: `0045`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 星语
+  - **Role**: 动作
+  - **SocialPlatform**: bilibili: 316739550
+
+- **Name**: 秋枫落叶
+  - **Role**: 技术支持
+  - **GroupChat**: qq: 176023847
+
+- **Name**: Cosine_line
+  - **Role**: 测试
+  - **GroupChat**: qq: 3454346519
 
 </details>
 

@@ -10,7 +10,7 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0187 - #爱听书的旅人 | #爱听小说的旅人](../)
+- **Author**: [#0187 - #爱听书的旅人](../README.md)
 - **Author ID**: `0187`
 
 </details>

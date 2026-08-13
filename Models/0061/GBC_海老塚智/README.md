@@ -10,8 +10,17 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0061 - #狱际星芒](../)
+- **Author**: [#0061 - #狱际星芒](../README.md)
 - **Author ID**: `0061`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 窝窝头
+  - **Role**: 动作
+  - **SocialPlatform**: bilibili: https://space.bilibili.com/357608680
 
 </details>
 

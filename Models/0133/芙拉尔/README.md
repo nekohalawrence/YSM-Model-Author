@@ -10,8 +10,18 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0133 - #SI_VD](../)
+- **Author**: [#0133 - #SI_VD](../README.md)
 - **Author ID**: `0133`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 奈珂
+  - **Role**: 画师
+  - **SocialPlatform**: Bilibili: none
+  - **SupportPlatform**: Afdian: none
 
 </details>
 

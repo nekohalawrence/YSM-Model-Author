@@ -10,7 +10,7 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0034 - #平衡芝光](../)
+- **Author**: [#0034 - #平衡芝光](../README.md)
 - **Author ID**: `0034`
 
 </details>

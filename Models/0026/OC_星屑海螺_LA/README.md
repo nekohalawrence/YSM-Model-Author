@@ -10,8 +10,21 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0026 - #雒仁](../)
+- **Author**: [#0026 - #雒仁](../README.md)
 - **Author ID**: `0026`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 星屑海螺
+  - **Role**: 动画
+  - **OtherPlatform**: email: 741330261@qq.com
+  - **GroupChat**: qq: 741330261
+
+- **Name**: 白帆小喵
+  - **Role**: 纹理
 
 </details>
 

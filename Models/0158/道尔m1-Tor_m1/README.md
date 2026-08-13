@@ -10,7 +10,7 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0158 - #TiRLey | #TiRLey二号机](../)
+- **Author**: [#0158 - #TiRLey](../README.md)
 - **Author ID**: `0158`
 
 </details>

@@ -10,8 +10,23 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0002 - #映素 | #映素作坊](../)
+- **Author**: [#0002 - #映素](../README.md)
 - **Author ID**: `0002`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 浅陌菌
+  - **Role**: 适配
+  - **SocialPlatform**: Bilibili: https://space.bilibili.com/24513198
+  - **SupportPlatform**: Afdian: https://afdian.com/a/tc_fox
+
+- **Name**: Wone_J
+  - **Role**: 动作
+  - **SocialPlatform**: Bilibili: https://space.bilibili.com/13505331
+  - **SupportPlatform**: Afdian: https://afdian.com/a/Wone_J
 
 </details>
 

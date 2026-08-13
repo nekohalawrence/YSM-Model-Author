@@ -10,8 +10,17 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0059 - #瀛猫](../)
+- **Author**: [#0059 - #瀛猫](../README.md)
 - **Author ID**: `0059`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 雪狐桑
+  - **Role**: 原型人物
+  - **OtherPlatform**: 哔哩哔哩: https://space.bilibili.com/477792 | 雪狐冰屋: https://xuehusang.cn/
 
 </details>
 

@@ -10,8 +10,18 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0159 - #兔兔猫officials | #阴阳兔兔猫offcial](../)
+- **Author**: [#0159 - #兔兔猫officials](../README.md)
 - **Author ID**: `0159`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 兔兔猫officials
+  - **Role**: 全部（）
+  - **SocialPlatform**: Bilibili: https://space.bilibili.com/13875779
+  - **SupportPlatform**: Afdian: https://ifdian.net/a/RABET
 
 </details>
 

@@ -10,8 +10,16 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0165 - #默栖 | #某嘞个默栖 | #默嘞个某栖](../)
+- **Author**: [#0165 - #默栖](../README.md)
 - **Author ID**: `0165`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 折原露露
+  - **Role**: 原型人物
 
 </details>
 

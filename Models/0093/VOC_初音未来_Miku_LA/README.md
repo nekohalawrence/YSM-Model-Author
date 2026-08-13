@@ -10,8 +10,25 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0093 - #苏依凛 | #炽湮](../)
+- **Author**: [#0093 - #苏依凛](../README.md)
 - **Author ID**: `0093`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: Seto/SEGA/Minmode
+  - **Role**: Motion
+  - **SocialPlatform**: youtube: https://www.youtube.com/@SetoKeino
+
+- **Name**: cerica
+  - **Role**: Motion
+  - **OtherPlatform**: bowlroll: https://bowlroll.net/user/211021
+
+- **Name**: トッポ
+  - **Role**: Motion
+  - **OtherPlatform**: bowlroll: https://bowlroll.net/user/211021
 
 </details>
 

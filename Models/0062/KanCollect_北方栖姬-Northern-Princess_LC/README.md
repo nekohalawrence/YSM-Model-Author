@@ -10,8 +10,16 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0062 - #云曦-Yunxxi_ugo | #云曦](../)
+- **Author**: [#0062 - #云曦-Yunxxi_ugo](../README.md)
 - **Author ID**: `0062`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 天茗 赞助
+  - **OtherPlatform**: 主页: https://space.bilibili.com/90085705
 
 </details>
 

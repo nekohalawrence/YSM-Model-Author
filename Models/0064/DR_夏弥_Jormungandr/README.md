@@ -10,7 +10,7 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0064 - #纸盒ALifang | #Cc-纸盒 | #Cc纸盒](../)
+- **Author**: [#0064 - #纸盒ALifang](../README.md)
 - **Author ID**: `0064`
 
 </details>

@@ -10,8 +10,17 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0055 - #伊蕾娜家的咸鱼](../)
+- **Author**: [#0055 - #伊蕾娜家的咸鱼](../README.md)
 - **Author ID**: `0055`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 不是海螺
+  - **Role**: 动画
+  - **SupportPlatform**: Afdian: https://afdian.com/a/lucia2048
 
 </details>
 

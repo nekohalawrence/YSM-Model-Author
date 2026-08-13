@@ -1,16 +1,16 @@
-# 飞鸟马时-Toki
+# BA_飞鸟马时_Toki
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
 
 </details>
 
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0048 - #星屑海螺| #磁小轨制作组（星屑海螺）| #不是海螺](../)
+- **Author**: [#0048 - #星屑海螺](../README.md)
 - **Author ID**: `0048`
 
 </details>

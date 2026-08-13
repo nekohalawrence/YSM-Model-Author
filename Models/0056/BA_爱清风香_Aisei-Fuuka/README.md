@@ -10,8 +10,17 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0056 - #伊洛是哥斯拉嘛 #伊洛是哥斯拉吗|  #哥斯拉 | #落阳不养羊 | #黎家诚 | #BradKidd](../)
+- **Author**: [#0056 - #伊洛是哥斯拉嘛 #伊洛是哥斯拉吗](../README.md)
 - **Author ID**: `0056`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 
+  - **SocialPlatform**: Bilibili: https://space.bilibili.com/14975572
+  - **SupportPlatform**: Afdian: https://afdian.com/a/lucia2048
 
 </details>
 

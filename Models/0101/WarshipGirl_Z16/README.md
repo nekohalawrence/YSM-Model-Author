@@ -10,7 +10,7 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0101 - #獒子coco | #獒子酱的杂货店 | #獒子獒子獒](../)
+- **Author**: [#0101 - #獒子coco](../README.md)
 - **Author ID**: `0101`
 
 </details>

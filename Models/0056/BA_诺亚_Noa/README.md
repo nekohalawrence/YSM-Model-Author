@@ -10,8 +10,18 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0056 - #伊洛是哥斯拉嘛 #伊洛是哥斯拉吗|  #哥斯拉 | #落阳不养羊 | #黎家诚 | #BradKidd](../)
+- **Author**: [#0056 - #伊洛是哥斯拉嘛 #伊洛是哥斯拉吗](../README.md)
 - **Author ID**: `0056`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 狱际星芒
+  - **Role**: 作者
+  - **SocialPlatform**: Bilibili: 哔哩哔哩关注狱际星芒
+  - **SupportPlatform**: Afdian: 爱发电搜狱际星芒
 
 </details>
 

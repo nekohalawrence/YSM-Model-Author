@@ -10,8 +10,16 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0068 - #AnluoSakura](../)
+- **Author**: [#0068 - #AnluoSakura](../README.md)
 - **Author ID**: `0068`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 双月希瞳
+  - **Role**: 人设
 
 </details>
 

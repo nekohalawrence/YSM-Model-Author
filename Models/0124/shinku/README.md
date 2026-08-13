@@ -10,7 +10,7 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0124 - #超吊的点点](../)
+- **Author**: [#0124 - #超吊的点点](../README.md)
 - **Author ID**: `0124`
 
 </details>

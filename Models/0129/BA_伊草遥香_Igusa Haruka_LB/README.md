@@ -10,8 +10,18 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0129 - #Dr观星 | #Dr-观星](../)
+- **Author**: [#0129 - #Dr观星](../README.md)
 - **Author ID**: `0129`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 狱际星芒
+  - **Role**: 动作系统
+  - **SocialPlatform**: Bilibili: https://space.bilibili.com/349150095
+  - **SupportPlatform**: Afdian: https://afdian.com/a/3256286845xingmang
 
 </details>
 

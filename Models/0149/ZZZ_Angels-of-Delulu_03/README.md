@@ -10,8 +10,21 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0149 - #安欣](../)
+- **Author**: [#0149 - #安欣](../README.md)
 - **Author ID**: `0149`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 
+
+- **Name**: 
+
+- **Name**: 
+
+- **Name**: 
 
 </details>
 

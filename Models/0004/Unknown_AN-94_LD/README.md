@@ -10,7 +10,7 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0004 - #XG残党](../)
+- **Author**: [#0004 - #XG残党](../README.md)
 - **Author ID**: `0004`
 
 </details>

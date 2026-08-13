@@ -10,8 +10,25 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0058 - [#艺方像素 | #艺方堂 | #尻 | #艺方坊 | #艺方阁](../../../../../../../../../../../../Models/0058/README.md)](../)
+- **Author**: [#0058 - #艺方像素](../README.md)
 - **Author ID**: `0058`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 艺方堂
+  - **Role**: 公益分享
+
+- **Name**: 艺方坊
+  - **Role**: 售后服务
+
+- **Name**: 艺方阁
+  - **Role**: 定制咨询
+
+- **Name**: MWJ-美金哥
+  - **Role**: 定制者
 
 </details>
 

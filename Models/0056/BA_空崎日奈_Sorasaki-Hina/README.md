@@ -10,8 +10,17 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0056 - #伊洛是哥斯拉嘛 #伊洛是哥斯拉吗|  #哥斯拉 | #落阳不养羊 | #黎家诚 | #BradKidd](../)
+- **Author**: [#0056 - #伊洛是哥斯拉嘛 #伊洛是哥斯拉吗](../README.md)
 - **Author ID**: `0056`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 雅音宫羽MasaneMiyaPA
+  - **Role**: 部分动作
+  - **SocialPlatform**: Bilibili: https://space.bilibili.com/44218/?spm_id_from=333.999.0.0
 
 </details>
 

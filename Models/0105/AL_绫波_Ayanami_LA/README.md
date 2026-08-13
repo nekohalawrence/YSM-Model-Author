@@ -10,8 +10,20 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0105 - #超级大鸡腿丶 | #Nss](../)
+- **Author**: [#0105 - #超级大鸡腿丶](../README.md)
 - **Author ID**: `0105`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 星语
+  - **Role**: 动作
+  - **SocialPlatform**: bilibili: 316739550
+
+- **Name**: 莫白.
+  - **Role**: 物理
 
 </details>
 

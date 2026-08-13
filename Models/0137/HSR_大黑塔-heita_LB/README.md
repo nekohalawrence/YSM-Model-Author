@@ -10,7 +10,7 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0137 - #Maks | #Maks怜悯](../)
+- **Author**: [#0137 - #Maks](../README.md)
 - **Author ID**: `0137`
 
 </details>

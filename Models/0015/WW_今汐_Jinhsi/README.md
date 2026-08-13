@@ -10,8 +10,18 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0015 - #寒叔hs | #烈鸟比百 | #Frosty_Uncle](../)
+- **Author**: [#0015 - #寒叔hs](../README.md)
 - **Author ID**: `0015`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 寒叔
+  - **Role**: 配置
+  - **SocialPlatform**: Bilibili: https://space.bilibili.com/20510758?spm_id_from=333.1007.0.0
+  - **SupportPlatform**: Afdian: https://afdian.net/a/Aigoblin?tab=shop
 
 </details>
 

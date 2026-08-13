@@ -10,7 +10,7 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0015 - #寒叔hs | #烈鸟比百 | #Frosty_Uncle](../)
+- **Author**: [#0015 - #寒叔hs](../README.md)
 - **Author ID**: `0015`
 
 </details>

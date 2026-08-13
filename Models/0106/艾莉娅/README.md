@@ -10,7 +10,7 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0106 - #ナヒーダ](../)
+- **Author**: [#0106 - #ナヒーダ](../README.md)
 - **Author ID**: `0106`
 
 </details>

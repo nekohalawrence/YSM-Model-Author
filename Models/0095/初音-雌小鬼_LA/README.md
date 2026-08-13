@@ -10,7 +10,7 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0095 - #源石姬变体 | #raw_chicken | #鸡姬](../)
+- **Author**: [#0095 - #源石姬变体](../README.md)
 - **Author ID**: `0095`
 
 </details>

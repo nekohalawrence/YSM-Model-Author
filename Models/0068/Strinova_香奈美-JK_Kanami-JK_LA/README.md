@@ -10,8 +10,16 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0068 - #AnluoSakura](../)
+- **Author**: [#0068 - #AnluoSakura](../README.md)
 - **Author ID**: `0068`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 安洛樱
+  - **Role**: 动画
 
 </details>
 

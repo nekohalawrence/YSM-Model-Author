@@ -10,8 +10,17 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0147 - #清晨的一阵风](../)
+- **Author**: [#0147 - #清晨的一阵风](../README.md)
 - **Author ID**: `0147`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 生盐诺亚
+  - **Role**: 精神支持！
+  - **SocialPlatform**: Bilibili: https://space.bilibili.com/510956578
 
 </details>
 

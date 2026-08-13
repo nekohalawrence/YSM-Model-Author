@@ -10,7 +10,7 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0076 - #White_clams白蛤蜊 | #白蛤蜊 | #White_Clams白蛤蜊](../)
+- **Author**: [#0076 - #White_clams白蛤蜊](../README.md)
 - **Author ID**: `0076`
 
 </details>

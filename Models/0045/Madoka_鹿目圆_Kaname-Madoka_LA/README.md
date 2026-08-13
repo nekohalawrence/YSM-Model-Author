@@ -10,8 +10,19 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0045 - #雾雨波波沙](../)
+- **Author**: [#0045 - #雾雨波波沙](../README.md)
 - **Author ID**: `0045`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 窝窝头
+  - **Role**: ☆
+  - **SocialPlatform**: bilibili: https://space.bilibili.com/357608680
+  - **SupportPlatform**: Afdian: https://afdian.com/a/WWTman
+  - **OtherPlatform**: 交流群: https://qm.qq.com/q/uP42j7qxHi
 
 </details>
 

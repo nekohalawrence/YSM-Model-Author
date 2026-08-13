@@ -10,8 +10,17 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0117 - #聚模道 | #聚核重工Minecraft | #语文喵喵拳](../)
+- **Author**: [#0117 - #聚模道](../README.md)
 - **Author ID**: `0117`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 滑生炖
+  - **Role**: 预览框
+  - **SocialPlatform**: Bilibili: https://space.bilibili.com/1845861712
 
 </details>
 

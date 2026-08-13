@@ -10,8 +10,17 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0022 - #Tu_tou](../)
+- **Author**: [#0022 - #Tu_tou](../README.md)
 - **Author ID**: `0022`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: sheng_zi
+  - **Role**: 技术/金主
+  - **OtherPlatform**: 粉丝QQ群: 126088260
 
 </details>
 

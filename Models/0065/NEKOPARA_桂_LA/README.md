@@ -10,7 +10,7 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0065 - #烛火的次元宇宙](../)
+- **Author**: [#0065 - #烛火的次元宇宙](../README.md)
 - **Author ID**: `0065`
 
 </details>

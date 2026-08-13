@@ -10,7 +10,7 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0070 - #Dashcode | #ASHES356](../)
+- **Author**: [#0070 - #Dashcode](../README.md)
 - **Author ID**: `0070`
 
 </details>

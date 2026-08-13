@@ -10,8 +10,17 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0086 - #深海沉光](../)
+- **Author**: [#0086 - #深海沉光](../README.md)
 - **Author ID**: `0086`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 星语
+  - **Role**: 动作
+  - **SocialPlatform**: bilibili: 316739550
 
 </details>
 

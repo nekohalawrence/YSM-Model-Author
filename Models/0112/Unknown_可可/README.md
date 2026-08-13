@@ -10,7 +10,7 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0112 - #大莫家 | #MCZ工作室 | #mcz莫莫| #犟猫](../)
+- **Author**: [#0112 - #大莫家](../README.md)
 - **Author ID**: `0112`
 
 </details>

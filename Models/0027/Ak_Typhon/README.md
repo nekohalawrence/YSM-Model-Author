@@ -10,7 +10,7 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0027 - #猫耳魂魄妖梦](../)
+- **Author**: [#0027 - #猫耳魂魄妖梦](../README.md)
 - **Author ID**: `0027`
 
 </details>

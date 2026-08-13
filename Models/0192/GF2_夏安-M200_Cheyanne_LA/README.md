@@ -10,8 +10,17 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0192 - #苏瑞铃 | #苏瑞铃_official](../)
+- **Author**: [#0192 - #苏瑞铃](../README.md)
 - **Author ID**: `0192`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 白蛤蜊
+  - **Role**: 素体提供
+  - **SocialPlatform**: bilibili: https://space.bilibili.com/168185637?spm_id_from=333.788.0.0
 
 </details>
 

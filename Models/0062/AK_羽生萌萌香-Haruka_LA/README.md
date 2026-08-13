@@ -10,8 +10,29 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0062 - #云曦-Yunxxi_ugo | #云曦](../)
+- **Author**: [#0062 - #云曦-Yunxxi_ugo](../README.md)
 - **Author ID**: `0062`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: kurumaマ
+  - **Role**: 吉祥物
+  - **OtherPlatform**: 主页: https://space.bilibili.com/76672787
+
+- **Name**: 是沐辰啊pwp
+  - **Role**: 吉祥物
+  - **OtherPlatform**: 主页: https://space.bilibili.com/618440581
+
+- **Name**: 鸢尾蓝系
+  - **Role**: 吉祥物
+  - **OtherPlatform**: 主页: https://space.bilibili.com/401942100
+
+- **Name**: 特调夕柚汁
+  - **Role**: 吉祥物
+  - **OtherPlatform**: 主页: https://space.bilibili.com/1902837893
 
 </details>
 

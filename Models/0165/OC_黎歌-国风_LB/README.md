@@ -10,8 +10,22 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0165 - #默栖 | #某嘞个默栖 | #默嘞个某栖](../)
+- **Author**: [#0165 - #默栖](../README.md)
 - **Author ID**: `0165`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 黎歌Neeko
+  - **Role**: 原型人物
+  - **SocialPlatform**: Bilibili: https://space.bilibili.com/671538942
+
+- **Name**: 瀛猫
+  - **Role**: 适配
+  - **SocialPlatform**: Bilibili: https://space.bilibili.com/647224460
+  - **SupportPlatform**: Afdian: https://afdian.cn/a/wincatpro
 
 </details>
 

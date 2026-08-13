@@ -10,7 +10,7 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0043 - #完全凍結ALL | #完全冻结 | #绝对冻结](../)
+- **Author**: [#0043 - #完全凍結ALL](../README.md)
 - **Author ID**: `0043`
 
 </details>

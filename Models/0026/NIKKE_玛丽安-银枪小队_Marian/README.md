@@ -1,16 +1,16 @@
-# 玛丽安-银枪部队-marian-silver-spear
+# NIKKE_玛丽安-银枪小队_Marian
 
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Franchise / Category**: #Goddess of Victory: Nikke #Nikke #胜利女神：妮姬
 
 </details>
 
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0026 - #雒仁](../)
+- **Author**: [#0026 - #雒仁](../README.md)
 - **Author ID**: `0026`
 
 </details>

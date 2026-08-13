@@ -10,8 +10,26 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0030 - #嗯嗯owo](../)
+- **Author**: [#0030 - #嗯嗯owo](../README.md)
 - **Author ID**: `0030`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 嗯嗯owo
+  - **Role**: 材质
+
+- **Name**: Ahyra
+  - **Role**: Partner_人设提供_金主
+  - **SocialPlatform**: X: https://x.com/Ahyra_ | youtube: https://www.youtube.com/@Ahyra_
+  - **OtherPlatform**: twitch: https://www.twitch.tv/ahyra_
+
+- **Name**: 睡不醒的秋风
+  - **Role**: 动画
+  - **SocialPlatform**: Bilibili: https://space.bilibili.com/375227559
+  - **SupportPlatform**: Afdian: https://ifdian.com/a/qf0224
 
 </details>
 

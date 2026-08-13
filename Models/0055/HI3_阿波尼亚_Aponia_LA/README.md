@@ -10,8 +10,18 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0055 - #伊蕾娜家的咸鱼](../)
+- **Author**: [#0055 - #伊蕾娜家的咸鱼](../README.md)
 - **Author ID**: `0055`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 星屑海螺
+  - **Role**: 动画
+  - **SocialPlatform**: Bilibili: https://space.bilibili.com/14975572
+  - **SupportPlatform**: 爱发电: https://afdian.net/a/lucia2048
 
 </details>
 

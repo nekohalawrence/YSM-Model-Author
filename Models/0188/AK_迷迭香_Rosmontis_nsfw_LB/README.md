@@ -10,8 +10,16 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0188 - #鸢尾](../)
+- **Author**: [#0188 - #鸢尾](../README.md)
 - **Author ID**: `0188`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 雒仁
+  - **Role**: 映素5代素体
 
 </details>
 

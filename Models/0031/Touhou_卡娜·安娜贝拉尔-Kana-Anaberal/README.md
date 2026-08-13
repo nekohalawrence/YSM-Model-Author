@@ -10,7 +10,7 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0031 - #泥泞中的小猫 | #PZGR.40](../)
+- **Author**: [#0031 - #泥泞中的小猫](../README.md)
 - **Author ID**: `0031`
 
 </details>

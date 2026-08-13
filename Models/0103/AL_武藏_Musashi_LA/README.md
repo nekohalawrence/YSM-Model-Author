@@ -10,8 +10,18 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0103 - #浅陌菌](../)
+- **Author**: [#0103 - #浅陌菌](../README.md)
 - **Author ID**: `0103`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 星屑海螺
+  - **Role**: 动画
+  - **SocialPlatform**: Bilibili: https://space.bilibili.com/14975572
+  - **SupportPlatform**: Afdian: https://afdian.com/a/lucia2048
 
 </details>
 

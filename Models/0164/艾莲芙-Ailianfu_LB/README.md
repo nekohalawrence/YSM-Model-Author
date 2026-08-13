@@ -10,7 +10,7 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0164 - #toolat嫌晚 | #toolat洗碗](../)
+- **Author**: [#0164 - #toolat嫌晚](../README.md)
 - **Author ID**: `0164`
 
 </details>

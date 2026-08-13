@@ -10,7 +10,7 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0117 - #聚模道 | #聚核重工Minecraft | #语文喵喵拳](../)
+- **Author**: [#0117 - #聚模道](../README.md)
 - **Author ID**: `0117`
 
 </details>

@@ -10,7 +10,7 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0145 - #咕咕鸡 | #咕咕叫的小菜鸡](../)
+- **Author**: [#0145 - #咕咕鸡](../README.md)
 - **Author ID**: `0145`
 
 </details>

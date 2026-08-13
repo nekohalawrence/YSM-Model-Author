@@ -10,8 +10,18 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0116 - #1111111re | #伊伊蕾](../)
+- **Author**: [#0116 - #1111111re](../README.md)
 - **Author ID**: `0116`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: Maribelhearn
+  - **Role**: 动画
+  - **SocialPlatform**: Bilibili: https://space.bilibili.com/35073555
+  - **SupportPlatform**: Afdian: https://afdian.com/a/114514yire
 
 </details>
 

@@ -10,7 +10,7 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0161 - #-_-_-_-_草-_-_-_- | #ckdr251](../)
+- **Author**: [#0161 - #-_-_-_-_草-_-_-_-](../README.md)
 - **Author ID**: `0161`
 
 </details>

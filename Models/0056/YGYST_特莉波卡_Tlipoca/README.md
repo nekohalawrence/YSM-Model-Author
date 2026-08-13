@@ -1,4 +1,4 @@
-# YGYST_ 特莉波卡 _Tlipoca
+# YGYST_特莉波卡_Tlipoca
 
 <details>
 <summary>Model Details</summary>
@@ -10,7 +10,7 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0056 - #伊洛是哥斯拉嘛 #伊洛是哥斯拉吗|  #哥斯拉 | #落阳不养羊 | #黎家诚 | #BradKidd](../)
+- **Author**: [#0056 - #伊洛是哥斯拉嘛 #伊洛是哥斯拉吗](../README.md)
 - **Author ID**: `0056`
 
 </details>

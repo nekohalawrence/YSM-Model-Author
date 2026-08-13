@@ -10,8 +10,17 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0001 - #02Bunny | #蓝玫瑰](../)
+- **Author**: [#0001 - #02Bunny](../README.md)
 - **Author ID**: `0001`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: mo
+  - **Role**: 玩偶素体贡献者
+  - **SocialPlatform**: Bilibili: https://space.bilibili.com/1959304255
 
 </details>
 

@@ -10,8 +10,16 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0061 - #狱际星芒](../)
+- **Author**: [#0061 - #狱际星芒](../README.md)
 - **Author ID**: `0061`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: Killot
+  - **Role**: 部分动画
 
 </details>
 

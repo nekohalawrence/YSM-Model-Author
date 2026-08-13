@@ -10,7 +10,7 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0163 - #Rhein雨倩 | #雨倩先生](../)
+- **Author**: [#0163 - #Rhein雨倩](../README.md)
 - **Author ID**: `0163`
 
 </details>

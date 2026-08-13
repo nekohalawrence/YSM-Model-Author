@@ -10,8 +10,21 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0005 - #omo仙贝2号| #omo | #FujiwaranoMoku114514](../)
+- **Author**: [#0005 - #omo仙贝2号](../README.md)
 - **Author ID**: `0005`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: mo
+  - **Role**: 全部
+  - **SocialPlatform**: twitter: @wOelxdwlnwq5Zl0 | youtube: https://www.youtube.com/@%E8%97%A4%E5%8E%9F%E5%A6%B9%E7%BA%A2-i3q
+  - **SupportPlatform**: Afdian: https://afdian.com/a/omomomomomomo
+
+- **Name**: 甜粽子
+  - **Role**: 物理动画调试
 
 </details>
 

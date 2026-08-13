@@ -10,8 +10,17 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0065 - #烛火的次元宇宙](../)
+- **Author**: [#0065 - #烛火的次元宇宙](../README.md)
 - **Author ID**: `0065`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 烛火的次元宇宙
+  - **Role**: 动画
+  - **SocialPlatform**: Bilibili: https://space.bilibili.com/57715833?spm_id_from=333.1007.0.0
 
 </details>
 

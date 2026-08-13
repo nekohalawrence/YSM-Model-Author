@@ -10,8 +10,15 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0154 - #银河铁道CRH2](../)
+- **Author**: [#0154 - #银河铁道CRH2](../README.md)
 - **Author ID**: `0154`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 设定/模型：Snowenh
 
 </details>
 

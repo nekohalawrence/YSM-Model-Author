@@ -10,7 +10,7 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0144 - #叁雫MitsukuDayo](../)
+- **Author**: [#0144 - #叁雫MitsukuDayo](../README.md)
 - **Author ID**: `0144`
 
 </details>

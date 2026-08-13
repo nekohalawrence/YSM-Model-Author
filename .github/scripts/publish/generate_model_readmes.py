@@ -18,9 +18,7 @@
       - **OtherPlatform**:
       - **GroupChat**:
 """
-import json
 import re
-from pathlib import Path
 import sys
 from pathlib import Path
 # 脚本按流程阶段分类到 scripts/<类别>/ 子目录：把 .github/scripts 加回 sys.path，
@@ -32,6 +30,7 @@ from lib import paths as lib_paths
 from lib import readme as lib_readme
 from lib import models as lib_models
 from lib import previews as lib_previews
+from lib import ysm as lib_ysm
 
 WORKSPACE_ROOT = lib_paths.WORKSPACE_ROOT
 MAIN_README_PATH = WORKSPACE_ROOT / 'README.md'
@@ -141,17 +140,46 @@ def same_model(a: str, b: str) -> bool:
     return lib_models.same_model(a, b)
 
 
-def get_co_creators(author_id: str, model_dir_name: str) -> list[dict]:
+def get_co_creators(model_dir: Path) -> list[dict]:
     """按 "<作者编号>/<文件夹名>" 精确匹配 models_meta；文件夹被 rename_model_folders 改名时
-    用 same_model 容错匹配（Unknown_ 前缀、规范化命名等变形）。"""
+    用 same_model 容错匹配（Unknown_ 前缀、规范化命名等变形）。
+
+    models_meta 无记录（旧归档/手动放置的模型）时回退解析模型目录下 .ysm 的作者块，
+    识别 co-creator —— .ysm 是作者信息的源头，覆盖 models_meta 未收录的情况。
+    """
+    author_id = model_dir.parent.name
     meta = load_models_meta()
-    exact = meta.get(f'{author_id}/{model_dir_name}')
+    exact = meta.get(f'{author_id}/{model_dir.name}')
     if exact is not None:
         return exact.get('co_creators', [])
     for key, entry in meta.items():
         kid, _, kfolder = key.partition('/')
-        if kid == author_id and same_model(kfolder, model_dir_name):
+        if kid == author_id and same_model(kfolder, model_dir.name):
             return entry.get('co_creators', [])
+    return co_creators_from_ysm(model_dir)
+
+
+def co_creators_from_ysm(model_dir: Path) -> list[dict]:
+    """解析模型目录下 .ysm，把非主作者块转成 co-creator 记录（models_meta 兜底）。
+
+    主作者 = role 含"模型"的第一个块（与归档分类 classify_authors 一致）；其余块即
+    co-creator。返回的格式与 models_meta 的 co_creators 相同：
+    [{'name', 'role', 'platforms': {字段: [值]}}]。
+    """
+    ysm_files = sorted(model_dir.glob('*.ysm')) + sorted(model_dir.glob('*.YSM'))
+    platform_map = lib_ysm.load_platform_map()
+    for f in ysm_files:
+        meta = lib_ysm.extract_metadata(f, quiet=True)
+        blocks = meta.get('author_blocks') or []
+        if len(blocks) < 2:
+            # 单作者模型没有 co-creator，继续看下一个文件
+            continue
+        _, _, co_blocks = lib_ysm.classify_authors(blocks)
+        if not co_blocks:
+            continue
+        return [{'name': b['name'], 'role': b.get('role', ''),
+                 'platforms': lib_ysm.map_platforms(b.get('contacts') or {}, platform_map)}
+                for b in co_blocks]
     return []
 
 
@@ -202,7 +230,7 @@ def build_meta_and_preview_content(model_dir: Path, image_paths: list[Path],
             '<details>',
             '<summary>Author Details</summary>',
             '',
-            f'- **Author**: [#{author_id} - {author_name}](../)',
+            f'- **Author**: [#{author_id} - {author_name}](../README.md)',
             f'- **Author ID**: `{author_id}`',
             '',
             '</details>',
@@ -274,7 +302,7 @@ def main() -> int:
         for model_dir in iter_model_dirs(root_dir):
             # 全部模型目录都生成 README（不要求存在预览图）
             preview_images = collect_preview_images(model_dir)
-            co_creators = get_co_creators(model_dir.parent.name, model_dir.name)
+            co_creators = get_co_creators(model_dir)
 
             readme_path = model_dir / 'README.md'
             existing_content = readme_path.read_text(encoding='utf-8', errors='ignore') if readme_path.exists() else None

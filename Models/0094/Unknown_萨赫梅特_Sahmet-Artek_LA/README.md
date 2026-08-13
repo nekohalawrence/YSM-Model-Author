@@ -10,8 +10,18 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0094 - #墨染逝羽 | #Feather_aya](../)
+- **Author**: [#0094 - #墨染逝羽](../README.md)
 - **Author ID**: `0094`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 雷切克
+  - **Role**: 动画
+  - **SocialPlatform**: Bilibili: https://space.bilibili.com/33150006
+  - **SupportPlatform**: Afdian: https://afdian.com/a/Receke
 
 </details>
 

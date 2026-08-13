@@ -10,8 +10,17 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0129 - #Dr观星 | #Dr-观星](../)
+- **Author**: [#0129 - #Dr观星](../README.md)
 - **Author ID**: `0129`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: k螺诺亚
+  - **Role**: k螺诺亚
+  - **OtherPlatform**: BliBli: https://space.bilibili.com/3546599305251347?spm_id_from=333.337.0.0
 
 </details>
 

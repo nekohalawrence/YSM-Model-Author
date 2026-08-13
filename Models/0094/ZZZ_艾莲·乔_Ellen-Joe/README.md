@@ -10,8 +10,22 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0094 - #墨染逝羽 | #Feather_aya](../)
+- **Author**: [#0094 - #墨染逝羽](../README.md)
 - **Author ID**: `0094`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 星屑海螺
+  - **Role**: 动画
+  - **SocialPlatform**: Bilibili: https://space.bilibili.com/14975572
+  - **SupportPlatform**: Afdian: https://afdian.net/a/lucia2048
+
+- **Name**: dAN!e
+  - **Role**: 渲染
+  - **GroupChat**: QQ: 386839726
 
 </details>
 

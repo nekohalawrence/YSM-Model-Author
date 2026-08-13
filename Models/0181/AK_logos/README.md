@@ -10,7 +10,7 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0181 - #北上 | #NorthWard](../)
+- **Author**: [#0181 - #北上](../README.md)
 - **Author ID**: `0181`
 
 </details>

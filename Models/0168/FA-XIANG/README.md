@@ -10,8 +10,18 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0168 - #丁真蟹 | #ZHEN](../)
+- **Author**: [#0168 - #丁真蟹](../README.md)
 - **Author ID**: `0168`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: ZHEN
+  - **Role**: 动画
+  - **SocialPlatform**: Bilibili: https://account.bilibili.com/account/face/upload652519489
+  - **SupportPlatform**: Afdian: https://afdian.com/a/ZHEN2023
 
 </details>
 

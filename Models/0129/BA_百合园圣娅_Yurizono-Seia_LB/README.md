@@ -10,8 +10,17 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0129 - #Dr观星 | #Dr-观星](../)
+- **Author**: [#0129 - #Dr观星](../README.md)
 - **Author ID**: `0129`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 狱际星芒
+  - **Role**: 部分动画适配
+  - **OtherPlatform**: b站/爱发电: 狱际星芒
 
 </details>
 

@@ -10,8 +10,27 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0058 - [#艺方像素 | #艺方堂 | #尻 | #艺方坊 | #艺方阁](../../../../../../../../../../../../Models/0058/README.md)](../)
+- **Author**: [#0058 - #艺方像素](../README.md)
 - **Author ID**: `0058`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 艺方堂·公益④群
+  - **Role**: 公益群
+
+- **Name**: 艺方像素·售后群
+  - **Role**: 售后服务
+
+- **Name**: 浅宣
+  - **Role**: 定制服务
+
+- **Name**: 风竹
+  - **Role**: 枪模
+  - **SocialPlatform**: Bilibili: https://space.bilibili.com/60906146
+  - **SupportPlatform**: Afdian: https://afdian.net/a/windamboo
 
 </details>
 

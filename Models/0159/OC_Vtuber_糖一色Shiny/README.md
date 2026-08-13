@@ -10,8 +10,17 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0159 - #兔兔猫officials | #阴阳兔兔猫offcial](../)
+- **Author**: [#0159 - #兔兔猫officials](../README.md)
 - **Author ID**: `0159`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 糖一色Shiny
+  - **Role**: oc方
+  - **SocialPlatform**: Bilibili: https://space.bilibili.com/3546615501556479
 
 </details>
 

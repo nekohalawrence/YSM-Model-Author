@@ -10,7 +10,7 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0138 - #夜森岚_Noxsil](../)
+- **Author**: [#0138 - #夜森岚_Noxsil](../README.md)
 - **Author ID**: `0138`
 
 </details>

@@ -10,8 +10,21 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0030 - #嗯嗯owo](../)
+- **Author**: [#0030 - #嗯嗯owo](../README.md)
 - **Author ID**: `0030`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 嗯嗯owo
+  - **Role**: 材质
+
+- **Name**: 秋风
+  - **Role**: 部分动画
+  - **SocialPlatform**: Bilibili: https://space.bilibili.com/375227559
+  - **SupportPlatform**: Afdian: https://afdian.com/a/qf0224
 
 </details>
 

@@ -10,8 +10,20 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0020 - #就叫纸板| #纸板](../)
+- **Author**: [#0020 - #就叫纸板](../README.md)
 - **Author ID**: `0020`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 星屑海螺
+  - **Role**: 动画
+  - **GroupChat**: qq: 741330261
+
+- **Name**: 白帆小喵
+  - **Role**: 纹理
 
 </details>
 

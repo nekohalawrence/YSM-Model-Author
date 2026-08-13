@@ -10,8 +10,18 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0136 - #Fllz](../)
+- **Author**: [#0136 - #Fllz](../README.md)
 - **Author ID**: `0136`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: Fllz
+  - **Role**: Author
+  - **OtherPlatform**: Linktree: https://linktr.ee/fllz | Vgen: https://vgen.co/fllz
+  - **GroupChat**: Discord: fllz
 
 </details>
 

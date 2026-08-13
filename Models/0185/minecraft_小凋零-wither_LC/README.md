@@ -10,8 +10,18 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0185 - #滑滑滑纸隐 | #滑纸隐](../)
+- **Author**: [#0185 - #滑滑滑纸隐](../README.md)
 - **Author ID**: `0185`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 哥斯拉
+  - **Role**: 设计
+  - **SocialPlatform**: Bilibili: https://space.bilibili.com/17798027
+  - **SupportPlatform**: Afdian: https://afdian.com/a/6TGESILA
 
 </details>
 

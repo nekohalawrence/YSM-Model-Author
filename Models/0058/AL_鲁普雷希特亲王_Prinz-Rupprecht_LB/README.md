@@ -10,8 +10,19 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0058 - [#艺方像素 | #艺方堂 | #尻 | #艺方坊 | #艺方阁](../../../../../../../../../../../../Models/0058/README.md)](../)
+- **Author**: [#0058 - #艺方像素](../README.md)
 - **Author ID**: `0058`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 星屑海螺
+  - **Role**: 动画
+
+- **Name**: tuercha
+  - **Role**: 定制者
 
 </details>
 

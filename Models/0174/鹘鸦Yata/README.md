@@ -10,8 +10,18 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0174 - #鹘鸦Yata](../)
+- **Author**: [#0174 - #鹘鸦Yata](../README.md)
 - **Author ID**: `0174`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 莱伊
+  - **Role**: 画鸦
+  - **SocialPlatform**: Bilibili: https://space.bilibili.com/3537110638266406
+  - **SupportPlatform**: Afdian: https://afdian.com/
 
 </details>
 

@@ -10,8 +10,17 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0067 - #Almeta_owx](../)
+- **Author**: [#0067 - #Almeta_owx](../README.md)
 - **Author ID**: `0067`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 是八一四呐
+  - **Role**: 定制
+  - **SocialPlatform**: Bilibili: https://b23.tv/1Vqx4Wg
 
 </details>
 

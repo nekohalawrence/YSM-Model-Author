@@ -10,7 +10,7 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0175 - #集栎 | #Nebulathus](../)
+- **Author**: [#0175 - #集栎](../README.md)
 - **Author ID**: `0175`
 
 </details>

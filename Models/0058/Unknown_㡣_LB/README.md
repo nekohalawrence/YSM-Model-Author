@@ -10,8 +10,27 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0058 - [#艺方像素 | #艺方堂 | #尻 | #艺方坊 | #艺方阁](../../../../../../../../../../../../Models/0058/README.md)](../)
+- **Author**: [#0058 - #艺方像素](../README.md)
 - **Author ID**: `0058`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 艺方堂
+  - **Role**: 公益分享
+  - **SocialPlatform**: Bilibili: https://space.bilibili.com/107318873
+  - **OtherPlatform**: 艺方直联QQ（投诉建议咨询）: 1320812591
+
+- **Name**: 艺方坊
+  - **Role**: 售后服务
+
+- **Name**: 艺方阁
+  - **Role**: 定制咨询
+
+- **Name**: 祸御神
+  - **Role**: 动画
 
 </details>
 

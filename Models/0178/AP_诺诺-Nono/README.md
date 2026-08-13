@@ -10,7 +10,7 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0178 - #qidai | #一点小期待](../)
+- **Author**: [#0178 - #qidai](../README.md)
 - **Author ID**: `0178`
 
 </details>

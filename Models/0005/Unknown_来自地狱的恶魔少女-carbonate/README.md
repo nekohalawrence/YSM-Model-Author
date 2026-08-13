@@ -10,8 +10,16 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0005 - #omo仙贝2号| #omo | #FujiwaranoMoku114514](../)
+- **Author**: [#0005 - #omo仙贝2号](../README.md)
 - **Author ID**: `0005`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 甜粽子
+  - **Role**: 物理动画调试
 
 </details>
 

@@ -10,7 +10,7 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0118 - #ガラスのような青空| #coldm00n](../)
+- **Author**: [#0118 - #ガラスのような青空](../README.md)
 - **Author ID**: `0118`
 
 </details>

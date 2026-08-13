@@ -10,8 +10,17 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0001 - #02Bunny | #蓝玫瑰](../)
+- **Author**: [#0001 - #02Bunny](../README.md)
 - **Author ID**: `0001`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 星语
+  - **Role**: 动作
+  - **SocialPlatform**: bilibili: 316739550
 
 </details>
 

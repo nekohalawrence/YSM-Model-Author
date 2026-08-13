@@ -10,7 +10,7 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0090 - #九碳糖 | #九碳糖BI3NVZ](../)
+- **Author**: [#0090 - #九碳糖](../README.md)
 - **Author ID**: `0090`
 
 </details>

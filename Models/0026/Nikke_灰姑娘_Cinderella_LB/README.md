@@ -10,8 +10,17 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0026 - #雒仁](../)
+- **Author**: [#0026 - #雒仁](../README.md)
 - **Author ID**: `0026`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 星屑海螺
+  - **Role**: 适配
+  - **SocialPlatform**: B站: https://space.bilibili.com/14975572
 
 </details>
 

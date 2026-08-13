@@ -10,7 +10,7 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0050 - #荨蒿栗里 | #荨蒿之栗里 | #栗里](../)
+- **Author**: [#0050 - #荨蒿栗里](../README.md)
 - **Author ID**: `0050`
 
 </details>

@@ -10,8 +10,17 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0016 - #祸御神](../)
+- **Author**: [#0016 - #祸御神](../README.md)
 - **Author ID**: `0016`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: YSM作者导航页
+  - **Role**: 看我
+  - **OtherPlatform**: qwq: 点进来点进来点进来 | awa: 点击右下角主页进入
 
 </details>
 

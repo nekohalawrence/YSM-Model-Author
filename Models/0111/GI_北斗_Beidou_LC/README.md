@@ -10,7 +10,7 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0111 - #奶油桃NaytoTime](../)
+- **Author**: [#0111 - #奶油桃NaytoTime](../README.md)
 - **Author ID**: `0111`
 
 </details>

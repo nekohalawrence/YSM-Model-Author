@@ -10,7 +10,7 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0077 - #旭门只玩驹 | #Zeonjin-旭门只玩驹](../)
+- **Author**: [#0077 - #旭门只玩驹](../README.md)
 - **Author ID**: `0077`
 
 </details>

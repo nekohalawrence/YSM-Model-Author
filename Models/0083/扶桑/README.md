@@ -10,7 +10,7 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0083 - #鼠标会梦到光猫吗](../)
+- **Author**: [#0083 - #鼠标会梦到光猫吗](../README.md)
 - **Author ID**: `0083`
 
 </details>

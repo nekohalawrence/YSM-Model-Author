@@ -10,8 +10,17 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0111 - #奶油桃NaytoTime](../)
+- **Author**: [#0111 - #奶油桃NaytoTime](../README.md)
 - **Author ID**: `0111`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 祸御神
+  - **Role**: 动画
+  - **SocialPlatform**: Bilibili: https://space.bilibili.com/164557734
 
 </details>
 

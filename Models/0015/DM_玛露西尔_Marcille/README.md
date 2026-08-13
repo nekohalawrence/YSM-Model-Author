@@ -10,8 +10,18 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0015 - #寒叔hs | #烈鸟比百 | #Frosty_Uncle](../)
+- **Author**: [#0015 - #寒叔hs](../README.md)
 - **Author ID**: `0015`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: 寒叔
+  - **Role**: 适配·
+  - **SocialPlatform**: Bilibili: B站搜索“寒叔hs”
+  - **SupportPlatform**: Afdian: 爱发电搜索“烈鸟比百”
 
 </details>
 

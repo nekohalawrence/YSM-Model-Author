@@ -10,7 +10,7 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0179 - #Cookiebox](../)
+- **Author**: [#0179 - #Cookiebox](../README.md)
 - **Author ID**: `0179`
 
 </details>

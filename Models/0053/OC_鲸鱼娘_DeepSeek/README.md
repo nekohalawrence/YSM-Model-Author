@@ -10,7 +10,7 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0053 - #羊毛毛毛毛_Official喵](../)
+- **Author**: [#0053 - #羊毛毛毛毛_Official喵](../README.md)
 - **Author ID**: `0053`
 
 </details>

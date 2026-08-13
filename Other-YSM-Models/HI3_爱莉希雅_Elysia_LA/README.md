@@ -7,6 +7,18 @@
 
 </details>
 
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: Coffish
+  - **Role**: 特效
+  - **SocialPlatform**: Bilibili: https://space.bilibili.com/104972076
+
+- **Name**: 终离
+  - **Role**: 赞助
+
+</details>
+
 <details open>
 <summary>Preview Images</summary>
 

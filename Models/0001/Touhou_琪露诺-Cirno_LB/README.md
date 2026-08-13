@@ -10,8 +10,17 @@
 <details>
 <summary>Author Details</summary>
 
-- **Author**: [#0001 - #02Bunny | #蓝玫瑰](../)
+- **Author**: [#0001 - #02Bunny](../README.md)
 - **Author ID**: `0001`
+
+</details>
+
+<details>
+<summary>Co-creator Details</summary>
+
+- **Name**: かめぱすた
+  - **Role**: 系列二创图原作者
+  - **OtherPlatform**: X（twitter）: https://x.com/kamepan44231
 
 </details>
 
