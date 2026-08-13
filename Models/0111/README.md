@@ -2,7 +2,7 @@
 
 ## Author
 
-- **Name**: #奶油桃NaytoTime
+- **Name**: #奶油桃NaytoTime | #奶油桃
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [奶油桃NaytoTime](https://space.bilibili.com/74167922)

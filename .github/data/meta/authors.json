@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-08-13T11:39:06+00:00",
+  "generated": "2026-08-13T11:49:25+00:00",
   "authors": {
     "0000": {
       "name": [
@@ -1247,7 +1247,8 @@
     },
     "0111": {
       "name": [
-        "#奶油桃NaytoTime"
+        "#奶油桃NaytoTime",
+        "#奶油桃"
       ],
       "readme": "Models/0111/README.md",
       "role": "#模型 #动作 #动画 | #Model #Motion #Animation",
@@ -2082,14 +2083,6 @@
         "#咖喱饭饭好吃"
       ],
       "readme": "Models/0194/README.md",
-      "role": "#模型 #动作 #动画 | #Model #Motion #Animation",
-      "platforms": {}
-    },
-    "0195": {
-      "name": [
-        "#奶油桃"
-      ],
-      "readme": "Models/0195/README.md",
       "role": "#模型 #动作 #动画 | #Model #Motion #Animation",
       "platforms": {}
     },

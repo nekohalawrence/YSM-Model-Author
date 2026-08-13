@@ -163,8 +163,24 @@ def normalize_platform_val(key: str, val: str) -> str:
     return v.rstrip('/')
 
 
+def _name_substr_related(norm_a: str, norm_b: str) -> bool:
+    """两个已规范化作者名是否构成子串关系（较短者是较长者的子串）。
+
+    门槛：较短者含中文 >=3 字、纯英文 >=4 字符——"奶油桃"⊂"奶油桃NaytoTime"
+    可识别，而"饭"（1 字）、"水神"（2 字）这类短名不触发，避免大量误报。
+    """
+    if not norm_a or not norm_b or norm_a == norm_b:
+        return False
+    short, long_ = (norm_a, norm_b) if len(norm_a) <= len(norm_b) else (norm_b, norm_a)
+    if len(short) < 3:
+        return False
+    if not re.search(r'[\u4e00-\u9fff]', short) and len(short) < 4:
+        return False
+    return short in long_
+
+
 def find_merge_candidates() -> list[tuple[str, str, str]]:
-    """找重复作者候选 (a, b, 原因)。依据：平台账号相同 或 规范化名字相等。"""
+    """找重复作者候选 (a, b, 原因)。依据：平台账号相同、规范化名字相等、名字子串。"""
     authors = lib_readme.load_authors_index().get('authors') or {}
     pairs: dict[tuple[str, str], str] = {}  # (小编号, 大编号) -> 原因
 
@@ -199,6 +215,23 @@ def find_merge_candidates() -> list[tuple[str, str, str]]:
             for i in range(len(ids)):
                 for j in range(i + 1, len(ids)):
                     add_pair(ids[i], ids[j], f"名字相同: {norm}")
+
+    # 名字子串（较短名是较长名的子串，如 奶油桃 ⊂ 奶油桃NaytoTime）
+    name_items: list[tuple[str, str]] = []
+    for aid, entry in authors.items():
+        for name in entry.get('name') or []:
+            norm = lib_readme.normalize_alias(name)
+            if norm:
+                name_items.append((aid, norm))
+    for i in range(len(name_items)):
+        aid_i, norm_i = name_items[i]
+        for j in range(i + 1, len(name_items)):
+            aid_j, norm_j = name_items[j]
+            if aid_i == aid_j:
+                continue
+            if _name_substr_related(norm_i, norm_j):
+                short = norm_i if len(norm_i) <= len(norm_j) else norm_j
+                add_pair(aid_i, aid_j, f"名字子串: {short}")
 
     return [(a, b, r) for (a, b), r in sorted(pairs.items())]
 
@@ -278,7 +311,7 @@ def merge_authors_flow(apply: bool) -> int:
     if not candidates:
         print('合并作者: 未发现重复作者候选。')
         return 0
-    print(f'合并作者: 发现 {len(candidates)} 个候选对（平台相同 / 名字相同）:')
+    print(f'合并作者: 发现 {len(candidates)} 个候选对（平台相同 / 名字相同 / 名字子串）:')
     merged = 0
     seen_drop: set[str] = set()
     for i, (a, b, reason) in enumerate(candidates, 1):
