@@ -1,30 +1,30 @@
 # minecraft_小凋零-wither_LC
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Game
+  - **Game**: #Unknown
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0185 - #滑滑滑纸隐](../README.md)
+- **Name**: #滑滑滑纸隐 | #滑纸隐
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
 - **Author ID**: `0185`
 
-</details>
-
-<details>
-<summary>Co-creator Details</summary>
+## Co-creator
 
 - **Name**: 哥斯拉
-  - **Role**: 设计
-  - **SocialPlatform**: Bilibili: https://space.bilibili.com/17798027
-  - **SupportPlatform**: Afdian: https://afdian.com/a/6TGESILA
+  - **Role**: #设计
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [哥斯拉](https://space.bilibili.com/17798027)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [哥斯拉](https://afdian.com/a/6TGESILA)
 
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

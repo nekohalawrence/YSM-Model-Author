@@ -1,12 +1,21 @@
 # AL_柴郡_Cheshire
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Azur-Lane #AL #碧蓝航线
+- **Category**: #Game
+  - **Game**: #Azur-Lane #AL #碧蓝航线
+
+## Author
+
+- **Name**: 暂无
+
+## Co-creator
 
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

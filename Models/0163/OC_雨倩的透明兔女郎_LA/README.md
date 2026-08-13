@@ -1,20 +1,27 @@
 # OC_雨倩的透明兔女郎_LA
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Original Character #OC #原创角色
+- **Category**: #Original
+  - **Game**: #Original Character #OC #原创角色
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0163 - #Rhein雨倩](../README.md)
+- **Name**: #Rhein雨倩 | #雨倩先生
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [Rhein雨倩](https://space.bilibili.com/35515394)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [Rhein雨倩](https://afdian.com/a/Rheinyuq)
 - **Author ID**: `0163`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

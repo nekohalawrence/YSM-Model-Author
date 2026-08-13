@@ -1,20 +1,25 @@
 # AP_诺诺-Nono
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Azur-Promilia #AP #蓝色星原
+- **Category**: #Game
+  - **Game**: #Azur-Promilia #AP #蓝色星原
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0178 - #qidai](../README.md)
+- **Name**: #qidai | #一点小期待
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [qidai](https://space.bilibili.com/172318031)
 - **Author ID**: `0178`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

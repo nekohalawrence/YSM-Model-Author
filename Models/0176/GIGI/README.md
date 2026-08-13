@@ -1,28 +1,33 @@
 # GIGI
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Unknown
+  - **Game**: #Unknown
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0176 - #Bubuker #rintaroa #Torontopizza #rintaroA](../README.md)
+- **Name**: #Bubuker #rintaroa #Torontopizza #rintaroA
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #YouTube #Twitter
+    - **YouTube**: @rintaroA
+    - **Twitter**: Torontopizza
+  - **OtherPlatform**: #ko-fi
+    - **ko-fi**: rintaroa
+  - **GroupChat**: #Discord
+    - **Discord**: Bubuker
 - **Author ID**: `0176`
 
-</details>
-
-<details>
-<summary>Co-creator Details</summary>
+## Co-creator
 
 - **Name**: Bee
-  - **Role**: Eternal return player
+  - **Role**: #Eternal return player
 
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

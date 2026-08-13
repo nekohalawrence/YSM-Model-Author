@@ -1,29 +1,32 @@
 # AveMujica_若叶睦_LB
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #BanG Dream! Ave Mujica #AveMujica #颂乐人偶
+- **Category**: #Anime
+  - **Game**: #BanG Dream! Ave Mujica #AveMujica #颂乐人偶
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0001 - #02Bunny](../README.md)
+- **Name**: #02Bunny | #蓝玫瑰
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [02Bunny](https://space.bilibili.com/11814817)
+  - **GroupChat**: #QQ
+    - **QQ**: 584570528
 - **Author ID**: `0001`
 
-</details>
-
-<details>
-<summary>Co-creator Details</summary>
+## Co-creator
 
 - **Name**: mo
-  - **Role**: 玩偶素体贡献者
-  - **SocialPlatform**: Bilibili: https://space.bilibili.com/1959304255
+  - **Role**: #玩偶素体贡献者
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [mo](https://space.bilibili.com/1959304255)
 
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

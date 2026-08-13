@@ -1,28 +1,38 @@
 # Unknown_照
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Other
+  - **Game**: #Unknown
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0022 - #Tu_tou](../README.md)
+- **Name**: #Tu_tou
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **GroupChat**: #QQ
+    - **QQ**: 126088260
 - **Author ID**: `0022`
 
-</details>
-
-<details>
-<summary>Co-creator Details</summary>
+## Co-creator
 
 - **Name**: 快乐的小盛子
-  - **Role**: 金主/技术
+  - **Role**: #金主 #技术
 
 - **Name**: 下一只风筝
-  - **Role**: 武器作者
-  - **SocialPlatform**: bilibili: https://space.bilibili.com/281665959?spm_id_from=333.337.0.0
+  - **Role**: #武器作者
+  - **SocialPlatform**: #bilibili
+    - **bilibili**: [下一只风筝](https://space.bilibili.com/281665959?spm_id_from=333.337.0.0)
+
+</details>
+
+## Preview Images
+<details open>
+<summary>Preview Images</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

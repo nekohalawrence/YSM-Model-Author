@@ -13,6 +13,8 @@ INDEX_ROW_RE = re.compile(r'^\|\s*(\d{4})\s*\|\s*\[([^\]]+)\]\(([^)]*)\)\s*\|')
 # 作者字符串分隔符（全/半角）与 "中文(English)" 拆分
 AUTHOR_SPLIT_RE = re.compile(r'[\s|｜,，、;/；]+')
 PAREN_PAIR_RE = re.compile(r'^([^()（）]*)[(（]([^)）]*)[)）]$')
+# 作者 README 中 2 空格缩进的 Role 行（如 "  - **Role**: #模型 #动作 #动画 | ..."）
+ROLE_LINE_RE = re.compile(r'^\s{2}- \*\*Role\*\*\s*[:：]\s*(.+)$')
 # 作者 README 中 4 空格缩进的平台账号行（如 "    - **Bilibili**: [name](url)"）
 PLATFORM_LINE_RE = re.compile(r'^    - \*\*([^*]+)\*\*\s*[:：]\s*(.+)$')
 
@@ -41,6 +43,17 @@ def normalize_alias(s: str) -> str:
     s = s.lstrip('#＃')
     s = s.strip(' 　._-·•\\')
     return s.lower()
+
+
+def extract_author_role(content: str) -> str:
+    """提取 ## Author 段内 Role 行值（避开 Co-creator）；无结果返回空串。"""
+    m = AUTHOR_SECTION_RE.search(content)
+    scope = m.group(1) if m else content
+    for line in scope.splitlines():
+        m2 = ROLE_LINE_RE.match(line)
+        if m2:
+            return m2.group(1).strip()
+    return ''
 
 
 def extract_platforms(content: str) -> dict[str, str]:
@@ -92,6 +105,7 @@ def build_authors_data(models_dir: Path, root_readme: Path) -> dict:
             authors[author_dir.name] = {
                 'name': split_author_names(name_value),
                 'readme': rel_readme,
+                'role': extract_author_role(content),
                 'platforms': extract_platforms(content),
             }
 
@@ -106,6 +120,7 @@ def build_authors_data(models_dir: Path, root_readme: Path) -> dict:
                 authors[author_id] = {
                     'name': split_author_names(m.group(2).strip()),
                     'readme': '',
+                    'role': '',
                     'platforms': {},
                 }
 

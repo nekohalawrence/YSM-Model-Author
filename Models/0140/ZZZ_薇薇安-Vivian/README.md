@@ -1,20 +1,27 @@
 # ZZZ_薇薇安-Vivian
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Zenless-Zone-Zero #ZZZ #绝区零
+- **Category**: #Game
+  - **Game**: #Zenless-Zone-Zero #ZZZ #绝区零
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0140 - #TUTU秃](../README.md)
+- **Name**: #TUTU秃
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [TUTU秃](https://space.bilibili.com/88821626)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [TUTU秃](https://afdian.com/a/tututugongfang)
 - **Author ID**: `0140`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

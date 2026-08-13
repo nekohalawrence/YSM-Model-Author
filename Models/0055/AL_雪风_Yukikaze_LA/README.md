@@ -1,30 +1,34 @@
 # AL_雪风_Yukikaze_LA
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Azur-Lane #AL #碧蓝航线
+- **Category**: #Game
+  - **Game**: #Azur-Lane #AL #碧蓝航线
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0055 - #伊蕾娜家的咸鱼](../README.md)
+- **Name**: #伊蕾娜家的咸鱼
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [伊蕾娜家的咸鱼](https://space.bilibili.com/20682514)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [伊蕾娜家的咸鱼](https://afdian.com/a/elainasaltfish)
 - **Author ID**: `0055`
 
-</details>
-
-<details>
-<summary>Co-creator Details</summary>
+## Co-creator
 
 - **Name**: 星屑海螺
-  - **Role**: 动画
-  - **SocialPlatform**: Bilibili: https://space.bilibili.com/14975572
-  - **SupportPlatform**: Afdian: https://afdian.net/a/lucia2048
+  - **Role**: #动画 | #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [星屑海螺](https://space.bilibili.com/14975572)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [星屑海螺](https://afdian.net/a/lucia2048)
 
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

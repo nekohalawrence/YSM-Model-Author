@@ -1,29 +1,33 @@
 # 菲-公设_LB
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Unknown
+  - **Game**: #Unknown
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0045 - #雾雨波波沙](../README.md)
+- **Name**: #雾雨波波沙
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili #pixiv
+    - **Bilibili**: [雾雨波波沙](https://space.bilibili.com/36761228)
+    - **pixiv**: [雾雨波波沙](https://www.pixiv.net/users/26720481)
+  - **GroupChat**: #QQ
+    - **QQ**: 530621549
 - **Author ID**: `0045`
 
-</details>
-
-<details>
-<summary>Co-creator Details</summary>
+## Co-creator
 
 - **Name**: 狐绒社美工狐白宵燿夜
-  - **Role**: 定制/原画
-  - **SocialPlatform**: Bilibili: https://space.bilibili.com/1422761554
+  - **Role**: #定制 #原画
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [狐绒社美工狐白宵燿夜](https://space.bilibili.com/1422761554)
 
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

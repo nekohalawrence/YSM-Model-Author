@@ -1,20 +1,27 @@
 # DDLC_monika_LC
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Doki-Doki-Literature-Club! #DDLC #心跳文学部！
+- **Category**: #Game
+  - **Game**: #Doki-Doki-Literature-Club! #DDLC #心跳文学部！
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0092 - #菊姥爷](../README.md)
+- **Name**: #菊姥爷
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [菊姥爷](https://space.bilibili.com/376780490)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [菊姥爷](https://afdian.com/a/julaoye)
 - **Author ID**: `0092`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

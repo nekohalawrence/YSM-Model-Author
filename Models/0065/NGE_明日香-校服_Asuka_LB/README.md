@@ -1,20 +1,27 @@
 # NGE_明日香-校服_Asuka_LB
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Neon-Genesis-Evangelion #NGE #EVA #新世纪福音战士
+- **Category**: #Anime
+  - **Game**: #Neon-Genesis-Evangelion #NGE #EVA #新世纪福音战士
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0065 - #烛火的次元宇宙](../README.md)
+- **Name**: #烛火的次元宇宙
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [烛火的次元宇宙](https://space.bilibili.com/57715833)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [烛火的次元宇宙](https://afdian.com/a/zhuhuo)
 - **Author ID**: `0065`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

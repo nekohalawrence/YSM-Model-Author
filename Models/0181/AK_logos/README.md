@@ -1,20 +1,23 @@
 # AK_logos
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Arknights #AK #明日方舟
+- **Category**: #Game
+  - **Game**: #Arknights #AK #明日方舟
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0181 - #北上](../README.md)
+- **Name**: #北上 | #NorthWard
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
 - **Author ID**: `0181`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

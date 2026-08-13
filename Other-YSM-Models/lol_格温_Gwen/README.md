@@ -1,12 +1,21 @@
 # lol_格温_Gwen
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #League of Legends #LOL #英雄联盟
+- **Category**: #Game
+  - **Game**: #League of Legends #LOL #英雄联盟
+
+## Author
+
+- **Name**: 暂无
+
+## Co-creator
 
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

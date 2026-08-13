@@ -1,16 +1,34 @@
 # MGWT_樱羽艾玛
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Magical Girl Witch Trial #MGWT #魔法少女的魔女审判 #魔法少女ノ魔女裁判
+- **Category**: #Game
+  - **Game**: #Magical Girl Witch Trial #MGWT #魔法少女的魔女审判 #魔法少女ノ魔女裁判
+
+## Author
+
+- **Name**: #你个人机cc | #你个人妻cc
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [你个人机cc](https://space.bilibili.com/400763031)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [你个人机cc](https://afdian.com/a/ccnie)
+  - **GroupChat**: #QQ
+    - **QQ**: 1055945725
+- **Author ID**: `0032`
+
+## Co-creator
 
 </details>
 
-<details>
-<summary>Author Details</summary>
+## Preview Images
+<details open>
+<summary>Preview Images</summary>
 
-- **Author**: [#0032 - #你个人机cc](../README.md)
-- **Author ID**: `0032`
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

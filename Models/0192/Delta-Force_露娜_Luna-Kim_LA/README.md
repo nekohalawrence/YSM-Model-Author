@@ -1,33 +1,35 @@
 # Delta-Force_露娜_Luna-Kim_LA
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Delta Force #Delta-Force #三角洲行动
+- **Category**: #Game
+  - **Game**: #Delta Force #Delta-Force #三角洲行动
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0192 - #苏瑞铃](../README.md)
+- **Name**: #苏瑞铃 | #苏瑞铃_official
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [苏瑞铃](https://space.bilibili.com/37942254)
 - **Author ID**: `0192`
 
-</details>
-
-<details>
-<summary>Co-creator Details</summary>
+## Co-creator
 
 - **Name**: 白蛤蜊
-  - **Role**: 素体提供
-  - **SocialPlatform**: bilibili: https://space.bilibili.com/168185637?spm_id_from=333.788.0.0
+  - **Role**: #素体提供
+  - **SocialPlatform**: #bilibili
+    - **bilibili**: [白蛤蜊](https://space.bilibili.com/168185637?spm_id_from=333.788.0.0)
 
 - **Name**: wakareno
-  - **Role**: 部分素材
-  - **SocialPlatform**: bilibili: https://space.bilibili.com/1027850236?spm_id_from=333.337.search-card.all.click
+  - **Role**: #部分素材
+  - **SocialPlatform**: #bilibili
+    - **bilibili**: [wakareno](https://space.bilibili.com/1027850236?spm_id_from=333.337.search-card.all.click)
 
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

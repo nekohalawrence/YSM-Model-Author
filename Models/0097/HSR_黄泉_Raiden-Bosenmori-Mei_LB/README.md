@@ -1,20 +1,23 @@
 # HSR_黄泉_Raiden-Bosenmori-Mei_LB
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Honkai-Star-Rail #HSR #崩坏：星穹铁道
+- **Category**: #Game
+  - **Game**: #Honkai-Star-Rail #HSR #崩坏：星穹铁道
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0097 - #艾雷克亚](../README.md)
+- **Name**: #艾雷克亚
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
 - **Author ID**: `0097`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

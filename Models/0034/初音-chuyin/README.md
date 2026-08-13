@@ -1,20 +1,25 @@
 # 初音-chuyin
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Unknown
+  - **Game**: #Unknown
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0034 - #平衡芝光](../README.md)
+- **Name**: #平衡芝光
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [平衡芝光](https://space.bilibili.com/526319760)
 - **Author ID**: `0034`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

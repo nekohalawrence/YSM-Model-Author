@@ -1,12 +1,21 @@
 # BA_伊草遥香_Igusa-Haruka
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
+- **Category**: #Game
+  - **Game**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
+
+## Author
+
+- **Name**: 暂无
+
+## Co-creator
 
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

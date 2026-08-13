@@ -1,20 +1,27 @@
 # HSR_昔涟_Cyrene
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Honkai-Star-Rail #HSR #崩坏：星穹铁道
+- **Category**: #Game
+  - **Game**: #Honkai-Star-Rail #HSR #崩坏：星穹铁道
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0044 - #韦懦夫斯菲尔](../README.md)
+- **Name**: #韦懦夫斯菲尔 | #汪
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [韦懦夫斯菲尔](https://space.bilibili.com/3546753760496536)
+  - **GroupChat**: #QQ
+    - **QQ**: 624971642
 - **Author ID**: `0044`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

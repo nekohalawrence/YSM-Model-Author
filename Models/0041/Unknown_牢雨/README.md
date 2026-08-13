@@ -1,24 +1,37 @@
 # Unknown_牢雨
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Other
+  - **Game**: #Unknown
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0041 - #提可拉](../README.md)
+- **Name**: #提可拉
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [提可拉](https://space.bilibili.com/326133289)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [提可拉](https://afdian.com/a/6Canim)
+  - **GroupChat**: #QQ
+    - **QQ**: 881921312
 - **Author ID**: `0041`
 
-</details>
-
-<details>
-<summary>Co-creator Details</summary>
+## Co-creator
 
 - **Name**: 牢雨
-  - **Role**: [素材提供及部分动画]
+  - **Role**: #动画 | #Animation
+
+</details>
+
+## Preview Images
+<details open>
+<summary>Preview Images</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

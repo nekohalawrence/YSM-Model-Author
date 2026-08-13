@@ -1,20 +1,27 @@
 # BA_小涂真纪_Konuri-Maki_LB
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
+- **Category**: #Game
+  - **Game**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0001 - #02Bunny](../README.md)
+- **Name**: #02Bunny | #蓝玫瑰
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [02Bunny](https://space.bilibili.com/11814817)
+  - **GroupChat**: #QQ
+    - **QQ**: 584570528
 - **Author ID**: `0001`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

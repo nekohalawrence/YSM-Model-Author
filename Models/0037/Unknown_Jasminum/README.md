@@ -1,25 +1,35 @@
 # Unknown_Jasminum
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Other
+  - **Game**: #Unknown
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0037 - #史莱姆坍缩](../README.md)
+- **Name**: #史莱姆坍缩
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [史莱姆坍缩](https://space.bilibili.com/10547419)
 - **Author ID**: `0037`
 
-</details>
-
-<details>
-<summary>Co-creator Details</summary>
+## Co-creator
 
 - **Name**: Lugiko
-  - **Role**: 像素图绘制
-  - **SocialPlatform**: Bilibili: https://space.bilibili.com/5081476
+  - **Role**: #像素图绘制
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [Lugiko](https://space.bilibili.com/5081476)
+
+</details>
+
+## Preview Images
+<details open>
+<summary>Preview Images</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

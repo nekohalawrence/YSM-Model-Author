@@ -1,20 +1,25 @@
 # BA_圣园未花_Mika-Misono_LA
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
+- **Category**: #Game
+  - **Game**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0000 - #-OMEGAZERO-](../README.md)
+- **Name**: #-OMEGAZERO-
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [-OMEGAZERO-](https://space.bilibili.com/359658906)
 - **Author ID**: `0000`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

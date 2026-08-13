@@ -1,16 +1,32 @@
 # Unknown_馄饨狐狐
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Other
+  - **Game**: #Unknown
+
+## Author
+
+- **Name**: #A_su杏仁
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [A_su杏仁](https://space.bilibili.com/524666730)
+  - **GroupChat**: #QQ
+    - **QQ**: 1019752550
+- **Author ID**: `0066`
+
+## Co-creator
 
 </details>
 
-<details>
-<summary>Author Details</summary>
+## Preview Images
+<details open>
+<summary>Preview Images</summary>
 
-- **Author**: [#0066 - #A_su杏仁](../README.md)
-- **Author ID**: `0066`
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

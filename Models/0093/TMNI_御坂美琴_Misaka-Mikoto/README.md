@@ -1,20 +1,27 @@
 # TMNI_御坂美琴_Misaka-Mikoto
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #A Certain Magical Index #Toaru Majutsu no Index #TMNI #魔法禁书目录 #某魔法的禁书目录 #とある魔術の禁書目録
+- **Category**: #Anime
+  - **Game**: #A Certain Magical Index #Toaru Majutsu no Index #TMNI #魔法禁书目录 #某魔法的禁书目录 #とある魔術の禁書目録
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0093 - #苏依凛](../README.md)
+- **Name**: #苏依凛 | #炽湮
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [苏依凛](https://space.bilibili.com/76987486)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [苏依凛](https://afdian.com/a/supermonsterking)
 - **Author ID**: `0093`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

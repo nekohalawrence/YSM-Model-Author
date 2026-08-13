@@ -1,16 +1,30 @@
 # Unknown_小依狐_LA
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Other
+  - **Game**: #Unknown
+
+## Author
+
+- **Name**: #小多利鸭
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [小多利鸭](https://space.bilibili.com/295570429)
+- **Author ID**: `0079`
+
+## Co-creator
 
 </details>
 
-<details>
-<summary>Author Details</summary>
+## Preview Images
+<details open>
+<summary>Preview Images</summary>
 
-- **Author**: [#0079 - #小多利鸭](../README.md)
-- **Author ID**: `0079`
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

@@ -1,12 +1,21 @@
 # HI3_布洛妮娅_Bronya-Rand
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Honkai-Impact-3 #HI3 #崩坏 3
+- **Category**: #Game
+  - **Game**: #Honkai-Impact-3 #HI3 #崩坏 3
+
+## Author
+
+- **Name**: 暂无
+
+## Co-creator
 
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

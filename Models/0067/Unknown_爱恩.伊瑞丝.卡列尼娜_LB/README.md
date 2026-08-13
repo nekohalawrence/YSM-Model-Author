@@ -1,29 +1,32 @@
 # Unknown_爱恩.伊瑞丝.卡列尼娜_LB
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Other
+  - **Game**: #Unknown
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0067 - #Almeta_owx](../README.md)
+- **Name**: #Almeta_owx
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [Almeta_owx](https://space.bilibili.com/4328692)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [Almeta_owx](https://afdian.com/a/Almeta)
 - **Author ID**: `0067`
 
-</details>
-
-<details>
-<summary>Co-creator Details</summary>
+## Co-creator
 
 - **Name**: 是八一四呐
-  - **Role**: 定制
-  - **SocialPlatform**: Bilibili: https://b23.tv/1Vqx4Wg
+  - **Role**: #定制
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [是八一四呐](https://b23.tv/1Vqx4Wg)
 
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

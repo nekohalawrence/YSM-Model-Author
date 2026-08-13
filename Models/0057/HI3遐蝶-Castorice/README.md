@@ -1,20 +1,27 @@
 # HI3遐蝶-Castorice
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Unknown
+  - **Game**: #Unknown
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0057 - #忆尘yc27](../README.md)
+- **Name**: #忆尘yc27 | #忆尘27
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [忆尘yc27](https://space.bilibili.com/192438862)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [忆尘yc27](https://afdian.com/a/114514aabb)
 - **Author ID**: `0057`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

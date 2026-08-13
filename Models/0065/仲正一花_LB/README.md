@@ -1,29 +1,32 @@
 # 仲正一花_LB
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Unknown
+  - **Game**: #Unknown
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0065 - #烛火的次元宇宙](../README.md)
+- **Name**: #烛火的次元宇宙
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [烛火的次元宇宙](https://space.bilibili.com/57715833)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [烛火的次元宇宙](https://afdian.com/a/zhuhuo)
 - **Author ID**: `0065`
 
-</details>
-
-<details>
-<summary>Co-creator Details</summary>
+## Co-creator
 
 - **Name**: 烛火的次元宇宙
-  - **Role**: 动画
-  - **SocialPlatform**: Bilibili: https://space.bilibili.com/57715833?spm_id_from=333.1007.0.0
+  - **Role**: #动画 | #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [烛火的次元宇宙](https://space.bilibili.com/57715833?spm_id_from=333.1007.0.0)
 
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

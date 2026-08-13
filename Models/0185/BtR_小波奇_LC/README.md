@@ -1,20 +1,23 @@
 # BtR_小波奇_LC
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Bocchi-the-Rock! #BtR #孤独摇滚！
+- **Category**: #Anime
+  - **Game**: #Bocchi-the-Rock! #BtR #孤独摇滚！
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0185 - #滑滑滑纸隐](../README.md)
+- **Name**: #滑滑滑纸隐 | #滑纸隐
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
 - **Author ID**: `0185`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

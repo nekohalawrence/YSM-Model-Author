@@ -1,20 +1,25 @@
 # MyGO_高松燈_LB
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #BanG Dream! It's MyGO!!!!! #MyGO #迷途之子！！！！！
+- **Category**: #Anime
+  - **Game**: #BanG Dream! It's MyGO!!!!! #MyGO #迷途之子！！！！！
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0078 - #LuXi233](../README.md)
+- **Name**: #LuXi233 | #小早川希
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [LuXi233](https://space.bilibili.com/183485702)
 - **Author ID**: `0078`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

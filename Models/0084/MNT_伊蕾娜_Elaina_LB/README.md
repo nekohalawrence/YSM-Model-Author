@@ -1,20 +1,27 @@
 # MNT_伊蕾娜_Elaina_LB
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Majo no Tabitabim #MNT #魔女之旅 #魔女の旅々 #まじょのたびたび
+- **Category**: #Anime
+  - **Game**: #Majo no Tabitabim #MNT #魔女之旅 #魔女の旅々 #まじょのたびたび
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0084 - #幻古诗](../README.md)
+- **Name**: #幻古诗
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [幻古诗](https://space.bilibili.com/443702321)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [幻古诗](https://afdian.com/a/huangushi)
 - **Author ID**: `0084`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

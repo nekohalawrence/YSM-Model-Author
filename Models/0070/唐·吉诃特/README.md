@@ -1,20 +1,27 @@
 # 唐·吉诃特
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Unknown
+  - **Game**: #Unknown
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0070 - #Dashcode](../README.md)
+- **Name**: #Dashcode | #ASHES356
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [Dashcode](https://space.bilibili.com/51204057)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [Dashcode](https://afdian.com/a/ashes356)
 - **Author ID**: `0070`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

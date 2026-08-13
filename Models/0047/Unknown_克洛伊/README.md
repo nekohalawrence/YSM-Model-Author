@@ -1,25 +1,37 @@
 # Unknown_克洛伊
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Other
+  - **Game**: #Unknown
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0047 - #Nicy_奈汐](../README.md)
+- **Name**: #Nicy_奈汐 | #苏溟0w0 | #沐星喵OwO
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [Nicy_奈汐](https://space.bilibili.com/3494363390806334)
+  - **GroupChat**: #QQ
+    - **QQ**: 743807609
 - **Author ID**: `0047`
 
-</details>
-
-<details>
-<summary>Co-creator Details</summary>
+## Co-creator
 
 - **Name**: MicroCraft
-  - **Role**: molang/动画
-  - **SocialPlatform**: Bilibili: https://space.bilibili.com/701974112
+  - **Role**: #molang #动画 | #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [MicroCraft](https://space.bilibili.com/701974112)
+
+</details>
+
+## Preview Images
+<details open>
+<summary>Preview Images</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

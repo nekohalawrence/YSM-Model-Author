@@ -1,16 +1,32 @@
 # BA_星野_Hoshino
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
+- **Category**: #Game
+  - **Game**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
+
+## Author
+
+- **Name**: #伊洛是哥斯拉嘛 #伊洛是哥斯拉吗 | #哥斯拉 | #落阳不养羊 | #黎家诚 | #BradKidd
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [伊洛是哥斯拉嘛 #伊洛是哥斯拉吗](https://space.bilibili.com/17798027)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [伊洛是哥斯拉嘛 #伊洛是哥斯拉吗](https://afdian.com/a/6TGESILA)
+- **Author ID**: `0056`
+
+## Co-creator
 
 </details>
 
-<details>
-<summary>Author Details</summary>
+## Preview Images
+<details open>
+<summary>Preview Images</summary>
 
-- **Author**: [#0056 - #伊洛是哥斯拉嘛 #伊洛是哥斯拉吗](../README.md)
-- **Author ID**: `0056`
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

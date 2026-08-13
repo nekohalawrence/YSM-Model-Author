@@ -1,33 +1,37 @@
 # GI_纳西妲-草神_Nahida_LB
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Genshin Impact #Genshin #GI #原神
+- **Category**: #Game
+  - **Game**: #Genshin Impact #Genshin #GI #原神
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0058 - #艺方像素](../README.md)
+- **Name**: #艺方像素 | #艺方堂 | #尻 | #艺方坊 | #艺方阁
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [艺方像素](https://space.bilibili.com/107318873)
+  - **GroupChat**: #QQ
+    - **QQ**: 1320812591
 - **Author ID**: `0058`
 
-</details>
-
-<details>
-<summary>Co-creator Details</summary>
+## Co-creator
 
 - **Name**: 艺方像素
-  - **Role**: 特效动作
-  - **SocialPlatform**: Bilibili: https://space.bilibili.com/107318873
-  - **OtherPlatform**: 艺方直联QQ（投诉建议咨询）: 1320812591
+  - **Role**: #动作 | #Motion
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [艺方像素](https://space.bilibili.com/107318873)
+  - **OtherPlatform**: #艺方直联QQ（投诉建议咨询）
+    - **艺方直联QQ（投诉建议咨询）**: 1320812591
 
 - **Name**: 终离
-  - **Role**: 赞助
+  - **Role**: #赞助
 
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

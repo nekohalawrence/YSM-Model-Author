@@ -1,31 +1,33 @@
 # Magia-Record_濑奈命_Sena-Mikoto_LB
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Magia Record: Puella Magi Madoka Magica Side Story #Magia-Record #魔法纪录 魔法少女小圆外传 #マギアレコード 魔法少女まどか☆マギカ外伝
+- **Category**: #Game
+  - **Game**: #Magia Record: Puella Magi Madoka Magica Side Story #Magia-Record #魔法纪录 魔法少女小圆外传 #マギアレコード 魔法少女まどか☆マギカ外伝
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0058 - #艺方像素](../README.md)
+- **Name**: #艺方像素 | #艺方堂 | #尻 | #艺方坊 | #艺方阁
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [艺方像素](https://space.bilibili.com/107318873)
+  - **GroupChat**: #QQ
+    - **QQ**: 1320812591
 - **Author ID**: `0058`
 
-</details>
-
-<details>
-<summary>Co-creator Details</summary>
+## Co-creator
 
 - **Name**: 艺方坊
-  - **Role**: 售后服务
+  - **Role**: #售后服务
 
 - **Name**: 艺方阁
-  - **Role**: 定制咨询
+  - **Role**: #定制咨询
 
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

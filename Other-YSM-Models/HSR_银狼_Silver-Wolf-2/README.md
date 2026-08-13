@@ -1,12 +1,21 @@
 # HSR_银狼_Silver-Wolf-2
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Honkai-Star-Rail #HSR #崩坏：星穹铁道
+- **Category**: #Game
+  - **Game**: #Honkai-Star-Rail #HSR #崩坏：星穹铁道
+
+## Author
+
+- **Name**: 暂无
+
+## Co-creator
 
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

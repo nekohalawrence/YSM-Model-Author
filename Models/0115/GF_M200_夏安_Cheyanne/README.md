@@ -1,20 +1,23 @@
 # GF_M200_夏安_Cheyanne
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Girls' Frontline #GF #少女前线
+- **Category**: #Game
+  - **Game**: #Girls' Frontline #GF #少女前线
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0115 - #荒漠](../README.md)
+- **Name**: #荒漠
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
 - **Author ID**: `0115`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

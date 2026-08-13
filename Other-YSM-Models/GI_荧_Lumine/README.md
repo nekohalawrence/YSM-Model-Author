@@ -1,12 +1,21 @@
 # GI_荧_Lumine
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Genshin Impact #Genshin #GI #原神
+- **Category**: #Game
+  - **Game**: #Genshin Impact #Genshin #GI #原神
+
+## Author
+
+- **Name**: 暂无
+
+## Co-creator
 
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

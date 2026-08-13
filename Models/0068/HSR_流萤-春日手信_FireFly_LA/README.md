@@ -1,30 +1,34 @@
 # HSR_流萤-春日手信_FireFly_LA
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Honkai-Star-Rail #HSR #崩坏：星穹铁道
+- **Category**: #Game
+  - **Game**: #Honkai-Star-Rail #HSR #崩坏：星穹铁道
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0068 - #AnluoSakura](../README.md)
+- **Name**: #AnluoSakura
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [AnluoSakura](https://space.bilibili.com/1275761002)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [AnluoSakura](https://afdian.com/a/AnluoSakura)
 - **Author ID**: `0068`
 
-</details>
-
-<details>
-<summary>Co-creator Details</summary>
+## Co-creator
 
 - **Name**: 安洛樱
-  - **Role**: 动画
-  - **SocialPlatform**: Bilibili: https://space.bilibili.com/1275761002?spm_id_from=333.1007.0.0
-  - **SupportPlatform**: Afdian: https://afdian.com/a/AnluoSakura
+  - **Role**: #动画 | #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [安洛樱](https://space.bilibili.com/1275761002?spm_id_from=333.1007.0.0)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [安洛樱](https://afdian.com/a/AnluoSakura)
 
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

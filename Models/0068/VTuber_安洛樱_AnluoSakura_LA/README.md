@@ -1,20 +1,27 @@
 # VTuber_安洛樱_AnluoSakura_LA
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Virtual YouTuber #VTuber #虚拟主播 #バーチャルユーチューバー
+- **Category**: #Music
+  - **Game**: #Virtual YouTuber #VTuber #虚拟主播 #バーチャルユーチューバー
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0068 - #AnluoSakura](../README.md)
+- **Name**: #AnluoSakura
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [AnluoSakura](https://space.bilibili.com/1275761002)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [AnluoSakura](https://afdian.com/a/AnluoSakura)
 - **Author ID**: `0068`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

@@ -1,20 +1,29 @@
 # 友利奈绪
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Unknown
+  - **Game**: #Unknown
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0032 - #你个人机cc](../README.md)
+- **Name**: #你个人机cc | #你个人妻cc
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [你个人机cc](https://space.bilibili.com/400763031)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [你个人机cc](https://afdian.com/a/ccnie)
+  - **GroupChat**: #QQ
+    - **QQ**: 1055945725
 - **Author ID**: `0032`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

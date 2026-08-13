@@ -1,33 +1,37 @@
 # Unknown_玛修·基列莱特
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Other
+  - **Game**: #Unknown
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0052 - #゚烟雨画桥](../README.md)
+- **Name**: #゚烟雨画桥
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [゚烟雨画桥](https://space.bilibili.com/1268865161)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [゚烟雨画桥](https://afdian.com/a/mj204)
 - **Author ID**: `0052`
 
-</details>
-
-<details>
-<summary>Co-creator Details</summary>
+## Co-creator
 
 - **Name**: 烟雨画桥
-  - **Role**: 物理/粒子插件作者
-  - **SocialPlatform**: Bilibili: https://space.bilibili.com/1268865161
+  - **Role**: #物理 #粒子插件作者
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [烟雨画桥](https://space.bilibili.com/1268865161)
 
 - **Name**: shercoo
-  - **Role**: 物理
-  - **SocialPlatform**: Bilibili: https://space.bilibili.com/14599323
+  - **Role**: #物理
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [shercoo](https://space.bilibili.com/14599323)
 
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

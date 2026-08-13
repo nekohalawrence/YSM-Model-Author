@@ -1,20 +1,27 @@
 # 橘希望-Tachibana_Nozomi
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Unknown
+  - **Game**: #Unknown
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0152 - #wwww琨](../README.md)
+- **Name**: #wwww琨
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [wwww琨](https://space.bilibili.com/99065359)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [wwww琨](https://afdian.com/a/wwwwkun)
 - **Author ID**: `0152`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

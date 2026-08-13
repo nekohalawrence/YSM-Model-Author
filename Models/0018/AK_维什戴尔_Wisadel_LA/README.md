@@ -1,20 +1,29 @@
 # AK_维什戴尔_Wisadel_LA
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Arknights #AK #明日方舟
+- **Category**: #Game
+  - **Game**: #Arknights #AK #明日方舟
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0018 - #夹心果风](../README.md)
+- **Name**: #夹心果风
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [夹心果风](https://space.bilibili.com/178099567)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [夹心果风](https://afdian.com/a/jxgf2077)
+  - **GroupChat**: #QQ
+    - **QQ**: 916346960
 - **Author ID**: `0018`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

@@ -1,29 +1,30 @@
 # BA_生盐诺亚_Ushio-Noa
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
+- **Category**: #Game
+  - **Game**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0147 - #清晨的一阵风](../README.md)
+- **Name**: #清晨的一阵风
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [清晨的一阵风](https://space.bilibili.com/510956578)
 - **Author ID**: `0147`
 
-</details>
-
-<details>
-<summary>Co-creator Details</summary>
+## Co-creator
 
 - **Name**: 生盐诺亚
-  - **Role**: 精神支持！
-  - **SocialPlatform**: Bilibili: https://space.bilibili.com/510956578
+  - **Role**: #精神支持！
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [生盐诺亚](https://space.bilibili.com/510956578)
 
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

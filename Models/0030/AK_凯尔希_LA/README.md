@@ -1,36 +1,41 @@
 # AK_凯尔希_LA
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Arknights #AK #明日方舟
+- **Category**: #Game
+  - **Game**: #Arknights #AK #明日方舟
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0030 - #嗯嗯owo](../README.md)
+- **Name**: #嗯嗯owo
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili #YouTube
+    - **Bilibili**: [嗯嗯owo](https://space.bilibili.com/167202500)
+    - **YouTube**: [嗯嗯owo](https://space.bilibili.com/167202500)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [嗯嗯owo](https://afdian.com/a/enenowo)
 - **Author ID**: `0030`
 
-</details>
-
-<details>
-<summary>Co-creator Details</summary>
+## Co-creator
 
 - **Name**: 嗯嗯owo
-  - **Role**: 材质
+  - **Role**: #贴图 | #Texture
 
 - **Name**: 嗯嗯owo
-  - **Role**: 动画
+  - **Role**: #动画 | #Animation
 
 - **Name**: 失踪的李元
-  - **Role**: 召唤m3菱形结构材质
-  - **SocialPlatform**: Bilibili: https://space.bilibili.com/505613984?spm_id_from=333.337.0.0
-  - **SupportPlatform**: Afdian: no
+  - **Role**: #贴图 | #Texture
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [失踪的李元](https://space.bilibili.com/505613984?spm_id_from=333.337.0.0)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: no
 
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

@@ -1,28 +1,26 @@
 # AK_迷迭香_Rosmontis_nsfw_LB
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Arknights #AK #明日方舟
+- **Category**: #Game
+  - **Game**: #Arknights #AK #明日方舟
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0188 - #鸢尾](../README.md)
+- **Name**: #鸢尾
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
 - **Author ID**: `0188`
 
-</details>
-
-<details>
-<summary>Co-creator Details</summary>
+## Co-creator
 
 - **Name**: 雒仁
-  - **Role**: 映素5代素体
+  - **Role**: #映素5代素体
 
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

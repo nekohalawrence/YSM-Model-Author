@@ -140,21 +140,27 @@ def classify_authors(author_blocks: list[dict]) -> tuple[dict | None, list[dict]
 
 # ---------------------------------------------------------------------------
 # 平台信息：contacts -> README 模板字段（SocialPlatform/SupportPlatform/...）
+# 数据文件结构：{分类: [平台键...]}（分类为键、平台键列表为值），脚本反查归类。
 # ---------------------------------------------------------------------------
-def load_platform_map(root: Path | None = None) -> dict[str, str]:
-    """平台键(小写) -> README 字段 的映射，数据文件可手工修改。"""
+def load_platform_map(root: Path | None = None) -> dict[str, list[str]]:
+    """读取平台分类映射（{分类: [平台键...]}），平台键统一小写，数据文件可手工修改。"""
     data = lib_paths.load_json(_meta_path(root, 'platform_map.json'), {})
-    return {str(k).lower(): str(v) for k, v in data.items()}
+    return {str(field): [str(k).lower() for k in aliases]
+            for field, aliases in data.items()}
 
 
-def map_platforms(contacts: dict[str, str], platform_map: dict[str, str]) -> dict[str, list[str]]:
+def map_platforms(contacts: dict[str, str],
+                  platform_map: dict[str, list[str]]) -> dict[str, list[str]]:
     """把 ysm 的 <contact-X> 映射为 README 模板字段（SocialPlatform/SupportPlatform/
-    OtherPlatform/GroupChat -> [值列表]）；未映射的平台归入 OtherPlatform。"""
+    OtherPlatform/GroupChat -> [值列表]）。platform_map 为 {分类: [平台键...]}，
+    反查平台键归属；未映射的平台归入 OtherPlatform。"""
+    reverse: dict[str, str] = {}
+    for field, aliases in platform_map.items():
+        for alias in aliases:
+            reverse.setdefault(alias, field)
     mapped: dict[str, list[str]] = {}
     for key, val in contacts.items():
-        field = platform_map.get(key.strip().lower())
-        if not field:
-            field = 'OtherPlatform'
+        field = reverse.get(key.strip().lower(), 'OtherPlatform')
         mapped.setdefault(field, [])
         line = f'{key.strip()}: {val}' if key.strip() else val
         if line not in mapped[field]:

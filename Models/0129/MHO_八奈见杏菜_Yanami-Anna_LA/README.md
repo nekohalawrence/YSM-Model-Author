@@ -1,20 +1,27 @@
 # MHO_八奈见杏菜_Yanami-Anna_LA
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Make Heroine ga Oosugiru! #MHO #負けヒロインが多すぎる！
+- **Category**: #Anime
+  - **Game**: #Make Heroine ga Oosugiru! #MHO #負けヒロインが多すぎる！
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0129 - #Dr观星](../README.md)
+- **Name**: #Dr观星 | #Dr-观星
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [Dr观星](https://space.bilibili.com/157282636)
+  - **GroupChat**: #QQ
+    - **QQ**: 1087347018
 - **Author ID**: `0129`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

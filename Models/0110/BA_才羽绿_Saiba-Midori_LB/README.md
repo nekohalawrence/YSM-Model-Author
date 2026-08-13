@@ -1,20 +1,25 @@
 # BA_才羽绿_Saiba-Midori_LB
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
+- **Category**: #Game
+  - **Game**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0110 - #Nona_reeves](../README.md)
+- **Name**: #Nona_reeves | #Nona-Reeves
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **GroupChat**: #QQ
+    - **QQ**: 1926615510
 - **Author ID**: `0110`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

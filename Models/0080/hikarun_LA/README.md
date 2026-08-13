@@ -1,20 +1,25 @@
 # hikarun_LA
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Unknown
+  - **Game**: #Unknown
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0080 - #Nona_Reeves](../README.md)
+- **Name**: #Nona_Reeves
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **GroupChat**: #QQ
+    - **QQ**: 1926615510
 - **Author ID**: `0080`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

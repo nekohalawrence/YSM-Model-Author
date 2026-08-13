@@ -1,16 +1,32 @@
 # Unknown_吹雪
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Other
+  - **Game**: #Unknown
+
+## Author
+
+- **Name**: #獒子coco | #獒子酱的杂货店 | #獒子獒子獒
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [獒子coco](https://space.bilibili.com/19140392)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [獒子coco](https://afdian.com/a/AOZICOCO)
+- **Author ID**: `0101`
+
+## Co-creator
 
 </details>
 
-<details>
-<summary>Author Details</summary>
+## Preview Images
+<details open>
+<summary>Preview Images</summary>
 
-- **Author**: [#0101 - #獒子coco](../README.md)
-- **Author ID**: `0101`
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

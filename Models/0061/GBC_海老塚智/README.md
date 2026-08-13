@@ -1,29 +1,34 @@
 # GBC_海老塚智
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Girls Band Cry #GBC #哭泣少女乐队
+- **Category**: #Anime
+  - **Game**: #Girls Band Cry #GBC #哭泣少女乐队
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0061 - #狱际星芒](../README.md)
+- **Name**: #狱际星芒
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [狱际星芒](https://space.bilibili.com/349150095)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [狱际星芒](https://afdian.com/a/3256286845xingmang)
+  - **GroupChat**: #QQ
+    - **QQ**: 218129003
 - **Author ID**: `0061`
 
-</details>
-
-<details>
-<summary>Co-creator Details</summary>
+## Co-creator
 
 - **Name**: 窝窝头
-  - **Role**: 动作
-  - **SocialPlatform**: bilibili: https://space.bilibili.com/357608680
+  - **Role**: #动作 | #Motion
+  - **SocialPlatform**: #bilibili
+    - **bilibili**: [窝窝头](https://space.bilibili.com/357608680)
 
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

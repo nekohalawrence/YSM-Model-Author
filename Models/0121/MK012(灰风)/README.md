@@ -1,20 +1,27 @@
 # MK012(灰风)
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Unknown
+  - **Game**: #Unknown
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0121 - #准尉werner](../README.md)
+- **Name**: #准尉werner
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [准尉werner](https://space.bilibili.com/23427031)
+  - **GroupChat**: #QQ
+    - **QQ**: 1102665952
 - **Author ID**: `0121`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

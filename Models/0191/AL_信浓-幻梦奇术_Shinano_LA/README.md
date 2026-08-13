@@ -1,20 +1,23 @@
 # AL_信浓-幻梦奇术_Shinano_LA
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Azur-Lane #AL #碧蓝航线
+- **Category**: #Game
+  - **Game**: #Azur-Lane #AL #碧蓝航线
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0191 - #新隆肰懿](../README.md)
+- **Name**: #新隆肰懿
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
 - **Author ID**: `0191`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

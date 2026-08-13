@@ -62,18 +62,18 @@
 
 | 目录 | 用途 | 文件 | 读写方 |
 | --- | --- | --- | --- |
-| `templates/` | 网站 / README 模板 | `website_template.html` | build_site.py |
-| `knowledge/` | 命名知识库 | `works.json`、`aliases.json`、`merge_skips.json`、`roles/*.json` | kb_tool.py（写）、rename_model_folders.py（经 kb_tool 读） |
-| `meta/` | 共享元数据 | `authors.json`（build_authors_index 写，5 个脚本读）、`models_meta.json`（按需生成，organize_models 写 / generate_model_readmes 读）、`platform_map.json`（organize_models 读） | build_authors_index / organize_models / generate_model_readmes / format_author_readme / build_readme_authors |
-| `schemas/` | 数据契约（JSON Schema） | 7 个 `.schema.json` | lib/validate.py（校验，经 `cli.py check`） |
+| `templates/` | 网站 / README 模板 | `website_template.html`、`model_readme.template.json`（模型 README 结构，由 _Template/ 转化） | build_site.py / generate_model_readmes.py |
+| `knowledge/` | 命名知识库 | `works.json`、`aliases.json`、`merge_skips.json`、`roles/*.json`、`category_map.json`（作品→大类）、`role_terms.json`（角色术语） | kb_tool.py（写）、rename_model_folders.py（经 kb_tool 读）、generate_model_readmes.py / lib/terms.py（读） |
+| `meta/` | 共享元数据 | `authors.json`（build_authors_index 写，5 个脚本读）、`models_meta.json`（按需生成）、`platform_map.json`（**分类为键 → 平台键列表为值**，lib/ysm 反查归类） | build_authors_index / organize_models / generate_model_readmes / format_author_readme / build_readme_authors / lib/ysm |
+| `schemas/` | 数据契约（JSON Schema） | 9 个 `.schema.json` | lib/validate.py（校验，经 `cli.py check`） |
 
 > `config/` 已删除（曾为空占位目录，无真实配置；将来需要配置层时再建）。
 
 **作者数据规范**：`meta/authors.json` 是作者信息的唯一事实来源，结构为
-`{version, generated, authors: {编号: {name: [规范名, ...别名], readme, platforms}}}`；
-`name` 为数组，首项为规范名；由 `build_authors_index.py` 生成（自动清洗 Name 中的
-Markdown 链接污染），其他脚本一律经 `lib.readme.load_authors_index()` 读取
-（缺失时回退到各自旧扫描逻辑）。
+`{version, generated, authors: {编号: {name: [规范名, ...别名], readme, role, platforms}}}`；
+`name` 为数组，首项为规范名；`role` 为作者 Role 标签（标准中英格式，可选）；由
+`build_authors_index.py` 生成（自动清洗 Name 中的 Markdown 链接污染），其他脚本一律经
+`lib.readme.load_authors_index()` 读取（缺失时回退到各自旧扫描逻辑）。
 
 脚本统一通过 `lib.paths.data_path('meta', 'xxx.json')` 等读写，不得硬编码路径；
 存在 `root` 参数（如 `organize_models --root`）时数据路径优先跟随 root（测试/临时仓库场景）。

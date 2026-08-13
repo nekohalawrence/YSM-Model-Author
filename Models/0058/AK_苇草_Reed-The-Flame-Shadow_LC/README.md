@@ -1,20 +1,27 @@
 # AK_苇草_Reed-The-Flame-Shadow_LC
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Arknights #AK #明日方舟
+- **Category**: #Game
+  - **Game**: #Arknights #AK #明日方舟
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0058 - #艺方像素](../README.md)
+- **Name**: #艺方像素 | #艺方堂 | #尻 | #艺方坊 | #艺方阁
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [艺方像素](https://space.bilibili.com/107318873)
+  - **GroupChat**: #QQ
+    - **QQ**: 1320812591
 - **Author ID**: `0058`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

@@ -1,20 +1,27 @@
 # GF_KP31_索米_Suomi
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Girls' Frontline #GF #少女前线
+- **Category**: #Game
+  - **Game**: #Girls' Frontline #GF #少女前线
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0145 - #咕咕鸡](../README.md)
+- **Name**: #咕咕鸡 | #咕咕叫的小菜鸡
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [咕咕鸡](https://space.bilibili.com/11989730)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [咕咕鸡](https://afdian.com/a/GuGuChicken)
 - **Author ID**: `0145`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

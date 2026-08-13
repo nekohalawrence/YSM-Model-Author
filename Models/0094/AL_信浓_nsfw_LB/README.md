@@ -1,20 +1,27 @@
 # AL_信浓_nsfw_LB
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Azur-Lane #AL #碧蓝航线
+- **Category**: #Game
+  - **Game**: #Azur-Lane #AL #碧蓝航线
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0094 - #墨染逝羽](../README.md)
+- **Name**: #墨染逝羽 | #Feather_aya
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [墨染逝羽](https://space.bilibili.com/5718046)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [墨染逝羽](https://afdian.com/a/FliegeSA)
 - **Author ID**: `0094`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

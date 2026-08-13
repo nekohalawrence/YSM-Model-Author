@@ -1,20 +1,27 @@
 # HSR_幻胧-Phantylia
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Honkai-Star-Rail #HSR #崩坏：星穹铁道
+- **Category**: #Game
+  - **Game**: #Honkai-Star-Rail #HSR #崩坏：星穹铁道
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0157 - #Deovolente](../README.md)
+- **Name**: #Deovolente | #GhastRiv
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [Deovolente](https://space.bilibili.com/188295)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [Deovolente](https://afdian.com/a/Deovolente)
 - **Author ID**: `0157`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

@@ -1,20 +1,27 @@
 # Unknown_J10
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Other
+  - **Game**: #Unknown
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0049 - #星语TAT](../README.md)
+- **Name**: #星语TAT
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [星语TAT](https://space.bilibili.com/316739550)
+  - **GroupChat**: #QQ
+    - **QQ**: 1039376704
 - **Author ID**: `0049`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

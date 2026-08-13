@@ -1,20 +1,25 @@
 # Unknown_重装战姬爱塔
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Other
+  - **Game**: #Unknown
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0009 - #白亚奈Anay](../README.md)
+- **Name**: #白亚奈Anay
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [白亚奈Anay](https://space.bilibili.com/454110884)
 - **Author ID**: `0009`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

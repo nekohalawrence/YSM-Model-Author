@@ -1,0 +1,30 @@
+{
+  "Game": [
+    "300-Heroes", "AH", "AIRI", "AK", "AKE", "AL", "AP", "ASE", "Ash-Arms",
+    "AstralParty", "BA", "BF-1", "CNC", "DDLC", "DFO", "DOA", "DOHNA", "DR",
+    "Delta-Force", "FGO", "Food Girls", "GCG", "GF", "GF2", "GI", "Granblue",
+    "HDN", "HI3", "HNM", "HSR", "Identity-V", "LC", "LOL", "LOR", "LoveMe",
+    "MGC", "MGWT", "Magia-Record", "MiSide", "Minecraft", "NEKOPARA", "NEO",
+    "NTE", "Naga-u", "Nikke", "PGR", "PVZ", "R6S", "RA2", "RA3", "Red",
+    "SakuraMoyu", "SENREN", "Snowbreak", "Strinova", "Sun Shower", "TF",
+    "Tenshi", "TSK", "Touhou", "UmaMusume", "Undertale", "WW", "YogYard",
+    "ZH", "ZZZ"
+  ],
+  "Anime": [
+    "AveMujica", "BRS", "BtR", "Cardcaptor", "DAL", "FSM", "Fate", "Frieren",
+    "GBC", "GBTT", "HLP", "HNTSADL", "JJK", "Kisekoi", "KonoSuba", "LCOD",
+    "Madoka", "MHO", "MKDM", "MKZ", "MNT", "MSNS", "MushokuTensei", "MyGO",
+    "NAR", "NGE", "ONIMAI", "PNF", "PTE", "RDND", "ROH", "ReZero",
+    "Ringing-Fate", "SAO", "SPY×FAMILY", "SSW", "Saekano", "Steins-Gate",
+    "TFD", "TMNI", "To-LOVE-Ru", "Tokyo-Ghoul", "UT", "YNS"
+  ],
+  "Music": [
+    "VOC", "Utau", "VTuber"
+  ],
+  "Original": [
+    "OC"
+  ],
+  "Other": [
+    "Animal", "Meme", "Mochiyama Kingyo", "Myth", "RI", "Real", "Unknown"
+  ]
+}

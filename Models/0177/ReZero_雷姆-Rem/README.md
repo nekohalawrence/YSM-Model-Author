@@ -1,20 +1,27 @@
 # ReZero_雷姆-Rem
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Anime
+  - **Game**: #Unknown
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0177 - #永夜极星_official](../README.md)
+- **Name**: #永夜极星_official | #永夜极星
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [永夜极星_official](https://space.bilibili.com/504612792)
+  - **GroupChat**: #QQ
+    - **QQ**: 1909319978
 - **Author ID**: `0177`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

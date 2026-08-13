@@ -1,20 +1,29 @@
 # BA_飞鸟马时_Toki
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
+- **Category**: #Game
+  - **Game**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0048 - #星屑海螺](../README.md)
+- **Name**: #星屑海螺 | #磁小轨制作组（星屑海螺） | #不是海螺
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [星屑海螺](https://space.bilibili.com/14975572)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [星屑海螺](https://afdian.com/a/lucia2048)
+  - **GroupChat**: #QQ
+    - **QQ**: 682546342
 - **Author ID**: `0048`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

@@ -1,30 +1,36 @@
 # Alice-in-Wonderland_Alice
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Unknown
+  - **Game**: #Unknown
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0136 - #Fllz](../README.md)
+- **Name**: #Fllz
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Pixiv
+    - **Pixiv**: [Fllz](https://www.pixiv.net/users/34822407)
+  - **OtherPlatform**: #Facebook #VGen
+    - **Facebook**: [Fllz](https://www.facebook.com/asche.scheer)
+    - **VGen**: [Fllz](https://vgen.co/fllz)
 - **Author ID**: `0136`
 
-</details>
-
-<details>
-<summary>Co-creator Details</summary>
+## Co-creator
 
 - **Name**: Fllz
-  - **Role**: Author
-  - **OtherPlatform**: Linktree: https://linktr.ee/fllz | Vgen: https://vgen.co/fllz
-  - **GroupChat**: Discord: fllz
+  - **Role**: #模型 | #Model
+  - **OtherPlatform**: #Linktree #Vgen
+    - **Linktree**: [Fllz](https://linktr.ee/fllz)
+    - **Vgen**: [Fllz](https://vgen.co/fllz)
+  - **GroupChat**: #Discord
+    - **Discord**: fllz
 
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

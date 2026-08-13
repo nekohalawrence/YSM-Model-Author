@@ -1,34 +1,37 @@
 # Niya
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Unknown
+  - **Game**: #Unknown
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0096 - #Kria月明](../README.md)
+- **Name**: #Kria月明
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [Kria月明](https://space.bilibili.com/182808322)
 - **Author ID**: `0096`
 
-</details>
-
-<details>
-<summary>Co-creator Details</summary>
+## Co-creator
 
 - **Name**: 星屑海螺
-  - **Role**: 动画
-  - **SocialPlatform**: Bilibili: https://space.bilibili.com/14975572
-  - **SupportPlatform**: Afdian: https://afdian.com/a/lucia2048
+  - **Role**: #动画 | #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [星屑海螺](https://space.bilibili.com/14975572)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [星屑海螺](https://afdian.com/a/lucia2048)
 
 - **Name**: 祸御神
-  - **Role**: 动画
-  - **SocialPlatform**: Bilibili: https://space.bilibili.com/164557734
+  - **Role**: #动画 | #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [祸御神](https://space.bilibili.com/164557734)
 
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

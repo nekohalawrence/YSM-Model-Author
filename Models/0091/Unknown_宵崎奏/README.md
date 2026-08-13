@@ -1,16 +1,30 @@
 # Unknown_宵崎奏
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Other
+  - **Game**: #Unknown
+
+## Author
+
+- **Name**: #trita
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **GroupChat**: #QQ
+    - **QQ**: 3490790346
+- **Author ID**: `0091`
+
+## Co-creator
 
 </details>
 
-<details>
-<summary>Author Details</summary>
+## Preview Images
+<details open>
+<summary>Preview Images</summary>
 
-- **Author**: [#0091 - #trita](../README.md)
-- **Author ID**: `0091`
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

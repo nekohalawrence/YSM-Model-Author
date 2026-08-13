@@ -1,20 +1,25 @@
 # 小鳥遊六花-Chuunibyou_Takanashi-Rikka
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Unknown
+  - **Game**: #Unknown
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0025 - #绫独之落](../README.md)
+- **Name**: #绫独之落
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [绫独之落](https://space.bilibili.com/39655169)
 - **Author ID**: `0025`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

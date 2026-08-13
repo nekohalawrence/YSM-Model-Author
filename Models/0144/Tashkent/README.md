@@ -1,20 +1,27 @@
 # Tashkent
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Unknown
+  - **Game**: #Unknown
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0144 - #叁雫MitsukuDayo](../README.md)
+- **Name**: #叁雫MitsukuDayo
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [叁雫MitsukuDayo](https://afdian.com/a/MitsukuDayo)
+  - **GroupChat**: #QQ
+    - **QQ**: 2780077625
 - **Author ID**: `0144`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

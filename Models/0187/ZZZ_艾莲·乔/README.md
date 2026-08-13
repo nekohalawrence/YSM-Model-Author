@@ -1,20 +1,27 @@
 # ZZZ_艾莲·乔
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Zenless-Zone-Zero #ZZZ #绝区零
+- **Category**: #Game
+  - **Game**: #Zenless-Zone-Zero #ZZZ #绝区零
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0187 - #爱听书的旅人](../README.md)
+- **Name**: #爱听书的旅人 | #爱听小说的旅人
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [爱听书的旅人](https://space.bilibili.com/128909195)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [爱听书的旅人](https://afdian.com/a/ATSDLR)
 - **Author ID**: `0187`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

@@ -1,30 +1,32 @@
 # 鹘鸦Yata
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Unknown
+  - **Game**: #Unknown
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0174 - #鹘鸦Yata](../README.md)
+- **Name**: #鹘鸦Yata
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [鹘鸦Yata](https://space.bilibili.com/402425842)
 - **Author ID**: `0174`
 
-</details>
-
-<details>
-<summary>Co-creator Details</summary>
+## Co-creator
 
 - **Name**: 莱伊
-  - **Role**: 画鸦
-  - **SocialPlatform**: Bilibili: https://space.bilibili.com/3537110638266406
-  - **SupportPlatform**: Afdian: https://afdian.com/
+  - **Role**: #画鸦
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [莱伊](https://space.bilibili.com/3537110638266406)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [莱伊](https://afdian.com/)
 
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

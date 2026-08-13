@@ -1,30 +1,34 @@
 # 芙拉尔
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Unknown
+  - **Game**: #Unknown
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0133 - #SI_VD](../README.md)
+- **Name**: #SI_VD
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [SI_VD](https://space.bilibili.com/1413470251)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [SI_VD](https://ifdian.net/a/3832254VD)
 - **Author ID**: `0133`
 
-</details>
-
-<details>
-<summary>Co-creator Details</summary>
+## Co-creator
 
 - **Name**: 奈珂
-  - **Role**: 画师
-  - **SocialPlatform**: Bilibili: none
-  - **SupportPlatform**: Afdian: none
+  - **Role**: #画师
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: none
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: none
 
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

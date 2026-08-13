@@ -1,32 +1,37 @@
 # OC_星屑海螺-踏春_LB
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Original Character #OC #原创角色
+- **Category**: #Original
+  - **Game**: #Original Character #OC #原创角色
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0026 - #雒仁](../README.md)
+- **Name**: #雒仁
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [雒仁](https://space.bilibili.com/13550783)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [雒仁](https://afdian.com/a/luoren)
+  - **GroupChat**: #QQ
+    - **QQ**: 528146909
 - **Author ID**: `0026`
 
-</details>
-
-<details>
-<summary>Co-creator Details</summary>
+## Co-creator
 
 - **Name**: 星屑海螺
-  - **Role**: 动画
-  - **GroupChat**: qq: 741330261
+  - **Role**: #动画 | #Animation
+  - **GroupChat**: #qq
+    - **qq**: 741330261
 
 - **Name**: 白帆小喵
-  - **Role**: 纹理
+  - **Role**: #纹理
 
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

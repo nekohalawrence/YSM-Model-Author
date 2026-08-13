@@ -1,20 +1,27 @@
 # Avemujica_千早爱音_Chihaya-Anon_LB
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #BanG Dream! Ave Mujica #AveMujica #颂乐人偶
+- **Category**: #Anime
+  - **Game**: #BanG Dream! Ave Mujica #AveMujica #颂乐人偶
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0092 - #菊姥爷](../README.md)
+- **Name**: #菊姥爷
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [菊姥爷](https://space.bilibili.com/376780490)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [菊姥爷](https://afdian.com/a/julaoye)
 - **Author ID**: `0092`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

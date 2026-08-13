@@ -2,7 +2,13 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "platform_map.schema.json",
   "title": "平台分类映射 platform_map.json",
-  "description": "README contact-<键> 的小写键 → 平台分类(SocialPlatform/GroupChat/SupportPlatform/OtherPlatform)。organize_models 读取。",
+  "description": "README 平台分类（SocialPlatform/GroupChat/SupportPlatform/OtherPlatform）为键，平台键列表为值。脚本反查平台键归属;未命中的平台归入 OtherPlatform。",
   "type": "object",
-  "additionalProperties": { "enum": ["SocialPlatform", "GroupChat", "SupportPlatform", "OtherPlatform"] }
+  "propertyNames": {
+    "enum": ["SocialPlatform", "GroupChat", "SupportPlatform", "OtherPlatform"]
+  },
+  "additionalProperties": {
+    "type": "array",
+    "items": { "type": "string" }
+  }
 }

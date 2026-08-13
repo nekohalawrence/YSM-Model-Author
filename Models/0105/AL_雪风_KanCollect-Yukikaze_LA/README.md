@@ -1,29 +1,28 @@
 # AL_雪风_KanCollect-Yukikaze_LA
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Azur-Lane #AL #碧蓝航线
+- **Category**: #Game
+  - **Game**: #Azur-Lane #AL #碧蓝航线
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0105 - #超级大鸡腿丶](../README.md)
+- **Name**: #超级大鸡腿丶 | #Nss
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
 - **Author ID**: `0105`
 
-</details>
-
-<details>
-<summary>Co-creator Details</summary>
+## Co-creator
 
 - **Name**: 星语
-  - **Role**: 动作
-  - **SocialPlatform**: bilibili: 316739550
+  - **Role**: #动作 | #Motion
+  - **SocialPlatform**: #bilibili
+    - **bilibili**: 316739550
 
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

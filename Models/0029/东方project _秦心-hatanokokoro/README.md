@@ -1,29 +1,32 @@
 # 东方project _秦心-hatanokokoro
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Unknown
+  - **Game**: #Unknown
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0029 - #墓野奈奈](../README.md)
+- **Name**: #墓野奈奈
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [墓野奈奈](https://space.bilibili.com/269519870)
+  - **GroupChat**: #QQ
+    - **QQ**: 3194755414
 - **Author ID**: `0029`
 
-</details>
-
-<details>
-<summary>Co-creator Details</summary>
+## Co-creator
 
 - **Name**: 随便取名字的萌新
-  - **Role**: 动画
-  - **SocialPlatform**: BiliBili: https://space.bilibili.com/1909440963
+  - **Role**: #动画 | #Animation
+  - **SocialPlatform**: #BiliBili
+    - **BiliBili**: [随便取名字的萌新](https://space.bilibili.com/1909440963)
 
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

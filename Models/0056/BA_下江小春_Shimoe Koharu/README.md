@@ -1,30 +1,34 @@
 # BA_下江小春_Shimoe Koharu
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
+- **Category**: #Game
+  - **Game**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0056 - #伊洛是哥斯拉嘛 #伊洛是哥斯拉吗](../README.md)
+- **Name**: #伊洛是哥斯拉嘛 #伊洛是哥斯拉吗 | #哥斯拉 | #落阳不养羊 | #黎家诚 | #BradKidd
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [伊洛是哥斯拉嘛 #伊洛是哥斯拉吗](https://space.bilibili.com/17798027)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [伊洛是哥斯拉嘛 #伊洛是哥斯拉吗](https://afdian.com/a/6TGESILA)
 - **Author ID**: `0056`
 
-</details>
-
-<details>
-<summary>Co-creator Details</summary>
+## Co-creator
 
 - **Name**: 狱际星芒
-  - **Role**: 作者
-  - **SocialPlatform**: Bilibili: https://space.bilibili.com/349150095
-  - **SupportPlatform**: Afdian: https://afdian.com/a/3256286845xingmang
+  - **Role**: #作者
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [狱际星芒](https://space.bilibili.com/349150095)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [狱际星芒](https://afdian.com/a/3256286845xingmang)
 
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

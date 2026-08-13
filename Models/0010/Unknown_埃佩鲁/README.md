@@ -1,16 +1,32 @@
 # Unknown_埃佩鲁
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Other
+  - **Game**: #Unknown
+
+## Author
+
+- **Name**: #波普Popu
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [波普Popu](https://space.bilibili.com/446941285)
+  - **GroupChat**: #QQ
+    - **QQ**: 3612246475
+- **Author ID**: `0010`
+
+## Co-creator
 
 </details>
 
-<details>
-<summary>Author Details</summary>
+## Preview Images
+<details open>
+<summary>Preview Images</summary>
 
-- **Author**: [#0010 - #波普Popu](../README.md)
-- **Author ID**: `0010`
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

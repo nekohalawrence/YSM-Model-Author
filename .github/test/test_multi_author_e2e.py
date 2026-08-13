@@ -124,14 +124,15 @@ def main():
     # 4 0002/双模型作者 的 co-creator 是 A作者
     co2 = meta["0002/双模型作者"]["co_creators"]
     checks.append(any(c["name"] == "A作者" for c in co2))
-    # 5 联动生成了 README：无预览图也生成 + 含 Co-creator Details
+    # 5 联动生成了 README：无预览图也生成 + 含 Co-creator 段（新格式二级标题）
     r1 = (ROOT / "Models/0001/多作者模型/README.md")
-    checks.append(r1.is_file() and "Co-creator Details" in r1.read_text(encoding="utf-8"))
+    checks.append(r1.is_file() and "## Co-creator" in r1.read_text(encoding="utf-8"))
     r2 = (ROOT / "Models/0002/双模型作者/README.md")
-    checks.append(r2.is_file() and "Co-creator Details" in r2.read_text(encoding="utf-8"))
+    checks.append(r2.is_file() and "## Co-creator" in r2.read_text(encoding="utf-8"))
     txt1 = r1.read_text(encoding="utf-8")
+    # 新格式:平台分类行 + 链接子行(authors.json/platform_map 数据驱动)
     checks.append("- **Name**: B作者" in txt1
-                  and "**SocialPlatform**: Bilibili: https://bili.example/B" in txt1)
+                  and "    - **Bilibili**: [B作者](https://bili.example/B)" in txt1)
     # 6 联动更新根 README 索引
     root_readme = (ROOT / "README.md").read_text(encoding="utf-8")
     checks.append("| 0002 |" in root_readme)

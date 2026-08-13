@@ -1,38 +1,46 @@
 # VTuber_艾伊菈-ahyra_LA
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Virtual YouTuber #VTuber #虚拟主播 #バーチャルユーチューバー
+- **Category**: #Music
+  - **Game**: #Virtual YouTuber #VTuber #虚拟主播 #バーチャルユーチューバー
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0030 - #嗯嗯owo](../README.md)
+- **Name**: #嗯嗯owo
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili #YouTube
+    - **Bilibili**: [嗯嗯owo](https://space.bilibili.com/167202500)
+    - **YouTube**: [嗯嗯owo](https://space.bilibili.com/167202500)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [嗯嗯owo](https://afdian.com/a/enenowo)
 - **Author ID**: `0030`
 
-</details>
-
-<details>
-<summary>Co-creator Details</summary>
+## Co-creator
 
 - **Name**: 嗯嗯owo
-  - **Role**: 材质
+  - **Role**: #贴图 | #Texture
 
 - **Name**: Ahyra
-  - **Role**: Partner_人设提供_金主
-  - **SocialPlatform**: X: https://x.com/Ahyra_ | youtube: https://www.youtube.com/@Ahyra_
-  - **OtherPlatform**: twitch: https://www.twitch.tv/ahyra_
+  - **Role**: #Partner_人设提供_金主
+  - **SocialPlatform**: #X #youtube
+    - **X**: [Ahyra](https://x.com/Ahyra_)
+    - **youtube**: [Ahyra](https://www.youtube.com/@Ahyra_)
+  - **OtherPlatform**: #twitch
+    - **twitch**: [Ahyra](https://www.twitch.tv/ahyra_)
 
 - **Name**: 睡不醒的秋风
-  - **Role**: 动画
-  - **SocialPlatform**: Bilibili: https://space.bilibili.com/375227559
-  - **SupportPlatform**: Afdian: https://ifdian.com/a/qf0224
+  - **Role**: #动画 | #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [睡不醒的秋风](https://space.bilibili.com/375227559)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [睡不醒的秋风](https://ifdian.com/a/qf0224)
 
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

@@ -1,33 +1,41 @@
 # OC_白川雨弓_Ameyumi_LA
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Original Character #OC #原创角色
+- **Category**: #Original
+  - **Game**: #Original Character #OC #原创角色
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0005 - #omo仙贝2号](../README.md)
+- **Name**: #omo仙贝2号 | #omo | #FujiwaranoMoku114514
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili #YouTube #Twitter
+    - **Bilibili**: [omo仙贝2号](https://space.bilibili.com/1959304255)
+    - **YouTube**: [omo仙贝2号](https://www.youtube.com/@%E8%97%A4%E5%8E%9F%E5%A6%B9%E7%BA%A2-i3q)
+    - **Twitter**: [omo仙贝2号](https://x.com/wOelxdwlnwq5Zl0)
+  - **SupportPlatform**: #Afdian #Patreon
+    - **Afdian**: [omo仙贝2号](https://afdian.com/a/omomomomomomo)
+    - **Patreon**: [omo仙贝2号](https://www.patreon.com/c/omo595/posts)
 - **Author ID**: `0005`
 
-</details>
-
-<details>
-<summary>Co-creator Details</summary>
+## Co-creator
 
 - **Name**: mo
-  - **Role**: 全部
-  - **SocialPlatform**: twitter: @wOelxdwlnwq5Zl0 | youtube: https://www.youtube.com/@%E8%97%A4%E5%8E%9F%E5%A6%B9%E7%BA%A2-i3q
-  - **SupportPlatform**: Afdian: https://afdian.com/a/omomomomomomo
+  - **Role**: #全部
+  - **SocialPlatform**: #twitter #youtube
+    - **twitter**: @wOelxdwlnwq5Zl0
+    - **youtube**: [mo](https://www.youtube.com/@%E8%97%A4%E5%8E%9F%E5%A6%B9%E7%BA%A2-i3q)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [mo](https://afdian.com/a/omomomomomomo)
 
 - **Name**: 甜粽子
-  - **Role**: 物理动画调试
+  - **Role**: #动画 | #Animation
 
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

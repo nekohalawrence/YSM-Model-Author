@@ -1,20 +1,25 @@
 # AstralParty_太刀使-美咲_Misaki_LB
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Astral Party #Astral-Party #AstralParty #吉星派对 #星引擎 Party
+- **Category**: #Game
+  - **Game**: #Astral Party #Astral-Party #AstralParty #吉星派对 #星引擎 Party
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0012 - #赤恒-AzaMire](../README.md)
+- **Name**: #赤恒-AzaMire
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [赤恒-AzaMire](https://space.bilibili.com/235888316)
 - **Author ID**: `0012`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

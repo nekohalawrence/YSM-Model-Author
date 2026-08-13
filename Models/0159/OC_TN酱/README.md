@@ -1,30 +1,34 @@
 # OC_TN酱
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Original Character #OC #原创角色
+- **Category**: #Original
+  - **Game**: #Original Character #OC #原创角色
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0159 - #兔兔猫officials](../README.md)
+- **Name**: #兔兔猫officials | #阴阳兔兔猫offcial
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [兔兔猫officials](https://space.bilibili.com/3546785165347464)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [兔兔猫officials](https://ifdian.net/a/RABET)
 - **Author ID**: `0159`
 
-</details>
-
-<details>
-<summary>Co-creator Details</summary>
+## Co-creator
 
 - **Name**: 兔兔猫officials
-  - **Role**: 全部（）
-  - **SocialPlatform**: Bilibili: https://space.bilibili.com/13875779
-  - **SupportPlatform**: Afdian: https://ifdian.net/a/RABET
+  - **Role**: #全部（）
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [兔兔猫officials](https://space.bilibili.com/13875779)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [兔兔猫officials](https://ifdian.net/a/RABET)
 
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

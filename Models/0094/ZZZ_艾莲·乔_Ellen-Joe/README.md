@@ -1,34 +1,39 @@
 # ZZZ_艾莲·乔_Ellen-Joe
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Zenless-Zone-Zero #ZZZ #绝区零
+- **Category**: #Game
+  - **Game**: #Zenless-Zone-Zero #ZZZ #绝区零
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0094 - #墨染逝羽](../README.md)
+- **Name**: #墨染逝羽 | #Feather_aya
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [墨染逝羽](https://space.bilibili.com/5718046)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [墨染逝羽](https://afdian.com/a/FliegeSA)
 - **Author ID**: `0094`
 
-</details>
-
-<details>
-<summary>Co-creator Details</summary>
+## Co-creator
 
 - **Name**: 星屑海螺
-  - **Role**: 动画
-  - **SocialPlatform**: Bilibili: https://space.bilibili.com/14975572
-  - **SupportPlatform**: Afdian: https://afdian.net/a/lucia2048
+  - **Role**: #动画 | #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [星屑海螺](https://space.bilibili.com/14975572)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [星屑海螺](https://afdian.net/a/lucia2048)
 
 - **Name**: dAN!e
-  - **Role**: 渲染
-  - **GroupChat**: QQ: 386839726
+  - **Role**: #渲染 | #Render
+  - **GroupChat**: #QQ
+    - **QQ**: 386839726
 
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

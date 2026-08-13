@@ -1,29 +1,34 @@
 # OC_联合王国-United-Kingdom (17–19c.)_LA
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Original Character #OC #原创角色
+- **Category**: #Original
+  - **Game**: #Original Character #OC #原创角色
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0103 - #浅陌菌](../README.md)
+- **Name**: #浅陌菌
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [浅陌菌](https://space.bilibili.com/24513198)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [浅陌菌](https://afdian.com/a/tc_fox)
+  - **GroupChat**: #QQ
+    - **QQ**: 1063585053
 - **Author ID**: `0103`
 
-</details>
-
-<details>
-<summary>Co-creator Details</summary>
+## Co-creator
 
 - **Name**: 遊記Gnocchi
-  - **Role**: 形象
-  - **SocialPlatform**: Bilibili: https://space.bilibili.com/5896446
+  - **Role**: #形象
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [遊記Gnocchi](https://space.bilibili.com/5896446)
 
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

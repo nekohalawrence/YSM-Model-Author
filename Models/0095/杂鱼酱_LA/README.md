@@ -1,20 +1,29 @@
 # 杂鱼酱_LA
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Unknown
+  - **Game**: #Unknown
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0095 - #源石姬变体](../README.md)
+- **Name**: #源石姬变体 | #raw_chicken | #鸡姬
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili #pixiv
+    - **Bilibili**: [源石姬变体](https://space.bilibili.com/219540765)
+    - **pixiv**: [源石姬变体](https://www.pixiv.net/users/31376770)
+  - **SupportPlatform**: #Afdian #Unifans
+    - **Afdian**: [源石姬变体](https://afdian.com/a/rawchicken)
+    - **Unifans**: [源石姬变体](https://app.unifans.io/c/rawchickenneg)
 - **Author ID**: `0095`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

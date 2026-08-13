@@ -1,16 +1,32 @@
 # Unknown_赛飞儿
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Other
+  - **Game**: #Unknown
+
+## Author
+
+- **Name**: #忆尘yc27 | #忆尘27
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [忆尘yc27](https://space.bilibili.com/192438862)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [忆尘yc27](https://afdian.com/a/114514aabb)
+- **Author ID**: `0057`
+
+## Co-creator
 
 </details>
 
-<details>
-<summary>Author Details</summary>
+## Preview Images
+<details open>
+<summary>Preview Images</summary>
 
-- **Author**: [#0057 - #忆尘yc27](../README.md)
-- **Author ID**: `0057`
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

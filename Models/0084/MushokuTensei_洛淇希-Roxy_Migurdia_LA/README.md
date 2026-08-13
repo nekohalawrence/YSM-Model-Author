@@ -1,20 +1,27 @@
 # MushokuTensei_洛淇希-Roxy_Migurdia_LA
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #MushokuTensei #无职转生～到了异世界就拿出真本事～ #無職転生 ～異世界行ったら本気だす～
+- **Category**: #Anime
+  - **Game**: #MushokuTensei #无职转生～到了异世界就拿出真本事～ #無職転生 ～異世界行ったら本気だす～
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0084 - #幻古诗](../README.md)
+- **Name**: #幻古诗
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [幻古诗](https://space.bilibili.com/443702321)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [幻古诗](https://afdian.com/a/huangushi)
 - **Author ID**: `0084`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

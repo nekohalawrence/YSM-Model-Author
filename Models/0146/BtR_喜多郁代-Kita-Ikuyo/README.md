@@ -1,36 +1,38 @@
 # BtR_喜多郁代-Kita-Ikuyo
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Bocchi-the-Rock! #BtR #孤独摇滚！
+- **Category**: #Anime
+  - **Game**: #Bocchi-the-Rock! #BtR #孤独摇滚！
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0146 - #泉溪鸽](../README.md)
+- **Name**: #泉溪鸽
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [泉溪鸽](https://space.bilibili.com/44619913)
 - **Author ID**: `0146`
 
+## Co-creator
+
+- **Name**: 泉溪
+  - **Role**: #动画 | #Animation
+
+- **Name**: 泉溪
+  - **Role**: #动画 | #Animation
+
+- **Name**: 泉溪
+  - **Role**: #动画 | #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [泉溪](https://modrinth.com/mod/yes-steve-model)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: hhttps://modrinth.com/mod/yes-steve-model
+
 </details>
 
-<details>
-<summary>Co-creator Details</summary>
-
-- **Name**: 泉溪
-  - **Role**: 动画
-
-- **Name**: 泉溪
-  - **Role**: 动画
-
-- **Name**: 泉溪
-  - **Role**: 动画
-  - **SocialPlatform**: Bilibili: https://modrinth.com/mod/yes-steve-model
-  - **SupportPlatform**: Afdian: hhttps://modrinth.com/mod/yes-steve-model
-
-</details>
-
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

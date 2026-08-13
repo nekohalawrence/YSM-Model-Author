@@ -1,27 +1,29 @@
 # F-4EJ_改
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Unknown
+  - **Game**: #Unknown
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0154 - #银河铁道CRH2](../README.md)
+- **Name**: #银河铁道CRH2
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [银河铁道CRH2](https://space.bilibili.com/1605920)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [银河铁道CRH2](https://afdian.com/a/CRH233)
 - **Author ID**: `0154`
 
-</details>
-
-<details>
-<summary>Co-creator Details</summary>
+## Co-creator
 
 - **Name**: 设定/模型：Snowenh
 
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

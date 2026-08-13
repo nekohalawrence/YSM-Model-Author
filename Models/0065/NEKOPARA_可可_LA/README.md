@@ -1,20 +1,27 @@
 # NEKOPARA_可可_LA
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #NEKOPARA #巧克力与香子兰 #猫娘乐园 #ネコぱら
+- **Category**: #Game
+  - **Game**: #NEKOPARA #巧克力与香子兰 #猫娘乐园 #ネコぱら
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0065 - #烛火的次元宇宙](../README.md)
+- **Name**: #烛火的次元宇宙
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [烛火的次元宇宙](https://space.bilibili.com/57715833)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [烛火的次元宇宙](https://afdian.com/a/zhuhuo)
 - **Author ID**: `0065`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

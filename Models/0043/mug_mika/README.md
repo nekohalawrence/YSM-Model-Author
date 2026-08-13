@@ -1,30 +1,34 @@
 # mug_mika
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Unknown
+  - **Game**: #Unknown
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0043 - #完全凍結ALL](../README.md)
+- **Name**: #完全凍結ALL | #完全冻结 | #绝对冻结
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [完全凍結ALL](https://space.bilibili.com/393110)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [完全凍結ALL](https://afdian.com/a/AllFreeze)
 - **Author ID**: `0043`
 
-</details>
-
-<details>
-<summary>Co-creator Details</summary>
+## Co-creator
 
 - **Name**: 哥斯拉
-  - **Role**: 协助
-  - **SocialPlatform**: Bilibili: https://space.bilibili.com/17798027
-  - **SupportPlatform**: Afdian: https://afdian.com/a/6TGESILA
+  - **Role**: #协助
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [哥斯拉](https://space.bilibili.com/17798027)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [哥斯拉](https://afdian.com/a/6TGESILA)
 
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

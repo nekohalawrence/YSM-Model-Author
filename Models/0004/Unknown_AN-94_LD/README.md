@@ -1,20 +1,25 @@
 # Unknown_AN-94_LD
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Other
+  - **Game**: #Unknown
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0004 - #XG残党](../README.md)
+- **Name**: #XG残党
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [XG残党](https://afdian.com/a/x416g)
 - **Author ID**: `0004`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

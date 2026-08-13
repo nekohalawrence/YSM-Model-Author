@@ -1,20 +1,27 @@
 # Tenshi_白雪乃爱_Shirayuki-Noa_LB
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Tenshi Souzou #Tenshi #天使嚣嚣 #天使騒々 RE‑BIRTH!
+- **Category**: #Game
+  - **Game**: #Tenshi Souzou #Tenshi #天使嚣嚣 #天使騒々 RE‑BIRTH!
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0067 - #Almeta_owx](../README.md)
+- **Name**: #Almeta_owx
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [Almeta_owx](https://space.bilibili.com/4328692)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [Almeta_owx](https://afdian.com/a/Almeta)
 - **Author ID**: `0067`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

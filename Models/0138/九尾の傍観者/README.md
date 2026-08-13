@@ -1,20 +1,27 @@
 # 九尾の傍観者
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Unknown
+  - **Game**: #Unknown
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0138 - #夜森岚_Noxsil](../README.md)
+- **Name**: #夜森岚_Noxsil
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [夜森岚_Noxsil](https://space.bilibili.com/3706963248548243)
+  - **GroupChat**: #QQ
+    - **QQ**: 3910084829
 - **Author ID**: `0138`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

@@ -1,20 +1,29 @@
 # 艾莲芙-Ailianfu_LB
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Unknown
+  - **Game**: #Unknown
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0164 - #toolat嫌晚](../README.md)
+- **Name**: #toolat嫌晚 | #toolat洗碗
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [toolat嫌晚](https://space.bilibili.com/1610653319)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [toolat嫌晚](https://afdian.com/a/123456xianwan)
+  - **GroupChat**: #QQ
+    - **QQ**: 324563469
 - **Author ID**: `0164`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

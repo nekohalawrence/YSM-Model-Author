@@ -1,20 +1,25 @@
 # SakuraMoyu_小黑_Kuro
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Game
+  - **Game**: #Unknown
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0007 - #啊这-_-0](../README.md)
+- **Name**: #啊这-_-0 | #伍炎
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [啊这-_-0](https://space.bilibili.com/347376421)
 - **Author ID**: `0007`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

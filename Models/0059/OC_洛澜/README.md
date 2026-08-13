@@ -1,29 +1,45 @@
 # OC_洛澜
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Original Character #OC #原创角色
+- **Category**: #Original
+  - **Game**: #Original Character #OC #原创角色
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0059 - #瀛猫](../README.md)
+- **Name**: #瀛猫
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [瀛猫](https://space.bilibili.com/647224460)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [瀛猫](https://afdian.com/a/wincatpro)
+  - **GroupChat**: #QQ
+    - **QQ**: 1037786416
 - **Author ID**: `0059`
 
-</details>
-
-<details>
-<summary>Co-creator Details</summary>
+## Co-creator
 
 - **Name**: 洛澜Aurelia
-  - **Role**: 原处
-  - **OtherPlatform**: 哔哩哔哩主页: https://space.bilibili.com/1560400081 | 哔哩哔哩直播间: https://live.bilibili.com/1814037294
+  - **Role**: #原处
+  - **OtherPlatform**: #哔哩哔哩主页 #哔哩哔哩直播间
+    - **哔哩哔哩主页**: [洛澜Aurelia](https://space.bilibili.com/1560400081)
+    - **哔哩哔哩直播间**: [洛澜Aurelia](https://live.bilibili.com/1814037294)
 
 - **Name**: 雨齐Regen
-  - **Role**: 定制
-  - **OtherPlatform**: 哔哩哔哩主页: https://space.bilibili.com/408822711
+  - **Role**: #定制
+  - **OtherPlatform**: #哔哩哔哩主页
+    - **哔哩哔哩主页**: [雨齐Regen](https://space.bilibili.com/408822711)
+
+</details>
+
+## Preview Images
+<details open>
+<summary>Preview Images</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

@@ -1,20 +1,27 @@
 # BA_空崎日奈-泳装_Sorasaki-Hina_LB
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
+- **Category**: #Game
+  - **Game**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0129 - #Dr观星](../README.md)
+- **Name**: #Dr观星 | #Dr-观星
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [Dr观星](https://space.bilibili.com/157282636)
+  - **GroupChat**: #QQ
+    - **QQ**: 1087347018
 - **Author ID**: `0129`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

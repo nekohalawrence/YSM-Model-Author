@@ -1,29 +1,32 @@
 # BA_百合园圣娅_Yurizono-Seia_LB
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
+- **Category**: #Game
+  - **Game**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0129 - #Dr观星](../README.md)
+- **Name**: #Dr观星 | #Dr-观星
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [Dr观星](https://space.bilibili.com/157282636)
+  - **GroupChat**: #QQ
+    - **QQ**: 1087347018
 - **Author ID**: `0129`
 
-</details>
-
-<details>
-<summary>Co-creator Details</summary>
+## Co-creator
 
 - **Name**: 狱际星芒
-  - **Role**: 部分动画适配
-  - **OtherPlatform**: b站/爱发电: 狱际星芒
+  - **Role**: #动画 | #Animation
+  - **OtherPlatform**: #b站/爱发电
+    - **b站/爱发电**: 狱际星芒
 
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

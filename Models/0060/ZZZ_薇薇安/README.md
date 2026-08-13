@@ -1,16 +1,30 @@
 # ZZZ_薇薇安
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Zenless-Zone-Zero #ZZZ #绝区零
+- **Category**: #Game
+  - **Game**: #Zenless-Zone-Zero #ZZZ #绝区零
+
+## Author
+
+- **Name**: #油七桶
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [油七桶](https://space.bilibili.com/4896879)
+- **Author ID**: `0060`
+
+## Co-creator
 
 </details>
 
-<details>
-<summary>Author Details</summary>
+## Preview Images
+<details open>
+<summary>Preview Images</summary>
 
-- **Author**: [#0060 - #油七桶](../README.md)
-- **Author ID**: `0060`
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

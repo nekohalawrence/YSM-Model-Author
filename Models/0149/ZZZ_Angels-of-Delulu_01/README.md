@@ -1,33 +1,33 @@
 # ZZZ_Angels-of-Delulu_01
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Zenless-Zone-Zero #ZZZ #绝区零
+- **Category**: #Game
+  - **Game**: #Zenless-Zone-Zero #ZZZ #绝区零
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0149 - #安欣](../README.md)
+- **Name**: #安欣
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [安欣](https://afdian.com/a/Anxin520X)
 - **Author ID**: `0149`
 
-</details>
+## Co-creator
 
-<details>
-<summary>Co-creator Details</summary>
+- **Name**: 暂无
 
-- **Name**: 
+- **Name**: 暂无
 
-- **Name**: 
+- **Name**: 暂无
 
-- **Name**: 
-
-- **Name**: 
+- **Name**: 暂无
 
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

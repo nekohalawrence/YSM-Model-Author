@@ -1,20 +1,27 @@
 # Unknown_巫恋-Shamare
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Other
+  - **Game**: #Unknown
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0141 - #映白L #映白](../README.md)
+- **Name**: #映白L #映白
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [映白L #映白](https://space.bilibili.com/10208258)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [映白L #映白](https://afdian.com/a/ehaku)
 - **Author ID**: `0141`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

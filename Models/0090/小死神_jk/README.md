@@ -1,20 +1,25 @@
 # 小死神_jk
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Unknown
+  - **Game**: #Unknown
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0090 - #九碳糖](../README.md)
+- **Name**: #九碳糖 | #九碳糖BI3NVZ
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [九碳糖](https://space.bilibili.com/543291461)
 - **Author ID**: `0090`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

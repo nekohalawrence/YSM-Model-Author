@@ -1,30 +1,36 @@
 # VTuber_紫苑艾尔菲涅_LA
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Virtual YouTuber #VTuber #虚拟主播 #バーチャルユーチューバー
+- **Category**: #Music
+  - **Game**: #Virtual YouTuber #VTuber #虚拟主播 #バーチャルユーチューバー
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0116 - #1111111re](../README.md)
+- **Name**: #1111111re | #伊伊蕾
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [1111111re](https://space.bilibili.com/35073555)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [1111111re](https://afdian.com/a/114514yire)
+  - **GroupChat**: #QQ
+    - **QQ**: 769939358
 - **Author ID**: `0116`
 
-</details>
-
-<details>
-<summary>Co-creator Details</summary>
+## Co-creator
 
 - **Name**: Maribelhearn
-  - **Role**: 动画
-  - **SocialPlatform**: Bilibili: https://space.bilibili.com/35073555
-  - **SupportPlatform**: Afdian: https://afdian.com/a/114514yire
+  - **Role**: #动画 | #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [Maribelhearn](https://space.bilibili.com/35073555)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [Maribelhearn](https://afdian.com/a/114514yire)
 
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

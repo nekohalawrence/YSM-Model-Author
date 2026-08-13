@@ -1,20 +1,27 @@
 # Minecraft_苦力怕酱_Creeper_LB
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Game
+  - **Game**: #Unknown
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0074 - #Killot](../README.md)
+- **Name**: #Killot | #Killot945
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [Killot](https://space.bilibili.com/6348825)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [Killot](https://afdian.com/a/Killot945)
 - **Author ID**: `0074`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

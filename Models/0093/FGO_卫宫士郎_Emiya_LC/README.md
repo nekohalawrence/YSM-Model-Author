@@ -1,20 +1,27 @@
 # FGO_卫宫士郎_Emiya_LC
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Fate-Grand-Order #FGO #命运 - 冠位指定
+- **Category**: #Game
+  - **Game**: #Fate-Grand-Order #FGO #命运 - 冠位指定
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0093 - #苏依凛](../README.md)
+- **Name**: #苏依凛 | #炽湮
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [苏依凛](https://space.bilibili.com/76987486)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [苏依凛](https://afdian.com/a/supermonsterking)
 - **Author ID**: `0093`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

@@ -1,24 +1,32 @@
 {
-  "bilibili": "SocialPlatform",
-  "b站": "SocialPlatform",
-  "pixiv": "SocialPlatform",
-  "twitter": "SocialPlatform",
-  "x": "SocialPlatform",
-  "youtube": "SocialPlatform",
-  "qq": "GroupChat",
-  "反馈群聊": "GroupChat",
-  "群聊": "GroupChat",
-  "discord": "GroupChat",
-  "afdian": "SupportPlatform",
-  "爱发电": "SupportPlatform",
-  "unifans": "SupportPlatform",
-  "patreon": "SupportPlatform",
-  "donate": "SupportPlatform",
-  "打赏": "SupportPlatform",
-  "modrinth": "OtherPlatform",
-  "curseforge": "OtherPlatform",
-  "mcbbs": "OtherPlatform",
-  "home": "OtherPlatform",
-  "官网": "OtherPlatform",
-  "个人网站": "OtherPlatform"
+  "SocialPlatform": [
+    "bilibili",
+    "b站",
+    "pixiv",
+    "twitter",
+    "x",
+    "youtube"
+  ],
+  "GroupChat": [
+    "qq",
+    "反馈群聊",
+    "群聊",
+    "discord"
+  ],
+  "SupportPlatform": [
+    "afdian",
+    "爱发电",
+    "unifans",
+    "patreon",
+    "donate",
+    "打赏"
+  ],
+  "OtherPlatform": [
+    "modrinth",
+    "curseforge",
+    "mcbbs",
+    "home",
+    "官网",
+    "个人网站"
+  ]
 }

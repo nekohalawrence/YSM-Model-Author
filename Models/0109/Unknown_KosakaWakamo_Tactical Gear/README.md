@@ -1,16 +1,28 @@
 # Unknown_KosakaWakamo_Tactical Gear
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Other
+  - **Game**: #Unknown
+
+## Author
+
+- **Name**: #水神
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+- **Author ID**: `0109`
+
+## Co-creator
 
 </details>
 
-<details>
-<summary>Author Details</summary>
+## Preview Images
+<details open>
+<summary>Preview Images</summary>
 
-- **Author**: [#0109 - #水神](../README.md)
-- **Author ID**: `0109`
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

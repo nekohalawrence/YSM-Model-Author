@@ -1,20 +1,29 @@
 # KonoSuba_惠惠_Megumin_LA
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #KonoSuba: God's Blessing on This Wonderful World! #Kono Subarashii Sekai ni Shukufuku wo! #KonoSuba #KON #为美好的世界献上祝福！ #この素晴らしい世界に祝福を！
+- **Category**: #Anime
+  - **Game**: #KonoSuba: God's Blessing on This Wonderful World! #Kono Subarashii Sekai ni Shukufuku wo! #KonoSuba #KON #为美好的世界献上祝福！ #この素晴らしい世界に祝福を！
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0112 - #大莫家](../README.md)
+- **Name**: #大莫家 | #MCZ工作室 | #mcz莫莫 | #犟猫
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [大莫家](https://space.bilibili.com/385797854)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [大莫家](https://afdian.com/a/mcz_8888)
+  - **GroupChat**: #QQ
+    - **QQ**: 167941105 已满
 - **Author ID**: `0112`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

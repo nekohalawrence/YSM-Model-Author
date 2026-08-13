@@ -1,25 +1,35 @@
 # Unknown_爱清枫香
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Other
+  - **Game**: #Unknown
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0042 - #天弓干亦 #筅袔](../README.md)
+- **Name**: #天弓干亦 #筅袔
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [天弓干亦 #筅袔](https://space.bilibili.com/13098279)
 - **Author ID**: `0042`
 
-</details>
-
-<details>
-<summary>Co-creator Details</summary>
+## Co-creator
 
 - **Name**: 蔚蓝档案
-  - **Role**: IP
-  - **OtherPlatform**: 官网: https://bluearchive-cn.com
+  - **Role**: #IP
+  - **OtherPlatform**: #官网
+    - **官网**: [蔚蓝档案](https://bluearchive-cn.com)
+
+</details>
+
+## Preview Images
+<details open>
+<summary>Preview Images</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

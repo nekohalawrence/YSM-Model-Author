@@ -1,20 +1,25 @@
 # ASE_yuki
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #White Eternity #AstralAir no Shiroki Eien #ASE #星辰恋曲的白色永恒 #アストラエアの白き永遠
+- **Category**: #Game
+  - **Game**: #White Eternity #AstralAir no Shiroki Eien #ASE #星辰恋曲的白色永恒 #アストラエアの白き永遠
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0007 - #啊这-_-0](../README.md)
+- **Name**: #啊这-_-0 | #伍炎
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [啊这-_-0](https://space.bilibili.com/347376421)
 - **Author ID**: `0007`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

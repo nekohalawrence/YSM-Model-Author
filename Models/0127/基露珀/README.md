@@ -1,20 +1,27 @@
 # 基露珀
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Unknown
+  - **Game**: #Unknown
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0127 - #总督神绮](../README.md)
+- **Name**: #总督神绮
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [总督神绮](https://space.bilibili.com/37854534)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [总督神绮](https://ifdian.net/a/sShinki)
 - **Author ID**: `0127`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

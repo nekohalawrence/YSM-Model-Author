@@ -1,20 +1,29 @@
 # HSR_花火_Huahuo_LA
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Honkai-Star-Rail #HSR #崩坏：星穹铁道
+- **Category**: #Game
+  - **Game**: #Honkai-Star-Rail #HSR #崩坏：星穹铁道
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0059 - #瀛猫](../README.md)
+- **Name**: #瀛猫
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [瀛猫](https://space.bilibili.com/647224460)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [瀛猫](https://afdian.com/a/wincatpro)
+  - **GroupChat**: #QQ
+    - **QQ**: 1037786416
 - **Author ID**: `0059`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

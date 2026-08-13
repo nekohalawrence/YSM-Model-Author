@@ -1,20 +1,27 @@
 # 名人兔女郎-罗安
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Unknown
+  - **Game**: #Unknown
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0153 - #绘飞](../README.md)
+- **Name**: #绘飞
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [绘飞](https://space.bilibili.com/8714030)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [绘飞](https://afdian.com/a/huifei)
 - **Author ID**: `0153`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

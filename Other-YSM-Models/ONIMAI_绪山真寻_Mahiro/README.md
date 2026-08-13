@@ -1,12 +1,21 @@
 # ONIMAI_绪山真寻_Mahiro
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Onii-chan wa Oshimai! #ONIMAI #别当欧尼酱了！ #お兄ちゃんはおしまい！
+- **Category**: #Anime
+  - **Game**: #Onii-chan wa Oshimai! #ONIMAI #别当欧尼酱了！ #お兄ちゃんはおしまい！
+
+## Author
+
+- **Name**: 暂无
+
+## Co-creator
 
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

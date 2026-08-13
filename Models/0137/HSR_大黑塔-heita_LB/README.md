@@ -1,20 +1,27 @@
 # HSR_大黑塔-heita_LB
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Honkai-Star-Rail #HSR #崩坏：星穹铁道
+- **Category**: #Game
+  - **Game**: #Honkai-Star-Rail #HSR #崩坏：星穹铁道
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0137 - #Maks](../README.md)
+- **Name**: #Maks | #Maks怜悯
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [Maks](https://space.bilibili.com/352177387)
+  - **GroupChat**: #QQ
+    - **QQ**: 1047117247
 - **Author ID**: `0137`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

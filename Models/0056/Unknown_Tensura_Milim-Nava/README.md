@@ -1,36 +1,40 @@
 # Unknown_Tensura_Milim-Nava
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Other
+  - **Game**: #Unknown
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0056 - #伊洛是哥斯拉嘛 #伊洛是哥斯拉吗](../README.md)
+- **Name**: #伊洛是哥斯拉嘛 #伊洛是哥斯拉吗 | #哥斯拉 | #落阳不养羊 | #黎家诚 | #BradKidd
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [伊洛是哥斯拉嘛 #伊洛是哥斯拉吗](https://space.bilibili.com/17798027)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [伊洛是哥斯拉嘛 #伊洛是哥斯拉吗](https://afdian.com/a/6TGESILA)
 - **Author ID**: `0056`
 
-</details>
-
-<details>
-<summary>Co-creator Details</summary>
+## Co-creator
 
 - **Name**: 端木一动不动
-  - **Role**: 动画
+  - **Role**: #动画 | #Animation
 
 - **Name**: 甜粽子
-  - **Role**: 动画
+  - **Role**: #动画 | #Animation
 
 - **Name**: 星屑海螺
-  - **Role**: 动画
-  - **SocialPlatform**: Bilibili: https://space.bilibili.com/14975572
-  - **SupportPlatform**: Afdian: https://afdian.net/a/lucia2048
+  - **Role**: #动画 | #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [星屑海螺](https://space.bilibili.com/14975572)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [星屑海螺](https://afdian.net/a/lucia2048)
 
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

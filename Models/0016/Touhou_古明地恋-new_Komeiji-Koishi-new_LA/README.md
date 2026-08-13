@@ -1,29 +1,33 @@
 # Touhou_古明地恋-new_Komeiji-Koishi-new_LA
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Touhou-Project #TH #TOUHOU #东方 Project
+- **Category**: #Game
+  - **Game**: #Touhou-Project #TH #TOUHOU #东方 Project
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0016 - #祸御神](../README.md)
+- **Name**: #祸御神
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [祸御神](https://space.bilibili.com/164557734)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [祸御神](https://afdian.com/a/YS444)
 - **Author ID**: `0016`
 
-</details>
-
-<details>
-<summary>Co-creator Details</summary>
+## Co-creator
 
 - **Name**: YSM作者导航页
-  - **Role**: 看我
-  - **OtherPlatform**: qwq: 点进来点进来点进来 | awa: 点击右下角主页进入
+  - **Role**: #看我
+  - **OtherPlatform**: #qwq #awa
+    - **qwq**: 点进来点进来点进来
+    - **awa**: 点击右下角主页进入
 
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

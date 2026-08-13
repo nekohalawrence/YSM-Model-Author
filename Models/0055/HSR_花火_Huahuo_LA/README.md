@@ -1,20 +1,27 @@
 # HSR_花火_Huahuo_LA
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Honkai-Star-Rail #HSR #崩坏：星穹铁道
+- **Category**: #Game
+  - **Game**: #Honkai-Star-Rail #HSR #崩坏：星穹铁道
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0055 - #伊蕾娜家的咸鱼](../README.md)
+- **Name**: #伊蕾娜家的咸鱼
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [伊蕾娜家的咸鱼](https://space.bilibili.com/20682514)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [伊蕾娜家的咸鱼](https://afdian.com/a/elainasaltfish)
 - **Author ID**: `0055`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

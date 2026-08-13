@@ -33,6 +33,8 @@ CHECKS: list[tuple[str, str]] = [
     ('works.schema.json', 'knowledge/works.json'),
     ('aliases.schema.json', 'knowledge/aliases.json'),
     ('merge_skips.schema.json', 'knowledge/merge_skips.json'),
+    ('category_map.schema.json', 'knowledge/category_map.json'),
+    ('role_terms.schema.json', 'knowledge/role_terms.json'),
     ('platform_map.schema.json', 'meta/platform_map.json'),
     ('models_meta.schema.json', 'meta/models_meta.json'),
 ]

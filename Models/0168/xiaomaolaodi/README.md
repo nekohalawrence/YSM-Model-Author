@@ -1,20 +1,27 @@
 # xiaomaolaodi
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Unknown
+  - **Game**: #Unknown
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0168 - #丁真蟹](../README.md)
+- **Name**: #丁真蟹 | #ZHEN
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [丁真蟹](https://space.bilibili.com/652519489)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [丁真蟹](https://afdian.com/a/ZHEN2023)
 - **Author ID**: `0168`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

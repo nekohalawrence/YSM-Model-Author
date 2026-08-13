@@ -1,30 +1,34 @@
 # Unknown_萨赫梅特_Sahmet-Artek_LA
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Other
+  - **Game**: #Unknown
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0094 - #墨染逝羽](../README.md)
+- **Name**: #墨染逝羽 | #Feather_aya
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [墨染逝羽](https://space.bilibili.com/5718046)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [墨染逝羽](https://afdian.com/a/FliegeSA)
 - **Author ID**: `0094`
 
-</details>
-
-<details>
-<summary>Co-creator Details</summary>
+## Co-creator
 
 - **Name**: 雷切克
-  - **Role**: 动画
-  - **SocialPlatform**: Bilibili: https://space.bilibili.com/33150006
-  - **SupportPlatform**: Afdian: https://afdian.com/a/Receke
+  - **Role**: #动画 | #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [雷切克](https://space.bilibili.com/33150006)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [雷切克](https://afdian.com/a/Receke)
 
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

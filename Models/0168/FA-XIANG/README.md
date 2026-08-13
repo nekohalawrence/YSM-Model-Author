@@ -1,30 +1,34 @@
 # FA-XIANG
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Unknown
+  - **Game**: #Unknown
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0168 - #丁真蟹](../README.md)
+- **Name**: #丁真蟹 | #ZHEN
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [丁真蟹](https://space.bilibili.com/652519489)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [丁真蟹](https://afdian.com/a/ZHEN2023)
 - **Author ID**: `0168`
 
-</details>
-
-<details>
-<summary>Co-creator Details</summary>
+## Co-creator
 
 - **Name**: ZHEN
-  - **Role**: 动画
-  - **SocialPlatform**: Bilibili: https://account.bilibili.com/account/face/upload652519489
-  - **SupportPlatform**: Afdian: https://afdian.com/a/ZHEN2023
+  - **Role**: #动画 | #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [ZHEN](https://account.bilibili.com/account/face/upload652519489)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [ZHEN](https://afdian.com/a/ZHEN2023)
 
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

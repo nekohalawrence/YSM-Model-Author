@@ -1,46 +1,57 @@
 # Unknown_上官绘凛_LC
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Unknown
+- **Category**: #Other
+  - **Game**: #Unknown
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0002 - #映素](../README.md)
+- **Name**: #映素 | #映素作坊
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [映素](https://space.bilibili.com/400235810)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [映素](https://afdian.com/a/6TGESILA)
+  - **GroupChat**: #QQ
+    - **QQ**: 833187861
 - **Author ID**: `0002`
 
-</details>
-
-<details>
-<summary>Co-creator Details</summary>
+## Co-creator
 
 - **Name**: 暮下之言
-  - **SupportPlatform**: Patreon: https://space.bilibili.com/174377821?spm_id_from=333.337.0.0
+  - **SupportPlatform**: #Patreon
+    - **Patreon**: [暮下之言](https://space.bilibili.com/174377821?spm_id_from=333.337.0.0)
 
 - **Name**: Pr1me_M4sk
-  - **SupportPlatform**: Patreon: https://afdian.com/a/Night_Iron_Core_Tacz
+  - **SupportPlatform**: #Patreon
+    - **Patreon**: [Pr1me_M4sk](https://afdian.com/a/Night_Iron_Core_Tacz)
 
 - **Name**: 每天都睡不醒的秋风
-  - **SupportPlatform**: Patreon: https://space.bilibili.com/375227559?spm_id_from=333.337.0.0
+  - **SupportPlatform**: #Patreon
+    - **Patreon**: [每天都睡不醒的秋风](https://space.bilibili.com/375227559?spm_id_from=333.337.0.0)
 
 - **Name**: 12ssssss
-  - **SupportPlatform**: Patreon: https://space.bilibili.com/14698522?spm_id_from=333.1387.0.0
+  - **SupportPlatform**: #Patreon
+    - **Patreon**: [12ssssss](https://space.bilibili.com/14698522?spm_id_from=333.1387.0.0)
 
 - **Name**: 星屑海螺
-  - **SupportPlatform**: Patreon: https://space.bilibili.com/14975572?spm_id_from=333.337.0.0
+  - **SupportPlatform**: #Patreon
+    - **Patreon**: [星屑海螺](https://space.bilibili.com/14975572?spm_id_from=333.337.0.0)
 
 - **Name**: RABasya
-  - **SupportPlatform**: Patreon: https://space.bilibili.com/162929895?spm_id_from=333.1387.follow.user_card.click
+  - **SupportPlatform**: #Patreon
+    - **Patreon**: [RABasya](https://space.bilibili.com/162929895?spm_id_from=333.1387.follow.user_card.click)
 
 - **Name**: 提可拉
-  - **SupportPlatform**: Patreon: https://space.bilibili.com/326133289?spm_id_from=333.337.search-card.all.click
+  - **SupportPlatform**: #Patreon
+    - **Patreon**: [提可拉](https://space.bilibili.com/326133289?spm_id_from=333.337.search-card.all.click)
 
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

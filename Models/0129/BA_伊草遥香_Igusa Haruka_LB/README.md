@@ -1,30 +1,34 @@
 # BA_伊草遥香_Igusa Haruka_LB
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
+- **Category**: #Game
+  - **Game**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0129 - #Dr观星](../README.md)
+- **Name**: #Dr观星 | #Dr-观星
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [Dr观星](https://space.bilibili.com/157282636)
+  - **GroupChat**: #QQ
+    - **QQ**: 1087347018
 - **Author ID**: `0129`
 
-</details>
-
-<details>
-<summary>Co-creator Details</summary>
+## Co-creator
 
 - **Name**: 狱际星芒
-  - **Role**: 动作系统
-  - **SocialPlatform**: Bilibili: https://space.bilibili.com/349150095
-  - **SupportPlatform**: Afdian: https://afdian.com/a/3256286845xingmang
+  - **Role**: #动作 | #Motion
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [狱际星芒](https://space.bilibili.com/349150095)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [狱际星芒](https://afdian.com/a/3256286845xingmang)
 
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

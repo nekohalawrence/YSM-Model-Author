@@ -1,20 +1,27 @@
 # GI_北斗_Beidou_LC
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Genshin Impact #Genshin #GI #原神
+- **Category**: #Game
+  - **Game**: #Genshin Impact #Genshin #GI #原神
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0111 - #奶油桃NaytoTime](../README.md)
+- **Name**: #奶油桃NaytoTime
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [奶油桃NaytoTime](https://space.bilibili.com/74167922)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [奶油桃NaytoTime](https://afdian.com/a/liberstellae)
 - **Author ID**: `0111`
 
+## Co-creator
+
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 

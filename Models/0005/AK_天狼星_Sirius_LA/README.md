@@ -1,29 +1,35 @@
 # AK_天狼星_Sirius_LA
 
+## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Franchise / Category**: #Arknights #AK #明日方舟
+- **Category**: #Game
+  - **Game**: #Arknights #AK #明日方舟
 
-</details>
+## Author
 
-<details>
-<summary>Author Details</summary>
-
-- **Author**: [#0005 - #omo仙贝2号](../README.md)
+- **Name**: #omo仙贝2号 | #omo | #FujiwaranoMoku114514
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili #YouTube #Twitter
+    - **Bilibili**: [omo仙贝2号](https://space.bilibili.com/1959304255)
+    - **YouTube**: [omo仙贝2号](https://www.youtube.com/@%E8%97%A4%E5%8E%9F%E5%A6%B9%E7%BA%A2-i3q)
+    - **Twitter**: [omo仙贝2号](https://x.com/wOelxdwlnwq5Zl0)
+  - **SupportPlatform**: #Afdian #Patreon
+    - **Afdian**: [omo仙贝2号](https://afdian.com/a/omomomomomomo)
+    - **Patreon**: [omo仙贝2号](https://www.patreon.com/c/omo595/posts)
 - **Author ID**: `0005`
 
-</details>
-
-<details>
-<summary>Co-creator Details</summary>
+## Co-creator
 
 - **Name**: 甜粽子
-  - **Role**: 物理动画调试
-  - **SocialPlatform**: Bilibili: https://space.bilibili.com/1968748
+  - **Role**: #动画 | #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [甜粽子](https://space.bilibili.com/1968748)
 
 </details>
 
+## Preview Images
 <details open>
 <summary>Preview Images</summary>
 
