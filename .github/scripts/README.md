@@ -112,11 +112,21 @@ python .github/scripts/cli.py <子命令> [参数...]   # 参数原样转发给�
 
 | 子命令 | 目标脚本 |
 | --- | --- |
-| `organize` / `previews` / `rename-files` | ingest/* |
+| `organize` / `audit` / `previews` / `rename-files` | ingest/* |
 | `rename-folders` / `kb` | naming/* |
 | `authors` / `readmes` / `authors-list` / `format` / `translate` / `site` | publish/* |
 | `flow` | pipeline.py（流程编排） |
 | `check` | lib/validate.py（数据契约校验） |
+
+**库整理工具 `audit`**（`ingest/audit_models.py`，处理已有库的整理，与 organize 的入库职责分离）：
+
+- `cli.py audit`——全量审计报告（只读）：重新分类差异、重复作者候选；
+- `cli.py audit --reclassify --apply`——重新分类：扫 Models 现有 .ysm 主作者与目录编号比对，
+  归属错误**逐项确认**后移动（含 models_meta 键迁移）；
+- `cli.py audit --merge-authors --apply`——合并重复作者：候选判定 = 平台账号相同 /
+  规范化名字相等 / **规范化名字子串**（中文≥3字、英文≥4字符门槛），**逐对确认**后合并
+  （移动模型、并 Name+平台行、迁移 models_meta、删除被合并目录、重建索引）；
+- `cli.py audit --report-empty`——空壳报告（无 .ysm 的模型文件夹 / 无模型作者目录）。
 
 ## 六、遗留待办（不阻塞当前使用）
 

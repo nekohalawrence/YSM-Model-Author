@@ -9,9 +9,13 @@
 
 ## Author
 
-- **Name**: #奶油桃 | #Killot945
+- **Name**: #奶油桃NaytoTime | #奶油桃
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-- **Author ID**: `0195`
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [奶油桃NaytoTime](https://space.bilibili.com/74167922)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [奶油桃NaytoTime](https://afdian.com/a/liberstellae)
+- **Author ID**: `0111`
 
 ## Co-creator
 
