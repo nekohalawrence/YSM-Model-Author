@@ -23,10 +23,12 @@ from lib import paths as lib_paths  # noqa: E402
 # .ysm 元数据提取正则：兼容多版本
 #   旧版(Property): <name> xxx / <authors> xxx（单行标签，值到行尾）
 #   新版(Metadata 2.5+): <author> 块结构，作者名在缩进的 <name> 子标签里，可有多个作者块
+#   2026 新格式(format 26+): Metadata 段单行 <author> 名字（单数标签，值到行尾）
 #   早期无头版: JSON 键 "name"/"authors"
 # ---------------------------------------------------------------------------
 TOP_NAME_RE = re.compile(r'(?m)^<name>\s*([^\r\n<]+?)\s*$')            # 顶层模型名（行首无缩进）
-AUTHORS_LINE_RE = re.compile(r'(?m)^<authors>\s*([^\r\n<]+?)\s*$')     # 旧版单行 authors
+AUTHORS_LINE_RE = re.compile(r'(?m)^<authors>\s*([^\r\n<]+?)\s*$')     # 旧版单行 authors（复数）
+AUTHOR_SINGLE_RE = re.compile(r'(?m)^<author>\s*([^\r\n<]+?)\s*$')     # 2026 单行 author（单数）
 AUTHOR_BLOCK_RE = re.compile(r'<author>(.*?)(?=<author>|$)', re.DOTALL)  # 新版作者块
 BLOCK_NAME_RE = re.compile(r'(?m)^\s*<name>\s*([^\r\n<]+?)\s*$')       # 块内缩进 <name>
 BLOCK_ROLE_RE = re.compile(r'(?m)^\s*<role>\s*([^\r\n<]+?)\s*$')       # 块内缩进 <role>
@@ -84,6 +86,13 @@ def _parse_metadata_text(text: str) -> dict:
                 if key and val:
                     contacts.setdefault(key, val)
             author_blocks.append({'name': name, 'role': role, 'contacts': contacts})
+        # 2026 新格式：Metadata 段单行 <author> 名字（Property 风格）。
+        # 块解析为空时才启用——块结构的 <author> 行不带值，不会被此正则误匹配。
+        if not author_blocks:
+            for m_a in AUTHOR_SINGLE_RE.finditer(head):
+                name = m_a.group(1).strip()
+                if name:
+                    author_blocks.append({'name': name, 'role': '', 'contacts': {}})
         if author_blocks:
             fields['authors'] = ' | '.join(b['name'] for b in author_blocks)
 
