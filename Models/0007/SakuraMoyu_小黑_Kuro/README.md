@@ -15,8 +15,6 @@
     - **Bilibili**: [啊这-_-0](https://space.bilibili.com/347376421)
 - **Author ID**: `0007`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

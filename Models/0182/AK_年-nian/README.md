@@ -13,8 +13,6 @@
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
 - **Author ID**: `0182`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

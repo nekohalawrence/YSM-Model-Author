@@ -15,8 +15,6 @@
     - **Afdian**: [XG残党](https://afdian.com/a/x416g)
 - **Author ID**: `0004`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

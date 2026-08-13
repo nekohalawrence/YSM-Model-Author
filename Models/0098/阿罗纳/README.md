@@ -15,8 +15,6 @@
     - **Afdian**: [coldM00N](https://afdian.com/a/coldMOON048)
 - **Author ID**: `0098`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

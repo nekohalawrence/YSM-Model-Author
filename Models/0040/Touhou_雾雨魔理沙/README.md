@@ -15,8 +15,6 @@
     - **Bilibili**: [碎de帆](https://space.bilibili.com/381524342)
 - **Author ID**: `0040`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

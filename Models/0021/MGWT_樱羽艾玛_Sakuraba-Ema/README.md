@@ -15,8 +15,6 @@
     - **Bilibili**: [酷酷の霜叶小姐姐](https://space.bilibili.com/106626083)
 - **Author ID**: `0021`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

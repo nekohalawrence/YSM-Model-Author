@@ -17,8 +17,6 @@
     - **Afdian**: [绘飞](https://afdian.com/a/huifei)
 - **Author ID**: `0153`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

@@ -15,8 +15,6 @@
     - **Bilibili**: [对羧基苯酚](https://space.bilibili.com/3461562335496256)
 - **Author ID**: `0013`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

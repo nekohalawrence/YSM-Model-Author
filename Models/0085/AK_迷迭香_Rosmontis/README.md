@@ -15,8 +15,6 @@
     - **Bilibili**: [平行Rosmontis](https://space.bilibili.com/473170444)
 - **Author ID**: `0085`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

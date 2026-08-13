@@ -17,8 +17,6 @@
     - **Afdian**: [烛火的次元宇宙](https://afdian.com/a/zhuhuo)
 - **Author ID**: `0065`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

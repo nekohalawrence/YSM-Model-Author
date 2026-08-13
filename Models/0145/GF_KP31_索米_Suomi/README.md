@@ -17,8 +17,6 @@
     - **Afdian**: [咕咕鸡](https://afdian.com/a/GuGuChicken)
 - **Author ID**: `0145`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

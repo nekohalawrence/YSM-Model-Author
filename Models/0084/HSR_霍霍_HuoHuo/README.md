@@ -17,8 +17,6 @@
     - **Afdian**: [幻古诗](https://afdian.com/a/huangushi)
 - **Author ID**: `0084`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

@@ -15,8 +15,6 @@
     - **Bilibili**: [yuoke](https://space.bilibili.com/497425837)
 - **Author ID**: `0143`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

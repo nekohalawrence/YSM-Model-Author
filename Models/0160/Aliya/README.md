@@ -15,8 +15,6 @@
     - **Bilibili**: [宅在佳](https://space.bilibili.com/400228841)
 - **Author ID**: `0160`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

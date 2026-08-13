@@ -17,8 +17,6 @@
     - **Afdian**: [゚烟雨画桥](https://afdian.com/a/mj204)
 - **Author ID**: `0052`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

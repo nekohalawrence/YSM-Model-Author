@@ -11,8 +11,6 @@
 
 - **Name**: 暂无
 
-## Co-creator
-
 </details>
 
 ## Preview Images

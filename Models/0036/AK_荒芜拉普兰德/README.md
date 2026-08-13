@@ -17,8 +17,6 @@
     - **Afdian**: [日月明567](https://afdian.com/a/rym567)
 - **Author ID**: `0036`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

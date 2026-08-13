@@ -18,8 +18,6 @@
     - **Afdian**: [嗯嗯owo](https://afdian.com/a/enenowo)
 - **Author ID**: `0030`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

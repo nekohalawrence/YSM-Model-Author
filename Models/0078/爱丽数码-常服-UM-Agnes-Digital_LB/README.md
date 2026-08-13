@@ -15,8 +15,6 @@
     - **Bilibili**: [LuXi233](https://space.bilibili.com/183485702)
 - **Author ID**: `0078`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

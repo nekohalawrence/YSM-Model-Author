@@ -15,8 +15,6 @@
     - **Bilibili**: [Dr咕咚](https://space.bilibili.com/5950899)
 - **Author ID**: `0071`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

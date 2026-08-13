@@ -17,8 +17,6 @@
     - **Afdian**: [默栖](https://afdian.com/a/DLMoqi)
 - **Author ID**: `0165`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

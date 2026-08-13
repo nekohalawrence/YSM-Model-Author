@@ -15,8 +15,6 @@
     - **YouTube**: [Omegaff0048](https://www.youtube.com/@omegaff0048)
 - **Author ID**: `0142`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

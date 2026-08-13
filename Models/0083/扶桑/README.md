@@ -15,8 +15,6 @@
     - **Bilibili**: [鼠标会梦到光猫吗](https://space.bilibili.com/3546800153692981)
 - **Author ID**: `0083`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

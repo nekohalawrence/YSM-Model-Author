@@ -15,8 +15,6 @@
     - **Afdian**: [安欣](https://afdian.com/a/Anxin520X)
 - **Author ID**: `0149`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

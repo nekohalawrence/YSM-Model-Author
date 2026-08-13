@@ -17,8 +17,6 @@
     - **Afdian**: [AnluoSakura](https://afdian.com/a/AnluoSakura)
 - **Author ID**: `0068`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

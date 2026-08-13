@@ -15,8 +15,6 @@
     - **Bilibili**: [油七桶](https://space.bilibili.com/4896879)
 - **Author ID**: `0060`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

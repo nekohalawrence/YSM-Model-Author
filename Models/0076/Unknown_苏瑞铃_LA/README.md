@@ -17,8 +17,6 @@
     - **Afdian**: [White_clams白蛤蜊](https://afdian.com/a/whiteclams)
 - **Author ID**: `0076`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

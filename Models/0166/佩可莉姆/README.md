@@ -15,8 +15,6 @@
     - **Afdian**: [棒锤锤](https://afdian.com/a/bbc6868)
 - **Author ID**: `0166`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

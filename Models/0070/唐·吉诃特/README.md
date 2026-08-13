@@ -17,8 +17,6 @@
     - **Afdian**: [Dashcode](https://afdian.com/a/ashes356)
 - **Author ID**: `0070`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

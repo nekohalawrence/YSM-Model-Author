@@ -15,8 +15,6 @@
     - **Bilibili**: [奇葩的小毛](https://space.bilibili.com/642514655)
 - **Author ID**: `0119`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

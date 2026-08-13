@@ -17,8 +17,6 @@
     - **Afdian**: [獒子coco](https://afdian.com/a/AOZICOCO)
 - **Author ID**: `0101`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

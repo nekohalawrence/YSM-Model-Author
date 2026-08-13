@@ -15,8 +15,6 @@
     - **Bilibili**: [平衡芝光](https://space.bilibili.com/526319760)
 - **Author ID**: `0034`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

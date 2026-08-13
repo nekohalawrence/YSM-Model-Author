@@ -15,8 +15,6 @@
     - **Bilibili**: [WisteriaZy](https://space.bilibili.com/694519335)
 - **Author ID**: `0151`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

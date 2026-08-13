@@ -17,8 +17,6 @@
     - **Afdian**: [Almeta_owx](https://afdian.com/a/Almeta)
 - **Author ID**: `0067`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

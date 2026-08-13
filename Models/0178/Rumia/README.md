@@ -15,8 +15,6 @@
     - **Bilibili**: [qidai](https://space.bilibili.com/172318031)
 - **Author ID**: `0178`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

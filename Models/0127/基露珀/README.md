@@ -17,8 +17,6 @@
     - **Afdian**: [总督神绮](https://ifdian.net/a/sShinki)
 - **Author ID**: `0127`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

@@ -15,8 +15,6 @@
     - **Bilibili**: [栗坂猫厘子](https://space.bilibili.com/380914010)
 - **Author ID**: `0024`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

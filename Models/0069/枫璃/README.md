@@ -17,8 +17,6 @@
     - **Afdian**: [ccci202](https://afdian.com/a/ccci202)
 - **Author ID**: `0069`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

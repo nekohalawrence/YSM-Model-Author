@@ -17,8 +17,6 @@
     - **Afdian**: [奶油桃NaytoTime](https://afdian.com/a/liberstellae)
 - **Author ID**: `0111`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

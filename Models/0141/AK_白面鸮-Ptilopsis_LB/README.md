@@ -17,8 +17,6 @@
     - **Afdian**: [映白L #映白](https://afdian.com/a/ehaku)
 - **Author ID**: `0141`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

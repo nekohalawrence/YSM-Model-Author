@@ -17,8 +17,6 @@
     - **Afdian**: [祸御神](https://afdian.com/a/YS444)
 - **Author ID**: `0016`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

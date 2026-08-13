@@ -15,8 +15,6 @@
     - **Bilibili**: [天弓干亦 #筅袔](https://space.bilibili.com/13098279)
 - **Author ID**: `0042`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

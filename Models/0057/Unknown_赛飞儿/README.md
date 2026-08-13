@@ -17,8 +17,6 @@
     - **Afdian**: [忆尘yc27](https://afdian.com/a/114514aabb)
 - **Author ID**: `0057`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

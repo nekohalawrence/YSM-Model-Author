@@ -17,8 +17,6 @@
     - **Afdian**: [菊姥爷](https://afdian.com/a/julaoye)
 - **Author ID**: `0092`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

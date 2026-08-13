@@ -17,8 +17,6 @@
     - **QQ**: 3612246475
 - **Author ID**: `0010`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

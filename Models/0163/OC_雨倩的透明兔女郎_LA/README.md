@@ -17,8 +17,6 @@
     - **Afdian**: [Rhein雨倩](https://afdian.com/a/Rheinyuq)
 - **Author ID**: `0163`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

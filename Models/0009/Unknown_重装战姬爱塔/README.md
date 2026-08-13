@@ -15,8 +15,6 @@
     - **Bilibili**: [白亚奈Anay](https://space.bilibili.com/454110884)
 - **Author ID**: `0009`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

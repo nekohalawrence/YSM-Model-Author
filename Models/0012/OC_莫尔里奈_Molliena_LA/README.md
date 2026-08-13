@@ -15,8 +15,6 @@
     - **Bilibili**: [赤恒-AzaMire](https://space.bilibili.com/235888316)
 - **Author ID**: `0012`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

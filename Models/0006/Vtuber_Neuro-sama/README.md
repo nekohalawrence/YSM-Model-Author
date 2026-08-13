@@ -18,8 +18,6 @@
     - **Sketchfab**: [Nekuro](https://sketchfab.com/NekuroMC/models)
 - **Author ID**: `0006`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

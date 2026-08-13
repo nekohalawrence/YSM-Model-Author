@@ -17,8 +17,6 @@
     - **Afdian**: [丁真蟹](https://afdian.com/a/ZHEN2023)
 - **Author ID**: `0168`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

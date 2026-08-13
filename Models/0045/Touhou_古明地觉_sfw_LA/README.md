@@ -18,8 +18,6 @@
     - **QQ**: 530621549
 - **Author ID**: `0045`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

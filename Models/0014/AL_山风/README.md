@@ -15,8 +15,6 @@
     - **Bilibili**: [哈雷汰多](https://space.bilibili.com/385810311)
 - **Author ID**: `0014`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

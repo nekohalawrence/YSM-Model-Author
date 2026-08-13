@@ -20,8 +20,6 @@
     - **Patreon**: [omo仙贝2号](https://www.patreon.com/c/omo595/posts)
 - **Author ID**: `0005`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

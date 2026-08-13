@@ -351,10 +351,10 @@ def build_meta_and_preview_content(model_dir: Path, image_paths: list[Path],
             lines += render_person_block(author_entry, author_id=author_id)
             lines.append('')
         elif key == 'co_creator_details':
-            lines += [section['heading'], '']
+            # 无 co-creator 时连标题也不输出（避免空 section 占位）
             co_section = build_co_creator_section(co_creators)
             if co_section:
-                lines += [co_section, '']
+                lines += [section['heading'], '', co_section, '']
         elif key == 'preview_images':
             # 关闭 Model Details 的大 details，再开 Preview 的独立 details
             lines += ['</details>', '', section['heading'],

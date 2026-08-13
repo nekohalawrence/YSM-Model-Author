@@ -17,8 +17,6 @@
     - **Afdian**: [ガラスのような青空](https://afdian.com/a/coldMOON048)
 - **Author ID**: `0118`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

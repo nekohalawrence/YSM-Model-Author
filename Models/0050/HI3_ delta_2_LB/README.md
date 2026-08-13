@@ -17,8 +17,6 @@
     - **Afdian**: [荨蒿栗里](https://ifdian.net/a/xphkvilili?tab=home)
 - **Author ID**: `0050`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

@@ -15,8 +15,6 @@
     - **Bilibili**: [-OMEGAZERO-](https://space.bilibili.com/359658906)
 - **Author ID**: `0000`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

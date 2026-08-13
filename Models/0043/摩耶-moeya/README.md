@@ -17,8 +17,6 @@
     - **Afdian**: [完全凍結ALL](https://afdian.com/a/AllFreeze)
 - **Author ID**: `0043`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

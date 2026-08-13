@@ -17,8 +17,6 @@
     - **Afdian**: [谱露阿凯](https://afdian.com/a/11434fan)
 - **Author ID**: `0035`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

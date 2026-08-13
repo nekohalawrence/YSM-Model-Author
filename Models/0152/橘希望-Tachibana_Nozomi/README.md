@@ -17,8 +17,6 @@
     - **Afdian**: [wwww琨](https://afdian.com/a/wwwwkun)
 - **Author ID**: `0152`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

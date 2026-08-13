@@ -15,8 +15,6 @@
     - **Bilibili**: [辅助EinHeld](https://space.bilibili.com/483015918)
 - **Author ID**: `0125`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

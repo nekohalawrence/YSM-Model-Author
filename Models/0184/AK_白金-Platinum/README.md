@@ -15,8 +15,6 @@
     - **Bilibili**: [MC-ZBM](https://space.bilibili.com/604228173)
 - **Author ID**: `0184`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

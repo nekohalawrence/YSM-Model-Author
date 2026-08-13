@@ -19,8 +19,6 @@
     - **QQ**: 167941105 已满
 - **Author ID**: `0112`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

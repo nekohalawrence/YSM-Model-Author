@@ -17,8 +17,6 @@
     - **Afdian**: [苏依凛](https://afdian.com/a/supermonsterking)
 - **Author ID**: `0093`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

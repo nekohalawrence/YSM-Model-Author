@@ -17,8 +17,6 @@
     - **Afdian**: [伊蕾娜家的咸鱼](https://afdian.com/a/elainasaltfish)
 - **Author ID**: `0055`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

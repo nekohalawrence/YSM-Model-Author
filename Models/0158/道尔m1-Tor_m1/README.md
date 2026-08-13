@@ -17,8 +17,6 @@
     - **Afdian**: [TiRLey](https://afdian.com/a/HSTVsuckBVMrelikt)
 - **Author ID**: `0158`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

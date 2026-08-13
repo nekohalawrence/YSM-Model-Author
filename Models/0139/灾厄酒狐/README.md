@@ -15,8 +15,6 @@
     - **Bilibili**: [穿越小魔王](https://space.bilibili.com/1562115685)
 - **Author ID**: `0139`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

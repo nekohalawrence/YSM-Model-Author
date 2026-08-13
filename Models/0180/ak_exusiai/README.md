@@ -15,8 +15,6 @@
     - **Bilibili**: [杂果沙拉](https://space.bilibili.com/21032727)
 - **Author ID**: `0180`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

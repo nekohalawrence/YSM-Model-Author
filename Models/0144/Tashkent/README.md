@@ -17,8 +17,6 @@
     - **QQ**: 2780077625
 - **Author ID**: `0144`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

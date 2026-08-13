@@ -17,8 +17,6 @@
     - **Afdian**: [Killot](https://afdian.com/a/Killot945)
 - **Author ID**: `0074`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

@@ -17,8 +17,6 @@
     - **Afdian**: [失踪的李元](https://afdian.com/a/ly3064421540)
 - **Author ID**: `0162`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

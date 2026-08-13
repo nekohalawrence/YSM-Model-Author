@@ -17,8 +17,6 @@
     - **QQ**: 1082258207
 - **Author ID**: `0108`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

@@ -15,8 +15,6 @@
     - **Bilibili**: [空洞qwq](https://space.bilibili.com/1230961559)
 - **Author ID**: `0126`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

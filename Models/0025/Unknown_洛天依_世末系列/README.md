@@ -15,8 +15,6 @@
     - **Bilibili**: [绫独之落](https://space.bilibili.com/39655169)
 - **Author ID**: `0025`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

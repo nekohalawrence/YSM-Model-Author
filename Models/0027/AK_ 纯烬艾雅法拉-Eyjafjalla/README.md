@@ -15,8 +15,6 @@
     - **Bilibili**: [猫耳魂魄妖梦](https://space.bilibili.com/1436299)
 - **Author ID**: `0027`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

@@ -15,8 +15,6 @@
     - **Bilibili**: [Anrieal](https://space.bilibili.com/1421932069)
 - **Author ID**: `0123`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

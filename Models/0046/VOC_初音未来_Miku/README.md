@@ -15,8 +15,6 @@
     - **Bilibili**: [小萌新idjdkd](https://space.bilibili.com/1573788561)
 - **Author ID**: `0046`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

@@ -15,8 +15,6 @@
     - **Bilibili**: [XGancheng_Tao](https://space.bilibili.com/1406170630)
 - **Author ID**: `0003`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

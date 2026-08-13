@@ -15,8 +15,6 @@
     - **Bilibili**: [炼狱在旅行](https://space.bilibili.com/2137283416)
 - **Author ID**: `0167`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

@@ -15,8 +15,6 @@
     - **Bilibili**: [失语喵](https://space.bilibili.com/171415484)
 - **Author ID**: `0120`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

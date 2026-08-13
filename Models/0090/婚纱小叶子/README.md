@@ -15,8 +15,6 @@
     - **Bilibili**: [九碳糖](https://space.bilibili.com/543291461)
 - **Author ID**: `0090`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

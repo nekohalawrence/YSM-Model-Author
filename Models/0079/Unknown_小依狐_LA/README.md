@@ -15,8 +15,6 @@
     - **Bilibili**: [小多利鸭](https://space.bilibili.com/295570429)
 - **Author ID**: `0079`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

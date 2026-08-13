@@ -17,8 +17,6 @@
     - **Afdian**: [爱听书的旅人](https://afdian.com/a/ATSDLR)
 - **Author ID**: `0187`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

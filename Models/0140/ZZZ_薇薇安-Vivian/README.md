@@ -17,8 +17,6 @@
     - **Afdian**: [TUTU秃](https://afdian.com/a/tututugongfang)
 - **Author ID**: `0140`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

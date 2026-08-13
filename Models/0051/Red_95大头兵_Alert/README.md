@@ -17,8 +17,6 @@
     - **Afdian**: [动员鼬](https://afdian.com/a/dyy114514)
 - **Author ID**: `0051`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

@@ -15,8 +15,6 @@
     - **Bilibili**: [MicroCraft_](https://space.bilibili.com/701974112)
 - **Author ID**: `0073`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

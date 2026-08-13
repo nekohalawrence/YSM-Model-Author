@@ -15,8 +15,6 @@
     - **Bilibili**: [Dumnheint](https://space.bilibili.com/36644599)
 - **Author ID**: `0099`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

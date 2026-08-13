@@ -17,8 +17,6 @@
     - **Afdian**: [Deovolente](https://afdian.com/a/Deovolente)
 - **Author ID**: `0157`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

@@ -17,8 +17,6 @@
     - **Afdian**: [松鼠式坦克兵工](https://afdian.com/a/Gaimetear2333)
 - **Author ID**: `0039`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

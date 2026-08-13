@@ -17,8 +17,6 @@
     - **Afdian**: [窝窝头](https://afdian.com/a/WWTman)
 - **Author ID**: `0081`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

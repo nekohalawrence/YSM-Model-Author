@@ -18,8 +18,6 @@
     - **Afdian**: [寒叔hs](https://afdian.com/a/Aigoblin)
 - **Author ID**: `0015`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

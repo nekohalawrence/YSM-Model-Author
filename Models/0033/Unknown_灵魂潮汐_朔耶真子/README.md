@@ -15,8 +15,6 @@
     - **Bilibili**: [胖狐狸工作室](https://space.bilibili.com/1839129371)
 - **Author ID**: `0033`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

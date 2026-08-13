@@ -17,8 +17,6 @@
     - **Afdian**: [聚模道](https://afdian.com/a/yr9964332)
 - **Author ID**: `0117`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

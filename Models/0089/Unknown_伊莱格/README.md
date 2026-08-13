@@ -17,8 +17,6 @@
     - **Afdian**: [踽魍估恶真君](https://www.ifdian.net/a/mxj2005)
 - **Author ID**: `0089`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

@@ -17,8 +17,6 @@
     - **Afdian**: [幻梦星璇](https://afdian.com/a/704550273Yy)
 - **Author ID**: `0150`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

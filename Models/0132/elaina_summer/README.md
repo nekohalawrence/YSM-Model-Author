@@ -15,8 +15,6 @@
     - **Bilibili**: [qf欸 #qf](https://space.bilibili.com/452194950)
 - **Author ID**: `0132`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

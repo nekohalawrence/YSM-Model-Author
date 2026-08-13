@@ -19,8 +19,6 @@
     - **Unifans**: [源石姬变体](https://app.unifans.io/c/rawchickenneg)
 - **Author ID**: `0095`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

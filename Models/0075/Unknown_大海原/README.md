@@ -15,8 +15,6 @@
     - **Bilibili**: [Wadanohara_Rika](https://space.bilibili.com/397318084)
 - **Author ID**: `0075`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

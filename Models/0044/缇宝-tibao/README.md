@@ -17,8 +17,6 @@
     - **QQ**: 624971642
 - **Author ID**: `0044`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

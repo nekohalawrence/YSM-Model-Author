@@ -17,8 +17,6 @@
     - **Afdian**: [-_-_-_-_草-_-_-_-](https://afdian.com/a/ckdr251)
 - **Author ID**: `0161`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

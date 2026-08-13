@@ -15,8 +15,6 @@
     - **Bilibili**: [Ark样本](https://space.bilibili.com/3081780)
 - **Author ID**: `0128`
 
-## Co-creator
-
 </details>
 
 ## Preview Images

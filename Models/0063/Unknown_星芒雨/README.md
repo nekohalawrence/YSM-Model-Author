@@ -17,8 +17,6 @@
     - **Afdian**: [再来几斤小莫莫](https://afdian.com/a/starmoon679)
 - **Author ID**: `0063`
 
-## Co-creator
-
 </details>
 
 ## Preview Images
