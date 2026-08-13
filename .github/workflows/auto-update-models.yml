@@ -11,6 +11,7 @@ on:
       - 'Blockbench-Models/**'
       - 'Other-YSM-Models/**'
       - 'README.md'
+      - '_Model-Inbox/**'          # 推送新模型到 _Model-Inbox 时也触发（Step0 归档）
   workflow_dispatch:
 
 jobs:
@@ -30,23 +31,34 @@ jobs:
       - name: Install Dependencies
         run: pip install openai
 
+      # 0. 若本次推送含 _Model-Inbox 的新模型：先归档分类（只归档，联动交给后续步骤统一跑）。
+      #    --no-rename 跳过文件夹重命名（重命名需人工确认，见 scripts/README.md 遗留 3）。
+      - name: Step 0 - Organize models from _Model-Inbox
+        run: |
+          if find _Model-Inbox -name '*.ysm' -print -quit | grep -q .; then
+            python .github/scripts/ingest/organize_models.py _Model-Inbox --apply \
+              --no-rename --no-gen-readmes --no-update-readme
+          else
+            echo "No new .ysm files in _Model-Inbox; skip."
+          fi
+
       # 1. 重建集中作者数据 authors.json（供后续脚本统一读取）
       - name: Step 1 - Build Authors Index
-        run: python .github/scripts/build_authors_index.py
+        run: python .github/scripts/publish/build_authors_index.py
 
       # 2. 自动生成各个模型的 preview README和模型信息
       - name: Step 2 - Generate Model READMEs
-        run: python .github/scripts/generate_model_readmes.py
+        run: python .github/scripts/publish/generate_model_readmes.py
 
       # 3. 自动更新主 README 中的作者列表与模型统计
       - name: Step 3 - Auto Update Authors List
-        run: python .github/scripts/build_readme_authors.py
+        run: python .github/scripts/publish/build_readme_authors.py
 
       # 4. 翻译 README.md (会自动将你在 README.md 中写的手动日志翻译并同步至 README-EN.md)
       - name: Step 4 - Translate full README to README-EN.md
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
-        run: python .github/scripts/translate_readme.py
+        run: python .github/scripts/publish/translate_readme.py
 
       # 5. 统一提交推送
       - name: Commit and push all changes

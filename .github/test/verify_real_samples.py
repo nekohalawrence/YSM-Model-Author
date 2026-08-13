@@ -7,8 +7,8 @@ import sys
 sys.stdout.reconfigure(encoding='utf-8')
 
 spec = importlib.util.spec_from_file_location(
-    'org', pathlib.Path(__file__).resolve().parents[2] / '.github' / 'scripts' / 'organize_models.py')
-sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[2] / '.github' / 'scripts'))
+    'org', pathlib.Path(__file__).resolve().parents[2] / '.github' / 'scripts' / 'ingest' / 'organize_models.py')
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[2] / '.github' / 'scripts' / 'ingest'))
 org = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(org)
 

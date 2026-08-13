@@ -57,11 +57,16 @@ def setup():
     (ROOT / "README-EN.md").write_text(
         "<!-- AUTHORS_LIST_START -->\n| 0001 | [#A作者](.../../Models/0001) | 1 |\n"
         "| 0002 | [#B作者](.../../Models/0002) | 1 |\n<!-- AUTHORS_LIST_END -->\n", encoding="utf-8")
-    # 复制联动脚本、公共库与数据（使其 WORKSPACE_ROOT 指向临时根）
-    (ROOT / ".github" / "scripts").mkdir(parents=True)
-    for name in ("organize_models.py", "generate_model_readmes.py",
-                 "build_readme_authors.py", "build_authors_index.py"):
-        shutil.copy(SCRIPTS / name, ROOT / ".github" / "scripts" / name)
+    # 复制联动脚本、公共库与数据（使其 WORKSPACE_ROOT 指向临时根，按分类子目录复制）
+    COPY_SCRIPTS = {
+        "ingest": ["organize_models.py"],
+        "publish": ["generate_model_readmes.py", "build_readme_authors.py",
+                    "build_authors_index.py"],
+    }
+    for cat, names in COPY_SCRIPTS.items():
+        (ROOT / ".github" / "scripts" / cat).mkdir(parents=True, exist_ok=True)
+        for name in names:
+            shutil.copy(SCRIPTS / cat / name, ROOT / ".github" / "scripts" / cat / name)
     if (SCRIPTS / "lib").is_dir():
         shutil.copytree(SCRIPTS / "lib", ROOT / ".github" / "scripts" / "lib")
     if (REPO / ".github" / "data").exists():
@@ -75,11 +80,9 @@ def setup():
             "version": 1,
             "generated": "test",
             "authors": {
-                "0001": {"name": "#A作者 | #AuthorA",
-                         "aliases": ["#A作者", "#AuthorA"],
+                "0001": {"name": ["#A作者", "#AuthorA"],
                          "readme": "Models/0001/README.md", "platforms": {}},
-                "0002": {"name": "#B作者 | #AuthorB",
-                         "aliases": ["#B作者", "#AuthorB"],
+                "0002": {"name": ["#B作者", "#AuthorB"],
                          "readme": "Models/0002/README.md", "platforms": {}},
             },
         }, ensure_ascii=False, indent=2),
@@ -95,7 +98,7 @@ def setup():
 
 def main():
     setup()
-    r = subprocess.run([sys.executable, str(SCRIPTS / "organize_models.py"),
+    r = subprocess.run([sys.executable, str(SCRIPTS / "ingest" / "organize_models.py"),
                         str(ROOT / "inbox"), "--apply", "--root", str(ROOT),
                         "--no-rename", "--verbose"],
                        capture_output=True, text=True, encoding="utf-8",

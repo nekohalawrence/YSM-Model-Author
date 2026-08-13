@@ -1,10 +1,9 @@
 {
   "version": 1,
-  "generated": "2026-08-13T06:40:43+00:00",
+  "generated": "2026-08-13T07:20:15+00:00",
   "authors": {
     "0000": {
-      "name": "#-OMEGAZERO-",
-      "aliases": [
+      "name": [
         "#-OMEGAZERO-"
       ],
       "readme": "Models/0000/README.md",
@@ -13,8 +12,7 @@
       }
     },
     "0001": {
-      "name": "#02Bunny | #蓝玫瑰",
-      "aliases": [
+      "name": [
         "#02Bunny",
         "#蓝玫瑰"
       ],
@@ -25,8 +23,7 @@
       }
     },
     "0002": {
-      "name": "#映素 | #映素作坊",
-      "aliases": [
+      "name": [
         "#映素",
         "#映素作坊"
       ],
@@ -38,8 +35,7 @@
       }
     },
     "0003": {
-      "name": "#XGancheng_Tao",
-      "aliases": [
+      "name": [
         "#XGancheng_Tao"
       ],
       "readme": "Models/0003/README.md",
@@ -48,8 +44,7 @@
       }
     },
     "0004": {
-      "name": "#XG残党",
-      "aliases": [
+      "name": [
         "#XG残党"
       ],
       "readme": "Models/0004/README.md",
@@ -58,8 +53,7 @@
       }
     },
     "0005": {
-      "name": "#omo仙贝2号| #omo | #FujiwaranoMoku114514",
-      "aliases": [
+      "name": [
         "#omo仙贝2号",
         "#omo",
         "#FujiwaranoMoku114514"
@@ -74,8 +68,7 @@
       }
     },
     "0006": {
-      "name": "#Nekuro | #NekuroMC",
-      "aliases": [
+      "name": [
         "#Nekuro",
         "#NekuroMC"
       ],
@@ -87,8 +80,7 @@
       }
     },
     "0007": {
-      "name": "#啊这-_-0 | #伍炎",
-      "aliases": [
+      "name": [
         "#啊这-_-0",
         "#伍炎"
       ],
@@ -98,8 +90,7 @@
       }
     },
     "0008": {
-      "name": "#白色北熊",
-      "aliases": [
+      "name": [
         "#白色北熊"
       ],
       "readme": "Models/0008/README.md",
@@ -110,8 +101,7 @@
       }
     },
     "0009": {
-      "name": "#白亚奈Anay",
-      "aliases": [
+      "name": [
         "#白亚奈Anay"
       ],
       "readme": "Models/0009/README.md",
@@ -120,8 +110,7 @@
       }
     },
     "0010": {
-      "name": "#波普Popu",
-      "aliases": [
+      "name": [
         "#波普Popu"
       ],
       "readme": "Models/0010/README.md",
@@ -131,8 +120,7 @@
       }
     },
     "0011": {
-      "name": "#池塘-tl | #池塘",
-      "aliases": [
+      "name": [
         "#池塘-tl",
         "#池塘"
       ],
@@ -144,8 +132,7 @@
       }
     },
     "0012": {
-      "name": "#赤恒-AzaMire",
-      "aliases": [
+      "name": [
         "#赤恒-AzaMire"
       ],
       "readme": "Models/0012/README.md",
@@ -154,8 +141,7 @@
       }
     },
     "0013": {
-      "name": "#对羧基苯酚",
-      "aliases": [
+      "name": [
         "#对羧基苯酚"
       ],
       "readme": "Models/0013/README.md",
@@ -164,8 +150,7 @@
       }
     },
     "0014": {
-      "name": "#哈雷汰多",
-      "aliases": [
+      "name": [
         "#哈雷汰多"
       ],
       "readme": "Models/0014/README.md",
@@ -174,8 +159,7 @@
       }
     },
     "0015": {
-      "name": "#寒叔hs | #烈鸟比百 | #Frosty_Uncle",
-      "aliases": [
+      "name": [
         "#寒叔hs",
         "#烈鸟比百",
         "#Frosty_Uncle"
@@ -188,8 +172,7 @@
       }
     },
     "0016": {
-      "name": "#祸御神",
-      "aliases": [
+      "name": [
         "#祸御神"
       ],
       "readme": "Models/0016/README.md",
@@ -199,8 +182,7 @@
       }
     },
     "0017": {
-      "name": "#寄水晶",
-      "aliases": [
+      "name": [
         "#寄水晶"
       ],
       "readme": "Models/0017/README.md",
@@ -209,8 +191,7 @@
       }
     },
     "0018": {
-      "name": "#夹心果风",
-      "aliases": [
+      "name": [
         "#夹心果风"
       ],
       "readme": "Models/0018/README.md",
@@ -221,8 +202,7 @@
       }
     },
     "0019": {
-      "name": "#江竹雨offical | #AAA家电批发江竹雨",
-      "aliases": [
+      "name": [
         "#江竹雨offical",
         "#AAA家电批发江竹雨"
       ],
@@ -233,8 +213,7 @@
       }
     },
     "0020": {
-      "name": "#就叫纸板| #纸板",
-      "aliases": [
+      "name": [
         "#就叫纸板",
         "#纸板"
       ],
@@ -246,8 +225,7 @@
       }
     },
     "0021": {
-      "name": "#酷酷の霜叶小姐姐",
-      "aliases": [
+      "name": [
         "#酷酷の霜叶小姐姐"
       ],
       "readme": "Models/0021/README.md",
@@ -256,8 +234,7 @@
       }
     },
     "0022": {
-      "name": "#Tu_tou",
-      "aliases": [
+      "name": [
         "#Tu_tou"
       ],
       "readme": "Models/0022/README.md",
@@ -266,8 +243,7 @@
       }
     },
     "0023": {
-      "name": "#狸民limin| #狸民| #limin",
-      "aliases": [
+      "name": [
         "#狸民limin",
         "#狸民",
         "#limin"
@@ -280,8 +256,7 @@
       }
     },
     "0024": {
-      "name": "#栗坂猫厘子",
-      "aliases": [
+      "name": [
         "#栗坂猫厘子"
       ],
       "readme": "Models/0024/README.md",
@@ -290,8 +265,7 @@
       }
     },
     "0025": {
-      "name": "#绫独之落",
-      "aliases": [
+      "name": [
         "#绫独之落"
       ],
       "readme": "Models/0025/README.md",
@@ -300,8 +274,7 @@
       }
     },
     "0026": {
-      "name": "#雒仁",
-      "aliases": [
+      "name": [
         "#雒仁"
       ],
       "readme": "Models/0026/README.md",
@@ -312,8 +285,7 @@
       }
     },
     "0027": {
-      "name": "#猫耳魂魄妖梦",
-      "aliases": [
+      "name": [
         "#猫耳魂魄妖梦"
       ],
       "readme": "Models/0027/README.md",
@@ -322,8 +294,7 @@
       }
     },
     "0028": {
-      "name": "#喵Kuroneko| #KuroNeko",
-      "aliases": [
+      "name": [
         "#喵Kuroneko",
         "#KuroNeko"
       ],
@@ -335,8 +306,7 @@
       }
     },
     "0029": {
-      "name": "#墓野奈奈",
-      "aliases": [
+      "name": [
         "#墓野奈奈"
       ],
       "readme": "Models/0029/README.md",
@@ -346,8 +316,7 @@
       }
     },
     "0030": {
-      "name": "#嗯嗯owo",
-      "aliases": [
+      "name": [
         "#嗯嗯owo"
       ],
       "readme": "Models/0030/README.md",
@@ -358,8 +327,7 @@
       }
     },
     "0031": {
-      "name": "#泥泞中的小猫 | #PZGR.40",
-      "aliases": [
+      "name": [
         "#泥泞中的小猫",
         "#PZGR.40"
       ],
@@ -370,8 +338,7 @@
       }
     },
     "0032": {
-      "name": "#你个人机cc | #你个人妻cc",
-      "aliases": [
+      "name": [
         "#你个人机cc",
         "#你个人妻cc"
       ],
@@ -383,8 +350,7 @@
       }
     },
     "0033": {
-      "name": "#胖狐狸工作室 | #红色幽默",
-      "aliases": [
+      "name": [
         "#胖狐狸工作室",
         "#红色幽默"
       ],
@@ -394,8 +360,7 @@
       }
     },
     "0034": {
-      "name": "#平衡芝光",
-      "aliases": [
+      "name": [
         "#平衡芝光"
       ],
       "readme": "Models/0034/README.md",
@@ -404,8 +369,7 @@
       }
     },
     "0035": {
-      "name": "#谱露阿凯 | #饭",
-      "aliases": [
+      "name": [
         "#谱露阿凯",
         "#饭"
       ],
@@ -416,8 +380,7 @@
       }
     },
     "0036": {
-      "name": "#日月明567",
-      "aliases": [
+      "name": [
         "#日月明567"
       ],
       "readme": "Models/0036/README.md",
@@ -427,8 +390,7 @@
       }
     },
     "0037": {
-      "name": "#史莱姆坍缩",
-      "aliases": [
+      "name": [
         "#史莱姆坍缩"
       ],
       "readme": "Models/0037/README.md",
@@ -437,8 +399,7 @@
       }
     },
     "0038": {
-      "name": "#试刀 | #试Tj",
-      "aliases": [
+      "name": [
         "#试刀",
         "#试Tj"
       ],
@@ -449,8 +410,7 @@
       }
     },
     "0039": {
-      "name": "#松鼠式坦克兵工 | #松鼠式坦克",
-      "aliases": [
+      "name": [
         "#松鼠式坦克兵工",
         "#松鼠式坦克"
       ],
@@ -461,8 +421,7 @@
       }
     },
     "0040": {
-      "name": "#碎de帆",
-      "aliases": [
+      "name": [
         "#碎de帆"
       ],
       "readme": "Models/0040/README.md",
@@ -471,8 +430,7 @@
       }
     },
     "0041": {
-      "name": "#提可拉",
-      "aliases": [
+      "name": [
         "#提可拉"
       ],
       "readme": "Models/0041/README.md",
@@ -483,8 +441,7 @@
       }
     },
     "0042": {
-      "name": "#天弓干亦 #筅袔",
-      "aliases": [
+      "name": [
         "#天弓干亦 #筅袔"
       ],
       "readme": "Models/0042/README.md",
@@ -493,8 +450,7 @@
       }
     },
     "0043": {
-      "name": "#完全凍結ALL | #完全冻结 | #绝对冻结",
-      "aliases": [
+      "name": [
         "#完全凍結ALL",
         "#完全冻结",
         "#绝对冻结"
@@ -506,8 +462,7 @@
       }
     },
     "0044": {
-      "name": "#韦懦夫斯菲尔 | #汪",
-      "aliases": [
+      "name": [
         "#韦懦夫斯菲尔",
         "#汪"
       ],
@@ -518,8 +473,7 @@
       }
     },
     "0045": {
-      "name": "#雾雨波波沙",
-      "aliases": [
+      "name": [
         "#雾雨波波沙"
       ],
       "readme": "Models/0045/README.md",
@@ -530,8 +484,7 @@
       }
     },
     "0046": {
-      "name": "#小萌新idjdkd",
-      "aliases": [
+      "name": [
         "#小萌新idjdkd"
       ],
       "readme": "Models/0046/README.md",
@@ -540,8 +493,7 @@
       }
     },
     "0047": {
-      "name": "#Nicy_奈汐 | #苏溟0w0 | #沐星喵OwO",
-      "aliases": [
+      "name": [
         "#Nicy_奈汐",
         "#苏溟0w0",
         "#沐星喵OwO"
@@ -553,8 +505,7 @@
       }
     },
     "0048": {
-      "name": "#星屑海螺| #磁小轨制作组（星屑海螺）| #不是海螺",
-      "aliases": [
+      "name": [
         "#星屑海螺",
         "#磁小轨制作组（星屑海螺）",
         "#不是海螺"
@@ -567,8 +518,7 @@
       }
     },
     "0049": {
-      "name": "#星语TAT",
-      "aliases": [
+      "name": [
         "#星语TAT"
       ],
       "readme": "Models/0049/README.md",
@@ -578,8 +528,7 @@
       }
     },
     "0050": {
-      "name": "#荨蒿栗里 | #荨蒿之栗里 | #栗里",
-      "aliases": [
+      "name": [
         "#荨蒿栗里",
         "#荨蒿之栗里",
         "#栗里"
@@ -591,8 +540,7 @@
       }
     },
     "0051": {
-      "name": "#动员鼬",
-      "aliases": [
+      "name": [
         "#动员鼬"
       ],
       "readme": "Models/0051/README.md",
@@ -602,8 +550,7 @@
       }
     },
     "0052": {
-      "name": "#゚烟雨画桥",
-      "aliases": [
+      "name": [
         "#゚烟雨画桥"
       ],
       "readme": "Models/0052/README.md",
@@ -613,8 +560,7 @@
       }
     },
     "0053": {
-      "name": "#羊毛毛毛毛_Official喵",
-      "aliases": [
+      "name": [
         "#羊毛毛毛毛_Official喵"
       ],
       "readme": "Models/0053/README.md",
@@ -624,8 +570,7 @@
       }
     },
     "0054": {
-      "name": "#一只霜狐Owo",
-      "aliases": [
+      "name": [
         "#一只霜狐Owo"
       ],
       "readme": "Models/0054/README.md",
@@ -635,8 +580,7 @@
       }
     },
     "0055": {
-      "name": "#伊蕾娜家的咸鱼",
-      "aliases": [
+      "name": [
         "#伊蕾娜家的咸鱼"
       ],
       "readme": "Models/0055/README.md",
@@ -646,8 +590,7 @@
       }
     },
     "0056": {
-      "name": "#伊洛是哥斯拉嘛 #伊洛是哥斯拉吗|  #哥斯拉 | #落阳不养羊 | #黎家诚 | #BradKidd",
-      "aliases": [
+      "name": [
         "#伊洛是哥斯拉嘛 #伊洛是哥斯拉吗",
         "#哥斯拉",
         "#落阳不养羊",
@@ -661,8 +604,7 @@
       }
     },
     "0057": {
-      "name": "#忆尘yc27 | #忆尘27",
-      "aliases": [
+      "name": [
         "#忆尘yc27",
         "#忆尘27"
       ],
@@ -673,13 +615,12 @@
       }
     },
     "0058": {
-      "name": "[#艺方像素 | #艺方堂 | #尻 | #艺方坊 | #艺方阁](../../../../../../../../../../../../Models/0058/README.md)",
-      "aliases": [
-        "[#艺方像素",
+      "name": [
+        "#艺方像素",
         "#艺方堂",
         "#尻",
         "#艺方坊",
-        "#艺方阁](../../../../../../../../../../../../Models/0058/README.md)"
+        "#艺方阁"
       ],
       "readme": "Models/0058/README.md",
       "platforms": {
@@ -688,8 +629,7 @@
       }
     },
     "0059": {
-      "name": "#瀛猫",
-      "aliases": [
+      "name": [
         "#瀛猫"
       ],
       "readme": "Models/0059/README.md",
@@ -700,8 +640,7 @@
       }
     },
     "0060": {
-      "name": "#油七桶",
-      "aliases": [
+      "name": [
         "#油七桶"
       ],
       "readme": "Models/0060/README.md",
@@ -710,8 +649,7 @@
       }
     },
     "0061": {
-      "name": "#狱际星芒",
-      "aliases": [
+      "name": [
         "#狱际星芒"
       ],
       "readme": "Models/0061/README.md",
@@ -722,8 +660,7 @@
       }
     },
     "0062": {
-      "name": "#云曦-Yunxxi_ugo | #云曦",
-      "aliases": [
+      "name": [
         "#云曦-Yunxxi_ugo",
         "#云曦"
       ],
@@ -735,8 +672,7 @@
       }
     },
     "0063": {
-      "name": "#再来几斤小莫莫",
-      "aliases": [
+      "name": [
         "#再来几斤小莫莫"
       ],
       "readme": "Models/0063/README.md",
@@ -746,8 +682,7 @@
       }
     },
     "0064": {
-      "name": "#纸盒ALifang | #Cc-纸盒 | #Cc纸盒",
-      "aliases": [
+      "name": [
         "#纸盒ALifang",
         "#Cc-纸盒",
         "#Cc纸盒"
@@ -759,8 +694,7 @@
       }
     },
     "0065": {
-      "name": "#烛火的次元宇宙",
-      "aliases": [
+      "name": [
         "#烛火的次元宇宙"
       ],
       "readme": "Models/0065/README.md",
@@ -770,8 +704,7 @@
       }
     },
     "0066": {
-      "name": "#A_su杏仁",
-      "aliases": [
+      "name": [
         "#A_su杏仁"
       ],
       "readme": "Models/0066/README.md",
@@ -781,8 +714,7 @@
       }
     },
     "0067": {
-      "name": "#Almeta_owx",
-      "aliases": [
+      "name": [
         "#Almeta_owx"
       ],
       "readme": "Models/0067/README.md",
@@ -792,8 +724,7 @@
       }
     },
     "0068": {
-      "name": "#AnluoSakura",
-      "aliases": [
+      "name": [
         "#AnluoSakura"
       ],
       "readme": "Models/0068/README.md",
@@ -803,8 +734,7 @@
       }
     },
     "0069": {
-      "name": "#ccci202",
-      "aliases": [
+      "name": [
         "#ccci202"
       ],
       "readme": "Models/0069/README.md",
@@ -814,8 +744,7 @@
       }
     },
     "0070": {
-      "name": "#Dashcode | #ASHES356",
-      "aliases": [
+      "name": [
         "#Dashcode",
         "#ASHES356"
       ],
@@ -826,8 +755,7 @@
       }
     },
     "0071": {
-      "name": "#Dr咕咚",
-      "aliases": [
+      "name": [
         "#Dr咕咚"
       ],
       "readme": "Models/0071/README.md",
@@ -836,8 +764,7 @@
       }
     },
     "0072": {
-      "name": "#Eiven-ly | #Eiven",
-      "aliases": [
+      "name": [
         "#Eiven-ly",
         "#Eiven"
       ],
@@ -849,8 +776,7 @@
       }
     },
     "0073": {
-      "name": "#MicroCraft_ | #MicroCraft",
-      "aliases": [
+      "name": [
         "#MicroCraft_",
         "#MicroCraft"
       ],
@@ -860,8 +786,7 @@
       }
     },
     "0074": {
-      "name": "#Killot | #Killot945",
-      "aliases": [
+      "name": [
         "#Killot",
         "#Killot945"
       ],
@@ -872,8 +797,7 @@
       }
     },
     "0075": {
-      "name": "#Wadanohara_Rika",
-      "aliases": [
+      "name": [
         "#Wadanohara_Rika"
       ],
       "readme": "Models/0075/README.md",
@@ -882,8 +806,7 @@
       }
     },
     "0076": {
-      "name": "#White_clams白蛤蜊 | #白蛤蜊 | #White_Clams白蛤蜊",
-      "aliases": [
+      "name": [
         "#White_clams白蛤蜊",
         "#白蛤蜊",
         "#White_Clams白蛤蜊"
@@ -895,8 +818,7 @@
       }
     },
     "0077": {
-      "name": "#旭门只玩驹 | #Zeonjin-旭门只玩驹",
-      "aliases": [
+      "name": [
         "#旭门只玩驹",
         "#Zeonjin-旭门只玩驹"
       ],
@@ -908,8 +830,7 @@
       }
     },
     "0078": {
-      "name": "#LuXi233 | #小早川希",
-      "aliases": [
+      "name": [
         "#LuXi233",
         "#小早川希"
       ],
@@ -919,8 +840,7 @@
       }
     },
     "0079": {
-      "name": "#小多利鸭",
-      "aliases": [
+      "name": [
         "#小多利鸭"
       ],
       "readme": "Models/0079/README.md",
@@ -929,8 +849,7 @@
       }
     },
     "0080": {
-      "name": "#Nona_Reeves",
-      "aliases": [
+      "name": [
         "#Nona_Reeves"
       ],
       "readme": "Models/0080/README.md",
@@ -939,8 +858,7 @@
       }
     },
     "0081": {
-      "name": "#窝窝头",
-      "aliases": [
+      "name": [
         "#窝窝头"
       ],
       "readme": "Models/0081/README.md",
@@ -950,8 +868,7 @@
       }
     },
     "0082": {
-      "name": "#树枝没虈枝",
-      "aliases": [
+      "name": [
         "#树枝没虈枝"
       ],
       "readme": "Models/0082/README.md",
@@ -960,8 +877,7 @@
       }
     },
     "0083": {
-      "name": "#鼠标会梦到光猫吗",
-      "aliases": [
+      "name": [
         "#鼠标会梦到光猫吗"
       ],
       "readme": "Models/0083/README.md",
@@ -970,8 +886,7 @@
       }
     },
     "0084": {
-      "name": "#幻古诗",
-      "aliases": [
+      "name": [
         "#幻古诗"
       ],
       "readme": "Models/0084/README.md",
@@ -981,8 +896,7 @@
       }
     },
     "0085": {
-      "name": "#平行Rosmontis",
-      "aliases": [
+      "name": [
         "#平行Rosmontis"
       ],
       "readme": "Models/0085/README.md",
@@ -991,24 +905,21 @@
       }
     },
     "0086": {
-      "name": "#深海沉光",
-      "aliases": [
+      "name": [
         "#深海沉光"
       ],
       "readme": "Models/0086/README.md",
       "platforms": {}
     },
     "0087": {
-      "name": "#ポーラーソース",
-      "aliases": [
+      "name": [
         "#ポーラーソース"
       ],
       "readme": "Models/0087/README.md",
       "platforms": {}
     },
     "0088": {
-      "name": "#无名氏",
-      "aliases": [
+      "name": [
         "#无名氏"
       ],
       "readme": "Models/0088/README.md",
@@ -1017,8 +928,7 @@
       }
     },
     "0089": {
-      "name": "#踽魍估恶真君",
-      "aliases": [
+      "name": [
         "#踽魍估恶真君"
       ],
       "readme": "Models/0089/README.md",
@@ -1028,8 +938,7 @@
       }
     },
     "0090": {
-      "name": "#九碳糖 | #九碳糖BI3NVZ",
-      "aliases": [
+      "name": [
         "#九碳糖",
         "#九碳糖BI3NVZ"
       ],
@@ -1039,8 +948,7 @@
       }
     },
     "0091": {
-      "name": "#trita",
-      "aliases": [
+      "name": [
         "#trita"
       ],
       "readme": "Models/0091/README.md",
@@ -1049,8 +957,7 @@
       }
     },
     "0092": {
-      "name": "#菊姥爷",
-      "aliases": [
+      "name": [
         "#菊姥爷"
       ],
       "readme": "Models/0092/README.md",
@@ -1060,8 +967,7 @@
       }
     },
     "0093": {
-      "name": "#苏依凛 | #炽湮",
-      "aliases": [
+      "name": [
         "#苏依凛",
         "#炽湮"
       ],
@@ -1072,8 +978,7 @@
       }
     },
     "0094": {
-      "name": "#墨染逝羽 | #Feather_aya",
-      "aliases": [
+      "name": [
         "#墨染逝羽",
         "#Feather_aya"
       ],
@@ -1084,8 +989,7 @@
       }
     },
     "0095": {
-      "name": "#源石姬变体 | #raw_chicken | #鸡姬",
-      "aliases": [
+      "name": [
         "#源石姬变体",
         "#raw_chicken",
         "#鸡姬"
@@ -1099,8 +1003,7 @@
       }
     },
     "0096": {
-      "name": "#Kria月明",
-      "aliases": [
+      "name": [
         "#Kria月明"
       ],
       "readme": "Models/0096/README.md",
@@ -1109,16 +1012,14 @@
       }
     },
     "0097": {
-      "name": "#艾雷克亚",
-      "aliases": [
+      "name": [
         "#艾雷克亚"
       ],
       "readme": "Models/0097/README.md",
       "platforms": {}
     },
     "0098": {
-      "name": "#coldM00N",
-      "aliases": [
+      "name": [
         "#coldM00N"
       ],
       "readme": "Models/0098/README.md",
@@ -1127,8 +1028,7 @@
       }
     },
     "0099": {
-      "name": "#Dumnheint",
-      "aliases": [
+      "name": [
         "#Dumnheint"
       ],
       "readme": "Models/0099/README.md",
@@ -1137,16 +1037,14 @@
       }
     },
     "0100": {
-      "name": "#京泉",
-      "aliases": [
+      "name": [
         "#京泉"
       ],
       "readme": "Models/0100/README.md",
       "platforms": {}
     },
     "0101": {
-      "name": "#獒子coco | #獒子酱的杂货店 | #獒子獒子獒",
-      "aliases": [
+      "name": [
         "#獒子coco",
         "#獒子酱的杂货店",
         "#獒子獒子獒"
@@ -1158,8 +1056,7 @@
       }
     },
     "0102": {
-      "name": "#Dreamer #普通的木屐",
-      "aliases": [
+      "name": [
         "#Dreamer #普通的木屐"
       ],
       "readme": "Models/0102/README.md",
@@ -1171,8 +1068,7 @@
       }
     },
     "0103": {
-      "name": "#浅陌菌",
-      "aliases": [
+      "name": [
         "#浅陌菌"
       ],
       "readme": "Models/0103/README.md",
@@ -1183,16 +1079,14 @@
       }
     },
     "0104": {
-      "name": "#科列夫斯基",
-      "aliases": [
+      "name": [
         "#科列夫斯基"
       ],
       "readme": "Models/0104/README.md",
       "platforms": {}
     },
     "0105": {
-      "name": "#超级大鸡腿丶 | #Nss",
-      "aliases": [
+      "name": [
         "#超级大鸡腿丶",
         "#Nss"
       ],
@@ -1200,8 +1094,7 @@
       "platforms": {}
     },
     "0106": {
-      "name": "#ナヒーダ",
-      "aliases": [
+      "name": [
         "#ナヒーダ"
       ],
       "readme": "Models/0106/README.md",
@@ -1210,8 +1103,7 @@
       }
     },
     "0107": {
-      "name": "#宇宙影帝の终焉",
-      "aliases": [
+      "name": [
         "#宇宙影帝の终焉"
       ],
       "readme": "Models/0107/README.md",
@@ -1222,8 +1114,7 @@
       }
     },
     "0108": {
-      "name": "#原原本本空空",
-      "aliases": [
+      "name": [
         "#原原本本空空"
       ],
       "readme": "Models/0108/README.md",
@@ -1233,16 +1124,14 @@
       }
     },
     "0109": {
-      "name": "#水神",
-      "aliases": [
+      "name": [
         "#水神"
       ],
       "readme": "Models/0109/README.md",
       "platforms": {}
     },
     "0110": {
-      "name": "#Nona_reeves | #Nona-Reeves",
-      "aliases": [
+      "name": [
         "#Nona_reeves",
         "#Nona-Reeves"
       ],
@@ -1252,8 +1141,7 @@
       }
     },
     "0111": {
-      "name": "#奶油桃NaytoTime",
-      "aliases": [
+      "name": [
         "#奶油桃NaytoTime"
       ],
       "readme": "Models/0111/README.md",
@@ -1263,8 +1151,7 @@
       }
     },
     "0112": {
-      "name": "#大莫家 | #MCZ工作室 | #mcz莫莫| #犟猫",
-      "aliases": [
+      "name": [
         "#大莫家",
         "#MCZ工作室",
         "#mcz莫莫",
@@ -1278,8 +1165,7 @@
       }
     },
     "0113": {
-      "name": "#秋风 | #每天都睡不醒的秋风 | #睡不死死不睡的秋风",
-      "aliases": [
+      "name": [
         "#秋风",
         "#每天都睡不醒的秋风",
         "#睡不死死不睡的秋风"
@@ -1291,8 +1177,7 @@
       }
     },
     "0114": {
-      "name": "#迷糊晓雾",
-      "aliases": [
+      "name": [
         "#迷糊晓雾"
       ],
       "readme": "Models/0114/README.md",
@@ -1302,16 +1187,14 @@
       }
     },
     "0115": {
-      "name": "#荒漠",
-      "aliases": [
+      "name": [
         "#荒漠"
       ],
       "readme": "Models/0115/README.md",
       "platforms": {}
     },
     "0116": {
-      "name": "#1111111re | #伊伊蕾",
-      "aliases": [
+      "name": [
         "#1111111re",
         "#伊伊蕾"
       ],
@@ -1323,8 +1206,7 @@
       }
     },
     "0117": {
-      "name": "#聚模道 | #聚核重工Minecraft | #语文喵喵拳",
-      "aliases": [
+      "name": [
         "#聚模道",
         "#聚核重工Minecraft",
         "#语文喵喵拳"
@@ -1336,8 +1218,7 @@
       }
     },
     "0118": {
-      "name": "#ガラスのような青空| #coldm00n",
-      "aliases": [
+      "name": [
         "#ガラスのような青空",
         "#coldm00n"
       ],
@@ -1348,8 +1229,7 @@
       }
     },
     "0119": {
-      "name": "#奇葩的小毛",
-      "aliases": [
+      "name": [
         "#奇葩的小毛"
       ],
       "readme": "Models/0119/README.md",
@@ -1358,8 +1238,7 @@
       }
     },
     "0120": {
-      "name": "#失语喵",
-      "aliases": [
+      "name": [
         "#失语喵"
       ],
       "readme": "Models/0120/README.md",
@@ -1368,8 +1247,7 @@
       }
     },
     "0121": {
-      "name": "#准尉werner",
-      "aliases": [
+      "name": [
         "#准尉werner"
       ],
       "readme": "Models/0121/README.md",
@@ -1379,8 +1257,7 @@
       }
     },
     "0122": {
-      "name": "#茶-GreenTea",
-      "aliases": [
+      "name": [
         "#茶-GreenTea"
       ],
       "readme": "Models/0122/README.md",
@@ -1389,8 +1266,7 @@
       }
     },
     "0123": {
-      "name": "#Anrieal",
-      "aliases": [
+      "name": [
         "#Anrieal"
       ],
       "readme": "Models/0123/README.md",
@@ -1399,8 +1275,7 @@
       }
     },
     "0124": {
-      "name": "#超吊的点点",
-      "aliases": [
+      "name": [
         "#超吊的点点"
       ],
       "readme": "Models/0124/README.md",
@@ -1410,8 +1285,7 @@
       }
     },
     "0125": {
-      "name": "#辅助EinHeld",
-      "aliases": [
+      "name": [
         "#辅助EinHeld"
       ],
       "readme": "Models/0125/README.md",
@@ -1420,8 +1294,7 @@
       }
     },
     "0126": {
-      "name": "#空洞qwq",
-      "aliases": [
+      "name": [
         "#空洞qwq"
       ],
       "readme": "Models/0126/README.md",
@@ -1430,8 +1303,7 @@
       }
     },
     "0127": {
-      "name": "#总督神绮",
-      "aliases": [
+      "name": [
         "#总督神绮"
       ],
       "readme": "Models/0127/README.md",
@@ -1441,8 +1313,7 @@
       }
     },
     "0128": {
-      "name": "#Ark样本",
-      "aliases": [
+      "name": [
         "#Ark样本"
       ],
       "readme": "Models/0128/README.md",
@@ -1451,8 +1322,7 @@
       }
     },
     "0129": {
-      "name": "#Dr观星 | #Dr-观星",
-      "aliases": [
+      "name": [
         "#Dr观星",
         "#Dr-观星"
       ],
@@ -1463,16 +1333,14 @@
       }
     },
     "0130": {
-      "name": "#断罪千念",
-      "aliases": [
+      "name": [
         "#断罪千念"
       ],
       "readme": "Models/0130/README.md",
       "platforms": {}
     },
     "0131": {
-      "name": "#星璇_tbod",
-      "aliases": [
+      "name": [
         "#星璇_tbod"
       ],
       "readme": "Models/0131/README.md",
@@ -1481,8 +1349,7 @@
       }
     },
     "0132": {
-      "name": "#qf欸 #qf",
-      "aliases": [
+      "name": [
         "#qf欸 #qf"
       ],
       "readme": "Models/0132/README.md",
@@ -1491,8 +1358,7 @@
       }
     },
     "0133": {
-      "name": "#SI_VD",
-      "aliases": [
+      "name": [
         "#SI_VD"
       ],
       "readme": "Models/0133/README.md",
@@ -1502,16 +1368,14 @@
       }
     },
     "0134": {
-      "name": "#黑喵みそ",
-      "aliases": [
+      "name": [
         "#黑喵みそ"
       ],
       "readme": "Models/0134/README.md",
       "platforms": {}
     },
     "0135": {
-      "name": "#Lvara",
-      "aliases": [
+      "name": [
         "#Lvara"
       ],
       "readme": "Models/0135/README.md",
@@ -1522,8 +1386,7 @@
       }
     },
     "0136": {
-      "name": "#Fllz",
-      "aliases": [
+      "name": [
         "#Fllz"
       ],
       "readme": "Models/0136/README.md",
@@ -1534,8 +1397,7 @@
       }
     },
     "0137": {
-      "name": "#Maks | #Maks怜悯",
-      "aliases": [
+      "name": [
         "#Maks",
         "#Maks怜悯"
       ],
@@ -1546,8 +1408,7 @@
       }
     },
     "0138": {
-      "name": "#夜森岚_Noxsil",
-      "aliases": [
+      "name": [
         "#夜森岚_Noxsil"
       ],
       "readme": "Models/0138/README.md",
@@ -1557,8 +1418,7 @@
       }
     },
     "0139": {
-      "name": "#穿越小魔王",
-      "aliases": [
+      "name": [
         "#穿越小魔王"
       ],
       "readme": "Models/0139/README.md",
@@ -1567,8 +1427,7 @@
       }
     },
     "0140": {
-      "name": "#TUTU秃",
-      "aliases": [
+      "name": [
         "#TUTU秃"
       ],
       "readme": "Models/0140/README.md",
@@ -1578,8 +1437,7 @@
       }
     },
     "0141": {
-      "name": "#映白L #映白",
-      "aliases": [
+      "name": [
         "#映白L #映白"
       ],
       "readme": "Models/0141/README.md",
@@ -1589,8 +1447,7 @@
       }
     },
     "0142": {
-      "name": "#Omegaff0048 | #FF0048",
-      "aliases": [
+      "name": [
         "#Omegaff0048",
         "#FF0048"
       ],
@@ -1600,8 +1457,7 @@
       }
     },
     "0143": {
-      "name": "#yuoke | #bili_yuoyuoyuo",
-      "aliases": [
+      "name": [
         "#yuoke",
         "#bili_yuoyuoyuo"
       ],
@@ -1611,8 +1467,7 @@
       }
     },
     "0144": {
-      "name": "#叁雫MitsukuDayo",
-      "aliases": [
+      "name": [
         "#叁雫MitsukuDayo"
       ],
       "readme": "Models/0144/README.md",
@@ -1622,8 +1477,7 @@
       }
     },
     "0145": {
-      "name": "#咕咕鸡 | #咕咕叫的小菜鸡",
-      "aliases": [
+      "name": [
         "#咕咕鸡",
         "#咕咕叫的小菜鸡"
       ],
@@ -1634,8 +1488,7 @@
       }
     },
     "0146": {
-      "name": "#泉溪鸽",
-      "aliases": [
+      "name": [
         "#泉溪鸽"
       ],
       "readme": "Models/0146/README.md",
@@ -1644,8 +1497,7 @@
       }
     },
     "0147": {
-      "name": "#清晨的一阵风",
-      "aliases": [
+      "name": [
         "#清晨的一阵风"
       ],
       "readme": "Models/0147/README.md",
@@ -1654,16 +1506,14 @@
       }
     },
     "0148": {
-      "name": "#黑喵",
-      "aliases": [
+      "name": [
         "#黑喵"
       ],
       "readme": "Models/0148/README.md",
       "platforms": {}
     },
     "0149": {
-      "name": "#安欣",
-      "aliases": [
+      "name": [
         "#安欣"
       ],
       "readme": "Models/0149/README.md",
@@ -1672,8 +1522,7 @@
       }
     },
     "0150": {
-      "name": "#幻梦星璇 | #-幻梦星璇-",
-      "aliases": [
+      "name": [
         "#幻梦星璇",
         "#-幻梦星璇-"
       ],
@@ -1684,8 +1533,7 @@
       }
     },
     "0151": {
-      "name": "#WisteriaZy | #大触紫衣",
-      "aliases": [
+      "name": [
         "#WisteriaZy",
         "#大触紫衣"
       ],
@@ -1695,8 +1543,7 @@
       }
     },
     "0152": {
-      "name": "#wwww琨",
-      "aliases": [
+      "name": [
         "#wwww琨"
       ],
       "readme": "Models/0152/README.md",
@@ -1706,8 +1553,7 @@
       }
     },
     "0153": {
-      "name": "#绘飞",
-      "aliases": [
+      "name": [
         "#绘飞"
       ],
       "readme": "Models/0153/README.md",
@@ -1717,8 +1563,7 @@
       }
     },
     "0154": {
-      "name": "#银河铁道CRH2",
-      "aliases": [
+      "name": [
         "#银河铁道CRH2"
       ],
       "readme": "Models/0154/README.md",
@@ -1728,8 +1573,7 @@
       }
     },
     "0155": {
-      "name": "#叶无道_M",
-      "aliases": [
+      "name": [
         "#叶无道_M"
       ],
       "readme": "Models/0155/README.md",
@@ -1739,16 +1583,14 @@
       }
     },
     "0156": {
-      "name": "[#炽湮](../0093/README.md)",
-      "aliases": [
-        "[#炽湮](../0093/README.md)"
+      "name": [
+        "#炽湮"
       ],
       "readme": "Models/0156/README.md",
       "platforms": {}
     },
     "0157": {
-      "name": "#Deovolente | #GhastRiv",
-      "aliases": [
+      "name": [
         "#Deovolente",
         "#GhastRiv"
       ],
@@ -1759,8 +1601,7 @@
       }
     },
     "0158": {
-      "name": "#TiRLey | #TiRLey二号机",
-      "aliases": [
+      "name": [
         "#TiRLey",
         "#TiRLey二号机"
       ],
@@ -1771,8 +1612,7 @@
       }
     },
     "0159": {
-      "name": "#兔兔猫officials | #阴阳兔兔猫offcial",
-      "aliases": [
+      "name": [
         "#兔兔猫officials",
         "#阴阳兔兔猫offcial"
       ],
@@ -1783,8 +1623,7 @@
       }
     },
     "0160": {
-      "name": "#宅在佳 | #宅在佳丶",
-      "aliases": [
+      "name": [
         "#宅在佳",
         "#宅在佳丶"
       ],
@@ -1794,8 +1633,7 @@
       }
     },
     "0161": {
-      "name": "#-_-_-_-_草-_-_-_- | #ckdr251",
-      "aliases": [
+      "name": [
         "#-_-_-_-_草-_-_-_-",
         "#ckdr251"
       ],
@@ -1806,8 +1644,7 @@
       }
     },
     "0162": {
-      "name": "#失踪的李元",
-      "aliases": [
+      "name": [
         "#失踪的李元"
       ],
       "readme": "Models/0162/README.md",
@@ -1817,8 +1654,7 @@
       }
     },
     "0163": {
-      "name": "#Rhein雨倩 | #雨倩先生",
-      "aliases": [
+      "name": [
         "#Rhein雨倩",
         "#雨倩先生"
       ],
@@ -1829,8 +1665,7 @@
       }
     },
     "0164": {
-      "name": "#toolat嫌晚 | #toolat洗碗",
-      "aliases": [
+      "name": [
         "#toolat嫌晚",
         "#toolat洗碗"
       ],
@@ -1842,8 +1677,7 @@
       }
     },
     "0165": {
-      "name": "#默栖 | #某嘞个默栖 | #默嘞个某栖",
-      "aliases": [
+      "name": [
         "#默栖",
         "#某嘞个默栖",
         "#默嘞个某栖"
@@ -1855,8 +1689,7 @@
       }
     },
     "0166": {
-      "name": "#棒锤锤 | #棒锤锤QWQ",
-      "aliases": [
+      "name": [
         "#棒锤锤",
         "#棒锤锤QWQ"
       ],
@@ -1866,8 +1699,7 @@
       }
     },
     "0167": {
-      "name": "#炼狱在旅行",
-      "aliases": [
+      "name": [
         "#炼狱在旅行"
       ],
       "readme": "Models/0167/README.md",
@@ -1876,8 +1708,7 @@
       }
     },
     "0168": {
-      "name": "#丁真蟹 | #ZHEN",
-      "aliases": [
+      "name": [
         "#丁真蟹",
         "#ZHEN"
       ],
@@ -1888,48 +1719,42 @@
       }
     },
     "0169": {
-      "name": "#ShiroKaze",
-      "aliases": [
+      "name": [
         "#ShiroKaze"
       ],
       "readme": "Models/0169/README.md",
       "platforms": {}
     },
     "0170": {
-      "name": "#木宁苒",
-      "aliases": [
+      "name": [
         "#木宁苒"
       ],
       "readme": "Models/0170/README.md",
       "platforms": {}
     },
     "0171": {
-      "name": "#艾卡斯特",
-      "aliases": [
+      "name": [
         "#艾卡斯特"
       ],
       "readme": "Models/0171/README.md",
       "platforms": {}
     },
     "0172": {
-      "name": "#艾卡",
-      "aliases": [
+      "name": [
         "#艾卡"
       ],
       "readme": "Models/0172/README.md",
       "platforms": {}
     },
     "0173": {
-      "name": "#流风LFly",
-      "aliases": [
+      "name": [
         "#流风LFly"
       ],
       "readme": "Models/0173/README.md",
       "platforms": {}
     },
     "0174": {
-      "name": "#鹘鸦Yata",
-      "aliases": [
+      "name": [
         "#鹘鸦Yata"
       ],
       "readme": "Models/0174/README.md",
@@ -1938,8 +1763,7 @@
       }
     },
     "0175": {
-      "name": "#集栎 | #Nebulathus",
-      "aliases": [
+      "name": [
         "#集栎",
         "#Nebulathus"
       ],
@@ -1947,8 +1771,7 @@
       "platforms": {}
     },
     "0176": {
-      "name": "#Bubuker #rintaroa #Torontopizza #rintaroA",
-      "aliases": [
+      "name": [
         "#Bubuker #rintaroa #Torontopizza #rintaroA"
       ],
       "readme": "Models/0176/README.md",
@@ -1960,8 +1783,7 @@
       }
     },
     "0177": {
-      "name": "#永夜极星_official | #永夜极星",
-      "aliases": [
+      "name": [
         "#永夜极星_official",
         "#永夜极星"
       ],
@@ -1972,8 +1794,7 @@
       }
     },
     "0178": {
-      "name": "#qidai | #一点小期待",
-      "aliases": [
+      "name": [
         "#qidai",
         "#一点小期待"
       ],
@@ -1983,16 +1804,14 @@
       }
     },
     "0179": {
-      "name": "#Cookiebox",
-      "aliases": [
+      "name": [
         "#Cookiebox"
       ],
       "readme": "Models/0179/README.md",
       "platforms": {}
     },
     "0180": {
-      "name": "#杂果沙拉",
-      "aliases": [
+      "name": [
         "#杂果沙拉"
       ],
       "readme": "Models/0180/README.md",
@@ -2001,8 +1820,7 @@
       }
     },
     "0181": {
-      "name": "#北上 | #NorthWard",
-      "aliases": [
+      "name": [
         "#北上",
         "#NorthWard"
       ],
@@ -2010,16 +1828,14 @@
       "platforms": {}
     },
     "0182": {
-      "name": "#不-择",
-      "aliases": [
+      "name": [
         "#不-择"
       ],
       "readme": "Models/0182/README.md",
       "platforms": {}
     },
     "0183": {
-      "name": "#Aaaaaaafeng",
-      "aliases": [
+      "name": [
         "#Aaaaaaafeng"
       ],
       "readme": "Models/0183/README.md",
@@ -2030,8 +1846,7 @@
       }
     },
     "0184": {
-      "name": "#MC-ZBM",
-      "aliases": [
+      "name": [
         "#MC-ZBM"
       ],
       "readme": "Models/0184/README.md",
@@ -2040,8 +1855,7 @@
       }
     },
     "0185": {
-      "name": "#滑滑滑纸隐 | #滑纸隐",
-      "aliases": [
+      "name": [
         "#滑滑滑纸隐",
         "#滑纸隐"
       ],
@@ -2049,8 +1863,7 @@
       "platforms": {}
     },
     "0187": {
-      "name": "#爱听书的旅人 | #爱听小说的旅人",
-      "aliases": [
+      "name": [
         "#爱听书的旅人",
         "#爱听小说的旅人"
       ],
@@ -2061,40 +1874,35 @@
       }
     },
     "0188": {
-      "name": "#鸢尾",
-      "aliases": [
+      "name": [
         "#鸢尾"
       ],
       "readme": "Models/0188/README.md",
       "platforms": {}
     },
     "0189": {
-      "name": "#TIS长夜孤星",
-      "aliases": [
+      "name": [
         "#TIS长夜孤星"
       ],
       "readme": "Models/0189/README.md",
       "platforms": {}
     },
     "0190": {
-      "name": "#奈忒倪",
-      "aliases": [
+      "name": [
         "#奈忒倪"
       ],
       "readme": "Models/0190/README.md",
       "platforms": {}
     },
     "0191": {
-      "name": "#新隆肰懿",
-      "aliases": [
+      "name": [
         "#新隆肰懿"
       ],
       "readme": "Models/0191/README.md",
       "platforms": {}
     },
     "0192": {
-      "name": "#苏瑞铃 | #苏瑞铃_official",
-      "aliases": [
+      "name": [
         "#苏瑞铃",
         "#苏瑞铃_official"
       ],
@@ -2104,16 +1912,14 @@
       }
     },
     "0194": {
-      "name": "#咖喱饭饭好吃",
-      "aliases": [
+      "name": [
         "#咖喱饭饭好吃"
       ],
       "readme": "Models/0194/README.md",
       "platforms": {}
     },
     "0195": {
-      "name": "#奶油桃 | #Killot945",
-      "aliases": [
+      "name": [
         "#奶油桃",
         "#Killot945"
       ],
@@ -2121,16 +1927,14 @@
       "platforms": {}
     },
     "0186": {
-      "name": "暂无",
-      "aliases": [
+      "name": [
         "暂无"
       ],
       "readme": "",
       "platforms": {}
     },
     "0193": {
-      "name": "暂无",
-      "aliases": [
+      "name": [
         "暂无"
       ],
       "readme": "",

@@ -1,5 +1,11 @@
 import os
 import re
+import sys
+from pathlib import Path
+# 脚本按流程阶段分类到 scripts/<类别>/ 子目录：把 .github/scripts 加回 sys.path，
+# 保证 lib/ 与跨分类脚本可导入
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
 
 from lib import readme as lib_readme
 
@@ -39,8 +45,11 @@ for folder in sorted(os.listdir(models_dir)):
 
     link = f".../../{models_dir}/{folder}"
 
-    # 集中数据优先；未收录或缺失时回退读 README
-    author_name = (authors_index.get(folder) or {}).get('name', '')
+    # 集中数据优先；未收录或缺失时回退读 README（name 为数组，取规范名）
+    entry = authors_index.get(folder) or {}
+    names = entry.get('name', '') if isinstance(entry.get('name'), list) else (
+        lib_readme.split_author_names(entry.get('name', '')) if entry.get('name') else [])
+    author_name = names[0] if names else ''
 
     if readme_file and not author_name:
         with open(readme_file, "r", encoding="utf-8", errors="ignore") as f:

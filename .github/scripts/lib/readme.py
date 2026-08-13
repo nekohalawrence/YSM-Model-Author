@@ -60,6 +60,15 @@ def extract_platforms(content: str) -> dict[str, str]:
     return platforms
 
 
+def split_author_names(name_value: str) -> list[str]:
+    """把 Name 值拆成名称数组：先去 Markdown 链接语法，再按 | 拆分去空。
+
+    兼容部分作者 README 里 Name 写成链接的情况（如 0058/0156），
+    避免把链接 URL 污染进作者数据。"""
+    text = re.sub(r'\[([^\]]*)\]\([^)]*\)', r'\1', name_value)
+    return [p.strip() for p in text.split('|') if p.strip()]
+
+
 def build_authors_data(models_dir: Path, root_readme: Path) -> dict:
     """构建集中作者数据（authors.json 的结构）。Models README 优先，根 README 索引补缺。"""
     authors: dict[str, dict] = {}
@@ -81,8 +90,7 @@ def build_authors_data(models_dir: Path, root_readme: Path) -> dict:
             except ValueError:
                 rel_readme = str(readme)
             authors[author_dir.name] = {
-                'name': name_value,
-                'aliases': [a.strip() for a in name_value.split('|') if a.strip()],
+                'name': split_author_names(name_value),
                 'readme': rel_readme,
                 'platforms': extract_platforms(content),
             }
@@ -96,8 +104,7 @@ def build_authors_data(models_dir: Path, root_readme: Path) -> dict:
             author_id = m.group(1)
             if author_id not in authors:
                 authors[author_id] = {
-                    'name': m.group(2).strip(),
-                    'aliases': [a.strip() for a in m.group(2).split('|') if a.strip()],
+                    'name': split_author_names(m.group(2).strip()),
                     'readme': '',
                     'platforms': {},
                 }
@@ -122,11 +129,16 @@ def build_author_index(models_dir: Path, root_readme: Path) -> tuple[dict[str, s
         alias_to_id: dict[str, str] = {}
         id_to_name: dict[str, str] = {}
         for author_id, entry in authors.items():
-            name_value = entry.get('name') or ''
-            if name_value:
-                id_to_name.setdefault(author_id, name_value)
-            for alias in entry.get('aliases') or []:
-                key = normalize_alias(alias)
+            names = entry.get('name') or []
+            if isinstance(names, str):
+                # 兼容旧结构（name 为字符串）：拆成数组再索引
+                names = split_author_names(names)
+            for i, name in enumerate(names):
+                if not name:
+                    continue
+                if i == 0:
+                    id_to_name.setdefault(author_id, name)
+                key = normalize_alias(name)
                 if key:
                     alias_to_id.setdefault(key, author_id)
         return alias_to_id, id_to_name
