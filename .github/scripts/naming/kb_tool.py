@@ -982,10 +982,50 @@ def save_merge_skips(kb_path: Path, skips: list[str]) -> None:
 
 
 def prune_merge_skips(skips: list[str], roles: list[dict]) -> list[str]:
-    """清理已失效的跳过记录：条目对中的任一 role_key 已不在当前 roles 中（被合并/删除）。"""
-    alive = {role_key(r) for r in roles}
-    return [k for k in skips
-            if all(part in alive for part in k.split(" ↔ ") if part)]
+    """清理失效的跳过记录，只保留"当前仍会建议合并"的对：
+
+    - 条目对任一侧已不在 roles（被合并/删除）-> 移除；
+    - 条目仍在但已不再构成子串重叠（知识库更新后关系消失）-> 移除。
+
+    这样 merge_skips 始终收敛为"当前有效的拒绝集合"，不会随历史操作无限堆积。
+    """
+    by_key = {role_key(r): r for r in roles}
+    out: list[str] = []
+    for k in skips:
+        parts = [p for p in k.split(" ↔ ") if p]
+        if len(parts) != 2 or parts[0] not in by_key or parts[1] not in by_key:
+            continue
+        if not has_substr_overlap(by_key[parts[0]], by_key[parts[1]]):
+            continue
+        out.append(k)
+    return out
+
+
+def _cn_set(r: dict) -> set[str]:
+    """条目 cn 名称集合（去空）。"""
+    return {c for c in role_names(r, "cn") if c}
+
+
+def _en_set(r: dict) -> set[str]:
+    """条目 en 名称集合（归一化后）。"""
+    return {normalize_en_key(e) for e in role_names(r, "en") if e}
+
+
+def has_substr_overlap(r1: dict, r2: dict) -> bool:
+    """两个条目是否构成子串重叠（cn>=2 / en>=3 的一方是另一方子串）。
+
+    与 run_merge 阶段 2 的手动确认条件一致；prune_merge_skips 据此判断
+    跳过记录是否仍有效。
+    """
+    for a in _cn_set(r1):
+        for b in _cn_set(r2):
+            if a != b and len(a) >= 2 and len(b) >= 2 and (a in b or b in a):
+                return True
+    for a in _en_set(r1):
+        for b in _en_set(r2):
+            if a != b and len(a) >= 3 and len(b) >= 3 and (a in b or b in a):
+                return True
+    return False
 
 
 def run_merge(kb_path: Path) -> None:
@@ -1003,25 +1043,17 @@ def run_merge(kb_path: Path) -> None:
         return
 
     def cn_set(r):
-        return {c for c in role_names(r, "cn") if c}
+        return _cn_set(r)
 
     def en_set(r):
-        return {normalize_en_key(e) for e in role_names(r, "en") if e}
+        return _en_set(r)
 
     def has_exact(r1, r2):
         return bool(cn_set(r1) & cn_set(r2) or en_set(r1) & en_set(r2))
 
     def has_substr(r1, r2):
         """仅子串重叠（不含完全相等）：cn>=2 或 en>=3 的一方是另一方的子串。"""
-        for a in cn_set(r1):
-            for b in cn_set(r2):
-                if a != b and len(a) >= 2 and len(b) >= 2 and (a in b or b in a):
-                    return True
-        for a in en_set(r1):
-            for b in en_set(r2):
-                if a != b and len(a) >= 3 and len(b) >= 3 and (a in b or b in a):
-                    return True
-        return False
+        return has_substr_overlap(r1, r2)
 
     def merge_into(base: dict, other: dict) -> None:
         """把 other 并入 base（cn/en 数组去重，按长度降序全称在前），随后移除 other。"""
