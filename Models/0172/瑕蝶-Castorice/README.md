@@ -13,6 +13,10 @@
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
 - **Author ID**: `0172`
 
+## Co-creator
+
+- **Name**: 动画: 端木
+
 </details>
 
 ## Preview Images

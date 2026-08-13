@@ -17,6 +17,10 @@
     - **Afdian**: [伊蕾娜家的咸鱼](https://afdian.com/a/elainasaltfish)
 - **Author ID**: `0055`
 
+## Co-creator
+
+- **Name**: 动画: 星屑海螺
+
 </details>
 
 ## Preview Images

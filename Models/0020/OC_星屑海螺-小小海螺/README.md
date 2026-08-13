@@ -19,6 +19,10 @@
     - **QQ**: 1535492940
 - **Author ID**: `0020`
 
+## Co-creator
+
+- **Name**: 动画: 星屑海螺
+
 </details>
 
 ## Preview Images

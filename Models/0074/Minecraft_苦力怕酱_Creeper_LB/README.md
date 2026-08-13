@@ -17,6 +17,10 @@
     - **Afdian**: [Killot](https://afdian.com/a/Killot945)
 - **Author ID**: `0074`
 
+## Co-creator
+
+- **Name**: B站 @苏依凛(模型)
+
 </details>
 
 ## Preview Images

@@ -13,6 +13,10 @@
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
 - **Author ID**: `0109`
 
+## Co-creator
+
+- **Name**: 策划: Dr.Кедр
+
 </details>
 
 ## Preview Images

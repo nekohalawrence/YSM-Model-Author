@@ -9,9 +9,13 @@
 
 ## Author
 
-- **Name**: #炽湮
+- **Name**: #苏依凛 | #炽湮
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-- **Author ID**: `0156`
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [苏依凛](https://space.bilibili.com/76987486)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [苏依凛](https://afdian.com/a/supermonsterking)
+- **Author ID**: `0093`
 
 </details>
 

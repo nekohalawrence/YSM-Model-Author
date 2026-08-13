@@ -17,6 +17,10 @@
     - **Afdian**: [苏依凛](https://afdian.com/a/supermonsterking)
 - **Author ID**: `0093`
 
+## Co-creator
+
+- **Name**: B站 @苏依凛(模型)
+
 </details>
 
 ## Preview Images

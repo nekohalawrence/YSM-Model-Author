@@ -9,13 +9,13 @@
 
 ## Author
 
-- **Name**: #ガラスのような青空 | #coldm00n
+- **Name**: #coldM00N | #ガラスのような青空 | #coldm00n
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [ガラスのような青空](https://space.bilibili.com/11382763)
+    - **Bilibili**: [coldM00N](https://space.bilibili.com/11382763)
   - **SupportPlatform**: #Afdian
-    - **Afdian**: [ガラスのような青空](https://afdian.com/a/coldMOON048)
-- **Author ID**: `0118`
+    - **Afdian**: [coldM00N](https://afdian.com/a/coldMOON048)
+- **Author ID**: `0098`
 
 </details>
 

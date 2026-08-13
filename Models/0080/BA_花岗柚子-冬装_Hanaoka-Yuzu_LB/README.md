@@ -9,11 +9,11 @@
 
 ## Author
 
-- **Name**: #Nona_reeves | #Nona-Reeves
+- **Name**: #Nona_Reeves | #Nona_reeves | #Nona-Reeves
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **GroupChat**: #QQ
     - **QQ**: 1926615510
-- **Author ID**: `0110`
+- **Author ID**: `0080`
 
 </details>
 

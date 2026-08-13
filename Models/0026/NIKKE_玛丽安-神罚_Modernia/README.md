@@ -26,6 +26,8 @@
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [艾雷克亚](https://b23.tv/Kmv1zKH)
 
+- **Name**: 我不到啊: 艾雷克亚
+
 </details>
 
 ## Preview Images

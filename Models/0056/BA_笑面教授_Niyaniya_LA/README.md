@@ -17,6 +17,10 @@
     - **Afdian**: [伊洛是哥斯拉嘛 #伊洛是哥斯拉吗](https://afdian.com/a/6TGESILA)
 - **Author ID**: `0056`
 
+## Co-creator
+
+- **Name**: 动画适配: 星屑海螺
+
 </details>
 
 ## Preview Images

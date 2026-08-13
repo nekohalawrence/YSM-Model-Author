@@ -17,6 +17,10 @@
     - **Afdian**: [墨染逝羽](https://afdian.com/a/FliegeSA)
 - **Author ID**: `0094`
 
+## Co-creator
+
+- **Name**: 动画: 星屑海螺
+
 </details>
 
 ## Preview Images
