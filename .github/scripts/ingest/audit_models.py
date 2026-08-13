@@ -341,14 +341,14 @@ def merge_authors_flow(apply: bool) -> int:
 
 def _rebuild_indexes() -> None:
     """合并后重建集中作者数据与根 README 作者表（drop 作者目录已删，索引需同步）。"""
-    for script, label in [('publish/build_authors_index.py', '作者数据 authors.json'),
-                          ('publish/build_readme_authors.py', '根 README 作者表')]:
+    for script, args, label in [('publish/author_index.py', ['--data'], '作者数据 authors.json'),
+                                ('publish/author_index.py', ['--readme'], '根 README 作者表')]:
         p = WORKSPACE_ROOT / '.github' / 'scripts' / script
         if not p.is_file():
             print(f'  [警告] 未找到 {p}，跳过{label}重建')
             continue
         print(f'  重建{label}...')
-        subprocess.run([sys.executable, str(p)], cwd=WORKSPACE_ROOT, check=False)
+        subprocess.run([sys.executable, str(p), *args], cwd=WORKSPACE_ROOT, check=False)
 
 
 def _author_display(author_id: str) -> str:

@@ -27,10 +27,10 @@ YSM 模型归档工具（本仓库专用）——按作者将待归档的 .ysm �
 选项:
   --apply               真正执行移动/创建（默认 dry-run，只打印计划）
   --root PATH           指定仓库根目录（默认自动检测 cwd/脚本位置）
-  --with-authors-index  归档成功后重建作者数据 authors.json（build_authors_index.py）
+  --with-authors-index  归档成功后重建作者数据 authors.json（author_index.py --data）
   --with-rename         归档成功后运行 rename_model_folders.py --apply 格式化文件夹名
   --with-gen-readmes    归档成功后运行 generate_model_readmes.py 生成模型 README
-  --with-readme-table   归档成功后运行 build_readme_authors.py 更新根 README 作者索引
+  --with-readme-table   归档成功后运行 author_index.py --readme 更新根 README 作者索引
   --verbose             打印匹配细节
 """
 from __future__ import annotations
@@ -263,22 +263,22 @@ def next_author_id(models_dir: Path) -> str:
 
 
 def update_root_readme(root: Path) -> None:
-    script = root / '.github' / 'scripts' / 'publish' / 'build_readme_authors.py'
+    script = root / '.github' / 'scripts' / 'publish' / 'author_index.py'
     if not script.is_file():
         print(f"  [警告] 未找到 {script}，跳过根 README 索引更新")
         return
     print("  更新根 README 作者索引...")
-    subprocess.run([sys.executable, str(script)], cwd=root, check=False)
+    subprocess.run([sys.executable, str(script), '--readme'], cwd=root, check=False)
 
 
 def build_authors_index(root: Path) -> None:
     """重建集中作者数据 authors.json（新作者归档后供后续脚本统一读取）。"""
-    script = root / '.github' / 'scripts' / 'publish' / 'build_authors_index.py'
+    script = root / '.github' / 'scripts' / 'publish' / 'author_index.py'
     if not script.is_file():
         print(f"  [警告] 未找到 {script}，跳过作者数据重建")
         return
     print("  重建集中作者数据 authors.json...")
-    subprocess.run([sys.executable, str(script)], cwd=root, check=False)
+    subprocess.run([sys.executable, str(script), '--data'], cwd=root, check=False)
 
 
 def run_rename_model_folders(root: Path) -> None:
@@ -483,13 +483,13 @@ def main() -> int:
     parser.add_argument('--apply', action='store_true', help='真正执行（默认 dry-run）')
     parser.add_argument('--root', metavar='PATH', default=None, help='仓库根目录（默认自动检测）')
     parser.add_argument('--with-authors-index', action='store_true',
-                        help='归档成功后重建集中作者数据 authors.json（build_authors_index.py）')
+                        help='归档成功后重建集中作者数据 authors.json（author_index.py --data）')
     parser.add_argument('--with-rename', action='store_true',
                         help='归档成功后运行 rename_model_folders.py --apply 格式化文件夹名')
     parser.add_argument('--with-gen-readmes', action='store_true',
                         help='归档成功后运行 generate_model_readmes.py 生成模型 README')
     parser.add_argument('--with-readme-table', action='store_true',
-                        help='归档成功后运行 build_readme_authors.py 更新根 README 作者索引')
+                        help='归档成功后运行 author_index.py --readme 更新根 README 作者索引')
     parser.add_argument('--verbose', action='store_true', help='打印匹配细节')
     args = parser.parse_args()
 

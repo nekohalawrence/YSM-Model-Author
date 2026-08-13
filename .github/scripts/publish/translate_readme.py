@@ -21,7 +21,7 @@ ROOT = lib_paths.WORKSPACE_ROOT
 ZH_README = ROOT / 'README.md'
 EN_README = ROOT / 'README-EN.md'
 
-# AUTHORS_LIST 自动化区域标记（与 build_readme_authors 共用 lib/readme 常量）
+# AUTHORS_LIST 自动化区域标记（与 author_index.py --readme 共用 lib/readme 常量）
 AUTHORS_START = lib_readme.AUTHORS_LIST_START
 AUTHORS_END = lib_readme.AUTHORS_LIST_END
 

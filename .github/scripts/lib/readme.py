@@ -21,7 +21,7 @@ PLATFORM_LINE_RE = re.compile(r'^    - \*\*([^*]+)\*\*\s*[:：]\s*(.+)$')
 # 宽松版平台行（2-4 空格缩进、冒号可选）：audit_models 合并平台行时使用，
 # 兼容容器行（- **SocialPlatform**: #Bilibili）与子行（- **Bilibili**: [..](..)）
 PLATFORM_ANY_LINE_RE = re.compile(r'^\s{2,4}-\s*\*\*([^*]+)\*\*\s*[:：]?\s*(.*)$')
-# 根 README 作者表自动生成区域标记（build_readme_authors 写入、translate_readme 保护）
+# 根 README 作者表自动生成区域标记（author_index.py --readme 写入、translate_readme 保护）
 AUTHORS_LIST_START = '<!-- AUTHORS_LIST_START -->'
 AUTHORS_LIST_END = '<!-- AUTHORS_LIST_END -->'
 

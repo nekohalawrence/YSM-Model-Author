@@ -60,8 +60,7 @@ def setup():
     # 复制联动脚本、公共库与数据（使其 WORKSPACE_ROOT 指向临时根，按分类子目录复制）
     COPY_SCRIPTS = {
         "ingest": ["organize_models.py"],
-        "publish": ["generate_model_readmes.py", "build_readme_authors.py",
-                    "build_authors_index.py"],
+        "publish": ["author_index.py", "generate_model_readmes.py"],
     }
     for cat, names in COPY_SCRIPTS.items():
         (ROOT / ".github" / "scripts" / cat).mkdir(parents=True, exist_ok=True)

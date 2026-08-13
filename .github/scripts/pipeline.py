@@ -42,28 +42,30 @@ REPO_ROOT = lib_paths.WORKSPACE_ROOT
 STEPS: dict[str, list[tuple[str, list[str]]]] = {
     'inbox': [
         ('ingest/organize_models.py', ['_Model-Inbox', '--apply']),
-        ('publish/build_authors_index.py', []),
+        ('publish/author_index.py', ['--data']),
         ('publish/generate_model_readmes.py', []),
-        ('publish/build_readme_authors.py', []),
+        ('publish/format_author_readme.py', []),
+        ('publish/author_index.py', ['--readme']),
         ('publish/translate_readme.py', []),
     ],
     'full': [
-        ('publish/build_authors_index.py', []),
+        ('publish/author_index.py', ['--data']),
         ('publish/generate_model_readmes.py', []),
-        ('publish/build_readme_authors.py', []),
+        ('publish/format_author_readme.py', []),
+        ('publish/author_index.py', ['--readme']),
         ('publish/translate_readme.py', []),
     ],
     'rename': [
         ('naming/rename_model_folders.py', ['--apply']),
     ],
     'authors': [
-        ('publish/build_authors_index.py', []),
+        ('publish/author_index.py', ['--data']),
     ],
     'readmes': [
         ('publish/generate_model_readmes.py', []),
     ],
     'authors-list': [
-        ('publish/build_readme_authors.py', []),
+        ('publish/author_index.py', ['--readme']),
     ],
     'translate': [
         ('publish/translate_readme.py', []),
@@ -73,9 +75,9 @@ STEPS: dict[str, list[tuple[str, list[str]]]] = {
 # 每个脚本的一句话说明（--list 用）
 STEP_DESC = {
     'ingest/organize_models.py': '归档 .ysm 到 Models/<编号>/',
-    'publish/build_authors_index.py': '重建作者数据 authors.json',
+    'publish/author_index.py': '作者索引(数据 authors.json / 根表)',
     'publish/generate_model_readmes.py': '生成模型 README',
-    'publish/build_readme_authors.py': '更新根 README 作者表',
+    'publish/format_author_readme.py': '格式化作者级 README',
     'publish/translate_readme.py': '翻译 README → README-EN',
     'naming/rename_model_folders.py': '重命名模型文件夹',
 }

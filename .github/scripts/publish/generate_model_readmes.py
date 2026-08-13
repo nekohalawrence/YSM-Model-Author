@@ -4,7 +4,7 @@
 为所有模型目录生成标准化的英文模型 README（不要求存在预览图）。
 
 数据（外置，可手工维护，位于 .github/data/）：
-  meta/authors.json         作者集中数据（name 数组 / role / platforms），build_authors_index 生成
+  meta/authors.json         作者集中数据（name 数组 / role / platforms），author_index.py --data 生成
   meta/platform_map.json    平台分类映射 {分类: [平台键...]}（分类为键、平台键列表为值）
   meta/models_meta.json     模型 -> co-creator 作者列表（按需生成，无记录时文件不存在）
   knowledge/category_map.json  作品缩写 -> 大类（Game/Anime/Music/Original/Other）
@@ -137,7 +137,7 @@ def get_category_tag(model_folder_name: str, work_category_map: dict[str, str]) 
 def get_author_info(model_dir: Path) -> tuple[str, dict]:
     """返回 (author_id, 作者信息 {name, role, platforms})。
 
-    优先集中数据 authors.json（build_authors_index 生成，含 role）；缺失时回退解析作者
+    优先集中数据 authors.json（author_index.py --data 生成，含 role）；缺失时回退解析作者
     README。无编号目录（Blockbench/Other-YSM 根）返回空信息。
     """
     author_dir = model_dir.parent
