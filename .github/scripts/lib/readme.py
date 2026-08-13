@@ -45,6 +45,64 @@ def normalize_alias(s: str) -> str:
     return s.lower()
 
 
+def split_authors(authors_str: str) -> list[str]:
+    """把 authors 原始串拆成候选别名。'鸡姬(raw_chicken)' -> ['鸡姬', 'raw_chicken']；
+    'A | B' -> ['A', 'B']。"""
+    candidates: list[str] = []
+    for seg in AUTHOR_SPLIT_RE.split(authors_str):
+        seg = seg.strip()
+        if not seg:
+            continue
+        m = PAREN_PAIR_RE.match(seg)
+        if m:
+            outer, inner = m.group(1).strip(), m.group(2).strip()
+            if outer and inner:
+                candidates.extend([outer, inner])
+            else:
+                candidates.append(outer or inner)
+        else:
+            candidates.append(seg)
+    return candidates
+
+
+def _can_substr_match(key: str) -> bool:
+    """子串匹配门槛：>=4 字符，或含中文且 >=2 字符（中文作者名常见 2-3 字）。"""
+    if len(key) >= 4:
+        return True
+    return len(key) >= 2 and re.search(r'[\u4e00-\u9fff]', key) is not None
+
+
+def find_author(authors_str: str, alias_to_id: dict[str, str],
+                verbose: bool = False) -> tuple[str | None, str]:
+    """返回 (作者编号 或 None, 说明)。
+
+    按候选顺序逐个匹配（主作者在前）：先看完全匹配，再看子串匹配；
+    第一个有匹配的候选即返回，避免多作者时被次要作者"抢走"归属。
+    """
+    candidates = split_authors(authors_str)
+    if verbose:
+        print(f"  候选别名: {candidates}")
+
+    for cand in candidates:
+        key = normalize_alias(cand)
+        if not key:
+            continue
+        if key in alias_to_id:
+            return alias_to_id[key], f"完全匹配: {cand}"
+        if _can_substr_match(key):
+            best: tuple[int, str, str] | None = None  # (匹配别名长度, 编号, 别名)
+            for alias, author_id in alias_to_id.items():
+                if not _can_substr_match(alias):
+                    continue
+                if key in alias or alias in key:
+                    if best is None or len(alias) > best[0]:
+                        best = (len(alias), author_id, alias)
+            if best:
+                return best[1], f"子串匹配: {best[2]}"
+
+    return None, "未命中任何已收录作者"
+
+
 def extract_author_role(content: str) -> str:
     """提取 ## Author 段内 Role 行值（避开 Co-creator）；无结果返回空串。"""
     m = AUTHOR_SECTION_RE.search(content)
@@ -109,20 +167,22 @@ def build_authors_data(models_dir: Path, root_readme: Path) -> dict:
                 'platforms': extract_platforms(content),
             }
 
-    # 根 README 索引补缺（如编号目录存在但无 README）
+    # 根 README 索引补缺（仅补"编号目录存在但无 README"的作者；
+    # 目录已删除的作者不补，避免根表过期行补回幽灵作者）
     if root_readme.is_file():
         for line in paths.read_text_utf8(root_readme).splitlines():
             m = INDEX_ROW_RE.match(line.strip())
             if not m:
                 continue
             author_id = m.group(1)
-            if author_id not in authors:
-                authors[author_id] = {
-                    'name': split_author_names(m.group(2).strip()),
-                    'readme': '',
-                    'role': '',
-                    'platforms': {},
-                }
+            if author_id in authors or not (models_dir / author_id).is_dir():
+                continue
+            authors[author_id] = {
+                'name': split_author_names(m.group(2).strip()),
+                'readme': '',
+                'role': '',
+                'platforms': {},
+            }
 
     return {
         'version': 1,

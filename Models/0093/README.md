@@ -2,7 +2,7 @@
 
 ## Author
 
-- **Name**: #苏依凛 | #炽湮
+- **Name**: #苏依凛 | #炽湮 | [#炽湮](../0093/README.md)
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [苏依凛](https://space.bilibili.com/76987486)

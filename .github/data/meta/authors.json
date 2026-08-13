@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-08-13T10:09:20+00:00",
+  "generated": "2026-08-13T11:19:54+00:00",
   "authors": {
     "0000": {
       "name": [
@@ -930,7 +930,9 @@
     },
     "0080": {
       "name": [
-        "#Nona_Reeves"
+        "#Nona_Reeves",
+        "#Nona_reeves",
+        "#Nona-Reeves"
       ],
       "readme": "Models/0080/README.md",
       "role": "#模型 #动作 #动画 | #Model #Motion #Animation",
@@ -1062,6 +1064,7 @@
     "0093": {
       "name": [
         "#苏依凛",
+        "#炽湮",
         "#炽湮"
       ],
       "readme": "Models/0093/README.md",
@@ -1118,12 +1121,15 @@
     },
     "0098": {
       "name": [
-        "#coldM00N"
+        "#coldM00N",
+        "#ガラスのような青空",
+        "#coldm00n"
       ],
       "readme": "Models/0098/README.md",
       "role": "#模型 #动作 #动画 | #Model #Motion #Animation",
       "platforms": {
-        "Afdian": "https://afdian.com/a/coldMOON048"
+        "Afdian": "https://afdian.com/a/coldMOON048",
+        "Bilibili": "https://space.bilibili.com/11382763"
       }
     },
     "0099": {
@@ -1240,17 +1246,6 @@
       "role": "#模型 #动作 #动画 | #Model #Motion #Animation",
       "platforms": {}
     },
-    "0110": {
-      "name": [
-        "#Nona_reeves",
-        "#Nona-Reeves"
-      ],
-      "readme": "Models/0110/README.md",
-      "role": "#模型 #动作 #动画 | #Model #Motion #Animation",
-      "platforms": {
-        "QQ": "1926615510"
-      }
-    },
     "0111": {
       "name": [
         "#奶油桃NaytoTime"
@@ -1333,18 +1328,6 @@
       "platforms": {
         "Bilibili": "https://space.bilibili.com/450162369",
         "Afdian": "https://afdian.com/a/yr9964332"
-      }
-    },
-    "0118": {
-      "name": [
-        "#ガラスのような青空",
-        "#coldm00n"
-      ],
-      "readme": "Models/0118/README.md",
-      "role": "#模型 #动作 #动画 | #Model #Motion #Animation",
-      "platforms": {
-        "Bilibili": "https://space.bilibili.com/11382763",
-        "Afdian": "https://afdian.com/a/coldMOON048"
       }
     },
     "0119": {
@@ -1738,14 +1721,6 @@
         "Afdian": "https://afdian.com/a/YWDM333"
       }
     },
-    "0156": {
-      "name": [
-        "#炽湮"
-      ],
-      "readme": "Models/0156/README.md",
-      "role": "#模型 #动作 #动画 | #Model #Motion #Animation",
-      "platforms": {}
-    },
     "0157": {
       "name": [
         "#Deovolente",
@@ -2121,14 +2096,6 @@
       "platforms": {}
     },
     "0186": {
-      "name": [
-        "暂无"
-      ],
-      "readme": "",
-      "role": "",
-      "platforms": {}
-    },
-    "0193": {
       "name": [
         "暂无"
       ],

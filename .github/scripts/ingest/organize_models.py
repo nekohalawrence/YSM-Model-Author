@@ -72,6 +72,9 @@ INDEX_ROW_RE = lib_readme.INDEX_ROW_RE
 normalize_alias = lib_readme.normalize_alias
 parse_author_name_value = lib_readme.parse_author_name_value
 build_author_index = lib_readme.build_author_index
+# 作者名拆分与匹配（复用 lib/readme.py；别名保留以兼容外部引用）
+split_authors = lib_readme.split_authors
+find_author = lib_readme.find_author
 
 # 命名/评级/去重（复用 lib/models.py 统一实现）
 GRADE_SUFFIX_RE = lib_models.GRADE_SUFFIX_RE
@@ -88,11 +91,6 @@ find_workspace_root = lib_paths.find_workspace_root
 
 
 
-# 作者字符串的分隔符（全/半角）
-AUTHOR_SPLIT_RE = re.compile(r'[\s|｜,，、;/；]+')
-# 拆"中文(English)"形式
-PAREN_PAIR_RE = re.compile(r'^([^()（）]*)[(（]([^)）]*)[)）]$')
-
 # Windows 文件名非法字符与尾点/尾空格
 ILLEGAL_CHARS_RE = re.compile(r'[<>:"/\\|?*\x00-\x1f]')
 TRAILING_DOT_SPACE_RE = re.compile(r'[.\s]+$')
@@ -102,70 +100,6 @@ WINDOWS_RESERVED = {
     *(f'COM{i}' for i in range(1, 10)),
     *(f'LPT{i}' for i in range(1, 10)),
 }
-
-
-
-
-
-# ---------------------------------------------------------------------------
-# 作者匹配
-# ---------------------------------------------------------------------------
-def split_authors(authors_str: str) -> list[str]:
-    """把 authors 原始串拆成候选别名。'鸡姬(raw_chicken)' -> ['鸡姬', 'raw_chicken']；
-    'A | B' -> ['A', 'B']。"""
-    candidates: list[str] = []
-    for seg in AUTHOR_SPLIT_RE.split(authors_str):
-        seg = seg.strip()
-        if not seg:
-            continue
-        m = PAREN_PAIR_RE.match(seg)
-        if m:
-            outer, inner = m.group(1).strip(), m.group(2).strip()
-            if outer and inner:
-                candidates.extend([outer, inner])
-            else:
-                candidates.append(outer or inner)
-        else:
-            candidates.append(seg)
-    return candidates
-
-
-def _can_substr_match(key: str) -> bool:
-    """子串匹配门槛：>=4 字符，或含中文且 >=2 字符（中文作者名常见 2-3 字）。"""
-    if len(key) >= 4:
-        return True
-    return len(key) >= 2 and re.search(r'[\u4e00-\u9fff]', key) is not None
-
-
-def find_author(authors_str: str, alias_to_id: dict[str, str],
-                verbose: bool = False) -> tuple[str | None, str]:
-    """返回 (作者编号 或 None, 说明)。
-
-    按候选顺序逐个匹配（主作者在前）：先看完全匹配，再看子串匹配；
-    第一个有匹配的候选即返回，避免多作者时被次要作者"抢走"归属。
-    """
-    candidates = split_authors(authors_str)
-    if verbose:
-        print(f"  候选别名: {candidates}")
-
-    for cand in candidates:
-        key = normalize_alias(cand)
-        if not key:
-            continue
-        if key in alias_to_id:
-            return alias_to_id[key], f"完全匹配: {cand}"
-        if _can_substr_match(key):
-            best: tuple[int, str, str] | None = None  # (匹配别名长度, 编号, 别名)
-            for alias, author_id in alias_to_id.items():
-                if not _can_substr_match(alias):
-                    continue
-                if key in alias or alias in key:
-                    if best is None or len(alias) > best[0]:
-                        best = (len(alias), author_id, alias)
-            if best:
-                return best[1], f"子串匹配: {best[2]}"
-
-    return None, "未命中任何已收录作者"
 
 
 
@@ -256,6 +190,10 @@ def find_duplicate(target_author_dir: Path, folder_name: str,
         for sub in target_author_dir.iterdir():
             if sub.is_dir() and not sub.name.startswith('.'):
                 if normalize_name_for_cmp(sub.name) == norm_folder:
+                    # 空壳同名文件夹（无 .ysm 内容）：优先填充而非视为重复
+                    if not any(f.suffix.lower() == '.ysm'
+                               for f in sub.rglob('*') if f.is_file()):
+                        continue
                     return 'folder', f"已存在同名模型文件夹 Models/{target_author_dir.name}/{sub.name}"
                 for ysm in sub.rglob('*'):
                     if ysm.is_file() and ysm.suffix.lower() == '.ysm':

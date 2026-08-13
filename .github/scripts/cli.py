@@ -43,6 +43,7 @@ REPO_ROOT = lib_paths.WORKSPACE_ROOT
 # 子命令 -> (脚本相对 scripts/ 的路径, 一句话说明)
 COMMANDS: dict[str, tuple[str, str]] = {
     'organize': ('ingest/organize_models.py', '归档 .ysm 到 Models/<编号>/'),
+    'audit': ('ingest/audit_models.py', '库整理:重新分类/合并重复作者/空壳报告'),
     'previews': ('ingest/organize_previews.py', '预览图归入 previews/ 并规范命名'),
     'rename-files': ('ingest/rename_model_files.py', '按命名规范重命名模型文件'),
     'rename-folders': ('naming/rename_model_folders.py', '按知识库重命名模型文件夹'),
