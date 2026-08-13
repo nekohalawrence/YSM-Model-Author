@@ -96,10 +96,14 @@ def get_work_canonical(seg: str) -> str | None:
 
 
 def ask(prompt: str) -> str:
-    """安全的交互输入：去 BOM、去首尾空白；非交互 stdin 耗尽时返回 'q'（退出）。"""
+    """安全的交互输入：去 BOM、去首尾空白；非交互 stdin 耗尽或 Ctrl+C 时返回 'q'（退出）。
+
+    返回 'q' 后各交互命令会保存已完成的部分并优雅退出（与显式输入 q 等价），
+    避免用户在确认环节按 Ctrl+C 时直接抛 KeyboardInterrupt 崩溃。
+    """
     try:
         return input(prompt).strip().lstrip('\ufeff')
-    except EOFError:
+    except (EOFError, KeyboardInterrupt):
         return 'q'
 
 
@@ -1002,6 +1006,70 @@ def run_suggest(kb_path: Path) -> None:
             print(f"  ...（其余 {len(no_cand) - 30} 条略）")
 
 
+def work_display_name(work: str, works: dict) -> str:
+    """作品键 -> '全称 (键)'。优先中文名，其次英文名；无全称时只显示键。"""
+    v = works.get(work) if isinstance(works, dict) else None
+    if isinstance(v, dict):
+        for lang in ("cn", "en"):
+            names = v.get(lang) or []
+            if names:
+                return f"{names[0]} ({work})"
+    elif isinstance(v, list) and v:
+        return f"{v[0]} ({work})"
+    return work
+
+
+def format_pair_lines(r1: dict, r2: dict, works: dict) -> str:
+    """重复条目对的提示排版：游戏全称在上层，中/英文名按条目成行对齐。
+
+    每个条目一行：cn 别名（逗号连接）在左、en 别名（逗号连接）在右，
+    两列左对齐——同一角色的多种写法并列展示，不产生空行错位。
+    """
+    rows: list[tuple[str, str]] = []
+    for r in (r1, r2):
+        rows.append((", ".join(role_names(r, "cn")),
+                     ", ".join(role_names(r, "en"))))
+    cn_w = max((len(c) for c, _ in rows), default=0)
+    lines = [f"Game: {work_display_name(r1.get('work', '?'), works)}"]
+    for cn, en in rows:
+        lines.append(f"  {cn:<{cn_w}} | {en}")
+    return "\n".join(lines)
+
+
+# ---------------------------------------------------------------------------
+# merge 跳过记录：用户明确选择"n"（不合并）的条目对持久化，下次不再询问
+# ---------------------------------------------------------------------------
+def pair_skip_key(r1: dict, r2: dict) -> str:
+    """条目对的稳定键：两个 role_key 排序后用 ↔ 连接（顺序无关）。"""
+    return " ↔ ".join(sorted([role_key(r1), role_key(r2)]))
+
+
+def load_merge_skips(kb_path: Path) -> list[str]:
+    """读取已确认不合并的条目对（merge_skips.json，独立于 roles/aliases）。"""
+    p = kb_path / "merge_skips.json"
+    if not p.exists():
+        return []
+    try:
+        data = json.loads(p.read_text(encoding="utf-8"))
+        return list(data) if isinstance(data, list) else []
+    except (json.JSONDecodeError, OSError):
+        return []
+
+
+def save_merge_skips(kb_path: Path, skips: list[str]) -> None:
+    """写回跳过记录（去重排序）。"""
+    p = kb_path / "merge_skips.json"
+    p.write_text(json.dumps(sorted(set(skips)), ensure_ascii=False, indent=2) + "\n",
+                 encoding="utf-8")
+
+
+def prune_merge_skips(skips: list[str], roles: list[dict]) -> list[str]:
+    """清理已失效的跳过记录：条目对中的任一 role_key 已不在当前 roles 中（被合并/删除）。"""
+    alive = {role_key(r) for r in roles}
+    return [k for k in skips
+            if all(part in alive for part in k.split(" ↔ ") if part)]
+
+
 def run_merge(kb_path: Path) -> None:
     """合并重复角色条目（两阶段）。
 
@@ -1066,15 +1134,22 @@ def run_merge(kb_path: Path) -> None:
         i += 1
 
     # 阶段 2：手动确认（仅子串重叠，避免误并）
+    works = data.get("works") or {}
+    skips = prune_merge_skips(load_merge_skips(kb_path), roles)
     manual_count = 0
     i = 0
     while i < len(roles):
         j = i + 1
         while j < len(roles):
             if roles[i].get("work") == roles[j].get("work") and has_substr(roles[i], roles[j]):
-                ans = ask(f"[子串重叠] {describe(roles[i])}  <->  {describe(roles[j])}"
-                          f"  (y=合并, n=跳过, q=退出): ").lower()
+                if pair_skip_key(roles[i], roles[j]) in skips:
+                    j += 1  # 用户此前已确认"不合并"，不再询问
+                    continue
+                print("[子串重叠]")
+                print(format_pair_lines(roles[i], roles[j], works))
+                ans = ask("(y=合并, n=跳过, q=退出): ").lower()
                 if ans in ("q", "quit"):
+                    save_merge_skips(kb_path, skips)
                     if auto_count or manual_count:
                         data["roles"] = roles
                         save_kb_json(kb_path, data)
@@ -1086,12 +1161,14 @@ def run_merge(kb_path: Path) -> None:
                     roles.pop(j)
                     manual_count += 1
                 else:
+                    skips.append(pair_skip_key(roles[i], roles[j]))
                     j += 1
             else:
                 j += 1
         i += 1
 
     data["roles"] = roles
+    save_merge_skips(kb_path, skips)
     if auto_count or manual_count:
         save_kb_json(kb_path, data)
         print(f"合并完成: 自动 {auto_count} 条，手动 {manual_count} 条，已保存: {kb_path}")
@@ -1315,4 +1392,9 @@ if __name__ == "__main__":
         sys.stdin.reconfigure(encoding="utf-8", errors="replace")
     except Exception:  # noqa: BLE001
         pass
-    raise SystemExit(main())
+    try:
+        raise SystemExit(main())
+    except KeyboardInterrupt:
+        # 在非 ask() 输入阶段被中断（如构建/保存中途）：友好退出而非 traceback
+        print("\n已取消（Ctrl+C），未完成的部分未保存。", file=sys.stderr)
+        raise SystemExit(130)
