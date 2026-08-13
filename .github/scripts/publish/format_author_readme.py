@@ -9,6 +9,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from lib import paths as lib_paths
 from lib import readme as lib_readme
+from lib import ysm as lib_ysm
 
 WORKSPACE_ROOT = lib_paths.WORKSPACE_ROOT
 MODELS_DIR = WORKSPACE_ROOT / 'Models'
@@ -453,7 +454,90 @@ def process_all_authors(check_only: bool = False) -> int:
     return updated_count
 
 
+# .ysm 作者字段中的噪音：URL、组合描述（& / —— / 角色说明）等，不可作为作者名
+_DERIVED_NOISE_RE = re.compile(
+    r'https?://|&amp;|&|＆|——|来自|来源|配置|素体|完整版|表情|精修|模型作者|动作作者|（模型）|（配置）|（动作）'
+    r'|b站|B站|bb站[:：]|如有|定制|联系|qq[:：]')
+
+
+def _is_usable_derived_name(name: str, existing_norms: set[str]) -> bool:
+    """推导名可用性：无 URL/组合描述噪音、长度达标，且与现有 name 不重复
+    （规范化相等或互为子串，避免 '02Bunny（蓝玫瑰）' 撞已有 '#02Bunny'）。"""
+    norm = lib_readme.normalize_alias(name)
+    if not norm or len(norm) < 2:
+        return False
+    if _DERIVED_NOISE_RE.search(name):
+        return False
+    return not any(norm == e or norm in e or e in norm for e in existing_norms)
+
+
+def sync_authors_from_models(apply: bool = False) -> int:
+    """从各作者目录下模型 .ysm 推导主作者名，作为补充别名并入 authors.json。
+
+    模型 .ysm 的作者块是作者信息的可靠来源（README 可能缺失/错误），但 .ysm
+    authors 字段常含 URL、组合描述等噪音——推导名经 _is_usable_derived_name
+    过滤后才作为候选。默认 dry-run 只报告；--apply 才写回 authors.json。
+    返回更新的作者数。
+    """
+    path = lib_paths.data_path('meta', 'authors.json')
+    data = lib_paths.load_json(path, {})
+    authors = data.get('authors') if isinstance(data, dict) else None
+    if not authors:
+        print('authors.json 缺失或为空，先运行 cli.py authors 生成')
+        return 0
+    updated = 0
+    for author_dir in sorted(MODELS_DIR.iterdir()):
+        if not (author_dir.is_dir() and re.fullmatch(r'\d{4}', author_dir.name)):
+            continue
+        derived: list[str] = []
+        for model_dir in sorted(author_dir.iterdir()):
+            if not (model_dir.is_dir() and not model_dir.name.startswith('.')
+                    and model_dir.name.lower() != 'previews'):
+                continue
+            owner, _ = lib_ysm.model_owner(model_dir)
+            if owner:
+                derived.append('#' + owner.lstrip('#＃'))
+        if not derived:
+            continue
+        aid = author_dir.name
+        entry = authors.get(aid)
+        names = list(entry.get('name') or []) if entry else []
+        existing_norms = {lib_readme.normalize_alias(n) for n in names if n}
+        usable: list[str] = []
+        seen: set[str] = set()
+        for d in derived:
+            norm = lib_readme.normalize_alias(d)
+            if norm in seen or not _is_usable_derived_name(d, existing_norms):
+                continue
+            seen.add(norm)
+            usable.append(d)
+        if not usable:
+            continue
+        print(f'  {aid}: {len(usable)} 个候选推导名 {usable}')
+        if apply:
+            if entry is None:
+                entry = {'name': [], 'readme': f'Models/{aid}/README.md',
+                         'role': '', 'platforms': {}}
+                authors[aid] = entry
+            entry['name'] = names + usable
+            updated += 1
+    if apply:
+        if updated:
+            lib_paths.save_json(path, data)
+            print(f'已更新 {updated} 位作者的 name（模型 .ysm 推导，去重过滤）: {path}')
+        else:
+            print('无需更新：没有可用的模型推导名')
+    else:
+        print(f'dry-run: 共 {updated} 位作者有候选（加 --apply 写入 authors.json）')
+    return updated
+
+
 if __name__ == '__main__':
+    # --sync-authors:从模型 .ysm 推导作者并更新 authors.json(独立命令,不格式化 README)
+    if '--sync-authors' in sys.argv[1:]:
+        apply = '--apply' in sys.argv[1:]
+        raise SystemExit(sync_authors_from_models(apply))
+
     check_only = any(a in ('--check', '--dry-run') for a in sys.argv[1:])
     args = [a for a in sys.argv[1:] if not a.startswith('--')]
 

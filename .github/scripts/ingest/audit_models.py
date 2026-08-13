@@ -55,16 +55,8 @@ def iter_model_dirs(author_dir: Path):
 
 
 def model_owner(model_dir: Path) -> tuple[str | None, str]:
-    """解析模型目录主作者名（第一个 .ysm 的 primary 块）；返回 (作者名, 文件名)。"""
-    for f in sorted(model_dir.glob('*.ysm')) + sorted(model_dir.glob('*.YSM')):
-        meta = lib_ysm.extract_metadata(f, quiet=True)
-        blocks = meta.get('author_blocks') or []
-        if not blocks:
-            continue
-        primary, _, _ = lib_ysm.classify_authors(blocks)
-        if primary:
-            return primary['name'], f.name
-    return None, ''
+    """解析模型目录主作者名（复用 lib/ysm.py 统一实现）。"""
+    return lib_ysm.model_owner(model_dir)
 
 
 def count_ysm(directory: Path) -> int:
@@ -211,6 +203,21 @@ def find_merge_candidates() -> list[tuple[str, str, str]]:
     return [(a, b, r) for (a, b), r in sorted(pairs.items())]
 
 
+def _merge_name_values(existing: str, drop_name: str) -> str:
+    """合并两个 Name 值（' | ' 分隔），按规范化别名去重，保留原始顺序。
+
+    防止合并时把 keep 已有的别名（如「炽湮」）重复并入。"""
+    parts = [p.strip() for p in f'{existing} | {drop_name}'.split('|') if p.strip()]
+    out: list[str] = []
+    seen: set[str] = set()
+    for p in parts:
+        norm = lib_readme.normalize_alias(p)
+        if norm and norm not in seen:
+            seen.add(norm)
+            out.append(p)
+    return ' | '.join(out)
+
+
 def merge_authors(keep: str, drop: str, reason: str) -> str:
     """把 drop 作者合并进 keep：移动模型、并入名字、迁移 models_meta、删除空目录。"""
     keep_dir, drop_dir = MODELS_DIR / keep, MODELS_DIR / drop
@@ -235,11 +242,10 @@ def merge_authors(keep: str, drop: str, reason: str) -> str:
                     m = re.search(r'^(?P<indent>\s*-\s*\*\*(?:Name|作者名称)\*\*\s*[:：]\s*)(?P<val>.*)$',
                                   content, re.MULTILINE | re.IGNORECASE)
                     if m:
-                        existing = m.group('val').strip()
-                        merged = existing + ' | ' + drop_name if existing and drop_name else (existing or drop_name)
+                        merged = _merge_name_values(m.group('val').strip(), drop_name)
                         content = content[:m.start()] + m.group('indent') + merged + content[m.end():]
                         keep_readme.write_text(content, encoding='utf-8')
-                        results.append(f'[名字] {keep}/README.md 并入「{drop_name}」')
+                        results.append(f'[名字] {keep}/README.md 并入「{drop_name}」(去重)')
                 # 并入平台行（drop Author 段的平台容器行 + 子行；keep 已有键跳过）
                 added = _merge_platform_lines(content, drop_text, keep_readme)
                 if added:

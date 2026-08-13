@@ -137,6 +137,23 @@ def extract_metadata(path: Path, quiet: bool = False) -> dict:
     return meta
 
 
+def model_owner(model_dir: Path) -> tuple[str | None, str]:
+    """解析模型目录的主作者名（第一个 .ysm 的 primary 块）；返回 (作者名, 文件名)。
+
+    供库整理（audit 重新分类）、作者推导（format_author_readme --sync-authors）、
+    模型 README 生成等复用：作者目录下模型的 .ysm 主作者是作者信息的可靠来源。
+    """
+    for f in sorted(model_dir.glob('*.ysm')) + sorted(model_dir.glob('*.YSM')):
+        meta = extract_metadata(f, quiet=True)
+        blocks = meta.get('author_blocks') or []
+        if not blocks:
+            continue
+        primary, _, _ = classify_authors(blocks)
+        if primary:
+            return primary['name'], f.name
+    return None, ''
+
+
 # ---------------------------------------------------------------------------
 # 多作者分类：主作者 = 第一个 role 含"模型"的作者；无则第一个作者
 # ---------------------------------------------------------------------------

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-08-13T11:19:54+00:00",
+  "generated": "2026-08-13T11:39:06+00:00",
   "authors": {
     "0000": {
       "name": [
@@ -1064,7 +1064,6 @@
     "0093": {
       "name": [
         "#苏依凛",
-        "#炽湮",
         "#炽湮"
       ],
       "readme": "Models/0093/README.md",
@@ -2088,8 +2087,7 @@
     },
     "0195": {
       "name": [
-        "#奶油桃",
-        "#Killot945"
+        "#奶油桃"
       ],
       "readme": "Models/0195/README.md",
       "role": "#模型 #动作 #动画 | #Model #Motion #Animation",

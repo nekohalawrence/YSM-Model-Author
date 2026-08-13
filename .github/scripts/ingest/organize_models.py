@@ -63,7 +63,7 @@ load_platform_map = lib_ysm.load_platform_map
 map_platforms = lib_ysm.map_platforms
 
 # 新作者 README 的生成与默认 Role（统一由 publish/format_author_readme.py 负责）
-from publish.format_author_readme import TARGET_ROLE, render_author_readme
+from publish.format_author_readme import TARGET_ROLE, format_author_name, render_author_readme
 
 # 作者 README 解析相关（复用 lib/readme.py 统一实现）
 NAME_LINE_RE = lib_readme.NAME_LINE_RE
@@ -353,6 +353,29 @@ def archive_one(path: Path, target_dir: Path, folder_name: str, mode: str,
     return 'copied' if mode == 'copy' else 'moved'
 
 
+def upsert_author_index(root: Path, author_id: str, block: dict) -> None:
+    """把新作者增量写入集中作者数据 authors.json（不重建全部）；已存在则跳过。
+
+    新作者归档时即时登记，后续脚本（audit 合并、README 生成）无需先跑
+    build_authors_index 也能看到该作者。
+    """
+    path = lib_paths.data_path('meta', 'authors.json')
+    data = lib_paths.load_json(path, {})
+    authors = data.setdefault('authors', {})
+    if author_id in authors:
+        return
+    name_tags = format_author_name(block['name'])  # '#鸡姬 | #raw_chicken'
+    names = [t.strip() for t in name_tags.split('|') if t.strip()]
+    authors[author_id] = {
+        'name': names,
+        'readme': f'Models/{author_id}/README.md',
+        'role': TARGET_ROLE,
+        'platforms': dict(block.get('contacts') or {}),
+    }
+    lib_paths.save_json(path, data)
+    print(f"  已登记到 authors.json: {author_id} {names}")
+
+
 def resolve_author_id(block: dict, alias_to_id: dict, runtime_index: dict,
                       root: Path, apply: bool, verbose: bool,
                       result: dict) -> str:
@@ -370,6 +393,7 @@ def resolve_author_id(block: dict, alias_to_id: dict, runtime_index: dict,
         target_dir.mkdir(parents=True, exist_ok=True)
         (target_dir / 'README.md').write_bytes(
             render_author_readme(new_id, block['name']).encode('utf-8'))
+        upsert_author_index(root, new_id, block)
         print(f"  新建作者目录 {new_id} 并生成 README.md（{block['name']}）")
     else:
         print(f"  [计划] 新建作者目录 {new_id} 并生成 README.md（{block['name']}）")

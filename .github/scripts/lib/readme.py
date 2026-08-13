@@ -132,12 +132,17 @@ def extract_platforms(content: str) -> dict[str, str]:
 
 
 def split_author_names(name_value: str) -> list[str]:
-    """把 Name 值拆成名称数组：先去 Markdown 链接语法，再按 | 拆分去空。
+    """把 Name 值拆成名称数组：先去 Markdown 链接语法，再按 | 拆分去空去重。
 
     兼容部分作者 README 里 Name 写成链接的情况（如 0058/0156），
-    避免把链接 URL 污染进作者数据。"""
+    避免把链接 URL 污染进作者数据；去重防止合并/手改产生的重复别名。"""
     text = re.sub(r'\[([^\]]*)\]\([^)]*\)', r'\1', name_value)
-    return [p.strip() for p in text.split('|') if p.strip()]
+    out: list[str] = []
+    for p in text.split('|'):
+        p = p.strip()
+        if p and p not in out:
+            out.append(p)
+    return out
 
 
 def build_authors_data(models_dir: Path, root_readme: Path) -> dict:
