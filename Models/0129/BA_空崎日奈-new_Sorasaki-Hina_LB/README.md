@@ -30,6 +30,11 @@
   - **OtherPlatform**: #42696c6962696c69
     - **42696c6962696c69**: aHR0cHM6Ly9zcGFjZS5iaWxpYmlsaS5jb20vMzU0NjU5OTMwNTI1MTM0Nw==
 
+- **Name**: K螺诺亚
+  - **Role**: #DEBUG
+  - **SocialPlatform**: #B站
+    - **B站**: [K螺诺亚](https://space.bilibili.com/3546599305251347)
+
 </details>
 
 ## Preview Images

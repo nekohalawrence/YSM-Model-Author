@@ -22,6 +22,13 @@
 - **Name**: YoosPerson
   - **Role**: #动画 | #Animation
 
+- **Name**: 狱际星芒
+  - **Role**: #作者
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: 哔哩哔哩关注狱际星芒
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: 爱发电搜狱际星芒
+
 </details>
 
 ## Preview Images

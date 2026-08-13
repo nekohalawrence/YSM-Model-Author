@@ -26,6 +26,14 @@
   - **SupportPlatform**: #Afdian
     - **Afdian**: [星屑海螺](https://afdian.com/a/lucia2048)
 
+- **Name**: NguyenDevs
+  - **Role**: #Misc #音效 #Trans | #Sound
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [NguyenDevs](https://afdian.com/a/NguyenDevs)
+  - **OtherPlatform**: #Facebook #Tiktok
+    - **Facebook**: [NguyenDevs](https://facebook.com/NguyenDevs)
+    - **Tiktok**: [NguyenDevs](https://tiktok.com/@nguyendevs)
+
 </details>
 
 ## Preview Images

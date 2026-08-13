@@ -26,6 +26,13 @@
   - **SupportPlatform**: #Afdian
     - **Afdian**: [星屑海螺/AnluoSakura](https://afdian.com/a/lucia2048)
 
+- **Name**: 星屑海螺,AnluoSakura
+  - **Role**: #动画 | #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [星屑海螺,AnluoSakura](https://space.bilibili.com/14975572)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [星屑海螺,AnluoSakura](https://afdian.com/a/lucia2048)
+
 </details>
 
 ## Preview Images

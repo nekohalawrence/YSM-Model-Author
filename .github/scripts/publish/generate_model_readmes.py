@@ -54,6 +54,7 @@ END_MARKER = '<!-- GENERATED MODEL PREVIEW README END -->'
 _TEMPLATE: dict = {}
 _CATEGORY_MAP: dict[str, str] = {}
 _PLATFORM_MAP: dict | None = None
+_MODELS_META: dict | None = None
 
 
 def load_template() -> dict:
@@ -171,8 +172,12 @@ def collect_preview_images(model_dir: Path) -> list[Path]:
 # co-creator 数据（models_meta.json 优先，.ysm 解析兜底）
 # ---------------------------------------------------------------------------
 def load_models_meta() -> dict:
-    """读取 co-creator 元数据（.github/data/meta/models_meta.json）"""
-    return lib_paths.load_json(lib_paths.data_path('meta', 'models_meta.json'), {})
+    """读取 co-creator 元数据（.github/data/meta/models_meta.json），惰性缓存——
+    全量扫描 1400+ 模型时避免每次调用都重复读文件。"""
+    global _MODELS_META
+    if _MODELS_META is None:
+        _MODELS_META = lib_paths.load_json(lib_paths.data_path('meta', 'models_meta.json'), {})
+    return _MODELS_META
 
 
 def same_model(a: str, b: str) -> bool:
@@ -200,27 +205,32 @@ def get_co_creators(model_dir: Path) -> list[dict]:
 
 
 def co_creators_from_ysm(model_dir: Path) -> list[dict]:
-    """解析模型目录下 .ysm，把非主作者块转成 co-creator 记录（models_meta 兜底）。
+    """解析模型目录下全部 .ysm，把非主作者块合并成 co-creator 记录（models_meta 兜底）。
 
     主作者 = role 含"模型"的第一个块（与归档分类 classify_authors 一致）；其余块即
-    co-creator。返回的格式与 models_meta 的 co_creators 相同：
-    [{'name', 'role', 'platforms': {字段: [值]}}]。
+    co-creator。多 .ysm 目录（同一模型的多个版本/变体）会**扫描全部文件并去重合并**，
+    避免只取第一个文件而漏掉其他版本的合作作者。返回格式与 models_meta 的
+    co_creators 相同：[{'name', 'role', 'platforms': {字段: [值]}}]。
     """
     ysm_files = sorted(model_dir.glob('*.ysm')) + sorted(model_dir.glob('*.YSM'))
     platform_map = get_platform_map()
+    merged: list[dict] = []
+    seen: set[str] = set()
     for f in ysm_files:
         meta = lib_ysm.extract_metadata(f, quiet=True)
         blocks = meta.get('author_blocks') or []
         if len(blocks) < 2:
-            # 单作者模型没有 co-creator，继续看下一个文件
+            # 单作者 .ysm 没有 co-creator，继续看下一个文件
             continue
         _, _, co_blocks = lib_ysm.classify_authors(blocks)
-        if not co_blocks:
-            continue
-        return [{'name': b['name'], 'role': b.get('role', ''),
-                 'platforms': lib_ysm.map_platforms(b.get('contacts') or {}, platform_map)}
-                for b in co_blocks]
-    return []
+        for b in co_blocks:
+            name = b['name']
+            if name in seen:
+                continue
+            seen.add(name)
+            merged.append({'name': name, 'role': b.get('role', ''),
+                           'platforms': lib_ysm.map_platforms(b.get('contacts') or {}, platform_map)})
+    return merged
 
 
 # ---------------------------------------------------------------------------

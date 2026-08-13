@@ -23,9 +23,6 @@
 - **Name**: 嗯嗯owo
   - **Role**: #动画 | #Animation
 
-- **Name**: 嗯嗯owo
-  - **Role**: #贴图 | #Texture
-
 </details>
 
 ## Preview Images

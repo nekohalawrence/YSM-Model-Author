@@ -41,6 +41,11 @@
   - **SocialPlatform**: #bilibili
     - **bilibili**: [再来几斤小莫莫](https://space.bilibili.com/3493267685509797)
 
+- **Name**: Tex_offcial
+  - **Role**: #贴图 | #Texture
+  - **OtherPlatform**: #blibli
+    - **blibli**: [Tex_offcial](https://b23.tv/0angYgR)
+
 </details>
 
 ## Preview Images

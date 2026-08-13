@@ -23,9 +23,6 @@
 - **Name**: 嗯嗯owo
   - **Role**: #贴图 | #Texture
 
-- **Name**: 嗯嗯owo
-  - **Role**: #动画 | #Animation
-
 - **Name**: 失踪的李元
   - **Role**: #贴图 | #Texture
   - **SocialPlatform**: #Bilibili

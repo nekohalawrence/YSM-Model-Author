@@ -43,22 +43,16 @@ def _meta_path(root: Path | None, fname: str) -> Path:
     return lib_paths.data_path('meta', fname)
 
 
-def extract_metadata(path: Path, quiet: bool = False) -> dict:
-    """返回 {'name', 'authors', 'author_blocks'}；读取失败返回空 dict 并打印警告。
+# .ysm 元数据只位于 [Export] 段之前的文本头；大文件（数十 MB）的二进制区无需读取。
+# 先只读头部，解析不到（无头旧版/极长头部）再回退读全量，兼顾性能与兼容。
+_HEAD_BYTES = 256 * 1024
 
-    author_blocks: [{'name', 'role', 'contacts': {平台键: 值}}, ...]（新版块结构，
-    按出现顺序；旧版单行 authors 退化为单个块）。只解析 [Export] 段之前，避免
-    加密二进制区出现巧合标签字节。quiet=True 时不打印警告（批量扫描场景，如
-    模型 README 的 co-creator 兑底识别，避免无头旧版文件刷屏）。
+
+def _parse_metadata_text(text: str) -> dict:
+    """从 .ysm 文本（头部或全文）解析 {'name', 'authors', 'author_blocks'}。
+
+    只解析 [Export] 段之前，避免加密二进制区出现巧合标签字节。
     """
-    try:
-        raw = path.read_bytes()
-    except OSError as e:
-        if not quiet:
-            print(f"  [错误] 无法读取: {e}")
-        return {}
-
-    text = raw.decode('utf-8', errors='ignore')
     export_m = EXPORT_SECTION_RE.search(text)
     head = text[:export_m.start()] if export_m else text
 
@@ -104,11 +98,42 @@ def extract_metadata(path: Path, quiet: bool = False) -> dict:
             fields['authors'] = m.group(1)
             author_blocks.append({'name': fields['authors'], 'role': '', 'contacts': {}})
 
-    meta = {'name': fields.get('name'), 'authors': fields.get('authors'),
+    return {'name': fields.get('name'), 'authors': fields.get('authors'),
             'author_blocks': author_blocks}
-    if not meta['name'] and not meta['authors']:
+
+
+def extract_metadata(path: Path, quiet: bool = False) -> dict:
+    """返回 {'name', 'authors', 'author_blocks'}；读取失败返回空 dict 并打印警告。
+
+    author_blocks: [{'name', 'role', 'contacts': {平台键: 值}}, ...]（新版块结构，
+    按出现顺序；旧版单行 authors 退化为单个块）。
+
+    性能：只读文件头部（前 256KB）解析元数据——.ysm 元数据在 [Export] 段之前，
+    全量读取会把数十 MB 的二进制区也读进内存；头部未命中（无头旧版/超长头部）时
+    回退读全量。quiet=True 时不打印警告（批量扫描场景，避免无头旧版文件刷屏）。
+    """
+    try:
+        with open(path, 'rb') as f:
+            head_bytes = f.read(_HEAD_BYTES)
+    except OSError as e:
         if not quiet:
-            print(f"  [警告] 未能从文件中提取到 <name>/<authors> 元数据（可能是无头旧版或损坏文件）")
+            print(f"  [错误] 无法读取: {e}")
+        return {}
+
+    meta = _parse_metadata_text(head_bytes.decode('utf-8', errors='ignore'))
+    if meta['name'] or meta['authors']:
+        return meta
+
+    # 头部未命中：无头旧版或头部超长，读全量重试
+    try:
+        raw = path.read_bytes()
+    except OSError as e:
+        if not quiet:
+            print(f"  [错误] 无法读取: {e}")
+        return {}
+    meta = _parse_metadata_text(raw.decode('utf-8', errors='ignore'))
+    if not meta['name'] and not meta['authors'] and not quiet:
+        print(f"  [警告] 未能从文件中提取到 <name>/<authors> 元数据（可能是无头旧版或损坏文件）")
     return meta
 
 

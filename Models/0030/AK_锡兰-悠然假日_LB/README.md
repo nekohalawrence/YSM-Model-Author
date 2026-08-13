@@ -23,16 +23,6 @@
 - **Name**: 嗯嗯owo
   - **Role**: #动画 | #Animation
 
-- **Name**: 嗯嗯owo
-  - **Role**: #动画 | #Animation
-
-- **Name**: 嗯嗯owo
-  - **Role**: #贴图 | #Texture
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [嗯嗯owo](https://space.bilibili.com/167202500?spm_id_from=333.337.0.0)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [嗯嗯owo](https://afdian.net/a/enenowo)
-
 </details>
 
 ## Preview Images

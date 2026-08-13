@@ -26,6 +26,13 @@
   - **SupportPlatform**: #Afdian
     - **Afdian**: [安洛樱](https://afdian.com/a/AnluoSakura)
 
+- **Name**: ALYYYYYYYYYYYYYYYYYYYYYYYYY！
+  - **Role**: #摸鱼
+  - **SocialPlatform**: #BiliBili
+    - **BiliBili**: [ALYYYYYYYYYYYYYYYYYYYYYYYYY！](https://space.bilibili.com/1275761002?spm_id_from=333.1007.0.0)
+  - **OtherPlatform**: #afd
+    - **afd**: [ALYYYYYYYYYYYYYYYYYYYYYYYYY！](https://afdian.com/a/AnluoSakura)
+
 </details>
 
 ## Preview Images

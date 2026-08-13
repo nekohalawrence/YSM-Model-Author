@@ -20,16 +20,6 @@
 - **Name**: 泉溪
   - **Role**: #动画 | #Animation
 
-- **Name**: 泉溪
-  - **Role**: #动画 | #Animation
-
-- **Name**: 泉溪
-  - **Role**: #动画 | #Animation
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [泉溪](https://modrinth.com/mod/yes-steve-model)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: hhttps://modrinth.com/mod/yes-steve-model
-
 </details>
 
 ## Preview Images
