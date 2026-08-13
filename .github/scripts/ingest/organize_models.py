@@ -62,8 +62,8 @@ classify_authors = lib_ysm.classify_authors
 load_platform_map = lib_ysm.load_platform_map
 map_platforms = lib_ysm.map_platforms
 
-# 新作者 README 的默认 Role（与 format_author_readme.py 保持一致）
-TARGET_ROLE = "#模型 #动作 #动画 | #Model #Motion #Animation"
+# 新作者 README 的生成与默认 Role（统一由 publish/format_author_readme.py 负责）
+from publish.format_author_readme import TARGET_ROLE, render_author_readme
 
 # 作者 README 解析相关（复用 lib/readme.py 统一实现）
 NAME_LINE_RE = lib_readme.NAME_LINE_RE
@@ -303,33 +303,6 @@ def collect_sidecars(src_dir: Path, stem: str, src_path: Path) -> list[Path]:
             if f.is_file() and f not in sidecars:
                 sidecars.append(f)
     return sidecars
-
-
-# ---------------------------------------------------------------------------
-# 新作者 README 生成（模仿现有作者 README 风格）
-# ---------------------------------------------------------------------------
-def format_author_name(authors_str: str) -> str:
-    """'鸡姬(raw_chicken)' -> '#鸡姬 | #raw_chicken'（保留原始顺序，每个别名加 #）"""
-    tags: list[str] = []
-    for cand in split_authors(authors_str):
-        tag = cand.strip()
-        if tag and not tag.startswith('#') and not tag.startswith('＃'):
-            tag = '#' + tag
-        if tag and tag not in tags:
-            tags.append(tag)
-    return ' | '.join(tags)
-
-
-def render_author_readme(author_id: str, authors_str: str) -> str:
-    name_line = format_author_name(authors_str) or '暂无'
-    return (
-        f'# {author_id}\n'
-        '\n'
-        '## Author\n'
-        '\n'
-        f'- **Name**: {name_line}\n'
-        f'  - **Role**: {TARGET_ROLE}\n'
-    )
 
 
 # ---------------------------------------------------------------------------
