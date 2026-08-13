@@ -33,7 +33,10 @@ import sys
 from dataclasses import dataclass, field
 from pathlib import Path
 
-WORKSPACE_ROOT = Path(__file__).resolve().parents[2]
+from lib import paths as lib_paths
+from lib import previews as lib_previews
+
+WORKSPACE_ROOT = lib_paths.WORKSPACE_ROOT
 SCRIPT_DIR = Path(__file__).resolve().parent
 
 ROOT_DIRS = [
@@ -41,30 +44,17 @@ ROOT_DIRS = [
     WORKSPACE_ROOT / 'Blockbench-Models',
     WORKSPACE_ROOT / 'Other-YSM-Models',
 ]
-IMAGE_EXTS = {'.png', '.jpg', '.jpeg', '.webp', '.gif'}
-PREVIEW_MARKER = re.compile(r'preview', re.I)
-PREVIEWS_DIRNAME = 'previews'
+# 预览图识别规则统一复用 lib/previews.py
+IMAGE_EXTS = lib_previews.IMAGE_EXTS
+PREVIEW_MARKER = lib_previews.PREVIEW_MARKER
+PREVIEWS_DIRNAME = lib_previews.PREVIEWS_DIRNAME
+is_preview_image = lib_previews.is_preview_image
+is_image_file = lib_previews.is_image_file
+find_previews_dir = lib_previews.find_previews_dir
 # 规范命名:preview + 两位数字(01~99),如 preview01.png
 PREVIEW_NUMBER_RE = re.compile(r'^preview(\d{2})$', re.IGNORECASE)
 MAX_PREVIEW_INDEX = 99
 GENERATE_SCRIPT = SCRIPT_DIR / 'generate_model_readmes.py'
-
-
-def is_preview_image(path: Path) -> bool:
-    """与 generate_model_readmes.py 相同的识别规则:文件名含 preview 的图片"""
-    return path.is_file() and path.suffix.lower() in IMAGE_EXTS and PREVIEW_MARKER.search(path.stem)
-
-
-def is_image_file(path: Path) -> bool:
-    return path.is_file() and path.suffix.lower() in IMAGE_EXTS
-
-
-def find_previews_dir(model_dir: Path) -> Path | None:
-    """查找已有的 previews 子目录(大小写不敏感),不存在则返回 None"""
-    for sub in model_dir.iterdir():
-        if sub.is_dir() and sub.name.lower() == PREVIEWS_DIRNAME.lower():
-            return sub
-    return None
 
 
 @dataclass(frozen=True)

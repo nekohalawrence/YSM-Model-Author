@@ -2,12 +2,10 @@ import sys
 import re
 from pathlib import Path
 
+from lib import models as lib_models
+
 # 允许处理的文件后缀
 ALLOWED_EXTS = {'.ysm', '.zip', '.7z', '.rar', '.tar', '.gz', '.bbmodel'}
-
-def clean_folder_name(folder_name: str) -> str:
-    """去除文件夹名称末尾的评级标签 (_LA, _LB, _LC, _LD)"""
-    return re.sub(r'_(?:LA|LB|LC|LD)$', '', folder_name, flags=re.IGNORECASE)
 
 def parse_file_stem(file_stem: str, folder_name: str) -> tuple[str, str, str]:
     """
@@ -50,6 +48,11 @@ def parse_file_stem(file_stem: str, folder_name: str) -> tuple[str, str, str]:
     variant_tag = f"_{'_'.join(variant_words)}" if variant_words else ""
 
     return variant_tag, version_tag, copy_tag
+
+
+def clean_folder_name(folder_name: str) -> str:
+    """去除文件夹名称末尾的评级标签（复用 lib/models.py 统一实现）"""
+    return lib_models.clean_folder_name(folder_name)
 
 
 def rename_to_folder_name(target_path: Path, apply_changes: bool = False):

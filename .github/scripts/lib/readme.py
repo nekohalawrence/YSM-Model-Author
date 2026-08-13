@@ -1,0 +1,169 @@
+"""作者 README 解析：作者名提取、作者索引构建（消除各脚本重复实现）。"""
+import re
+from datetime import datetime, timezone
+from pathlib import Path
+
+from . import paths
+
+# 作者 README 的 Name 行、Author 段标记
+NAME_LINE_RE = re.compile(r'\s*-\s*\*\*(?:Name|作者名称)\*\*\s*[:：]\s*(.*)')
+AUTHOR_SECTION_RE = re.compile(r'##\s*Author\b(.*?)(?=\n##|\Z)', re.DOTALL | re.IGNORECASE)
+# 根 README 作者索引行：| 0095 | [#name](.../../Models/0095) | 19 |
+INDEX_ROW_RE = re.compile(r'^\|\s*(\d{4})\s*\|\s*\[([^\]]+)\]\(([^)]*)\)\s*\|')
+# 作者字符串分隔符（全/半角）与 "中文(English)" 拆分
+AUTHOR_SPLIT_RE = re.compile(r'[\s|｜,，、;/；]+')
+PAREN_PAIR_RE = re.compile(r'^([^()（）]*)[(（]([^)）]*)[)）]$')
+# 作者 README 中 4 空格缩进的平台账号行（如 "    - **Bilibili**: [name](url)"）
+PLATFORM_LINE_RE = re.compile(r'^    - \*\*([^*]+)\*\*\s*[:：]\s*(.+)$')
+
+
+def parse_author_name_value(content: str) -> str:
+    """提取 ## Author 段内第一个 Name 行（避开 Co-creator）；无 Author 段时退回全文首行匹配。"""
+    m = AUTHOR_SECTION_RE.search(content)
+    scope = m.group(1) if m else content
+    for line in scope.splitlines():
+        m2 = NAME_LINE_RE.match(line)
+        if m2:
+            return m2.group(1).strip()
+    return ''
+
+
+def extract_primary_author_name(content: str) -> str:
+    """提取主作者名称（避开 Co-creator 区块）；无结果返回 '暂无'。"""
+    return parse_author_name_value(content) or '暂无'
+
+
+def normalize_alias(s: str) -> str:
+    """作者别名归一化：NFKC、去空白（含全角）、去 #、去首尾标点、小写。"""
+    import unicodedata
+    s = unicodedata.normalize('NFKC', s)
+    s = re.sub(r'[\s\u00a0\u200b]', '', s)
+    s = s.lstrip('#＃')
+    s = s.strip(' 　._-·•\\')
+    return s.lower()
+
+
+def extract_platforms(content: str) -> dict[str, str]:
+    """从作者 README 的 Author 段提取平台账号（孙项行）。
+    值为 Markdown 链接时取 URL，否则取文本（如 QQ 号）。"""
+    m = AUTHOR_SECTION_RE.search(content)
+    scope = m.group(1) if m else content
+    platforms: dict[str, str] = {}
+    for line in scope.splitlines():
+        pm = PLATFORM_LINE_RE.match(line)
+        if not pm:
+            continue
+        key = pm.group(1).strip()
+        value = pm.group(2).strip()
+        url_m = re.search(r'\]\(([^)]+)\)', value)
+        platforms[key] = url_m.group(1) if url_m else value
+    return platforms
+
+
+def build_authors_data(models_dir: Path, root_readme: Path) -> dict:
+    """构建集中作者数据（authors.json 的结构）。Models README 优先，根 README 索引补缺。"""
+    authors: dict[str, dict] = {}
+
+    if models_dir.is_dir():
+        for author_dir in sorted(models_dir.iterdir()):
+            if not (author_dir.is_dir() and re.fullmatch(r'\d{4}', author_dir.name)):
+                continue
+            readme = author_dir / 'README.md'
+            if not readme.is_file():
+                continue
+            content = paths.read_text_utf8(readme)
+            name_value = parse_author_name_value(content)
+            if not name_value:
+                continue
+            rel_readme = ''
+            try:
+                rel_readme = str(readme.relative_to(models_dir.parent)).replace('\\', '/')
+            except ValueError:
+                rel_readme = str(readme)
+            authors[author_dir.name] = {
+                'name': name_value,
+                'aliases': [a.strip() for a in name_value.split('|') if a.strip()],
+                'readme': rel_readme,
+                'platforms': extract_platforms(content),
+            }
+
+    # 根 README 索引补缺（如编号目录存在但无 README）
+    if root_readme.is_file():
+        for line in paths.read_text_utf8(root_readme).splitlines():
+            m = INDEX_ROW_RE.match(line.strip())
+            if not m:
+                continue
+            author_id = m.group(1)
+            if author_id not in authors:
+                authors[author_id] = {
+                    'name': m.group(2).strip(),
+                    'aliases': [a.strip() for a in m.group(2).split('|') if a.strip()],
+                    'readme': '',
+                    'platforms': {},
+                }
+
+    return {
+        'version': 1,
+        'generated': datetime.now(timezone.utc).isoformat(timespec='seconds'),
+        'authors': authors,
+    }
+
+
+def load_authors_index() -> dict:
+    """读取集中作者数据 .github/data/meta/authors.json；缺失/损坏返回空 dict。"""
+    return paths.load_json(paths.data_path('meta', 'authors.json'), {})
+
+
+def build_author_index(models_dir: Path, root_readme: Path) -> tuple[dict[str, str], dict[str, str]]:
+    """返回 (别名->编号, 编号->显示名)。优先用集中数据 authors.json，缺失时回退扫描。"""
+    data = load_authors_index()
+    authors = data.get('authors') if isinstance(data, dict) else None
+    if authors:
+        alias_to_id: dict[str, str] = {}
+        id_to_name: dict[str, str] = {}
+        for author_id, entry in authors.items():
+            name_value = entry.get('name') or ''
+            if name_value:
+                id_to_name.setdefault(author_id, name_value)
+            for alias in entry.get('aliases') or []:
+                key = normalize_alias(alias)
+                if key:
+                    alias_to_id.setdefault(key, author_id)
+        return alias_to_id, id_to_name
+    return build_author_index_scan(models_dir, root_readme)
+
+
+def build_author_index_scan(models_dir: Path, root_readme: Path) -> tuple[dict[str, str], dict[str, str]]:
+    """扫描版回退：直接解析 Models README 与根 README 索引（authors.json 缺失时使用）。"""
+    alias_to_id: dict[str, str] = {}
+    id_to_name: dict[str, str] = {}
+
+    def register(name_value: str, author_id: str) -> None:
+        if not author_id or not name_value:
+            return
+        id_to_name.setdefault(author_id, name_value)
+        for alias in [a for a in (x.strip() for x in name_value.split('|')) if a]:
+            key = normalize_alias(alias)
+            if key:
+                alias_to_id.setdefault(key, author_id)
+
+    if models_dir.is_dir():
+        for author_dir in sorted(models_dir.iterdir()):
+            if not (author_dir.is_dir() and re.fullmatch(r'\d{4}', author_dir.name)):
+                continue
+            readme = author_dir / 'README.md'
+            if not readme.is_file():
+                continue
+            register(parse_author_name_value(paths.read_text_utf8(readme)), author_dir.name)
+
+    if root_readme.is_file():
+        for line in paths.read_text_utf8(root_readme).splitlines():
+            m = INDEX_ROW_RE.match(line.strip())
+            if not m:
+                continue
+            author_id, name_value = m.group(1), m.group(2).strip()
+            # 已在 Models README 注册过的不覆盖；仅补缺（如编号目录存在但无 README）
+            if author_id not in id_to_name:
+                register(name_value, author_id)
+
+    return alias_to_id, id_to_name

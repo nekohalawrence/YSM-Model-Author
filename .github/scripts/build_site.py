@@ -19,12 +19,14 @@ except ImportError:
     HAS_PILLOW = False
 
 # 配置
+from lib import paths as lib_paths
+
 # 切换工作目录到项目根目录 (假设脚本位于 .github/scripts/)
-os.chdir(Path(__file__).resolve().parents[2])
+os.chdir(lib_paths.WORKSPACE_ROOT)
 
 ROOT_DIR = Path('Models')
 OUTPUT_FILE = Path('index.html')
-TEMPLATE_FILE = Path('.github/template/template.html')
+TEMPLATE_FILE = lib_paths.data_path('templates', 'website_template.html')
 THUMBNAIL_SIZE = (400, 400)
 
 def generate_thumbnail(src_path: Path):

@@ -1,4 +1,4 @@
-# YGYST_特莉波卡_Tlipoca
+# YGYST_ 特莉波卡 _Tlipoca
 
 <details>
 <summary>Model Details</summary>

@@ -1,0 +1,82 @@
+[
+  {
+    "kind": "cn",
+    "alias": "六花",
+    "canonical": "小鸟游六花",
+    "work": "LCOD",
+    "source": "manual",
+    "note": ""
+  },
+  {
+    "kind": "cn",
+    "alias": "小小酒狐",
+    "canonical": "酒狐",
+    "work": "OC",
+    "source": "manual",
+    "note": ""
+  },
+  {
+    "kind": "cn",
+    "alias": "洛天依_世末系列",
+    "canonical": "洛天依",
+    "work": "VOC",
+    "source": "manual",
+    "note": ""
+  },
+  {
+    "kind": "cn",
+    "alias": "白子",
+    "canonical": "砂狼白子",
+    "work": "BA",
+    "source": "manual",
+    "note": ""
+  },
+  {
+    "kind": "cn",
+    "alias": "美游",
+    "canonical": "霞泽美游",
+    "work": "BA",
+    "source": "manual",
+    "note": ""
+  },
+  {
+    "kind": "cn",
+    "alias": "芙兰朵露·斯卡蕾特",
+    "canonical": "芙兰朵露",
+    "work": "Touhou",
+    "source": "manual",
+    "note": ""
+  },
+  {
+    "kind": "cn",
+    "alias": "蕾米莉亚·斯卡蕾特",
+    "canonical": "蕾米莉亚",
+    "work": "Touhou",
+    "source": "manual",
+    "note": ""
+  },
+  {
+    "kind": "en",
+    "alias": "Chuunibyou_Takanashi-Rikka",
+    "canonical": "takanashi-rikka",
+    "work": "LCOD",
+    "source": "manual",
+    "note": ""
+  },
+  {
+    "kind": "en",
+    "alias": "Doro",
+    "canonical": "dorothy-doro",
+    "work": "Nikke",
+    "source": "manual",
+    "note": ""
+  },
+  {
+    "kind": "en",
+    "alias": "Mug_Mika",
+    "canonical": "mika",
+    "work": "BA",
+    "source": "manual",
+    "note": ""
+  }
+]
