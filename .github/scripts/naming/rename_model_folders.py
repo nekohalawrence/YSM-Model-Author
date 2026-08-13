@@ -184,13 +184,11 @@ def main() -> int:
 
     data = load_kb_json(kb_path)
     manual_roles = [r for r in (data.get("roles") or []) if r.get("source") == "manual"]
-    if not data.get("roles") and not data.get("aliases"):
-        # 首次：从旧 SQLite 库迁移手工条目
-        m, a = migrate_from_sqlite(kb_path, kb_path / "ysm_kb.db" if kb_path.is_dir()
+    if not data.get("roles"):
+        # 首次：从旧 SQLite 库迁移手工条目（旧 alias 已并入 roles，忽略第二返回值）
+        m, _ = migrate_from_sqlite(kb_path, kb_path / "ysm_kb.db" if kb_path.is_dir()
                                    else kb_path.with_suffix(".db"))
         manual_roles = m or manual_roles
-        if a:
-            data["aliases"] = a
 
     # 从 README 同步 works（README 为作品名称权威源，实时更新）
     if not args.no_sync:
@@ -239,8 +237,7 @@ def main() -> int:
         save_kb_json(kb_path, data)
         print(f"对照数据库已保存: {kb_path}")
 
-    cn_idx, en_idx, en_to_cn, cn_to_en = build_indexes(roles, manual_roles,
-                                                       data.get("aliases") or [])
+    cn_idx, en_idx, en_to_cn, cn_to_en = build_indexes(roles, manual_roles)
 
     results = []
     for d in dirs:

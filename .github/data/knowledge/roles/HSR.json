@@ -172,6 +172,17 @@
   {
     "work": "HSR",
     "cn": [
+      "银狼"
+    ],
+    "en": [
+      "silver-wolf-2",
+      "silverwolf"
+    ],
+    "source": "auto"
+  },
+  {
+    "work": "HSR",
+    "cn": [
       "镜流"
     ],
     "en": [
@@ -216,6 +227,16 @@
     ],
     "en": [
       "raiden-bosenmori-mei"
+    ],
+    "source": "auto"
+  },
+  {
+    "work": "HSR",
+    "cn": [
+      "黑塔"
+    ],
+    "en": [
+      "herta"
     ],
     "source": "auto"
   }

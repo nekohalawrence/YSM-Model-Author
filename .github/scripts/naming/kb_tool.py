@@ -5,8 +5,7 @@ YSM 模型知识库维护工具（本仓库专用）。
 
 知识库为外置多文件，位于 .github/data/knowledge/ 下：
     works.json         作品表（英文名/中文名/日文名，README.md 为权威源自动同步）
-    aliases.json       别名/变体表
-    roles/<作品>.json  按作品分文件存放角色对照
+    roles/<作品>.json  按作品分文件存放角色对照（cn/en 数组，规范名 + 别名）
 
 本脚本既是被 rename_model_folders.py 复用的知识库核心库，也可独立运行做维护。
 
@@ -15,12 +14,14 @@ YSM 模型知识库维护工具（本仓库专用）。
     python .github/scripts/naming/kb_tool.py --build-kb   # 重建（扫描文件夹 + 同步 README + 保存）
   维护命令:
     python .github/scripts/naming/kb_tool.py --add        # 交互式添加手工对照条目
-    python .github/scripts/naming/kb_tool.py --alias      # 登记别名/变体（大昔涟 -> 昔涟）
     python .github/scripts/naming/kb_tool.py --del        # 删除条目（搜索 -> 选 id）
     python .github/scripts/naming/kb_tool.py --check      # 数据质量检查
-    python .github/scripts/naming/kb_tool.py --suggest    # 疑似匹配建议（确认后写别名）
+    python .github/scripts/naming/kb_tool.py --suggest    # 疑似匹配建议（确认后并入 roles 数组）
     python .github/scripts/naming/kb_tool.py --merge      # 合并重复角色条目（交互确认）
     python .github/scripts/naming/kb_tool.py --list       # 查看数据库全部条目
+
+别名不再单独维护：直接并入角色条目的 cn/en 数组（规范名在首位），
+--suggest 确认后写入对应 roles/<作品>.json。
 """
 from __future__ import annotations
 
@@ -28,8 +29,6 @@ import argparse
 import json
 import re
 import sqlite3  # 仅用于首次从旧 SQLite 库迁移
-import sys
-from pathlib import Path
 import sys
 from pathlib import Path
 # 脚本按流程阶段分类到 scripts/<类别>/ 子目录：把 .github/scripts 加回 sys.path，
@@ -376,10 +375,10 @@ def _safe_name(wk: str) -> str:
 def load_kb_json(kb_path: Path) -> dict:
     """读取知识库。
 
-    kb_path 为目录：读多文件（works.json / aliases.json / roles/<作品>.json）；
+    kb_path 为目录：读多文件（works.json / roles/<作品>.json）；
     为旧单文件（ysm_kb.json）时直接读取（兼容，保存时自动迁移为多文件）。
     """
-    empty = {"version": 2, "works": {}, "roles": [], "aliases": []}
+    empty = {"version": 2, "works": {}, "roles": []}
     if not kb_path.exists():
         return empty
     if kb_path.is_file():
@@ -387,12 +386,11 @@ def load_kb_json(kb_path: Path) -> dict:
             data = json.loads(kb_path.read_text(encoding="utf-8"))
             data.setdefault("works", {})
             data.setdefault("roles", [])
-            data.setdefault("aliases", [])
             return data
         except (json.JSONDecodeError, OSError) as e:
             print(f"[warn] 知识库 JSON 无法解析: {e}", file=sys.stderr)
             return empty
-    data = {"version": 2, "works": {}, "roles": [], "aliases": []}
+    data = {"version": 2, "works": {}, "roles": []}
     wf = kb_path / "works.json"
     old_single = kb_path / "ysm_kb.json"
     if not wf.exists() and not (kb_path / "roles").exists() and old_single.exists():
@@ -401,7 +399,6 @@ def load_kb_json(kb_path: Path) -> dict:
             d = json.loads(old_single.read_text(encoding="utf-8"))
             d.setdefault("works", {})
             d.setdefault("roles", [])
-            d.setdefault("aliases", [])
             return d
         except (json.JSONDecodeError, OSError) as e:
             print(f"[warn] 知识库 JSON 无法解析: {e}", file=sys.stderr)
@@ -411,12 +408,6 @@ def load_kb_json(kb_path: Path) -> dict:
             data["works"] = json.loads(wf.read_text(encoding="utf-8"))
         except (json.JSONDecodeError, OSError) as e:
             print(f"[warn] 忽略损坏文件 {wf}: {e}", file=sys.stderr)
-    af = kb_path / "aliases.json"
-    if af.exists():
-        try:
-            data["aliases"] = json.loads(af.read_text(encoding="utf-8"))
-        except (json.JSONDecodeError, OSError) as e:
-            print(f"[warn] 忽略损坏文件 {af}: {e}", file=sys.stderr)
     rdir = kb_path / "roles"
     roles: list = []
     if rdir.is_dir():
@@ -430,7 +421,7 @@ def load_kb_json(kb_path: Path) -> dict:
 
 
 def save_kb_json(kb_path: Path, data: dict) -> None:
-    """写回知识库（多文件）：works.json + aliases.json + roles/<作品>.json。
+    """写回知识库（多文件）：works.json + roles/<作品>.json。
 
     kb_path 为目录；若为旧单文件路径则以其父目录为数据根并迁移。
     """
@@ -501,12 +492,8 @@ def save_kb_json(kb_path: Path, data: dict) -> None:
     roles = sorted(data.get("roles") or [],
                    key=lambda r: (r.get("source") != "manual",
                                   str(r.get("work", "")), str(r.get("cn", ""))))
-    aliases = sorted(data.get("aliases") or [],
-                     key=lambda a: (a.get("kind", ""), str(a.get("alias", ""))))
     (kb_path / "works.json").write_text(
         json.dumps(data["works"], ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    (kb_path / "aliases.json").write_text(
-        json.dumps(aliases, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     # roles 按作品分组写 roles/<作品>.json（重建前清空旧文件）
     rdir = kb_path / "roles"
     rdir.mkdir(exist_ok=True)
@@ -519,7 +506,7 @@ def save_kb_json(kb_path: Path, data: dict) -> None:
         (rdir / f"{_safe_name(wk)}.json").write_text(
             json.dumps(lst, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     if old_single and old_single.exists():
-        print(f"已迁移为多文件结构（works.json / aliases.json / roles/*.json），"
+        print(f"已迁移为多文件结构（works.json / roles/*.json），"
               f"旧 {old_single.name} 可删除")
 
 
@@ -585,86 +572,28 @@ def add_manual_entries(kb_path: Path) -> None:
     print(f"共添加 {added} 条。知识库: {kb_path}")
 
 
-def add_alias_entries(kb_path: Path) -> None:
-    """交互式登记别名/变体：别称、大小修饰、多英文名 -> 规范名。"""
-    data = load_kb_json(kb_path)
-    print("交互式登记别名：把 别称/变体（大昔涟、小昔涟、多英文名…）指向规范角色名。")
-    print("输入 q 结束。")
-    added = 0
-    while True:
-        print("-" * 40)
-        kind_in = ask("类型 (1=中文别名, 2=英文别名, q=退出): ")
-        if kind_in.lower() in ("q", "quit"):
-            break
-        if kind_in == "1":
-            kind = "cn"
-        elif kind_in == "2":
-            kind = "en"
-        else:
-            print("请输入 1 或 2。")
-            continue
-        alias = ask("别名/变体（如 大昔涟）: ")
-        if alias.lower() in ("q", "quit"):
-            break
-        if not alias:
-            print("别名不能为空，跳过。")
-            continue
-        canonical = ask("规范名（如 昔涟，即角色对照表里的标准名字）: ")
-        if canonical.lower() in ("q", "quit"):
-            break
-        if not canonical:
-            print("规范名不能为空，跳过。")
-            continue
-        work = ask("作品（如 HSR）: ")
-        if work.lower() in ("q", "quit"):
-            break
-        if not work:
-            print("作品不能为空，跳过。")
-            continue
-        note = ask("备注 (可空): ")
-        if note.lower() in ("q", "quit"):
-            break
-        data["aliases"].append({"kind": kind, "alias": alias, "canonical": canonical,
-                                "work": work, "source": "manual", "note": note})
-        save_kb_json(kb_path, data)
-        added += 1
-        print(f"已登记: [{kind}] {alias} -> {canonical} ({work}) [manual]")
-    print(f"共登记 {added} 条别名。知识库: {kb_path}")
-
-
 def list_db(kb_path: Path) -> None:
-    """列出知识库全部条目（角色对照 + 别名）。"""
+    """列出知识库全部条目（角色对照）。"""
     data = load_kb_json(kb_path)
     roles = data.get("roles") or []
-    aliases = data.get("aliases") or []
-    if not roles and not aliases:
+    if not roles:
         print(f"知识库为空或不存在: {kb_path}（先运行 --build-kb 生成）")
         return
-    if roles:
-        print(f"角色对照 {len(roles)} 条（manual=手工，auto=自动）:")
-        for r in roles:
-            cn_v, en_v = r.get("cn"), r.get("en")
-            cn_s = cn_v[0] if isinstance(cn_v, list) else (cn_v or '-')
-            en_s = en_v[0] if isinstance(en_v, list) else (en_v or '-')
-            extra = ""
-            if isinstance(cn_v, list) and len(cn_v) > 1:
-                extra += f" (+{len(cn_v) - 1}中文别名)"
-            if isinstance(en_v, list) and len(en_v) > 1:
-                extra += f" (+{len(en_v) - 1}英文别名)"
-            line = (f"  {r.get('work', ''):<12} | {cn_s:<14} | {en_s:<28}"
-                    f" | [{r.get('source', '')}]{extra}")
-            if r.get("note"):
-                line += f"  #{r['note']}"
-            print(line)
-    if aliases:
-        print(f"别名/变体 {len(aliases)} 条:")
-        for a in aliases:
-            line = (f"  [{a.get('kind', '')}] {a.get('alias', ''):<12}"
-                    f" -> {a.get('canonical', ''):<12} ({a.get('work', '')})"
-                    f" [{a.get('source', '')}]")
-            if a.get("note"):
-                line += f"  #{a['note']}"
-            print(line)
+    print(f"角色对照 {len(roles)} 条（manual=手工，auto=自动）:")
+    for r in roles:
+        cn_v, en_v = r.get("cn"), r.get("en")
+        cn_s = cn_v[0] if isinstance(cn_v, list) else (cn_v or '-')
+        en_s = en_v[0] if isinstance(en_v, list) else (en_v or '-')
+        extra = ""
+        if isinstance(cn_v, list) and len(cn_v) > 1:
+            extra += f" (+{len(cn_v) - 1}中文别名)"
+        if isinstance(en_v, list) and len(en_v) > 1:
+            extra += f" (+{len(en_v) - 1}英文别名)"
+        line = (f"  {r.get('work', ''):<12} | {cn_s:<14} | {en_s:<28}"
+                f" | [{r.get('source', '')}]{extra}")
+        if r.get("note"):
+            line += f"  #{r['note']}"
+        print(line)
 
 
 def del_entries(kb_path: Path) -> None:
@@ -676,18 +605,13 @@ def del_entries(kb_path: Path) -> None:
             break
         print("-" * 60)
         roles = data.get("roles") or []
-        aliases = data.get("aliases") or []
         if kw:
             r_hits = [r for r in roles
                       if kw.lower() in str(r.get("cn", "")).lower()
                       or kw.lower() in str(r.get("en", "")).lower()
                       or kw.lower() in str(r.get("work", "")).lower()]
-            a_hits = [a for a in aliases
-                      if kw.lower() in str(a.get("alias", "")).lower()
-                      or kw.lower() in str(a.get("canonical", "")).lower()
-                      or kw.lower() in str(a.get("work", "")).lower()]
         else:
-            r_hits, a_hits = roles, aliases
+            r_hits = roles
         if r_hits:
             print(f"角色对照 {len(r_hits)} 条（输入编号删除，多个用逗号分隔）:")
             for i, r in enumerate(r_hits, 1):
@@ -696,18 +620,10 @@ def del_entries(kb_path: Path) -> None:
                 if r.get("note"):
                     line += f"  #{r['note']}"
                 print(line)
-        if a_hits:
-            print(f"别名 {len(a_hits)} 条（编号前加 a，如 a1）:")
-            for i, a in enumerate(a_hits, 1):
-                line = (f"  [a{i}] {a.get('alias', ''):<12} -> {a.get('canonical', ''):<12}"
-                        f" ({a.get('work', '')}) [{a.get('source', '')}]")
-                if a.get("note"):
-                    line += f"  #{a['note']}"
-                print(line)
-        if not r_hits and not a_hits:
+        if not r_hits:
             print("无匹配条目。")
             continue
-        sel = ask("要删除的编号（角色直接输数字，别名用 a+数字；留空=不删，q=退出）: ")
+        sel = ask("要删除的编号（多个用逗号分隔；留空=不删，q=退出）: ")
         if sel.lower() in ("q", "quit"):
             break
         if not sel:
@@ -717,18 +633,11 @@ def del_entries(kb_path: Path) -> None:
             token = token.strip()
             if not token:
                 continue
-            if token.lower().startswith("a"):
-                idx = int(token[1:]) - 1
-                if 0 <= idx < len(a_hits):
-                    aliases.remove(a_hits[idx])
-                    removed += 1
-            else:
-                idx = int(token) - 1
-                if 0 <= idx < len(r_hits):
-                    roles.remove(r_hits[idx])
-                    removed += 1
+            idx = int(token) - 1
+            if 0 <= idx < len(r_hits):
+                roles.remove(r_hits[idx])
+                removed += 1
         data["roles"] = roles
-        data["aliases"] = aliases
         save_kb_json(kb_path, data)
         print(f"已删除 {removed} 条。")
 
@@ -849,7 +758,6 @@ def run_check(kb_path: Path) -> None:
     """数据质量检查：同名多作品、空字段、重复条目、别名悬空。"""
     data = load_kb_json(kb_path)
     roles = data.get("roles") or []
-    aliases = data.get("aliases") or []
     issues: list[str] = []
 
     def split(v):
@@ -884,17 +792,9 @@ def run_check(kb_path: Path) -> None:
     for key, cnt in seen_pairs.items():
         if cnt > 1:
             issues.append(f"重复条目 x{cnt}: {key}")
-    # 别名悬空：canonical 不在 roles 中
-    known_cn = {c for r in roles for c in split(r.get("cn"))}
-    known_en = {normalize_en_key(e) for r in roles for e in split(r.get("en"))}
-    for a in aliases:
-        if a.get("kind") == "cn" and a.get("canonical") not in known_cn:
-            issues.append(f"别名悬空: [cn] {a.get('alias')} -> {a.get('canonical')} ({a.get('work')})")
-        if a.get("kind") == "en" and normalize_en_key(a.get("canonical", "")) not in known_en:
-            issues.append(f"别名悬空: [en] {a.get('alias')} -> {a.get('canonical')} ({a.get('work')})")
 
     if not issues:
-        print(f"检查通过：{len(roles)} 条角色、{len(aliases)} 条别名，无问题。")
+        print(f"检查通过：{len(roles)} 条角色，无问题。")
         return
     print(f"发现 {len(issues)} 个问题（同类合并，最多显示 50 条）:")
     shown = set()
@@ -926,9 +826,7 @@ def run_suggest(kb_path: Path) -> None:
         else:
             seen.add(key)
         roles.append(m)
-    cn_idx, en_idx, en_to_cn, cn_to_en = build_indexes(
-        roles, manual, data.get("aliases") or [])
-
+    cn_idx, en_idx, en_to_cn, cn_to_en = build_indexes(roles, manual)
     cn_keys = sorted([k for k in cn_idx if len(k) >= 2 and "_" not in k],
                      key=len, reverse=True)
     # 允许连字符（misaka-mikoto 等标准英文名），排除下划线（皮肤/多段串如 padoru_hakurei-...）
@@ -987,19 +885,39 @@ def run_suggest(kb_path: Path) -> None:
                 break
             if ans not in ("y", "yes"):
                 continue
-            data["aliases"].append({"kind": kind, "alias": alias, "canonical": canonical,
-                                    "work": work, "source": "manual", "note": ""})
+            # 别名直接并入 roles 对应条目的 cn/en 数组（规范名保持首位）
+            target = None
+            for r in data.get("roles") or []:
+                if r.get("work") != work:
+                    continue
+                lst = role_names(r, kind)
+                if kind == "cn" and canonical in lst:
+                    target = r
+                    break
+                if kind == "en" and any(normalize_en_key(x) == normalize_en_key(canonical)
+                                        for x in lst):
+                    target = r
+                    break
+            if target is None:
+                print(f"  [跳过] roles 中未找到 {canonical} ({work})，请先 --add 添加该角色")
+                continue
+            lst = role_names(target, kind)
+            if any(normalize_en_key(x) == normalize_en_key(alias) for x in lst):
+                print(f"  已存在别名 {alias}，跳过")
+                continue
+            lst.append(alias)
+            target[kind] = lst
             accepted += 1
-            print(f"  已登记别名: [{kind}] {alias} -> {canonical} ({work})")
+            print(f"  已并入 roles: [{kind}] {alias} -> {canonical} ({work})")
         if accepted:
             save_kb_json(kb_path, data)
-            print(f"共登记 {accepted} 条别名，已保存: {kb_path}")
+            print(f"共并入 {accepted} 条别名到 roles，已保存: {kb_path}")
         else:
             print("未登记任何别名。")
 
     if no_cand:
         print(f"\n另有 {len(no_cand)} 个 Unknown 文件夹无候选，需手工补充"
-              f"（--add 添加对照，或编辑 JSON 的 roles/aliases；仅显示前 30 条）:")
+              f"（--add 添加对照，或直接编辑 roles JSON；仅显示前 30 条）:")
         for name, _r in no_cand[:30]:
             print(f"  {name}")
         if len(no_cand) > 30:
@@ -1045,7 +963,7 @@ def pair_skip_key(r1: dict, r2: dict) -> str:
 
 
 def load_merge_skips(kb_path: Path) -> list[str]:
-    """读取已确认不合并的条目对（merge_skips.json，独立于 roles/aliases）。"""
+    """读取已确认不合并的条目对（merge_skips.json）。"""
     p = kb_path / "merge_skips.json"
     if not p.exists():
         return []
@@ -1179,12 +1097,12 @@ def run_merge(kb_path: Path) -> None:
 # ---------------------------------------------------------------------------
 # 索引构建
 # ---------------------------------------------------------------------------
-def build_indexes(roles: list[dict], manual_roles: list[dict] | None = None,
-                  aliases: list[dict] | None = None):
+def build_indexes(roles: list[dict], manual_roles: list[dict] | None = None):
     """返回 (cn_idx, en_idx, en_to_cn, cn_to_en)。后两者用于补全缺失的中/英文名。
 
     角色条目的 cn/en 可以是字符串或数组：数组第一个为规范名（补全默认用它），
-    其余为别名（仅用于匹配，补全时也归一到规范名）。"""
+    其余为别名（仅用于匹配，补全时也归一到规范名）。别名已并入 cn/en 数组，
+    不再单独维护。"""
     cn_idx: dict[str, set] = {}
     en_idx: dict[str, set] = {}
     en_to_cn: dict[str, list] = {}
@@ -1229,22 +1147,6 @@ def build_indexes(roles: list[dict], manual_roles: list[dict] | None = None,
             if cn_main:
                 en_to_cn[key] = [(r["work"], cn_main)]
                 en_to_cn[key.replace('_', '-')] = [(r["work"], cn_main)]
-    # 别名/变体展开（手工登记，优先级最高）：别名能确定作品，也能借助规范名补全
-    for a in (aliases or []):
-        work = a["work"]
-        if a["kind"] == "cn":
-            cn_idx.setdefault(a["alias"], set()).add(work)
-            for w, e in cn_to_en.get(a["canonical"], []):
-                if w == work:
-                    cn_to_en.setdefault(a["alias"], []).append((w, e))
-        elif a["kind"] == "en":
-            key = normalize_en_key(a["alias"])
-            en_idx.setdefault(key, set()).add(work)
-            en_idx.setdefault(key.replace('_', '-'), set()).add(work)
-            for w, c in en_to_cn.get(normalize_en_key(a["canonical"]), []):
-                if w == work:
-                    en_to_cn.setdefault(key, []).append((w, c))
-                    en_to_cn.setdefault(key.replace('_', '-'), []).append((w, c))
     return cn_idx, en_idx, en_to_cn, cn_to_en
 
 
@@ -1285,8 +1187,6 @@ def main() -> int:
                         help="重建并保存对照数据库（扫描文件夹 + 同步 README）")
     parser.add_argument("--add", action="store_true",
                         help="交互式添加手工对照条目（中文名/英文名/作品）")
-    parser.add_argument("--alias", action="store_true",
-                        help="交互式登记别名/变体（大昔涟 -> 昔涟 等）")
     parser.add_argument("--del", action="store_true", dest="delete",
                         help="交互式删除数据库条目（搜索 -> 选 id）")
     parser.add_argument("--check", action="store_true",
@@ -1304,9 +1204,6 @@ def main() -> int:
 
     if args.add:
         add_manual_entries(kb_path)
-        return 0
-    if args.alias:
-        add_alias_entries(kb_path)
         return 0
     if args.delete:
         del_entries(kb_path)
@@ -1327,13 +1224,11 @@ def main() -> int:
     # 无维护命令：默认进入构建流程（--build-kb 保存，否则只构建索引供调用）
     data = load_kb_json(kb_path)
     manual_roles = [r for r in (data.get("roles") or []) if r.get("source") == "manual"]
-    if not data.get("roles") and not data.get("aliases"):
-        # 首次：从旧 SQLite 库迁移手工条目
-        m, a = migrate_from_sqlite(kb_path, kb_path / "ysm_kb.db" if kb_path.is_dir()
+    if not data.get("roles"):
+        # 首次：从旧 SQLite 库迁移手工条目（旧 alias 已并入 roles，忽略第二返回值）
+        m, _ = migrate_from_sqlite(kb_path, kb_path / "ysm_kb.db" if kb_path.is_dir()
                                    else kb_path.with_suffix(".db"))
         manual_roles = m or manual_roles
-        if a:
-            data["aliases"] = a
 
     # 从 README 同步 works（README 为作品名称权威源，实时更新）
     added, updated = sync_works_from_readme(data, REPO_ROOT / "README.md")
@@ -1381,7 +1276,7 @@ def main() -> int:
         save_kb_json(kb_path, data)
         print(f"对照数据库已保存: {kb_path}")
 
-    build_indexes(roles, manual_roles, data.get("aliases") or [])
+    build_indexes(roles, manual_roles)
     return 0
 
 

@@ -32,8 +32,7 @@
 | `meta/authors.json` | `build_authors_index.py`（手动或 workflow Step1） | `organize_models.py`、`generate_model_readmes.py`、`format_author_readme.py`、`build_readme_authors.py`（经 `lib/readme.py`） | 集中作者数据：编号 → 名称数组 / README 路径 / Role / 平台链接 |
 | `meta/models_meta.json` | `organize_models.py`（`--apply` 归档时，幂等） | `generate_model_readmes.py`（`get_co_creators`） | 模型 → co-creator 作者列表（含平台信息） |
 | `knowledge/works.json` | `kb_tool.py --build-kb`（自动从 README.md 同步，README 为作品名称权威源） | `kb_tool.py` → `rename_model_folders.py` | 作品表（en/cn/ja 名称 → 作品键） |
-| `knowledge/aliases.json` | `kb_tool.py --alias` / `--suggest`（交互登记）、`--build-kb` 保存 | `kb_tool.py`（`build_indexes` 展开别名）→ `rename_model_folders.py` | 别名/变体表（别称、大小修饰、多英文名 → 规范名） |
-| `knowledge/roles/*.json` | `kb_tool.py --build-kb`（按作品分文件） | `kb_tool.py`（`load_kb_json`）→ `rename_model_folders.py` | 角色对照（cn/en 数组，首项为规范名） |
+| `knowledge/roles/*.json` | `kb_tool.py --build-kb`（按作品分文件） | `kb_tool.py`（`load_kb_json`）→ `rename_model_folders.py` | 角色对照（cn/en 数组，首项为规范名；**别名已并入数组，不再单独维护**） |
 | `knowledge/category_map.json` | 手工维护 | `generate_model_readmes.py`（`get_category_tag`） | 作品缩写 → 大类（Game/Anime/Music/Original/Other），模型 README 的 **Category** 标签 |
 | `knowledge/role_terms.json` | 手工维护（可按需补充别名） | `lib/terms.py`（`normalize_role`）→ `generate_model_readmes.py` | 角色术语表：.ysm 原始 Role 的异表达 → 标准中英术语 |
 | `meta/platform_map.json` | 手工维护 | `lib/ysm.py`（`map_platforms`）→ `organize_models.py` / `generate_model_readmes.py` | 平台分类映射：**分类（键）→ 平台键列表（值）**，反查归类，未命中归 OtherPlatform |

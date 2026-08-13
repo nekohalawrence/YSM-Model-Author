@@ -113,7 +113,8 @@
     ],
     "en": [
       "mika-misono",
-      "mika"
+      "mika",
+      "Mug_Mika"
     ],
     "source": "auto"
   },
@@ -234,6 +235,16 @@
   {
     "work": "BA",
     "cn": [
+      "日奈"
+    ],
+    "en": [
+      "hina"
+    ],
+    "source": "auto"
+  },
+  {
+    "work": "BA",
+    "cn": [
       "日富美"
     ],
     "en": [
@@ -248,6 +259,16 @@
     ],
     "en": [
       "hayase-yūka"
+    ],
+    "source": "auto"
+  },
+  {
+    "work": "BA",
+    "cn": [
+      "星野"
+    ],
+    "en": [
+      "hoshino"
     ],
     "source": "auto"
   },
@@ -288,6 +309,16 @@
     ],
     "en": [
       "tsukiyuki-miyako"
+    ],
+    "source": "auto"
+  },
+  {
+    "work": "BA",
+    "cn": [
+      "未花"
+    ],
+    "en": [
+      "mika"
     ],
     "source": "auto"
   },
@@ -427,6 +458,16 @@
   {
     "work": "BA",
     "cn": [
+      "百合园圣娅"
+    ],
+    "en": [
+      "yurizono-seia"
+    ],
+    "source": "auto"
+  },
+  {
+    "work": "BA",
+    "cn": [
       "睦月"
     ],
     "en": [
@@ -532,10 +573,30 @@
   {
     "work": "BA",
     "cn": [
+      "诺亚"
+    ],
+    "en": [
+      "noa"
+    ],
+    "source": "auto"
+  },
+  {
+    "work": "BA",
+    "cn": [
       "调月莉音"
     ],
     "en": [
       "tsukatsuki-rio"
+    ],
+    "source": "auto"
+  },
+  {
+    "work": "BA",
+    "cn": [
+      "遥香"
+    ],
+    "en": [
+      "haruka"
     ],
     "source": "auto"
   },
@@ -572,6 +633,16 @@
   {
     "work": "BA",
     "cn": [
+      "阿露"
+    ],
+    "en": [
+      "aru"
+    ],
+    "source": "auto"
+  },
+  {
+    "work": "BA",
+    "cn": [
       "陆八魔阿露",
       "阿露"
     ],
@@ -584,7 +655,8 @@
   {
     "work": "BA",
     "cn": [
-      "霞泽美游"
+      "霞泽美游",
+      "美游"
     ],
     "en": [
       "miyu"
@@ -627,7 +699,18 @@
       "飞鸟马时"
     ],
     "en": [
-      "asuma-toki"
+      "asuma-toki",
+      "toki"
+    ],
+    "source": "auto"
+  },
+  {
+    "work": "BA",
+    "cn": [
+      "鬼方佳代子"
+    ],
+    "en": [
+      "onikata-kayoko"
     ],
     "source": "auto"
   },
@@ -639,6 +722,16 @@
     ],
     "en": [
       "kuromi-serika",
+      "serika"
+    ],
+    "source": "auto"
+  },
+  {
+    "work": "BA",
+    "cn": [
+      "黑见茜香"
+    ],
+    "en": [
       "serika"
     ],
     "source": "auto"

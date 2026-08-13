@@ -233,7 +233,8 @@
   {
     "work": "Touhou",
     "cn": [
-      "芙兰朵露"
+      "芙兰朵露",
+      "芙兰朵露·斯卡蕾特"
     ],
     "en": [
       "flandre",
@@ -254,7 +255,8 @@
   {
     "work": "Touhou",
     "cn": [
-      "蕾米莉亚"
+      "蕾米莉亚",
+      "蕾米莉亚·斯卡蕾特"
     ],
     "en": [
       "remilia-scarlet"
@@ -296,6 +298,16 @@
   {
     "work": "Touhou",
     "cn": [
+      "铃仙·优昙华院·因幡"
+    ],
+    "en": [
+      "reisen-udongein-inaba"
+    ],
+    "source": "auto"
+  },
+  {
+    "work": "Touhou",
+    "cn": [
       "雾雨魔理沙",
       "魔理沙"
     ],
@@ -322,6 +334,28 @@
     ],
     "en": [
       "kazami-yuuka"
+    ],
+    "source": "auto"
+  },
+  {
+    "work": "Touhou",
+    "cn": [
+      "魂魄妖梦"
+    ],
+    "en": [
+      "konpaku-yōmu",
+      "new_konpaku-youmu-new",
+      "old_konpaku-youmu-old"
+    ],
+    "source": "auto"
+  },
+  {
+    "work": "Touhou",
+    "cn": [
+      "魔理沙"
+    ],
+    "en": [
+      "kirisame-marisa"
     ],
     "source": "auto"
   }

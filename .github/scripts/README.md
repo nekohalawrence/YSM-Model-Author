@@ -63,7 +63,7 @@
 | 目录 | 用途 | 文件 | 读写方 |
 | --- | --- | --- | --- |
 | `templates/` | 网站 / README 模板 | `website_template.html`、`model_readme.template.json`（模型 README 结构，由 _Template/ 转化） | build_site.py / generate_model_readmes.py |
-| `knowledge/` | 命名知识库 | `works.json`、`aliases.json`、`merge_skips.json`、`roles/*.json`、`category_map.json`（作品→大类）、`role_terms.json`（角色术语） | kb_tool.py（写）、rename_model_folders.py（经 kb_tool 读）、generate_model_readmes.py / lib/terms.py（读） |
+| `knowledge/` | 命名知识库 | `works.json`、`merge_skips.json`、`roles/*.json`（cn/en 数组，规范名 + 别名已并入）、`category_map.json`（作品→大类）、`role_terms.json`（角色术语） | kb_tool.py（写）、rename_model_folders.py（经 kb_tool 读）、generate_model_readmes.py / lib/terms.py（读） |
 | `meta/` | 共享元数据 | `authors.json`（build_authors_index 写，5 个脚本读）、`models_meta.json`（按需生成）、`platform_map.json`（**分类为键 → 平台键列表为值**，lib/ysm 反查归类） | build_authors_index / organize_models / generate_model_readmes / format_author_readme / build_readme_authors / lib/ysm |
 | `schemas/` | 数据契约（JSON Schema） | 9 个 `.schema.json` | lib/validate.py（校验，经 `cli.py check`） |
 

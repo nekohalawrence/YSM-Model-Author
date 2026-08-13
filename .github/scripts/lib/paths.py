@@ -2,7 +2,7 @@
 
 数据目录规范（脚本不得按自身名字建子目录）：
   templates/  网站/README 等模板文件
-  knowledge/  命名知识库（works.json / aliases.json / roles/）
+  knowledge/  命名知识库（works.json / roles/）
   meta/       各脚本共享的元数据（models_meta.json / platform_map.json 等）
   schemas/    数据契约（JSON Schema，由 lib/validate.py 校验）
 """

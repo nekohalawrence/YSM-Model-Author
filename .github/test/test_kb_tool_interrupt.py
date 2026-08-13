@@ -61,7 +61,6 @@ def test_run_merge_survives_interrupt() -> tuple[bool, str]:
         (tmp / "roles" / "HSR.json").write_text(
             json.dumps([r for r in roles if r["work"] == "HSR"], ensure_ascii=False), encoding="utf-8")
         (tmp / "works.json").write_text("{}", encoding="utf-8")
-        (tmp / "aliases.json").write_text("[]", encoding="utf-8")
 
         # 第一对确认 'y' 合并；第二对确认时抛 KeyboardInterrupt（模拟 Ctrl+C）
         answers = iter(["y"])

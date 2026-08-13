@@ -155,6 +155,16 @@
   {
     "work": "AK",
     "cn": [
+      "归溟幽灵鲨"
+    ],
+    "en": [
+      "specter-the-unchained"
+    ],
+    "source": "auto"
+  },
+  {
+    "work": "AK",
+    "cn": [
       "忍冬"
     ],
     "en": [
@@ -390,10 +400,30 @@
   {
     "work": "AK",
     "cn": [
+      "能天使"
+    ],
+    "en": [
+      "exusiai"
+    ],
+    "source": "auto"
+  },
+  {
+    "work": "AK",
+    "cn": [
       "苇草"
     ],
     "en": [
       "reed-the-flame-shadow"
+    ],
+    "source": "auto"
+  },
+  {
+    "work": "AK",
+    "cn": [
+      "荒芜拉普兰德"
+    ],
+    "en": [
+      "lappland-the-decadenza"
     ],
     "source": "auto"
   },

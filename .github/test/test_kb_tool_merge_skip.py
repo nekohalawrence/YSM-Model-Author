@@ -47,7 +47,6 @@ def make_kb(tmp: pathlib.Path) -> None:
     (tmp / "roles" / "BA.json").write_text(json.dumps(ROLES_BA, ensure_ascii=False), encoding="utf-8")
     (tmp / "roles" / "HSR.json").write_text(json.dumps(ROLES_HSR, ensure_ascii=False), encoding="utf-8")
     (tmp / "works.json").write_text(json.dumps(WORKS, ensure_ascii=False), encoding="utf-8")
-    (tmp / "aliases.json").write_text("[]", encoding="utf-8")
 
 
 def run_merge_with_inputs(tmp: pathlib.Path, inputs: list[str]) -> list[str]:
