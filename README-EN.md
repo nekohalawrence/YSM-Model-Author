@@ -196,14 +196,12 @@
 | 0183 | [#Aaaaaaafeng](.../../Models/0183) | 7 |
 | 0184 | [#MC-ZBM](.../../Models/0184) | 3 |
 | 0185 | [#滑滑滑纸隐](.../../Models/0185) | 9 |
-| 0186 | [None](.../../Models/0186) | 0 |
 | 0187 | [#爱听书的旅人](.../../Models/0187) | 1 |
 | 0188 | [#鸢尾](.../../Models/0188) | 1 |
 | 0189 | [#TIS长夜孤星](.../../Models/0189) | 1 |
 | 0190 | [#奈忒倪](.../../Models/0190) | 1 |
 | 0191 | [#新隆肰懿](.../../Models/0191) | 1 |
 | 0192 | [#苏瑞铃](.../../Models/0192) | 2 |
-| 0193 | [None](.../../Models/0193) | 0 |
 | 0194 | [#咖喱饭饭好吃](.../../Models/0194) | 2 |
 | 0195 | [#奶油桃](.../../Models/0195) | 1 |
 <!-- AUTHORS_LIST_END -->
@@ -223,7 +221,7 @@ Personal Rating: LA, LB, LC, LD
 
 ## Games
 
-- ‑as the Night's, Reincarnation‑, Sakura Moyu | Sakura Moyu | Sakura, Moyu | さくら、もゆ
+- ‑as the Night's, Reincarnation‑, Sakura Moyu | Sakura Moyu | さくら、もゆ
 - 300 Heroes, 300-Heroes | 300 Heroes | 300 ヒーローズ
 - Arknights, AK | Arknights
 - Arknights-Endfield, AKE | Arknights: Endfield
@@ -286,7 +284,7 @@ Personal Rating: LA, LB, LC, LD
 - Yog-Sothoth's Yard, YogYard | Yog-Sothoth's Yard: Alchemy Inn
 - Zenless-Zone-Zero, ZZZ | Zenless Zone Zero
 
-## Anime/Manga/Novel
+## Animation/Manga/Novel
 
 - A Certain Magical Index, Toaru Majutsu no Index, TMNI | A Certain Magical Index | とある魔術の禁書目録
 - ATRI -My Dear Moments-, AIRI | ATRI -My Dear Moments- | ATRI ‑My Dear Moments‑
@@ -309,10 +307,10 @@ Personal Rating: LA, LB, LC, LD
 - Love, Chunibyo & Other Delusions, LCOD | Love, Chunibyo & Other Delusions! | 中二病でも恋がしたい！
 - LoveMe | Love Me | らぶみー♡
 - Majo no Tabitabim, MNT | Wandering Witch: The Journey of Elaina | 魔女の旅々, まじょのたびたび
-- Make Heroine ga Oosugiru!, MHO | Makeine: Too Many Losing Heroines! | 負けヒロインが多すぎる！
+- Make Heroine ga Oosugiru!, MHO | Makeine: Too Many Losing Heroines!
 - Mato Seihei no Sureibu, MSNS | Chained Soldier | 魔都精兵のスレイブ
 - Miss Kobayashi's Dragon Maidm, MKDM | Miss Kobayashi's Dragon Maid | 小林さんちのメイドラゴン
-- MorotsuiKizoku, MKZ | The Fallen Noble Rurikawa Tsubaki
+- MorotsuiKizoku, MKZ | Morotsui Kizoku: Rurikawa Tsubaki
 - MushokuTensei | Mushoku Tensei: Jobless Reincarnation | 無職転生 ～異世界行ったら本気だす～
 - My Dress-Up Darling, MDUD, Kisekoi | My Dress-Up Darling | その着せ替え人形は恋をする
 - Onii-chan wa Oshimai!, ONIMAI | Onimai: I'm Now Your Sister! | お兄ちゃんはおしまい！
@@ -339,8 +337,8 @@ Personal Rating: LA, LB, LC, LD
 
 - GuLuco
 - HarukaC
-- Mochiyama Kingyo | Mochiyama Kingyo
-- naga u, Naga-u | naga u
+- Mochiyama Kingyo | もち山金魚
+- naga u, Naga-u | ながユー
 
 ## Other
 - Animal | Animals
@@ -353,7 +351,7 @@ Personal Rating: LA, LB, LC, LD
 - Utauloid, UTAU | Virtual Singers, UTAU
 - Virtual YouTuber, VTuber | Virtual YouTubers | バーチャルユーチューバー
 - Virtual Streamer, VStreamer
-- VOCALOID, VOC | VOCALOID, Voca, Virtual Singers
+- VOCALOID, VOC | VOCALOID, Vocaloid, Virtual Singers
 
 </details>
 
@@ -372,7 +370,7 @@ Personal Rating: LA, LB, LC, LD
 </details>
 
 <details>
-<summary>Tool Recommendations</summary>
+<summary>Recommended Tools</summary>
 
 - [ysm-model-manager](https://github.com/eghrhegpe/ysm-model-manager)
 	- Description: YSM model management software
@@ -381,7 +379,7 @@ Personal Rating: LA, LB, LC, LD
 - [YSMParser](https://github.com/OpenYSMDev/YSMParser)
 	- Description: One-click decryption of .ysm models and conversion to Blockbench projects, supporting all encryption format versions.
 - [YSMViewer](https://github.com/DrAbcOfficial/YSMViewer)
-	- Description: A cross-platform 3D model viewer for ".ysm" files — an encrypted binary format for storing player models in Minecraft. Built with Avalonia.
+	- Description: A cross-platform 3D model viewer for ".ysm" files — an encrypted binary format used to store player models in Minecraft. The viewer is built on Avalonia.
 - [YesSteveModel](https://github.com/YesSteveModel/YesSteveModel)
 	- Description: Open-sourced
 - [OpenYSM](https://github.com/OpenYSM/OpenYSM)
@@ -393,7 +391,7 @@ Personal Rating: LA, LB, LC, LD
 
 ## Project Structure
 
-> Below is an overview of the main directories in this repository. This may be adjusted as content continues to evolve.
+> Below is an overview of the main directories in this repository. The structure may be adjusted as content continues to grow.
 
 ```text
 YSM-Model-Author/
@@ -442,21 +440,21 @@ YSM-Model-Author/
 ## Notes
 
 - Usage notes
-	- The LA\B\C suffixes are personal preference ratings (build quality/completeness) and carry no other meaning.
+	- The LA\B\C suffix is a personal preference-based rating (build quality/completeness) and carries no other meaning.
 	- Archives contain project source files, while `.ysm` files are the encrypted model files.
-	- Some models in this repository are **18+**. Please use them at your discretion. I have not marked all **R18** models as `nsfw`.
+	- Some models in this repository are **18+**. Please use them at your own discretion. I have not marked all **R18** models as `nsfw`.
 	- Please do not **sell** the models from this repository in any form. You are solely responsible for any consequences.
 - Model notes
 	- I discovered that models viewed through Obsidian (a note-taking app) are all corrupted!!!!!!!!
 	- If you find any unusable models, please let me know via an issue. Thank you!
 - Other notes
-	- I'm not very familiar with GitHub. If you want to modify anything, you can only notify me via an Issue, or you can clone the repository and make changes yourself.
+	- I'm not very familiar with using GitHub. If you want to modify anything, you can only notify me via an Issue, or you can clone the repository and make changes yourself.
 
 ## Acknowledgements
 
 - [https://github.com/Elaina69/Yes-Steve-Model-Repo](https://github.com/Elaina69/Yes-Steve-Model-Repo): Source of most free models
-- @[LuckyPotion](https://space.bilibili.com/1739798750): Source of some specific author models
-- QQ-tomysh's Hospital Ward - 752713566: Source of some specific author models
+- @[LuckyPotion](https://space.bilibili.com/1739798750): Source of some specific authors' models
+- QQ-tomysh's Hospital Ward - 752713566: Source of some specific authors' models
 
 ## Changelog
 
@@ -469,11 +467,11 @@ YSM-Model-Author/
 
 # 2026-08-01
 
-- feat: Added automatic changelog generation action
+- feat: Added an automatic changelog generation action
 
 # 2026-07-30
 
-- format: Noticed that some game or anime names are **too long**, making it hard to see the **character** names. Henceforth, game and anime names will be changed to **abbreviations**
+- format: Noticed that some game or anime names are **too long**, making it hard to see the **character** names. Henceforth, game/anime names will be changed to **abbreviated forms**
 
 # 2026-07-27
 
@@ -481,16 +479,16 @@ YSM-Model-Author/
 
 # 2026-07-25
 
-- ps: There are way too many obscure games out there
+- ps: There are way too many weird games out there
 - ps: Note that some models without preview images are unusable. I saved them while browsing authors, which modified some characters and corrupted the original files, rendering those models unusable.
-- ps: Major mistake discovered — I found that most models viewed through Obsidian are corrupted!!!!!!!! I've only now figured out the cause; the history on Git hasn't been deleted.
+- ps: A major mistake occurred. I discovered that most models viewed through Obsidian are corrupted!!!!!!!! I've only now found the reason — the history on Git was never deleted.
 
 # 2026-07-23
 
-- ps: Thanks to [LuckyPotion](https://space.bilibili.com/1739798750) for publicly sharing a collection of paid models from a certain team. I may gradually update preview images for various models in the future.
+- ps: Thanks to [LuckyPotion](https://space.bilibili.com/1739798750) for publicly sharing a collection of paid models from a certain team. I may gradually update preview images for various models over time.
 - ps: Quark Cloud: https://pan.quark.cn/s/77a16d314a11 Extraction code: ajVD (expired)
 - ps: Baidu Cloud: https://pan.baidu.com/s/1FFSrd_YG-1Eat_DQD7hziw Extraction code: xiao
-- ps: Models are not being added to the repository for now; download them yourself if needed
+- ps: Models are not being added to the repository for now. Download them yourself if needed.
 - chore: Planning to add an action to generate a `README.md` for each model to make preview images easier to view. If you have a better approach, please let me know via an issue (I don't know how to code — AI wrote everything for me 😭)
 - chore: For naming consistency, all folder names for games will be changed to English from now on, except for games exclusive to China. A translation reference list will be provided later.
 
@@ -502,23 +500,23 @@ YSM-Model-Author/
 
 # 2026-07-18
 
-- ps: Some creators belong to the same team. I'm not sure if there's a good way to categorize them — if you have suggestions, feel free to share
+- ps: Some creators belong to the same team. I'm not sure if there's a good way to categorize them — if you have any suggestions, feel free to share.
 - chore: Reorganized a large number of models
 - chore: The reorganized models include new models and re-categorized [existing models](https://github.com/Elaina69/Yes-Steve-Model-Repo)
 
 # 2026-06-29
 
 - chore: Merged some team models — only the author who created a model releases it, while other authors are listed as contributors for their respective parts.
-- ps: After organizing for a while, I feel this categorization approach still has issues — it's hard to find the models you want. Essentially, this is a collection of free models; many paid models are not included. When categorizing by author, only a few authors consistently produce high-quality free models. Categorizing by the model's subject matter might be a better approach.
+- ps: After organizing for a while, I feel this categorization approach still has issues — it's hard to find the model you want. Essentially, this is a collection of free models; many paid models are not included. When categorizing by author, only a few authors consistently produce high-quality free models. Categorizing by the model's subject matter might be a better approach.
 
 # 2026-05-21
 
-- ps: Most models don't work in newer versions. It's recommended to only use newer encrypted models (decrypt with ysmpaser — older models cannot be decrypted either), or models with source files.
+- ps: Most models don't work in newer versions. It's recommended to only use newer encrypted models (decryptable with ysmpaser; older models cannot be decrypted either), or models with source files.
 
 # 2026-05-11
 
-- chore: Removed the pages site. I'll revisit it once I figure out a suitable content presentation format.
-- chore: Plan to update all author metadata by the end of this year. ~If time permits, I'll add preview images for every model.~
+- chore: Removed the pages site. I'll revisit it once I figure out a suitable way to present content.
+- chore: Decided to update all authors' metadata by the end of this year. ~If time permits, I will add preview images for every model.~
 
 # 2026-05-03
 
