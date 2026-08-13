@@ -100,7 +100,8 @@ def main():
     setup()
     r = subprocess.run([sys.executable, str(SCRIPTS / "ingest" / "organize_models.py"),
                         str(ROOT / "inbox"), "--apply", "--root", str(ROOT),
-                        "--no-rename", "--verbose"],
+                        "--with-authors-index", "--with-gen-readmes", "--with-readme-table",
+                        "--verbose"],
                        capture_output=True, text=True, encoding="utf-8",
                        errors="replace", cwd=str(ROOT))
     print(r.stdout)

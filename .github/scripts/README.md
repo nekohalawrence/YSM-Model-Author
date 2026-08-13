@@ -75,19 +75,18 @@ Markdown 链接污染），其他脚本一律经 `lib.readme.load_authors_index(
 ## 四、调用关系
 
 ```
-auto-update-models.yml (workflow)
-  ├─ Step0(仅 _Model-Inbox 推送时) ingest/organize_models.py --apply --no-*
-  │      # 归档 inbox 里的 .ysm，联动交给后续步骤统一跑
-  ├─ Step1 publish/build_authors_index.py        # 重建作者数据
-  ├─ Step2 publish/generate_model_readmes.py     # 读 authors.json + models_meta.json
-  ├─ Step3 publish/build_readme_authors.py       # 读 authors.json
-  └─ Step4 publish/translate_readme.py
+pipeline.py（编排器，workflow 与本地共用）
+  ├─ inbox   ingest/organize_models.py(_Model-Inbox --apply)
+  │            → publish/build_authors_index.py → publish/generate_model_readmes.py
+  │            → publish/build_readme_authors.py → publish/translate_readme.py
+  ├─ full    前 4 步（无新模型时的日常刷新）
+  └─ rename / authors / readmes / authors-list / translate（单步）
 
-organize_models.py (--apply 后串联)
-  ├─ publish/build_authors_index.py              # 新作者入库
-  ├─ naming/rename_model_folders.py ──→ naming/kb_tool.py (import 复用) ──→ lib/*
-  ├─ publish/generate_model_readmes.py
-  └─ publish/build_readme_authors.py
+organize_models.py（--with-* 显式叠加，默认只归档）
+  ├─ --with-authors-index → publish/build_authors_index.py
+  ├─ --with-rename        → naming/rename_model_folders.py ──→ naming/kb_tool.py (import) ──→ lib/*
+  ├─ --with-gen-readmes   → publish/generate_model_readmes.py
+  └─ --with-readme-table  → publish/build_readme_authors.py
 
 organize_previews.py (--apply 后) ──→ publish/generate_model_readmes.py
 全部脚本 ──→ lib/*（公共库）
@@ -96,7 +95,6 @@ organize_previews.py (--apply 后) ──→ publish/generate_model_readmes.py
 ## 五、遗留待办（不阻塞当前使用）
 
 1. **build_site.py** 已修复模板路径，但未被 workflow 调用，产出 `index.html` 未自动化。
-2. `.github/data` 整体尚未纳入 git 跟踪（`git add .github/data` 后提交一次）。
-3. workflow 的 Step0 目前用 `--no-rename` 跳过文件夹重命名（重命名需人工确认）；
-   若希望 inbox 推送后全自动重命名，可去掉 `--no-rename`，但请先 review
-   `rename_model_folders.py --show KB` 的输出。
+2. workflow 的 `pipeline inbox` 不含文件夹重命名（重命名需人工 review）；
+   需要时手动 `python .github/scripts/pipeline.py rename`（先看 `--show KB` 输出）。
+

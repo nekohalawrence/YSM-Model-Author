@@ -14,7 +14,7 @@ YSM 模型归档工具（本仓库专用）——按作者将待归档的 .ysm �
   - 同一模型的多个版本（如 神吞 / 神吞二阶段）自动合并进同一模型文件夹
   - 同批处理的同作者文件共享同一作者编号（运行时索引回流，避免重复建目录）
   - 移动时跟随同 stem 的附属文件（预览图 / 压缩包 / 说明文档）
-  - --apply 归档完成后自动运行 rename_model_folders.py 格式化文件夹名，再更新根 README 索引
+  - 默认只归档；需要联动其他脚本时用 --with-* 显式叠加（也可用 pipeline.py 编排）
 
 模型文件夹命名：
   - 取 ysm 内部 <name> 与文件名两个名称合并
@@ -25,11 +25,13 @@ YSM 模型归档工具（本仓库专用）——按作者将待归档的 .ysm �
   python .github/scripts/ingest/organize_models.py <文件或目录>... [选项]
 
 选项:
-  --apply              真正执行移动/创建（默认 dry-run，只打印计划）
-  --root PATH          指定仓库根目录（默认自动检测 cwd/脚本位置）
-  --no-update-readme   归档后不更新根 README 作者索引（默认 --apply 时更新）
-  --no-rename          归档后不运行 rename_model_folders.py 格式化文件夹名（默认 --apply 时运行）
-  --verbose            打印匹配细节
+  --apply               真正执行移动/创建（默认 dry-run，只打印计划）
+  --root PATH           指定仓库根目录（默认自动检测 cwd/脚本位置）
+  --with-authors-index  归档成功后重建作者数据 authors.json（build_authors_index.py）
+  --with-rename         归档成功后运行 rename_model_folders.py --apply 格式化文件夹名
+  --with-gen-readmes    归档成功后运行 generate_model_readmes.py 生成模型 README
+  --with-readme-table   归档成功后运行 build_readme_authors.py 更新根 README 作者索引
+  --verbose             打印匹配细节
 """
 from __future__ import annotations
 
@@ -670,12 +672,14 @@ def main() -> int:
     parser.add_argument('inputs', nargs='+', help='.ysm 文件或目录（目录递归收集 *.ysm）')
     parser.add_argument('--apply', action='store_true', help='真正执行（默认 dry-run）')
     parser.add_argument('--root', metavar='PATH', default=None, help='仓库根目录（默认自动检测）')
-    parser.add_argument('--no-update-readme', action='store_true',
-                        help='归档后不更新根 README 作者索引（默认 --apply 时更新）')
-    parser.add_argument('--no-rename', action='store_true',
-                        help='归档后不运行 rename_model_folders.py 格式化文件夹名（默认 --apply 时运行）')
-    parser.add_argument('--no-gen-readmes', action='store_true',
-                        help='归档后不运行 generate_model_readmes.py 生成模型 README（默认 --apply 时运行）')
+    parser.add_argument('--with-authors-index', action='store_true',
+                        help='归档成功后重建集中作者数据 authors.json（build_authors_index.py）')
+    parser.add_argument('--with-rename', action='store_true',
+                        help='归档成功后运行 rename_model_folders.py --apply 格式化文件夹名')
+    parser.add_argument('--with-gen-readmes', action='store_true',
+                        help='归档成功后运行 generate_model_readmes.py 生成模型 README')
+    parser.add_argument('--with-readme-table', action='store_true',
+                        help='归档成功后运行 build_readme_authors.py 更新根 README 作者索引')
     parser.add_argument('--verbose', action='store_true', help='打印匹配细节')
     args = parser.parse_args()
 
@@ -711,14 +715,16 @@ def main() -> int:
         if res['new_author']:
             new_authors += 1
 
-    # 归档完成后的联动：重建作者数据 → 格式化文件夹名 → 生成模型 README → 更新根 README 索引
+    # 可选联动：默认只归档，用 --with-* 显式叠加其他脚本（顺序固定）
+    # 重建作者数据 → 格式化文件夹名 → 生成模型 README → 更新根 README 索引
     if args.apply and moved_any:
-        build_authors_index(root)
-        if not args.no_rename:
+        if args.with_authors_index:
+            build_authors_index(root)
+        if args.with_rename:
             run_rename_model_folders(root)
-        if not args.no_gen_readmes:
+        if args.with_gen_readmes:
             run_generate_model_readmes(root)
-        if not args.no_update_readme:
+        if args.with_readme_table:
             update_root_readme(root)
 
     print("\n" + "=" * 50)
