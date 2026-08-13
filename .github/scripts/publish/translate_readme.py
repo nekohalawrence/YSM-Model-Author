@@ -1,24 +1,32 @@
 import os
 import re
+import sys
 import difflib
-from openai import OpenAI
+from pathlib import Path
 
-ZH_README = "README.md"
-EN_README = "README-EN.md"
+# openai 依赖缺失时优雅跳过（本地无此库/API key 时不应 traceback）
+try:
+    from openai import OpenAI
+except ImportError:
+    OpenAI = None  # type: ignore[assignment,misc]
 
-AUTHORS_START = "<!-- AUTHORS_LIST_START -->"
-AUTHORS_END = "<!-- AUTHORS_LIST_END -->"
+# 脚本按流程阶段分类到 scripts/<类别>/ 子目录：把 .github/scripts 加回 sys.path，
+# 保证 lib/ 与跨分类脚本可导入
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-api_key = os.getenv("DEEPSEEK_API_KEY") or os.getenv("OPENAI_API_KEY")
-base_url = os.getenv("LLM_BASE_URL", "https://api.deepseek.com")
+from lib import paths as lib_paths  # noqa: E402
+from lib import readme as lib_readme  # noqa: E402
 
-if not api_key:
-    print("Warning: No API key provided. Skipping AI translation step.")
-    exit(0)
+ROOT = lib_paths.WORKSPACE_ROOT
+ZH_README = ROOT / 'README.md'
+EN_README = ROOT / 'README-EN.md'
 
-client = OpenAI(api_key=api_key, base_url=base_url)
+# AUTHORS_LIST 自动化区域标记（与 build_readme_authors 共用 lib/readme 常量）
+AUTHORS_START = lib_readme.AUTHORS_LIST_START
+AUTHORS_END = lib_readme.AUTHORS_LIST_END
 
-def call_llm_translate(text):
+
+def call_llm_translate(text, client):
     """仅翻译有变动的中文段落"""
     system_prompt = (
         "You are a professional software documentation translator. "
@@ -47,17 +55,26 @@ def extract_non_header_body(content):
     return content
 
 def process():
-    if not os.path.isfile(ZH_README):
-        print(f"Error: {ZH_README} not found.")
-        exit(1)
+    # 依赖与 API key 在运行时检查（避免模块 import 时直接 exit 的旧行为）
+    if OpenAI is None:
+        print("Warning: 缺少 'openai' 库，跳过 AI 翻译（pip install openai）。")
+        return
+    api_key = os.getenv("DEEPSEEK_API_KEY") or os.getenv("OPENAI_API_KEY")
+    if not api_key:
+        print("Warning: No API key provided. Skipping AI translation step.")
+        return
+    base_url = os.getenv("LLM_BASE_URL", "https://api.deepseek.com")
+    client = OpenAI(api_key=api_key, base_url=base_url)
 
-    with open(ZH_README, "r", encoding="utf-8") as f:
-        zh_full = f.read()
+    if not ZH_README.is_file():
+        print(f"Error: {ZH_README} not found.")
+        return
+
+    zh_full = ZH_README.read_text(encoding="utf-8")
 
     en_full = ""
-    if os.path.isfile(EN_README):
-        with open(EN_README, "r", encoding="utf-8") as f:
-            en_full = f.read()
+    if EN_README.is_file():
+        en_full = EN_README.read_text(encoding="utf-8")
 
     # 1. 提取英文版首行的语言切换链接（保护头部不被篡改）
     en_lines = en_full.splitlines()
@@ -98,7 +115,7 @@ def process():
     print("Changes detected in README.md. Performing AI translation...")
 
     # 5. 调用 AI 对更新后的正文进行整体翻译
-    translated_body = call_llm_translate(zh_body)
+    translated_body = call_llm_translate(zh_body, client)
 
     # 6. 还原 AUTHORS_LIST 自动生成的英文表格数据
     if "__AUTHORS_LIST_PLACEHOLDER__" in translated_body:
@@ -107,8 +124,7 @@ def process():
     # 7. 重新组装文档：保留头部跳转 + 翻译后的正文
     final_en_content = f"{header_line}\n\n{translated_body.strip()}\n"
 
-    with open(EN_README, "w", encoding="utf-8") as f:
-        f.write(final_en_content)
+    EN_README.write_text(final_en_content, encoding="utf-8")
 
     print("README-EN.md successfully updated with translated changes.")
 

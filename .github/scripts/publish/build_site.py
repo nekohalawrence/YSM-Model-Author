@@ -1,6 +1,7 @@
 import os
 import json
 import re
+import sys
 import time
 from pathlib import Path
 
@@ -19,13 +20,13 @@ except ImportError:
     HAS_PILLOW = False
 
 # 配置
-import sys
-from pathlib import Path
 # 脚本按流程阶段分类到 scripts/<类别>/ 子目录：把 .github/scripts 加回 sys.path，
 # 保证 lib/ 与跨分类脚本可导入
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from lib import paths as lib_paths
+from lib import previews as lib_previews
+from lib import readme as lib_readme
 
 # 切换工作目录到项目根目录 (假设脚本位于 .github/scripts/)
 os.chdir(lib_paths.WORKSPACE_ROOT)
@@ -61,32 +62,24 @@ def generate_thumbnail(src_path: Path):
         print(f"Failed to generate thumbnail for {src_path}: {e}")
         return src_path
 
-def parse_readme(file_path, default_id):
-    info = { "name": default_id, "socials": [] }
-    if not file_path or not file_path.exists(): return info
+PLATFORMS = ['bilibili', 'youtube', 'afdian', 'patreon', 'ko-fi', 'twitter', 'pixiv', 'sketchfab']
 
-    try:
-        with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
-            lines = f.readlines()
-            for line in lines:
-                clean_line = line.strip()
-                if 'name' not in info or info['name'] == default_id:
-                    match = re.search(r'[\*\-]?\s*(?:作者名称|作者|Author)[:：]\s*(.*)', clean_line)
-                    if match:
-                        raw = match.group(1).strip().replace('*', '').replace('`', '').replace('#', '')
-                        if raw: info['name'] = raw
-                
-                platforms = ['bilibili', 'youtube', 'afdian', 'patreon', 'ko-fi', 'twitter', 'pixiv', 'sketchfab']
-                found = next((p for p in platforms if p.lower() in clean_line.lower()), None)
-                if found:
-                    parts = re.split(r'[:：]', clean_line, 1)
-                    if len(parts) > 1:
-                        content = parts[1].strip()
-                        link_match = re.search(r'\[.*?\]\((https?://.*?)\)', content) or re.search(r'(https?://[^\s]+)', content)
-                        if link_match:
-                            url = link_match.group(1).rstrip(')')
-                            info['socials'].append({ "platform": found, "url": url })
-    except: pass
+
+def parse_readme(file_path, default_id):
+    """解析作者 README：作者名（Author 段 Name 行）+ 平台账号（复用 lib/readme 统一实现）。
+
+    旧的逐行正则只匹配 'Author: xxx' 格式，在当前 '## Author / - **Name**:' 格式下失效；
+    改由 lib/readme.parse_author_name_value / extract_platforms 解析。"""
+    info = {"name": default_id, "socials": []}
+    if not file_path or not file_path.exists():
+        return info
+    content = file_path.read_text(encoding='utf-8', errors='ignore')
+    name = lib_readme.parse_author_name_value(content)
+    if name:
+        info['name'] = name
+    for key, value in lib_readme.extract_platforms(content).items():
+        platform = next((p for p in PLATFORMS if p in key.lower()), key.lower())
+        info['socials'].append({"platform": platform, "url": value})
     return info
 
 models_data = []
@@ -130,19 +123,15 @@ for author_dir in ROOT_DIR.iterdir():
         
         previews, tags, files = [], [], []
         
-        # 查找预览图 (新逻辑：查找 previews 文件夹)
-        previews_dir = model_dir / 'previews'
-        if previews_dir.exists() and previews_dir.is_dir():
-            for f in sorted(previews_dir.iterdir()):
-                if f.is_file() and f.suffix.lower() in ['.jpg', '.png', '.jpeg', '.webp']:
-                    # 跳过生成的缩略图，防止重复
-                    if f.name.startswith('thumb_'): continue
-                    
-                    thumb = generate_thumbnail(f)
-                    previews.append({
-                        "url": f.as_posix(),      # 原图 (用于放大)
-                        "thumb": thumb.as_posix() # 缩略图 (用于卡片显示)
-                    })
+        # 查找预览图（复用 lib/previews.py 统一规则；跳过生成的缩略图）
+        preview_images = [f for f in lib_previews.collect_preview_images(model_dir)
+                          if not f.name.startswith('thumb_')]
+        for f in preview_images:
+            thumb = generate_thumbnail(f)
+            previews.append({
+                "url": f.as_posix(),      # 原图 (用于放大)
+                "thumb": thumb.as_posix() # 缩略图 (用于卡片显示)
+            })
         
         # 查找标签
         tag_file = model_dir / 'tags.md'

@@ -1,6 +1,4 @@
-import sys
 import re
-from pathlib import Path
 import sys
 from pathlib import Path
 # 脚本按流程阶段分类到 scripts/<类别>/ 子目录：把 .github/scripts 加回 sys.path，

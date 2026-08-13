@@ -1,5 +1,6 @@
 """作者 README 解析：作者名提取、作者索引构建（消除各脚本重复实现）。"""
 import re
+import unicodedata
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -17,6 +18,12 @@ PAREN_PAIR_RE = re.compile(r'^([^()（）]*)[(（]([^)）]*)[)）]$')
 ROLE_LINE_RE = re.compile(r'^\s{2}- \*\*Role\*\*\s*[:：]\s*(.+)$')
 # 作者 README 中 4 空格缩进的平台账号行（如 "    - **Bilibili**: [name](url)"）
 PLATFORM_LINE_RE = re.compile(r'^    - \*\*([^*]+)\*\*\s*[:：]\s*(.+)$')
+# 宽松版平台行（2-4 空格缩进、冒号可选）：audit_models 合并平台行时使用，
+# 兼容容器行（- **SocialPlatform**: #Bilibili）与子行（- **Bilibili**: [..](..)）
+PLATFORM_ANY_LINE_RE = re.compile(r'^\s{2,4}-\s*\*\*([^*]+)\*\*\s*[:：]?\s*(.*)$')
+# 根 README 作者表自动生成区域标记（build_readme_authors 写入、translate_readme 保护）
+AUTHORS_LIST_START = '<!-- AUTHORS_LIST_START -->'
+AUTHORS_LIST_END = '<!-- AUTHORS_LIST_END -->'
 
 
 def parse_author_name_value(content: str) -> str:
@@ -37,7 +44,6 @@ def extract_primary_author_name(content: str) -> str:
 
 def normalize_alias(s: str) -> str:
     """作者别名归一化：NFKC、去空白（含全角）、去 #、去首尾标点、小写。"""
-    import unicodedata
     s = unicodedata.normalize('NFKC', s)
     s = re.sub(r'[\s\u00a0\u200b]', '', s)
     s = s.lstrip('#＃')
@@ -259,3 +265,43 @@ def build_author_index_scan(models_dir: Path, root_readme: Path) -> tuple[dict[s
                 register(name_value, author_id)
 
     return alias_to_id, id_to_name
+
+
+def build_author_readme_index(models_dir: Path) -> dict[str, Path]:
+    """作者名/别名 -> README 路径 索引（作者 README 交叉链接用）。
+
+    authors.json 优先（readme 字段定位），缺失时回退扫描 Models 作者 README；
+    与 build_author_index 共享同一数据源，消除 format_author_readme 的重复扫描实现。
+    """
+    data = load_authors_index()
+    authors = data.get('authors') if isinstance(data, dict) else None
+    if authors:
+        index: dict[str, Path] = {}
+        for entry in authors.values():
+            rel = entry.get('readme') or ''
+            if not rel:
+                continue
+            readme_path = models_dir.parent / rel
+            if not readme_path.is_file():
+                continue
+            names = entry.get('name') or []
+            if isinstance(names, str):
+                names = split_author_names(names)
+            for name in names:
+                if name and name not in index:
+                    index[name] = readme_path
+        return index
+    # 回退扫描 Models 作者 README（authors.json 缺失时）
+    index = {}
+    if models_dir.is_dir():
+        for author_dir in sorted(models_dir.iterdir()):
+            if not (author_dir.is_dir() and re.fullmatch(r'\d{4}', author_dir.name)):
+                continue
+            readme = author_dir / 'README.md'
+            if not readme.is_file():
+                continue
+            name_value = parse_author_name_value(paths.read_text_utf8(readme))
+            for name in split_author_names(name_value):
+                if name and name not in index:
+                    index[name] = readme
+    return index

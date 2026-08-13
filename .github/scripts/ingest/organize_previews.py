@@ -32,8 +32,6 @@ import subprocess
 import sys
 from dataclasses import dataclass, field
 from pathlib import Path
-import sys
-from pathlib import Path
 # 脚本按流程阶段分类到 scripts/<类别>/ 子目录：把 .github/scripts 加回 sys.path，
 # 保证 lib/ 与跨分类脚本可导入
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
@@ -60,7 +58,8 @@ find_previews_dir = lib_previews.find_previews_dir
 # 规范命名:preview + 两位数字(01~99),如 preview01.png
 PREVIEW_NUMBER_RE = re.compile(r'^preview(\d{2})$', re.IGNORECASE)
 MAX_PREVIEW_INDEX = 99
-GENERATE_SCRIPT = SCRIPT_DIR / 'generate_model_readmes.py'
+# 生成脚本在 publish/ 下(与 lib/ 同级目录体系),不是 ingest/
+GENERATE_SCRIPT = SCRIPT_DIR.parent / 'publish' / 'generate_model_readmes.py'
 
 
 @dataclass(frozen=True)

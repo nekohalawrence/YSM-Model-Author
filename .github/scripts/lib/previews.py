@@ -5,11 +5,16 @@ from pathlib import Path
 IMAGE_EXTS = {'.png', '.jpg', '.jpeg', '.webp', '.gif'}
 PREVIEW_MARKER = re.compile(r'preview', re.I)
 PREVIEWS_DIRNAME = 'previews'
+# 生成物前缀（build_site 缩略图），不作为预览图识别
+THUMB_PREFIX = 'thumb_'
 
 
 def is_preview_image(path: Path) -> bool:
-    """识别规则：文件名含 preview 的图片文件（与 generate_model_readmes 保持一致）。"""
-    return path.is_file() and path.suffix.lower() in IMAGE_EXTS and PREVIEW_MARKER.search(path.stem)
+    """识别规则：文件名含 preview 的图片文件（与 generate_model_readmes 保持一致）；
+    排除 build_site 生成的 thumb_ 缩略图（避免生成物被当预览图）。"""
+    return (path.is_file() and path.suffix.lower() in IMAGE_EXTS
+            and PREVIEW_MARKER.search(path.stem)
+            and not path.name.startswith(THUMB_PREFIX))
 
 
 def is_image_file(path: Path) -> bool:
@@ -34,6 +39,8 @@ def collect_preview_images(model_dir: Path) -> list[Path]:
     for sub_dir in model_dir.iterdir():
         if sub_dir.is_dir() and sub_dir.name.lower() == PREVIEWS_DIRNAME:
             for file_path in sorted(sub_dir.iterdir()):
-                if is_image_file(file_path) and file_path not in images:
+                if (is_image_file(file_path)
+                        and not file_path.name.startswith(THUMB_PREFIX)
+                        and file_path not in images):
                     images.append(file_path)
     return images

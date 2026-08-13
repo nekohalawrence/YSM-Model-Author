@@ -89,62 +89,8 @@ def render_author_readme(author_id: str, authors_str: str) -> str:
     )
 
 
-def build_name_index() -> dict[str, Path]:
-    """构建 作者名/别名 -> README 路径 的索引。优先用集中数据 authors.json，缺失时回退扫描。"""
-    data = lib_readme.load_authors_index()
-    authors = data.get('authors') if isinstance(data, dict) else None
-    if authors:
-        index: dict[str, Path] = {}
-        for entry in authors.values():
-            readme_rel = entry.get('readme') or ''
-            if not readme_rel:
-                continue
-            readme_path = WORKSPACE_ROOT / readme_rel
-            if not readme_path.is_file():
-                continue
-            names = entry.get('name') or []
-            if isinstance(names, str):
-                # 兼容旧结构（name 为字符串）
-                names = lib_readme.split_author_names(names)
-            for name in names:
-                if not name:
-                    continue
-                if name not in index:
-                    index[name] = readme_path
-        return index
-    return build_name_index_scan()
-
-
-def build_name_index_scan() -> dict[str, Path]:
-    """扫描版回退：遍历 Models 作者 README 构建名称索引（authors.json 缺失时使用）"""
-    if not MODELS_DIR.is_dir():
-        print(f"Warning: {MODELS_DIR} directory does not exist; name index will be empty.")
-        return {}
-
-    index: dict[str, Path] = {}
-    for author_dir in sorted(MODELS_DIR.iterdir()):
-        if not author_dir.is_dir() or not author_dir.name.isdigit() or len(author_dir.name) != 4:
-            continue
-        for fname in ['README.md', 'readme.md']:
-            readme_path = (author_dir / fname).resolve()
-            if not readme_path.is_file():
-                continue
-            content = readme_path.read_text(encoding='utf-8', errors='ignore')
-            for line in content.splitlines():
-                m = lib_readme.NAME_LINE_RE.match(line)
-                if m:
-                    name_value = normalize_name_value(m.group(1))
-                    if name_value and name_value not in index:
-                        index[name_value] = readme_path
-                    for alias in [alias.strip() for alias in name_value.split('|') if alias.strip()]:
-                        if alias and alias not in index:
-                            index[alias] = readme_path
-                    break
-            break
-    return index
-
-
-NAME_LINKS = build_name_index()
+# 作者名/别名 -> README 路径 索引（交叉链接用；复用 lib/readme 统一实现）
+NAME_LINKS = lib_readme.build_author_readme_index(MODELS_DIR)
 
 
 def normalize_heading(heading: str) -> str:

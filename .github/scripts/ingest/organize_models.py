@@ -37,7 +37,6 @@ from __future__ import annotations
 
 import argparse
 import hashlib
-import json
 import os
 import re
 import shutil
@@ -65,28 +64,18 @@ map_platforms = lib_ysm.map_platforms
 # 新作者 README 的生成与默认 Role（统一由 publish/format_author_readme.py 负责）
 from publish.format_author_readme import TARGET_ROLE, format_author_name, render_author_readme
 
-# 作者 README 解析相关（复用 lib/readme.py 统一实现）
-NAME_LINE_RE = lib_readme.NAME_LINE_RE
-AUTHOR_SECTION_RE = lib_readme.AUTHOR_SECTION_RE
-INDEX_ROW_RE = lib_readme.INDEX_ROW_RE
+# 作者 README 解析相关（复用 lib/readme.py 统一实现；仅保留实际使用的绑定）
 normalize_alias = lib_readme.normalize_alias
-parse_author_name_value = lib_readme.parse_author_name_value
 build_author_index = lib_readme.build_author_index
-# 作者名拆分与匹配（复用 lib/readme.py；别名保留以兼容外部引用）
-split_authors = lib_readme.split_authors
 find_author = lib_readme.find_author
 
 # 命名/评级/去重（复用 lib/models.py 统一实现）
-GRADE_SUFFIX_RE = lib_models.GRADE_SUFFIX_RE
-VERSION_SUFFIX_RE = lib_models.VERSION_SUFFIX_RE
 has_cjk = lib_models.has_cjk
 normalize_name_for_cmp = lib_models.normalize_name_for_cmp
 clean_file_stem = lib_models.clean_file_stem
 same_model = lib_models.same_model
 
 # JSON/文本读写与路径（复用 lib/paths.py 统一实现）
-load_json = lib_paths.load_json
-read_text_utf8 = lib_paths.read_text_utf8
 find_workspace_root = lib_paths.find_workspace_root
 
 

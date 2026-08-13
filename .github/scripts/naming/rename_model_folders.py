@@ -86,8 +86,6 @@ import os
 import re
 import sys
 from pathlib import Path
-import sys
-from pathlib import Path
 # 脚本按流程阶段分类到 scripts/<类别>/ 子目录：把 .github/scripts 加回 sys.path，
 # 保证 lib/ 与跨分类脚本可导入
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))

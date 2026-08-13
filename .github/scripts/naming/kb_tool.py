@@ -36,6 +36,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 
+from lib import console as lib_console
 from lib import models as lib_models
 from lib import paths as lib_paths
 
@@ -95,15 +96,12 @@ def get_work_canonical(seg: str) -> str | None:
 
 
 def ask(prompt: str) -> str:
-    """安全的交互输入：去 BOM、去首尾空白；非交互 stdin 耗尽或 Ctrl+C 时返回 'q'（退出）。
+    """安全的交互输入（复用 lib/console.py 统一实现；别名保留以兼容外部引用）。
 
     返回 'q' 后各交互命令会保存已完成的部分并优雅退出（与显式输入 q 等价），
     避免用户在确认环节按 Ctrl+C 时直接抛 KeyboardInterrupt 崩溃。
     """
-    try:
-        return input(prompt).strip().lstrip('\ufeff')
-    except (EOFError, KeyboardInterrupt):
-        return 'q'
+    return lib_console.ask(prompt)
 
 
 def role_names(r: dict, field: str) -> list[str]:

@@ -20,7 +20,6 @@ YSM 模型库整理工具（本仓库专用）——处理"已有库"的整理�
 from __future__ import annotations
 
 import argparse
-import json
 import re
 import shutil
 import subprocess
@@ -30,6 +29,7 @@ from pathlib import Path
 # 把 .github/scripts 加回 sys.path，保证 lib/ 与跨分类脚本可导入
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
+from lib import console as lib_console
 from lib import models as lib_models
 from lib import paths as lib_paths
 from lib import readme as lib_readme
@@ -359,8 +359,8 @@ def _author_display(author_id: str) -> str:
     return f"{names[0] if names else '?'} ({author_id})"
 
 
-# 平台行：2 空格容器行（- **SocialPlatform**: #Bilibili）与 4 空格子行（- **Bilibili**: [..](..)）
-PLATFORM_LINE_RE = re.compile(r'^\s{2,4}-\s*\*\*([^*]+)\*\*\s*[:：]?\s*(.*)$')
+# 宽松版平台行（复用 lib/readme.py 的 PLATFORM_ANY_LINE_RE：2-4 空格、冒号可选）
+PLATFORM_LINE_RE = lib_readme.PLATFORM_ANY_LINE_RE
 
 
 def _merge_platform_lines(keep_content: str, drop_content: str, keep_readme: Path) -> int:
@@ -411,11 +411,8 @@ def _merge_platform_lines(keep_content: str, drop_content: str, keep_readme: Pat
 
 
 def _ask(prompt: str) -> str:
-    """安全交互输入（与 kb_tool 一致：Ctrl+C/EOF 视为退出）。"""
-    try:
-        return input(prompt).strip()
-    except (EOFError, KeyboardInterrupt):
-        return 'q'
+    """安全交互输入（复用 lib/console.py 统一实现，与 kb_tool 一致）。"""
+    return lib_console.ask(prompt)
 
 
 # ---------------------------------------------------------------------------
