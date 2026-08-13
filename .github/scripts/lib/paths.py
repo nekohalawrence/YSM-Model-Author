@@ -4,7 +4,7 @@
   templates/  网站/README 等模板文件
   knowledge/  命名知识库（works.json / aliases.json / roles/）
   meta/       各脚本共享的元数据（models_meta.json / platform_map.json 等）
-  config/     配置（分类规则等）
+  schemas/    数据契约（JSON Schema，由 lib/validate.py 校验）
 """
 import json
 import re
@@ -30,14 +30,14 @@ DATA_DIR = WORKSPACE_ROOT / '.github' / 'data'
 TEMPLATES_DIR = DATA_DIR / 'templates'
 KNOWLEDGE_DIR = DATA_DIR / 'knowledge'
 META_DIR = DATA_DIR / 'meta'
-CONFIG_DIR = DATA_DIR / 'config'
+SCHEMAS_DIR = DATA_DIR / 'schemas'
 
 # 语义目录名 -> 实际路径
 _CATEGORY_DIRS = {
     'templates': TEMPLATES_DIR,
     'knowledge': KNOWLEDGE_DIR,
     'meta': META_DIR,
-    'config': CONFIG_DIR,
+    'schemas': SCHEMAS_DIR,
 }
 
 

@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "roles.schema.json",
+  "title": "角色知识库 roles/*.json",
+  "description": "每个作品一个文件,内容为角色 cn/en 对照数组;由 kb_tool --build-kb 自动重建(manual 条目除外)。source 缺失按 auto 处理。",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["work", "cn", "en"],
+    "properties": {
+      "work": { "type": "string" },
+      "cn": { "type": "array", "items": { "type": "string" } },
+      "en": { "type": "array", "items": { "type": "string" } },
+      "source": { "enum": ["manual", "auto"] },
+      "note": { "type": "string" },
+      "skin": {
+        "description": "皮肤名(可选),支持多语言对象或数组",
+        "oneOf": [
+          { "type": "object", "additionalProperties": { "type": "array", "items": { "type": "string" } } },
+          { "type": "array", "items": { "type": "string" } }
+        ]
+      }
+    }
+  }
+}

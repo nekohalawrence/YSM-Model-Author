@@ -7,9 +7,18 @@
 | 目录 | 用途 | 当前文件 |
 | --- | --- | --- |
 | `templates/` | 网站 / README 等模板文件 | `website_template.html` |
-| `knowledge/` | 命名知识库（作品 / 角色 / 别名） | `works.json`、`aliases.json`、`roles/*.json` |
-| `meta/` | 各脚本共享的元数据 | `authors.json`、`models_meta.json`、`platform_map.json` |
-| `config/` | 配置（分类规则等） | `README.md` |
+| `knowledge/` | 命名知识库（作品 / 角色 / 别名） | `works.json`、`aliases.json`、`roles/*.json`、`merge_skips.json` |
+| `meta/` | 各脚本共享的元数据 | `authors.json`、`models_meta.json`（按需生成）、`platform_map.json` |
+| `schemas/` | 数据契约（JSON Schema） | `authors.schema.json` 等 7 个文件 |
+
+## 数据契约（schemas/）
+
+- 每份共享数据都有对应的 JSON Schema（`schemas/<数据名>.schema.json`），作为结构契约；
+  新增/修改数据文件须同步维护契约。
+- 用 `python .github/scripts/cli.py check`（内部经 `lib/validate.py`）校验全部数据；
+  schema 是数据格式的版本载体——结构变更时更新对应 `.schema.json` 并递增其语义版本。
+- `models_meta.json` 按需生成：无任何 co-creator 记录时文件不存在（读取方默认 `{}`），
+  `organize_models --apply` 归档到多作者模型时才写入。
 
 ## 约定
 

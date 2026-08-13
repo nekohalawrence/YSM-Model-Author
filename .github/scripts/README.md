@@ -5,12 +5,16 @@
 
 ```
 .github/scripts/
-├── lib/       公共库（paths / readme / models / previews）
-├── ingest/    入库归档
-├── naming/    命名与知识库
-└── publish/   作者索引 / README 生成 / 翻译 / 网站
+├── cli.py      统一命令行入口（人工使用，子命令转发到各脚本）
+├── pipeline.py 流程编排器（workflow 与本地共用）
+├── lib/        公共库（paths / readme / models / previews / validate）
+├── ingest/     入库归档
+├── naming/     命名与知识库
+└── publish/    作者索引 / README 生成 / 翻译 / 网站
 ```
 
+> 人工操作推荐统一走 `python .github/scripts/cli.py <子命令> [参数...]`（子命令见文末
+> "统一入口"），不用记脚本路径；`cli.py` 只做薄转发，行为与直接运行脚本一致。
 > 每个脚本顶部都带 sys.path 引导（把 `.github/scripts` 加回 import 路径），
 > 因此脚本在任何分类子目录下都能 `from lib import ...` 或跨分类 import（如
 > `rename_model_folders.py` → `from kb_tool import ...`）。
@@ -59,9 +63,11 @@
 | 目录 | 用途 | 文件 | 读写方 |
 | --- | --- | --- | --- |
 | `templates/` | 网站 / README 模板 | `website_template.html` | build_site.py |
-| `knowledge/` | 命名知识库 | `works.json`、`aliases.json`、`roles/*.json` | kb_tool.py（写）、rename_model_folders.py（经 kb_tool 读） |
-| `meta/` | 共享元数据 | `authors.json`（build_authors_index 写，5 个脚本读）、`models_meta.json`（organize_models 写 / generate_model_readmes 读）、`platform_map.json`（organize_models 读） | build_authors_index / organize_models / generate_model_readmes / format_author_readme / build_readme_authors |
-| `config/` | 配置（分类规则等） | `README.md`（占位） | 规划中 |
+| `knowledge/` | 命名知识库 | `works.json`、`aliases.json`、`merge_skips.json`、`roles/*.json` | kb_tool.py（写）、rename_model_folders.py（经 kb_tool 读） |
+| `meta/` | 共享元数据 | `authors.json`（build_authors_index 写，5 个脚本读）、`models_meta.json`（按需生成，organize_models 写 / generate_model_readmes 读）、`platform_map.json`（organize_models 读） | build_authors_index / organize_models / generate_model_readmes / format_author_readme / build_readme_authors |
+| `schemas/` | 数据契约（JSON Schema） | 7 个 `.schema.json` | lib/validate.py（校验，经 `cli.py check`） |
+
+> `config/` 已删除（曾为空占位目录，无真实配置；将来需要配置层时再建）。
 
 **作者数据规范**：`meta/authors.json` 是作者信息的唯一事实来源，结构为
 `{version, generated, authors: {编号: {name: [规范名, ...别名], readme, platforms}}}`；
@@ -75,6 +81,11 @@ Markdown 链接污染），其他脚本一律经 `lib.readme.load_authors_index(
 ## 四、调用关系
 
 ```
+cli.py（统一入口，薄转发）
+  ├─ organize / previews / rename-files / rename-folders / kb / authors
+  ├─ readmes / authors-list / format / translate / site / flow / check
+  └─ check ─→ lib/validate.py（数据契约校验）
+
 pipeline.py（编排器，workflow 与本地共用）
   ├─ inbox   ingest/organize_models.py(_Model-Inbox --apply)
   │            → publish/build_authors_index.py → publish/generate_model_readmes.py
@@ -92,9 +103,27 @@ organize_previews.py (--apply 后) ──→ publish/generate_model_readmes.py
 全部脚本 ──→ lib/*（公共库）
 ```
 
-## 五、遗留待办（不阻塞当前使用）
+## 五、统一入口（cli.py）
 
-1. **build_site.py** 已修复模板路径，但未被 workflow 调用，产出 `index.html` 未自动化。
+```
+python .github/scripts/cli.py --list              # 查看全部子命令
+python .github/scripts/cli.py <子命令> [参数...]   # 参数原样转发给目标脚本
+```
+
+| 子命令 | 目标脚本 |
+| --- | --- |
+| `organize` / `previews` / `rename-files` | ingest/* |
+| `rename-folders` / `kb` | naming/* |
+| `authors` / `readmes` / `authors-list` / `format` / `translate` / `site` | publish/* |
+| `flow` | pipeline.py（流程编排） |
+| `check` | lib/validate.py（数据契约校验） |
+
+## 六、遗留待办（不阻塞当前使用）
+
+1. **build_site.py** 模板路径已修复，但未被 workflow 调用，产出 `index.html` 未自动化；
+   需要时手动 `python .github/scripts/cli.py site`。
 2. workflow 的 `pipeline inbox` 不含文件夹重命名（重命名需人工 review）；
-   需要时手动 `python .github/scripts/pipeline.py rename`（先看 `--show KB` 输出）。
+   需要时手动 `python .github/scripts/cli.py rename-folders`（先看 `--show KB` 输出）。
+3. **数据契约校验（`cli.py check`）** 建议纳入 workflow（在发布前跑一次）或定期手动执行，
+   防止数据字段漂移；CI 已安装 jsonschema 依赖。
 

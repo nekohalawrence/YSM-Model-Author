@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "aliases.schema.json",
+  "title": "角色别名表 aliases.json",
+  "description": "角色别名 → 规范名对照,kb_tool 的 --alias 维护;source=manual 为手工条目(重建时不丢失),auto 为自动推导。",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["kind", "alias", "canonical", "work"],
+    "properties": {
+      "kind": { "enum": ["cn", "en"] },
+      "alias": { "type": "string" },
+      "canonical": { "type": "string" },
+      "work": { "type": "string" },
+      "source": { "enum": ["manual", "auto"] },
+      "note": { "type": "string" }
+    }
+  }
+}

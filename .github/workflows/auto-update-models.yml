@@ -29,15 +29,16 @@ jobs:
           python-version: '3.11'
 
       - name: Install Dependencies
-        run: pip install openai
+        run: pip install openai jsonschema
 
-      # 0. 由 pipeline.py 编排全部脚本：
+      # 0. 先校验数据契约(schemas/)，再编排全部脚本：
       #    - 若 _Model-Inbox 有新 .ysm：先归档（organize_models --apply），再全套刷新
       #    - 否则：全套刷新（作者数据 → 模型 README → 作者表 → 翻译）
       #    organize_models 只归档（默认不联动），后续步骤由 pipeline 顺序执行；
       #    文件夹重命名不在自动流程内（需人工 review，可手动跑 pipeline rename）。
-      - name: Step 0 - Organize inbox and refresh all
+      - name: Step 0 - Validate data, organize inbox and refresh all
         run: |
+          python .github/scripts/cli.py check
           if find _Model-Inbox -name '*.ysm' -print -quit | grep -q .; then
             python .github/scripts/pipeline.py inbox
           else

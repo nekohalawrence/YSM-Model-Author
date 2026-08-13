@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "works.schema.json",
+  "title": "作品表 works.json",
+  "description": "作品缩写 → 多语言名称。kb_tool 读写契约支持三种值写法:按语言分类对象(首选)、平铺字符串数组、空数组(占位)。",
+  "type": "object",
+  "additionalProperties": {
+    "oneOf": [
+      {
+        "type": "object",
+        "description": "按语言分类:en/cn/ja 等 → 名称数组",
+        "additionalProperties": { "type": "array", "items": { "type": "string" } }
+      },
+      { "type": "array", "items": { "type": "string" } }
+    ]
+  }
+}
