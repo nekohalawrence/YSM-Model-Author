@@ -32,7 +32,7 @@
 
 | 脚本 | 职责 | 调用方式 |
 | --- | --- | --- |
-| **kb_tool.py** | 命名知识库维护库：从文件夹名构建作品/角色/别名对照，读写 `data/knowledge/`；也是 rename_model_folders 的 import 核心库 | `--build-kb/--add/--alias/--del/--check/--suggest/--merge/--list` |
+| **kb_tool.py** | 命名知识库维护库：从文件夹名构建作品/角色/别名对照，读写 `data/model-info/`；也是 rename_model_folders 的 import 核心库 | `--build-kb/--add/--alias/--del/--check/--suggest/--merge/--list` |
 | **rename_model_folders.py** | 按知识库把模型文件夹重命名为 `<作品>_<中文角色>[-皮肤]_<英文角色>_<评级>`；`from kb_tool import` 复用知识库逻辑 | `[--apply] [--path]` |
 | **rename_model_files.py** | 按"文件夹名+变体+版本+副本序号"重命名模型文件（去评级后缀） | `[--apply] <路径>` |
 
@@ -40,7 +40,7 @@
 
 | 脚本 | 职责 | 调用方式 |
 | --- | --- | --- |
-| **author_index.py** | 生成集中作者数据 `.github/data/meta/authors.json`（编号→名称数组/平台），供各脚本统一读取；`--readme` 重建根 README 作者表 | `python .github/scripts/publish/author_index.py [--data|--readme] [--check]` |
+| **author_index.py** | 生成集中作者数据 `.github/data/author-info/authors.json`（编号→名称数组/平台），供各脚本统一读取；`--readme` 重建根 README 作者表 | `python .github/scripts/publish/author_index.py [--data|--readme] [--check]` |
 | **generate_model_readmes.py** | 为三个模型根下每个模型目录生成/重写英文模型 README（作者名读 authors.json，Co-creator 读 models_meta.json） | 无参运行 |
 | **format_author_readme.py** | 格式化作者级 README（Author/Co-creator 段规范化、Name 交叉链接、容器层级修复、重复 Author 段合并；Name 索引读 authors.json） | `[--check] <文件/目录/编号>`，无参=全量 |
 | **translate_readme.py** | 用 DeepSeek/OpenAI 增量翻译根 README → README-EN（保护作者表格区块） | 无参运行（需 API key） |
@@ -62,7 +62,8 @@
 | 目录 | 用途 | 文件 | 读写方 |
 | --- | --- | --- | --- |
 | `templates/` | 网站 / README 模板 | `website_template.html`、`model_readme.template.json`（模型 README 结构，由 _Template/ 转化） | build_site.py / generate_model_readmes.py |
-| `knowledge/` | 命名知识库 | `works.json`、`merge_skips.json`、`roles/*.json`（cn/en 数组，规范名 + 别名已并入）、`category_map.json`（作品→大类）、`role_terms.json`（角色术语） | kb_tool.py（写）、rename_model_folders.py（经 kb_tool 读）、generate_model_readmes.py / lib/terms.py（读） |
+| `author-info/` | 作者信息 | `authors.json`（编号→名称/平台）、`platform_map.json`（分类→平台键）、`role_terms.json`（角色术语）、`models_meta.json`（co-creator，按需生成） | author_index.py --data（写 authors.json）、organize_models.py（写 models_meta）、lib/readme.py / lib/terms.py / lib/ysm.py（读） |
+| `model-info/` | 模型信息 | `works.json`（作品表）、`character/*.json`（角色对照，cn/en 数组，规范名 + 别名已并入）、`merge_skips.json`、`category_map.json`（作品→大类） | kb_tool.py（写）、rename_model_folders.py（经 kb_tool 读）、generate_model_readmes.py（读 category_map） |
 | `meta/` | 共享元数据 | `authors.json`（author_index.py --data 写，5 个脚本读）、`models_meta.json`（按需生成）、`platform_map.json`（**分类为键 → 平台键列表为值**，lib/ysm 反查归类） | author_index.py --data / organize_models / generate_model_readmes / format_author_readme / author_index.py --readme / lib/ysm |
 | `schemas/` | 数据契约（JSON Schema） | 9 个 `.schema.json` | lib/validate.py（校验，经 `cli.py check`） |
 
@@ -74,7 +75,7 @@
 `author_index.py --data` 生成（自动清洗 Name 中的 Markdown 链接污染），其他脚本一律经
 `lib.readme.load_authors_index()` 读取（缺失时回退到各自旧扫描逻辑）。
 
-脚本统一通过 `lib.paths.data_path('meta', 'xxx.json')` 等读写，不得硬编码路径；
+脚本统一通过 `lib.paths.data_path('author-info'/'model-info', 'xxx.json')` 等读写，不得硬编码路径；
 存在 `root` 参数（如 `organize_models --root`）时数据路径优先跟随 root（测试/临时仓库场景）。
 
 ## 四、调用关系

@@ -7,7 +7,7 @@
   meta/authors.json         作者集中数据（name 数组 / role / platforms），author_index.py --data 生成
   meta/platform_map.json    平台分类映射 {分类: [平台键...]}（分类为键、平台键列表为值）
   meta/models_meta.json     模型 -> co-creator 作者列表（按需生成，无记录时文件不存在）
-  knowledge/category_map.json  作品缩写 -> 大类（Game/Anime/Music/Original/Other）
+  model-info/category_map.json  作品缩写 -> 大类（Game/Anime/Music/Original/Other）
   templates/model_readme.template.json  模型 README 结构模板（由 _Template/ 转化）
 
 模型 README 结构（按模板渲染）：
@@ -67,10 +67,10 @@ def load_template() -> dict:
 
 
 def load_category_map() -> dict[str, str]:
-    """读取作品大类映射（knowledge/category_map.json），展平为 作品缩写(小写) -> 大类。"""
+    """读取作品大类映射（model-info/category_map.json），展平为 作品缩写(小写) -> 大类。"""
     if not _CATEGORY_MAP:
         data = lib_paths.load_json(
-            lib_paths.data_path('knowledge', 'category_map.json'), {})
+            lib_paths.data_path('model-info', 'category_map.json'), {})
         for category, works in data.items():
             for w in works:
                 _CATEGORY_MAP[str(w).lower()] = str(category)
@@ -172,11 +172,11 @@ def collect_preview_images(model_dir: Path) -> list[Path]:
 # co-creator 数据（models_meta.json 优先，.ysm 解析兜底）
 # ---------------------------------------------------------------------------
 def load_models_meta() -> dict:
-    """读取 co-creator 元数据（.github/data/meta/models_meta.json），惰性缓存——
+    """读取 co-creator 元数据（author-info/models_meta.json），惰性缓存——
     全量扫描 1400+ 模型时避免每次调用都重复读文件。"""
     global _MODELS_META
     if _MODELS_META is None:
-        _MODELS_META = lib_paths.load_json(lib_paths.data_path('meta', 'models_meta.json'), {})
+        _MODELS_META = lib_paths.load_json(lib_paths.data_path('author-info', 'models_meta.json'), {})
     return _MODELS_META
 
 

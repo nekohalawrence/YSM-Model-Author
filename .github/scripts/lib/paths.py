@@ -1,10 +1,10 @@
 """仓库与数据路径的统一定位；.github/data 按语义目录组织（与脚本解耦）。
 
 数据目录规范（脚本不得按自身名字建子目录）：
-  templates/  网站/README 等模板文件
-  knowledge/  命名知识库（works.json / roles/）
-  meta/       各脚本共享的元数据（models_meta.json / platform_map.json 等）
-  schemas/    数据契约（JSON Schema，由 lib/validate.py 校验）
+  templates/   网站/README 等模板文件
+  author-info/ 作者信息（authors.json / platform_map.json / role_terms.json / models_meta.json）
+  model-info/  模型信息（works.json / merge_skips.json / category_map.json / character/ 角色对照）
+  schemas/     数据契约（JSON Schema，由 lib/validate.py 校验）
 """
 import json
 import re
@@ -28,21 +28,23 @@ def find_workspace_root() -> Path:
 WORKSPACE_ROOT = find_workspace_root()
 DATA_DIR = WORKSPACE_ROOT / '.github' / 'data'
 TEMPLATES_DIR = DATA_DIR / 'templates'
-KNOWLEDGE_DIR = DATA_DIR / 'knowledge'
-META_DIR = DATA_DIR / 'meta'
+AUTHOR_INFO_DIR = DATA_DIR / 'author-info'
+MODEL_INFO_DIR = DATA_DIR / 'model-info'
+CHARACTER_DIR = MODEL_INFO_DIR / 'character'
 SCHEMAS_DIR = DATA_DIR / 'schemas'
 
 # 语义目录名 -> 实际路径
 _CATEGORY_DIRS = {
     'templates': TEMPLATES_DIR,
-    'knowledge': KNOWLEDGE_DIR,
-    'meta': META_DIR,
+    'author-info': AUTHOR_INFO_DIR,
+    'model-info': MODEL_INFO_DIR,
+    'character': CHARACTER_DIR,
     'schemas': SCHEMAS_DIR,
 }
 
 
 def data_path(category: str, *parts: str) -> Path:
-    """返回语义目录下的数据路径，如 data_path('meta', 'models_meta.json')。"""
+    """返回语义目录下的数据路径，如 data_path('author-info', 'authors.json')。"""
     return _CATEGORY_DIRS[category].joinpath(*parts)
 
 

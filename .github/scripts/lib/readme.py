@@ -203,8 +203,8 @@ def build_authors_data(models_dir: Path, root_readme: Path) -> dict:
 
 
 def load_authors_index() -> dict:
-    """读取集中作者数据 .github/data/meta/authors.json；缺失/损坏返回空 dict。"""
-    return paths.load_json(paths.data_path('meta', 'authors.json'), {})
+    """读取集中作者数据 author-info/authors.json；缺失/损坏返回空 dict。"""
+    return paths.load_json(paths.data_path('author-info', 'authors.json'), {})
 
 
 def build_author_index(models_dir: Path, root_readme: Path) -> tuple[dict[str, str], dict[str, str]]:

@@ -2,7 +2,7 @@
 """角色术语规范化：把 .ysm 作者块的原始 Role 值（如 "Model author" / "动画" / "動作"）
 归一为标准术语（中英双语标签），统一同一内容的不同表达。
 
-数据：.github/data/knowledge/role_terms.json（{terms: [{key, cn, en, aliases}]}）。
+数据：author-info/role_terms.json（{terms: [{key, cn, en, aliases}]}）。
 用法：
   normalize_role("Model author, 动画") -> "#模型 #动画 | #Model #Animation"
 """
@@ -23,8 +23,8 @@ _ROLE_SPLIT_RE = re.compile(r'[,，、;；/|]+')
 
 
 def load_role_terms() -> dict:
-    """读取角色术语表（knowledge/role_terms.json）；缺失返回空 terms。"""
-    data = lib_paths.load_json(lib_paths.data_path('knowledge', 'role_terms.json'), {})
+    """读取角色术语表（author-info/role_terms.json）；缺失返回空 terms。"""
+    data = lib_paths.load_json(lib_paths.data_path('author-info', 'role_terms.json'), {})
     return data.get('terms') if isinstance(data, dict) else []
 
 

@@ -41,8 +41,8 @@ EXPORT_SECTION_RE = re.compile(r'\[ ?Export ?\]')
 def _meta_path(root: Path | None, fname: str) -> Path:
     """数据路径：优先跟随调用方 root（临时仓库/测试），否则用 lib 语义路径。"""
     if root and root != lib_paths.WORKSPACE_ROOT:
-        return root / '.github' / 'data' / 'meta' / fname
-    return lib_paths.data_path('meta', fname)
+        return root / '.github' / 'data' / 'author-info' / fname
+    return lib_paths.data_path('author-info', fname)
 
 
 # .ysm 元数据只位于 [Export] 段之前的文本头；大文件（数十 MB）的二进制区无需读取。

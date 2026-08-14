@@ -95,20 +95,20 @@ WINDOWS_RESERVED = {
 
 
 # ---------------------------------------------------------------------------
-# 平台信息与 models_meta 数据（外置于 .github/data/meta/）
+# 平台信息与 models_meta 数据（外置于 .github/data/author-info/）
 # ---------------------------------------------------------------------------
 def _meta_path(root: Path, fname: str) -> Path:
     """数据路径：优先跟随调用方 root（临时仓库/测试），否则用 lib 语义路径。"""
     if root and root != lib_paths.WORKSPACE_ROOT:
         return root / '.github' / 'data' / 'meta' / fname
-    return lib_paths.data_path('meta', fname)
+    return lib_paths.data_path('author-info', fname)
 
 
 
 
 
 def load_models_meta(root: Path) -> dict:
-    """读取 co-creator 元数据（.github/data/meta/models_meta.json）"""
+    """读取 co-creator 元数据（author-info/models_meta.json）"""
     return lib_paths.load_json(_meta_path(root, 'models_meta.json'), {})
 
 
@@ -348,7 +348,7 @@ def upsert_author_index(root: Path, author_id: str, block: dict) -> None:
     新作者归档时即时登记，后续脚本（audit 合并、README 生成）无需先跑
     build_authors_index 也能看到该作者。
     """
-    path = lib_paths.data_path('meta', 'authors.json')
+    path = lib_paths.data_path('author-info', 'authors.json')
     data = lib_paths.load_json(path, {})
     authors = data.setdefault('authors', {})
     if author_id in authors:

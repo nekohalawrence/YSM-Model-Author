@@ -49,16 +49,16 @@ def test_run_merge_survives_interrupt() -> tuple[bool, str]:
     """run_merge 阶段 2 确认时 Ctrl+C -> 优雅退出；先前的合并被保存。"""
     tmp = pathlib.Path(tempfile.mkdtemp(prefix="kb_test_"))
     try:
-        (tmp / "roles").mkdir(parents=True)
+        (tmp / "character").mkdir(parents=True)
         roles = [
             {"work": "BA", "cn": ["阿米娅"], "en": ["amiya"], "source": "manual"},
             {"work": "BA", "cn": ["阿米"], "en": ["a"], "source": "manual"},        # 子串重叠对 1
             {"work": "HSR", "cn": ["姬子"], "en": ["himeko"], "source": "manual"},
             {"work": "HSR", "cn": ["姬"], "en": ["h"], "source": "manual"},          # 子串重叠对 2
         ]
-        (tmp / "roles" / "BA.json").write_text(
+        (tmp / "character" / "BA.json").write_text(
             json.dumps([r for r in roles if r["work"] == "BA"], ensure_ascii=False), encoding="utf-8")
-        (tmp / "roles" / "HSR.json").write_text(
+        (tmp / "character" / "HSR.json").write_text(
             json.dumps([r for r in roles if r["work"] == "HSR"], ensure_ascii=False), encoding="utf-8")
         (tmp / "works.json").write_text("{}", encoding="utf-8")
 

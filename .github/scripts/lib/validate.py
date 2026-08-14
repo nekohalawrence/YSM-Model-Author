@@ -26,18 +26,18 @@ try:
 except ImportError:
     Draft7Validator = None  # type: ignore[assignment]
 
-# (schema 文件名, 数据相对 .github/data 的路径；roles 为目录通配)
+# (schema 文件名, 数据相对 .github/data 的路径；character 为目录通配)
 # 每个数据文件必须有 schema 契约；models_meta 可能不存在（按需生成），跳过不报错。
 CHECKS: list[tuple[str, str]] = [
-    ('authors.schema.json', 'meta/authors.json'),
-    ('works.schema.json', 'knowledge/works.json'),
-    ('merge_skips.schema.json', 'knowledge/merge_skips.json'),
-    ('category_map.schema.json', 'knowledge/category_map.json'),
-    ('role_terms.schema.json', 'knowledge/role_terms.json'),
-    ('platform_map.schema.json', 'meta/platform_map.json'),
-    ('models_meta.schema.json', 'meta/models_meta.json'),
+    ('authors.schema.json', 'author-info/authors.json'),
+    ('works.schema.json', 'model-info/works.json'),
+    ('merge_skips.schema.json', 'model-info/merge_skips.json'),
+    ('category_map.schema.json', 'model-info/category_map.json'),
+    ('role_terms.schema.json', 'author-info/role_terms.json'),
+    ('platform_map.schema.json', 'author-info/platform_map.json'),
+    ('models_meta.schema.json', 'author-info/models_meta.json'),
 ]
-ROLES_GLOB = 'knowledge/roles'
+ROLES_GLOB = 'model-info/character'
 
 
 def load_schema(schema_name: str) -> dict:

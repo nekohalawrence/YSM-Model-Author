@@ -72,7 +72,7 @@ def setup():
         shutil.copytree(REPO / ".github" / "data", ROOT / ".github" / "data")
 
     # 模拟作者库已与预置作者同步（集中数据 authors.json 是作者信息的唯一事实来源）
-    meta_dir = ROOT / ".github" / "data" / "meta"
+    meta_dir = ROOT / ".github" / "data" / "author-info"
     meta_dir.mkdir(parents=True, exist_ok=True)
     (meta_dir / "authors.json").write_text(
         json.dumps({
@@ -115,7 +115,7 @@ def main():
     checks.append((ROOT / "Models/0001/双模型作者/双模型作者.ysm").is_file())
     checks.append((ROOT / "Models/0002/双模型作者/双模型作者.ysm").is_file())
     # 3 models_meta 记录 co-creator（键 0001/多作者模型，B作者 带平台）
-    meta = json.loads((ROOT / ".github/data/meta/models_meta.json").read_text(encoding="utf-8"))
+    meta = json.loads((ROOT / ".github/data/author-info/models_meta.json").read_text(encoding="utf-8"))
     co1 = meta["0001/多作者模型"]["co_creators"]
     checks.append(any(c["name"] == "B作者" and c["role"] == "动画" for c in co1))
     b_platforms = next(c["platforms"] for c in co1 if c["name"] == "B作者")

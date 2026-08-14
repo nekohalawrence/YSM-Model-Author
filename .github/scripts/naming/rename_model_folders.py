@@ -21,11 +21,11 @@ previews/ 子目录及其 preview*.png 不会被当作目标；
   3. 中文皮肤（-太刀、-泳装、-原皮、-万圣节…）完整保留。
   4. 作品名前缀统一为规范缩写（含作品全称自动转缩写，如 Azur Lane -> AL）；
      无前缀时用对照数据库反查角色
-     （.github/data/knowledge/：works.json + aliases.json + roles/<作品>.json，
+     （.github/data/model-info/：works.json + character/<作品>.json，
      可直接用编辑器改；知识库由 kb_tool.py 统一维护）。
      唯一命中才填作品名，否则 Unknown；多候选冲突也标 Unknown 并提示。
   5. 知识库中 source="manual" 的手工条目在重建时保留，且优先于自动条目。
-     手工修改：直接编辑 .github/data/knowledge/ 下的 json 文件
+     手工修改：直接编辑 .github/data/model-info/ 下的 json 文件
      （roles/<作品>.json 等）。手改后无需任何命令，脚本下次运行即生效。
 
 默认 dry-run 只预览；加 --apply 才真正重命名。
@@ -55,7 +55,7 @@ previews/ 子目录及其 preview*.png 不会被当作目标；
     python .github/scripts/naming/rename_model_folders.py --show-all         # 显示全部条目
 
 维护说明：
-- 直接编辑 .github/data/knowledge/ 下的 json 文件即可增删改（手改即时生效）
+- 直接编辑 .github/data/model-info/ 下的 json 文件即可增删改（手改即时生效）
 - 也可以命令行：kb_tool.py --add 加角色 / --alias 加别名 / --del 删 / --list 看
 - 数据库为多文件结构：works.json（作品表）、aliases.json（别名）、
   roles/<作品>.json（按作品分文件存放角色，避免单文件过大）

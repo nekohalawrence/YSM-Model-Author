@@ -123,7 +123,7 @@ def reclassify(apply: bool) -> int:
         return len(issues)
 
     # 迁移 models_meta 键（B/xxx -> A/xxx）——先记录再移动
-    meta_path = lib_paths.data_path('meta', 'models_meta.json')
+    meta_path = lib_paths.data_path('author-info', 'models_meta.json')
     meta = lib_paths.load_json(meta_path, {})
     key_map: dict[str, str] = {}
     for it in issues:
@@ -292,7 +292,7 @@ def merge_authors(keep: str, drop: str, reason: str) -> str:
             results.append(f'[保留] Models/{drop} 仍有文件（未删除，需人工处理）')
 
     # 4. 迁移 models_meta 键 drop/xxx -> keep/xxx
-    meta_path = lib_paths.data_path('meta', 'models_meta.json')
+    meta_path = lib_paths.data_path('author-info', 'models_meta.json')
     meta = lib_paths.load_json(meta_path, {})
     migrated = 0
     for key in [k for k in meta if k.startswith(f'{drop}/')]:

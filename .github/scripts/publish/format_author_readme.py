@@ -425,7 +425,7 @@ def sync_authors_from_models(apply: bool = False) -> int:
     过滤后才作为候选。默认 dry-run 只报告；--apply 才写回 authors.json。
     返回更新的作者数。
     """
-    path = lib_paths.data_path('meta', 'authors.json')
+    path = lib_paths.data_path('author-info', 'authors.json')
     data = lib_paths.load_json(path, {})
     authors = data.get('authors') if isinstance(data, dict) else None
     if not authors:

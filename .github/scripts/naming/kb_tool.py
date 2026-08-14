@@ -3,9 +3,9 @@
 """
 YSM 模型知识库维护工具（本仓库专用）。
 
-知识库为外置多文件，位于 .github/data/knowledge/ 下：
+知识库为外置多文件，位于 .github/data/model-info/ 下：
     works.json         作品表（英文名/中文名/日文名，README.md 为权威源自动同步）
-    roles/<作品>.json  按作品分文件存放角色对照（cn/en 数组，规范名 + 别名）
+    character/<作品>.json  按作品分文件存放角色对照（cn/en 数组，规范名 + 别名）
 
 本脚本既是被 rename_model_folders.py 复用的知识库核心库，也可独立运行做维护。
 
@@ -16,12 +16,12 @@ YSM 模型知识库维护工具（本仓库专用）。
     python .github/scripts/naming/kb_tool.py --add        # 交互式添加手工对照条目
     python .github/scripts/naming/kb_tool.py --del        # 删除条目（搜索 -> 选 id）
     python .github/scripts/naming/kb_tool.py --check      # 数据质量检查
-    python .github/scripts/naming/kb_tool.py --suggest    # 疑似匹配建议（确认后并入 roles 数组）
+    python .github/scripts/naming/kb_tool.py --suggest    # 疑似匹配建议（确认后并入 character 数组）
     python .github/scripts/naming/kb_tool.py --merge      # 合并重复角色条目（交互确认）
     python .github/scripts/naming/kb_tool.py --list       # 查看数据库全部条目
 
 别名不再单独维护：直接并入角色条目的 cn/en 数组（规范名在首位），
---suggest 确认后写入对应 roles/<作品>.json。
+--suggest 确认后写入对应 character/<作品>.json。
 """
 from __future__ import annotations
 
@@ -42,8 +42,8 @@ from lib import paths as lib_paths
 
 REPO_ROOT = lib_paths.WORKSPACE_ROOT
 DEFAULT_ROOTS = [REPO_ROOT / "Models", REPO_ROOT / "Other-YSM-Models"]
-# 知识库统一存放于 .github/data/knowledge/（由 lib/paths.py 定位，与脚本解耦）
-KB_DEFAULT = lib_paths.KNOWLEDGE_DIR
+# 知识库统一存放于 .github/data/model-info/（由 lib/paths.py 定位，与脚本解耦）
+KB_DEFAULT = lib_paths.MODEL_INFO_DIR
 
 CJK_RE = re.compile(r"[\u4e00-\u9fff]")
 GRADE_RE = lib_models.GRADE_SUFFIX_RE
@@ -391,7 +391,7 @@ def load_kb_json(kb_path: Path) -> dict:
     data = {"version": 2, "works": {}, "roles": []}
     wf = kb_path / "works.json"
     old_single = kb_path / "ysm_kb.json"
-    if not wf.exists() and not (kb_path / "roles").exists() and old_single.exists():
+    if not wf.exists() and not (kb_path / "character").exists() and old_single.exists():
         # 尚未迁移：读旧单文件（避免手工条目丢失）
         try:
             d = json.loads(old_single.read_text(encoding="utf-8"))
@@ -406,7 +406,7 @@ def load_kb_json(kb_path: Path) -> dict:
             data["works"] = json.loads(wf.read_text(encoding="utf-8"))
         except (json.JSONDecodeError, OSError) as e:
             print(f"[warn] 忽略损坏文件 {wf}: {e}", file=sys.stderr)
-    rdir = kb_path / "roles"
+    rdir = kb_path / "character"
     roles: list = []
     if rdir.is_dir():
         for f in sorted(rdir.glob("*.json")):
@@ -419,7 +419,7 @@ def load_kb_json(kb_path: Path) -> dict:
 
 
 def save_kb_json(kb_path: Path, data: dict) -> None:
-    """写回知识库（多文件）：works.json + roles/<作品>.json。
+    """写回知识库（多文件）：works.json + character/<作品>.json。
 
     kb_path 为目录；若为旧单文件路径则以其父目录为数据根并迁移。
     """
@@ -492,8 +492,8 @@ def save_kb_json(kb_path: Path, data: dict) -> None:
                                   str(r.get("work", "")), str(r.get("cn", ""))))
     (kb_path / "works.json").write_text(
         json.dumps(data["works"], ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    # roles 按作品分组写 roles/<作品>.json（重建前清空旧文件）
-    rdir = kb_path / "roles"
+    # roles 按作品分组写 character/<作品>.json（重建前清空旧文件）
+    rdir = kb_path / "character"
     rdir.mkdir(exist_ok=True)
     for f in rdir.glob("*.json"):
         f.unlink()
@@ -504,7 +504,7 @@ def save_kb_json(kb_path: Path, data: dict) -> None:
         (rdir / f"{_safe_name(wk)}.json").write_text(
             json.dumps(lst, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     if old_single and old_single.exists():
-        print(f"已迁移为多文件结构（works.json / roles/*.json），"
+        print(f"已迁移为多文件结构（works.json / character/*.json），"
               f"旧 {old_single.name} 可删除")
 
 

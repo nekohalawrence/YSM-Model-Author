@@ -43,9 +43,9 @@ ROLES_HSR = [
 
 
 def make_kb(tmp: pathlib.Path) -> None:
-    (tmp / "roles").mkdir(parents=True)
-    (tmp / "roles" / "BA.json").write_text(json.dumps(ROLES_BA, ensure_ascii=False), encoding="utf-8")
-    (tmp / "roles" / "HSR.json").write_text(json.dumps(ROLES_HSR, ensure_ascii=False), encoding="utf-8")
+    (tmp / "character").mkdir(parents=True)
+    (tmp / "character" / "BA.json").write_text(json.dumps(ROLES_BA, ensure_ascii=False), encoding="utf-8")
+    (tmp / "character" / "HSR.json").write_text(json.dumps(ROLES_HSR, ensure_ascii=False), encoding="utf-8")
     (tmp / "works.json").write_text(json.dumps(WORKS, ensure_ascii=False), encoding="utf-8")
 
 

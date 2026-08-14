@@ -26,7 +26,7 @@ from lib import readme as lib_readme  # noqa: E402
 
 WORKSPACE_ROOT = lib_paths.WORKSPACE_ROOT
 MODELS_DIR = WORKSPACE_ROOT / 'Models'
-DATA_TARGET = lib_paths.data_path('meta', 'authors.json')
+DATA_TARGET = lib_paths.data_path('author-info', 'authors.json')
 FOLDER_RE = re.compile(r'^(\d{4})$')
 
 
