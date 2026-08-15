@@ -1,12 +1,10 @@
-[
-  {
-    "work": "Tenshi",
-    "cn": [
-      "白雪乃爱"
-    ],
-    "en": [
-      "shirayuki-noa"
-    ],
-    "source": "auto"
-  }
-]
+{
+  "work": {
+    "name": "Tenshi",
+    "en": ["Tenshi Souzou", "Tenshi"],
+    "zh": ["天使嚣嚣"],
+    "ja": ["天使騒々 RE‑BIRTH!"],
+    "category": "Game"
+  },
+  "roles": [{"zh": ["白雪乃爱"], "en": ["shirayuki-noa"]}]
+}

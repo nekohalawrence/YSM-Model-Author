@@ -1,14 +1,10 @@
-[
-  {
-    "work": "LCOD",
-    "cn": [
-      "小鸟游六花",
-      "六花"
-    ],
-    "en": [
-      "takanashi-rikka",
-      "Chuunibyou_Takanashi-Rikka"
-    ],
-    "source": "auto"
-  }
-]
+{
+  "work": {
+    "name": "LCOD",
+    "en": ["Love", "Chunibyo & Other Delusions", "LCOD"],
+    "zh": ["中二病でも恋がしたい！"],
+    "ja": ["中二病也要谈恋爱！"],
+    "category": "Anime"
+  },
+  "roles": [{"zh": ["小鸟游六花", "六花"], "en": ["takanashi-rikka", "Chuunibyou_Takanashi-Rikka"]}]
+}

@@ -1,12 +1,9 @@
-[
-  {
-    "work": "AH",
-    "cn": [
-      "舞伶"
-    ],
-    "en": [
-      "wuling"
-    ],
-    "source": "auto"
-  }
-]
+{
+  "work": {
+    "name": "AH",
+    "en": ["Atomic-Heart", "AH"],
+    "zh": ["原子之心"],
+    "category": "Game"
+  },
+  "roles": [{"zh": ["舞伶"], "en": ["wuling"]}]
+}

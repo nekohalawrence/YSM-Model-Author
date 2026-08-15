@@ -1,22 +1,10 @@
-[
-  {
-    "work": "PTE",
-    "cn": [
-      "PIPI美"
-    ],
-    "en": [
-      "pipimi"
-    ],
-    "source": "auto"
+{
+  "work": {
+    "name": "PTE",
+    "en": ["Pop Team Epic", "PTE"],
+    "zh": ["pop 子和 pipi 美的日常"],
+    "ja": ["ポプテピピック"],
+    "category": "Anime"
   },
-  {
-    "work": "PTE",
-    "cn": [
-      "POP子"
-    ],
-    "en": [
-      "popuko"
-    ],
-    "source": "auto"
-  }
-]
+  "roles": [{"zh": ["PIPI美"], "en": ["pipimi"]}, {"zh": ["POP子"], "en": ["popuko"]}]
+}

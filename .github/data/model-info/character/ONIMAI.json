@@ -1,12 +1,10 @@
-[
-  {
-    "work": "ONIMAI",
-    "cn": [
-      "绪山真寻"
-    ],
-    "en": [
-      "mahiro"
-    ],
-    "source": "auto"
-  }
-]
+{
+  "work": {
+    "name": "ONIMAI",
+    "en": ["Onii-chan wa Oshimai!", "ONIMAI"],
+    "zh": ["别当欧尼酱了！"],
+    "ja": ["お兄ちゃんはおしまい！"],
+    "category": "Anime"
+  },
+  "roles": [{"zh": ["绪山真寻"], "en": ["mahiro"]}]
+}

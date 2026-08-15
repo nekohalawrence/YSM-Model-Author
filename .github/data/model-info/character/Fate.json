@@ -1,12 +1,10 @@
-[
-  {
-    "work": "Fate",
-    "cn": [
-      "伊莉雅丝菲尔"
-    ],
-    "en": [
-      "illyasviel"
-    ],
-    "source": "auto"
-  }
-]
+{
+  "work": {
+    "name": "Fate",
+    "en": ["Fate/kaleid liner", "Fate"],
+    "zh": ["魔法少女☆伊莉雅"],
+    "ja": ["プリズマ☆イリヤ）"],
+    "category": "Anime"
+  },
+  "roles": [{"zh": ["伊莉雅丝菲尔"], "en": ["illyasviel"]}]
+}

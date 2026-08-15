@@ -1,12 +1,9 @@
-[
-  {
-    "work": "Myth",
-    "cn": [
-      "耶梦加得"
-    ],
-    "en": [
-      "jormungand"
-    ],
-    "source": "auto"
-  }
-]
+{
+  "work": {
+    "name": "Myth",
+    "en": ["Myth"],
+    "zh": ["神话"],
+    "category": "Other"
+  },
+  "roles": [{"zh": ["耶梦加得"], "en": ["jormungand"]}]
+}

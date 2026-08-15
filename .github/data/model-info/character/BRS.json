@@ -1,12 +1,10 @@
-[
-  {
-    "work": "BRS",
-    "cn": [
-      "黑岩射手"
-    ],
-    "en": [
-      "black-rock-shooter"
-    ],
-    "source": "auto"
-  }
-]
+{
+  "work": {
+    "name": "BRS",
+    "en": ["Black Rock Shooter", "BRS"],
+    "zh": ["黑岩射手"],
+    "ja": ["ブラック★ロックシューター"],
+    "category": "Game"
+  },
+  "roles": [{"zh": ["黑岩射手"], "en": ["black-rock-shooter"]}]
+}

@@ -1,33 +1,9 @@
-[
-  {
-    "work": "AstralParty",
-    "cn": [
-      "太刀使"
-    ],
-    "en": [
-      "misaki"
-    ],
-    "source": "auto"
+{
+  "work": {
+    "name": "AstralParty",
+    "zh": ["吉星派对", "星引擎 Party"],
+    "en": ["Astral Party", "Astral-Party", "AstralParty"],
+    "category": "Game"
   },
-  {
-    "work": "AstralParty",
-    "cn": [
-      "网络魅影",
-      "南希露"
-    ],
-    "en": [
-      "nancylu"
-    ],
-    "source": "auto"
-  },
-  {
-    "work": "AstralParty",
-    "cn": [
-      "芬妮"
-    ],
-    "en": [
-      "fanny"
-    ],
-    "source": "auto"
-  }
-]
+  "roles": [{"zh": ["太刀使"], "en": ["misaki"]}, {"zh": ["网络魅影", "南希露"], "en": ["nancylu"]}, {"zh": ["芬妮"], "en": ["fanny"]}]
+}

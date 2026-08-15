@@ -1,12 +1,9 @@
-[
-  {
-    "work": "NC",
-    "cn": [
-      "芙洛伦"
-    ],
-    "en": [
-      "florence"
-    ],
-    "source": "auto"
-  }
-]
+{
+  "work": {
+    "name": "NC",
+    "en": ["Girls' Frontline: Neural Cloud", "Project Neural Cloud", "NC"],
+    "zh": ["少女前线：云图计划"],
+    "category": "Game"
+  },
+  "roles": [{"zh": ["芙洛伦"], "en": ["florence"]}]
+}

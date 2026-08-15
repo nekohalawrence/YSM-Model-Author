@@ -1,22 +1,9 @@
-[
-  {
-    "work": "Frieren",
-    "cn": [
-      "芙莉莲"
-    ],
-    "en": [
-      "frieren"
-    ],
-    "source": "auto"
+{
+  "work": {
+    "name": "Frieren",
+    "en": ["Frieren-Beyond-Journey's-End", "Frieren"],
+    "zh": ["葬送的芙莉莲"],
+    "category": "Anime"
   },
-  {
-    "work": "Frieren",
-    "cn": [
-      "菲伦"
-    ],
-    "en": [
-      "fern"
-    ],
-    "source": "auto"
-  }
-]
+  "roles": [{"zh": ["芙莉莲"], "en": ["frieren"]}, {"zh": ["菲伦"], "en": ["fern"]}]
+}

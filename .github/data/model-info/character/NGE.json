@@ -1,12 +1,9 @@
-[
-  {
-    "work": "NGE",
-    "cn": [
-      "明日香"
-    ],
-    "en": [
-      "asuka"
-    ],
-    "source": "auto"
-  }
-]
+{
+  "work": {
+    "name": "NGE",
+    "zh": ["新世纪福音战士"],
+    "en": ["Neon-Genesis-Evangelion", "NGE", "EVA"],
+    "category": "Game"
+  },
+  "roles": [{"zh": ["明日香"], "en": ["asuka"]}]
+}

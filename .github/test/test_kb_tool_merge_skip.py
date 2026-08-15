@@ -19,26 +19,26 @@ import tempfile
 sys.stdout.reconfigure(encoding='utf-8')
 
 REPO = pathlib.Path(__file__).resolve().parents[2]
-KB_TOOL = REPO / ".github" / "scripts" / "naming" / "kb_tool.py"
+SCRIPTS = REPO / ".github" / "scripts"
 
-_spec = importlib.util.spec_from_file_location("kb_tool", str(KB_TOOL))
-kb = importlib.util.module_from_spec(_spec)
-_spec.loader.exec_module(kb)
+# kb_tool.py 已并入 rename_model_folders，统一从 lib.kb 子包导入
+sys.path.insert(0, str(SCRIPTS))
+import lib.kb as kb
 
 WORKS = {
-    "BA": {"cn": ["碧蓝档案"], "en": ["Blue Archive"]},
-    "HSR": {"cn": ["崩坏：星穹铁道"], "en": ["Honkai Star Rail"]},
+    "BA": {"zh": ["碧蓝档案"], "en": ["Blue Archive"]},
+    "HSR": {"zh": ["崩坏：星穹铁道"], "en": ["Honkai Star Rail"]},
 }
 
 # 两对子串重叠（cn/en 无完全相等，不会进阶段 1 自动合并）
 ROLES_BA = [
-    {"work": "BA", "cn": ["槌永日和"], "en": ["tsuchinaga-hiyori"], "source": "manual"},
-    {"work": "BA", "cn": ["空崎日奈", "日奈"],
+    {"work": "BA", "zh": ["槌永日和"], "en": ["tsuchinaga-hiyori"], "source": "manual"},
+    {"work": "BA", "zh": ["空崎日奈", "日奈"],
      "en": ["new_sorasaki-hina", "sorasaki-hina", "hina"], "source": "manual"},
 ]
 ROLES_HSR = [
-    {"work": "HSR", "cn": ["三月七"], "en": ["march7th"], "source": "manual"},
-    {"work": "HSR", "cn": ["三月"], "en": ["march"], "source": "manual"},
+    {"work": "HSR", "zh": ["三月七"], "en": ["march7th"], "source": "manual"},
+    {"work": "HSR", "zh": ["三月"], "en": ["march"], "source": "manual"},
 ]
 
 

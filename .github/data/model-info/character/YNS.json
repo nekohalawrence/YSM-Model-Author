@@ -1,12 +1,10 @@
-[
-  {
-    "work": "YNS",
-    "cn": [
-      "春日野穹"
-    ],
-    "en": [
-      "kasugano-sora"
-    ],
-    "source": "auto"
-  }
-]
+{
+  "work": {
+    "name": "YNS",
+    "en": ["Yosuga no Sora", "YNS"],
+    "zh": ["缘之空"],
+    "ja": ["ヨスガノソラ"],
+    "category": "Anime"
+  },
+  "roles": [{"zh": ["春日野穹"], "en": ["kasugano-sora"]}]
+}

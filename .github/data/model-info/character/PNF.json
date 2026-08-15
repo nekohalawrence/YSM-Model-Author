@@ -1,12 +1,10 @@
-[
-  {
-    "work": "PNF",
-    "cn": [
-      "鸭嘴兽泰瑞"
-    ],
-    "en": [
-      "perry-the-platypus"
-    ],
-    "source": "auto"
-  }
-]
+{
+  "work": {
+    "name": "PNF",
+    "en": ["Phineas and Ferb", "PNF"],
+    "zh": ["飞哥与小佛"],
+    "ja": ["フィニアスとファーブ"],
+    "category": "Anime"
+  },
+  "roles": [{"zh": ["鸭嘴兽泰瑞"], "en": ["perry-the-platypus"]}]
+}

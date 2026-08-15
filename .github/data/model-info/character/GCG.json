@@ -1,12 +1,10 @@
-[
-  {
-    "work": "GCG",
-    "cn": [
-      "时无瑕"
-    ],
-    "en": [
-      "shi-wuxia"
-    ],
-    "source": "auto"
-  }
-]
+{
+  "work": {
+    "name": "GCG",
+    "en": ["Girl Cafe Gun", "GCG"],
+    "zh": ["双生视界", "少女咖啡槍II"],
+    "ja": ["ガルカフェ"],
+    "category": "Game"
+  },
+  "roles": [{"zh": ["时无瑕"], "en": ["shi-wuxia"]}]
+}

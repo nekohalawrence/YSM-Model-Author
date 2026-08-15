@@ -1,12 +1,6 @@
-[
-  {
-    "work": "SP",
-    "cn": [
-      "阿尔法零"
-    ],
-    "en": [
-      "alphazero"
-    ],
-    "source": "auto"
-  }
-]
+{
+  "work": {
+    "name": "SP"
+  },
+  "roles": [{"zh": ["阿尔法零"], "en": ["alphazero"]}]
+}

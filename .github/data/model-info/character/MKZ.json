@@ -1,12 +1,9 @@
-[
-  {
-    "work": "MKZ",
-    "cn": [
-      "琉璃川"
-    ],
-    "en": [
-      "rurikawa-tsubaki"
-    ],
-    "source": "auto"
-  }
-]
+{
+  "work": {
+    "name": "MKZ",
+    "en": ["MorotsuiKizoku", "MKZ"],
+    "zh": ["没落贵族琉璃川椿"],
+    "category": "Anime"
+  },
+  "roles": [{"zh": ["琉璃川"], "en": ["rurikawa-tsubaki"]}]
+}

@@ -1,12 +1,10 @@
-[
-  {
-    "work": "TFD",
-    "cn": [
-      "我妻由乃"
-    ],
-    "en": [
-      "gasai-yuno"
-    ],
-    "source": "auto"
-  }
-]
+{
+  "work": {
+    "name": "TFD",
+    "en": ["The Future Diary", "TFD"],
+    "zh": ["未来日记"],
+    "ja": ["未来日記"],
+    "category": "Anime"
+  },
+  "roles": [{"zh": ["我妻由乃"], "en": ["gasai-yuno"]}]
+}

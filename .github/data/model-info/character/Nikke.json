@@ -1,44 +1,9 @@
-[
-  {
-    "work": "Nikke",
-    "cn": [
-      "桃乐丝"
-    ],
-    "en": [
-      "dorothy-doro",
-      "Doro"
-    ],
-    "source": "auto"
+{
+  "work": {
+    "name": "Nikke",
+    "zh": ["胜利女神：妮姬"],
+    "en": ["Goddess of Victory: Nikke", "Nikke"],
+    "category": "Game"
   },
-  {
-    "work": "Nikke",
-    "cn": [
-      "灰姑娘"
-    ],
-    "en": [
-      "cinderella"
-    ],
-    "source": "auto"
-  },
-  {
-    "work": "Nikke",
-    "cn": [
-      "爱丽丝"
-    ],
-    "en": [
-      "alice"
-    ],
-    "source": "auto"
-  },
-  {
-    "work": "Nikke",
-    "cn": [
-      "玛丽安"
-    ],
-    "en": [
-      "marian",
-      "modernia"
-    ],
-    "source": "auto"
-  }
-]
+  "roles": [{"zh": ["桃乐丝"], "en": ["dorothy-doro", "Doro"]}, {"zh": ["灰姑娘"], "en": ["cinderella"]}, {"zh": ["爱丽丝"], "en": ["alice"]}, {"zh": ["玛丽安"], "en": ["marian", "modernia"]}]
+}

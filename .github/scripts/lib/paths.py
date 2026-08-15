@@ -3,7 +3,7 @@
 数据目录规范（脚本不得按自身名字建子目录）：
   templates/   网站/README 等模板文件
   author-info/ 作者信息（authors.json / platform_map.json / role_terms.json / models_meta.json）
-  model-info/  模型信息（works.json / merge_skips.json / category_map.json / character/ 角色对照）
+  model-info/  模型信息（character/ 作品知识库（合并格式）/ merge_skips.json / skin_tags.json / variant_tags.json）
   schemas/     数据契约（JSON Schema，由 lib/validate.py 校验）
 """
 import json

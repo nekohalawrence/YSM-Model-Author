@@ -1,12 +1,10 @@
-[
-  {
-    "work": "HLP",
-    "cn": [
-      "伊卡洛斯"
-    ],
-    "en": [
-      "ikaros"
-    ],
-    "source": "auto"
-  }
-]
+{
+  "work": {
+    "name": "HLP",
+    "en": ["Heaven's Lost Property", "HLP"],
+    "zh": ["天降之物"],
+    "ja": ["そらのおとしもの"],
+    "category": "Anime"
+  },
+  "roles": [{"zh": ["伊卡洛斯"], "en": ["ikaros"]}]
+}

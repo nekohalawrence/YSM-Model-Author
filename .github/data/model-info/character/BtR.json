@@ -1,46 +1,9 @@
-[
-  {
-    "work": "BtR",
-    "cn": [
-      "伊地知虹夏"
-    ],
-    "en": [
-      "nijika-ijichi"
-    ],
-    "source": "auto"
+{
+  "work": {
+    "name": "BtR",
+    "zh": ["孤独摇滚！"],
+    "en": ["Bocchi-the-Rock!", "BtR"],
+    "category": "Anime"
   },
-  {
-    "work": "BtR",
-    "cn": [
-      "后藤一里",
-      "波奇酱"
-    ],
-    "en": [
-      "gotoh-hitori",
-      "hitori-goto"
-    ],
-    "source": "auto"
-  },
-  {
-    "work": "BtR",
-    "cn": [
-      "喜多郁代"
-    ],
-    "en": [
-      "kita-ikuyo"
-    ],
-    "source": "auto"
-  },
-  {
-    "work": "BtR",
-    "cn": [
-      "酸甜凉",
-      "山田凉",
-      "凉爷"
-    ],
-    "en": [
-      "ryou-yamada"
-    ],
-    "source": "auto"
-  }
-]
+  "roles": [{"zh": ["伊地知虹夏"], "en": ["nijika-ijichi"]}, {"zh": ["后藤一里", "波奇酱"], "en": ["gotoh-hitori", "hitori-goto"]}, {"zh": ["喜多郁代"], "en": ["kita-ikuyo"]}, {"zh": ["酸甜凉", "山田凉", "凉爷"], "en": ["ryou-yamada"]}]
+}

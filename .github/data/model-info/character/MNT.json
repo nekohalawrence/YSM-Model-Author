@@ -1,13 +1,10 @@
-[
-  {
-    "work": "MNT",
-    "cn": [
-      "伊蕾娜"
-    ],
-    "en": [
-      "elaina",
-      "new_elaina"
-    ],
-    "source": "auto"
-  }
-]
+{
+  "work": {
+    "name": "MNT",
+    "zh": ["魔女之旅"],
+    "en": ["Wandering Witch: The Journey of Elaina", "Wandering Witch", "WanderingWitch", "Majo no Tabitabi"],
+    "ja": ["魔女の旅々"],
+    "category": "Anime"
+  },
+  "roles": [{"zh": ["伊蕾娜"], "en": ["elaina"]}]
+}

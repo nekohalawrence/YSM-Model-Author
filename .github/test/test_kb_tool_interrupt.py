@@ -22,12 +22,10 @@ sys.stdout.reconfigure(encoding='utf-8')
 
 REPO = pathlib.Path(__file__).resolve().parents[2]      # .github/test -> 仓库根
 SCRIPTS = REPO / ".github" / "scripts"
-KB_TOOL = SCRIPTS / "naming" / "kb_tool.py"
 
-# 加载 kb_tool 模块（其顶层会把 .github/scripts 加入 sys.path 以导入 lib/）
-_spec = importlib.util.spec_from_file_location("kb_tool", str(KB_TOOL))
-kb = importlib.util.module_from_spec(_spec)
-_spec.loader.exec_module(kb)
+# kb_tool.py 已并入 rename_model_folders，统一从 lib.kb 子包导入
+sys.path.insert(0, str(SCRIPTS))
+import lib.kb as kb
 
 
 def test_ask_returns_q_on_keyboard_interrupt() -> bool:
@@ -51,10 +49,10 @@ def test_run_merge_survives_interrupt() -> tuple[bool, str]:
     try:
         (tmp / "character").mkdir(parents=True)
         roles = [
-            {"work": "BA", "cn": ["阿米娅"], "en": ["amiya"], "source": "manual"},
-            {"work": "BA", "cn": ["阿米"], "en": ["a"], "source": "manual"},        # 子串重叠对 1
-            {"work": "HSR", "cn": ["姬子"], "en": ["himeko"], "source": "manual"},
-            {"work": "HSR", "cn": ["姬"], "en": ["h"], "source": "manual"},          # 子串重叠对 2
+            {"work": "BA", "zh": ["阿米娅"], "en": ["amiya"], "source": "manual"},
+            {"work": "BA", "zh": ["阿米"], "en": ["a"], "source": "manual"},        # 子串重叠对 1
+            {"work": "HSR", "zh": ["姬子"], "en": ["himeko"], "source": "manual"},
+            {"work": "HSR", "zh": ["姬"], "en": ["h"], "source": "manual"},          # 子串重叠对 2
         ]
         (tmp / "character" / "BA.json").write_text(
             json.dumps([r for r in roles if r["work"] == "BA"], ensure_ascii=False), encoding="utf-8")

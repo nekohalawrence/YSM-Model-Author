@@ -1,22 +1,9 @@
-[
-  {
-    "work": "UT",
-    "cn": [
-      "加坦杰厄娘"
-    ],
-    "en": [
-      "gatanothor"
-    ],
-    "source": "auto"
+{
+  "work": {
+    "name": "UT",
+    "en": ["Ultraman Tiga", "Ultraman", "UT"],
+    "zh": ["奥特曼", "迪迦奥特曼"],
+    "category": "Anime"
   },
-  {
-    "work": "UT",
-    "cn": [
-      "杰顿"
-    ],
-    "en": [
-      "zetton"
-    ],
-    "source": "auto"
-  }
-]
+  "roles": [{"zh": ["加坦杰厄娘"], "en": ["gatanothor"]}, {"zh": ["杰顿"], "en": ["zetton"]}]
+}

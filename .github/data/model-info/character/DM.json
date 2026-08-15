@@ -1,12 +1,6 @@
-[
-  {
-    "work": "DM",
-    "cn": [
-      "玛露西尔"
-    ],
-    "en": [
-      "marcille"
-    ],
-    "source": "auto"
-  }
-]
+{
+  "work": {
+    "name": "DM"
+  },
+  "roles": [{"zh": ["玛露西尔"], "en": ["marcille"]}]
+}

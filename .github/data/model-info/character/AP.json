@@ -1,12 +1,9 @@
-[
-  {
-    "work": "AP",
-    "cn": [
-      "诺诺"
-    ],
-    "en": [
-      "nono"
-    ],
-    "source": "auto"
-  }
-]
+{
+  "work": {
+    "name": "AP",
+    "en": ["Azur-Promilia", "AP"],
+    "zh": ["蓝色星原"],
+    "category": "Game"
+  },
+  "roles": [{"zh": ["诺诺"], "en": ["nono"]}]
+}

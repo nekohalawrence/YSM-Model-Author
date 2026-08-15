@@ -1,12 +1,10 @@
-[
-  {
-    "work": "JJK",
-    "cn": [
-      "宿傩"
-    ],
-    "en": [
-      "ryomen-sukuna"
-    ],
-    "source": "auto"
-  }
-]
+{
+  "work": {
+    "name": "JJK",
+    "en": ["Jujutsu Kaisen", "JJK"],
+    "zh": ["咒术回战"],
+    "ja": ["呪術廻戦"],
+    "category": "Anime"
+  },
+  "roles": [{"zh": ["宿傩"], "en": ["ryomen-sukuna"]}]
+}

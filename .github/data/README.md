@@ -8,8 +8,8 @@
 | --- | --- | --- |
 | `templates/` | 网站 / README 等模板文件 | `website_template.html`、`model_readme.template.json` |
 | `author-info/` | 作者信息（作者数据 / 平台映射 / 角色术语） | `authors.json`、`platform_map.json`、`role_terms.json`、`models_meta.json`（按需生成） |
-| `model-info/` | 模型信息（作品表 / 角色对照 / 分类 / 合并跳过） | `works.json`、`character/*.json`、`merge_skips.json`、`category_map.json` |
-| `schemas/` | 数据契约（JSON Schema） | 8 个 `.schema.json`（新增数据须同步补契约） |
+| `model-info/` | 模型信息（作品知识库 / 皮肤词表 / 合并跳过） | `character/*.json`（合并格式：作品元数据 + 角色）、`merge_skips.json`、`skin_tags.json`、`variant_tags.json` |
+| `schemas/` | 数据契约（JSON Schema） | 7 个 `.schema.json`（新增数据须同步补契约） |
 
 ## 数据契约（schemas/）
 
@@ -23,8 +23,8 @@
 ## 约定
 
 - 脚本统一通过 `scripts/lib/paths.py` 的 `data_path(category, *parts)` 读写数据，不得硬编码路径。
-  类别名即目录名：`data_path('author-info', 'authors.json')`、`data_path('model-info', 'works.json')`、
-  `data_path('character', 'BA.json')`（= `model-info/character/BA.json`）。
+  类别名即目录名：`data_path('author-info', 'authors.json')`、`data_path('model-info', 'character', 'BA.json')`
+  （= `model-info/character/BA.json`）。
 - 新增数据先判断属于哪类语义，再放入对应目录；无法归类时先讨论，不要新建脚本名目录。
 
 ## 各数据文件的生成与调用
@@ -33,9 +33,7 @@
 | --- | --- | --- | --- |
 | `author-info/authors.json` | `author_index.py --data`（手动或 workflow Step1） | `organize_models.py`、`generate_model_readmes.py`、`format_author_readme.py`、`author_index.py --readme`（经 `lib/readme.py`） | 集中作者数据：编号 → 名称数组 / README 路径 / Role / 平台链接 |
 | `author-info/models_meta.json` | `organize_models.py`（`--apply` 归档时，幂等） | `generate_model_readmes.py`（`get_co_creators`）、`audit_models.py`（合并作者时迁移键） | 模型 → co-creator 作者列表（含平台信息） |
-| `model-info/works.json` | `kb_tool.py --build-kb`（自动从 README.md 同步，README 为作品名称权威源） | `kb_tool.py` → `rename_model_folders.py` | 作品表（en/cn/ja 名称 → 作品键） |
-| `model-info/character/*.json` | `kb_tool.py --build-kb`（按作品分文件） | `kb_tool.py`（`load_kb_json`）→ `rename_model_folders.py` | 角色对照（cn/en 数组，首项为规范名；**别名已并入数组，不再单独维护**） |
-| `model-info/category_map.json` | 手工维护 | `generate_model_readmes.py`（`get_category_tag`） | 作品缩写 → 大类（Game/Anime/Music/Original/Other），模型 README 的 **Category** 标签 |
+| `model-info/character/*.json` | `02_rename_model_files&folders.py`（`--roles`/`--add-work` 交互维护，纯手工，无 source 键） | `02_rename_model_files&folders.py`（经 lib/kb `load_kb_json`）、`generate_model_readmes.py`（Game 标签 + Category 现算）、`audit_models.py`（无分类报告） | **合并格式**：作品键 → 作品元数据（en/cn/ja 名称 + category 大类：字符串=单分类 / 数组=多分类）+ `roles`（cn/en 数组，首项为规范名；**别名已并入数组；无自动构建**）；作品数据权威源，**无独立 works.json** |
 | `author-info/role_terms.json` | 手工维护（可按需补充别名） | `lib/terms.py`（`normalize_role`）→ `generate_model_readmes.py` | 角色术语表：.ysm 原始 Role 的异表达 → 标准中英术语 |
 | `author-info/platform_map.json` | 手工维护 | `lib/ysm.py`（`map_platforms`）→ `organize_models.py` / `generate_model_readmes.py` | 平台分类映射：**分类（键）→ 平台键列表（值）**，反查归类，未命中归 OtherPlatform |
 
@@ -67,8 +65,8 @@
 由 `_Template/`（作者元信息 + 平台分类 + Role）转化的结构化模板驱动，`generate_model_readmes.py` 渲染：
 
 - `# <模型名>` → `## Model Details`（`<details>` 内）
-  - `- **Category**: #大类`（`model-info/category_map.json`，Game/Anime/Music/Original/Other）
-  - `  - **Game**: #作品标签`（主 README 模型分类区块，缩进为 Category 子项）
+  - `- **Category**: #大类`（从 `model-info/character/*.json` 的 category 现算，支持多分类多标签如 `#Anime #Manga #Novel`；不再有 category_map.json）
+  - `  - **Game**: #作品标签`（`model-info/character/*.json`，自动生成；不再读取根 README 模型分类区块）
   - `## Author`：Name（authors.json 全别名 `|` 连接）/ Role（作者 README 标准格式）/ 平台分类段（authors.json platforms 经 platform_map 反查分类，链接子行）
   - `## Co-creator`：同 Author 结构；数据来自 author-info/models_meta.json，无记录时解析 .ysm 兜底；Role 经 `lib/terms.py` 术语表归一（如 `动画`→`#动画 | #Animation`）
 - `## Preview Images`（独立 `<details open>`，预览图区块标记保持不变）

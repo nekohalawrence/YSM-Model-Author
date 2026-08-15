@@ -11,10 +11,10 @@
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["key", "cn", "en", "aliases"],
+        "required": ["key", "zh", "en", "aliases"],
         "properties": {
           "key": { "type": "string" },
-          "cn": { "type": "string" },
+          "zh": { "type": "string" },
           "en": { "type": "string" },
           "aliases": { "type": "array", "items": { "type": "string" }, "minItems": 1 }
         }

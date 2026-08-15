@@ -1,22 +1,9 @@
-[
-  {
-    "work": "LOL",
-    "cn": [
-      "格温"
-    ],
-    "en": [
-      "gwen"
-    ],
-    "source": "auto"
+{
+  "work": {
+    "name": "LOL",
+    "en": ["League of Legends", "LOL"],
+    "zh": ["英雄联盟"],
+    "category": "Game"
   },
-  {
-    "work": "LOL",
-    "cn": [
-      "破败之王"
-    ],
-    "en": [
-      "viego"
-    ],
-    "source": "auto"
-  }
-]
+  "roles": [{"zh": ["格温"], "en": ["gwen"]}, {"zh": ["破败之王"], "en": ["viego"]}]
+}

@@ -1,23 +1,9 @@
-[
-  {
-    "work": "Snowbreak",
-    "cn": [
-      "卜卜"
-    ],
-    "en": [
-      "bubu"
-    ],
-    "source": "auto"
+{
+  "work": {
+    "name": "Snowbreak",
+    "zh": ["尘白禁区"],
+    "en": ["Snowbreak: Containment Zone", "snowbreak"],
+    "category": "Game"
   },
-  {
-    "work": "Snowbreak",
-    "cn": [
-      "里芙无限之视",
-      "里芙"
-    ],
-    "en": [
-      "reeve"
-    ],
-    "source": "auto"
-  }
-]
+  "roles": [{"zh": ["卜卜"], "en": ["bubu"]}, {"zh": ["里芙无限之视", "里芙"], "en": ["reeve"]}]
+}

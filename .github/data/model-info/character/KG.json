@@ -1,12 +1,10 @@
-[
-  {
-    "work": "KG",
-    "cn": [
-      "阿尔维娜酱"
-    ],
-    "en": [
-      "arvina_chan"
-    ],
-    "source": "auto"
-  }
-]
+{
+  "work": {
+    "name": "KG",
+    "en": ["Kemomimi Gakuen", "KG"],
+    "zh": ["兽耳学园", "兽耳学院"],
+    "ja": ["ケモミミ学園"],
+    "category": "Other"
+  },
+  "roles": [{"zh": ["阿尔维娜酱"], "en": ["arvina_chan"]}]
+}

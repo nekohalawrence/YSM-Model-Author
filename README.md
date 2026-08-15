@@ -86,7 +86,7 @@
 | 0073 | [#MicroCraft_](.../../Models/0073) | 3 |
 | 0074 | [#Killot](.../../Models/0074) | 19 |
 | 0075 | [#Wadanohara_Rika](.../../Models/0075) | 1 |
-| 0076 | [#White_clams白蛤蜊](.../../Models/0076) | 15 |
+| 0076 | [#White_clams白蛤蜊](.../../Models/0076) | 16 |
 | 0077 | [#旭门只玩驹](.../../Models/0077) | 2 |
 | 0078 | [#LuXi233](.../../Models/0078) | 10 |
 | 0079 | [#小多利鸭](.../../Models/0079) | 1 |
@@ -112,7 +112,7 @@
 | 0099 | [#Dumnheint](.../../Models/0099) | 1 |
 | 0100 | [#京泉](.../../Models/0100) | 1 |
 | 0101 | [#獒子coco](.../../Models/0101) | 3 |
-| 0102 | [#Dreamer #普通的木屐](.../../Models/0102) | 28 |
+| 0102 | [#Dreamer #普通的木屐](.../../Models/0102) | 29 |
 | 0103 | [#浅陌菌](.../../Models/0103) | 20 |
 | 0104 | [#科列夫斯基](.../../Models/0104) | 1 |
 | 0105 | [#超级大鸡腿丶](.../../Models/0105) | 5 |
@@ -196,7 +196,7 @@
 | 0186 | [暂无](.../../Models/0186) | 0 |
 | 0187 | [#爱听书的旅人](.../../Models/0187) | 1 |
 | 0188 | [#鸢尾](.../../Models/0188) | 1 |
-| 0189 | [#TIS长夜孤星](.../../Models/0189) | 1 |
+| 0189 | [#TIS长夜孤星](.../../Models/0189) | 2 |
 | 0190 | [#奈忒倪](.../../Models/0190) | 1 |
 | 0191 | [#新隆肰懿](.../../Models/0191) | 1 |
 | 0192 | [#苏瑞铃](.../../Models/0192) | 2 |
@@ -205,8 +205,12 @@
 
 </details>
 
+<!-- WORKS_CATEGORY_START -->
 <details>
+
 <summary>模型分类</summary>
+
+> 本区块由 `.github/data/model-info/character/*.json` 自动生成（`rename_model_files&folders.py --build-category-map`），手改请编辑对应作品文件。
 
 > 文件夹命名规则
 
@@ -218,139 +222,182 @@
 
 ## 游戏
 
-- ‑as the Night's, Reincarnation‑, Sakura Moyu | 樱花摸鱼, 樱花、萌放 | さくら、もゆ
 - 300 Heroes, 300-Heroes | 300 英雄 | 300 ヒーローズ
+- Atomic-Heart, AH | 原子之心
 - Arknights, AK | 明日方舟
 - Arknights-Endfield, AKE | 明日方舟：终末地
-- Ash-Arms | 灰烬战线
-- Astral Party, Astral-Party, AstralParty | 吉星派对, 星引擎 Party
-- Atomic-Heart, AH | 原子之心
 - Azur-Lane, AL | 碧蓝航线
 - Azur-Promilia, AP | 蓝色星原
-- Battlefield-1, BF-1 | 战地 -1
+- Alchemy Stars, AS | 白夜极光 | 白夜極光
+- White Eternity, AstralAir no Shiroki Eien, ASE | 星辰恋曲的白色永恒 | アストラエアの白き永遠
+- Ash-Arms | 灰烬战线
+- Astral Party, Astral-Party, AstralParty | 吉星派对, 星引擎 Party
 - Blue-Archive, BA | 碧蓝档案, 蔚蓝档案
+- Battlefield-1, BF-1 | 战地-1
+- Blue Protocol, BP | 蓝色协议 | ブループロトコル
 - Black Rock Shooter, BRS | 黑岩射手 | ブラック★ロックシューター
+- THE IDOLM@STER Cinderella Girls, CGSS | 偶像大师 灰姑娘女孩 | アイドルマスター シンデレラガールズ
 - Command & Conquer, CNC | 命令与征服
-- Command-&-Conquer: Red-Alert-2, Red-Alert-2, RA2 | 命令与征服：红色警戒 2
-- Command-&-Conquer: Red-Alert-3, Red-Alert-3, RA3 | 命令与征服：红色警戒 3
-- Command & Conquer Generals: Zero Hour, Zero Hour, ZH | 命令与征服：绝命时刻
-- Delta Force, Delta-Force | 三角洲行动
+- D4DJ: Groovy Mix, D4DJ | D4DJ | D4DJ Groovy Mix
+- Doki-Doki-Literature-Club!, DDLC | 心跳文学部！
 - Dead or Alive, DOA | 死或生
 - Dohna Dohna: Let's Do Bad Things Together, DOHNA | 多娜多娜 一起干坏事吧！ | ドーナドーナ いっしょにわるいことしよう
-- Doki-Doki-Literature-Club!, DDLC | 心跳文学部！
+- Delta Force, Delta-Force | 三角洲行动
 - Fate-Grand-Order, FGO | 命运 - 冠位指定
 - Food Girls | 食用系少女
-- Fox Hime Zero, FHZ
-- Honkai-Impact-3, HI3 | 崩坏 3
-- Honkai-Star-Rail, HSR | 崩坏：星穹铁道
-- Hyperdimension Neptunia, HDN | 超次元游戏
-- Identity V, Identity-V | 第五人格
-- Genshin Impact, Genshin, GI | 原神
 - Girl Cafe Gun, GCG | 双生视界, 少女咖啡槍II | ガルカフェ
 - Girls' Frontline, GF | 少女前线
 - GIRLS' FRONTLINE 2:EXILIUM, GF2 | 少女前线 2：追放, 少女前线 2, 少前 2：追放
-- Girls' Frontline: Neural Cloud, Project Neural Cloud, NC | 少女前线：云图计划
-- Goddess of Victory: Nikke, Nikke | 胜利女神：妮姬
+- Genshin Impact, Genshin, GI | 原神
 - Granblue Fantasy: Relink, GBR, Granblue | 碧蓝幻想：RELINK
+- Hyperdimension Neptunia, HDN | 超次元游戏
+- Honkai-Impact-3, HI3 | 崩坏 3
+- Wish upon a shooting star, Hoshizora no Memoria, HNM | 星空的记忆 | 星空のメモリア
+- Honkai-Star-Rail, HSR | 崩坏：星穹铁道
+- Infinity Nikki, IN | 无限暖暖
+- Identity V, Identity-V | 第五人格
+- Limbus Company, LC | 边狱巴士, 边狱公司
+- Love Live! School Idol Festival, LL | Love Live! 学园偶像祭 | ラブライブ！スクールアイドルフェスティバル
 - League of Legends, LOL | 英雄联盟
 - Library of Ruina, LOR | 废墟图书馆
-- Limbus Company, LC | 边狱巴士, 边狱公司
+- Love and Deepspace, LaDS | 恋与深空
 - Magical Girl Celesphonia, MGC | 魔法少女天穹法妮雅 | 魔法少女セレスフォニア
 - Magical Girl Witch Trial, MGWT | 魔法少女的魔女审判 | 魔法少女ノ魔女裁判
+- Majsoul, MJ | 雀魂麻将, 雀魂 | 雀魂
 - Magia Record: Puella Magi Madoka Magica Side Story, Magia-Record | 魔法纪录 魔法少女小圆外传 | マギアレコード 魔法少女まどか☆マギカ外伝
 - MiSide | 米塔
+- Minecraft | 我的世界
 - NARUTO, Naruto Shippuden, NAR | 火影忍者: 疾风传
-- Needy Girl Overdos, NEO | 主播女孩重度依赖 | ニーディーガール・オーバードーズ
+- Girls' Frontline: Neural Cloud, Project Neural Cloud, NC | 少女前线：云图计划
 - NEKOPARA | 巧克力与香子兰, 猫娘乐园 | ネコぱら
+- Needy Girl Overdos, Needy Girl Overdose, NEO, NGO | 主播女孩重度依赖 | ニーディーガール・オーバードーズ
 - Neon-Genesis-Evangelion, NGE, EVA | 新世纪福音战士
 - Neverness to Everness, NTE | 异环
+- Goddess of Victory: Nikke, Nikke | 胜利女神：妮姬
+- Onmyoji, ONM | 阴阳师 | 陰陽師
+- Princess Connect! Re:Dive, PCR | 公主连结Re:Dive | プリンセスコネクト！Re:Dive
+- Punishing: Gray Raven | 战双帕弥什
+- Project Sekai, ProSeka | 世界计划 彩色舞台 feat. 初音未来 | プロジェクトセカイ カラフルステージ！ feat. 初音ミク
+- Path to Nowhere, PtN | 无期迷途
+- Reverse: 1999, R1999 | 重返未来：1999
+- Tom Clancy's Rainbow Six Siege, R6S | 彩虹六号：围攻
+- Command-&-Conquer: Red-Alert-2, Red-Alert-2, RA2 | 命令与征服：红色警戒 2
+- Command-&-Conquer: Red-Alert-3, Red-Alert-3, RA3 | 命令与征服：红色警戒 3
 - Senren＊Banka, SENREN | 千恋＊万花 | せんれん＊ばんか
-- Snowbreak: Containment Zone, snowbreak | 尘白禁区
 - SPY×FAMILY | 间谍过家家
+- ‑as the Night's, Reincarnation‑, Sakura Moyu | 樱花摸鱼, 樱花、萌放 | さくら、もゆ
+- THE IDOLM@STER Shiny Colors, ShinyColors | 偶像大师 闪耀色彩 | アイドルマスター シャイニーカラーズ
+- Snowbreak: Containment Zone, snowbreak | 尘白禁区
+- Revue Starlight, Starlight | 少女☆歌剧 Revue Starlight | 少女☆歌劇 レヴュースタァライト
 - Strinova | 卡拉比丘
 - Sun Shower | 天气雨 | 天気雨（てんきあめ / Tenkiame）
 - Teaching Feeling, TF | 奴隶少女希尔薇
-- Tenshi Souzou, Tenshi | 天使嚣嚣 | 天使騒々 RE‑BIRTH!
-- Tom Clancy's Rainbow Six Siege, R6S | 彩虹六号：围攻
 - Twinkle Star Knights, TSK | 闪耀星骑士 | ティンクルスターナイツ
-- Undertale | 传说之下
+- Tenshi Souzou, Tenshi | 天使嚣嚣 | 天使騒々 RE‑BIRTH!
+- Tower of Fantasy, ToF | 幻塔
 - Umamusume: Pretty Derby, UmaMusume, UM | 闪耀！优俊少女, 赛马娘
-- White Eternity, AstralAir no Shiroki Eien, ASE | 星辰恋曲的白色永恒 | アストラエアの白き永遠
-- Wish upon a shooting star, Hoshizora no Memoria, HNM | 星空的记忆 | 星空のメモリア
+- Undertale | 传说之下
 - Wuthering-Waves, WuWa, WW | 鸣潮
-- Yog-Sothoth's Yard, YogYard | 犹格索托斯的庭院：炼金旅社
+- Yog-Sothoth's Yard, YogYard, YGYST | 犹格索托斯的庭院：炼金旅社
+- Command & Conquer Generals: Zero Hour, Zero Hour, ZH | 命令与征服：绝命时刻
 - Zenless-Zone-Zero, ZZZ | 绝区零
 
-## 动画/漫画/小说
+## 动画
 
-- A Certain Magical Index, Toaru Majutsu no Index, TMNI | 魔法禁书目录, 某魔法的禁书目录 | とある魔術の禁書目録
-- ATRI -My Dear Moments-, AIRI | 亚托莉‑我挚爱的时光‑ | ATRI ‑My Dear Moments‑
-- BanG Dream! It's MyGO!!!!!, MyGO | 迷途之子！！！！！
+- The Quintessential Quintuplets, 5Toubun | 五等分的新娘 | 五等分の花嫁
+- 86 -Eighty Six-, 86 | 86 -不存在的战区- | 86―エイティシックス―
+- ATRI -My Dear Moments-, ATRI, AIRI | 亚托莉‑我挚爱的时光‑ | ATRI ‑My Dear Moments‑
+- Attack on Titan, AoT | 进击的巨人 | 進撃の巨人
 - BanG Dream! Ave Mujica, AveMujica | 颂乐人偶
 - Bocchi-the-Rock!, BtR | 孤独摇滚！
+- Chainsaw Man, CSM | 链锯人, 电锯人 | チェンソーマン
 - Cardcaptor Sakura, Cardcaptor | 魔卡少女樱, 百变小樱 | カードキャプターさくら
 - Date A Live, DAL | 约会大作战 | デート・ア・ライブ
-- Dragon Raja, DR | 龙族
 - Dungeon & Fighter, DNF, DFO | 地下城与勇士
-- Fate/kaleid liner, Fate | 魔法少女☆伊莉雅 | プリズマ☆イリヤ）
+- Dragon Raja, DR | 龙族
+- Demon Slayer, Kimetsu no Yaiba, DS | 鬼灭之刃 | 鬼滅の刃
+- Cyberpunk: Edgerunners | 赛博朋克：边缘行者
 - Fox-Spirit-Matchmaker, FSM | 狐妖小红娘
+- Fate/kaleid liner, Fate | 魔法少女☆伊莉雅 | プリズマ☆イリヤ）
 - Frieren-Beyond-Journey's-End, Frieren | 葬送的芙莉莲
 - Girls Band Cry, GBC | 哭泣少女乐队
 - Gonna Be the Twin‑Tail!!, Ore, Twintail ni Narimasu., GBTT | 我要成为双马尾！ | 俺、ツインテールになります。
+- Girls' Last Tour, GLT | 少女终末旅行 | 少女終末旅行
+- Mobile Suit Gundam, Gundam | 机动战士高达 | 機動戦士ガンダム
 - Heaven's Lost Property, HLP | 天降之物 | そらのおとしもの
 - How Not to Summon a Demon Lord, HNTSADL | 异界少女召唤术, 异世界魔王与召唤少女的奴隶魔术 | 異世界魔王と召喚少女の奴隷魔術
 - Jujutsu Kaisen, JJK | 咒术回战 | 呪術廻戦
+- Kaguya-sama: Love Is War, Kaguya | 辉夜大小姐想让我告白 | かぐや様は告らせたい
+- My Dress-Up Darling, MDUD, Kisekoi | 更衣人偶坠入爱河, 恋上换装娃娃 | その着せ替え人形は恋をする
 - KonoSuba: God's Blessing on This Wonderful World!, Kono Subarashii Sekai ni Shukufuku wo!, KonoSuba, KON | 为美好的世界献上祝福！ | この素晴らしい世界に祝福を！
+- The Apothecary Diaries, Kusuriya | 药屋少女的呢喃 | 薬屋のひとりごと
 - Love, Chunibyo & Other Delusions, LCOD | 中二病でも恋がしたい！ | 中二病也要谈恋爱！
+- Lycoris Recoil, LR | 莉可丽丝 | リコリス・リコイル
 - LoveMe | 枫与铃 | らぶみー♡
-- Majo no Tabitabim, MNT | 魔女之旅 | 魔女の旅々, まじょのたびたび
 - Make Heroine ga Oosugiru!, MHO | 負けヒロインが多すぎる！
-- Mato Seihei no Sureibu, MSNS | 魔都精兵的奴隶 | 魔都精兵のスレイブ
 - Miss Kobayashi's Dragon Maidm, MKDM | 小林家的龙女仆 | 小林さんちのメイドラゴン
 - MorotsuiKizoku, MKZ | 没落贵族琉璃川椿
-- MushokuTensei | 无职转生～到了异世界就拿出真本事～ | 無職転生 ～異世界行ったら本気だす～
-- My Dress-Up Darling, MDUD, Kisekoi | 更衣人偶坠入爱河, 恋上换装娃娃 | その着せ替え人形は恋をする
-- Onii-chan wa Oshimai!, ONIMAI | 别当欧尼酱了！ | お兄ちゃんはおしまい！
-- Phineas and Ferb, PNF | 飞哥与小佛 | フィニアスとファーブ
-- Plants vs. Zombies, PVZ | 植物大战僵尸
-- Pop Team Epic, PTE | pop 子和 pipi 美的日常 | ポプテピピック
+- Wandering Witch: The Journey of Elaina, Wandering Witch, WanderingWitch, Majo no Tabitabi | 魔女之旅 | 魔女の旅々
+- Mato Seihei no Sureibu, MSNS | 魔都精兵的奴隶 | 魔都精兵のスレイブ
 - Puella Magi Madoka Magica, PMMM, Madoka | 魔法少女小圆 | 魔法少女まどか☆マギカ
+- MushokuTensei | 无职转生～到了异世界就拿出真本事～ | 無職転生 ～異世界行ったら本気だす～
+- BanG Dream! It's MyGO!!!!!, MyGO | 迷途之子！！！！！
+- Onii-chan wa Oshimai!, ONIMAI | 别当欧尼酱了！ | お兄ちゃんはおしまい！
+- Oshi no Ko, OnK | 我推的孩子 | 【推しの子】
+- Phineas and Ferb, PNF | 飞哥与小佛 | フィニアスとファーブ
+- Pop Team Epic, PTE | pop 子和 pipi 美的日常 | ポプテピピック
+- Plants vs. Zombies, PVZ | 植物大战僵尸
 - Rascal Does Not Dream, RDND | 青春猪头少年系列 | 青春ブタ野郎はバニーガール先輩の夢を見ない, 青春ブタ野郎シリーズ
-- Redo of Healer, ROH | 回复术士的重启人生 | 回復術士のやり直し
 - Reverend Insanity, RI | 蛊真人
+- Redo of Healer, ROH | 回复术士的重启人生 | 回復術士のやり直し
+- Re:Zero | Re:从零开始的异世界生活
 - Ringing Fate, Ringing-Fate | 命运拳台
+- Sword Art Online, Sōdo Āto Onrain, SAO | 刀剑神域 | ソードアート・オンライン
+- The Lonely Snow Widow and the Cursed Ring, The Shy Snow Woman and the Cursed Ring, SSW | 不擅长人际交往的未亡人雪女与诅咒之戒 | 人付き合いが苦手な未亡人の雪女さんと呪いの指輪
+- Summer Time Rendering, STR | 夏日重现 | サマータイムレンダ
 - Saekano: How to Raise a Boring Girlfriend, SAEKANO | 路人女主的养成方法
 - Steins;Gate, Steins-Gate | 命运石之门 | シュタインズ・ゲート
-- Sword Art Online, Sōdo Āto Onrain, SAO | 刀剑神域 | ソードアート・オンライン
 - The Future Diary, TFD | 未来日记 | 未来日記
-- The Lonely Snow Widow and the Cursed Ring, The Shy Snow Woman and the Cursed Ring, SSW | 不擅长人际交往的未亡人雪女与诅咒之戒 | 人付き合いが苦手な未亡人の雪女さんと呪いの指輪
+- A Certain Magical Index, Toaru Majutsu no Index, TMNI | 魔法禁书目录, 某魔法的禁书目录 | とある魔術の禁書目録
+- That Time I Got Reincarnated as a Slime, Tensura | 关于我转生变成史莱姆这档事 | 転生したらスライムだった件
 - To LOVE Ru, To-LOVE-Ru | 出包王女 | To LOVE る - とらぶる -
 - Tokyo Ghoul, Tokyo-Ghoul | 东京食尸鬼 | 東京喰種トーキョーグール
 - Ultraman Tiga, Ultraman, UT | 奥特曼, 迪迦奥特曼
-- Wandering Witch: The Journey of Elaina, Majo no Tabitabi | 魔女之旅 | 魔女の旅々
+- Violet Evergarden, VE | 紫罗兰永恒花园 | ヴァイオレット・エヴァーガーデン
 - Yosuga no Sora, YNS | 缘之空 | ヨスガノソラ
 
-## 艺术家
+## 音乐
 
-- GuLuco
-- HarukaC
-- Mochiyama Kingyo | もち山金魚
-- naga u, Naga-u | ながユー
+- CeVIO | CeVIO | セヴィオ
+- DeepVocal, DV | DeepVocal
+- Hololive, Holo | hololive | ホロライブ
+- Kizuna AI, KAI | 绊爱 | キズナアイ
+- NEUTRINO | NEUTRINO
+- NIJISANJI, Niji | 彩虹社 | にじさんじ
+- Synthesizer V, SynthV | Synthesizer V | シンセサイザーV
+- Utauloid, UTAU | 虚拟歌手, 术力口
+- VOCALOID, VOC | 博歌乐, V 家, 术力口, 虚拟歌手, 虚拟歌姬
+- VShojo | VShojo
+- Virtual YouTuber, VTuber | 虚拟主播 | バーチャルユーチューバー
+
+## 原创
+
+- Original Character, OC | 原创角色
 
 ## 其他
-- Animal | 动物 
+
+- Animal | 动物
 - Kemomimi Gakuen, KG | 兽耳学园, 兽耳学院 | ケモミミ学園
 - Meme | 模因
+- Mochiyama Kingyo | もち山金魚
 - Myth | 神话
-- Original Character, OC | 原创角色
-- the Three Kingdoms period, TTKP
+- naga u, Naga-u | ながユー
 - Touhou-Project, TH, TOUHOU | 东方 Project
-- Utauloid, UTAU | 虚拟歌手, 术力口
-- Virtual YouTuber, VTuber | 虚拟主播 | バーチャルユーチューバー
-- Virtual Streamer, VStreamer
-- VOCALOID, VOC | 博歌乐, V 家, 术力口, 虚拟歌手, 虚拟歌姬
+- Unknown | 未知
 
 </details>
+<!-- WORKS_CATEGORY_END -->
+
 
 <details>
 

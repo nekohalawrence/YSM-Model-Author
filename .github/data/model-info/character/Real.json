@@ -1,12 +1,6 @@
-[
-  {
-    "work": "Real",
-    "cn": [
-      "美依礼芽"
-    ],
-    "en": [
-      "maria"
-    ],
-    "source": "auto"
-  }
-]
+{
+  "work": {
+    "name": "Real"
+  },
+  "roles": [{"zh": ["美依礼芽"], "en": ["maria"]}]
+}

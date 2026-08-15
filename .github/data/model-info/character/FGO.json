@@ -1,62 +1,9 @@
-[
-  {
-    "work": "FGO",
-    "cn": [
-      "卫宫士郎"
-    ],
-    "en": [
-      "emiya"
-    ],
-    "source": "auto"
+{
+  "work": {
+    "name": "FGO",
+    "zh": ["命运 - 冠位指定"],
+    "en": ["Fate-Grand-Order", "FGO"],
+    "category": "Game"
   },
-  {
-    "work": "FGO",
-    "cn": [
-      "妖精骑士·兰斯洛特"
-    ],
-    "en": [
-      "fairy-knight-lancelot"
-    ],
-    "source": "auto"
-  },
-  {
-    "work": "FGO",
-    "cn": [
-      "格蕾"
-    ],
-    "en": [
-      "gray"
-    ],
-    "source": "auto"
-  },
-  {
-    "work": "FGO",
-    "cn": [
-      "贞德"
-    ],
-    "en": [
-      "joan-of-arc"
-    ],
-    "source": "auto"
-  },
-  {
-    "work": "FGO",
-    "cn": [
-      "间桐樱"
-    ],
-    "en": [
-      "sakurafate"
-    ],
-    "source": "auto"
-  },
-  {
-    "work": "FGO",
-    "cn": [
-      "阿尔托莉雅・潘德拉贡"
-    ],
-    "en": [
-      "saber-artoria-pendragon"
-    ],
-    "source": "auto"
-  }
-]
+  "roles": [{"zh": ["卫宫士郎"], "en": ["emiya"]}, {"zh": ["妖精骑士·兰斯洛特"], "en": ["fairy-knight-lancelot"]}, {"zh": ["格蕾"], "en": ["gray"]}, {"zh": ["贞德"], "en": ["joan-of-arc"]}, {"zh": ["间桐樱"], "en": ["sakurafate"]}, {"zh": ["阿尔托莉雅・潘德拉贡"], "en": ["saber-artoria-pendragon"]}]
+}

@@ -1,0 +1,102 @@
+name: Auto Refresh Model Docs & Index
+
+concurrency:
+  group: readme-auto-updates-${{ github.ref }}
+  cancel-in-progress: false
+
+on:
+  push:
+    paths:
+      - 'Models/**'
+      - 'Blockbench-Models/**'
+      - 'Other-YSM-Models/**'
+      - 'README.md'
+      - '_Model-Inbox/**'          # 推送新模型到 _Model-Inbox 时也触发（Step 0 归档）
+  workflow_dispatch:
+
+jobs:
+  update-all:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Dependencies
+        run: pip install -r .github/requirements.txt
+
+      # 0. 先跑仓库回归测试（.github/test/），防止脚本改动破坏现有行为
+      - name: Step 0 - Run regression tests
+        run: |
+          python .github/test/verify_real_samples.py
+          python .github/test/check_newline.py
+          python .github/test/test_kb_resolve.py
+          python .github/test/test_kb_tool_merge_skip.py
+          python .github/test/test_kb_tool_interrupt.py
+          python .github/test/test_rename_interactive.py
+          python .github/test/test_multi_author_e2e.py
+
+      # 1. 数据契约校验（始终执行，质量门禁不省略）
+      - name: Step 1 - Validate data
+        run: python .github/scripts/cli.py check
+
+      # 2. 变更检测：对比本次 push 前后改了哪些路径，决定跑哪些脚本（方案 A）。
+      #    - inbox:  推了 _Model-Inbox/** → 归档 + 全套刷新（flow inbox）
+      #    - docs:   推了 Models/** / Blockbench-Models/** / Other-YSM-Models/** / README.md
+      #              → 全套刷新（flow full，不含归档）
+      #    - 均无 → 仅校验，跳过自动刷新（如手动改 README 错别字、workflow_dispatch）
+      #    文件夹重命名不在自动流程内（需人工 review，可手动跑 cli.py flow rename）。
+      - name: Step 2 - Detect changed paths
+        id: detect
+        run: |
+          BEFORE="${{ github.event.before }}"
+          CHANGED=""
+          if [ -n "$BEFORE" ] && [ "$BEFORE" != "0000000000000000000000000000000000000000" ]; then
+            CHANGED=$(git diff --name-only "$BEFORE" "${{ github.sha }}")
+          else
+            # workflow_dispatch 或仓库首次 push（before 为全 0）：对比最近一次提交
+            CHANGED=$(git diff --name-only HEAD~1 HEAD 2>/dev/null || true)
+          fi
+          echo "inbox=$(printf '%s\n' "$CHANGED" | grep -c '^_Model-Inbox/' || true)" >> "$GITHUB_OUTPUT"
+          echo "docs=$(printf '%s\n' "$CHANGED" | grep -cE '^(Models/|Blockbench-Models/|Other-YSM-Models/|README\.md)' || true)" >> "$GITHUB_OUTPUT"
+
+      # 3a. 推了新模型到 inbox → 归档 + 全套刷新（顺序在同一 workflow 内完成）
+      - name: Step 3a - Inbox archive & refresh
+        if: steps.detect.outputs.inbox != '0'
+        run: python .github/scripts/cli.py flow inbox
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+
+      # 3b. 模型/文档有变更但无 inbox → 全套刷新（作者数据 → 模型 README → 作者表 → 翻译）
+      - name: Step 3b - Refresh docs & index
+        if: steps.detect.outputs.inbox == '0' && steps.detect.outputs.docs != '0'
+        run: python .github/scripts/cli.py flow full
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+
+      # 3c. 均无变更 → 跳过刷新，提示
+      - name: Step 3c - No refresh needed
+        if: steps.detect.outputs.inbox == '0' && steps.detect.outputs.docs == '0'
+        run: echo "本次无模型/文档/inbox 变更，仅完成数据校验，跳过自动刷新。"
+
+      # 1. 统一提交推送
+      - name: Commit and push all changes
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: auto-update readmes, authors list, and EN translation"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

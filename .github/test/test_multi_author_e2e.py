@@ -15,10 +15,11 @@ import pathlib
 import shutil
 import subprocess
 import sys
+import tempfile
 
 sys.stdout.reconfigure(encoding='utf-8')
 
-ROOT = pathlib.Path(r"C:\Users\hx\AppData\Local\Temp\ysm_org_multi")
+ROOT = pathlib.Path(tempfile.gettempdir()) / "ysm_org_multi"  # 平台临时目录（Windows/Linux CI 通用）
 REPO = pathlib.Path(__file__).resolve().parents[2]   # .github/test -> 仓库根
 SCRIPTS = REPO / ".github" / "scripts"
 
@@ -59,8 +60,8 @@ def setup():
         "| 0002 | [#B作者](.../../Models/0002) | 1 |\n<!-- AUTHORS_LIST_END -->\n", encoding="utf-8")
     # 复制联动脚本、公共库与数据（使其 WORKSPACE_ROOT 指向临时根，按分类子目录复制）
     COPY_SCRIPTS = {
-        "ingest": ["organize_models.py"],
-        "publish": ["author_index.py", "generate_model_readmes.py"],
+        "models_organize": ["01_organize_models.py", "04_generate&update_root_readme.py",
+                            "03_generate&update_model_readmes.py"],
     }
     for cat, names in COPY_SCRIPTS.items():
         (ROOT / ".github" / "scripts" / cat).mkdir(parents=True, exist_ok=True)
@@ -97,7 +98,7 @@ def setup():
 
 def main():
     setup()
-    r = subprocess.run([sys.executable, str(SCRIPTS / "ingest" / "organize_models.py"),
+    r = subprocess.run([sys.executable, str(SCRIPTS / "models_organize" / "01_organize_models.py"),
                         str(ROOT / "inbox"), "--apply", "--root", str(ROOT),
                         "--with-authors-index", "--with-gen-readmes", "--with-readme-table",
                         "--verbose"],

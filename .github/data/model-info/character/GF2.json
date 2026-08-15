@@ -1,12 +1,9 @@
-[
-  {
-    "work": "GF2",
-    "cn": [
-      "夏安"
-    ],
-    "en": [
-      "m200_cheyanne"
-    ],
-    "source": "auto"
-  }
-]
+{
+  "work": {
+    "name": "GF2",
+    "zh": ["少女前线 2：追放", "少女前线 2", "少前 2：追放"],
+    "en": ["GIRLS' FRONTLINE 2:EXILIUM", "GF2"],
+    "category": "Game"
+  },
+  "roles": [{"zh": ["夏安"], "en": ["m200_cheyanne"]}]
+}

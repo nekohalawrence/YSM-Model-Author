@@ -1,42 +1,10 @@
-[
-  {
-    "work": "KonoSuba",
-    "cn": [
-      "佐藤和真"
-    ],
-    "en": [
-      "satou-kazuma"
-    ],
-    "source": "auto"
+{
+  "work": {
+    "name": "KonoSuba",
+    "zh": ["为美好的世界献上祝福！"],
+    "en": ["KonoSuba: God's Blessing on This Wonderful World!", "Kono Subarashii Sekai ni Shukufuku wo!", "KonoSuba", "KON"],
+    "ja": ["この素晴らしい世界に祝福を！"],
+    "category": "Anime"
   },
-  {
-    "work": "KonoSuba",
-    "cn": [
-      "惠惠"
-    ],
-    "en": [
-      "megumin"
-    ],
-    "source": "auto"
-  },
-  {
-    "work": "KonoSuba",
-    "cn": [
-      "达克妮斯"
-    ],
-    "en": [
-      "darkness"
-    ],
-    "source": "auto"
-  },
-  {
-    "work": "KonoSuba",
-    "cn": [
-      "阿克娅"
-    ],
-    "en": [
-      "aqua"
-    ],
-    "source": "auto"
-  }
-]
+  "roles": [{"zh": ["佐藤和真"], "en": ["satou-kazuma"]}, {"zh": ["惠惠"], "en": ["megumin"]}, {"zh": ["达克妮斯"], "en": ["darkness"]}, {"zh": ["阿克娅"], "en": ["aqua"]}]
+}

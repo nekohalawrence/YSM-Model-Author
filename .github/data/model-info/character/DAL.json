@@ -1,62 +1,10 @@
-[
-  {
-    "work": "DAL",
-    "cn": [
-      "四糸乃"
-    ],
-    "en": [
-      "yoshino"
-    ],
-    "source": "auto"
+{
+  "work": {
+    "name": "DAL",
+    "en": ["Date A Live", "DAL"],
+    "zh": ["约会大作战"],
+    "ja": ["デート・ア・ライブ"],
+    "category": "Anime"
   },
-  {
-    "work": "DAL",
-    "cn": [
-      "夜刀神十香"
-    ],
-    "en": [
-      "yatogami-tohka"
-    ],
-    "source": "auto"
-  },
-  {
-    "work": "DAL",
-    "cn": [
-      "崇宫澪"
-    ],
-    "en": [
-      "takamiya-mio"
-    ],
-    "source": "auto"
-  },
-  {
-    "work": "DAL",
-    "cn": [
-      "时崎狂三"
-    ],
-    "en": [
-      "kurumi"
-    ],
-    "source": "auto"
-  },
-  {
-    "work": "DAL",
-    "cn": [
-      "诱宵美九"
-    ],
-    "en": [
-      "izayoi-miku"
-    ],
-    "source": "auto"
-  },
-  {
-    "work": "DAL",
-    "cn": [
-      "鸢一折纸"
-    ],
-    "en": [
-      "itsuka-origami"
-    ],
-    "source": "auto"
-  }
-]
+  "roles": [{"zh": ["四糸乃"], "en": ["yoshino"]}, {"zh": ["夜刀神十香"], "en": ["yatogami-tohka"]}, {"zh": ["崇宫澪"], "en": ["takamiya-mio"]}, {"zh": ["时崎狂三"], "en": ["kurumi"]}, {"zh": ["诱宵美九"], "en": ["izayoi-miku"]}, {"zh": ["鸢一折纸"], "en": ["itsuka-origami"]}]
+}

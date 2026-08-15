@@ -1,12 +1,9 @@
-[
-  {
-    "work": "Meme",
-    "cn": [
-      "埃及猫"
-    ],
-    "en": [
-      "egyptian-cat"
-    ],
-    "source": "auto"
-  }
-]
+{
+  "work": {
+    "name": "Meme",
+    "en": ["Meme"],
+    "zh": ["模因"],
+    "category": "Other"
+  },
+  "roles": [{"zh": ["埃及猫"], "en": ["egyptian-cat"]}]
+}

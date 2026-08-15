@@ -1,22 +1,10 @@
-[
-  {
-    "work": "Magia-Record",
-    "cn": [
-      "濑奈命"
-    ],
-    "en": [
-      "sena-mikoto"
-    ],
-    "source": "auto"
+{
+  "work": {
+    "name": "Magia-Record",
+    "en": ["Magia Record: Puella Magi Madoka Magica Side Story", "Magia-Record"],
+    "zh": ["魔法纪录 魔法少女小圆外传"],
+    "ja": ["マギアレコード 魔法少女まどか☆マギカ外伝"],
+    "category": "Game"
   },
-  {
-    "work": "Magia-Record",
-    "cn": [
-      "环彩羽"
-    ],
-    "en": [
-      "tamaki-iroha"
-    ],
-    "source": "auto"
-  }
-]
+  "roles": [{"zh": ["濑奈命"], "en": ["sena-mikoto"]}, {"zh": ["环彩羽"], "en": ["tamaki-iroha"]}]
+}

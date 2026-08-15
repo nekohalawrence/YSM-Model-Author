@@ -1,12 +1,10 @@
-[
-  {
-    "work": "TMNI",
-    "cn": [
-      "御坂美琴"
-    ],
-    "en": [
-      "misaka-mikoto"
-    ],
-    "source": "auto"
-  }
-]
+{
+  "work": {
+    "name": "TMNI",
+    "en": ["A Certain Magical Index", "Toaru Majutsu no Index", "TMNI"],
+    "zh": ["魔法禁书目录", "某魔法的禁书目录"],
+    "ja": ["とある魔術の禁書目録"],
+    "category": "Anime"
+  },
+  "roles": [{"zh": ["御坂美琴"], "en": ["misaka-mikoto"]}]
+}

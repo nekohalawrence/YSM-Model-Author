@@ -27,7 +27,7 @@ def clean_file_stem(stem: str) -> str:
 
 
 def clean_folder_name(folder_name: str) -> str:
-    """去除文件夹名称末尾的评级标签 (_LA, _LB, _LC, _LD)（rename_model_files 用）。"""
+    """去除文件夹名称末尾的评级标签 (_LA, _LB, _LC, _LD)（rename_model_folders --rename-files 用）。"""
     return GRADE_SUFFIX_RE.sub('', folder_name)
 
 

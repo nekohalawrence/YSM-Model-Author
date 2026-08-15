@@ -1,12 +1,10 @@
-[
-  {
-    "work": "SakuraMoyu",
-    "cn": [
-      "小黑"
-    ],
-    "en": [
-      "kuro"
-    ],
-    "source": "auto"
-  }
-]
+{
+  "work": {
+    "name": "SakuraMoyu",
+    "en": ["‑as the Night's", "Reincarnation‑", "Sakura Moyu"],
+    "zh": ["樱花摸鱼", "樱花、萌放"],
+    "ja": ["さくら、もゆ"],
+    "category": "Game"
+  },
+  "roles": [{"zh": ["小黑"], "en": ["kuro"]}]
+}

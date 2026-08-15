@@ -1,12 +1,6 @@
-[
-  {
-    "work": "FHZ",
-    "cn": [
-      "茉莉"
-    ],
-    "en": [
-      "mori"
-    ],
-    "source": "auto"
-  }
-]
+{
+  "work": {
+    "name": "FHZ"
+  },
+  "roles": [{"zh": ["茉莉"], "en": ["mori"]}]
+}

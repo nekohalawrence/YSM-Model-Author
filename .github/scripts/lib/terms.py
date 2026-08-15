@@ -78,7 +78,7 @@ def normalize_role(role: str, terms: list[dict] | None = None) -> str:
             continue
         term = match_term(part, terms)
         if term:
-            cn, en = term.get('cn'), term.get('en')
+            cn, en = term.get('zh'), term.get('en')
             if cn and cn not in cn_tags:
                 cn_tags.append(cn)
             if en and en not in en_tags:

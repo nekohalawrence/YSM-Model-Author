@@ -1,22 +1,10 @@
-[
-  {
-    "work": "Cardcaptor",
-    "cn": [
-      "大道寺知世"
-    ],
-    "en": [
-      "daidouji-tomoyo"
-    ],
-    "source": "auto"
+{
+  "work": {
+    "name": "Cardcaptor",
+    "en": ["Cardcaptor Sakura", "Cardcaptor"],
+    "zh": ["魔卡少女樱", "百变小樱"],
+    "ja": ["カードキャプターさくら"],
+    "category": "Anime"
   },
-  {
-    "work": "Cardcaptor",
-    "cn": [
-      "木之本樱"
-    ],
-    "en": [
-      "kinomoto-sakura"
-    ],
-    "source": "auto"
-  }
-]
+  "roles": [{"zh": ["大道寺知世"], "en": ["daidouji-tomoyo"]}, {"zh": ["木之本樱"], "en": ["kinomoto-sakura"]}]
+}

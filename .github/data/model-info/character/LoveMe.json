@@ -1,22 +1,10 @@
-[
-  {
-    "work": "LoveMe",
-    "cn": [
-      "枫"
-    ],
-    "en": [
-      "hoshitsuki-kaede"
-    ],
-    "source": "auto"
+{
+  "work": {
+    "name": "LoveMe",
+    "en": ["LoveMe"],
+    "zh": ["枫与铃"],
+    "ja": ["らぶみー♡"],
+    "category": "Anime"
   },
-  {
-    "work": "LoveMe",
-    "cn": [
-      "铃"
-    ],
-    "en": [
-      "hoshitsuki-suzu"
-    ],
-    "source": "auto"
-  }
-]
+  "roles": [{"zh": ["枫"], "en": ["hoshitsuki-kaede"]}, {"zh": ["铃"], "en": ["hoshitsuki-suzu"]}]
+}

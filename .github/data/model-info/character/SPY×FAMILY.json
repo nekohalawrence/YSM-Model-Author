@@ -1,12 +1,9 @@
-[
-  {
-    "work": "SPY×FAMILY",
-    "cn": [
-      "阿尼亚"
-    ],
-    "en": [
-      "anya"
-    ],
-    "source": "auto"
-  }
-]
+{
+  "work": {
+    "name": "SPY×FAMILY",
+    "en": ["SPY×FAMILY"],
+    "zh": ["间谍过家家"],
+    "category": "Game"
+  },
+  "roles": [{"zh": ["阿尼亚"], "en": ["anya"]}]
+}

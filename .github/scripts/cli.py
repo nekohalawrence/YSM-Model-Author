@@ -3,22 +3,23 @@
 """
 YSM 模型仓库统一命令行入口（人工使用）。
 
-把 ingest/ naming/ publish/ 全部脚本与数据校验收纳为子命令，不用记脚本路径：
+把 models_organize/ check&fix/ deployments/ 全部脚本与数据校验收纳为子命令，不用记脚本路径：
   python .github/scripts/cli.py <子命令> [转发参数...]
 
 子命令对应脚本一览（--list 查看）：
-  organize       归档 .ysm → ingest/organize_models.py
-  previews       预览图归位 → ingest/organize_previews.py
-  rename-files   重命名模型文件 → naming/rename_model_files.py
-  rename-folders 重命名模型文件夹 → naming/rename_model_folders.py
-  kb             命名知识库维护 → naming/kb_tool.py
-  authors        重建作者数据 → publish/author_index.py --data
-  readmes        生成模型 README → publish/generate_model_readmes.py
-  authors-list   更新根 README 作者表 → publish/author_index.py --readme
-  format         格式化作者 README → publish/format_author_readme.py
-  translate      翻译 README-EN → publish/translate_readme.py
-  site           生成静态网站 → publish/build_site.py
-  flow           流程编排(inbox/full/...) → pipeline.py
+  organize       归档 .ysm → models_organize/01_organize_models.py
+  previews       预览图归位 → models_organize/01_organize_previews.py
+  rename-files   重命名模型文件 → models_organize/02_rename_model_files&folders.py --rename-files
+  rename-folders 重命名模型文件夹 + 知识库维护/交互学习 → models_organize/02_rename_model_files&folders.py
+  authors        重建作者数据 → models_organize/04_generate&update_root_readme.py --data
+  readmes        生成模型 README → models_organize/03_generate&update_model_readmes.py
+  authors-list   更新根 README 作者表 → models_organize/04_generate&update_root_readme.py --readme
+  category-map   更新根 README 模型分类区块 → models_organize/04_generate&update_root_readme.py --build-category-map
+  format         格式化作者 README → models_organize/03_generate&update_author_readme.py
+  translate      翻译 README-EN → models_organize/05_translate_rpo_readme.py
+  site           生成静态网站 → deployments/build_site.py
+  flow           流程编排(inbox/full/rename/...)（内联自原 pipeline.py，见本文件 PIPELINE_STEPS）
+  audit          库整理(重新分类/合并作者/空壳/缺失) → check&fix/check&fix.py
   check          数据契约校验 → lib/validate.py
 
 子命令后的所有参数原样转发给目标脚本（如 --apply / --check 等），
@@ -27,6 +28,7 @@ YSM 模型仓库统一命令行入口（人工使用）。
 注意：本入口不做参数解析（薄转发层），只识别第一个位置参数为子命令，
 其余参数一律透传——避免 argparse REMAINDER 在子命令场景吞不掉选项的问题。
 """
+import argparse
 import os
 import subprocess
 import sys
@@ -41,20 +43,23 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 REPO_ROOT = lib_paths.WORKSPACE_ROOT
 
 # 子命令 -> (脚本相对 scripts/ 的路径, 默认参数, 一句话说明)；默认参数先于用户转发参数
+# 脚本已按流程阶段归入 models_organize/（模型整理）/ check&fix/（库整理）/ deployments/（部署）；
+# flow 为特殊子命令（内联流程编排，见 PIPELINE_STEPS / run_flow，无对应独立脚本）。
 COMMANDS: dict[str, tuple[str, list[str], str]] = {
-    'organize': ('ingest/organize_models.py', [], '归档 .ysm 到 Models/<编号>/'),
-    'audit': ('ingest/audit_models.py', [], '库整理:重新分类/合并重复作者/空壳报告'),
-    'previews': ('ingest/organize_previews.py', [], '预览图归入 previews/ 并规范命名'),
-    'rename-files': ('naming/rename_model_files.py', [], '按命名规范重命名模型文件'),
-    'rename-folders': ('naming/rename_model_folders.py', [], '按知识库重命名模型文件夹'),
-    'kb': ('naming/kb_tool.py', [], '命名知识库维护(--build-kb/--add/...)'),
-    'authors': ('publish/author_index.py', ['--data'], '重建集中作者数据 authors.json'),
-    'readmes': ('publish/generate_model_readmes.py', [], '生成/重写模型 README'),
-    'authors-list': ('publish/author_index.py', ['--readme'], '更新根 README 作者表格'),
-    'format': ('publish/format_author_readme.py', [], '格式化作者级 README / --sync-authors 推导作者'),
-    'translate': ('publish/translate_readme.py', [], '翻译 README → README-EN'),
-    'site': ('publish/build_site.py', [], '生成静态模型浏览站 index.html'),
-    'flow': ('pipeline.py', [], '流程编排(inbox/full/rename/...)'),
+    'organize': ('models_organize/01_organize_models.py', [], '归档 .ysm 到 Models/<编号>/'),
+    'audit': ('check&fix/check&fix.py', [], '库整理:重新分类/合并作者/空壳报告/缺失(无分类无预览图)'),
+    'previews': ('models_organize/01_organize_previews.py', [], '预览图归入 previews/ 并规范命名'),
+    'rename-files': ('models_organize/02_rename_model_files&folders.py', ['--rename-files'], '重命名模型文件(--rename-files, 已合并入 02)'),
+    'rename-folders': ('models_organize/02_rename_model_files&folders.py', [],
+                       '重命名模型文件夹 + 知识库维护(--apply 未收录交互学习)'),
+    'authors': ('models_organize/04_generate&update_root_readme.py', ['--data'], '重建集中作者数据 authors.json'),
+    'readmes': ('models_organize/03_generate&update_model_readmes.py', [], '生成/重写模型 README'),
+    'authors-list': ('models_organize/04_generate&update_root_readme.py', ['--readme'], '更新根 README 作者表格'),
+    'category-map': ('models_organize/04_generate&update_root_readme.py', ['--build-category-map'], '更新根 README 模型分类区块'),
+    'format': ('models_organize/03_generate&update_author_readme.py', [], '格式化作者级 README / --sync-authors 推导作者'),
+    'translate': ('models_organize/05_translate_rpo_readme.py', [], '翻译 README → README-EN'),
+    'site': ('deployments/build_site.py', [], '生成静态模型浏览站 index.html'),
+    'flow': ('', [], '流程编排(inbox/full/rename/...)，内联自原 pipeline.py'),
     'check': ('lib/validate.py', [], '数据契约校验(schemas/)'),
 }
 
@@ -83,6 +88,99 @@ def print_commands() -> None:
     print()
 
 
+# ---------------------------------------------------------------------------
+# 流程编排（合并自原 pipeline.py）：cli.py flow 子命令的内联实现
+# ---------------------------------------------------------------------------
+# 每个步骤 = (脚本相对 scripts/ 的路径, 传给该脚本的参数)；顺序即执行顺序
+PIPELINE_STEPS: dict[str, list[tuple[str, list[str]]]] = {
+    'inbox': [
+        ('models_organize/01_organize_models.py', ['_Model-Inbox', '--apply']),
+        ('models_organize/04_generate&update_root_readme.py', ['--data']),
+        ('models_organize/03_generate&update_model_readmes.py', []),
+        ('models_organize/03_generate&update_author_readme.py', []),
+        ('models_organize/04_generate&update_root_readme.py', ['--readme']),
+        ('models_organize/05_translate_rpo_readme.py', []),
+    ],
+    'full': [
+        ('models_organize/04_generate&update_root_readme.py', ['--data']),
+        ('models_organize/03_generate&update_model_readmes.py', []),
+        ('models_organize/03_generate&update_author_readme.py', []),
+        ('models_organize/04_generate&update_root_readme.py', ['--readme']),
+        ('models_organize/05_translate_rpo_readme.py', []),
+    ],
+    'rename': [
+        ('models_organize/02_rename_model_files&folders.py', ['--apply']),
+    ],
+    'authors': [
+        ('models_organize/04_generate&update_root_readme.py', ['--data']),
+    ],
+    'readmes': [
+        ('models_organize/03_generate&update_model_readmes.py', []),
+    ],
+    'authors-list': [
+        ('models_organize/04_generate&update_root_readme.py', ['--readme']),
+    ],
+    'translate': [
+        ('models_organize/05_translate_rpo_readme.py', []),
+    ],
+}
+
+# 每个脚本的一句话说明（flow --list 用）
+FLOW_STEP_DESC = {
+    'models_organize/01_organize_models.py': '归档 .ysm 到 Models/<编号>/',
+    'models_organize/04_generate&update_root_readme.py': '根 README 展示(作者数据/作者表/分类区块)',
+    'models_organize/03_generate&update_model_readmes.py': '生成模型 README',
+    'models_organize/03_generate&update_author_readme.py': '格式化作者级 README',
+    'models_organize/05_translate_rpo_readme.py': '翻译 README → README-EN',
+    'models_organize/02_rename_model_files&folders.py': '重命名模型文件夹',
+}
+
+
+def run_flow(argv: list[str]) -> int:
+    """cli.py flow 子命令：按预定义流程顺序调用脚本（合并自原 pipeline.py）。"""
+    parser = argparse.ArgumentParser(
+        prog='cli.py flow', description='多脚本流程编排（原 pipeline.py 合并而来）',
+        formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument('flow', nargs='?', default='full',
+                        help='流程名（默认 full）; 用 --list 查看全部')
+    parser.add_argument('--dry-run', action='store_true',
+                        help='只打印将执行的步骤，不真正运行')
+    parser.add_argument('--list', action='store_true', help='列出全部流程及其步骤')
+    args = parser.parse_args(argv)
+
+    if args.list:
+        for name, steps in PIPELINE_STEPS.items():
+            print(f'[{name}]')
+            for rel, step_args in steps:
+                desc = FLOW_STEP_DESC.get(rel, '')
+                suffix = f" {' '.join(step_args)}" if step_args else ''
+                print(f'    {rel}{suffix}  {desc}')
+        return 0
+
+    if args.flow not in PIPELINE_STEPS:
+        print(f"未知流程: {args.flow}（可用: {', '.join(PIPELINE_STEPS)}）", file=sys.stderr)
+        return 2
+
+    print(f'== pipeline: {args.flow} ==')
+    for rel, step_args in PIPELINE_STEPS[args.flow]:
+        script = SCRIPT_DIR / rel
+        if not script.is_file():
+            print(f"  [错误] 未找到脚本: {script}", file=sys.stderr)
+            return 2
+        desc = FLOW_STEP_DESC.get(rel, '')
+        print(f"  → {rel} {' '.join(step_args) if step_args else ''}  {desc}")
+        if args.dry_run:
+            print('    (dry-run) 未执行')
+            continue
+        code = subprocess.run([sys.executable, str(script), *step_args],
+                              cwd=REPO_ROOT, env=os.environ).returncode
+        if code != 0:
+            print(f"流程中止: {rel} 退出码 {code}", file=sys.stderr)
+            return code
+    print('== pipeline 完成 ==')
+    return 0
+
+
 def main() -> int:
     argv = sys.argv[1:]
 
@@ -99,6 +197,8 @@ def main() -> int:
         return 0
 
     command, *forwarded = argv
+    if command == 'flow':
+        return run_flow(forwarded)
     entry = COMMANDS.get(command)
     if entry is None:
         print(f'[错误] 未知子命令: {command}', file=sys.stderr)

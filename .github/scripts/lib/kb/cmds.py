@@ -1,0 +1,1148 @@
+# -*- coding: utf-8 -*-
+"""kb 交互命令 / 检查 / 合并 / 索引 / 扫描（原 kb_tool.py 的命令与工具部分）。
+
+依赖分层：text -> parse -> storage / sync -> cmds（本模块为最上层）。"""
+from __future__ import annotations
+
+import json
+import re
+import sys
+from pathlib import Path
+
+# 把 .github/scripts 加回 sys.path，保证 lib/ 可导入
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
+
+from lib import console as lib_console  # noqa: E402
+from lib import paths as lib_paths  # noqa: E402
+from lib.kb import parse, storage, sync  # noqa: E402
+from lib.kb.text import normalize_en_key  # noqa: E402
+
+REPO_ROOT = lib_paths.WORKSPACE_ROOT
+DEFAULT_ROOTS = [REPO_ROOT / "Models", REPO_ROOT / "Other-YSM-Models"]
+
+# storage/sync 的常用别名（本模块内使用）
+load_kb_json = storage.load_kb_json
+save_kb_json = storage.save_kb_json
+migrate_from_sqlite = storage.migrate_from_sqlite
+build_work_index = sync.build_work_index
+resolve_name = parse.resolve_name
+build_kb = parse.build_kb
+role_key = parse.role_key
+role_names = parse.role_names
+
+
+def ask(prompt: str) -> str:
+    """安全的交互输入（复用 lib/console.py 统一实现；别名保留以兼容外部引用）。
+
+    返回 'q' 后各交互命令会保存已完成的部分并优雅退出（与显式输入 q 等价），
+    避免用户在确认环节按 Ctrl+C 时直接抛 KeyboardInterrupt 崩溃。
+    """
+    return lib_console.ask(prompt)
+
+
+def add_manual_entries(kb_path: Path) -> None:
+    """交互式添加角色条目（纯手工维护，无自动构建）。"""
+    data = load_kb_json(kb_path)
+    print("交互式添加对照条目：逐项输入，回车跳过；输入 q 结束。")
+    print("提示：英文名请填文件夹中出现的写法（如 kitasan_black），")
+    print("      或规范形式（kitasan-black）——两者都能匹配。")
+    added = 0
+    while True:
+        print("-" * 40)
+        cn = ask("中文角色名 (可空): ")
+        if cn.lower() in ("q", "quit"):
+            break
+        en = ask("英文角色名 (可空): ")
+        if en.lower() in ("q", "quit"):
+            break
+        work = ask("作品 (必填，如 BA/AK/OC): ")
+        if work.lower() in ("q", "quit"):
+            break
+        if not work:
+            print("作品不能为空，本条跳过。")
+            continue
+        if not cn and not en:
+            print("中文名和英文名至少填一个，本条跳过。")
+            continue
+        note = ask("备注 (可空): ")
+        if note.lower() in ("q", "quit"):
+            break
+        data["roles"].append({"zh": cn or "", "en": en or "", "work": work,
+                              "note": note})
+        save_kb_json(kb_path, data)
+        added += 1
+        print(f"已添加: {cn or '?'} | {en or '?'} | {work}")
+    print(f"共添加 {added} 条。知识库: {kb_path}")
+
+
+def list_db(kb_path: Path) -> None:
+    """列出知识库全部条目（角色对照）。"""
+    data = load_kb_json(kb_path)
+    roles = data.get("roles") or []
+    if not roles:
+        print(f"知识库为空或不存在: {kb_path}（请用 --roles / --add 添加角色）")
+        return
+    print(f"角色对照 {len(roles)} 条（纯手工维护）:")
+    for r in roles:
+        cn_v, en_v = r.get("zh"), r.get("en")
+        cn_s = cn_v[0] if isinstance(cn_v, list) else (cn_v or '-')
+        en_s = en_v[0] if isinstance(en_v, list) else (en_v or '-')
+        extra = ""
+        if isinstance(cn_v, list) and len(cn_v) > 1:
+            extra += f" (+{len(cn_v) - 1}中文别名)"
+        if isinstance(en_v, list) and len(en_v) > 1:
+            extra += f" (+{len(en_v) - 1}英文别名)"
+        line = (f"  {r.get('work', ''):<12} | {cn_s:<14} | {en_s:<28}{extra}")
+        if r.get("note"):
+            line += f"  #{r['note']}"
+        print(line)
+
+
+def del_entries(kb_path: Path) -> None:
+    """交互式删除条目（角色对照或别名）。按关键词搜索 -> 选编号删除。"""
+    data = load_kb_json(kb_path)
+    while True:
+        kw = ask("搜索关键词 (中文名/英文名/作品，留空=列出全部，q=退出): ")
+        if kw.lower() in ("q", "quit"):
+            break
+        print("-" * 60)
+        roles = data.get("roles") or []
+        if kw:
+            r_hits = [r for r in roles
+                      if kw.lower() in str(r.get("zh", "")).lower()
+                      or kw.lower() in str(r.get("en", "")).lower()
+                      or kw.lower() in str(r.get("work", "")).lower()]
+        else:
+            r_hits = roles
+        if r_hits:
+            print(f"角色对照 {len(r_hits)} 条（输入编号删除，多个用逗号分隔）:")
+            for i, r in enumerate(r_hits, 1):
+                line = (f"  [{i}] {r.get('work', ''):<12} | {r.get('zh') or '-':<14}"
+                        f" | {r.get('en') or '-':<28}")
+                if r.get("note"):
+                    line += f"  #{r['note']}"
+                print(line)
+        if not r_hits:
+            print("无匹配条目。")
+            continue
+        sel = ask("要删除的编号（多个用逗号分隔；留空=不删，q=退出）: ")
+        if sel.lower() in ("q", "quit"):
+            break
+        if not sel:
+            continue
+        removed = 0
+        for token in sel.replace("，", ",").split(","):
+            token = token.strip()
+            if not token:
+                continue
+            idx = int(token) - 1
+            if 0 <= idx < len(r_hits):
+                roles.remove(r_hits[idx])
+                removed += 1
+        data["roles"] = roles
+        save_kb_json(kb_path, data)
+        print(f"已删除 {removed} 条。")
+
+
+# ---------------------------------------------------------------------------
+# 统一交互式角色管理（--roles）：增删改查 + 别名（推荐入口；皮肤维护在 skin_tags.json）
+# ---------------------------------------------------------------------------
+def load_skin_tags() -> dict:
+    """读皮肤标签表 skin_tags.json（缺失返回 common 空表）。"""
+    return lib_paths.load_json(
+        lib_paths.data_path('model-info', 'skin_tags.json'),
+        {'common': {'zh': [], 'en': []}})
+
+
+def save_skin_tags(tags: dict) -> None:
+    """写皮肤标签表 skin_tags.json。"""
+    lib_paths.save_json(lib_paths.data_path('model-info', 'skin_tags.json'), tags)
+
+
+def add_skin_tag(tags: dict, work: str, cn: str = '', en: str = '') -> bool:
+    """把皮肤词加入皮肤表对应作品（空 work/Unknown -> common）；返回是否新增。"""
+    entry = tags.setdefault(work or 'common', {'zh': [], 'en': []})
+    added = False
+    if cn:
+        lst = entry.setdefault('zh', [])
+        if cn not in lst:
+            lst.append(cn)
+            added = True
+    if en:
+        lst = entry.setdefault('en', [])
+        if en not in lst:
+            lst.append(en)
+            added = True
+    return added
+
+
+def sync_variant_to_skin_tags() -> int:
+    """把 variant_tags.json 的变体词（cn/en 别名）自动并入 skin_tags.json 的 common。
+
+    variant_tags 是已确认的皮肤/变体对照表（如 兔子洞/泳装版/new），其别名自动成为
+    皮肤词——否则重命名时（如 VOC_初音_兔子洞）皮肤未识别、残留在 cn 里而被
+    标准化覆盖丢失。幂等：已有词不重复添加；返回新增数。
+    """
+    variant = lib_paths.load_json(
+        lib_paths.data_path('model-info', 'variant_tags.json'), {})
+    skin = load_skin_tags()
+    common = skin.setdefault('common', {'zh': [], 'en': []})
+    added = 0
+    for _canonical, langs in variant.items():
+        for c in (langs.get('zh') or []):
+            if c and c not in common.setdefault('zh', []):
+                common['zh'].append(c)
+                added += 1
+        for e in (langs.get('en') or []):
+            if e and e not in common.setdefault('en', []):
+                common['en'].append(e)
+                added += 1
+    if added:
+        save_skin_tags(skin)
+        print(f'已自动并入 {added} 个变体词到 skin_tags.json 的 common（作为皮肤词）')
+    return added
+
+
+def _role_line(i: int, r: dict) -> str:
+    """单条角色格式化显示（供增删改查复用）。"""
+    cn_s = " / ".join(r.get("zh") or []) or "-"
+    en_s = " / ".join(r.get("en") or []) or "-"
+    line = f"  [{i}] {str(r.get('work', '')):<10} | cn: {cn_s} | en: {en_s}"
+    if r.get("note"):
+        line += f"  #{r['note']}"
+    return line
+
+
+def _ask_list(prompt: str) -> list[str] | None:
+    """输入逗号分隔的多值 -> 列表；空返回 []；q 返回 None。"""
+    s = ask(prompt).strip()
+    if s.lower() in ("q", "quit"):
+        return None
+    return [x.strip() for x in s.replace("，", ",").split(",") if x.strip()]
+
+
+def _role_pick(data: dict, prompt: str) -> dict | None:
+    """搜索角色 -> 返回选中的条目（供编辑/设默认复用）。"""
+    roles = data.get("roles") or []
+    while True:
+        kw = ask(prompt).strip()
+        if kw.lower() in ("q", "quit"):
+            return None
+        hits = [r for r in roles
+                if kw in str(r.get("zh", "")) or kw in str(r.get("en", ""))
+                or kw in str(r.get("work", ""))]
+        if not hits:
+            print("无匹配条目，换个关键词。")
+            continue
+        print(f"命中 {len(hits)} 条：")
+        for i, r in enumerate(hits, 1):
+            print(_role_line(i, r))
+        sel = ask("选择编号（Enter=重新搜索, q=取消）: ").strip()
+        if sel.lower() in ("q", "quit"):
+            return None
+        if sel.isdigit() and 1 <= int(sel) <= len(hits):
+            return hits[int(sel) - 1]
+        print("编号无效，重新搜索。")
+
+
+def _role_add(data: dict, skin_tags: dict) -> None:
+    """添加角色（cn/en 多个用逗号分隔，第一个为规范名；皮肤写入 skin_tags.json 作品专属）。"""
+    print("添加角色（q=返回上一级）")
+    work = ask("作品键 (必填，如 BA/AK/OC): ").strip()
+    if work.lower() in ("q", "quit"):
+        return
+    if not work:
+        print("作品不能为空。")
+        return
+    cn = _ask_list("中文名 (逗号分隔，可空): ")
+    if cn is None:
+        return
+    en = _ask_list("英文名 (逗号分隔，可空; 第一个为规范名): ")
+    if en is None:
+        return
+    if not cn and not en:
+        print("中文名和英文名至少填一个。")
+        return
+    skin_cn = _ask_list("中文皮肤 (逗号分隔，可空; 写入皮肤表): ")
+    if skin_cn is None:
+        return
+    skin_en = _ask_list("英文皮肤 (逗号分隔，可空; 写入皮肤表): ")
+    if skin_en is None:
+        return
+    note = ask("备注 (可空): ").strip()
+    if note.lower() in ("q", "quit"):
+        return
+    entry: dict = {"work": work, "zh": cn, "en": en}
+    if note:
+        entry["note"] = note
+    data.setdefault("roles", []).append(entry)
+    for c in (skin_cn or []):
+        add_skin_tag(skin_tags, work, cn=c)
+    for e in (skin_en or []):
+        add_skin_tag(skin_tags, work, en=e)
+    print(f"已添加: {work} | cn={cn or '-'} | en={en or '-'}（退出时统一保存）")
+
+
+def _role_delete(data: dict) -> None:
+    """删除角色（搜索 -> 选编号，多个逗号分隔）。"""
+    roles = data.get("roles") or []
+    while True:
+        kw = ask("搜索要删除的角色 (留空=列出全部, q=返回): ").strip()
+        if kw.lower() in ("q", "quit"):
+            return
+        hits = [r for r in roles
+                if (not kw) or kw in str(r.get("zh", "")) or kw in str(r.get("en", ""))
+                or kw in str(r.get("work", ""))]
+        if not hits:
+            print("无匹配条目。")
+            continue
+        print(f"角色 {len(hits)} 条（输入编号删除，多个逗号分隔）：")
+        for i, r in enumerate(hits, 1):
+            print(_role_line(i, r))
+        sel = ask("要删除的编号 (留空=不删, q=返回): ").strip()
+        if sel.lower() in ("q", "quit"):
+            return
+        if not sel:
+            continue
+        removed = 0
+        for token in sel.replace("，", ",").split(","):
+            token = token.strip()
+            if not token.isdigit():
+                continue
+            idx = int(token) - 1
+            if 0 <= idx < len(hits):
+                roles.remove(hits[idx])
+                removed += 1
+        print(f"已删除 {removed} 条。")
+
+
+def _role_edit(data: dict, skin_tags: dict) -> None:
+    """编辑角色（cn/en 数组、作品、备注；回车保持原值。皮肤在皮肤表维护）。"""
+    r = _role_pick(data, "搜索要编辑的角色 (q=返回): ")
+    if r is None:
+        return
+    print("当前：")
+    print(_role_line(0, r))
+    print("逐项编辑，直接回车保持原值；输入 q 放弃本条编辑。")
+    work = ask(f"作品键 [{r.get('work', '')}]: ").strip()
+    if work.lower() in ("q", "quit"):
+        return
+    if work:
+        r["work"] = work
+    cn = _ask_list(f"中文名 逗号分隔(首项为规范名) [{' / '.join(r.get('zh') or [])}]: ")
+    if cn is None:
+        return
+    if cn:
+        r["zh"] = cn
+    en = _ask_list(f"英文名 逗号分隔(首项为规范名) [{' / '.join(r.get('en') or [])}]: ")
+    if en is None:
+        return
+    if en:
+        r["en"] = en
+    # 皮肤维护在 skin_tags.json（作品级）：展示当前作品已有皮肤词，输入即追加
+    wt = skin_tags.get(r["work"]) or {}
+    print(f"  当前作品皮肤  cn: {' / '.join(wt.get('zh') or []) or '(无)'}"
+          f" | en: {' / '.join(wt.get('en') or []) or '(无)'}")
+    sc = _ask_list("中文皮肤 逗号分隔(追加到皮肤表; 留空不改): ")
+    if sc is None:
+        return
+    se = _ask_list("英文皮肤 逗号分隔(追加到皮肤表; 留空不改): ")
+    if se is None:
+        return
+    for c in (sc or []):
+        add_skin_tag(skin_tags, r["work"], cn=c)
+    for e in (se or []):
+        add_skin_tag(skin_tags, r["work"], en=e)
+    note = ask(f"备注 [{(r.get('note') or '')}]: ").strip()
+    if note.lower() in ("q", "quit"):
+        return
+    if note:
+        r["note"] = note
+    print("已更新（退出时统一保存）。")
+
+
+def _role_search(data: dict) -> None:
+    """搜索/列出角色。"""
+    roles = data.get("roles") or []
+    kw = ask("搜索关键词 (留空=列出全部, q=返回): ").strip()
+    if kw.lower() in ("q", "quit"):
+        return
+    hits = [r for r in roles
+            if (not kw) or kw in str(r.get("zh", "")) or kw in str(r.get("en", ""))
+            or kw in str(r.get("work", ""))]
+    if not hits:
+        print("无匹配条目。")
+        return
+    print(f"角色 {len(hits)} 条：")
+    for i, r in enumerate(hits, 1):
+        print(_role_line(i, r))
+
+
+def _role_set_default(data: dict) -> None:
+    """设定角色默认中英文名（写入 cn/en 数组首项）。"""
+    r = _role_pick(data, "搜索角色 (q=返回): ")
+    if r is None:
+        return
+    print("当前：")
+    print(_role_line(0, r))
+    new_cn = ask(f"默认中文名 (写入 cn 首项; 当前 {' / '.join(r.get('zh') or []) or '-'}): ").strip()
+    if new_cn.lower() in ("q", "quit"):
+        return
+    new_en = ask(f"默认英文名 (写入 en 首项; 当前 {' / '.join(r.get('en') or []) or '-'}): ").strip()
+    if new_en.lower() in ("q", "quit"):
+        return
+    if not new_cn and not new_en:
+        print("中文名和英文名至少填一个。")
+        return
+    cn_list = list(r.get("zh") or [])
+    en_list = list(r.get("en") or [])
+    if new_cn:
+        cn_list = [new_cn] + [c for c in cn_list if c != new_cn]
+    if new_en:
+        en_list = [new_en] + [e for e in en_list if e != new_en]
+    r["zh"] = cn_list
+    r["en"] = en_list
+    print("已设定默认名（写入数组首项，退出时统一保存）。")
+
+
+def roles_cmd(kb_path: Path) -> None:
+    """交互式角色管理：增删改查 + 别名（统一入口；皮肤维护在 skin_tags.json）。"""
+    data = load_kb_json(kb_path)
+    data.setdefault("roles", [])
+    skin_tags = load_skin_tags()
+    while True:
+        print("-" * 56)
+        print("角色管理（纯手工维护，退出时统一保存）:")
+        print("  1) 添加角色    2) 删除角色    3) 编辑角色")
+        print("  4) 搜索/查看   5) 设定默认名  0) 保存并返回")
+        sel = ask("选择: ").strip()
+        if sel in ("q", "quit", "0"):
+            break
+        if sel == "1":
+            _role_add(data, skin_tags)
+        elif sel == "2":
+            _role_delete(data)
+        elif sel == "3":
+            _role_edit(data, skin_tags)
+        elif sel == "4":
+            _role_search(data)
+        elif sel == "5":
+            _role_set_default(data)
+        else:
+            print("无效选择。")
+    save_kb_json(kb_path, data)
+    save_skin_tags(skin_tags)
+    print(f"已保存知识库: {kb_path}（含皮肤表 skin_tags.json）")
+
+
+def run_check(kb_path: Path) -> None:
+    """数据质量检查：同名多作品、空字段、重复条目、别名悬空。"""
+    data = load_kb_json(kb_path)
+    roles = data.get("roles") or []
+    issues: list[str] = []
+
+    def split(v):
+        return v if isinstance(v, list) else ([v] if v else [])
+
+    cn_works: dict[str, set] = {}
+    en_works: dict[str, set] = {}
+    seen_pairs: dict[str, int] = {}
+    for r in roles:
+        cn_list = [c for c in split(r.get("zh")) if c]
+        en_list = [e for e in split(r.get("en")) if e]
+        for c in cn_list:
+            cn_works.setdefault(c, set()).add(r.get("work", "?"))
+        for e in en_list:
+            en_works.setdefault(normalize_en_key(e), set()).add(r.get("work", "?"))
+        # 完全重复检测（同 cn+en+work）
+        key = "|".join([r.get("work", "?"), "&".join(cn_list), "&".join(en_list)])
+        seen_pairs[key] = seen_pairs.get(key, 0) + 1
+    for c, ws in sorted(cn_works.items()):
+        if len(ws) > 1:
+            issues.append(f"同名多作品: {c} -> {', '.join(sorted(ws))}")
+    for e, ws in sorted(en_works.items()):
+        if len(ws) > 1:
+            issues.append(f"同英文名多作品: {e} -> {', '.join(sorted(ws))}")
+    for r in roles:
+        cn_list = [c for c in split(r.get("zh")) if c]
+        en_list = [e for e in split(r.get("en")) if e]
+        if not cn_list and not en_list:
+            issues.append(f"空条目: {r}")
+        elif not cn_list or not en_list:
+            issues.append(f"缺中/英文名: work={r.get('work', '?')} cn={r.get('zh') or '-'} en={r.get('en') or '-'}")
+    for key, cnt in seen_pairs.items():
+        if cnt > 1:
+            issues.append(f"重复条目 x{cnt}: {key}")
+
+    if not issues:
+        print(f"检查通过：{len(roles)} 条角色，无问题。")
+        return
+    print(f"发现 {len(issues)} 个问题（同类合并，最多显示 50 条）:")
+    shown = set()
+    n = 0
+    for line in issues:
+        if line in shown:
+            continue
+        shown.add(line)
+        print("  - " + line)
+        n += 1
+        if n >= 50:
+            print("  ...（其余略）")
+            break
+
+
+def run_suggest(kb_path: Path) -> None:
+    """疑似匹配建议：扫描 work=Unknown 的文件夹，按包含关系给出候选，确认后写入别名。"""
+    data = load_kb_json(kb_path)
+    build_work_index(data)
+    data_roles = list(data.get("roles") or [])
+    built = build_kb([d.name for d in get_target_dirs(None)])
+    # 数据库条目 + 文件夹扫描条目合并（数据库优先，覆盖同 key），用于给 Unknown 文件夹出候选
+    roles = list(built)
+    seen = {role_key(r) for r in built}
+    for m in data_roles:
+        key = role_key(m)
+        if key in seen:
+            roles = [r for r in roles if role_key(r) != key]
+        else:
+            seen.add(key)
+        roles.append(m)
+    cn_idx, en_idx, en_to_cn, cn_to_en = build_indexes(roles)
+    cn_keys = sorted([k for k in cn_idx if len(k) >= 2 and "_" not in k],
+                     key=len, reverse=True)
+    # 允许连字符（misaka-mikoto 等标准英文名），排除下划线（皮肤/多段串如 padoru_hakurei-...）
+    en_keys = sorted([k for k in en_idx if len(k) >= 4 and "_" not in k],
+                     key=len, reverse=True)
+
+    suggestions: list[tuple] = []
+    no_cand: list[tuple] = []
+    for d in get_target_dirs(None):
+        r = resolve_name(d.name, cn_idx, en_idx, en_to_cn, cn_to_en)
+        if r["work"] != "Unknown" or not (r["zh"] or r["en"]):
+            continue
+        cands: list[tuple] = []
+        if r["zh"]:
+            for k in cn_keys:
+                if k in r["zh"] or r["zh"] in k:
+                    ws = cn_idx[k]
+                    if len(ws) == 1:
+                        cands.append((k, next(iter(ws)), "zh"))
+        if r["en"]:
+            enk = normalize_en_key(r["en"])
+            if enk:
+                for k in en_keys:
+                    if k in enk or enk in k:
+                        ws = en_idx[k]
+                        if len(ws) == 1:
+                            cands.append((k, next(iter(ws)), "en"))
+        seen_c = set()
+        shown = 0
+        for canonical, work, kind in cands:
+            key = (canonical, work)
+            if key in seen_c:
+                continue
+            seen_c.add(key)
+            suggestions.append((d.name, r, canonical, work, kind))
+            shown += 1
+            if shown >= 3:
+                break
+        if not seen_c:
+            no_cand.append((d.name, r))
+
+    if not suggestions:
+        print("没有发现疑似匹配。")
+    else:
+        print(f"发现 {len(suggestions)} 条疑似匹配（y=接受写入别名, n=跳过, q=退出）:")
+        accepted = 0
+        for i, (folder, r, canonical, work, kind) in enumerate(suggestions, 1):
+            if kind == "zh":
+                alias = r["zh"]
+                desc = f"中文名「{alias}」包含/被包含于「{canonical}」"
+            else:
+                alias = r["en"]
+                desc = f"英文名「{alias}」包含/被包含于「{canonical}」"
+            ans = ask(f"[{i}/{len(suggestions)}] {folder}  {desc} -> {canonical} ({work})? (y/n/q): ").lower()
+            if ans in ("q", "quit"):
+                break
+            if ans not in ("y", "yes"):
+                continue
+            # 别名直接并入 roles 对应条目的 cn/en 数组（规范名保持首位）
+            target = None
+            for r in data.get("roles") or []:
+                if r.get("work") != work:
+                    continue
+                lst = role_names(r, kind)
+                if kind == "zh" and canonical in lst:
+                    target = r
+                    break
+                if kind == "en" and any(normalize_en_key(x) == normalize_en_key(canonical)
+                                        for x in lst):
+                    target = r
+                    break
+            if target is None:
+                print(f"  [跳过] roles 中未找到 {canonical} ({work})，请先 --add 添加该角色")
+                continue
+            lst = role_names(target, kind)
+            if any(normalize_en_key(x) == normalize_en_key(alias) for x in lst):
+                print(f"  已存在别名 {alias}，跳过")
+                continue
+            lst.append(alias)
+            target[kind] = lst
+            accepted += 1
+            print(f"  已并入 roles: [{kind}] {alias} -> {canonical} ({work})")
+        if accepted:
+            save_kb_json(kb_path, data)
+            print(f"共并入 {accepted} 条别名到 roles，已保存: {kb_path}")
+        else:
+            print("未登记任何别名。")
+
+    if no_cand:
+        print(f"\n另有 {len(no_cand)} 个 Unknown 文件夹无候选，需手工补充"
+              f"（--add 添加对照，或直接编辑 roles JSON；仅显示前 30 条）:")
+        for name, _r in no_cand[:30]:
+            print(f"  {name}")
+        if len(no_cand) > 30:
+            print(f"  ...（其余 {len(no_cand) - 30} 条略）")
+
+
+def work_display_name(work: str, works: dict) -> str:
+    """作品键 -> '全称 (键)'。优先中文名，其次英文名；无全称时只显示键。"""
+    v = works.get(work) if isinstance(works, dict) else None
+    if isinstance(v, dict):
+        for lang in ("zh", "en"):
+            names = v.get(lang) or []
+            if names:
+                return f"{names[0]} ({work})"
+    elif isinstance(v, list) and v:
+        return f"{v[0]} ({work})"
+    return work
+
+
+def format_pair_lines(r1: dict, r2: dict, works: dict) -> str:
+    """重复条目对的提示排版：游戏全称在上层，中/英文名按条目成行对齐。
+
+    每个条目一行：cn 别名（逗号连接）在左、en 别名（逗号连接）在右，
+    两列左对齐——同一角色的多种写法并列展示，不产生空行错位。
+    """
+    rows: list[tuple[str, str]] = []
+    for r in (r1, r2):
+        rows.append((", ".join(role_names(r, "zh")),
+                     ", ".join(role_names(r, "en"))))
+    cn_w = max((len(c) for c, _ in rows), default=0)
+    lines = [f"Game: {work_display_name(r1.get('work', '?'), works)}"]
+    for cn, en in rows:
+        lines.append(f"  {cn:<{cn_w}} | {en}")
+    return "\n".join(lines)
+
+
+def pair_skip_key(r1: dict, r2: dict) -> str:
+    """条目对的稳定键：两个 role_key 排序后用 ↔ 连接（顺序无关）。"""
+    return " ↔ ".join(sorted([role_key(r1), role_key(r2)]))
+
+
+def load_merge_skips(kb_path: Path) -> list[str]:
+    """读取已确认不合并的条目对（merge_skips.json）。"""
+    p = kb_path / "merge_skips.json"
+    if not p.exists():
+        return []
+    try:
+        data = json.loads(p.read_text(encoding="utf-8"))
+        return list(data) if isinstance(data, list) else []
+    except (json.JSONDecodeError, OSError):
+        return []
+
+
+def save_merge_skips(kb_path: Path, skips: list[str]) -> None:
+    """写回跳过记录（去重排序）。"""
+    p = kb_path / "merge_skips.json"
+    p.write_text(json.dumps(sorted(set(skips)), ensure_ascii=False, indent=2) + "\n",
+                 encoding="utf-8")
+
+
+def prune_merge_skips(skips: list[str], roles: list[dict]) -> list[str]:
+    """清理失效的跳过记录，只保留"当前仍会建议合并"的对：
+
+    - 条目对任一侧已不在 roles（被合并/删除）-> 移除；
+    - 条目仍在但已不再构成子串重叠（知识库更新后关系消失）-> 移除。
+
+    这样 merge_skips 始终收敛为"当前有效的拒绝集合"，不会随历史操作无限堆积。
+    """
+    by_key = {role_key(r): r for r in roles}
+    out: list[str] = []
+    for k in skips:
+        parts = [p for p in k.split(" ↔ ") if p]
+        if len(parts) != 2 or parts[0] not in by_key or parts[1] not in by_key:
+            continue
+        if not has_substr_overlap(by_key[parts[0]], by_key[parts[1]]):
+            continue
+        out.append(k)
+    return out
+
+
+def _cn_set(r: dict) -> set[str]:
+    """条目 cn 名称集合（去空）。"""
+    return {c for c in role_names(r, "zh") if c}
+
+
+def _en_set(r: dict) -> set[str]:
+    """条目 en 名称集合（归一化后）。"""
+    return {normalize_en_key(e) for e in role_names(r, "en") if e}
+
+
+def has_substr_overlap(r1: dict, r2: dict) -> bool:
+    """两个条目是否构成子串重叠（cn>=2 / en>=3 的一方是另一方子串）。
+
+    与 run_merge 阶段 2 的手动确认条件一致；prune_merge_skips 据此判断
+    跳过记录是否仍有效。
+    """
+    for a in _cn_set(r1):
+        for b in _cn_set(r2):
+            if a != b and len(a) >= 2 and len(b) >= 2 and (a in b or b in a):
+                return True
+    for a in _en_set(r1):
+        for b in _en_set(r2):
+            if a != b and len(a) >= 3 and len(b) >= 3 and (a in b or b in a):
+                return True
+    return False
+
+
+def run_merge(kb_path: Path) -> None:
+    """合并重复角色条目（两阶段）。
+
+    阶段 1（自动）：cn 或 en 有完全相等项的两条 = 确定同一角色，直接并入；
+    阶段 2（手动）：仅子串/简称重叠的对，逐对 y/n 确认（不再整组闭包合并，
+                   避免如 hina 是 hinata/hiyori 共同子串导致的误并）。
+    合并时 cn/en 数组按名称长度降序（全称在前，作为规范名/补全默认值）。
+    """
+    data = load_kb_json(kb_path)
+    roles = data.get("roles") or []
+    if not roles:
+        print("知识库为空。")
+        return
+
+    def cn_set(r):
+        return _cn_set(r)
+
+    def en_set(r):
+        return _en_set(r)
+
+    def has_exact(r1, r2):
+        return bool(cn_set(r1) & cn_set(r2) or en_set(r1) & en_set(r2))
+
+    def has_substr(r1, r2):
+        """仅子串重叠（不含完全相等）：cn>=2 或 en>=3 的一方是另一方的子串。"""
+        return has_substr_overlap(r1, r2)
+
+    def merge_into(base: dict, other: dict) -> None:
+        """把 other 并入 base（cn/en 数组去重，按长度降序全称在前），随后移除 other。"""
+        for f in ("zh", "en"):
+            merged = []
+            for x in role_names(base, f) + role_names(other, f):
+                if x and x not in merged:
+                    merged.append(x)
+            merged.sort(key=len, reverse=True)
+            base[f] = merged
+
+    def describe(r: dict) -> str:
+        return f"{r.get('zh') or '-'} | {r.get('en') or '-'} ({r.get('work', '?')})"
+
+    # 阶段 1：自动合并（cn 或 en 有完全相等项，且同一作品）
+    auto_count = 0
+    i = 0
+    while i < len(roles):
+        j = i + 1
+        while j < len(roles):
+            if roles[i].get("work") == roles[j].get("work") and has_exact(roles[i], roles[j]):
+                print(f"自动合并: {describe(roles[j])}  ->  {describe(roles[i])}")
+                merge_into(roles[i], roles[j])
+                roles.pop(j)
+                auto_count += 1
+            else:
+                j += 1
+        i += 1
+
+    # 阶段 2：手动确认（仅子串重叠，避免误并）
+    works = data.get("works") or {}
+    skips = prune_merge_skips(load_merge_skips(kb_path), roles)
+    manual_count = 0
+    i = 0
+    while i < len(roles):
+        j = i + 1
+        while j < len(roles):
+            if roles[i].get("work") == roles[j].get("work") and has_substr(roles[i], roles[j]):
+                if pair_skip_key(roles[i], roles[j]) in skips:
+                    j += 1  # 用户此前已确认"不合并"，不再询问
+                    continue
+                print("[子串重叠]")
+                print(format_pair_lines(roles[i], roles[j], works))
+                ans = ask("(y=合并, n=跳过, q=退出): ").lower()
+                if ans in ("q", "quit"):
+                    save_merge_skips(kb_path, skips)
+                    if auto_count or manual_count:
+                        data["roles"] = roles
+                        save_kb_json(kb_path, data)
+                        print(f"已保存（自动 {auto_count} 条，手动 {manual_count} 条）: {kb_path}")
+                    return
+                if ans in ("y", "yes"):
+                    print(f"手动合并: {describe(roles[j])}  ->  {describe(roles[i])}")
+                    merge_into(roles[i], roles[j])
+                    roles.pop(j)
+                    manual_count += 1
+                else:
+                    skips.append(pair_skip_key(roles[i], roles[j]))
+                    j += 1
+            else:
+                j += 1
+        i += 1
+
+    data["roles"] = roles
+    save_merge_skips(kb_path, skips)
+    if auto_count or manual_count:
+        save_kb_json(kb_path, data)
+        print(f"合并完成: 自动 {auto_count} 条，手动 {manual_count} 条，已保存: {kb_path}")
+    else:
+        print("没有发现可合并的重复条目。")
+
+
+def build_indexes(roles: list[dict], priority_roles: list[dict] | None = None):
+    """返回 (cn_idx, en_idx, en_to_cn, cn_to_en)。后两者用于补全/标准化中英文名。
+
+    角色条目的 cn/en 可以是字符串或数组：数组第一个为规范名（补全/标准化用它），
+    其余为别名（仅用于匹配）。别名已并入 cn/en 数组，不再单独维护。
+    priority_roles：用户最近明确选择的条目（如交互学习刚收录的），强制单作品归属，
+    用于解决跨作品同名歧义（如数据库同时有 GF/GF2 的「夏安」，用户选 GF 后归 GF）。"""
+    cn_idx: dict[str, set] = {}
+    en_idx: dict[str, set] = {}
+    en_to_cn: dict[str, list] = {}
+    cn_to_en: dict[str, list] = {}
+    for r in roles:
+        cn_list = role_names(r, "zh")
+        en_list = role_names(r, "en")
+        cn_main = cn_list[0] if cn_list else ""
+        en_main = en_list[0] if en_list else ""
+        for c in cn_list:
+            cn_idx.setdefault(c, set()).add(r["work"])
+        for e in en_list:
+            key = normalize_en_key(e)
+            en_idx.setdefault(key, set()).add(r["work"])
+            en_idx.setdefault(key.replace('_', '-'), set()).add(r["work"])
+        if cn_main and en_main:
+            # 规范名与所有别名都可触发补全，补全值统一取规范名（第一个）
+            en_to_cn.setdefault(normalize_en_key(en_main), []).append((r["work"], cn_main))
+            cn_to_en.setdefault(cn_main, []).append((r["work"], en_main))
+            for c in cn_list:
+                if c != cn_main:
+                    cn_to_en.setdefault(c, []).append((r["work"], en_main))
+            for e in en_list:
+                if e != en_main:
+                    key = normalize_en_key(e)
+                    en_to_cn.setdefault(key, []).append((r["work"], cn_main))
+                    en_to_cn.setdefault(key.replace('_', '-'), []).append((r["work"], cn_main))
+    # 用户最近明确选择（如交互学习收录）的条目强制单作品归属：
+    # 解决跨作品同名歧义（用户选定后归该作品）
+    for r in (priority_roles or []):
+        for c in role_names(r, "zh"):
+            cn_idx[c] = {r["work"]}
+        for e in role_names(r, "en"):
+            key = normalize_en_key(e)
+            en_idx[key] = {r["work"]}
+            en_idx[key.replace('_', '-')] = {r["work"]}
+        cn_list = role_names(r, "zh")
+        en_list = role_names(r, "en")
+        if cn_list and en_list:
+            cn_to_en[cn_list[0]] = [(r["work"], en_list[0])]
+            en_to_cn[normalize_en_key(en_list[0])] = [(r["work"], cn_list[0])]
+    return cn_idx, en_idx, en_to_cn, cn_to_en
+
+
+def get_target_dirs(path: str | None) -> list[Path]:
+    """扫描目标目录：Models/<作者4位编号>/<模型名> 两层 + Other-YSM-Models 一层。"""
+    roots = [Path(path).resolve()] if path else DEFAULT_ROOTS
+    dirs: list[Path] = []
+    for root in roots:
+        if not root.is_dir():
+            continue
+        if root.name == "Models":
+            for author in sorted(root.iterdir()):
+                if not (author.is_dir() and re.fullmatch(r"\d{4}", author.name)):
+                    continue
+                for model in sorted(author.iterdir()):
+                    if model.is_dir() and model.name != "previews":
+                        dirs.append(model)
+        else:
+            for model in sorted(root.iterdir()):
+                if model.is_dir() and model.name != "previews":
+                    dirs.append(model)
+    return sorted(dirs)
+
+
+# ---------------------------------------------------------------------------
+# 作品版命令（操作 × 对象：作品侧；与角色的 list/del/check/merge/set-default 对应）
+# ---------------------------------------------------------------------------
+def _work_line(i: int, wk: str, meta: dict, role_count: int) -> str:
+    """作品一行摘要：编号 | 键 | en 首项 | cn 首项 | 角色数。"""
+    en = meta.get("en") or []
+    cn = meta.get("zh") or []
+    en_s = en[0] if en else "-"
+    cn_s = cn[0] if cn else "-"
+    return f"[{i}] {wk:<16} | {en_s} | {cn_s} | 角色 {role_count}"
+
+
+def _role_count_map(data: dict) -> dict[str, int]:
+    """按作品统计角色数（供作品列表显示）。"""
+    counts: dict[str, int] = {}
+    for r in (data.get("roles") or []):
+        w = str(r.get("work", ""))
+        counts[w] = counts.get(w, 0) + 1
+    return counts
+
+
+def list_works_cmd(kb_path: Path) -> None:
+    """列出全部作品（键 + en/cn 首项 + 角色数）。"""
+    data = load_kb_json(kb_path)
+    works = data.get("works") or {}
+    counts = _role_count_map(data)
+    if not works:
+        print("知识库暂无作品。")
+        return
+    print(f"作品 {len(works)} 个：")
+    for i, (wk, meta) in enumerate(sorted(works.items()), 1):
+        print("  " + _work_line(i, wk, meta or {}, counts.get(wk, 0)))
+    print(f"共 {len(works)} 个作品。")
+
+
+def del_works_cmd(kb_path: Path) -> None:
+    """交互删除作品：列出 -> 选择 -> 确认（连同该作品全部角色一起删除）。"""
+    data = load_kb_json(kb_path)
+    works = data.get("works") or {}
+    if not works:
+        print("知识库暂无作品。")
+        return
+    print("删除作品：列出全部作品，选编号删除（连同该作品角色）。")
+    while True:
+        print("-" * 50)
+        items = sorted(works.items())
+        counts = _role_count_map(data)
+        for i, (wk, meta) in enumerate(items, 1):
+            print("  " + _work_line(i, wk, meta or {}, counts.get(wk, 0)))
+        sel = ask("选择要删除的作品编号（Enter=返回, q=退出）: ").strip()
+        if sel.lower() in ("q", "quit"):
+            break
+        if not sel.isdigit() or not (1 <= int(sel) <= len(items)):
+            print("编号无效，返回。")
+            break
+        wk = items[int(sel) - 1][0]
+        role_count = counts.get(wk, 0)
+        confirm = ask(f"确认删除作品 {wk!r}（含 {role_count} 个角色）？(y=确认, 其他=取消): ").strip()
+        if confirm.lower() not in ("y", "yes"):
+            print("已取消。")
+            continue
+        works.pop(wk, None)
+        data["roles"] = [r for r in (data.get("roles") or [])
+                         if str(r.get("work", "")) != wk]
+        save_kb_json(kb_path, data)
+        print(f"已删除作品 {wk!r}（含 {role_count} 个角色）。")
+
+
+def check_works_cmd(kb_path: Path) -> None:
+    """作品数据检查：转义键冲突、缺 category、缺英文名、角色 work 悬空。"""
+    data = load_kb_json(kb_path)
+    works = data.get("works") or {}
+    roles = data.get("roles") or []
+    issues: list[str] = []
+    # 转义冲突（_safe_name 撞名会覆盖文件）
+    seen: dict[str, str] = {}
+    for wk in works:
+        fname = storage._safe_name(wk)
+        prev = seen.get(fname)
+        if prev and prev != wk:
+            issues.append(f"转义冲突: {prev!r} 与 {wk!r} 同为文件 {fname}.json")
+        seen[fname] = wk
+    for wk, meta in works.items():
+        if not isinstance(meta, dict):
+            continue
+        if not meta.get("category"):
+            issues.append(f"缺 category: {wk!r}")
+        if not (meta.get("en") or []):
+            issues.append(f"缺英文名: {wk!r}")
+    # 角色 work 悬空（不在作品表）
+    work_keys = set(works)
+    for r in roles:
+        w = str(r.get("work", ""))
+        if w and w not in work_keys:
+            cn_s = " / ".join(r.get("zh") or []) or "?"
+            en_s = " / ".join(r.get("en") or []) or "?"
+            issues.append(f"角色 work 悬空: {cn_s} / {en_s} -> {w!r}")
+    if issues:
+        print(f"作品检查发现 {len(issues)} 个问题：")
+        for msg in issues:
+            print("  - " + msg)
+        return
+    print(f"作品检查通过（{len(works)} 个作品）。")
+
+
+def set_default_work_cmd(kb_path: Path) -> None:
+    """交互设定作品显示名：搜索/选择作品 -> 选已有名称或输入新名（en/cn/ja 首项）。
+
+    与角色的 --set-default 同理：默认名 = 数组首项；新输入的名称加入数组。
+    作品显示名用于 README 标签；作品键（文件夹前缀）不受影响。
+    """
+    data = load_kb_json(kb_path)
+    works = data.get("works") or {}
+    if not works:
+        print("知识库暂无作品。")
+        return
+    print("设定作品显示名：搜索作品 -> 选择 -> 选已有名称或输入新名称（写入数组首项）。")
+    while True:
+        print("-" * 50)
+        kw = ask("搜索作品（键/en/cn/ja 关键词，q=退出）: ").strip()
+        if kw.lower() in ("q", "quit"):
+            break
+        if not kw:
+            print("请输入搜索关键词。")
+            continue
+        hits = {wk: meta for wk, meta in works.items()
+                if kw.lower() in wk.lower()
+                or any(kw.lower() in str(x).lower()
+                       for x in (meta.get("en") or []) + (meta.get("zh") or [])
+                       + (meta.get("ja") or []))}
+        if not hits:
+            print("未找到匹配作品。")
+            continue
+        items = sorted(hits.items())
+        for i, (wk, meta) in enumerate(items, 1):
+            en_s = " / ".join(meta.get("en") or []) or "-"
+            cn_s = " / ".join(meta.get("zh") or []) or "-"
+            print(f"  [{i}] {wk:<16} | en: {en_s} | cn: {cn_s}")
+        sel = ask("选择编号（Enter=跳过）: ").strip()
+        if sel.lower() in ("q", "quit"):
+            break
+        if not sel.isdigit() or not (1 <= int(sel) <= len(items)):
+            print("编号无效，跳过。")
+            continue
+        wk = items[int(sel) - 1][0]
+        meta = dict(works.get(wk) or {})
+        for field, label in (("en", "英文名"), ("zh", "中文名"), ("ja", "日文名")):
+            cur = meta.get(field) or []
+            cur = [x for x in (cur if isinstance(cur, list) else [cur]) if x]
+            if cur:
+                print(f"  当前 {label}（数组首项=默认名）: {' / '.join(cur)}")
+                for i, n in enumerate(cur, 1):
+                    print(f"    [{i}] {n}")
+            else:
+                print(f"  当前 {label}（空）")
+            val = ask(f"  选编号=设默认{label}，或输入新{label}（Enter=不改，q=退出）: ").strip()
+            if val.lower() in ("q", "quit"):
+                return
+            if val.isdigit() and cur and 1 <= int(val) <= len(cur):
+                chosen = cur[int(val) - 1]
+            elif val:
+                chosen = val
+            else:
+                continue
+            meta[field] = [chosen] + [n for n in cur if n != chosen]
+        works[wk] = meta
+        save_kb_json(kb_path, data)
+        print(f"已设定作品 {wk!r} 显示名：en={meta.get('en')} cn={meta.get('zh')} ja={meta.get('ja')}")
+
+
+def merge_works_cmd(kb_path: Path) -> None:
+    """交互合并作品：按名称(en/cn/ja)或角色名重叠提候选 -> 逐个确认 -> 选主键合并。
+
+    合并 = 把被合并作品的所有角色 work 归到主键，元数据(名称/category)并入主键，
+    删除被合并作品（皮肤表键同步迁移）。仅当名称/角色确有重叠时才提示，避免误合并。
+    """
+    data = load_kb_json(kb_path)
+    works = data.get("works") or {}
+    roles = data.get("roles") or []
+    if len(works) < 2:
+        print("作品不足 2 个，无需合并。")
+        return
+
+    def norm(s) -> str:
+        return re.sub(r"[\s_\-]+", "", str(s)).lower()
+
+    # 作品名称 -> 出现过的作品（en/cn/ja 各名称）
+    name_map: dict[str, list[str]] = {}
+    for wk, meta in works.items():
+        if not isinstance(meta, dict):
+            continue
+        for field in ("en", "zh", "ja"):
+            for x in (meta.get(field) or []):
+                key = norm(x)
+                if key:
+                    name_map.setdefault(key, []).append(wk)
+    # 角色名 -> 作品（跨作品同名角色可能暗示作品重复）
+    role_name_map: dict[str, list[str]] = {}
+    for r in roles:
+        for x in (r.get("zh") or []) + (r.get("en") or []):
+            key = norm(x)
+            if key and len(key) >= 2:
+                role_name_map.setdefault(key, []).append(str(r.get("work", "")))
+
+    # 提候选对：两个作品共享名称或共享角色名
+    pairs: dict[tuple[str, str], str] = {}
+    for key, ws in name_map.items():
+        uniq = sorted(set(ws))
+        if len(uniq) == 2:
+            pairs.setdefault(tuple(uniq), "名称重叠")
+    for key, ws in role_name_map.items():
+        uniq = sorted(set(ws))
+        if len(uniq) == 2:
+            pairs.setdefault(tuple(uniq), "角色名重叠")
+
+    if not pairs:
+        print("未发现疑似重复的作品（无名称/角色名重叠）。")
+        return
+    print(f"发现 {len(pairs)} 对疑似重复作品（按 名称/角色名 重叠）：")
+    merged_any = False
+    for (a, b) in sorted(pairs):
+        print("-" * 50)
+        ma = works.get(a) or {}
+        mb = works.get(b) or {}
+        print(f"  候选: {a!r} vs {b!r}（{pairs[(a, b)]}）")
+        print(f"    {a}: en={ma.get('en') or '-'} cn={ma.get('zh') or '-'}")
+        print(f"    {b}: en={mb.get('en') or '-'} cn={mb.get('zh') or '-'}")
+        ans = ask("  合并吗？（1=保留前者为主键, 2=保留后者为主键, Enter=跳过, q=退出）: ").strip()
+        if ans.lower() in ("q", "quit"):
+            break
+        if ans not in ("1", "2"):
+            print("  跳过。")
+            continue
+        keep, drop = (a, b) if ans == "1" else (b, a)
+        confirm = ask(f"  确认把 {drop!r} 并入 {keep!r}（其角色全归 {keep}）？(y=确认): ").strip()
+        if confirm.lower() not in ("y", "yes"):
+            print("  已取消。")
+            continue
+        # 元数据合并：keep 缺失字段从 drop 补（drop 若有则并入名称，去重）
+        keep_meta = dict(works.get(keep) or {})
+        if drop in works:
+            drop_meta = dict(works.pop(drop) or {})
+            for field in ("en", "zh", "ja"):
+                cur = keep_meta.get(field) or []
+                add = drop_meta.get(field) or []
+                merged = list(cur) + [x for x in add if x not in cur]
+                if merged:
+                    keep_meta[field] = merged
+            if not keep_meta.get("category"):
+                keep_meta["category"] = drop_meta.get("category")
+        works[keep] = keep_meta
+        # 角色 work 迁移
+        for r in roles:
+            if str(r.get("work", "")) == drop:
+                r["work"] = keep
+        # 皮肤表键迁移（drop -> keep）
+        skin_tags = load_skin_tags()
+        if drop in skin_tags:
+            keep_tags = skin_tags.setdefault(keep, {"zh": [], "en": []})
+            keep_tags.setdefault("zh", []), keep_tags.setdefault("en", [])
+            for lang in ("zh", "en"):
+                for x in (skin_tags.get(drop, {}).get(lang) or []):
+                    if x not in keep_tags[lang]:
+                        keep_tags[lang].append(x)
+            skin_tags.pop(drop, None)
+            save_skin_tags(skin_tags)
+        save_kb_json(kb_path, data)
+        print(f"  已合并: {drop!r} -> {keep!r}")
+        merged_any = True
+    print(f"合并完成：{'有合并' if merged_any else '未做任何合并'}。")

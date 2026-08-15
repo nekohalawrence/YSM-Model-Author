@@ -1,12 +1,9 @@
-[
-  {
-    "work": "DOA",
-    "cn": [
-      "玛丽萝斯"
-    ],
-    "en": [
-      "marie-rose"
-    ],
-    "source": "auto"
-  }
-]
+{
+  "work": {
+    "name": "DOA",
+    "en": ["Dead or Alive", "DOA"],
+    "zh": ["死或生"],
+    "category": "Game"
+  },
+  "roles": [{"zh": ["玛丽萝斯"], "en": ["marie-rose"]}]
+}

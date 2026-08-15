@@ -1,32 +1,9 @@
-[
-  {
-    "work": "GBC",
-    "cn": [
-      "井芹仁菜"
-    ],
-    "en": [
-      "iseri-nina"
-    ],
-    "source": "auto"
+{
+  "work": {
+    "name": "GBC",
+    "en": ["Girls Band Cry", "GBC"],
+    "zh": ["哭泣少女乐队"],
+    "category": "Anime"
   },
-  {
-    "work": "GBC",
-    "cn": [
-      "卢帕"
-    ],
-    "en": [
-      "rupa"
-    ],
-    "source": "auto"
-  },
-  {
-    "work": "GBC",
-    "cn": [
-      "原木桃香"
-    ],
-    "en": [
-      "kawaragi-momoka"
-    ],
-    "source": "auto"
-  }
-]
+  "roles": [{"zh": ["井芹仁菜"], "en": ["iseri-nina"]}, {"zh": ["卢帕"], "en": ["rupa"]}, {"zh": ["原木桃香"], "en": ["kawaragi-momoka"]}]
+}

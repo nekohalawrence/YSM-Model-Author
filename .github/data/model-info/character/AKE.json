@@ -1,22 +1,9 @@
-[
-  {
-    "work": "AKE",
-    "cn": [
-      "余烬"
-    ],
-    "en": [
-      "ember"
-    ],
-    "source": "auto"
+{
+  "work": {
+    "name": "AKE",
+    "en": ["Arknights-Endfield", "AKE"],
+    "zh": ["明日方舟：终末地"],
+    "category": "Game"
   },
-  {
-    "work": "AKE",
-    "cn": [
-      "莱万汀"
-    ],
-    "en": [
-      "laevatain"
-    ],
-    "source": "auto"
-  }
-]
+  "roles": [{"zh": ["余烬"], "en": ["ember"]}, {"zh": ["莱万汀"], "en": ["laevatain"]}]
+}

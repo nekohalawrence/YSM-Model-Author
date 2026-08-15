@@ -1,12 +1,6 @@
-[
-  {
-    "work": "WW×2077",
-    "cn": [
-      "丽贝卡"
-    ],
-    "en": [
-      "rebecca"
-    ],
-    "source": "auto"
-  }
-]
+{
+  "work": {
+    "name": "WW×2077"
+  },
+  "roles": [{"zh": ["丽贝卡"], "en": ["rebecca"]}]
+}

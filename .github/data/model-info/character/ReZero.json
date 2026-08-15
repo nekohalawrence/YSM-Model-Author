@@ -1,12 +1,9 @@
-[
-  {
-    "work": "ReZero",
-    "cn": [
-      "雷姆"
-    ],
-    "en": [
-      "rem"
-    ],
-    "source": "auto"
-  }
-]
+{
+  "work": {
+    "name": "ReZero",
+    "zh": ["Re:从零开始的异世界生活"],
+    "en": ["Re:Zero"],
+    "category": "Anime"
+  },
+  "roles": [{"zh": ["雷姆"], "en": ["rem"]}]
+}

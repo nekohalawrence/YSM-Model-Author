@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""交互输入工具：kb_tool / audit_models 等交互式命令共用的安全输入。
+"""交互输入工具：rename_model_folders / audit_models 等交互式命令共用的安全输入。
 
 统一"Ctrl+C / stdin 耗尽视为退出(q)"的行为，避免各脚本各自实现。
 """

@@ -1,42 +1,10 @@
-[
-  {
-    "work": "VTuber",
-    "cn": [
-      "呜米"
-    ],
-    "en": [
-      "umyknight"
-    ],
-    "source": "auto"
+{
+  "work": {
+    "name": "VTuber",
+    "zh": ["虚拟主播"],
+    "en": ["Virtual YouTuber", "VTuber"],
+    "ja": ["バーチャルユーチューバー"],
+    "category": "Music"
   },
-  {
-    "work": "VTuber",
-    "cn": [
-      "咩栗"
-    ],
-    "en": [
-      "merrryyuko"
-    ],
-    "source": "auto"
-  },
-  {
-    "work": "VTuber",
-    "cn": [
-      "安洛樱"
-    ],
-    "en": [
-      "anluosakura"
-    ],
-    "source": "auto"
-  },
-  {
-    "work": "VTuber",
-    "cn": [
-      "艾伊菈"
-    ],
-    "en": [
-      "ahyra"
-    ],
-    "source": "auto"
-  }
-]
+  "roles": [{"zh": ["呜米"], "en": ["umyknight"]}, {"zh": ["咩栗"], "en": ["merrryyuko"]}, {"zh": ["安洛樱"], "en": ["anluosakura"]}, {"zh": ["艾伊菈"], "en": ["ahyra"]}]
+}

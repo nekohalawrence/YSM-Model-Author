@@ -30,9 +30,9 @@ except ImportError:
 # 每个数据文件必须有 schema 契约；models_meta 可能不存在（按需生成），跳过不报错。
 CHECKS: list[tuple[str, str]] = [
     ('authors.schema.json', 'author-info/authors.json'),
-    ('works.schema.json', 'model-info/works.json'),
     ('merge_skips.schema.json', 'model-info/merge_skips.json'),
-    ('category_map.schema.json', 'model-info/category_map.json'),
+    ('variant_tags.schema.json', 'model-info/variant_tags.json'),
+    ('skin_tags.schema.json', 'model-info/skin_tags.json'),
     ('role_terms.schema.json', 'author-info/role_terms.json'),
     ('platform_map.schema.json', 'author-info/platform_map.json'),
     ('models_meta.schema.json', 'author-info/models_meta.json'),

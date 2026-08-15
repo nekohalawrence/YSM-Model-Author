@@ -1,45 +1,9 @@
-[
-  {
-    "work": "Strinova",
-    "cn": [
-      "心夏"
-    ],
-    "en": [
-      "kokona"
-    ],
-    "source": "auto"
+{
+  "work": {
+    "name": "Strinova",
+    "zh": ["卡拉比丘"],
+    "en": ["Strinova"],
+    "category": "Game"
   },
-  {
-    "work": "Strinova",
-    "cn": [
-      "米雪儿·李"
-    ],
-    "en": [
-      "michele"
-    ],
-    "source": "auto"
-  },
-  {
-    "work": "Strinova",
-    "cn": [
-      "绯莎"
-    ],
-    "en": [
-      "fuchsia"
-    ],
-    "source": "auto"
-  },
-  {
-    "work": "Strinova",
-    "cn": [
-      "香奈美"
-    ],
-    "en": [
-      "jk_kanami-jk",
-      "kamami",
-      "kanami",
-      "kanami-mini"
-    ],
-    "source": "auto"
-  }
-]
+  "roles": [{"zh": ["心夏"], "en": ["kokona"]}, {"zh": ["米雪儿·李"], "en": ["michele"]}, {"zh": ["绯莎"], "en": ["fuchsia"]}, {"zh": ["香奈美"], "en": ["jk_kanami-jk", "kamami", "kanami", "kanami-mini"]}]
+}

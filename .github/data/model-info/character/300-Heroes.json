@@ -1,12 +1,10 @@
-[
-  {
-    "work": "300-Heroes",
-    "cn": [
-      "缇米"
-    ],
-    "en": [
-      "timi"
-    ],
-    "source": "auto"
-  }
-]
+{
+  "work": {
+    "name": "300-Heroes",
+    "en": ["300 Heroes", "300-Heroes"],
+    "zh": ["300 英雄"],
+    "ja": ["300 ヒーローズ"],
+    "category": "Game"
+  },
+  "roles": [{"zh": ["缇米"], "en": ["timi"]}]
+}

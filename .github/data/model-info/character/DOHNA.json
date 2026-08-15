@@ -1,12 +1,10 @@
-[
-  {
-    "work": "DOHNA",
-    "cn": [
-      "菊千代"
-    ],
-    "en": [
-      "mibu-kikuchiyo"
-    ],
-    "source": "auto"
-  }
-]
+{
+  "work": {
+    "name": "DOHNA",
+    "en": ["Dohna Dohna: Let's Do Bad Things Together", "DOHNA"],
+    "zh": ["多娜多娜 一起干坏事吧！"],
+    "ja": ["ドーナドーナ いっしょにわるいことしよう"],
+    "category": "Game"
+  },
+  "roles": [{"zh": ["菊千代"], "en": ["mibu-kikuchiyo"]}]
+}

@@ -1,0 +1,10 @@
+{
+  "work": {
+    "name": "AIRI",
+    "en": ["ATRI -My Dear Moments-", "ATRI", "AIRI"],
+    "zh": ["亚托莉‑我挚爱的时光‑"],
+    "ja": ["ATRI ‑My Dear Moments‑"],
+    "category": "Anime"
+  },
+  "roles": [{"zh": ["亚托莉"], "en": ["atri"]}]
+}

@@ -1,6 +1,5 @@
 .FREE-YSM-AUTHOR
 .aionrs/skills
-.github/scripts/__pycache__
 .github/tests
 .obsidian
 .reasonix
@@ -11,5 +10,5 @@ _achieve
 _template
 reasonix.toml
 AGENTS.md
+__pycache__
 
-__pycache__/

@@ -1,12 +1,10 @@
-[
-  {
-    "work": "Kisekoi",
-    "cn": [
-      "喜多川海梦"
-    ],
-    "en": [
-      "kitagawa-marin"
-    ],
-    "source": "auto"
-  }
-]
+{
+  "work": {
+    "name": "Kisekoi",
+    "en": ["My Dress-Up Darling", "MDUD", "Kisekoi"],
+    "zh": ["更衣人偶坠入爱河", "恋上换装娃娃"],
+    "ja": ["その着せ替え人形は恋をする"],
+    "category": "Anime"
+  },
+  "roles": [{"zh": ["喜多川海梦"], "en": ["kitagawa-marin"]}]
+}

@@ -1,13 +1,10 @@
-[
-  {
-    "work": "HNM",
-    "cn": [
-      "梦"
-    ],
-    "en": [
-      "yume-spring",
-      "yume-summer"
-    ],
-    "source": "auto"
-  }
-]
+{
+  "work": {
+    "name": "HNM",
+    "en": ["Wish upon a shooting star", "Hoshizora no Memoria", "HNM"],
+    "zh": ["星空的记忆"],
+    "ja": ["星空のメモリア"],
+    "category": "Game"
+  },
+  "roles": [{"zh": ["梦"], "en": ["yume", "yume-spring", "yume-summer"]}]
+}

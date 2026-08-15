@@ -1,12 +1,9 @@
-[
-  {
-    "work": "Granblue",
-    "cn": [
-      "娜露梅亚"
-    ],
-    "en": [
-      "narmaya"
-    ],
-    "source": "auto"
-  }
-]
+{
+  "work": {
+    "name": "Granblue",
+    "zh": ["碧蓝幻想：RELINK"],
+    "en": ["Granblue Fantasy: Relink", "GBR", "Granblue"],
+    "category": "Game"
+  },
+  "roles": [{"zh": ["娜露梅亚"], "en": ["narmaya"]}]
+}

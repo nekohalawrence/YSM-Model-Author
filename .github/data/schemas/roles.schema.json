@@ -1,24 +1,46 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "roles.schema.json",
-  "title": "角色知识库 roles/*.json",
-  "description": "每个作品一个文件,内容为角色 cn/en 对照数组;由 kb_tool --build-kb 自动重建(manual 条目除外)。source 缺失按 auto 处理。",
-  "type": "array",
-  "items": {
-    "type": "object",
-    "required": ["work", "cn", "en"],
-    "properties": {
-      "work": { "type": "string" },
-      "cn": { "type": "array", "items": { "type": "string" } },
-      "en": { "type": "array", "items": { "type": "string" } },
-      "source": { "enum": ["manual", "auto"] },
-      "note": { "type": "string" },
-      "skin": {
-        "description": "皮肤名(可选),支持多语言对象或数组",
-        "oneOf": [
-          { "type": "object", "additionalProperties": { "type": "array", "items": { "type": "string" } } },
-          { "type": "array", "items": { "type": "string" } }
-        ]
+  "title": "角色知识库 character/*.json（work + roles 格式）",
+  "description": "每个作品一个文件：work(作品元数据,含 name 权威键) + roles(角色数组)。纯手工维护(无自动构建),条目无 source 键；作品键由 work.name 决定,角色归属由文件级 work.name 决定。",
+  "type": "object",
+  "required": ["work", "roles"],
+  "properties": {
+    "work": {
+      "type": "object",
+      "required": ["name"],
+      "properties": {
+        "name": { "type": "string" },
+        "en": { "type": "array", "items": { "type": "string" } },
+        "zh": { "type": "array", "items": { "type": "string" } },
+        "ja": { "type": "array", "items": { "type": "string" } },
+        "category": {
+          "oneOf": [
+            {
+              "type": "string",
+              "enum": ["Game", "Anime", "Manga", "Novel", "Music", "Original", "Other"]
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": ["Game", "Anime", "Manga", "Novel", "Music", "Original", "Other"]
+              }
+            }
+          ]
+        }
+      }
+    },
+    "roles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["zh", "en"],
+        "properties": {
+          "zh": { "type": "array", "items": { "type": "string" } },
+          "en": { "type": "array", "items": { "type": "string" } },
+          "note": { "type": "string" }
+        }
       }
     }
   }

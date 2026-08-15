@@ -1,12 +1,9 @@
-[
-  {
-    "work": "Animal",
-    "cn": [
-      "蟑螂娘"
-    ],
-    "en": [
-      "cockroach-girl"
-    ],
-    "source": "auto"
-  }
-]
+{
+  "work": {
+    "name": "Animal",
+    "en": ["Animal"],
+    "zh": ["动物"],
+    "category": "Other"
+  },
+  "roles": [{"zh": ["蟑螂娘"], "en": ["cockroach-girl"]}]
+}

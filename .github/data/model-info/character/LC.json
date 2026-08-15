@@ -1,12 +1,9 @@
-[
-  {
-    "work": "LC",
-    "cn": [
-      "以实玛丽"
-    ],
-    "en": [
-      "limbus_ishmael"
-    ],
-    "source": "auto"
-  }
-]
+{
+  "work": {
+    "name": "LC",
+    "zh": ["边狱巴士", "边狱公司"],
+    "en": ["Limbus Company", "LC"],
+    "category": "Game"
+  },
+  "roles": [{"zh": ["以实玛丽"], "en": ["limbus_ishmael"]}]
+}

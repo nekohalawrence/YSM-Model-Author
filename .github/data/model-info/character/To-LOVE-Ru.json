@@ -1,12 +1,10 @@
-[
-  {
-    "work": "To-LOVE-Ru",
-    "cn": [
-      "伊芙"
-    ],
-    "en": [
-      "eve"
-    ],
-    "source": "auto"
-  }
-]
+{
+  "work": {
+    "name": "To-LOVE-Ru",
+    "en": ["To LOVE Ru", "To-LOVE-Ru"],
+    "zh": ["出包王女"],
+    "ja": ["To LOVE る - とらぶる -"],
+    "category": "Anime"
+  },
+  "roles": [{"zh": ["伊芙"], "en": ["eve"]}]
+}
