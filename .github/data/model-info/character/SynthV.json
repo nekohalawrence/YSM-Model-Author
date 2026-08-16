@@ -1,9 +1,16 @@
 {
   "work": {
-    "name": "SynthV",
-    "en": ["Synthesizer V", "SynthV"],
-    "zh": ["Synthesizer V"],
-    "ja": ["シンセサイザーV"],
+    "abbr": "SynthV",
+    "name": {
+      "zh": "Synthesizer V",
+      "en": "Synthesizer V",
+      "ja": "シンセサイザーV"
+    },
+    "aliases": {
+      "en": [
+        "SynthV"
+      ]
+    },
     "category": "Music"
   },
   "roles": []

@@ -3,4 +3,12 @@
 ## Author
 
 - **Name**: #北上 | #NorthWard
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+
+## Models
+
+<details>
+<summary><b>AK 明日方舟（1）</b></summary>
+
+- [AK_Logos](AK_Logos)
+
+</details>

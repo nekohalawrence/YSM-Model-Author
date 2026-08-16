@@ -1,9 +1,25 @@
 {
   "work": {
-    "name": "DOA",
-    "en": ["Dead or Alive", "DOA"],
-    "zh": ["死或生"],
+    "abbr": "DOA",
+    "name": {
+      "zh": "死或生",
+      "en": "Dead or Alive"
+    },
+    "aliases": {
+      "en": [
+        "DOA"
+      ]
+    },
     "category": "Game"
   },
-  "roles": [{"zh": ["玛丽萝斯"], "en": ["marie-rose"]}]
+  "roles": [
+    {
+      "zh": [
+        "玛丽萝斯"
+      ],
+      "en": [
+        "marie-rose"
+      ]
+    }
+  ]
 }

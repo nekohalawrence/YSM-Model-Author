@@ -3,20 +3,21 @@
 ## Author
 
 - **Name**: #苏瑞铃 | #苏瑞铃_official
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [苏瑞铃_official](https://space.bilibili.com/37942254)
+    - **Bilibili**: [苏瑞铃](https://space.bilibili.com/37942254)
 
-## Co-creator
+## Models
 
-- **Name**: [#White_clams白蛤蜊 | #白蛤蜊 | #White_Clams白蛤蜊](../0076/README.md)
-  - **Role**: #模型 | #Model
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [White_clams白蛤蜊](https://space.bilibili.com/168185637)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [白蛤蜊](https://afdian.com/a/whiteclams)
+<details>
+<summary><b>Delta-Force 三角洲行动（1）</b></summary>
 
-- **Name**: #wakareno
-  - **Role**: #素材 | #Asset
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [Kuria_x](https://space.bilibili.com/1027850236)
+- [Delta-Force_露娜_Luna-Kim_LA](Delta-Force_露娜_Luna-Kim_LA)
+
+</details>
+
+<details>
+<summary><b>GF2 少女前线 2：追放（1）</b></summary>
+
+- [GF2_夏安_M200_Cheyanne_LA](GF2_夏安_M200_Cheyanne_LA)
+
+</details>

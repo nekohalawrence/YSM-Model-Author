@@ -1,10 +1,26 @@
 {
   "work": {
-    "name": "PNF",
-    "en": ["Phineas and Ferb", "PNF"],
-    "zh": ["飞哥与小佛"],
-    "ja": ["フィニアスとファーブ"],
+    "abbr": "PNF",
+    "name": {
+      "zh": "飞哥与小佛",
+      "en": "Phineas and Ferb",
+      "ja": "フィニアスとファーブ"
+    },
+    "aliases": {
+      "en": [
+        "PNF"
+      ]
+    },
     "category": "Anime"
   },
-  "roles": [{"zh": ["鸭嘴兽泰瑞"], "en": ["perry-the-platypus"]}]
+  "roles": [
+    {
+      "zh": [
+        "鸭嘴兽泰瑞"
+      ],
+      "en": [
+        "perry-the-platypus"
+      ]
+    }
+  ]
 }

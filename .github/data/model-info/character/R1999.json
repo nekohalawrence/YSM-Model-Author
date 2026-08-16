@@ -1,8 +1,15 @@
 {
   "work": {
-    "name": "R1999",
-    "en": ["Reverse: 1999", "R1999"],
-    "zh": ["重返未来：1999"],
+    "abbr": "R1999",
+    "name": {
+      "zh": "重返未来：1999",
+      "en": "Reverse: 1999"
+    },
+    "aliases": {
+      "en": [
+        "R1999"
+      ]
+    },
     "category": "Game"
   },
   "roles": []

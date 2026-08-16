@@ -1,8 +1,10 @@
 {
   "work": {
-    "name": "MiSide",
-    "en": ["MiSide"],
-    "zh": ["米塔"],
+    "abbr": "MiSide",
+    "name": {
+      "zh": "米塔",
+      "en": "MiSide"
+    },
     "category": "Game"
   },
   "roles": []

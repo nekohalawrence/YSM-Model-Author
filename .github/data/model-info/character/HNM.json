@@ -1,10 +1,29 @@
 {
   "work": {
-    "name": "HNM",
-    "en": ["Wish upon a shooting star", "Hoshizora no Memoria", "HNM"],
-    "zh": ["星空的记忆"],
-    "ja": ["星空のメモリア"],
+    "abbr": "HNM",
+    "name": {
+      "zh": "星空的记忆",
+      "en": "Wish upon a shooting star",
+      "ja": "星空のメモリア"
+    },
+    "aliases": {
+      "en": [
+        "Hoshizora no Memoria",
+        "HNM"
+      ]
+    },
     "category": "Game"
   },
-  "roles": [{"zh": ["梦"], "en": ["yume", "yume-spring", "yume-summer"]}]
+  "roles": [
+    {
+      "zh": [
+        "梦"
+      ],
+      "en": [
+        "yume",
+        "yume-spring",
+        "yume-summer"
+      ]
+    }
+  ]
 }

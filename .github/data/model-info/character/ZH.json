@@ -1,8 +1,16 @@
 {
   "work": {
-    "name": "ZH",
-    "en": ["Command & Conquer Generals: Zero Hour", "Zero Hour", "ZH"],
-    "zh": ["命令与征服：绝命时刻"],
+    "abbr": "ZH",
+    "name": {
+      "zh": "命令与征服：绝命时刻",
+      "en": "Command & Conquer Generals: Zero Hour"
+    },
+    "aliases": {
+      "en": [
+        "Zero Hour",
+        "ZH"
+      ]
+    },
     "category": "Game"
   },
   "roles": []

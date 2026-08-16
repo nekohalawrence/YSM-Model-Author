@@ -2,11 +2,20 @@
 
 ## Author
 
-- **Name**: #Bubuker #rintaroa #Torontopizza #rintaroA
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #YouTube #Twitter #Discord
+- **Name**: #Bubuker | #rintaroa | #Torontopizza | #rintaroA
+  - **SocialPlatform**: #YouTube #Twitter
     - **YouTube**: @rintaroA
     - **Twitter**: Torontopizza
-    - **Discord**: Bubuker
   - **SupportPlatform**: #ko-fi
     - **ko-fi**: rintaroa
+  - **GroupChat**: #Discord
+    - **Discord**: Bubuker
+
+## Models
+
+<details>
+<summary><b>Unknown（1）</b></summary>
+
+- [Unknown_GIGI](Unknown_GIGI)
+
+</details>

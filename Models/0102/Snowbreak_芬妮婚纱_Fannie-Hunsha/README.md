@@ -1,11 +1,11 @@
-# 尘白禁区-芬妮婚纱_fannie_hunsha
+# Snowbreak_芬妮婚纱_Fannie-Hunsha
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Category**: #Game
+  - **Game**: #Snowbreak: Containment Zone #snowbreak #尘白禁区
 
 ## Author
 

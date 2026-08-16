@@ -3,13 +3,22 @@
 ## Author
 
 - **Name**: #超级大鸡腿丶 | #Nss
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
 
-## Co-creator
+## Models
 
-- **Name**: [#星语TAT](../../0049/README)
-  - **Role**: #动作 #动画 | #Motion #Animation
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [星语TAT](https://space.bilibili.com/316739550)
-  - **GroupChat**: #QQ
-    - **QQ**: 1039376704
+<details>
+<summary><b>AL 碧蓝航线（4）</b></summary>
+
+- [AL_尼米_Z23_LA](AL_尼米_Z23_LA)
+- [AL_标枪_Javelin_LA](AL_标枪_Javelin_LA)
+- [AL_绫波_Ayanami_LA](AL_绫波_Ayanami_LA)
+- [AL_雪风_KanCollect-Yukikaze_LA](AL_雪风_KanCollect-Yukikaze_LA)
+
+</details>
+
+<details>
+<summary><b>AveMujica 颂乐人偶（1）</b></summary>
+
+- [AveMujica_丰川祥子_Togawa-Sakiko_LB](AveMujica_丰川祥子_Togawa-Sakiko_LB)
+
+</details>

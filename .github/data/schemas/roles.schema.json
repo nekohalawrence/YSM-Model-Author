@@ -2,18 +2,31 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "roles.schema.json",
   "title": "角色知识库 character/*.json（work + roles 格式）",
-  "description": "每个作品一个文件：work(作品元数据,含 name 权威键) + roles(角色数组)。纯手工维护(无自动构建),条目无 source 键；作品键由 work.name 决定,角色归属由文件级 work.name 决定。",
+  "description": "每个作品一个文件：work(作品元数据,含 abbr 权威键) + roles(角色数组)。纯手工维护(无自动构建),条目无 source 键；作品键由 work.abbr 决定,角色归属由文件级 work.abbr 决定。",
   "type": "object",
   "required": ["work", "roles"],
   "properties": {
     "work": {
       "type": "object",
-      "required": ["name"],
+      "required": ["abbr"],
       "properties": {
-        "name": { "type": "string" },
-        "en": { "type": "array", "items": { "type": "string" } },
-        "zh": { "type": "array", "items": { "type": "string" } },
-        "ja": { "type": "array", "items": { "type": "string" } },
+        "abbr": { "type": "string" },
+        "name": {
+          "type": "object",
+          "properties": {
+            "zh": { "type": "string" },
+            "en": { "type": "string" },
+            "ja": { "type": "string" }
+          }
+        },
+        "aliases": {
+          "type": "object",
+          "properties": {
+            "zh": { "type": "array", "items": { "type": "string" } },
+            "en": { "type": "array", "items": { "type": "string" } },
+            "ja": { "type": "array", "items": { "type": "string" } }
+          }
+        },
         "category": {
           "oneOf": [
             {
@@ -39,7 +52,17 @@
         "properties": {
           "zh": { "type": "array", "items": { "type": "string" } },
           "en": { "type": "array", "items": { "type": "string" } },
-          "note": { "type": "string" }
+          "note": { "type": "string" },
+          "skin": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "zh": { "type": "array", "items": { "type": "string" } },
+                "en": { "type": "array", "items": { "type": "string" } }
+              }
+            }
+          }
         }
       }
     }

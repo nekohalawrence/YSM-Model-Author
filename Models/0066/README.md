@@ -3,12 +3,23 @@
 ## Author
 
 - **Name**: #A_su杏仁
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [A_su 杏仁](https://space.bilibili.com/524666730)
-  - **GroupChat**: #QQ
+  - **SocialPlatform**: #Bilibili #QQ
+    - **Bilibili**: [A_su杏仁](https://space.bilibili.com/524666730)
     - **QQ**: 1019752550
 
-## 动画
+## Models
 
-- [0073-MicroCraft_](../../0073/README)
+<details>
+<summary><b>Riru（1）</b></summary>
+
+- [Riru_修复](Riru_修复)
+
+</details>
+
+<details>
+<summary><b>Unknown（2）</b></summary>
+
+- [Unknown_菲洛尔缇](Unknown_菲洛尔缇)
+- [Unknown_馄饨狐狐](Unknown_馄饨狐狐)
+
+</details>

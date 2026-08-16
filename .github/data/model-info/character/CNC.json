@@ -1,8 +1,15 @@
 {
   "work": {
-    "name": "CNC",
-    "en": ["Command & Conquer", "CNC"],
-    "zh": ["命令与征服"],
+    "abbr": "CNC",
+    "name": {
+      "zh": "命令与征服",
+      "en": "Command & Conquer"
+    },
+    "aliases": {
+      "en": [
+        "CNC"
+      ]
+    },
     "category": "Game"
   },
   "roles": []

@@ -3,6 +3,22 @@
 ## Author
 
 - **Name**: #Omegaff0048 | #FF0048
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #YouTube
-    - **YouTube**: [FF0048](https://www.youtube.com/@omegaff0048)
+    - **YouTube**: [Omegaff0048](https://www.youtube.com/@omegaff0048)
+
+## Models
+
+<details>
+<summary><b>Utau 虚拟歌手（1）</b></summary>
+
+- [Utau_重音_Teto-Kasane-Teto](Utau_重音_Teto-Kasane-Teto)
+
+</details>
+
+<details>
+<summary><b>Unknown（2）</b></summary>
+
+- [Unknown_Pwned-Red](Unknown_Pwned-Red)
+- [Unknown_Pwned-Valeri](Unknown_Pwned-Valeri)
+
+</details>

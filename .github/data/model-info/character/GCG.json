@@ -1,10 +1,29 @@
 {
   "work": {
-    "name": "GCG",
-    "en": ["Girl Cafe Gun", "GCG"],
-    "zh": ["双生视界", "少女咖啡槍II"],
-    "ja": ["ガルカフェ"],
+    "abbr": "GCG",
+    "name": {
+      "zh": "双生视界",
+      "en": "Girl Cafe Gun",
+      "ja": "ガルカフェ"
+    },
+    "aliases": {
+      "zh": [
+        "少女咖啡槍II"
+      ],
+      "en": [
+        "GCG"
+      ]
+    },
     "category": "Game"
   },
-  "roles": [{"zh": ["时无瑕"], "en": ["shi-wuxia"]}]
+  "roles": [
+    {
+      "zh": [
+        "时无瑕"
+      ],
+      "en": [
+        "shi-wuxia"
+      ]
+    }
+  ]
 }

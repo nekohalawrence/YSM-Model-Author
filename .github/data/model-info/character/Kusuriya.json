@@ -1,9 +1,16 @@
 {
   "work": {
-    "name": "Kusuriya",
-    "en": ["The Apothecary Diaries", "Kusuriya"],
-    "zh": ["药屋少女的呢喃"],
-    "ja": ["薬屋のひとりごと"],
+    "abbr": "Kusuriya",
+    "name": {
+      "zh": "药屋少女的呢喃",
+      "en": "The Apothecary Diaries",
+      "ja": "薬屋のひとりごと"
+    },
+    "aliases": {
+      "en": [
+        "Kusuriya"
+      ]
+    },
     "category": "Anime"
   },
   "roles": []

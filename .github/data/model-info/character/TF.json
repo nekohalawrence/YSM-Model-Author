@@ -1,9 +1,25 @@
 {
   "work": {
-    "name": "TF",
-    "en": ["Teaching Feeling", "TF"],
-    "zh": ["奴隶少女希尔薇"],
+    "abbr": "TF",
+    "name": {
+      "zh": "奴隶少女希尔薇",
+      "en": "Teaching Feeling"
+    },
+    "aliases": {
+      "en": [
+        "TF"
+      ]
+    },
     "category": "Game"
   },
-  "roles": [{"zh": ["希尔薇"], "en": ["silvy"]}]
+  "roles": [
+    {
+      "zh": [
+        "希尔薇"
+      ],
+      "en": [
+        "silvy"
+      ]
+    }
+  ]
 }

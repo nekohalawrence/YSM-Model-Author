@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""验证 parse_file_stem 的变体对照表匹配（variant_tags.json 驱动）。"""
+"""验证 parse_file_stem 的变体对照表匹配（skin_tags.json 标准化表驱动）。"""
 import importlib.util
 import pathlib
 import sys
@@ -7,7 +7,7 @@ import sys
 sys.stdout.reconfigure(encoding='utf-8')
 
 SCRIPT = (pathlib.Path(__file__).resolve().parents[2] / '.github' / 'scripts'
-          / 'models_organize' / '02_rename_model_files&folders.py')
+          / 'models_organize' / '02_model_rename.py')
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[2] / '.github' / 'scripts'))
 spec = importlib.util.spec_from_file_location('ren_stem', str(SCRIPT))
 mod = importlib.util.module_from_spec(spec)

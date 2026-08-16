@@ -1,9 +1,16 @@
 {
   "work": {
-    "name": "LL",
-    "en": ["Love Live! School Idol Festival", "LL"],
-    "zh": ["Love Live! 学园偶像祭"],
-    "ja": ["ラブライブ！スクールアイドルフェスティバル"],
+    "abbr": "LL",
+    "name": {
+      "zh": "Love Live! 学园偶像祭",
+      "en": "Love Live! School Idol Festival",
+      "ja": "ラブライブ！スクールアイドルフェスティバル"
+    },
+    "aliases": {
+      "en": [
+        "LL"
+      ]
+    },
     "category": "Game"
   },
   "roles": []

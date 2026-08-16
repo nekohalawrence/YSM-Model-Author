@@ -2,11 +2,19 @@
 
 ## Author
 
-- **Name**: #喵Kuroneko| #KuroNeko
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [喵 Kuroneko](https://space.bilibili.com/323374106)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [KuroNeko](https://afdian.com/a/QwQlalalaKuroNe)
-  - **GroupChat**: #QQ
+- **Name**: #喵Kuroneko | #KuroNeko
+  - **SocialPlatform**: #Bilibili #QQ
+    - **Bilibili**: [喵Kuroneko](https://space.bilibili.com/323374106)
     - **QQ**: 1050145781
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [喵Kuroneko](https://afdian.com/a/QwQlalalaKuroNe)
+
+## Models
+
+<details>
+<summary><b>Unknown（2）</b></summary>
+
+- [Unknown_Bronya](Unknown_Bronya)
+- [Unknown_Ely](Unknown_Ely)
+
+</details>

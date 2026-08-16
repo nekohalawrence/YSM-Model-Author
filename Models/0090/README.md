@@ -3,6 +3,21 @@
 ## Author
 
 - **Name**: #九碳糖 | #九碳糖BI3NVZ
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [九碳糖BI3NVZ](https://space.bilibili.com/543291461)
+    - **Bilibili**: [九碳糖](https://space.bilibili.com/543291461)
+
+## Models
+
+<details>
+<summary><b>OC 原创角色（1）</b></summary>
+
+- [OC_泠鸢_Jk](OC_泠鸢_Jk)
+
+</details>
+
+<details>
+<summary><b>Unknown（1）</b></summary>
+
+- [Unknown_婚纱小叶子](Unknown_婚纱小叶子)
+
+</details>

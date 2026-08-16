@@ -3,4 +3,12 @@
 ## Author
 
 - **Name**: #新隆肰懿
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+
+## Models
+
+<details>
+<summary><b>AL 碧蓝航线（1）</b></summary>
+
+- [AL_信浓_Shinano_LA](AL_信浓_Shinano_LA)
+
+</details>

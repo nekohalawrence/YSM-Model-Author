@@ -3,33 +3,61 @@
 ## Author
 
 - **Name**: #浅陌菌
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [浅陌菌](https://space.bilibili.com/24513198)
+    - **QQ**: 1063585053
   - **SupportPlatform**: #Afdian
     - **Afdian**: [浅陌菌](https://afdian.com/a/tc_fox)
-  - **GroupChat**: #QQ
-    - **QQ**: 951920296
-    - **QQ**: 1063585053
 
-## Co-creator
+## Models
 
-- **Name**: [#星屑海螺| #磁小轨制作组（星屑海螺）| #不是海螺](../0048/README.md)
-  - **Role**: #动画 | #Animation
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [星屑海螺](https://space.bilibili.com/14975572)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [磁小轨制作组（星屑海螺）](https://afdian.com/a/lucia2048)
-  - **GroupChat**: #QQ
-    - **QQ**: 682546342
+<details>
+<summary><b>AL 碧蓝航线（12）</b></summary>
 
-- **Name**: [#秋风 | #每天都睡不醒的秋风 | #睡不死死不睡的秋风](../0113/README.md)
-  - **Role**: #动画 | #Animation
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [每天都睡不醒的秋风](https://space.bilibili.com/375227559)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [睡不死死不睡的秋风](https://afdian.com/a/qf0224)
+- [AL_TAC_LA](AL_TAC_LA)
+- [AL_列克星敦_II-Lexington-II_LA](AL_列克星敦_II-Lexington-II_LA)
+- [AL_大凤_Taihou_LA](AL_大凤_Taihou_LA)
+- [AL_天城_Amagi-Summer_LA](AL_天城_Amagi-Summer_LA)
+- [AL_天城_泳装_Amagi-Summer_LA](AL_天城_泳装_Amagi-Summer_LA)
+- [AL_应瑞_LA](AL_应瑞_LA)
+- [AL_欧根亲王_LA](AL_欧根亲王_LA)
+- [AL_欧根亲王「微醺与试探的距离」_LA](AL_欧根亲王「微醺与试探的距离」_LA)
+- [AL_武藏_Ijn-Musashi-Bunngyirl_LA](AL_武藏_Ijn-Musashi-Bunngyirl_LA)
+- [AL_白凤_LA](AL_白凤_LA)
+- [AL_约克城_II_LA](AL_约克城_II_LA)
+- [AL_能代_LA](AL_能代_LA)
 
-- **Name**: #遊記-Gnocchi
-  - **Role**: #形象 | #Image
+</details>
 
+<details>
+<summary><b>GI 原神（1）</b></summary>
+
+- [GI_甘雨_Ganyu_LA](GI_甘雨_Ganyu_LA)
+
+</details>
+
+<details>
+<summary><b>OC 原创角色（2）</b></summary>
+
+- [OC_德意志国_Deutschland (1871-1918)_LA](OC_德意志国_Deutschland (1871-1918)_LA)
+- [OC_联合王国_United-Kingdom (17–19c.)_LA](OC_联合王国_United-Kingdom (17–19c.)_LA)
+
+</details>
+
+<details>
+<summary><b>WW 鸣潮（5）</b></summary>
+
+- [WW_千咲_CHISA_LA](WW_千咲_CHISA_LA)
+- [WW_爱弥斯_Aemeath_LA](WW_爱弥斯_Aemeath_LA)
+- [WW_珂莱塔_LA](WW_珂莱塔_LA)
+- [WW_秧秧·玄翎](WW_秧秧·玄翎)
+- [WW_赞妮_Zani_LA](WW_赞妮_Zani_LA)
+
+</details>
+
+<details>
+<summary><b>新泽西（1）</b></summary>
+
+- [新泽西_USS_New_Jersy](新泽西_USS_New_Jersy)
+
+</details>

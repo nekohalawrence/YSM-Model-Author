@@ -14,14 +14,12 @@ INDEX_ROW_RE = re.compile(r'^\|\s*(\d{4})\s*\|\s*\[([^\]]+)\]\(([^)]*)\)\s*\|')
 # 作者字符串分隔符（全/半角）与 "中文(English)" 拆分
 AUTHOR_SPLIT_RE = re.compile(r'[\s|｜,，、;/；]+')
 PAREN_PAIR_RE = re.compile(r'^([^()（）]*)[(（]([^)）]*)[)）]$')
-# 作者 README 中 2 空格缩进的 Role 行（如 "  - **Role**: #模型 #动作 #动画 | ..."）
-ROLE_LINE_RE = re.compile(r'^\s{2}- \*\*Role\*\*\s*[:：]\s*(.+)$')
 # 作者 README 中 4 空格缩进的平台账号行（如 "    - **Bilibili**: [name](url)"）
 PLATFORM_LINE_RE = re.compile(r'^    - \*\*([^*]+)\*\*\s*[:：]\s*(.+)$')
 # 宽松版平台行（2-4 空格缩进、冒号可选）：audit_models 合并平台行时使用，
 # 兼容容器行（- **SocialPlatform**: #Bilibili）与子行（- **Bilibili**: [..](..)）
 PLATFORM_ANY_LINE_RE = re.compile(r'^\s{2,4}-\s*\*\*([^*]+)\*\*\s*[:：]?\s*(.*)$')
-# 根 README 作者表自动生成区域标记（author_index.py --readme 写入、translate_readme 保护）
+# 根 README 作者表自动生成区域标记（03_generate_root_readme.py --author 写入、translate_readme 保护）
 AUTHORS_LIST_START = '<!-- AUTHORS_LIST_START -->'
 AUTHORS_LIST_END = '<!-- AUTHORS_LIST_END -->'
 
@@ -109,17 +107,6 @@ def find_author(authors_str: str, alias_to_id: dict[str, str],
     return None, "未命中任何已收录作者"
 
 
-def extract_author_role(content: str) -> str:
-    """提取 ## Author 段内 Role 行值（避开 Co-creator）；无结果返回空串。"""
-    m = AUTHOR_SECTION_RE.search(content)
-    scope = m.group(1) if m else content
-    for line in scope.splitlines():
-        m2 = ROLE_LINE_RE.match(line)
-        if m2:
-            return m2.group(1).strip()
-    return ''
-
-
 def extract_platforms(content: str) -> dict[str, str]:
     """从作者 README 的 Author 段提取平台账号（孙项行）。
     值为 Markdown 链接时取 URL，否则取文本（如 QQ 号）。"""
@@ -174,7 +161,6 @@ def build_authors_data(models_dir: Path, root_readme: Path) -> dict:
             authors[author_dir.name] = {
                 'name': split_author_names(name_value),
                 'readme': rel_readme,
-                'role': extract_author_role(content),
                 'platforms': extract_platforms(content),
             }
 
@@ -191,7 +177,6 @@ def build_authors_data(models_dir: Path, root_readme: Path) -> dict:
             authors[author_id] = {
                 'name': split_author_names(m.group(2).strip()),
                 'readme': '',
-                'role': '',
                 'platforms': {},
             }
 

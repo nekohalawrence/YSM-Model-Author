@@ -1,9 +1,33 @@
 {
   "work": {
-    "name": "LOR",
-    "en": ["Library of Ruina", "LOR"],
-    "zh": ["废墟图书馆"],
+    "abbr": "LOR",
+    "name": {
+      "zh": "废墟图书馆",
+      "en": "Library of Ruina"
+    },
+    "aliases": {
+      "en": [
+        "LOR"
+      ]
+    },
     "category": "Game"
   },
-  "roles": [{"zh": ["卡莉"], "en": ["kali"]}, {"zh": ["比娜"], "en": ["binah"]}]
+  "roles": [
+    {
+      "zh": [
+        "卡莉"
+      ],
+      "en": [
+        "kali"
+      ]
+    },
+    {
+      "zh": [
+        "比娜"
+      ],
+      "en": [
+        "binah"
+      ]
+    }
+  ]
 }

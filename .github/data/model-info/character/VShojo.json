@@ -1,8 +1,10 @@
 {
   "work": {
-    "name": "VShojo",
-    "en": ["VShojo"],
-    "zh": ["VShojo"],
+    "abbr": "VShojo",
+    "name": {
+      "zh": "VShojo",
+      "en": "VShojo"
+    },
     "category": "Music"
   },
   "roles": []

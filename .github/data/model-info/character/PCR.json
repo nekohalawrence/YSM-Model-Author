@@ -1,9 +1,16 @@
 {
   "work": {
-    "name": "PCR",
-    "en": ["Princess Connect! Re:Dive", "PCR"],
-    "zh": ["公主连结Re:Dive"],
-    "ja": ["プリンセスコネクト！Re:Dive"],
+    "abbr": "PCR",
+    "name": {
+      "zh": "公主连结Re:Dive",
+      "en": "Princess Connect! Re:Dive",
+      "ja": "プリンセスコネクト！Re:Dive"
+    },
+    "aliases": {
+      "en": [
+        "PCR"
+      ]
+    },
     "category": "Game"
   },
   "roles": []

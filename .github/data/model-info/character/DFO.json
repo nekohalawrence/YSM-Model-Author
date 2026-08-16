@@ -1,8 +1,16 @@
 {
   "work": {
-    "name": "DFO",
-    "en": ["Dungeon & Fighter", "DNF", "DFO"],
-    "zh": ["地下城与勇士"],
+    "abbr": "DFO",
+    "name": {
+      "zh": "地下城与勇士",
+      "en": "Dungeon & Fighter"
+    },
+    "aliases": {
+      "en": [
+        "DNF",
+        "DFO"
+      ]
+    },
     "category": "Anime"
   },
   "roles": []

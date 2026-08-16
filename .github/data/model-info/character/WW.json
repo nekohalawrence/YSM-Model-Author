@@ -1,9 +1,122 @@
 {
   "work": {
-    "name": "WW",
-    "zh": ["鸣潮"],
-    "en": ["Wuthering-Waves", "WuWa", "WW"],
+    "abbr": "WW",
+    "name": {
+      "zh": "鸣潮",
+      "en": "Wuthering-Waves"
+    },
+    "aliases": {
+      "en": [
+        "WuWa",
+        "WW"
+      ]
+    },
     "category": "Game"
   },
-  "roles": [{"zh": ["今汐"], "en": ["jinhsi"]}, {"zh": ["千咲"], "en": ["chisa"]}, {"zh": ["卡提希娅"], "en": ["cartethyia"]}, {"zh": ["吟霖"], "en": ["yinlin"]}, {"zh": ["守岸人"], "en": ["the-shorekeeper"]}, {"zh": ["弗洛洛"], "en": ["phrolova"]}, {"zh": ["椿"], "en": ["camellya"]}, {"zh": ["漂泊者"], "en": ["rover"]}, {"zh": ["爱弥斯"], "en": ["aemeath"]}, {"zh": ["维里奈"], "en": ["verina"]}, {"zh": ["菲比"], "en": ["phoebe"]}, {"zh": ["赞妮"], "en": ["zani"]}, {"zh": ["长离"], "en": ["changli"]}]
+  "roles": [
+    {
+      "zh": [
+        "今汐"
+      ],
+      "en": [
+        "jinhsi"
+      ]
+    },
+    {
+      "zh": [
+        "千咲"
+      ],
+      "en": [
+        "chisa"
+      ]
+    },
+    {
+      "zh": [
+        "卡提希娅"
+      ],
+      "en": [
+        "cartethyia"
+      ]
+    },
+    {
+      "zh": [
+        "吟霖"
+      ],
+      "en": [
+        "yinlin"
+      ]
+    },
+    {
+      "zh": [
+        "守岸人"
+      ],
+      "en": [
+        "the-shorekeeper"
+      ]
+    },
+    {
+      "zh": [
+        "弗洛洛"
+      ],
+      "en": [
+        "phrolova"
+      ]
+    },
+    {
+      "zh": [
+        "椿"
+      ],
+      "en": [
+        "camellya"
+      ]
+    },
+    {
+      "zh": [
+        "漂泊者"
+      ],
+      "en": [
+        "rover"
+      ]
+    },
+    {
+      "zh": [
+        "爱弥斯"
+      ],
+      "en": [
+        "aemeath"
+      ]
+    },
+    {
+      "zh": [
+        "维里奈"
+      ],
+      "en": [
+        "verina"
+      ]
+    },
+    {
+      "zh": [
+        "菲比"
+      ],
+      "en": [
+        "phoebe"
+      ]
+    },
+    {
+      "zh": [
+        "赞妮"
+      ],
+      "en": [
+        "zani"
+      ]
+    },
+    {
+      "zh": [
+        "长离"
+      ],
+      "en": [
+        "changli"
+      ]
+    }
+  ]
 }

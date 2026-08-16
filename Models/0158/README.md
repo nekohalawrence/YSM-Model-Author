@@ -3,8 +3,16 @@
 ## Author
 
 - **Name**: #TiRLey | #TiRLey二号机
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [TiRLey二号机](https://space.bilibili.com/494506386)
+    - **Bilibili**: [TiRLey](https://space.bilibili.com/494506386)
   - **SupportPlatform**: #Afdian
-    - **Afdian**: [TiRLey/](https://afdian.com/a/HSTVsuckBVMrelikt)
+    - **Afdian**: [TiRLey](https://afdian.com/a/HSTVsuckBVMrelikt)
+
+## Models
+
+<details>
+<summary><b>Unknown（1）</b></summary>
+
+- [Unknown_道尔m1-Tor_M](Unknown_道尔m1-Tor_M)
+
+</details>

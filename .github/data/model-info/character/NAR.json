@@ -1,9 +1,34 @@
 {
   "work": {
-    "name": "NAR",
-    "zh": ["火影忍者: 疾风传"],
-    "en": ["NARUTO", "Naruto Shippuden", "NAR"],
+    "abbr": "NAR",
+    "name": {
+      "zh": "火影忍者: 疾风传",
+      "en": "NARUTO"
+    },
+    "aliases": {
+      "en": [
+        "Naruto Shippuden",
+        "NAR"
+      ]
+    },
     "category": "Game"
   },
-  "roles": [{"zh": ["佐助"], "en": ["sasuke"]}, {"zh": ["鸣人"], "en": ["naruto"]}]
+  "roles": [
+    {
+      "zh": [
+        "佐助"
+      ],
+      "en": [
+        "sasuke"
+      ]
+    },
+    {
+      "zh": [
+        "鸣人"
+      ],
+      "en": [
+        "naruto"
+      ]
+    }
+  ]
 }

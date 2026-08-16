@@ -1,9 +1,16 @@
 {
   "work": {
-    "name": "5Toubun",
-    "en": ["The Quintessential Quintuplets", "5Toubun"],
-    "zh": ["五等分的新娘"],
-    "ja": ["五等分の花嫁"],
+    "abbr": "5Toubun",
+    "name": {
+      "zh": "五等分的新娘",
+      "en": "The Quintessential Quintuplets",
+      "ja": "五等分の花嫁"
+    },
+    "aliases": {
+      "en": [
+        "5Toubun"
+      ]
+    },
     "category": "Anime"
   },
   "roles": []

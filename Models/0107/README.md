@@ -3,10 +3,35 @@
 ## Author
 
 - **Name**: #宇宙影帝の终焉
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [宇宙影帝の终焉](https://space.bilibili.com/364412316/)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [★【宇宙影帝の终焉】](https://ifdian.net/a/redder_p)
-  - **GroupChat**: #QQ
     - **QQ**: 3249851858
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [宇宙影帝の终焉](https://ifdian.net/a/redder_p)
+
+## Models
+
+<details>
+<summary><b>AL 碧蓝航线（1）</b></summary>
+
+- [AL_雪风_KanCollect-Yukikaze](AL_雪风_KanCollect-Yukikaze)
+
+</details>
+
+<details>
+<summary><b>Touhou 东方 Project（1）</b></summary>
+
+- [Touhou_比那名居天子_Hinanawi-Tenshi](Touhou_比那名居天子_Hinanawi-Tenshi)
+
+</details>
+
+<details>
+<summary><b>Unknown（5）</b></summary>
+
+- [Unknown_Lex-Ninjia](Unknown_Lex-Ninjia)
+- [Unknown_UMP](Unknown_UMP)
+- [Unknown_烧钱](Unknown_烧钱)
+- [Unknown_砍口垒](Unknown_砍口垒)
+- [Unknown_车万](Unknown_车万)
+
+</details>

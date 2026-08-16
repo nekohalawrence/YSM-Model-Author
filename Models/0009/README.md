@@ -3,6 +3,14 @@
 ## Author
 
 - **Name**: #白亚奈Anay
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [白亚奈Anay](https://space.bilibili.com/454110884)
+
+## Models
+
+<details>
+<summary><b>Unknown（1）</b></summary>
+
+- [Unknown_重装战姬爱塔](Unknown_重装战姬爱塔)
+
+</details>

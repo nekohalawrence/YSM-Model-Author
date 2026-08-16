@@ -1,8 +1,15 @@
 {
   "work": {
-    "name": "DeepVocal",
-    "en": ["DeepVocal", "DV"],
-    "zh": ["DeepVocal"],
+    "abbr": "DeepVocal",
+    "name": {
+      "zh": "DeepVocal",
+      "en": "DeepVocal"
+    },
+    "aliases": {
+      "en": [
+        "DV"
+      ]
+    },
     "category": "Music"
   },
   "roles": []

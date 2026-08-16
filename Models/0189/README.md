@@ -3,4 +3,13 @@
 ## Author
 
 - **Name**: #TIS长夜孤星
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+
+## Models
+
+<details>
+<summary><b>BA 碧蓝档案（2）</b></summary>
+
+- [BA_下江小春_Shimoe Koharu_LB](BA_下江小春_Shimoe Koharu_LB)
+- [BA_龙华妃咲_Kisaki-Ryuuge](BA_龙华妃咲_Kisaki-Ryuuge)
+
+</details>

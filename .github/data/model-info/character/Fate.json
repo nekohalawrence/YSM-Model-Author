@@ -1,10 +1,26 @@
 {
   "work": {
-    "name": "Fate",
-    "en": ["Fate/kaleid liner", "Fate"],
-    "zh": ["魔法少女☆伊莉雅"],
-    "ja": ["プリズマ☆イリヤ）"],
+    "abbr": "Fate",
+    "name": {
+      "zh": "魔法少女☆伊莉雅",
+      "en": "Fate/kaleid liner",
+      "ja": "プリズマ☆イリヤ）"
+    },
+    "aliases": {
+      "en": [
+        "Fate"
+      ]
+    },
     "category": "Anime"
   },
-  "roles": [{"zh": ["伊莉雅丝菲尔"], "en": ["illyasviel"]}]
+  "roles": [
+    {
+      "zh": [
+        "伊莉雅丝菲尔"
+      ],
+      "en": [
+        "illyasviel"
+      ]
+    }
+  ]
 }

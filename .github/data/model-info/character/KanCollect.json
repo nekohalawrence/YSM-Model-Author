@@ -1,6 +1,15 @@
 {
   "work": {
-    "name": "KanCollect"
+    "abbr": "KanCollect"
   },
-  "roles": [{"zh": ["北方栖姬"], "en": ["northern-princess"]}]
+  "roles": [
+    {
+      "zh": [
+        "北方栖姬"
+      ],
+      "en": [
+        "northern-princess"
+      ]
+    }
+  ]
 }

@@ -24,7 +24,6 @@
             "description": "首项为规范名,其余为别名"
           },
           "readme": { "type": "string" },
-          "role": { "type": "string", "description": "作者 Role 标签(如 #模型 #动作 #动画 | #Model #Motion #Animation),可选" },
           "platforms": {
             "type": "object",
             "additionalProperties": { "type": "string" }

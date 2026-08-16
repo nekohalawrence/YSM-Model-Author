@@ -1,9 +1,16 @@
 {
   "work": {
-    "name": "GLT",
-    "en": ["Girls' Last Tour", "GLT"],
-    "zh": ["少女终末旅行"],
-    "ja": ["少女終末旅行"],
+    "abbr": "GLT",
+    "name": {
+      "zh": "少女终末旅行",
+      "en": "Girls' Last Tour",
+      "ja": "少女終末旅行"
+    },
+    "aliases": {
+      "en": [
+        "GLT"
+      ]
+    },
     "category": "Anime"
   },
   "roles": []

@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 """kb 知识库多文件存储：load / save / migrate（原 kb_tool.py 的存储部分）。
 
-新结构：character/<作品>.json = {"work": {"name": 作品键, en/zh/ja/category},
-"roles": [{zh, en, note}]}——作品键由 work.name 决定（不再依赖文件名），
-角色归属由文件级 work.name 决定（角色条目不再存 work 字段）。
+新结构：character/<作品>.json = {"work": {"abbr": 作品键, name: {lang: 标准名},
+aliases: {lang: [别名...]}, category}, "roles": [{zh, en, note}]}——作品键由
+work.abbr 决定（不再依赖文件名），角色归属由文件级 work.abbr 决定（角色条目不再存 work 字段）。
 作品元数据与角色合并到同一作品文件（不再有独立 works.json）。
 兼容旧布局（{作品键: {元数据, roles}}、works.json + 角色数组）与旧单文件
 ysm_kb.json、旧 SQLite 库（读取兼容，保存自动迁移为新格式）。"""
@@ -65,10 +65,76 @@ def dumps_custom(obj, indent: int = 2, level: int = 0) -> str:
     return json.dumps(obj, ensure_ascii=False)
 
 
+def _work_to_memory(work: dict) -> tuple[str, dict]:
+    """文件 work 对象 -> (作品键, 内存 meta {en/zh/ja 数组, category})。
+
+    新格式 {abbr, name:{lang: 标准名}, aliases:{lang: [别名...]}, category}：
+    合并 name + aliases 还原为 en/zh/ja 数组（首项=标准名），供内存统一使用。
+    旧格式 {name, en/zh/ja 数组} 直接透传（name 即作品键）。
+    """
+    if 'abbr' in work:
+        abbr = work['abbr']
+        name_map = work.get('name') or {}
+        aliases_map = work.get('aliases') or {}
+        meta: dict = {}
+        for lang in ('en', 'zh', 'ja'):
+            arr: list[str] = []
+            nm = name_map.get(lang) if isinstance(name_map, dict) else None
+            if nm:
+                arr.append(str(nm))
+            for a in ((aliases_map.get(lang) or []) if isinstance(aliases_map, dict) else []):
+                if a and str(a) not in arr:
+                    arr.append(str(a))
+            meta[lang] = arr
+        if work.get('category') is not None:
+            meta['category'] = work['category']
+        return str(abbr), meta
+    # 旧格式：{name: 作品键, en/zh/ja 数组, category}
+    abbr = work.get('name') or ''
+    meta = {k: v for k, v in work.items() if k != 'name'}
+    return str(abbr), meta
+
+
+def _work_to_file(abbr: str, meta) -> dict:
+    """内存 works 值 -> 新文件 work 对象 {abbr, name, aliases, category}。
+
+    兼容三种旧写法：dict（{en/zh/ja 数组, category}）、list（视为英文名列表）、
+    字符串（视为单个英文名）。en/zh/ja 数组首项=标准名，其余=别名。
+    """
+    if isinstance(meta, dict):
+        en = meta.get('en') or []
+        zh = meta.get('zh') or []
+        ja = meta.get('ja') or []
+        category = meta.get('category')
+    elif isinstance(meta, list):
+        en, zh, ja, category = meta, [], [], None
+    elif meta:
+        en, zh, ja, category = [str(meta)], [], [], None
+    else:
+        en, zh, ja, category = [], [], [], None
+    work: dict = {'abbr': str(abbr), 'name': {}, 'aliases': {}}
+    for lang, arr in (('zh', zh), ('en', en), ('ja', ja)):
+        if isinstance(arr, str):
+            arr = [arr]
+        arr = [str(x) for x in arr if str(x)]
+        if not arr:
+            continue
+        work['name'][lang] = arr[0]
+        if len(arr) > 1:
+            work['aliases'][lang] = arr[1:]
+    if not work['name']:
+        work.pop('name')
+    if not work['aliases']:
+        work.pop('aliases')
+    if category:
+        work['category'] = category
+    return work
+
+
 def load_kb_json(kb_path: Path) -> dict:
     """读取知识库（作品元数据 + 角色都在 character/<作品>.json）。
 
-    新格式：每个 character/<作品>.json = {"work": {"name", en/cn/ja/category},
+    新格式：每个 character/<作品>.json = {"work": {"abbr", name, aliases, category},
     "roles": [...]}，读取后组装成内存结构 {"works": {...}, "roles": [...]}。
     兼容旧格式：{作品键: {元数据, roles}}、works.json（作品表）+
     character/<作品>.json（角色数组）也照常读取；旧单文件 ysm_kb.json 仍可读
@@ -110,10 +176,10 @@ def load_kb_json(kb_path: Path) -> dict:
                 print(f"[warn] 忽略损坏文件 {f}: {e}", file=sys.stderr)
                 continue
             if isinstance(content, dict) and isinstance(content.get("work"), dict):
-                # 新格式：{work: {name, en/cn/ja/category}, roles: [...]}
-                # 作品键由 work.name 决定，不再依赖文件名（文件名仅作人读友好）
-                wk = content["work"].get("name") or f.stem
-                meta = {k: v for k, v in content["work"].items() if k != "name"}
+                # 新格式：{work: {abbr, name, aliases, category}, roles: [...]}
+                # 作品键由 work.abbr 决定，不再依赖文件名（文件名仅作人读友好）
+                wk, meta = _work_to_memory(content["work"])
+                wk = wk or f.stem
                 if any(meta.get(fd) for fd in ("en", "zh", "ja", "category")):
                     works[wk] = meta
                 for r in (content.get("roles") or []):
@@ -163,8 +229,8 @@ def load_kb_json(kb_path: Path) -> dict:
 def save_kb_json(kb_path: Path, data: dict) -> None:
     """写回知识库（新格式）：作品元数据 + 角色合并进 character/<作品>.json。
 
-    新格式：每个 character/<作品>.json = {"work": {"name", en/cn/ja/category},
-    "roles": [{cn, en, note}]}——作品键由 work.name 决定，角色条目不存 work。
+    新格式：每个 character/<作品>.json = {"work": {"abbr", name, aliases, category},
+    "roles": [{cn, en, note}]}——作品键由 work.abbr 决定，角色条目不存 work。
     不再写独立 works.json。
     kb_path 为目录；若为旧单文件路径则以其父目录为数据根并迁移。
     """
@@ -248,8 +314,8 @@ def save_kb_json(kb_path: Path, data: dict) -> None:
     groups: dict[str, list] = {}
     for r in roles:
         groups.setdefault(str(r.get("work", "_")), []).append(r)
-    # 作品文件 = {"work": {name, 元数据}, "roles": [...]}；没有角色的作品也保留文件。
-    # 键由 work.name 决定（读取不依赖文件名），文件名仅作人读友好。
+    # 作品文件 = {"work": {abbr, name, aliases, category}, "roles": [...]}；没有角色的作品也保留文件。
+    # 键由 work.abbr 决定（读取不依赖文件名），文件名仅作人读友好。
     all_keys = set(data["works"]) | set(groups)
     seen_files: dict[str, str] = {}
     for wk in sorted(all_keys):
@@ -262,8 +328,8 @@ def save_kb_json(kb_path: Path, data: dict) -> None:
                 f"作品键 {prev!r} 与 {wk!r} 转义后同为文件 {fname!r}，"
                 f"请调整其中一个作品键以避免覆盖")
         seen_files[fname] = wk
-        meta = dict(data["works"].get(wk) or {})
-        work_obj = {"name": wk, **meta}
+        meta = data["works"].get(wk) or {}
+        work_obj = _work_to_file(wk, meta)
         # 角色条目剥离 work 字段（归属由文件级 work.name 决定，避免冗余与不一致）
         wk_roles = [{k: v for k, v in r.items() if k != "work"}
                     for r in groups.get(wk, [])]

@@ -1,6 +1,15 @@
 {
   "work": {
-    "name": "WW×2077"
+    "abbr": "WW×2077"
   },
-  "roles": [{"zh": ["丽贝卡"], "en": ["rebecca"]}]
+  "roles": [
+    {
+      "zh": [
+        "丽贝卡"
+      ],
+      "en": [
+        "rebecca"
+      ]
+    }
+  ]
 }

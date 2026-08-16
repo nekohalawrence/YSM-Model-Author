@@ -3,6 +3,15 @@
 ## Author
 
 - **Name**: #穿越小魔王
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [穿越小魔王](https://space.bilibili.com/1562115685)
+
+## Models
+
+<details>
+<summary><b>Unknown（2）</b></summary>
+
+- [Unknown_灾厄酒狐](Unknown_灾厄酒狐)
+- [Unknown_灾厄雪狐](Unknown_灾厄雪狐)
+
+</details>

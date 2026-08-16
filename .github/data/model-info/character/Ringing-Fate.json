@@ -1,8 +1,15 @@
 {
   "work": {
-    "name": "Ringing-Fate",
-    "zh": ["命运拳台"],
-    "en": ["Ringing Fate", "Ringing-Fate"],
+    "abbr": "Ringing-Fate",
+    "name": {
+      "zh": "命运拳台",
+      "en": "Ringing Fate"
+    },
+    "aliases": {
+      "en": [
+        "Ringing-Fate"
+      ]
+    },
     "category": "Anime"
   },
   "roles": []

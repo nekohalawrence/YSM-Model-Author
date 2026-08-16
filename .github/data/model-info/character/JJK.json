@@ -1,10 +1,26 @@
 {
   "work": {
-    "name": "JJK",
-    "en": ["Jujutsu Kaisen", "JJK"],
-    "zh": ["咒术回战"],
-    "ja": ["呪術廻戦"],
+    "abbr": "JJK",
+    "name": {
+      "zh": "咒术回战",
+      "en": "Jujutsu Kaisen",
+      "ja": "呪術廻戦"
+    },
+    "aliases": {
+      "en": [
+        "JJK"
+      ]
+    },
     "category": "Anime"
   },
-  "roles": [{"zh": ["宿傩"], "en": ["ryomen-sukuna"]}]
+  "roles": [
+    {
+      "zh": [
+        "宿傩"
+      ],
+      "en": [
+        "ryomen-sukuna"
+      ]
+    }
+  ]
 }

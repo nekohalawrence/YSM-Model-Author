@@ -1,9 +1,16 @@
 {
   "work": {
-    "name": "KAI",
-    "en": ["Kizuna AI", "KAI"],
-    "zh": ["绊爱"],
-    "ja": ["キズナアイ"],
+    "abbr": "KAI",
+    "name": {
+      "zh": "绊爱",
+      "en": "Kizuna AI",
+      "ja": "キズナアイ"
+    },
+    "aliases": {
+      "en": [
+        "KAI"
+      ]
+    },
     "category": "Music"
   },
   "roles": []

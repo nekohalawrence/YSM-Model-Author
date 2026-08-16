@@ -3,8 +3,17 @@
 ## Author
 
 - **Name**: #原原本本空空
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [原原本本空空](https://space.bilibili.com/407818720)
-  - **GroupChat**: #QQ
     - **QQ**: 1082258207
+
+## Models
+
+<details>
+<summary><b>Unknown（3）</b></summary>
+
+- [Unknown_机械酒狐_F-900 (Machine Wine Fox F-900)](Unknown_机械酒狐_F-900 (Machine Wine Fox F-900))
+- [Unknown_机械酒狐_真菌酒狐](Unknown_机械酒狐_真菌酒狐)
+- [Unknown_真菌酒狐](Unknown_真菌酒狐)
+
+</details>

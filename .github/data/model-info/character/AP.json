@@ -1,9 +1,25 @@
 {
   "work": {
-    "name": "AP",
-    "en": ["Azur-Promilia", "AP"],
-    "zh": ["蓝色星原"],
+    "abbr": "AP",
+    "name": {
+      "zh": "蓝色星原",
+      "en": "Azur-Promilia"
+    },
+    "aliases": {
+      "en": [
+        "AP"
+      ]
+    },
     "category": "Game"
   },
-  "roles": [{"zh": ["诺诺"], "en": ["nono"]}]
+  "roles": [
+    {
+      "zh": [
+        "诺诺"
+      ],
+      "en": [
+        "nono"
+      ]
+    }
+  ]
 }

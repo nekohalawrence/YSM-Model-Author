@@ -1,9 +1,16 @@
 {
   "work": {
-    "name": "AoT",
-    "en": ["Attack on Titan", "AoT"],
-    "zh": ["进击的巨人"],
-    "ja": ["進撃の巨人"],
+    "abbr": "AoT",
+    "name": {
+      "zh": "进击的巨人",
+      "en": "Attack on Titan",
+      "ja": "進撃の巨人"
+    },
+    "aliases": {
+      "en": [
+        "AoT"
+      ]
+    },
     "category": "Anime"
   },
   "roles": []

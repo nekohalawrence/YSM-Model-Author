@@ -1,9 +1,25 @@
 {
   "work": {
-    "name": "AH",
-    "en": ["Atomic-Heart", "AH"],
-    "zh": ["原子之心"],
+    "abbr": "AH",
+    "name": {
+      "zh": "原子之心",
+      "en": "Atomic-Heart"
+    },
+    "aliases": {
+      "en": [
+        "AH"
+      ]
+    },
     "category": "Game"
   },
-  "roles": [{"zh": ["舞伶"], "en": ["wuling"]}]
+  "roles": [
+    {
+      "zh": [
+        "舞伶"
+      ],
+      "en": [
+        "wuling"
+      ]
+    }
+  ]
 }

@@ -27,15 +27,14 @@ except ImportError:
     Draft7Validator = None  # type: ignore[assignment]
 
 # (schema 文件名, 数据相对 .github/data 的路径；character 为目录通配)
-# 每个数据文件必须有 schema 契约；models_meta 可能不存在（按需生成），跳过不报错。
+# 每个数据文件必须有 schema 契约；co_creators 可能不存在（按需生成），跳过不报错。
 CHECKS: list[tuple[str, str]] = [
     ('authors.schema.json', 'author-info/authors.json'),
     ('merge_skips.schema.json', 'model-info/merge_skips.json'),
-    ('variant_tags.schema.json', 'model-info/variant_tags.json'),
     ('skin_tags.schema.json', 'model-info/skin_tags.json'),
     ('role_terms.schema.json', 'author-info/role_terms.json'),
     ('platform_map.schema.json', 'author-info/platform_map.json'),
-    ('models_meta.schema.json', 'author-info/models_meta.json'),
+    ('co_creators.schema.json', 'author-info/co_creators.json'),
 ]
 ROLES_GLOB = 'model-info/character'
 
@@ -68,8 +67,8 @@ def check_all() -> int:
     for schema_name, rel in CHECKS:
         data_path = lib_paths.DATA_DIR / rel
         if not data_path.is_file():
-            # models_meta 按需生成，缺失是合法状态；其余文件缺失是问题
-            if schema_name == 'models_meta.schema.json':
+            # co_creators 按需生成，缺失是合法状态；其余文件缺失是问题
+            if schema_name == 'co_creators.schema.json':
                 print(f'  [跳过] {rel}（不存在，按需生成）')
             else:
                 failures.append(f'{rel}: 文件缺失')

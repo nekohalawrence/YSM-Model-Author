@@ -2,11 +2,19 @@
 
 ## Author
 
-- **Name**: #星屑海螺| #磁小轨制作组（星屑海螺）| #不是海螺
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+- **Name**: #星屑海螺 | #磁小轨制作组（星屑海螺） | #不是海螺
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [星屑海螺](https://space.bilibili.com/14975572)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [磁小轨制作组（星屑海螺）](https://afdian.com/a/lucia2048)
-  - **GroupChat**: #QQ
     - **QQ**: 682546342
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [星屑海螺](https://afdian.com/a/lucia2048)
+
+## Models
+
+<details>
+<summary><b>BA 碧蓝档案（2）</b></summary>
+
+- [BA_笑面教授_Niyaniya](BA_笑面教授_Niyaniya)
+- [BA_飞鸟马时_Asuma-Toki](BA_飞鸟马时_Asuma-Toki)
+
+</details>

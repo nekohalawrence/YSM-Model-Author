@@ -1,9 +1,25 @@
 {
   "work": {
-    "name": "DR",
-    "en": ["Dragon Raja", "DR"],
-    "zh": ["龙族"],
+    "abbr": "DR",
+    "name": {
+      "zh": "龙族",
+      "en": "Dragon Raja"
+    },
+    "aliases": {
+      "en": [
+        "DR"
+      ]
+    },
     "category": "Anime"
   },
-  "roles": [{"zh": ["夏弥"], "en": ["jormungandr"]}]
+  "roles": [
+    {
+      "zh": [
+        "夏弥"
+      ],
+      "en": [
+        "jormungandr"
+      ]
+    }
+  ]
 }

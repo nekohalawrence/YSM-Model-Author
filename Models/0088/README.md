@@ -3,6 +3,14 @@
 ## Author
 
 - **Name**: #无名氏
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **GroupChat**: #QQ
+  - **SocialPlatform**: #QQ
     - **QQ**: 2568904644
+
+## Models
+
+<details>
+<summary><b>Unknown（1）</b></summary>
+
+- [Unknown_洁云](Unknown_洁云)
+
+</details>

@@ -3,8 +3,16 @@
 ## Author
 
 - **Name**: #叁雫MitsukuDayo
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [未认证创作者](https://afdian.com/a/MitsukuDayo)
-  - **GroupChat**: #QQ
+  - **SocialPlatform**: #QQ
     - **QQ**: 2780077625
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [叁雫MitsukuDayo](https://afdian.com/a/MitsukuDayo)
+
+## Models
+
+<details>
+<summary><b>Unknown（1）</b></summary>
+
+- [Unknown_Tashkent](Unknown_Tashkent)
+
+</details>

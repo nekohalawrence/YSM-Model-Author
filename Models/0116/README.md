@@ -3,15 +3,53 @@
 ## Author
 
 - **Name**: #1111111re | #伊伊蕾
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [1111111re](https://space.bilibili.com/35073555)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [伊伊蕾](https://afdian.com/a/114514yire)
-  - **GroupChat**: #QQ
     - **QQ**: 769939358
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [1111111re](https://afdian.com/a/114514yire)
 
-## Co-creator
+## Models
 
-- **Name**: #Maribelhearn
-  - **Role**: #动画 | #Animation
+<details>
+<summary><b>AL 碧蓝航线（1）</b></summary>
+
+- [AL_柴郡_Cheshire_LB](AL_柴郡_Cheshire_LB)
+
+</details>
+
+<details>
+<summary><b>BA 碧蓝档案（1）</b></summary>
+
+- [BA_若叶日向_Wakaba-Hinata_LB](BA_若叶日向_Wakaba-Hinata_LB)
+
+</details>
+
+<details>
+<summary><b>KG 兽耳学园（1）</b></summary>
+
+- [KG_阿尔维娜酱_Arvina_Chan_LB](KG_阿尔维娜酱_Arvina_Chan_LB)
+
+</details>
+
+<details>
+<summary><b>KonoSuba 为美好的世界献上祝福！（1）</b></summary>
+
+- [KonoSuba_惠惠_Megumin_LB](KonoSuba_惠惠_Megumin_LB)
+
+</details>
+
+<details>
+<summary><b>OC 原创角色（2）</b></summary>
+
+- [OC_琴雨梦_Qym_LB](OC_琴雨梦_Qym_LB)
+- [OC_阿尔维娜酱_Arvina-Chan](OC_阿尔维娜酱_Arvina-Chan)
+
+</details>
+
+<details>
+<summary><b>VTuber 虚拟主播（1）</b></summary>
+
+- [VTuber_紫苑艾尔菲涅_LA](VTuber_紫苑艾尔菲涅_LA)
+
+</details>

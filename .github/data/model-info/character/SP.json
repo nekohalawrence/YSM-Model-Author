@@ -1,6 +1,15 @@
 {
   "work": {
-    "name": "SP"
+    "abbr": "SP"
   },
-  "roles": [{"zh": ["阿尔法零"], "en": ["alphazero"]}]
+  "roles": [
+    {
+      "zh": [
+        "阿尔法零"
+      ],
+      "en": [
+        "alphazero"
+      ]
+    }
+  ]
 }

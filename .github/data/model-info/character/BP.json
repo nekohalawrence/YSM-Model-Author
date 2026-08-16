@@ -1,9 +1,16 @@
 {
   "work": {
-    "name": "BP",
-    "en": ["Blue Protocol", "BP"],
-    "zh": ["蓝色协议"],
-    "ja": ["ブループロトコル"],
+    "abbr": "BP",
+    "name": {
+      "zh": "蓝色协议",
+      "en": "Blue Protocol",
+      "ja": "ブループロトコル"
+    },
+    "aliases": {
+      "en": [
+        "BP"
+      ]
+    },
     "category": "Game"
   },
   "roles": []

@@ -1,10 +1,26 @@
 {
   "work": {
-    "name": "BRS",
-    "en": ["Black Rock Shooter", "BRS"],
-    "zh": ["黑岩射手"],
-    "ja": ["ブラック★ロックシューター"],
+    "abbr": "BRS",
+    "name": {
+      "zh": "黑岩射手",
+      "en": "Black Rock Shooter",
+      "ja": "ブラック★ロックシューター"
+    },
+    "aliases": {
+      "en": [
+        "BRS"
+      ]
+    },
     "category": "Game"
   },
-  "roles": [{"zh": ["黑岩射手"], "en": ["black-rock-shooter"]}]
+  "roles": [
+    {
+      "zh": [
+        "黑岩射手"
+      ],
+      "en": [
+        "black-rock-shooter"
+      ]
+    }
+  ]
 }

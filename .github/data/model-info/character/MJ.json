@@ -1,9 +1,19 @@
 {
   "work": {
-    "name": "MJ",
-    "en": ["Majsoul", "MJ"],
-    "zh": ["雀魂麻将", "雀魂"],
-    "ja": ["雀魂"],
+    "abbr": "MJ",
+    "name": {
+      "zh": "雀魂麻将",
+      "en": "Majsoul",
+      "ja": "雀魂"
+    },
+    "aliases": {
+      "zh": [
+        "雀魂"
+      ],
+      "en": [
+        "MJ"
+      ]
+    },
     "category": "Game"
   },
   "roles": []

@@ -3,6 +3,16 @@
 ## Author
 
 - **Name**: #MC-ZBM
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [MC-ZBM](https://space.bilibili.com/604228173)
+
+## Models
+
+<details>
+<summary><b>AK 明日方舟（3）</b></summary>
+
+- [AK_余_Yu](AK_余_Yu)
+- [AK_水月_Mizuki](AK_水月_Mizuki)
+- [AK_白金_Platinum](AK_白金_Platinum)
+
+</details>

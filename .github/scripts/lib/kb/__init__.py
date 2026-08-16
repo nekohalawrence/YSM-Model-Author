@@ -7,11 +7,12 @@
   sync.py    works 索引（build_work_index）
   category.py 作品大类：从 character/*.json 现算分类 + 根 README 分类区块渲染
   cmds.py    交互命令 / 检查 / 合并 / 索引 / 扫描
+  authors.py 作者维护（合并重复作者 / 从模型推导作者名 / 重建作者数据）
 
 本包 re-export 全部公开 API，外部统一 `from lib.kb import ...`
 （原 kb_tool.py 薄壳已并入 rename_model_folders.py 并删除）。
 """
-from lib.kb import category, cmds, parse, storage, sync, text  # noqa: F401
+from lib.kb import authors, category, cmds, parse, storage, sync, text  # noqa: F401
 
 from lib.kb.category import (  # noqa: F401,E402
     CATEGORIES, CATEGORY_TITLES, README_END_MARKER, README_START_MARKER,
@@ -19,10 +20,16 @@ from lib.kb.category import (  # noqa: F401,E402
     render_readme_works_section, update_readme_works_section,
 )
 from lib.kb.cmds import (  # noqa: F401,E402
-    DEFAULT_ROOTS, REPO_ROOT, add_manual_entries, ask, build_indexes,
-    del_entries, format_pair_lines, get_target_dirs, has_substr_overlap,
-    list_db, load_merge_skips, pair_skip_key, prune_merge_skips, run_check,
-    run_merge, run_suggest, save_merge_skips, work_display_name,
+    DEFAULT_ROOTS, REPO_ROOT, add_manual_entries, add_work_interactive, ask,
+    build_indexes, del_entries, format_pair_lines, get_target_dirs,
+    has_substr_overlap, list_db, load_merge_skips, pair_skip_key,
+    prune_merge_skips, rename_work_cmd, rename_work_interactive, run_check,
+    run_merge, run_suggest, save_merge_skips, set_default_role_cmd,
+    work_display_name,
+)
+from lib.kb.authors import (  # noqa: F401,E402
+    add_author_alias, find_merge_candidates, merge_authors, merge_authors_flow,
+    sync_authors_from_models, write_authors_data,
 )
 from lib.kb.parse import (  # noqa: F401,E402
     EXTRA_WORK_ALIASES, GRADE_RE, build_kb, get_work_canonical,

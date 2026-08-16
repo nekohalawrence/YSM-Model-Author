@@ -1,10 +1,26 @@
 {
   "work": {
-    "name": "MGWT",
-    "en": ["Magical Girl Witch Trial", "MGWT"],
-    "zh": ["魔法少女的魔女审判"],
-    "ja": ["魔法少女ノ魔女裁判"],
+    "abbr": "MGWT",
+    "name": {
+      "zh": "魔法少女的魔女审判",
+      "en": "Magical Girl Witch Trial",
+      "ja": "魔法少女ノ魔女裁判"
+    },
+    "aliases": {
+      "en": [
+        "MGWT"
+      ]
+    },
     "category": "Game"
   },
-  "roles": [{"zh": ["樱羽艾玛"], "en": ["sakuraba-ema"]}]
+  "roles": [
+    {
+      "zh": [
+        "樱羽艾玛"
+      ],
+      "en": [
+        "sakuraba-ema"
+      ]
+    }
+  ]
 }

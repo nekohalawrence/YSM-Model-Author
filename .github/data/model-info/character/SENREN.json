@@ -1,10 +1,27 @@
 {
   "work": {
-    "name": "SENREN",
-    "zh": ["千恋＊万花"],
-    "en": ["Senren＊Banka", "SENREN"],
-    "ja": ["せんれん＊ばんか"],
+    "abbr": "SENREN",
+    "name": {
+      "zh": "千恋＊万花",
+      "en": "Senren＊Banka",
+      "ja": "せんれん＊ばんか"
+    },
+    "aliases": {
+      "en": [
+        "SENREN"
+      ]
+    },
     "category": "Game"
   },
-  "roles": [{"zh": ["丛雨"], "en": ["murasame", "murasame_uniform"]}]
+  "roles": [
+    {
+      "zh": [
+        "丛雨"
+      ],
+      "en": [
+        "murasame",
+        "murasame_uniform"
+      ]
+    }
+  ]
 }

@@ -1,10 +1,30 @@
 {
   "work": {
-    "name": "SakuraMoyu",
-    "en": ["‑as the Night's", "Reincarnation‑", "Sakura Moyu"],
-    "zh": ["樱花摸鱼", "樱花、萌放"],
-    "ja": ["さくら、もゆ"],
+    "abbr": "SakuraMoyu",
+    "name": {
+      "zh": "樱花摸鱼",
+      "en": "‑as the Night's",
+      "ja": "さくら、もゆ"
+    },
+    "aliases": {
+      "zh": [
+        "樱花、萌放"
+      ],
+      "en": [
+        "Reincarnation‑",
+        "Sakura Moyu"
+      ]
+    },
     "category": "Game"
   },
-  "roles": [{"zh": ["小黑"], "en": ["kuro"]}]
+  "roles": [
+    {
+      "zh": [
+        "小黑"
+      ],
+      "en": [
+        "kuro"
+      ]
+    }
+  ]
 }

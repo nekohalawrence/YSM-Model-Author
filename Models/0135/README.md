@@ -3,9 +3,17 @@
 ## Author
 
 - **Name**: #Lvara
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili #E-mail
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [Lvara](https://space.bilibili.com/34068391)
-    - **E-mail**: 1477827530@qq.com
-  - **GroupChat**: #QQ
     - **QQ**: 1477827530
+  - **OtherPlatform**: #E-mail
+    - **E-mail**: 1477827530@qq.com
+
+## Models
+
+<details>
+<summary><b>HSR 崩坏：星穹铁道（1）</b></summary>
+
+- [HSR_镜流_Jingliu](HSR_镜流_Jingliu)
+
+</details>

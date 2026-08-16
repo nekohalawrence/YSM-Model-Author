@@ -1,9 +1,19 @@
 {
   "work": {
-    "name": "CSM",
-    "en": ["Chainsaw Man", "CSM"],
-    "zh": ["链锯人", "电锯人"],
-    "ja": ["チェンソーマン"],
+    "abbr": "CSM",
+    "name": {
+      "zh": "链锯人",
+      "en": "Chainsaw Man",
+      "ja": "チェンソーマン"
+    },
+    "aliases": {
+      "zh": [
+        "电锯人"
+      ],
+      "en": [
+        "CSM"
+      ]
+    },
     "category": "Anime"
   },
   "roles": []

@@ -3,6 +3,14 @@
 ## Author
 
 - **Name**: #XG残党
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SupportPlatform**: #Afdian
-    - **Afdian**: [未认证创作者](https://afdian.com/a/x416g)
+    - **Afdian**: [XG残党](https://afdian.com/a/x416g)
+
+## Models
+
+<details>
+<summary><b>GF 少女前线（1）</b></summary>
+
+- [GF_AN_LD](GF_AN_LD)
+
+</details>

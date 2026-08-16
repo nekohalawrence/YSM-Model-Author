@@ -3,8 +3,31 @@
 ## Author
 
 - **Name**: #幻古诗
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [幻古诗](https://space.bilibili.com/443702321)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [幻古诗](https://afdian.com/a/huangushi)
+
+## Models
+
+<details>
+<summary><b>HSR 崩坏：星穹铁道（2）</b></summary>
+
+- [HSR_小符玄_Fuxuan](HSR_小符玄_Fuxuan)
+- [HSR_霍霍_HuoHuo](HSR_霍霍_HuoHuo)
+
+</details>
+
+<details>
+<summary><b>MNT 魔女之旅（1）</b></summary>
+
+- [MNT_伊蕾娜_Elaina_LB](MNT_伊蕾娜_Elaina_LB)
+
+</details>
+
+<details>
+<summary><b>MushokuTensei 无职转生～到了异世界就拿出真本事～（1）</b></summary>
+
+- [MushokuTensei_洛淇希_Roxy_Migurdia_LA](MushokuTensei_洛淇希_Roxy_Migurdia_LA)
+
+</details>

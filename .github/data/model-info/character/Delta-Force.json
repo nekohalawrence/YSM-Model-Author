@@ -1,9 +1,25 @@
 {
   "work": {
-    "name": "Delta-Force",
-    "zh": ["三角洲行动"],
-    "en": ["Delta Force", "Delta-Force"],
+    "abbr": "Delta-Force",
+    "name": {
+      "zh": "三角洲行动",
+      "en": "Delta Force"
+    },
+    "aliases": {
+      "en": [
+        "Delta-Force"
+      ]
+    },
     "category": "Game"
   },
-  "roles": [{"zh": ["露娜"], "en": ["luna-kim"]}]
+  "roles": [
+    {
+      "zh": [
+        "露娜"
+      ],
+      "en": [
+        "luna-kim"
+      ]
+    }
+  ]
 }

@@ -6,7 +6,7 @@
   ysm1 多作者模型：A作者(role=模型) 主 + B作者(role=动画) co-creator
   ysm2 双模型作者：A作者(role=模型) + B作者(role=模型) -> 主作者移动 + 其他复制
 预期：
-  1) ysm1 移入 Models/0001/，models_meta 记录 co-creator B（含平台信息）
+  1) ysm1 移入 Models/0001/，co_creators 记录 co-creator B（含平台信息）
   2) ysm2 同时出现在 Models/0001/ 与 Models/0002/（move + copy）
   3) 联动生成模型 README：含 Co-creator Details；无预览图也有 README
 """
@@ -60,8 +60,8 @@ def setup():
         "| 0002 | [#B作者](.../../Models/0002) | 1 |\n<!-- AUTHORS_LIST_END -->\n", encoding="utf-8")
     # 复制联动脚本、公共库与数据（使其 WORKSPACE_ROOT 指向临时根，按分类子目录复制）
     COPY_SCRIPTS = {
-        "models_organize": ["01_organize_models.py", "04_generate&update_root_readme.py",
-                            "03_generate&update_model_readmes.py"],
+        "models_organize": ["01_organize_models.py", "03_generate_root_readme.py",
+                            "03_generate_model_readmes.py"],
     }
     for cat, names in COPY_SCRIPTS.items():
         (ROOT / ".github" / "scripts" / cat).mkdir(parents=True, exist_ok=True)
@@ -115,8 +115,8 @@ def main():
     # 2 ysm2 复制到两个 model 作者目录（A 移动 + B 复制）
     checks.append((ROOT / "Models/0001/双模型作者/双模型作者.ysm").is_file())
     checks.append((ROOT / "Models/0002/双模型作者/双模型作者.ysm").is_file())
-    # 3 models_meta 记录 co-creator（键 0001/多作者模型，B作者 带平台）
-    meta = json.loads((ROOT / ".github/data/author-info/models_meta.json").read_text(encoding="utf-8"))
+    # 3 co_creators 记录 co-creator（键 0001/多作者模型，B作者 带平台）
+    meta = json.loads((ROOT / ".github/data/author-info/co_creators.json").read_text(encoding="utf-8"))
     co1 = meta["0001/多作者模型"]["co_creators"]
     checks.append(any(c["name"] == "B作者" and c["role"] == "动画" for c in co1))
     b_platforms = next(c["platforms"] for c in co1 if c["name"] == "B作者")

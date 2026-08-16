@@ -1,9 +1,17 @@
 {
   "work": {
-    "name": "ASE",
-    "en": ["White Eternity", "AstralAir no Shiroki Eien", "ASE"],
-    "zh": ["星辰恋曲的白色永恒"],
-    "ja": ["アストラエアの白き永遠"],
+    "abbr": "ASE",
+    "name": {
+      "zh": "星辰恋曲的白色永恒",
+      "en": "White Eternity",
+      "ja": "アストラエアの白き永遠"
+    },
+    "aliases": {
+      "en": [
+        "AstralAir no Shiroki Eien",
+        "ASE"
+      ]
+    },
     "category": "Game"
   },
   "roles": []

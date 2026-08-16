@@ -1,28 +1,20 @@
 # -*- coding: utf-8 -*-
 """
-02_rename_model_files&folders.py --apply 的交互学习 e2e 测试（两个场景）。
+02_model_rename.py --apply 纯重命名 e2e 测试（知识库维护已分离到 kb_tool）。
 
-场景 1 跨作品同名冲突：
-  - 数据库预置 GF_夏安 / GF2_夏安（纯手工条目，无自动构建）
-  - 夏安_Chian（无前缀 -> 反查命中 GF、GF2 两个作品 -> 冲突）
-  --apply 展示候选「0=GF 1=GF2」，输入 "0" 选 GF 后：
-    收录进数据库 + 补全重命名为 "GF_夏安_Chian"。
+02 只负责重命名、不收录数据库：Unknown / 跨作品同名冲突 直接标 SKIP 保持原文件夹名。
 
-场景 2 Windows 大小写修正：
+场景 1 Windows 大小写修正：
   - Avemujica_丰川祥子_LB（前缀大小写不规范，works 键是 AveMujica）
   --apply 应执行大小写修正重命名为 "AveMujica_丰川祥子_LB"，
     而不是误报「目标已存在」（Windows 大小写不敏感）。
 
-场景 3 皮肤入库：
-  - 未收录带皮肤角色（阿米娅_泳装）-> --learn 收录时皮肤写入皮肤表（AK 专属）。
+场景 2 跨作品同名冲突跳过：
+  - 数据库预置 GF_夏安 / GF2_夏安；夏安_Chian（无前缀 -> 命中两个作品 -> 冲突）
+  --apply 不收录、不询问：保持原文件夹名，不生成 Unknown_ 前缀。
 
-场景 4 仅 --apply 冲突选择：
-  - 不带 --learn 只跑 --apply，遇跨作品同名冲突（夏安 -> GF/GF2）：
-    逐项询问归属，输入 "0" 选 GF -> 收录数据库 + 补前缀重命名为 "GF_夏安_Chian"。
-
-场景 5 --apply --skip-conflict：
-  - --apply 加 --skip-conflict：跳过冲突选择、不处理，保持原文件夹名，
-    不生成 Unknown_ 前缀（防止无人值守卡住）。
+场景 3 Unknown 跳过：
+  - 阿米娅_泳装（无作品前缀、知识库未收录）-> --apply 保持原文件夹名，不收录数据库。
 
 运行：python .github/test/test_rename_interactive.py（0=通过，1=失败）
 """
@@ -38,7 +30,7 @@ sys.stdout.reconfigure(encoding="utf-8")
 ROOT = pathlib.Path(tempfile.gettempdir()) / "ysm_rename_interactive"
 REPO = pathlib.Path(__file__).resolve().parents[2]   # .github/test -> 仓库根
 SCRIPTS = REPO / ".github" / "scripts"
-SCRIPT = SCRIPTS / "models_organize" / "02_rename_model_files&folders.py"
+SCRIPT = SCRIPTS / "models_organize" / "02_model_rename.py"
 
 
 def setup(works: dict, folders: list[str]) -> None:
@@ -61,7 +53,7 @@ def setup(works: dict, folders: list[str]) -> None:
 
     (ROOT / ".github" / "scripts" / "models_organize").mkdir(parents=True)
     shutil.copy(SCRIPT, ROOT / ".github" / "scripts" / "models_organize"
-                / "02_rename_model_files&folders.py")
+                / "02_model_rename.py")
     if (SCRIPTS / "lib").is_dir():
         shutil.copytree(SCRIPTS / "lib", ROOT / ".github" / "scripts" / "lib")
     data_dir = ROOT / ".github" / "data" / "model-info"
@@ -84,53 +76,13 @@ def setup(works: dict, folders: list[str]) -> None:
 
 
 def run_rename(stdin_text: str, extra_args: list[str] | None = None) -> subprocess.CompletedProcess:
-    """在临时仓库运行 rename-folders --learn --apply（可追加额外参数），返回结果。"""
-    args = ["--learn", "--apply"] + (extra_args or [])
+    """在临时仓库运行 rename-folders --apply（可追加额外参数），返回结果。"""
+    args = ["--apply"] + (extra_args or [])
     return subprocess.run(
         [sys.executable, str(ROOT / ".github" / "scripts" / "models_organize"
-                          / "02_rename_model_files&folders.py")] + args,
+                          / "02_model_rename.py")] + args,
         input=stdin_text, capture_output=True, text=True,
         encoding="utf-8", errors="replace", cwd=str(ROOT))
-
-
-def case_skin_conflict() -> list[tuple[str, bool]]:
-    """场景 1：跨作品同名冲突 -> 展示候选 -> 编号选择 -> 收录 + 补全重命名。"""
-    setup({"GF": {"en": ["Girls Frontline"]},
-           "GF2": {"en": ["Girls Frontline 2"]}},
-          ["夏安_Chian"])
-    # 纯手工维护：预置数据库角色条目（GF/GF2 都有「夏安」），供跨作品冲突检测
-    char_dir = ROOT / ".github/data/model-info/character"
-    (char_dir / "GF.json").write_text(json.dumps({
-        "work": {"name": "GF", "en": ["Girls Frontline"]},
-        "roles": [{"zh": ["夏安"], "en": ["xiaan"]}],
-    }, ensure_ascii=False), encoding="utf-8")
-    (char_dir / "GF2.json").write_text(json.dumps({
-        "work": {"name": "GF2", "en": ["Girls Frontline 2"]},
-        "roles": [{"zh": ["夏安"], "en": ["xiaan-gf2"]}],
-    }, ensure_ascii=False), encoding="utf-8")
-    r = run_rename("0\n")
-    print(r.stdout)
-    if r.stderr:
-        print("STDERR:", r.stderr, file=sys.stderr)
-
-    checks: list[tuple[str, bool]] = [
-        ("退出码 0", r.returncode == 0),
-        ("冲突候选展示", "同名角色存在于多个作品" in r.stdout and "0=GF" in r.stdout),
-        ("补全重命名", (ROOT / "Models/0001/GF_夏安_Chian").is_dir()),
-        ("旧名已移除", not (ROOT / "Models/0001/夏安_Chian").exists()),
-        ("收录到数据库",
-         (ROOT / ".github/data/model-info/character/GF.json").is_file()),
-    ]
-    if checks[4][1]:
-        data = json.loads((ROOT / ".github/data/model-info/character/GF.json")
-                          .read_text(encoding="utf-8"))
-        # 新格式：角色在顶层 roles 数组（条目不存 work，归属由 work.name 决定）
-        roles = data.get("roles", []) if isinstance(data, dict) else data
-        has_entry = any("夏安" in (e.get("zh") or []) for e in roles)
-        checks.append(("数据库条目写入", has_entry))
-    else:
-        checks.append(("数据库条目写入", False))
-    return checks
 
 
 def case_casefix() -> list[tuple[str, bool]]:
@@ -150,27 +102,6 @@ def case_casefix() -> list[tuple[str, bool]]:
     ]
 
 
-def case_skin_learn() -> list[tuple[str, bool]]:
-    """场景 3：未收录带皮肤角色 -> 收录时把皮肤写入数据库 skin 字段。"""
-    setup({}, ["阿米娅_泳装"])
-    r = run_rename("AK\n")
-    print(r.stdout)
-    if r.stderr:
-        print("STDERR:", r.stderr, file=sys.stderr)
-    checks: list[tuple[str, bool]] = [
-        ("退出码 0", r.returncode == 0),
-        ("补全重命名", (ROOT / "Models/0001/AK_阿米娅_泳装").is_dir()),
-    ]
-    skf = ROOT / ".github/data/model-info/skin_tags.json"
-    if skf.is_file():
-        tags = json.loads(skf.read_text(encoding="utf-8"))
-        has_skin = "泳装" in (tags.get("AK") or {}).get("zh", [])
-        checks.append(("皮肤写入皮肤表", has_skin))
-    else:
-        checks.append(("皮肤写入皮肤表", False))
-    return checks
-
-
 def _write_conflict_kb() -> None:
     """预置 GF/GF2 都含「夏安」的数据库（跨作品同名冲突场景）。"""
     char_dir = ROOT / ".github/data/model-info/character"
@@ -184,50 +115,36 @@ def _write_conflict_kb() -> None:
     }, ensure_ascii=False), encoding="utf-8")
 
 
-def case_apply_conflict() -> list[tuple[str, bool]]:
-    """场景 4：仅 --apply（不带 --learn）遇跨作品同名冲突 -> 交互选择归属并收录。"""
+def case_conflict_skip() -> list[tuple[str, bool]]:
+    """场景 2：跨作品同名冲突 -> --apply 不收录、不询问，保持原文件夹名。"""
     setup({"GF": {"en": ["Girls Frontline"]},
            "GF2": {"en": ["Girls Frontline 2"]}},
           ["夏安_Chian"])
     _write_conflict_kb()
-    # 仅 --apply（无 --learn）：遇冲突仍应让用户选择归属
-    r = subprocess.run(
-        [sys.executable, str(ROOT / ".github/scripts/models_organize"
-                          / "02_rename_model_files&folders.py"), "--apply"],
-        input="0\n", capture_output=True, text=True,
-        encoding="utf-8", errors="replace", cwd=str(ROOT))
+    r = run_rename("")
     print(r.stdout)
     if r.stderr:
         print("STDERR:", r.stderr, file=sys.stderr)
     checks: list[tuple[str, bool]] = [
         ("退出码 0", r.returncode == 0),
-        ("--apply 冲突选择提示", "选择归属作品" in r.stdout and "0=GF" in r.stdout),
-        ("选择后补全重命名", (ROOT / "Models/0001/GF_夏安_Chian").is_dir()),
-        ("旧名已移除", not (ROOT / "Models/0001/夏安_Chian").exists()),
-        ("收录到数据库", (ROOT / ".github/data/model-info/character/GF.json").is_file()),
+        ("冲突保持提示", "跨作品同名冲突" in r.stdout),
+        ("保持原文件夹名", (ROOT / "Models/0001/夏安_Chian").is_dir()),
+        ("未生成 Unknown 前缀", not any(
+            p.name.startswith("Unknown_") for p in (ROOT / "Models/0001").iterdir())),
     ]
     return checks
 
 
-def case_apply_skip_conflict() -> list[tuple[str, bool]]:
-    """场景 5：--apply --skip-conflict -> 跳过选择、不处理，保持原文件夹名。"""
-    setup({"GF": {"en": ["Girls Frontline"]},
-           "GF2": {"en": ["Girls Frontline 2"]}},
-          ["夏安_Chian"])
-    _write_conflict_kb()
-    r = subprocess.run(
-        [sys.executable, str(ROOT / ".github/scripts/models_organize"
-                          / "02_rename_model_files&folders.py"),
-         "--apply", "--skip-conflict"],
-        input="", capture_output=True, text=True,
-        encoding="utf-8", errors="replace", cwd=str(ROOT))
+def case_unknown_skip() -> list[tuple[str, bool]]:
+    """场景 3：Unknown 无作品 -> --apply 保持原文件夹名，不收录数据库。"""
+    setup({}, ["阿米娅_泳装"])
+    r = run_rename("")
     print(r.stdout)
     if r.stderr:
         print("STDERR:", r.stderr, file=sys.stderr)
     checks: list[tuple[str, bool]] = [
         ("退出码 0", r.returncode == 0),
-        ("跳过提示", "--skip-conflict: 跳过" in r.stdout),
-        ("保持原文件夹名", (ROOT / "Models/0001/夏安_Chian").is_dir()),
+        ("保持原文件夹名", (ROOT / "Models/0001/阿米娅_泳装").is_dir()),
         ("未生成 Unknown 前缀", not any(
             p.name.startswith("Unknown_") for p in (ROOT / "Models/0001").iterdir())),
     ]
@@ -237,11 +154,9 @@ def case_apply_skip_conflict() -> list[tuple[str, bool]]:
 def main() -> int:
     all_ok = True
     total = 0
-    for title, checks in [("跨作品冲突(learn)", case_skin_conflict()),
-                          ("大小写修正", case_casefix()),
-                          ("皮肤入库", case_skin_learn()),
-                          ("仅apply冲突选择", case_apply_conflict()),
-                          ("apply跳过冲突", case_apply_skip_conflict())]:
+    for title, checks in [("大小写修正", case_casefix()),
+                          ("跨作品冲突跳过", case_conflict_skip()),
+                          ("Unknown跳过", case_unknown_skip())]:
         print("=" * 50)
         print(f"== {title} ==")
         for i, (name, ok) in enumerate(checks, 1):
@@ -250,7 +165,7 @@ def main() -> int:
             total += 1
     shutil.rmtree(ROOT, ignore_errors=True)
     print("=" * 50)
-    print(f"交互学习测试: {'全部通过' if all_ok else '存在失败'}（{total} 项）")
+    print(f"重命名测试: {'全部通过' if all_ok else '存在失败'}（{total} 项）")
     return 0 if all_ok else 1
 
 

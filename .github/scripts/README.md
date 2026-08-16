@@ -16,7 +16,7 @@
 > "统一入口"），不用记脚本路径；`cli.py` 只做薄转发，行为与直接运行脚本一致。
 > 每个脚本顶部都带 sys.path 引导（把 `.github/scripts` 加回 import 路径），
 > 因此脚本在任何分类子目录下都能 `from lib import ...` 或跨分类 import（如
-> `02_rename_model_files&folders.py` → `from lib.kb import ...`）。
+> `02_rename_model_folders.py` → `from lib.kb import ...`）。
 
 ## 一、脚本功能分类
 
@@ -24,13 +24,15 @@
 
 | 脚本 | 职责 | 调用方式 |
 | --- | --- | --- |
-| **01_organize_models.py** | `.ysm` 归档：解析作者 → `Models/<编号>/`，未命中 → `Other-YSM-Models/`，新作者自动建目录；多作者/去重/同模型合并/附属文件跟随；`--apply` 后联动 authors → rename → readmes → authors 表 | `python .github/scripts/models_organize/01_organize_models.py <文件/目录> [--apply] [--root]` |
-| **01_organize_previews.py** | 预览图归入 `previews/` 并规范命名，之后重跑模型 README | `[--apply] [--rename] [--root]` |
-| **02_rename_model_files&folders.py** | 重命名 + 知识库维护统一入口（原 naming/rename_model_folders.py + rename_model_files.py 合并）：按知识库把模型文件夹重命名为 `<作品>_<中文角色>[-皮肤]_<英文角色>_<评级>`；`--apply` 对未收录角色**交互询问收录**；知识库**纯手工维护**（无 source 键、无自动构建），角色增删改用 `--roles`（推荐）/`--add`/`--del`/`--list`；另有 `--check`/`--suggest`/`--merge`；作品维护 `--add-work`；根 README 分类区块见 04_generate&update_root_readme.py；`--rename-files` 重命名模型文件。实现复用于 `lib/kb/` | `[--apply] [--path] [--rename-files] [--roles/--add/--add-work/...]` |
-| **03_generate&update_model_readmes.py** | 为三个模型根下每个模型目录生成/重写英文模型 README（作者名读 authors.json，Co-creator 读 models_meta.json；Category 标签从 character/*.json 现算） | 无参运行 |
-| **03_generate&update_author_readme.py** | 格式化作者级 README（原 format_author_readme.py，新作者 README 生成也统一在此；共享逻辑在 lib/author_readme.py） | `[--check] <文件/目录/编号>`，无参=全量 |
-| **04_generate&update_root_readme.py** | 根 README 展示生成（原 04_author_index.py + 02 的 --build-category-map）：`--data` 生成集中作者数据 `authors.json`；`--readme` 重建根 README 作者表；`--build-category-map` 更新根 README 模型分类区块 | `python .github/scripts/models_organize/04_generate&update_root_readme.py [--data|--readme|--build-category-map] [--check]` |
-| **05_translate_rpo_readme.py** | 用 DeepSeek/OpenAI 增量翻译根 README → README-EN（保护作者表格区块） | 无参运行（需 API key） |
+| **01_organize_models.py** | `.ysm` 归档：解析作者 → `Models/<编号>/`，未命中作者 → 按作品前缀分类到 `Other-YSM-Models/<作品>/`（未匹配 → `Unknown/`），新作者自动建目录；多作者/去重/同模型合并/附属文件跟随；`--apply` 后联动 authors → rename → readmes → authors 表 | `python .github/scripts/models_organize/01_organize_models.py <文件/目录> [--apply] [--root]` |
+| **organize_previews.py**（check&fix/） | 预览图归入 `previews/` 并规范命名，之后重跑模型 README | `[--apply] [--rename] [--root]` |
+| **02_rename_model_folders.py** | 模型文件夹**纯重命名**（原 naming/rename_model_folders.py）：按知识库把模型文件夹重命名为 `<作品>_<中文角色>[-皮肤]_<英文角色>_<评级>`；Unknown / 跨作品同名冲突**只标记跳过**（不收录数据库）；同名冲突自动加 `-数字` 副本序号。知识库维护已分离到 check&fix/kb_tool.py，实现复用于 `lib/kb/` | `[--apply] [--show*]` |
+| **02_rename_model_files.py** | 模型文件重命名（自 02 拆出）：`<文件夹名(去评级)>[变体][_v版本][_副本序号]<后缀>`，变体词经 skin_tags.json 标准化表规范化；默认 dry-run | `[--apply] [路径...]` |
+| **kb_tool.py**（check&fix/） | 知识库维护（原 02/03 分离）：`--roles` 角色综合菜单 / `--add`/`--del`/`--list`/`--check`/`--merge`/`--set-default`/`--rename`/`--suggest`（操作 × 对象 role/work）；`--rename-work` 重命名作品键；`--authors-data` 重建 authors.json（原 03 --data）；`--sync-authors` 从模型 .ysm 推导作者并入 authors.json | `python .github/scripts/check&fix/kb_tool.py [--roles/--add/--del/--authors-data/--sync-authors]` |
+| **03_generate_model_readmes.py** | 为三个模型根下每个模型目录生成/重写英文模型 README（作者名读 authors.json，Co-creator 读 co_creators.json；Category 标签从 character/*.json 现算） | 无参运行 |
+| **format_author_readme.py**（check&fix/） | 格式化作者级 README（原 format_author_readme.py，新作者 README 生成也统一在此；共享逻辑在 lib/author_readme.py）。作者推导已移至 kb_tool --sync-authors | `[--check] <文件/目录/编号>`，无参=全量 |
+| **03_generate_root_readme.py** | 根 README 展示生成（原 04_author_index.py + 02 的 --build-category-map）：`--author` 重建根 README 作者表；`--build-category-map` 更新根 README 模型分类区块（authors.json 已移至 kb_tool --authors-data） | `python .github/scripts/models_organize/03_generate_root_readme.py [--author|--build-category-map]` |
+| **05_translate_readme.py** | 用 DeepSeek/OpenAI 增量翻译根 README → README-EN（保护作者表格区块） | 无参运行（需 API key） |
 
 ### check&fix/ — 库内整理维护（原 ingest/audit_models.py）
 
@@ -60,15 +62,15 @@
 | 目录 | 用途 | 文件 | 读写方 |
 | --- | --- | --- | --- |
 | `templates/` | 网站 / README 模板 | `website_template.html`、`model_readme.template.json`（模型 README 结构，由 _Template/ 转化） | build_site.py / generate_model_readmes.py |
-| `author-info/` | 作者信息 | `authors.json`（编号→名称/平台）、`platform_map.json`（**分类为键 → 平台键列表为值**，lib/ysm 反查归类）、`role_terms.json`（角色术语）、`models_meta.json`（co-creator，按需生成） | author_index.py --data（写 authors.json）、organize_models.py（写 models_meta）、lib/readme.py / lib/terms.py / lib/ysm.py（读） |
-| `model-info/` | 模型信息 | `character/*.json`（**合并格式**：作品键 → 作品元数据（含 category 大类：字符串=单分类 / 数组=多分类）+ 角色 roles，权威源，无独立 works.json）、`merge_skips.json`、`skin_tags.json`、`variant_tags.json` | 02_rename_model_files&folders.py（经 lib/kb 写读）、generate_model_readmes.py / audit_models.py（读 character/*.json 现算分类） |
-| `schemas/` | 数据契约（JSON Schema） | 7 个 `.schema.json` | lib/validate.py（校验，经 `cli.py check`） |
+| `author-info/` | 作者信息 | `authors.json`（编号→名称/平台）、`platform_map.json`（**分类为键 → 平台键列表为值**，lib/ysm 反查归类）、`role_terms.json`（角色术语）、`co_creators.json`（按需生成） | author_index.py --data（写 authors.json）、organize_models.py（写 co_creators）、lib/readme.py / lib/terms.py / lib/ysm.py（读） |
+| `model-info/` | 模型信息 | `character/*.json`（**合并格式**：作品键 = `work.abbr`，`work.name` 标准名（zh/en/ja），`work.aliases` 别名，`work.category` 大类：字符串=单分类 / 数组=多分类；+ 角色 roles，权威源，无独立 works.json）、`merge_skips.json`、`skin_tags.json` | 02_rename_model_folders.py / kb_tool.py（经 lib/kb 写读）、generate_model_readmes.py / audit_models.py（读 character/*.json 现算分类） |
+| `schemas/` | 数据契约（JSON Schema） | 8 个 `.schema.json` | lib/validate.py（校验，经 `cli.py check`） |
 
 > `config/` 已删除（曾为空占位目录，无真实配置；将来需要配置层时再建）。
 
 **作者数据规范**：`author-info/authors.json` 是作者信息的唯一事实来源，结构为
-`{version, generated, authors: {编号: {name: [规范名, ...别名], readme, role, platforms}}}`；
-`name` 为数组，首项为规范名；`role` 为作者 Role 标签（标准中英格式，可选）；由
+`{version, generated, authors: {编号: {name: [规范名, ...别名], readme, platforms}}}`；
+`name` 为数组，首项为规范名；作者级 Role 已废弃（角色只在模型级 co_creators.json）；由
 `author_index.py --data` 生成（自动清洗 Name 中的 Markdown 链接污染），其他脚本一律经
 `lib.readme.load_authors_index()` 读取（缺失时回退到各自旧扫描逻辑）。
 
@@ -85,19 +87,19 @@ cli.py（统一入口，薄转发）
 
 cli.py flow（流程编排，内联自原 pipeline.py；workflow 与本地共用）
   ├─ inbox   01_organize_models.py(_Model-Inbox --apply)
-  │            → 04_generate&update_root_readme.py --data → 03_generate&update_model_readmes.py
-  │            → 03_generate&update_author_readme.py → 04_generate&update_root_readme.py --readme
-  │            → 05_translate_rpo_readme.py
+  │            → kb_tool.py --authors-data → 03_generate_model_readmes.py
+  │            → check&fix/format_author_readme.py → 03_generate_root_readme.py --author
+  │            → 05_translate_readme.py
   ├─ full    前 4 步（无新模型时的日常刷新）
   └─ rename / authors / readmes / authors-list / translate（单步）
 
 01_organize_models.py（--with-* 显式叠加，默认只归档）
-  ├─ --with-authors-index → 04_generate&update_root_readme.py --data
-  ├─ --with-rename        → 02_rename_model_files&folders.py ──→ lib/kb/*
-  ├─ --with-gen-readmes   → 03_generate&update_model_readmes.py
-  └─ --with-readme-table  → 04_generate&update_root_readme.py --readme
+  ├─ --with-authors-index → 03_generate_root_readme.py --data
+  ├─ --with-rename        → 02_rename_model_folders.py ──→ lib/kb/*
+  ├─ --with-gen-readmes   → 03_generate_model_readmes.py
+  └─ --with-readme-table  → 03_generate_root_readme.py --author
 
-01_organize_previews.py (--apply 后) ──→ 03_generate&update_model_readmes.py
+check&fix/organize_previews.py (--apply 后) ──→ 03_generate_model_readmes.py
 全部脚本 ──→ lib/*（公共库）
 ```
 
@@ -110,24 +112,28 @@ python .github/scripts/cli.py <子命令> [参数...]   # 参数原样转发给�
 
 | 子命令 | 目标脚本 |
 | --- | --- |
-| `organize` / `previews` | models_organize/01_*.py |
-| `rename-files` / `rename-folders` | models_organize/02_rename_model_files&folders.py |
-| `readmes` / `format` | models_organize/03_generate&update_*_readme*.py |
-| `authors` / `authors-list` / `category-map` | models_organize/04_generate&update_root_readme.py |
-| `translate` | models_organize/05_translate_rpo_readme.py |
+| `organize` | models_organize/01_organize_models.py |
+| `previews` | check&fix/organize_previews.py |
+| `rename-files` | models_organize/02_rename_model_files.py（模型文件重命名） |
+| `rename-folders` | models_organize/02_rename_model_folders.py（模型文件夹纯重命名） |
+| `kb` | check&fix/kb_tool.py（知识库维护 / --authors-data / --sync-authors） |
+| `authors` | check&fix/kb_tool.py --authors-data |
+| `readmes` / `format` | models_organize/03_generate_*_readme*.py |
+| `authors-list` / `category-map` | models_organize/03_generate_root_readme.py |
+| `translate` | models_organize/05_translate_readme.py |
 | `site` | deployments/build_site.py |
-| `audit` | check&fix/check&fix.py（库整理） |
+| `audit` | check&fix/model_check&fix.py（库整理） |
 | `flow` | 内联（本文件 PIPELINE_STEPS） |
 | `check` | lib/validate.py（数据契约校验） |
 
-**库整理工具 `audit`**（`check&fix/check&fix.py`，处理已有库的整理，与 organize 的入库职责分离）：
+**库整理工具 `audit`**（`check&fix/model_check&fix.py`，处理已有库的整理，与 organize 的入库职责分离）：
 
 - `cli.py audit`——全量审计报告（只读）：重新分类差异、重复作者候选；
 - `cli.py audit --reclassify --apply`——重新分类：扫 Models 现有 .ysm 主作者与目录编号比对，
-  归属错误**逐项确认**后移动（含 models_meta 键迁移）；
+  归属错误**逐项确认**后移动（含 co_creators 键迁移）；
 - `cli.py audit --merge-authors --apply`——合并重复作者：候选判定 = 平台账号相同 /
   规范化名字相等 / **规范化名字子串**（中文≥3字、英文≥4字符门槛），**逐对确认**后合并
-  （移动模型、并 Name+平台行、迁移 models_meta、删除被合并目录、重建索引）；
+  （移动模型、并 Name+平台行、迁移 co_creators、删除被合并目录、重建索引）；
 - `cli.py audit --report-empty`——空壳报告（无 .ysm 的模型文件夹 / 无模型作者目录）。
 
 ## 六、遗留待办（不阻塞当前使用）
@@ -138,4 +144,51 @@ python .github/scripts/cli.py <子命令> [参数...]   # 参数原样转发给�
    需要时手动 `python .github/scripts/cli.py rename-folders`（先看 `--show KB` 输出）。
 3. **数据契约校验（`cli.py check`）** 建议纳入 workflow（在发布前跑一次）或定期手动执行，
    防止数据字段漂移；CI 已安装 jsonschema 依赖。
+
+## 七、参数命名规范（Param Naming Convention）
+
+本仓库所有带 CLI 参数的脚本遵循以下约定。**新增/改动参数必须遵守；旧脚本按优先级渐进迁移，不一次性大改。**
+
+### 1. 写盘标志：一律 `--apply`
+
+- 会写盘/移动/删除的脚本，统一用 `--apply` 表示「真正执行」，默认 dry-run 只预览。
+- 不用 `--dry-run` 作为执行开关（反义易混）；纯只读脚本不需要 `--apply`。
+- ✅ `--apply`　❌ `--dry-run`（作执行开关时）
+
+### 2. 通用参数（跨脚本同名同义）
+
+| 参数 | 含义 |
+| --- | --- |
+| `--apply` | 真正执行写盘 |
+| `--root PATH` | 仓库根目录（数据路径跟随 root） |
+| `--kb DIR` | 知识库目录 |
+| `--only PATH` | 只处理指定路径 |
+| `--verbose` | 详细输出 |
+
+### 3. 动作类：动词-对象（kebab-case）
+
+- 直接动作一律「动词-对象」：`--rename-files`、`--rename-folders`、`--reclassify`、`--dedupe`、`--merge-authors`、`--build-category-map`。
+- `--with-*` 仅表示「顺带联动后续步骤」（如 `--with-rename` = 归档后顺带重命名），与直接动作区分。
+
+### 4. 报告 vs 展示
+
+- `--report-*`：生成报告/统计（`--report-empty`、`--report-no-category`）。
+- `--show-*`：查看某项结果（`--show-skip`、`--show-fix`）。
+- 二者语义不混用。
+
+### 5. 命名形式
+
+- 统一 kebab-case（连字符），不用下划线/驼峰。
+- 可选/取值参数用 `--flag VALUE`；必填主输入用位置参数（`inputs`、`paths`）。
+- 避免同一名字既是取值参数又是前缀（`--report FILE` 与 `--report-*` 冲突）。
+- 交互式维护工具（对象×动作矩阵清晰，如 kb_tool）用子命令「对象 动作」；一次性批处理脚本用 `--flag`。
+
+### 迁移对照（旧 → 新，渐进进行）
+
+| 旧写法 | 新写法 |
+| --- | --- |
+| `--dry-run`（作执行开关） | 默认 dry-run，`--apply` 才执行 |
+| `--rename` / `--with-rename` 作直接动作 | `--rename-files` / `--rename-folders` |
+| `--show*` 与 `--report*` 混用 | 按语义分归 `--report-*` / `--show-*` |
+| kb_tool 旧 flag（`--add`/`--del`/`--roles` 等） | 子命令 `role\|work\|author <动作>`（已完成） |
 

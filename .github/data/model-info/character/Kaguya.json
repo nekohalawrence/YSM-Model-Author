@@ -1,9 +1,16 @@
 {
   "work": {
-    "name": "Kaguya",
-    "en": ["Kaguya-sama: Love Is War", "Kaguya"],
-    "zh": ["辉夜大小姐想让我告白"],
-    "ja": ["かぐや様は告らせたい"],
+    "abbr": "Kaguya",
+    "name": {
+      "zh": "辉夜大小姐想让我告白",
+      "en": "Kaguya-sama: Love Is War",
+      "ja": "かぐや様は告らせたい"
+    },
+    "aliases": {
+      "en": [
+        "Kaguya"
+      ]
+    },
     "category": "Anime"
   },
   "roles": []

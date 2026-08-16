@@ -1,9 +1,16 @@
 {
   "work": {
-    "name": "CGSS",
-    "en": ["THE IDOLM@STER Cinderella Girls", "CGSS"],
-    "zh": ["偶像大师 灰姑娘女孩"],
-    "ja": ["アイドルマスター シンデレラガールズ"],
+    "abbr": "CGSS",
+    "name": {
+      "zh": "偶像大师 灰姑娘女孩",
+      "en": "THE IDOLM@STER Cinderella Girls",
+      "ja": "アイドルマスター シンデレラガールズ"
+    },
+    "aliases": {
+      "en": [
+        "CGSS"
+      ]
+    },
     "category": "Game"
   },
   "roles": []

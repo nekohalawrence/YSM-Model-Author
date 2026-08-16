@@ -1,6 +1,15 @@
 {
   "work": {
-    "name": "FHZ"
+    "abbr": "FHZ"
   },
-  "roles": [{"zh": ["茉莉"], "en": ["mori"]}]
+  "roles": [
+    {
+      "zh": [
+        "茉莉"
+      ],
+      "en": [
+        "mori"
+      ]
+    }
+  ]
 }

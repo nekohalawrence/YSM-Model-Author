@@ -1,9 +1,11 @@
 {
   "work": {
-    "name": "CeVIO",
-    "en": ["CeVIO"],
-    "zh": ["CeVIO"],
-    "ja": ["セヴィオ"],
+    "abbr": "CeVIO",
+    "name": {
+      "zh": "CeVIO",
+      "en": "CeVIO",
+      "ja": "セヴィオ"
+    },
     "category": "Music"
   },
   "roles": []

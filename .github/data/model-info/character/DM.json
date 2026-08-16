@@ -1,6 +1,15 @@
 {
   "work": {
-    "name": "DM"
+    "abbr": "DM"
   },
-  "roles": [{"zh": ["玛露西尔"], "en": ["marcille"]}]
+  "roles": [
+    {
+      "zh": [
+        "玛露西尔"
+      ],
+      "en": [
+        "marcille"
+      ]
+    }
+  ]
 }

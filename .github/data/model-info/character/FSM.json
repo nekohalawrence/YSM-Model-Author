@@ -1,9 +1,25 @@
 {
   "work": {
-    "name": "FSM",
-    "en": ["Fox-Spirit-Matchmaker", "FSM"],
-    "zh": ["狐妖小红娘"],
+    "abbr": "FSM",
+    "name": {
+      "zh": "狐妖小红娘",
+      "en": "Fox-Spirit-Matchmaker"
+    },
+    "aliases": {
+      "en": [
+        "FSM"
+      ]
+    },
     "category": "Anime"
   },
-  "roles": [{"zh": ["涂山苏苏"], "en": ["tushan-susu"]}]
+  "roles": [
+    {
+      "zh": [
+        "涂山苏苏"
+      ],
+      "en": [
+        "tushan-susu"
+      ]
+    }
+  ]
 }

@@ -1,10 +1,27 @@
 {
   "work": {
-    "name": "AIRI",
-    "en": ["ATRI -My Dear Moments-", "ATRI", "AIRI"],
-    "zh": ["亚托莉‑我挚爱的时光‑"],
-    "ja": ["ATRI ‑My Dear Moments‑"],
+    "abbr": "AIRI",
+    "name": {
+      "zh": "亚托莉‑我挚爱的时光‑",
+      "en": "ATRI -My Dear Moments-",
+      "ja": "ATRI ‑My Dear Moments‑"
+    },
+    "aliases": {
+      "en": [
+        "ATRI",
+        "AIRI"
+      ]
+    },
     "category": "Anime"
   },
-  "roles": [{"zh": ["亚托莉"], "en": ["atri"]}]
+  "roles": [
+    {
+      "zh": [
+        "亚托莉"
+      ],
+      "en": [
+        "atri"
+      ]
+    }
+  ]
 }

@@ -3,26 +3,29 @@
 ## Author
 
 - **Name**: #默栖 | #某嘞个默栖 | #默嘞个某栖
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [某嘞个默栖](https://space.bilibili.com/477165698)
+    - **Bilibili**: [默栖](https://space.bilibili.com/477165698)
   - **SupportPlatform**: #Afdian
-    - **Afdian**: [默嘞个某栖](https://afdian.com/a/DLMoqi)
+    - **Afdian**: [默栖](https://afdian.com/a/DLMoqi)
 
-## Co-creator
+## Models
 
-- **Name**: [#瀛猫](../../0059/README)
-    - **Role**: #动画 | #Animation
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [瀛猫](https://space.bilibili.com/647224460)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [瀛猫](https://afdian.com/a/wincatpro)
-  - **GroupChat**: #QQ
-    - **QQ**: 1037786416
+<details>
+<summary><b>OC 原创角色（7）</b></summary>
 
-- **Name**: [#゚烟雨画桥](../../0052/README)
-    - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [゚烟雨画桥](https://space.bilibili.com/1268865161)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [烟雨画桥](https://afdian.com/a/mj204)
+- [OC_折原露露_LB](OC_折原露露_LB)
+- [OC_梦音茶糯](OC_梦音茶糯)
+- [OC_泠鸢-登门喜鹊](OC_泠鸢-登门喜鹊)
+- [OC_泠鸢_JK](OC_泠鸢_JK)
+- [OC_泠鸢_公式服_Jk](OC_泠鸢_公式服_Jk)
+- [OC_泠鸢·登门喜鹊](OC_泠鸢·登门喜鹊)
+- [OC_黎歌_国风_LB](OC_黎歌_国风_LB)
+
+</details>
+
+<details>
+<summary><b>VTuber 虚拟主播（1）</b></summary>
+
+- [VTuber_穆小泠_LB](VTuber_穆小泠_LB)
+
+</details>

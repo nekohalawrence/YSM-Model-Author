@@ -3,4 +3,12 @@
 ## Author
 
 - **Name**: #集栎 | #Nebulathus
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+
+## Models
+
+<details>
+<summary><b>WW 鸣潮（1）</b></summary>
+
+- [WW_维里奈_Verina](WW_维里奈_Verina)
+
+</details>

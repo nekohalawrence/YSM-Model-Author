@@ -1,9 +1,33 @@
 {
   "work": {
-    "name": "AveMujica",
-    "en": ["BanG Dream! Ave Mujica", "AveMujica"],
-    "zh": ["颂乐人偶"],
+    "abbr": "AveMujica",
+    "name": {
+      "zh": "颂乐人偶",
+      "en": "BanG Dream! Ave Mujica"
+    },
+    "aliases": {
+      "en": [
+        "AveMujica"
+      ]
+    },
     "category": "Anime"
   },
-  "roles": [{"zh": ["丰川祥子"], "en": ["togawa-sakiko"]}, {"zh": ["千早爱音"], "en": ["chihaya-anon"]}]
+  "roles": [
+    {
+      "zh": [
+        "丰川祥子"
+      ],
+      "en": [
+        "togawa-sakiko"
+      ]
+    },
+    {
+      "zh": [
+        "千早爱音"
+      ],
+      "en": [
+        "chihaya-anon"
+      ]
+    }
+  ]
 }

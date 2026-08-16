@@ -1,10 +1,26 @@
 {
   "work": {
-    "name": "To-LOVE-Ru",
-    "en": ["To LOVE Ru", "To-LOVE-Ru"],
-    "zh": ["出包王女"],
-    "ja": ["To LOVE る - とらぶる -"],
+    "abbr": "To-LOVE-Ru",
+    "name": {
+      "zh": "出包王女",
+      "en": "To LOVE Ru",
+      "ja": "To LOVE る - とらぶる -"
+    },
+    "aliases": {
+      "en": [
+        "To-LOVE-Ru"
+      ]
+    },
     "category": "Anime"
   },
-  "roles": [{"zh": ["伊芙"], "en": ["eve"]}]
+  "roles": [
+    {
+      "zh": [
+        "伊芙"
+      ],
+      "en": [
+        "eve"
+      ]
+    }
+  ]
 }

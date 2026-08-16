@@ -1,10 +1,28 @@
 {
   "work": {
-    "name": "NEO",
-    "en": ["Needy Girl Overdos", "Needy Girl Overdose", "NEO", "NGO"],
-    "zh": ["主播女孩重度依赖"],
-    "ja": ["ニーディーガール・オーバードーズ"],
+    "abbr": "NEO",
+    "name": {
+      "zh": "主播女孩重度依赖",
+      "en": "Needy Girl Overdos",
+      "ja": "ニーディーガール・オーバードーズ"
+    },
+    "aliases": {
+      "en": [
+        "Needy Girl Overdose",
+        "NEO",
+        "NGO"
+      ]
+    },
     "category": "Game"
   },
-  "roles": [{"zh": ["超天酱"], "en": ["kangel_nsfw"]}]
+  "roles": [
+    {
+      "zh": [
+        "超天酱"
+      ],
+      "en": [
+        "kangel_nsfw"
+      ]
+    }
+  ]
 }

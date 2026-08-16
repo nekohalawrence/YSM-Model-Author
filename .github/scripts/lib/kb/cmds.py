@@ -15,6 +15,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 from lib import console as lib_console  # noqa: E402
 from lib import paths as lib_paths  # noqa: E402
 from lib.kb import parse, storage, sync  # noqa: E402
+from lib.kb.category import (  # noqa: E402
+    CATEGORIES, build_category_map, update_readme_works_section,
+)
 from lib.kb.text import normalize_en_key  # noqa: E402
 
 REPO_ROOT = lib_paths.WORKSPACE_ROOT
@@ -148,10 +151,9 @@ def del_entries(kb_path: Path) -> None:
 # 统一交互式角色管理（--roles）：增删改查 + 别名（推荐入口；皮肤维护在 skin_tags.json）
 # ---------------------------------------------------------------------------
 def load_skin_tags() -> dict:
-    """读皮肤标签表 skin_tags.json（缺失返回 common 空表）。"""
+    """读皮肤标签表 skin_tags.json（新格式 {标签: {name, aliases}}；缺失返回空表）。"""
     return lib_paths.load_json(
-        lib_paths.data_path('model-info', 'skin_tags.json'),
-        {'common': {'zh': [], 'en': []}})
+        lib_paths.data_path('model-info', 'skin_tags.json'), {})
 
 
 def save_skin_tags(tags: dict) -> None:
@@ -160,46 +162,22 @@ def save_skin_tags(tags: dict) -> None:
 
 
 def add_skin_tag(tags: dict, work: str, cn: str = '', en: str = '') -> bool:
-    """把皮肤词加入皮肤表对应作品（空 work/Unknown -> common）；返回是否新增。"""
-    entry = tags.setdefault(work or 'common', {'zh': [], 'en': []})
-    added = False
-    if cn:
-        lst = entry.setdefault('zh', [])
-        if cn not in lst:
-            lst.append(cn)
-            added = True
-    if en:
-        lst = entry.setdefault('en', [])
-        if en not in lst:
-            lst.append(en)
-            added = True
-    return added
+    """把皮肤词加入标签表（新格式全局，work 参数忽略）。返回是否新增。
 
-
-def sync_variant_to_skin_tags() -> int:
-    """把 variant_tags.json 的变体词（cn/en 别名）自动并入 skin_tags.json 的 common。
-
-    variant_tags 是已确认的皮肤/变体对照表（如 兔子洞/泳装版/new），其别名自动成为
-    皮肤词——否则重命名时（如 VOC_初音_兔子洞）皮肤未识别、残留在 cn 里而被
-    标准化覆盖丢失。幂等：已有词不重复添加；返回新增数。
+    cn/en 各自作为标准名建标签（若未匹配已有标签的 name/aliases）。
     """
-    variant = lib_paths.load_json(
-        lib_paths.data_path('model-info', 'variant_tags.json'), {})
-    skin = load_skin_tags()
-    common = skin.setdefault('common', {'zh': [], 'en': []})
-    added = 0
-    for _canonical, langs in variant.items():
-        for c in (langs.get('zh') or []):
-            if c and c not in common.setdefault('zh', []):
-                common['zh'].append(c)
-                added += 1
-        for e in (langs.get('en') or []):
-            if e and e not in common.setdefault('en', []):
-                common['en'].append(e)
-                added += 1
-    if added:
-        save_skin_tags(skin)
-        print(f'已自动并入 {added} 个变体词到 skin_tags.json 的 common（作为皮肤词）')
+    def exists(word: str) -> bool:
+        for t in tags.values():
+            if word in (t.get('name') or {}).values() or word in (t.get('aliases') or []):
+                return True
+        return False
+
+    added = False
+    for word, lang in ((cn, 'zh'), (en, 'en')):
+        word = str(word)
+        if word and not exists(word):
+            tags[word] = {'name': {lang: word}, 'aliases': []}
+            added = True
     return added
 
 
@@ -508,6 +486,7 @@ def run_suggest(kb_path: Path) -> None:
             seen.add(key)
         roles.append(m)
     cn_idx, en_idx, en_to_cn, cn_to_en = build_indexes(roles)
+    work_skins = build_work_skins(roles)
     cn_keys = sorted([k for k in cn_idx if len(k) >= 2 and "_" not in k],
                      key=len, reverse=True)
     # 允许连字符（misaka-mikoto 等标准英文名），排除下划线（皮肤/多段串如 padoru_hakurei-...）
@@ -517,7 +496,7 @@ def run_suggest(kb_path: Path) -> None:
     suggestions: list[tuple] = []
     no_cand: list[tuple] = []
     for d in get_target_dirs(None):
-        r = resolve_name(d.name, cn_idx, en_idx, en_to_cn, cn_to_en)
+        r = resolve_name(d.name, cn_idx, en_idx, en_to_cn, cn_to_en, work_skins)
         if r["work"] != "Unknown" or not (r["zh"] or r["en"]):
             continue
         cands: list[tuple] = []
@@ -855,6 +834,21 @@ def build_indexes(roles: list[dict], priority_roles: list[dict] | None = None):
     return cn_idx, en_idx, en_to_cn, cn_to_en
 
 
+def build_work_skins(roles: list[dict]) -> dict[str, dict[str, set]]:
+    """从角色条目的 skin 键聚合各作品皮肤词：{work: {"zh": set, "en": set}}。
+
+    皮肤词下沉到角色（方案A）：作品专属皮肤从角色 skin 键读，不再存 skin_tags。
+    """
+    out: dict[str, dict[str, set]] = {}
+    for r in roles:
+        wk = str(r.get("work", ""))
+        for skin in (r.get("skin") or []):
+            d = out.setdefault(wk, {"zh": set(), "en": set()})
+            d["zh"].update(str(x) for x in (skin.get("zh") or []))
+            d["en"].update(str(x) for x in (skin.get("en") or []))
+    return out
+
+
 def get_target_dirs(path: str | None) -> list[Path]:
     """扫描目标目录：Models/<作者4位编号>/<模型名> 两层 + Other-YSM-Models 一层。"""
     roots = [Path(path).resolve()] if path else DEFAULT_ROOTS
@@ -1146,3 +1140,234 @@ def merge_works_cmd(kb_path: Path) -> None:
         print(f"  已合并: {drop!r} -> {keep!r}")
         merged_any = True
     print(f"合并完成：{'有合并' if merged_any else '未做任何合并'}。")
+
+
+# ---------------------------------------------------------------------------
+# 作品维护：保存 + 分类区块 / 添加 / 默认名 / 重命名键
+# （原 check&fix/kb_tool.py 中的实现，下沉至此，让 kb_tool.py 只做 CLI 入口）
+# ---------------------------------------------------------------------------
+def _save_works_and_category(kb_path: Path, data: dict) -> None:
+    """保存 character/*.json（合并格式）+ 更新根 README 模型分类区块（不落盘 category_map.json）。"""
+    save_kb_json(kb_path, data)
+    cat_map = build_category_map(data)
+    print(f"已保存作品知识库: {kb_path / 'character'}")
+    total = sum(len(v) for v in cat_map.values())
+    print(f"分类（从 character/*.json 现算）: {total} 个作品分布在 {len(cat_map)} 个大类")
+    changed, action = update_readme_works_section(REPO_ROOT / "README.md", data)
+    if changed:
+        print(f"根 README 模型分类区块已{action}")
+
+
+def add_work_interactive(kb_path: Path) -> int:
+    """交互式添加新作品（character/*.json 权威源，自动重建分类与 README 区块）。"""
+    data = load_kb_json(kb_path)
+    works = data.setdefault("works", {})
+    print("交互式添加新作品：逐项输入，回车跳过；输入 q 结束。")
+    print(f"大类: {', '.join(CATEGORIES)}")
+    added = 0
+    while True:
+        print("-" * 40)
+        key = ask("作品键 (必填，唯一，如 BA/AK/OC): ")
+        if key.lower() in ("q", "quit"):
+            break
+        key = key.strip()
+        if not key:
+            print("作品键不能为空，本条跳过。")
+            continue
+        if key in works:
+            print(f"作品 '{key}' 已存在，跳过（添加角色请用 --add-role）。")
+            continue
+        en = ask("英文名 (逗号分隔，至少一个): ")
+        if en.lower() in ("q", "quit"):
+            break
+        en_list = [x.strip() for x in en.split(",") if x.strip()]
+        if not en_list:
+            print("英文名至少填一个，本条跳过。")
+            continue
+        cn = ask("中文名 (逗号分隔，可空): ")
+        if cn.lower() in ("q", "quit"):
+            break
+        cn_list = [x.strip() for x in cn.split(",") if x.strip()]
+        ja = ask("日文名 (逗号分隔，可空): ")
+        if ja.lower() in ("q", "quit"):
+            break
+        ja_list = [x.strip() for x in ja.split(",") if x.strip()]
+        cat = ask(f"大类 ({'/'.join(CATEGORIES)}，默认 Other): ")
+        if cat.lower() in ("q", "quit"):
+            break
+        cat = cat.strip().capitalize() if cat.strip() else "Other"
+        if cat not in CATEGORIES:
+            print(f"未知大类 '{cat}'，本条跳过。")
+            continue
+        entry: dict = {"en": en_list}
+        if cn_list:
+            entry["zh"] = cn_list
+        if ja_list:
+            entry["ja"] = ja_list
+        entry["category"] = cat
+        works[key] = entry
+        save_kb_json(kb_path, data)  # 每条约保存（防中断丢失）
+        added += 1
+        print(f"已添加作品: {key} | {', '.join(en_list)} | {cat}")
+    if added:
+        _save_works_and_category(kb_path, data)
+    print(f"共添加 {added} 个作品。")
+    return 0
+
+
+def _pick_default_name(field_label: str, current, ask_fn) -> tuple[list | None, str | None]:
+    """交互选择/输入默认名：展示已有名称（编号）供选择，或输入新名称。
+
+    返回 (新数组, 选中的名称)；跳过（Enter）返回 (原数组, None)；取消（q）返回 (None, None)。
+    新输入的名称加入数组并设为默认名（首项），原名称自动降为别名。
+    """
+    names = [n for n in (current if isinstance(current, list) else [current]) if n]
+    if names:
+        print(f"  当前 {field_label}（数组首项=默认名）: {' / '.join(names)}")
+        for i, n in enumerate(names, 1):
+            print(f"    [{i}] {n}")
+    else:
+        print(f"  当前 {field_label}（空）")
+    val = ask_fn(f"  选编号=设为默认名，或输入新{field_label}（将加入数组并设为默认名；"
+                 f"Enter=不改，q=退出）: ").strip()
+    if val.lower() in ("q", "quit"):
+        return None, None
+    if val.isdigit() and names and 1 <= int(val) <= len(names):
+        chosen = names[int(val) - 1]
+    elif val:
+        chosen = val
+    else:
+        return names, None
+    new_names = [chosen] + [n for n in names if n != chosen]
+    return new_names, chosen
+
+
+def set_default_role_cmd(kb_path: Path) -> int:
+    """交互式设定角色默认中英文名：搜索角色 -> 选择 -> 选已有名称或添加新名称。
+
+    默认名 = cn/en 数组首项；02 重命名自动把该角色统一为默认名
+    （由 resolve_name 的"标准化"实现，如 Chuyin -> Miku）。
+    新输入的名称会加入数组（成为该角色名称之一），原名称自动降为别名。
+    """
+    data = load_kb_json(kb_path)
+    roles = data.get("roles") or []
+    if not roles:
+        print("知识库为空，请先使用 --roles / --add-role 添加角色。")
+        return 0
+    print("设定角色默认名：搜索角色 -> 选择 -> 选已有名称或输入新名称（新名称自动加入别名）。")
+    while True:
+        print("-" * 50)
+        kw = ask("搜索角色（中文/英文/作品关键词，q=退出）: ")
+        if kw.lower() in ("q", "quit"):
+            break
+        if not kw:
+            print("请输入搜索关键词。")
+            continue
+        hits = [r for r in roles
+                if kw.lower() in str(r.get("zh", "")).lower()
+                or kw.lower() in str(r.get("en", "")).lower()
+                or kw.lower() in str(r.get("work", "")).lower()]
+        if not hits:
+            print("未找到匹配条目。")
+            continue
+        print(f"命中 {len(hits)} 条：")
+        for i, r in enumerate(hits, 1):
+            cn_s = " / ".join(r.get("zh") or []) or "-"
+            en_s = " / ".join(r.get("en") or []) or "-"
+            print(f"  [{i}] {r.get('work', ''):<12} | cn: {cn_s} | en: {en_s}")
+        sel = ask("选择编号（Enter=跳过）: ")
+        if sel.lower() in ("q", "quit"):
+            break
+        if not sel.isdigit() or not (1 <= int(sel) <= len(hits)):
+            print("编号无效，跳过。")
+            continue
+        r = hits[int(sel) - 1]
+        new_cn, cn_chosen = _pick_default_name("中文名", r.get("zh") or [], ask)
+        if new_cn is None:
+            break
+        new_en, en_chosen = _pick_default_name("英文名", r.get("en") or [], ask)
+        if new_en is None:
+            break
+        if cn_chosen is None and en_chosen is None:
+            print("中文名和英文名都未修改，本条跳过。")
+            continue
+        r["zh"] = new_cn
+        r["en"] = new_en
+        save_kb_json(kb_path, data)
+        print(f"已设定默认名: {r.get('work')} | cn 默认={cn_chosen or '不变'}"
+              f" | en 默认={en_chosen or '不变'}"
+              f"（数组: {r.get('zh')} / {r.get('en')}）")
+    print("提示：默认名是 cn/en 数组首项，重命名会把这些角色统一为默认名。")
+    return 0
+
+
+def rename_work_cmd(kb_path: Path, old_key: str, new_key: str,
+                    apply_changes: bool = False) -> int:
+    """安全重命名作品键：old_key -> new_key，联动更新文件、键、角色 work、皮肤表键。
+
+    默认 dry-run 只预览；加 --apply 才真正写盘。merge_skips 中的旧记录
+    会自然失效并被 prune 清理（不迁移，避免误替换名称里的同文字段）。
+    """
+    old_key = old_key.strip()
+    new_key = new_key.strip()
+    if old_key == new_key:
+        print("旧键与新键相同，无需修改。")
+        return 0
+    data = load_kb_json(kb_path)
+    works = data.get("works") or {}
+    roles = data.get("roles") or []
+    if old_key not in works:
+        print(f"错误: 作品键 {old_key!r} 不存在于知识库。")
+        return 1
+    if new_key in works:
+        print(f"错误: 目标作品键 {new_key!r} 已存在，无法重命名（请先处理冲突）。")
+        return 1
+    role_hits = [r for r in roles if str(r.get("work", "")) == old_key]
+    skin_tags = load_skin_tags()
+    skin_hit = old_key in skin_tags
+    print(f"[{'执行' if apply_changes else '预览'}] 重命名作品键: {old_key} -> {new_key}")
+    print(f"  - 文件: {storage._safe_name(old_key)}.json -> {storage._safe_name(new_key)}.json")
+    print(f"  - 作品元数据: 1 个")
+    print(f"  - 角色: {len(role_hits)} 个（work 同步）")
+    print(f"  - 皮肤表键: {'有（迁移到新键）' if skin_hit else '无'}")
+    print(f"  - merge_skips: 不迁移（旧记录自然失效并清理）")
+    if not apply_changes:
+        print("dry-run 预览：未写盘。确认无误请加 --apply 执行。")
+        return 0
+    works[new_key] = works.pop(old_key)
+    for r in roles:
+        if str(r.get("work", "")) == old_key:
+            r["work"] = new_key
+    if skin_hit:
+        skin_tags[new_key] = skin_tags.pop(old_key)
+        save_skin_tags(skin_tags)
+    save_kb_json(kb_path, data)
+    print(f"已完成重命名作品键: {old_key} -> {new_key}")
+    return 0
+
+
+def rename_work_interactive(kb_path: Path, apply_changes: bool = False) -> int:
+    """交互式重命名作品键：列出作品 -> 选旧键 -> 输入新键 -> 走 rename_work_cmd。"""
+    data = load_kb_json(kb_path)
+    works = data.get("works") or {}
+    if not works:
+        print("知识库暂无作品。")
+        return 1
+    print("重命名作品键：选择要改名的作品，再输入新键。")
+    items = sorted(works.items())
+    counts = {}
+    for r in (data.get("roles") or []):
+        counts[str(r.get("work", ""))] = counts.get(str(r.get("work", "")), 0) + 1
+    for i, (wk, meta) in enumerate(items, 1):
+        en_s = " / ".join(meta.get("en") or []) or "-"
+        print(f"  [{i}] {wk:<16} | {en_s} | 角色 {counts.get(wk, 0)}")
+    sel = ask("选择要重命名的作品编号（Enter=取消, q=退出）: ").strip()
+    if sel.lower() in ("q", "quit") or not sel.isdigit() or not (1 <= int(sel) <= len(items)):
+        print("已取消。")
+        return 0
+    old_key = items[int(sel) - 1][0]
+    new_key = ask(f"新作品键（当前 {old_key!r}，Enter=取消, q=退出）: ").strip()
+    if not new_key or new_key.lower() in ("q", "quit"):
+        print("已取消。")
+        return 0
+    return rename_work_cmd(kb_path, old_key, new_key, apply_changes=apply_changes)

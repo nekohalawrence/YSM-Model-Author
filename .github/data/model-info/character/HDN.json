@@ -1,8 +1,15 @@
 {
   "work": {
-    "name": "HDN",
-    "en": ["Hyperdimension Neptunia", "HDN"],
-    "zh": ["超次元游戏"],
+    "abbr": "HDN",
+    "name": {
+      "zh": "超次元游戏",
+      "en": "Hyperdimension Neptunia"
+    },
+    "aliases": {
+      "en": [
+        "HDN"
+      ]
+    },
     "category": "Game"
   },
   "roles": []

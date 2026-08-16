@@ -8,18 +8,19 @@ YSM 模型仓库统一命令行入口（人工使用）。
 
 子命令对应脚本一览（--list 查看）：
   organize       归档 .ysm → models_organize/01_organize_models.py
-  previews       预览图归位 → models_organize/01_organize_previews.py
-  rename-files   重命名模型文件 → models_organize/02_rename_model_files&folders.py --rename-files
-  rename-folders 重命名模型文件夹 + 知识库维护/交互学习 → models_organize/02_rename_model_files&folders.py
-  authors        重建作者数据 → models_organize/04_generate&update_root_readme.py --data
-  readmes        生成模型 README → models_organize/03_generate&update_model_readmes.py
-  authors-list   更新根 README 作者表 → models_organize/04_generate&update_root_readme.py --readme
-  category-map   更新根 README 模型分类区块 → models_organize/04_generate&update_root_readme.py --build-category-map
-  format         格式化作者 README → models_organize/03_generate&update_author_readme.py
-  translate      翻译 README-EN → models_organize/05_translate_rpo_readme.py
+  previews       预览图归位 → check&fix/organize_previews.py
+  rename-files   重命名模型文件 → models_organize/02_rename_model_files.py
+  rename-folders 重命名模型文件夹（纯重命名） → models_organize/02_rename_model_folders.py
+  kb             知识库维护(角色/作品增删改查/合并/默认名/重命名键) → check&fix/kb_tool.py
+  authors        重建作者数据 → check&fix/kb_tool.py --authors-data
+  readmes        生成模型 README → models_organize/03_generate_model_readmes.py
+  authors-list   更新根 README 作者表 → models_organize/03_generate_root_readme.py --author
+  category-map   更新根 README 模型分类区块 → models_organize/03_generate_root_readme.py --build-category-map
+  format         格式化作者 README → check&fix/format_author_readme.py
+  translate      翻译 README-EN → models_organize/05_translate_readme.py
   site           生成静态网站 → deployments/build_site.py
   flow           流程编排(inbox/full/rename/...)（内联自原 pipeline.py，见本文件 PIPELINE_STEPS）
-  audit          库整理(重新分类/合并作者/空壳/缺失) → check&fix/check&fix.py
+  audit          库整理(重新分类/合并作者/空壳/缺失) → check&fix/model_check&fix.py
   check          数据契约校验 → lib/validate.py
 
 子命令后的所有参数原样转发给目标脚本（如 --apply / --check 等），
@@ -47,17 +48,18 @@ REPO_ROOT = lib_paths.WORKSPACE_ROOT
 # flow 为特殊子命令（内联流程编排，见 PIPELINE_STEPS / run_flow，无对应独立脚本）。
 COMMANDS: dict[str, tuple[str, list[str], str]] = {
     'organize': ('models_organize/01_organize_models.py', [], '归档 .ysm 到 Models/<编号>/'),
-    'audit': ('check&fix/check&fix.py', [], '库整理:重新分类/合并作者/空壳报告/缺失(无分类无预览图)'),
-    'previews': ('models_organize/01_organize_previews.py', [], '预览图归入 previews/ 并规范命名'),
-    'rename-files': ('models_organize/02_rename_model_files&folders.py', ['--rename-files'], '重命名模型文件(--rename-files, 已合并入 02)'),
-    'rename-folders': ('models_organize/02_rename_model_files&folders.py', [],
-                       '重命名模型文件夹 + 知识库维护(--apply 未收录交互学习)'),
-    'authors': ('models_organize/04_generate&update_root_readme.py', ['--data'], '重建集中作者数据 authors.json'),
-    'readmes': ('models_organize/03_generate&update_model_readmes.py', [], '生成/重写模型 README'),
-    'authors-list': ('models_organize/04_generate&update_root_readme.py', ['--readme'], '更新根 README 作者表格'),
-    'category-map': ('models_organize/04_generate&update_root_readme.py', ['--build-category-map'], '更新根 README 模型分类区块'),
-    'format': ('models_organize/03_generate&update_author_readme.py', [], '格式化作者级 README / --sync-authors 推导作者'),
-    'translate': ('models_organize/05_translate_rpo_readme.py', [], '翻译 README → README-EN'),
+    'audit': ('check&fix/model_check&fix.py', [], '库整理:重新分类/合并作者/空壳报告/缺失(无分类无预览图)'),
+    'previews': ('check&fix/organize_previews.py', [], '预览图归入 previews/ 并规范命名'),
+    'rename-files': ('models_organize/02_rename_model_files.py', [], '重命名模型文件（独立脚本）'),
+    'rename-folders': ('models_organize/02_rename_model_folders.py', [],
+                       '重命名模型文件夹（纯重命名；知识库维护用 kb）'),
+    'kb': ('check&fix/kb_tool.py', [], '知识库维护:角色/作品增删改查/合并/默认名/重命名键'),
+    'authors': ('check&fix/kb_tool.py', ['--authors-data'], '重建集中作者数据 authors.json'),
+    'readmes': ('models_organize/03_generate_model_readmes.py', [], '生成/重写模型 README'),
+    'authors-list': ('models_organize/03_generate_root_readme.py', ['--author'], '更新根 README 作者表格'),
+    'category-map': ('models_organize/03_generate_root_readme.py', ['--build-category-map'], '更新根 README 模型分类区块'),
+    'format': ('check&fix/format_author_readme.py', [], '格式化作者级 README（作者推导已移至 kb --sync-authors）'),
+    'translate': ('models_organize/05_translate_readme.py', [], '翻译 README → README-EN'),
     'site': ('deployments/build_site.py', [], '生成静态模型浏览站 index.html'),
     'flow': ('', [], '流程编排(inbox/full/rename/...)，内联自原 pipeline.py'),
     'check': ('lib/validate.py', [], '数据契约校验(schemas/)'),
@@ -95,44 +97,45 @@ def print_commands() -> None:
 PIPELINE_STEPS: dict[str, list[tuple[str, list[str]]]] = {
     'inbox': [
         ('models_organize/01_organize_models.py', ['_Model-Inbox', '--apply']),
-        ('models_organize/04_generate&update_root_readme.py', ['--data']),
-        ('models_organize/03_generate&update_model_readmes.py', []),
-        ('models_organize/03_generate&update_author_readme.py', []),
-        ('models_organize/04_generate&update_root_readme.py', ['--readme']),
-        ('models_organize/05_translate_rpo_readme.py', []),
+        ('check&fix/kb_tool.py', ['--authors-data']),
+        ('models_organize/03_generate_model_readmes.py', []),
+        ('check&fix/format_author_readme.py', []),
+        ('models_organize/03_generate_root_readme.py', ['--author']),
+        ('models_organize/05_translate_readme.py', []),
     ],
     'full': [
-        ('models_organize/04_generate&update_root_readme.py', ['--data']),
-        ('models_organize/03_generate&update_model_readmes.py', []),
-        ('models_organize/03_generate&update_author_readme.py', []),
-        ('models_organize/04_generate&update_root_readme.py', ['--readme']),
-        ('models_organize/05_translate_rpo_readme.py', []),
+        ('check&fix/kb_tool.py', ['--authors-data']),
+        ('models_organize/03_generate_model_readmes.py', []),
+        ('check&fix/format_author_readme.py', []),
+        ('models_organize/03_generate_root_readme.py', ['--author']),
+        ('models_organize/05_translate_readme.py', []),
     ],
     'rename': [
-        ('models_organize/02_rename_model_files&folders.py', ['--apply']),
+        ('models_organize/02_rename_model_folders.py', ['--apply']),
     ],
     'authors': [
-        ('models_organize/04_generate&update_root_readme.py', ['--data']),
+        ('check&fix/kb_tool.py', ['--authors-data']),
     ],
     'readmes': [
-        ('models_organize/03_generate&update_model_readmes.py', []),
+        ('models_organize/03_generate_model_readmes.py', []),
     ],
     'authors-list': [
-        ('models_organize/04_generate&update_root_readme.py', ['--readme']),
+        ('models_organize/03_generate_root_readme.py', ['--author']),
     ],
     'translate': [
-        ('models_organize/05_translate_rpo_readme.py', []),
+        ('models_organize/05_translate_readme.py', []),
     ],
 }
 
 # 每个脚本的一句话说明（flow --list 用）
 FLOW_STEP_DESC = {
     'models_organize/01_organize_models.py': '归档 .ysm 到 Models/<编号>/',
-    'models_organize/04_generate&update_root_readme.py': '根 README 展示(作者数据/作者表/分类区块)',
-    'models_organize/03_generate&update_model_readmes.py': '生成模型 README',
-    'models_organize/03_generate&update_author_readme.py': '格式化作者级 README',
-    'models_organize/05_translate_rpo_readme.py': '翻译 README → README-EN',
-    'models_organize/02_rename_model_files&folders.py': '重命名模型文件夹',
+    'models_organize/03_generate_root_readme.py': '根 README 展示(作者表/分类区块；authors.json 已移至 kb --authors-data)',
+    'models_organize/03_generate_model_readmes.py': '生成模型 README',
+    'check&fix/format_author_readme.py': '格式化作者级 README',
+    'models_organize/05_translate_readme.py': '翻译 README → README-EN',
+    'models_organize/02_rename_model_folders.py': '重命名模型文件夹',
+    'check&fix/kb_tool.py': '知识库维护(角色/作品/--authors-data/--sync-authors)',
 }
 
 

@@ -3,19 +3,40 @@
 ## Author
 
 - **Name**: #瀛猫
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [瀛猫](https://space.bilibili.com/647224460)
+    - **QQ**: 1037786416
   - **SupportPlatform**: #Afdian
     - **Afdian**: [瀛猫](https://afdian.com/a/wincatpro)
-  - **GroupChat**: #QQ
-    - **QQ**: 1037786416
 
-## Co-creator
+## Models
 
-- **Name**: [#゚烟雨画桥](../../0052/README)
-    - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [゚烟雨画桥](https://space.bilibili.com/1268865161)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [烟雨画桥](https://afdian.com/a/mj204)
+<details>
+<summary><b>HSR 崩坏：星穹铁道（1）</b></summary>
+
+- [HSR_花火_Huahuo_LA](HSR_花火_Huahuo_LA)
+
+</details>
+
+<details>
+<summary><b>OC 原创角色（9）</b></summary>
+
+- [OC_兰音_国风华服](OC_兰音_国风华服)
+- [OC_兰音_蝴蝶晚礼服](OC_兰音_蝴蝶晚礼服)
+- [OC_兰音_都市丽人](OC_兰音_都市丽人)
+- [OC_奈奈莉娅](OC_奈奈莉娅)
+- [OC_封茗囧菌](OC_封茗囧菌)
+- [OC_洛澜](OC_洛澜)
+- [OC_真白花音_幻想小海螺](OC_真白花音_幻想小海螺)
+- [OC_穆小泠](OC_穆小泠)
+- [OC_黎歌](OC_黎歌)
+
+</details>
+
+<details>
+<summary><b>Unknown（2）</b></summary>
+
+- [Unknown_早稻叽_LA](Unknown_早稻叽_LA)
+- [Unknown_雪狐桑_LA](Unknown_雪狐桑_LA)
+
+</details>

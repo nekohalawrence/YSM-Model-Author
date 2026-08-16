@@ -1,10 +1,29 @@
 {
   "work": {
-    "name": "KG",
-    "en": ["Kemomimi Gakuen", "KG"],
-    "zh": ["兽耳学园", "兽耳学院"],
-    "ja": ["ケモミミ学園"],
+    "abbr": "KG",
+    "name": {
+      "zh": "兽耳学园",
+      "en": "Kemomimi Gakuen",
+      "ja": "ケモミミ学園"
+    },
+    "aliases": {
+      "zh": [
+        "兽耳学院"
+      ],
+      "en": [
+        "KG"
+      ]
+    },
     "category": "Other"
   },
-  "roles": [{"zh": ["阿尔维娜酱"], "en": ["arvina_chan"]}]
+  "roles": [
+    {
+      "zh": [
+        "阿尔维娜酱"
+      ],
+      "en": [
+        "arvina_chan"
+      ]
+    }
+  ]
 }

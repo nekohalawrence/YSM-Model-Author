@@ -1,9 +1,292 @@
 {
   "work": {
-    "name": "GI",
-    "zh": ["原神"],
-    "en": ["Genshin Impact", "Genshin", "GI"],
+    "abbr": "GI",
+    "name": {
+      "zh": "原神",
+      "en": "Genshin Impact"
+    },
+    "aliases": {
+      "en": [
+        "Genshin",
+        "GI"
+      ]
+    },
     "category": "Game"
   },
-  "roles": [{"zh": ["云锦"], "en": ["yunjin"]}, {"zh": ["仆人"], "en": ["arlecchino"]}, {"zh": ["优菈"], "en": ["youla"]}, {"zh": ["克洛琳德"], "en": ["clorinde"]}, {"zh": ["刻晴"], "en": ["keqing"]}, {"zh": ["北斗"], "en": ["beidou"]}, {"zh": ["千织"], "en": ["qianzhi"]}, {"zh": ["可莉"], "en": ["klee"]}, {"zh": ["哥伦比娅"], "en": ["columbina"]}, {"zh": ["妮露"], "en": ["nilu", "nilu_nsfw"]}, {"zh": ["宵宫"], "en": ["xiaogong"]}, {"zh": ["派蒙"], "en": ["paimeng"]}, {"zh": ["爱可菲"], "en": ["escoffier"]}, {"zh": ["玛薇卡"], "en": ["maweika"]}, {"zh": ["珊瑚宫心海"], "en": ["sangonomiya-kokomi"]}, {"zh": ["瑶瑶"], "en": ["yaoyao"]}, {"zh": ["瓦雷莎"], "en": ["varesa"]}, {"zh": ["甘雨"], "en": ["ganyu"]}, {"zh": ["申鹤"], "en": ["shenghe"]}, {"zh": ["神里绫华"], "en": ["shenlilinhua"]}, {"zh": ["纳维亚"], "en": ["nawy"]}, {"zh": ["纳西妲"], "en": ["nahida"]}, {"zh": ["绮良良"], "en": ["kirara"]}, {"zh": ["罗莎莉亚"], "en": ["rosaria"]}, {"zh": ["胡桃"], "en": ["hutao"]}, {"zh": ["芙宁娜"], "en": ["furina", "impact"]}, {"zh": ["荧"], "en": ["lumine"]}, {"zh": ["诺艾尔"], "en": ["noelle"]}, {"zh": ["辛焱"], "en": ["xinyi"]}, {"zh": ["迪卢克"], "en": ["diluke"]}, {"zh": ["闲云"], "en": ["xianyun"]}, {"zh": ["雷电将军"], "en": ["raiden-shogun"]}, {"zh": ["香菱"], "en": ["xiangling"]}, {"zh": ["黑塔"], "en": ["heita"]}]
+  "roles": [
+    {
+      "zh": [
+        "云锦"
+      ],
+      "en": [
+        "yunjin"
+      ]
+    },
+    {
+      "zh": [
+        "仆人"
+      ],
+      "en": [
+        "arlecchino"
+      ]
+    },
+    {
+      "zh": [
+        "优菈"
+      ],
+      "en": [
+        "youla"
+      ]
+    },
+    {
+      "zh": [
+        "克洛琳德"
+      ],
+      "en": [
+        "clorinde"
+      ]
+    },
+    {
+      "zh": [
+        "刻晴"
+      ],
+      "en": [
+        "keqing"
+      ]
+    },
+    {
+      "zh": [
+        "北斗"
+      ],
+      "en": [
+        "beidou"
+      ]
+    },
+    {
+      "zh": [
+        "千织"
+      ],
+      "en": [
+        "qianzhi"
+      ]
+    },
+    {
+      "zh": [
+        "可莉"
+      ],
+      "en": [
+        "klee"
+      ]
+    },
+    {
+      "zh": [
+        "哥伦比娅"
+      ],
+      "en": [
+        "columbina"
+      ]
+    },
+    {
+      "zh": [
+        "妮露"
+      ],
+      "en": [
+        "nilu",
+        "nilu_nsfw"
+      ]
+    },
+    {
+      "zh": [
+        "宵宫"
+      ],
+      "en": [
+        "xiaogong"
+      ]
+    },
+    {
+      "zh": [
+        "派蒙"
+      ],
+      "en": [
+        "paimeng"
+      ]
+    },
+    {
+      "zh": [
+        "爱可菲"
+      ],
+      "en": [
+        "escoffier"
+      ]
+    },
+    {
+      "zh": [
+        "玛薇卡"
+      ],
+      "en": [
+        "maweika"
+      ]
+    },
+    {
+      "zh": [
+        "珊瑚宫心海"
+      ],
+      "en": [
+        "sangonomiya-kokomi"
+      ]
+    },
+    {
+      "zh": [
+        "瑶瑶"
+      ],
+      "en": [
+        "yaoyao"
+      ]
+    },
+    {
+      "zh": [
+        "瓦雷莎"
+      ],
+      "en": [
+        "varesa"
+      ]
+    },
+    {
+      "zh": [
+        "甘雨"
+      ],
+      "en": [
+        "ganyu"
+      ]
+    },
+    {
+      "zh": [
+        "申鹤"
+      ],
+      "en": [
+        "shenghe"
+      ]
+    },
+    {
+      "zh": [
+        "神里绫华"
+      ],
+      "en": [
+        "shenlilinhua"
+      ]
+    },
+    {
+      "zh": [
+        "纳维亚"
+      ],
+      "en": [
+        "nawy"
+      ]
+    },
+    {
+      "zh": [
+        "纳西妲"
+      ],
+      "en": [
+        "nahida"
+      ]
+    },
+    {
+      "zh": [
+        "绮良良"
+      ],
+      "en": [
+        "kirara"
+      ]
+    },
+    {
+      "zh": [
+        "罗莎莉亚"
+      ],
+      "en": [
+        "rosaria"
+      ]
+    },
+    {
+      "zh": [
+        "胡桃"
+      ],
+      "en": [
+        "hutao"
+      ]
+    },
+    {
+      "zh": [
+        "芙宁娜"
+      ],
+      "en": [
+        "furina",
+        "impact"
+      ]
+    },
+    {
+      "zh": [
+        "荧"
+      ],
+      "en": [
+        "lumine"
+      ]
+    },
+    {
+      "zh": [
+        "诺艾尔"
+      ],
+      "en": [
+        "noelle"
+      ]
+    },
+    {
+      "zh": [
+        "辛焱"
+      ],
+      "en": [
+        "xinyi"
+      ]
+    },
+    {
+      "zh": [
+        "迪卢克"
+      ],
+      "en": [
+        "diluke"
+      ]
+    },
+    {
+      "zh": [
+        "闲云"
+      ],
+      "en": [
+        "xianyun"
+      ]
+    },
+    {
+      "zh": [
+        "雷电将军"
+      ],
+      "en": [
+        "raiden-shogun"
+      ]
+    },
+    {
+      "zh": [
+        "香菱"
+      ],
+      "en": [
+        "xiangling"
+      ]
+    },
+    {
+      "zh": [
+        "黑塔"
+      ],
+      "en": [
+        "heita"
+      ]
+    }
+  ]
 }

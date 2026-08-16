@@ -1,9 +1,25 @@
 {
   "work": {
-    "name": "MyGO",
-    "en": ["BanG Dream! It's MyGO!!!!!", "MyGO"],
-    "zh": ["迷途之子！！！！！"],
+    "abbr": "MyGO",
+    "name": {
+      "zh": "迷途之子！！！！！",
+      "en": "BanG Dream! It's MyGO!!!!!"
+    },
+    "aliases": {
+      "en": [
+        "MyGO"
+      ]
+    },
     "category": "Anime"
   },
-  "roles": [{"zh": ["若叶睦"], "en": ["wakaba-mutsumi"]}]
+  "roles": [
+    {
+      "zh": [
+        "若叶睦"
+      ],
+      "en": [
+        "wakaba-mutsumi"
+      ]
+    }
+  ]
 }

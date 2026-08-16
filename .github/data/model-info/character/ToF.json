@@ -1,8 +1,15 @@
 {
   "work": {
-    "name": "ToF",
-    "en": ["Tower of Fantasy", "ToF"],
-    "zh": ["幻塔"],
+    "abbr": "ToF",
+    "name": {
+      "zh": "幻塔",
+      "en": "Tower of Fantasy"
+    },
+    "aliases": {
+      "en": [
+        "ToF"
+      ]
+    },
     "category": "Game"
   },
   "roles": []

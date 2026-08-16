@@ -149,7 +149,7 @@ def extract_metadata(path: Path, quiet: bool = False) -> dict:
 def model_owner(model_dir: Path) -> tuple[str | None, str]:
     """解析模型目录的主作者名（第一个 .ysm 的 primary 块）；返回 (作者名, 文件名)。
 
-    供库整理（audit 重新分类）、作者推导（format_author_readme --sync-authors）、
+    供库整理（audit 重新分类）、作者推导（kb_tool --sync-authors）、
     模型 README 生成等复用：作者目录下模型的 .ysm 主作者是作者信息的可靠来源。
     """
     for f in sorted(model_dir.glob('*.ysm')) + sorted(model_dir.glob('*.YSM')):
@@ -193,27 +193,35 @@ def classify_authors(author_blocks: list[dict]) -> tuple[dict | None, list[dict]
 # 平台信息：contacts -> README 模板字段（SocialPlatform/SupportPlatform/...）
 # 数据文件结构：{分类: [平台键...]}（分类为键、平台键列表为值），脚本反查归类。
 # ---------------------------------------------------------------------------
-def load_platform_map(root: Path | None = None) -> dict[str, list[str]]:
-    """读取平台分类映射（{分类: [平台键...]}），平台键统一小写，数据文件可手工修改。"""
+def load_platform_map(root: Path | None = None) -> dict[str, dict[str, list[str]]]:
+    """读取平台映射（{分类: {平台规范名: [别名...]}}），别名统一小写，数据文件可手工修改。"""
     data = lib_paths.load_json(_meta_path(root, 'platform_map.json'), {})
-    return {str(field): [str(k).lower() for k in aliases]
-            for field, aliases in data.items()}
+    out: dict[str, dict[str, list[str]]] = {}
+    for field, platforms in data.items():
+        field = str(field)
+        out[field] = {}
+        for canonical, aliases in platforms.items():
+            out[field][str(canonical)] = [str(a).lower() for a in aliases]
+    return out
 
 
 def map_platforms(contacts: dict[str, str],
-                  platform_map: dict[str, list[str]]) -> dict[str, list[str]]:
+                  platform_map: dict) -> dict[str, list[str]]:
     """把 ysm 的 <contact-X> 映射为 README 模板字段（SocialPlatform/SupportPlatform/
-    OtherPlatform/GroupChat -> [值列表]）。platform_map 为 {分类: [平台键...]}，
-    反查平台键归属；未映射的平台归入 OtherPlatform。"""
-    reverse: dict[str, str] = {}
-    for field, aliases in platform_map.items():
-        for alias in aliases:
-            reverse.setdefault(alias, field)
+    OtherPlatform/GroupChat -> ['规范平台名: 值', ...]）。platform_map 为
+    {分类: {规范名: [别名...]}}，反查别名归属并输出规范名；未映射的平台归入
+    OtherPlatform（保留原始键名，便于人工识别）。"""
+    reverse: dict[str, tuple[str, str]] = {}  # 别名 -> (分类, 规范名)
+    for field, platforms in platform_map.items():
+        for canonical, aliases in platforms.items():
+            for alias in aliases:
+                reverse.setdefault(alias, (field, canonical))
     mapped: dict[str, list[str]] = {}
     for key, val in contacts.items():
-        field = reverse.get(key.strip().lower(), 'OtherPlatform')
+        hit = reverse.get(key.strip().lower())
+        field, canonical = hit if hit else ('OtherPlatform', key.strip())
         mapped.setdefault(field, [])
-        line = f'{key.strip()}: {val}' if key.strip() else val
+        line = f'{canonical}: {val}' if val else canonical
         if line not in mapped[field]:
             mapped[field].append(line)
     return mapped

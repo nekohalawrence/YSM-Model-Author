@@ -1,9 +1,427 @@
 {
   "work": {
-    "name": "AK",
-    "zh": ["明日方舟"],
-    "en": ["Arknights", "AK"],
+    "abbr": "AK",
+    "name": {
+      "zh": "明日方舟",
+      "en": "Arknights"
+    },
+    "aliases": {
+      "en": [
+        "AK"
+      ]
+    },
     "category": "Game"
   },
-  "roles": [{"zh": ["临光"], "en": ["nearl"]}, {"zh": ["余"], "en": ["yu"]}, {"zh": ["佩佩"], "en": ["pepe"]}, {"zh": ["凯尔希"], "en": ["kal'tsit"]}, {"zh": ["古米"], "en": ["gummy"]}, {"zh": ["司霆惊蛰"], "en": ["siting-jingzhe"]}, {"zh": ["塑心"], "en": ["virtuosa"]}, {"zh": ["夕"], "en": ["dusk"]}, {"zh": ["天狼星"], "en": ["sirius"]}, {"zh": ["娜仁图亚"], "en": ["narantuya"]}, {"zh": ["安洁莉娜"], "en": ["angelina"]}, {"zh": ["嵯峨"], "en": ["saga"]}, {"zh": ["巫恋"], "en": ["shamare-witchfeast"]}, {"zh": ["年"], "en": ["nian", "nian-2"]}, {"zh": ["归溟幽灵鲨", "幽灵鲨"], "en": ["specter-the-unchained", "specter"]}, {"zh": ["忍冬"], "en": ["vulpisfoglia"]}, {"zh": ["斥罪"], "en": ["penance"]}, {"zh": ["斯卡蒂"], "en": ["skadi(sleepwear)"]}, {"zh": ["新约能天使", "能天使"], "en": ["exusiai-the-new-covenant", "exusiai"]}, {"zh": ["普瑞赛斯"], "en": ["priestess"]}, {"zh": ["极光"], "en": ["aurora"]}, {"zh": ["桃金娘"], "en": ["myrtle"]}, {"zh": ["梅"], "en": ["may"]}, {"zh": ["武装流泪猫猫头"], "en": ["jessica"]}, {"zh": ["水月"], "en": ["mizuki"]}, {"zh": ["爱布拉娜"], "en": ["eblana"]}, {"zh": ["特蕾西娅"], "en": ["theresa"]}, {"zh": ["白金"], "en": ["platinum"]}, {"zh": ["白面鸮"], "en": ["ptilopsis"]}, {"zh": ["红"], "en": ["projekt-red-coral-coast"]}, {"zh": ["红豆"], "en": ["vigna-coral-coast"]}, {"zh": ["纯烬艾雅法拉"], "en": ["eyjafjalla"]}, {"zh": ["绮良"], "en": ["kirara"]}, {"zh": ["维什戴尔"], "en": ["wisadel", "wiš'adel"]}, {"zh": ["缄默德克萨斯"], "en": ["texas-the-omertosa"]}, {"zh": ["羽毛笔"], "en": ["lapluma"]}, {"zh": ["羽生萌萌香"], "en": ["haruka"]}, {"zh": ["苇草"], "en": ["reed-the-flame-shadow"]}, {"zh": ["荒芜拉普兰德", "拉普兰德"], "en": ["lappland-the-decadenza", "lappland"]}, {"zh": ["菲亚梅塔"], "en": ["fiammetta"]}, {"zh": ["诗怀雅"], "en": ["miesy"]}, {"zh": ["调香师"], "en": ["tiaoxiangshi"]}, {"zh": ["迷迭香"], "en": ["rosmontis", "rosmontis_nsfw"]}, {"zh": ["铃兰"], "en": ["suzuran"]}, {"zh": ["铸铁"], "en": ["coralcoast"]}, {"zh": ["阿米娅"], "en": ["amiya", "amyia"]}, {"zh": ["隐德来希"], "en": ["entelechia"]}, {"zh": ["霜星"], "en": ["frostnova"]}, {"zh": ["食铁兽"], "en": ["feater"]}, {"zh": ["黍"], "en": ["su"]}]
+  "roles": [
+    {
+      "zh": [
+        "临光"
+      ],
+      "en": [
+        "nearl"
+      ]
+    },
+    {
+      "zh": [
+        "余"
+      ],
+      "en": [
+        "yu"
+      ]
+    },
+    {
+      "zh": [
+        "佩佩"
+      ],
+      "en": [
+        "pepe"
+      ]
+    },
+    {
+      "zh": [
+        "凯尔希"
+      ],
+      "en": [
+        "kal'tsit"
+      ]
+    },
+    {
+      "zh": [
+        "古米"
+      ],
+      "en": [
+        "gummy"
+      ]
+    },
+    {
+      "zh": [
+        "司霆惊蛰"
+      ],
+      "en": [
+        "siting-jingzhe"
+      ]
+    },
+    {
+      "zh": [
+        "塑心"
+      ],
+      "en": [
+        "virtuosa"
+      ]
+    },
+    {
+      "zh": [
+        "夕"
+      ],
+      "en": [
+        "dusk"
+      ]
+    },
+    {
+      "zh": [
+        "天狼星"
+      ],
+      "en": [
+        "sirius"
+      ]
+    },
+    {
+      "zh": [
+        "娜仁图亚"
+      ],
+      "en": [
+        "narantuya"
+      ]
+    },
+    {
+      "zh": [
+        "安洁莉娜"
+      ],
+      "en": [
+        "angelina"
+      ]
+    },
+    {
+      "zh": [
+        "嵯峨"
+      ],
+      "en": [
+        "saga"
+      ]
+    },
+    {
+      "zh": [
+        "巫恋"
+      ],
+      "en": [
+        "shamare-witchfeast"
+      ]
+    },
+    {
+      "zh": [
+        "年"
+      ],
+      "en": [
+        "nian",
+        "nian-2"
+      ]
+    },
+    {
+      "zh": [
+        "归溟幽灵鲨",
+        "幽灵鲨"
+      ],
+      "en": [
+        "specter-the-unchained",
+        "specter"
+      ]
+    },
+    {
+      "zh": [
+        "忍冬"
+      ],
+      "en": [
+        "vulpisfoglia"
+      ]
+    },
+    {
+      "zh": [
+        "斥罪"
+      ],
+      "en": [
+        "penance"
+      ]
+    },
+    {
+      "zh": [
+        "斯卡蒂"
+      ],
+      "en": [
+        "skadi(sleepwear)"
+      ]
+    },
+    {
+      "zh": [
+        "新约能天使",
+        "能天使"
+      ],
+      "en": [
+        "exusiai-the-new-covenant",
+        "exusiai"
+      ]
+    },
+    {
+      "zh": [
+        "普瑞赛斯"
+      ],
+      "en": [
+        "priestess"
+      ]
+    },
+    {
+      "zh": [
+        "极光"
+      ],
+      "en": [
+        "aurora"
+      ]
+    },
+    {
+      "zh": [
+        "桃金娘"
+      ],
+      "en": [
+        "myrtle"
+      ]
+    },
+    {
+      "zh": [
+        "梅"
+      ],
+      "en": [
+        "may"
+      ]
+    },
+    {
+      "zh": [
+        "武装流泪猫猫头"
+      ],
+      "en": [
+        "jessica"
+      ]
+    },
+    {
+      "zh": [
+        "水月"
+      ],
+      "en": [
+        "mizuki"
+      ]
+    },
+    {
+      "zh": [
+        "爱布拉娜"
+      ],
+      "en": [
+        "eblana"
+      ]
+    },
+    {
+      "zh": [
+        "特蕾西娅"
+      ],
+      "en": [
+        "theresa"
+      ]
+    },
+    {
+      "zh": [
+        "白金"
+      ],
+      "en": [
+        "platinum"
+      ]
+    },
+    {
+      "zh": [
+        "白面鸮"
+      ],
+      "en": [
+        "ptilopsis"
+      ]
+    },
+    {
+      "zh": [
+        "红"
+      ],
+      "en": [
+        "projekt-red-coral-coast"
+      ]
+    },
+    {
+      "zh": [
+        "红豆"
+      ],
+      "en": [
+        "vigna-coral-coast"
+      ]
+    },
+    {
+      "zh": [
+        "纯烬艾雅法拉"
+      ],
+      "en": [
+        "eyjafjalla"
+      ]
+    },
+    {
+      "zh": [
+        "绮良"
+      ],
+      "en": [
+        "kirara"
+      ]
+    },
+    {
+      "zh": [
+        "维什戴尔"
+      ],
+      "en": [
+        "wisadel",
+        "wiš'adel"
+      ]
+    },
+    {
+      "zh": [
+        "缄默德克萨斯"
+      ],
+      "en": [
+        "texas-the-omertosa"
+      ]
+    },
+    {
+      "zh": [
+        "羽毛笔"
+      ],
+      "en": [
+        "lapluma"
+      ]
+    },
+    {
+      "zh": [
+        "羽生萌萌香"
+      ],
+      "en": [
+        "haruka"
+      ]
+    },
+    {
+      "zh": [
+        "苇草"
+      ],
+      "en": [
+        "reed-the-flame-shadow"
+      ]
+    },
+    {
+      "zh": [
+        "荒芜拉普兰德",
+        "拉普兰德"
+      ],
+      "en": [
+        "lappland-the-decadenza",
+        "lappland"
+      ]
+    },
+    {
+      "zh": [
+        "菲亚梅塔"
+      ],
+      "en": [
+        "fiammetta"
+      ]
+    },
+    {
+      "zh": [
+        "诗怀雅"
+      ],
+      "en": [
+        "miesy"
+      ]
+    },
+    {
+      "zh": [
+        "调香师"
+      ],
+      "en": [
+        "tiaoxiangshi"
+      ]
+    },
+    {
+      "zh": [
+        "迷迭香"
+      ],
+      "en": [
+        "rosmontis",
+        "rosmontis_nsfw"
+      ]
+    },
+    {
+      "zh": [
+        "铃兰"
+      ],
+      "en": [
+        "suzuran"
+      ]
+    },
+    {
+      "zh": [
+        "铸铁"
+      ],
+      "en": [
+        "coralcoast"
+      ]
+    },
+    {
+      "zh": [
+        "阿米娅"
+      ],
+      "en": [
+        "amiya",
+        "amyia"
+      ]
+    },
+    {
+      "zh": [
+        "隐德来希"
+      ],
+      "en": [
+        "entelechia"
+      ]
+    },
+    {
+      "zh": [
+        "霜星"
+      ],
+      "en": [
+        "frostnova"
+      ]
+    },
+    {
+      "zh": [
+        "食铁兽"
+      ],
+      "en": [
+        "feater"
+      ]
+    },
+    {
+      "zh": [
+        "黍"
+      ],
+      "en": [
+        "su"
+      ]
+    }
+  ]
 }

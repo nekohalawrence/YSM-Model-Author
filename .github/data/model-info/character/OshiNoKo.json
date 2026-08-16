@@ -1,9 +1,16 @@
 {
   "work": {
-    "name": "OshiNoKo",
-    "en": ["Oshi no Ko", "OnK"],
-    "zh": ["我推的孩子"],
-    "ja": ["【推しの子】"],
+    "abbr": "OshiNoKo",
+    "name": {
+      "zh": "我推的孩子",
+      "en": "Oshi no Ko",
+      "ja": "【推しの子】"
+    },
+    "aliases": {
+      "en": [
+        "OnK"
+      ]
+    },
     "category": "Anime"
   },
   "roles": []

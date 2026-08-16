@@ -1,9 +1,17 @@
 {
   "work": {
-    "name": "DS",
-    "en": ["Demon Slayer", "Kimetsu no Yaiba", "DS"],
-    "zh": ["鬼灭之刃"],
-    "ja": ["鬼滅の刃"],
+    "abbr": "DS",
+    "name": {
+      "zh": "鬼灭之刃",
+      "en": "Demon Slayer",
+      "ja": "鬼滅の刃"
+    },
+    "aliases": {
+      "en": [
+        "Kimetsu no Yaiba",
+        "DS"
+      ]
+    },
     "category": "Anime"
   },
   "roles": []

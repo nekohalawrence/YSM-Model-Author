@@ -1,9 +1,194 @@
 {
   "work": {
-    "name": "HSR",
-    "zh": ["崩坏：星穹铁道"],
-    "en": ["Honkai-Star-Rail", "HSR"],
+    "abbr": "HSR",
+    "name": {
+      "zh": "崩坏：星穹铁道",
+      "en": "Honkai-Star-Rail"
+    },
+    "aliases": {
+      "en": [
+        "HSR"
+      ]
+    },
     "category": "Game"
   },
-  "roles": [{"zh": ["停云"], "en": ["tingyun", "tingyun_nsfw"]}, {"zh": ["克拉拉"], "en": ["clara"]}, {"zh": ["卡芙卡"], "en": ["kafka"]}, {"zh": ["大黑塔", "黑塔"], "en": ["heita", "herta"]}, {"zh": ["女仆小缇宝"], "en": ["tribbie(maid)"]}, {"zh": ["女仆小银狼", "银狼"], "en": ["silver-wolf-2", "silver-wolf", "silverwolf"]}, {"zh": ["小不点三月"], "en": ["sanyue"]}, {"zh": ["小符玄", "符玄"], "en": ["fuxuan"]}, {"zh": ["幻胧"], "en": ["phantylia"]}, {"zh": ["昔涟", "大昔涟"], "en": ["cyrene"]}, {"zh": ["流萤"], "en": ["firefly"]}, {"zh": ["火花"], "en": []}, {"zh": ["白厄"], "en": ["phainon", "plus"]}, {"zh": ["白露"], "en": ["bailu", "bailu-1", "bailu-2"]}, {"zh": ["知更鸟"], "en": ["robin"]}, {"zh": ["花火"], "en": ["huahuo"]}, {"zh": ["镜流"], "en": ["jingliu"]}, {"zh": ["阮梅"], "en": ["ruan-mei"]}, {"zh": ["霍霍"], "en": ["huohuo"]}, {"zh": ["飞霄"], "en": ["feixiao"]}, {"zh": ["黄泉"], "en": ["raiden-bosenmori-mei"]}]
+  "roles": [
+    {
+      "zh": [
+        "停云"
+      ],
+      "en": [
+        "tingyun",
+        "tingyun_nsfw"
+      ]
+    },
+    {
+      "zh": [
+        "克拉拉"
+      ],
+      "en": [
+        "clara"
+      ]
+    },
+    {
+      "zh": [
+        "卡芙卡"
+      ],
+      "en": [
+        "kafka"
+      ]
+    },
+    {
+      "zh": [
+        "大黑塔",
+        "黑塔"
+      ],
+      "en": [
+        "heita",
+        "herta"
+      ]
+    },
+    {
+      "zh": [
+        "女仆小缇宝"
+      ],
+      "en": [
+        "tribbie(maid)"
+      ]
+    },
+    {
+      "zh": [
+        "女仆小银狼",
+        "银狼"
+      ],
+      "en": [
+        "silver-wolf-2",
+        "silver-wolf",
+        "silverwolf"
+      ]
+    },
+    {
+      "zh": [
+        "小不点三月"
+      ],
+      "en": [
+        "sanyue"
+      ]
+    },
+    {
+      "zh": [
+        "小符玄",
+        "符玄"
+      ],
+      "en": [
+        "fuxuan"
+      ]
+    },
+    {
+      "zh": [
+        "幻胧"
+      ],
+      "en": [
+        "phantylia"
+      ]
+    },
+    {
+      "zh": [
+        "昔涟",
+        "大昔涟"
+      ],
+      "en": [
+        "cyrene"
+      ]
+    },
+    {
+      "zh": [
+        "流萤"
+      ],
+      "en": [
+        "firefly"
+      ]
+    },
+    {
+      "zh": [
+        "火花"
+      ],
+      "en": []
+    },
+    {
+      "zh": [
+        "白厄"
+      ],
+      "en": [
+        "phainon",
+        "plus"
+      ]
+    },
+    {
+      "zh": [
+        "白露"
+      ],
+      "en": [
+        "bailu",
+        "bailu-1",
+        "bailu-2"
+      ]
+    },
+    {
+      "zh": [
+        "知更鸟"
+      ],
+      "en": [
+        "robin"
+      ]
+    },
+    {
+      "zh": [
+        "花火"
+      ],
+      "en": [
+        "huahuo"
+      ]
+    },
+    {
+      "zh": [
+        "镜流"
+      ],
+      "en": [
+        "jingliu"
+      ]
+    },
+    {
+      "zh": [
+        "阮梅"
+      ],
+      "en": [
+        "ruan-mei"
+      ]
+    },
+    {
+      "zh": [
+        "霍霍"
+      ],
+      "en": [
+        "huohuo"
+      ]
+    },
+    {
+      "zh": [
+        "飞霄"
+      ],
+      "en": [
+        "feixiao"
+      ]
+    },
+    {
+      "zh": [
+        "黄泉"
+      ],
+      "en": [
+        "raiden-bosenmori-mei"
+      ]
+    }
+  ]
 }

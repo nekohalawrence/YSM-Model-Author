@@ -3,6 +3,29 @@
 ## Author
 
 - **Name**: #绫独之落
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [绫独之落](https://space.bilibili.com/39655169)
+
+## Models
+
+<details>
+<summary><b>LCOD 中二病でも恋がしたい！（2）</b></summary>
+
+- [LCOD_小鸟游六花_Chuunibyou-Takanashi-Rikka](LCOD_小鸟游六花_Chuunibyou-Takanashi-Rikka)
+- [LCOD_小鸟游六花_初中时期_Takanashi-Rikka](LCOD_小鸟游六花_初中时期_Takanashi-Rikka)
+
+</details>
+
+<details>
+<summary><b>VOC 博歌乐（1）</b></summary>
+
+- [VOC_洛天依_世末系列_Luotianyi](VOC_洛天依_世末系列_Luotianyi)
+
+</details>
+
+<details>
+<summary><b>Unknown（1）</b></summary>
+
+- [Unknown_Singer-In-Last-Phase](Unknown_Singer-In-Last-Phase)
+
+</details>

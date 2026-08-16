@@ -3,10 +3,14 @@
 ## Author
 
 - **Name**: #Anrieal
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [Anrieal](https://space.bilibili.com/1421932069)
 
-## 资源
+## Models
 
-- [Anrieal/a_ysm_model](https://github.com/Anrieal/a_ysm_model)
+<details>
+<summary><b>Unknown（1）</b></summary>
+
+- [Unknown_Nemesis-T](Unknown_Nemesis-T)
+
+</details>

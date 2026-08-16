@@ -25,7 +25,7 @@
       "heading": "## Co-creator",
       "summary": "Co-creator",
       "collapsible": false,
-      "note": "同 Author，内容来自 models_meta.json 或 .ysm 解析（co-creator 识别）"
+      "note": "同 Author，内容来自 co_creators.json 或 .ysm 解析（co-creator 识别）"
     },
     {
       "key": "preview_images",

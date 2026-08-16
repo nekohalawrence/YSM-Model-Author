@@ -1,8 +1,10 @@
 {
   "work": {
-    "name": "Edgerunners",
-    "en": ["Cyberpunk: Edgerunners"],
-    "zh": ["赛博朋克：边缘行者"],
+    "abbr": "Edgerunners",
+    "name": {
+      "zh": "赛博朋克：边缘行者",
+      "en": "Cyberpunk: Edgerunners"
+    },
     "category": "Anime"
   },
   "roles": []

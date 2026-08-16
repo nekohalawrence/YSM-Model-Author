@@ -1,8 +1,10 @@
 {
   "work": {
-    "name": "PGR",
-    "zh": ["战双帕弥什"],
-    "en": ["Punishing: Gray Raven"],
+    "abbr": "PGR",
+    "name": {
+      "zh": "战双帕弥什",
+      "en": "Punishing: Gray Raven"
+    },
     "category": "Game"
   },
   "roles": []

@@ -1,8 +1,15 @@
 {
   "work": {
-    "name": "RI",
-    "en": ["Reverend Insanity", "RI"],
-    "zh": ["蛊真人"],
+    "abbr": "RI",
+    "name": {
+      "zh": "蛊真人",
+      "en": "Reverend Insanity"
+    },
+    "aliases": {
+      "en": [
+        "RI"
+      ]
+    },
     "category": "Anime"
   },
   "roles": []

@@ -1,6 +1,15 @@
 {
   "work": {
-    "name": "DMC"
+    "abbr": "DMC"
   },
-  "roles": [{"zh": ["维吉尔"], "en": ["Vergil"]}]
+  "roles": [
+    {
+      "zh": [
+        "维吉尔"
+      ],
+      "en": [
+        "Vergil"
+      ]
+    }
+  ]
 }

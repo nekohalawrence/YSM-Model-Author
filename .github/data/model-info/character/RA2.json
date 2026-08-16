@@ -1,8 +1,16 @@
 {
   "work": {
-    "name": "RA2",
-    "en": ["Command-&-Conquer: Red-Alert-2", "Red-Alert-2", "RA2"],
-    "zh": ["命令与征服：红色警戒 2"],
+    "abbr": "RA2",
+    "name": {
+      "zh": "命令与征服：红色警戒 2",
+      "en": "Command-&-Conquer: Red-Alert-2"
+    },
+    "aliases": {
+      "en": [
+        "Red-Alert-2",
+        "RA2"
+      ]
+    },
     "category": "Game"
   },
   "roles": []

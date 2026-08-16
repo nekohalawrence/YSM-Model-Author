@@ -3,8 +3,23 @@
 ## Author
 
 - **Name**: #窝窝头
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [泛用型窝窝头](https://space.bilibili.com/357608680)
+    - **Bilibili**: [窝窝头](https://space.bilibili.com/357608680)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [窝窝头](https://afdian.com/a/WWTman)
+
+## Models
+
+<details>
+<summary><b>GBC 哭泣少女乐队（1）</b></summary>
+
+- [GBC_井芹仁菜_Iseri-Nina](GBC_井芹仁菜_Iseri-Nina)
+
+</details>
+
+<details>
+<summary><b>Unknown（1）</b></summary>
+
+- [Unknown_解放者机甲](Unknown_解放者机甲)
+
+</details>

@@ -1,10 +1,26 @@
 {
   "work": {
-    "name": "HLP",
-    "en": ["Heaven's Lost Property", "HLP"],
-    "zh": ["天降之物"],
-    "ja": ["そらのおとしもの"],
+    "abbr": "HLP",
+    "name": {
+      "zh": "天降之物",
+      "en": "Heaven's Lost Property",
+      "ja": "そらのおとしもの"
+    },
+    "aliases": {
+      "en": [
+        "HLP"
+      ]
+    },
     "category": "Anime"
   },
-  "roles": [{"zh": ["伊卡洛斯"], "en": ["ikaros"]}]
+  "roles": [
+    {
+      "zh": [
+        "伊卡洛斯"
+      ],
+      "en": [
+        "ikaros"
+      ]
+    }
+  ]
 }

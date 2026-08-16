@@ -1,8 +1,15 @@
 {
   "work": {
-    "name": "DDLC",
-    "zh": ["心跳文学部！"],
-    "en": ["Doki-Doki-Literature-Club!", "DDLC"],
+    "abbr": "DDLC",
+    "name": {
+      "zh": "心跳文学部！",
+      "en": "Doki-Doki-Literature-Club!"
+    },
+    "aliases": {
+      "en": [
+        "DDLC"
+      ]
+    },
     "category": "Game"
   },
   "roles": []

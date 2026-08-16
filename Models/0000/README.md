@@ -3,6 +3,14 @@
 ## Author
 
 - **Name**: #-OMEGAZERO-
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [-OMEGAZERO-](https://space.bilibili.com/359658906)
+
+## Models
+
+<details>
+<summary><b>BA 碧蓝档案（1）</b></summary>
+
+- [BA_圣园未花_Mika-Misono_LA](BA_圣园未花_Mika-Misono_LA)
+
+</details>

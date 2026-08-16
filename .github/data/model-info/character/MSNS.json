@@ -1,10 +1,26 @@
 {
   "work": {
-    "name": "MSNS",
-    "en": ["Mato Seihei no Sureibu", "MSNS"],
-    "zh": ["魔都精兵的奴隶"],
-    "ja": ["魔都精兵のスレイブ"],
+    "abbr": "MSNS",
+    "name": {
+      "zh": "魔都精兵的奴隶",
+      "en": "Mato Seihei no Sureibu",
+      "ja": "魔都精兵のスレイブ"
+    },
+    "aliases": {
+      "en": [
+        "MSNS"
+      ]
+    },
     "category": "Anime"
   },
-  "roles": [{"zh": ["山城恋"], "en": ["yamashiro-ren"]}]
+  "roles": [
+    {
+      "zh": [
+        "山城恋"
+      ],
+      "en": [
+        "yamashiro-ren"
+      ]
+    }
+  ]
 }

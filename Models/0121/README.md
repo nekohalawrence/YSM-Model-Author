@@ -3,8 +3,16 @@
 ## Author
 
 - **Name**: #准尉werner
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [准尉werner](https://space.bilibili.com/23427031)
-  - **GroupChat**: #QQ
     - **QQ**: 1102665952
+
+## Models
+
+<details>
+<summary><b>Unknown（2）</b></summary>
+
+- [Unknown_MK011(米莉安骑士改装型)](Unknown_MK011(米莉安骑士改装型))
+- [Unknown_MK012(灰风)](Unknown_MK012(灰风))
+
+</details>

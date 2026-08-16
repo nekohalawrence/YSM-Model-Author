@@ -3,13 +3,39 @@
 ## Author
 
 - **Name**: #Tu_tou
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **GroupChat**: #QQ
+  - **SocialPlatform**: #QQ
     - **QQ**: 126088260
 
-## Co-creator
+## Models
 
-- **Name**: #快乐的小盛子
-  - **Role**: #金主/赞助者 | #Sponsor
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [快乐的小盛子](https://space.bilibili.com/10544873)
+<details>
+<summary><b>HSR 崩坏：星穹铁道（1）</b></summary>
+
+- [HSR_火花_版_Q_LB](HSR_火花_版_Q_LB)
+
+</details>
+
+<details>
+<summary><b>Nikke 胜利女神：妮姬（1）</b></summary>
+
+- [Nikke_爱丽丝_Alice](Nikke_爱丽丝_Alice)
+
+</details>
+
+<details>
+<summary><b>VOC 博歌乐（1）</b></summary>
+
+- [VOC_初音未来_Hatsune-Miku](VOC_初音未来_Hatsune-Miku)
+
+</details>
+
+<details>
+<summary><b>Unknown（5）</b></summary>
+
+- [Unknown_星期日](Unknown_星期日)
+- [Unknown_洛琪希_LA](Unknown_洛琪希_LA)
+- [Unknown_浮波柚叶](Unknown_浮波柚叶)
+- [Unknown_照](Unknown_照)
+- [Unknown_表情包](Unknown_表情包)
+
+</details>

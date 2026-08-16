@@ -1,9 +1,302 @@
 {
   "work": {
-    "name": "AL",
-    "zh": ["碧蓝航线"],
-    "en": ["Azur-Lane", "AL"],
+    "abbr": "AL",
+    "name": {
+      "zh": "碧蓝航线",
+      "en": "Azur-Lane"
+    },
+    "aliases": {
+      "en": [
+        "AL"
+      ]
+    },
     "category": "Game"
   },
-  "roles": [{"zh": ["伊势"], "en": ["ise"]}, {"zh": ["信浓"], "en": ["shinano"]}, {"zh": ["兴登堡"], "en": ["hindenburg"]}, {"zh": ["列克星敦"], "en": ["ii-lexington-ii"]}, {"zh": ["利托里奥"], "en": ["littorio"]}, {"zh": ["吸血鬼"], "en": ["vampire"]}, {"zh": ["埃吉尔"], "en": ["kms-ägir"]}, {"zh": ["大凤"], "en": ["taihou"]}, {"zh": ["天城"], "en": ["amagi", "amagi-summer"]}, {"zh": ["天狼星"], "en": ["sirius"]}, {"zh": ["奇尔沙治"], "en": ["kearsarge"]}, {"zh": ["尼米"], "en": ["z23"]}, {"zh": ["尾张"], "en": ["owari"]}, {"zh": ["山城"], "en": ["yamashiro"]}, {"zh": ["怨仇级航空母舰", "怨仇"], "en": ["implacable"]}, {"zh": ["恶毒"], "en": ["lemalin"]}, {"zh": ["扶桑"], "en": ["fusou"]}, {"zh": ["拉菲"], "en": ["laffey", "laffey-bunnygirl"]}, {"zh": ["新泽西"], "en": ["new-jersey"]}, {"zh": ["柴郡"], "en": ["cheshire"]}, {"zh": ["标枪"], "en": ["javelin"]}, {"zh": ["武藏"], "en": ["ijn-musashi-bunngyirl", "musashi"]}, {"zh": ["江风"], "en": ["kawakaze"]}, {"zh": ["纳希莫夫海军上将"], "en": ["admiral-nakhimov"]}, {"zh": ["绀紫之心"], "en": ["hdn-purple-heart"]}, {"zh": ["绫波"], "en": ["ayanami"]}, {"zh": ["莫加多尔"], "en": ["mogador"]}, {"zh": ["长春"], "en": ["chang-chun"]}, {"zh": ["长门"], "en": ["nagato"]}, {"zh": ["长风"], "en": ["ch'ang feng"]}, {"zh": ["阿尔萨斯"], "en": ["alsace"]}, {"zh": ["阿达尔伯特亲王"], "en": ["prinz-adalbert"]}, {"zh": ["雪风"], "en": ["kancollect-yukikaze", "yukikaze"]}, {"zh": ["鞍山"], "en": ["an-shan"]}, {"zh": ["鲁普雷希特亲王"], "en": ["prinz-rupprecht"]}]
+  "roles": [
+    {
+      "zh": [
+        "伊势"
+      ],
+      "en": [
+        "ise"
+      ]
+    },
+    {
+      "zh": [
+        "信浓"
+      ],
+      "en": [
+        "shinano"
+      ]
+    },
+    {
+      "zh": [
+        "兴登堡"
+      ],
+      "en": [
+        "hindenburg"
+      ]
+    },
+    {
+      "zh": [
+        "列克星敦"
+      ],
+      "en": [
+        "ii-lexington-ii"
+      ]
+    },
+    {
+      "zh": [
+        "利托里奥"
+      ],
+      "en": [
+        "littorio"
+      ]
+    },
+    {
+      "zh": [
+        "吸血鬼"
+      ],
+      "en": [
+        "vampire"
+      ]
+    },
+    {
+      "zh": [
+        "埃吉尔"
+      ],
+      "en": [
+        "kms-ägir"
+      ]
+    },
+    {
+      "zh": [
+        "大凤"
+      ],
+      "en": [
+        "taihou"
+      ]
+    },
+    {
+      "zh": [
+        "天城"
+      ],
+      "en": [
+        "amagi",
+        "amagi-summer"
+      ]
+    },
+    {
+      "zh": [
+        "天狼星"
+      ],
+      "en": [
+        "sirius"
+      ]
+    },
+    {
+      "zh": [
+        "奇尔沙治"
+      ],
+      "en": [
+        "kearsarge"
+      ]
+    },
+    {
+      "zh": [
+        "尼米"
+      ],
+      "en": [
+        "z23"
+      ]
+    },
+    {
+      "zh": [
+        "尾张"
+      ],
+      "en": [
+        "owari"
+      ]
+    },
+    {
+      "zh": [
+        "山城"
+      ],
+      "en": [
+        "yamashiro"
+      ]
+    },
+    {
+      "zh": [
+        "怨仇级航空母舰",
+        "怨仇"
+      ],
+      "en": [
+        "implacable"
+      ]
+    },
+    {
+      "zh": [
+        "恶毒"
+      ],
+      "en": [
+        "lemalin"
+      ]
+    },
+    {
+      "zh": [
+        "扶桑"
+      ],
+      "en": [
+        "fusou"
+      ]
+    },
+    {
+      "zh": [
+        "拉菲"
+      ],
+      "en": [
+        "laffey",
+        "laffey-bunnygirl"
+      ]
+    },
+    {
+      "zh": [
+        "新泽西"
+      ],
+      "en": [
+        "new-jersey"
+      ]
+    },
+    {
+      "zh": [
+        "柴郡"
+      ],
+      "en": [
+        "cheshire"
+      ]
+    },
+    {
+      "zh": [
+        "标枪"
+      ],
+      "en": [
+        "javelin"
+      ]
+    },
+    {
+      "zh": [
+        "武藏"
+      ],
+      "en": [
+        "ijn-musashi-bunngyirl",
+        "musashi"
+      ]
+    },
+    {
+      "zh": [
+        "江风"
+      ],
+      "en": [
+        "kawakaze"
+      ]
+    },
+    {
+      "zh": [
+        "纳希莫夫海军上将"
+      ],
+      "en": [
+        "admiral-nakhimov"
+      ]
+    },
+    {
+      "zh": [
+        "绀紫之心"
+      ],
+      "en": [
+        "hdn-purple-heart"
+      ]
+    },
+    {
+      "zh": [
+        "绫波"
+      ],
+      "en": [
+        "ayanami"
+      ]
+    },
+    {
+      "zh": [
+        "莫加多尔"
+      ],
+      "en": [
+        "mogador"
+      ]
+    },
+    {
+      "zh": [
+        "长春"
+      ],
+      "en": [
+        "chang-chun"
+      ]
+    },
+    {
+      "zh": [
+        "长门"
+      ],
+      "en": [
+        "nagato"
+      ]
+    },
+    {
+      "zh": [
+        "长风"
+      ],
+      "en": [
+        "ch'ang feng"
+      ]
+    },
+    {
+      "zh": [
+        "阿尔萨斯"
+      ],
+      "en": [
+        "alsace"
+      ]
+    },
+    {
+      "zh": [
+        "阿达尔伯特亲王"
+      ],
+      "en": [
+        "prinz-adalbert"
+      ]
+    },
+    {
+      "zh": [
+        "雪风"
+      ],
+      "en": [
+        "kancollect-yukikaze",
+        "yukikaze"
+      ]
+    },
+    {
+      "zh": [
+        "鞍山"
+      ],
+      "en": [
+        "an-shan"
+      ]
+    },
+    {
+      "zh": [
+        "鲁普雷希特亲王"
+      ],
+      "en": [
+        "prinz-rupprecht"
+      ]
+    }
+  ]
 }

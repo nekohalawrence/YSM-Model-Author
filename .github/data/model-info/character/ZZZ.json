@@ -1,9 +1,99 @@
 {
   "work": {
-    "name": "ZZZ",
-    "zh": ["绝区零"],
-    "en": ["Zenless-Zone-Zero", "ZZZ"],
+    "abbr": "ZZZ",
+    "name": {
+      "zh": "绝区零",
+      "en": "Zenless-Zone-Zero"
+    },
+    "aliases": {
+      "en": [
+        "ZZZ"
+      ]
+    },
     "category": "Game"
   },
-  "roles": [{"zh": ["冯·莱卡恩"], "en": ["von-lycaon"]}, {"zh": ["叶瞬光"], "en": ["Ye-Shunguang"]}, {"zh": ["星见雅"], "en": ["hoshimi-miyabi"]}, {"zh": ["朱鸢"], "en": ["zhu-yuan"]}, {"zh": ["橘福福"], "en": ["Ju‑Fufu"]}, {"zh": ["猫宫又奈"], "en": ["nekomiya-mana"]}, {"zh": ["简"], "en": ["jian"]}, {"zh": ["艾莲·乔", "艾莲"], "en": ["ellen-joe", "ellen"]}, {"zh": ["薇薇安"], "en": ["vivian"]}, {"zh": ["铃"], "en": ["belle"]}]
+  "roles": [
+    {
+      "zh": [
+        "冯·莱卡恩"
+      ],
+      "en": [
+        "von-lycaon"
+      ]
+    },
+    {
+      "zh": [
+        "叶瞬光"
+      ],
+      "en": [
+        "Ye-Shunguang"
+      ]
+    },
+    {
+      "zh": [
+        "星见雅"
+      ],
+      "en": [
+        "hoshimi-miyabi"
+      ]
+    },
+    {
+      "zh": [
+        "朱鸢"
+      ],
+      "en": [
+        "zhu-yuan"
+      ]
+    },
+    {
+      "zh": [
+        "橘福福"
+      ],
+      "en": [
+        "Ju‑Fufu"
+      ]
+    },
+    {
+      "zh": [
+        "猫宫又奈"
+      ],
+      "en": [
+        "nekomiya-mana"
+      ]
+    },
+    {
+      "zh": [
+        "简"
+      ],
+      "en": [
+        "jian"
+      ]
+    },
+    {
+      "zh": [
+        "艾莲·乔",
+        "艾莲"
+      ],
+      "en": [
+        "ellen-joe",
+        "ellen"
+      ]
+    },
+    {
+      "zh": [
+        "薇薇安"
+      ],
+      "en": [
+        "vivian"
+      ]
+    },
+    {
+      "zh": [
+        "铃"
+      ],
+      "en": [
+        "belle"
+      ]
+    }
+  ]
 }

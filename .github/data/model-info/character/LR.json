@@ -1,9 +1,16 @@
 {
   "work": {
-    "name": "LR",
-    "en": ["Lycoris Recoil", "LR"],
-    "zh": ["莉可丽丝"],
-    "ja": ["リコリス・リコイル"],
+    "abbr": "LR",
+    "name": {
+      "zh": "莉可丽丝",
+      "en": "Lycoris Recoil",
+      "ja": "リコリス・リコイル"
+    },
+    "aliases": {
+      "en": [
+        "LR"
+      ]
+    },
     "category": "Anime"
   },
   "roles": []

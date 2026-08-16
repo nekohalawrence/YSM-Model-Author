@@ -3,8 +3,23 @@
 ## Author
 
 - **Name**: #Deovolente | #GhastRiv
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [GhastRiv](https://space.bilibili.com/188295)
+    - **Bilibili**: [Deovolente](https://space.bilibili.com/188295)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [Deovolente](https://afdian.com/a/Deovolente)
+
+## Models
+
+<details>
+<summary><b>HI3 崩坏 3（1）</b></summary>
+
+- [HI3_Mobius](HI3_Mobius)
+
+</details>
+
+<details>
+<summary><b>HSR 崩坏：星穹铁道（1）</b></summary>
+
+- [HSR_幻胧_Phantylia](HSR_幻胧_Phantylia)
+
+</details>

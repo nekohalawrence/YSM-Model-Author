@@ -1,10 +1,26 @@
 {
   "work": {
-    "name": "300-Heroes",
-    "en": ["300 Heroes", "300-Heroes"],
-    "zh": ["300 英雄"],
-    "ja": ["300 ヒーローズ"],
+    "abbr": "300-Heroes",
+    "name": {
+      "zh": "300 英雄",
+      "en": "300 Heroes",
+      "ja": "300 ヒーローズ"
+    },
+    "aliases": {
+      "en": [
+        "300-Heroes"
+      ]
+    },
     "category": "Game"
   },
-  "roles": [{"zh": ["缇米"], "en": ["timi"]}]
+  "roles": [
+    {
+      "zh": [
+        "缇米"
+      ],
+      "en": [
+        "timi"
+      ]
+    }
+  ]
 }

@@ -1,238 +1,246 @@
 {
-  "common": {
-    "zh": [
-      "一年级",
-      "万圣",
+  "swimsuit": {
+    "name": {
+      "en": "swimsuit",
+      "zh": "泳装"
+    },
+    "aliases": [
+      "泳装版"
+    ]
+  },
+  "default": {
+    "name": {
+      "en": "default",
+      "zh": "原皮"
+    },
+    "aliases": [
+      "原版"
+    ]
+  },
+  "summer": {
+    "name": {
+      "en": "summer",
+      "zh": "夏服"
+    },
+    "aliases": [
+      "夏日"
+    ]
+  },
+  "winter": {
+    "name": {
+      "en": "winter",
+      "zh": "冬装"
+    },
+    "aliases": [
+      "冬日"
+    ]
+  },
+  "spring": {
+    "name": {
+      "en": "spring",
+      "zh": "春装"
+    },
+    "aliases": []
+  },
+  "autumn": {
+    "name": {
+      "en": "autumn",
+      "zh": "秋装"
+    },
+    "aliases": []
+  },
+  "halloween": {
+    "name": {
+      "en": "halloween",
+      "zh": "万圣"
+    },
+    "aliases": [
       "万圣节",
-      "三阶段",
-      "世末系列",
-      "中秋",
-      "临战",
-      "二年级",
-      "二阶段",
-      "体操服",
-      "便服",
-      "偶像服",
-      "兔女郎",
-      "公式服",
-      "冬装",
-      "初中时期",
-      "制服",
-      "原皮",
-      "古怪神探",
-      "和服",
-      "圣诞",
-      "圣诞服",
-      "圣诞装",
-      "夏服",
-      "太刀",
-      "婚纱",
-      "家居服",
-      "工作服",
-      "常服",
-      "悠然假日",
-      "情人节",
-      "懒懒的白兔",
-      "执事服",
-      "新年",
-      "无限之视",
-      "日常服",
-      "春节",
-      "春装",
-      "最终形态",
-      "未亡人雪女",
-      "机动天使",
-      "机甲",
-      "校服",
-      "泳池",
-      "泳装",
-      "泳装型",
-      "浴衣",
-      "爱意凝晶",
-      "珊瑚海岸",
-      "白无垢",
-      "睡衣",
-      "礼服",
-      "神罚",
-      "神装",
-      "私服",
-      "秋装",
-      "红马尾",
-      "草神",
-      "装甲",
-      "运动服",
-      "银枪小队",
-      "餐前魔法",
-      "泳装版",
-      "原版",
-      "夏日",
-      "冬日",
       "万圣版",
-      "万圣节版",
+      "万圣节版"
+    ]
+  },
+  "christmas": {
+    "name": {
+      "en": "christmas",
+      "zh": "圣诞"
+    },
+    "aliases": [
       "圣诞版",
-      "新春",
-      "新春版",
-      "兔子洞",
-      "女仆",
-      "新",
-      "旧"
-    ],
-    "en": [
-      "armor",
-      "autumn",
-      "bunny",
-      "bunny-girl",
-      "bunnygirl",
-      "casual",
-      "christmas",
-      "festival",
-      "halloween",
-      "idol",
-      "kimono",
-      "kunoichi",
-      "lingerie",
-      "maid",
-      "mecha",
-      "new-year",
-      "newyear",
-      "pajamas",
-      "pyjamas",
-      "rabbit",
-      "rabbithole",
+      "圣诞装",
       "santa",
-      "school",
-      "spring",
-      "summer",
-      "sweater",
-      "swimsuit",
-      "uniform",
-      "valentine",
-      "wedding",
-      "winter",
-      "xmas",
-      "yukata",
-      "new",
-      "old"
-    ],
-    "zh": [
-      "泳装",
-      "泳装版",
-      "原皮",
-      "原版",
-      "夏服",
-      "夏日",
-      "冬装",
-      "冬日",
-      "春装",
-      "秋装",
-      "万圣",
-      "万圣节",
-      "万圣版",
-      "万圣节版",
-      "圣诞",
-      "圣诞版",
-      "圣诞装",
-      "新年",
+      "xmas"
+    ]
+  },
+  "newyear": {
+    "name": {
+      "en": "newyear",
+      "zh": "新年"
+    },
+    "aliases": [
       "新春",
       "春节",
       "新春版",
-      "兔子洞",
-      "兔女郎",
-      "婚纱",
-      "女仆",
-      "和服",
-      "浴衣",
-      "睡衣",
-      "制服",
-      "校服",
-      "最终形态",
-      "二阶段",
-      "三阶段",
-      "新",
-      "旧"
+      "new-year"
     ]
   },
-  "VOC": {
-    "zh": [],
-    "en": [
-      "halloween",
-      "rabbithole",
-      "swimsuit"
+  "rabbithole": {
+    "name": {
+      "en": "rabbithole",
+      "zh": "兔子洞"
+    },
+    "aliases": [
+      "rabbit"
     ]
   },
-  "OC": {
-    "zh": [
-      "登门喜鹊",
-      "天眼泡狐龙"
-    ],
-    "en": []
+  "bunnygirl": {
+    "name": {
+      "en": "bunnygirl",
+      "zh": "兔女郎"
+    },
+    "aliases": [
+      "bunny",
+      "bunny-girl"
+    ]
   },
-  "Touhou": {
-    "zh": [
-      "优昙华院",
-      "因幡",
-      "斯卡蕾特"
-    ],
-    "en": []
+  "wedding": {
+    "name": {
+      "en": "wedding",
+      "zh": "婚纱"
+    },
+    "aliases": []
   },
-  "AstralParty": {
-    "zh": [
-      "美咲"
-    ],
-    "en": []
+  "maid": {
+    "name": {
+      "en": "maid",
+      "zh": "女仆"
+    },
+    "aliases": []
   },
-  "GI": {
-    "zh": [
-      "阿蕾奇诺"
-    ],
-    "en": []
+  "kimono": {
+    "name": {
+      "en": "kimono",
+      "zh": "和服"
+    },
+    "aliases": []
   },
-  "ZZZ": {
-    "zh": [
-      "乔"
-    ],
-    "en": []
+  "yukata": {
+    "name": {
+      "en": "yukata",
+      "zh": "浴衣"
+    },
+    "aliases": []
   },
-  "HSR": {
-    "zh": [
-      "版"
-    ],
-    "en": []
+  "pajamas": {
+    "name": {
+      "en": "pajamas",
+      "zh": "睡衣"
+    },
+    "aliases": [
+      "pyjamas"
+    ]
   },
-  "HI3": {
-    "zh": [
-      "时砾逐光"
-    ],
-    "en": []
+  "uniform": {
+    "name": {
+      "en": "uniform",
+      "zh": "制服"
+    },
+    "aliases": []
   },
-  "LOL": {
-    "zh": [
-      "佛耶戈"
-    ],
-    "en": []
+  "school": {
+    "name": {
+      "en": "school",
+      "zh": "校服"
+    },
+    "aliases": []
   },
-  "UT": {
-    "zh": [
-      "芝顿娘"
-    ],
-    "en": []
+  "final": {
+    "name": {
+      "en": "final",
+      "zh": "最终形态"
+    },
+    "aliases": []
   },
-  "AL": {
-    "zh": [
-      "愿望为爱"
-    ],
-    "en": []
+  "phase2": {
+    "name": {
+      "en": "phase2",
+      "zh": "二阶段"
+    },
+    "aliases": []
   },
-  "Snowbreak": {
-    "zh": [
-      "小天师"
-    ],
-    "en": []
+  "phase3": {
+    "name": {
+      "en": "phase3",
+      "zh": "三阶段"
+    },
+    "aliases": []
   },
-  "Minecraft": {
-    "zh": [
-      "小螈"
-    ],
-    "en": []
+  "new": {
+    "name": {
+      "en": "new",
+      "zh": "新"
+    },
+    "aliases": []
+  },
+  "old": {
+    "name": {
+      "en": "old",
+      "zh": "旧"
+    },
+    "aliases": []
+  },
+  "armor": {
+    "name": {
+      "en": "armor"
+    },
+    "aliases": []
+  },
+  "casual": {
+    "name": {
+      "en": "casual"
+    },
+    "aliases": []
+  },
+  "festival": {
+    "name": {
+      "en": "festival"
+    },
+    "aliases": []
+  },
+  "idol": {
+    "name": {
+      "en": "idol"
+    },
+    "aliases": []
+  },
+  "kunoichi": {
+    "name": {
+      "en": "kunoichi"
+    },
+    "aliases": []
+  },
+  "lingerie": {
+    "name": {
+      "en": "lingerie"
+    },
+    "aliases": []
+  },
+  "mecha": {
+    "name": {
+      "en": "mecha"
+    },
+    "aliases": []
+  },
+  "sweater": {
+    "name": {
+      "en": "sweater"
+    },
+    "aliases": []
+  },
+  "valentine": {
+    "name": {
+      "en": "valentine"
+    },
+    "aliases": []
   }
 }

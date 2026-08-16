@@ -1,9 +1,20 @@
 {
   "work": {
-    "name": "Meme",
-    "en": ["Meme"],
-    "zh": ["模因"],
+    "abbr": "Meme",
+    "name": {
+      "zh": "模因",
+      "en": "Meme"
+    },
     "category": "Other"
   },
-  "roles": [{"zh": ["埃及猫"], "en": ["egyptian-cat"]}]
+  "roles": [
+    {
+      "zh": [
+        "埃及猫"
+      ],
+      "en": [
+        "egyptian-cat"
+      ]
+    }
+  ]
 }

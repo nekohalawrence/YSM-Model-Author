@@ -3,8 +3,15 @@
 ## Author
 
 - **Name**: #夜森岚_Noxsil
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [夜森岚_Noxsil](https://space.bilibili.com/3706963248548243)
-  - **GroupChat**: #QQ
     - **QQ**: 3910084829
+
+## Models
+
+<details>
+<summary><b>Unknown（1）</b></summary>
+
+- [Unknown_九尾の傍観者](Unknown_九尾の傍観者)
+
+</details>

@@ -1,10 +1,26 @@
 {
   "work": {
-    "name": "DOHNA",
-    "en": ["Dohna Dohna: Let's Do Bad Things Together", "DOHNA"],
-    "zh": ["多娜多娜 一起干坏事吧！"],
-    "ja": ["ドーナドーナ いっしょにわるいことしよう"],
+    "abbr": "DOHNA",
+    "name": {
+      "zh": "多娜多娜 一起干坏事吧！",
+      "en": "Dohna Dohna: Let's Do Bad Things Together",
+      "ja": "ドーナドーナ いっしょにわるいことしよう"
+    },
+    "aliases": {
+      "en": [
+        "DOHNA"
+      ]
+    },
     "category": "Game"
   },
-  "roles": [{"zh": ["菊千代"], "en": ["mibu-kikuchiyo"]}]
+  "roles": [
+    {
+      "zh": [
+        "菊千代"
+      ],
+      "en": [
+        "mibu-kikuchiyo"
+      ]
+    }
+  ]
 }

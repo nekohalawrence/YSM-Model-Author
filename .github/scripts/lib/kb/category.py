@@ -88,7 +88,7 @@ def render_readme_works_section(data: dict) -> str:
         "<details>", "",
         "<summary>模型分类</summary>", "",
         "> 本区块由 `.github/data/model-info/character/*.json` 自动生成"
-        "（`04_generate&update_root_readme.py --build-category-map`），手改请编辑对应作品文件。", "",
+        "（`03_generate_root_readme.py --build-category-map`），手改请编辑对应作品文件。", "",
         "> 文件夹命名规则", "",
         "```",
         "<英文作品名称>_<中文角色名>-[中文皮肤]_<英文角色名>-[英文皮肤]_<个人评定等级>",

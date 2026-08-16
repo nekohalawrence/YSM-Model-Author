@@ -1,8 +1,10 @@
 {
   "work": {
-    "name": "Ash-Arms",
-    "en": ["Ash-Arms"],
-    "zh": ["灰烬战线"],
+    "abbr": "Ash-Arms",
+    "name": {
+      "zh": "灰烬战线",
+      "en": "Ash-Arms"
+    },
     "category": "Game"
   },
   "roles": []

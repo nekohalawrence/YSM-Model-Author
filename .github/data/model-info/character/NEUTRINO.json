@@ -1,8 +1,10 @@
 {
   "work": {
-    "name": "NEUTRINO",
-    "en": ["NEUTRINO"],
-    "zh": ["NEUTRINO"],
+    "abbr": "NEUTRINO",
+    "name": {
+      "zh": "NEUTRINO",
+      "en": "NEUTRINO"
+    },
     "category": "Music"
   },
   "roles": []

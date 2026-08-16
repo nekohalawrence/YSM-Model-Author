@@ -1,9 +1,16 @@
 {
   "work": {
-    "name": "Hololive",
-    "en": ["Hololive", "Holo"],
-    "zh": ["hololive"],
-    "ja": ["ホロライブ"],
+    "abbr": "Hololive",
+    "name": {
+      "zh": "hololive",
+      "en": "Hololive",
+      "ja": "ホロライブ"
+    },
+    "aliases": {
+      "en": [
+        "Holo"
+      ]
+    },
     "category": "Music"
   },
   "roles": []

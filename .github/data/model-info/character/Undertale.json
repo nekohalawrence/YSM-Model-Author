@@ -1,9 +1,20 @@
 {
   "work": {
-    "name": "Undertale",
-    "en": ["Undertale"],
-    "zh": ["传说之下"],
+    "abbr": "Undertale",
+    "name": {
+      "zh": "传说之下",
+      "en": "Undertale"
+    },
     "category": "Game"
   },
-  "roles": [{"zh": ["查拉"], "en": ["chara"]}]
+  "roles": [
+    {
+      "zh": [
+        "查拉"
+      ],
+      "en": [
+        "chara"
+      ]
+    }
+  ]
 }

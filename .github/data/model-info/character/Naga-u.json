@@ -1,8 +1,15 @@
 {
   "work": {
-    "name": "Naga-u",
-    "en": ["naga u", "Naga-u"],
-    "zh": ["ながユー"],
+    "abbr": "Naga-u",
+    "name": {
+      "zh": "ながユー",
+      "en": "naga u"
+    },
+    "aliases": {
+      "en": [
+        "Naga-u"
+      ]
+    },
     "category": "Other"
   },
   "roles": []

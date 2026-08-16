@@ -10,7 +10,7 @@ YSM 模型归档工具（本仓库专用）——按作者将待归档的 .ysm �
 归档规则：
   - 命中作者    -> Models/<编号>/<模型文件夹>/
   - 未命中作者  -> Other-YSM-Models/<模型文件夹>/
-  - 未命中任何作者 -> 创建 Models/<max编号+1>/ + README.md（模仿现有作者 README 风格），再建模型文件夹
+  - 未命中任何作者 -> 创建 Models/<max编号+1>/（README 请用 check&fix/generate_author_readmes.py 补生成），再建模型文件夹
   - 同一模型的多个版本（如 神吞 / 神吞二阶段）自动合并进同一模型文件夹
   - 同批处理的同作者文件共享同一作者编号（运行时索引回流，避免重复建目录）
   - 移动时跟随同 stem 的附属文件（预览图 / 压缩包 / 说明文档）
@@ -29,10 +29,10 @@ YSM 模型归档工具（本仓库专用）——按作者将待归档的 .ysm �
 选项:
   --apply               真正执行移动/创建（默认 dry-run，只打印计划）
   --root PATH           指定仓库根目录（默认自动检测 cwd/脚本位置）
-  --with-authors-index  归档成功后重建作者数据 authors.json（04_generate&update_root_readme.py --data）
-  --with-rename         归档成功后运行 02_rename_model_files&folders.py --apply 格式化文件夹名
-  --with-gen-readmes    归档成功后运行 03_generate&update_model_readmes.py 生成模型 README
-  --with-readme-table   归档成功后运行 04_generate&update_root_readme.py --readme 更新根 README 作者索引
+  --with-authors-index  归档成功后重建作者数据 authors.json（03_generate_root_readme.py --data）
+  --with-rename         归档成功后运行 02_rename_model_folders.py --apply 格式化文件夹名
+  --with-gen-readmes    归档成功后运行 03_generate_model_readmes.py 生成模型 README
+  --with-readme-table   归档成功后运行 03_generate_root_readme.py --author 更新根 README 作者索引
   --verbose             打印匹配细节
 """
 from __future__ import annotations
@@ -63,9 +63,9 @@ classify_authors = lib_ysm.classify_authors
 load_platform_map = lib_ysm.load_platform_map
 map_platforms = lib_ysm.map_platforms
 
-# 新作者 README 的生成与默认 Role（统一由 lib/author_readme.py 提供；
-# 03_generate&update_author_readme.py 同样从 lib 复用，避免 import 含 & 的文件名）
-from lib.author_readme import TARGET_ROLE, format_author_name, render_author_readme
+# 新作者名规范化（lib/author_readme.py 提供；作者 README 生成已移至
+# models_organize/03_generate_author_readmes.py，本脚本只登记 authors.json）
+from lib.author_readme import format_author_name
 
 # 作者 README 解析相关（复用 lib/readme.py 统一实现；仅保留实际使用的绑定）
 normalize_alias = lib_readme.normalize_alias
@@ -77,6 +77,7 @@ has_cjk = lib_models.has_cjk
 normalize_name_for_cmp = lib_models.normalize_name_for_cmp
 clean_file_stem = lib_models.clean_file_stem
 same_model = lib_models.same_model
+detect_work_prefix = lib_models.detect_work_prefix
 
 # JSON/文本读写与路径（复用 lib/paths.py 统一实现）
 find_workspace_root = lib_paths.find_workspace_root
@@ -98,7 +99,7 @@ WINDOWS_RESERVED = {
 
 
 # ---------------------------------------------------------------------------
-# 平台信息与 models_meta 数据（外置于 .github/data/author-info/）
+# 平台信息与 co_creators 数据（外置于 .github/data/author-info/）
 # ---------------------------------------------------------------------------
 def _meta_path(root: Path, fname: str) -> Path:
     """数据路径：优先跟随调用方 root（临时仓库/测试），否则用 lib 语义路径。
@@ -111,17 +112,31 @@ def _meta_path(root: Path, fname: str) -> Path:
     return lib_paths.data_path('author-info', fname)
 
 
+def _work_map(root: Path) -> dict[str, str]:
+    """加载作品键表：{作品键大写: 规范写法}（来自 character/*.json 文件名）。
+
+    与 _meta_path 一致：临时仓库（root != 当前仓库）跟随 root 数据目录，
+    否则用 lib 语义路径（本仓库 .github/data/model-info/character/）。
+    """
+    char_dir = (root / '.github' / 'data' / 'model-info' / 'character'
+                if root and root != lib_paths.WORKSPACE_ROOT
+                else lib_paths.CHARACTER_DIR)
+    if not char_dir.is_dir():
+        return {}
+    return {f.stem.upper(): f.stem for f in char_dir.glob('*.json')}
 
 
 
-def load_models_meta(root: Path) -> dict:
-    """读取 co-creator 元数据（author-info/models_meta.json）"""
-    return lib_paths.load_json(_meta_path(root, 'models_meta.json'), {})
 
 
-def save_models_meta(root: Path, meta: dict) -> None:
+def load_co_creators(root: Path) -> dict:
+    """读取 co-creator 元数据（author-info/co_creators.json）"""
+    return lib_paths.load_json(_meta_path(root, 'co_creators.json'), {})
+
+
+def save_co_creators(root: Path, meta: dict) -> None:
     """写 co-creator 元数据（幂等合并由调用方保证）"""
-    lib_paths.save_json(_meta_path(root, 'models_meta.json'), meta)
+    lib_paths.save_json(_meta_path(root, 'co_creators.json'), meta)
 
 
 # ---------------------------------------------------------------------------
@@ -298,17 +313,17 @@ def next_author_id(models_dir: Path) -> str:
 
 
 def update_root_readme(root: Path) -> None:
-    script = root / '.github' / 'scripts' / 'models_organize' / '04_generate&update_root_readme.py'
+    script = root / '.github' / 'scripts' / 'models_organize' / '03_generate_root_readme.py'
     if not script.is_file():
         print(f"  [警告] 未找到 {script}，跳过根 README 索引更新")
         return
     print("  更新根 README 作者索引...")
-    subprocess.run([sys.executable, str(script), '--readme'], cwd=root, check=False)
+    subprocess.run([sys.executable, str(script), '--author'], cwd=root, check=False)
 
 
 def build_authors_index(root: Path) -> None:
     """重建集中作者数据 authors.json（新作者归档后供后续脚本统一读取）。"""
-    script = root / '.github' / 'scripts' / 'models_organize' / '04_generate&update_root_readme.py'
+    script = root / '.github' / 'scripts' / 'models_organize' / '03_generate_root_readme.py'
     if not script.is_file():
         print(f"  [警告] 未找到 {script}，跳过作者数据重建")
         return
@@ -317,20 +332,20 @@ def build_authors_index(root: Path) -> None:
 
 
 def run_rename_model_folders(root: Path) -> None:
-    script = root / '.github' / 'scripts' / 'models_organize' / '02_rename_model_files&folders.py'
+    script = root / '.github' / 'scripts' / 'models_organize' / '02_rename_model_folders.py'
     if not script.is_file():
         print(f"  [警告] 未找到 {script}，跳过文件夹名称格式化")
         return
-    print("  运行 02_rename_model_files&folders.py 格式化模型文件夹名称...")
+    print("  运行 02_rename_model_folders.py 格式化模型文件夹名称...")
     subprocess.run([sys.executable, str(script), '--apply'], cwd=root, check=False)
 
 
 def run_generate_model_readmes(root: Path) -> None:
-    script = root / '.github' / 'scripts' / 'models_organize' / '03_generate&update_model_readmes.py'
+    script = root / '.github' / 'scripts' / 'models_organize' / '03_generate_model_readmes.py'
     if not script.is_file():
         print(f"  [警告] 未找到 {script}，跳过模型 README 生成")
         return
-    print("  运行 03_generate&update_model_readmes.py 生成模型 README...")
+    print("  运行 03_generate_model_readmes.py 生成模型 README...")
     subprocess.run([sys.executable, str(script)], cwd=root, check=False)
 
 
@@ -416,7 +431,6 @@ def upsert_author_index(root: Path, author_id: str, block: dict) -> None:
     authors[author_id] = {
         'name': names,
         'readme': f'Models/{author_id}/README.md',
-        'role': TARGET_ROLE,
         'platforms': dict(block.get('contacts') or {}),
     }
     lib_paths.save_json(path, data)
@@ -438,17 +452,16 @@ def resolve_author_id(block: dict, alias_to_id: dict, runtime_index: dict,
     target_dir = root / 'Models' / new_id
     if apply:
         target_dir.mkdir(parents=True, exist_ok=True)
-        (target_dir / 'README.md').write_bytes(
-            render_author_readme(new_id, block['name']).encode('utf-8'))
         upsert_author_index(root, new_id, block)
-        print(f"  新建作者目录 {new_id} 并生成 README.md（{block['name']}）")
+        print(f"  新建作者目录 {new_id}（{block['name']}）")
     else:
-        print(f"  [计划] 新建作者目录 {new_id} 并生成 README.md（{block['name']}）")
+        print(f"  [计划] 新建作者目录 {new_id}（{block['name']}）")
     return new_id
 
 
 def process_file(path: Path, root: Path, alias_to_id: dict[str, str],
                  runtime_index: dict[str, str], platform_map: dict[str, str],
+                 work_map: dict[str, str],
                  apply: bool, verbose: bool) -> dict:
     rel = path.relative_to(root) if path.is_relative_to(root) else path
     print(f"\n== {rel} ==")
@@ -462,9 +475,14 @@ def process_file(path: Path, root: Path, alias_to_id: dict[str, str],
     blocks = meta.get('author_blocks') or []
 
     if not blocks:
-        print(f"  未识别到作者，将放入 Other-YSM-Models")
-        target_dir = root / 'Other-YSM-Models'
+        # 无作者信息：按作品类型分类归档到 Other-YSM-Models/<作品缩写>/（不再平铺）；
+        # 前缀未匹配到作品键表的归 Unknown 子目录。
         folder_name = sanitize_folder_name(build_model_folder_name(inner_name, path.stem))
+        work = detect_work_prefix(folder_name, work_map)
+        sub = work or 'Unknown'
+        target_dir = root / 'Other-YSM-Models' / sub
+        print(f"  未识别到作者，按作品分类 -> Other-YSM-Models/{sub}"
+              + (f"（匹配作品 {work}）" if work else "（未匹配作品，归 Unknown）"))
         print(f"  模型文件夹名: {folder_name}")
         status = archive_one(path, target_dir, folder_name, 'move', apply, root, verbose)
         if status in ('moved', 'copied'):
@@ -511,9 +529,9 @@ def process_file(path: Path, root: Path, alias_to_id: dict[str, str],
     elif any(s == 'skipped' for s in statuses):
         result['reason'] = '重复或冲突'
 
-    # co-creator 与平台信息写入 models_meta（幂等，仅 apply 且确有归档时）
+    # co-creator 与平台信息写入 co_creators（幂等，仅 apply 且确有归档时）
     if apply and any(s in ('moved', 'copied') for s in statuses):
-        meta_data = load_models_meta(root)
+        meta_data = load_co_creators(root)
         changed = False
         for aid, (mode, block) in dedup.items():
             co = [b for b in blocks if b is not block]
@@ -528,8 +546,8 @@ def process_file(path: Path, root: Path, alias_to_id: dict[str, str],
                 meta_data[key] = entry
                 changed = True
         if changed:
-            save_models_meta(root, meta_data)
-            print(f"  已更新 models_meta.json（{sum(1 for k, v in meta_data.items() if v.get('co_creators'))} 条 co-creator 记录）")
+            save_co_creators(root, meta_data)
+            print(f"  已更新 co_creators.json（{sum(1 for k, v in meta_data.items() if v.get('co_creators'))} 条 co-creator 记录）")
 
     return result
 
@@ -547,7 +565,7 @@ def main() -> int:
     parser.add_argument('--with-gen-readmes', action='store_true',
                         help='归档成功后运行 generate_model_readmes.py 生成模型 README')
     parser.add_argument('--with-readme-table', action='store_true',
-                        help='归档成功后运行 author_index.py --readme 更新根 README 作者索引')
+                        help='归档成功后运行 03_generate_root_readme.py --author 更新根 README 作者索引')
     parser.add_argument('--verbose', action='store_true', help='打印匹配细节')
     args = parser.parse_args()
 
@@ -563,6 +581,8 @@ def main() -> int:
     alias_to_id, id_to_name = build_author_index(models_dir, root / 'README.md')
     print(f"作者索引: {len(alias_to_id)} 个别名 / {len(id_to_name)} 位作者")
     platform_map = load_platform_map(root)
+    work_map = _work_map(root)
+    print(f"作品键表: {len(work_map)} 个作品")
 
     files = collect_ysm_files([Path(x) for x in args.inputs])
     if not files:
@@ -577,7 +597,7 @@ def main() -> int:
     runtime_index: dict[str, str] = {}  # 本次运行新建的作者（同批同作者文件复用同一编号）
     for f in files:
         res = process_file(f, root, alias_to_id, runtime_index, platform_map,
-                           args.apply, args.verbose)
+                           work_map, args.apply, args.verbose)
         if res['action'] in ('moved', 'copied'):
             moved += 1
             moved_any = True

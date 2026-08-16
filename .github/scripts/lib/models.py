@@ -45,3 +45,18 @@ def same_model(a: str, b: str) -> bool:
     if len(na) >= 3 and len(nb) >= 3 and (na in nb or nb in na):
         return True
     return False
+
+
+def detect_work_prefix(name: str, work_map: dict[str, str]) -> str | None:
+    """从规范命名的「作品_角色_英文」中提取作品缩写（第一个 _ 前段）。
+
+    返回作品键的规范写法（如 AK/UmaMusume/5Toubun，取自 work_map 值）；
+    名称无下划线或前缀未命中作品键表时返回 None。
+    work_map: {作品键大写: 规范写法}（由调用方从 character/*.json 文件名加载）。
+    """
+    if not name:
+        return None
+    cand = name.split('_', 1)[0].strip()
+    if not cand:
+        return None
+    return work_map.get(cand.upper())

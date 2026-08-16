@@ -3,6 +3,16 @@
 ## Author
 
 - **Name**: #清晨的一阵风
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [清晨的一阵风](https://space.bilibili.com/510956578)
+
+## Models
+
+<details>
+<summary><b>BA 碧蓝档案（3）</b></summary>
+
+- [BA_生盐诺亚&早濑优香-noa08](BA_生盐诺亚&早濑优香-noa08)
+- [BA_生盐诺亚_Ushio-Noa](BA_生盐诺亚_Ushio-Noa)
+- [BA_空井咲_Sorai-Saki](BA_空井咲_Sorai-Saki)
+
+</details>

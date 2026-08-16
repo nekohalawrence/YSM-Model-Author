@@ -3,25 +3,36 @@
 ## Author
 
 - **Name**: #AnluoSakura
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [AnluoSakura](https://space.bilibili.com/1275761002)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [AnluoSakura](https://afdian.com/a/AnluoSakura)
 
-## Co-creator
+## Models
 
-- **Name**: #双月希瞳
-  - **Role**: #形象 | #Image
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [双月希瞳](https://space.bilibili.com/314164896)
+<details>
+<summary><b>HSR 崩坏：星穹铁道（1）</b></summary>
 
-- **Name**: #Wone_J
-  - **Role**: #动作 | #Motion
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [Wone_J](https://space.bilibili.com/13505331)
+- [HSR_流萤_FireFly_LA](HSR_流萤_FireFly_LA)
 
-## Download
+</details>
 
-- 微云: https://share.weiyun.com/1RzSjmNF
-- 蓝奏云: https://wwbfv.lanzouu.com/b00yav19zc 密码 : es1g
+<details>
+<summary><b>Strinova 卡拉比丘（5）</b></summary>
+
+- [Strinova_香奈美_Jk_Kanami-Jk](Strinova_香奈美_Jk_Kanami-Jk)
+- [Strinova_香奈美_Jk_Kanami-Jk-1_LA](Strinova_香奈美_Jk_Kanami-Jk-1_LA)
+- [Strinova_香奈美_Jk_Kanami-Jk_LA](Strinova_香奈美_Jk_Kanami-Jk_LA)
+- [Strinova_香奈美_Jk_Kanami-Jk_LB](Strinova_香奈美_Jk_Kanami-Jk_LB)
+- [Strinova_香奈美_Kanami-1_LA](Strinova_香奈美_Kanami-1_LA)
+
+</details>
+
+<details>
+<summary><b>VTuber 虚拟主播（3）</b></summary>
+
+- [VTuber_双月希瞳_LA](VTuber_双月希瞳_LA)
+- [VTuber_安洛樱_AnluoSakura_LA](VTuber_安洛樱_AnluoSakura_LA)
+- [VTuber_希瞳希瞳希_LA](VTuber_希瞳希瞳希_LA)
+
+</details>

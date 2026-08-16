@@ -1,10 +1,26 @@
 {
   "work": {
-    "name": "TFD",
-    "en": ["The Future Diary", "TFD"],
-    "zh": ["未来日记"],
-    "ja": ["未来日記"],
+    "abbr": "TFD",
+    "name": {
+      "zh": "未来日记",
+      "en": "The Future Diary",
+      "ja": "未来日記"
+    },
+    "aliases": {
+      "en": [
+        "TFD"
+      ]
+    },
     "category": "Anime"
   },
-  "roles": [{"zh": ["我妻由乃"], "en": ["gasai-yuno"]}]
+  "roles": [
+    {
+      "zh": [
+        "我妻由乃"
+      ],
+      "en": [
+        "gasai-yuno"
+      ]
+    }
+  ]
 }

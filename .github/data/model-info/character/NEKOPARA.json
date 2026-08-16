@@ -1,9 +1,16 @@
 {
   "work": {
-    "name": "NEKOPARA",
-    "en": ["NEKOPARA"],
-    "zh": ["巧克力与香子兰", "猫娘乐园"],
-    "ja": ["ネコぱら"],
+    "abbr": "NEKOPARA",
+    "name": {
+      "zh": "巧克力与香子兰",
+      "en": "NEKOPARA",
+      "ja": "ネコぱら"
+    },
+    "aliases": {
+      "zh": [
+        "猫娘乐园"
+      ]
+    },
     "category": "Game"
   },
   "roles": []

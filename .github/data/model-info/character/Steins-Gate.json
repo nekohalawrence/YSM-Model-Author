@@ -1,10 +1,26 @@
 {
   "work": {
-    "name": "Steins-Gate",
-    "en": ["Steins;Gate", "Steins-Gate"],
-    "zh": ["命运石之门"],
-    "ja": ["シュタインズ・ゲート"],
+    "abbr": "Steins-Gate",
+    "name": {
+      "zh": "命运石之门",
+      "en": "Steins;Gate",
+      "ja": "シュタインズ・ゲート"
+    },
+    "aliases": {
+      "en": [
+        "Steins-Gate"
+      ]
+    },
     "category": "Anime"
   },
-  "roles": [{"zh": ["牧濑红莉栖"], "en": ["makise-kurisu"]}]
+  "roles": [
+    {
+      "zh": [
+        "牧濑红莉栖"
+      ],
+      "en": [
+        "makise-kurisu"
+      ]
+    }
+  ]
 }

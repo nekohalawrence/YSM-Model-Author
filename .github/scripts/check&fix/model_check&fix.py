@@ -9,7 +9,7 @@ YSM 模型库整理工具（本仓库专用）——处理"已有库"的整理�
   1. 重新分类（--reclassify）：扫描 Models/<编号>/<模型>/ 下 .ysm 的主作者，
      与目录编号比对；归属错误时报告，--apply 移动到正确作者。
   2. 合并重复作者（--merge-authors）：按"平台账号相同 或 规范化名字相等"找候选，
-     逐对 y/n 确认后合并（移动模型目录、并名字、迁移 models_meta 键、重建索引）。
+     逐对 y/n 确认后合并（移动模型目录、并名字、迁移 co_creators 键、重建索引）。
   3. 空壳报告（--report-empty）：无 .ysm 的模型文件夹（空壳）与无模型作者目录。
   4. 缺失报告（--report-missing / --report-no-category / --report-no-preview / --report-unknown）：
      统计无分类（作品前缀不在 character/*.json）与无预览图的模型，显示路径；可分开查看；
@@ -232,8 +232,8 @@ def reclassify(apply: bool) -> int:
         print('dry-run: 未执行;加 --apply 逐项确认后执行')
         return len(issues)
 
-    # 1) 单作者归属错误：移动（迁移 models_meta 键——先记录再移动）
-    meta_path = lib_paths.data_path('author-info', 'models_meta.json')
+    # 1) 单作者归属错误：移动（迁移 co_creators 键——先记录再移动）
+    meta_path = lib_paths.data_path('author-info', 'co_creators.json')
     meta = lib_paths.load_json(meta_path, {})
     key_map: dict[str, str] = {}
     for it in moves:
@@ -258,7 +258,7 @@ def reclassify(apply: bool) -> int:
         for old_key, new_key in key_map.items():
             meta[new_key] = meta.pop(old_key)
         lib_paths.save_json(meta_path, meta)
-        print(f"  models_meta 键迁移 {len(key_map)} 条")
+        print(f"  co_creators 键迁移 {len(key_map)} 条")
 
     # 2) 多作者模型：复制缺失副本到各作者编号目录（当前目录保留）
     copied = 0
@@ -382,7 +382,7 @@ def _merge_name_values(existing: str, drop_name: str) -> str:
 
 
 def merge_authors(keep: str, drop: str, reason: str) -> str:
-    """把 drop 作者合并进 keep：移动模型、并入名字、迁移 models_meta、删除空目录。"""
+    """把 drop 作者合并进 keep：移动模型、并入名字、迁移 co_creators、删除空目录。"""
     keep_dir, drop_dir = MODELS_DIR / keep, MODELS_DIR / drop
     results: list[str] = []
 
@@ -421,8 +421,8 @@ def merge_authors(keep: str, drop: str, reason: str) -> str:
         else:
             results.append(f'[保留] Models/{drop} 仍有文件（未删除，需人工处理）')
 
-    # 4. 迁移 models_meta 键 drop/xxx -> keep/xxx
-    meta_path = lib_paths.data_path('author-info', 'models_meta.json')
+    # 4. 迁移 co_creators 键 drop/xxx -> keep/xxx
+    meta_path = lib_paths.data_path('author-info', 'co_creators.json')
     meta = lib_paths.load_json(meta_path, {})
     migrated = 0
     for key in [k for k in meta if k.startswith(f'{drop}/')]:
@@ -430,7 +430,7 @@ def merge_authors(keep: str, drop: str, reason: str) -> str:
         migrated += 1
     if migrated:
         lib_paths.save_json(meta_path, meta)
-        results.append(f'[models_meta] 迁移 {migrated} 条键')
+        results.append(f'[co_creators] 迁移 {migrated} 条键')
 
     return f"合并 {drop} -> {keep}（{reason}）\n  " + '\n  '.join(results)
 
@@ -471,8 +471,8 @@ def merge_authors_flow(apply: bool) -> int:
 
 def _rebuild_indexes() -> None:
     """合并后重建集中作者数据与根 README 作者表（drop 作者目录已删，索引需同步）。"""
-    for script, args, label in [('models_organize/04_generate&update_root_readme.py', ['--data'], '作者数据 authors.json'),
-                                ('models_organize/04_generate&update_root_readme.py', ['--readme'], '根 README 作者表')]:
+    for script, args, label in [('models_organize/03_generate_root_readme.py', ['--data'], '作者数据 authors.json'),
+                                ('models_organize/03_generate_root_readme.py', ['--author'], '根 README 作者表')]:
         p = WORKSPACE_ROOT / '.github' / 'scripts' / script
         if not p.is_file():
             print(f'  [警告] 未找到 {p}，跳过{label}重建')
@@ -598,10 +598,12 @@ def scan_missing() -> tuple[list[Path], list[Path], int]:
     if rdir.is_dir():
         for f in rdir.glob('*.json'):
             content = lib_paths.load_json(f, {})
-            # 新格式：作品键由 work.name 决定（读取不依赖文件名）
+            # 新格式：作品键由 work.abbr 决定（读取不依赖文件名）
             work = content.get('work') if isinstance(content, dict) else None
-            if isinstance(work, dict) and work.get('name'):
-                cat_keys.add(str(work['name']).lower())
+            if isinstance(work, dict):
+                abbr = work.get('abbr') or work.get('name')
+                if abbr:
+                    cat_keys.add(str(abbr).lower())
     no_cat: list[Path] = []
     no_preview: list[Path] = []
     total = 0

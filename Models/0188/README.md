@@ -3,4 +3,12 @@
 ## Author
 
 - **Name**: #鸢尾
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+
+## Models
+
+<details>
+<summary><b>AK 明日方舟（1）</b></summary>
+
+- [AK_迷迭香_Rosmontis-Nsfw_LB](AK_迷迭香_Rosmontis-Nsfw_LB)
+
+</details>

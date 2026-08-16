@@ -3,6 +3,14 @@
 ## Author
 
 - **Name**: #鼠标会梦到光猫吗
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [XE_CE](https://space.bilibili.com/3546800153692981)
+    - **Bilibili**: [鼠标会梦到光猫吗](https://space.bilibili.com/3546800153692981)
+
+## Models
+
+<details>
+<summary><b>AL 碧蓝航线（1）</b></summary>
+
+- [AL_扶桑_Fusou](AL_扶桑_Fusou)
+
+</details>

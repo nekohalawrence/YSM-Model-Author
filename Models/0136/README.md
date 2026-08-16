@@ -3,8 +3,24 @@
 ## Author
 
 - **Name**: #Fllz
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Facebook #Pixiv #VGen
-    - **Facebook**: [asche.scheer](https://www.facebook.com/asche.scheer)
+  - **SocialPlatform**: #Facebook #Pixiv
+    - **Facebook**: [Fllz](https://www.facebook.com/asche.scheer)
     - **Pixiv**: [Fllz](https://www.pixiv.net/users/34822407)
+  - **OtherPlatform**: #VGen
     - **VGen**: [Fllz](https://vgen.co/fllz)
+
+## Models
+
+<details>
+<summary><b>Nikke 胜利女神：妮姬（1）</b></summary>
+
+- [Nikke_Alice-In-Wonderland-Alice](Nikke_Alice-In-Wonderland-Alice)
+
+</details>
+
+<details>
+<summary><b>Unknown（1）</b></summary>
+
+- [Unknown_Ariableyes-Safira](Unknown_Ariableyes-Safira)
+
+</details>

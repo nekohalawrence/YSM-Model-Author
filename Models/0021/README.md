@@ -3,6 +3,14 @@
 ## Author
 
 - **Name**: #酷酷の霜叶小姐姐
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [酷酷の霜叶小姐姐](https://space.bilibili.com/106626083)
+
+## Models
+
+<details>
+<summary><b>MGWT 魔法少女的魔女审判（1）</b></summary>
+
+- [MGWT_樱羽艾玛_Sakuraba-Ema](MGWT_樱羽艾玛_Sakuraba-Ema)
+
+</details>

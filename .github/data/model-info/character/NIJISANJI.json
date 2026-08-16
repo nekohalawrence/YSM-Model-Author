@@ -1,9 +1,16 @@
 {
   "work": {
-    "name": "NIJISANJI",
-    "en": ["NIJISANJI", "Niji"],
-    "zh": ["彩虹社"],
-    "ja": ["にじさんじ"],
+    "abbr": "NIJISANJI",
+    "name": {
+      "zh": "彩虹社",
+      "en": "NIJISANJI",
+      "ja": "にじさんじ"
+    },
+    "aliases": {
+      "en": [
+        "Niji"
+      ]
+    },
     "category": "Music"
   },
   "roles": []

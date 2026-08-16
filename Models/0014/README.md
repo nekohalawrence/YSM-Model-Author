@@ -3,6 +3,21 @@
 ## Author
 
 - **Name**: #哈雷汰多
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [哈雷汰多](https://space.bilibili.com/385810311)
+
+## Models
+
+<details>
+<summary><b>AL 碧蓝航线（1）</b></summary>
+
+- [AL_山风](AL_山风)
+
+</details>
+
+<details>
+<summary><b>Unknown（1）</b></summary>
+
+- [Unknown_LuJiang](Unknown_LuJiang)
+
+</details>

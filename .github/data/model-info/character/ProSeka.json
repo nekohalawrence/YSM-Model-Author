@@ -1,9 +1,16 @@
 {
   "work": {
-    "name": "ProSeka",
-    "en": ["Project Sekai", "ProSeka"],
-    "zh": ["世界计划 彩色舞台 feat. 初音未来"],
-    "ja": ["プロジェクトセカイ カラフルステージ！ feat. 初音ミク"],
+    "abbr": "ProSeka",
+    "name": {
+      "zh": "世界计划 彩色舞台 feat. 初音未来",
+      "en": "Project Sekai",
+      "ja": "プロジェクトセカイ カラフルステージ！ feat. 初音ミク"
+    },
+    "aliases": {
+      "en": [
+        "ProSeka"
+      ]
+    },
     "category": "Game"
   },
   "roles": []

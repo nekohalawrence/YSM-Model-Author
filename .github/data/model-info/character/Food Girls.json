@@ -1,8 +1,10 @@
 {
   "work": {
-    "name": "Food Girls",
-    "en": ["Food Girls"],
-    "zh": ["食用系少女"],
+    "abbr": "Food Girls",
+    "name": {
+      "zh": "食用系少女",
+      "en": "Food Girls"
+    },
     "category": "Game"
   },
   "roles": []

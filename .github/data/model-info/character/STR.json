@@ -1,9 +1,16 @@
 {
   "work": {
-    "name": "STR",
-    "en": ["Summer Time Rendering", "STR"],
-    "zh": ["夏日重现"],
-    "ja": ["サマータイムレンダ"],
+    "abbr": "STR",
+    "name": {
+      "zh": "夏日重现",
+      "en": "Summer Time Rendering",
+      "ja": "サマータイムレンダ"
+    },
+    "aliases": {
+      "en": [
+        "STR"
+      ]
+    },
     "category": "Anime"
   },
   "roles": []

@@ -1,10 +1,27 @@
 {
   "work": {
-    "name": "SSW",
-    "en": ["The Lonely Snow Widow and the Cursed Ring", "The Shy Snow Woman and the Cursed Ring", "SSW"],
-    "zh": ["不擅长人际交往的未亡人雪女与诅咒之戒"],
-    "ja": ["人付き合いが苦手な未亡人の雪女さんと呪いの指輪"],
+    "abbr": "SSW",
+    "name": {
+      "zh": "不擅长人际交往的未亡人雪女与诅咒之戒",
+      "en": "The Lonely Snow Widow and the Cursed Ring",
+      "ja": "人付き合いが苦手な未亡人の雪女さんと呪いの指輪"
+    },
+    "aliases": {
+      "en": [
+        "The Shy Snow Woman and the Cursed Ring",
+        "SSW"
+      ]
+    },
     "category": "Anime"
   },
-  "roles": [{"zh": ["雪乃深冬"], "en": ["yukino-mifuyu"]}]
+  "roles": [
+    {
+      "zh": [
+        "雪乃深冬"
+      ],
+      "en": [
+        "yukino-mifuyu"
+      ]
+    }
+  ]
 }

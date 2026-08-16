@@ -1,9 +1,16 @@
 {
   "work": {
-    "name": "D4DJ",
-    "en": ["D4DJ: Groovy Mix", "D4DJ"],
-    "zh": ["D4DJ"],
-    "ja": ["D4DJ Groovy Mix"],
+    "abbr": "D4DJ",
+    "name": {
+      "zh": "D4DJ",
+      "en": "D4DJ: Groovy Mix",
+      "ja": "D4DJ Groovy Mix"
+    },
+    "aliases": {
+      "en": [
+        "D4DJ"
+      ]
+    },
     "category": "Game"
   },
   "roles": []

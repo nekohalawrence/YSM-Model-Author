@@ -1,9 +1,20 @@
 {
   "work": {
-    "name": "Mochiyama Kingyo",
-    "en": ["Mochiyama Kingyo"],
-    "zh": ["もち山金魚"],
+    "abbr": "Mochiyama Kingyo",
+    "name": {
+      "zh": "もち山金魚",
+      "en": "Mochiyama Kingyo"
+    },
     "category": "Other"
   },
-  "roles": [{"zh": ["方块"], "en": ["kipfel"]}]
+  "roles": [
+    {
+      "zh": [
+        "方块"
+      ],
+      "en": [
+        "kipfel"
+      ]
+    }
+  ]
 }

@@ -1,9 +1,16 @@
 {
   "work": {
-    "name": "VE",
-    "en": ["Violet Evergarden", "VE"],
-    "zh": ["紫罗兰永恒花园"],
-    "ja": ["ヴァイオレット・エヴァーガーデン"],
+    "abbr": "VE",
+    "name": {
+      "zh": "紫罗兰永恒花园",
+      "en": "Violet Evergarden",
+      "ja": "ヴァイオレット・エヴァーガーデン"
+    },
+    "aliases": {
+      "en": [
+        "VE"
+      ]
+    },
     "category": "Anime"
   },
   "roles": []

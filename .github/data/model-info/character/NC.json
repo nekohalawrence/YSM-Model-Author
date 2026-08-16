@@ -1,9 +1,26 @@
 {
   "work": {
-    "name": "NC",
-    "en": ["Girls' Frontline: Neural Cloud", "Project Neural Cloud", "NC"],
-    "zh": ["少女前线：云图计划"],
+    "abbr": "NC",
+    "name": {
+      "zh": "少女前线：云图计划",
+      "en": "Girls' Frontline: Neural Cloud"
+    },
+    "aliases": {
+      "en": [
+        "Project Neural Cloud",
+        "NC"
+      ]
+    },
     "category": "Game"
   },
-  "roles": [{"zh": ["芙洛伦"], "en": ["florence"]}]
+  "roles": [
+    {
+      "zh": [
+        "芙洛伦"
+      ],
+      "en": [
+        "florence"
+      ]
+    }
+  ]
 }

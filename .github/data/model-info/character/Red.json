@@ -1,6 +1,25 @@
 {
   "work": {
-    "name": "Red"
+    "abbr": "Red"
   },
-  "roles": [{"zh": ["95大头兵"], "en": ["alert"]}, {"zh": ["mod步兵", "步兵"], "en": ["alert_2", "alert_3"]}]
+  "roles": [
+    {
+      "zh": [
+        "95大头兵"
+      ],
+      "en": [
+        "alert"
+      ]
+    },
+    {
+      "zh": [
+        "mod步兵",
+        "步兵"
+      ],
+      "en": [
+        "alert_2",
+        "alert_3"
+      ]
+    }
+  ]
 }

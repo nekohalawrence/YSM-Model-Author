@@ -3,6 +3,34 @@
 ## Author
 
 - **Name**: #平衡芝光
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [平衡芝光](https://space.bilibili.com/526319760)
+
+## Models
+
+<details>
+<summary><b>ReZero Re:从零开始的异世界生活（2）</b></summary>
+
+- [ReZero_Ram](ReZero_Ram)
+- [ReZero_雷姆_Rem](ReZero_雷姆_Rem)
+
+</details>
+
+<details>
+<summary><b>VOC 博歌乐（2）</b></summary>
+
+- [VOC_初音_Chuyin](VOC_初音_Chuyin)
+- [VOC_初音未来_Hatsune-Miku](VOC_初音未来_Hatsune-Miku)
+
+</details>
+
+<details>
+<summary><b>Unknown（5）</b></summary>
+
+- [Unknown_Bamamei-Mofashaonv](Unknown_Bamamei-Mofashaonv)
+- [Unknown_Bamamei-Xuejie](Unknown_Bamamei-Xuejie)
+- [Unknown_Bananacat](Unknown_Bananacat)
+- [Unknown_Dajiejie](Unknown_Dajiejie)
+- [Unknown_Fufu](Unknown_Fufu)
+
+</details>

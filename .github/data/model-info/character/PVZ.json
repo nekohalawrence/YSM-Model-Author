@@ -1,8 +1,15 @@
 {
   "work": {
-    "name": "PVZ",
-    "zh": ["植物大战僵尸"],
-    "en": ["Plants vs. Zombies", "PVZ"],
+    "abbr": "PVZ",
+    "name": {
+      "zh": "植物大战僵尸",
+      "en": "Plants vs. Zombies"
+    },
+    "aliases": {
+      "en": [
+        "PVZ"
+      ]
+    },
     "category": "Anime"
   },
   "roles": []

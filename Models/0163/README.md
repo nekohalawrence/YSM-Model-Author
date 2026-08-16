@@ -3,8 +3,17 @@
 ## Author
 
 - **Name**: #Rhein雨倩 | #雨倩先生
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [雨倩先生](https://space.bilibili.com/35515394)
+    - **Bilibili**: [Rhein雨倩](https://space.bilibili.com/35515394)
   - **SupportPlatform**: #Afdian
-    - **Afdian**: [雨倩先生/](https://afdian.com/a/Rheinyuq)
+    - **Afdian**: [Rhein雨倩](https://afdian.com/a/Rheinyuq)
+
+## Models
+
+<details>
+<summary><b>OC 原创角色（2）</b></summary>
+
+- [OC_雨倩的透明兔女郎_LA](OC_雨倩的透明兔女郎_LA)
+- [OC_雨倩的通勤太空服_LA](OC_雨倩的通勤太空服_LA)
+
+</details>

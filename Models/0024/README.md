@@ -3,6 +3,16 @@
 ## Author
 
 - **Name**: #栗坂猫厘子
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [栗坂猫厘子](https://space.bilibili.com/380914010)
+
+## Models
+
+<details>
+<summary><b>Unknown（3）</b></summary>
+
+- [Unknown_作曲家](Unknown_作曲家)
+- [Unknown_奇趣美乐蒂](Unknown_奇趣美乐蒂)
+- [Unknown_梦境大耳狗](Unknown_梦境大耳狗)
+
+</details>

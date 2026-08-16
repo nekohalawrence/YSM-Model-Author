@@ -1,10 +1,26 @@
 {
   "work": {
-    "name": "MGC",
-    "en": ["Magical Girl Celesphonia", "MGC"],
-    "zh": ["魔法少女天穹法妮雅"],
-    "ja": ["魔法少女セレスフォニア"],
+    "abbr": "MGC",
+    "name": {
+      "zh": "魔法少女天穹法妮雅",
+      "en": "Magical Girl Celesphonia",
+      "ja": "魔法少女セレスフォニア"
+    },
+    "aliases": {
+      "en": [
+        "MGC"
+      ]
+    },
     "category": "Game"
   },
-  "roles": [{"zh": ["天穹法尼雅"], "en": ["fania"]}]
+  "roles": [
+    {
+      "zh": [
+        "天穹法尼雅"
+      ],
+      "en": [
+        "fania"
+      ]
+    }
+  ]
 }

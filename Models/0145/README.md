@@ -3,8 +3,16 @@
 ## Author
 
 - **Name**: #咕咕鸡 | #咕咕叫的小菜鸡
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [咕咕叫的小菜鸡](https://space.bilibili.com/11989730)
+    - **Bilibili**: [咕咕鸡](https://space.bilibili.com/11989730)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [咕咕鸡](https://afdian.com/a/GuGuChicken)
+
+## Models
+
+<details>
+<summary><b>GF 少女前线（1）</b></summary>
+
+- [GF_索米_Kp31_Suomi](GF_索米_Kp31_Suomi)
+
+</details>

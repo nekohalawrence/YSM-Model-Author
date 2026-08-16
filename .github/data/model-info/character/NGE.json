@@ -1,9 +1,26 @@
 {
   "work": {
-    "name": "NGE",
-    "zh": ["新世纪福音战士"],
-    "en": ["Neon-Genesis-Evangelion", "NGE", "EVA"],
+    "abbr": "NGE",
+    "name": {
+      "zh": "新世纪福音战士",
+      "en": "Neon-Genesis-Evangelion"
+    },
+    "aliases": {
+      "en": [
+        "NGE",
+        "EVA"
+      ]
+    },
     "category": "Game"
   },
-  "roles": [{"zh": ["明日香"], "en": ["asuka"]}]
+  "roles": [
+    {
+      "zh": [
+        "明日香"
+      ],
+      "en": [
+        "asuka"
+      ]
+    }
+  ]
 }

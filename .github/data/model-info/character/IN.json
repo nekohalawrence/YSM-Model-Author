@@ -1,8 +1,15 @@
 {
   "work": {
-    "name": "IN",
-    "en": ["Infinity Nikki", "IN"],
-    "zh": ["无限暖暖"],
+    "abbr": "IN",
+    "name": {
+      "zh": "无限暖暖",
+      "en": "Infinity Nikki"
+    },
+    "aliases": {
+      "en": [
+        "IN"
+      ]
+    },
     "category": "Game"
   },
   "roles": []
