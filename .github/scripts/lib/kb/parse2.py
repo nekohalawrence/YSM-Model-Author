@@ -111,26 +111,35 @@ def format_name(name: str) -> tuple[str, str, list]:
 # ========== 整体匹配版（第 1~3 步重构：resolve_name3） ==========
 
 
-def match_work(fmt: str) -> tuple[str, str]:
-    """第 2 步：作品整体匹配。返回 (work, source)。
+def match_work(fmt: str, allow_prefix: bool = True) -> tuple[str, str, int]:
+    """第 2 步：作品整体匹配。返回 (work, source, prefix_end)。
 
-    - 短简称（≤3 且纯 ascii）：独立段匹配（get_work_canonical 逐段查）；
-    - 长全称（中文/长名）：normalize 后子串匹配（复用 EXTRA_WORK_ALIASES）。
-    均未命中返回 ('', 'none')。
+    - 前缀累积匹配（对齐 r2）：首段 ASCII 逐段拼接查 get_work_canonical，
+      命中即前缀作品（如 Magia Record 的 magia_record），记录消耗段数；
+    - 长全称（中文/长名）：normalize 后子串匹配；
+    - allow_prefix=False（Unknown_ 前缀输入）：禁用前缀累积，只靠子串全称/
+      角色反查，避免 Unknown_Rei-Ayanami 的 rei 被误当作品前缀。
+    - prefix_end 供重组跳过前缀作品段（防 Record/Ghoul 等混入角色/英文）。
     """
-    best, best_len, source = "", 0, "none"
-    for seg in fmt.split("_"):
-        if len(seg) <= 3 and seg.isascii():
-            w = get_work_canonical(seg)
-            if w and len(seg) > best_len:
-                best, best_len, source = w, len(seg), "prefix"
+    segs = fmt.split("_")
+    best, best_len, source, prefix_end = "", 0, "none", 0
+    if allow_prefix:
+        acc = ""
+        for i, seg in enumerate(segs):
+            if not seg.isascii():
+                break
+            acc = (acc + "_" if acc else "") + seg
+            w = get_work_canonical(acc)
+            if w and len(acc) > best_len:
+                best, best_len, source = w, len(acc), "prefix"
+                prefix_end = i + 1
     nfmt = normalize_work_name(fmt)
     for nk, w in EXTRA_WORK_ALIASES.items():
-        # 子串匹配只对长名/中文全称（短英文简称走独立段，避免 mikuba 里的 ba 误匹配）
+        # 子串匹配只对长名/中文全称（短英文简称走前缀累积，避免 mikuba 里的 ba 误匹配）
         if (len(nk) >= 2 and (len(nk) >= 4 or has_cjk(nk))
                 and nk in nfmt and len(nk) > best_len):
             best, best_len, source = w, len(nk), "substr"
-    return best, source
+    return best, source, prefix_end
 
 
 def build_norm_role_index(roles: list[dict]) -> tuple[dict, dict]:
@@ -167,51 +176,80 @@ def _seg_combos(segs: list[str]) -> list[tuple[int, int, str]]:
     return out
 
 
-def match_role(fmt: str, role_zh: dict, role_en: dict):
-    """第 2 步：角色整体匹配。返回 (cn, en, works, kind, hit_key, hit_s, hit_e)。
+def _eng_groups(segs: list[str]) -> list[tuple[int, int, str]]:
+    """识别连续英文段组：返回 (start, end, 剔除标签/皮肤后的组合串)。
 
-    - 独立段/连续段组合精确匹配优先（zh 优先于 en），无命中再单段内子串兜底；
-    - 最长优先（司霆惊蛰 优先于 惊蛰）；
-    - cn/en 取命中的规范名；works 是归属作品集合；
-      hit_key 是命中的 norm 名，hit_s/hit_e 是命中的段索引范围（供重组）。
+    英文角色名须整体匹配（防单段误配：如 tachibana 撞其他作品单段角色）；
+    组内内容标签（nsfw/sfw）与皮肤词不参与组合。
+    """
+    out: list[tuple[int, int, str]] = []
+    i, n = 0, len(segs)
+    while i < n:
+        if segs[i].isascii():
+            j = i
+            while j < n and segs[j].isascii():
+                j += 1
+            parts = [segs[k] for k in range(i, j)
+                     if segs[k].lower() not in CONTENT_TAGS
+                     and not is_skin_en(segs[k], None, None)]
+            if parts:
+                out.append((i, j, "_".join(parts)))
+            i = j
+        else:
+            i += 1
+    return out
+
+
+def match_role(fmt: str, role_zh: dict, role_en: dict):
+    """第 2 步：角色整体匹配。返回 (cn, en, works, kind, hit_key, zh_s, zh_e, en_range)。
+
+    - 中文：独立段/同语言组合/段内子串（最长优先）；英文：连续英文组整体匹配；
+    - 支持中英双命中（cn 来自中文、en 来自同作品英文组）；
+    - en_range 是命中的英文组段范围（供重组跳过，防英文段重复）；
+    - cn/en 取命中的规范名；works 是归属作品集合。
     """
     segs = fmt.split("_")
     combo_lookup: dict[str, list] = {}
     for s, e, t in _seg_combos(segs):
         combo_lookup.setdefault(t, []).append((s, e))
-
-    def scan(items: list) -> list:
-        out = []
-        for k, vs in items:
-            if k in combo_lookup:
-                for s, e in combo_lookup[k]:
-                    out.append((len(k), k, vs, s, e))
-        return out
-
-    cands = scan(list(role_zh.items()))
-    if not cands:
-        cands = scan(list(role_en.items()))
-    if not cands:
-        # 单段内子串兜底（小花子 -> 花子）
-        for k, vs in list(role_zh.items()):
-            for i, seg in enumerate(segs):
-                if k and len(k) >= 2 and k in seg and k != seg:
-                    cands.append((len(k), k, vs, i, i + 1))
-        if not cands:
-            for k, vs in list(role_en.items()):
-                for i, seg in enumerate(segs):
-                    if k and len(k) >= 2 and k in seg and k != seg:
-                        cands.append((len(k), k, vs, i, i + 1))
-    if not cands:
-        return "", "", set(), "", "", 0, 0
-    cands.sort(reverse=True)
-    _, k, vs, hit_s, hit_e = cands[0]
-    kind = "zh" if k in role_zh else "en"
-    works = {w for _n, w in vs}
-    names = sorted(n for n, _w in vs)
-    cn = names[0] if kind == "zh" else ""
-    en = names[0] if kind == "en" else ""
-    return cn, en, works, kind, k, hit_s, hit_e
+    zh_cands: list = []
+    for k, vs in role_zh.items():
+        if k in combo_lookup:
+            for s, e in combo_lookup[k]:
+                zh_cands.append((len(k), k, vs, s, e))
+    en_cands: list = []
+    for s, e, c in _eng_groups(segs):
+        if c in role_en:
+            en_cands.append((len(c), c, role_en[c], s, e))
+    if zh_cands:
+        zh_cands.sort(reverse=True)
+        _, kz, vz, zs, ze = zh_cands[0]
+        works = {w for _n, w in vz}
+        cn = sorted(n for n, _w in vz)[0]
+        en = ""
+        en_range = None
+        for _, ke, ve, es, ee in en_cands:
+            if any(w in works for _n, w in ve):
+                # 取 norm 与命中组合一致的 en 变体（如 New-...-New），不取字母序第一个
+                en = next((nm for nm, _w in ve if format_name(nm)[0] == ke),
+                          sorted(nm for nm, _w in ve)[0])
+                en_range = (es, ee)
+                break
+        return cn, en, works, "zh", kz, zs, ze, en_range
+    if en_cands:
+        en_cands.sort(reverse=True)
+        _, ke, ve, es, ee = en_cands[0]
+        works = {w for _n, w in ve}
+        en = next((nm for nm, _w in ve if format_name(nm)[0] == ke),
+                  sorted(nm for nm, _w in ve)[0])
+        return "", en, works, "en", "", 0, 0, (es, ee)
+    # 中文段内子串兜底（小花子 -> 花子）
+    for k, vs in role_zh.items():
+        for i, seg in enumerate(segs):
+            if k and len(k) >= 2 and k in seg and k != seg:
+                return (sorted(n for n, _w in vs)[0], "",
+                        {w for _n, w in vs}, "zh", k, i, i + 1, None)
+    return "", "", set(), "", "", 0, 0, None
 
 
 def resolve_name3(name: str, roles: list[dict],
@@ -239,15 +277,43 @@ def resolve_name3(name: str, roles: list[dict],
         segs, spans = segs[1:], spans[1:]
         fmt = "_".join(segs)
 
-    # 第 2 步：作品 + 角色匹配
-    work, work_source = match_work(fmt)
-    cn, en, role_works, kind, hit_key, hit_s, hit_e = match_role(fmt, role_zh, role_en)
+    # 第 2 步：作品 + 角色匹配。Unknown_ 前缀输入禁用前缀累积（防英文角色名误当作品）
+    work, work_source, prefix_end = match_work(fmt, allow_prefix=not unknown_seen)
+    # 未命中已知作品但首段是 ASCII 独立段：保留为作品候选（如 DMC_xxx 的 DMC，
+    # 其 abbr 未注册进作品名映射），用原始大小写（spans 首段）。
+    # Unknown_ 前缀输入不猜前缀作品（Unknown_Rei-Ayanami 的 Rei 是角色英文名）。
+    if (not work and not unknown_seen and segs and len(segs) > 1
+            and segs[0].isascii() and len(segs[0]) >= 2):
+        work, work_source, prefix_end = spans[0][0], "prefix", 1
+    cn, en, role_works, kind, hit_key, hit_s, hit_e, en_range = match_role(fmt, role_zh, role_en)
+    # 中文命中但无匹配英文时：若有英文组（未收录英文名，如 Exusiae-The-New-Covenant），
+    # 消费为 en（保留作者原始写法），防未收录英文段重复并入
+    if hit_key and en_range is None and segs:
+        for s, e, c in _eng_groups(segs):
+            if get_work_canonical(segs[s]):
+                continue  # 跳过作品段
+            raw = "-".join(spans[i][0] for i in range(s, e)
+                           if segs[i].lower() not in CONTENT_TAGS
+                           and not is_skin_en(segs[i], None, None)
+                           and not get_work_canonical(segs[i]))
+            if raw:
+                en = raw
+                en_range = (s, e)
+            break
+    # en 命中且有输入英文组：优先保留输入原始写法（与数据库名相关时），
+    # 避免数据库小写名覆盖 TiaoXiangShi/FrostNova 等原始大小写
+    if en and en_range:
+        raw_en = "-".join(spans[i][0] for i in range(en_range[0], en_range[1])
+                          if segs[i].isascii())
+        if raw_en and _related(en, raw_en):
+            en = raw_en
 
-    # 归属判定（作品-角色一致）
+    # 归属判定（作品-角色一致）。前缀作品只在中英文都命中且归属一致指向别处时才纠正
+    # （对齐 r2 6.5 保守版；仅单语言命中或角色未收录时保留前缀，如 NEKOPARA_枫）
     conflict = False
     conflict_works: list[str] = []
     if work and work != "Unknown" and (cn or en):
-        if role_works and work not in role_works:
+        if role_works and work not in role_works and cn and en:
             if len(role_works) == 1:
                 new_work = next(iter(role_works))
                 notes.append(f"work corrected: {work} -> {new_work}（角色归属）")
@@ -292,6 +358,14 @@ def resolve_name3(name: str, roles: list[dict],
             if len(cands) == 1:
                 cn = cands.pop()
                 filled.append("CN auto-filled: " + cn)
+        # 中英文都有：标准化为数据库规范名，但保留原有写法（仅大小写/写法差异时不覆盖）
+        if cn and en and cn_to_en:
+            cands = {e for w, e in cn_to_en.get(cn, []) if w == work}
+            if len(cands) == 1:
+                cand = init_caps(cands.pop())
+                if not _related(en, cand):
+                    en = cand
+                    filled.append("EN standardized: " + cand)
 
     # 第 3 步：残留段分类 + 重组（按原始位置归位）
     content_tag = ""
@@ -299,6 +373,8 @@ def resolve_name3(name: str, roles: list[dict],
     cn_seg: list[str] = []
     en_parts: list[str] = []
     for i, seg in enumerate(segs):
+        if i < prefix_end:
+            continue  # 前缀作品段（含多词作品后半段，如 Magia Record 的 record）
         low = seg.lower()
         if low in CONTENT_TAGS:
             content_tag = CONTENT_CANON[low]
@@ -323,8 +399,15 @@ def resolve_name3(name: str, roles: list[dict],
                 else:
                     cn_seg.append(cn)
             continue
-        if get_work_canonical(seg):
-            continue  # 作品段（前缀/末尾标记/降级残留），命中已知作品即丢弃
+        # 英文组已消费（en 命中段）-> 跳过，防英文段重复（如 Exusiai-The-New-Covenant）
+        if en_range and en_range[0] <= i < en_range[1]:
+            continue
+        # 末尾作品标记段（如 xiao月雪宫子BA 的 ba）：仅当与当前 work 一致才跳过。
+        # 前缀作品段已由 prefix_end 跳过；不在开头/末尾的 get_work_canonical 命中
+        # 是角色英文名段（如 Unknown_Rei-Ayanami 的 rei 恰好是某作品别名），不跳。
+        if (i == len(segs) - 1 and work and work != "Unknown"
+                and get_work_canonical(seg) == work):
+            continue
         # 英文角色段已被 en/补全覆盖 -> 跳过（避免 Rosmontis/Shiroko 重复）
         if seg in role_en and work and work != "Unknown":
             if any(w == work for _n, w in role_en[seg]):
@@ -340,18 +423,22 @@ def resolve_name3(name: str, roles: list[dict],
         if has_cjk(seg):
             cn_seg.append(seg)
         else:
-            en_parts.append(seg)
+            # 未识别英文保留原始大小写（spans 原始文本），不强制 init_caps
+            en_parts.append(spans[i][0])
 
-    # 未识别英文并入 en（- 连接）；已含在补全 en 里的段（如 Shiroko ⊂ Sunaookami-Shiroko）
-    # 不重复并入
+    # 未识别英文并入 en（- 连接）：数据库/补全部分 init_caps，未识别部分保留原始；
+    # 已含在补全 en 里的段（如 Shiroko ⊂ Sunaookami-Shiroko）不重复并入。
     if en_parts:
         enk = normalize_en_key(en) if en else ""
         kept = [p for p in en_parts
                 if not (enk and normalize_en_key(p) and normalize_en_key(p) in enk)]
         if kept:
             extra = "-".join(kept)
-            en = (en + "-" + extra) if en else extra
-    if en:
+            if en:
+                en = init_caps(en) + "-" + extra  # 数据库部分标准，extra 原始
+            else:
+                en = extra  # 纯未识别：保留原始大小写（如 PUR）
+    elif en:
         en = init_caps(en)
 
     cn_seg_str = "".join(cn_seg)
@@ -449,9 +536,15 @@ def _canon_cn(t: str, cn_alias: dict | None, work: str) -> str:
 
 
 def _related(a: str, b: str) -> bool:
-    """当前名 a 是否已与规范名 b 一致（应保留，不覆盖）。"""
+    """当前名 a 是否已与规范名 b 一致（应保留，不覆盖）。
+
+    ASCII 归一化（去括号/空白/小写）并把 `_` 与 `-` 等价（Padoru_Hakurei 与
+    Padoru-Hakurei 视为相同）；中文去空格。
+    """
     def fold(s: str) -> str:
-        return normalize_en_key(s) if s.isascii() else s.replace(' ', '').replace('　', '')
+        if s.isascii():
+            return normalize_en_key(s).replace('_', '-')
+        return s.replace(' ', '').replace('　', '')
     x, y = fold(a), fold(b)
     if not x or not y:
         return False

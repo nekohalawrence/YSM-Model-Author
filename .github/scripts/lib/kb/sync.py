@@ -113,11 +113,26 @@ def sync_works_from_readme(data: dict, readme_path: Path) -> tuple[int, int]:
 
 
 def build_work_index(data: dict) -> None:
-    """从 works 数据构建全局作品名 -> 键 映射（解析前缀时使用）。"""
+    """从 works 数据构建全局作品名 -> 键 映射（解析前缀时使用）。
+
+    work 值是扁平 dict（en/zh/ja/category 等）；category 是分类字段、不是作品名，
+    必须排除（否则 'Other' 会被误当 Animal 作品的别名）。
+    """
     aliases: dict[str, str] = {}
     for wk, v in (data.get("works") or {}).items():
-        for name in work_value_names(v):
-            norm = normalize_work_name(name)
+        if isinstance(v, dict):
+            names: list = []
+            for k2, v2 in v.items():
+                if k2 == "category":
+                    continue
+                if isinstance(v2, list):
+                    names.extend(v2)
+                elif v2:
+                    names.append(v2)
+        else:
+            names = work_value_names(v)
+        for name in names:
+            norm = normalize_work_name(str(name))
             if norm:
                 aliases.setdefault(norm, wk)
         norm = normalize_work_name(wk)

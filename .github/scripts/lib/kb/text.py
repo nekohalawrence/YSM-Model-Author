@@ -48,6 +48,9 @@ def normalize_work_name(name: str) -> str:
 # 皮肤标签标准化表：.github/data/model-info/skin_tags.json。
 # 结构: {标签键: {name: {语言: 标准名}, aliases: [混合别名(不分语言，用于匹配)]}}
 # 全局通用，不再按作品分组；中文词=name.zh+CJK 别名，英文词=name.en+非 CJK 别名。
+# 超通用英文皮肤词（new/old 等）会被角色英文名误匹配（如 New-Komeiji 的 new），
+# 不加入英文匹配集合（中文 新/旧 仍正常匹配）。
+_GENERIC_EN_SKINS = {"new", "old"}
 _DEFAULT_SKIN_TAGS_PATH = (Path(__file__).resolve().parents[4]
                            / '.github' / 'data' / 'model-info' / 'skin_tags.json')
 _SKIN_TAGS: dict | None = None
@@ -72,7 +75,7 @@ def _skin_tags() -> dict:
 
 
 def _skin_lang_sets() -> tuple[set[str], set[str]]:
-    """从新格式构建 (中文词集合, 英文词集合)；英文词统一小写。"""
+    """从新格式构建 (中文词集合, 英文词集合)；英文词统一小写，排除超通用词。"""
     global _SKIN_LANG_CACHE
     if _SKIN_LANG_CACHE is None:
         zh: set[str] = set()
@@ -81,13 +84,13 @@ def _skin_lang_sets() -> tuple[set[str], set[str]]:
             name = t.get('name') or {}
             if name.get('zh'):
                 zh.add(str(name['zh']))
-            if name.get('en'):
+            if name.get('en') and str(name['en']).lower() not in _GENERIC_EN_SKINS:
                 en.add(str(name['en']).lower())
             for a in t.get('aliases') or []:
                 a = str(a)
                 if has_cjk(a):
                     zh.add(a)
-                else:
+                elif a.lower() not in _GENERIC_EN_SKINS:
                     en.add(a.lower())
         _SKIN_LANG_CACHE = (zh, en)
     return _SKIN_LANG_CACHE
