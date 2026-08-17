@@ -1,21 +1,8 @@
-# AK_年_Nian-2
-
-## Model Details
-<details>
-<summary>Model Details</summary>
-
-- **Category**: #Game
-  - **Game**: #Arknights #AK #明日方舟
-
-## Author
-
-- **Name**: 暂无
-
-</details>
+# AK_年_Nian
 
 ## Preview Images
 <details open>
-<summary>Preview Images</summary>
+<summary>Expand/Collapse</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
@@ -24,5 +11,20 @@
 ![preview02.png](previews/preview02.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
+## Model Details
+<details>
+<summary>Expand/Collapse</summary>
+
+- **Name**: #年 | #Nian
+- **Category**: #Game
+  - **Game**: #Arknights #AK #明日方舟
+
+## Author
+
+- **Name**: 暂无
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
 
 </details>

@@ -1,26 +1,28 @@
-# AK_gui_hu
-
-## Model Details
-<details>
-<summary>Model Details</summary>
-
-- **Category**: #Game
-  - **Game**: #Arknights #AK #明日方舟
-
-## Author
-
-- **Name**: 暂无
-
-</details>
+# AK_Gui-Hu
 
 ## Preview Images
 <details open>
-<summary>Preview Images</summary>
+<summary>Expand/Collapse</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
 ![preview01.png](previews/preview01.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
+## Model Details
+<details>
+<summary>Expand/Collapse</summary>
+
+- **Name**: #Gui-Hu
+- **Category**: #Game
+  - **Game**: #Arknights #AK #明日方舟
+
+## Author
+
+- **Name**: 暂无
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
 
 </details>

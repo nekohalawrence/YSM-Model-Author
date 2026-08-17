@@ -1,21 +1,8 @@
-# lol_格温_Gwen
-
-## Model Details
-<details>
-<summary>Model Details</summary>
-
-- **Category**: #Game
-  - **Game**: #League of Legends #LOL #英雄联盟
-
-## Author
-
-- **Name**: 暂无
-
-</details>
+# LOL_格温_Gwen
 
 ## Preview Images
 <details open>
-<summary>Preview Images</summary>
+<summary>Expand/Collapse</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
@@ -24,5 +11,20 @@
 ![preview02.png](previews/preview02.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
+## Model Details
+<details>
+<summary>Expand/Collapse</summary>
+
+- **Name**: #格温 | #Gwen
+- **Category**: #Game
+  - **Game**: #League of Legends #LOL #英雄联盟
+
+## Author
+
+- **Name**: 暂无
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
 
 </details>

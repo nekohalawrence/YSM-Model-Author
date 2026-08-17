@@ -1,21 +1,8 @@
-# Unknown_晓绯_Nsfw_LA
-
-## Model Details
-<details>
-<summary>Model Details</summary>
-
-- **Category**: #Other
-  - **Game**: #Unknown
-
-## Author
-
-- **Name**: 暂无
-
-</details>
+# AL_晓绯_Nsfw_LA
 
 ## Preview Images
 <details open>
-<summary>Preview Images</summary>
+<summary>Expand/Collapse</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
@@ -26,5 +13,20 @@
 ![preview03.png](previews/preview03.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
+## Model Details
+<details>
+<summary>Expand/Collapse</summary>
+
+- **Name**: 
+- **Category**: #Game
+  - **Game**: #Azur-Lane #AL #碧蓝航线
+
+## Author
+
+- **Name**: 暂无
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
 
 </details>

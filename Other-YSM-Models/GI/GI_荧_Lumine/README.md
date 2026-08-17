@@ -1,21 +1,8 @@
 # GI_荧_Lumine
 
-## Model Details
-<details>
-<summary>Model Details</summary>
-
-- **Category**: #Game
-  - **Game**: #Genshin Impact #Genshin #GI #原神
-
-## Author
-
-- **Name**: 暂无
-
-</details>
-
 ## Preview Images
 <details open>
-<summary>Preview Images</summary>
+<summary>Expand/Collapse</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
@@ -24,5 +11,20 @@
 ![preview02.png](previews/preview02.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
+## Model Details
+<details>
+<summary>Expand/Collapse</summary>
+
+- **Name**: #荧 | #Lumine
+- **Category**: #Game
+  - **Game**: #Genshin Impact #Genshin #GI #原神
+
+## Author
+
+- **Name**: 暂无
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
 
 </details>

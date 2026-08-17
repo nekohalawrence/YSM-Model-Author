@@ -444,6 +444,27 @@ def is_author_dir(path: Path) -> bool:
     return path.is_dir() and path.name.isdigit() and len(path.name) == 4
 
 
+def _collect_ysm_dirs(d: Path):
+    """递归收集模型目录：含 .ysm 文件或 previews/ 子目录即视为模型目录。
+
+    适配 Other-YSM-Models 的 <作品>/<模型> 两层（或更深）组织（与 lib/kb/cmds.py
+    的 _collect_model_dirs 同规则）；作品层（无 .ysm）继续向下找，避免把 AK/、
+    BA/ 等作品目录误当模型目录生成 README。
+    """
+    try:
+        entries = list(d.iterdir())
+    except OSError:
+        return
+    has_ysm = any(e.is_file() and e.suffix.lower() == '.ysm' for e in entries)
+    has_previews = any(e.is_dir() and e.name == 'previews' for e in entries)
+    if has_ysm or has_previews:
+        yield d
+        return
+    for e in entries:
+        if e.is_dir() and e.name != 'previews' and not e.name.startswith('.'):
+            yield from _collect_ysm_dirs(e)
+
+
 def iter_model_dirs(root_dir: Path):
     if root_dir.name == 'Models':
         for author_dir in sorted(root_dir.iterdir()):
@@ -455,7 +476,13 @@ def iter_model_dirs(root_dir: Path):
                 if model_dir.name.startswith('.') or model_dir.name.lower() == 'previews':
                     continue
                 yield model_dir
+    elif root_dir.name == 'Other-YSM-Models':
+        # Other-YSM-Models 现按 <作品>/<模型> 两层（或更深）组织：递归收集模型目录
+        for work_dir in sorted(root_dir.iterdir()):
+            if work_dir.is_dir() and not work_dir.name.startswith('.'):
+                yield from _collect_ysm_dirs(work_dir)
     else:
+        # Blockbench-Models 等：保持一层遍历（子目录即模型目录）
         for model_dir in sorted(root_dir.iterdir()):
             if not model_dir.is_dir():
                 continue

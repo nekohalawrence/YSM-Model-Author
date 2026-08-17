@@ -1,26 +1,28 @@
-# Ak_muelsyse
-
-## Model Details
-<details>
-<summary>Model Details</summary>
-
-- **Category**: #Game
-  - **Game**: #Arknights #AK #明日方舟
-
-## Author
-
-- **Name**: 暂无
-
-</details>
+# AK_Muelsyse
 
 ## Preview Images
 <details open>
-<summary>Preview Images</summary>
+<summary>Expand/Collapse</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
 ![preview01.png](previews/preview01.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
+## Model Details
+<details>
+<summary>Expand/Collapse</summary>
+
+- **Name**: #缪尔赛思 | #Muelsyse
+- **Category**: #Game
+  - **Game**: #Arknights #AK #明日方舟
+
+## Author
+
+- **Name**: 暂无
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
 
 </details>
