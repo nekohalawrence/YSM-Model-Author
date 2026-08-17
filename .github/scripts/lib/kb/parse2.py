@@ -201,17 +201,21 @@ def _eng_groups(segs: list[str]) -> list[tuple[int, int, str]]:
     return out
 
 
-def match_role(fmt: str, role_zh: dict, role_en: dict):
+def match_role(fmt: str, role_zh: dict, role_en: dict, prefix_end: int = 0):
     """第 2 步：角色整体匹配。返回 (cn, en, works, kind, hit_key, zh_s, zh_e, en_range)。
 
     - 中文：独立段/同语言组合/段内子串（最长优先）；英文：连续英文组整体匹配；
     - 支持中英双命中（cn 来自中文、en 来自同作品英文组）；
     - en_range 是命中的英文组段范围（供重组跳过，防英文段重复）；
     - cn/en 取命中的规范名；works 是归属作品集合。
+    - prefix_end：前缀作品段数。英文组匹配跳过前缀段（避免 AK_Logos 把
+      前缀 ak 和角色 logos 连成 ak_logos 导致匹配失败）。
     """
     segs = fmt.split("_")
     combo_lookup: dict[str, list] = {}
     for s, e, t in _seg_combos(segs):
+        if e <= prefix_end:
+            continue  # 前缀作品段不参与角色组合匹配
         combo_lookup.setdefault(t, []).append((s, e))
     zh_cands: list = []
     for k, vs in role_zh.items():
@@ -219,9 +223,10 @@ def match_role(fmt: str, role_zh: dict, role_en: dict):
             for s, e in combo_lookup[k]:
                 zh_cands.append((len(k), k, vs, s, e))
     en_cands: list = []
-    for s, e, c in _eng_groups(segs):
+    for s, e, c in _eng_groups(segs[prefix_end:] if prefix_end else segs):
+        ss, ee = s + prefix_end, e + prefix_end
         if c in role_en:
-            en_cands.append((len(c), c, role_en[c], s, e))
+            en_cands.append((len(c), c, role_en[c], ss, ee))
     if zh_cands:
         zh_cands.sort(reverse=True)
         _, kz, vz, zs, ze = zh_cands[0]
@@ -247,6 +252,8 @@ def match_role(fmt: str, role_zh: dict, role_en: dict):
     # 中文段内子串兜底（小花子 -> 花子）
     for k, vs in role_zh.items():
         for i, seg in enumerate(segs):
+            if i < prefix_end:
+                continue  # 前缀作品段不参与子串兜底
             if k and len(k) >= 2 and k in seg and k != seg:
                 return (sorted(n for n, _w in vs)[0], "",
                         {w for _n, w in vs}, "zh", k, i, i + 1, None)
@@ -285,7 +292,8 @@ def resolve_name3(name: str, roles: list[dict],
     if (not work and not unknown_seen and segs and len(segs) > 1
             and segs[0].isascii() and len(segs[0]) >= 2):
         work, work_source, prefix_end = spans[0][0], "prefix", 1
-    cn, en, role_works, kind, hit_key, hit_s, hit_e, en_range = match_role(fmt, role_zh, role_en)
+    cn, en, role_works, kind, hit_key, hit_s, hit_e, en_range = match_role(
+        fmt, role_zh, role_en, prefix_end)
     # 中文命中但无匹配英文时：若有英文组（未收录英文名，如 Exusiae-The-New-Covenant），
     # 消费为 en（保留作者原始写法），防未收录英文段重复并入
     if hit_key and en_range is None and segs:
