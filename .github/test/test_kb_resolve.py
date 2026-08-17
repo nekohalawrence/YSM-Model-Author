@@ -133,24 +133,27 @@ def main() -> int:
     ck(r["zh"] == "丰川祥子" and r["en"] == "Togawa-Sakiko",
        f"cn={r['zh']!r} en={r['en']!r}")
 
-    # 8c. `_` 连接的中文皮肤（字段统一用 _ 分隔）-> 剥离为皮肤，输出也规范为 `_`
+    # 8c. `_` 连接的形态/限定词（B 方案：皮肤不再识别，作为普通独立段保留原位）
+    #     阿米娅_泳装 -> cn=阿米娅(纯净供补全) + 独立段 泳装
     r = resolve("AK_阿米娅_泳装")
     ck(r["work"] == "AK" and r["zh"] == "阿米娅",
-       f"AK_阿米娅_泳装 work={r['work']!r}/cn={r['zh']!r} (皮肤已剥离)")
+       f"AK_阿米娅_泳装 work={r['work']!r}/cn={r['zh']!r} (独立段保留，cn 纯净)")
     ck(r["new"] == "AK_阿米娅_泳装_Amiya", f"new={r['new']!r} (期望 AK_阿米娅_泳装_Amiya)")
-    ck(r.get("cn_skin") == "泳装", f"cn_skin={r.get('cn_skin')!r} (期望 泳装)")
+    ck(r.get("cn_skin") == "泳装", f"cn_skin={r.get('cn_skin')!r} (期望 泳装 独立段)")
 
     # 8d. en 多段用 - 连接（同一英文名，Rei_Ayanami -> Rei-Ayanami）
     r = resolve("Unknown_Rei_Ayanami_LD")
     ck(r["en"] == "Rei-Ayanami", f"en={r['en']!r} (期望 Rei-Ayanami)")
 
-    # 8f. CJK 段含空格/冒号（旧命名）-> 知识库过滤未命中 token（枣）并补全 EN
+    # 8f. CJK 段含空格/冒号（旧命名）-> 知识库过滤未命中 token（枣/泳装）并补全 EN。
+    #     B 方案下皮肤不再特殊识别：泳装随未命中 token 一并丢弃（旧命名空格容错；
+    #     新命名 `_` 分隔的独立段保留见 8c）。
     r = resolve("BA_枣 伊吕波：泳装")
     ck(r["work"] == "BA", f"BA_枣 伊吕波：泳装 work={r['work']!r} (期望 BA)")
     ck(r["zh"] == "伊吕波", f"cn={r['zh']!r} (期望 伊吕波, 未命中'枣'被丢弃)")
-    ck(r.get("cn_skin") == "泳装", f"cn_skin={r.get('cn_skin')!r} (期望 泳装)")
+    ck(r.get("cn_skin") == "", f"cn_skin={r.get('cn_skin')!r} (期望 空，泳装随 dropped 丢弃)")
     ck(r["en"] == "Iroha", f"en={r['en']!r} (期望 Iroha, 补全+init_caps)")
-    ck(r["new"] == "BA_伊吕波_泳装_Iroha", f"new={r['new']!r} (期望 BA_伊吕波_泳装_Iroha)")
+    ck(r["new"] == "BA_伊吕波_Iroha", f"new={r['new']!r} (期望 BA_伊吕波_Iroha)")
     ck("dropped 枣" in r["notes"], f"notes={r['notes']!r} (应含 dropped 枣)")
 
     # 8e. 中英混合拆分 + 版本剥离 + en 去重 + 反查归 VOC
@@ -215,9 +218,9 @@ def main() -> int:
        f"Red_步兵 应有 ambiguous work alias 提示，notes={r['notes']!r}")
 
     # 13. 符号格式化（2026-08-15 重构）：`·`/冒号 先归一为 `_` 再解析
-    # 13a. `·` 间隔号 -> 分隔符：OC_泠鸢·登门喜鹊 -> 泠鸢(角色) + 登门喜鹊(皮肤)
+    # 13a. `·` 间隔号 -> 分隔符：OC_泠鸢·登门喜鹊 -> 泠鸢(角色) + 登门喜鹊(独立段)
     #      （需 OC 角色库有泠鸢；测试用临时注入角色）
-    # 先注入 OC 泠鸢 角色用于皮肤识别验证
+    # 先注入 OC 泠鸢 角色用于「角色名+剩余段」提取验证
     test_roles = ROLES + [{"work": "OC", "zh": ["泠鸢"], "en": ["jk"]}]
     kb.build_work_index({"works": WORKS, "roles": []})
     C2, E2, E2C, C2E = kb.build_indexes(test_roles)
@@ -225,12 +228,12 @@ def main() -> int:
     ck(r["work"] == "OC", f"OC_泠鸢·登门喜鹊 work={r['work']!r} (期望 OC)")
     ck(r["zh"] == "泠鸢", f"cn={r['zh']!r} (期望 泠鸢, · 已拆分为分隔符)")
     ck(r.get("cn_skin") == "登门喜鹊",
-       f"cn_skin={r.get('cn_skin')!r} (期望 登门喜鹊 识别为皮肤)")
+       f"cn_skin={r.get('cn_skin')!r} (期望 登门喜鹊 独立段)")
     # 候选皮肤：登门喜鹊 若已在 skin_tags.json 则为已知皮肤（不重复收集候选）；
     # 否则出现在 candidate_skins。此处只断言"能识别为皮肤"，不强制候选非空。
 
     # 13b. 中英混合段 + 冒号分隔（用户例子）：初音Miku: 兔女郎
-    #      -> 初音(中文) + Miku(英文) + 兔女郎(皮肤) -> 自动补全作品名
+    #      -> 初音(中文) + Miku(英文) + 兔女郎(独立段) -> 自动补全作品名
     #      测试 VOC 数据首项为 初音/miku，故补全为 VOC_初音_兔女郎_Miku
     #      （真实仓库首项为 初音未来/Hatsune-Miku，会补全为对应规范名）
     r = resolve("初音Miku: 兔女郎")
@@ -238,7 +241,7 @@ def main() -> int:
     ck(r["zh"] == "初音" and r["en"] == "Miku",
        f"cn={r['zh']!r} en={r['en']!r} (期望 中英混合段拆分 初音/Miku)")
     ck(r["new"] == "VOC_初音_兔女郎_Miku",
-       f"new={r['new']!r} (期望 VOC_初音_兔女郎_Miku, 冒号段为皮肤)")
+       f"new={r['new']!r} (期望 VOC_初音_兔女郎_Miku, 冒号段独立段保留)")
 
     # 13c. 连字符 `-` 连接且不在皮肤表 -> 整体（规则3）：Rei-Ayanami 姓氏-名字保持整体
     r = resolve("Unknown_Rei_Ayanami_LD")

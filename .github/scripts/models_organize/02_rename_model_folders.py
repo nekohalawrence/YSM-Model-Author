@@ -92,7 +92,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from lib import paths as lib_paths
 from lib.kb.cmds import (
-    build_indexes, build_work_skins, get_target_dirs,
+    build_indexes, get_target_dirs,
 )
 from lib.kb.parse2 import (
     resolve_name2, build_cn_alias,
@@ -165,21 +165,8 @@ def main() -> int:
         return 2
     print(f"共找到 {len(dirs)} 个待处理文件夹（直接引用路径；默认 Models + Other-YSM-Models）")
 
-    # 候选皮肤自动收录：解析时识别出"角色名 + 未知中文段"结构的皮肤词
-    # （如 泠鸢_登门喜鹊 的「登门喜鹊」，前提 泠鸢 是 OC 已收录角色），
-    # 自动加入 skin_tags.json 对应作品（幂等，下次运行即识别为皮肤）。
-    def collect_candidate_skins() -> None:
-        # 皮肤词表外部化在 skin_tags.json：不再自动收录候选皮肤，
-        # 仅提示供手工维护（用 check&fix/kb_tool.py --roles 或编辑 skin_tags.json）。
-        total = 0
-        for r in results:
-            for s in (r.get("candidate_skins") or []):
-                total += 1
-                rel = r["path"].relative_to(REPO_ROOT).as_posix()
-                print(f"  [候选皮肤] {rel} -> 皮肤词 {s}（{r.get('work')}）请用 kb_tool --roles 收录")
-        if total:
-            print(f"发现 {total} 个候选皮肤（未自动收录，用 check&fix/kb_tool.py --roles 维护）")
-
+    # 候选皮肤不再自动收录：皮肤词已从文件夹解析移除（B 方案），
+    # skin_tags.json 仅保留给 02_rename_model_files.py 的文件名变体词用。
     data = load_kb_json(kb_path)
     if not data.get("roles"):
         # 首次：从旧 SQLite 库迁移历史条目（旧 alias 已并入 roles，忽略第二返回值）
@@ -195,18 +182,14 @@ def main() -> int:
     print(f"知识库: {len(roles)} 条")
 
     cn_idx, en_idx, en_to_cn, cn_to_en = build_indexes(roles)
-    work_skins = build_work_skins(roles)
     cn_alias = build_cn_alias(roles)
 
     results = []
     for d in dirs:
         res = resolve_name2(d.name, cn_idx, en_idx, en_to_cn, cn_to_en,
-                            work_skins, cn_alias)
+                            cn_alias)
         res["path"] = d
         results.append(res)
-
-    # 候选皮肤自动收录（角色名后的未知中文段识别为皮肤，幂等写入 skin_tags.json）
-    collect_candidate_skins()
 
     # 磁盘上已有的 -数字 副本文件夹（同名冲突自动生成，如 xxx-1_LB）不再参与重命名：
     # 识别副本后缀并标 SKIP，避免每次 --apply 都尝试去重并报"已是唯一副本，保持"。

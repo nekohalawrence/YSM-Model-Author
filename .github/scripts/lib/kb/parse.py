@@ -12,7 +12,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 from lib import models as lib_models
 from lib.kb.text import (  # noqa: E402
     CN_SKIN_RE, EN_TAIL_RE, MIXED_SEG_RE, TOUHOU_PREFIX_RE,
-    has_cjk, init_caps, is_skin_cn, is_skin_en, normalize_en_key, normalize_work_name,
+    has_cjk, init_caps, normalize_en_key, normalize_work_name,
 )
 
 GRADE_RE = lib_models.GRADE_SUFFIX_RE
@@ -98,8 +98,7 @@ def _related(a: str, b: str) -> bool:
 
 
 def resolve_name(name: str, cn_idx: dict, en_idx: dict,
-                 en_to_cn: dict | None = None, cn_to_en: dict | None = None,
-                 work_skins: dict | None = None) -> dict:
+                 en_to_cn: dict | None = None, cn_to_en: dict | None = None) -> dict:
     """把一个文件夹名解析为 (作品, 中文名, 英文名, 评定等级) 结构。
 
     cn_idx/en_idx 为 build_indexes 构建的名称索引；en_to_cn/cn_to_en 用于
@@ -111,7 +110,7 @@ def resolve_name(name: str, cn_idx: dict, en_idx: dict,
     manual: list[str] = []
     # 结构化问题标签（用于问题级计数）：works / cn-name / en-name / conflict / other
     problems: list[str] = []
-    # 识别出的候选皮肤词（不在皮肤表，供调用方自动收录进 skin_tags.json）
+    # 候选皮肤识别已移除（B 方案）：skin_tags.json 仅保留给文件名变体词用。
     candidate_skins: set[str] = set()
 
     m = GRADE_RE.search(name)
@@ -250,74 +249,37 @@ def resolve_name(name: str, cn_idx: dict, en_idx: dict,
         cn_raw = "_".join(cjk_tokens)
         m = CN_SKIN_RE.match(cn_raw)
         if m:
-            # 先做数据库匹配：连字符前半段若是已知作品全称/别名
-            # （如 蔚蓝档案-月雪宫子），按「作品-角色」识别而非「角色-皮肤」。
+            # 连字符前半段若是已知作品全称/别名（如 蔚蓝档案-月雪宫子），
+            # 按「作品-角色」识别；否则视为角色名整体（连字符皮肤不再拆分，B 方案）。
             prefix = m.group(1)
             canon = get_work_canonical(prefix) if prefix else None
             if canon and (not work or work in ("", "Unknown") or work == canon):
                 work = canon
                 work_source = "prefix"
                 cn = m.group(2)
-                # 剩余可能仍是「角色-皮肤」（如 月雪宫子-泳装），再拆一次
-                m2 = CN_SKIN_RE.match(cn)
-                if m2:
-                    cn = m2.group(1)
-                    cn_skin = m2.group(2)
             else:
-                cn = m.group(1)
-                cn_skin = m.group(2)
+                cn = cn_raw
         else:
             cn = cn_raw
-            # 容错：`_` 连接的中文皮肤段（历史写法，如「阿米娅_泳装」「伽摩_泳装」），
-            # 用皮肤词表把末尾皮肤词剥离为皮肤（输出仍规范为 `-` 连接）。
-            if len(cjk_tokens) > 1 and is_skin_cn(cjk_tokens[-1], work, work_skins):
-                cn_skin = cjk_tokens[-1]
-                cn = "_".join(cjk_tokens[:-1])
         # 知识库 CJK 角色名匹配（仅限空格/冒号拆分的旧命名残留，如 `枣 伊吕波`）：
-        # 用知识库把命中的角色名挑出来，未命中 token（如姓氏「枣」）丢弃、
-        # 皮肤词归为皮肤：BA_枣 伊吕波：泳装 -> cn=伊吕波, cn_skin=泳装。
-        # 下划线分隔的规范段不触发，避免误丢常服/神装等皮肤词或未收录角色名。
+        # 用知识库把命中的角色名挑出来，未命中 token（如姓氏「枣」）丢弃；
+        # 皮肤不再特殊识别（B 方案），泳装等词随未命中 token 一并丢弃/保留由外层决定。
+        # 下划线分隔的规范段不触发，避免误丢未收录角色名。
         if (had_inner_split and work and work != "Unknown"
                 and len(cjk_tokens) > 1 and cn_idx):
-            role_tokens = [t for t in cjk_tokens if not is_skin_cn(t, work, work_skins)]
-            matched = [t for t in role_tokens
+            matched = [t for t in cjk_tokens
                        if cn_idx.get(t) and work in cn_idx[t]]
             if len(matched) == 1:
-                dropped = [t for t in role_tokens if t != matched[0]]
+                dropped = [t for t in cjk_tokens if t != matched[0]]
                 if dropped:
                     manual.append("kb CJK filter: dropped "
                                   + ", ".join(dropped))
                     problems.append("other")
                 cn = matched[0]
-                skins = [t for t in cjk_tokens if is_skin_cn(t, work, work_skins)]
-                if skins:
-                    cn_skin = skins[0]
-        # 皮肤识别（2026-08-15 增强）：CJK 多段中，若恰好一段命中角色库（cn_idx
-        # 含当前 work），则其余中文段为皮肤——已知皮肤词直接收，未知中文段作为
-        # 候选皮肤（candidate_skins，供自动收录进 skin_tags.json）。
-        # 如 `泠鸢_登门喜鹊`（泠鸢是 OC 角色）-> cn=泠鸢, cn_skin=登门喜鹊；
-        # `黎歌_国风`（黎歌未收录）-> 无角色命中，保持 multiple CJK 待人工。
-        if (work and work != "Unknown" and len(cjk_tokens) > 1 and cn_idx
-                and not cn_skin):
-            role_hits = [t for t in cjk_tokens
-                         if cn_idx.get(t) and work in cn_idx[t]]
-            if len(role_hits) == 1:
-                role = role_hits[0]
-                others = [t for t in cjk_tokens if t != role]
-                # 其余段都非角色（cn_idx 未命中当前 work）才安全剥离为皮肤
-                if others and all(not (cn_idx.get(t) and work in cn_idx[t])
-                                  for t in others):
-                    cn = role
-                    cn_skin = others[0]
-                    for s in others:
-                        if not is_skin_cn(s, work, work_skins):
-                            candidate_skins.add(s)
-                    if len(others) > 1:
-                        manual.append("multiple CJK segments")
-                        problems.append("other")
         # 段内角色名提取（2026-08-15）：CJK 段未精确命中角色，但包含某角色名
-        # 子串（最长优先）时，提取角色名 + 剩余段为皮肤/形态词。
-        # 如 `大明酒狐` -> 角色=酒狐 + 剩余=大明；`神秘酒狐` -> 酒狐 + 神秘。
+        # 子串（最长优先）时，提取角色名 + 剩余段为形态/限定词（皮肤不再特殊
+        # 识别：不查皮肤库，剩余词作为普通独立段保留原位）。
+        # 如 `大明酒狐` -> 酒狐_大明；`阿米娅_泳装` -> 阿米娅_泳装。
         # work 未定时，唯一作品的命中可确定归属；多作品同名不剥离（保持待人工）。
         if (cn and not cn_skin and cn_idx and cn not in cn_idx):
             cand_names = [rn for rn, works in cn_idx.items()
@@ -334,14 +296,13 @@ def resolve_name(name: str, cn_idx: dict, en_idx: dict,
                 if work in best_works:
                     remainder = cn.replace(best, "", 1).strip("_·-")
                     if remainder:
+                        # cn 保持纯净角色名（供知识库补全英文名），
+                        # 剩余形态/限定词作为普通独立段（cn_skin）保留原位。
                         cn = best
                         cn_skin = remainder
-                        if not is_skin_cn(remainder, work, work_skins):
-                            candidate_skins.add(remainder)
                         manual.append(f"segment role: {best} + {remainder}")
-        # multiple CJK segments：剥离皮肤后角色名仍由多段组成（含 _）才提示。
-        # 皮肤词（如 桐生桔梗_常服 的「常服」）已剥离为 cn_skin，不再误报；
-        # 仅当角色名本身由多段组成（如 棕榈_芊）时需人工确认。
+        # multiple CJK segments：角色名含多段（含 _，如 棕榈_芊 或 角色_形态词）时
+        # 提示人工确认（皮肤不再剥离，含形态词的多段会进入此分支）。
         if "_" in cn:
             manual.append("multiple CJK segments")
             problems.append("other")
@@ -360,47 +321,13 @@ def resolve_name(name: str, cn_idx: dict, en_idx: dict,
                 continue
             seen_en.add(key)
             stripped.append(e2)
-        # 英文皮肤剥离（逐段）：皮肤词可出现在任意位置（如 New_Sorasaki-Hina 的
-        # New、Miku-Swimsuit 的 Swimsuit），皮肤段归 en_skin，角色段用 - 连接
-        # （Rei_Ayanami -> Rei-Ayanami；Ayanami 非皮肤词，不动）。
-        role_parts: list[str] = []
-        skin_parts: list[str] = []
-        for e in stripped:
-            # 段内尾部皮肤：X-Y 且 Y 是皮肤词（如 Miku-Swimsuit）-> X 角色 + Y 皮肤
-            if "-" in e:
-                head, tail = e.rsplit("-", 1)
-                if head and is_skin_en(tail, work, work_skins):
-                    role_parts.append(head)
-                    skin_parts.append(tail)
-                    continue
-            # 整段皮肤词（如 New）-> 皮肤
-            if is_skin_en(e, work, work_skins):
-                skin_parts.append(e)
-            else:
-                role_parts.append(e)
-        en = "-".join(role_parts)
-        if skin_parts:
-            # 皮肤段去重（如 魂魄妖梦_New_Konpaku-Youmu-New 有两个 New -> 只留一个）
-            seen_skin: set[str] = set()
-            dedup_skin: list[str] = []
-            for s in skin_parts:
-                k = normalize_en_key(s)
-                if k not in seen_skin:
-                    seen_skin.add(k)
-                    dedup_skin.append(s)
-            en_skin = "-".join(dedup_skin)
-        # multiple EN segments：剥离皮肤后仍 >1 个角色段才提示（如复合名/变体需人工确认）。
-        # 皮肤词（如 New）已剥离为 en_skin，不再误报。
-        if len(role_parts) > 1:
+        # 英文段：皮肤不再剥离（B 方案），所有段用 - 连接保留原词
+        # （如 New_Sorasaki-Hina -> New-Sorasaki-Hina；Rei_Ayanami -> Rei-Ayanami）。
+        en = "-".join(stripped)
+        # multiple EN segments：>1 个英文段（如复合名/变体）提示人工确认。
+        if len(stripped) > 1:
             manual.append("multiple EN segments")
             problems.append("other")
-
-    # 单个中文段命中该作品皮肤词：剥离为 cn_skin，角色名交给英文段反查填充
-    # （如 OC_天眼泡狐龙_Wine-Fox -> cn_skin=天眼泡狐龙，cn 由 Wine-Fox 反查酒狐）
-    if (cn and work and work != "Unknown" and work_skins
-            and cn in set(str(x) for x in (work_skins.get(work) or {}).get('zh') or [])):
-        cn_skin = cn
-        cn = ""
 
     if not cn and not en:
         return {"original": orig, "new": "", "status": "SKIP", "notes": "no role info",
@@ -522,8 +449,6 @@ def resolve_name(name: str, cn_idx: dict, en_idx: dict,
             new += "_" + cn_skin
     if en:
         new += "_" + en
-        if en_skin:
-            new += "-" + en_skin
     if grade:
         new += "_" + grade
 

@@ -617,17 +617,16 @@ def run_suggest(kb_path: Path) -> None:
             seen.add(key)
         roles.append(m)
     cn_idx, en_idx, en_to_cn, cn_to_en = build_indexes(roles)
-    work_skins = build_work_skins(roles)
     cn_keys = sorted([k for k in cn_idx if len(k) >= 2 and "_" not in k],
                      key=len, reverse=True)
-    # 允许连字符（misaka-mikoto 等标准英文名），排除下划线（皮肤/多段串如 padoru_hakurei-...）
+    # 允许连字符（misaka-mikoto 等标准英文名），排除下划线（多段串如 padoru_hakurei-...）
     en_keys = sorted([k for k in en_idx if len(k) >= 4 and "_" not in k],
                      key=len, reverse=True)
 
     suggestions: list[tuple] = []
     no_cand: list[tuple] = []
     for d in get_target_dirs(None):
-        r = resolve_name(d.name, cn_idx, en_idx, en_to_cn, cn_to_en, work_skins)
+        r = resolve_name(d.name, cn_idx, en_idx, en_to_cn, cn_to_en)
         if r["work"] != "Unknown" or not (r["zh"] or r["en"]):
             continue
         cands: list[tuple] = []
@@ -963,21 +962,6 @@ def build_indexes(roles: list[dict], priority_roles: list[dict] | None = None):
             cn_to_en[cn_list[0]] = [(r["work"], en_list[0])]
             en_to_cn[normalize_en_key(en_list[0])] = [(r["work"], cn_list[0])]
     return cn_idx, en_idx, en_to_cn, cn_to_en
-
-
-def build_work_skins(roles: list[dict]) -> dict[str, dict[str, set]]:
-    """从角色条目的 skin 键聚合各作品皮肤词：{work: {"zh": set, "en": set}}。
-
-    皮肤词下沉到角色（方案A）：作品专属皮肤从角色 skin 键读，不再存 skin_tags。
-    """
-    out: dict[str, dict[str, set]] = {}
-    for r in roles:
-        wk = str(r.get("work", ""))
-        for skin in (r.get("skin") or []):
-            d = out.setdefault(wk, {"zh": set(), "en": set()})
-            d["zh"].update(str(x) for x in (skin.get("zh") or []))
-            d["en"].update(str(x) for x in (skin.get("en") or []))
-    return out
 
 
 def get_target_dirs(path: str | None) -> list[Path]:

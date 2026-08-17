@@ -17,7 +17,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
 from lib.kb.text import (  # noqa: E402
-    has_cjk, init_caps, is_skin_cn, is_skin_en, normalize_en_key,
+    has_cjk, init_caps, normalize_en_key,
     normalize_work_name,
 )
 from lib.kb.parse import (  # noqa: E402
@@ -190,8 +190,7 @@ def _eng_groups(segs: list[str]) -> list[tuple[int, int, str]]:
             while j < n and segs[j].isascii():
                 j += 1
             parts = [segs[k] for k in range(i, j)
-                     if segs[k].lower() not in CONTENT_TAGS
-                     and not is_skin_en(segs[k], None, None)]
+                     if segs[k].lower() not in CONTENT_TAGS]
             if parts:
                 out.append((i, j, "_".join(parts)))
             i = j
@@ -254,7 +253,6 @@ def match_role(fmt: str, role_zh: dict, role_en: dict):
 
 def resolve_name3(name: str, roles: list[dict],
                   en_to_cn: dict | None = None, cn_to_en: dict | None = None,
-                  work_skins: dict | None = None,
                   cn_alias: dict | None = None) -> dict:
     """整体匹配版解析器：第 1 步格式化 → 第 2 步作品/角色匹配 → 第 3 步重组。
 
@@ -294,7 +292,6 @@ def resolve_name3(name: str, roles: list[dict],
                 continue  # 跳过作品段
             raw = "-".join(spans[i][0] for i in range(s, e)
                            if segs[i].lower() not in CONTENT_TAGS
-                           and not is_skin_en(segs[i], None, None)
                            and not get_work_canonical(segs[i]))
             if raw:
                 en = raw
@@ -367,11 +364,11 @@ def resolve_name3(name: str, roles: list[dict],
                     en = cand
                     filled.append("EN standardized: " + cand)
 
-    # 第 3 步：残留段分类 + 重组（按原始位置归位）
+    # 第 3 步：残留段分类 + 重组（皮肤词不再特殊识别，作为普通词独立段保留原位）
     content_tag = ""
-    cn_skin, en_skin = "", ""
-    cn_seg: list[str] = []
+    cn_blocks: list[str] = []  # 中文段块，块间用 _ 连接（独立段保留）
     en_parts: list[str] = []
+    pending_pre = ""  # 角色前紧贴残留（原始无分隔，合并进角色块）
     for i, seg in enumerate(segs):
         if i < prefix_end:
             continue  # 前缀作品段（含多词作品后半段，如 Magia Record 的 record）
@@ -379,25 +376,16 @@ def resolve_name3(name: str, roles: list[dict],
         if low in CONTENT_TAGS:
             content_tag = CONTENT_CANON[low]
             continue
-        if is_skin_cn(seg, work, work_skins):
-            cn_skin = seg if not cn_skin else cn_skin + "_" + seg
-            continue
-        if is_skin_en(seg, work, work_skins):
-            en_skin = seg if not en_skin else en_skin + "-" + seg
-            continue
         if hit_key and hit_s <= i < hit_e:
-            # 角色段（可能跨多段）：只处理首段，段内剩余按原始顺序归位
+            # 角色段（可能跨多段）：只处理首段，段内剩余合并进角色名
             if i == hit_s:
                 full = "_".join(segs[hit_s:hit_e])
                 rem = full.replace(hit_key, "", 1) if hit_key in full else ""
-                if rem and is_skin_cn(rem, work, work_skins):
-                    # 角色段内剩余是皮肤词 -> 进皮肤位（末花泳装 -> 圣园未花_泳装）
-                    cn_skin = rem if not cn_skin else cn_skin + "_" + rem
-                    cn_seg.append(cn)
-                elif rem:
-                    cn_seg.append((cn + rem) if full.startswith(hit_key) else (rem + cn))
-                else:
-                    cn_seg.append(cn)
+                core = cn
+                if rem:
+                    core = (cn + rem) if full.startswith(hit_key) else (rem + cn)
+                cn_blocks.append(pending_pre + core)  # 前紧贴残留合并（xiao月雪宫子）
+                pending_pre = ""
             continue
         # 英文组已消费（en 命中段）-> 跳过，防英文段重复（如 Exusiai-The-New-Covenant）
         if en_range and en_range[0] <= i < en_range[1]:
@@ -412,19 +400,23 @@ def resolve_name3(name: str, roles: list[dict],
         if seg in role_en and work and work != "Unknown":
             if any(w == work for _n, w in role_en[seg]):
                 continue
-        # 未识别段：与角色段原始紧贴则进中文段原位（xiao 紧贴月雪宫子 -> xiao月雪宫子）
-        if hit_key:
-            if i == hit_s - 1 and spans[i][2] == spans[hit_s][1]:
-                cn_seg.append(seg)
-                continue
-            if i == hit_e and spans[hit_e - 1][2] == spans[i][1]:
-                cn_seg.append(seg)
-                continue
+        # 角色段前紧贴残留（原始无分隔，如 xiao）-> 累积，角色段时合并
+        if hit_key and i == hit_s - 1 and spans[i][2] == spans[hit_s][1]:
+            pending_pre += seg
+            continue
+        # 角色段后紧贴残留 -> 合并进角色块
+        if hit_key and i == hit_e and spans[hit_e - 1][2] == spans[i][1]:
+            if cn_blocks:
+                cn_blocks[-1] = cn_blocks[-1] + seg
+            else:
+                cn_blocks.append(seg)
+            continue
         if has_cjk(seg):
-            cn_seg.append(seg)
+            cn_blocks.append(seg)  # 独立未识别中文段（含皮肤词，独立保留）
         else:
             # 未识别英文保留原始大小写（spans 原始文本），不强制 init_caps
             en_parts.append(spans[i][0])
+    cn_seg_str = "_".join(cn_blocks)
 
     # 未识别英文并入 en（- 连接）：数据库/补全部分 init_caps，未识别部分保留原始；
     # 已含在补全 en 里的段（如 Shiroko ⊂ Sunaookami-Shiroko）不重复并入。
@@ -441,16 +433,11 @@ def resolve_name3(name: str, roles: list[dict],
     elif en:
         en = init_caps(en)
 
-    cn_seg_str = "".join(cn_seg)
     new = work
     if cn_seg_str:
         new += "_" + cn_seg_str
-        if cn_skin:
-            new += "_" + cn_skin
     if en:
         new += "_" + en
-        if en_skin:
-            new += "-" + init_caps(en_skin)
     if content_tag:
         new += "_" + content_tag
     if grade:
@@ -469,7 +456,7 @@ def resolve_name3(name: str, roles: list[dict],
     return {
         "original": orig, "new": new, "status": status, "notes": "; ".join(notes),
         "filled": "; ".join(filled), "work": work, "zh": cn, "en": en, "grade": grade,
-        "cn_skin": cn_skin, "en_skin": en_skin, "conflict": conflict,
+        "cn_skin": "", "en_skin": "", "conflict": conflict,
         "conflict_works": conflict_works, "work_source": work_source,
         "problems": problems, "candidate_skins": sorted(candidate_skins),
     }
@@ -553,7 +540,6 @@ def _related(a: str, b: str) -> bool:
 
 def resolve_name2(name: str, cn_idx: dict, en_idx: dict,
                   en_to_cn: dict | None = None, cn_to_en: dict | None = None,
-                  work_skins: dict | None = None,
                   cn_alias: dict | None = None) -> dict:
     """新版名称解析：Token 化 + 数据库归类 + 重组。
 
@@ -629,7 +615,6 @@ def resolve_name2(name: str, cn_idx: dict, en_idx: dict,
     cn_role_exact: set[str] = set()
     cn_alias_hits: dict[str, set] = {}
     en_role_exact: set[str] = set()
-    skin_tokens: set[str] = set()
     cn_pending: list[str] = []
     en_pending: list[str] = []
     content_tag = ""  # 内容分级标签（NSFW/SFW），重组放评级前
@@ -642,8 +627,6 @@ def resolve_name2(name: str, cn_idx: dict, en_idx: dict,
                     cn_alias_hits[t] = cn_alias[t]
                 else:
                     cn_role_exact.add(t)
-            elif is_skin_cn(t, "", work_skins):
-                skin_tokens.add(t)
             else:
                 cn_pending.append(t)
         else:
@@ -659,8 +642,6 @@ def resolve_name2(name: str, cn_idx: dict, en_idx: dict,
                 # 避免 HK416 与 Hk416 误判为 multiple en roles
                 if not any(normalize_en_key(e) == key for e in en_role_exact):
                     en_role_exact.add(t)
-            elif is_skin_en(t, "", work_skins):
-                skin_tokens.add(t)
             else:
                 en_pending.append(t)
 
@@ -683,7 +664,6 @@ def resolve_name2(name: str, cn_idx: dict, en_idx: dict,
 
     # 5) 中文角色提取：精确命中 + 子串提取（仅 work 已定或唯一归属）
     cn = ""
-    cn_skin = ""
     if len(cn_role_exact) == 1:
         cn = next(iter(cn_role_exact))
         cn_from_kb = True
@@ -711,24 +691,15 @@ def resolve_name2(name: str, cn_idx: dict, en_idx: dict,
                         # 规范名 + 剩余词原位，如 小花子 -> 小浦和花子）
                         cn = r
                         cn_from_kb = True
-                    if rem and not cn_skin:
-                        if is_skin_cn(rem, work, work_skins):
-                            cn_skin = rem  # 已收录皮肤词正常拆
-                        # 未收录皮肤词（酱/小小/小）不在此拼：重组时保留原位
                     cn_pending.remove(tok)
     # 未归类的剩余中文段：cn 为空时保留第一段为角色名（保持原样，待收录），
-    # 其余作为皮肤候选（供收录，如 `月雪宫子兔女郎` 拆出角色后的剩余）。
+    # 其余段在重组阶段作为普通独立段保留原位（皮肤不再特殊识别）。
     for tok in cn_pending:
         if not cn:
             cn = tok
-        elif tok != cn and tok != cn_skin:
-            candidate_skins.add(tok)
-            if not cn_skin:
-                cn_skin = tok
 
     # 6) 英文角色提取
     en = ""
-    en_skin = ""
     if len(en_role_exact) == 1:
         en = next(iter(en_role_exact))
     elif len(en_role_exact) > 1:
@@ -752,27 +723,16 @@ def resolve_name2(name: str, cn_idx: dict, en_idx: dict,
         else:
             notes.append("multiple en roles")
             problems.append("other")
-    # 英文 pending 段：若仅一段且是皮肤词则归皮肤，否则保留（可能是英文名写法）
+    # 英文 pending 段：未识别英文拼接为 en（可能是英文名写法）
     if not en and en_pending:
-        non_skin = [t for t in en_pending if not is_skin_en(t, work, work_skins)]
-        skin_part = [t for t in en_pending if is_skin_en(t, work, work_skins)]
-        if non_skin:
-            en = "-".join(non_skin)
-        if skin_part:
-            en_skin = "-".join(skin_part)
+        en = "-".join(en_pending)
     # 英文段内部剥离尾部内容标签（Miku-Rabbithole-Sfw -> Miku-Rabbithole + SFW）。
-    # nsfw/sfw 总在段尾，故先于皮肤剥离。
+    # nsfw/sfw 总在段尾。
     if en and "-" in en:
         head, tail = en.rsplit("-", 1)
         if head and tail and tail.lower() in CONTENT_TAGS:
             en = head
             content_tag = CONTENT_CANON[tail.lower()]
-    # 英文段内部剥离尾部皮肤（Hatsune-Miku-Swimsuit -> Hatsune-Miku + Swimsuit）
-    if en and "-" in en:
-        head, tail = en.rsplit("-", 1)
-        if head and tail and is_skin_en(tail, work, work_skins):
-            en = head
-            en_skin = tail if not en_skin else en_skin + "-" + tail
 
     # 6b) 作品反查：前缀未识别作品时，从精确/提取的角色反查（唯一命中才确定）
     conflict = False
@@ -841,13 +801,6 @@ def resolve_name2(name: str, cn_idx: dict, en_idx: dict,
         work = "Unknown"
         work_source = "unmatched"
 
-    # 6c) 皮肤 token 输出：中文皮肤词 → cn_skin，英文皮肤词 → en_skin
-    for s in sorted(skin_tokens):
-        if has_cjk(s):
-            cn_skin = s if not cn_skin else cn_skin + "_" + s
-        else:
-            en_skin = s if not en_skin else en_skin + "-" + s
-
     # 7) 英文名规范化 + 中英文补全（与旧逻辑一致）
     if en:
         en = init_caps(en)
@@ -889,27 +842,14 @@ def resolve_name2(name: str, cn_idx: dict, en_idx: dict,
                     cn = cand
                     filled.append("CN standardized: " + cand)
 
-    # 7.5) 只有皮肤词而无角色名：把皮肤提升为角色名（保留信息，如 Unknown_兔女郎）。
-    #      命名模板要求皮肤依附于角色；纯皮肤（无角色）时不丢弃，降级为角色名。
-    if not cn and not en and (cn_skin or en_skin):
-        if cn_skin:
-            cn = cn_skin
-            cn_skin = ""
-        if en_skin:
-            en = en_skin
-            en_skin = ""
-        notes.append("no role; skin kept as role name")
-
-    # 8) 重组输出（保留原顺序：角色/未识别词原位替换，皮肤移到皮肤位）
+    # 8) 重组输出（保留原顺序：角色/未识别词原位替换）
     #    中文角色段按原 rest token 顺序重建：命中的角色子串替换为规范名、
-    #    未识别词（如 xiao/小）保留原位、皮肤与作品标记 token 抽离。
+    #    未识别词（如 xiao/小）保留原位、作品标记 token 抽离。
     cn_seg: list[str] = []
     for t in rest:
         if t == grade:
             continue
         if has_cjk(t):
-            if is_skin_cn(t, work, work_skins):
-                continue  # 皮肤已收集到 cn_skin
             if t in cn_idx:
                 cn_seg.append(_canon_cn(t, cn_alias, work))
             else:
@@ -917,12 +857,8 @@ def resolve_name2(name: str, cn_idx: dict, en_idx: dict,
                 if m and work in cn_idx[m[0]]:
                     r, rem = m
                     std = _canon_cn(r, cn_alias, work)
-                    if rem and is_skin_cn(rem, work, work_skins):
-                        # 剩余是已收录皮肤词：只取角色标准名（皮肤已抽到 cn_skin）
-                        cn_seg.append(std)
-                    else:
-                        # 剩余词保留原位：角色在前 -> 标准名+剩余；剩余在前 -> 剩余+标准名
-                        cn_seg.append((std + rem) if t.startswith(r) else (rem + std))
+                    # 剩余词保留原位：角色在前 -> 标准名+剩余；剩余在前 -> 剩余+标准名
+                    cn_seg.append((std + rem) if t.startswith(r) else (rem + std))
                 else:
                     cn_seg.append(t)  # 未识别中文，原样保留
         else:
@@ -931,8 +867,6 @@ def resolve_name2(name: str, cn_idx: dict, en_idx: dict,
             key = normalize_en_key(t)
             if key and key in en_idx:
                 continue  # 角色英文在 en 位
-            if is_skin_en(t, work, work_skins):
-                continue  # 皮肤
             if work and work != "Unknown" and get_work_canonical(t):
                 # 作品标记 token：命中任意已知作品（缩写/全称）即丢弃。
                 # 作品应只出现在前缀；rest 中残留（如 xiao月雪宫子BA 的末尾 BA、
@@ -949,27 +883,21 @@ def resolve_name2(name: str, cn_idx: dict, en_idx: dict,
                 tk = normalize_en_key(t)
                 if (tk == enk or enk.endswith("-" + tk) or enk.startswith(tk + "-")):
                     continue
-                if en_skin and tk == normalize_en_key(en_skin):
-                    continue
             if "-" in t:
                 segs = t.split("-")
-                if any(s.lower() in CONTENT_TAGS for s in segs) \
-                   or any(is_skin_en(s, work, work_skins) for s in segs):
+                if any(s.lower() in CONTENT_TAGS for s in segs):
                     continue
             cn_seg.append(t)  # 未识别英文（xiao）保留到中文段
-    cn_seg_str = "".join(cn_seg)
+    # 段间用 _ 连接（独立段保留原位，皮肤/形态词不合并，见 ①A）
+    cn_seg_str = "_".join(cn_seg)
     if cn and cn in (cn_alias or {}):
         cn = _canon_cn(cn, cn_alias, work)
 
     new = work
     if cn_seg_str:
         new += "_" + cn_seg_str
-        if cn_skin:
-            new += "_" + cn_skin
     if en:
         new += "_" + en
-        if en_skin:
-            new += "-" + en_skin
     if content_tag:
         new += "_" + content_tag
     if grade:
@@ -988,7 +916,7 @@ def resolve_name2(name: str, cn_idx: dict, en_idx: dict,
     return {
         "original": orig, "new": new, "status": status, "notes": "; ".join(notes),
         "filled": "; ".join(filled), "work": work, "zh": cn, "en": en, "grade": grade,
-        "cn_skin": cn_skin, "en_skin": en_skin, "conflict": conflict,
+        "cn_skin": "", "en_skin": "", "conflict": conflict,
         "conflict_works": conflict_works, "work_source": work_source,
         "problems": problems, "candidate_skins": sorted(candidate_skins),
     }
