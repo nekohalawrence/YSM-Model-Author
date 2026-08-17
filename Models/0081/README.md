@@ -11,7 +11,7 @@
 ## Models
 
 <details>
-<summary><b>GBC 哭泣少女乐队（1）</b></summary>
+<summary><b>Girls Band Cry | 哭泣少女乐队（1）</b></summary>
 
 - [GBC_井芹仁菜_Iseri-Nina](GBC_井芹仁菜_Iseri-Nina)
 

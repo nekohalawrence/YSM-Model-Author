@@ -11,7 +11,7 @@
 ## Models
 
 <details>
-<summary><b>HI3 崩坏 3（9）</b></summary>
+<summary><b>Honkai-Impact-3 | 崩坏 3（9）</b></summary>
 
 - [HI3_Delta-1_LB](HI3_Delta-1_LB)
 - [HI3_Delta_LB](HI3_Delta_LB)

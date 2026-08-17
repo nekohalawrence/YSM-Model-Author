@@ -10,7 +10,7 @@
 ## Models
 
 <details>
-<summary><b>AK 明日方舟（10）</b></summary>
+<summary><b>Arknights | 明日方舟（10）</b></summary>
 
 - [AK_Mon3tr_LA](AK_Mon3tr_LA)
 - [AK_佩佩_Pepe](AK_佩佩_Pepe)
@@ -26,7 +26,7 @@
 </details>
 
 <details>
-<summary><b>AKE 明日方舟：终末地（2）</b></summary>
+<summary><b>Arknights-Endfield | 明日方舟：终末地（2）</b></summary>
 
 - [AKE_抽象终末地](AKE_抽象终末地)
 - [AKE_莱万汀_Laevatain_LA](AKE_莱万汀_Laevatain_LA)
@@ -34,7 +34,7 @@
 </details>
 
 <details>
-<summary><b>AL 碧蓝航线（6）</b></summary>
+<summary><b>Azur-Lane | 碧蓝航线（6）</b></summary>
 
 - [AL_吸血鬼_Vampire_LB](AL_吸血鬼_Vampire_LB)
 - [AL_怨仇级航空母舰_Implacable](AL_怨仇级航空母舰_Implacable)
@@ -46,21 +46,21 @@
 </details>
 
 <details>
-<summary><b>FGO 命运 - 冠位指定（1）</b></summary>
+<summary><b>Fate-Grand-Order | 命运 - 冠位指定（1）</b></summary>
 
 - [FGO_妖精骑士·兰斯洛特_Fairy-Knight-Lancelot](FGO_妖精骑士·兰斯洛特_Fairy-Knight-Lancelot)
 
 </details>
 
 <details>
-<summary><b>GF 少女前线（1）</b></summary>
+<summary><b>Girls' Frontline | 少女前线（1）</b></summary>
 
 - [GF_可露凯_Hk416_Klukai](GF_可露凯_Hk416_Klukai)
 
 </details>
 
 <details>
-<summary><b>GI 原神（5）</b></summary>
+<summary><b>Genshin Impact | 原神（5）</b></summary>
 
 - [GI_克洛琳德_Clorinde](GI_克洛琳德_Clorinde)
 - [GI_可莉_Klee](GI_可莉_Klee)
@@ -71,14 +71,14 @@
 </details>
 
 <details>
-<summary><b>HI3 崩坏 3（1）</b></summary>
+<summary><b>Honkai-Impact-3 | 崩坏 3（1）</b></summary>
 
 - [HI3_希儿·芙乐艾_Seele-Vollerei](HI3_希儿·芙乐艾_Seele-Vollerei)
 
 </details>
 
 <details>
-<summary><b>HSR 崩坏：星穹铁道（4）</b></summary>
+<summary><b>Honkai-Star-Rail | 崩坏：星穹铁道（4）</b></summary>
 
 - [HSR_克拉拉_Clara_LC](HSR_克拉拉_Clara_LC)
 - [HSR_昔涟_Cyrene_LA](HSR_昔涟_Cyrene_LA)
@@ -88,28 +88,28 @@
 </details>
 
 <details>
-<summary><b>JJK 咒术回战（1）</b></summary>
+<summary><b>Jujutsu Kaisen | 咒术回战（1）</b></summary>
 
 - [JJK_宿傩_Ryomen-Sukuna_LB](JJK_宿傩_Ryomen-Sukuna_LB)
 
 </details>
 
 <details>
-<summary><b>Madoka 魔法少女小圆（1）</b></summary>
+<summary><b>Puella Magi Madoka Magica | 魔法少女小圆（1）</b></summary>
 
 - [Madoka_鹿目圆_神装_Kaname-Madoka_LB](Madoka_鹿目圆_神装_Kaname-Madoka_LB)
 
 </details>
 
 <details>
-<summary><b>Magia-Record 魔法纪录 魔法少女小圆外传（1）</b></summary>
+<summary><b>Magia Record: Puella Magi Madoka Magica Side Story | 魔法纪录 魔法少女小圆外传（1）</b></summary>
 
 - [Magia-Record_濑奈命_Sena-Mikoto_LB](Magia-Record_濑奈命_Sena-Mikoto_LB)
 
 </details>
 
 <details>
-<summary><b>Minecraft 我的世界（2）</b></summary>
+<summary><b>Minecraft | 我的世界（2）</b></summary>
 
 - [Minecraft_发光鱿鱼娘_Glo- Squid](Minecraft_发光鱿鱼娘_Glo- Squid)
 - [Minecraft_狐狸_Fox_LC](Minecraft_狐狸_Fox_LC)
@@ -117,28 +117,28 @@
 </details>
 
 <details>
-<summary><b>MSNS 魔都精兵的奴隶（1）</b></summary>
+<summary><b>Mato Seihei no Sureibu | 魔都精兵的奴隶（1）</b></summary>
 
 - [MSNS_山城恋_Yamashiro-Ren_LC](MSNS_山城恋_Yamashiro-Ren_LC)
 
 </details>
 
 <details>
-<summary><b>Naga-u ながユー（1）</b></summary>
+<summary><b>naga u | ながユー（1）</b></summary>
 
 - [Naga-u_兽耳酱_酱_Kemomimi](Naga-u_兽耳酱_酱_Kemomimi)
 
 </details>
 
 <details>
-<summary><b>NGE 新世纪福音战士（1）</b></summary>
+<summary><b>Neon-Genesis-Evangelion | 新世纪福音战士（1）</b></summary>
 
 - [NGE_明日香_Asuka_LB](NGE_明日香_Asuka_LB)
 
 </details>
 
 <details>
-<summary><b>NTE 异环（2）</b></summary>
+<summary><b>Neverness to Everness | 异环（2）</b></summary>
 
 - [NTE_安魂曲_Lacrimosa](NTE_安魂曲_Lacrimosa)
 - [NTE_薄荷_Bohe_LA](NTE_薄荷_Bohe_LA)
@@ -146,7 +146,7 @@
 </details>
 
 <details>
-<summary><b>OC 原创角色（1）</b></summary>
+<summary><b>Original Character | 原创角色（1）</b></summary>
 
 - [OC_天眼泡狐龙_Wine-Fox_LA](OC_天眼泡狐龙_Wine-Fox_LA)
 
@@ -160,7 +160,7 @@
 </details>
 
 <details>
-<summary><b>Strinova 卡拉比丘（2）</b></summary>
+<summary><b>Strinova | 卡拉比丘（2）</b></summary>
 
 - [Strinova_心夏_机动天使_Kokona_LB](Strinova_心夏_机动天使_Kokona_LB)
 - [Strinova_香奈美_Jk_Kanami-Jk](Strinova_香奈美_Jk_Kanami-Jk)
@@ -168,14 +168,14 @@
 </details>
 
 <details>
-<summary><b>Tokyo-Ghoul 东京食尸鬼（1）</b></summary>
+<summary><b>Tokyo Ghoul | 东京食尸鬼（1）</b></summary>
 
 - [Tokyo-Ghoul_金木研_Kaneki-Ken](Tokyo-Ghoul_金木研_Kaneki-Ken)
 
 </details>
 
 <details>
-<summary><b>Touhou 东方 Project（4）</b></summary>
+<summary><b>Touhou-Project | 东方 Project（4）</b></summary>
 
 - [Touhou_十六夜咲夜_Izayoi-Sakuya_LA](Touhou_十六夜咲夜_Izayoi-Sakuya_LA)
 - [Touhou_博丽灵梦_Hakurei-Reimu_LB](Touhou_博丽灵梦_Hakurei-Reimu_LB)
@@ -185,7 +185,7 @@
 </details>
 
 <details>
-<summary><b>VOC 博歌乐（2）</b></summary>
+<summary><b>VOCALOID | 博歌乐（2）</b></summary>
 
 - [VOC_初音未来_Hatsune-Miku_LB](VOC_初音未来_Hatsune-Miku_LB)
 - [VOC_雪未来_Yuki-Miku_LB](VOC_雪未来_Yuki-Miku_LB)
@@ -193,7 +193,7 @@
 </details>
 
 <details>
-<summary><b>WW 鸣潮（5）</b></summary>
+<summary><b>Wuthering-Waves | 鸣潮（5）</b></summary>
 
 - [WW_卡提希娅_Cartethyia_LA](WW_卡提希娅_Cartethyia_LA)
 - [WW_守岸人_The-Shorekeeper](WW_守岸人_The-Shorekeeper)
@@ -211,7 +211,7 @@
 </details>
 
 <details>
-<summary><b>ZZZ 绝区零（1）</b></summary>
+<summary><b>Zenless-Zone-Zero | 绝区零（1）</b></summary>
 
 - [ZZZ_艾莲·乔_Ellen-Joe](ZZZ_艾莲·乔_Ellen-Joe)
 

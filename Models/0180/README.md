@@ -9,7 +9,7 @@
 ## Models
 
 <details>
-<summary><b>AK 明日方舟（1）</b></summary>
+<summary><b>Arknights | 明日方舟（1）</b></summary>
 
 - [AK_新约能天使_Exusiai-The-New-Covenant](AK_新约能天使_Exusiai-The-New-Covenant)
 

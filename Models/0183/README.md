@@ -12,21 +12,21 @@
 ## Models
 
 <details>
-<summary><b>DOHNA 多娜多娜 一起干坏事吧！（1）</b></summary>
+<summary><b>Dohna Dohna: Let's Do Bad Things Together | 多娜多娜 一起干坏事吧！（1）</b></summary>
 
 - [DOHNA_珀尔诺_LA](DOHNA_珀尔诺_LA)
 
 </details>
 
 <details>
-<summary><b>HI3 崩坏 3（1）</b></summary>
+<summary><b>Honkai-Impact-3 | 崩坏 3（1）</b></summary>
 
 - [HI3_希儿·芙乐艾_Seele-Vollerei_LB](HI3_希儿·芙乐艾_Seele-Vollerei_LB)
 
 </details>
 
 <details>
-<summary><b>VTuber 虚拟主播（1）</b></summary>
+<summary><b>Virtual YouTuber | 虚拟主播（1）</b></summary>
 
 - [VTuber_噶唔·古拉_LB](VTuber_噶唔·古拉_LB)
 

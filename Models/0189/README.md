@@ -7,7 +7,7 @@
 ## Models
 
 <details>
-<summary><b>BA 碧蓝档案（2）</b></summary>
+<summary><b>Blue-Archive | 碧蓝档案（2）</b></summary>
 
 - [BA_下江小春_Shimoe Koharu_LB](BA_下江小春_Shimoe Koharu_LB)
 - [BA_龙华妃咲_Kisaki-Ryuuge](BA_龙华妃咲_Kisaki-Ryuuge)

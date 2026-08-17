@@ -7,7 +7,7 @@
 ## Models
 
 <details>
-<summary><b>HI3 崩坏 3（1）</b></summary>
+<summary><b>Honkai-Impact-3 | 崩坏 3（1）</b></summary>
 
 - [HI3_布洛妮娅_Bronya-Rand](HI3_布洛妮娅_Bronya-Rand)
 

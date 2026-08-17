@@ -7,7 +7,7 @@
 ## Models
 
 <details>
-<summary><b>AL 碧蓝航线（4）</b></summary>
+<summary><b>Azur-Lane | 碧蓝航线（4）</b></summary>
 
 - [AL_尼米_Z23_LA](AL_尼米_Z23_LA)
 - [AL_标枪_Javelin_LA](AL_标枪_Javelin_LA)
@@ -17,7 +17,7 @@
 </details>
 
 <details>
-<summary><b>AveMujica 颂乐人偶（1）</b></summary>
+<summary><b>BanG Dream! Ave Mujica | 颂乐人偶（1）</b></summary>
 
 - [AveMujica_丰川祥子_Togawa-Sakiko_LB](AveMujica_丰川祥子_Togawa-Sakiko_LB)
 

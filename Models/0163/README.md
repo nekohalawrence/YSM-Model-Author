@@ -11,7 +11,7 @@
 ## Models
 
 <details>
-<summary><b>OC 原创角色（2）</b></summary>
+<summary><b>Original Character | 原创角色（2）</b></summary>
 
 - [OC_雨倩的透明兔女郎_LA](OC_雨倩的透明兔女郎_LA)
 - [OC_雨倩的通勤太空服_LA](OC_雨倩的通勤太空服_LA)

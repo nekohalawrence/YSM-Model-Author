@@ -7,7 +7,7 @@
 ## Models
 
 <details>
-<summary><b>BA 碧蓝档案（2）</b></summary>
+<summary><b>Blue-Archive | 碧蓝档案（2）</b></summary>
 
 - [BA_春原心奈_Sunohara-Kokona_LB](BA_春原心奈_Sunohara-Kokona_LB)
 - [BA_飞鸟马时_Asuma-Toki_LA](BA_飞鸟马时_Asuma-Toki_LA)

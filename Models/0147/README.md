@@ -9,7 +9,7 @@
 ## Models
 
 <details>
-<summary><b>BA 碧蓝档案（3）</b></summary>
+<summary><b>Blue-Archive | 碧蓝档案（3）</b></summary>
 
 - [BA_生盐诺亚&早濑优香-noa08](BA_生盐诺亚&早濑优香-noa08)
 - [BA_生盐诺亚_Ushio-Noa](BA_生盐诺亚_Ushio-Noa)

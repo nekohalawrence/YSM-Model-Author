@@ -9,7 +9,7 @@
 ## Models
 
 <details>
-<summary><b>MyGO 迷途之子！！！！！（5）</b></summary>
+<summary><b>BanG Dream! It's MyGO!!!!! | 迷途之子！！！！！（5）</b></summary>
 
 - [MyGO_椎名立希_LB](MyGO_椎名立希_LB)
 - [MyGO_爱音_LB](MyGO_爱音_LB)
@@ -20,7 +20,7 @@
 </details>
 
 <details>
-<summary><b>UmaMusume 闪耀！优俊少女（2）</b></summary>
+<summary><b>Umamusume: Pretty Derby | 闪耀！优俊少女（2）</b></summary>
 
 - [UmaMusume_爱丽数码_常服_UM-Agnes-Digital_LB](UmaMusume_爱丽数码_常服_UM-Agnes-Digital_LB)
 - [UmaMusume_菱钻奇宝_UM-Hishi-Miracle_LB](UmaMusume_菱钻奇宝_UM-Hishi-Miracle_LB)

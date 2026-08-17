@@ -11,7 +11,7 @@
 ## Models
 
 <details>
-<summary><b>OC 原创角色（2）</b></summary>
+<summary><b>Original Character | 原创角色（2）</b></summary>
 
 - [OC_糖一色_Shiny-Vtuber](OC_糖一色_Shiny-Vtuber)
 - [OC_酱_TN](OC_酱_TN)

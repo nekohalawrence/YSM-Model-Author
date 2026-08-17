@@ -11,7 +11,7 @@
 ## Models
 
 <details>
-<summary><b>BA 碧蓝档案（6）</b></summary>
+<summary><b>Blue-Archive | 碧蓝档案（6）</b></summary>
 
 - [BA_圣园未花_Mika-Misono](BA_圣园未花_Mika-Misono)
 - [BA_小鸟游星野_Takanashi-Hoshino](BA_小鸟游星野_Takanashi-Hoshino)
@@ -23,7 +23,7 @@
 </details>
 
 <details>
-<summary><b>Nikke 胜利女神：妮姬（1）</b></summary>
+<summary><b>Goddess of Victory: Nikke | 胜利女神：妮姬（1）</b></summary>
 
 - [Nikke_爱丽丝_Alice](Nikke_爱丽丝_Alice)
 

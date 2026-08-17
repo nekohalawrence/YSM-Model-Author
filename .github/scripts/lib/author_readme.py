@@ -64,10 +64,13 @@ def _classify_platforms(platforms: dict,
     return out
 
 
-def load_work_names() -> dict[str, str]:
-    """读 character/*.json 构建 {作品键: 中文规范名}（work.name.zh）。"""
+def load_work_names() -> dict[str, dict]:
+    """读 character/*.json 构建 {作品键: {'zh': 中文名, 'en': 英文名}}。
+
+    英文名可能缺失（如 OC/部分动漫作品只有中文名），调用方需回退处理。
+    """
     rdir = lib_paths.data_path('model-info', 'character')
-    out: dict[str, str] = {}
+    out: dict[str, dict] = {}
     if rdir.is_dir():
         for f in sorted(rdir.glob('*.json')):
             content = lib_paths.load_json(f, {})
@@ -79,8 +82,10 @@ def load_work_names() -> dict[str, str]:
             abbr = work.get('abbr') or work.get('name') or ''
             name_map = work.get('name') or {}
             zh = name_map.get('zh') if isinstance(name_map, dict) else name_map
-            if abbr and zh:
-                out[str(abbr)] = str(zh)
+            en = name_map.get('en') if isinstance(name_map, dict) else ''
+            if abbr and (zh or en):
+                out[str(abbr)] = {'zh': str(zh) if zh else '',
+                                  'en': str(en) if en else ''}
     return out
 
 
@@ -100,9 +105,18 @@ def render_models_section(models: list[str], work_names: dict[str, str]) -> str:
     lines = ['## Models', '']
     for prefix in ordered:
         items = groups[prefix]
-        # Unknown 本身即"未知"，不再叠加完整名；其余作品查 character/*.json 的中文名
-        full = '' if prefix.lower() == 'unknown' else work_names.get(prefix, '')
-        title = f'{prefix} {full}（{len(items)}）' if full else f'{prefix}（{len(items)}）'
+        # Unknown 本身即"未知"，不再叠加完整名；其余作品查 character/*.json 的中英文名
+        info = {} if prefix.lower() == 'unknown' else work_names.get(prefix, {})
+        zh = info.get('zh', '') if isinstance(info, dict) else ''
+        en = info.get('en', '') if isinstance(info, dict) else ''
+        if zh and en:
+            title = f'{en} | {zh}（{len(items)}）'
+        elif zh:
+            title = f'{zh}（{len(items)}）'
+        elif en:
+            title = f'{en}（{len(items)}）'
+        else:
+            title = f'{prefix}（{len(items)}）'
         lines.append('<details>')
         lines.append(f'<summary><b>{title}</b></summary>')
         lines.append('')

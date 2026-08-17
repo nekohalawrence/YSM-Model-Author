@@ -9,7 +9,7 @@
 ## Models
 
 <details>
-<summary><b>MGWT 魔法少女的魔女审判（1）</b></summary>
+<summary><b>Magical Girl Witch Trial | 魔法少女的魔女审判（1）</b></summary>
 
 - [MGWT_樱羽艾玛_Sakuraba-Ema](MGWT_樱羽艾玛_Sakuraba-Ema)
 

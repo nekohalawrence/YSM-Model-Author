@@ -10,7 +10,7 @@
 ## Models
 
 <details>
-<summary><b>OC 原创角色（2）</b></summary>
+<summary><b>Original Character | 原创角色（2）</b></summary>
 
 - [OC_酒狐_Wine-Fox](OC_酒狐_Wine-Fox)
 - [OC_鲸鱼娘_DeepSeek](OC_鲸鱼娘_DeepSeek)

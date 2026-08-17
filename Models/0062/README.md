@@ -12,7 +12,7 @@
 ## Models
 
 <details>
-<summary><b>AK 明日方舟（5）</b></summary>
+<summary><b>Arknights | 明日方舟（5）</b></summary>
 
 - [AK_佩佩_Pepe_LB](AK_佩佩_Pepe_LB)
 - [AK_塑心_Virtuosa_LC](AK_塑心_Virtuosa_LC)

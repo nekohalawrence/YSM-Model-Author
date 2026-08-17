@@ -11,7 +11,7 @@
 ## Models
 
 <details>
-<summary><b>AK 明日方舟（5）</b></summary>
+<summary><b>Arknights | 明日方舟（5）</b></summary>
 
 - [AK_嵯峨_Saga](AK_嵯峨_Saga)
 - [AK_巫恋_Shamare-WitchFeast](AK_巫恋_Shamare-WitchFeast)
@@ -22,21 +22,21 @@
 </details>
 
 <details>
-<summary><b>AL 碧蓝航线（1）</b></summary>
+<summary><b>Azur-Lane | 碧蓝航线（1）</b></summary>
 
 - [AL_天城_Amagi-Summer](AL_天城_Amagi-Summer)
 
 </details>
 
 <details>
-<summary><b>Animal 动物（1）</b></summary>
+<summary><b>Animal | 动物（1）</b></summary>
 
 - [Animal_蟑螂娘_Cockroach-Girl](Animal_蟑螂娘_Cockroach-Girl)
 
 </details>
 
 <details>
-<summary><b>BA 碧蓝档案（32）</b></summary>
+<summary><b>Blue-Archive | 碧蓝档案（32）</b></summary>
 
 - [BA_下江小春_Shimoe Koharu](BA_下江小春_Shimoe Koharu)
 - [BA_伊草遥香_Igusa Haruka](BA_伊草遥香_Igusa Haruka)
@@ -74,21 +74,21 @@
 </details>
 
 <details>
-<summary><b>GCG 双生视界（1）</b></summary>
+<summary><b>Girl Cafe Gun | 双生视界（1）</b></summary>
 
 - [GCG_时无瑕_常服_Shi-Wuxia](GCG_时无瑕_常服_Shi-Wuxia)
 
 </details>
 
 <details>
-<summary><b>GF 少女前线（1）</b></summary>
+<summary><b>Girls' Frontline | 少女前线（1）</b></summary>
 
 - [GF_M4A-MODIII](GF_M4A-MODIII)
 
 </details>
 
 <details>
-<summary><b>Minecraft 我的世界（5）</b></summary>
+<summary><b>Minecraft | 我的世界（5）</b></summary>
 
 - [Minecraft_凋零娘_Wither_LA](Minecraft_凋零娘_Wither_LA)
 - [Minecraft_坚守者娘_Warden_LA](Minecraft_坚守者娘_Warden_LA)
@@ -99,7 +99,7 @@
 </details>
 
 <details>
-<summary><b>OC 原创角色（5）</b></summary>
+<summary><b>Original Character | 原创角色（5）</b></summary>
 
 - [OC_提可拉_Tikola](OC_提可拉_Tikola)
 - [OC_斯塔](OC_斯塔)
@@ -117,42 +117,42 @@
 </details>
 
 <details>
-<summary><b>Tensura 关于我转生变成史莱姆这档事（1）</b></summary>
+<summary><b>That Time I Got Reincarnated as a Slime | 关于我转生变成史莱姆这档事（1）</b></summary>
 
 - [Tensura_Tensura-Milim-Nava](Tensura_Tensura-Milim-Nava)
 
 </details>
 
 <details>
-<summary><b>UmaMusume 闪耀！优俊少女（1）</b></summary>
+<summary><b>Umamusume: Pretty Derby | 闪耀！优俊少女（1）</b></summary>
 
 - [UmaMusume_Mcqueen](UmaMusume_Mcqueen)
 
 </details>
 
 <details>
-<summary><b>Utau 虚拟歌手（1）</b></summary>
+<summary><b>Utauloid | 虚拟歌手（1）</b></summary>
 
 - [Utau_重音_Teto-Kasane-Teto](Utau_重音_Teto-Kasane-Teto)
 
 </details>
 
 <details>
-<summary><b>WW 鸣潮（1）</b></summary>
+<summary><b>Wuthering-Waves | 鸣潮（1）</b></summary>
 
 - [WW_达妮娅](WW_达妮娅)
 
 </details>
 
 <details>
-<summary><b>YogYard 犹格索托斯的庭院：炼金旅社（1）</b></summary>
+<summary><b>Yog-Sothoth's Yard | 犹格索托斯的庭院：炼金旅社（1）</b></summary>
 
 - [YogYard_特莉波卡_Tlipoca](YogYard_特莉波卡_Tlipoca)
 
 </details>
 
 <details>
-<summary><b>ZZZ 绝区零（1）</b></summary>
+<summary><b>Zenless-Zone-Zero | 绝区零（1）</b></summary>
 
 - [ZZZ_安比](ZZZ_安比)
 

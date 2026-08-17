@@ -12,7 +12,7 @@
 ## Models
 
 <details>
-<summary><b>BA 碧蓝档案（5）</b></summary>
+<summary><b>Blue-Archive | 碧蓝档案（5）</b></summary>
 
 - [BA_伊吕波_Iroha](BA_伊吕波_Iroha)
 - [BA_才羽桃井_Saiba-Momoi](BA_才羽桃井_Saiba-Momoi)
@@ -23,7 +23,7 @@
 </details>
 
 <details>
-<summary><b>GBC 哭泣少女乐队（5）</b></summary>
+<summary><b>Girls Band Cry | 哭泣少女乐队（5）</b></summary>
 
 - [GBC_井芹仁菜_Iseri-Nina_LA](GBC_井芹仁菜_Iseri-Nina_LA)
 - [GBC_卢帕_RUPA_LB](GBC_卢帕_RUPA_LB)
@@ -41,14 +41,14 @@
 </details>
 
 <details>
-<summary><b>NTE 异环（1）</b></summary>
+<summary><b>Neverness to Everness | 异环（1）</b></summary>
 
 - [NTE_安魂曲_Lacrimosa_LA](NTE_安魂曲_Lacrimosa_LA)
 
 </details>
 
 <details>
-<summary><b>ZZZ 绝区零（1）</b></summary>
+<summary><b>Zenless-Zone-Zero | 绝区零（1）</b></summary>
 
 - [ZZZ_星见雅_Hoshimi-Miyabi_LA](ZZZ_星见雅_Hoshimi-Miyabi_LA)
 

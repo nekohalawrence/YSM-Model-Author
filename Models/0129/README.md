@@ -10,7 +10,7 @@
 ## Models
 
 <details>
-<summary><b>BA 碧蓝档案（58）</b></summary>
+<summary><b>Blue-Archive | 碧蓝档案（58）</b></summary>
 
 - [BA_七度雪乃_Fox1_LA](BA_七度雪乃_Fox1_LA)
 - [BA_下江小春_Shimoe Koharu_LB](BA_下江小春_Shimoe Koharu_LB)
@@ -74,14 +74,14 @@
 </details>
 
 <details>
-<summary><b>MHO 負けヒロインが多すぎる！（1）</b></summary>
+<summary><b>Make Heroine ga Oosugiru! | 負けヒロインが多すぎる！（1）</b></summary>
 
 - [MHO_八奈见杏菜_Yanami-Anna_LA](MHO_八奈见杏菜_Yanami-Anna_LA)
 
 </details>
 
 <details>
-<summary><b>Saekano 路人女主的养成方法（2）</b></summary>
+<summary><b>Saekano: How to Raise a Boring Girlfriend | 路人女主的养成方法（2）</b></summary>
 
 - [Saekano_加藤惠_Katō Megumi](Saekano_加藤惠_Katō Megumi)
 - [Saekano_英梨梨_Eriri](Saekano_英梨梨_Eriri)
@@ -89,7 +89,7 @@
 </details>
 
 <details>
-<summary><b>ZZZ 绝区零（1）</b></summary>
+<summary><b>Zenless-Zone-Zero | 绝区零（1）</b></summary>
 
 - [ZZZ_星见雅_Hoshimi-Miyabi_LA](ZZZ_星见雅_Hoshimi-Miyabi_LA)
 

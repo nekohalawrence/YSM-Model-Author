@@ -12,7 +12,7 @@
 ## Models
 
 <details>
-<summary><b>AK 明日方舟（16）</b></summary>
+<summary><b>Arknights | 明日方舟（16）</b></summary>
 
 - [AK_凯尔希_Kal'tsit_LA](AK_凯尔希_Kal'tsit_LA)
 - [AK_凯尔希_原皮_Kal'tsit_LB](AK_凯尔希_原皮_Kal'tsit_LB)
@@ -34,14 +34,14 @@
 </details>
 
 <details>
-<summary><b>Food Girls 食用系少女（1）</b></summary>
+<summary><b>Food Girls | 食用系少女（1）</b></summary>
 
 - [Food Girls_絢樱_LC](Food Girls_絢樱_LC)
 
 </details>
 
 <details>
-<summary><b>VTuber 虚拟主播（1）</b></summary>
+<summary><b>Virtual YouTuber | 虚拟主播（1）</b></summary>
 
 - [VTuber_艾伊菈_Ahyra_LA](VTuber_艾伊菈_Ahyra_LA)
 

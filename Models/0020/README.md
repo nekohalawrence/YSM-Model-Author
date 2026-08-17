@@ -12,7 +12,7 @@
 ## Models
 
 <details>
-<summary><b>AL 碧蓝航线（2）</b></summary>
+<summary><b>Azur-Lane | 碧蓝航线（2）</b></summary>
 
 - [AL_恶毒_懒懒的白兔_LeMalin](AL_恶毒_懒懒的白兔_LeMalin)
 - [AL_拉菲_兔女郎_Laffey-Bunnygirl_LA](AL_拉菲_兔女郎_Laffey-Bunnygirl_LA)
@@ -20,7 +20,7 @@
 </details>
 
 <details>
-<summary><b>BA 碧蓝档案（6）</b></summary>
+<summary><b>Blue-Archive | 碧蓝档案（6）</b></summary>
 
 - [BA_下江小春_Shimoe Koharu](BA_下江小春_Shimoe Koharu)
 - [BA_宇泽玲纱_Uzawa-Reisa](BA_宇泽玲纱_Uzawa-Reisa)
@@ -32,14 +32,14 @@
 </details>
 
 <details>
-<summary><b>HSR 崩坏：星穹铁道（1）</b></summary>
+<summary><b>Honkai-Star-Rail | 崩坏：星穹铁道（1）</b></summary>
 
 - [HSR_白露_Bailu](HSR_白露_Bailu)
 
 </details>
 
 <details>
-<summary><b>OC 原创角色（6）</b></summary>
+<summary><b>Original Character | 原创角色（6）</b></summary>
 
 - [OC_Yingwuluo](OC_Yingwuluo)
 - [OC_星屑海螺_小小海螺](OC_星屑海螺_小小海螺)

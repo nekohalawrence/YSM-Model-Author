@@ -11,7 +11,7 @@
 ## Models
 
 <details>
-<summary><b>AL 碧蓝航线（8）</b></summary>
+<summary><b>Azur-Lane | 碧蓝航线（8）</b></summary>
 
 - [AL_埃吉尔_Kms-ägir_LA](AL_埃吉尔_Kms-ägir_LA)
 - [AL_天狼星_Sirius_LA](AL_天狼星_Sirius_LA)
@@ -25,7 +25,7 @@
 </details>
 
 <details>
-<summary><b>HI3 崩坏 3（2）</b></summary>
+<summary><b>Honkai-Impact-3 | 崩坏 3（2）</b></summary>
 
 - [HI3_幽兰戴尔_Durandal_LA](HI3_幽兰戴尔_Durandal_LA)
 - [HI3_阿波尼亚_Aponia_LA](HI3_阿波尼亚_Aponia_LA)
@@ -33,14 +33,14 @@
 </details>
 
 <details>
-<summary><b>HSR 崩坏：星穹铁道（1）</b></summary>
+<summary><b>Honkai-Star-Rail | 崩坏：星穹铁道（1）</b></summary>
 
 - [HSR_花火_Huahuo_LA](HSR_花火_Huahuo_LA)
 
 </details>
 
 <details>
-<summary><b>MGC 魔法少女天穹法妮雅（1）</b></summary>
+<summary><b>Magical Girl Celesphonia | 魔法少女天穹法妮雅（1）</b></summary>
 
 - [MGC_天穹法尼雅_Fania](MGC_天穹法尼雅_Fania)
 

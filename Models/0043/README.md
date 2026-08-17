@@ -11,7 +11,7 @@
 ## Models
 
 <details>
-<summary><b>BA 碧蓝档案（3）</b></summary>
+<summary><b>Blue-Archive | 碧蓝档案（3）</b></summary>
 
 - [BA_Highlande-Nozomi](BA_Highlande-Nozomi)
 - [BA_光(海兰德铁道学院)-Hikari(Highlande)](BA_光(海兰德铁道学院)-Hikari(Highlande))
@@ -20,7 +20,7 @@
 </details>
 
 <details>
-<summary><b>GI 原神（3）</b></summary>
+<summary><b>Genshin Impact | 原神（3）</b></summary>
 
 - [GI_甘雨_Ganyu](GI_甘雨_Ganyu)
 - [GI_申鹤_Shenghe](GI_申鹤_Shenghe)
@@ -36,21 +36,21 @@
 </details>
 
 <details>
-<summary><b>OC 原创角色（1）</b></summary>
+<summary><b>Original Character | 原创角色（1）</b></summary>
 
 - [OC_酒狐_Wine-Fox](OC_酒狐_Wine-Fox)
 
 </details>
 
 <details>
-<summary><b>Touhou 东方 Project（1）</b></summary>
+<summary><b>Touhou-Project | 东方 Project（1）</b></summary>
 
 - [Touhou_琪露诺_泳装_Cirno](Touhou_琪露诺_泳装_Cirno)
 
 </details>
 
 <details>
-<summary><b>VOC 博歌乐（2）</b></summary>
+<summary><b>VOCALOID | 博歌乐（2）</b></summary>
 
 - [VOC_初音未来_Hatsune-Miku](VOC_初音未来_Hatsune-Miku)
 - [VOC_初音未来_泳装_Hatsune-Miku-Swimsuit_LA](VOC_初音未来_泳装_Hatsune-Miku-Swimsuit_LA)

@@ -12,43 +12,42 @@
 ## Models
 
 <details>
-<summary><b>AL 碧蓝航线（1）</b></summary>
+<summary><b>Azur-Lane | 碧蓝航线（1）</b></summary>
 
 - [AL_柴郡_Cheshire_LB](AL_柴郡_Cheshire_LB)
 
 </details>
 
 <details>
-<summary><b>BA 碧蓝档案（1）</b></summary>
+<summary><b>Blue-Archive | 碧蓝档案（1）</b></summary>
 
 - [BA_若叶日向_Wakaba-Hinata_LB](BA_若叶日向_Wakaba-Hinata_LB)
 
 </details>
 
 <details>
-<summary><b>KG 兽耳学园（1）</b></summary>
+<summary><b>Kemomimi Gakuen | 兽耳学园（1）</b></summary>
 
 - [KG_阿尔维娜酱_Arvina_Chan_LB](KG_阿尔维娜酱_Arvina_Chan_LB)
 
 </details>
 
 <details>
-<summary><b>KonoSuba 为美好的世界献上祝福！（1）</b></summary>
+<summary><b>KonoSuba: God's Blessing on This Wonderful World! | 为美好的世界献上祝福！（1）</b></summary>
 
 - [KonoSuba_惠惠_Megumin_LB](KonoSuba_惠惠_Megumin_LB)
 
 </details>
 
 <details>
-<summary><b>OC 原创角色（2）</b></summary>
+<summary><b>Original Character | 原创角色（1）</b></summary>
 
 - [OC_琴雨梦_Qym_LB](OC_琴雨梦_Qym_LB)
-- [OC_阿尔维娜酱_Arvina-Chan](OC_阿尔维娜酱_Arvina-Chan)
 
 </details>
 
 <details>
-<summary><b>VTuber 虚拟主播（1）</b></summary>
+<summary><b>Virtual YouTuber | 虚拟主播（1）</b></summary>
 
 - [VTuber_紫苑艾尔菲涅_LA](VTuber_紫苑艾尔菲涅_LA)
 

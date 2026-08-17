@@ -12,14 +12,14 @@
 ## Models
 
 <details>
-<summary><b>AL 碧蓝航线（1）</b></summary>
+<summary><b>Azur-Lane | 碧蓝航线（1）</b></summary>
 
 - [AL_雪风_KanCollect-Yukikaze](AL_雪风_KanCollect-Yukikaze)
 
 </details>
 
 <details>
-<summary><b>Touhou 东方 Project（1）</b></summary>
+<summary><b>Touhou-Project | 东方 Project（1）</b></summary>
 
 - [Touhou_比那名居天子_Hinanawi-Tenshi](Touhou_比那名居天子_Hinanawi-Tenshi)
 

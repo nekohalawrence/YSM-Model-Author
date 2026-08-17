@@ -9,7 +9,7 @@
 ## Models
 
 <details>
-<summary><b>Utau 虚拟歌手（1）</b></summary>
+<summary><b>Utauloid | 虚拟歌手（1）</b></summary>
 
 - [Utau_重音_Teto-Kasane-Teto](Utau_重音_Teto-Kasane-Teto)
 

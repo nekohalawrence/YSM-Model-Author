@@ -11,7 +11,7 @@
 ## Models
 
 <details>
-<summary><b>AL 碧蓝航线（5）</b></summary>
+<summary><b>Azur-Lane | 碧蓝航线（5）</b></summary>
 
 - [AL_宁海_LA](AL_宁海_LA)
 - [AL_山城_Yamashiro_LA](AL_山城_Yamashiro_LA)
@@ -22,21 +22,21 @@
 </details>
 
 <details>
-<summary><b>DFO 地下城与勇士（1）</b></summary>
+<summary><b>Dungeon & Fighter | 地下城与勇士（1）</b></summary>
 
 - [DFO_雾神_LB](DFO_雾神_LB)
 
 </details>
 
 <details>
-<summary><b>HNTSADL 异界少女召唤术（1）</b></summary>
+<summary><b>How Not to Summon a Demon Lord | 异界少女召唤术（1）</b></summary>
 
 - [HNTSADL_塞尔维_Sfw_LA](HNTSADL_塞尔维_Sfw_LA)
 
 </details>
 
 <details>
-<summary><b>Madoka 魔法少女小圆（2）</b></summary>
+<summary><b>Puella Magi Madoka Magica | 魔法少女小圆（2）</b></summary>
 
 - [Madoka_晓美焰_Akemi-Homura_LA](Madoka_晓美焰_Akemi-Homura_LA)
 - [Madoka_鹿目圆_Kaname-Madoka_LA](Madoka_鹿目圆_Kaname-Madoka_LA)
@@ -44,28 +44,28 @@
 </details>
 
 <details>
-<summary><b>Minecraft 我的世界（1）</b></summary>
+<summary><b>Minecraft | 我的世界（1）</b></summary>
 
 - [Minecraft_高塔恶魂_LA](Minecraft_高塔恶魂_LA)
 
 </details>
 
 <details>
-<summary><b>RI 蛊真人（1）</b></summary>
+<summary><b>Reverend Insanity | 蛊真人（1）</b></summary>
 
 - [RI_白凝冰_LB](RI_白凝冰_LB)
 
 </details>
 
 <details>
-<summary><b>Sun Shower 天气雨（1）</b></summary>
+<summary><b>Sun Shower | 天气雨（1）</b></summary>
 
 - [Sun Shower_白_LA](Sun Shower_白_LA)
 
 </details>
 
 <details>
-<summary><b>Touhou 东方 Project（8）</b></summary>
+<summary><b>Touhou-Project | 东方 Project（8）</b></summary>
 
 - [Touhou_古明地恋_Komeiji-Koishi-1_LA](Touhou_古明地恋_Komeiji-Koishi-1_LA)
 - [Touhou_古明地恋_Komeiji-Koishi_LA](Touhou_古明地恋_Komeiji-Koishi_LA)

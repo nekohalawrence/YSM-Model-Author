@@ -10,7 +10,7 @@
 ## Models
 
 <details>
-<summary><b>Touhou 东方 Project（4）</b></summary>
+<summary><b>Touhou-Project | 东方 Project（4）</b></summary>
 
 - [Touhou_古明地觉_Satori_LA](Touhou_古明地觉_Satori_LA)
 - [Touhou_秦心_Hata-No-Kokoro](Touhou_秦心_Hata-No-Kokoro)

@@ -11,7 +11,7 @@
 ## Models
 
 <details>
-<summary><b>AK 明日方舟（2）</b></summary>
+<summary><b>Arknights | 明日方舟（2）</b></summary>
 
 - [AK_德克萨斯](AK_德克萨斯)
 - [AK_荒芜拉普兰德_Lappland-The-Decadenza](AK_荒芜拉普兰德_Lappland-The-Decadenza)
@@ -19,28 +19,28 @@
 </details>
 
 <details>
-<summary><b>BtR 孤独摇滚！（1）</b></summary>
+<summary><b>Bocchi-the-Rock! | 孤独摇滚！（1）</b></summary>
 
 - [BtR_后藤一里_Gotoh-Hitori_LB](BtR_后藤一里_Gotoh-Hitori_LB)
 
 </details>
 
 <details>
-<summary><b>NAR 火影忍者: 疾风传（1）</b></summary>
+<summary><b>NARUTO | 火影忍者: 疾风传（1）</b></summary>
 
 - [NAR_面麻_LC](NAR_面麻_LC)
 
 </details>
 
 <details>
-<summary><b>Nikke 胜利女神：妮姬（1）</b></summary>
+<summary><b>Goddess of Victory: Nikke | 胜利女神：妮姬（1）</b></summary>
 
 - [Nikke_爱丽丝_Alice_LB](Nikke_爱丽丝_Alice_LB)
 
 </details>
 
 <details>
-<summary><b>Touhou 东方 Project（31）</b></summary>
+<summary><b>Touhou-Project | 东方 Project（31）</b></summary>
 
 - [Touhou_上白泽慧音_Keine-Kamishirasawa_LB](Touhou_上白泽慧音_Keine-Kamishirasawa_LB)
 - [Touhou_东风谷早苗_Kochiya-Sanae_LA](Touhou_东风谷早苗_Kochiya-Sanae_LA)
@@ -77,21 +77,21 @@
 </details>
 
 <details>
-<summary><b>Utau 虚拟歌手（1）</b></summary>
+<summary><b>Utauloid | 虚拟歌手（1）</b></summary>
 
 - [Utau_重音_Teto-Kasane-Teto](Utau_重音_Teto-Kasane-Teto)
 
 </details>
 
 <details>
-<summary><b>VOC 博歌乐（1）</b></summary>
+<summary><b>VOCALOID | 博歌乐（1）</b></summary>
 
 - [VOC_初音未来_Hatsune-Miku_LC](VOC_初音未来_Hatsune-Miku_LC)
 
 </details>
 
 <details>
-<summary><b>ZZZ 绝区零（2）</b></summary>
+<summary><b>Zenless-Zone-Zero | 绝区零（2）</b></summary>
 
 - [ZZZ_艾莲·乔_Ellen-Joe_LB](ZZZ_艾莲·乔_Ellen-Joe_LB)
 - [ZZZ_铃_Belle_LB](ZZZ_铃_Belle_LB)

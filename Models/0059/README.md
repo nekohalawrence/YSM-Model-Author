@@ -12,14 +12,14 @@
 ## Models
 
 <details>
-<summary><b>HSR 崩坏：星穹铁道（1）</b></summary>
+<summary><b>Honkai-Star-Rail | 崩坏：星穹铁道（1）</b></summary>
 
 - [HSR_花火_Huahuo_LA](HSR_花火_Huahuo_LA)
 
 </details>
 
 <details>
-<summary><b>OC 原创角色（9）</b></summary>
+<summary><b>Original Character | 原创角色（9）</b></summary>
 
 - [OC_兰音_国风华服](OC_兰音_国风华服)
 - [OC_兰音_蝴蝶晚礼服](OC_兰音_蝴蝶晚礼服)

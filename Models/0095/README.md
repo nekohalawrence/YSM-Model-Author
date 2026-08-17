@@ -13,14 +13,14 @@
 ## Models
 
 <details>
-<summary><b>AK 明日方舟（1）</b></summary>
+<summary><b>Arknights | 明日方舟（1）</b></summary>
 
 - [AK_佩佩_Pepe_LA](AK_佩佩_Pepe_LA)
 
 </details>
 
 <details>
-<summary><b>AL 碧蓝航线（2）</b></summary>
+<summary><b>Azur-Lane | 碧蓝航线（2）</b></summary>
 
 - [AL_莉莉姆_Nsfw_LA](AL_莉莉姆_Nsfw_LA)
 - [AL_长风_Ch'ang Feng_LA](AL_长风_Ch'ang Feng_LA)
@@ -28,7 +28,7 @@
 </details>
 
 <details>
-<summary><b>BA 碧蓝档案（2）</b></summary>
+<summary><b>Blue-Archive | 碧蓝档案（2）</b></summary>
 
 - [BA_Railtwin-L_LB](BA_Railtwin-L_LB)
 - [BA_Railtwin-R_LB](BA_Railtwin-R_LB)
@@ -36,7 +36,7 @@
 </details>
 
 <details>
-<summary><b>VOC 博歌乐（2）</b></summary>
+<summary><b>VOCALOID | 博歌乐（2）</b></summary>
 
 - [VOC_初音_兔子洞_Hatsune-Miku_LA](VOC_初音_兔子洞_Hatsune-Miku_LA)
 - [VOC_初音未来_Hatsune-Miku_LA](VOC_初音未来_Hatsune-Miku_LA)

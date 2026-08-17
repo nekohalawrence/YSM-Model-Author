@@ -9,7 +9,7 @@
 ## Models
 
 <details>
-<summary><b>BA 碧蓝档案（1）</b></summary>
+<summary><b>Blue-Archive | 碧蓝档案（1）</b></summary>
 
 - [BA_圣园未花_Mika-Misono_LA](BA_圣园未花_Mika-Misono_LA)
 

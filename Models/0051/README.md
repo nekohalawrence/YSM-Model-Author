@@ -11,7 +11,7 @@
 ## Models
 
 <details>
-<summary><b>BF-1 战地-1（2）</b></summary>
+<summary><b>Battlefield-1 | 战地-1（2）</b></summary>
 
 - [BF-1_德军](BF-1_德军)
 - [BF-1_英军](BF-1_英军)
@@ -19,7 +19,7 @@
 </details>
 
 <details>
-<summary><b>BtR 孤独摇滚！（6）</b></summary>
+<summary><b>Bocchi-the-Rock! | 孤独摇滚！（6）</b></summary>
 
 - [BtR_伊地知虹夏_Nijika-Ijichi](BtR_伊地知虹夏_Nijika-Ijichi)
 - [BtR_后藤一里_Gotoh-Hitori](BtR_后藤一里_Gotoh-Hitori)
@@ -31,7 +31,7 @@
 </details>
 
 <details>
-<summary><b>CNC 命令与征服（3）</b></summary>
+<summary><b>Command & Conquer | 命令与征服（3）</b></summary>
 
 - [CNC_变节者大头兵_Cnc](CNC_变节者大头兵_Cnc)
 - [CNC_狙击手_Cnc](CNC_狙击手_Cnc)
@@ -40,7 +40,7 @@
 </details>
 
 <details>
-<summary><b>GF 少女前线（11）</b></summary>
+<summary><b>Girls' Frontline | 少女前线（11）</b></summary>
 
 - [GF_64式-Type64](GF_64式-Type64)
 - [GF_AK](GF_AK)
@@ -68,7 +68,7 @@
 </details>
 
 <details>
-<summary><b>ZH 命令与征服：绝命时刻（5）</b></summary>
+<summary><b>Command & Conquer Generals: Zero Hour | 命令与征服：绝命时刻（5）</b></summary>
 
 - [ZH_步兵_反抗军_Zh](ZH_步兵_反抗军_Zh)
 - [ZH_步兵_游骑兵_Zh](ZH_步兵_游骑兵_Zh)

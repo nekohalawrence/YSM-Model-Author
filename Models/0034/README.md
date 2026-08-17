@@ -9,7 +9,7 @@
 ## Models
 
 <details>
-<summary><b>ReZero Re:从零开始的异世界生活（2）</b></summary>
+<summary><b>Re:Zero | Re:从零开始的异世界生活（2）</b></summary>
 
 - [ReZero_Ram](ReZero_Ram)
 - [ReZero_雷姆_Rem](ReZero_雷姆_Rem)
@@ -17,7 +17,7 @@
 </details>
 
 <details>
-<summary><b>VOC 博歌乐（2）</b></summary>
+<summary><b>VOCALOID | 博歌乐（2）</b></summary>
 
 - [VOC_初音_Chuyin](VOC_初音_Chuyin)
 - [VOC_初音未来_Hatsune-Miku](VOC_初音未来_Hatsune-Miku)

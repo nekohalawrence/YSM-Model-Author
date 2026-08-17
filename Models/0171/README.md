@@ -7,7 +7,7 @@
 ## Models
 
 <details>
-<summary><b>HSR 崩坏：星穹铁道（2）</b></summary>
+<summary><b>Honkai-Star-Rail | 崩坏：星穹铁道（2）</b></summary>
 
 - [HSR_流萤_Firefly](HSR_流萤_Firefly)
 - [HSR_黄泉_Raiden-Bosenmori-Mei](HSR_黄泉_Raiden-Bosenmori-Mei)

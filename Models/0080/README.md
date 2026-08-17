@@ -9,7 +9,7 @@
 ## Models
 
 <details>
-<summary><b>BA 碧蓝档案（5）</b></summary>
+<summary><b>Blue-Archive | 碧蓝档案（5）</b></summary>
 
 - [BA_天童爱丽丝_冬装_Tendou-Arisu](BA_天童爱丽丝_冬装_Tendou-Arisu)
 - [BA_才羽桃井_冬装_Saiba-Momoi_LB](BA_才羽桃井_冬装_Saiba-Momoi_LB)
@@ -20,7 +20,7 @@
 </details>
 
 <details>
-<summary><b>Mochiyama Kingyo もち山金魚（1）</b></summary>
+<summary><b>Mochiyama Kingyo | もち山金魚（1）</b></summary>
 
 - [Mochiyama Kingyo_方块_Kipfel_LA](Mochiyama Kingyo_方块_Kipfel_LA)
 

@@ -7,7 +7,7 @@
 ## Models
 
 <details>
-<summary><b>AL 碧蓝航线（1）</b></summary>
+<summary><b>Azur-Lane | 碧蓝航线（1）</b></summary>
 
 - [AL_海伦娜_LB](AL_海伦娜_LB)
 

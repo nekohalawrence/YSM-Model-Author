@@ -7,7 +7,7 @@
 ## Models
 
 <details>
-<summary><b>AL 碧蓝航线（1）</b></summary>
+<summary><b>Azur-Lane | 碧蓝航线（1）</b></summary>
 
 - [AL_信浓_Shinano_LA](AL_信浓_Shinano_LA)
 

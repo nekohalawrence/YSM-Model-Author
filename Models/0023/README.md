@@ -12,7 +12,7 @@
 ## Models
 
 <details>
-<summary><b>AK 明日方舟（2）</b></summary>
+<summary><b>Arknights | 明日方舟（2）</b></summary>
 
 - [AK_司霆惊蛰_SiTing-JingZhe_LA](AK_司霆惊蛰_SiTing-JingZhe_LA)
 - [AK_桃金娘_Myrtle](AK_桃金娘_Myrtle)
@@ -20,7 +20,7 @@
 </details>
 
 <details>
-<summary><b>MyGO 迷途之子！！！！！（1）</b></summary>
+<summary><b>BanG Dream! It's MyGO!!!!! | 迷途之子！！！！！（1）</b></summary>
 
 - [MyGO_若叶睦_Wakaba-Mutsumi_LA](MyGO_若叶睦_Wakaba-Mutsumi_LA)
 

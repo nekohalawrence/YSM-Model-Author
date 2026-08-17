@@ -10,14 +10,14 @@
 ## Models
 
 <details>
-<summary><b>GI 原神（1）</b></summary>
+<summary><b>Genshin Impact | 原神（1）</b></summary>
 
 - [GI_芙宁娜_Furina](GI_芙宁娜_Furina)
 
 </details>
 
 <details>
-<summary><b>HSR 崩坏：星穹铁道（9）</b></summary>
+<summary><b>Honkai-Star-Rail | 崩坏：星穹铁道（9）</b></summary>
 
 - [HSR_三月七](HSR_三月七)
 - [HSR_女仆小缇宝_Tribbie(Maid)](HSR_女仆小缇宝_Tribbie(Maid))

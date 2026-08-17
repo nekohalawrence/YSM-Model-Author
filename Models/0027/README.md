@@ -9,7 +9,7 @@
 ## Models
 
 <details>
-<summary><b>AK 明日方舟（3）</b></summary>
+<summary><b>Arknights | 明日方舟（3）</b></summary>
 
 - [AK_Typhon](AK_Typhon)
 - [AK_纯烬艾雅法拉_Eyjafjalla](AK_纯烬艾雅法拉_Eyjafjalla)
@@ -18,7 +18,7 @@
 </details>
 
 <details>
-<summary><b>OC 原创角色（1）</b></summary>
+<summary><b>Original Character | 原创角色（1）</b></summary>
 
 - [OC_艾尔莎_Channel_Elsa-Channel](OC_艾尔莎_Channel_Elsa-Channel)
 

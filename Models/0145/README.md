@@ -11,7 +11,7 @@
 ## Models
 
 <details>
-<summary><b>GF 少女前线（1）</b></summary>
+<summary><b>Girls' Frontline | 少女前线（1）</b></summary>
 
 - [GF_索米_Kp31_Suomi](GF_索米_Kp31_Suomi)
 

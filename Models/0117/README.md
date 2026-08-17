@@ -32,14 +32,14 @@
 </details>
 
 <details>
-<summary><b>GI 原神（1）</b></summary>
+<summary><b>Genshin Impact | 原神（1）</b></summary>
 
 - [GI_提纳里_LB](GI_提纳里_LB)
 
 </details>
 
 <details>
-<summary><b>HI3 崩坏 3（2）</b></summary>
+<summary><b>Honkai-Impact-3 | 崩坏 3（2）</b></summary>
 
 - [HI3_53_LB](HI3_53_LB)
 - [HI3_雷之律者_LB](HI3_雷之律者_LB)
@@ -47,7 +47,7 @@
 </details>
 
 <details>
-<summary><b>ZZZ 绝区零（1）</b></summary>
+<summary><b>Zenless-Zone-Zero | 绝区零（1）</b></summary>
 
 - [ZZZ_可琳_LB](ZZZ_可琳_LB)
 

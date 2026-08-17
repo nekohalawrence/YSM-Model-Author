@@ -9,7 +9,7 @@
 ## Models
 
 <details>
-<summary><b>ZZZ 绝区零（6）</b></summary>
+<summary><b>Zenless-Zone-Zero | 绝区零（6）</b></summary>
 
 - [ZZZ_11号-Soldier-11](ZZZ_11号-Soldier-11)
 - [ZZZ_Angels-Of-Delulu](ZZZ_Angels-Of-Delulu)

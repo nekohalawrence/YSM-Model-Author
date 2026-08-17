@@ -12,7 +12,7 @@
 ## Models
 
 <details>
-<summary><b>HSR 崩坏：星穹铁道（1）</b></summary>
+<summary><b>Honkai-Star-Rail | 崩坏：星穹铁道（1）</b></summary>
 
 - [HSR_镜流_Jingliu](HSR_镜流_Jingliu)
 

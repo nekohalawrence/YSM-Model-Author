@@ -9,14 +9,14 @@
 ## Models
 
 <details>
-<summary><b>Hololive hololive（1）</b></summary>
+<summary><b>Hololive | hololive（1）</b></summary>
 
 - [Hololive_Hololive-Minato-Aqua](Hololive_Hololive-Minato-Aqua)
 
 </details>
 
 <details>
-<summary><b>Touhou 东方 Project（7）</b></summary>
+<summary><b>Touhou-Project | 东方 Project（7）</b></summary>
 
 - [Touhou_十六夜咲夜_Izayoi-Sakuya](Touhou_十六夜咲夜_Izayoi-Sakuya)
 - [Touhou_博丽灵梦_Hakurei-Reimu](Touhou_博丽灵梦_Hakurei-Reimu)

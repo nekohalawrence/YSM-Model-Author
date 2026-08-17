@@ -11,7 +11,7 @@
 ## Models
 
 <details>
-<summary><b>Minecraft 我的世界（19）</b></summary>
+<summary><b>Minecraft | 我的世界（19）</b></summary>
 
 - [Minecraft_僵尸酱_Zombie_LB](Minecraft_僵尸酱_Zombie_LB)
 - [Minecraft_凋灵骷髅酱_Wither-Skeleton_LA](Minecraft_凋灵骷髅酱_Wither-Skeleton_LA)

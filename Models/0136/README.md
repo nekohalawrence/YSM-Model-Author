@@ -12,7 +12,7 @@
 ## Models
 
 <details>
-<summary><b>Nikke 胜利女神：妮姬（1）</b></summary>
+<summary><b>Goddess of Victory: Nikke | 胜利女神：妮姬（1）</b></summary>
 
 - [Nikke_Alice-In-Wonderland-Alice](Nikke_Alice-In-Wonderland-Alice)
 

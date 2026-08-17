@@ -10,7 +10,7 @@
 ## Models
 
 <details>
-<summary><b>Touhou 东方 Project（2）</b></summary>
+<summary><b>Touhou-Project | 东方 Project（2）</b></summary>
 
 - [Touhou_卡娜·安娜贝拉尔_Kana-Anaberal](Touhou_卡娜·安娜贝拉尔_Kana-Anaberal)
 - [Touhou_大妖精_Daiyousei](Touhou_大妖精_Daiyousei)

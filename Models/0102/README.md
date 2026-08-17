@@ -13,7 +13,7 @@
 ## Models
 
 <details>
-<summary><b>AK 明日方舟（6）</b></summary>
+<summary><b>Arknights | 明日方舟（6）</b></summary>
 
 - [AK_Mon3tr_LA](AK_Mon3tr_LA)
 - [AK_忍冬_Vulpisfoglia_LB](AK_忍冬_Vulpisfoglia_LB)
@@ -25,7 +25,7 @@
 </details>
 
 <details>
-<summary><b>AL 碧蓝航线（8）</b></summary>
+<summary><b>Azur-Lane | 碧蓝航线（8）</b></summary>
 
 - [AL_兴登堡_兔女郎_Hindenburg_LB](AL_兴登堡_兔女郎_Hindenburg_LB)
 - [AL_大凤_Taihou_LB](AL_大凤_Taihou_LB)
@@ -39,7 +39,7 @@
 </details>
 
 <details>
-<summary><b>AveMujica 颂乐人偶（2）</b></summary>
+<summary><b>BanG Dream! Ave Mujica | 颂乐人偶（2）</b></summary>
 
 - [AveMujica_丰川祥子_Togawa-Sakiko_LB](AveMujica_丰川祥子_Togawa-Sakiko_LB)
 - [AveMujica_千早爱音_Chihaya-Anon_LB](AveMujica_千早爱音_Chihaya-Anon_LB)
@@ -47,35 +47,35 @@
 </details>
 
 <details>
-<summary><b>DOA 死或生（1）</b></summary>
+<summary><b>Dead or Alive | 死或生（1）</b></summary>
 
 - [DOA_玛丽萝斯_Marie-Rose_LA](DOA_玛丽萝斯_Marie-Rose_LA)
 
 </details>
 
 <details>
-<summary><b>HSR 崩坏：星穹铁道（1）</b></summary>
+<summary><b>Honkai-Star-Rail | 崩坏：星穹铁道（1）</b></summary>
 
 - [HSR_卡芙卡_Kafka_LA](HSR_卡芙卡_Kafka_LA)
 
 </details>
 
 <details>
-<summary><b>Kisekoi 更衣人偶坠入爱河（1）</b></summary>
+<summary><b>My Dress-Up Darling | 更衣人偶坠入爱河（1）</b></summary>
 
 - [Kisekoi_喜多川海梦_Kitagawa-Marin_LA](Kisekoi_喜多川海梦_Kitagawa-Marin_LA)
 
 </details>
 
 <details>
-<summary><b>Meme 模因（1）</b></summary>
+<summary><b>Meme | 模因（1）</b></summary>
 
 - [Meme_埃及猫_Egyptian-Cat](Meme_埃及猫_Egyptian-Cat)
 
 </details>
 
 <details>
-<summary><b>Minecraft 我的世界（3）</b></summary>
+<summary><b>Minecraft | 我的世界（3）</b></summary>
 
 - [Minecraft_末影人酱_Enderman_LB](Minecraft_末影人酱_Enderman_LB)
 - [Minecraft_末影龙娘_Ender-Dragon_LB](Minecraft_末影龙娘_Ender-Dragon_LB)
@@ -84,7 +84,7 @@
 </details>
 
 <details>
-<summary><b>Snowbreak 尘白禁区（3）</b></summary>
+<summary><b>Snowbreak: Containment Zone | 尘白禁区（3）</b></summary>
 
 - [Snowbreak_卜卜_小天师_Bubu_LA](Snowbreak_卜卜_小天师_Bubu_LA)
 - [Snowbreak_芬妮婚纱_Fannie-Hunsha](Snowbreak_芬妮婚纱_Fannie-Hunsha)
@@ -93,14 +93,14 @@
 </details>
 
 <details>
-<summary><b>SSW 不擅长人际交往的未亡人雪女与诅咒之戒（1）</b></summary>
+<summary><b>The Lonely Snow Widow and the Cursed Ring | 不擅长人际交往的未亡人雪女与诅咒之戒（1）</b></summary>
 
 - [SSW_雪乃深冬_未亡人雪女_Yukino-Mifuyu](SSW_雪乃深冬_未亡人雪女_Yukino-Mifuyu)
 
 </details>
 
 <details>
-<summary><b>VOC 博歌乐（2）</b></summary>
+<summary><b>VOCALOID | 博歌乐（2）</b></summary>
 
 - [VOC_初音未来_Hatsune-Miku_LB](VOC_初音未来_Hatsune-Miku_LB)
 - [VOC_洛天依_公式服_LuoTianYi_LB](VOC_洛天依_公式服_LuoTianYi_LB)

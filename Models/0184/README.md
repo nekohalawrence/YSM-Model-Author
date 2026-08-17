@@ -9,7 +9,7 @@
 ## Models
 
 <details>
-<summary><b>AK 明日方舟（3）</b></summary>
+<summary><b>Arknights | 明日方舟（3）</b></summary>
 
 - [AK_余_Yu](AK_余_Yu)
 - [AK_水月_Mizuki](AK_水月_Mizuki)

@@ -11,7 +11,7 @@
 ## Models
 
 <details>
-<summary><b>AK 明日方舟（9）</b></summary>
+<summary><b>Arknights | 明日方舟（9）</b></summary>
 
 - [AK_安洁莉娜_Angelina_LB](AK_安洁莉娜_Angelina_LB)
 - [AK_巫恋_Shamare-Witchfeast](AK_巫恋_Shamare-Witchfeast)
@@ -26,7 +26,7 @@
 </details>
 
 <details>
-<summary><b>LC 边狱巴士（1）</b></summary>
+<summary><b>Limbus Company | 边狱巴士（1）</b></summary>
 
 - [LC_以实玛丽_Limbus_Ishmael_LB](LC_以实玛丽_Limbus_Ishmael_LB)
 

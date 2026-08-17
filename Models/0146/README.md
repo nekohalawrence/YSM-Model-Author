@@ -9,7 +9,7 @@
 ## Models
 
 <details>
-<summary><b>BtR 孤独摇滚！（4）</b></summary>
+<summary><b>Bocchi-the-Rock! | 孤独摇滚！（4）</b></summary>
 
 - [BtR_伊地知虹夏_Nijika-Ijichi](BtR_伊地知虹夏_Nijika-Ijichi)
 - [BtR_后藤一里_Gotoh-Hitori](BtR_后藤一里_Gotoh-Hitori)

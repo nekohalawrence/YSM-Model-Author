@@ -11,21 +11,14 @@
 ## Models
 
 <details>
-<summary><b>OC 原创角色（7）</b></summary>
+<summary><b>Virtual YouTuber | 虚拟主播（7）</b></summary>
 
-- [OC_折原露露_LB](OC_折原露露_LB)
-- [OC_梦音茶糯](OC_梦音茶糯)
-- [OC_泠鸢-登门喜鹊](OC_泠鸢-登门喜鹊)
-- [OC_泠鸢_JK](OC_泠鸢_JK)
-- [OC_泠鸢_公式服_Jk](OC_泠鸢_公式服_Jk)
-- [OC_泠鸢·登门喜鹊](OC_泠鸢·登门喜鹊)
-- [OC_黎歌_国风_LB](OC_黎歌_国风_LB)
-
-</details>
-
-<details>
-<summary><b>VTuber 虚拟主播（1）</b></summary>
-
-- [VTuber_穆小泠_LB](VTuber_穆小泠_LB)
+- [VTuber_折原露露_LB](VTuber_折原露露_LB)
+- [VTuber_梦音茶糯](VTuber_梦音茶糯)
+- [VTuber_泠鸢_JK_LingYuanYousa](VTuber_泠鸢_JK_LingYuanYousa)
+- [VTuber_泠鸢_公式服_LingYuanYousa](VTuber_泠鸢_公式服_LingYuanYousa)
+- [VTuber_泠鸢_登门喜鹊_LingYuanYousa](VTuber_泠鸢_登门喜鹊_LingYuanYousa)
+- [VTuber_穆小泠Official_MuXiaoLing_LB](VTuber_穆小泠Official_MuXiaoLing_LB)
+- [VTuber_黎歌Neeko_国风_LB](VTuber_黎歌Neeko_国风_LB)
 
 </details>

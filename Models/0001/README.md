@@ -10,18 +10,18 @@
 ## Models
 
 <details>
-<summary><b>AveMujica 颂乐人偶（5）</b></summary>
+<summary><b>BanG Dream! Ave Mujica | 颂乐人偶（5）</b></summary>
 
-- [AveMujica_三角初华_LB](AveMujica_三角初华_LB)
+- [AveMujica_三角初华_Misumi-Uika_LB](AveMujica_三角初华_Misumi-Uika_LB)
 - [AveMujica_丰川祥子_Togawa-Sakiko_LB](AveMujica_丰川祥子_Togawa-Sakiko_LB)
-- [AveMujica_八幡海玲_LB](AveMujica_八幡海玲_LB)
-- [AveMujica_喵梦_LB](AveMujica_喵梦_LB)
-- [AveMujica_若叶睦_LB](AveMujica_若叶睦_LB)
+- [AveMujica_八幡海铃_Yahata-Umiri_LB](AveMujica_八幡海铃_Yahata-Umiri_LB)
+- [AveMujica_祐天寺若麦_Yutenji-Wakaba_LB](AveMujica_祐天寺若麦_Yutenji-Wakaba_LB)
+- [AveMujica_若叶睦_Wakaba-Mutsumi_LB](AveMujica_若叶睦_Wakaba-Mutsumi_LB)
 
 </details>
 
 <details>
-<summary><b>BA 碧蓝档案（1）</b></summary>
+<summary><b>Blue-Archive | 碧蓝档案（1）</b></summary>
 
 - [BA_小涂真纪_Konuri-Maki_LB](BA_小涂真纪_Konuri-Maki_LB)
 
@@ -35,24 +35,36 @@
 </details>
 
 <details>
-<summary><b>OC 原创角色（1）</b></summary>
+<summary><b>Minecraft | 我的世界（1）</b></summary>
+
+- [Minecraft_远古守卫者_Ancient-Guardian](Minecraft_远古守卫者_Ancient-Guardian)
+
+</details>
+
+<details>
+<summary><b>Original Character | 原创角色（1）</b></summary>
 
 - [OC_仙狐小姐_LB](OC_仙狐小姐_LB)
 
 </details>
 
 <details>
-<summary><b>Touhou 东方 Project（1）</b></summary>
+<summary><b>Touhou-Project | 东方 Project（1）</b></summary>
 
 - [Touhou_琪露诺_Cirno_LB](Touhou_琪露诺_Cirno_LB)
 
 </details>
 
 <details>
-<summary><b>Unknown（3）</b></summary>
+<summary><b>Umamusume: Pretty Derby | 闪耀！优俊少女（1）</b></summary>
 
-- [待兼诗歌剧](待兼诗歌剧)
-- [森亚露露卡 进阶版](森亚露露卡 进阶版)
-- [远古守卫者](远古守卫者)
+- [UmaMusume_待兼诗歌剧_Matikanetannhauser](UmaMusume_待兼诗歌剧_Matikanetannhauser)
+
+</details>
+
+<details>
+<summary><b>Unknown（1）</b></summary>
+
+- [Unknown_森亚露露卡_进阶版](Unknown_森亚露露卡_进阶版)
 
 </details>

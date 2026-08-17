@@ -12,7 +12,7 @@
 ## Models
 
 <details>
-<summary><b>AH 原子之心（2）</b></summary>
+<summary><b>Atomic-Heart | 原子之心（2）</b></summary>
 
 - [AH_娘化冰箱](AH_娘化冰箱)
 - [AH_舞伶_Wuling](AH_舞伶_Wuling)
@@ -20,7 +20,7 @@
 </details>
 
 <details>
-<summary><b>AK 明日方舟（13）</b></summary>
+<summary><b>Arknights | 明日方舟（13）</b></summary>
 
 - [AK_临光_Nearl](AK_临光_Nearl)
 - [AK_佩佩_Pepe](AK_佩佩_Pepe)
@@ -39,7 +39,7 @@
 </details>
 
 <details>
-<summary><b>AL 碧蓝航线（1）</b></summary>
+<summary><b>Azur-Lane | 碧蓝航线（1）</b></summary>
 
 - [AL_阿达尔伯特亲王_Prinz-Adalbert_LA](AL_阿达尔伯特亲王_Prinz-Adalbert_LA)
 
@@ -53,7 +53,7 @@
 </details>
 
 <details>
-<summary><b>GI 原神（28）</b></summary>
+<summary><b>Genshin Impact | 原神（28）</b></summary>
 
 - [GI_云锦_Yunjin](GI_云锦_Yunjin)
 - [GI_仆人_阿蕾奇诺_Arlecchino](GI_仆人_阿蕾奇诺_Arlecchino)
@@ -87,7 +87,7 @@
 </details>
 
 <details>
-<summary><b>HSR 崩坏：星穹铁道（2）</b></summary>
+<summary><b>Honkai-Star-Rail | 崩坏：星穹铁道（2）</b></summary>
 
 - [HSR_停云_Tingyun](HSR_停云_Tingyun)
 - [HSR_停云_Tingyun-Nsfw](HSR_停云_Tingyun-Nsfw)
@@ -95,14 +95,14 @@
 </details>
 
 <details>
-<summary><b>Minecraft 我的世界（1）</b></summary>
+<summary><b>Minecraft | 我的世界（1）</b></summary>
 
 - [Minecraft_蘑菇牛_娘化](Minecraft_蘑菇牛_娘化)
 
 </details>
 
 <details>
-<summary><b>NC 少女前线：云图计划（1）</b></summary>
+<summary><b>NC（1）</b></summary>
 
 - [NC_芙洛伦_Florence](NC_芙洛伦_Florence)
 
@@ -116,14 +116,14 @@
 </details>
 
 <details>
-<summary><b>TF 奴隶少女希尔薇（1）</b></summary>
+<summary><b>Teaching Feeling | 奴隶少女希尔薇（1）</b></summary>
 
 - [TF_希尔薇_Silvy](TF_希尔薇_Silvy)
 
 </details>
 
 <details>
-<summary><b>WW 鸣潮（7）</b></summary>
+<summary><b>Wuthering-Waves | 鸣潮（7）</b></summary>
 
 - [WW_今汐_Jinhsi](WW_今汐_Jinhsi)
 - [WW_吟霖_Yinlin](WW_吟霖_Yinlin)
@@ -136,7 +136,7 @@
 </details>
 
 <details>
-<summary><b>ZZZ 绝区零（3）</b></summary>
+<summary><b>Zenless-Zone-Zero | 绝区零（3）</b></summary>
 
 - [ZZZ_冯·莱卡恩_Von-Lycaon](ZZZ_冯·莱卡恩_Von-Lycaon)
 - [ZZZ_简_Jian](ZZZ_简_Jian)

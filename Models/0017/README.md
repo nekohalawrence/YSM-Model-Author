@@ -9,7 +9,7 @@
 ## Models
 
 <details>
-<summary><b>PVZ 植物大战僵尸（1）</b></summary>
+<summary><b>Plants vs. Zombies | 植物大战僵尸（1）</b></summary>
 
 - [PVZ_究极魅惑菇](PVZ_究极魅惑菇)
 

@@ -11,14 +11,14 @@
 ## Models
 
 <details>
-<summary><b>HSR 崩坏：星穹铁道（1）</b></summary>
+<summary><b>Honkai-Star-Rail | 崩坏：星穹铁道（1）</b></summary>
 
 - [HSR_风堇_LA](HSR_风堇_LA)
 
 </details>
 
 <details>
-<summary><b>MiSide 米塔（2）</b></summary>
+<summary><b>MiSide | 米塔（2）</b></summary>
 
 - [MiSide_小米塔_LA](MiSide_小米塔_LA)
 - [MiSide_米拉_LB](MiSide_米拉_LB)
@@ -26,21 +26,21 @@
 </details>
 
 <details>
-<summary><b>Nikke 胜利女神：妮姬（1）</b></summary>
+<summary><b>Goddess of Victory: Nikke | 胜利女神：妮姬（1）</b></summary>
 
 - [Nikke_爱丽丝梦游仙境_Alice-White_LA](Nikke_爱丽丝梦游仙境_Alice-White_LA)
 
 </details>
 
 <details>
-<summary><b>OC 原创角色（1）</b></summary>
+<summary><b>Original Character | 原创角色（1）</b></summary>
 
 - [OC_白蛤蜊_LA](OC_白蛤蜊_LA)
 
 </details>
 
 <details>
-<summary><b>WW 鸣潮（2）</b></summary>
+<summary><b>Wuthering-Waves | 鸣潮（2）</b></summary>
 
 - [WW_卡提希娅_Cartethyia_LB](WW_卡提希娅_Cartethyia_LB)
 - [WW_菲比+团子_LA](WW_菲比+团子_LA)

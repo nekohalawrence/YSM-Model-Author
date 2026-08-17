@@ -9,7 +9,7 @@
 ## Models
 
 <details>
-<summary><b>GF 少女前线（1）</b></summary>
+<summary><b>Girls' Frontline | 少女前线（1）</b></summary>
 
 - [GF_AN_LD](GF_AN_LD)
 

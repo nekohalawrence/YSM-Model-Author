@@ -11,7 +11,7 @@
 ## Models
 
 <details>
-<summary><b>AK 明日方舟（2）</b></summary>
+<summary><b>Arknights | 明日方舟（2）</b></summary>
 
 - [AK_梅_May_LB](AK_梅_May_LB)
 - [AK_红豆_悠然假日_Vigna-Coral-Coast_LA](AK_红豆_悠然假日_Vigna-Coral-Coast_LA)
@@ -19,14 +19,14 @@
 </details>
 
 <details>
-<summary><b>BA 碧蓝档案（1）</b></summary>
+<summary><b>Blue-Archive | 碧蓝档案（1）</b></summary>
 
 - [BA_实梨_LA](BA_实梨_LA)
 
 </details>
 
 <details>
-<summary><b>NEKOPARA 巧克力与香子兰（9）</b></summary>
+<summary><b>NEKOPARA | 巧克力与香子兰（9）</b></summary>
 
 - [NEKOPARA_可可_LA](NEKOPARA_可可_LA)
 - [NEKOPARA_巧克力_LA](NEKOPARA_巧克力_LA)
@@ -41,14 +41,14 @@
 </details>
 
 <details>
-<summary><b>NGE 新世纪福音战士（1）</b></summary>
+<summary><b>Neon-Genesis-Evangelion | 新世纪福音战士（1）</b></summary>
 
 - [NGE_明日香_校服_Asuka_LB](NGE_明日香_校服_Asuka_LB)
 
 </details>
 
 <details>
-<summary><b>WW 鸣潮（1）</b></summary>
+<summary><b>Wuthering-Waves | 鸣潮（1）</b></summary>
 
 - [WW_洛可可_LB](WW_洛可可_LB)
 

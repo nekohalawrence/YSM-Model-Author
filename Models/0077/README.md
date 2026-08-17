@@ -12,7 +12,7 @@
 ## Models
 
 <details>
-<summary><b>UmaMusume 闪耀！优俊少女（2）</b></summary>
+<summary><b>Umamusume: Pretty Derby | 闪耀！优俊少女（2）</b></summary>
 
 - [UmaMusume_东海帝皇](UmaMusume_东海帝皇)
 - [UmaMusume_强击](UmaMusume_强击)

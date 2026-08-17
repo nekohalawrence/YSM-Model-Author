@@ -7,7 +7,7 @@
 ## Models
 
 <details>
-<summary><b>BtR 孤独摇滚！（4）</b></summary>
+<summary><b>Bocchi-the-Rock! | 孤独摇滚！（4）</b></summary>
 
 - [BtR_小喜多_LC](BtR_小喜多_LC)
 - [BtR_小小凉_LC](BtR_小小凉_LC)
@@ -17,7 +17,7 @@
 </details>
 
 <details>
-<summary><b>GI 原神（2）</b></summary>
+<summary><b>Genshin Impact | 原神（2）</b></summary>
 
 - [GI_小神子_LC](GI_小神子_LC)
 - [GI_小芙芙_LC](GI_小芙芙_LC)
@@ -25,14 +25,14 @@
 </details>
 
 <details>
-<summary><b>Minecraft 我的世界（1）</b></summary>
+<summary><b>Minecraft | 我的世界（1）</b></summary>
 
 - [Minecraft_凋零娘_Wither_LC](Minecraft_凋零娘_Wither_LC)
 
 </details>
 
 <details>
-<summary><b>ZZZ 绝区零（2）</b></summary>
+<summary><b>Zenless-Zone-Zero | 绝区零（2）</b></summary>
 
 - [ZZZ_小安比_LC](ZZZ_小安比_LC)
 - [ZZZ_小课长_LC](ZZZ_小课长_LC)

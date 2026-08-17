@@ -12,28 +12,28 @@
 ## Models
 
 <details>
-<summary><b>AK 明日方舟（1）</b></summary>
+<summary><b>Arknights | 明日方舟（1）</b></summary>
 
 - [AK_维什戴尔_Wisadel_LA](AK_维什戴尔_Wisadel_LA)
 
 </details>
 
 <details>
-<summary><b>HSR 崩坏：星穹铁道（1）</b></summary>
+<summary><b>Honkai-Star-Rail | 崩坏：星穹铁道（1）</b></summary>
 
 - [HSR_飞霄_Feixiao](HSR_飞霄_Feixiao)
 
 </details>
 
 <details>
-<summary><b>SENREN 千恋＊万花（1）</b></summary>
+<summary><b>Senren＊Banka | 千恋＊万花（1）</b></summary>
 
 - [SENREN_丛雨_Murasame_LA](SENREN_丛雨_Murasame_LA)
 
 </details>
 
 <details>
-<summary><b>Strinova 卡拉比丘（1）</b></summary>
+<summary><b>Strinova | 卡拉比丘（1）</b></summary>
 
 - [Strinova_米雪儿·李_Michele_LA](Strinova_米雪儿·李_Michele_LA)
 

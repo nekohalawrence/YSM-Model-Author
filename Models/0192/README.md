@@ -9,14 +9,14 @@
 ## Models
 
 <details>
-<summary><b>Delta-Force 三角洲行动（1）</b></summary>
+<summary><b>Delta Force | 三角洲行动（1）</b></summary>
 
 - [Delta-Force_露娜_Luna-Kim_LA](Delta-Force_露娜_Luna-Kim_LA)
 
 </details>
 
 <details>
-<summary><b>GF2 少女前线 2：追放（1）</b></summary>
+<summary><b>GF2（1）</b></summary>
 
 - [GF2_夏安_M200_Cheyanne_LA](GF2_夏安_M200_Cheyanne_LA)
 

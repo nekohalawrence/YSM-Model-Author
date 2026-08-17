@@ -14,14 +14,14 @@
 ## Models
 
 <details>
-<summary><b>AK 明日方舟（1）</b></summary>
+<summary><b>Arknights | 明日方舟（1）</b></summary>
 
 - [AK_天狼星_Sirius_LA](AK_天狼星_Sirius_LA)
 
 </details>
 
 <details>
-<summary><b>AL 碧蓝航线（3）</b></summary>
+<summary><b>Azur-Lane | 碧蓝航线（3）</b></summary>
 
 - [AL_柴郡_Cheshire](AL_柴郡_Cheshire)
 - [AL_武藏_兔女郎_Ijn-Musashi-Bunngyirl_LB](AL_武藏_兔女郎_Ijn-Musashi-Bunngyirl_LB)
@@ -30,7 +30,7 @@
 </details>
 
 <details>
-<summary><b>BA 碧蓝档案（4）</b></summary>
+<summary><b>Blue-Archive | 碧蓝档案（4）</b></summary>
 
 - [BA_Tachibana-Hikari_LB](BA_Tachibana-Hikari_LB)
 - [BA_Tachibana-Nozomi_LB](BA_Tachibana-Nozomi_LB)
@@ -40,21 +40,21 @@
 </details>
 
 <details>
-<summary><b>NGE 新世纪福音战士（1）</b></summary>
+<summary><b>Neon-Genesis-Evangelion | 新世纪福音战士（1）</b></summary>
 
 - [NGE_Asuka-Langley_LA](NGE_Asuka-Langley_LA)
 
 </details>
 
 <details>
-<summary><b>Nikke 胜利女神：妮姬（1）</b></summary>
+<summary><b>Goddess of Victory: Nikke | 胜利女神：妮姬（1）</b></summary>
 
 - [Nikke_爱丽丝_Alice_LA](Nikke_爱丽丝_Alice_LA)
 
 </details>
 
 <details>
-<summary><b>OC 原创角色（4）</b></summary>
+<summary><b>Original Character | 原创角色（4）</b></summary>
 
 - [OC_本子魔法师_Benzi-Mofashi_LA](OC_本子魔法师_Benzi-Mofashi_LA)
 - [OC_海太_Umita-Haitai-Umita_LA](OC_海太_Umita-Haitai-Umita_LA)
@@ -64,21 +64,21 @@
 </details>
 
 <details>
-<summary><b>Snowbreak 尘白禁区（1）</b></summary>
+<summary><b>Snowbreak: Containment Zone | 尘白禁区（1）</b></summary>
 
 - [Snowbreak_里芙无限之视_Reeve_LA](Snowbreak_里芙无限之视_Reeve_LA)
 
 </details>
 
 <details>
-<summary><b>Touhou 东方 Project（1）</b></summary>
+<summary><b>Touhou-Project | 东方 Project（1）</b></summary>
 
 - [Touhou_铃仙·优昙华院·因幡_Reisen-Udongein-Inaba_LB](Touhou_铃仙·优昙华院·因幡_Reisen-Udongein-Inaba_LB)
 
 </details>
 
 <details>
-<summary><b>UT 奥特曼（1）</b></summary>
+<summary><b>Ultraman Tiga | 奥特曼（1）</b></summary>
 
 - [UT_加坦杰厄娘_Gatanothor_LA](UT_加坦杰厄娘_Gatanothor_LA)
 

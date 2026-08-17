@@ -10,14 +10,14 @@
 ## Models
 
 <details>
-<summary><b>HSR 崩坏：星穹铁道（1）</b></summary>
+<summary><b>Honkai-Star-Rail | 崩坏：星穹铁道（1）</b></summary>
 
 - [HSR_大黑塔_Heita_LB](HSR_大黑塔_Heita_LB)
 
 </details>
 
 <details>
-<summary><b>ZZZ 绝区零（1）</b></summary>
+<summary><b>Zenless-Zone-Zero | 绝区零（1）</b></summary>
 
 - [ZZZ_薇薇安_Vivianfainal_LA](ZZZ_薇薇安_Vivianfainal_LA)
 

@@ -11,21 +11,21 @@
 ## Models
 
 <details>
-<summary><b>AIRI 亚托莉‑我挚爱的时光‑（1）</b></summary>
+<summary><b>ATRI -My Dear Moments- | 亚托莉‑我挚爱的时光‑（1）</b></summary>
 
 - [AIRI_亚托莉_ATRI_LB](AIRI_亚托莉_ATRI_LB)
 
 </details>
 
 <details>
-<summary><b>AL 碧蓝航线（1）</b></summary>
+<summary><b>Azur-Lane | 碧蓝航线（1）</b></summary>
 
 - [AL_利托里奥_Littorio_LB](AL_利托里奥_Littorio_LB)
 
 </details>
 
 <details>
-<summary><b>OC 原创角色（2）</b></summary>
+<summary><b>Original Character | 原创角色（2）</b></summary>
 
 - [OC_Eanes_LB](OC_Eanes_LB)
 - [OC_特莉丝_Trissy_LB](OC_特莉丝_Trissy_LB)
@@ -33,7 +33,7 @@
 </details>
 
 <details>
-<summary><b>SENREN 千恋＊万花（2）</b></summary>
+<summary><b>Senren＊Banka | 千恋＊万花（2）</b></summary>
 
 - [SENREN_丛雨_Murasame_LB](SENREN_丛雨_Murasame_LB)
 - [SENREN_丛雨_校服_Murasame-Uniform_LB](SENREN_丛雨_校服_Murasame-Uniform_LB)
@@ -41,14 +41,14 @@
 </details>
 
 <details>
-<summary><b>Tenshi 天使嚣嚣（1）</b></summary>
+<summary><b>Tenshi Souzou | 天使嚣嚣（1）</b></summary>
 
 - [Tenshi_白雪乃爱_Shirayuki-Noa_LB](Tenshi_白雪乃爱_Shirayuki-Noa_LB)
 
 </details>
 
 <details>
-<summary><b>YogYard 犹格索托斯的庭院：炼金旅社（1）</b></summary>
+<summary><b>Yog-Sothoth's Yard | 犹格索托斯的庭院：炼金旅社（1）</b></summary>
 
 - [YogYard_特莉波卡_Tlipoca_LB](YogYard_特莉波卡_Tlipoca_LB)
 

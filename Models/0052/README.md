@@ -11,14 +11,14 @@
 ## Models
 
 <details>
-<summary><b>HI3 崩坏 3（1）</b></summary>
+<summary><b>Honkai-Impact-3 | 崩坏 3（1）</b></summary>
 
 - [HI3_德丽莎_LC](HI3_德丽莎_LC)
 
 </details>
 
 <details>
-<summary><b>HSR 崩坏：星穹铁道（12）</b></summary>
+<summary><b>Honkai-Star-Rail | 崩坏：星穹铁道（12）</b></summary>
 
 - [HSR_丹恒·腾荒_LC](HSR_丹恒·腾荒_LC)
 - [HSR_丹恒·饮月君_LC](HSR_丹恒·饮月君_LC)

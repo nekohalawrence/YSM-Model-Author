@@ -11,7 +11,7 @@
 ## Models
 
 <details>
-<summary><b>AK 明日方舟（4）</b></summary>
+<summary><b>Arknights | 明日方舟（4）</b></summary>
 
 - [AK_新约能天使_Exusiai-The-New-Covenant](AK_新约能天使_Exusiai-The-New-Covenant)
 - [AK_特蕾西娅_Theresa](AK_特蕾西娅_Theresa)

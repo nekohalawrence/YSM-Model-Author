@@ -11,14 +11,14 @@
 ## Models
 
 <details>
-<summary><b>HI3 崩坏 3（1）</b></summary>
+<summary><b>Honkai-Impact-3 | 崩坏 3（1）</b></summary>
 
 - [HI3_Mobius](HI3_Mobius)
 
 </details>
 
 <details>
-<summary><b>HSR 崩坏：星穹铁道（1）</b></summary>
+<summary><b>Honkai-Star-Rail | 崩坏：星穹铁道（1）</b></summary>
 
 - [HSR_幻胧_Phantylia](HSR_幻胧_Phantylia)
 

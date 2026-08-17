@@ -7,7 +7,7 @@
 ## Models
 
 <details>
-<summary><b>WW 鸣潮（1）</b></summary>
+<summary><b>Wuthering-Waves | 鸣潮（1）</b></summary>
 
 - [WW_维里奈_Verina](WW_维里奈_Verina)
 

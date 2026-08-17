@@ -12,14 +12,14 @@
 ## Models
 
 <details>
-<summary><b>GI 原神（1）</b></summary>
+<summary><b>Genshin Impact | 原神（1）</b></summary>
 
 - [GI_胡桃_Hutao](GI_胡桃_Hutao)
 
 </details>
 
 <details>
-<summary><b>OC 原创角色（1）</b></summary>
+<summary><b>Original Character | 原创角色（1）</b></summary>
 
 - [OC_小小酒狐_Wine-Fox](OC_小小酒狐_Wine-Fox)
 
@@ -33,14 +33,14 @@
 </details>
 
 <details>
-<summary><b>VOC 博歌乐（1）</b></summary>
+<summary><b>VOCALOID | 博歌乐（1）</b></summary>
 
 - [VOC_初音未来_Hatsune-Miku](VOC_初音未来_Hatsune-Miku)
 
 </details>
 
 <details>
-<summary><b>ZZZ 绝区零（4）</b></summary>
+<summary><b>Zenless-Zone-Zero | 绝区零（4）</b></summary>
 
 - [ZZZ_卢西娅](ZZZ_卢西娅)
 - [ZZZ_叶瞬光](ZZZ_叶瞬光)

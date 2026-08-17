@@ -9,7 +9,7 @@
 ## Models
 
 <details>
-<summary><b>Ash-Arms 灰烬战线（2）</b></summary>
+<summary><b>Ash-Arms | 灰烬战线（2）</b></summary>
 
 - [Ash-Arms_Ho](Ash-Arms_Ho)
 - [Ash-Arms_猎虎](Ash-Arms_猎虎)

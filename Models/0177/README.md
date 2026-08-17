@@ -10,7 +10,7 @@
 ## Models
 
 <details>
-<summary><b>ReZero Re:从零开始的异世界生活（1）</b></summary>
+<summary><b>Re:Zero | Re:从零开始的异世界生活（1）</b></summary>
 
 - [ReZero_雷姆_Rem](ReZero_雷姆_Rem)
 

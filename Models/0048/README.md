@@ -12,7 +12,7 @@
 ## Models
 
 <details>
-<summary><b>BA 碧蓝档案（2）</b></summary>
+<summary><b>Blue-Archive | 碧蓝档案（2）</b></summary>
 
 - [BA_笑面教授_Niyaniya](BA_笑面教授_Niyaniya)
 - [BA_飞鸟马时_Asuma-Toki](BA_飞鸟马时_Asuma-Toki)

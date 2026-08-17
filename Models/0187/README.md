@@ -11,7 +11,7 @@
 ## Models
 
 <details>
-<summary><b>ZZZ 绝区零（1）</b></summary>
+<summary><b>Zenless-Zone-Zero | 绝区零（1）</b></summary>
 
 - [ZZZ_艾莲·乔_Ellen-Joe](ZZZ_艾莲·乔_Ellen-Joe)
 

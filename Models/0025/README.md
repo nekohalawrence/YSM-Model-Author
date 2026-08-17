@@ -9,7 +9,7 @@
 ## Models
 
 <details>
-<summary><b>LCOD 中二病でも恋がしたい！（2）</b></summary>
+<summary><b>Love | 中二病でも恋がしたい！（2）</b></summary>
 
 - [LCOD_小鸟游六花_Chuunibyou-Takanashi-Rikka](LCOD_小鸟游六花_Chuunibyou-Takanashi-Rikka)
 - [LCOD_小鸟游六花_初中时期_Takanashi-Rikka](LCOD_小鸟游六花_初中时期_Takanashi-Rikka)
@@ -17,7 +17,7 @@
 </details>
 
 <details>
-<summary><b>VOC 博歌乐（1）</b></summary>
+<summary><b>VOCALOID | 博歌乐（1）</b></summary>
 
 - [VOC_洛天依_世末系列_Luotianyi](VOC_洛天依_世末系列_Luotianyi)
 

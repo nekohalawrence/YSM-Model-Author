@@ -12,7 +12,7 @@
 ## Models
 
 <details>
-<summary><b>AL 碧蓝航线（12）</b></summary>
+<summary><b>Azur-Lane | 碧蓝航线（12）</b></summary>
 
 - [AL_TAC_LA](AL_TAC_LA)
 - [AL_列克星敦_II-Lexington-II_LA](AL_列克星敦_II-Lexington-II_LA)
@@ -30,14 +30,14 @@
 </details>
 
 <details>
-<summary><b>GI 原神（1）</b></summary>
+<summary><b>Genshin Impact | 原神（1）</b></summary>
 
 - [GI_甘雨_Ganyu_LA](GI_甘雨_Ganyu_LA)
 
 </details>
 
 <details>
-<summary><b>OC 原创角色（2）</b></summary>
+<summary><b>Original Character | 原创角色（2）</b></summary>
 
 - [OC_德意志国_Deutschland (1871-1918)_LA](OC_德意志国_Deutschland (1871-1918)_LA)
 - [OC_联合王国_United-Kingdom (17–19c.)_LA](OC_联合王国_United-Kingdom (17–19c.)_LA)
@@ -45,7 +45,7 @@
 </details>
 
 <details>
-<summary><b>WW 鸣潮（5）</b></summary>
+<summary><b>Wuthering-Waves | 鸣潮（5）</b></summary>
 
 - [WW_千咲_CHISA_LA](WW_千咲_CHISA_LA)
 - [WW_爱弥斯_Aemeath_LA](WW_爱弥斯_Aemeath_LA)
