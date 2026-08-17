@@ -981,7 +981,7 @@ def build_work_skins(roles: list[dict]) -> dict[str, dict[str, set]]:
 
 
 def get_target_dirs(path: str | None) -> list[Path]:
-    """扫描目标目录：Models/<作者4位编号>/<模型名> 两层 + Other-YSM-Models 一层。"""
+    """扫描目标目录：Models/<作者>/<模型> 两层 + Other-YSM-Models <作品>/<模型> 两层。"""
     roots = [Path(path).resolve()] if path else DEFAULT_ROOTS
     dirs: list[Path] = []
     for root in roots:
@@ -995,10 +995,32 @@ def get_target_dirs(path: str | None) -> list[Path]:
                     if model.is_dir() and model.name != "previews":
                         dirs.append(model)
         else:
-            for model in sorted(root.iterdir()):
-                if model.is_dir() and model.name != "previews":
-                    dirs.append(model)
-    return sorted(dirs)
+            # Other-YSM-Models 等：现在按 <作品>/<模型> 两层组织（兼容一层/混合），
+            # 递归收集含 .ysm 文件（或 previews/ 子目录）的目录作为模型目录。
+            for sub in sorted(root.iterdir()):
+                if sub.is_dir() and sub.name != "previews":
+                    _collect_model_dirs(sub, dirs)
+    return sorted(set(dirs), key=lambda d: str(d))
+
+
+def _collect_model_dirs(d: Path, out: list[Path]) -> None:
+    """递归收集模型目录：含 .ysm 文件或 previews/ 子目录即视为模型目录。
+
+    适配 Other-YSM-Models 的 <作品>/<模型> 两层（或更深）组织；
+    作品层（无 .ysm）继续向下找，避免把 AK/、BA/ 等作品目录误当模型。
+    """
+    try:
+        entries = list(d.iterdir())
+    except OSError:
+        return
+    has_ysm = any(e.is_file() and e.suffix.lower() == ".ysm" for e in entries)
+    has_previews = any(e.is_dir() and e.name == "previews" for e in entries)
+    if has_ysm or has_previews:
+        out.append(d)
+        return
+    for e in entries:
+        if e.is_dir() and e.name != "previews":
+            _collect_model_dirs(e, out)
 
 
 # ---------------------------------------------------------------------------

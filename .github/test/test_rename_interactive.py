@@ -88,6 +88,14 @@ def run_rename(stdin_text: str, extra_args: list[str] | None = None) -> subproce
 def case_casefix() -> list[tuple[str, bool]]:
     """场景 2：Windows 大小写修正（Avemujica -> AveMujica），不应误报已存在。"""
     setup({"AveMujica": {"en": ["AveMujica"]}}, ["Avemujica_丰川祥子_LB"])
+    # 预置丰川祥子角色（en 留空避免自动补全英文名）：parse2 6.5b 前缀校验要求
+    # 角色命中数据库，否则会把 AveMujica 前缀降级为 Unknown，大小写修正无从验证。
+    # 预置后角色命中、前缀保留，仍验证「大小写不敏感不误报已存在」。
+    char_dir = ROOT / ".github/data/model-info/character"
+    (char_dir / "AveMujica.json").write_text(json.dumps({
+        "work": {"name": "AveMujica", "en": ["AveMujica"]},
+        "roles": [{"zh": ["丰川祥子"], "en": []}],
+    }, ensure_ascii=False), encoding="utf-8")
     r = run_rename("")  # 无 unknown，不询问
     print(r.stdout)
     if r.stderr:
