@@ -159,7 +159,7 @@
         "斯卡蒂"
       ],
       "en": [
-        "skadi(sleepwear)"
+        "skadi"
       ]
     },
     {
@@ -257,7 +257,7 @@
         "红"
       ],
       "en": [
-        "projekt-red-coral-coast"
+        "projekt-red"
       ]
     },
     {
@@ -265,15 +265,17 @@
         "红豆"
       ],
       "en": [
-        "vigna-coral-coast"
+        "vigna"
       ]
     },
     {
       "zh": [
-        "纯烬艾雅法拉"
+        "纯烬艾雅法拉",
+        "艾雅法拉"
       ],
       "en": [
-        "eyjafjalla"
+        "eyjafjalla",
+        "eyjafjalla-the-hvit-aska"
       ]
     },
     {
@@ -356,6 +358,7 @@
         "调香师"
       ],
       "en": [
+        "Perfumer",
         "tiaoxiangshi"
       ]
     },
@@ -364,8 +367,7 @@
         "迷迭香"
       ],
       "en": [
-        "rosmontis",
-        "rosmontis_nsfw"
+        "rosmontis"
       ]
     },
     {
@@ -496,6 +498,536 @@
       "en": [
         "irene"
       ]
+    },
+    {
+      "zh": [
+        "逻各斯"
+      ],
+      "en": [
+        "logos"
+      ]
+    },
+    {
+      "zh": [
+        "提丰"
+      ],
+      "en": [
+        "typhon"
+      ]
+    },
+    {
+      "zh": [
+        "可露希尔"
+      ],
+      "en": [
+        "closure"
+      ]
+    },
+    {
+      "zh": [
+        "德克萨斯"
+      ],
+      "en": [
+        "texas"
+      ]
+    },
+    {
+      "zh": [
+        "泥岩"
+      ],
+      "en": [
+        "mudrock"
+      ]
+    },
+    {
+      "zh": [
+        "澄闪"
+      ],
+      "en": [
+        "goldenglow"
+      ]
+    },
+    {
+      "zh": [
+        "苏苏洛"
+      ],
+      "en": [
+        "sussurro"
+      ]
+    },
+    {
+      "zh": [
+        "锡兰"
+      ],
+      "en": [
+        "ceylon"
+      ]
+    },
+    {
+      "zh": [
+        "霍尔海雅"
+      ],
+      "en": [
+        "ho'olheyak"
+      ]
+    },
+    {
+      "zh": [
+        "黑"
+      ],
+      "en": [
+        "schwarz"
+      ]
+    },
+    {
+      "zh": [
+        "Mon3tr"
+      ],
+      "en": [
+        "mon3tr",
+        "m3"
+      ]
+    },
+    {
+      "zh": [
+        "塞雷娅"
+      ],
+      "en": [
+        "saria"
+      ]
+    },
+    {
+      "zh": [
+        "星熊"
+      ],
+      "en": [
+        "hoshiguma"
+      ]
+    },
+    {
+      "zh": [
+        "闪灵"
+      ],
+      "en": [
+        "shining"
+      ]
+    },
+    {
+      "zh": [
+        "夜莺"
+      ],
+      "en": [
+        "nightingale"
+      ]
+    },
+    {
+      "zh": [
+        "推进之王"
+      ],
+      "en": [
+        "siege"
+      ]
+    },
+    {
+      "zh": [
+        "陈"
+      ],
+      "en": [
+        "ch'en"
+      ]
+    },
+    {
+      "zh": [
+        "棘刺"
+      ],
+      "en": [
+        "thorns"
+      ]
+    },
+    {
+      "zh": [
+        "史尔特尔"
+      ],
+      "en": [
+        "surtr"
+      ]
+    },
+    {
+      "zh": [
+        "山"
+      ],
+      "en": [
+        "mountain"
+      ]
+    },
+    {
+      "zh": [
+        "玛恩纳"
+      ],
+      "en": [
+        "mlynar"
+      ]
+    },
+    {
+      "zh": [
+        "傀影"
+      ],
+      "en": [
+        "phantom"
+      ]
+    },
+    {
+      "zh": [
+        "温蒂"
+      ],
+      "en": [
+        "weedy"
+      ]
+    },
+    {
+      "zh": [
+        "风笛"
+      ],
+      "en": [
+        "bagpipe"
+      ]
+    },
+    {
+      "zh": [
+        "早露"
+      ],
+      "en": [
+        "rosa"
+      ]
+    },
+    {
+      "zh": [
+        "莫斯提马"
+      ],
+      "en": [
+        "mostima"
+      ]
+    },
+    {
+      "zh": [
+        "煌"
+      ],
+      "en": [
+        "blaze"
+      ]
+    },
+    {
+      "zh": [
+        "麦哲伦"
+      ],
+      "en": [
+        "magallan"
+      ]
+    },
+    {
+      "zh": [
+        "卡涅利安"
+      ],
+      "en": [
+        "carnelian"
+      ]
+    },
+    {
+      "zh": [
+        "灵知"
+      ],
+      "en": [
+        "gnosis"
+      ]
+    },
+    {
+      "zh": [
+        "令"
+      ],
+      "en": [
+        "ling"
+      ]
+    },
+    {
+      "zh": [
+        "老鲤"
+      ],
+      "en": [
+        "lee"
+      ]
+    },
+    {
+      "zh": [
+        "白铁"
+      ],
+      "en": [
+        "stainless"
+      ]
+    },
+    {
+      "zh": [
+        "缪尔赛思"
+      ],
+      "en": [
+        "muelsyse"
+      ]
+    },
+    {
+      "zh": [
+        "锏"
+      ],
+      "en": [
+        "degenbrecher"
+      ]
+    },
+    {
+      "zh": [
+        "重岳"
+      ],
+      "en": [
+        "chongyue"
+      ]
+    },
+    {
+      "zh": [
+        "多萝西"
+      ],
+      "en": [
+        "dorothy"
+      ]
+    },
+    {
+      "zh": [
+        "莱伊"
+      ],
+      "en": [
+        "ray"
+      ]
+    },
+    {
+      "zh": [
+        "凛冬"
+      ],
+      "en": [
+        "zima"
+      ]
+    },
+    {
+      "zh": [
+        "琴柳"
+      ],
+      "en": [
+        "saileach"
+      ]
+    },
+    {
+      "zh": [
+        "帕拉斯"
+      ],
+      "en": [
+        "pallas"
+      ]
+    },
+    {
+      "zh": [
+        "焰尾"
+      ],
+      "en": [
+        "flametail"
+      ]
+    },
+    {
+      "zh": [
+        "极境"
+      ],
+      "en": [
+        "elysium"
+      ]
+    },
+    {
+      "zh": [
+        "浊心斯卡蒂"
+      ],
+      "en": [
+        "skadi-the-corrupting-heart"
+      ]
+    },
+    {
+      "zh": [
+        "耀骑士临光"
+      ],
+      "en": [
+        "nearl-the-radiant-knight"
+      ]
+    },
+    {
+      "zh": [
+        "圣约送葬人"
+      ],
+      "en": [
+        "executor-the-ex-foedere"
+      ]
+    },
+    {
+      "zh": [
+        "送葬人"
+      ],
+      "en": [
+        "executor"
+      ]
+    },
+    {
+      "zh": [
+        "伊芙利特"
+      ],
+      "en": [
+        "ifrit"
+      ]
+    },
+    {
+      "zh": [
+        "赫拉格"
+      ],
+      "en": [
+        "hellagur"
+      ]
+    },
+    {
+      "zh": [
+        "空弦"
+      ],
+      "en": [
+        "archetto"
+      ]
+    },
+    {
+      "zh": [
+        "远牙"
+      ],
+      "en": [
+        "fartooth"
+      ]
+    },
+    {
+      "zh": [
+        "歌蕾蒂娅"
+      ],
+      "en": [
+        "gladiia"
+      ]
+    },
+    {
+      "zh": [
+        "瑕光"
+      ],
+      "en": [
+        "blemishine"
+      ]
+    },
+    {
+      "zh": [
+        "炎客"
+      ],
+      "en": [
+        "flamebringer"
+      ]
+    },
+    {
+      "zh": [
+        "星极"
+      ],
+      "en": [
+        "astesia"
+      ]
+    },
+    {
+      "zh": [
+        "崖心"
+      ],
+      "en": [
+        "cliffheart"
+      ]
+    },
+    {
+      "zh": [
+        "初雪"
+      ],
+      "en": [
+        "pramanix"
+      ]
+    },
+    {
+      "zh": [
+        "陨星"
+      ],
+      "en": [
+        "meteorite"
+      ]
+    },
+    {
+      "zh": [
+        "普罗旺斯"
+      ],
+      "en": [
+        "provence"
+      ]
+    },
+    {
+      "zh": [
+        "守林人"
+      ],
+      "en": [
+        "firewatch"
+      ]
+    },
+    {
+      "zh": [
+        "灰喉"
+      ],
+      "en": [
+        "greythroat"
+      ]
+    },
+    {
+      "zh": [
+        "赫默"
+      ],
+      "en": [
+        "silence"
+      ]
+    },
+    {
+      "zh": [
+        "华法琳"
+      ],
+      "en": [
+        "warfarin"
+      ]
+    },
+    {
+      "zh": [
+        "梅尔"
+      ],
+      "en": [
+        "mayer"
+      ]
+    },
+    {
+      "zh": [
+        "真理"
+      ],
+      "en": [
+        "istina"
+      ]
+    },
+    {
+      "zh": [
+        "灰烬"
+      ],
+      "en": [
+        "ash"
+      ],
+      "note": "联动：彩虹六号围攻"
     }
   ]
 }
