@@ -6,8 +6,20 @@
       "en": "Girls' Frontline"
     },
     "aliases": {
+      "zh": [
+        "少女前线 2",
+        "少女前线 2：追放",
+        "少前 2：追放",
+        "少女前线：云图计划",
+        "云图计划"
+      ],
       "en": [
-        "GF"
+        "GF",
+        "GF2",
+        "GIRLS' FRONTLINE 2:EXILIUM",
+        "Girls' Frontline: Neural Cloud",
+        "Project Neural Cloud",
+        "NC"
       ]
     },
     "category": "Game"
@@ -23,48 +35,68 @@
     },
     {
       "zh": [
+        "HK416",
         "可露凯"
       ],
       "en": [
-        "hk416_klukai"
+        "hk416",
+        "klukai"
       ]
     },
     {
       "zh": [
+        "M200",
         "夏安"
       ],
       "en": [
-        "m200_cheyanne"
+        "m200",
+        "cheyanne"
       ]
     },
     {
       "zh": [
+        "WA2000",
         "玛绮朵"
       ],
       "en": [
-        "wa2000_macqiato"
+        "wa2000",
+        "macqiato"
       ]
     },
     {
       "zh": [
+        "KP31",
         "索米"
       ],
       "en": [
-        "kp31_suomi"
+        "kp31",
+        "suomi"
       ]
     },
     {
       "zh": [
+        "UMP9",
         "莱娜"
       ],
       "en": [
-        "ump9_lenna"
+        "ump9",
+        "lenna"
       ]
     },
     {
-      "zh": [],
+      "zh": [
+        "AN-94"
+      ],
       "en": [
         "AN-94"
+      ]
+    },
+    {
+      "zh": [
+        "芙洛伦"
+      ],
+      "en": [
+        "florence"
       ]
     }
   ]
