@@ -95,7 +95,7 @@ from lib.kb.cmds import (
     build_indexes, get_target_dirs,
 )
 from lib.kb.parse2 import (
-    resolve_name2, build_cn_alias,
+    resolve_name3, build_cn_alias,
 )
 from lib.kb.storage import (
     load_kb_json, migrate_from_sqlite,
@@ -181,13 +181,14 @@ def main() -> int:
     roles = list(data.get("roles") or [])
     print(f"知识库: {len(roles)} 条")
 
-    cn_idx, en_idx, en_to_cn, cn_to_en = build_indexes(roles)
+    # 生产解析器 = resolve_name3（整体匹配：先格式化→匹配→重组，见设计文档）；
+    # 需要 roles（角色库）做归一化索引，cn_idx/en_idx 仅由 build_indexes 顺带构建。
+    _cn_idx, _en_idx, en_to_cn, cn_to_en = build_indexes(roles)
     cn_alias = build_cn_alias(roles)
 
     results = []
     for d in dirs:
-        res = resolve_name2(d.name, cn_idx, en_idx, en_to_cn, cn_to_en,
-                            cn_alias)
+        res = resolve_name3(d.name, roles, en_to_cn, cn_to_en, cn_alias)
         res["path"] = d
         results.append(res)
 

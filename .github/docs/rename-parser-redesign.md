@@ -1,6 +1,6 @@
 # 重命名解析器重构设计（parse2 → 整体匹配）
 
-> 状态：已实现（resolve_name3）；文件夹皮肤识别已按 B 方案移除（2026-08-17）
+> 状态：已实现并切为生产解析器（resolve_name3，2026-08-17）；文件夹皮肤识别已按 B 方案移除
 > 日期：2026-08-17
 > 范围：`.github/scripts/lib/kb/parse2.py`（`resolve_name2`/`resolve_name3`）解析逻辑重构
 

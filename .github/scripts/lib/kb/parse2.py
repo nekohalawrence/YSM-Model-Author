@@ -310,9 +310,11 @@ def resolve_name3(name: str, roles: list[dict],
     # 归属判定（作品-角色一致）。前缀作品只在中英文都命中且归属一致指向别处时才纠正
     # （对齐 r2 6.5 保守版）；单语言命中他作时走 6.5c（方案 B：前缀库非空且无此角色
     # + 唯一归属他作才纠正，否则仅标记问题提示）。
+    # OC/VTuber 豁免：角色无法穷举收录，前缀可信赖，不参与"前缀 vs 角色归属"纠正
+    # （否则 OC_泠鸢_Jk 会因未识别英文段 Jk 被误当作中英都命中而纠正成 VTuber）。
     conflict = False
     conflict_works: list[str] = []
-    if work and work != "Unknown" and (cn or en):
+    if work and work != "Unknown" and work not in NO_ROLE_VALIDATION_WORKS and (cn or en):
         if role_works and work not in role_works:
             if cn and en:
                 # 中英文都命中：归属一致才纠正（保守，防跨作品/库不完整误伤）
