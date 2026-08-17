@@ -1,8 +1,18 @@
 # Unknown_星芒雨
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
 - **Name**: 
 - **Category**: #Other
@@ -17,15 +27,5 @@
     - **Bilibili**: [再来几斤小莫莫](https://space.bilibili.com/3493267685509797)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [再来几斤小莫莫](https://afdian.com/a/starmoon679)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

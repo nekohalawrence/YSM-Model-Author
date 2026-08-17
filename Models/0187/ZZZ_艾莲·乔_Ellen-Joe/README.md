@@ -1,28 +1,8 @@
 # ZZZ_艾莲·乔_Ellen-Joe
 
-## Model Details
-<details>
-<summary>Model Details</summary>
-
-- **Name**: 艾莲·乔
-- **Category**: #Game
-  - **Game**: #Zenless-Zone-Zero #ZZZ #绝区零
-
-## Author
-
-- **Name**: #爱听书的旅人 | #爱听小说的旅人
-  - **Author ID**: `0187`
-  - **Role**: #模型 | #Model
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [爱听书的旅人](https://space.bilibili.com/128909195)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [爱听书的旅人](https://afdian.com/a/ATSDLR)
-
-</details>
-
 ## Preview Images
 <details open>
-<summary>Preview Images</summary>
+<summary>Expand/Collapse</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
@@ -39,5 +19,25 @@
 ![preview05.png](previews/preview05.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
+## Model Details
+<details>
+<summary>Expand/Collapse</summary>
+
+- **Name**: #艾莲·乔 | #Ellen-Joe
+- **Category**: #Game
+  - **Game**: #Zenless-Zone-Zero #ZZZ #绝区零
+
+## Author
+
+- **Name**: #爱听书的旅人 | #爱听小说的旅人
+  - **Author ID**: `0187`
+  - **Role**: #模型 | #Model
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [爱听书的旅人](https://space.bilibili.com/128909195)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [爱听书的旅人](https://afdian.com/a/ATSDLR)
 
 </details>

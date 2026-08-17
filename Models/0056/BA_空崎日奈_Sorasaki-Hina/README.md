@@ -1,10 +1,26 @@
 # BA_空崎日奈_Sorasaki-Hina
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+![preview03.png](previews/preview03.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 空崎日奈
+- **Name**: #空崎日奈 | #Sorasaki-Hina
 - **Category**: #Game
   - **Game**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
 
@@ -24,21 +40,5 @@
   - **Role**: #动作 | #Motion
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [雅音宫羽MasaneMiyaPA](https://space.bilibili.com/44218/?spm_id_from=333.999.0.0)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-![preview03.png](previews/preview03.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

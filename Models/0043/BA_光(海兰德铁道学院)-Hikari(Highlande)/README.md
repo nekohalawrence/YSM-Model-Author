@@ -1,10 +1,22 @@
 # BA_光(海兰德铁道学院)-Hikari(Highlande)
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview01.png](previews/preview01.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 
+- **Name**: #Hikari-Highlande
 - **Category**: #Game
   - **Game**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
 
@@ -17,17 +29,5 @@
     - **Bilibili**: [完全凍結ALL](https://space.bilibili.com/393110)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [完全凍結ALL](https://afdian.com/a/AllFreeze)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview01.png](previews/preview01.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

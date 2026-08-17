@@ -1,10 +1,24 @@
 # BtR_后藤一里_Gotoh-Hitori
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 后藤一里
+- **Name**: #后藤一里 | #Gotoh-Hitori
 - **Category**: #Anime
   - **Game**: #Bocchi-the-Rock! #BtR #孤独摇滚！
 
@@ -20,19 +34,5 @@
 
 - **Name**: 泉溪
   - **Role**: #动画 | #Animation
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

@@ -1,10 +1,28 @@
 # ZZZ_星见雅_Hoshimi-Miyabi_LA
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](previews/preview.png)
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+![preview03.png](previews/preview03.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 星见雅
+- **Name**: #星见雅 | #Hoshimi-Miyabi
 - **Category**: #Game
   - **Game**: #Zenless-Zone-Zero #ZZZ #绝区零
 
@@ -23,23 +41,5 @@
 
 - **Name**: Killot
   - **Role**: #动画 | #Animation
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview.png](previews/preview.png)
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-![preview03.png](previews/preview03.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

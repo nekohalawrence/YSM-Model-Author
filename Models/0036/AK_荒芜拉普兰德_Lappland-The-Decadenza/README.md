@@ -1,10 +1,20 @@
 # AK_荒芜拉普兰德_Lappland-The-Decadenza
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 荒芜拉普兰德
+- **Name**: #荒芜拉普兰德 | #Lappland-The-Decadenza
 - **Category**: #Game
   - **Game**: #Arknights #AK #明日方舟
 
@@ -17,15 +27,5 @@
     - **Bilibili**: [日月明567](https://space.bilibili.com/1803539047)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [日月明567](https://afdian.com/a/rym567)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

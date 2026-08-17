@@ -1,10 +1,24 @@
 # VTuber_Muu-Muyu
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 
+- **Name**: #Muu-Muyu
 - **Category**: #Music
   - **Game**: #Virtual YouTuber #VTuber #虚拟主播 #バーチャルユーチューバー
 
@@ -23,19 +37,5 @@
 ## Co-creator
 
 - **Name**: Oni
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

@@ -1,10 +1,20 @@
 # mh_天慧龙2.5
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 
+- **Name**: #2-5
 - **Category**: #Unknown
   - **Game**: #Unknown
 
@@ -30,15 +40,5 @@
   - **Role**: #背景绘制
   - **OtherPlatform**: #哔哩哔哩
     - **哔哩哔哩**: [蓝玫瑰](https://space.bilibili.com/11814817)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

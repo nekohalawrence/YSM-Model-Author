@@ -1,10 +1,22 @@
 # Unknown_Qt-Cha
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview01.png](previews/preview01.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 
+- **Name**: #Qt-Cha
 - **Category**: #Other
   - **Game**: #Unknown #未知
 
@@ -25,17 +37,5 @@
 - **Name**: 甜粽子
 
 - **Name**: 星屑海螺
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview01.png](previews/preview01.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

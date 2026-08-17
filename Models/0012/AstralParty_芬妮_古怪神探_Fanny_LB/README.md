@@ -1,10 +1,26 @@
 # AstralParty_芬妮_古怪神探_Fanny_LB
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+![preview03.png](previews/preview03.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 芬妮
+- **Name**: #芬妮 | #Fanny
 - **Category**: #Game
   - **Game**: #Astral Party #Astral-Party #AstralParty #吉星派对 #星引擎 Party
 
@@ -20,21 +36,5 @@
 
 - **Name**: 一只键盘虾
   - **Role**: #纹理
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-![preview03.png](previews/preview03.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

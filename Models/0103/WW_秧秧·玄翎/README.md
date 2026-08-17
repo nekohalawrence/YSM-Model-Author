@@ -1,10 +1,20 @@
 # WW_秧秧·玄翎
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 秧秧·玄翎
+- **Name**: #秧秧·玄翎 | #Yangyang-Xuanling
 - **Category**: #Game
   - **Game**: #Wuthering-Waves #WuWa #WW #鸣潮
 
@@ -29,15 +39,5 @@
 
 - **Name**: 艺方阁
   - **Role**: #定制咨询
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

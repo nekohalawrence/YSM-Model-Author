@@ -1,10 +1,28 @@
 # Delta-Force_露娜_Luna-Kim_LA
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+![preview03.png](previews/preview03.png)
+
+![preview04.png](previews/preview04.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 露娜
+- **Name**: #露娜 | #Luna-Kim
 - **Category**: #Game
   - **Game**: #Delta Force #Delta-Force #三角洲行动
 
@@ -27,23 +45,5 @@
   - **Role**: #部分素材
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [wakareno](https://space.bilibili.com/1027850236?spm_id_from=333.337.search-card.all.click)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-![preview03.png](previews/preview03.png)
-
-![preview04.png](previews/preview04.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

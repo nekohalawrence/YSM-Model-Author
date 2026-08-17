@@ -1,26 +1,8 @@
 # MyGO_爱音_LB
 
-## Model Details
-<details>
-<summary>Model Details</summary>
-
-- **Name**: 千早爱音
-- **Category**: #Anime
-  - **Game**: #BanG Dream! It's MyGO!!!!! #MyGO #迷途之子！！！！！
-
-## Author
-
-- **Name**: #LuXi233 | #小早川希
-  - **Author ID**: `0078`
-  - **Role**: #模型 | #Model
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [LuXi233](https://space.bilibili.com/183485702)
-
-</details>
-
 ## Preview Images
 <details open>
-<summary>Preview Images</summary>
+<summary>Expand/Collapse</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
@@ -33,5 +15,23 @@
 ![preview03.png](previews/preview03.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
+## Model Details
+<details>
+<summary>Expand/Collapse</summary>
+
+- **Name**: #千早爱音 | #Chihaya-Anon
+- **Category**: #Anime
+  - **Game**: #BanG Dream! It's MyGO!!!!! #MyGO #迷途之子！！！！！
+
+## Author
+
+- **Name**: #LuXi233 | #小早川希
+  - **Author ID**: `0078`
+  - **Role**: #模型 | #Model
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [LuXi233](https://space.bilibili.com/183485702)
 
 </details>

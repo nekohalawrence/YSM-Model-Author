@@ -1,8 +1,18 @@
 # Unknown_复古小猫
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
 - **Name**: 
 - **Category**: #Other
@@ -25,15 +35,5 @@
   - **Role**: #动画 | #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: 【1816是小六的个人空间-哔哩哔哩】 https://b23.tv/ZEajyXK
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

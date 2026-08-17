@@ -1,10 +1,28 @@
 # VTuber_艾伊菈_Ahyra_LA
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](previews/preview.png)
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+![preview03.png](previews/preview03.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 艾伊菈
+- **Name**: #艾伊菈 | #Ahyra
 - **Category**: #Music
   - **Game**: #Virtual YouTuber #VTuber #虚拟主播 #バーチャルユーチューバー
 
@@ -37,23 +55,5 @@
     - **Bilibili**: [睡不醒的秋风](https://space.bilibili.com/375227559)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [睡不醒的秋风](https://ifdian.com/a/qf0224)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview.png](previews/preview.png)
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-![preview03.png](previews/preview03.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

@@ -1,10 +1,24 @@
 # HSR_卡芙卡_Kafka_LA
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](previews/preview.png)
+
+![preview01.png](previews/preview01.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 卡芙卡
+- **Name**: #卡芙卡 | #Kafka
 - **Category**: #Game
   - **Game**: #Honkai-Star-Rail #HSR #崩坏：星穹铁道
 
@@ -27,19 +41,5 @@
   - **SocialPlatform**: #WeChat #Bilibili
     - **WeChat**: MC_CommonMuJi
     - **Bilibili**: [普通的木屐](https://space.bilibili.com/768300)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview.png](previews/preview.png)
-
-![preview01.png](previews/preview01.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

@@ -1,10 +1,20 @@
 # UmaMusume_待兼诗歌剧_Matikanetannhauser
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 待兼诗歌剧
+- **Name**: #待兼诗歌剧 | #Matikanetannhauser
 - **Category**: #Game
   - **Game**: #Umamusume: Pretty Derby #UmaMusume #UM #闪耀！优俊少女 #赛马娘
 
@@ -23,15 +33,5 @@
   - **Role**: #动画 | #Animation
   - **SocialPlatform**: #BiliBili
     - **BiliBili**: [Wone_J](https://space.bilibili.com/13505331?spm_id_from=333.337.0.0)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

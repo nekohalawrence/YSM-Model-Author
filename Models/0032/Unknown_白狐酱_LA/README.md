@@ -1,8 +1,18 @@
 # Unknown_白狐酱_LA
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
 - **Name**: 
 - **Category**: #Other
@@ -18,15 +28,5 @@
     - **QQ**: 1055945725
   - **SupportPlatform**: #Afdian
     - **Afdian**: [你个人机cc](https://afdian.com/a/ccnie)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

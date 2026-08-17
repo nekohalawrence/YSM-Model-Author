@@ -1,10 +1,20 @@
 # Unknown_机械酒狐_F-900 (Machine Wine Fox F-900)
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 酒狐
+- **Name**: #酒狐 | #F-900-Machine-Wine-Fox-F-900
 - **Category**: #Other
   - **Game**: #Unknown #未知
 
@@ -16,15 +26,5 @@
   - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [原原本本空空](https://space.bilibili.com/407818720)
     - **QQ**: 1082258207
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

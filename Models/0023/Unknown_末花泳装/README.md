@@ -1,10 +1,20 @@
 # Unknown_末花泳装
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 圣园未花
+- **Name**: #圣园未花 | #Mika-Misono
 - **Category**: #Other
   - **Game**: #Unknown #未知
 
@@ -18,15 +28,5 @@
     - **QQ**: 975530811
   - **SupportPlatform**: #Afdian
     - **Afdian**: [狸民limin](https://afdian.com/a/limin)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

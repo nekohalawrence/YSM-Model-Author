@@ -1,8 +1,18 @@
 # Unknown_战争雷霆_沈凤翎
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
 - **Name**: 
 - **Category**: #Other
@@ -17,15 +27,5 @@
     - **Bilibili**: [伊洛是哥斯拉嘛](https://space.bilibili.com/17798027)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [伊洛是哥斯拉嘛](https://afdian.com/a/6TGESILA)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

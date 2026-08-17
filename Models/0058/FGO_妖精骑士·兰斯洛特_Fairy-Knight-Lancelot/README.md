@@ -1,10 +1,34 @@
 # FGO_妖精骑士·兰斯洛特_Fairy-Knight-Lancelot
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](previews/preview.png)
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+![preview03.png](previews/preview03.png)
+
+![preview04.png](previews/preview04.png)
+
+![preview05.png](previews/preview05.png)
+
+![preview06.png](previews/preview06.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 妖精骑士·兰斯洛特
+- **Name**: #妖精骑士·兰斯洛特 | #Fairy-Knight-Lancelot
 - **Category**: #Game
   - **Game**: #Fate-Grand-Order #FGO #命运 - 冠位指定
 
@@ -27,29 +51,5 @@
 
 - **Name**: 瓦尼瓦尼
   - **Role**: #定制者
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview.png](previews/preview.png)
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-![preview03.png](previews/preview03.png)
-
-![preview04.png](previews/preview04.png)
-
-![preview05.png](previews/preview05.png)
-
-![preview06.png](previews/preview06.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

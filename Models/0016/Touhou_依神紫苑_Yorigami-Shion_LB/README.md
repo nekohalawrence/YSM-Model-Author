@@ -1,10 +1,26 @@
 # Touhou_依神紫苑_Yorigami-Shion_LB
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](previews/preview.png)
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 依神紫苑
+- **Name**: #依神紫苑 | #Yorigami-Shion
 - **Category**: #Other
   - **Game**: #Touhou-Project #TH #TOUHOU #东方 Project
 
@@ -25,21 +41,5 @@
   - **OtherPlatform**: #qwq #awa
     - **qwq**: 点进来点进来点进来
     - **awa**: 点击右下角主页进入
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview.png](previews/preview.png)
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

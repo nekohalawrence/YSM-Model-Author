@@ -1,8 +1,20 @@
 # Unknown_雨倩_兔女郎_肉铠_LB
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview01.png](previews/preview01.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
 - **Name**: 
 - **Category**: #Other
@@ -19,17 +31,5 @@
   - **SupportPlatform**: #Afdian #Unifans
     - **Afdian**: [源石姬变体](https://afdian.com/a/rawchicken)
     - **Unifans**: [源石姬变体](https://app.unifans.io/c/rawchickenneg)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview01.png](previews/preview01.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

@@ -1,10 +1,20 @@
 # HSR_白露_Bailu
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 白露
+- **Name**: #白露 | #Bailu
 - **Category**: #Game
   - **Game**: #Honkai-Star-Rail #HSR #崩坏：星穹铁道
 
@@ -18,15 +28,5 @@
     - **QQ**: 1535492940
   - **SupportPlatform**: #Afdian
     - **Afdian**: [就叫纸板](https://afdian.com/a/15354qq)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

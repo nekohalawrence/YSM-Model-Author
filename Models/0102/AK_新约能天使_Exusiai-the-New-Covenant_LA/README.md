@@ -1,10 +1,28 @@
 # AK_新约能天使_Exusiai-The-New-Covenant_LA
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+![preview03.png](previews/preview03.png)
+
+![preview04.png](previews/preview04.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 新约能天使
+- **Name**: #新约能天使 | #Exusiai-The-New-Covenant
 - **Category**: #Game
   - **Game**: #Arknights #AK #明日方舟
 
@@ -27,23 +45,5 @@
   - **SocialPlatform**: #WeChat #Bilibili
     - **WeChat**: MC_CommonMuJi
     - **Bilibili**: [普通的木屐](https://space.bilibili.com/768300)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-![preview03.png](previews/preview03.png)
-
-![preview04.png](previews/preview04.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

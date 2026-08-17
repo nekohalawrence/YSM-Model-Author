@@ -1,10 +1,22 @@
 # ZZZ_星见雅_Hoshimi-Miyabi
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview01.png](previews/preview01.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 星见雅
+- **Name**: #星见雅 | #Hoshimi-Miyabi
 - **Category**: #Game
   - **Game**: #Zenless-Zone-Zero #ZZZ #绝区零
 
@@ -23,17 +35,5 @@
 
 - **Name**: 什么鸭
   - **Role**: #动画 | #Animation
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview01.png](previews/preview01.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

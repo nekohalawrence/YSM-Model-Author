@@ -1,10 +1,42 @@
 # OC_白川雨弓_Ameyumi_LA
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+![preview03.png](previews/preview03.png)
+
+![preview04.png](previews/preview04.png)
+
+![preview05.png](previews/preview05.png)
+
+![preview06.png](previews/preview06.png)
+
+![preview07.png](previews/preview07.png)
+
+![preview08.png](previews/preview08.png)
+
+![preview09.png](previews/preview09.png)
+
+![preview10.png](previews/preview10.png)
+
+![preview11.png](previews/preview11.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 白川雨弓
+- **Name**: #白川雨弓 | #Ameyumi
 - **Category**: #Original
   - **Game**: #Original Character #OC #原创角色
 
@@ -33,37 +65,5 @@
 
 - **Name**: 甜粽子
   - **Role**: #动画 | #Animation
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-![preview03.png](previews/preview03.png)
-
-![preview04.png](previews/preview04.png)
-
-![preview05.png](previews/preview05.png)
-
-![preview06.png](previews/preview06.png)
-
-![preview07.png](previews/preview07.png)
-
-![preview08.png](previews/preview08.png)
-
-![preview09.png](previews/preview09.png)
-
-![preview10.png](previews/preview10.png)
-
-![preview11.png](previews/preview11.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

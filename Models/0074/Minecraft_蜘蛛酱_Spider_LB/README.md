@@ -1,10 +1,26 @@
 # Minecraft_蜘蛛酱_Spider_LB
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](previews/preview.png)
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 蜘蛛酱
+- **Name**: #蜘蛛酱 | #Spider
 - **Category**: #Game
   - **Game**: #Minecraft #我的世界
 
@@ -21,21 +37,5 @@
 ## Co-creator
 
 - **Name**: B站 @苏依凛(模型)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview.png](previews/preview.png)
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

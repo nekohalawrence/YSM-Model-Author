@@ -1,10 +1,24 @@
 # HSR_飞霄_Feixiao
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 飞霄
+- **Name**: #飞霄 | #Feixiao
 - **Category**: #Game
   - **Game**: #Honkai-Star-Rail #HSR #崩坏：星穹铁道
 
@@ -18,19 +32,5 @@
     - **QQ**: 916346960
   - **SupportPlatform**: #Afdian
     - **Afdian**: [夹心果风](https://afdian.com/a/jxgf2077)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

@@ -1,10 +1,22 @@
 # BA_鬼方佳代子_Onikata-Kayoko-1
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview01.png](previews/preview01.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 鬼方佳代子
+- **Name**: #鬼方佳代子 | #Onikata-Kayoko-1
 - **Category**: #Game
   - **Game**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
 
@@ -22,17 +34,5 @@
 
 - **Name**: YoosPerson
   - **Role**: #动画 | #Animation
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview01.png](previews/preview01.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

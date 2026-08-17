@@ -1,10 +1,20 @@
 # VTuber_泠鸢_登门喜鹊_LingYuanYousa
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 泠鸢
+- **Name**: #泠鸢 | #LingYuanYousa
 - **Category**: #Music
   - **Game**: #Virtual YouTuber #VTuber #虚拟主播 #バーチャルユーチューバー
 
@@ -37,15 +47,5 @@
     - **Bilibili**: [瀛猫](https://space.bilibili.com/647224460)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [瀛猫](https://afdian.net/a/wincatpro)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

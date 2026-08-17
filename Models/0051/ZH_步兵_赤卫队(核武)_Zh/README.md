@@ -1,10 +1,20 @@
 # ZH_步兵_赤卫队(核武)_Zh
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: mod步兵
+- **Name**: #mod步兵
 - **Category**: #Game
   - **Game**: #Command & Conquer Generals: Zero Hour #Zero Hour #ZH #命令与征服：绝命时刻
 
@@ -17,15 +27,5 @@
     - **Bilibili**: [动员鼬](https://space.bilibili.com/348421936/upload/video)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [动员鼬](https://afdian.com/a/dyy114514)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

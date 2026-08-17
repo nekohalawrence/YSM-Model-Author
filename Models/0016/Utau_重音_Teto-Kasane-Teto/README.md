@@ -1,28 +1,8 @@
 # Utau_重音_Teto-Kasane-Teto
 
-## Model Details
-<details>
-<summary>Model Details</summary>
-
-- **Name**: 重音Teto
-- **Category**: #Music
-  - **Game**: #Utauloid #UTAU #虚拟歌手 #术力口
-
-## Author
-
-- **Name**: #祸御神
-  - **Author ID**: `0016`
-  - **Role**: #嘟嘟哒嘟嘟哒
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [祸御神](https://space.bilibili.com/164557734)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [祸御神](https://afdian.com/a/YS444)
-
-</details>
-
 ## Preview Images
 <details open>
-<summary>Preview Images</summary>
+<summary>Expand/Collapse</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
@@ -39,5 +19,25 @@
 ![preview05.png](previews/preview05.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
+## Model Details
+<details>
+<summary>Expand/Collapse</summary>
+
+- **Name**: #重音Teto | #Teto-Kasane-Teto
+- **Category**: #Music
+  - **Game**: #Utauloid #UTAU #虚拟歌手 #术力口
+
+## Author
+
+- **Name**: #祸御神
+  - **Author ID**: `0016`
+  - **Role**: #嘟嘟哒嘟嘟哒
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [祸御神](https://space.bilibili.com/164557734)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [祸御神](https://afdian.com/a/YS444)
 
 </details>

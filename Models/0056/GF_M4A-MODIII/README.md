@@ -1,10 +1,24 @@
 # GF_M4A-MODIII
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 
+- **Name**: #M4A-MODIII
 - **Category**: #Game
   - **Game**: #Girls' Frontline #GF #GF2 #GIRLS' FRONTLINE 2:EXILIUM #Girls' Frontline: Neural Cloud #Project Neural Cloud #NC #少女前线 #少女前线 2 #少女前线 2：追放 #少前 2：追放 #少女前线：云图计划 #云图计划
 
@@ -17,19 +31,5 @@
     - **Bilibili**: [伊洛是哥斯拉嘛](https://space.bilibili.com/17798027)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [伊洛是哥斯拉嘛](https://afdian.com/a/6TGESILA)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

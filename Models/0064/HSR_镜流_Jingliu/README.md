@@ -1,10 +1,22 @@
 # HSR_镜流_Jingliu
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview01.png](previews/preview01.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 镜流
+- **Name**: #镜流 | #Jingliu
 - **Category**: #Game
   - **Game**: #Honkai-Star-Rail #HSR #崩坏：星穹铁道
 
@@ -16,17 +28,5 @@
   - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [纸盒ALifang](https://space.bilibili.com/1494015242)
     - **QQ**: 619035464
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview01.png](previews/preview01.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

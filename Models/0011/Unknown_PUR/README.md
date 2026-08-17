@@ -1,10 +1,20 @@
 # Unknown_PUR
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 
+- **Name**: #PUR
 - **Category**: #Other
   - **Game**: #Unknown #未知
 
@@ -25,15 +35,5 @@
   - **Role**: #动画 | #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [1816](https://b23.tv/DQ0t1j7)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

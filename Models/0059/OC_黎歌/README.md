@@ -1,10 +1,20 @@
 # OC_黎歌
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 黎歌Neeko
+- **Name**: #黎歌Neeko
 - **Category**: #Original
   - **Game**: #Original Character #OC #原创角色
 
@@ -27,15 +37,5 @@
     - **Bilibili**: [黎歌Neeko](https://space.bilibili.com/671538942)
   - **OtherPlatform**: #歌鸽小巢窝
     - **歌鸽小巢窝**: [黎歌Neeko](https://neeko.remoon.cn/)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

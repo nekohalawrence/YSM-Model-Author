@@ -1,10 +1,20 @@
 # 海兰德铁道学院-希（ノゾミ）_BA_Nozomi(Highlande)
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 
+- **Name**: #BA-Nozomi-Highlande
 - **Category**: #Unknown
   - **Game**: #Unknown
 
@@ -17,15 +27,5 @@
     - **Bilibili**: [完全凍結ALL](https://space.bilibili.com/393110)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [完全凍結ALL](https://afdian.com/a/AllFreeze)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

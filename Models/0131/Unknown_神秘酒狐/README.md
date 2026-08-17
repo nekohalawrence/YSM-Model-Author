@@ -1,10 +1,22 @@
 # Unknown_神秘酒狐
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview01.png](previews/preview01.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 酒狐
+- **Name**: #酒狐 | #Wine-Fox
 - **Category**: #Other
   - **Game**: #Unknown #未知
 
@@ -29,17 +41,5 @@
   - **Role**: #动画 | #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [祸御神](https://space.bilibili.com/164557734)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview01.png](previews/preview01.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

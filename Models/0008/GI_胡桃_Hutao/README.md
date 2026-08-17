@@ -1,10 +1,20 @@
 # GI_胡桃_Hutao
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 胡桃
+- **Name**: #胡桃 | #Hu-Tao
 - **Category**: #Game
   - **Game**: #Genshin Impact #Genshin #GI #原神
 
@@ -23,15 +33,5 @@
 
 - **Name**: 什么鸭
   - **Role**: #动画 | #Animation
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

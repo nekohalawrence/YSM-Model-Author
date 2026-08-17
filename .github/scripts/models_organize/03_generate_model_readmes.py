@@ -386,21 +386,24 @@ def build_meta_and_preview_content(model_dir: Path, image_paths: list[Path],
                                    category_tag: str, game_tags: str,
                                    co_creators: list[dict],
                                    author_entry: dict, author_id: str,
-                                   role_zh: str = '') -> str:
-    """按模板渲染模型 README：Model Details（含 Author/Co-creator 二级标题）+ Preview。
+                                   role_name: str = '') -> str:
+    """按模板渲染模型 README：Preview Images（独立 details）+ Model Details（含
+    Author/Co-creator 二级标题，details 循环后统一关闭）。
 
-    role_zh: 模型文件夹名解析出的中文角色名（Name 字段，可为空）。
+    role_name: 模型文件夹名解析出的 `#中文 | #英文` 角色标签（Name 字段，可为空）。
     """
     tpl = load_template()
     title = model_dir.name
     lines = [tpl.get('title', '# {model_name}').format(model_name=title), '']
+    opened_model_details = False
 
     for section in tpl.get('sections', []):
         key = section.get('key')
         if key == 'model_details':
-            # 大 details 块：Model Details 字段（按模板 indent 缩进）+ 内部两个二级标题 section
+            # 大 details 块：Model Details 字段（按模板 indent 缩进）+ 内部 Author/Co-creator
             lines += [section['heading'], '<details>',
                       f"<summary>{section['summary']}</summary>", '']
+            opened_model_details = True
             for field in section.get('fields', []):
                 indent = '  ' * field.get('indent', 0)
                 if field.get('key') == 'category':
@@ -408,7 +411,7 @@ def build_meta_and_preview_content(model_dir: Path, image_paths: list[Path],
                 elif field.get('key') == 'game':
                     lines.append(f"{indent}- {field['label']}: {game_tags}")
                 elif field.get('key') == 'name':
-                    lines.append(f"{indent}- {field['label']}: {role_zh}")
+                    lines.append(f"{indent}- {field['label']}: {role_name}")
             lines.append('')
         elif key == 'author_details':
             lines += [section['heading'], '']
@@ -421,9 +424,9 @@ def build_meta_and_preview_content(model_dir: Path, image_paths: list[Path],
             if co_section:
                 lines += [section['heading'], '', co_section, '']
         elif key == 'preview_images':
-            # 关闭 Model Details 的大 details，再开 Preview 的独立 details
-            lines += ['</details>', '', section['heading'],
-                      '<details open>', f"<summary>{section['summary']}</summary>", '',
+            # 预览图独立 details（自包含开+关），顺序由模板决定（可放 Model 前）
+            lines += [section['heading'], '<details open>',
+                      f"<summary>{section['summary']}</summary>", '',
                       START_MARKER, '']
             for image_path in image_paths:
                 rel_path = image_path.relative_to(model_dir).as_posix()
@@ -431,6 +434,9 @@ def build_meta_and_preview_content(model_dir: Path, image_paths: list[Path],
                 lines.append('')
             lines += [END_MARKER, '', '</details>', '']
 
+    if opened_model_details:
+        # 关闭 Model Details 的大 details（Author/Co-creator 位于其内）
+        lines += ['</details>', '']
     return '\n'.join(lines).rstrip() + '\n'
 
 
@@ -492,11 +498,14 @@ def main() -> int:
         # Author Role 以模型 .ysm 主作者 role 为准；无则渲染时用模板默认值
         if not author_entry.get('role'):
             author_entry['role'] = get_main_author_role(model_dir)
-        # 角色名（Model Details 的 Name 字段）：resolve_name3 解析模型文件夹名
+        # 角色名（Model Details 的 Name 字段）：resolve_name3 解析模型文件夹名，
+        # 显示为 `#中文 | #英文` 标签格式（如 #圣园未花 | #Mika-Misono）
         try:
-            role_zh = resolve_name3(model_dir.name, roles, e2c, c2e, ca).get('zh') or ''
+            r = resolve_name3(model_dir.name, roles, e2c, c2e, ca)
+            role_name = ' | '.join(f'#{x}' for x in (r.get('zh') or '', r.get('en') or '')
+                                   if x)
         except Exception:  # noqa: BLE001
-            role_zh = ''
+            role_name = ''
         category_tag = get_category_tag(model_dir.name, work_category_map)
         game_tags = get_work_tags(works, model_dir.name.split('_')[0])
 
@@ -506,7 +515,7 @@ def main() -> int:
 
         new_content = build_meta_and_preview_content(
             model_dir, preview_images, category_tag, game_tags,
-            co_creators, author_entry, author_id, role_zh)
+            co_creators, author_entry, author_id, role_name)
 
         if readme_path.exists():
             if existing_content == new_content:

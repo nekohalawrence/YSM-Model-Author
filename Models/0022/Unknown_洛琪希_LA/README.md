@@ -1,10 +1,20 @@
 # Unknown_洛琪希_LA
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 洛琪希
+- **Name**: #洛琪希 | #Roxy-Migurdia
 - **Category**: #Other
   - **Game**: #Unknown #未知
 
@@ -22,15 +32,5 @@
   - **Role**: #金主 #技术
   - **OtherPlatform**: #Q群
     - **Q群**: 126088260
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

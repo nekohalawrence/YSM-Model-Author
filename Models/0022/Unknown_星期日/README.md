@@ -1,10 +1,20 @@
 # Unknown_星期日
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 星期日
+- **Name**: #星期日 | #Sunday
 - **Category**: #Other
   - **Game**: #Unknown #未知
 
@@ -22,15 +32,5 @@
   - **Role**: #动作 #技术 | #Motion
   - **GroupChat**: #QQ-Group
     - **QQ-Group**: 126088260
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

@@ -1,10 +1,20 @@
 # ZZZ_叶瞬光
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 叶瞬光
+- **Name**: #叶瞬光 | #Ye-Shunguang
 - **Category**: #Game
   - **Game**: #Zenless-Zone-Zero #ZZZ #绝区零
 
@@ -23,15 +33,5 @@
 
 - **Name**: 什么鸭
   - **Role**: #动画 | #Animation
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

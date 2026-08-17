@@ -1,10 +1,20 @@
 # HI3_德丽莎_月下初拥_LB
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 丽莎
+- **Name**: #丽莎 | #Lisa
 - **Category**: #Game
   - **Game**: #Honkai-Impact-3 #HI3 #崩坏 3
 
@@ -24,15 +34,5 @@
   - **Role**: #赞助
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [雪华snf](https://space.bilibili.com/135547052)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

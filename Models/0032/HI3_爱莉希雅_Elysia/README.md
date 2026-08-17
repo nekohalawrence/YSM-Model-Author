@@ -1,10 +1,20 @@
 # HI3_爱莉希雅_Elysia
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 爱莉希雅
+- **Name**: #爱莉希雅 | #Elysia
 - **Category**: #Game
   - **Game**: #Honkai-Impact-3 #HI3 #崩坏 3
 
@@ -18,15 +28,5 @@
     - **QQ**: 1055945725
   - **SupportPlatform**: #Afdian
     - **Afdian**: [你个人机cc](https://afdian.com/a/ccnie)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

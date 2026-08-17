@@ -1,10 +1,28 @@
 # OC_联合王国_United-Kingdom (17–19c.)_LA
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](previews/preview.png)
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+![preview03.png](previews/preview03.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 联合王国
+- **Name**: #联合王国 | #United-Kingdom (17–19c.)-17–19c
 - **Category**: #Original
   - **Game**: #Original Character #OC #原创角色
 
@@ -25,23 +43,5 @@
   - **Role**: #形象
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [遊記Gnocchi](https://space.bilibili.com/5896446)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview.png](previews/preview.png)
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-![preview03.png](previews/preview03.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

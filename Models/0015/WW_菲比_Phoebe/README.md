@@ -1,10 +1,24 @@
 # WW_菲比_Phoebe
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 菲比
+- **Name**: #菲比 | #Phoebe
 - **Category**: #Game
   - **Game**: #Wuthering-Waves #WuWa #WW #鸣潮
 
@@ -18,19 +32,5 @@
     - **YouTube**: [寒叔hs](https://www.youtube.com/@%E7%83%88%E9%B8%9F%E6%AF%94%E7%99%BE)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [寒叔hs](https://afdian.com/a/Aigoblin)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

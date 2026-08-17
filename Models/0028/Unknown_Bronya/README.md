@@ -1,10 +1,20 @@
 # Unknown_Bronya
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 
+- **Name**: #Bronya
 - **Category**: #Other
   - **Game**: #Unknown #未知
 
@@ -18,15 +28,5 @@
     - **QQ**: 1050145781
   - **SupportPlatform**: #Afdian
     - **Afdian**: [喵Kuroneko](https://afdian.com/a/QwQlalalaKuroNe)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

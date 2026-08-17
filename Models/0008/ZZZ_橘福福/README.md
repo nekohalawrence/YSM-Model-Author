@@ -1,10 +1,20 @@
 # ZZZ_橘福福
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 橘福福
+- **Name**: #橘福福 | #Ju-Fufu
 - **Category**: #Game
   - **Game**: #Zenless-Zone-Zero #ZZZ #绝区零
 
@@ -23,15 +33,5 @@
 
 - **Name**: 什么鸭
   - **Role**: #动画 | #Animation
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

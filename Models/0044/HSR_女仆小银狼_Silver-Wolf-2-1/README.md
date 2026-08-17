@@ -1,10 +1,20 @@
 # HSR_女仆小银狼_Silver-Wolf-2-1
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 银狼
+- **Name**: #银狼 | #Silver-Wolf-2-1
 - **Category**: #Game
   - **Game**: #Honkai-Star-Rail #HSR #崩坏：星穹铁道
 
@@ -16,15 +26,5 @@
   - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [韦懦夫斯菲尔](https://space.bilibili.com/3546753760496536)
     - **QQ**: 624971642
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

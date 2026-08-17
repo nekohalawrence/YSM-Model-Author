@@ -1,10 +1,28 @@
 # GF2_夏安_M200_Cheyanne_LA
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+![preview03.png](previews/preview03.png)
+
+![preview04.png](previews/preview04.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: M200
+- **Name**: #M200 | #M200-Cheyanne
 - **Category**: #Unknown
   - **Game**: #Unknown
 
@@ -22,23 +40,5 @@
   - **Role**: #素体提供
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [白蛤蜊](https://space.bilibili.com/168185637?spm_id_from=333.788.0.0)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-![preview03.png](previews/preview03.png)
-
-![preview04.png](previews/preview04.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

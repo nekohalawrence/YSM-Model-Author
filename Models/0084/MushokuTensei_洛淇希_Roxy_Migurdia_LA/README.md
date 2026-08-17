@@ -1,28 +1,8 @@
 # MushokuTensei_洛淇希_Roxy_Migurdia_LA
 
-## Model Details
-<details>
-<summary>Model Details</summary>
-
-- **Name**: 洛琪希
-- **Category**: #Anime
-  - **Game**: #MushokuTensei #无职转生～到了异世界就拿出真本事～ #無職転生 ～異世界行ったら本気だす～
-
-## Author
-
-- **Name**: #幻古诗
-  - **Author ID**: `0084`
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [幻古诗](https://space.bilibili.com/443702321)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [幻古诗](https://afdian.com/a/huangushi)
-
-</details>
-
 ## Preview Images
 <details open>
-<summary>Preview Images</summary>
+<summary>Expand/Collapse</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
@@ -37,5 +17,25 @@
 ![preview05.png](previews/preview05.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
+## Model Details
+<details>
+<summary>Expand/Collapse</summary>
+
+- **Name**: #洛琪希 | #Roxy-Migurdia
+- **Category**: #Anime
+  - **Game**: #MushokuTensei #无职转生～到了异世界就拿出真本事～ #無職転生 ～異世界行ったら本気だす～
+
+## Author
+
+- **Name**: #幻古诗
+  - **Author ID**: `0084`
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [幻古诗](https://space.bilibili.com/443702321)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [幻古诗](https://afdian.com/a/huangushi)
 
 </details>

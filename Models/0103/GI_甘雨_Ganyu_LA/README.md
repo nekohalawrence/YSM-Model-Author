@@ -1,10 +1,26 @@
 # GI_甘雨_Ganyu_LA
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](previews/preview.png)
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 甘雨
+- **Name**: #甘雨 | #Ganyu
 - **Category**: #Game
   - **Game**: #Genshin Impact #Genshin #GI #原神
 
@@ -18,21 +34,5 @@
     - **QQ**: 1063585053
   - **SupportPlatform**: #Afdian
     - **Afdian**: [浅陌菌](https://afdian.com/a/tc_fox)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview.png](previews/preview.png)
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

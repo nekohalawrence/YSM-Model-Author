@@ -1,26 +1,8 @@
 # Identity-V_锁芯_Lockheart_LB
 
-## Model Details
-<details>
-<summary>Model Details</summary>
-
-- **Name**: 锁芯
-- **Category**: #Game
-  - **Game**: #Identity V #Identity-V #第五人格
-
-## Author
-
-- **Name**: #赤恒-AzaMire
-  - **Author ID**: `0012`
-  - **Role**: #ALL!!!
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [赤恒-AzaMire](https://space.bilibili.com/235888316)
-
-</details>
-
 ## Preview Images
 <details open>
-<summary>Preview Images</summary>
+<summary>Expand/Collapse</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
@@ -35,5 +17,23 @@
 ![preview04.png](previews/preview04.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
+## Model Details
+<details>
+<summary>Expand/Collapse</summary>
+
+- **Name**: #锁芯 | #Lockheart
+- **Category**: #Game
+  - **Game**: #Identity V #Identity-V #第五人格
+
+## Author
+
+- **Name**: #赤恒-AzaMire
+  - **Author ID**: `0012`
+  - **Role**: #ALL!!!
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [赤恒-AzaMire](https://space.bilibili.com/235888316)
 
 </details>

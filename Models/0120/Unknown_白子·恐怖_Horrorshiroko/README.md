@@ -1,26 +1,8 @@
 # Unknown_白子·恐怖_Horrorshiroko
 
-## Model Details
-<details>
-<summary>Model Details</summary>
-
-- **Name**: 砂狼白子
-- **Category**: #Other
-  - **Game**: #Unknown #未知
-
-## Author
-
-- **Name**: #失语喵
-  - **Author ID**: `0120`
-  - **Role**: #动画 #模型 #人设 | #Animation #Model
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [失语喵](https://space.bilibili.com/171415484)
-
-</details>
-
 ## Preview Images
 <details open>
-<summary>Preview Images</summary>
+<summary>Expand/Collapse</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
@@ -31,5 +13,23 @@
 ![preview03.png](previews/preview03.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
+## Model Details
+<details>
+<summary>Expand/Collapse</summary>
+
+- **Name**: #砂狼白子 | #Sunaookami-Shiroko
+- **Category**: #Other
+  - **Game**: #Unknown #未知
+
+## Author
+
+- **Name**: #失语喵
+  - **Author ID**: `0120`
+  - **Role**: #动画 #模型 #人设 | #Animation #Model
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [失语喵](https://space.bilibili.com/171415484)
 
 </details>

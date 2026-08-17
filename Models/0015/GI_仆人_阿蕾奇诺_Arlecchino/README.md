@@ -1,10 +1,24 @@
 # GI_仆人_阿蕾奇诺_Arlecchino
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 仆人
+- **Name**: #仆人 | #Arlecchino
 - **Category**: #Game
   - **Game**: #Genshin Impact #Genshin #GI #原神
 
@@ -27,19 +41,5 @@
     - **Bilibili**: [烈鸟比百](https://space.bilibili.com/20510758?spm_id_from=333.1007.0.0)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [烈鸟比百](https://afdian.com/a/Aigoblin?tab=shop)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

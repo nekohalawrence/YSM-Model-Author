@@ -1,10 +1,24 @@
 # Unknown_格蕾酱_LB
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 格蕾
+- **Name**: #格蕾 | #Gray
 - **Category**: #Other
   - **Game**: #Unknown #未知
 
@@ -24,19 +38,5 @@
   - **Role**: #动画 | #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [烛火的次元宇宙](https://space.bilibili.com/57715833?spm_id_from=333.1007.0.0)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

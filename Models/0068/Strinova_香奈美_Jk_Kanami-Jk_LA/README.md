@@ -1,33 +1,8 @@
 # Strinova_香奈美_Jk_Kanami-Jk_LA
 
-## Model Details
-<details>
-<summary>Model Details</summary>
-
-- **Name**: 香奈美
-- **Category**: #Game
-  - **Game**: #Strinova #卡拉比丘
-
-## Author
-
-- **Name**: #AnluoSakura
-  - **Author ID**: `0068`
-  - **Role**: #模型 | #Model
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [AnluoSakura](https://space.bilibili.com/1275761002)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [AnluoSakura](https://afdian.com/a/AnluoSakura)
-
-## Co-creator
-
-- **Name**: 安洛樱
-  - **Role**: #动画 | #Animation
-
-</details>
-
 ## Preview Images
 <details open>
-<summary>Preview Images</summary>
+<summary>Expand/Collapse</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
@@ -46,5 +21,30 @@
 ![preview07.png](previews/preview07.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
+## Model Details
+<details>
+<summary>Expand/Collapse</summary>
+
+- **Name**: #香奈美 | #Jk-Kanami-Jk
+- **Category**: #Game
+  - **Game**: #Strinova #卡拉比丘
+
+## Author
+
+- **Name**: #AnluoSakura
+  - **Author ID**: `0068`
+  - **Role**: #模型 | #Model
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [AnluoSakura](https://space.bilibili.com/1275761002)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [AnluoSakura](https://afdian.com/a/AnluoSakura)
+
+## Co-creator
+
+- **Name**: 安洛樱
+  - **Role**: #动画 | #Animation
 
 </details>

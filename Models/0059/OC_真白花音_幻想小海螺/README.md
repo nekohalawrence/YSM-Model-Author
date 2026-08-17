@@ -1,8 +1,18 @@
 # OC_真白花音_幻想小海螺
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
 - **Name**: 
 - **Category**: #Original
@@ -18,15 +28,5 @@
     - **QQ**: 1037786416
   - **SupportPlatform**: #Afdian
     - **Afdian**: [瀛猫](https://afdian.com/a/wincatpro)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

@@ -1,26 +1,8 @@
 # WW_爱弥斯_Aemeath_LA
 
-## Model Details
-<details>
-<summary>Model Details</summary>
-
-- **Name**: 爱弥斯
-- **Category**: #Game
-  - **Game**: #Wuthering-Waves #WuWa #WW #鸣潮
-
-## Author
-
-- **Name**: #赤恒-AzaMire
-  - **Author ID**: `0012`
-  - **Role**: #模型 | #Model
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [赤恒-AzaMire](https://space.bilibili.com/235888316)
-
-</details>
-
 ## Preview Images
 <details open>
-<summary>Preview Images</summary>
+<summary>Expand/Collapse</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
@@ -33,5 +15,23 @@
 ![preview03.png](previews/preview03.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
+## Model Details
+<details>
+<summary>Expand/Collapse</summary>
+
+- **Name**: #爱弥斯 | #Aemeath
+- **Category**: #Game
+  - **Game**: #Wuthering-Waves #WuWa #WW #鸣潮
+
+## Author
+
+- **Name**: #赤恒-AzaMire
+  - **Author ID**: `0012`
+  - **Role**: #模型 | #Model
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [赤恒-AzaMire](https://space.bilibili.com/235888316)
 
 </details>

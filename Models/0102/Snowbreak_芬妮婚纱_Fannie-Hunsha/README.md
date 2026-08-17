@@ -1,10 +1,20 @@
 # Snowbreak_芬妮婚纱_Fannie-Hunsha
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 芬妮
+- **Name**: #芬妮 | #Fanny
 - **Category**: #Game
   - **Game**: #Snowbreak: Containment Zone #snowbreak #尘白禁区
 
@@ -19,15 +29,5 @@
     - **QQ**: 1776296661
   - **SupportPlatform**: #Afdian
     - **Afdian**: [Dreamer](https://space.bilibili.com/768300)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

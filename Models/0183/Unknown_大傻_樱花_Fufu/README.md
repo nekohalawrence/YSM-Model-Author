@@ -1,10 +1,26 @@
 # Unknown_大傻_樱花_Fufu
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+![preview04.png](previews/preview04.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 
+- **Name**: #Fufu
 - **Category**: #Other
   - **Game**: #Unknown #未知
 
@@ -18,21 +34,5 @@
     - **QQ**: 220993928
   - **SupportPlatform**: #Afdian
     - **Afdian**: [Aaaaaaafeng](https://afdian.com/a/Aaaaaaafeng)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-![preview04.png](previews/preview04.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

@@ -1,10 +1,24 @@
 # OC-HarukaC_小猫女仆降临·fumo
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](previews/preview.png)
+
+![preview01.png](previews/preview01.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 女仆
+- **Name**: #女仆 | #Maid-HarukaC
 - **Category**: #Unknown
   - **Game**: #Unknown
 
@@ -24,19 +38,5 @@
 
 - **Name**: 艺方阁
   - **Role**: #定制咨询
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview.png](previews/preview.png)
-
-![preview01.png](previews/preview01.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

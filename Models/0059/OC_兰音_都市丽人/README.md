@@ -1,8 +1,18 @@
 # OC_兰音_都市丽人
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
 - **Name**: 
 - **Category**: #Original
@@ -31,15 +41,5 @@
   - **Role**: #武器设计
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [古巷柠檬](https://space.bilibili.com/437731441)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

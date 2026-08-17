@@ -1,10 +1,24 @@
 # WW×2077_丽贝卡_Rebecca_LA
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 丽贝卡
+- **Name**: #丽贝卡 | #Rebecca-WW×2077
 - **Category**: #Unknown
   - **Game**: #Unknown
 
@@ -16,19 +30,5 @@
   - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [艺方像素](https://space.bilibili.com/107318873)
     - **QQ**: 1320812591
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

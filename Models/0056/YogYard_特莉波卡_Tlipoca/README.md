@@ -1,10 +1,22 @@
 # YogYard_特莉波卡_Tlipoca
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview01.png](previews/preview01.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 特莉波卡
+- **Name**: #特莉波卡 | #Tlipoca
 - **Category**: #Game
   - **Game**: #Yog-Sothoth's Yard #YogYard #YGYST #犹格索托斯的庭院：炼金旅社
 
@@ -17,17 +29,5 @@
     - **Bilibili**: [伊洛是哥斯拉嘛](https://space.bilibili.com/17798027)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [伊洛是哥斯拉嘛](https://afdian.com/a/6TGESILA)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview01.png](previews/preview01.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

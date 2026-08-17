@@ -1,10 +1,26 @@
 # Unknown_爱恩.伊瑞丝.卡列尼娜_LB
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](previews/preview.png)
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 卡列尼娜
+- **Name**: #卡列尼娜 | #Karenina
 - **Category**: #Other
   - **Game**: #Unknown #未知
 
@@ -24,21 +40,5 @@
   - **Role**: #定制
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [是八一四呐](https://b23.tv/1Vqx4Wg)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview.png](previews/preview.png)
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

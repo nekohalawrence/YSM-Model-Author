@@ -1,8 +1,18 @@
 # Unknown_霜狐_泳装
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
 - **Name**: 
 - **Category**: #Other
@@ -16,15 +26,5 @@
   - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [一只霜狐Owo](https://space.bilibili.com/1214393496)
     - **QQ**: 1048762984
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

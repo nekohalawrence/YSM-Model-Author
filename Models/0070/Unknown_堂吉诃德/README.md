@@ -1,8 +1,18 @@
 # Unknown_堂吉诃德
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
 - **Name**: 
 - **Category**: #Other
@@ -17,15 +27,5 @@
     - **Bilibili**: [Dashcode](https://space.bilibili.com/51204057)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [Dashcode](https://afdian.com/a/ashes356)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

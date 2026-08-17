@@ -1,10 +1,22 @@
 # Nikke_Alice-In-Wonderland-Alice
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview01.png](previews/preview01.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 
+- **Name**: #Alice-In-Wonderland-Alice
 - **Category**: #Game
   - **Game**: #Goddess of Victory: Nikke #Nikke #胜利女神：妮姬
 
@@ -28,17 +40,5 @@
     - **VGen**: [Fllz](https://vgen.co/fllz)
   - **GroupChat**: #Discord
     - **Discord**: fllz
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview01.png](previews/preview01.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

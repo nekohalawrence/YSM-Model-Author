@@ -1,10 +1,20 @@
 # Unknown_Devourer-Of-Gods
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 
+- **Name**: #Devourer-Of-Gods
 - **Category**: #Other
   - **Game**: #Unknown #未知
 
@@ -17,15 +27,5 @@
     - **Bilibili**: [松鼠式坦克兵工](https://space.bilibili.com/354791477)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [松鼠式坦克兵工](https://afdian.com/a/Gaimetear2333)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

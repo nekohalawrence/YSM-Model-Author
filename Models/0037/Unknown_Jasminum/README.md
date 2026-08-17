@@ -1,10 +1,20 @@
 # Unknown_Jasminum
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 
+- **Name**: #Jasminum
 - **Category**: #Other
   - **Game**: #Unknown #未知
 
@@ -22,15 +32,5 @@
   - **Role**: #像素图绘制
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [Lugiko](https://space.bilibili.com/5081476)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

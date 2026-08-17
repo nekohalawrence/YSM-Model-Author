@@ -1,10 +1,22 @@
 # GI_克洛琳德_Clorinde
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview01.png](previews/preview01.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 克洛琳德
+- **Name**: #克洛琳德 | #Clorinde
 - **Category**: #Game
   - **Game**: #Genshin Impact #Genshin #GI #原神
 
@@ -16,17 +28,5 @@
   - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [艺方像素](https://space.bilibili.com/107318873)
     - **QQ**: 1320812591
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview01.png](previews/preview01.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

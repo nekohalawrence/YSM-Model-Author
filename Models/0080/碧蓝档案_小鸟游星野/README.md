@@ -1,10 +1,20 @@
 # 碧蓝档案_小鸟游星野
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 小鸟游星野
+- **Name**: #小鸟游星野 | #Takanashi-Hoshino
 - **Category**: #Unknown
   - **Game**: #Unknown
 
@@ -20,15 +30,5 @@
 
 - **Name**: 杰哥
   - **Role**: #动画 | #Animation
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

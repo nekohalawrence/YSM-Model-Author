@@ -1,28 +1,8 @@
 # Touhou_铃仙·优昙华院·因幡_Reisen-Udongein-Inaba_LA
 
-## Model Details
-<details>
-<summary>Model Details</summary>
-
-- **Name**: 铃仙·优昙华院·因幡
-- **Category**: #Other
-  - **Game**: #Touhou-Project #TH #TOUHOU #东方 Project
-
-## Author
-
-- **Name**: #祸御神
-  - **Author ID**: `0016`
-  - **Role**: #嘟嘟哒嘟嘟哒
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [祸御神](https://space.bilibili.com/164557734)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [祸御神](https://afdian.com/a/YS444)
-
-</details>
-
 ## Preview Images
 <details open>
-<summary>Preview Images</summary>
+<summary>Expand/Collapse</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
@@ -37,5 +17,25 @@
 ![preview04.png](previews/preview04.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
+## Model Details
+<details>
+<summary>Expand/Collapse</summary>
+
+- **Name**: #铃仙·优昙华院·因幡 | #Reisen-Udongein-Inaba
+- **Category**: #Other
+  - **Game**: #Touhou-Project #TH #TOUHOU #东方 Project
+
+## Author
+
+- **Name**: #祸御神
+  - **Author ID**: `0016`
+  - **Role**: #嘟嘟哒嘟嘟哒
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [祸御神](https://space.bilibili.com/164557734)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [祸御神](https://afdian.com/a/YS444)
 
 </details>

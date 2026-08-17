@@ -1,10 +1,20 @@
 # VOC_初音未来_Hatsune-Miku
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 初音未来
+- **Name**: #初音未来 | #Hatsune-Miku
 - **Category**: #Music
   - **Game**: #VOCALOID #VOC #博歌乐 #V 家 #术力口 #虚拟歌手 #虚拟歌姬
 
@@ -15,15 +25,5 @@
   - **Role**: #模型 | #Model
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [小萌新idjdkd](https://space.bilibili.com/1573788561)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

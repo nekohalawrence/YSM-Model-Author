@@ -1,10 +1,22 @@
 # Unknown_MK012(灰风)
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview01.png](previews/preview01.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 
+- **Name**: #MK012
 - **Category**: #Other
   - **Game**: #Unknown #未知
 
@@ -16,17 +28,5 @@
   - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [准尉werner](https://space.bilibili.com/23427031)
     - **QQ**: 1102665952
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview01.png](previews/preview01.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

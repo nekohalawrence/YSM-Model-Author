@@ -1,10 +1,28 @@
 # AK_迷迭香_Rosmontis_LB
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+![preview03.png](previews/preview03.png)
+
+![preview04.png](previews/preview04.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 迷迭香
+- **Name**: #迷迭香 | #Rosmontis
 - **Category**: #Game
   - **Game**: #Arknights #AK #明日方舟
 
@@ -26,23 +44,5 @@
     - **Bilibili**: [尼摩](https://space.bilibili.com/352018612)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [尼摩](https://afdian.net/a/nemo_angel)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-![preview03.png](previews/preview03.png)
-
-![preview04.png](previews/preview04.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

@@ -1,10 +1,30 @@
 # Touhou_雾雨魔理沙_Marisa-Kirisame_LA
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview (2).png](previews/preview (2).png)
+
+![preview.png](previews/preview.png)
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+![preview03.png](previews/preview03.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 雾雨魔理沙
+- **Name**: #雾雨魔理沙 | #Marisa-Kirisame
 - **Category**: #Other
   - **Game**: #Touhou-Project #TH #TOUHOU #东方 Project
 
@@ -25,25 +45,5 @@
   - **OtherPlatform**: #qwq #awa
     - **qwq**: 点进来点进来点进来
     - **awa**: 点击右下角主页进入
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview (2).png](previews/preview (2).png)
-
-![preview.png](previews/preview.png)
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-![preview03.png](previews/preview03.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

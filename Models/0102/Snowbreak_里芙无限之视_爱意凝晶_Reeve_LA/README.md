@@ -1,10 +1,28 @@
 # Snowbreak_里芙无限之视_爱意凝晶_Reeve_LA
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](previews/preview.png)
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+![preview03.png](previews/preview03.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 里芙无限之视
+- **Name**: #里芙无限之视 | #Reeve
 - **Category**: #Game
   - **Game**: #Snowbreak: Containment Zone #snowbreak #尘白禁区
 
@@ -27,23 +45,5 @@
   - **SocialPlatform**: #WeChat #Bilibili
     - **WeChat**: MC_CommonMuJi
     - **Bilibili**: [普通的木屐](https://space.bilibili.com/768300)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview.png](previews/preview.png)
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-![preview03.png](previews/preview03.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

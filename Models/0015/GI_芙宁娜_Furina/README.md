@@ -1,10 +1,20 @@
 # GI_芙宁娜_Furina
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 芙宁娜
+- **Name**: #芙宁娜 | #Furina
 - **Category**: #Game
   - **Game**: #Genshin Impact #Genshin #GI #原神
 
@@ -28,15 +38,5 @@
     - **Pixiv**: B站搜索“IDAIDIN”
   - **OtherPlatform**: #米画师
     - **米画师**: 爱发电搜索“IDAIDIN”
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

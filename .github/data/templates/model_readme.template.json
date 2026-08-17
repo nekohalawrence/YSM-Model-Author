@@ -4,9 +4,16 @@
   "title": "# {model_name}",
   "sections": [
     {
+      "key": "preview_images",
+      "heading": "## Preview Images",
+      "summary": "Expand/Collapse",
+      "collapsible": true,
+      "open": true
+    },
+    {
       "key": "model_details",
       "heading": "## Model Details",
-      "summary": "Model Details",
+      "summary": "Expand/Collapse",
       "collapsible": true,
       "fields": [
         { "key": "name", "label": "**Name**" },
@@ -27,13 +34,6 @@
       "summary": "Co-creator",
       "collapsible": false,
       "note": "同 Author，内容来自 co_creators.json 或 .ysm 解析（co-creator 识别）"
-    },
-    {
-      "key": "preview_images",
-      "heading": "## Preview Images",
-      "summary": "Preview Images",
-      "collapsible": true,
-      "open": true
     }
   ],
   "author_block": {

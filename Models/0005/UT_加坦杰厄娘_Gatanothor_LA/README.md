@@ -1,36 +1,8 @@
 # UT_加坦杰厄娘_Gatanothor_LA
 
-## Model Details
-<details>
-<summary>Model Details</summary>
-
-- **Name**: 加坦杰厄娘
-- **Category**: #Anime
-  - **Game**: #Ultraman Tiga #Ultraman #UT #奥特曼 #迪迦奥特曼
-
-## Author
-
-- **Name**: #omo仙贝2号 | #omo | #FujiwaranoMoku114514
-  - **Author ID**: `0005`
-  - **Role**: #全部
-  - **SocialPlatform**: #Bilibili #YouTube #Twitter
-    - **Bilibili**: [omo仙贝2号](https://space.bilibili.com/1959304255)
-    - **YouTube**: [omo仙贝2号](https://www.youtube.com/@%E8%97%A4%E5%8E%9F%E5%A6%B9%E7%BA%A2-i3q)
-    - **Twitter**: [omo仙贝2号](https://x.com/wOelxdwlnwq5Zl0)
-  - **SupportPlatform**: #Afdian #Patreon
-    - **Afdian**: [omo仙贝2号](https://afdian.com/a/omomomomomomo)
-    - **Patreon**: [omo仙贝2号](https://www.patreon.com/c/omo595/posts)
-
-## Co-creator
-
-- **Name**: 甜粽子
-  - **Role**: #动画 | #Animation
-
-</details>
-
 ## Preview Images
 <details open>
-<summary>Preview Images</summary>
+<summary>Expand/Collapse</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
@@ -57,5 +29,33 @@
 ![preview11.png](previews/preview11.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
+## Model Details
+<details>
+<summary>Expand/Collapse</summary>
+
+- **Name**: #加坦杰厄娘 | #Gatanothor
+- **Category**: #Anime
+  - **Game**: #Ultraman Tiga #Ultraman #UT #奥特曼 #迪迦奥特曼
+
+## Author
+
+- **Name**: #omo仙贝2号 | #omo | #FujiwaranoMoku114514
+  - **Author ID**: `0005`
+  - **Role**: #全部
+  - **SocialPlatform**: #Bilibili #YouTube #Twitter
+    - **Bilibili**: [omo仙贝2号](https://space.bilibili.com/1959304255)
+    - **YouTube**: [omo仙贝2号](https://www.youtube.com/@%E8%97%A4%E5%8E%9F%E5%A6%B9%E7%BA%A2-i3q)
+    - **Twitter**: [omo仙贝2号](https://x.com/wOelxdwlnwq5Zl0)
+  - **SupportPlatform**: #Afdian #Patreon
+    - **Afdian**: [omo仙贝2号](https://afdian.com/a/omomomomomomo)
+    - **Patreon**: [omo仙贝2号](https://www.patreon.com/c/omo595/posts)
+
+## Co-creator
+
+- **Name**: 甜粽子
+  - **Role**: #动画 | #Animation
 
 </details>

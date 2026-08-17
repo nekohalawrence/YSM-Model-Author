@@ -1,10 +1,20 @@
 # Unknown_艾丽妮
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 艾丽妮
+- **Name**: #艾丽妮 | #Irene
 - **Category**: #Other
   - **Game**: #Unknown #未知
 
@@ -22,15 +32,5 @@
 
 - **Name**: 烛火的次元宇宙
   - **Role**: #动画 | #Animation
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

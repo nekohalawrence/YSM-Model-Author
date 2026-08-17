@@ -1,10 +1,24 @@
 # NEO_超天酱_KAngel-Nsfw
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](previews/preview.png)
+
+![preview01.png](previews/preview01.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 超天酱
+- **Name**: #超天酱 | #Kangel_Nsfw
 - **Category**: #Game
   - **Game**: #Needy Girl Overdos #Needy Girl Overdose #NEO #NGO #主播女孩重度依赖 #ニーディーガール・オーバードーズ
 
@@ -17,19 +31,5 @@
     - **Bilibili**: [苏依凛](https://space.bilibili.com/76987486)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [苏依凛](https://afdian.com/a/supermonsterking)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview.png](previews/preview.png)
-
-![preview01.png](previews/preview01.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

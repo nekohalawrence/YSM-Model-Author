@@ -1,10 +1,20 @@
 # 新泽西_USS_New_Jersy
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 新泽西
+- **Name**: #新泽西 | #New-Jersey
 - **Category**: #Unknown
   - **Game**: #Unknown
 
@@ -30,15 +40,5 @@
     - **Bilibili**: [哥斯拉](https://space.bilibili.com/17798027)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [哥斯拉](https://afdian.com/a/6TGESILA)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

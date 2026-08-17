@@ -1,10 +1,22 @@
 # AK_塑心_Virtuosa_LC
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview01.png](previews/preview01.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 塑心
+- **Name**: #塑心 | #Virtuosa
 - **Category**: #Game
   - **Game**: #Arknights #AK #明日方舟
 
@@ -18,17 +30,5 @@
     - **QQ**: 924884449
   - **SupportPlatform**: #Afdian
     - **Afdian**: [云曦-Yunxxi_ugo](https://afdian.com/a/Yunxxi_ugo)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview01.png](previews/preview01.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

@@ -1,10 +1,20 @@
 # BA_笑面教授_Niyaniya
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 笑面教授
+- **Name**: #笑面教授 | #Niyaniya
 - **Category**: #Game
   - **Game**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
 
@@ -18,15 +28,5 @@
     - **QQ**: 682546342
   - **SupportPlatform**: #Afdian
     - **Afdian**: [星屑海螺](https://afdian.com/a/lucia2048)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

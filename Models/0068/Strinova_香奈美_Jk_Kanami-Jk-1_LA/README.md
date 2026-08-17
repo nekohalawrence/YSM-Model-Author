@@ -1,10 +1,34 @@
 # Strinova_香奈美_Jk_Kanami-Jk-1_LA
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](previews/preview.png)
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+![preview03.png](previews/preview03.png)
+
+![preview04.png](previews/preview04.png)
+
+![preview05.png](previews/preview05.png)
+
+![preview06.png](previews/preview06.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 香奈美
+- **Name**: #香奈美 | #Jk-Kanami-Jk-1
 - **Category**: #Game
   - **Game**: #Strinova #卡拉比丘
 
@@ -33,29 +57,5 @@
     - **Bilibili**: [星屑海螺,AnluoSakura](https://space.bilibili.com/14975572)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [星屑海螺,AnluoSakura](https://afdian.com/a/lucia2048)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview.png](previews/preview.png)
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-![preview03.png](previews/preview03.png)
-
-![preview04.png](previews/preview04.png)
-
-![preview05.png](previews/preview05.png)
-
-![preview06.png](previews/preview06.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

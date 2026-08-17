@@ -1,10 +1,20 @@
 # Unknown_KosakaWakamo-Tactical Gear
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 
+- **Name**: #KosakaWakamo-Tactical-Gear
 - **Category**: #Other
   - **Game**: #Unknown #未知
 
@@ -17,15 +27,5 @@
 ## Co-creator
 
 - **Name**: 策划: Dr.Кедр
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

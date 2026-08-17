@@ -1,26 +1,8 @@
 # UmaMusume_爱丽数码_常服_UM-Agnes-Digital_LB
 
-## Model Details
-<details>
-<summary>Model Details</summary>
-
-- **Name**: 爱丽数码
-- **Category**: #Game
-  - **Game**: #Umamusume: Pretty Derby #UmaMusume #UM #闪耀！优俊少女 #赛马娘
-
-## Author
-
-- **Name**: #LuXi233 | #小早川希
-  - **Author ID**: `0078`
-  - **Role**: #模型 | #Model
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [LuXi233](https://space.bilibili.com/183485702)
-
-</details>
-
 ## Preview Images
 <details open>
-<summary>Preview Images</summary>
+<summary>Expand/Collapse</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
@@ -33,5 +15,23 @@
 ![preview04.png](previews/preview04.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
+## Model Details
+<details>
+<summary>Expand/Collapse</summary>
+
+- **Name**: #爱丽数码 | #UM-Agnes-Digital
+- **Category**: #Game
+  - **Game**: #Umamusume: Pretty Derby #UmaMusume #UM #闪耀！优俊少女 #赛马娘
+
+## Author
+
+- **Name**: #LuXi233 | #小早川希
+  - **Author ID**: `0078`
+  - **Role**: #模型 | #Model
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [LuXi233](https://space.bilibili.com/183485702)
 
 </details>

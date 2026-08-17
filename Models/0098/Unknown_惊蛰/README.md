@@ -1,10 +1,22 @@
 # Unknown_惊蛰
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview01.png](previews/preview01.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 司霆惊蛰
+- **Name**: #司霆惊蛰 | #Santalla
 - **Category**: #Other
   - **Game**: #Unknown #未知
 
@@ -17,17 +29,5 @@
     - **Bilibili**: [coldM00N](https://space.bilibili.com/11382763)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [coldM00N](https://afdian.com/a/coldMOON048)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview01.png](previews/preview01.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

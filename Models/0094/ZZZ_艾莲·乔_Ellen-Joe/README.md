@@ -1,10 +1,28 @@
 # ZZZ_艾莲·乔_Ellen-Joe
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](previews/preview.png)
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+![preview03.png](previews/preview03.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 艾莲·乔
+- **Name**: #艾莲·乔 | #Ellen-Joe
 - **Category**: #Game
   - **Game**: #Zenless-Zone-Zero #ZZZ #绝区零
 
@@ -31,23 +49,5 @@
   - **Role**: #渲染 | #Render
   - **GroupChat**: #QQ-Group
     - **QQ-Group**: 386839726
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview.png](previews/preview.png)
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-![preview03.png](previews/preview03.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

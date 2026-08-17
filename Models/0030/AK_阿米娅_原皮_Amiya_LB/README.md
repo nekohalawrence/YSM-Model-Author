@@ -1,10 +1,26 @@
 # AK_阿米娅_原皮_Amiya_LB
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](previews/preview.png)
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 阿米娅
+- **Name**: #阿米娅 | #Amiya
 - **Category**: #Game
   - **Game**: #Arknights #AK #明日方舟
 
@@ -30,21 +46,5 @@
     - **Bilibili**: [秋风](https://space.bilibili.com/375227559)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [秋风](https://afdian.com/a/qf0224)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview.png](previews/preview.png)
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

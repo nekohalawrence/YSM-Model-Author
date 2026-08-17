@@ -1,10 +1,28 @@
 # Madoka_晓美焰_Akemi-Homura_LA
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+![preview03.png](previews/preview03.png)
+
+![preview04.png](previews/preview04.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 晓美焰
+- **Name**: #晓美焰 | #Akemi-Homura
 - **Category**: #Anime
   - **Game**: #Puella Magi Madoka Magica #PMMM #Madoka #魔法少女小圆 #魔法少女まどか☆マギカ
 
@@ -28,23 +46,5 @@
     - **Afdian**: [窝窝头](https://afdian.com/a/WWTman)
   - **GroupChat**: #QQ-Group
     - **QQ-Group**: [窝窝头](https://qm.qq.com/q/uP42j7qxHi)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-![preview03.png](previews/preview03.png)
-
-![preview04.png](previews/preview04.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

@@ -1,10 +1,24 @@
 # GCG_时无瑕_常服_Shi-Wuxia
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 时无瑕
+- **Name**: #时无瑕 | #Shi-Wuxia
 - **Category**: #Game
   - **Game**: #Girl Cafe Gun #GCG #双生视界 #少女咖啡槍II #ガルカフェ
 
@@ -17,19 +31,5 @@
     - **Bilibili**: [伊洛是哥斯拉嘛](https://space.bilibili.com/17798027)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [伊洛是哥斯拉嘛](https://afdian.com/a/6TGESILA)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

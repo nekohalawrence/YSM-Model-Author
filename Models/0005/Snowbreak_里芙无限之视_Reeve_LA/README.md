@@ -1,10 +1,28 @@
 # Snowbreak_里芙无限之视_Reeve_LA
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](previews/preview.png)
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+![preview03.png](previews/preview03.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 里芙无限之视
+- **Name**: #里芙无限之视 | #Reeve
 - **Category**: #Game
   - **Game**: #Snowbreak: Containment Zone #snowbreak #尘白禁区
 
@@ -20,23 +38,5 @@
   - **SupportPlatform**: #Afdian #Patreon
     - **Afdian**: [omo仙贝2号](https://afdian.com/a/omomomomomomo)
     - **Patreon**: [omo仙贝2号](https://www.patreon.com/c/omo595/posts)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview.png](previews/preview.png)
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-![preview03.png](previews/preview03.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

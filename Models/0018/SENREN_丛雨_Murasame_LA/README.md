@@ -1,10 +1,20 @@
 # SENREN_丛雨_Murasame_LA
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 丛雨
+- **Name**: #丛雨 | #Murasame
 - **Category**: #Game
   - **Game**: #Senren＊Banka #SENREN #千恋＊万花 #せんれん＊ばんか
 
@@ -18,15 +28,5 @@
     - **QQ**: 916346960
   - **SupportPlatform**: #Afdian
     - **Afdian**: [夹心果风](https://afdian.com/a/jxgf2077)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

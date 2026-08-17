@@ -1,10 +1,20 @@
 # AK_桃金娘_Myrtle
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 桃金娘
+- **Name**: #桃金娘 | #Myrtle
 - **Category**: #Game
   - **Game**: #Arknights #AK #明日方舟
 
@@ -18,15 +28,5 @@
     - **QQ**: 975530811
   - **SupportPlatform**: #Afdian
     - **Afdian**: [狸民limin](https://afdian.com/a/limin)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

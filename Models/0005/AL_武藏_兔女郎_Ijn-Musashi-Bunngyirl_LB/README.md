@@ -1,10 +1,28 @@
 # AL_武藏_兔女郎_Ijn-Musashi-Bunngyirl_LB
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](previews/preview.png)
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+![preview03.png](previews/preview03.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 武藏
+- **Name**: #武藏 | #Ijn-Musashi-Bunngyirl
 - **Category**: #Game
   - **Game**: #Azur-Lane #AL #碧蓝航线
 
@@ -27,23 +45,5 @@
   - **Role**: #动画 | #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [甜粽子](https://space.bilibili.com/1968748)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview.png](previews/preview.png)
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-![preview03.png](previews/preview03.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

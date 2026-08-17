@@ -1,10 +1,26 @@
 # NGE_明日香_Asuka_LB
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](previews/preview.png)
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 明日香
+- **Name**: #明日香 | #Asuka
 - **Category**: #Game
   - **Game**: #Neon-Genesis-Evangelion #NGE #EVA #新世纪福音战士
 
@@ -16,21 +32,5 @@
   - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [艺方像素](https://space.bilibili.com/107318873)
     - **QQ**: 1320812591
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview.png](previews/preview.png)
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

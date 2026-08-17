@@ -1,10 +1,26 @@
 # VTuber_咩栗_Merrryyuko_LB
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](previews/preview.png)
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 咩栗
+- **Name**: #咩栗 | #Merrryyuko
 - **Category**: #Music
   - **Game**: #Virtual YouTuber #VTuber #虚拟主播 #バーチャルユーチューバー
 
@@ -17,21 +33,5 @@
     - **Bilibili**: [墨染逝羽](https://space.bilibili.com/5718046)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [墨染逝羽](https://afdian.com/a/FliegeSA)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview.png](previews/preview.png)
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

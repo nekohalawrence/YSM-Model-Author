@@ -1,10 +1,24 @@
 # VTuber_呜米_Umyknight_LB
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview (2).png](previews/preview (2).png)
+
+![preview01.png](previews/preview01.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 呜米
+- **Name**: #呜米 | #Umyknight
 - **Category**: #Music
   - **Game**: #Virtual YouTuber #VTuber #虚拟主播 #バーチャルユーチューバー
 
@@ -17,19 +31,5 @@
     - **Bilibili**: [墨染逝羽](https://space.bilibili.com/5718046)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [墨染逝羽](https://afdian.com/a/FliegeSA)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview (2).png](previews/preview (2).png)
-
-![preview01.png](previews/preview01.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

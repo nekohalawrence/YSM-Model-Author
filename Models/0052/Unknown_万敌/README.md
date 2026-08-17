@@ -1,28 +1,8 @@
 # Unknown_万敌
 
-## Model Details
-<details>
-<summary>Model Details</summary>
-
-- **Name**: 万敌
-- **Category**: #Other
-  - **Game**: #Unknown #未知
-
-## Author
-
-- **Name**: #゚烟雨画桥
-  - **Author ID**: `0052`
-  - **Role**: #作者
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [゚烟雨画桥](https://space.bilibili.com/1268865161)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [゚烟雨画桥](https://afdian.com/a/mj204)
-
-</details>
-
 ## Preview Images
 <details open>
-<summary>Preview Images</summary>
+<summary>Expand/Collapse</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
@@ -35,5 +15,25 @@
 ![preview03.png](previews/preview03.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
+## Model Details
+<details>
+<summary>Expand/Collapse</summary>
+
+- **Name**: #万敌 | #Mydei
+- **Category**: #Other
+  - **Game**: #Unknown #未知
+
+## Author
+
+- **Name**: #゚烟雨画桥
+  - **Author ID**: `0052`
+  - **Role**: #作者
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [゚烟雨画桥](https://space.bilibili.com/1268865161)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [゚烟雨画桥](https://afdian.com/a/mj204)
 
 </details>

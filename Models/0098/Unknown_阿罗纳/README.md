@@ -1,10 +1,24 @@
 # Unknown_阿罗纳
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](previews/preview.png)
+
+![preview01.png](previews/preview01.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 阿罗娜
+- **Name**: #阿罗娜 | #Arona
 - **Category**: #Other
   - **Game**: #Unknown #未知
 
@@ -17,19 +31,5 @@
     - **Bilibili**: [coldM00N](https://space.bilibili.com/11382763)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [coldM00N](https://afdian.com/a/coldMOON048)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview.png](previews/preview.png)
-
-![preview01.png](previews/preview01.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

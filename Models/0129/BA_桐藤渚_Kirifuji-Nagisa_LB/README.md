@@ -1,10 +1,26 @@
 # BA_桐藤渚_Kirifuji-Nagisa_LB
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](previews/preview.png)
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 桐藤渚
+- **Name**: #桐藤渚 | #Kirifuji-Nagisa
 - **Category**: #Game
   - **Game**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
 
@@ -16,21 +32,5 @@
   - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [Dr观星](https://space.bilibili.com/157282636)
     - **QQ**: 1087347018
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview.png](previews/preview.png)
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

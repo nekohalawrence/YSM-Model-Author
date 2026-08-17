@@ -1,10 +1,26 @@
 # UT_杰顿_芝顿娘_Zetton_LB
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](previews/preview.png)
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 杰顿
+- **Name**: #杰顿 | #Zetton
 - **Category**: #Anime
   - **Game**: #Ultraman Tiga #Ultraman #UT #奥特曼 #迪迦奥特曼
 
@@ -17,21 +33,5 @@
     - **Bilibili**: [苏依凛](https://space.bilibili.com/76987486)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [苏依凛](https://afdian.com/a/supermonsterking)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview.png](previews/preview.png)
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

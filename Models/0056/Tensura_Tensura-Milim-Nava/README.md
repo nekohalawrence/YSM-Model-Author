@@ -1,10 +1,22 @@
 # Tensura_Tensura-Milim-Nava
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview01.png](previews/preview01.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 
+- **Name**: #Tensura-Milim-Nava
 - **Category**: #Anime
   - **Game**: #That Time I Got Reincarnated as a Slime #Tensura #关于我转生变成史莱姆这档事 #転生したらスライムだった件
 
@@ -32,17 +44,5 @@
     - **Bilibili**: [星屑海螺](https://space.bilibili.com/14975572)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [星屑海螺](https://afdian.net/a/lucia2048)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview01.png](previews/preview01.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

@@ -1,10 +1,20 @@
 # Unknown_照
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 照
+- **Name**: #照 | #Zhao
 - **Category**: #Other
   - **Game**: #Unknown #未知
 
@@ -25,15 +35,5 @@
   - **Role**: #武器作者
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [下一只风筝](https://space.bilibili.com/281665959?spm_id_from=333.337.0.0)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

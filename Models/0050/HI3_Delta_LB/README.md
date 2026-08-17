@@ -1,10 +1,22 @@
 # HI3_Delta_LB
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview01.png](previews/preview01.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 
+- **Name**: #Delta
 - **Category**: #Game
   - **Game**: #Honkai-Impact-3 #HI3 #崩坏 3
 
@@ -17,17 +29,5 @@
     - **Bilibili**: [荨蒿栗里](https://space.bilibili.com/501046951)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [荨蒿栗里](https://ifdian.net/a/xphkvilili?tab=home)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview01.png](previews/preview01.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

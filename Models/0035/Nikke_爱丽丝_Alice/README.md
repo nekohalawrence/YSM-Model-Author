@@ -1,10 +1,20 @@
 # Nikke_爱丽丝_Alice
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 天童爱丽丝
+- **Name**: #天童爱丽丝 | #Alice
 - **Category**: #Game
   - **Game**: #Goddess of Victory: Nikke #Nikke #胜利女神：妮姬
 
@@ -17,15 +27,5 @@
     - **Bilibili**: [谱露阿凯](https://space.bilibili.com/426183597)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [谱露阿凯](https://afdian.com/a/11434fan)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

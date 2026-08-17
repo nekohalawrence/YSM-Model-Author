@@ -1,10 +1,20 @@
 # Unknown_刻刀
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 刻刀
+- **Name**: #刻刀 | #Cutter
 - **Category**: #Other
   - **Game**: #Unknown #未知
 
@@ -15,15 +25,5 @@
   - **Role**: #作者
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [对羧基苯酚](https://space.bilibili.com/3461562335496256)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

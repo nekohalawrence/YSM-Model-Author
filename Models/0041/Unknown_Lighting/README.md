@@ -1,10 +1,20 @@
 # Unknown_Lighting
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 
+- **Name**: #Lighting
 - **Category**: #Other
   - **Game**: #Unknown #未知
 
@@ -18,15 +28,5 @@
     - **QQ**: 881921312
   - **SupportPlatform**: #Afdian
     - **Afdian**: [提可拉](https://afdian.com/a/6Canim)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

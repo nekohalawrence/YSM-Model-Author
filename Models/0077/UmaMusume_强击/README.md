@@ -1,8 +1,20 @@
 # UmaMusume_强击
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](previews/preview.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
 - **Name**: 
 - **Category**: #Game
@@ -18,17 +30,5 @@
     - **QQ**: 2479819954
   - **SupportPlatform**: #Afdian
     - **Afdian**: [旭门只玩驹](https://afdian.com/a/Zeonjin-Kogasa)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview.png](previews/preview.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

@@ -1,10 +1,20 @@
 # Unknown_伊芙琳
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 伊芙琳·舒瓦利耶
+- **Name**: #伊芙琳·舒瓦利耶 | #Evelyn-Chevalier
 - **Category**: #Other
   - **Game**: #Unknown #未知
 
@@ -22,15 +32,5 @@
 ## Co-creator
 
 - **Name**: 约模的: 一只路过的白鸽子
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

@@ -1,10 +1,26 @@
 # AK_维什戴尔_Wisadel_LA
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+![preview03.png](previews/preview03.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 维什戴尔
+- **Name**: #维什戴尔 | #Wisadel
 - **Category**: #Game
   - **Game**: #Arknights #AK #明日方舟
 
@@ -18,21 +34,5 @@
     - **QQ**: 916346960
   - **SupportPlatform**: #Afdian
     - **Afdian**: [夹心果风](https://afdian.com/a/jxgf2077)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-![preview03.png](previews/preview03.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

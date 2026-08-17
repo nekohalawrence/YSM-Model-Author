@@ -1,10 +1,24 @@
 # AK_极光_Aurora_LB
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 极光
+- **Name**: #极光 | #Aurora
 - **Category**: #Game
   - **Game**: #Arknights #AK #明日方舟
 
@@ -17,19 +31,5 @@
     - **Bilibili**: [映白L](https://space.bilibili.com/10208258)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [映白L](https://afdian.com/a/ehaku)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

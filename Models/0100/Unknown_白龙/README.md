@@ -1,8 +1,18 @@
 # Unknown_白龙
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
 - **Name**: 
 - **Category**: #Other
@@ -36,15 +46,5 @@
     - **B站主页**: [芸樱绘境](https://space.bilibili.com/4194287?spm_id_from=333.1369.opus.module_author_avatar.click)
   - **GroupChat**: #QQ-Group
     - **QQ-Group**: 834184496
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

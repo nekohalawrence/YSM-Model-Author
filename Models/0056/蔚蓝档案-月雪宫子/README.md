@@ -1,10 +1,20 @@
 # 蔚蓝档案-月雪宫子
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 月雪宫子
+- **Name**: #月雪宫子 | #Tsukiyuki-Miyako
 - **Category**: #Unknown
   - **Game**: #Unknown
 
@@ -21,15 +31,5 @@
 ## Co-creator
 
 - **Name**: 动作制作：狱际星芒
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

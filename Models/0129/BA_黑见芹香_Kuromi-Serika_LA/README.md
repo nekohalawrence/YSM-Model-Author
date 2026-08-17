@@ -1,27 +1,8 @@
 # BA_黑见芹香_Kuromi-Serika_LA
 
-## Model Details
-<details>
-<summary>Model Details</summary>
-
-- **Name**: 黑见芹香
-- **Category**: #Game
-  - **Game**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
-
-## Author
-
-- **Name**: #Dr观星 | #Dr-观星
-  - **Author ID**: `0129`
-  - **Role**: #Dr-观星
-  - **SocialPlatform**: #Bilibili #QQ
-    - **Bilibili**: [Dr观星](https://space.bilibili.com/157282636)
-    - **QQ**: 1087347018
-
-</details>
-
 ## Preview Images
 <details open>
-<summary>Preview Images</summary>
+<summary>Expand/Collapse</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
@@ -36,5 +17,24 @@
 ![preview04.png](previews/preview04.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
+## Model Details
+<details>
+<summary>Expand/Collapse</summary>
+
+- **Name**: #黑见芹香 | #Kuromi-Serika
+- **Category**: #Game
+  - **Game**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
+
+## Author
+
+- **Name**: #Dr观星 | #Dr-观星
+  - **Author ID**: `0129`
+  - **Role**: #Dr-观星
+  - **SocialPlatform**: #Bilibili #QQ
+    - **Bilibili**: [Dr观星](https://space.bilibili.com/157282636)
+    - **QQ**: 1087347018
 
 </details>

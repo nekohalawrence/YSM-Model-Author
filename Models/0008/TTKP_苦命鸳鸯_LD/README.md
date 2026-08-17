@@ -1,8 +1,18 @@
 # TTKP_苦命鸳鸯_LD
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
 - **Name**: 
 - **Category**: #Unknown
@@ -18,15 +28,5 @@
     - **QQ**: 1067426280
   - **SupportPlatform**: #Afdian
     - **Afdian**: [白色北熊](https://afdian.com/a/bx233)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

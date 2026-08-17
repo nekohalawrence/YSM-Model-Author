@@ -1,10 +1,24 @@
 # OC_糖一色_Shiny-Vtuber
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 
+- **Name**: #Shiny
 - **Category**: #Original
   - **Game**: #Original Character #OC #原创角色
 
@@ -24,19 +38,5 @@
   - **Role**: #oc方
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [糖一色Shiny](https://space.bilibili.com/3546615501556479)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

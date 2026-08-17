@@ -1,26 +1,8 @@
 # Unknown_佩可莉姆
 
-## Model Details
-<details>
-<summary>Model Details</summary>
-
-- **Name**: 可莉
-- **Category**: #Other
-  - **Game**: #Unknown #未知
-
-## Author
-
-- **Name**: #棒锤锤 | #棒锤锤QWQ
-  - **Author ID**: `0166`
-  - **Role**: #模型 | #Model
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [棒锤锤](https://afdian.com/a/bbc6868)
-
-</details>
-
 ## Preview Images
 <details open>
-<summary>Preview Images</summary>
+<summary>Expand/Collapse</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
@@ -33,5 +15,23 @@
 ![preview04.png](previews/preview04.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
+## Model Details
+<details>
+<summary>Expand/Collapse</summary>
+
+- **Name**: #可莉 | #Klee
+- **Category**: #Other
+  - **Game**: #Unknown #未知
+
+## Author
+
+- **Name**: #棒锤锤 | #棒锤锤QWQ
+  - **Author ID**: `0166`
+  - **Role**: #模型 | #Model
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [棒锤锤](https://afdian.com/a/bbc6868)
 
 </details>

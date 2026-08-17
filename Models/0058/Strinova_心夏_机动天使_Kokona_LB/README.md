@@ -1,10 +1,28 @@
 # Strinova_心夏_机动天使_Kokona_LB
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](previews/preview.png)
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+![preview03.png](previews/preview03.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 心夏
+- **Name**: #心夏 | #Kokona
 - **Category**: #Game
   - **Game**: #Strinova #卡拉比丘
 
@@ -34,23 +52,5 @@
     - **Bilibili**: [风竹](https://space.bilibili.com/60906146)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [风竹](https://afdian.net/a/windamboo)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview.png](previews/preview.png)
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-![preview03.png](previews/preview03.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

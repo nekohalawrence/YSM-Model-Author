@@ -1,10 +1,20 @@
 # OC_小小酒狐_Wine-Fox
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 酒狐
+- **Name**: #酒狐 | #Wine-Fox
 - **Category**: #Original
   - **Game**: #Original Character #OC #原创角色
 
@@ -23,15 +33,5 @@
 
 - **Name**: 什么鸭
   - **Role**: #动画 | #Animation
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

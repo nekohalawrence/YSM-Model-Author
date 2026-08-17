@@ -1,10 +1,22 @@
 # Unknown_Rei-Ayanami_LD
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview01.png](previews/preview01.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 
+- **Name**: #Rei-Ayanami
 - **Category**: #Other
   - **Game**: #Unknown #未知
 
@@ -20,17 +32,5 @@
   - **SupportPlatform**: #Afdian #Patreon
     - **Afdian**: [omo仙贝2号](https://afdian.com/a/omomomomomomo)
     - **Patreon**: [omo仙贝2号](https://www.patreon.com/c/omo595/posts)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview01.png](previews/preview01.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

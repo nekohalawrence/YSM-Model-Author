@@ -1,10 +1,22 @@
 # AK_巫恋_Shamare-WitchFeast
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview01.png](previews/preview01.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 巫恋
+- **Name**: #巫恋 | #Shamare-WitchFeast
 - **Category**: #Game
   - **Game**: #Arknights #AK #明日方舟
 
@@ -40,17 +52,5 @@
     - **Linktree**: [Fllz](https://linktr.ee/fllz)
   - **GroupChat**: #Discord
     - **Discord**: fllz
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview01.png](previews/preview01.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

@@ -1,28 +1,8 @@
 # 990_LC
 
-## Model Details
-<details>
-<summary>Model Details</summary>
-
-- **Name**: 
-- **Category**: #Unknown
-  - **Game**: #Unknown
-
-## Author
-
-- **Name**: #聚模道 | #聚核重工Minecraft | #语文喵喵拳
-  - **Author ID**: `0117`
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [聚模道](https://space.bilibili.com/450162369)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [聚模道](https://afdian.com/a/yr9964332)
-
-</details>
-
 ## Preview Images
 <details open>
-<summary>Preview Images</summary>
+<summary>Expand/Collapse</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
@@ -35,5 +15,25 @@
 ![preview03.png](previews/preview03.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
+## Model Details
+<details>
+<summary>Expand/Collapse</summary>
+
+- **Name**: #990
+- **Category**: #Unknown
+  - **Game**: #Unknown
+
+## Author
+
+- **Name**: #聚模道 | #聚核重工Minecraft | #语文喵喵拳
+  - **Author ID**: `0117`
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [聚模道](https://space.bilibili.com/450162369)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [聚模道](https://afdian.com/a/yr9964332)
 
 </details>

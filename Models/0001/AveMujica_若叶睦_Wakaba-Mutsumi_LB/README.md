@@ -1,10 +1,28 @@
 # AveMujica_若叶睦_Wakaba-Mutsumi_LB
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](previews/preview.png)
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+![preview03.png](previews/preview03.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 若叶睦
+- **Name**: #若叶睦 | #Wakaba-Mutsumi
 - **Category**: #Anime
   - **Game**: #BanG Dream! Ave Mujica #AveMujica #颂乐人偶
 
@@ -23,23 +41,5 @@
   - **Role**: #玩偶素体贡献者
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [mo](https://space.bilibili.com/1959304255)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview.png](previews/preview.png)
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-![preview03.png](previews/preview03.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

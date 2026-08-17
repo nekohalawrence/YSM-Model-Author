@@ -1,10 +1,28 @@
 # Unknown_玛修·基列莱特
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](previews/preview.png)
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+![preview03.png](previews/preview03.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 玛修·基列莱特
+- **Name**: #玛修·基列莱特 | #Mash-Kyrielight
 - **Category**: #Other
   - **Game**: #Unknown #未知
 
@@ -29,23 +47,5 @@
   - **Role**: #物理
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [shercoo](https://space.bilibili.com/14599323)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview.png](previews/preview.png)
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-![preview03.png](previews/preview03.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

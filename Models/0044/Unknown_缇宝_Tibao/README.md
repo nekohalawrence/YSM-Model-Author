@@ -1,10 +1,24 @@
 # Unknown_缇宝_Tibao
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 缇宝
+- **Name**: #缇宝 | #Tribbie
 - **Category**: #Other
   - **Game**: #Unknown #未知
 
@@ -16,19 +30,5 @@
   - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [韦懦夫斯菲尔](https://space.bilibili.com/3546753760496536)
     - **QQ**: 624971642
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

@@ -1,24 +1,8 @@
 # AL_江风_Kawakaze
 
-## Model Details
-<details>
-<summary>Model Details</summary>
-
-- **Name**: 江风
-- **Category**: #Game
-  - **Game**: #Azur-Lane #AL #碧蓝航线
-
-## Author
-
-- **Name**: #ShiroKaze
-  - **Author ID**: `0169`
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-
-</details>
-
 ## Preview Images
 <details open>
-<summary>Preview Images</summary>
+<summary>Expand/Collapse</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
@@ -27,5 +11,21 @@
 ![preview02.png](previews/preview02.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
+## Model Details
+<details>
+<summary>Expand/Collapse</summary>
+
+- **Name**: #江风 | #Kawakaze
+- **Category**: #Game
+  - **Game**: #Azur-Lane #AL #碧蓝航线
+
+## Author
+
+- **Name**: #ShiroKaze
+  - **Author ID**: `0169`
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
 
 </details>

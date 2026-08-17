@@ -1,8 +1,18 @@
 # Unknown_地狱三头犬
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
 - **Name**: 
 - **Category**: #Other
@@ -18,15 +28,5 @@
     - **YouTube**: [寒叔hs](https://www.youtube.com/@%E7%83%88%E9%B8%9F%E6%AF%94%E7%99%BE)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [寒叔hs](https://afdian.com/a/Aigoblin)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

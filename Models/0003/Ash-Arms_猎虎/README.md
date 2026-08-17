@@ -1,8 +1,18 @@
 # Ash-Arms_猎虎
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
 - **Name**: 
 - **Category**: #Game
@@ -15,15 +25,5 @@
   - **Role**: #模型 | #Model
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [XGancheng_Tao](https://space.bilibili.com/1406170630)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

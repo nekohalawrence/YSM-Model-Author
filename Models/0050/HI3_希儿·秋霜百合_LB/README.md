@@ -1,8 +1,18 @@
 # HI3_希儿·秋霜百合_LB
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
 - **Name**: 
 - **Category**: #Game
@@ -17,15 +27,5 @@
     - **Bilibili**: [荨蒿栗里](https://space.bilibili.com/501046951)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [荨蒿栗里](https://ifdian.net/a/xphkvilili?tab=home)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

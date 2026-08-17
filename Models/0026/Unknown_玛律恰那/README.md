@@ -1,8 +1,18 @@
 # Unknown_玛律恰那
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
 - **Name**: 
 - **Category**: #Other
@@ -27,15 +37,5 @@
     - **Bilibili**: [每天都睡不醒的秋风](https://b23.tv/pOwibHf)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [每天都睡不醒的秋风](https://afdian.com/a/qf0224)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

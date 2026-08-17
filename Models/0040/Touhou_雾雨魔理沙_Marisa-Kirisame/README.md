@@ -1,10 +1,20 @@
 # Touhou_雾雨魔理沙_Marisa-Kirisame
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 雾雨魔理沙
+- **Name**: #雾雨魔理沙 | #Marisa-Kirisame
 - **Category**: #Other
   - **Game**: #Touhou-Project #TH #TOUHOU #东方 Project
 
@@ -15,15 +25,5 @@
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [碎de帆](https://space.bilibili.com/381524342)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

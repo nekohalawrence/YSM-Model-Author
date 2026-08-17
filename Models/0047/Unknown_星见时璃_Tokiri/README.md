@@ -1,10 +1,20 @@
 # Unknown_星见时璃_Tokiri
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 
+- **Name**: #Tokiri
 - **Category**: #Other
   - **Game**: #Unknown #未知
 
@@ -33,15 +43,5 @@
   - **Role**: #表情 #动画 | #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [在来几斤小莫莫](https://space.bilibili.com/3493267685509797?spm_id_from=333.337.0.0)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

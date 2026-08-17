@@ -1,10 +1,20 @@
 # 远古守卫者
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 远古守卫者
+- **Name**: #远古守卫者 | #Ancient-Guardian
 - **Category**: #Unknown
   - **Game**: #Unknown
 
@@ -33,15 +43,5 @@
     - **Bilibili**: [Wone_J](https://space.bilibili.com/13505331)
   - **OtherPlatform**: #Afadian
     - **Afadian**: [Wone_J](https://afdian.com/a/Wone_J)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

@@ -1,10 +1,20 @@
 # WW_洛可可_LB
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 洛可可
+- **Name**: #洛可可 | #Roccia
 - **Category**: #Game
   - **Game**: #Wuthering-Waves #WuWa #WW #鸣潮
 
@@ -17,15 +27,5 @@
     - **Bilibili**: [烛火的次元宇宙](https://space.bilibili.com/57715833)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [烛火的次元宇宙](https://afdian.com/a/zhuhuo)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

@@ -1,29 +1,8 @@
 # MKZ_琉璃川_Rurikawa-Tsubaki_LA
 
-## Model Details
-<details>
-<summary>Model Details</summary>
-
-- **Name**: 琉璃川
-- **Category**: #Anime
-  - **Game**: #MorotsuiKizoku #MKZ #没落贵族琉璃川椿
-
-## Author
-
-- **Name**: #大莫家 | #MCZ工作室 | #mcz莫莫 | #犟猫
-  - **Author ID**: `0112`
-  - **Role**: #模型 | #Model
-  - **SocialPlatform**: #Bilibili #QQ
-    - **Bilibili**: [大莫家](https://space.bilibili.com/385797854)
-    - **QQ**: 167941105 已满
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [大莫家](https://afdian.com/a/mcz_8888)
-
-</details>
-
 ## Preview Images
 <details open>
-<summary>Preview Images</summary>
+<summary>Expand/Collapse</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
@@ -42,5 +21,26 @@
 ![preview06.png](previews/preview06.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
+## Model Details
+<details>
+<summary>Expand/Collapse</summary>
+
+- **Name**: #琉璃川 | #Rurikawa-Tsubaki
+- **Category**: #Anime
+  - **Game**: #MorotsuiKizoku #MKZ #没落贵族琉璃川椿
+
+## Author
+
+- **Name**: #大莫家 | #MCZ工作室 | #mcz莫莫 | #犟猫
+  - **Author ID**: `0112`
+  - **Role**: #模型 | #Model
+  - **SocialPlatform**: #Bilibili #QQ
+    - **Bilibili**: [大莫家](https://space.bilibili.com/385797854)
+    - **QQ**: 167941105 已满
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [大莫家](https://afdian.com/a/mcz_8888)
 
 </details>

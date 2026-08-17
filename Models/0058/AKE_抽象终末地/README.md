@@ -1,8 +1,18 @@
 # AKE_抽象终末地
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
 - **Name**: 
 - **Category**: #Game
@@ -16,15 +26,5 @@
   - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [艺方像素](https://space.bilibili.com/107318873)
     - **QQ**: 1320812591
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

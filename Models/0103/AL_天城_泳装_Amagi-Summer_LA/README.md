@@ -1,10 +1,28 @@
 # AL_天城_泳装_Amagi-Summer_LA
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](previews/preview.png)
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+![preview03.png](previews/preview03.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 天城
+- **Name**: #天城 | #Amagi-Summer
 - **Category**: #Game
   - **Game**: #Azur-Lane #AL #碧蓝航线
 
@@ -18,23 +36,5 @@
     - **QQ**: 1063585053
   - **SupportPlatform**: #Afdian
     - **Afdian**: [浅陌菌](https://afdian.com/a/tc_fox)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview.png](previews/preview.png)
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-![preview03.png](previews/preview03.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

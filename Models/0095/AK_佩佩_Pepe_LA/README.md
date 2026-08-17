@@ -1,10 +1,28 @@
 # AK_佩佩_Pepe_LA
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](previews/preview.png)
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+![preview03.png](previews/preview03.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 佩佩
+- **Name**: #佩佩 | #Pepe
 - **Category**: #Game
   - **Game**: #Arknights #AK #明日方舟
 
@@ -19,23 +37,5 @@
   - **SupportPlatform**: #Afdian #Unifans
     - **Afdian**: [源石姬变体](https://afdian.com/a/rawchicken)
     - **Unifans**: [源石姬变体](https://app.unifans.io/c/rawchickenneg)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview.png](previews/preview.png)
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-![preview03.png](previews/preview03.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

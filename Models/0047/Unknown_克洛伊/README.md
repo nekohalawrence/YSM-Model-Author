@@ -1,10 +1,20 @@
 # Unknown_克洛伊
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 克洛伊·冯·爱因兹贝伦
+- **Name**: #克洛伊·冯·爱因兹贝伦 | #Chloe-Von-Einzbern
 - **Category**: #Other
   - **Game**: #Unknown #未知
 
@@ -23,15 +33,5 @@
   - **Role**: #molang #动画 | #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [MicroCraft](https://space.bilibili.com/701974112)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

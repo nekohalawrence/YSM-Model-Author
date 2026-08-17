@@ -1,10 +1,20 @@
 # Unknown_千夏(YSM2.6.5)
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 千夏
+- **Name**: #千夏 | #Sunna
 - **Category**: #Other
   - **Game**: #Unknown #未知
 
@@ -17,15 +27,5 @@
     - **Bilibili**: [White_clams白蛤蜊](https://space.bilibili.com/168185637)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [White_clams白蛤蜊](https://afdian.com/a/whiteclams)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

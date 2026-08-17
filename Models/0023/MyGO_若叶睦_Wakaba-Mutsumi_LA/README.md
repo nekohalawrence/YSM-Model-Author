@@ -1,10 +1,28 @@
 # MyGO_若叶睦_Wakaba-Mutsumi_LA
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+![preview03.png](previews/preview03.png)
+
+![preview04.png](previews/preview04.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 若叶睦
+- **Name**: #若叶睦 | #Wakaba-Mutsumi
 - **Category**: #Anime
   - **Game**: #BanG Dream! It's MyGO!!!!! #MyGO #迷途之子！！！！！
 
@@ -25,23 +43,5 @@
   - **Role**: #定制
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [二氧化硫5704](https://space.bilibili.com/UID:504163077)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-![preview03.png](previews/preview03.png)
-
-![preview04.png](previews/preview04.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

@@ -1,10 +1,24 @@
 # FSM_涂山苏苏_Tushan-Susu_LB
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](previews/preview.png)
+
+![preview01.png](previews/preview01.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 涂山苏苏
+- **Name**: #涂山苏苏 | #Tushan-Susu
 - **Category**: #Anime
   - **Game**: #Fox-Spirit-Matchmaker #FSM #狐妖小红娘
 
@@ -17,19 +31,5 @@
     - **Bilibili**: [苏依凛](https://space.bilibili.com/76987486)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [苏依凛](https://afdian.com/a/supermonsterking)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview.png](previews/preview.png)
-
-![preview01.png](previews/preview01.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

@@ -1,10 +1,20 @@
 # WW_达妮娅
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 达妮娅
+- **Name**: #达妮娅 | #Denia
 - **Category**: #Game
   - **Game**: #Wuthering-Waves #WuWa #WW #鸣潮
 
@@ -22,15 +32,5 @@
 
 - **Name**: 祸御神
   - **Role**: #吃饭
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

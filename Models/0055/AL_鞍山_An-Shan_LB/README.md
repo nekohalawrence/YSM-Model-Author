@@ -1,10 +1,22 @@
 # AL_鞍山_An-Shan_LB
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview01.png](previews/preview01.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 鞍山
+- **Name**: #鞍山 | #An-Shan
 - **Category**: #Game
   - **Game**: #Azur-Lane #AL #碧蓝航线
 
@@ -17,17 +29,5 @@
     - **Bilibili**: [伊蕾娜家的咸鱼](https://space.bilibili.com/20682514)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [伊蕾娜家的咸鱼](https://afdian.com/a/elainasaltfish)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview01.png](previews/preview01.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

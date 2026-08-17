@@ -1,10 +1,28 @@
 # MSNS_山城恋_Yamashiro-Ren_LC
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](previews/preview.png)
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+![preview03.png](previews/preview03.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 山城恋
+- **Name**: #山城恋 | #Yamashiro-Ren
 - **Category**: #Anime
   - **Game**: #Mato Seihei no Sureibu #MSNS #魔都精兵的奴隶 #魔都精兵のスレイブ
 
@@ -27,23 +45,5 @@
 
 - **Name**: 浅宣
   - **Role**: #定制服务
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview.png](previews/preview.png)
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-![preview03.png](previews/preview03.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

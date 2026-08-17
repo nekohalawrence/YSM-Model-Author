@@ -1,10 +1,28 @@
 # Nikke_灰姑娘_Cinderella_LB
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](previews/preview.png)
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+![preview03.png](previews/preview03.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 灰姑娘
+- **Name**: #灰姑娘 | #Cinderella
 - **Category**: #Game
   - **Game**: #Goddess of Victory: Nikke #Nikke #胜利女神：妮姬
 
@@ -25,23 +43,5 @@
   - **Role**: #适配
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [星屑海螺](https://space.bilibili.com/14975572)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview.png](previews/preview.png)
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-![preview03.png](previews/preview03.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

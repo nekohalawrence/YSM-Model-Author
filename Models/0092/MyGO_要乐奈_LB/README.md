@@ -1,10 +1,26 @@
 # MyGO_要乐奈_LB
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+![preview03.png](previews/preview03.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 要乐奈
+- **Name**: #要乐奈 | #Kaname-Raana
 - **Category**: #Anime
   - **Game**: #BanG Dream! It's MyGO!!!!! #MyGO #迷途之子！！！！！
 
@@ -17,21 +33,5 @@
     - **Bilibili**: [菊姥爷](https://space.bilibili.com/376780490)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [菊姥爷](https://afdian.com/a/julaoye)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-![preview03.png](previews/preview03.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

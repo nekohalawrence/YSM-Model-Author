@@ -1,10 +1,32 @@
 # BA_百合园圣娅_泳装_Yurizono-Seia_LA
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview.png](previews/preview.png)
+
+![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
+
+![preview03.png](previews/preview03.png)
+
+![preview04.png](previews/preview04.png)
+
+![preview06.jpg](previews/preview06.jpg)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 百合园圣娅
+- **Name**: #百合园圣娅 | #Yurizono-Seia
 - **Category**: #Game
   - **Game**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
 
@@ -23,27 +45,5 @@
   - **Role**: #k螺诺亚
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [k螺诺亚](https://space.bilibili.com/3546599305251347?spm_id_from=333.337.0.0)
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview.png](previews/preview.png)
-
-![preview01.png](previews/preview01.png)
-
-![preview02.png](previews/preview02.png)
-
-![preview03.png](previews/preview03.png)
-
-![preview04.png](previews/preview04.png)
-
-![preview06.jpg](previews/preview06.jpg)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

@@ -1,24 +1,8 @@
 # BA_飞鸟马时_Asuma-Toki_LA
 
-## Model Details
-<details>
-<summary>Model Details</summary>
-
-- **Name**: 飞鸟马时
-- **Category**: #Game
-  - **Game**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
-
-## Author
-
-- **Name**: #木宁苒
-  - **Author ID**: `0170`
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-
-</details>
-
 ## Preview Images
 <details open>
-<summary>Preview Images</summary>
+<summary>Expand/Collapse</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
@@ -31,5 +15,21 @@
 ![preview03.png](previews/preview03.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
+## Model Details
+<details>
+<summary>Expand/Collapse</summary>
+
+- **Name**: #飞鸟马时 | #Asuma-Toki
+- **Category**: #Game
+  - **Game**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
+
+## Author
+
+- **Name**: #木宁苒
+  - **Author ID**: `0170`
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
 
 </details>

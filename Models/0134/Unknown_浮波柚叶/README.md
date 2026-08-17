@@ -1,24 +1,8 @@
 # Unknown_浮波柚叶
 
-## Model Details
-<details>
-<summary>Model Details</summary>
-
-- **Name**: 浮波柚叶
-- **Category**: #Other
-  - **Game**: #Unknown #未知
-
-## Author
-
-- **Name**: #黑喵みそ
-  - **Author ID**: `0134`
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-
-</details>
-
 ## Preview Images
 <details open>
-<summary>Preview Images</summary>
+<summary>Expand/Collapse</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
@@ -27,5 +11,21 @@
 ![preview02.png](previews/preview02.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
+## Model Details
+<details>
+<summary>Expand/Collapse</summary>
+
+- **Name**: #浮波柚叶 | #Ukinami-Yuzuha
+- **Category**: #Other
+  - **Game**: #Unknown #未知
+
+## Author
+
+- **Name**: #黑喵みそ
+  - **Author ID**: `0134`
+  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
 
 </details>

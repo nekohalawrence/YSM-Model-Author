@@ -1,10 +1,24 @@
 # BtR_酸甜凉_Ryou-Yamada-1
 
+## Preview Images
+<details open>
+<summary>Expand/Collapse</summary>
+
+<!-- GENERATED MODEL PREVIEW README START -->
+
+![preview02.png](previews/preview02.png)
+
+![preview03.png](previews/preview03.png)
+
+<!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
 ## Model Details
 <details>
-<summary>Model Details</summary>
+<summary>Expand/Collapse</summary>
 
-- **Name**: 酸甜凉
+- **Name**: #酸甜凉 | #Ryou-Yamada-1
 - **Category**: #Anime
   - **Game**: #Bocchi-the-Rock! #BtR #孤独摇滚！
 
@@ -21,19 +35,5 @@
 ## Co-creator
 
 - **Name**: 暂无
-
-</details>
-
-## Preview Images
-<details open>
-<summary>Preview Images</summary>
-
-<!-- GENERATED MODEL PREVIEW README START -->
-
-![preview02.png](previews/preview02.png)
-
-![preview03.png](previews/preview03.png)
-
-<!-- GENERATED MODEL PREVIEW README END -->
 
 </details>

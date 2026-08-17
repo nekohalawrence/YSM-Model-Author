@@ -1,26 +1,8 @@
 # BA_爱丽丝_Aris
 
-## Model Details
-<details>
-<summary>Model Details</summary>
-
-- **Name**: 天童爱丽丝
-- **Category**: #Game
-  - **Game**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
-
-## Author
-
-- **Name**: #yuoke | #bili_yuoyuoyuo
-  - **Author ID**: `0143`
-  - **Role**: #全包
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [yuoke](https://space.bilibili.com/497425837)
-
-</details>
-
 ## Preview Images
 <details open>
-<summary>Preview Images</summary>
+<summary>Expand/Collapse</summary>
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
@@ -33,5 +15,23 @@
 ![preview04.png](previews/preview04.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
+
+</details>
+
+## Model Details
+<details>
+<summary>Expand/Collapse</summary>
+
+- **Name**: #天童爱丽丝 | #Tendou-Arisu
+- **Category**: #Game
+  - **Game**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
+
+## Author
+
+- **Name**: #yuoke | #bili_yuoyuoyuo
+  - **Author ID**: `0143`
+  - **Role**: #全包
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [yuoke](https://space.bilibili.com/497425837)
 
 </details>
