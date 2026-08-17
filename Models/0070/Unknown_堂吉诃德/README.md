@@ -4,18 +4,19 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 
 - **Category**: #Other
-  - **Game**: #Unknown
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #Dashcode | #ASHES356
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0070`
+  - **Role**: #模型 | #Model
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [Dashcode](https://space.bilibili.com/51204057)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [Dashcode](https://afdian.com/a/ashes356)
-- **Author ID**: `0070`
 
 </details>
 

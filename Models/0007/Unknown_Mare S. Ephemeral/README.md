@@ -1,19 +1,20 @@
-# Mare S. Ephemeral
+# Unknown_Mare S. Ephemeral
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 
+- **Category**: #Other
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #啊这-_-0 | #伍炎
+  - **Author ID**: `0007`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [啊这-_-0](https://space.bilibili.com/347376421)
-- **Author ID**: `0007`
 
 </details>
 

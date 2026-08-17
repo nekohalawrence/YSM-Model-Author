@@ -4,23 +4,24 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 星期日
 - **Category**: #Other
-  - **Game**: #Unknown
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #Tu_tou
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **GroupChat**: #QQ
+  - **Author ID**: `0022`
+  - **Role**: #模型 | #Model
+  - **SocialPlatform**: #QQ
     - **QQ**: 126088260
-- **Author ID**: `0022`
 
 ## Co-creator
 
 - **Name**: 快乐的小盛子
   - **Role**: #动作 #技术 | #Motion
-  - **OtherPlatform**: #QQ群
-    - **QQ群**: 126088260
+  - **GroupChat**: #QQ-Group
+    - **QQ-Group**: 126088260
 
 </details>
 

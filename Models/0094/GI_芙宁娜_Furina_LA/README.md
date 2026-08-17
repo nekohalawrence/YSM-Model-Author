@@ -4,18 +4,19 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 芙宁娜
 - **Category**: #Game
   - **Game**: #Genshin Impact #Genshin #GI #原神
 
 ## Author
 
 - **Name**: #墨染逝羽 | #Feather_aya
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0094`
+  - **Role**: #模型 | #Model
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [墨染逝羽](https://space.bilibili.com/5718046)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [墨染逝羽](https://afdian.com/a/FliegeSA)
-- **Author ID**: `0094`
 
 ## Co-creator
 
@@ -28,11 +29,11 @@
 
 - **Name**: NguyenDevs
   - **Role**: #Misc #音效 #Trans | #Sound
+  - **SocialPlatform**: #Facebook #TikTok
+    - **Facebook**: [NguyenDevs](https://facebook.com/NguyenDevs)
+    - **TikTok**: [NguyenDevs](https://tiktok.com/@nguyendevs)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [NguyenDevs](https://afdian.com/a/NguyenDevs)
-  - **OtherPlatform**: #Facebook #Tiktok
-    - **Facebook**: [NguyenDevs](https://facebook.com/NguyenDevs)
-    - **Tiktok**: [NguyenDevs](https://tiktok.com/@nguyendevs)
 
 </details>
 

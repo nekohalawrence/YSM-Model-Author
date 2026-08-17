@@ -4,20 +4,20 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 惠惠
 - **Category**: #Anime
   - **Game**: #KonoSuba: God's Blessing on This Wonderful World! #Kono Subarashii Sekai ni Shukufuku wo! #KonoSuba #KON #为美好的世界献上祝福！ #この素晴らしい世界に祝福を！
 
 ## Author
 
 - **Name**: #1111111re | #伊伊蕾
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **Author ID**: `0116`
+  - **Role**: #模型 | #Model
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [1111111re](https://space.bilibili.com/35073555)
+    - **QQ**: 769939358
   - **SupportPlatform**: #Afdian
     - **Afdian**: [1111111re](https://afdian.com/a/114514yire)
-  - **GroupChat**: #QQ
-    - **QQ**: 769939358
-- **Author ID**: `0116`
 
 ## Co-creator
 

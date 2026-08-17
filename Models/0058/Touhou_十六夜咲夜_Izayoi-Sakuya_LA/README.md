@@ -1,21 +1,21 @@
-# Touhou_十六夜咲夜_Sakuya_LA
+# Touhou_十六夜咲夜_Izayoi-Sakuya_LA
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Game
+- **Name**: 十六夜咲夜
+- **Category**: #Other
   - **Game**: #Touhou-Project #TH #TOUHOU #东方 Project
 
 ## Author
 
 - **Name**: #艺方像素 | #艺方堂 | #尻 | #艺方坊 | #艺方阁
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **Author ID**: `0058`
+  - **Role**: #模型 | #Model
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [艺方像素](https://space.bilibili.com/107318873)
-  - **GroupChat**: #QQ
     - **QQ**: 1320812591
-- **Author ID**: `0058`
 
 ## Co-creator
 

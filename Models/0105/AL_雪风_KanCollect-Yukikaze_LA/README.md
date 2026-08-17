@@ -4,21 +4,22 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 雪风
 - **Category**: #Game
   - **Game**: #Azur-Lane #AL #碧蓝航线
 
 ## Author
 
 - **Name**: #超级大鸡腿丶 | #Nss
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-- **Author ID**: `0105`
+  - **Author ID**: `0105`
+  - **Role**: #模型 | #Model
 
 ## Co-creator
 
 - **Name**: 星语
   - **Role**: #动作 | #Motion
-  - **SocialPlatform**: #bilibili
-    - **bilibili**: 316739550
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: 316739550
 
 </details>
 

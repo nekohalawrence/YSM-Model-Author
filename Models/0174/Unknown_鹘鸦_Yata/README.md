@@ -1,19 +1,20 @@
-# 鹘鸦Yata
+# Unknown_鹘鸦_Yata
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 
+- **Category**: #Other
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #鹘鸦Yata
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0174`
+  - **Role**: #模型 | #Model
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [鹘鸦Yata](https://space.bilibili.com/402425842)
-- **Author ID**: `0174`
 
 ## Co-creator
 

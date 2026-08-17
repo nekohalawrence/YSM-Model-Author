@@ -1,17 +1,18 @@
-# AK_迷迭香_Rosmontis_nsfw_LB
+# AK_迷迭香_Rosmontis-Nsfw_LB
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 迷迭香
 - **Category**: #Game
   - **Game**: #Arknights #AK #明日方舟
 
 ## Author
 
 - **Name**: #鸢尾
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-- **Author ID**: `0188`
+  - **Author ID**: `0188`
+  - **Role**: #委托人
 
 ## Co-creator
 

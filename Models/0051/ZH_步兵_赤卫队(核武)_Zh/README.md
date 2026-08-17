@@ -1,21 +1,22 @@
-# Unknown_zh步兵_赤卫队(核武)
+# ZH_步兵_赤卫队(核武)_Zh
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Other
-  - **Game**: #Unknown
+- **Name**: mod步兵
+- **Category**: #Game
+  - **Game**: #Command & Conquer Generals: Zero Hour #Zero Hour #ZH #命令与征服：绝命时刻
 
 ## Author
 
 - **Name**: #动员鼬
+  - **Author ID**: `0051`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [动员鼬](https://space.bilibili.com/348421936/upload/video)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [动员鼬](https://afdian.com/a/dyy114514)
-- **Author ID**: `0051`
 
 </details>
 

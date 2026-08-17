@@ -4,18 +4,19 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 格蕾
 - **Category**: #Game
   - **Game**: #Fate-Grand-Order #FGO #命运 - 冠位指定
 
 ## Author
 
 - **Name**: #苏依凛 | #炽湮
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0093`
+  - **Role**: #模型 | #Model
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [苏依凛](https://space.bilibili.com/76987486)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [苏依凛](https://afdian.com/a/supermonsterking)
-- **Author ID**: `0093`
 
 </details>
 

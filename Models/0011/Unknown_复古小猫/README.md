@@ -4,27 +4,27 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 
 - **Category**: #Other
-  - **Game**: #Unknown
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #池塘-tl | #池塘
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **Author ID**: `0011`
+  - **Role**: #模型 | #Model
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [池塘-tl](https://space.bilibili.com/3546379886529242)
+    - **QQ**: 981134198
   - **SupportPlatform**: #Afdian
     - **Afdian**: [池塘-tl](https://afdian.com/a/114514ctjl)
-  - **GroupChat**: #QQ
-    - **QQ**: 981134198
-- **Author ID**: `0011`
 
 ## Co-creator
 
 - **Name**: 1816
   - **Role**: #动画 | #Animation
-  - **OtherPlatform**: #哔哩
-    - **哔哩**: 【1816是小六的个人空间-哔哩哔哩】 https://b23.tv/ZEajyXK
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: 【1816是小六的个人空间-哔哩哔哩】 https://b23.tv/ZEajyXK
 
 </details>
 

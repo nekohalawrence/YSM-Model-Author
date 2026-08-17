@@ -1,19 +1,20 @@
-# Aliya
+# Unknown_Aliya
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 
+- **Category**: #Other
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #宅在佳 | #宅在佳丶
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0160`
+  - **Role**: #模型 | #Model
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [宅在佳](https://space.bilibili.com/400228841)
-- **Author ID**: `0160`
 
 </details>
 

@@ -1,22 +1,23 @@
-# GI_妮露_Nilu_nsfw
+# GI_妮露_Nilu-Nsfw
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 妮露
 - **Category**: #Game
   - **Game**: #Genshin Impact #Genshin #GI #原神
 
 ## Author
 
 - **Name**: #寒叔hs | #烈鸟比百 | #Frosty_Uncle
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0015`
+  - **Role**: #模型 | #Model
   - **SocialPlatform**: #Bilibili #YouTube
     - **Bilibili**: [寒叔hs](https://space.bilibili.com/329066935)
     - **YouTube**: [寒叔hs](https://www.youtube.com/@%E7%83%88%E9%B8%9F%E6%AF%94%E7%99%BE)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [寒叔hs](https://afdian.com/a/Aigoblin)
-- **Author ID**: `0015`
 
 ## Co-creator
 

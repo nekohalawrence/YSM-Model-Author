@@ -1,21 +1,21 @@
-# 薇薇安-vivianfainal_LA
+# ZZZ_薇薇安_Vivianfainal_LA
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 薇薇安
+- **Category**: #Game
+  - **Game**: #Zenless-Zone-Zero #ZZZ #绝区零
 
 ## Author
 
 - **Name**: #Maks | #Maks怜悯
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **Author ID**: `0137`
+  - **Role**: #模型 | #Model
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [Maks](https://space.bilibili.com/352177387)
-  - **GroupChat**: #QQ
     - **QQ**: 1047117247
-- **Author ID**: `0137`
 
 ## Co-creator
 

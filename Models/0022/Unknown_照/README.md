@@ -4,16 +4,17 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 照
 - **Category**: #Other
-  - **Game**: #Unknown
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #Tu_tou
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **GroupChat**: #QQ
+  - **Author ID**: `0022`
+  - **Role**: #模型 | #Model
+  - **SocialPlatform**: #QQ
     - **QQ**: 126088260
-- **Author ID**: `0022`
 
 ## Co-creator
 
@@ -22,8 +23,8 @@
 
 - **Name**: 下一只风筝
   - **Role**: #武器作者
-  - **SocialPlatform**: #bilibili
-    - **bilibili**: [下一只风筝](https://space.bilibili.com/281665959?spm_id_from=333.337.0.0)
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [下一只风筝](https://space.bilibili.com/281665959?spm_id_from=333.337.0.0)
 
 </details>
 

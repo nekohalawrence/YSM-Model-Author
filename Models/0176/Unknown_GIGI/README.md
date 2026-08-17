@@ -1,24 +1,25 @@
-# GIGI
+# Unknown_GIGI
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 
+- **Category**: #Other
+  - **Game**: #Unknown #未知
 
 ## Author
 
-- **Name**: #Bubuker #rintaroa #Torontopizza #rintaroA
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+- **Name**: #Bubuker | #rintaroa | #Torontopizza | #rintaroA
+  - **Author ID**: `0176`
+  - **Role**: #Bubuker
   - **SocialPlatform**: #YouTube #Twitter
     - **YouTube**: @rintaroA
     - **Twitter**: Torontopizza
-  - **OtherPlatform**: #ko-fi
+  - **SupportPlatform**: #ko-fi
     - **ko-fi**: rintaroa
   - **GroupChat**: #Discord
     - **Discord**: Bubuker
-- **Author ID**: `0176`
 
 ## Co-creator
 

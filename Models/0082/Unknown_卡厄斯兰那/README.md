@@ -4,23 +4,24 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 
 - **Category**: #Other
-  - **Game**: #Unknown
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #树枝没虈枝
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0082`
+  - **Role**: #limin
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [树枝没虈枝](https://space.bilibili.com/3494364170946713)
-- **Author ID**: `0082`
 
 ## Co-creator
 
 - **Name**: 小刁
   - **Role**: #定制
-  - **OtherPlatform**: #哔哩哔哩
-    - **哔哩哔哩**: UID:3494364170946713
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: UID:3494364170946713
 
 </details>
 

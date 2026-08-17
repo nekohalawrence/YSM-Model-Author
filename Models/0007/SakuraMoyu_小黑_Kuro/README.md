@@ -4,16 +4,17 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 小黑
 - **Category**: #Game
-  - **Game**: #Unknown
+  - **Game**: #‑as the Night's #Reincarnation‑ #Sakura Moyu #樱花摸鱼 #樱花、萌放 #さくら、もゆ
 
 ## Author
 
 - **Name**: #啊这-_-0 | #伍炎
+  - **Author ID**: `0007`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [啊这-_-0](https://space.bilibili.com/347376421)
-- **Author ID**: `0007`
 
 </details>
 

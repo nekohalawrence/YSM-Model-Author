@@ -1,15 +1,17 @@
-# Rei_Ayanami_LD
+# Unknown_Rei-Ayanami_LD
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 
+- **Category**: #Other
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #omo仙贝2号 | #omo | #FujiwaranoMoku114514
+  - **Author ID**: `0005`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili #YouTube #Twitter
     - **Bilibili**: [omo仙贝2号](https://space.bilibili.com/1959304255)
@@ -18,7 +20,6 @@
   - **SupportPlatform**: #Afdian #Patreon
     - **Afdian**: [omo仙贝2号](https://afdian.com/a/omomomomomomo)
     - **Patreon**: [omo仙贝2号](https://www.patreon.com/c/omo595/posts)
-- **Author ID**: `0005`
 
 </details>
 

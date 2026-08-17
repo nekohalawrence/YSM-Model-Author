@@ -4,16 +4,17 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 
 - **Category**: #Other
-  - **Game**: #Unknown
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #无名氏
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **GroupChat**: #QQ
+  - **Author ID**: `0088`
+  - **Role**: #作者
+  - **SocialPlatform**: #QQ
     - **QQ**: 2568904644
-- **Author ID**: `0088`
 
 </details>
 

@@ -1,21 +1,22 @@
-# FA-XIANG
+# Unknown_FA-XIANG
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 
+- **Category**: #Other
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #丁真蟹 | #ZHEN
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0168`
+  - **Role**: #模型 | #Model
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [丁真蟹](https://space.bilibili.com/652519489)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [丁真蟹](https://afdian.com/a/ZHEN2023)
-- **Author ID**: `0168`
 
 ## Co-creator
 

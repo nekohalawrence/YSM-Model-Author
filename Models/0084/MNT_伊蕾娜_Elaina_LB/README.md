@@ -4,18 +4,19 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 伊蕾娜
 - **Category**: #Anime
-  - **Game**: #Majo no Tabitabim #MNT #魔女之旅 #魔女の旅々 #まじょのたびたび
+  - **Game**: #Wandering Witch: The Journey of Elaina #Wandering Witch #WanderingWitch #Majo no Tabitabi #魔女之旅 #魔女の旅々
 
 ## Author
 
 - **Name**: #幻古诗
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0084`
+  - **Role**: #模型 | #Model
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [幻古诗](https://space.bilibili.com/443702321)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [幻古诗](https://afdian.com/a/huangushi)
-- **Author ID**: `0084`
 
 </details>
 

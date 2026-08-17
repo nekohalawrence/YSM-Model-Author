@@ -4,16 +4,17 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 锁芯
 - **Category**: #Game
   - **Game**: #Identity V #Identity-V #第五人格
 
 ## Author
 
 - **Name**: #赤恒-AzaMire
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0012`
+  - **Role**: #ALL!!!
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [赤恒-AzaMire](https://space.bilibili.com/235888316)
-- **Author ID**: `0012`
 
 </details>
 

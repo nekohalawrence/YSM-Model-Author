@@ -1,21 +1,22 @@
-# PTE_PIPI美_Pipimi_LB
+# PTE_美_PIPI-Pipimi_LB
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 
 - **Category**: #Anime
   - **Game**: #Pop Team Epic #PTE #pop 子和 pipi 美的日常 #ポプテピピック
 
 ## Author
 
 - **Name**: #苏依凛 | #炽湮
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0093`
+  - **Role**: #模型 | #Model
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [苏依凛](https://space.bilibili.com/76987486)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [苏依凛](https://afdian.com/a/supermonsterking)
-- **Author ID**: `0093`
 
 </details>
 

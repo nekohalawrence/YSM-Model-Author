@@ -1,22 +1,24 @@
-# Vtuber_Pekomama(Bunnygirl)
+# VTuber_Pekomama_Bunnygirl
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 
 - **Category**: #Music
   - **Game**: #Virtual YouTuber #VTuber #虚拟主播 #バーチャルユーチューバー
 
 ## Author
 
 - **Name**: #Nekuro | #NekuroMC
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0006`
+  - **Role**: #模型 | #Model
   - **SocialPlatform**: #YouTube
     - **YouTube**: [Nekuro](https://www.youtube.com/@NekuroMC)
-  - **OtherPlatform**: #ko-fi #Sketchfab
+  - **SupportPlatform**: #ko-fi
     - **ko-fi**: [Nekuro](https://ko-fi.com/nekuromc/shop)
+  - **OtherPlatform**: #Sketchfab
     - **Sketchfab**: [Nekuro](https://sketchfab.com/NekuroMC/models)
-- **Author ID**: `0006`
 
 </details>
 

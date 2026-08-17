@@ -4,18 +4,19 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 恶魂酱
 - **Category**: #Game
-  - **Game**: #Unknown
+  - **Game**: #Minecraft #我的世界
 
 ## Author
 
 - **Name**: #Killot | #Killot945
+  - **Author ID**: `0074`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [Killot](https://space.bilibili.com/6348825)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [Killot](https://afdian.com/a/Killot945)
-- **Author ID**: `0074`
 
 </details>
 

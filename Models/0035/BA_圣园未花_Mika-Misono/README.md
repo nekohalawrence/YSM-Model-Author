@@ -1,21 +1,22 @@
-# BA_未花_Mika
+# BA_圣园未花_Mika-Misono
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 圣园未花
 - **Category**: #Game
   - **Game**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
 
 ## Author
 
 - **Name**: #谱露阿凯 | #饭
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0035`
+  - **Role**: #模型 #动作 | #Model #Motion
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [谱露阿凯](https://space.bilibili.com/426183597)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [谱露阿凯](https://afdian.com/a/11434fan)
-- **Author ID**: `0035`
 
 </details>
 

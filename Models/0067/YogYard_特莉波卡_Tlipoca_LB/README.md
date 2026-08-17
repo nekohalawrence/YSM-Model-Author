@@ -4,18 +4,19 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 特莉波卡
 - **Category**: #Game
-  - **Game**: #Yog-Sothoth's Yard #YogYard #犹格索托斯的庭院：炼金旅社
+  - **Game**: #Yog-Sothoth's Yard #YogYard #YGYST #犹格索托斯的庭院：炼金旅社
 
 ## Author
 
 - **Name**: #Almeta_owx
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0067`
+  - **Role**: #模型 #动画 | #Model #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [Almeta_owx](https://space.bilibili.com/4328692)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [Almeta_owx](https://afdian.com/a/Almeta)
-- **Author ID**: `0067`
 
 </details>
 

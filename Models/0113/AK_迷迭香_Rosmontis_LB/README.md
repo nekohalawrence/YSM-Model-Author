@@ -4,27 +4,28 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 迷迭香
 - **Category**: #Game
   - **Game**: #Arknights #AK #明日方舟
 
 ## Author
 
 - **Name**: #秋风 | #每天都睡不醒的秋风 | #睡不死死不睡的秋风
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0113`
+  - **Role**: #模型 | #Model
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [秋风](https://space.bilibili.com/375227559)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [秋风](https://afdian.com/a/qf0224)
-- **Author ID**: `0113`
 
 ## Co-creator
 
 - **Name**: 尼摩
   - **Role**: #赞助
-  - **SocialPlatform**: #B站
-    - **B站**: [尼摩](https://space.bilibili.com/352018612)
-  - **SupportPlatform**: #爱发电
-    - **爱发电**: [尼摩](https://afdian.net/a/nemo_angel)
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [尼摩](https://space.bilibili.com/352018612)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [尼摩](https://afdian.net/a/nemo_angel)
 
 </details>
 

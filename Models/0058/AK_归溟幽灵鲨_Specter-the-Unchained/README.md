@@ -1,21 +1,21 @@
-# AK_归溟幽灵鲨_Specter-the-Unchained
+# AK_归溟幽灵鲨_Specter-The-Unchained
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 归溟幽灵鲨
 - **Category**: #Game
   - **Game**: #Arknights #AK #明日方舟
 
 ## Author
 
 - **Name**: #艺方像素 | #艺方堂 | #尻 | #艺方坊 | #艺方阁
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **Author ID**: `0058`
+  - **Role**: #模型 | #Model
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [艺方像素](https://space.bilibili.com/107318873)
-  - **GroupChat**: #QQ
     - **QQ**: 1320812591
-- **Author ID**: `0058`
 
 ## Co-creator
 

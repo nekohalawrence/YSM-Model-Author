@@ -1,19 +1,20 @@
-# 艾莉娅
+# Unknown_艾莉娅
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 
+- **Category**: #Other
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #ナヒーダ
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **GroupChat**: #QQ
+  - **Author ID**: `0106`
+  - **Role**: #ナヒーダ
+  - **SocialPlatform**: #QQ
     - **QQ**: 639518184
-- **Author ID**: `0106`
 
 </details>
 

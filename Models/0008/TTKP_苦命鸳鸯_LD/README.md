@@ -4,20 +4,20 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 
 - **Category**: #Unknown
-  - **Game**: #the Three Kingdoms period #TTKP
+  - **Game**: #Unknown
 
 ## Author
 
 - **Name**: #白色北熊
+  - **Author ID**: `0008`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [白色北熊](https://space.bilibili.com/175342453)
+    - **QQ**: 1067426280
   - **SupportPlatform**: #Afdian
     - **Afdian**: [白色北熊](https://afdian.com/a/bx233)
-  - **GroupChat**: #QQ
-    - **QQ**: 1067426280
-- **Author ID**: `0008`
 
 </details>
 

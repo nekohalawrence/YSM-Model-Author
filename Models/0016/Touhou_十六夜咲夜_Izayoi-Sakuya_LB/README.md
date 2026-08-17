@@ -4,18 +4,19 @@
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Game
+- **Name**: 十六夜咲夜
+- **Category**: #Other
   - **Game**: #Touhou-Project #TH #TOUHOU #东方 Project
 
 ## Author
 
 - **Name**: #祸御神
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0016`
+  - **Role**: #嘟嘟哒嘟嘟哒
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [祸御神](https://space.bilibili.com/164557734)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [祸御神](https://afdian.com/a/YS444)
-- **Author ID**: `0016`
 
 ## Co-creator
 

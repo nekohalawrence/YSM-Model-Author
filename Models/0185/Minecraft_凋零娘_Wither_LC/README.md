@@ -1,17 +1,18 @@
-# minecraft_小凋零-wither_LC
+# Minecraft_凋零娘_Wither_LC
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 凋零娘
 - **Category**: #Game
-  - **Game**: #Unknown
+  - **Game**: #Minecraft #我的世界
 
 ## Author
 
 - **Name**: #滑滑滑纸隐 | #滑纸隐
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-- **Author ID**: `0185`
+  - **Author ID**: `0185`
+  - **Role**: #模型 | #Model
 
 ## Co-creator
 

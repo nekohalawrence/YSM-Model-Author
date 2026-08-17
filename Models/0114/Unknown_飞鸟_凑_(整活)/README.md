@@ -1,21 +1,22 @@
-# 飞鸟_凑_(整活)
+# Unknown_飞鸟_凑_(整活)
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 
+- **Category**: #Other
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #迷糊晓雾
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0114`
+  - **Role**: #模型 #纹理 #动画 | #Model #Animation
+  - **SocialPlatform**: #QQ
+    - **QQ**: 3313645023
   - **OtherPlatform**: #E-mail
     - **E-mail**: 3313645023@qq.com
-  - **GroupChat**: #QQ
-    - **QQ**: 3313645023
-- **Author ID**: `0114`
 
 ## Co-creator
 
@@ -23,16 +24,16 @@
   - **Role**: #动画 #策划 | #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [空に舞う雪](https://space.bilibili.com/695872226)
-  - **GroupChat**: #qq
-    - **qq**: 2596996307
+  - **GroupChat**: #QQ-Group
+    - **QQ-Group**: 2596996307
 
 - **Name**: 吶 雑魚(杂口)い❤~の baka
   - **Role**: #意见 #吉祥物 #箭制作
 
 - **Name**: 雪が舞う
   - **Role**: #监督 #意见 #测试 | #Test
-  - **OtherPlatform**: #email
-    - **email**: qqVw1yxMM741y@yeah.net
+  - **OtherPlatform**: #E-mail
+    - **E-mail**: qqVw1yxMM741y@yeah.net
 
 - **Name**: 氫語
   - **Role**: #修改 #测试 #纹理 | #Test
@@ -62,16 +63,16 @@
 
 - **Name**: 碳酸心态
   - **Role**: #凑热闹的
-  - **OtherPlatform**: #微博
-    - **微博**: [碳酸心态](https://weibo.com/u/7768195622)
+  - **SocialPlatform**: #Weibo
+    - **Weibo**: [碳酸心态](https://weibo.com/u/7768195622)
 
 - **Name**: 寻觅绝对零度
   - **Role**: #正好经过
 
 - **Name**: 安安La
   - **Role**: #测试 #意见 | #Test
-  - **GroupChat**: #qq
-    - **qq**: 几乎很少用了
+  - **GroupChat**: #QQ-Group
+    - **QQ-Group**: 几乎很少用了
 
 - **Name**: 飞鸟 凑
   - **Role**: #原型

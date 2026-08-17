@@ -1,21 +1,22 @@
-# ATRI_亚托莉_Atri_LB
+# AIRI_亚托莉_ATRI_LB
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 亚托莉
+- **Category**: #Anime
+  - **Game**: #ATRI -My Dear Moments- #ATRI #AIRI #亚托莉‑我挚爱的时光‑ #ATRI ‑My Dear Moments‑
 
 ## Author
 
 - **Name**: #Almeta_owx
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0067`
+  - **Role**: #模型 #动画 | #Model #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [Almeta_owx](https://space.bilibili.com/4328692)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [Almeta_owx](https://afdian.com/a/Almeta)
-- **Author ID**: `0067`
 
 </details>
 

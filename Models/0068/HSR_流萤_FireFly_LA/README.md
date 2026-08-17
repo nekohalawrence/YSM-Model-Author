@@ -1,21 +1,22 @@
-# HSR_流萤-春日手信_FireFly_LA
+# HSR_流萤_FireFly_LA
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 流萤
 - **Category**: #Game
   - **Game**: #Honkai-Star-Rail #HSR #崩坏：星穹铁道
 
 ## Author
 
 - **Name**: #AnluoSakura
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0068`
+  - **Role**: #模型 | #Model
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [AnluoSakura](https://space.bilibili.com/1275761002)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [AnluoSakura](https://afdian.com/a/AnluoSakura)
-- **Author ID**: `0068`
 
 ## Co-creator
 
@@ -28,10 +29,10 @@
 
 - **Name**: ALYYYYYYYYYYYYYYYYYYYYYYYYY！
   - **Role**: #摸鱼
-  - **SocialPlatform**: #BiliBili
-    - **BiliBili**: [ALYYYYYYYYYYYYYYYYYYYYYYYYY！](https://space.bilibili.com/1275761002?spm_id_from=333.1007.0.0)
-  - **OtherPlatform**: #afd
-    - **afd**: [ALYYYYYYYYYYYYYYYYYYYYYYYYY！](https://afdian.com/a/AnluoSakura)
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [ALYYYYYYYYYYYYYYYYYYYYYYYYY！](https://space.bilibili.com/1275761002?spm_id_from=333.1007.0.0)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [ALYYYYYYYYYYYYYYYYYYYYYYYYY！](https://afdian.com/a/AnluoSakura)
 
 </details>
 

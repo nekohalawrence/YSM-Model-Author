@@ -1,23 +1,23 @@
-# 鸣潮 秧秧·玄翎
+# WW_秧秧·玄翎
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 秧秧·玄翎
+- **Category**: #Game
+  - **Game**: #Wuthering-Waves #WuWa #WW #鸣潮
 
 ## Author
 
 - **Name**: #浅陌菌
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **Author ID**: `0103`
+  - **Role**: 模型 | 动画 | 适配
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [浅陌菌](https://space.bilibili.com/24513198)
+    - **QQ**: 1063585053
   - **SupportPlatform**: #Afdian
     - **Afdian**: [浅陌菌](https://afdian.com/a/tc_fox)
-  - **GroupChat**: #QQ
-    - **QQ**: 1063585053
-- **Author ID**: `0103`
 
 ## Co-creator
 

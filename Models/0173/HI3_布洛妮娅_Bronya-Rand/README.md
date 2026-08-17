@@ -1,17 +1,18 @@
-# 布洛妮娅-银狼
+# HI3_布洛妮娅_Bronya-Rand
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 布洛妮娅
+- **Category**: #Game
+  - **Game**: #Honkai-Impact-3 #HI3 #崩坏 3
 
 ## Author
 
 - **Name**: #流风LFly
+  - **Author ID**: `0173`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-- **Author ID**: `0173`
 
 </details>
 

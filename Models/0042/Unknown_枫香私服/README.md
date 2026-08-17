@@ -4,16 +4,17 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 
 - **Category**: #Other
-  - **Game**: #Unknown
+  - **Game**: #Unknown #未知
 
 ## Author
 
-- **Name**: #天弓干亦 #筅袔
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+- **Name**: #天弓干亦 | #筅袔
+  - **Author ID**: `0042`
+  - **Role**: #模型 | #Model
   - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [天弓干亦 #筅袔](https://space.bilibili.com/13098279)
-- **Author ID**: `0042`
+    - **Bilibili**: [天弓干亦](https://space.bilibili.com/13098279)
 
 </details>
 

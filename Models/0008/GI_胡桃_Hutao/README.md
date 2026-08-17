@@ -1,23 +1,23 @@
-# GI_胡桃
+# GI_胡桃_Hutao
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 胡桃
 - **Category**: #Game
   - **Game**: #Genshin Impact #Genshin #GI #原神
 
 ## Author
 
 - **Name**: #白色北熊
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **Author ID**: `0008`
+  - **Role**: #模型 | #Model
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [白色北熊](https://space.bilibili.com/175342453)
+    - **QQ**: 1067426280
   - **SupportPlatform**: #Afdian
     - **Afdian**: [白色北熊](https://afdian.com/a/bx233)
-  - **GroupChat**: #QQ
-    - **QQ**: 1067426280
-- **Author ID**: `0008`
 
 ## Co-creator
 

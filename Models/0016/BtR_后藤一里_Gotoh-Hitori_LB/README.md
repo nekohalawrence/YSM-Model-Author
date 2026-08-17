@@ -1,21 +1,22 @@
-# BtR_后藤一里-波奇_Gotoh-Hitori_LB
+# BtR_后藤一里_Gotoh-Hitori_LB
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 后藤一里
 - **Category**: #Anime
   - **Game**: #Bocchi-the-Rock! #BtR #孤独摇滚！
 
 ## Author
 
 - **Name**: #祸御神
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0016`
+  - **Role**: #嘟嘟哒嘟嘟哒
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [祸御神](https://space.bilibili.com/164557734)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [祸御神](https://afdian.com/a/YS444)
-- **Author ID**: `0016`
 
 ## Co-creator
 

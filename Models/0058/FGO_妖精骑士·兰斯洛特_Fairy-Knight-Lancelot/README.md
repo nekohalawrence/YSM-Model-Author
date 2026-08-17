@@ -4,18 +4,18 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 妖精骑士·兰斯洛特
 - **Category**: #Game
   - **Game**: #Fate-Grand-Order #FGO #命运 - 冠位指定
 
 ## Author
 
 - **Name**: #艺方像素 | #艺方堂 | #尻 | #艺方坊 | #艺方阁
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **Author ID**: `0058`
+  - **Role**: #公益分享
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [艺方像素](https://space.bilibili.com/107318873)
-  - **GroupChat**: #QQ
     - **QQ**: 1320812591
-- **Author ID**: `0058`
 
 ## Co-creator
 

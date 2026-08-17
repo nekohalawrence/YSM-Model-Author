@@ -4,20 +4,20 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 花火
 - **Category**: #Game
   - **Game**: #Honkai-Star-Rail #HSR #崩坏：星穹铁道
 
 ## Author
 
 - **Name**: #瀛猫
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **Author ID**: `0059`
+  - **Role**: #模型 | #Model
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [瀛猫](https://space.bilibili.com/647224460)
+    - **QQ**: 1037786416
   - **SupportPlatform**: #Afdian
     - **Afdian**: [瀛猫](https://afdian.com/a/wincatpro)
-  - **GroupChat**: #QQ
-    - **QQ**: 1037786416
-- **Author ID**: `0059`
 
 </details>
 

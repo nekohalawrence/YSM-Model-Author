@@ -4,14 +4,15 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 
 - **Category**: #Other
-  - **Game**: #Unknown
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #奈忒倪
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-- **Author ID**: `0190`
+  - **Author ID**: `0190`
+  - **Role**: #模型 #动画 | #Model #Animation
 
 </details>
 

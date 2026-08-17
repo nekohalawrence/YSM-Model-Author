@@ -1,21 +1,21 @@
-# Touhou_卡娜·安娜贝拉尔-Kana-Anaberal
+# Touhou_卡娜·安娜贝拉尔_Kana-Anaberal
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Game
+- **Name**: 卡娜·安娜贝拉尔
+- **Category**: #Other
   - **Game**: #Touhou-Project #TH #TOUHOU #东方 Project
 
 ## Author
 
 - **Name**: #泥泞中的小猫 | #PZGR.40
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **Author ID**: `0031`
+  - **Role**: #作者
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [泥泞中的小猫](https://space.bilibili.com/87435859)
-  - **GroupChat**: #QQ
     - **QQ**: 1012212180
-- **Author ID**: `0031`
 
 </details>
 

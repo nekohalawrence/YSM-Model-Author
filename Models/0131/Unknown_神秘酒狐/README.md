@@ -1,19 +1,20 @@
-# 神秘酒狐
+# Unknown_神秘酒狐
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 酒狐
+- **Category**: #Other
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #星璇_tbod
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0131`
+  - **Role**: #模型 | #Model
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [星璇_tbod](https://space.bilibili.com/2123185882)
-- **Author ID**: `0131`
 
 ## Co-creator
 

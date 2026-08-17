@@ -4,20 +4,20 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 
 - **Category**: #Game
   - **Game**: #Fate-Grand-Order #FGO #命运 - 冠位指定
 
 ## Author
 
 - **Name**: #雒仁
+  - **Author ID**: `0026`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [雒仁](https://space.bilibili.com/13550783)
+    - **QQ**: 528146909
   - **SupportPlatform**: #Afdian
     - **Afdian**: [雒仁](https://afdian.com/a/luoren)
-  - **GroupChat**: #QQ
-    - **QQ**: 528146909
-- **Author ID**: `0026`
 
 </details>
 

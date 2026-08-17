@@ -4,18 +4,19 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 若叶睦
 - **Category**: #Anime
   - **Game**: #BanG Dream! Ave Mujica #AveMujica #颂乐人偶
 
 ## Author
 
 - **Name**: #菊姥爷
+  - **Author ID**: `0092`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [菊姥爷](https://space.bilibili.com/376780490)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [菊姥爷](https://afdian.com/a/julaoye)
-- **Author ID**: `0092`
 
 </details>
 

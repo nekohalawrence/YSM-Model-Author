@@ -1,15 +1,17 @@
-# 莉莉姆_nsfw_LA
+# AL_莉莉姆_Nsfw_LA
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 
+- **Category**: #Game
+  - **Game**: #Azur-Lane #AL #碧蓝航线
 
 ## Author
 
 - **Name**: #源石姬变体 | #raw_chicken | #鸡姬
+  - **Author ID**: `0095`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili #pixiv
     - **Bilibili**: [源石姬变体](https://space.bilibili.com/219540765)
@@ -17,7 +19,6 @@
   - **SupportPlatform**: #Afdian #Unifans
     - **Afdian**: [源石姬变体](https://afdian.com/a/rawchicken)
     - **Unifans**: [源石姬变体](https://app.unifans.io/c/rawchickenneg)
-- **Author ID**: `0095`
 
 </details>
 

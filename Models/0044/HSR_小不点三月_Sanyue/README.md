@@ -4,18 +4,18 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 三月七
 - **Category**: #Game
   - **Game**: #Honkai-Star-Rail #HSR #崩坏：星穹铁道
 
 ## Author
 
 - **Name**: #韦懦夫斯菲尔 | #汪
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **Author ID**: `0044`
+  - **Role**: #模型 | #Model
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [韦懦夫斯菲尔](https://space.bilibili.com/3546753760496536)
-  - **GroupChat**: #QQ
     - **QQ**: 624971642
-- **Author ID**: `0044`
 
 </details>
 

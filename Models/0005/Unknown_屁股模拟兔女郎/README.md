@@ -1,16 +1,18 @@
-# Unknown_屁股模拟兔女郎_Bunnygirl
+# Unknown_屁股模拟兔女郎
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 
 - **Category**: #Other
-  - **Game**: #Unknown
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #omo仙贝2号 | #omo | #FujiwaranoMoku114514
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0005`
+  - **Role**: #模型 | #Model
   - **SocialPlatform**: #Bilibili #YouTube #Twitter
     - **Bilibili**: [omo仙贝2号](https://space.bilibili.com/1959304255)
     - **YouTube**: [omo仙贝2号](https://www.youtube.com/@%E8%97%A4%E5%8E%9F%E5%A6%B9%E7%BA%A2-i3q)
@@ -18,7 +20,6 @@
   - **SupportPlatform**: #Afdian #Patreon
     - **Afdian**: [omo仙贝2号](https://afdian.com/a/omomomomomomo)
     - **Patreon**: [omo仙贝2号](https://www.patreon.com/c/omo595/posts)
-- **Author ID**: `0005`
 
 ## Co-creator
 

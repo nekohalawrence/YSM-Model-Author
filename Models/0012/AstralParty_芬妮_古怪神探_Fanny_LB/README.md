@@ -1,19 +1,20 @@
-# AstralParty_芬妮-古怪神探_Fanny_LB
+# AstralParty_芬妮_古怪神探_Fanny_LB
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 芬妮
 - **Category**: #Game
   - **Game**: #Astral Party #Astral-Party #AstralParty #吉星派对 #星引擎 Party
 
 ## Author
 
 - **Name**: #赤恒-AzaMire
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0012`
+  - **Role**: #模型 | #Model
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [赤恒-AzaMire](https://space.bilibili.com/235888316)
-- **Author ID**: `0012`
 
 ## Co-creator
 

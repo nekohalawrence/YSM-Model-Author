@@ -1,17 +1,18 @@
-# 睦月
+# BA_睦月_Mutsuki
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 睦月
+- **Category**: #Game
+  - **Game**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
 
 ## Author
 
 - **Name**: #黑喵みそ
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-- **Author ID**: `0134`
+  - **Author ID**: `0134`
+  - **Role**: #模型 | #Model
 
 </details>
 

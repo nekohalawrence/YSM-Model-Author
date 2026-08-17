@@ -4,18 +4,19 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 
 - **Category**: #Other
-  - **Game**: #Unknown
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #踽魍估恶真君
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0089`
+  - **Role**: #模型 | #Model
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [踽魍估恶真君](https://space.bilibili.com/696375171)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [踽魍估恶真君](https://www.ifdian.net/a/mxj2005)
-- **Author ID**: `0089`
 
 </details>
 

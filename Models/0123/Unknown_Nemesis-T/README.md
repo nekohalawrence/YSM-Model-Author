@@ -1,19 +1,20 @@
-# nemesis_t
+# Unknown_Nemesis-T
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 
+- **Category**: #Other
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #Anrieal
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0123`
+  - **Role**: #模型 | #Model
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [Anrieal](https://space.bilibili.com/1421932069)
-- **Author ID**: `0123`
 
 </details>
 

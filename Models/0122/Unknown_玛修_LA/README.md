@@ -1,19 +1,20 @@
-# 玛修_LA
+# Unknown_玛修_LA
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 玛修·基列莱特
+- **Category**: #Other
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #茶-GreenTea
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0122`
+  - **Role**: #模型 #纹理 #动画 | #Model #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [茶-GreenTea](https://space.bilibili.com/458058211)
-- **Author ID**: `0122`
 
 ## Co-creator
 

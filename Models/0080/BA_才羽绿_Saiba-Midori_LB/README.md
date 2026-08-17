@@ -4,16 +4,17 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 才羽绿
 - **Category**: #Game
   - **Game**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
 
 ## Author
 
 - **Name**: #Nona_Reeves | #Nona_reeves | #Nona-Reeves
+  - **Author ID**: `0080`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **GroupChat**: #QQ
+  - **SocialPlatform**: #QQ
     - **QQ**: 1926615510
-- **Author ID**: `0080`
 
 </details>
 

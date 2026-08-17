@@ -4,25 +4,26 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 
 - **Category**: #Original
   - **Game**: #Original Character #OC #原创角色
 
 ## Author
 
 - **Name**: #江竹雨offical | #AAA家电批发江竹雨
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0019`
+  - **Role**: #模型 | #Model
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [江竹雨offical](https://space.bilibili.com/493607297)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [江竹雨offical](https://afdian.com/a/lyza1031)
-- **Author ID**: `0019`
 
 ## Co-creator
 
 - **Name**: 星咲
   - **Role**: #素体
-  - **SocialPlatform**: #B站
-    - **B站**: [星咲](https://space.bilibili.com/3494363390806334)
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [星咲](https://space.bilibili.com/3494363390806334)
 
 </details>
 

@@ -1,19 +1,20 @@
-# Cursed_default_boy-ride-wine_fox_jk(motobike)
+# Unknown_Cursed-Default-Boy-Ride-Wine-Fox-Jk(Motobike)
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 
+- **Category**: #Other
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #炼狱在旅行
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0167`
+  - **Role**: #雷嘎圣
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [炼狱在旅行](https://space.bilibili.com/2137283416)
-- **Author ID**: `0167`
 
 </details>
 

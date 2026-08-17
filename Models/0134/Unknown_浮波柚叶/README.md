@@ -1,17 +1,18 @@
-# 浮波柚叶
+# Unknown_浮波柚叶
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 浮波柚叶
+- **Category**: #Other
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #黑喵みそ
+  - **Author ID**: `0134`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-- **Author ID**: `0134`
 
 </details>
 

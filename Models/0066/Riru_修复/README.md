@@ -4,18 +4,18 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 
 - **Category**: #Unknown
   - **Game**: #Unknown
 
 ## Author
 
 - **Name**: #A_su杏仁
+  - **Author ID**: `0066`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [A_su杏仁](https://space.bilibili.com/524666730)
-  - **GroupChat**: #QQ
     - **QQ**: 1019752550
-- **Author ID**: `0066`
 
 </details>
 

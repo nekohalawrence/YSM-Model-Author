@@ -4,14 +4,15 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 茉莉
 - **Category**: #Unknown
-  - **Game**: #Fox Hime Zero #FHZ
+  - **Game**: #Unknown
 
 ## Author
 
 - **Name**: #木宁苒
+  - **Author ID**: `0170`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-- **Author ID**: `0170`
 
 </details>
 

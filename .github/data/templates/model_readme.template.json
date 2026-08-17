@@ -9,6 +9,7 @@
       "summary": "Model Details",
       "collapsible": true,
       "fields": [
+        { "key": "name", "label": "**Name**" },
         { "key": "category", "label": "**Category**" },
         { "key": "game", "label": "**Game**", "indent": 1 }
       ]
@@ -39,7 +40,7 @@
     "name_line": "- **Name**: {names}",
     "role_line": "  - **Role**: {role}",
     "role_default": "#模型 #动作 #动画 | #Model #Motion #Animation",
-    "id_line": "- **Author ID**: `{author_id}`",
+    "id_line": "  - **Author ID**: `{author_id}`",
     "platform_order": ["SocialPlatform", "SupportPlatform", "OtherPlatform", "GroupChat"],
     "platform_header": "  - **{field}**: #{tags}",
     "platform_item": "    - **{platform}**: [{label}]({url})",

@@ -1,23 +1,23 @@
-# AK_羽生萌萌香-Haruka_LA
+# AK_羽生萌萌香_Haruka_LA
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 羽生萌萌香
 - **Category**: #Game
   - **Game**: #Arknights #AK #明日方舟
 
 ## Author
 
 - **Name**: #云曦-Yunxxi_ugo | #云曦
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **Author ID**: `0062`
+  - **Role**: #作者
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [云曦-Yunxxi_ugo](https://space.bilibili.com/28954757)
+    - **QQ**: 924884449
   - **SupportPlatform**: #Afdian
     - **Afdian**: [云曦-Yunxxi_ugo](https://afdian.com/a/Yunxxi_ugo)
-  - **GroupChat**: #QQ
-    - **QQ**: 924884449
-- **Author ID**: `0062`
 
 ## Co-creator
 

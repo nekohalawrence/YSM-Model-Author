@@ -4,21 +4,22 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 
 - **Category**: #Game
   - **Game**: #Azur-Lane #AL #碧蓝航线
 
 ## Author
 
 - **Name**: #深海沉光
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-- **Author ID**: `0086`
+  - **Author ID**: `0086`
+  - **Role**: #模型 | #Model
 
 ## Co-creator
 
 - **Name**: 星语
   - **Role**: #动作 | #Motion
-  - **SocialPlatform**: #bilibili
-    - **bilibili**: 316739550
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: 316739550
 
 </details>
 

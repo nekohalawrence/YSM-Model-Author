@@ -1,17 +1,18 @@
-# AK_logos
+# AK_Logos
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 逻各斯
 - **Category**: #Game
   - **Game**: #Arknights #AK #明日方舟
 
 ## Author
 
 - **Name**: #北上 | #NorthWard
+  - **Author ID**: `0181`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-- **Author ID**: `0181`
 
 </details>
 

@@ -4,20 +4,20 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 镜流
 - **Category**: #Game
   - **Game**: #Honkai-Star-Rail #HSR #崩坏：星穹铁道
 
 ## Author
 
 - **Name**: #Lvara
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **Author ID**: `0135`
+  - **Role**: #模型 | #Model
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [Lvara](https://space.bilibili.com/34068391)
+    - **QQ**: 1477827530
   - **OtherPlatform**: #E-mail
     - **E-mail**: 1477827530@qq.com
-  - **GroupChat**: #QQ
-    - **QQ**: 1477827530
-- **Author ID**: `0135`
 
 </details>
 

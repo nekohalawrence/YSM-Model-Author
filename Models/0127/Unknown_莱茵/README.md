@@ -1,21 +1,22 @@
-# 莱茵
+# Unknown_莱茵
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 
+- **Category**: #Other
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #总督神绮
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0127`
+  - **Role**: #作者
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [总督神绮](https://space.bilibili.com/37854534)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [总督神绮](https://ifdian.net/a/sShinki)
-- **Author ID**: `0127`
 
 </details>
 

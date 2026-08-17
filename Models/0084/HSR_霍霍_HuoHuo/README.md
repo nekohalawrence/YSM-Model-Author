@@ -4,18 +4,19 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 霍霍
 - **Category**: #Game
   - **Game**: #Honkai-Star-Rail #HSR #崩坏：星穹铁道
 
 ## Author
 
 - **Name**: #幻古诗
+  - **Author ID**: `0084`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [幻古诗](https://space.bilibili.com/443702321)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [幻古诗](https://afdian.com/a/huangushi)
-- **Author ID**: `0084`
 
 </details>
 

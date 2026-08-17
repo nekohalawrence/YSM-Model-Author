@@ -4,18 +4,18 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 
 - **Category**: #Original
   - **Game**: #Original Character #OC #原创角色
 
 ## Author
 
 - **Name**: #星语TAT
+  - **Author ID**: `0049`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [星语TAT](https://space.bilibili.com/316739550)
-  - **GroupChat**: #QQ
     - **QQ**: 1039376704
-- **Author ID**: `0049`
 
 </details>
 

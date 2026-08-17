@@ -1,19 +1,20 @@
-# 卡莉奥斯特萝
+# Unknown_卡莉奥斯特萝
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 卡莉
+- **Category**: #Other
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #失语喵
+  - **Author ID**: `0120`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [失语喵](https://space.bilibili.com/171415484)
-- **Author ID**: `0120`
 
 </details>
 

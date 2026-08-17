@@ -37,6 +37,10 @@ from lib import previews as lib_previews
 from lib import terms as lib_terms
 from lib import ysm as lib_ysm
 from lib.kb.category import get_work_tags
+from lib.kb.storage import load_kb_json
+from lib.kb.sync import build_work_index
+from lib.kb.cmds import build_indexes
+from lib.kb.parse2 import resolve_name3, build_cn_alias
 
 WORKSPACE_ROOT = lib_paths.WORKSPACE_ROOT
 MAIN_README_PATH = WORKSPACE_ROOT / 'README.md'
@@ -173,6 +177,41 @@ def get_author_info(model_dir: Path) -> tuple[str, dict]:
     return author_id, {'name': [], 'platforms': {}}
 
 
+_ROLE_PARSE: dict | None = None
+
+
+def get_role_parser() -> tuple[list, dict, dict, dict]:
+    """惰性构建 resolve_name3 需要的角色索引（全量 1400+ 模型只构建一次）。
+
+    返回 (roles, en_to_cn, cn_to_en, cn_alias)，供模型文件夹名解析角色名（Name 字段）。
+    """
+    global _ROLE_PARSE
+    if _ROLE_PARSE is None:
+        kb = load_kb_json(lib_paths.MODEL_INFO_DIR)
+        build_work_index(kb)
+        roles = list(kb.get('roles') or [])
+        _c, _e, e2c, c2e = build_indexes(roles)
+        ca = build_cn_alias(roles)
+        _ROLE_PARSE = (roles, e2c, c2e, ca)
+    return _ROLE_PARSE
+
+
+def get_main_author_role(model_dir: Path) -> str:
+    """从模型 .ysm 主作者块取 role（第一个 role 含"模型"的作者块）；无 .ysm 返回空。
+
+    模型 README 的 Author Role 以模型内容（.ysm）为准，authors.json 无 role 时用它；
+    .ysm 也没有 role 时由渲染层回退到模板默认值。
+    """
+    ysm_files = sorted(model_dir.glob('*.ysm')) + sorted(model_dir.glob('*.YSM'))
+    for f in ysm_files:
+        meta = lib_ysm.extract_metadata(f, quiet=True)
+        blocks = meta.get('author_blocks') or []
+        primary, _, _ = lib_ysm.classify_authors(blocks)
+        if primary:
+            return primary.get('role') or ''
+    return ''
+
+
 def collect_preview_images(model_dir: Path) -> list[Path]:
     """收集模型目录下的预览图（复用 lib/previews.py 统一规则）"""
     return lib_previews.collect_preview_images(model_dir)
@@ -298,10 +337,13 @@ def render_platform_block(platforms: dict, tpl: dict, label: str) -> list[str]:
     return lines
 
 
-def render_person_block(entry: dict, author_id: str = '') -> list[str]:
-    """渲染作者/co-creator 信息块：Name + Role + 平台分类段。
+def render_person_block(entry: dict, author_id: str = '',
+                        default_role: bool = False) -> list[str]:
+    """渲染作者/co-creator 信息块：Name + Author ID + Role + 平台分类段。
 
     entry: {'name': 数组或字符串, 'role': str, 'platforms': {...}}（两种平台结构均可）。
+    author_id: 非空时作为 Name 子项（缩进）输出，先于 Role/平台。
+    default_role: 主作者为 True 时，Role 缺省回退到模板默认值（.ysm 无 role 也显示）。
     """
     tpl = load_template().get('author_block', {})
     names = entry.get('name') or []
@@ -312,15 +354,20 @@ def render_person_block(entry: dict, author_id: str = '') -> list[str]:
     label = str(names[0]).lstrip('#＃') if names else name_str
 
     lines = [tpl.get('name_line', '- **Name**: {names}').format(names=name_str)]
+    if author_id:
+        # Author ID 紧跟 Name 子项（模板缩进），先于 Role/平台
+        lines.append(tpl.get('id_line', '  - **Author ID**: `{author_id}`')
+                     .format(author_id=author_id))
     role = entry.get('role') or ''
     if role:
         # Role 值经术语表归一化：把 .ysm 的不同表达（Model author/动画/動作）
         # 统一为标准中英术语；已是标签格式（含 #/|）的原样保留。
         role = lib_terms.normalize_role(role)
+    elif default_role:
+        role = tpl.get('role_default', '')
+    if role:
         lines.append(tpl.get('role_line', '  - **Role**: {role}').format(role=role))
     lines.extend(render_platform_block(entry.get('platforms') or {}, tpl, label))
-    if author_id:
-        lines.append(tpl.get('id_line', '- **Author ID**: `{author_id}`').format(author_id=author_id))
     return lines
 
 
@@ -338,8 +385,12 @@ def build_co_creator_section(co_creators: list[dict]) -> str:
 def build_meta_and_preview_content(model_dir: Path, image_paths: list[Path],
                                    category_tag: str, game_tags: str,
                                    co_creators: list[dict],
-                                   author_entry: dict, author_id: str) -> str:
-    """按模板渲染模型 README：Model Details（含 Author/Co-creator 二级标题）+ Preview。"""
+                                   author_entry: dict, author_id: str,
+                                   role_zh: str = '') -> str:
+    """按模板渲染模型 README：Model Details（含 Author/Co-creator 二级标题）+ Preview。
+
+    role_zh: 模型文件夹名解析出的中文角色名（Name 字段，可为空）。
+    """
     tpl = load_template()
     title = model_dir.name
     lines = [tpl.get('title', '# {model_name}').format(model_name=title), '']
@@ -356,10 +407,13 @@ def build_meta_and_preview_content(model_dir: Path, image_paths: list[Path],
                     lines.append(f"{indent}- {field['label']}: {category_tag}")
                 elif field.get('key') == 'game':
                     lines.append(f"{indent}- {field['label']}: {game_tags}")
+                elif field.get('key') == 'name':
+                    lines.append(f"{indent}- {field['label']}: {role_zh}")
             lines.append('')
         elif key == 'author_details':
             lines += [section['heading'], '']
-            lines += render_person_block(author_entry, author_id=author_id)
+            lines += render_person_block(author_entry, author_id=author_id,
+                                         default_role=True)
             lines.append('')
         elif key == 'co_creator_details':
             # 无 co-creator 时连标题也不输出（避免空 section 占位）
@@ -427,6 +481,7 @@ def main() -> int:
         model_dirs = [md for root_dir in ROOT_DIRS if root_dir.is_dir()
                       for md in iter_model_dirs(root_dir)]
 
+    roles, e2c, c2e, ca = get_role_parser()
     for model_dir in model_dirs:
         # 全部模型目录都生成 README（不要求存在预览图）
         preview_images = collect_preview_images(model_dir)
@@ -434,6 +489,14 @@ def main() -> int:
         author_id, author_entry = get_author_info(model_dir)
         if not author_entry.get('name'):
             author_entry = {'name': [], 'platforms': {}}
+        # Author Role 以模型 .ysm 主作者 role 为准；无则渲染时用模板默认值
+        if not author_entry.get('role'):
+            author_entry['role'] = get_main_author_role(model_dir)
+        # 角色名（Model Details 的 Name 字段）：resolve_name3 解析模型文件夹名
+        try:
+            role_zh = resolve_name3(model_dir.name, roles, e2c, c2e, ca).get('zh') or ''
+        except Exception:  # noqa: BLE001
+            role_zh = ''
         category_tag = get_category_tag(model_dir.name, work_category_map)
         game_tags = get_work_tags(works, model_dir.name.split('_')[0])
 
@@ -443,7 +506,7 @@ def main() -> int:
 
         new_content = build_meta_and_preview_content(
             model_dir, preview_images, category_tag, game_tags,
-            co_creators, author_entry, author_id)
+            co_creators, author_entry, author_id, role_zh)
 
         if readme_path.exists():
             if existing_content == new_content:
@@ -462,4 +525,9 @@ def main() -> int:
 
 
 if __name__ == '__main__':
+    try:
+        sys.stdout.reconfigure(encoding='utf-8', errors='replace')
+        sys.stderr.reconfigure(encoding='utf-8', errors='replace')
+    except Exception:  # noqa: BLE001
+        pass
     raise SystemExit(main())

@@ -4,18 +4,19 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 
 - **Category**: #Game
   - **Game**: #Honkai-Star-Rail #HSR #崩坏：星穹铁道
 
 ## Author
 
 - **Name**: #White_clams白蛤蜊 | #白蛤蜊 | #White_Clams白蛤蜊
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0076`
+  - **Role**: #模型 | #Model
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [White_clams白蛤蜊](https://space.bilibili.com/168185637)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [White_clams白蛤蜊](https://afdian.com/a/whiteclams)
-- **Author ID**: `0076`
 
 </details>
 

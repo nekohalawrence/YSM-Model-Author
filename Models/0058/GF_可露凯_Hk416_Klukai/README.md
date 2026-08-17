@@ -1,21 +1,21 @@
-# GF_HK416_可露凯_Klukai
+# GF_可露凯_Hk416_Klukai
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: HK416
 - **Category**: #Game
-  - **Game**: #Girls' Frontline #GF #少女前线
+  - **Game**: #Girls' Frontline #GF #GF2 #GIRLS' FRONTLINE 2:EXILIUM #Girls' Frontline: Neural Cloud #Project Neural Cloud #NC #少女前线 #少女前线 2 #少女前线 2：追放 #少前 2：追放 #少女前线：云图计划 #云图计划
 
 ## Author
 
 - **Name**: #艺方像素 | #艺方堂 | #尻 | #艺方坊 | #艺方阁
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **Author ID**: `0058`
+  - **Role**: #模型 | #Model
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [艺方像素](https://space.bilibili.com/107318873)
-  - **GroupChat**: #QQ
     - **QQ**: 1320812591
-- **Author ID**: `0058`
 
 ## Co-creator
 

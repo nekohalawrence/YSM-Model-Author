@@ -4,16 +4,17 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 
 - **Category**: #Other
-  - **Game**: #Unknown
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #Dumnheint
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0099`
+  - **Role**: #ALL
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [Dumnheint](https://space.bilibili.com/36644599)
-- **Author ID**: `0099`
 
 </details>
 

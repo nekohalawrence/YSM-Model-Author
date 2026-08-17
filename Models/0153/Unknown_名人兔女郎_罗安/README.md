@@ -1,21 +1,22 @@
-# 名人兔女郎-罗安
+# Unknown_名人兔女郎_罗安
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 
+- **Category**: #Other
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #绘飞
+  - **Author ID**: `0153`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [绘飞](https://space.bilibili.com/8714030)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [绘飞](https://afdian.com/a/huifei)
-- **Author ID**: `0153`
 
 </details>
 

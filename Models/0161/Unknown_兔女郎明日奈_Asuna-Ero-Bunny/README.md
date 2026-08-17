@@ -1,21 +1,22 @@
-# 兔女郎明日奈-asuna_ero_bunny
+# Unknown_兔女郎明日奈_Asuna-Ero-Bunny
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 空崎日奈
+- **Category**: #Other
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #-_-_-_-_草-_-_-_- | #ckdr251
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0161`
+  - **Role**: #模型 | #Model
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [-_-_-_-_草-_-_-_-](https://space.bilibili.com/3493129483192453)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [-_-_-_-_草-_-_-_-](https://afdian.com/a/ckdr251)
-- **Author ID**: `0161`
 
 </details>
 

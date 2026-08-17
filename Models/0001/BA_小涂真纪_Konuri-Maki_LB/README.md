@@ -4,18 +4,18 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 小涂真纪
 - **Category**: #Game
   - **Game**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
 
 ## Author
 
 - **Name**: #02Bunny | #蓝玫瑰
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **Author ID**: `0001`
+  - **Role**: #模型 #贴图 | #Model #Texture
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [02Bunny](https://space.bilibili.com/11814817)
-  - **GroupChat**: #QQ
     - **QQ**: 584570528
-- **Author ID**: `0001`
 
 </details>
 

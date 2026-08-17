@@ -1,17 +1,18 @@
-# Nikki
+# Unknown_Nikki
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 
+- **Category**: #Other
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #科列夫斯基
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-- **Author ID**: `0104`
+  - **Author ID**: `0104`
+  - **Role**: #模型 | #Model
 
 </details>
 

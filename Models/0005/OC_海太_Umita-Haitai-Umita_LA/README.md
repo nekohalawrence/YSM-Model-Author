@@ -1,16 +1,18 @@
-# OC_海太umita_Haitai-umita_LA
+# OC_海太_Umita-Haitai-Umita_LA
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 
 - **Category**: #Original
   - **Game**: #Original Character #OC #原创角色
 
 ## Author
 
 - **Name**: #omo仙贝2号 | #omo | #FujiwaranoMoku114514
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0005`
+  - **Role**: #全部
   - **SocialPlatform**: #Bilibili #YouTube #Twitter
     - **Bilibili**: [omo仙贝2号](https://space.bilibili.com/1959304255)
     - **YouTube**: [omo仙贝2号](https://www.youtube.com/@%E8%97%A4%E5%8E%9F%E5%A6%B9%E7%BA%A2-i3q)
@@ -18,15 +20,14 @@
   - **SupportPlatform**: #Afdian #Patreon
     - **Afdian**: [omo仙贝2号](https://afdian.com/a/omomomomomomo)
     - **Patreon**: [omo仙贝2号](https://www.patreon.com/c/omo595/posts)
-- **Author ID**: `0005`
 
 ## Co-creator
 
 - **Name**: 海太umita
   - **Role**: #人设oc
-  - **SocialPlatform**: #twitter #bilibili
-    - **twitter**: @yu123v
-    - **bilibili**: (https://space.bilibili.com/1184568432?spm_id_from=333.1007.0.0)
+  - **SocialPlatform**: #Twitter #Bilibili
+    - **Twitter**: @yu123v
+    - **Bilibili**: (https://space.bilibili.com/1184568432?spm_id_from=333.1007.0.0)
 
 - **Name**: 甜粽子
   - **Role**: #动画 | #Animation

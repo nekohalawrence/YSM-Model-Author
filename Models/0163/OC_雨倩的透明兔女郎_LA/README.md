@@ -4,18 +4,19 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 
 - **Category**: #Original
   - **Game**: #Original Character #OC #原创角色
 
 ## Author
 
 - **Name**: #Rhein雨倩 | #雨倩先生
+  - **Author ID**: `0163`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [Rhein雨倩](https://space.bilibili.com/35515394)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [Rhein雨倩](https://afdian.com/a/Rheinyuq)
-- **Author ID**: `0163`
 
 ## Co-creator
 

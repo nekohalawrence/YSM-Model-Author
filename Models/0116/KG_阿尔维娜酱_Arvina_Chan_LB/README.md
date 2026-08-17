@@ -1,23 +1,23 @@
-# KG_阿尔维娜酱-arvina_chan_LB
+# KG_阿尔维娜酱_Arvina_Chan_LB
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
+- **Name**: 阿尔维娜酱
+- **Category**: #Other
   - **Game**: #Kemomimi Gakuen #KG #兽耳学园 #兽耳学院 #ケモミミ学園
 
 ## Author
 
 - **Name**: #1111111re | #伊伊蕾
+  - **Author ID**: `0116`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [1111111re](https://space.bilibili.com/35073555)
+    - **QQ**: 769939358
   - **SupportPlatform**: #Afdian
     - **Afdian**: [1111111re](https://afdian.com/a/114514yire)
-  - **GroupChat**: #QQ
-    - **QQ**: 769939358
-- **Author ID**: `0116`
 
 ## Co-creator
 

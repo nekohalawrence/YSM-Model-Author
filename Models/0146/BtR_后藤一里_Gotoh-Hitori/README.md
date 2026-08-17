@@ -1,19 +1,20 @@
-# BtR_后藤一里-Hitori-Goto
+# BtR_后藤一里_Gotoh-Hitori
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 后藤一里
 - **Category**: #Anime
   - **Game**: #Bocchi-the-Rock! #BtR #孤独摇滚！
 
 ## Author
 
 - **Name**: #泉溪鸽
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0146`
+  - **Role**: #模型 | #Model
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [泉溪鸽](https://space.bilibili.com/44619913)
-- **Author ID**: `0146`
 
 ## Co-creator
 

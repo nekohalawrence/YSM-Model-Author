@@ -1,19 +1,20 @@
-# BA_Aris-爱丽丝
+# BA_爱丽丝_Aris
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 天童爱丽丝
 - **Category**: #Game
   - **Game**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
 
 ## Author
 
 - **Name**: #yuoke | #bili_yuoyuoyuo
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0143`
+  - **Role**: #全包
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [yuoke](https://space.bilibili.com/497425837)
-- **Author ID**: `0143`
 
 </details>
 

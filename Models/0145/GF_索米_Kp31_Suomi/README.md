@@ -1,21 +1,22 @@
-# GF_KP31_索米_Suomi
+# GF_索米_Kp31_Suomi
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: KP31
 - **Category**: #Game
-  - **Game**: #Girls' Frontline #GF #少女前线
+  - **Game**: #Girls' Frontline #GF #GF2 #GIRLS' FRONTLINE 2:EXILIUM #Girls' Frontline: Neural Cloud #Project Neural Cloud #NC #少女前线 #少女前线 2 #少女前线 2：追放 #少前 2：追放 #少女前线：云图计划 #云图计划
 
 ## Author
 
 - **Name**: #咕咕鸡 | #咕咕叫的小菜鸡
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0145`
+  - **Role**: #模型 #()_ () | #Model
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [咕咕鸡](https://space.bilibili.com/11989730)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [咕咕鸡](https://afdian.com/a/GuGuChicken)
-- **Author ID**: `0145`
 
 </details>
 

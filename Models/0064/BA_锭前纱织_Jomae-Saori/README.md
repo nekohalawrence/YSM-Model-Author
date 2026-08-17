@@ -4,18 +4,18 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 锭前纱织
 - **Category**: #Game
   - **Game**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
 
 ## Author
 
 - **Name**: #纸盒ALifang | #Cc-纸盒 | #Cc纸盒
+  - **Author ID**: `0064`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [纸盒ALifang](https://space.bilibili.com/1494015242)
-  - **GroupChat**: #QQ
     - **QQ**: 619035464
-- **Author ID**: `0064`
 
 </details>
 

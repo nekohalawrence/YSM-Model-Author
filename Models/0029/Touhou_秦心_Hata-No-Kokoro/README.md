@@ -1,28 +1,28 @@
-# 东方project _秦心-hatanokokoro
+# Touhou_秦心_Hata-No-Kokoro
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 秦心
+- **Category**: #Other
+  - **Game**: #Touhou-Project #TH #TOUHOU #东方 Project
 
 ## Author
 
 - **Name**: #墓野奈奈
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **Author ID**: `0029`
+  - **Role**: #模型 | #Model
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [墓野奈奈](https://space.bilibili.com/269519870)
-  - **GroupChat**: #QQ
     - **QQ**: 3194755414
-- **Author ID**: `0029`
 
 ## Co-creator
 
 - **Name**: 随便取名字的萌新
   - **Role**: #动画 | #Animation
-  - **SocialPlatform**: #BiliBili
-    - **BiliBili**: [随便取名字的萌新](https://space.bilibili.com/1909440963)
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [随便取名字的萌新](https://space.bilibili.com/1909440963)
 
 </details>
 

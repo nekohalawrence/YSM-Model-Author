@@ -1,19 +1,20 @@
-# WisteriaZy_Demo
+# Unknown_WisteriaZy-Demo
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 
+- **Category**: #Other
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #WisteriaZy | #大触紫衣
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0151`
+  - **Role**: #All
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [WisteriaZy](https://space.bilibili.com/694519335)
-- **Author ID**: `0151`
 
 </details>
 

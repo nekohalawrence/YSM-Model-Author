@@ -1,28 +1,28 @@
-# BA_百合园圣娅-泳装_Yurizono-Seia_LA
+# BA_百合园圣娅_泳装_Yurizono-Seia_LA
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 百合园圣娅
 - **Category**: #Game
   - **Game**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
 
 ## Author
 
 - **Name**: #Dr观星 | #Dr-观星
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **Author ID**: `0129`
+  - **Role**: #Dr-观星
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [Dr观星](https://space.bilibili.com/157282636)
-  - **GroupChat**: #QQ
     - **QQ**: 1087347018
-- **Author ID**: `0129`
 
 ## Co-creator
 
 - **Name**: k螺诺亚
   - **Role**: #k螺诺亚
-  - **OtherPlatform**: #BliBli
-    - **BliBli**: [k螺诺亚](https://space.bilibili.com/3546599305251347?spm_id_from=333.337.0.0)
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [k螺诺亚](https://space.bilibili.com/3546599305251347?spm_id_from=333.337.0.0)
 
 </details>
 

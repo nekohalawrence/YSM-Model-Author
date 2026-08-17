@@ -4,20 +4,20 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 
 - **Category**: #Game
   - **Game**: #Dohna Dohna: Let's Do Bad Things Together #DOHNA #多娜多娜 一起干坏事吧！ #ドーナドーナ いっしょにわるいことしよう
 
 ## Author
 
 - **Name**: #Aaaaaaafeng
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **Author ID**: `0183`
+  - **Role**: #都是我做哒！
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [Aaaaaaafeng](https://space.bilibili.com/12133120)
+    - **QQ**: 220993928
   - **SupportPlatform**: #Afdian
     - **Afdian**: [Aaaaaaafeng](https://afdian.com/a/Aaaaaaafeng)
-  - **GroupChat**: #QQ
-    - **QQ**: 220993928
-- **Author ID**: `0183`
 
 </details>
 

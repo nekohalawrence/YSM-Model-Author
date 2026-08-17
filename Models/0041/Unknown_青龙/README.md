@@ -4,29 +4,29 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 
 - **Category**: #Other
-  - **Game**: #Unknown
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #提可拉
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **Author ID**: `0041`
+  - **Role**: #创作团队
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [提可拉](https://space.bilibili.com/326133289)
+    - **QQ**: 881921312
   - **SupportPlatform**: #Afdian
     - **Afdian**: [提可拉](https://afdian.com/a/6Canim)
-  - **GroupChat**: #QQ
-    - **QQ**: 881921312
-- **Author ID**: `0041`
 
 ## Co-creator
 
 - **Name**: Pork猪排
   - **Role**: #定制
-  - **OtherPlatform**: #email
-    - **email**: 2571692644@qq.com
-  - **GroupChat**: #qq
-    - **qq**: 2571692644
+  - **OtherPlatform**: #E-mail
+    - **E-mail**: 2571692644@qq.com
+  - **GroupChat**: #QQ-Group
+    - **QQ-Group**: 2571692644
 
 </details>
 

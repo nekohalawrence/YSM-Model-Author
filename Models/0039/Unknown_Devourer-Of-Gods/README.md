@@ -1,21 +1,22 @@
-# Unknown_Devourer_Of_Gods
+# Unknown_Devourer-Of-Gods
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 
 - **Category**: #Other
-  - **Game**: #Unknown
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #松鼠式坦克兵工 | #松鼠式坦克
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0039`
+  - **Role**: #模型 | #Model
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [松鼠式坦克兵工](https://space.bilibili.com/354791477)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [松鼠式坦克兵工](https://afdian.com/a/Gaimetear2333)
-- **Author ID**: `0039`
 
 </details>
 

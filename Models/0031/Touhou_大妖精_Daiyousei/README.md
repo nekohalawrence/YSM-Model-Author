@@ -1,21 +1,21 @@
-# Touhou_大妖精
+# Touhou_大妖精_Daiyousei
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Game
+- **Name**: 大妖精
+- **Category**: #Other
   - **Game**: #Touhou-Project #TH #TOUHOU #东方 Project
 
 ## Author
 
 - **Name**: #泥泞中的小猫 | #PZGR.40
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **Author ID**: `0031`
+  - **Role**: #全部制作工作
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [泥泞中的小猫](https://space.bilibili.com/87435859)
-  - **GroupChat**: #QQ
     - **QQ**: 1012212180
-- **Author ID**: `0031`
 
 </details>
 

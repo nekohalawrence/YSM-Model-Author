@@ -1,21 +1,21 @@
-# 雾雨魔理沙
+# Touhou_雾雨魔理沙_Marisa-Kirisame
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 雾雨魔理沙
+- **Category**: #Other
+  - **Game**: #Touhou-Project #TH #TOUHOU #东方 Project
 
 ## Author
 
 - **Name**: #墓野奈奈
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **Author ID**: `0029`
+  - **Role**: #模型 | #Model
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [墓野奈奈](https://space.bilibili.com/269519870)
-  - **GroupChat**: #QQ
     - **QQ**: 3194755414
-- **Author ID**: `0029`
 
 </details>
 

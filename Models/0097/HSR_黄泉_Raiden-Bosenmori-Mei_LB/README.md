@@ -4,14 +4,15 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 黄泉
 - **Category**: #Game
   - **Game**: #Honkai-Star-Rail #HSR #崩坏：星穹铁道
 
 ## Author
 
 - **Name**: #艾雷克亚
+  - **Author ID**: `0097`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-- **Author ID**: `0097`
 
 </details>
 

@@ -1,19 +1,20 @@
-# Nikke_爱丽丝
+# Nikke_爱丽丝_Alice
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 天童爱丽丝
 - **Category**: #Game
   - **Game**: #Goddess of Victory: Nikke #Nikke #胜利女神：妮姬
 
 ## Author
 
 - **Name**: #Tu_tou
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **GroupChat**: #QQ
+  - **Author ID**: `0022`
+  - **Role**: #模型 | #Model
+  - **SocialPlatform**: #QQ
     - **QQ**: 126088260
-- **Author ID**: `0022`
 
 ## Co-creator
 

@@ -1,21 +1,22 @@
-# AK_铃兰-suzuran_LB
+# AK_铃兰_Suzuran_LB
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 铃兰
 - **Category**: #Game
   - **Game**: #Arknights #AK #明日方舟
 
 ## Author
 
-- **Name**: #映白L #映白
+- **Name**: #映白L | #映白
+  - **Author ID**: `0141`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [映白L #映白](https://space.bilibili.com/10208258)
+    - **Bilibili**: [映白L](https://space.bilibili.com/10208258)
   - **SupportPlatform**: #Afdian
-    - **Afdian**: [映白L #映白](https://afdian.com/a/ehaku)
-- **Author ID**: `0141`
+    - **Afdian**: [映白L](https://afdian.com/a/ehaku)
 
 </details>
 

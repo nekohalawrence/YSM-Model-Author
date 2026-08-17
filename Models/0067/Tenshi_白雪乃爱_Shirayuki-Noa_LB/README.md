@@ -4,18 +4,19 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 白雪乃爱
 - **Category**: #Game
   - **Game**: #Tenshi Souzou #Tenshi #天使嚣嚣 #天使騒々 RE‑BIRTH!
 
 ## Author
 
 - **Name**: #Almeta_owx
+  - **Author ID**: `0067`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [Almeta_owx](https://space.bilibili.com/4328692)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [Almeta_owx](https://afdian.com/a/Almeta)
-- **Author ID**: `0067`
 
 </details>
 

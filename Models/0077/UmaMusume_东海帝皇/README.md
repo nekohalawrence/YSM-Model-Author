@@ -1,23 +1,23 @@
-# 赛马娘_东海帝皇
+# UmaMusume_东海帝皇
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
+- **Name**: 
+- **Category**: #Game
   - **Game**: #Umamusume: Pretty Derby #UmaMusume #UM #闪耀！优俊少女 #赛马娘
 
 ## Author
 
 - **Name**: #旭门只玩驹 | #Zeonjin-旭门只玩驹
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **Author ID**: `0077`
+  - **Role**: #模型 #动画 | #Model #Animation
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [旭门只玩驹](https://space.bilibili.com/183381720)
+    - **QQ**: 2479819954
   - **SupportPlatform**: #Afdian
     - **Afdian**: [旭门只玩驹](https://afdian.com/a/Zeonjin-Kogasa)
-  - **GroupChat**: #QQ
-    - **QQ**: 2479819954
-- **Author ID**: `0077`
 
 </details>
 

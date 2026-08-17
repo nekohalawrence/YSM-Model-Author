@@ -4,20 +4,20 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 
 - **Category**: #Music
   - **Game**: #Virtual YouTuber #VTuber #虚拟主播 #バーチャルユーチューバー
 
 ## Author
 
 - **Name**: #1111111re | #伊伊蕾
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **Author ID**: `0116`
+  - **Role**: #模型 | #Model
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [1111111re](https://space.bilibili.com/35073555)
+    - **QQ**: 769939358
   - **SupportPlatform**: #Afdian
     - **Afdian**: [1111111re](https://afdian.com/a/114514yire)
-  - **GroupChat**: #QQ
-    - **QQ**: 769939358
-- **Author ID**: `0116`
 
 ## Co-creator
 

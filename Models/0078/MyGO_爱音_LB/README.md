@@ -4,16 +4,17 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 千早爱音
 - **Category**: #Anime
   - **Game**: #BanG Dream! It's MyGO!!!!! #MyGO #迷途之子！！！！！
 
 ## Author
 
 - **Name**: #LuXi233 | #小早川希
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0078`
+  - **Role**: #模型 | #Model
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [LuXi233](https://space.bilibili.com/183485702)
-- **Author ID**: `0078`
 
 </details>
 

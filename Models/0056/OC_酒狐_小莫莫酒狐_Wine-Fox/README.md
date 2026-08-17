@@ -1,21 +1,22 @@
-# OC_酒狐_Wine-Fox
+# OC_酒狐_小莫莫酒狐_Wine-Fox
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 酒狐
 - **Category**: #Original
   - **Game**: #Original Character #OC #原创角色
 
 ## Author
 
-- **Name**: #伊洛是哥斯拉嘛 #伊洛是哥斯拉吗 | #哥斯拉 | #落阳不养羊 | #黎家诚 | #BradKidd
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+- **Name**: #伊洛是哥斯拉嘛 | #伊洛是哥斯拉吗 | #哥斯拉 | #落阳不养羊 | #黎家诚 | #BradKidd
+  - **Author ID**: `0056`
+  - **Role**: #模型 | #Model
   - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [伊洛是哥斯拉嘛 #伊洛是哥斯拉吗](https://space.bilibili.com/17798027)
+    - **Bilibili**: [伊洛是哥斯拉嘛](https://space.bilibili.com/17798027)
   - **SupportPlatform**: #Afdian
-    - **Afdian**: [伊洛是哥斯拉嘛 #伊洛是哥斯拉吗](https://afdian.com/a/6TGESILA)
-- **Author ID**: `0056`
+    - **Afdian**: [伊洛是哥斯拉嘛](https://afdian.com/a/6TGESILA)
 
 ## Co-creator
 
@@ -38,13 +39,13 @@
 
 - **Name**: 再来几斤小莫莫
   - **Role**: #动画 | #Animation
-  - **SocialPlatform**: #bilibili
-    - **bilibili**: [再来几斤小莫莫](https://space.bilibili.com/3493267685509797)
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [再来几斤小莫莫](https://space.bilibili.com/3493267685509797)
 
 - **Name**: Tex_offcial
   - **Role**: #贴图 | #Texture
-  - **OtherPlatform**: #blibli
-    - **blibli**: [Tex_offcial](https://b23.tv/0angYgR)
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [Tex_offcial](https://b23.tv/0angYgR)
 
 </details>
 

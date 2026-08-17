@@ -1,19 +1,20 @@
-# ReZero_Rem
+# ReZero_雷姆_Rem
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 雷姆
 - **Category**: #Anime
-  - **Game**: #Unknown
+  - **Game**: #Re:Zero #Re:从零开始的异世界生活
 
 ## Author
 
 - **Name**: #平衡芝光
+  - **Author ID**: `0034`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [平衡芝光](https://space.bilibili.com/526319760)
-- **Author ID**: `0034`
 
 </details>
 

@@ -4,18 +4,19 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 玛修·基列莱特
 - **Category**: #Other
-  - **Game**: #Unknown
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #゚烟雨画桥
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0052`
+  - **Role**: #模型 #纹理 #动画 | #Model #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [゚烟雨画桥](https://space.bilibili.com/1268865161)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [゚烟雨画桥](https://afdian.com/a/mj204)
-- **Author ID**: `0052`
 
 ## Co-creator
 

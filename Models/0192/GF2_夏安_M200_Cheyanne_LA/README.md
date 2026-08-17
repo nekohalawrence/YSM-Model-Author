@@ -1,26 +1,27 @@
-# GF2_夏安-M200_Cheyanne_LA
+# GF2_夏安_M200_Cheyanne_LA
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Game
-  - **Game**: #GIRLS' FRONTLINE 2:EXILIUM #GF2 #少女前线 2：追放 #少女前线 2 #少前 2：追放
+- **Name**: M200
+- **Category**: #Unknown
+  - **Game**: #Unknown
 
 ## Author
 
 - **Name**: #苏瑞铃 | #苏瑞铃_official
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0192`
+  - **Role**: #制作
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [苏瑞铃](https://space.bilibili.com/37942254)
-- **Author ID**: `0192`
 
 ## Co-creator
 
 - **Name**: 白蛤蜊
   - **Role**: #素体提供
-  - **SocialPlatform**: #bilibili
-    - **bilibili**: [白蛤蜊](https://space.bilibili.com/168185637?spm_id_from=333.788.0.0)
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [白蛤蜊](https://space.bilibili.com/168185637?spm_id_from=333.788.0.0)
 
 </details>
 

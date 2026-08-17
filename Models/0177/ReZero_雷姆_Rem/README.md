@@ -1,21 +1,21 @@
-# ReZero_雷姆-Rem
+# ReZero_雷姆_Rem
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 雷姆
 - **Category**: #Anime
-  - **Game**: #Unknown
+  - **Game**: #Re:Zero #Re:从零开始的异世界生活
 
 ## Author
 
 - **Name**: #永夜极星_official | #永夜极星
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **Author ID**: `0177`
+  - **Role**: #制作人
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [永夜极星_official](https://space.bilibili.com/504612792)
-  - **GroupChat**: #QQ
     - **QQ**: 1909319978
-- **Author ID**: `0177`
 
 </details>
 

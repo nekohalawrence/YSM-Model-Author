@@ -1,19 +1,20 @@
-# Cure Answer
+# Unknown_Cure Answer
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 
+- **Category**: #Other
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #Ark样本
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0128`
+  - **Role**: #作者
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [Ark样本](https://space.bilibili.com/3081780)
-- **Author ID**: `0128`
 
 </details>
 

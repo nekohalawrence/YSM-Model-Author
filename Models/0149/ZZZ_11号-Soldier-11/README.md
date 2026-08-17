@@ -4,16 +4,17 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 11号
 - **Category**: #Game
   - **Game**: #Zenless-Zone-Zero #ZZZ #绝区零
 
 ## Author
 
 - **Name**: #安欣
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0149`
+  - **Role**: #模型 #动画 | #Model #Animation
   - **SupportPlatform**: #Afdian
     - **Afdian**: [安欣](https://afdian.com/a/Anxin520X)
-- **Author ID**: `0149`
 
 </details>
 

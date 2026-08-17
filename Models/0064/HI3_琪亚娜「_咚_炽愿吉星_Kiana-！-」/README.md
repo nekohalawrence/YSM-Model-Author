@@ -1,21 +1,21 @@
-# HI3_琪亚娜「咚！炽愿吉星」
+# HI3_琪亚娜「_咚_炽愿吉星_Kiana-！-」
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 琪亚娜
 - **Category**: #Game
   - **Game**: #Honkai-Impact-3 #HI3 #崩坏 3
 
 ## Author
 
 - **Name**: #纸盒ALifang | #Cc-纸盒 | #Cc纸盒
+  - **Author ID**: `0064`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [纸盒ALifang](https://space.bilibili.com/1494015242)
-  - **GroupChat**: #QQ
     - **QQ**: 619035464
-- **Author ID**: `0064`
 
 </details>
 

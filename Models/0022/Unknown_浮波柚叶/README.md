@@ -4,16 +4,17 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 浮波柚叶
 - **Category**: #Other
-  - **Game**: #Unknown
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #Tu_tou
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **GroupChat**: #QQ
+  - **Author ID**: `0022`
+  - **Role**: #模型 | #Model
+  - **SocialPlatform**: #QQ
     - **QQ**: 126088260
-- **Author ID**: `0022`
 
 ## Co-creator
 

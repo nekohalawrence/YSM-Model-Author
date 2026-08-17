@@ -1,23 +1,23 @@
-# Ak_塑心-Virtuosa_LC
+# AK_塑心_Virtuosa_LC
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 塑心
 - **Category**: #Game
   - **Game**: #Arknights #AK #明日方舟
 
 ## Author
 
 - **Name**: #云曦-Yunxxi_ugo | #云曦
+  - **Author ID**: `0062`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [云曦-Yunxxi_ugo](https://space.bilibili.com/28954757)
+    - **QQ**: 924884449
   - **SupportPlatform**: #Afdian
     - **Afdian**: [云曦-Yunxxi_ugo](https://afdian.com/a/Yunxxi_ugo)
-  - **GroupChat**: #QQ
-    - **QQ**: 924884449
-- **Author ID**: `0062`
 
 </details>
 

@@ -4,20 +4,20 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 米雪儿·李
 - **Category**: #Game
   - **Game**: #Strinova #卡拉比丘
 
 ## Author
 
 - **Name**: #夹心果风
+  - **Author ID**: `0018`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [夹心果风](https://space.bilibili.com/178099567)
+    - **QQ**: 916346960
   - **SupportPlatform**: #Afdian
     - **Afdian**: [夹心果风](https://afdian.com/a/jxgf2077)
-  - **GroupChat**: #QQ
-    - **QQ**: 916346960
-- **Author ID**: `0018`
 
 </details>
 

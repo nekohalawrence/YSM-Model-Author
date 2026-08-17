@@ -4,18 +4,19 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 咩栗
 - **Category**: #Music
   - **Game**: #Virtual YouTuber #VTuber #虚拟主播 #バーチャルユーチューバー
 
 ## Author
 
 - **Name**: #墨染逝羽 | #Feather_aya
+  - **Author ID**: `0094`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [墨染逝羽](https://space.bilibili.com/5718046)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [墨染逝羽](https://afdian.com/a/FliegeSA)
-- **Author ID**: `0094`
 
 </details>
 

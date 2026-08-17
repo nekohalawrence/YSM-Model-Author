@@ -4,14 +4,15 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 樱羽艾玛
 - **Category**: #Game
   - **Game**: #Magical Girl Witch Trial #MGWT #魔法少女的魔女审判 #魔法少女ノ魔女裁判
 
 ## Author
 
 - **Name**: #艾雷克亚
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-- **Author ID**: `0097`
+  - **Author ID**: `0097`
+  - **Role**: #模型 #动画 | #Model #Animation
 
 ## Co-creator
 

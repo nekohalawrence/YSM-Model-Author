@@ -1,34 +1,23 @@
-# AK_凯尔希-原皮_LB
+# AK_凯尔希_原皮_Kal'tsit_LB
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 凯尔希
 - **Category**: #Game
   - **Game**: #Arknights #AK #明日方舟
 
 ## Author
 
 - **Name**: #嗯嗯owo
+  - **Author ID**: `0030`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili #YouTube
     - **Bilibili**: [嗯嗯owo](https://space.bilibili.com/167202500)
     - **YouTube**: [嗯嗯owo](https://space.bilibili.com/167202500)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [嗯嗯owo](https://afdian.com/a/enenowo)
-- **Author ID**: `0030`
-
-## Co-creator
-
-- **Name**: 嗯嗯owo
-  - **Role**: #贴图 | #Texture
-
-- **Name**: 失踪的李元
-  - **Role**: #贴图 | #Texture
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [失踪的李元](https://space.bilibili.com/505613984?spm_id_from=333.337.0.0)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: no
 
 </details>
 

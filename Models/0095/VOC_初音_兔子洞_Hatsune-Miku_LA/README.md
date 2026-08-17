@@ -1,15 +1,17 @@
-# VOC_初音-兔子洞_Miku-Rabbithole_sfw_LA
+# VOC_初音_兔子洞_Hatsune-Miku_LA
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 初音未来
 - **Category**: #Music
   - **Game**: #VOCALOID #VOC #博歌乐 #V 家 #术力口 #虚拟歌手 #虚拟歌姬
 
 ## Author
 
 - **Name**: #源石姬变体 | #raw_chicken | #鸡姬
+  - **Author ID**: `0095`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili #pixiv
     - **Bilibili**: [源石姬变体](https://space.bilibili.com/219540765)
@@ -17,7 +19,6 @@
   - **SupportPlatform**: #Afdian #Unifans
     - **Afdian**: [源石姬变体](https://afdian.com/a/rawchicken)
     - **Unifans**: [源石姬变体](https://app.unifans.io/c/rawchickenneg)
-- **Author ID**: `0095`
 
 </details>
 

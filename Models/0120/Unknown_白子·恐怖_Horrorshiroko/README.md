@@ -1,19 +1,20 @@
-# 白子·恐怖-horrorshiroko
+# Unknown_白子·恐怖_Horrorshiroko
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 砂狼白子
+- **Category**: #Other
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #失语喵
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0120`
+  - **Role**: #动画 #模型 #人设 | #Animation #Model
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [失语喵](https://space.bilibili.com/171415484)
-- **Author ID**: `0120`
 
 </details>
 

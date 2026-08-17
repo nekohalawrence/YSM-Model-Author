@@ -1,21 +1,22 @@
-# Unknown_巫恋-Shamare
+# AK_巫恋_Shamare-Witchfeast
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Other
-  - **Game**: #Unknown
+- **Name**: 巫恋
+- **Category**: #Game
+  - **Game**: #Arknights #AK #明日方舟
 
 ## Author
 
-- **Name**: #映白L #映白
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+- **Name**: #映白L | #映白
+  - **Author ID**: `0141`
+  - **Role**: #作者
   - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [映白L #映白](https://space.bilibili.com/10208258)
+    - **Bilibili**: [映白L](https://space.bilibili.com/10208258)
   - **SupportPlatform**: #Afdian
-    - **Afdian**: [映白L #映白](https://afdian.com/a/ehaku)
-- **Author ID**: `0141`
+    - **Afdian**: [映白L](https://afdian.com/a/ehaku)
 
 </details>
 

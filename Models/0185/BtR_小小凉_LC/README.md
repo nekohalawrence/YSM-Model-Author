@@ -4,14 +4,15 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 
 - **Category**: #Anime
   - **Game**: #Bocchi-the-Rock! #BtR #孤独摇滚！
 
 ## Author
 
 - **Name**: #滑滑滑纸隐 | #滑纸隐
+  - **Author ID**: `0185`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-- **Author ID**: `0185`
 
 </details>
 

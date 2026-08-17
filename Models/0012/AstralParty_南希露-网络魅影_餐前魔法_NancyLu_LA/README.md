@@ -1,19 +1,20 @@
-# AstralParty_南希露-餐前魔法_NancyLu_LA
+# AstralParty_南希露-网络魅影_餐前魔法_NancyLu_LA
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 南希露
 - **Category**: #Game
   - **Game**: #Astral Party #Astral-Party #AstralParty #吉星派对 #星引擎 Party
 
 ## Author
 
 - **Name**: #赤恒-AzaMire
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0012`
+  - **Role**: #ALL
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [赤恒-AzaMire](https://space.bilibili.com/235888316)
-- **Author ID**: `0012`
 
 </details>
 

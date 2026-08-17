@@ -1,19 +1,20 @@
-# 时空旅者——酒狐
+# Unknown_时空旅者——酒狐
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 酒狐
+- **Category**: #Other
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #空洞qwq
+  - **Author ID**: `0126`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [空洞qwq](https://space.bilibili.com/1230961559)
-- **Author ID**: `0126`
 
 </details>
 

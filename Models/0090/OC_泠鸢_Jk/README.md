@@ -1,19 +1,20 @@
-# 小死神_jk
+# OC_泠鸢_Jk
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 泠鸢
+- **Category**: #Original
+  - **Game**: #Original Character #OC #原创角色
 
 ## Author
 
 - **Name**: #九碳糖 | #九碳糖BI3NVZ
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0090`
+  - **Role**: #作者
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [九碳糖](https://space.bilibili.com/543291461)
-- **Author ID**: `0090`
 
 </details>
 

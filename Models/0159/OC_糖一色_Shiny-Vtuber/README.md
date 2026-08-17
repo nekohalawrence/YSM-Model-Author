@@ -1,21 +1,22 @@
-# OC_Vtuber_糖一色Shiny
+# OC_糖一色_Shiny-Vtuber
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 
 - **Category**: #Original
   - **Game**: #Original Character #OC #原创角色
 
 ## Author
 
 - **Name**: #兔兔猫officials | #阴阳兔兔猫offcial
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0159`
+  - **Role**: #模型 #贴图 #动画 | #Model #Texture #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [兔兔猫officials](https://space.bilibili.com/3546785165347464)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [兔兔猫officials](https://ifdian.net/a/RABET)
-- **Author ID**: `0159`
 
 ## Co-creator
 

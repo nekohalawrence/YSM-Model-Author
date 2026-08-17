@@ -4,18 +4,19 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 天童爱丽丝
 - **Category**: #Game
   - **Game**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
 
 ## Author
 
-- **Name**: #伊洛是哥斯拉嘛 #伊洛是哥斯拉吗 | #哥斯拉 | #落阳不养羊 | #黎家诚 | #BradKidd
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+- **Name**: #伊洛是哥斯拉嘛 | #伊洛是哥斯拉吗 | #哥斯拉 | #落阳不养羊 | #黎家诚 | #BradKidd
+  - **Author ID**: `0056`
+  - **Role**: #模型 | #Model
   - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [伊洛是哥斯拉嘛 #伊洛是哥斯拉吗](https://space.bilibili.com/17798027)
+    - **Bilibili**: [伊洛是哥斯拉嘛](https://space.bilibili.com/17798027)
   - **SupportPlatform**: #Afdian
-    - **Afdian**: [伊洛是哥斯拉嘛 #伊洛是哥斯拉吗](https://afdian.com/a/6TGESILA)
-- **Author ID**: `0056`
+    - **Afdian**: [伊洛是哥斯拉嘛](https://afdian.com/a/6TGESILA)
 
 ## Co-creator
 
@@ -24,20 +25,20 @@
 
 - **Name**: 星屑海螺
   - **Role**: #动画 | #Animation
-  - **SocialPlatform**: #B站
-    - **B站**: [星屑海螺](https://space.bilibili.com/14975572)
-  - **SupportPlatform**: #爱发电
-    - **爱发电**: [星屑海螺](https://afdian.com/a/lucia2048)
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [星屑海螺](https://space.bilibili.com/14975572)
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [星屑海螺](https://afdian.com/a/lucia2048)
 
 - **Name**: FXS_Frost
   - **Role**: #音频
-  - **SocialPlatform**: #B站
-    - **B站**: [FXS_Frost](https://space.bilibili.com/4655973)
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [FXS_Frost](https://space.bilibili.com/4655973)
 
 - **Name**: K螺诺亚
   - **Role**: #音频
-  - **SocialPlatform**: #B站
-    - **B站**: [K螺诺亚](https://space.bilibili.com/3546599305251347)
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [K螺诺亚](https://space.bilibili.com/3546599305251347)
 
 </details>
 

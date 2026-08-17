@@ -4,18 +4,18 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 鲸鱼娘
 - **Category**: #Original
   - **Game**: #Original Character #OC #原创角色
 
 ## Author
 
 - **Name**: #羊毛毛毛毛_Official喵
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **Author ID**: `0053`
+  - **Role**: #模型 | #Model
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [羊毛毛毛毛_Official喵](https://space.bilibili.com/85335217)
-  - **GroupChat**: #QQ
     - **QQ**: 1018367746
-- **Author ID**: `0053`
 
 </details>
 

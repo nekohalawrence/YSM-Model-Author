@@ -1,23 +1,23 @@
-# MGWT_樱羽艾玛
+# MGWT_樱羽艾玛_Sakuraba-Ema
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 樱羽艾玛
 - **Category**: #Game
   - **Game**: #Magical Girl Witch Trial #MGWT #魔法少女的魔女审判 #魔法少女ノ魔女裁判
 
 ## Author
 
-- **Name**: #你个人机cc | #你个人妻cc
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+- **Name**: #你个人机cc | #cc
+  - **Author ID**: `0032`
+  - **Role**: #模型 | #Model
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [你个人机cc](https://space.bilibili.com/400763031)
+    - **QQ**: 1055945725
   - **SupportPlatform**: #Afdian
     - **Afdian**: [你个人机cc](https://afdian.com/a/ccnie)
-  - **GroupChat**: #QQ
-    - **QQ**: 1055945725
-- **Author ID**: `0032`
 
 </details>
 

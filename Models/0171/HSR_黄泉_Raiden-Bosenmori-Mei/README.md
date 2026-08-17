@@ -1,17 +1,18 @@
-# 黄泉
+# HSR_黄泉_Raiden-Bosenmori-Mei
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 黄泉
+- **Category**: #Game
+  - **Game**: #Honkai-Star-Rail #HSR #崩坏：星穹铁道
 
 ## Author
 
 - **Name**: #艾卡斯特
+  - **Author ID**: `0171`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-- **Author ID**: `0171`
 
 </details>
 

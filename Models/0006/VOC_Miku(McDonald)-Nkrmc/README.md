@@ -1,22 +1,24 @@
-# VOC_Miku(McDonald)_nkrmc
+# VOC_Miku(McDonald)-Nkrmc
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 
 - **Category**: #Music
   - **Game**: #VOCALOID #VOC #博歌乐 #V 家 #术力口 #虚拟歌手 #虚拟歌姬
 
 ## Author
 
 - **Name**: #Nekuro | #NekuroMC
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0006`
+  - **Role**: #模型 | #Model
   - **SocialPlatform**: #YouTube
     - **YouTube**: [Nekuro](https://www.youtube.com/@NekuroMC)
-  - **OtherPlatform**: #ko-fi #Sketchfab
+  - **SupportPlatform**: #ko-fi
     - **ko-fi**: [Nekuro](https://ko-fi.com/nekuromc/shop)
+  - **OtherPlatform**: #Sketchfab
     - **Sketchfab**: [Nekuro](https://sketchfab.com/NekuroMC/models)
-- **Author ID**: `0006`
 
 </details>
 

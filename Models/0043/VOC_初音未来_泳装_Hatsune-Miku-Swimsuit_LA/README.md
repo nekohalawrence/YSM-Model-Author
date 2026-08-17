@@ -1,21 +1,22 @@
-# VOC_初音未来-泳装_Miku-Swimsuit_LA
+# VOC_初音未来_泳装_Hatsune-Miku-Swimsuit_LA
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 初音未来
 - **Category**: #Music
   - **Game**: #VOCALOID #VOC #博歌乐 #V 家 #术力口 #虚拟歌手 #虚拟歌姬
 
 ## Author
 
 - **Name**: #完全凍結ALL | #完全冻结 | #绝对冻结
+  - **Author ID**: `0043`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [完全凍結ALL](https://space.bilibili.com/393110)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [完全凍結ALL](https://afdian.com/a/AllFreeze)
-- **Author ID**: `0043`
 
 </details>
 

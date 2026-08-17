@@ -1,17 +1,18 @@
-# GF_M200_夏安_Cheyanne
+# GF_夏安_M200_Cheyanne
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: M200
 - **Category**: #Game
-  - **Game**: #Girls' Frontline #GF #少女前线
+  - **Game**: #Girls' Frontline #GF #GF2 #GIRLS' FRONTLINE 2:EXILIUM #Girls' Frontline: Neural Cloud #Project Neural Cloud #NC #少女前线 #少女前线 2 #少女前线 2：追放 #少前 2：追放 #少女前线：云图计划 #云图计划
 
 ## Author
 
 - **Name**: #荒漠
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-- **Author ID**: `0115`
+  - **Author ID**: `0115`
+  - **Role**: #模型 | #Model
 
 </details>
 

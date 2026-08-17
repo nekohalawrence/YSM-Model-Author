@@ -1,23 +1,23 @@
-# AL_拉菲-兔女郎_Laffey-Bunnygirl_LA
+# AL_拉菲_兔女郎_Laffey-Bunnygirl_LA
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 拉菲
 - **Category**: #Game
   - **Game**: #Azur-Lane #AL #碧蓝航线
 
 ## Author
 
 - **Name**: #就叫纸板 | #纸板
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **Author ID**: `0020`
+  - **Role**: #模型 | #Model
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [就叫纸板](https://space.bilibili.com/29208164)
+    - **QQ**: 1535492940
   - **SupportPlatform**: #Afdian
     - **Afdian**: [就叫纸板](https://afdian.com/a/15354qq)
-  - **GroupChat**: #QQ
-    - **QQ**: 1535492940
-- **Author ID**: `0020`
 
 ## Co-creator
 

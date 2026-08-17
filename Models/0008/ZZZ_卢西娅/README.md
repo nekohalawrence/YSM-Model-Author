@@ -4,20 +4,20 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 卢西娅
 - **Category**: #Game
   - **Game**: #Zenless-Zone-Zero #ZZZ #绝区零
 
 ## Author
 
 - **Name**: #白色北熊
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **Author ID**: `0008`
+  - **Role**: #模型 | #Model
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [白色北熊](https://space.bilibili.com/175342453)
+    - **QQ**: 1067426280
   - **SupportPlatform**: #Afdian
     - **Afdian**: [白色北熊](https://afdian.com/a/bx233)
-  - **GroupChat**: #QQ
-    - **QQ**: 1067426280
-- **Author ID**: `0008`
 
 ## Co-creator
 

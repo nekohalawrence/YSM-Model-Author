@@ -1,21 +1,22 @@
-# 爱丽丝梦游仙境-Alice-White_LA
+# Nikke_爱丽丝梦游仙境_Alice-White_LA
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 天童爱丽丝
+- **Category**: #Game
+  - **Game**: #Goddess of Victory: Nikke #Nikke #胜利女神：妮姬
 
 ## Author
 
 - **Name**: #White_clams白蛤蜊 | #白蛤蜊 | #White_Clams白蛤蜊
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0076`
+  - **Role**: #模型 #贴图 #动画 | #Model #Texture #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [White_clams白蛤蜊](https://space.bilibili.com/168185637)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [White_clams白蛤蜊](https://afdian.com/a/whiteclams)
-- **Author ID**: `0076`
 
 </details>
 

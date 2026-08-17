@@ -1,21 +1,22 @@
-# HI3_德丽莎-月下初拥_LB
+# HI3_德丽莎_月下初拥_LB
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 丽莎
 - **Category**: #Game
   - **Game**: #Honkai-Impact-3 #HI3 #崩坏 3
 
 ## Author
 
 - **Name**: #荨蒿栗里 | #荨蒿之栗里 | #栗里
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0050`
+  - **Role**: #模型 | #Model
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [荨蒿栗里](https://space.bilibili.com/501046951)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [荨蒿栗里](https://ifdian.net/a/xphkvilili?tab=home)
-- **Author ID**: `0050`
 
 ## Co-creator
 

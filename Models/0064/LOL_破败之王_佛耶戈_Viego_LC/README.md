@@ -1,21 +1,21 @@
-# LOL_破败之王-佛耶戈_Viego_LC
+# LOL_破败之王_佛耶戈_Viego_LC
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 破败之王
 - **Category**: #Game
   - **Game**: #League of Legends #LOL #英雄联盟
 
 ## Author
 
 - **Name**: #纸盒ALifang | #Cc-纸盒 | #Cc纸盒
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **Author ID**: `0064`
+  - **Role**: #模型 | #Model
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [纸盒ALifang](https://space.bilibili.com/1494015242)
-  - **GroupChat**: #QQ
     - **QQ**: 619035464
-- **Author ID**: `0064`
 
 </details>
 

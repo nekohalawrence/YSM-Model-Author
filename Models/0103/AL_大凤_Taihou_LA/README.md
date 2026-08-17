@@ -4,20 +4,20 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 大凤
 - **Category**: #Game
   - **Game**: #Azur-Lane #AL #碧蓝航线
 
 ## Author
 
 - **Name**: #浅陌菌
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **Author ID**: `0103`
+  - **Role**: #模型 | #Model
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [浅陌菌](https://space.bilibili.com/24513198)
+    - **QQ**: 1063585053
   - **SupportPlatform**: #Afdian
     - **Afdian**: [浅陌菌](https://afdian.com/a/tc_fox)
-  - **GroupChat**: #QQ
-    - **QQ**: 1063585053
-- **Author ID**: `0103`
 
 </details>
 

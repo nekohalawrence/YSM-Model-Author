@@ -1,19 +1,20 @@
-# Rumia
+# Touhou_露米娅_Rumia
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 露米娅
+- **Category**: #Other
+  - **Game**: #Touhou-Project #TH #TOUHOU #东方 Project
 
 ## Author
 
 - **Name**: #qidai | #一点小期待
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0178`
+  - **Role**: #模型 | #Model
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [qidai](https://space.bilibili.com/172318031)
-- **Author ID**: `0178`
 
 </details>
 

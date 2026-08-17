@@ -1,17 +1,18 @@
-# FER_TamamoNoMae
+# Unknown_FER-TamamoNoMae
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 
+- **Category**: #Other
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #ShiroKaze
+  - **Author ID**: `0169`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-- **Author ID**: `0169`
 
 </details>
 

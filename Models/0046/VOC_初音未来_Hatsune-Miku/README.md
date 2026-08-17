@@ -1,19 +1,20 @@
-# VOC_初音未来_Miku
+# VOC_初音未来_Hatsune-Miku
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 初音未来
 - **Category**: #Music
   - **Game**: #VOCALOID #VOC #博歌乐 #V 家 #术力口 #虚拟歌手 #虚拟歌姬
 
 ## Author
 
 - **Name**: #小萌新idjdkd
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0046`
+  - **Role**: #模型 | #Model
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [小萌新idjdkd](https://space.bilibili.com/1573788561)
-- **Author ID**: `0046`
 
 </details>
 

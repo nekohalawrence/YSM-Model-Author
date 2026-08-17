@@ -1,23 +1,23 @@
-# HI3_希儿·芙乐艾-Seele_nsfw_LB
+# HI3_希儿·芙乐艾_Seele-Vollerei_LB
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 希儿·芙乐艾
 - **Category**: #Game
   - **Game**: #Honkai-Impact-3 #HI3 #崩坏 3
 
 ## Author
 
 - **Name**: #Aaaaaaafeng
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **Author ID**: `0183`
+  - **Role**: #都是我做哒！
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [Aaaaaaafeng](https://space.bilibili.com/12133120)
+    - **QQ**: 220993928
   - **SupportPlatform**: #Afdian
     - **Afdian**: [Aaaaaaafeng](https://afdian.com/a/Aaaaaaafeng)
-  - **GroupChat**: #QQ
-    - **QQ**: 220993928
-- **Author ID**: `0183`
 
 </details>
 

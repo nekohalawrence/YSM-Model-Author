@@ -1,19 +1,20 @@
-# SoulTide_Inori
+# Unknown_SoulTide-Inori
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 
+- **Category**: #Other
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #胖狐狸工作室 | #红色幽默
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0033`
+  - **Role**: #模型 | #Model
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [胖狐狸工作室](https://space.bilibili.com/1839129371)
-- **Author ID**: `0033`
 
 </details>
 

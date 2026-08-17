@@ -1,21 +1,21 @@
-# AK_缄默德克萨斯-幽兰秘辛_Texas-the-Omertosa_LB
+# AK_缄默德克萨斯_Texas-The-Omertosa_LB
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 缄默德克萨斯
 - **Category**: #Game
   - **Game**: #Arknights #AK #明日方舟
 
 ## Author
 
 - **Name**: #艺方像素 | #艺方堂 | #尻 | #艺方坊 | #艺方阁
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **Author ID**: `0058`
+  - **Role**: #模型 | #Model
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [艺方像素](https://space.bilibili.com/107318873)
-  - **GroupChat**: #QQ
     - **QQ**: 1320812591
-- **Author ID**: `0058`
 
 ## Co-creator
 

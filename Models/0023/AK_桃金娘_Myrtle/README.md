@@ -1,23 +1,23 @@
-# AK_桃金娘
+# AK_桃金娘_Myrtle
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 桃金娘
 - **Category**: #Game
   - **Game**: #Arknights #AK #明日方舟
 
 ## Author
 
 - **Name**: #狸民limin | #狸民 | #limin
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **Author ID**: `0023`
+  - **Role**: #模型 | #Model
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [狸民limin](https://space.bilibili.com/38974741)
+    - **QQ**: 975530811
   - **SupportPlatform**: #Afdian
     - **Afdian**: [狸民limin](https://afdian.com/a/limin)
-  - **GroupChat**: #QQ
-    - **QQ**: 975530811
-- **Author ID**: `0023`
 
 </details>
 

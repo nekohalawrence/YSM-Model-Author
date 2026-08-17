@@ -4,18 +4,18 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 
 - **Category**: #Other
-  - **Game**: #Unknown
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #波普Popu
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **Author ID**: `0010`
+  - **Role**: #埃佩鲁
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [波普Popu](https://space.bilibili.com/446941285)
-  - **GroupChat**: #QQ
     - **QQ**: 3612246475
-- **Author ID**: `0010`
 
 </details>
 

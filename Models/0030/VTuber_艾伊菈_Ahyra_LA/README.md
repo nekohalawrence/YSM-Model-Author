@@ -1,22 +1,23 @@
-# VTuber_艾伊菈-ahyra_LA
+# VTuber_艾伊菈_Ahyra_LA
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 艾伊菈
 - **Category**: #Music
   - **Game**: #Virtual YouTuber #VTuber #虚拟主播 #バーチャルユーチューバー
 
 ## Author
 
 - **Name**: #嗯嗯owo
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0030`
+  - **Role**: #模型 | #Model
   - **SocialPlatform**: #Bilibili #YouTube
     - **Bilibili**: [嗯嗯owo](https://space.bilibili.com/167202500)
     - **YouTube**: [嗯嗯owo](https://space.bilibili.com/167202500)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [嗯嗯owo](https://afdian.com/a/enenowo)
-- **Author ID**: `0030`
 
 ## Co-creator
 
@@ -25,11 +26,10 @@
 
 - **Name**: Ahyra
   - **Role**: #Partner_人设提供_金主
-  - **SocialPlatform**: #X #youtube
-    - **X**: [Ahyra](https://x.com/Ahyra_)
-    - **youtube**: [Ahyra](https://www.youtube.com/@Ahyra_)
-  - **OtherPlatform**: #twitch
-    - **twitch**: [Ahyra](https://www.twitch.tv/ahyra_)
+  - **SocialPlatform**: #Twitter #YouTube #Twitch
+    - **Twitter**: [Ahyra](https://x.com/Ahyra_)
+    - **YouTube**: [Ahyra](https://www.youtube.com/@Ahyra_)
+    - **Twitch**: [Ahyra](https://www.twitch.tv/ahyra_)
 
 - **Name**: 睡不醒的秋风
   - **Role**: #动画 | #Animation

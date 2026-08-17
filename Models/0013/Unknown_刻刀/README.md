@@ -4,16 +4,17 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 刻刀
 - **Category**: #Other
-  - **Game**: #Unknown
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #对羧基苯酚
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0013`
+  - **Role**: #作者
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [对羧基苯酚](https://space.bilibili.com/3461562335496256)
-- **Author ID**: `0013`
 
 </details>
 

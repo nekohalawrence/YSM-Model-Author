@@ -1,21 +1,22 @@
-# GF_M4-SOPMOD_2
+# GF_M4-SOPMOD
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 
 - **Category**: #Game
-  - **Game**: #Girls' Frontline #GF #少女前线
+  - **Game**: #Girls' Frontline #GF #GF2 #GIRLS' FRONTLINE 2:EXILIUM #Girls' Frontline: Neural Cloud #Project Neural Cloud #NC #少女前线 #少女前线 2 #少女前线 2：追放 #少前 2：追放 #少女前线：云图计划 #云图计划
 
 ## Author
 
 - **Name**: #动员鼬
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0051`
+  - **Role**: #模型 | #Model
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [动员鼬](https://space.bilibili.com/348421936/upload/video)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [动员鼬](https://afdian.com/a/dyy114514)
-- **Author ID**: `0051`
 
 ## Co-creator
 

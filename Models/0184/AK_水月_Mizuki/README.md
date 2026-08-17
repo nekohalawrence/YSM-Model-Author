@@ -1,19 +1,20 @@
-# AK_水月-Mizuki
+# AK_水月_Mizuki
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 水月
 - **Category**: #Game
   - **Game**: #Arknights #AK #明日方舟
 
 ## Author
 
 - **Name**: #MC-ZBM
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0184`
+  - **Role**: #模型 #动画 | #Model #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [MC-ZBM](https://space.bilibili.com/604228173)
-- **Author ID**: `0184`
 
 </details>
 

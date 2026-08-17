@@ -1,21 +1,22 @@
-# 玛姆莎
+# Unknown_玛姆莎
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 
+- **Category**: #Other
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #叶无道_M
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0155`
+  - **Role**: #模型 | #Model
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [叶无道_M](https://space.bilibili.com/11897609)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [叶无道_M](https://afdian.com/a/YWDM333)
-- **Author ID**: `0155`
 
 ## Co-creator
 

@@ -4,16 +4,17 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 艾拉
 - **Category**: #Game
   - **Game**: #Tom Clancy's Rainbow Six Siege #R6S #彩虹六号：围攻
 
 ## Author
 
 - **Name**: #赤恒-AzaMire
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0012`
+  - **Role**: #模型 | #Model
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [赤恒-AzaMire](https://space.bilibili.com/235888316)
-- **Author ID**: `0012`
 
 </details>
 

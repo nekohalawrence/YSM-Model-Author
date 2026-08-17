@@ -1,21 +1,21 @@
-# BA_樱井美代-常服_Sakurai-Miyo_LB
+# BA_樱井美代_常服_Sakurai-Miyo_LB
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 樱井美代
 - **Category**: #Game
   - **Game**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
 
 ## Author
 
 - **Name**: #Dr观星 | #Dr-观星
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **Author ID**: `0129`
+  - **Role**: #Dr-观星
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [Dr观星](https://space.bilibili.com/157282636)
-  - **GroupChat**: #QQ
     - **QQ**: 1087347018
-- **Author ID**: `0129`
 
 </details>
 

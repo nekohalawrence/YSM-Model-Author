@@ -1,21 +1,22 @@
-# OC_特莉丝-Trissy_LB
+# OC_特莉丝_Trissy_LB
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 特莉丝
 - **Category**: #Original
   - **Game**: #Original Character #OC #原创角色
 
 ## Author
 
 - **Name**: #Almeta_owx
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0067`
+  - **Role**: #模型 #动画 | #Model #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [Almeta_owx](https://space.bilibili.com/4328692)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [Almeta_owx](https://afdian.com/a/Almeta)
-- **Author ID**: `0067`
 
 </details>
 

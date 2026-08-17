@@ -1,21 +1,21 @@
-# AL_怨仇-办公室的“意外”_Implacable
+# AL_怨仇级航空母舰_Implacable-1
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 怨仇
 - **Category**: #Game
   - **Game**: #Azur-Lane #AL #碧蓝航线
 
 ## Author
 
 - **Name**: #艺方像素 | #艺方堂 | #尻 | #艺方坊 | #艺方阁
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **Author ID**: `0058`
+  - **Role**: #模型 | #Model
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [艺方像素](https://space.bilibili.com/107318873)
-  - **GroupChat**: #QQ
     - **QQ**: 1320812591
-- **Author ID**: `0058`
 
 ## Co-creator
 

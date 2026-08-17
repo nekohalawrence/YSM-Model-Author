@@ -4,18 +4,19 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 
 - **Category**: #Game
   - **Game**: #Honkai-Impact-3 #HI3 #崩坏 3
 
 ## Author
 
 - **Name**: #Deovolente | #GhastRiv
+  - **Author ID**: `0157`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [Deovolente](https://space.bilibili.com/188295)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [Deovolente](https://afdian.com/a/Deovolente)
-- **Author ID**: `0157`
 
 </details>
 

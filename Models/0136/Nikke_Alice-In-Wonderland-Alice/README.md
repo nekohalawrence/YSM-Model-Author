@@ -1,30 +1,31 @@
-# Alice-in-Wonderland_Alice
+# Nikke_Alice-In-Wonderland-Alice
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 
+- **Category**: #Game
+  - **Game**: #Goddess of Victory: Nikke #Nikke #胜利女神：妮姬
 
 ## Author
 
 - **Name**: #Fllz
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Pixiv
-    - **Pixiv**: [Fllz](https://www.pixiv.net/users/34822407)
-  - **OtherPlatform**: #Facebook #VGen
+  - **Author ID**: `0136`
+  - **Role**: #模型 | #Model
+  - **SocialPlatform**: #Facebook #Pixiv
     - **Facebook**: [Fllz](https://www.facebook.com/asche.scheer)
+    - **Pixiv**: [Fllz](https://www.pixiv.net/users/34822407)
+  - **OtherPlatform**: #VGen
     - **VGen**: [Fllz](https://vgen.co/fllz)
-- **Author ID**: `0136`
 
 ## Co-creator
 
 - **Name**: Fllz
   - **Role**: #模型 | #Model
-  - **OtherPlatform**: #Linktree #Vgen
+  - **OtherPlatform**: #Linktree #VGen
     - **Linktree**: [Fllz](https://linktr.ee/fllz)
-    - **Vgen**: [Fllz](https://vgen.co/fllz)
+    - **VGen**: [Fllz](https://vgen.co/fllz)
   - **GroupChat**: #Discord
     - **Discord**: fllz
 

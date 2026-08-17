@@ -1,21 +1,22 @@
-# AK_羽毛笔-LaPluma
+# AK_羽毛笔_LaPluma
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 羽毛笔
 - **Category**: #Game
   - **Game**: #Arknights #AK #明日方舟
 
 ## Author
 
 - **Name**: #失踪的李元
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0162`
+  - **Role**: #模型 | #Model
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [失踪的李元](https://space.bilibili.com/505613984)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [失踪的李元](https://afdian.com/a/ly3064421540)
-- **Author ID**: `0162`
 
 </details>
 

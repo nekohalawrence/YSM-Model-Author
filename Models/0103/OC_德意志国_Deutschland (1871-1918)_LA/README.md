@@ -1,23 +1,23 @@
-# OC_德意志国-Deutschland (1871-1918)_LA
+# OC_德意志国_Deutschland (1871-1918)_LA
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 德意志国
 - **Category**: #Original
   - **Game**: #Original Character #OC #原创角色
 
 ## Author
 
 - **Name**: #浅陌菌
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **Author ID**: `0103`
+  - **Role**: #模型 | #Model
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [浅陌菌](https://space.bilibili.com/24513198)
+    - **QQ**: 1063585053
   - **SupportPlatform**: #Afdian
     - **Afdian**: [浅陌菌](https://afdian.com/a/tc_fox)
-  - **GroupChat**: #QQ
-    - **QQ**: 1063585053
-- **Author ID**: `0103`
 
 ## Co-creator
 

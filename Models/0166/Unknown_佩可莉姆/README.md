@@ -1,19 +1,20 @@
-# 佩可莉姆
+# Unknown_佩可莉姆
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 可莉
+- **Category**: #Other
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #棒锤锤 | #棒锤锤QWQ
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0166`
+  - **Role**: #模型 | #Model
   - **SupportPlatform**: #Afdian
     - **Afdian**: [棒锤锤](https://afdian.com/a/bbc6868)
-- **Author ID**: `0166`
 
 </details>
 

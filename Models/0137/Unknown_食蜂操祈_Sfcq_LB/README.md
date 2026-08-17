@@ -1,21 +1,21 @@
-# 食蜂操祈-sfcq_LB
+# Unknown_食蜂操祈_Sfcq_LB
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 食蜂操祈
+- **Category**: #Other
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #Maks | #Maks怜悯
+  - **Author ID**: `0137`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [Maks](https://space.bilibili.com/352177387)
-  - **GroupChat**: #QQ
     - **QQ**: 1047117247
-- **Author ID**: `0137`
 
 ## Co-creator
 

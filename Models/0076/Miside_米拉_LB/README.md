@@ -1,21 +1,22 @@
-# Miside_米拉_LB
+# MiSide_米拉_LB
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 米拉
 - **Category**: #Game
   - **Game**: #MiSide #米塔
 
 ## Author
 
 - **Name**: #White_clams白蛤蜊 | #白蛤蜊 | #White_Clams白蛤蜊
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0076`
+  - **Role**: #模型 | #Model
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [White_clams白蛤蜊](https://space.bilibili.com/168185637)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [White_clams白蛤蜊](https://afdian.com/a/whiteclams)
-- **Author ID**: `0076`
 
 </details>
 

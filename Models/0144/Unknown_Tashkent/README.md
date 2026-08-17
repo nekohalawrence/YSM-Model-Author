@@ -1,21 +1,22 @@
-# Tashkent
+# Unknown_Tashkent
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 
+- **Category**: #Other
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #叁雫MitsukuDayo
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0144`
+  - **Role**: #模型 #动画 | #Model #Animation
+  - **SocialPlatform**: #QQ
+    - **QQ**: 2780077625
   - **SupportPlatform**: #Afdian
     - **Afdian**: [叁雫MitsukuDayo](https://afdian.com/a/MitsukuDayo)
-  - **GroupChat**: #QQ
-    - **QQ**: 2780077625
-- **Author ID**: `0144`
 
 </details>
 

@@ -4,16 +4,17 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 
 - **Category**: #Game
   - **Game**: #Ash-Arms #灰烬战线
 
 ## Author
 
 - **Name**: #XGancheng_Tao
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0003`
+  - **Role**: #模型 | #Model
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [XGancheng_Tao](https://space.bilibili.com/1406170630)
-- **Author ID**: `0003`
 
 </details>
 

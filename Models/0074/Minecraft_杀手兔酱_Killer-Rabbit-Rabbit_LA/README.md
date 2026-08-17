@@ -1,21 +1,22 @@
-# Minecraft_杀手兔酱_Killer-Rabbit_LA
+# Minecraft_杀手兔酱_Killer-Rabbit-Rabbit_LA
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 杀手兔酱
 - **Category**: #Game
-  - **Game**: #Unknown
+  - **Game**: #Minecraft #我的世界
 
 ## Author
 
 - **Name**: #Killot | #Killot945
+  - **Author ID**: `0074`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [Killot](https://space.bilibili.com/6348825)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [Killot](https://afdian.com/a/Killot945)
-- **Author ID**: `0074`
 
 </details>
 

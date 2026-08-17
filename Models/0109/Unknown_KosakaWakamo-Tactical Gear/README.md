@@ -1,17 +1,18 @@
-# Unknown_KosakaWakamo_Tactical Gear
+# Unknown_KosakaWakamo-Tactical Gear
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 
 - **Category**: #Other
-  - **Game**: #Unknown
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #水神
+  - **Author ID**: `0109`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-- **Author ID**: `0109`
 
 ## Co-creator
 

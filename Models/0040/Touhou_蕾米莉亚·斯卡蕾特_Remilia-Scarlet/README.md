@@ -1,19 +1,20 @@
-# 蕾米莉亚·斯卡蕾特
+# Touhou_蕾米莉亚·斯卡蕾特_Remilia-Scarlet
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 蕾米莉亚
+- **Category**: #Other
+  - **Game**: #Touhou-Project #TH #TOUHOU #东方 Project
 
 ## Author
 
 - **Name**: #碎de帆
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0040`
+  - **Role**: #模型 | #Model
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [碎de帆](https://space.bilibili.com/381524342)
-- **Author ID**: `0040`
 
 </details>
 

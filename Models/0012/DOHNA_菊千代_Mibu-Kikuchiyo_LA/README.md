@@ -4,16 +4,17 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 菊千代
 - **Category**: #Game
   - **Game**: #Dohna Dohna: Let's Do Bad Things Together #DOHNA #多娜多娜 一起干坏事吧！ #ドーナドーナ いっしょにわるいことしよう
 
 ## Author
 
 - **Name**: #赤恒-AzaMire
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0012`
+  - **Role**: #ALL!
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [赤恒-AzaMire](https://space.bilibili.com/235888316)
-- **Author ID**: `0012`
 
 </details>
 

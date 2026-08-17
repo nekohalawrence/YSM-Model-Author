@@ -1,34 +1,32 @@
-# Snowbreak_里芙-无限之视-爱意凝晶_Reeve_LA
+# Snowbreak_里芙无限之视_爱意凝晶_Reeve_LA
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 里芙无限之视
 - **Category**: #Game
   - **Game**: #Snowbreak: Containment Zone #snowbreak #尘白禁区
 
 ## Author
 
-- **Name**: #Dreamer #普通的木屐
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [Dreamer #普通的木屐](https://afdian.com/a/CommonMuJi)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [Dreamer #普通的木屐](https://space.bilibili.com/768300)
-  - **OtherPlatform**: #WeChat
+- **Name**: #Dreamer | #普通的木屐
+  - **Author ID**: `0102`
+  - **Role**: #模型 | #Model
+  - **SocialPlatform**: #Bilibili #WeChat #QQ
+    - **Bilibili**: [Dreamer](https://afdian.com/a/CommonMuJi)
     - **WeChat**: MC_CommonMuJi
-  - **GroupChat**: #QQ
     - **QQ**: 1776296661
-- **Author ID**: `0102`
+  - **SupportPlatform**: #Afdian
+    - **Afdian**: [Dreamer](https://space.bilibili.com/768300)
 
 ## Co-creator
 
 - **Name**: 普通的木屐
   - **Role**: #UP主
-  - **SocialPlatform**: #Bilibili
+  - **SocialPlatform**: #WeChat #Bilibili
+    - **WeChat**: MC_CommonMuJi
     - **Bilibili**: [普通的木屐](https://space.bilibili.com/768300)
-  - **OtherPlatform**: #合作微信号
-    - **合作微信号**: MC_CommonMuJi
 
 </details>
 

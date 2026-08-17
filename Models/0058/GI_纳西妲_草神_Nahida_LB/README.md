@@ -1,21 +1,21 @@
-# GI_纳西妲-草神_Nahida_LB
+# GI_纳西妲_草神_Nahida_LB
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 纳西妲
 - **Category**: #Game
   - **Game**: #Genshin Impact #Genshin #GI #原神
 
 ## Author
 
 - **Name**: #艺方像素 | #艺方堂 | #尻 | #艺方坊 | #艺方阁
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **Author ID**: `0058`
+  - **Role**: #模型 | #Model
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [艺方像素](https://space.bilibili.com/107318873)
-  - **GroupChat**: #QQ
     - **QQ**: 1320812591
-- **Author ID**: `0058`
 
 ## Co-creator
 

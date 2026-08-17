@@ -4,18 +4,19 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 红豆
 - **Category**: #Game
   - **Game**: #NEKOPARA #巧克力与香子兰 #猫娘乐园 #ネコぱら
 
 ## Author
 
 - **Name**: #烛火的次元宇宙
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0065`
+  - **Role**: #模型 | #Model
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [烛火的次元宇宙](https://space.bilibili.com/57715833)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [烛火的次元宇宙](https://afdian.com/a/zhuhuo)
-- **Author ID**: `0065`
 
 </details>
 

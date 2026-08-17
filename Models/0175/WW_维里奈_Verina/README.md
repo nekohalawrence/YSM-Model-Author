@@ -1,17 +1,18 @@
-# Wuthering-Waves_维里奈-verina
+# WW_维里奈_Verina
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
+- **Name**: 维里奈
+- **Category**: #Game
   - **Game**: #Wuthering-Waves #WuWa #WW #鸣潮
 
 ## Author
 
 - **Name**: #集栎 | #Nebulathus
+  - **Author ID**: `0175`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-- **Author ID**: `0175`
 
 </details>
 

@@ -1,21 +1,21 @@
-# MK011(米莉安骑士改装型)
+# Unknown_MK011(米莉安骑士改装型)
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 
+- **Category**: #Other
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #准尉werner
+  - **Author ID**: `0121`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [准尉werner](https://space.bilibili.com/23427031)
-  - **GroupChat**: #QQ
     - **QQ**: 1102665952
-- **Author ID**: `0121`
 
 </details>
 

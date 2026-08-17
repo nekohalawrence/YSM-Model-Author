@@ -4,16 +4,17 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 迷迭香
 - **Category**: #Game
   - **Game**: #Arknights #AK #明日方舟
 
 ## Author
 
 - **Name**: #平行Rosmontis
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0085`
+  - **Role**: #迷迭香
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [平行Rosmontis](https://space.bilibili.com/473170444)
-- **Author ID**: `0085`
 
 </details>
 

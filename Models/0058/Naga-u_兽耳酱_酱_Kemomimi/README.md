@@ -1,21 +1,21 @@
-# Naga-u_兽耳酱_kemomimi酱
+# Naga-u_兽耳酱_酱_Kemomimi
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Game
+- **Name**: 
+- **Category**: #Other
   - **Game**: #naga u #Naga-u #ながユー
 
 ## Author
 
 - **Name**: #艺方像素 | #艺方堂 | #尻 | #艺方坊 | #艺方阁
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **Author ID**: `0058`
+  - **Role**: #模型 | #Model
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [艺方像素](https://space.bilibili.com/107318873)
-  - **GroupChat**: #QQ
     - **QQ**: 1320812591
-- **Author ID**: `0058`
 
 ## Co-creator
 

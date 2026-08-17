@@ -4,36 +4,36 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 
 - **Category**: #Game
   - **Game**: #Azur-Lane #AL #碧蓝航线
 
 ## Author
 
 - **Name**: #雾雨波波沙
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili #pixiv
+  - **Author ID**: `0045`
+  - **Role**: #模型 | #Model
+  - **SocialPlatform**: #Bilibili #pixiv #QQ
     - **Bilibili**: [雾雨波波沙](https://space.bilibili.com/36761228)
     - **pixiv**: [雾雨波波沙](https://www.pixiv.net/users/26720481)
-  - **GroupChat**: #QQ
     - **QQ**: 530621549
-- **Author ID**: `0045`
 
 ## Co-creator
 
 - **Name**: 星语
   - **Role**: #动作 | #Motion
-  - **SocialPlatform**: #bilibili
-    - **bilibili**: 316739550
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: 316739550
 
 - **Name**: 秋枫落叶
   - **Role**: #技术支持
-  - **GroupChat**: #qq
-    - **qq**: 176023847
+  - **GroupChat**: #QQ-Group
+    - **QQ-Group**: 176023847
 
 - **Name**: Cosine_line
   - **Role**: #测试 | #Test
-  - **GroupChat**: #qq
-    - **qq**: 3454346519
+  - **GroupChat**: #QQ-Group
+    - **QQ-Group**: 3454346519
 
 </details>
 

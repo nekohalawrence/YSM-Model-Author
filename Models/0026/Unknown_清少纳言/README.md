@@ -1,23 +1,23 @@
-# 清少纳言
+# Unknown_清少纳言
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 清少纳言
+- **Category**: #Other
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #雒仁
+  - **Author ID**: `0026`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [雒仁](https://space.bilibili.com/13550783)
+    - **QQ**: 528146909
   - **SupportPlatform**: #Afdian
     - **Afdian**: [雒仁](https://afdian.com/a/luoren)
-  - **GroupChat**: #QQ
-    - **QQ**: 528146909
-- **Author ID**: `0026`
 
 </details>
 

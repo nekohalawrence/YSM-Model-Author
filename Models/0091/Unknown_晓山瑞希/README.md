@@ -4,16 +4,17 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 
 - **Category**: #Other
-  - **Game**: #Unknown
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #trita
+  - **Author ID**: `0091`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **GroupChat**: #QQ
+  - **SocialPlatform**: #QQ
     - **QQ**: 3490790346
-- **Author ID**: `0091`
 
 </details>
 

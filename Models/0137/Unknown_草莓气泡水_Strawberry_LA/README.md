@@ -1,28 +1,28 @@
-# 草莓气泡水-Strawberry_LA
+# Unknown_草莓气泡水_Strawberry_LA
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 
+- **Category**: #Other
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #Maks | #Maks怜悯
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **Author ID**: `0137`
+  - **Role**: #模型 | #Model
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [Maks](https://space.bilibili.com/352177387)
-  - **GroupChat**: #QQ
     - **QQ**: 1047117247
-- **Author ID**: `0137`
 
 ## Co-creator
 
 - **Name**: 星语TAT
   - **Role**: #动画 | #Animation
-  - **SocialPlatform**: #bilibili
-    - **bilibili**: 316739550
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: 316739550
 
 </details>
 

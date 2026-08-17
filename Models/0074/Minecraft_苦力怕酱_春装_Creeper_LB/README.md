@@ -1,21 +1,22 @@
-# Minecraft_苦力怕酱-春装_Creeper_LB
+# Minecraft_苦力怕酱_春装_Creeper_LB
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 苦力怕酱
 - **Category**: #Game
-  - **Game**: #Unknown
+  - **Game**: #Minecraft #我的世界
 
 ## Author
 
 - **Name**: #Killot | #Killot945
+  - **Author ID**: `0074`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [Killot](https://space.bilibili.com/6348825)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [Killot](https://afdian.com/a/Killot945)
-- **Author ID**: `0074`
 
 </details>
 

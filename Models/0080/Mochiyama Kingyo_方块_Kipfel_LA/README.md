@@ -1,19 +1,20 @@
-# Mochiyama-Kingyo_方块-kipfel_LA
+# Mochiyama Kingyo_方块_Kipfel_LA
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 方块
+- **Category**: #Other
+  - **Game**: #Mochiyama Kingyo #もち山金魚
 
 ## Author
 
 - **Name**: #Nona_Reeves | #Nona_reeves | #Nona-Reeves
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **GroupChat**: #QQ
+  - **Author ID**: `0080`
+  - **Role**: #模型 | #Model
+  - **SocialPlatform**: #QQ
     - **QQ**: 1926615510
-- **Author ID**: `0080`
 
 </details>
 

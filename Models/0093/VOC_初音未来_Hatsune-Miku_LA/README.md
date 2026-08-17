@@ -1,38 +1,39 @@
-# VOC_初音未来_Miku_LA
+# VOC_初音未来_Hatsune-Miku_LA
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 初音未来
 - **Category**: #Music
   - **Game**: #VOCALOID #VOC #博歌乐 #V 家 #术力口 #虚拟歌手 #虚拟歌姬
 
 ## Author
 
 - **Name**: #苏依凛 | #炽湮
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0093`
+  - **Role**: #模型 | #Model
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [苏依凛](https://space.bilibili.com/76987486)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [苏依凛](https://afdian.com/a/supermonsterking)
-- **Author ID**: `0093`
 
 ## Co-creator
 
 - **Name**: Seto/SEGA/Minmode
   - **Role**: #动作 | #Motion
-  - **SocialPlatform**: #youtube
-    - **youtube**: [Seto/SEGA/Minmode](https://www.youtube.com/@SetoKeino)
+  - **SocialPlatform**: #YouTube
+    - **YouTube**: [Seto/SEGA/Minmode](https://www.youtube.com/@SetoKeino)
 
 - **Name**: cerica
   - **Role**: #动作 | #Motion
-  - **OtherPlatform**: #bowlroll
-    - **bowlroll**: [cerica](https://bowlroll.net/user/211021)
+  - **OtherPlatform**: #BowlRoll
+    - **BowlRoll**: [cerica](https://bowlroll.net/user/211021)
 
 - **Name**: トッポ
   - **Role**: #动作 | #Motion
-  - **OtherPlatform**: #bowlroll
-    - **bowlroll**: [トッポ](https://bowlroll.net/user/211021)
+  - **OtherPlatform**: #BowlRoll
+    - **BowlRoll**: [トッポ](https://bowlroll.net/user/211021)
 
 </details>
 

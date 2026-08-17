@@ -1,17 +1,18 @@
-# 瑕蝶-Castorice
+# Unknown_瑕蝶_Castorice
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 瑕蝶
+- **Category**: #Other
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #艾卡
+  - **Author ID**: `0172`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-- **Author ID**: `0172`
 
 ## Co-creator
 

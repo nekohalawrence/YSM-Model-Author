@@ -4,18 +4,18 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 英梨梨
 - **Category**: #Anime
   - **Game**: #Saekano: How to Raise a Boring Girlfriend #SAEKANO #路人女主的养成方法
 
 ## Author
 
 - **Name**: #Dr观星 | #Dr-观星
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **Author ID**: `0129`
+  - **Role**: #Dr-观星
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [Dr观星](https://space.bilibili.com/157282636)
-  - **GroupChat**: #QQ
     - **QQ**: 1087347018
-- **Author ID**: `0129`
 
 </details>
 

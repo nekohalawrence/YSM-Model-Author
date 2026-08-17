@@ -1,19 +1,20 @@
-# 白猫-baimao
+# Unknown_白猫_Baimao
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 
+- **Category**: #Other
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #棒锤锤 | #棒锤锤QWQ
+  - **Author ID**: `0166`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SupportPlatform**: #Afdian
     - **Afdian**: [棒锤锤](https://afdian.com/a/bbc6868)
-- **Author ID**: `0166`
 
 </details>
 

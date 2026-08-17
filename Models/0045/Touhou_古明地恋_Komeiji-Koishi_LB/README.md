@@ -1,22 +1,22 @@
-# Touhou_古明地恋-山城高岭版_LB
+# Touhou_古明地恋_Komeiji-Koishi_LB
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Game
+- **Name**: 古明地恋
+- **Category**: #Other
   - **Game**: #Touhou-Project #TH #TOUHOU #东方 Project
 
 ## Author
 
 - **Name**: #雾雨波波沙
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili #pixiv
+  - **Author ID**: `0045`
+  - **Role**: #☆
+  - **SocialPlatform**: #Bilibili #pixiv #QQ
     - **Bilibili**: [雾雨波波沙](https://space.bilibili.com/36761228)
     - **pixiv**: [雾雨波波沙](https://www.pixiv.net/users/26720481)
-  - **GroupChat**: #QQ
     - **QQ**: 530621549
-- **Author ID**: `0045`
 
 </details>
 

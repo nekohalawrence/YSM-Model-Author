@@ -1,22 +1,23 @@
-# Food-Girls_絢樱_LC
+# Food Girls_絢樱_LC
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 
+- **Category**: #Game
+  - **Game**: #Food Girls #食用系少女
 
 ## Author
 
 - **Name**: #嗯嗯owo
+  - **Author ID**: `0030`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili #YouTube
     - **Bilibili**: [嗯嗯owo](https://space.bilibili.com/167202500)
     - **YouTube**: [嗯嗯owo](https://space.bilibili.com/167202500)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [嗯嗯owo](https://afdian.com/a/enenowo)
-- **Author ID**: `0030`
 
 </details>
 

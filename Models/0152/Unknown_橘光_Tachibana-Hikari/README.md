@@ -1,21 +1,22 @@
-# 橘光_Tachibana_Hikari
+# Unknown_橘光_Tachibana-Hikari
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 
+- **Category**: #Other
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #wwww琨
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0152`
+  - **Role**: #模型 | #Model
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [wwww琨](https://space.bilibili.com/99065359)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [wwww琨](https://afdian.com/a/wwwwkun)
-- **Author ID**: `0152`
 
 </details>
 

@@ -1,19 +1,20 @@
-# VOC_初音未来_Miku
+# VOC_初音未来_Hatsune-Miku
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 初音未来
 - **Category**: #Music
   - **Game**: #VOCALOID #VOC #博歌乐 #V 家 #术力口 #虚拟歌手 #虚拟歌姬
 
 ## Author
 
 - **Name**: #Tu_tou
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **GroupChat**: #QQ
+  - **Author ID**: `0022`
+  - **Role**: #模型 | #Model
+  - **SocialPlatform**: #QQ
     - **QQ**: 126088260
-- **Author ID**: `0022`
 
 ## Co-creator
 

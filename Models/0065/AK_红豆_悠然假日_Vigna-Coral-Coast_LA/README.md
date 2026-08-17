@@ -1,21 +1,22 @@
-# AK_红豆-悠然假日-Vigna-Coral-Coast_LA
+# AK_红豆_悠然假日_Vigna-Coral-Coast_LA
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 红豆
 - **Category**: #Game
   - **Game**: #Arknights #AK #明日方舟
 
 ## Author
 
 - **Name**: #烛火的次元宇宙
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0065`
+  - **Role**: #模型 | #Model
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [烛火的次元宇宙](https://space.bilibili.com/57715833)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [烛火的次元宇宙](https://afdian.com/a/zhuhuo)
-- **Author ID**: `0065`
 
 ## Co-creator
 

@@ -1,21 +1,21 @@
-# BA_空崎日奈-new_Sorasaki-Hina_LB
+# BA_空崎日奈_Sorasaki-Hina-New_LB
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 空崎日奈
 - **Category**: #Game
   - **Game**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
 
 ## Author
 
 - **Name**: #Dr观星 | #Dr-观星
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **Author ID**: `0129`
+  - **Role**: #模型 | #Model
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [Dr观星](https://space.bilibili.com/157282636)
-  - **GroupChat**: #QQ
     - **QQ**: 1087347018
-- **Author ID**: `0129`
 
 ## Co-creator
 
@@ -32,8 +32,8 @@
 
 - **Name**: K螺诺亚
   - **Role**: #DEBUG
-  - **SocialPlatform**: #B站
-    - **B站**: [K螺诺亚](https://space.bilibili.com/3546599305251347)
+  - **SocialPlatform**: #Bilibili
+    - **Bilibili**: [K螺诺亚](https://space.bilibili.com/3546599305251347)
 
 </details>
 

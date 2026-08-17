@@ -4,16 +4,17 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 
 - **Category**: #Other
-  - **Game**: #Unknown
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #MicroCraft_ | #MicroCraft
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0073`
+  - **Role**: #模型 #动画 #物理 | #Model #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [MicroCraft_](https://space.bilibili.com/701974112)
-- **Author ID**: `0073`
 
 </details>
 

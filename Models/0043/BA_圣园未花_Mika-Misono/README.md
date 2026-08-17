@@ -1,21 +1,22 @@
-# mug_mika
+# BA_圣园未花_Mika-Misono
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 圣园未花
+- **Category**: #Game
+  - **Game**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
 
 ## Author
 
 - **Name**: #完全凍結ALL | #完全冻结 | #绝对冻结
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0043`
+  - **Role**: #模型 | #Model
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [完全凍結ALL](https://space.bilibili.com/393110)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [完全凍結ALL](https://afdian.com/a/AllFreeze)
-- **Author ID**: `0043`
 
 ## Co-creator
 

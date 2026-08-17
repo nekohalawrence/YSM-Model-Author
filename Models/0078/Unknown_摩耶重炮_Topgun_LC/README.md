@@ -1,19 +1,20 @@
-# 摩耶重炮-Topgun_LC
+# Unknown_摩耶重炮_Topgun_LC
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 摩耶
+- **Category**: #Other
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #LuXi233 | #小早川希
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0078`
+  - **Role**: #模型 #上色 #动作 | #Model #Motion
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [LuXi233](https://space.bilibili.com/183485702)
-- **Author ID**: `0078`
 
 </details>
 

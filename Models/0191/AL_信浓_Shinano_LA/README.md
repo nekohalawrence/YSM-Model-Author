@@ -1,17 +1,18 @@
-# AL_信浓-幻梦奇术_Shinano_LA
+# AL_信浓_Shinano_LA
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 信浓
 - **Category**: #Game
   - **Game**: #Azur-Lane #AL #碧蓝航线
 
 ## Author
 
 - **Name**: #新隆肰懿
+  - **Author ID**: `0191`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-- **Author ID**: `0191`
 
 </details>
 

@@ -1,21 +1,22 @@
-# Ultraman_杰顿-芝顿娘_Zetton_LB
+# UT_杰顿_芝顿娘_Zetton_LB
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
+- **Name**: 杰顿
+- **Category**: #Anime
   - **Game**: #Ultraman Tiga #Ultraman #UT #奥特曼 #迪迦奥特曼
 
 ## Author
 
 - **Name**: #苏依凛 | #炽湮
+  - **Author ID**: `0093`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [苏依凛](https://space.bilibili.com/76987486)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [苏依凛](https://afdian.com/a/supermonsterking)
-- **Author ID**: `0093`
 
 </details>
 

@@ -1,21 +1,21 @@
-# Unknown_J10
+# Unknown_J
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 
 - **Category**: #Other
-  - **Game**: #Unknown
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #星语TAT
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **Author ID**: `0049`
+  - **Role**: #作者
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [星语TAT](https://space.bilibili.com/316739550)
-  - **GroupChat**: #QQ
     - **QQ**: 1039376704
-- **Author ID**: `0049`
 
 </details>
 

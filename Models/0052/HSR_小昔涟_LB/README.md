@@ -4,18 +4,19 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 昔涟
 - **Category**: #Game
   - **Game**: #Honkai-Star-Rail #HSR #崩坏：星穹铁道
 
 ## Author
 
 - **Name**: #゚烟雨画桥
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0052`
+  - **Role**: #模型 | #Model
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [゚烟雨画桥](https://space.bilibili.com/1268865161)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [゚烟雨画桥](https://afdian.com/a/mj204)
-- **Author ID**: `0052`
 
 </details>
 

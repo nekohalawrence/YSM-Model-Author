@@ -1,19 +1,20 @@
-# 初音-chuyin
+# VOC_初音_Chuyin
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 初音未来
+- **Category**: #Music
+  - **Game**: #VOCALOID #VOC #博歌乐 #V 家 #术力口 #虚拟歌手 #虚拟歌姬
 
 ## Author
 
 - **Name**: #平衡芝光
+  - **Author ID**: `0034`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [平衡芝光](https://space.bilibili.com/526319760)
-- **Author ID**: `0034`
 
 </details>
 

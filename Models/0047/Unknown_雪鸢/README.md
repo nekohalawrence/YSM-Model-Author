@@ -4,18 +4,18 @@
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 
 - **Category**: #Other
-  - **Game**: #Unknown
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #Nicy_奈汐 | #苏溟0w0 | #沐星喵OwO
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **Author ID**: `0047`
+  - **Role**: #模型 | #Model
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [Nicy_奈汐](https://space.bilibili.com/3494363390806334)
-  - **GroupChat**: #QQ
     - **QQ**: 743807609
-- **Author ID**: `0047`
 
 </details>
 

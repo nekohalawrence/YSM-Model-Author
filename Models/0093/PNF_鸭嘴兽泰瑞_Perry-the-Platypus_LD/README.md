@@ -1,21 +1,22 @@
-# PNF_鸭嘴兽泰瑞_Perry-the-Platypus_LD
+# PNF_鸭嘴兽泰瑞_Perry-The-Platypus_LD
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 鸭嘴兽泰瑞
 - **Category**: #Anime
   - **Game**: #Phineas and Ferb #PNF #飞哥与小佛 #フィニアスとファーブ
 
 ## Author
 
 - **Name**: #苏依凛 | #炽湮
+  - **Author ID**: `0093`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [苏依凛](https://space.bilibili.com/76987486)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [苏依凛](https://afdian.com/a/supermonsterking)
-- **Author ID**: `0093`
 
 </details>
 

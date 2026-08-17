@@ -1,21 +1,22 @@
-# 道尔m1-Tor_m1
+# Unknown_道尔m1-Tor_M
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 
+- **Category**: #Other
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #TiRLey | #TiRLey二号机
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0158`
+  - **Role**: #模型 | #Model
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [TiRLey](https://space.bilibili.com/494506386)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [TiRLey](https://afdian.com/a/HSTVsuckBVMrelikt)
-- **Author ID**: `0158`
 
 </details>
 

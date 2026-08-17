@@ -1,22 +1,22 @@
-# minecraft_高塔恶魂_LA
+# Minecraft_高塔恶魂_LA
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 
 - **Category**: #Game
-  - **Game**: #Unknown
+  - **Game**: #Minecraft #我的世界
 
 ## Author
 
 - **Name**: #雾雨波波沙
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili #pixiv
+  - **Author ID**: `0045`
+  - **Role**: #☆
+  - **SocialPlatform**: #Bilibili #pixiv #QQ
     - **Bilibili**: [雾雨波波沙](https://space.bilibili.com/36761228)
     - **pixiv**: [雾雨波波沙](https://www.pixiv.net/users/26720481)
-  - **GroupChat**: #QQ
     - **QQ**: 530621549
-- **Author ID**: `0045`
 
 </details>
 

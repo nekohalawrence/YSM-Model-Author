@@ -1,21 +1,21 @@
-# BA_浅黄睦月：常服
+# BA_浅黄睦月_常服
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 睦月
 - **Category**: #Game
   - **Game**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
 
 ## Author
 
 - **Name**: #Dr观星 | #Dr-观星
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **Author ID**: `0129`
+  - **Role**: #日影
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [Dr观星](https://space.bilibili.com/157282636)
-  - **GroupChat**: #QQ
     - **QQ**: 1087347018
-- **Author ID**: `0129`
 
 </details>
 

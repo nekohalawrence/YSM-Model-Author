@@ -1,15 +1,17 @@
-# BA_railtwin_r_0_LB
+# BA_Railtwin-R_LB
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 
 - **Category**: #Game
   - **Game**: #Blue-Archive #BA #碧蓝档案 #蔚蓝档案
 
 ## Author
 
 - **Name**: #源石姬变体 | #raw_chicken | #鸡姬
+  - **Author ID**: `0095`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili #pixiv
     - **Bilibili**: [源石姬变体](https://space.bilibili.com/219540765)
@@ -17,7 +19,6 @@
   - **SupportPlatform**: #Afdian #Unifans
     - **Afdian**: [源石姬变体](https://afdian.com/a/rawchicken)
     - **Unifans**: [源石姬变体](https://app.unifans.io/c/rawchickenneg)
-- **Author ID**: `0095`
 
 </details>
 

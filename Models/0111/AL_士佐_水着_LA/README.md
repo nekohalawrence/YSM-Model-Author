@@ -1,21 +1,22 @@
-# AL_士佐-水着_LA
+# AL_士佐_水着_LA
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
+- **Name**: 
 - **Category**: #Game
   - **Game**: #Azur-Lane #AL #碧蓝航线
 
 ## Author
 
 - **Name**: #奶油桃NaytoTime | #奶油桃
-  - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
+  - **Author ID**: `0111`
+  - **Role**: #模型 | #Model
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [奶油桃NaytoTime](https://space.bilibili.com/74167922)
   - **SupportPlatform**: #Afdian
     - **Afdian**: [奶油桃NaytoTime](https://afdian.com/a/liberstellae)
-- **Author ID**: `0111`
 
 ## Co-creator
 

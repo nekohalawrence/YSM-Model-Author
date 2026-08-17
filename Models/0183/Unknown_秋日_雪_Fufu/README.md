@@ -1,23 +1,23 @@
-# 秋日-雪fufu
+# Unknown_秋日_雪_Fufu
 
 ## Model Details
 <details>
 <summary>Model Details</summary>
 
-- **Category**: #Unknown
-  - **Game**: #Unknown
+- **Name**: 
+- **Category**: #Other
+  - **Game**: #Unknown #未知
 
 ## Author
 
 - **Name**: #Aaaaaaafeng
+  - **Author ID**: `0183`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
-  - **SocialPlatform**: #Bilibili
+  - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [Aaaaaaafeng](https://space.bilibili.com/12133120)
+    - **QQ**: 220993928
   - **SupportPlatform**: #Afdian
     - **Afdian**: [Aaaaaaafeng](https://afdian.com/a/Aaaaaaafeng)
-  - **GroupChat**: #QQ
-    - **QQ**: 220993928
-- **Author ID**: `0183`
 
 </details>
 
