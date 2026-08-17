@@ -36,29 +36,22 @@ FOLDER_RE = re.compile(r'^(\d{4})$')
 # --author：重建根 README 作者表（原 build_readme_authors.py）
 # ---------------------------------------------------------------------------
 def build_readme_rows() -> list[tuple[str, str, int, str]]:
-    """收集作者行（编号, 名称, 模型数, 链接）。作者名优先 authors.json，缺失回退 README。"""
+    """收集作者行（编号, 名称, 模型数, 链接）。作者名统一取自 authors.json（不回退 README）。"""
     authors_index = lib_readme.load_authors_index().get('authors') or {}
     rows: list[tuple[str, str, int, str]] = []
     for folder in sorted(p.name for p in MODELS_DIR.iterdir() if p.is_dir()):
         if not FOLDER_RE.match(folder):
             continue
         author_dir = MODELS_DIR / folder
-        readme_file = next((author_dir / f for f in ['README.md', 'readme.md', 'Readme.md']
-                            if (author_dir / f).is_file()), None)
         link = f'.../../Models/{folder}'
 
-        # 集中数据优先；未收录或缺失时回退读 README（name 为数组，取规范名）
+        # 统一使用集中作者数据 authors.json（name 为数组，取规范名）
         entry = authors_index.get(folder) or {}
         names = entry.get('name') or []
         if isinstance(names, str):
             names = lib_readme.split_author_names(names)
         # 列出该作者的全部名称，不同名称用 | 隔开（README 表格内 | 已转义）
-        author_name = ' | '.join(names) if names else ''
-        if not author_name and readme_file:
-            author_name = lib_readme.parse_author_name_value(
-                readme_file.read_text(encoding='utf-8', errors='ignore'))
-        if not author_name:
-            author_name = '暂无'
+        author_name = ' | '.join(names) if names else '暂无'
 
         model_count = sum(1 for sub in author_dir.iterdir()
                           if sub.is_dir() and not sub.name.startswith('.'))
@@ -103,9 +96,9 @@ def update_root_readme(rows: list[tuple[str, str, int, str]], path: Path, is_en:
 
 
 def write_root_readmes() -> int:
-    """重建根 README 与 README-EN 的作者表。"""
+    """重建根 README 与 Docs/README-EN 的作者表。"""
     readme_path = WORKSPACE_ROOT / 'README.md'
-    readme_en_path = WORKSPACE_ROOT / 'README-EN.md'
+    readme_en_path = WORKSPACE_ROOT / 'Docs' / 'README-EN.md'
     if not MODELS_DIR.is_dir():
         print(f'Error: {MODELS_DIR} directory not found.')
         return 2

@@ -19,7 +19,7 @@ from lib import readme as lib_readme  # noqa: E402
 
 ROOT = lib_paths.WORKSPACE_ROOT
 ZH_README = ROOT / 'README.md'
-EN_README = ROOT / 'README-EN.md'
+EN_README = ROOT / 'Docs' / 'README-EN.md'
 
 # AUTHORS_LIST 自动化区域标记（与 03_generate_root_readme.py --author 共用 lib/readme 常量）
 AUTHORS_START = lib_readme.AUTHORS_LIST_START

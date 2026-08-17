@@ -1,4 +1,4 @@
-中文, [English](https://github.com/nekohalawrence/YSM-Model-Author/blob/main/README-EN.md)
+中文, [English](https://github.com/nekohalawrence/YSM-Model-Author/blob/main/Docs/README-EN.md)
 
 # YSM-Model-Author
 
@@ -128,7 +128,7 @@
 | 0113 | [#秋风 \| #每天都睡不醒的秋风 \| #睡不死死不睡的秋风](.../../Models/0113) | 1 |
 | 0114 | [#迷糊晓雾](.../../Models/0114) | 1 |
 | 0115 | [#荒漠](.../../Models/0115) | 1 |
-| 0116 | [#1111111re \| #伊伊蕾](.../../Models/0116) | 7 |
+| 0116 | [#1111111re \| #伊伊蕾](.../../Models/0116) | 6 |
 | 0117 | [#聚模道 \| #聚核重工Minecraft \| #语文喵喵拳](.../../Models/0117) | 22 |
 | 0118 | [Mr黄金君](.../../Models/0118) | 1 |
 | 0119 | [#奇葩的小毛](.../../Models/0119) | 7 |
@@ -177,7 +177,7 @@
 | 0162 | [#失踪的李元](.../../Models/0162) | 1 |
 | 0163 | [#Rhein雨倩 \| #雨倩先生](.../../Models/0163) | 2 |
 | 0164 | [#toolat嫌晚 \| #toolat洗碗](.../../Models/0164) | 1 |
-| 0165 | [#默栖 \| #某嘞个默栖 \| #默嘞个某栖](.../../Models/0165) | 8 |
+| 0165 | [#默栖 \| #某嘞个默栖 \| #默嘞个某栖](.../../Models/0165) | 7 |
 | 0166 | [#棒锤锤 \| #棒锤锤QWQ](.../../Models/0166) | 4 |
 | 0167 | [#炼狱在旅行](.../../Models/0167) | 1 |
 | 0168 | [#丁真蟹 \| #ZHEN](.../../Models/0168) | 3 |
@@ -198,7 +198,6 @@
 | 0183 | [#Aaaaaaafeng](.../../Models/0183) | 7 |
 | 0184 | [#MC-ZBM](.../../Models/0184) | 3 |
 | 0185 | [#滑滑滑纸隐 \| #滑纸隐](.../../Models/0185) | 9 |
-| 0186 | [暂无](.../../Models/0186) | 0 |
 | 0187 | [#爱听书的旅人 \| #爱听小说的旅人](.../../Models/0187) | 1 |
 | 0188 | [#鸢尾](.../../Models/0188) | 1 |
 | 0189 | [#TIS长夜孤星](.../../Models/0189) | 2 |
@@ -400,13 +399,15 @@
 
 > 下面是当前仓库的主要目录说明，后续可能会根据内容继续调整。
 
-- Models: YSM 主模型库：按作者编号分组
-- Other-YSM-Models: 其他 YSM 模型集合：每个模型一个目录
-- Skins: 原版我的世界皮肤，按作者编号分组
-- Blockbench-Models: Blockbench 源工程文件
-- First-Person-Mods: 第一人称相关模组配置
-- TACZ-Gun-Packs: TACZ 枪械包资源
-- TLM-Maid-Packs: TLM 女仆相关资源包
+```
+- Models:             # YSM 主模型库：按作者编号分组
+- Other-YSM-Models:   # 其他 YSM 模型集合：每个模型一个目录
+- Skins:              # 原版我的世界皮肤，按作者编号分组
+- Blockbench-Models:  # Blockbench 源工程文件
+- First-Person-Mods:  # 第一人称相关模组配置
+- TACZ-Gun-Packs:     # TACZ 枪械包资源
+- TLM-Maid-Packs:     # TLM 女仆相关资源包
+```
 
 ## 注意事项
 
