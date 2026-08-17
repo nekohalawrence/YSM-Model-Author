@@ -25,7 +25,7 @@
 | 脚本 | 职责 | 调用方式 |
 | --- | --- | --- |
 | **01_organize_models.py** | `.ysm` 归档：解析作者 → `Models/<编号>/`，未命中作者 → 按作品前缀分类到 `Other-YSM-Models/<作品>/`（未匹配 → `Unknown/`），新作者自动建目录；多作者/去重/同模型合并/附属文件跟随；`--apply` 后联动 authors → rename → readmes → authors 表 | `python .github/scripts/models_organize/01_organize_models.py <文件/目录> [--apply] [--root]` |
-| **organize_previews.py**（check&fix/） | 预览图归入 `previews/` 并规范命名，之后重跑模型 README | `[--apply] [--rename] [--root]` |
+| **organize_previews.py**（check&fix/） | 预览图归入 `previews/` 并规范命名，之后重跑模型 README | `[--apply] [--rename] [<路径>...]` |
 | **02_rename_model_folders.py** | 模型文件夹**纯重命名**（原 naming/rename_model_folders.py）：按知识库把模型文件夹重命名为 `<作品>_<中文角色>[-皮肤]_<英文角色>_<评级>`；Unknown / 跨作品同名冲突**只标记跳过**（不收录数据库）；同名冲突自动加 `-数字` 副本序号。知识库维护已分离到 check&fix/kb_tool.py，实现复用于 `lib/kb/` | `[--apply] [--show*]` |
 | **02_rename_model_files.py** | 模型文件重命名（自 02 拆出）：`<文件夹名(去评级)>[变体][_v版本][_副本序号]<后缀>`，变体词经 skin_tags.json 标准化表规范化；默认 dry-run | `[--apply] [路径...]` |
 | **kb_tool.py**（check&fix/） | 知识库维护（原 02/03 分离）：`--roles` 角色综合菜单 / `--add`/`--del`/`--list`/`--check`/`--merge`/`--set-default`/`--rename`/`--suggest`（操作 × 对象 role/work）；`--rename-work` 重命名作品键；`--authors-data` 重建 authors.json（原 03 --data）；`--sync-authors` 从模型 .ysm 推导作者并入 authors.json | `python .github/scripts/check&fix/kb_tool.py [--roles/--add/--del/--authors-data/--sync-authors]` |

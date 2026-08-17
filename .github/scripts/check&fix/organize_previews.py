@@ -14,13 +14,10 @@
 退出码:0 成功;1 编号耗尽等错误;2 目录不存在;3 存在未处理的冲突文件
 
 用法:
-    python .github/scripts/check&fix/organize_previews.py                      # 预览将移动哪些文件
-    python .github/scripts/check&fix/organize_previews.py --rename             # 预览将如何重命名预览图
-    python .github/scripts/check&fix/organize_previews.py --apply              # 真正移动 + 重生成 README
-    python .github/scripts/check&fix/organize_previews.py --apply --rename     # 真正重命名 + 重生成 README
-    python .github/scripts/check&fix/organize_previews.py --apply --no-regenerate
-    python .github/scripts/check&fix/organize_previews.py --root Models        # 只处理指定根目录
-    python .github/scripts/check&fix/organize_previews.py --only "Models/0001/AveMujica_三角初华_LB"
+    python .github/scripts/check&fix/organize_previews.py [--rename]                # 预览（默认移动模式；--rename 切换重命名模式）
+    python .github/scripts/check&fix/organize_previews.py --apply [--rename]        # 真正移动/重命名 + 重生成 README
+    python .github/scripts/check&fix/organize_previews.py --apply --no-regenerate   # 执行但不重生成 README
+    python .github/scripts/check&fix/organize_previews.py <路径>...                 # 只处理指定模型目录（可多个，相对仓库根）
 """
 from __future__ import annotations
 
@@ -247,25 +244,30 @@ def build_parser() -> argparse.ArgumentParser:
                         help='重命名模式:把顶层与 previews/ 下的图片统一命名为 previewNN')
     parser.add_argument('--no-regenerate', action='store_true',
                         help='执行后不重跑 generate_model_readmes.py(默认会重跑)')
-    parser.add_argument('--root', choices=[r.name for r in ROOT_DIRS],
-                        help='只处理指定根目录(默认全部)')
-    parser.add_argument('--only', metavar='REL_PATH',
-                        help='只处理单个模型目录(相对仓库根,如 Models/0001/xxx)')
+    parser.add_argument('paths', nargs='*', default=None,
+                        help='直接引用路径处理（可多个，如 Models/0001/AveMujica_三角初华_LB；'
+                             '不传则全量扫描所有根目录）')
     return parser
 
 
 def main() -> int:
     args = build_parser().parse_args()
 
-    if args.only:
-        only_dir = WORKSPACE_ROOT / args.only
-        if not only_dir.is_dir():
-            print(f'错误:目录不存在: {args.only}', file=sys.stderr)
-            return 2
-        model_dirs = [only_dir]
+    if args.paths:
+        model_dirs: list[Path] = []
+        for p in args.paths:
+            d = WORKSPACE_ROOT / p
+            if not d.is_dir():
+                print(f'错误:目录不存在: {p}', file=sys.stderr)
+                return 2
+            # 传入根目录（Models 等）时递归收集其下模型目录，否则按单目录处理
+            if d.name in {r.name for r in ROOT_DIRS}:
+                model_dirs.extend(collect_model_dirs([d], rename_mode=args.rename))
+            else:
+                model_dirs.append(d)
+        model_dirs = sorted(set(model_dirs), key=lambda x: str(x))
     else:
-        roots = [r for r in ROOT_DIRS if args.root is None or r.name == args.root]
-        model_dirs = collect_model_dirs(roots, rename_mode=args.rename)
+        model_dirs = collect_model_dirs(ROOT_DIRS, rename_mode=args.rename)
 
     mode_name = 'RENAME(重命名)' if args.rename else 'MOVE(移动)'
     run_mode = 'APPLY(执行)' if args.apply else 'DRY-RUN(预览)'
