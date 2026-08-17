@@ -11,5 +11,5 @@ _template
 reasonix.toml
 AGENTS.md
 __pycache__
-
 .vscode
+.github/scripts/check&fix

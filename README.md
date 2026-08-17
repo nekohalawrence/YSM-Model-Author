@@ -4,8 +4,10 @@
 
 - 收集并按作者分类的 YSM 模型，TACZ 枪包和 TLM 女仆包等。
 
-<details>
-<summary>作者索引</summary>
+## 作者索引
+
+<details open>
+<summary>展开/收缩</summary>
 
 <!-- AUTHORS_LIST_START -->
 | 编号 | 作者名称 | 收录数量 |
@@ -208,20 +210,12 @@
 
 </details>
 
+## 作品说明
+
 <!-- WORKS_CATEGORY_START -->
 <details>
 
-<summary>模型分类</summary>
-
-> 本区块由 `.github/data/model-info/character/*.json` 自动生成（`rename_model_files&folders.py --build-category-map`），手改请编辑对应作品文件。
-
-> 文件夹命名规则
-
-```
-<英文作品名称>_<中文角色名>-[中文皮肤]_<英文角色名>-[英文皮肤]_<个人评定等级>
-
-个人评定等级: LA, LB, LC, LD
-```
+<summary>展开/收缩</summary>
 
 ## 游戏
 
@@ -402,90 +396,26 @@
 <!-- WORKS_CATEGORY_END -->
 
 
-<details>
-
-<summary>作者推荐</summary>
-
-> 推荐一些优质模型作者
-
-- 0045: [#雾雨波波沙](Models/0045)
-- 0065: [#烛火的次元宇宙](Models/0065)
-- 0067: [#Almeta_owx](Models/0067)
-- 0068: [#AnluoSakura](Models/0068)
-- 0076: [#White_clams白蛤蜊](Models/0076)
-
-</details>
-
-<details>
-<summary>工具推荐</summary>
-
-- [ysm-model-manager](https://github.com/eghrhegpe/ysm-model-manager)
-	- 介绍: ysm 模型管理软件
-- [YSMParser](https://github.com/OpenYSM/YSMParser)
-	- 介绍: A Parser to recover Yes-Steve-Model Encrypted Binaries.
-- [YSMParser](https://github.com/OpenYSMDev/YSMParser)
-	- 介绍: .ysm 模型一键解密、转换为 Blockbench 工程，全版本加密格式支持。
-- [YSMViewer](https://github.com/DrAbcOfficial/YSMViewer)
-	- 介绍: 一个用于“.ysm”文件的跨平台 3D 模型查看器——这是一种加密的二进制格式，用于存储《我的世界》中的玩家模型。该查看器基于 Avalonia 构建。
-- [YesSteveModel](https://github.com/YesSteveModel/YesSteveModel)
-	- 介绍: 开源了
-- [OpenYSM](https://github.com/OpenYSM/OpenYSM)
-	- 介绍: OpenYSM 是一款基于 Yes Steve Model 的模组，它修改了原版玩家模型，其核心使用 GeckoLib 库，并采用了 Minecraft 基岩版的模型和动画文件。这使得玩家可以根据自己的喜好自定义玩家模型和动画。
-- [ModernYSM](https://github.com/OpenYSMDev/ModernYSM)
-    - 介绍: OpenYSM 是一款基于 Yes Steve Model 的模组，它修改了原版玩家模型，其核心使用 GeckoLib 库，并采用了 Minecraft 基岩版的模型和动画文件。这使得玩家可以根据自己的喜好自定义玩家模型和动画。
-
-</details>
-
-## 项目结构
+## 目录说明
 
 > 下面是当前仓库的主要目录说明，后续可能会根据内容继续调整。
 
-```text
-YSM-Model-Author/
-│
-├── Models/                        # YSM 主模型库：按作者编号分组（0000 ~ 9999，当前收录至 0192）
-│   ├── 0000/                      # ── 作者编号目录 ──
-│   │   ├── README.md              #     作者元信息（作者名称、平台、角色、团队）
-│   │   └── <模型名称>/            # ── 单个模型目录 ──
-│   │       ├── README.md          #     模型元信息
-│   │       ├── preview*.png/.jpg  #     预览图
-│   │       ├── *.ysm              #     加密模型文件
-│   │       ├── *.zip              #     含源文件的压缩包
-│   │       ├── <语音包>/          #     附加资源（语音包等）
-│   │       └── *.txt              #     更新及使用说明
-│   ├── .../
-│   └── 9999/
-│
-├── Skins/                         # 原版我的世界皮肤，按作者编号分组
-│   └── 0000/
-│   │   ├── README.md
-│   │   └── *.zip                  # 皮肤压缩包
-│   ├── ..../
-│   └── 9999/
-│
-├── Other-YSM-Models/              # 其他 YSM 模型集合：每个模型一个目录
-│   └── <模型名称>/
-│       ├── README.md
-│       ├── preview*.png / .jpg
-│       └── *.ysm
-│
-├── Blockbench-Models/             # Blockbench 源工程文件（.bbmodel，含模型源文件）
-│   └── 0000/
-│   │   ├── README.md
-│   │   └── *.bbmodel              # 模型源文件
-│   ├── ..../
-│   └── 9999/
-│
-├── First-Person-Mods/             # 第一人称相关模组配置
-│
-├── TACZ-Gun-Packs/                # TACZ 枪械包资源（*.zip）
-│
-└── TLM-Maid-Packs/                # TLM 女仆相关资源包（*.zip）
-
-```
+- Models: YSM 主模型库：按作者编号分组
+- Other-YSM-Models: 其他 YSM 模型集合：每个模型一个目录
+- Skins: 原版我的世界皮肤，按作者编号分组
+- Blockbench-Models: Blockbench 源工程文件
+- First-Person-Mods: 第一人称相关模组配置
+- TACZ-Gun-Packs: TACZ 枪械包资源
+- TLM-Maid-Packs: TLM 女仆相关资源包
 
 ## 注意事项
 
+- 文件夹命名规则
+```
+<英文作品名称>_<中文角色名>-[中文皮肤]_<英文角色名>-[英文皮肤]_<个人评定等级>
+
+个人评定等级: LA, LB, LC, LD
+```
 - 使用注意事项
 	- 后缀 LA\B\C 是个人偏好的等级划分（制作质量/完成度），并无其他含义。
 	- 压缩包内包含项目源码文件，而 `.ysm` 是加密后的模型文件。
@@ -502,72 +432,3 @@ YSM-Model-Author/
 - [https://github.com/Elaina69/Yes-Steve-Model-Repo](https://github.com/Elaina69/Yes-Steve-Model-Repo): 大部分免费模型的来源
 - @[LuckyPotion](https://space.bilibili.com/1739798750): 部分特定作者模型的来源
 - QQ-tomysh 的住院楼 - 752713566: 部分特定作者模型的来源
-
-## 更新日志
-
-<details>
-<summary>下拉查看日志信息</summary>
-
-# 2026-08-09
-
-- file: 删除了 日志生成的 action
-
-# 2026-08-01
-
-- feat: 增添了自动日志生成 aciton
-
-# 2026-07-30
-
-- format: 注意到有些游戏或动画的名称**太长了**，不容易看到**人物**名称，故之后的游戏或动画名称改为**简写**
-
-# 2026-07-27
-
-- feat: 增添了，车万女仆包和 tacz 枪包
-
-# 2026-07-25
-
-- ps: 奇奇怪怪的游戏太多了
-- ps: 注意，有些没有预览图的模型是不可用的，我在查看作者的时候保存了，导致修改了部分字符，破坏了原本的文件，导致该模型不可用。
-- ps: 出现重大失误，我发现通过 obsidian 查看的大部分模型都损坏了！！！！！！！！，现在才发现原因，git 上的历史没有删除。
-
-# 2026-07-23
-
-- ps: [LuckyPotion](https://space.bilibili.com/1739798750) 感谢这位大佬公开了，某团队做的一些作者付费模型集合，我可能会在之后慢慢更新各类模型的预览图。
-- ps: 夸克云: https://pan.quark.cn/s/77a16d314a11 提取码：ajVD （已失效）
-- ps: 百度云: https://pan.baidu.com/s/1FFSrd_YG-1Eat_DQD7hziw 提取码: xiao
-- ps: 模型暂时不放进存储库，有需要的自行下载
-- chore: 准备添加一个 aciton 为每一个模型添加 `README.md`，方便查看模型预览图，如果你有好的方法可以通过 issue 告知我（本人并不会编程，都是 AI 帮我写的😭）
-- chore: 为了统一命名，之后所有的文件夹中的游戏名称除了只有中国有的游戏，都将改成英文，之后会出一个列表对照翻译。
-
-# 2026-07-19
-
-- chore: 将一些有源文件的模型转为压缩包，方便下载
-- chore: 修正了一些错误或重复的作者
-- chore: 重新为旧的模型进行作者分类
-
-# 2026-07-18
-
-- ps: 有些创作者属于同一个团队，不知道有没有好的分类方法，如果你有的话，可以提供给我
-- chore: 重新整理了大量的模型
-- chore: 整理的模型中包含新的模型，和 [已有模型](https://github.com/Elaina69/Yes-Steve-Model-Repo) 的重新分类
-
-# 2026-06-29
-
-- chore: 将一些团队模型进行合并，只在创建此模型的作者放出对应的模型，其他作者作为对应的负责的部分进行附属。
-- ps: 整理了许久感觉这个分类模式还是有点问题，找不到想用的模型，本质上是对免费模型的集合，很多付费模型是没有的，用作者来分免费模型的质量可用只有几家质量比较好，可能以模型的对象作为分类依据比较好。
-
-# 2026-05-21
-
-- ps: 大部分模型在高版本无法使用，建议只用较新的加密模型（使用 ysmpaser 解密，较早的模型也是无法解密的），或者给源文件的模型。
-
-# 2026-05-11
-
-- chore: 去除 pages 页面，决定在我能够学会一个合适的内容呈现形式时，再去实践。
-- chore: 决定在今年年底之前，将所有作者的元信息进行更新，~如果有时间将为每一个模型附加预览图~。
-
-# 2026-05-03
-
-- ps: 决定只更新一些较为优质的模型，其他模型不收集了。
-- chore: 修改优质 mod 分支，只留下最新的 mod
-
-</details>
