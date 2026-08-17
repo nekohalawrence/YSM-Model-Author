@@ -308,19 +308,35 @@ def resolve_name3(name: str, roles: list[dict],
             en = raw_en
 
     # 归属判定（作品-角色一致）。前缀作品只在中英文都命中且归属一致指向别处时才纠正
-    # （对齐 r2 6.5 保守版；仅单语言命中或角色未收录时保留前缀，如 NEKOPARA_枫）
+    # （对齐 r2 6.5 保守版）；单语言命中他作时走 6.5c（方案 B：前缀库非空且无此角色
+    # + 唯一归属他作才纠正，否则仅标记问题提示）。
     conflict = False
     conflict_works: list[str] = []
     if work and work != "Unknown" and (cn or en):
-        if role_works and work not in role_works and cn and en:
-            if len(role_works) == 1:
-                new_work = next(iter(role_works))
-                notes.append(f"work corrected: {work} -> {new_work}（角色归属）")
-                work, work_source = new_work, "corrected"
-            elif len(role_works) > 1:
-                conflict = True
-                conflict_works = sorted(role_works)
-                work, work_source = "Unknown", "conflict"
+        if role_works and work not in role_works:
+            if cn and en:
+                # 中英文都命中：归属一致才纠正（保守，防跨作品/库不完整误伤）
+                if len(role_works) == 1:
+                    new_work = next(iter(role_works))
+                    notes.append(f"work corrected: {work} -> {new_work}（角色归属）")
+                    work, work_source = new_work, "corrected"
+                elif len(role_works) > 1:
+                    conflict = True
+                    conflict_works = sorted(role_works)
+                    work, work_source = "Unknown", "conflict"
+            elif work not in NO_ROLE_VALIDATION_WORKS:
+                # 6.5c：单语言命中他作（方案 B）——前缀库非空且无此角色 + 唯一归属
+                # 他作 -> 高置信度纠正；库空（NEKOPARA）/多作品归属 -> 仅标记提示。
+                if (len(role_works) == 1
+                        and _norm_work_has_roles(role_zh, role_en, work)):
+                    new_work = next(iter(role_works))
+                    notes.append(f"work corrected: {work} -> {new_work}（角色归属校验）")
+                    work, work_source = new_work, "corrected"
+                else:
+                    problems.append("works")
+                    notes.append(
+                        f"prefix work mismatch: {work} has no role, "
+                        f"role belongs to {sorted(role_works)}")
     elif not work and (cn or en):
         if len(role_works) == 1:
             work, work_source = next(iter(role_works)), "kb"
@@ -462,6 +478,32 @@ def resolve_name3(name: str, roles: list[dict],
         "conflict_works": conflict_works, "work_source": work_source,
         "problems": problems, "candidate_skins": sorted(candidate_skins),
     }
+
+
+def _idx_work_has_roles(cn_idx: dict, en_idx: dict, work: str) -> bool:
+    """resolve_name2 用：前缀作品库是否有已收录角色（cn_idx/en_idx 值=作品集合）。
+
+    方案 B 判断「前缀作品库非空」：库空（如 NEKOPARA 无任何角色收录）时无法
+    验证角色归属，避免把正确前缀（如 NEKOPARA_红豆）误判为标错。
+    """
+    for ws in cn_idx.values():
+        if work in ws:
+            return True
+    for ws in en_idx.values():
+        if work in ws:
+            return True
+    return False
+
+
+def _norm_work_has_roles(role_zh: dict, role_en: dict, work: str) -> bool:
+    """resolve_name3 用：前缀作品库是否有已收录角色（role_zh/role_en 值=(名,作品)）。"""
+    for _k, vs in role_zh.items():
+        if any(w == work for _n, w in vs):
+            return True
+    for _k, vs in role_en.items():
+        if any(w == work for _n, w in vs):
+            return True
+    return False
 
 
 def _extract_role_substr(tok: str, work: str, cn_idx: dict) -> tuple[str, str] | None:
@@ -803,6 +845,45 @@ def resolve_name2(name: str, cn_idx: dict, en_idx: dict,
         notes.append(f"work unmatched: {work} has no known role, set Unknown")
         work = "Unknown"
         work_source = "unmatched"
+
+    # 6.5c) 前缀作品与角色归属校验（方案 B）：角色命中但归属不含前缀作品，
+    #       且「前缀作品库非空且无此角色」+「角色唯一归属单一他作」
+    #       -> 高置信度纠正作品前缀（如 AL_阿罗娜酱_Arona -> BA）；
+    #       库空（NEKOPARA）/跨作品同名（中英归属不一致）/豁免作品
+    #       -> 仅标记问题提示人工，不自动改。
+    if (work_source == "prefix" and work and work != "Unknown"
+            and work not in NO_ROLE_VALIDATION_WORKS):
+        cn_hit: set[str] = set()
+        for c in cn_role_exact:
+            cn_hit |= cn_idx.get(c, set())
+        en_hit: set[str] = set()
+        for e in en_role_exact:
+            key = normalize_en_key(e)
+            en_hit |= en_idx.get(key, set())
+            en_hit |= en_idx.get(key.replace("_", "-"), set())
+        if en and not en_role_exact:
+            key = normalize_en_key(en)
+            en_hit |= en_idx.get(key, set())
+            en_hit |= en_idx.get(key.replace("_", "-"), set())
+        hit = cn_hit | en_hit
+        if hit and work not in hit:
+            # 中英命中的作品集一致才视为可靠归属；单语言命中取其集；
+            # 中英不一致或含多作品（跨作品同名）-> 保守不自动改。
+            if cn_hit and en_hit and cn_hit != en_hit:
+                reliable: set[str] = set()
+            else:
+                reliable = cn_hit or en_hit
+            other = reliable - {work}
+            if len(other) == 1 and _idx_work_has_roles(cn_idx, en_idx, work):
+                new_work = next(iter(other))
+                notes.append(f"work corrected: {work} -> {new_work}（角色归属校验）")
+                work = new_work
+                work_source = "corrected"
+            else:
+                problems.append("works")
+                notes.append(
+                    f"prefix work mismatch: {work} has no role, "
+                    f"role belongs to {sorted(hit)}")
 
     # 7) 英文名规范化 + 中英文补全（与旧逻辑一致）
     if en:
