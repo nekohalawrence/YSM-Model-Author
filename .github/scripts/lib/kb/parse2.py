@@ -40,8 +40,10 @@ UNKNOWN_TOKENS = {"unknown", "待定"}
 # 内容分级标签（大小写不敏感，输出统一全大写 NSFW/SFW，重组放评级前）
 CONTENT_TAGS = {"nsfw", "sfw"}
 CONTENT_CANON = {"nsfw": "NSFW", "sfw": "SFW"}
-# 豁免 6.5b 降级的作品：角色无法穷举收录（原创等），前缀可信赖
-NO_ROLE_VALIDATION_WORKS = {"OC"}
+# 豁免 6.5b 降级的作品：角色无法穷举收录（原创/开放式大群体），前缀可信赖
+# OC（原创）：角色名作者自创无法穷举；VTuber（虚拟主播）：开放式大群体，
+# 角色海量且持续涌现，数据库无法穷举收录——前缀 VTuber_ 已是明确作品归属。
+NO_ROLE_VALIDATION_WORKS = {"OC", "VTuber"}
 
 
 def tokenize(name: str) -> list[str]:
@@ -329,7 +331,7 @@ def resolve_name3(name: str, roles: list[dict],
     elif not work and not (cn or en):
         work, work_source = "Unknown", "none"
 
-    # 6.5b：前缀作品但角色无命中 -> Unknown（OC 豁免）
+    # 6.5b：前缀作品但角色无命中 -> Unknown（OC/VTuber 豁免：角色无法穷举收录）
     if (work_source == "prefix" and work and work != "Unknown"
             and work not in NO_ROLE_VALIDATION_WORKS and not cn and not en):
         notes.append(f"work unmatched: {work} has no known role, set Unknown")
@@ -793,7 +795,8 @@ def resolve_name2(name: str, cn_idx: dict, en_idx: dict,
     # 6.5b) 前缀作品但角色无任何数据库命中 -> Unknown。
     #       （数据驱动：作者前缀标注的作品里查无此角色，宁缺毋滥标 Unknown，
     #        待数据库逐步完善后自动归位；命中但归属他作的情况仍走 6.5）
-    #       OC（原创）豁免：角色名作者自创无法穷举收录，前缀可信赖，不降级。
+    #       OC（原创）/VTuber（开放式大群体）豁免：角色无法穷举收录，
+    #       前缀可信赖，不降级。
     if (work_source == "prefix" and work and work != "Unknown"
             and work not in NO_ROLE_VALIDATION_WORKS
             and not cn_from_kb and not cn_role_exact and not en_role_exact):
