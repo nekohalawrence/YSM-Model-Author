@@ -929,10 +929,36 @@ def resolve_name2(name: str, cn_idx: dict, en_idx: dict,
     # 8) 重组输出（保留原顺序：角色/未识别词原位替换）
     #    中文角色段按原 rest token 顺序重建：命中的角色子串替换为规范名、
     #    未识别词（如 xiao/小）保留原位、作品标记 token 抽离。
+    # 重组前：cn 规范名可能对应 rest 中多个连续中文 token（如数据库名
+    # 「奥托.阿波卡利斯」被符号格式化拆成 奥托+阿波卡利斯）。识别该段，
+    # 重组时用规范名原样替换，避免规范名中的分隔符（.·）被再次格式化。
+    cn_span: list[int] = []
+    if cn:
+        cn_flat = re.sub(r"[·・.、，,:：;；]", "", cn)
+        if cn_flat:
+            for i in range(len(rest)):
+                if not has_cjk(rest[i]):
+                    continue
+                acc = ""
+                for j in range(i, len(rest)):
+                    if not has_cjk(rest[j]):
+                        break
+                    acc += rest[j]
+                    if acc == cn_flat:
+                        cn_span = list(range(i, j + 1))
+                        break
+                if cn_span:
+                    break
     cn_seg: list[str] = []
-    for t in rest:
+    for idx, t in enumerate(rest):
         if t == grade:
             continue
+        if cn_span:
+            if idx == cn_span[0]:
+                cn_seg.append(cn)  # 规范名原样（保留 .· 等分隔符）
+                continue
+            if idx in cn_span[1:]:
+                continue
         if has_cjk(t):
             if t in cn_idx:
                 cn_seg.append(_canon_cn(t, cn_alias, work))
