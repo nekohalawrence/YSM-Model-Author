@@ -89,17 +89,22 @@ def load_work_names() -> dict[str, dict]:
     return out
 
 
-def render_models_section(models: list[str], work_names: dict[str, str]) -> str:
+def render_models_section(models: list[str], work_names: dict[str, str],
+                          links: list[str] | None = None) -> str:
     """渲染 ## Models 段：按作品字母序分组（Unknown 最后），每组 <details> 折叠。
 
     作品前缀取模型文件夹名第一个 '_' 前部分；无前缀或 Unknown_ 归 Unknown。
+    links 提供时用于链接目标（如相对路径），models 仅作显示名与分组键；缺省同名
+    （作者 README 场景 links=None）。顶层 Other-YSM-Models 索引用它做路径链接。
     """
-    groups: dict[str, list[str]] = {}
-    for name in models:
+    if links is None:
+        links = models
+    groups: dict[str, list[tuple[str, str]]] = {}
+    for name, link in zip(models, links):
         prefix = name.split('_', 1)[0].strip() if '_' in name else 'Unknown'
         if not prefix or prefix.lower() == 'unknown':
             prefix = 'Unknown'
-        groups.setdefault(prefix, []).append(name)
+        groups.setdefault(prefix, []).append((name, link))
 
     ordered = sorted(groups, key=lambda k: (k.lower() == 'unknown', k.lower()))
     lines = ['## Models', '']
@@ -120,8 +125,8 @@ def render_models_section(models: list[str], work_names: dict[str, str]) -> str:
         lines.append('<details>')
         lines.append(f'<summary><b>{title}</b></summary>')
         lines.append('')
-        for n in items:
-            lines.append(f'- [{n}]({n})')
+        for n, ln in items:
+            lines.append(f'- [{n}]({ln})')
         lines.append('')
         lines.append('</details>')
         lines.append('')
