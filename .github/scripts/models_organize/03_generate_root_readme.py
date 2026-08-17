@@ -35,10 +35,50 @@ FOLDER_RE = re.compile(r'^(\d{4})$')
 # ---------------------------------------------------------------------------
 # --author：重建根 README 作者表（原 build_readme_authors.py）
 # ---------------------------------------------------------------------------
-def build_readme_rows() -> list[tuple[str, str, int, str]]:
-    """收集作者行（编号, 名称, 模型数, 链接）。作者名统一取自 authors.json（不回退 README）。"""
+# 作者标记阈值与判定关键词（标记为展示用，可调）
+HIGH_OUTPUT_THRESHOLD = 20          # 模型数 ≥ 此值 → 🔥 高产
+R18_KEYWORDS = ('nsfw', 'r18', 'r-18', '18+')          # 模型文件夹名含 → 🔞 R18
+TEAM_KEYWORDS = ('工作室', '制作组', '官方', 'official', 'team', '团队', '组')  # name 含 → 👥 团队
+
+
+def is_team_author(names: list[str]) -> bool:
+    """团队/工作室作者：任一别名含团队关键词（工作室/制作组/官方/Team 等，忽略大小写）。"""
+    for n in names:
+        nl = n.lower()
+        if any(kw in nl for kw in TEAM_KEYWORDS):
+            return True
+    return False
+
+
+def is_r18_author(author_dir: Path) -> bool:
+    """R18 作者：作者目录下存在模型文件夹名含 nsfw/r18/18+ 关键词（忽略大小写）。
+
+    自动判定仅为启发式（README 声明未给所有 R18 模型标 nsfw），
+    如有遗漏可在 authors.json 加 nsfw: true 人工修正（脚本暂不读该字段）。
+    """
+    pat = re.compile('|'.join(re.escape(k) for k in R18_KEYWORDS), re.IGNORECASE)
+    return any(pat.search(p.name) for p in author_dir.iterdir()
+               if p.is_dir() and not p.name.startswith('.'))
+
+
+def build_platform_cells(platforms: dict) -> str:
+    """作者平台列：多平台用 · 连接；http 值渲染为链接，其余渲染为 平台: 值。"""
+    cells = []
+    for key, value in (platforms or {}).items():
+        if isinstance(value, str) and value.startswith('http'):
+            cells.append(f'[{key}]({value})')
+        else:
+            cells.append(f'{key}: {value}' if value else str(key))
+    return ' · '.join(cells)
+
+
+def build_readme_rows() -> list[tuple[str, str, int, str, str, str]]:
+    """收集作者行（编号, 名称, 模型数, 链接, 标记, 平台列）。
+
+    作者名/⭐推荐统一取自 authors.json；🔥高产/R18/团队标记自动判定。
+    """
     authors_index = lib_readme.load_authors_index().get('authors') or {}
-    rows: list[tuple[str, str, int, str]] = []
+    rows: list[tuple[str, str, int, str, str, str]] = []
     for folder in sorted(p.name for p in MODELS_DIR.iterdir() if p.is_dir()):
         if not FOLDER_RE.match(folder):
             continue
@@ -55,27 +95,47 @@ def build_readme_rows() -> list[tuple[str, str, int, str]]:
 
         model_count = sum(1 for sub in author_dir.iterdir()
                           if sub.is_dir() and not sub.name.startswith('.'))
-        rows.append((folder, author_name, model_count, link))
+
+        # 标记：⭐ 推荐(authors.json) · 🔥 高产(≥阈值) · 🔞 R18 · 👥 团队
+        flags = []
+        if entry.get('recommended'):
+            flags.append('⭐')
+        if model_count >= HIGH_OUTPUT_THRESHOLD:
+            flags.append('🔥')
+        if is_r18_author(author_dir):
+            flags.append('🔞')
+        if is_team_author(names):
+            flags.append('👥')
+        flag_str = ' '.join(flags)
+
+        rows.append((folder, author_name, model_count, link, flag_str,
+                     build_platform_cells(entry.get('platforms') or {})))
     return rows
 
 
-def build_readme_table(rows: list[tuple[str, str, int, str]], is_en: bool) -> str:
-    """渲染作者表（中/英表头；空表给占位行）。"""
+def build_readme_table(rows: list[tuple[str, str, int, str, str, str]], is_en: bool) -> str:
+    """渲染作者表（中/英表头；含标记 + 平台列；空表给占位行）。表上方附图例。"""
     if is_en:
-        header, empty_row = '| ID | Author Name | Total Models |', '| - | None | 0 |'
+        header, empty_row = ('| ID | Author Name | Total Models | Platforms |',
+                             '| - | None | 0 |  |')
+        legend = '> Marks: ⭐ Recommended · 🔥 High-output (≥20) · 🔞 R18 · 👥 Team'
     else:
-        header, empty_row = '| 编号 | 作者名称 | 收录数量 |', '| - | 暂无 | 0 |'
-    separator = '| --- | --- | ---: |'
+        header, empty_row = ('| 编号 | 作者名称 | 收录数量 | 平台 |',
+                             '| - | 暂无 | 0 |  |')
+        legend = '> 标记：⭐ 推荐 · 🔥 高产(≥20) · 🔞 R18 · 👥 工作室/团队'
+    separator = '| --- | --- | ---: | --- |'
 
-    lines = [header, separator]
-    for folder, author_name, model_count, link in rows:
+    lines = [legend, '', header, separator]
+    for folder, author_name, model_count, link, flags, platforms in rows:
         safe = author_name.replace('|', '\\|')
         label = 'None' if (is_en and safe == '暂无') else safe
-        lines.append(f'| {folder} | [{label}]({link}) | {model_count} |')
+        name_cell = f'{flags} [{label}]({link})' if flags else f'[{label}]({link})'
+        lines.append(f'| {folder} | {name_cell} | {model_count} | {platforms} |')
     return '\n'.join(lines) if rows else f'{header}\n{separator}\n{empty_row}'
 
 
-def update_root_readme(rows: list[tuple[str, str, int, str]], path: Path, is_en: bool) -> bool:
+def update_root_readme(rows: list[tuple[str, str, int, str, str, str]], path: Path,
+                       is_en: bool) -> bool:
     """在 AUTHORS_LIST 标记区间内替换作者表；无变化返回 False。"""
     content = path.read_text(encoding='utf-8')
     start, end = lib_readme.AUTHORS_LIST_START, lib_readme.AUTHORS_LIST_END
