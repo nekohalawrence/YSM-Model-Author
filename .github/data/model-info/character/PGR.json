@@ -7,5 +7,14 @@
     },
     "category": "Game"
   },
-  "roles": []
+  "roles": [
+    {
+      "zh": [
+        "卡列尼娜"
+      ],
+      "en": [
+        "karenina"
+      ]
+    }
+  ]
 }

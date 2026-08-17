@@ -250,8 +250,22 @@ def resolve_name(name: str, cn_idx: dict, en_idx: dict,
         cn_raw = "_".join(cjk_tokens)
         m = CN_SKIN_RE.match(cn_raw)
         if m:
-            cn = m.group(1)
-            cn_skin = m.group(2)
+            # 先做数据库匹配：连字符前半段若是已知作品全称/别名
+            # （如 蔚蓝档案-月雪宫子），按「作品-角色」识别而非「角色-皮肤」。
+            prefix = m.group(1)
+            canon = get_work_canonical(prefix) if prefix else None
+            if canon and (not work or work in ("", "Unknown") or work == canon):
+                work = canon
+                work_source = "prefix"
+                cn = m.group(2)
+                # 剩余可能仍是「角色-皮肤」（如 月雪宫子-泳装），再拆一次
+                m2 = CN_SKIN_RE.match(cn)
+                if m2:
+                    cn = m2.group(1)
+                    cn_skin = m2.group(2)
+            else:
+                cn = m.group(1)
+                cn_skin = m.group(2)
         else:
             cn = cn_raw
             # 容错：`_` 连接的中文皮肤段（历史写法，如「阿米娅_泳装」「伽摩_泳装」），
@@ -308,7 +322,7 @@ def resolve_name(name: str, cn_idx: dict, en_idx: dict,
         if (cn and not cn_skin and cn_idx and cn not in cn_idx):
             cand_names = [rn for rn, works in cn_idx.items()
                           if rn in cn and rn != cn
-                          and (work in works or work == "Unknown")]
+                          and (work in works or not work or work == "Unknown")]
             if cand_names:
                 best = max(cand_names, key=len)
                 best_works = cn_idx[best]

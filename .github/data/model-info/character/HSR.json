@@ -18,8 +18,7 @@
         "停云"
       ],
       "en": [
-        "tingyun",
-        "tingyun_nsfw"
+        "tingyun"
       ]
     },
     {
@@ -40,44 +39,16 @@
     },
     {
       "zh": [
-        "大黑塔",
-        "黑塔"
-      ],
-      "en": [
-        "heita",
-        "herta"
-      ]
-    },
-    {
-      "zh": [
-        "女仆小缇宝"
-      ],
-      "en": [
-        "tribbie(maid)"
-      ]
-    },
-    {
-      "zh": [
-        "女仆小银狼",
-        "银狼"
-      ],
-      "en": [
-        "silver-wolf-2",
-        "silver-wolf",
-        "silverwolf"
-      ]
-    },
-    {
-      "zh": [
+        "三月七",
         "小不点三月"
       ],
       "en": [
-        "sanyue"
+        "sanyue",
+        "march-7th"
       ]
     },
     {
       "zh": [
-        "小符玄",
         "符玄"
       ],
       "en": [
@@ -144,10 +115,27 @@
     },
     {
       "zh": [
+        "缇宝"
+      ],
+      "en": [
+        "tribbie"
+      ]
+    },
+    {
+      "zh": [
         "花火"
       ],
       "en": [
         "huahuo"
+      ]
+    },
+    {
+      "zh": [
+        "银狼"
+      ],
+      "en": [
+        "silver-wolf",
+        "silverwolf"
       ]
     },
     {
@@ -188,6 +176,97 @@
       ],
       "en": [
         "raiden-bosenmori-mei"
+      ]
+    },
+    {
+      "zh": [
+        "黑塔"
+      ],
+      "en": [
+        "herta",
+        "heita"
+      ]
+    },
+    {
+      "zh": [
+        "万敌"
+      ],
+      "en": [
+        "mydei",
+        "mydeimos"
+      ]
+    },
+    {
+      "zh": [
+        "忘归人"
+      ],
+      "en": [
+        "fugue"
+      ]
+    },
+    {
+      "zh": [
+        "星期日"
+      ],
+      "en": [
+        "sunday"
+      ]
+    },
+    {
+      "zh": [
+        "那刻夏"
+      ],
+      "en": [
+        "anaxa",
+        "anaxagoras"
+      ]
+    },
+    {
+      "zh": [
+        "阿格莱雅"
+      ],
+      "en": [
+        "aglaea"
+      ]
+    },
+    {
+      "zh": [
+        "海瑟音"
+      ],
+      "en": [
+        "hyacine"
+      ]
+    },
+    {
+      "zh": [
+        "赛飞儿"
+      ],
+      "en": [
+        "cipher"
+      ]
+    },
+    {
+      "zh": [
+        "瑕蝶"
+      ],
+      "en": [
+        "castorice"
+      ]
+    },
+    {
+      "zh": [
+        "灵砂"
+      ],
+      "en": [
+        "lingsha"
+      ]
+    },
+    {
+      "zh": [
+        "娜塔莎"
+      ],
+      "en": [
+        "natasha"
       ]
     }
   ]

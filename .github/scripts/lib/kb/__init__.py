@@ -20,12 +20,12 @@ from lib.kb.category import (  # noqa: F401,E402
     render_readme_works_section, update_readme_works_section,
 )
 from lib.kb.cmds import (  # noqa: F401,E402
-    DEFAULT_ROOTS, REPO_ROOT, add_manual_entries, add_work_interactive, ask,
-    build_indexes, del_entries, format_pair_lines, get_target_dirs,
-    has_substr_overlap, list_db, load_merge_skips, pair_skip_key,
-    prune_merge_skips, rename_work_cmd, rename_work_interactive, run_check,
-    run_merge, run_suggest, save_merge_skips, set_default_role_cmd,
-    work_display_name,
+    DEFAULT_ROOTS, REPO_ROOT, add_role_cmd, add_work_interactive, ask,
+    build_indexes, del_role_cmd, format_pair_lines, get_target_dirs,
+    has_substr_overlap, list_role_cmd, load_merge_skips, pair_skip_key,
+    prune_merge_skips, rename_work_cmd, rename_work_interactive, roles_cmd,
+    run_check, run_merge, run_suggest, save_merge_skips,
+    set_default_role_cmd, work_display_name,
 )
 from lib.kb.authors import (  # noqa: F401,E402
     add_author_alias, find_merge_candidates, merge_authors, merge_authors_flow,

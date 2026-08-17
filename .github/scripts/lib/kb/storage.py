@@ -31,10 +31,8 @@ def dumps_custom(obj, indent: int = 2, level: int = 0) -> str:
     （便于浏览），数组值（名称列表）横向单行排列（避免每个名字独占一行导致
     文件过长）。与 save_kb_json 配套，保证脚本写回后格式不回退。
 
-    数组分两类：
-    - 简单值数组（str/数字/bool/None）：单行横排（如 zh/en 名称列表）；
-    - 复杂元素数组（对象/数组）：每个元素单独一行（如 roles 的角色条目，
-      元素内部用紧凑 JSON，避免整条数组挤成一行不可读）。
+    数组统一多行展开（每个元素一行），与仓库手写 JSON 格式一致，
+    保证脚本写回后格式不回退、git diff 干净。
     """
     pad = " " * (indent * level)
     inner = " " * (indent * (level + 1))
@@ -51,15 +49,11 @@ def dumps_custom(obj, indent: int = 2, level: int = 0) -> str:
     if isinstance(obj, list):
         if not obj:
             return "[]"
-        if all(isinstance(x, (str, int, float, bool)) or x is None for x in obj):
-            # 简单值数组：单行横排（名称列表紧凑，避免文件过长）
-            items = ", ".join(json.dumps(x, ensure_ascii=False) for x in obj)
-            return f"[{items}]"
-        # 复杂元素（对象/数组）：每个元素一行，元素内部用紧凑 JSON
+        # 数组统一多行展开（每个元素一行），与仓库手写 JSON 格式一致
         lines = ["["]
         for i, x in enumerate(obj):
             comma = "," if i < len(obj) - 1 else ""
-            lines.append(f"{inner}{json.dumps(x, ensure_ascii=False)}{comma}")
+            lines.append(f"{inner}{dumps_custom(x, indent, level + 1)}{comma}")
         lines.append(f"{pad}]")
         return "\n".join(lines)
     return json.dumps(obj, ensure_ascii=False)

@@ -4,7 +4,8 @@ import json
 import re
 from pathlib import Path
 
-CJK_RE = re.compile(r"[\u4e00-\u9fff]")
+# 中文字符 + 日文假名（平假名/片假名）：知识库角色名可含日文写法（如 長崎そよ）。
+CJK_RE = re.compile(r"[\u4e00-\u9fff\u3040-\u30ff]")
 TOUHOU_PREFIX_RE = re.compile(r"(?i)^touhou(.+)$")
 MIXED_SEG_RE = re.compile(
     r"^(?P<cn>[\u4e00-\u9fff·]+)(?:-(?P<skin>[\u4e00-\u9fff·][\u4e00-\u9fff·-]*))?(?:-|_|\s+)(?P<en>.+)$"

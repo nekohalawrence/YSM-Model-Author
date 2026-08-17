@@ -7,7 +7,7 @@ import sys
 sys.stdout.reconfigure(encoding='utf-8')
 
 SCRIPT = (pathlib.Path(__file__).resolve().parents[2] / '.github' / 'scripts'
-          / 'models_organize' / '02_model_rename.py')
+          / 'models_organize' / '02_rename_model_files.py')
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[2] / '.github' / 'scripts'))
 spec = importlib.util.spec_from_file_location('ren_stem', str(SCRIPT))
 mod = importlib.util.module_from_spec(spec)
@@ -23,7 +23,7 @@ cases = [
     ('BA_月雪宫子_新', 'BA_月雪宫子', '_new'),                           # 新 -> new
     ('BA_月雪宫子_旧', 'BA_月雪宫子', '_old'),                           # 旧 -> old
     ('BA_月雪宫子_new', 'BA_月雪宫子', '_new'),                          # 英文词直接命中
-    ('BA_月雪宫子_RABBIT', 'BA_月雪宫子_常服_Tsukiyuki-Miyako', ''),     # RABBIT 不在表 -> 丢弃
+    ('BA_月雪宫子_RABBIT', 'BA_月雪宫子_常服_Tsukiyuki-Miyako', '_rabbithole'),  # RABBIT 命中 rabbithole 别名 rabbit
     ('兔子洞', 'VOC_初音_兔子洞', ''),                                   # 文件=文件夹名：无变体
     ('兔子洞Ver1.1', 'VOC_初音_兔子洞', '_v1.1'),                        # 版本号保留
     ('兔子洞Ver1.1_2', 'VOC_初音_兔子洞', '_v1.1_2'),                    # 版本号+副本保留

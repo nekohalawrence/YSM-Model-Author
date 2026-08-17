@@ -107,6 +107,15 @@
     },
     {
       "zh": [
+        "四季映姬"
+      ],
+      "en": [
+        "eiki-shiki",
+        "shiki-eiki"
+      ]
+    },
+    {
+      "zh": [
         "大妖精"
       ],
       "en": [
@@ -132,10 +141,27 @@
     },
     {
       "zh": [
+        "帕秋莉",
+        "帕秋莉·诺蕾姬"
+      ],
+      "en": [
+        "patchouli-knowledge"
+      ]
+    },
+    {
+      "zh": [
         "幽谷响子"
       ],
       "en": [
         "kasodani-kyouko"
+      ]
+    },
+    {
+      "zh": [
+        "日白残无"
+      ],
+      "en": [
+        "nippaku-zanmu"
       ]
     },
     {
@@ -189,12 +215,12 @@
     },
     {
       "zh": [
-        "芙兰朵露",
-        "芙兰朵露·斯卡蕾特"
+        "芙兰朵露·斯卡蕾特",
+        "芙兰朵露"
       ],
       "en": [
-        "flandre",
-        "flandre-scarlet"
+        "flandre-scarlet",
+        "flandre"
       ]
     },
     {
@@ -242,12 +268,28 @@
     },
     {
       "zh": [
+        "键山雏"
+      ],
+      "en": [
+        "kagiyama-hina"
+      ]
+    },
+    {
+      "zh": [
         "雾雨魔理沙",
         "魔理沙"
       ],
       "en": [
         "marisa-kirisame",
         "kirisame-marisa"
+      ]
+    },
+    {
+      "zh": [
+        "霍青娥"
+      ],
+      "en": [
+        "kaku-seiga"
       ]
     },
     {

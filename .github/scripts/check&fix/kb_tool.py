@@ -11,9 +11,11 @@ YSM 知识库维护命令行入口（薄壳）：只负责解析参数并分派�
   work   add / del / list / check / merge / set-default / rename
   author merge / sync / rebuild / check / alias
 
-只输对象或只输动作时会交互补全：`role` → 让你选动作；`add` → 让你选对象。
+`role` 不带动作时进入交互式角色管理菜单（增删改查/别名/默认名/皮肤）；
+其他对象只输动作时会交互补全：`add` → 让你选对象。
 
 用法:
+  python '.github/scripts/check&fix/kb_tool.py' role                      # 进入角色管理菜单
   python '.github/scripts/check&fix/kb_tool.py' role add                  # 添加角色
   python '.github/scripts/check&fix/kb_tool.py' role list                 # 列出角色
   python '.github/scripts/check&fix/kb_tool.py' role merge                # 合并角色（候选确认）
@@ -42,10 +44,10 @@ from lib.kb.authors import (
     write_authors_data,
 )
 from lib.kb.cmds import (
-    add_manual_entries, add_work_interactive, check_works_cmd, del_entries,
-    del_works_cmd, list_db, list_works_cmd, merge_works_cmd, rename_work_cmd,
-    rename_work_interactive, run_check, run_merge, run_suggest,
-    set_default_role_cmd, set_default_work_cmd,
+    add_role_cmd, add_work_interactive, check_works_cmd, del_role_cmd,
+    del_works_cmd, list_role_cmd, list_works_cmd, merge_works_cmd,
+    rename_work_cmd, rename_work_interactive, roles_cmd, run_check, run_merge,
+    run_suggest, set_default_role_cmd, set_default_work_cmd,
 )
 
 REPO_ROOT = lib_paths.WORKSPACE_ROOT
@@ -176,6 +178,10 @@ def main() -> int:
     obj = args.object
     act = getattr(args, "action", None)
 
+    # role 不带动作时直接进入统一角色管理菜单（增删改查/别名/默认名/皮肤）
+    if obj == "role" and act is None:
+        return roles_cmd(kb_path)
+
     # 有对象但缺动作：交互补全动作
     if obj is not None and act is None:
         act = _ask_action(obj)
@@ -202,14 +208,11 @@ def main() -> int:
     # 角色维护
     if obj == "role":
         if act == "add":
-            add_manual_entries(kb_path)
-            return 0
+            return add_role_cmd(kb_path)
         if act == "del":
-            del_entries(kb_path)
-            return 0
+            return del_role_cmd(kb_path)
         if act == "list":
-            list_db(kb_path)
-            return 0
+            return list_role_cmd(kb_path)
         if act == "check":
             run_check(kb_path)
             return 0
@@ -220,8 +223,7 @@ def main() -> int:
             run_suggest(kb_path)
             return 0
         if act == "set-default":
-            set_default_role_cmd(kb_path)
-            return 0
+            return set_default_role_cmd(kb_path)
 
     # 作品维护
     if obj == "work":

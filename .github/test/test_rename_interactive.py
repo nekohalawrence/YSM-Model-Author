@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-02_model_rename.py --apply 纯重命名 e2e 测试（知识库维护已分离到 kb_tool）。
+02_rename_model_folders.py --apply 纯重命名 e2e 测试（知识库维护已分离到 kb_tool）。
 
 02 只负责重命名、不收录数据库：Unknown / 跨作品同名冲突 直接标 SKIP 保持原文件夹名。
 
@@ -13,8 +13,8 @@
   - 数据库预置 GF_夏安 / GF2_夏安；夏安_Chian（无前缀 -> 命中两个作品 -> 冲突）
   --apply 不收录、不询问：保持原文件夹名，不生成 Unknown_ 前缀。
 
-场景 3 Unknown 跳过：
-  - 阿米娅_泳装（无作品前缀、知识库未收录）-> --apply 保持原文件夹名，不收录数据库。
+场景 3 Unknown 加前缀：
+  - 阿米娅_泳装（无作品前缀、知识库未收录）-> --apply 加 Unknown_ 前缀重命名，不收录数据库。
 
 运行：python .github/test/test_rename_interactive.py（0=通过，1=失败）
 """
@@ -30,7 +30,7 @@ sys.stdout.reconfigure(encoding="utf-8")
 ROOT = pathlib.Path(tempfile.gettempdir()) / "ysm_rename_interactive"
 REPO = pathlib.Path(__file__).resolve().parents[2]   # .github/test -> 仓库根
 SCRIPTS = REPO / ".github" / "scripts"
-SCRIPT = SCRIPTS / "models_organize" / "02_model_rename.py"
+SCRIPT = SCRIPTS / "models_organize" / "02_rename_model_folders.py"
 
 
 def setup(works: dict, folders: list[str]) -> None:
@@ -53,7 +53,7 @@ def setup(works: dict, folders: list[str]) -> None:
 
     (ROOT / ".github" / "scripts" / "models_organize").mkdir(parents=True)
     shutil.copy(SCRIPT, ROOT / ".github" / "scripts" / "models_organize"
-                / "02_model_rename.py")
+                / "02_rename_model_folders.py")
     if (SCRIPTS / "lib").is_dir():
         shutil.copytree(SCRIPTS / "lib", ROOT / ".github" / "scripts" / "lib")
     data_dir = ROOT / ".github" / "data" / "model-info"
@@ -80,7 +80,7 @@ def run_rename(stdin_text: str, extra_args: list[str] | None = None) -> subproce
     args = ["--apply"] + (extra_args or [])
     return subprocess.run(
         [sys.executable, str(ROOT / ".github" / "scripts" / "models_organize"
-                          / "02_model_rename.py")] + args,
+                          / "02_rename_model_folders.py")] + args,
         input=stdin_text, capture_output=True, text=True,
         encoding="utf-8", errors="replace", cwd=str(ROOT))
 
@@ -136,7 +136,7 @@ def case_conflict_skip() -> list[tuple[str, bool]]:
 
 
 def case_unknown_skip() -> list[tuple[str, bool]]:
-    """场景 3：Unknown 无作品 -> --apply 保持原文件夹名，不收录数据库。"""
+    """场景 3：Unknown 无作品 -> --apply 加 Unknown_ 前缀重命名，不收录数据库。"""
     setup({}, ["阿米娅_泳装"])
     r = run_rename("")
     print(r.stdout)
@@ -144,9 +144,8 @@ def case_unknown_skip() -> list[tuple[str, bool]]:
         print("STDERR:", r.stderr, file=sys.stderr)
     checks: list[tuple[str, bool]] = [
         ("退出码 0", r.returncode == 0),
-        ("保持原文件夹名", (ROOT / "Models/0001/阿米娅_泳装").is_dir()),
-        ("未生成 Unknown 前缀", not any(
-            p.name.startswith("Unknown_") for p in (ROOT / "Models/0001").iterdir())),
+        ("已加 Unknown 前缀", (ROOT / "Models/0001/Unknown_阿米娅_泳装").is_dir()),
+        ("原名已移除", not (ROOT / "Models/0001/阿米娅_泳装").is_dir()),
     ]
     return checks
 

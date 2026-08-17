@@ -28,8 +28,9 @@ previews/ 子目录及其 preview*.png 不会被当作目标；
   5. 知识库为纯手工维护（无自动构建）：直接编辑 .github/data/model-info/ 下的
      character/<作品>.json；或用 check&fix/kb_tool.py（--roles/--add/--del 等）
      交互式增删改查。手改后无需任何命令，脚本下次运行即生效。
-  6. 本脚本只负责重命名：Unknown / 跨作品同名冲突只标记跳过（保持原文件夹名、
-     不收录数据库）；需要收录请先用 check&fix/kb_tool.py 手工维护。
+  6. 本脚本只负责重命名：未匹配到数据库角色的条目自动加 Unknown_ 前缀
+     （已有 Unknown 前缀的不重复添加）；跨作品同名冲突保持原文件夹名、不收录
+     数据库；需要收录请先用 check&fix/kb_tool.py 手工维护。
 
 默认 dry-run 只预览；加 --apply 才真正重命名。
 
@@ -41,8 +42,9 @@ previews/ 子目录及其 preview*.png 不会被当作目标；
     python '.github/scripts/models_organize/02_rename_model_folders.py' Models/0001 --apply    # 只处理某作者目录（直接引用路径，无需 --path）
     python '.github/scripts/models_organize/02_rename_model_folders.py' Models/0001/模型名      # 只处理单个模型目录
 
-  Unknown / 跨作品同名冲突：只标记跳过（保持原文件夹名，不写数据库）；
-  需要收录请先用 check&fix/kb_tool.py 维护（--add/--roles），再重跑本脚本。
+  未匹配数据库角色：自动加 Unknown_ 前缀（已有前缀不重复）；跨作品同名冲突：
+  保持原文件夹名、不写数据库；需要收录请先用 check&fix/kb_tool.py 维护
+  （--add/--roles），再重跑本脚本。
 
   预览显示过滤（控制台与报告一致；默认只显示已修改 fix）:
     python '.github/scripts/models_organize/02_rename_model_folders.py' --show ok               # 只显示已规范
@@ -68,12 +70,13 @@ previews/ 子目录及其 preview*.png 不会被当作目标；
 
 维护说明：
 - 知识库（character/*.json、skin_tags.json、merge_skips.json 等）维护已分离到
-  check&fix/kb_tool.py；本脚本只重命名、不写数据库（Unknown/冲突仅标记跳过）。
+  check&fix/kb_tool.py；本脚本只重命名、不写数据库（未匹配角色加 Unknown 前缀，
+  跨作品同名冲突保持原文件夹名）。
 - --apply 重命名时，若目标名已存在（同名冲突）自动加 -数字 副本序号
   （如 VOC_初音_Chuyin 与已有 VOC_初音_Miku 冲突 -> 重命名为 VOC_初音_Miku-1，
   副本序号放在评级前，幂等；已是最小副本时保持不动）
 - 命名规范：<英文作品名>_<中文角色名>[_中文皮肤]_<英文角色名>[_英文皮肤]_<评定等级>；
-  作品名前缀统一为规范缩写，唯一命中才填，否则 Unknown（保持原文件夹名不处理）
+  作品名前缀统一为规范缩写，唯一命中才填，否则加 Unknown 前缀（已有前缀不重复）
 """
 from __future__ import annotations
 
@@ -91,8 +94,8 @@ from lib import paths as lib_paths
 from lib.kb.cmds import (
     build_indexes, build_work_skins, get_target_dirs,
 )
-from lib.kb.parse import (
-    resolve_name,
+from lib.kb.parse2 import (
+    resolve_name2, build_cn_alias,
 )
 from lib.kb.storage import (
     load_kb_json, migrate_from_sqlite,
@@ -193,10 +196,12 @@ def main() -> int:
 
     cn_idx, en_idx, en_to_cn, cn_to_en = build_indexes(roles)
     work_skins = build_work_skins(roles)
+    cn_alias = build_cn_alias(roles)
 
     results = []
     for d in dirs:
-        res = resolve_name(d.name, cn_idx, en_idx, en_to_cn, cn_to_en, work_skins)
+        res = resolve_name2(d.name, cn_idx, en_idx, en_to_cn, cn_to_en,
+                            work_skins, cn_alias)
         res["path"] = d
         results.append(res)
 
@@ -214,13 +219,10 @@ def main() -> int:
             r["status"] = "SKIP"
             r["notes"] = "已有副本后缀(-N)，跳过"
 
-    # 作品未确定（work=Unknown，非跨作品冲突）的条目：纯重命名不收录，
-    # 直接标 SKIP 保持原文件夹名（避免重命名成 Unknown_ 前缀；收录请用 kb_tool --add）。
-    for r in results:
-        if r["status"] != "SKIP" and not r.get("conflict") \
-                and r["work"] in ("Unknown", ""):
-            r["status"] = "SKIP"
-            r["notes"] = "作品未确定（Unknown），保持原文件夹名（收录请用 kb_tool --add）"
+    # 未匹配到任何数据库角色（work=Unknown，非跨作品同名冲突）的条目：
+    # 不再 SKIP 保持原样，而是加 Unknown_ 前缀重命名（resolve_name 已生成
+    # Unknown_ 开头的 new）；原名已带 Unknown 前缀的 new==original，不重复添加。
+    # 跨作品同名冲突仍保持原文件夹名（见下方 --apply 段，本脚本不收录）。
 
     # 报告（分类体系 2026-08-15：3 主状态 + 问题级计数）
     #   ok    已规范：无任何问题、无改动

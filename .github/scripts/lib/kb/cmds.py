@@ -250,7 +250,11 @@ def _role_add(data: dict, skin_tags: dict) -> None:
     note = ask("备注 (可空): ").strip()
     if note.lower() in ("q", "quit"):
         return
-    entry: dict = {"work": work, "zh": cn, "en": en}
+    entry: dict = {"work": work}
+    if cn:
+        entry["zh"] = cn
+    if en:
+        entry["en"] = en
     if note:
         entry["note"] = note
     data.setdefault("roles", []).append(entry)
@@ -294,49 +298,115 @@ def _role_delete(data: dict) -> None:
         print(f"已删除 {removed} 条。")
 
 
+def _edit_names(r: dict, field: str, label: str) -> None:
+    """编辑某字段的名称列表（别名增删改；规范名=首项）。
+
+    - a：添加别名（默认追加到列表末尾，不动规范名）；
+    - d：删除指定编号（首项规范名不可删）；
+    - m：修改指定编号（首项即改规范名）。
+    """
+    names = list(r.get(field) or [])
+    while True:
+        print(f"当前{label}：")
+        for i, n in enumerate(names, 1):
+            mark = "（规范名）" if i == 1 else ""
+            print(f"  [{i}] {n}{mark}")
+        print("  a=添加(追加末尾)  d=删除  m=修改  0=返回")
+        sel = ask("操作: ").strip().lower()
+        if sel in ("0", "q", "quit"):
+            break
+        if sel == "a":
+            raw = ask(f"新增{label}（逗号分隔可多个，追加到末尾）: ").strip()
+            if raw.lower() in ("q", "quit"):
+                continue
+            for x in [s.strip() for s in raw.replace("，", ",").split(",") if s.strip()]:
+                if x not in names:
+                    names.append(x)
+                    print(f"  已添加别名: {x}")
+        elif sel in ("d", "m"):
+            # 输入编号前重新列出编号与名称，方便对照选择
+            for i, n in enumerate(names, 1):
+                mark = "（规范名）" if i == 1 else ""
+                print(f"  [{i}] {n}{mark}")
+            idx = ask("编号（逗号分隔可多个）: ").strip()
+            if idx.lower() in ("q", "quit"):
+                continue
+            nums = [int(t) for t in idx.replace("，", ",").split(",")
+                    if t.strip().isdigit()]
+            if not nums:
+                print("编号无效。")
+                continue
+            if sel == "d":
+                if 1 in nums:
+                    print("首项是规范名，不可删除（可用 m 修改）。")
+                    nums = [n for n in nums if n != 1]
+                for n in sorted(set(nums), reverse=True):
+                    if 1 <= n <= len(names):
+                        print(f"  已删除: {names[n - 1]}")
+                        names.pop(n - 1)
+                if not names:
+                    print("警告：该字段名称已清空。")
+            else:  # m
+                for n in sorted(set(nums)):
+                    if 1 <= n <= len(names):
+                        new = ask(f"  修改 [{n}] {names[n - 1]} -> 新值: ").strip()
+                        if new.lower() in ("q", "quit"):
+                            print("已取消修改。")
+                            break
+                        if new and new != names[n - 1] and new not in names:
+                            names[n - 1] = new
+                            print(f"  已修改为: {new}")
+                        elif new in names:
+                            print(f"  '{new}' 已存在，跳过。")
+    r[field] = names
+
+
 def _role_edit(data: dict, skin_tags: dict) -> None:
-    """编辑角色（cn/en 数组、作品、备注；回车保持原值。皮肤在皮肤表维护）。"""
+    """编辑角色：作品键 / 中英文名（别名增删改） / 皮肤 / 备注。"""
     r = _role_pick(data, "搜索要编辑的角色 (q=返回): ")
     if r is None:
         return
-    print("当前：")
-    print(_role_line(0, r))
-    print("逐项编辑，直接回车保持原值；输入 q 放弃本条编辑。")
-    work = ask(f"作品键 [{r.get('work', '')}]: ").strip()
-    if work.lower() in ("q", "quit"):
-        return
-    if work:
-        r["work"] = work
-    cn = _ask_list(f"中文名 逗号分隔(首项为规范名) [{' / '.join(r.get('zh') or [])}]: ")
-    if cn is None:
-        return
-    if cn:
-        r["zh"] = cn
-    en = _ask_list(f"英文名 逗号分隔(首项为规范名) [{' / '.join(r.get('en') or [])}]: ")
-    if en is None:
-        return
-    if en:
-        r["en"] = en
-    # 皮肤维护在 skin_tags.json（作品级）：展示当前作品已有皮肤词，输入即追加
-    wt = skin_tags.get(r["work"]) or {}
-    print(f"  当前作品皮肤  cn: {' / '.join(wt.get('zh') or []) or '(无)'}"
-          f" | en: {' / '.join(wt.get('en') or []) or '(无)'}")
-    sc = _ask_list("中文皮肤 逗号分隔(追加到皮肤表; 留空不改): ")
-    if sc is None:
-        return
-    se = _ask_list("英文皮肤 逗号分隔(追加到皮肤表; 留空不改): ")
-    if se is None:
-        return
-    for c in (sc or []):
-        add_skin_tag(skin_tags, r["work"], cn=c)
-    for e in (se or []):
-        add_skin_tag(skin_tags, r["work"], en=e)
-    note = ask(f"备注 [{(r.get('note') or '')}]: ").strip()
-    if note.lower() in ("q", "quit"):
-        return
-    if note:
-        r["note"] = note
-    print("已更新（退出时统一保存）。")
+    while True:
+        print("-" * 56)
+        print("编辑角色：")
+        print(_role_line(0, r))
+        print("  1) 修改作品键   2) 中文名(别名)   3) 英文名(别名)")
+        print("  4) 皮肤         5) 备注          0) 返回")
+        sel = ask("选择: ").strip()
+        if sel in ("0", "q", "quit"):
+            return
+        if sel == "1":
+            work = ask(f"作品键 [{r.get('work', '')}]: ").strip()
+            if work.lower() in ("q", "quit"):
+                continue
+            if work:
+                r["work"] = work
+                print(f"  作品键已改为: {work}")
+        elif sel == "2":
+            _edit_names(r, "zh", "中文名")
+        elif sel == "3":
+            _edit_names(r, "en", "英文名")
+        elif sel == "4":
+            # 皮肤词（全局 skin_tags.json）：输入即追加
+            sc = _ask_list("中文皮肤词 逗号分隔(追加到皮肤表; 留空不改): ")
+            if sc is None:
+                continue
+            se = _ask_list("英文皮肤词 逗号分隔(追加到皮肤表; 留空不改): ")
+            if se is None:
+                continue
+            for c in (sc or []):
+                add_skin_tag(skin_tags, r["work"], cn=c)
+            for e in (se or []):
+                add_skin_tag(skin_tags, r["work"], en=e)
+        elif sel == "5":
+            note = ask(f"备注 [{(r.get('note') or '')}]: ").strip()
+            if note.lower() in ("q", "quit"):
+                continue
+            if note:
+                r["note"] = note
+                print("  备注已更新。")
+        else:
+            print("无效选择。")
 
 
 def _role_search(data: dict) -> None:
@@ -383,16 +453,36 @@ def _role_set_default(data: dict) -> None:
     print("已设定默认名（写入数组首项，退出时统一保存）。")
 
 
-def roles_cmd(kb_path: Path) -> None:
+def _snapshot(data: dict, skin_tags: dict) -> str:
+    """数据快照（排序序列化），用于判断是否有实际改动。"""
+    return json.dumps(
+        {"roles": data.get("roles"), "skin_tags": skin_tags},
+        ensure_ascii=False, sort_keys=True)
+
+
+def _save_if_changed(kb_path: Path, data: dict, skin_tags: dict,
+                     before: str) -> None:
+    """仅当数据有改动时写回，避免无操作时重写全部文件。"""
+    if _snapshot(data, skin_tags) != before:
+        save_kb_json(kb_path, data)
+        save_skin_tags(skin_tags)
+        print(f"已保存知识库: {kb_path}（含皮肤表 skin_tags.json）")
+    else:
+        print("无改动，未保存。")
+
+
+def roles_cmd(kb_path: Path) -> int:
     """交互式角色管理：增删改查 + 别名（统一入口；皮肤维护在 skin_tags.json）。"""
     data = load_kb_json(kb_path)
     data.setdefault("roles", [])
     skin_tags = load_skin_tags()
+    before = _snapshot(data, skin_tags)
     while True:
         print("-" * 56)
-        print("角色管理（纯手工维护，退出时统一保存）:")
-        print("  1) 添加角色    2) 删除角色    3) 编辑角色")
-        print("  4) 搜索/查看   5) 设定默认名  0) 保存并返回")
+        print("角色管理（纯手工维护，有改动才保存）:")
+        print("  1) 添加角色    2) 删除角色    3) 合并角色")
+        print("  4) 编辑角色    5) 搜索/查看   6) 设定默认名")
+        print("  0) 返回")
         sel = ask("选择: ").strip()
         if sel in ("q", "quit", "0"):
             break
@@ -401,16 +491,57 @@ def roles_cmd(kb_path: Path) -> None:
         elif sel == "2":
             _role_delete(data)
         elif sel == "3":
-            _role_edit(data, skin_tags)
+            # 合并独立 load/save：先落盘菜单内未保存改动，合并后重载保持内存同步
+            _save_if_changed(kb_path, data, skin_tags, before)
+            run_merge(kb_path)
+            data = load_kb_json(kb_path)
+            data.setdefault("roles", [])
+            skin_tags = load_skin_tags()
+            before = _snapshot(data, skin_tags)
         elif sel == "4":
-            _role_search(data)
+            _role_edit(data, skin_tags)
         elif sel == "5":
+            _role_search(data)
+        elif sel == "6":
             _role_set_default(data)
         else:
             print("无效选择。")
-    save_kb_json(kb_path, data)
-    save_skin_tags(skin_tags)
-    print(f"已保存知识库: {kb_path}（含皮肤表 skin_tags.json）")
+    _save_if_changed(kb_path, data, skin_tags, before)
+    return 0
+
+
+def add_role_cmd(kb_path: Path) -> int:
+    """单次添加角色（新格式：zh/en 数组 + 别名 + 皮肤），复用 _role_add。"""
+    data = load_kb_json(kb_path)
+    data.setdefault("roles", [])
+    skin_tags = load_skin_tags()
+    before = _snapshot(data, skin_tags)
+    _role_add(data, skin_tags)
+    _save_if_changed(kb_path, data, skin_tags, before)
+    return 0
+
+
+def del_role_cmd(kb_path: Path) -> int:
+    """单次删除角色（搜索 -> 选编号），复用 _role_delete。"""
+    data = load_kb_json(kb_path)
+    skin_tags = load_skin_tags()
+    before = _snapshot(data, skin_tags)
+    _role_delete(data)
+    _save_if_changed(kb_path, data, skin_tags, before)
+    return 0
+
+
+def list_role_cmd(kb_path: Path) -> int:
+    """列出全部角色（新格式显示，含别名）。"""
+    data = load_kb_json(kb_path)
+    roles = data.get("roles") or []
+    if not roles:
+        print("知识库暂无角色。")
+        return 0
+    print(f"角色 {len(roles)} 条：")
+    for i, r in enumerate(roles, 1):
+        print(_role_line(i, r))
+    return 0
 
 
 def run_check(kb_path: Path) -> None:
