@@ -14,10 +14,10 @@
 退出码:0 成功;1 编号耗尽等错误;2 目录不存在;3 存在未处理的冲突文件
 
 用法:
-    python .github/scripts/check&fix/organize_previews.py [--rename]                # 预览（默认移动模式；--rename 切换重命名模式）
-    python .github/scripts/check&fix/organize_previews.py --apply [--rename]        # 真正移动/重命名 + 重生成 README
-    python .github/scripts/check&fix/organize_previews.py --apply --no-regenerate   # 执行但不重生成 README
-    python .github/scripts/check&fix/organize_previews.py <路径>...                 # 只处理指定模型目录（可多个，相对仓库根）
+    python ".github/scripts/check&fix/organize_previews.py" [--rename]                # 预览（默认移动模式；--rename 切换重命名模式）
+    python ".github/scripts/check&fix/organize_previews.py" --apply [--rename]        # 真正移动/重命名 + 重生成 README
+    python ".github/scripts/check&fix/organize_previews.py" --apply --no-regenerate   # 执行但不重生成 README
+    python ".github/scripts/check&fix/organize_previews.py" <路径>...                 # 只处理指定模型目录（可多个，相对仓库根）
 """
 from __future__ import annotations
 
