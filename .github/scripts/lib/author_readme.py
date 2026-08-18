@@ -20,14 +20,9 @@ from lib import ysm as lib_ysm
 # 平台分类输出顺序（与模型 README 的 author_block 模板一致）
 PLATFORM_ORDER = ['SocialPlatform', 'SupportPlatform', 'OtherPlatform', 'GroupChat']
 
-# ---- 作者标记（根 README 与作者 README 共用，tags 键驱动） ----
-HIGH_OUTPUT_THRESHOLD = 20          # 模型数 ≥ 此值 → 🔥 高产
-R18_KEYWORDS = ('nsfw', 'r18', 'r-18', '18+')   # 模型文件夹名含 → 🔞 R18
-# tag 键 → 展示（emoji / 中文名）
-MARK_EMOJI = {'recommended': '⭐', 'high-output': '🔥', 'r18': '🔞', 'team': '👥'}
-MARK_LABEL = {'recommended': '推荐', 'high-output': '高产', 'r18': 'R18', 'team': '团队'}
-# 标签显示顺序（词表 tag_labels.json 的键顺序；未收录的新标签排最后）
-TAG_ORDER = ['recommended', 'high-output', 'high-quality', 'r18', 'nsfw']
+# ---- 作者标签（词表 tag_labels.json 驱动；根 README 与作者 README 共用） ----
+# 标签显示顺序（词表键顺序；未收录的新标签排最后）
+TAG_ORDER = ['recommended', 'high-output', 'high-quality', 'r18', 'nsfw', 'team']
 
 
 _TAG_LABELS_CACHE: dict | None = None
@@ -53,36 +48,15 @@ def format_tag(meta: dict) -> str:
     return f'{zh}/{en}' if zh and en else (zh or en)
 
 
-def is_r18_author(author_dir: Path | None) -> bool:
-    """R18 作者：作者目录下存在模型文件夹名含 nsfw/r18/18+（忽略大小写）。
+def compute_author_marks(entry: dict) -> list[str]:
+    """作者标签键列表：由 authors.json 的 tags（词表登记）+ team 生成。
 
-    author_dir 为空（作者 README 渲染无目录时）返回 False，仅依赖 tags 人工标记。
+    纯 tags 驱动，无自动判定——自动判定的标签（高产≥20 模型、目录名含 nsfw/r18）
+    由 03_generate_author_readmes.py 生成作者 README 时经 auto_marks 追加。
+    根 README 只用本函数返回值（仅显示词表里有 emoji 的标签）。
     """
-    if author_dir is None or not author_dir.is_dir():
-        return False
-    pat = re.compile('|'.join(re.escape(k) for k in R18_KEYWORDS), re.IGNORECASE)
-    return any(pat.search(p.name) for p in author_dir.iterdir()
-               if p.is_dir() and not p.name.startswith('.'))
-
-
-def compute_author_marks(entry: dict, model_count: int,
-                         author_dir: Path | None = None) -> list[str]:
-    """计算作者标记（tag 键名列表：recommended/high-output/r18/team）。
-
-    根 README 与作者 README 共用：
-      recommended: tags 含 或 旧 recommended 字段（兼容迁移前）
-      high-output: model_count ≥ 阈值（自动）
-      r18: tags 含 或 目录下模型文件夹名含 nsfw/r18（人工+自动并集）
-      team: entry['team'] 有值（团队名，手动维护于 authors.json）
-    """
-    tags = {str(t).lower() for t in (entry.get('tags') or []) if isinstance(t, str)}
-    marks: list[str] = []
-    if 'recommended' in tags or entry.get('recommended'):
-        marks.append('recommended')
-    if model_count >= HIGH_OUTPUT_THRESHOLD:
-        marks.append('high-output')
-    if 'r18' in tags or is_r18_author(author_dir):
-        marks.append('r18')
+    tags = [str(t).lower() for t in (entry.get('tags') or []) if isinstance(t, str)]
+    marks = list(dict.fromkeys(tags))   # 去重保序
     if entry.get('team'):
         marks.append('team')
     return marks
@@ -203,12 +177,15 @@ def render_models_section(models: list[str], work_names: dict[str, str],
 
 def render_author_readme(author_id: str, entry: dict,
                          models: list[str] | None = None,
-                         author_dir: Path | None = None) -> str:
-    """按 authors.json 的 entry 生成作者 README（Name + Marks + 平台段 + 可选 Models 段）。
+                         author_dir: Path | None = None,
+                         auto_marks: list[str] | None = None) -> str:
+    """按 authors.json 的 entry 生成作者 README（Name + team + tags + 平台段 + 可选 Models 段）。
 
-    entry: {'name': [...], 'platforms': {平台键: 值}, 'tags': [...]}（authors.json 作者条目）。
+    entry: {'name': [...], 'platforms': {...}, 'tags': [...], 'team': ...}（authors.json 作者条目）。
     models: 模型文件夹名列表（非空时渲染 ## Models 段，按作品分组折叠）。
-    author_dir: 作者目录（R18 自动判定用，可为空）。
+    author_dir: 作者目录（保留参数，当前未用）。
+    auto_marks: 自动判定的标签键（高产/18禁），由 03_generate_author_readmes.py 计算传入，
+                追加显示在 **tags**: 行（不进 authors.json）。
     """
     names = entry.get('name') or []
     if isinstance(names, str):
@@ -222,9 +199,9 @@ def render_author_readme(author_id: str, entry: dict,
     team = str(entry.get('team') or '').strip()
     if team:
         lines.append(f'- **team**: {team}')
-    # 标签（词表驱动中英成对，如 推荐/Recommended）；保留自动判定，与根 README 一致
-    marks = [m for m in compute_author_marks(
-        entry, len(models) if models else 0, author_dir) if m != 'team']
+    # 标签（词表驱动中英成对；人工 tags + 03 追加的自动标签；team 由独立行展示）
+    marks = [m for m in dict.fromkeys(compute_author_marks(entry) + (auto_marks or []))
+             if m != 'team']
     if marks:
         labels = load_tag_labels()
         tag_strs = []
@@ -233,8 +210,7 @@ def render_author_readme(author_id: str, entry: dict,
             if m in labels:
                 tag_strs.append(format_tag(labels[m]))
             else:
-                # 词表未登记的新标签：emoji 兜底
-                tag_strs.append(f'{MARK_EMOJI.get(m, "")} {m}'.strip())
+                tag_strs.append(m)   # 词表未登记的新标签：显示键名兜底
         lines.append(f'- **tags**: {" · ".join(tag_strs)}')
     classified = _classify_platforms(entry.get('platforms') or {},
                                      lib_ysm.load_platform_map())

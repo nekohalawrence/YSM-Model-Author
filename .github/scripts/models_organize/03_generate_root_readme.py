@@ -27,7 +27,7 @@ from lib.kb.category import (  # noqa: E402
 )
 from lib.kb.storage import load_kb_json  # noqa: E402
 from lib.author_readme import (  # noqa: E402
-    compute_author_marks, MARK_EMOJI,
+    compute_author_marks, load_tag_labels,
 )
 
 WORKSPACE_ROOT = lib_paths.WORKSPACE_ROOT
@@ -73,9 +73,11 @@ def build_readme_rows() -> list[tuple[str, str, int, str, str, str]]:
         model_count = sum(1 for sub in author_dir.iterdir()
                           if sub.is_dir() and not sub.name.startswith('.'))
 
-        # 标记：⭐ 推荐 · 🔥 高产 · 🔞 R18 · 👥 团队（compute_author_marks 统一判定，两处共用）
-        marks = compute_author_marks(entry, model_count, author_dir)
-        flag_str = ' '.join(MARK_EMOJI[m] for m in marks)
+        # 标记：由 authors.json 的 tags（词表 emoji）驱动；无自动判定
+        marks = compute_author_marks(entry)
+        labels = load_tag_labels()
+        flag_str = ' '.join(labels[m]['emoji'] for m in marks
+                            if m in labels and labels[m].get('emoji'))
 
         rows.append((folder, author_name, model_count, link, flag_str,
                      build_platform_cells(entry.get('platforms') or {})))
@@ -87,11 +89,11 @@ def build_readme_table(rows: list[tuple[str, str, int, str, str, str]], is_en: b
     if is_en:
         header, empty_row = ('| ID | Author Name | Total Models | Platforms |',
                              '| - | None | 0 |  |')
-        legend = '> Marks: ⭐ Recommended · 🔥 High-output (≥20) · 🔞 R18 · 👥 Team (team key)'
+        legend = '> Marks: ⭐ Recommended · 🔥 High-output · 🔞 R18 · 👥 Team (from authors.json tags)'
     else:
         header, empty_row = ('| 编号 | 作者名称 | 收录数量 | 平台 |',
                              '| - | 暂无 | 0 |  |')
-        legend = '> 标记：⭐ 推荐 · 🔥 高产(≥20) · 🔞 R18 · 👥 团队(team 键)'
+        legend = '> 标记：⭐ 推荐 · 🔥 高产 · 🔞 R18 · 👥 团队（authors.json tags 驱动）'
     separator = '| --- | --- | ---: | --- |'
 
     lines = [legend, '', header, separator]

@@ -125,6 +125,29 @@ def merge_readmes_to_authors(models_dir: Path,
     return len(matched)
 
 
+# ---------------------------------------------------------------------------
+# 自动判定标签（仅生成作者 README 时追加显示，不进 authors.json）
+# ---------------------------------------------------------------------------
+HIGH_OUTPUT_THRESHOLD = 20          # 模型数 ≥ 此值 → 高产 标签
+R18_KEYWORDS = ('nsfw', 'r18', 'r-18', '18+')   # 模型文件夹名含 → 18禁 标签
+
+
+def auto_author_marks(model_count: int, author_dir: Path) -> list[str]:
+    """自动判定的标签键列表（作者 README 的 **tags**: 追加显示，不写 authors.json）。
+
+    high-output: 模型数 ≥ 阈值；r18: 目录下模型文件夹名含 nsfw/r18/18+。
+    根 README 不用本函数（其标记完全由 authors.json 的 tags 驱动）。
+    """
+    marks: list[str] = []
+    if model_count >= HIGH_OUTPUT_THRESHOLD:
+        marks.append('high-output')
+    pat = re.compile('|'.join(re.escape(k) for k in R18_KEYWORDS), re.IGNORECASE)
+    if author_dir.is_dir() and any(pat.search(p.name) for p in author_dir.iterdir()
+                                   if p.is_dir() and not p.name.startswith('.')):
+        marks.append('r18')
+    return marks
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -168,7 +191,8 @@ def main() -> int:
                             if p.is_dir() and not p.name.startswith('.')
                             and p.name.lower() != 'previews')
             readme = model_dir / 'README.md'
-            readme.write_text(render_author_readme(aid, entry, models, model_dir),
+            auto = auto_author_marks(len(models), model_dir)
+            readme.write_text(render_author_readme(aid, entry, models, model_dir, auto),
                               encoding='utf-8')
             generated += 1
 

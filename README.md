@@ -10,7 +10,7 @@
 <summary>展开/收缩</summary>
 
 <!-- AUTHORS_LIST_START -->
-> 标记：⭐ 推荐 · 🔥 高产(≥20) · 🔞 R18 · 👥 团队(team 键)
+> 标记：⭐ 推荐 · 🔥 高产 · 🔞 R18 · 👥 团队（authors.json tags 驱动）
 
 | 编号 | 作者名称 | 收录数量 | 平台 |
 | --- | --- | ---: | --- |
@@ -19,7 +19,7 @@
 | 0002 | [#映素 \| #映素作坊](.../../Models/0002) | 14 | [Bilibili](https://space.bilibili.com/400235810) · QQ: 833187861 · [Afdian](https://afdian.com/a/6TGESILA) |
 | 0003 | [#XGancheng_Tao](.../../Models/0003) | 2 | [Bilibili](https://space.bilibili.com/1406170630) |
 | 0004 | [#XG残党](.../../Models/0004) | 1 | [Afdian](https://afdian.com/a/x416g) |
-| 0005 | 🔥 [#omo仙贝2号 \| #omo \| #FujiwaranoMoku114514](.../../Models/0005) | 23 | [Bilibili](https://space.bilibili.com/1959304255) · [YouTube](https://www.youtube.com/@%E8%97%A4%E5%8E%9F%E5%A6%B9%E7%BA%A2-i3q) · [Twitter](https://x.com/wOelxdwlnwq5Zl0) · [Afdian](https://afdian.com/a/omomomomomomo) · [Patreon](https://www.patreon.com/c/omo595/posts) |
+| 0005 | [#omo仙贝2号 \| #omo \| #FujiwaranoMoku114514](.../../Models/0005) | 23 | [Bilibili](https://space.bilibili.com/1959304255) · [YouTube](https://www.youtube.com/@%E8%97%A4%E5%8E%9F%E5%A6%B9%E7%BA%A2-i3q) · [Twitter](https://x.com/wOelxdwlnwq5Zl0) · [Afdian](https://afdian.com/a/omomomomomomo) · [Patreon](https://www.patreon.com/c/omo595/posts) |
 | 0006 | [#Nekuro \| #NekuroMC](.../../Models/0006) | 12 | [YouTube](https://www.youtube.com/@NekuroMC) · [ko-fi](https://ko-fi.com/nekuromc/shop) · [Sketchfab](https://sketchfab.com/NekuroMC/models) |
 | 0007 | [#啊这-_-0 \| #伍炎](.../../Models/0007) | 5 | [Bilibili](https://space.bilibili.com/347376421) |
 | 0008 | [#白色北熊](.../../Models/0008) | 8 | [Bilibili](https://space.bilibili.com/175342453) · QQ: 1067426280 · [Afdian](https://afdian.com/a/bx233) |
@@ -29,8 +29,8 @@
 | 0012 | [#赤恒-AzaMire](.../../Models/0012) | 11 | [Bilibili](https://space.bilibili.com/235888316) |
 | 0013 | [#对羧基苯酚](.../../Models/0013) | 1 | [Bilibili](https://space.bilibili.com/3461562335496256) |
 | 0014 | [#哈雷汰多](.../../Models/0014) | 2 | [Bilibili](https://space.bilibili.com/385810311) |
-| 0015 | 🔥 🔞 [#寒叔hs \| #烈鸟比百 \| #Frosty_Uncle](.../../Models/0015) | 68 | [Bilibili](https://space.bilibili.com/329066935) · [YouTube](https://www.youtube.com/@%E7%83%88%E9%B8%9F%E6%AF%94%E7%99%BE) · [Afdian](https://afdian.com/a/Aigoblin) |
-| 0016 | 🔥 [#祸御神](.../../Models/0016) | 44 | [Bilibili](https://space.bilibili.com/164557734) · [Afdian](https://afdian.com/a/YS444) |
+| 0015 | [#寒叔hs \| #烈鸟比百 \| #Frosty_Uncle](.../../Models/0015) | 68 | [Bilibili](https://space.bilibili.com/329066935) · [YouTube](https://www.youtube.com/@%E7%83%88%E9%B8%9F%E6%AF%94%E7%99%BE) · [Afdian](https://afdian.com/a/Aigoblin) |
+| 0016 | [#祸御神](.../../Models/0016) | 44 | [Bilibili](https://space.bilibili.com/164557734) · [Afdian](https://afdian.com/a/YS444) |
 | 0017 | [#寄水晶](.../../Models/0017) | 1 | [Bilibili](https://space.bilibili.com/505272945) |
 | 0018 | [#夹心果风](.../../Models/0018) | 7 | [Bilibili](https://space.bilibili.com/178099567) · QQ: 916346960 · [Afdian](https://afdian.com/a/jxgf2077) |
 | 0019 | [#江竹雨offical \| #AAA家电批发江竹雨](.../../Models/0019) | 1 | [Bilibili](https://space.bilibili.com/493607297) · [Afdian](https://afdian.com/a/lyza1031) |
@@ -44,7 +44,7 @@
 | 0027 | [#猫耳魂魄妖梦](.../../Models/0027) | 4 | [Bilibili](https://space.bilibili.com/1436299) |
 | 0028 | [#喵Kuroneko \| #KuroNeko](.../../Models/0028) | 2 | [Bilibili](https://space.bilibili.com/323374106) · QQ: 1050145781 · [Afdian](https://afdian.com/a/QwQlalalaKuroNe) |
 | 0029 | [#墓野奈奈](.../../Models/0029) | 4 | [Bilibili](https://space.bilibili.com/269519870) · QQ: 3194755414 |
-| 0030 | 🔥 [#嗯嗯owo](.../../Models/0030) | 22 | [Bilibili](https://space.bilibili.com/167202500) · [YouTube](https://space.bilibili.com/167202500) · [Afdian](https://afdian.com/a/enenowo) |
+| 0030 | [#嗯嗯owo](.../../Models/0030) | 22 | [Bilibili](https://space.bilibili.com/167202500) · [YouTube](https://space.bilibili.com/167202500) · [Afdian](https://afdian.com/a/enenowo) |
 | 0031 | [#泥泞中的小猫 \| #PZGR.40](.../../Models/0031) | 2 | [Bilibili](https://space.bilibili.com/87435859) · QQ: 1012212180 |
 | 0032 | [#你个人机cc \| #cc](.../../Models/0032) | 17 | [Bilibili](https://space.bilibili.com/400763031) · QQ: 1055945725 · [Afdian](https://afdian.com/a/ccnie) |
 | 0033 | [#胖狐狸工作室 \| #红色幽默](.../../Models/0033) | 4 | [Bilibili](https://space.bilibili.com/1839129371) |
@@ -57,28 +57,28 @@
 | 0040 | [#碎de帆](.../../Models/0040) | 13 | [Bilibili](https://space.bilibili.com/381524342) |
 | 0041 | [#提可拉](.../../Models/0041) | 3 | [Bilibili](https://space.bilibili.com/326133289) · QQ: 881921312 · [Afdian](https://afdian.com/a/6Canim) |
 | 0042 | [#天弓干亦 \| #筅袔](.../../Models/0042) | 3 | [Bilibili](https://space.bilibili.com/13098279) |
-| 0043 | 🔥 [#完全凍結ALL \| #完全冻结 \| #绝对冻结](.../../Models/0043) | 24 | [Bilibili](https://space.bilibili.com/393110) · [Afdian](https://afdian.com/a/AllFreeze) |
+| 0043 | [#完全凍結ALL \| #完全冻结 \| #绝对冻结](.../../Models/0043) | 24 | [Bilibili](https://space.bilibili.com/393110) · [Afdian](https://afdian.com/a/AllFreeze) |
 | 0044 | [#韦懦夫斯菲尔 \| #汪](.../../Models/0044) | 14 | [Bilibili](https://space.bilibili.com/3546753760496536) · QQ: 624971642 |
-| 0045 | ⭐ 🔥 [#雾雨波波沙](.../../Models/0045) | 26 | [Bilibili](https://space.bilibili.com/36761228) · [Pixiv](https://www.pixiv.net/users/26720481) · QQ: 530621549 |
+| 0045 | ⭐ [#雾雨波波沙](.../../Models/0045) | 26 | [Bilibili](https://space.bilibili.com/36761228) · [Pixiv](https://www.pixiv.net/users/26720481) · QQ: 530621549 |
 | 0046 | [#小萌新idjdkd](.../../Models/0046) | 1 | [Bilibili](https://space.bilibili.com/1573788561) |
 | 0047 | [#Nicy_奈汐 \| #苏溟0w0 \| #沐星喵OwO](.../../Models/0047) | 7 | [Bilibili](https://space.bilibili.com/3494363390806334) · QQ: 743807609 |
 | 0048 | [#星屑海螺 \| #磁小轨制作组（星屑海螺） \| #不是海螺](.../../Models/0048) | 2 | [Bilibili](https://space.bilibili.com/14975572) · QQ: 682546342 · [Afdian](https://afdian.com/a/lucia2048) |
 | 0049 | [#星语TAT](.../../Models/0049) | 2 | [Bilibili](https://space.bilibili.com/316739550) · QQ: 1039376704 |
 | 0050 | [#荨蒿栗里 \| #荨蒿之栗里 \| #栗里](.../../Models/0050) | 9 | [Bilibili](https://space.bilibili.com/501046951) · [Afdian](https://ifdian.net/a/xphkvilili?tab=home) |
-| 0051 | 🔥 [#动员鼬](.../../Models/0051) | 49 | [Bilibili](https://space.bilibili.com/348421936/upload/video) · [Afdian](https://afdian.com/a/dyy114514) |
-| 0052 | 🔥 [#゚烟雨画桥](.../../Models/0052) | 22 | [Bilibili](https://space.bilibili.com/1268865161) · [Afdian](https://afdian.com/a/mj204) |
+| 0051 | [#动员鼬](.../../Models/0051) | 49 | [Bilibili](https://space.bilibili.com/348421936/upload/video) · [Afdian](https://afdian.com/a/dyy114514) |
+| 0052 | [#゚烟雨画桥](.../../Models/0052) | 22 | [Bilibili](https://space.bilibili.com/1268865161) · [Afdian](https://afdian.com/a/mj204) |
 | 0053 | [#羊毛毛毛毛_Official喵](.../../Models/0053) | 2 | [Bilibili](https://space.bilibili.com/85335217) · QQ: 1018367746 |
 | 0054 | [#一只霜狐Owo](.../../Models/0054) | 4 | [Bilibili](https://space.bilibili.com/1214393496) · QQ: 1048762984 |
 | 0055 | [#伊蕾娜家的咸鱼](.../../Models/0055) | 12 | [Bilibili](https://space.bilibili.com/20682514) · [Afdian](https://afdian.com/a/elainasaltfish) |
-| 0056 | 🔥 [#伊洛是哥斯拉嘛 \| #伊洛是哥斯拉吗 \| #哥斯拉 \| #落阳不养羊 \| #黎家诚 \| #BradKidd](.../../Models/0056) | 81 | [Bilibili](https://space.bilibili.com/17798027) · [Afdian](https://afdian.com/a/6TGESILA) |
+| 0056 | [#伊洛是哥斯拉嘛 \| #伊洛是哥斯拉吗 \| #哥斯拉 \| #落阳不养羊 \| #黎家诚 \| #BradKidd](.../../Models/0056) | 81 | [Bilibili](https://space.bilibili.com/17798027) · [Afdian](https://afdian.com/a/6TGESILA) |
 | 0057 | [#忆尘yc27 \| #忆尘27](.../../Models/0057) | 3 | [Bilibili](https://space.bilibili.com/192438862) · [Afdian](https://afdian.com/a/114514aabb) |
-| 0058 | 🔥 [#艺方像素 \| #艺方堂 \| #尻 \| #艺方坊 \| #艺方阁](.../../Models/0058) | 61 | [Bilibili](https://space.bilibili.com/107318873) · QQ: 1320812591 |
+| 0058 | [#艺方像素 \| #艺方堂 \| #尻 \| #艺方坊 \| #艺方阁](.../../Models/0058) | 61 | [Bilibili](https://space.bilibili.com/107318873) · QQ: 1320812591 |
 | 0059 | [#瀛猫](.../../Models/0059) | 12 | [Bilibili](https://space.bilibili.com/647224460) · QQ: 1037786416 · [Afdian](https://afdian.com/a/wincatpro) |
 | 0060 | [#油七桶](.../../Models/0060) | 4 | [Bilibili](https://space.bilibili.com/4896879) |
 | 0061 | [#狱际星芒](.../../Models/0061) | 13 | [Bilibili](https://space.bilibili.com/349150095) · QQ: 218129003 · [Afdian](https://afdian.com/a/3256286845xingmang) |
 | 0062 | [#云曦-Yunxxi_ugo \| #云曦](.../../Models/0062) | 7 | [Bilibili](https://space.bilibili.com/28954757) · QQ: 924884449 · [Afdian](https://afdian.com/a/Yunxxi_ugo) |
 | 0063 | [#再来几斤小莫莫](.../../Models/0063) | 1 | [Bilibili](https://space.bilibili.com/3493267685509797) · [Afdian](https://afdian.com/a/starmoon679) |
-| 0064 | 🔥 [#纸盒ALifang \| #Cc-纸盒 \| #Cc纸盒](.../../Models/0064) | 27 | [Bilibili](https://space.bilibili.com/1494015242) · QQ: 619035464 |
+| 0064 | [#纸盒ALifang \| #Cc-纸盒 \| #Cc纸盒](.../../Models/0064) | 27 | [Bilibili](https://space.bilibili.com/1494015242) · QQ: 619035464 |
 | 0065 | ⭐ [#烛火的次元宇宙](.../../Models/0065) | 19 | [Bilibili](https://space.bilibili.com/57715833) · [Afdian](https://afdian.com/a/zhuhuo) |
 | 0066 | [#A_su杏仁](.../../Models/0066) | 3 | [Bilibili](https://space.bilibili.com/524666730) · QQ: 1019752550 |
 | 0067 | ⭐ [#Almeta_owx](.../../Models/0067) | 9 | [Bilibili](https://space.bilibili.com/4328692) · [Afdian](https://afdian.com/a/Almeta) |
@@ -107,17 +107,17 @@
 | 0090 | [#九碳糖 \| #九碳糖BI3NVZ](.../../Models/0090) | 2 | [Bilibili](https://space.bilibili.com/543291461) |
 | 0091 | [#trita](.../../Models/0091) | 2 | QQ: 3490790346 |
 | 0092 | [#菊姥爷](.../../Models/0092) | 9 | [Bilibili](https://space.bilibili.com/376780490) · [Afdian](https://afdian.com/a/julaoye) |
-| 0093 | 🔥 🔞 [#苏依凛 \| #炽湮](.../../Models/0093) | 77 | [Bilibili](https://space.bilibili.com/76987486) · [Afdian](https://afdian.com/a/supermonsterking) |
+| 0093 | [#苏依凛 \| #炽湮](.../../Models/0093) | 77 | [Bilibili](https://space.bilibili.com/76987486) · [Afdian](https://afdian.com/a/supermonsterking) |
 | 0094 | [#墨染逝羽 \| #Feather_aya](.../../Models/0094) | 7 | [Bilibili](https://space.bilibili.com/5718046) · [Afdian](https://afdian.com/a/FliegeSA) |
-| 0095 | 🔞 [#源石姬变体 \| #raw_chicken \| #鸡姬](.../../Models/0095) | 19 | [Bilibili](https://space.bilibili.com/219540765) · [Pixiv](https://www.pixiv.net/users/31376770) · [Afdian](https://afdian.com/a/rawchicken) · [Unifans](https://app.unifans.io/c/rawchickenneg) |
+| 0095 | [#源石姬变体 \| #raw_chicken \| #鸡姬](.../../Models/0095) | 19 | [Bilibili](https://space.bilibili.com/219540765) · [Pixiv](https://www.pixiv.net/users/31376770) · [Afdian](https://afdian.com/a/rawchicken) · [Unifans](https://app.unifans.io/c/rawchickenneg) |
 | 0096 | [#Kria月明](.../../Models/0096) | 1 | [Bilibili](https://space.bilibili.com/182808322) |
 | 0097 | [#艾雷克亚](.../../Models/0097) | 3 |  |
 | 0098 | [#coldM00N \| #ガラスのような青空 \| #coldm00n](.../../Models/0098) | 2 | [Bilibili](https://space.bilibili.com/11382763) · [Afdian](https://afdian.com/a/coldMOON048) |
 | 0099 | [#Dumnheint](.../../Models/0099) | 1 | [Bilibili](https://space.bilibili.com/36644599) |
 | 0100 | [#京泉](.../../Models/0100) | 1 |  |
 | 0101 | [#獒子coco \| #獒子酱的杂货店 \| #獒子獒子獒](.../../Models/0101) | 3 | [Bilibili](https://space.bilibili.com/19140392) · [Afdian](https://afdian.com/a/AOZICOCO) |
-| 0102 | 🔥 [#Dreamer \| #普通的木屐](.../../Models/0102) | 29 | [Bilibili](https://afdian.com/a/CommonMuJi) · WeChat: MC_CommonMuJi · QQ: 1776296661 · [Afdian](https://space.bilibili.com/768300) |
-| 0103 | 🔥 [#浅陌菌](.../../Models/0103) | 21 | [Bilibili](https://space.bilibili.com/24513198) · QQ: 1063585053 · [Afdian](https://afdian.com/a/tc_fox) |
+| 0102 | [#Dreamer \| #普通的木屐](.../../Models/0102) | 29 | [Bilibili](https://afdian.com/a/CommonMuJi) · WeChat: MC_CommonMuJi · QQ: 1776296661 · [Afdian](https://space.bilibili.com/768300) |
+| 0103 | [#浅陌菌](.../../Models/0103) | 21 | [Bilibili](https://space.bilibili.com/24513198) · QQ: 1063585053 · [Afdian](https://afdian.com/a/tc_fox) |
 | 0104 | [#科列夫斯基](.../../Models/0104) | 1 |  |
 | 0105 | [#超级大鸡腿丶 \| #Nss](.../../Models/0105) | 5 |  |
 | 0106 | [#ナヒーダ](.../../Models/0106) | 1 | QQ: 639518184 |
@@ -126,12 +126,12 @@
 | 0109 | [#水神](.../../Models/0109) | 1 |  |
 | 0110 | [雅音宫羽](.../../Models/0110) | 1 |  |
 | 0111 | [#奶油桃NaytoTime \| #奶油桃](.../../Models/0111) | 6 | [Bilibili](https://space.bilibili.com/74167922) · [Afdian](https://afdian.com/a/liberstellae) |
-| 0112 | 🔥 [#大莫家 \| #MCZ工作室 \| #mcz莫莫 \| #犟猫](.../../Models/0112) | 27 | [Bilibili](https://space.bilibili.com/385797854) · QQ: 167941105 已满 · [Afdian](https://afdian.com/a/mcz_8888) |
+| 0112 | [#大莫家 \| #MCZ工作室 \| #mcz莫莫 \| #犟猫](.../../Models/0112) | 27 | [Bilibili](https://space.bilibili.com/385797854) · QQ: 167941105 已满 · [Afdian](https://afdian.com/a/mcz_8888) |
 | 0113 | [#秋风 \| #每天都睡不醒的秋风 \| #睡不死死不睡的秋风](.../../Models/0113) | 1 | [Bilibili](https://space.bilibili.com/375227559) · [Afdian](https://afdian.com/a/qf0224) |
 | 0114 | [#迷糊晓雾](.../../Models/0114) | 1 | QQ: 3313645023 · E-mail: 3313645023@qq.com |
 | 0115 | [#荒漠](.../../Models/0115) | 1 |  |
 | 0116 | [#1111111re \| #伊伊蕾](.../../Models/0116) | 6 | [Bilibili](https://space.bilibili.com/35073555) · QQ: 769939358 · [Afdian](https://afdian.com/a/114514yire) |
-| 0117 | 🔥 [#聚模道 \| #聚核重工Minecraft \| #语文喵喵拳](.../../Models/0117) | 22 | [Bilibili](https://space.bilibili.com/450162369) · [Afdian](https://afdian.com/a/yr9964332) |
+| 0117 | [#聚模道 \| #聚核重工Minecraft \| #语文喵喵拳](.../../Models/0117) | 22 | [Bilibili](https://space.bilibili.com/450162369) · [Afdian](https://afdian.com/a/yr9964332) |
 | 0118 | [Mr黄金君](.../../Models/0118) | 1 |  |
 | 0119 | [#奇葩的小毛](.../../Models/0119) | 7 | [Bilibili](https://space.bilibili.com/642514655) |
 | 0120 | [#失语喵](.../../Models/0120) | 5 | [Bilibili](https://space.bilibili.com/171415484) |
@@ -143,7 +143,7 @@
 | 0126 | [#空洞qwq](.../../Models/0126) | 1 | [Bilibili](https://space.bilibili.com/1230961559) |
 | 0127 | [#总督神绮](.../../Models/0127) | 2 | [Bilibili](https://space.bilibili.com/37854534) · [Afdian](https://ifdian.net/a/sShinki) |
 | 0128 | [#Ark样本](.../../Models/0128) | 1 | [Bilibili](https://space.bilibili.com/3081780) |
-| 0129 | 🔥 [#Dr观星 \| #Dr-观星](.../../Models/0129) | 62 | [Bilibili](https://space.bilibili.com/157282636) · QQ: 1087347018 |
+| 0129 | [#Dr观星 \| #Dr-观星](.../../Models/0129) | 62 | [Bilibili](https://space.bilibili.com/157282636) · QQ: 1087347018 |
 | 0130 | [#断罪千念](.../../Models/0130) | 1 |  |
 | 0131 | [#星璇_tbod](.../../Models/0131) | 1 | [Bilibili](https://space.bilibili.com/2123185882) |
 | 0132 | [#qf欸 \| #qf](.../../Models/0132) | 1 | [Bilibili](https://space.bilibili.com/452194950) |
@@ -201,7 +201,7 @@
 | 0184 | [#MC-ZBM](.../../Models/0184) | 3 | [Bilibili](https://space.bilibili.com/604228173) |
 | 0185 | [#滑滑滑纸隐 \| #滑纸隐](.../../Models/0185) | 9 |  |
 | 0187 | [#爱听书的旅人 \| #爱听小说的旅人](.../../Models/0187) | 1 | [Bilibili](https://space.bilibili.com/128909195) · [Afdian](https://afdian.com/a/ATSDLR) |
-| 0188 | 🔞 [#鸢尾](.../../Models/0188) | 1 |  |
+| 0188 | [#鸢尾](.../../Models/0188) | 1 |  |
 | 0189 | [#TIS长夜孤星](.../../Models/0189) | 2 |  |
 | 0190 | [#奈忒倪](.../../Models/0190) | 1 |  |
 | 0191 | [#新隆肰懿](.../../Models/0191) | 1 |  |
