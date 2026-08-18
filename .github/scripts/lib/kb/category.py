@@ -85,10 +85,6 @@ def render_readme_works_section(data: dict,
         "<details>", "",
         "<summary>模型分类</summary>", "",
         f"> 共 {total_works} 个作品、{total_models} 个模型"
-        f"（由 `.github/data/model-info/character/*.json` 自动生成，手改请编辑对应作品文件）",
-        "", "> 文件夹命名规则", "", "```",
-        "<英文作品名称>_<中文角色名>-[中文皮肤]_<英文角色名>-[英文皮肤]_<个人评定等级>",
-        "", "个人评定等级: LA, LB, LC, LD", "```", "",
     ]
     for cat in CATEGORIES:
         keys = cat_map.get(cat) or []
@@ -101,10 +97,11 @@ def render_readme_works_section(data: dict,
         lines.append("| --- | --- | --- | ---: |")
         for k in sorted(keys):
             v = works.get(k) or {}
-            # 英文名只取规范名（首项）——别名多为其他缩写，与作品键重复
+            # 中英文只取 name 下的标准名（首项）——aliases 别名多为缩写/异名，避免与作品键重复
             en_names = _work_names(v, "en")
             en = en_names[0] if en_names else ""
-            cn = ", ".join(_work_names(v, "zh"))
+            zh_names = _work_names(v, "zh")
+            cn = zh_names[0] if zh_names else ""
             lines.append(f"| {k} | {en} | {cn} | {mcounts.get(k.lower(), 0)} |")
         lines.append("")
     lines.append("</details>")

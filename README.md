@@ -10,7 +10,7 @@
 <summary>展开/收缩</summary>
 
 <!-- AUTHORS_LIST_START -->
-> 标记：⭐ 推荐 · 🔥 高产 · 🔞 R18 · 👥 团队（authors.json tags 驱动）
+> 标记：⭐ 推荐 · 🔥 高产 · 🔞 R18 · 👥 团队
 
 | 编号 | 作者名称 | 平台 | 收录数量 |
 | --- | --- | --- | ---: |
@@ -218,8 +218,7 @@
 
 <summary>模型分类</summary>
 
-> 共 158 个作品、1413 个模型（由 `.github/data/model-info/character/*.json` 自动生成，手改请编辑对应作品文件）
-
+> 共 158 个作品、1413 个模型
 ## 游戏（77 作品 · 690 模型）
 
 | 作品键 | 英文名 | 中文名 | 模型数 |
@@ -233,8 +232,8 @@
 | AS | Alchemy Stars | 白夜极光 | 0 |
 | ASE | White Eternity | 星辰恋曲的白色永恒 | 1 |
 | Ash-Arms | Ash-Arms | 灰烬战线 | 2 |
-| AstralParty | Astral Party | 吉星派对, 星引擎 Party | 5 |
-| BA | Blue-Archive | 碧蓝档案, 蔚蓝档案 | 152 |
+| AstralParty | Astral Party | 吉星派对 | 5 |
+| BA | Blue-Archive | 碧蓝档案 | 152 |
 | BF-1 | Battlefield-1 | 战地-1 | 2 |
 | BP | Blue Protocol | 蓝色协议 | 0 |
 | BRS | Black Rock Shooter | 黑岩射手 | 1 |
@@ -247,8 +246,8 @@
 | Delta-Force | Delta Force | 三角洲行动 | 1 |
 | FGO | Fate-Grand-Order | 命运 - 冠位指定 | 7 |
 | Food Girls | Food Girls | 食用系少女 | 1 |
-| GCG | Girl Cafe Gun | 双生视界, 少女咖啡槍II | 1 |
-| GF | Girls' Frontline | 少女前线, 少女前线 2, 少女前线 2：追放, 少前 2：追放, 少女前线：云图计划, 云图计划 | 23 |
+| GCG | Girl Cafe Gun | 双生视界 | 1 |
+| GF | Girls' Frontline | 少女前线 | 23 |
 | GI | Genshin Impact | 原神 | 50 |
 | Granblue | Granblue Fantasy: Relink | 碧蓝幻想：RELINK | 1 |
 | HDN | Hyperdimension Neptunia | 超次元游戏 | 0 |
@@ -257,19 +256,19 @@
 | HSR | Honkai-Star-Rail | 崩坏：星穹铁道 | 61 |
 | IN | Infinity Nikki | 无限暖暖 | 0 |
 | Identity-V | Identity V | 第五人格 | 1 |
-| LC | Limbus Company | 边狱巴士, 边狱公司 | 1 |
+| LC | Limbus Company | 边狱巴士 | 1 |
 | LL | Love Live! School Idol Festival | Love Live! 学园偶像祭 | 0 |
 | LOL | League of Legends | 英雄联盟 | 2 |
 | LOR | Library of Ruina | 废墟图书馆 | 2 |
 | LaDS | Love and Deepspace | 恋与深空 | 0 |
 | MGC | Magical Girl Celesphonia | 魔法少女天穹法妮雅 | 1 |
 | MGWT | Magical Girl Witch Trial | 魔法少女的魔女审判 | 3 |
-| MJ | Majsoul | 雀魂麻将, 雀魂 | 0 |
+| MJ | Majsoul | 雀魂麻将 | 0 |
 | Magia-Record | Magia Record: Puella Magi Madoka Magica Side Story | 魔法纪录 魔法少女小圆外传 | 2 |
 | MiSide | MiSide | 米塔 | 3 |
 | Minecraft | Minecraft | 我的世界 | 37 |
 | NAR | NARUTO | 火影忍者: 疾风传 | 3 |
-| NEKOPARA | NEKOPARA | 巧克力与香子兰, 猫娘乐园 | 9 |
+| NEKOPARA | NEKOPARA | 巧克力与香子兰 | 9 |
 | NEO | Needy Girl Overdos | 主播女孩重度依赖 | 1 |
 | NGE | Neon-Genesis-Evangelion | 新世纪福音战士 | 3 |
 | NTE | Neverness to Everness | 异环 | 3 |
@@ -285,7 +284,7 @@
 | RA3 | Command-&-Conquer: Red-Alert-3 | 命令与征服：红色警戒 3 | 0 |
 | SENREN | Senren＊Banka | 千恋＊万花 | 3 |
 | SPY×FAMILY | SPY×FAMILY | 间谍过家家 | 1 |
-| SakuraMoyu | ‑as the Night's | 樱花摸鱼, 樱花、萌放 | 1 |
+| SakuraMoyu | ‑as the Night's | 樱花摸鱼 | 1 |
 | ShinyColors | THE IDOLM@STER Shiny Colors | 偶像大师 闪耀色彩 | 0 |
 | Snowbreak | Snowbreak: Containment Zone | 尘白禁区 | 4 |
 | Starlight | Revue Starlight | 少女☆歌剧 Revue Starlight | 0 |
@@ -295,7 +294,7 @@
 | TSK | Twinkle Star Knights | 闪耀星骑士 | 0 |
 | Tenshi | Tenshi Souzou | 天使嚣嚣 | 1 |
 | ToF | Tower of Fantasy | 幻塔 | 0 |
-| UmaMusume | Umamusume: Pretty Derby | 闪耀！优俊少女, 赛马娘 | 8 |
+| UmaMusume | Umamusume: Pretty Derby | 闪耀！优俊少女 | 8 |
 | Undertale | Undertale | 传说之下 | 1 |
 | WW | Wuthering-Waves | 鸣潮 | 21 |
 | YogYard | Yog-Sothoth's Yard | 犹格索托斯的庭院：炼金旅社 | 2 |
@@ -312,8 +311,8 @@
 | AoT | Attack on Titan | 进击的巨人 | 0 |
 | AveMujica | BanG Dream! Ave Mujica | 颂乐人偶 | 12 |
 | BtR | Bocchi-the-Rock! | 孤独摇滚！ | 16 |
-| CSM | Chainsaw Man | 链锯人, 电锯人 | 0 |
-| Cardcaptor | Cardcaptor Sakura | 魔卡少女樱, 百变小樱 | 2 |
+| CSM | Chainsaw Man | 链锯人 | 0 |
+| Cardcaptor | Cardcaptor Sakura | 魔卡少女樱 | 2 |
 | DAL | Date A Live | 约会大作战 | 6 |
 | DFO | Dungeon & Fighter | 地下城与勇士 | 1 |
 | DR | Dragon Raja | 龙族 | 1 |
@@ -327,10 +326,10 @@
 | GLT | Girls' Last Tour | 少女终末旅行 | 0 |
 | Gundam | Mobile Suit Gundam | 机动战士高达 | 0 |
 | HLP | Heaven's Lost Property | 天降之物 | 1 |
-| HNTSADL | How Not to Summon a Demon Lord | 异界少女召唤术, 异世界魔王与召唤少女的奴隶魔术 | 1 |
+| HNTSADL | How Not to Summon a Demon Lord | 异界少女召唤术 | 1 |
 | JJK | Jujutsu Kaisen | 咒术回战 | 1 |
 | Kaguya | Kaguya-sama: Love Is War | 辉夜大小姐想让我告白 | 0 |
-| Kisekoi | My Dress-Up Darling | 更衣人偶坠入爱河, 恋上换装娃娃 | 1 |
+| Kisekoi | My Dress-Up Darling | 更衣人偶坠入爱河 | 1 |
 | KonoSuba | KonoSuba: God's Blessing on This Wonderful World! | 为美好的世界献上祝福！ | 6 |
 | Kusuriya | The Apothecary Diaries | 药屋少女的呢喃 | 0 |
 | LCOD | Love | 中二病でも恋がしたい！ | 4 |
@@ -360,11 +359,11 @@
 | Saekano | Saekano: How to Raise a Boring Girlfriend | 路人女主的养成方法 | 2 |
 | Steins-Gate | Steins;Gate | 命运石之门 | 1 |
 | TFD | The Future Diary | 未来日记 | 1 |
-| TMNI | A Certain Magical Index | 魔法禁书目录, 某魔法的禁书目录 | 1 |
+| TMNI | A Certain Magical Index | 魔法禁书目录 | 1 |
 | Tensura | That Time I Got Reincarnated as a Slime | 关于我转生变成史莱姆这档事 | 1 |
 | To-LOVE-Ru | To LOVE Ru | 出包王女 | 1 |
 | Tokyo-Ghoul | Tokyo Ghoul | 东京食尸鬼 | 1 |
-| UT | Ultraman Tiga | 奥特曼, 迪迦奥特曼 | 2 |
+| UT | Ultraman Tiga | 奥特曼 | 2 |
 | VE | Violet Evergarden | 紫罗兰永恒花园 | 0 |
 | YNS | Yosuga no Sora | 缘之空 | 1 |
 
@@ -379,8 +378,8 @@
 | NEUTRINO | NEUTRINO | NEUTRINO | 0 |
 | NIJISANJI | NIJISANJI | 彩虹社 | 0 |
 | SynthV | Synthesizer V | Synthesizer V | 0 |
-| Utau | Utauloid | 虚拟歌手, 术力口 | 3 |
-| VOC | VOCALOID | 博歌乐, V 家, 术力口, 虚拟歌手, 虚拟歌姬 | 18 |
+| Utau | Utauloid | 虚拟歌手 | 3 |
+| VOC | VOCALOID | 虚拟歌姬 | 18 |
 | VShojo | VShojo | VShojo | 0 |
 | VTuber | Virtual YouTuber | 虚拟主播 | 23 |
 
@@ -395,7 +394,7 @@
 | 作品键 | 英文名 | 中文名 | 模型数 |
 | --- | --- | --- | ---: |
 | Animal | Animal | 动物 | 1 |
-| KG | Kemomimi Gakuen | 兽耳学园, 兽耳学院 | 1 |
+| KG | Kemomimi Gakuen | 兽耳学园 | 1 |
 | Meme | Meme | 模因 | 1 |
 | Mochiyama Kingyo | Mochiyama Kingyo | もち山金魚 | 1 |
 | Myth | Myth | 神话 | 1 |
