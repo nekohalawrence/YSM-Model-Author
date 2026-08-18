@@ -182,7 +182,7 @@ R18_KEYWORDS = ('nsfw', 'r18', 'r-18', '18+')   # 模型文件夹名含 → 18�
 def auto_author_marks(model_count: int, author_dir: Path) -> list[str]:
     """自动判定的标签键列表（作者 README 的 **tags**: 追加显示，不写 authors.json）。
 
-    high-output: 模型数 ≥ 阈值；r18: 目录下模型文件夹名含 nsfw/r18/18+。
+    high-output: 模型数 ≥ 阈值；nsfw: 目录下模型文件夹名含 nsfw/r18/18+。
     根 README 不用本函数（其标记完全由 authors.json 的 tags 驱动）。
     """
     marks: list[str] = []
@@ -191,7 +191,7 @@ def auto_author_marks(model_count: int, author_dir: Path) -> list[str]:
     pat = re.compile('|'.join(re.escape(k) for k in R18_KEYWORDS), re.IGNORECASE)
     if author_dir.is_dir() and any(pat.search(p.name) for p in author_dir.iterdir()
                                    if p.is_dir() and not p.name.startswith('.')):
-        marks.append('r18')
+        marks.append('nsfw')
     return marks
 
 
