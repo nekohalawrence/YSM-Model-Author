@@ -311,14 +311,21 @@ def versionize_same_name(folder_dir: Path, folder_name: str,
 
 
 def find_same_model_folder(target_dir: Path, folder_name: str) -> Path | None:
-    """在目标作者目录下找与 folder_name 属同一模型的已有文件夹（排除完全同名）。"""
+    """在目标作者目录下找与 folder_name 属同一模型的已有文件夹（排除完全同名）。
+
+    排除纯 Unknown 文件夹（Other-YSM 的兜底目录）：'Unknown' 是任意
+    'Unknown_xxx' 的子串，会被 same_model 误判为同模型。
+    """
     if not target_dir.is_dir():
         return None
     norm = normalize_name_for_cmp(folder_name)
     for sub in sorted(target_dir.iterdir()):
         if not (sub.is_dir() and not sub.name.startswith('.')):
             continue
-        if normalize_name_for_cmp(sub.name) == norm:
+        sub_norm = normalize_name_for_cmp(sub.name)
+        if sub_norm == 'unknown':
+            continue  # 纯 Unknown 兜底文件夹：不参与同模型合并
+        if sub_norm == norm:
             continue
         if same_model(folder_name, sub.name):
             return sub
