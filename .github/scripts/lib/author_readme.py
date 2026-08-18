@@ -26,6 +26,31 @@ R18_KEYWORDS = ('nsfw', 'r18', 'r-18', '18+')   # 模型文件夹名含 → 🔞
 # tag 键 → 展示（emoji / 中文名）
 MARK_EMOJI = {'recommended': '⭐', 'high-output': '🔥', 'r18': '🔞', 'team': '👥'}
 MARK_LABEL = {'recommended': '推荐', 'high-output': '高产', 'r18': 'R18', 'team': '团队'}
+# 标签显示顺序（词表 tag_labels.json 的键顺序；未收录的新标签排最后）
+TAG_ORDER = ['recommended', 'high-output', 'high-quality', 'r18', 'nsfw']
+
+
+_TAG_LABELS_CACHE: dict | None = None
+
+
+def load_tag_labels() -> dict:
+    """加载标签词表（author-info/tag_labels.json）：{键: {zh, en, category}}。
+
+    懒加载并缓存；词表缺失时返回 {}（渲染退化为 emoji 兑底）。
+    词表由用户维护，新增标签在其中登记中文/英文名后即可显示。
+    """
+    global _TAG_LABELS_CACHE
+    if _TAG_LABELS_CACHE is None:
+        p = lib_paths.data_path('author-info', 'tag_labels.json')
+        _TAG_LABELS_CACHE = lib_paths.load_json(p, {}) or {}
+    return _TAG_LABELS_CACHE
+
+
+def format_tag(meta: dict) -> str:
+    """词表条目 -> '中文/English' 显示串（en 缺失时只用中文）。"""
+    zh = str(meta.get('zh') or '').strip()
+    en = str(meta.get('en') or '').strip()
+    return f'{zh}/{en}' if zh and en else (zh or en)
 
 
 def is_r18_author(author_dir: Path | None) -> bool:
@@ -197,12 +222,20 @@ def render_author_readme(author_id: str, entry: dict,
     team = str(entry.get('team') or '').strip()
     if team:
         lines.append(f'- **team**: {team}')
-    # 作者标记（⭐ 推荐 · 🔥 高产 · 🔞 R18），与根 README 同判定；团队已由 team 行展示
+    # 标签（词表驱动中英成对，如 推荐/Recommended）；保留自动判定，与根 README 一致
     marks = [m for m in compute_author_marks(
         entry, len(models) if models else 0, author_dir) if m != 'team']
     if marks:
-        mark_str = ' · '.join(f'{MARK_EMOJI[m]} {MARK_LABEL[m]}' for m in marks)
-        lines.append(f'- **Marks**: {mark_str}')
+        labels = load_tag_labels()
+        tag_strs = []
+        for m in sorted(marks, key=lambda k: TAG_ORDER.index(k) if k in TAG_ORDER
+                        else len(TAG_ORDER)):
+            if m in labels:
+                tag_strs.append(format_tag(labels[m]))
+            else:
+                # 词表未登记的新标签：emoji 兜底
+                tag_strs.append(f'{MARK_EMOJI.get(m, "")} {m}'.strip())
+        lines.append(f'- **tags**: {" · ".join(tag_strs)}')
     classified = _classify_platforms(entry.get('platforms') or {},
                                      lib_ysm.load_platform_map())
     for field in PLATFORM_ORDER:

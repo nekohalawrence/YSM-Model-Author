@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "propertyNames": { "pattern": "^[a-z][a-z0-9-]*$" },
+  "additionalProperties": {
+    "type": "object",
+    "required": ["zh", "en", "category"],
+    "properties": {
+      "zh": { "type": "string", "description": "中文标签名（显示用，如 推荐）" },
+      "en": { "type": "string", "description": "英文标签名（显示用，如 Recommended）" },
+      "category": {
+        "type": "string",
+        "enum": ["quality", "nsfw"],
+        "description": "标签类别：quality=质量/常规，nsfw=内容警示"
+      }
+    }
+  }
+}

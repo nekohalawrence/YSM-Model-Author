@@ -3,7 +3,7 @@
 ## Author
 
 - **Name**: #鸢尾
-- **Marks**: 🔞 R18
+- **tags**: 18禁/R18
 
 ## Models
 

@@ -30,6 +30,7 @@ except ImportError:
 # 每个数据文件必须有 schema 契约；co_creators 可能不存在（按需生成），跳过不报错。
 CHECKS: list[tuple[str, str]] = [
     ('authors.schema.json', 'author-info/authors.json'),
+    ('tag_labels.schema.json', 'author-info/tag_labels.json'),
     ('merge_skips.schema.json', 'model-info/merge_skips.json'),
     ('skin_tags.schema.json', 'model-info/skin_tags.json'),
     ('role_terms.schema.json', 'author-info/role_terms.json'),

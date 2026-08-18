@@ -1,0 +1,7 @@
+{
+  "recommended": { "zh": "推荐", "en": "Recommended", "category": "quality" },
+  "high-output": { "zh": "高产", "en": "High-Output", "category": "quality" },
+  "high-quality": { "zh": "高质", "en": "High-Quality", "category": "quality" },
+  "r18": { "zh": "18禁", "en": "R18", "category": "nsfw" },
+  "nsfw": { "zh": "NSFW", "en": "NSFW", "category": "nsfw" }
+}

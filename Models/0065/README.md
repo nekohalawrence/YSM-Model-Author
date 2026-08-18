@@ -3,7 +3,7 @@
 ## Author
 
 - **Name**: #烛火的次元宇宙
-- **Marks**: ⭐ 推荐
+- **tags**: 推荐/Recommended
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [烛火的次元宇宙](https://space.bilibili.com/57715833)
   - **SupportPlatform**: #Afdian

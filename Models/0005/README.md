@@ -3,7 +3,7 @@
 ## Author
 
 - **Name**: #omo仙贝2号 | #omo | #FujiwaranoMoku114514
-- **Marks**: 🔥 高产
+- **tags**: 高产/High-Output
   - **SocialPlatform**: #Bilibili #YouTube #Twitter
     - **Bilibili**: [omo仙贝2号](https://space.bilibili.com/1959304255)
     - **YouTube**: [omo仙贝2号](https://www.youtube.com/@%E8%97%A4%E5%8E%9F%E5%A6%B9%E7%BA%A2-i3q)

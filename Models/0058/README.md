@@ -3,7 +3,7 @@
 ## Author
 
 - **Name**: #艺方像素 | #艺方堂 | #尻 | #艺方坊 | #艺方阁
-- **Marks**: 🔥 高产
+- **tags**: 高产/High-Output
   - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [艺方像素](https://space.bilibili.com/107318873)
     - **QQ**: 1320812591

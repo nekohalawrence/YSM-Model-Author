@@ -3,7 +3,7 @@
 ## Author
 
 - **Name**: #雾雨波波沙
-- **Marks**: ⭐ 推荐 · 🔥 高产
+- **tags**: 推荐/Recommended · 高产/High-Output
   - **SocialPlatform**: #Bilibili #Pixiv #QQ
     - **Bilibili**: [雾雨波波沙](https://space.bilibili.com/36761228)
     - **Pixiv**: [雾雨波波沙](https://www.pixiv.net/users/26720481)
