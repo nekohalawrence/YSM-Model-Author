@@ -690,13 +690,14 @@ def merge_author_info(input_path: Path, apply: bool = False) -> int:
 
 def merge_author_updates(authors: dict,
                          updates: dict) -> tuple[list[tuple[str, list[str]]], list[str]]:
-    """把手动信息 {键: {platforms, team, aliases}} 按编号或规范化名匹配合并进 authors。
+    """把手动信息 {键: {platforms, team, aliases, tags}} 按编号或规范化名匹配合并进 authors。
 
     匹配：键=编号直接命中，否则按规范化别名；未匹配的键进 unmatched。
     合并规则（幂等，不覆盖已有手写内容）：
       platforms: 只补缺失的 http(s) 平台键（已有键不覆盖）；
       team:      非空才写入；
-      aliases:   追加并与现有 name 规范化去重。
+      aliases:   追加并与现有 name 规范化去重；
+      tags:      追加并与现有 tags 小写去重。
     返回 (matched, unmatched)；不写盘，由调用方负责保存。
     """
     alias_index: dict[str, str] = {}
@@ -742,6 +743,15 @@ def merge_author_updates(authors: dict,
             if to_add:
                 entry.setdefault('name', []).extend(to_add)
                 changes.append(f'别名+{len(to_add)}')
+        # 标签：追加并小写去重（自动判定落盘 / README 手写反向合并都走这里）
+        extra_tags = [str(t).strip().lower() for t in (upd.get('tags') or [])
+                      if isinstance(t, str) and t.strip()]
+        if extra_tags:
+            existing_tags = {str(t).lower() for t in (entry.get('tags') or [])}
+            to_add_tags = [t for t in extra_tags if t not in existing_tags]
+            if to_add_tags:
+                entry.setdefault('tags', []).extend(to_add_tags)
+                changes.append(f'标签+{len(to_add_tags)}')
         if changes:
             matched.append((aid, changes))
     return matched, unmatched

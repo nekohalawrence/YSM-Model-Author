@@ -26,7 +26,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from lib import paths as lib_paths
 from lib import readme as lib_readme
-from lib.author_readme import render_author_readme
+from lib.author_readme import render_author_readme, load_tag_labels
 from lib.kb.authors import merge_author_updates
 
 REPO_ROOT = lib_paths.WORKSPACE_ROOT
@@ -57,6 +57,48 @@ def author_entries(models_dir: Path,
 TEAM_LINE_RE = re.compile(r'^\s*-\s*\*\*team\*\*\s*[:：]\s*(?P<val>.+)$',
                           re.MULTILINE | re.IGNORECASE)
 PLATFORM_SUB_RE = re.compile(r'^\s{2,}-\s*\*\*(?P<key>[^*]+)\*\*\s*[:：]\s*(?P<val>.*)$')
+TAGS_LINE_RE = re.compile(r'^\s*-\s*\*\*(?:tags|标签)\*\*\s*[:：]\s*(?P<val>.+)$',
+                          re.MULTILINE | re.IGNORECASE)
+
+
+def _tag_text_to_keys(labels: dict, text: str) -> list[str]:
+    """把作者 README tags 行的显示文本反查为词表键（推荐/Recommended -> recommended）。
+
+    支持分隔符 ·•、,，;；；反查匹配中文名/英文名/中英成对。
+    """
+    keys: list[str] = []
+    for seg in re.split(r'[·•、,，;；]', text):
+        seg = seg.strip()
+        if not seg:
+            continue
+        for k, meta in labels.items():
+            zh = str(meta.get('zh') or '')
+            en = str(meta.get('en') or '')
+            if seg in (zh, en, f'{zh}/{en}'):
+                keys.append(k)
+                break
+    return keys
+TAGS_LINE_RE = re.compile(r'^\s*-\s*\*\*(?:tags|标签)\*\*\s*[:：]\s*(?P<val>.+)$',
+                          re.MULTILINE | re.IGNORECASE)
+
+
+def _tag_text_to_keys(labels: dict, text: str) -> list[str]:
+    """把作者 README tags 行的显示文本反查为词表键（推荐/Recommended -> recommended）。
+
+    支持分隔符 ·•、,，;；；反查匹配中文名/英文名/中英成对。
+    """
+    keys: list[str] = []
+    for seg in re.split(r'[·•、,，;；]', text):
+        seg = seg.strip()
+        if not seg:
+            continue
+        for k, meta in labels.items():
+            zh = str(meta.get('zh') or '')
+            en = str(meta.get('en') or '')
+            if seg in (zh, en, f'{zh}/{en}'):
+                keys.append(k)
+                break
+    return keys
 
 
 def parse_readme_author_info(text: str) -> dict:
@@ -70,6 +112,11 @@ def parse_readme_author_info(text: str) -> dict:
     m = TEAM_LINE_RE.search(text)
     if m and m.group('val').strip():
         info['team'] = m.group('val').strip()
+    m = TAGS_LINE_RE.search(text)
+    if m:
+        tags = _tag_text_to_keys(load_tag_labels(), m.group('val'))
+        if tags:
+            info['tags'] = tags
     platforms: dict[str, str] = {}
     for line in text.splitlines():
         m = PLATFORM_SUB_RE.match(line)
@@ -182,6 +229,7 @@ def main() -> int:
         entries = author_entries(models_dir, only)
 
     generated = 0
+    tags_updated = False
     for aid, entry in entries:
         names = ' | '.join(entry.get('name') or [])
         print(f"  {'[生成]' if args.apply else '[计划]'} {aid}  {names}")
@@ -190,11 +238,26 @@ def main() -> int:
             models = sorted(p.name for p in model_dir.iterdir()
                             if p.is_dir() and not p.name.startswith('.')
                             and p.name.lower() != 'previews')
-            readme = model_dir / 'README.md'
+            # 自动判定标签落盘进 authors.json tags（追加去重）——authors.json 成为唯一标签来源
             auto = auto_author_marks(len(models), model_dir)
-            readme.write_text(render_author_readme(aid, entry, models, model_dir, auto),
+            if auto:
+                cur = {str(t).lower() for t in (entry.get('tags') or [])}
+                new_tags = [t for t in auto if t not in cur]
+                if new_tags:
+                    entry.setdefault('tags', []).extend(new_tags)
+                    tags_updated = True
+            readme = model_dir / 'README.md'
+            readme.write_text(render_author_readme(aid, entry, models, model_dir),
                               encoding='utf-8')
             generated += 1
+
+    if args.apply and tags_updated:
+        path = lib_paths.data_path('author-info', 'authors.json')
+        data = lib_paths.load_json(path, {})
+        for aid, entry in entries:
+            data.setdefault('authors', {})[aid] = entry
+        lib_paths.save_json(path, data)
+        print(f'已把自动判定标签写入 authors.json：{path}')
 
     if args.apply:
         print(f'已生成 {generated} 个作者 README。')
