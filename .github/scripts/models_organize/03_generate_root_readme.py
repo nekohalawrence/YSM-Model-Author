@@ -87,11 +87,11 @@ def build_readme_table(rows: list[tuple[str, str, int, str, str, str]], is_en: b
     if is_en:
         header, empty_row = ('| ID | Author Name | Total Models | Platforms |',
                              '| - | None | 0 |  |')
-        legend = '> Marks: ⭐ Recommended · 🔥 High-output (≥20) · 🔞 R18 · 👥 Team'
+        legend = '> Marks: ⭐ Recommended · 🔥 High-output (≥20) · 🔞 R18 · 👥 Team (team key)'
     else:
         header, empty_row = ('| 编号 | 作者名称 | 收录数量 | 平台 |',
                              '| - | 暂无 | 0 |  |')
-        legend = '> 标记：⭐ 推荐 · 🔥 高产(≥20) · 🔞 R18 · 👥 工作室/团队'
+        legend = '> 标记：⭐ 推荐 · 🔥 高产(≥20) · 🔞 R18 · 👥 团队(team 键)'
     separator = '| --- | --- | ---: | --- |'
 
     lines = [legend, '', header, separator]

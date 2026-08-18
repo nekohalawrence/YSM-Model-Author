@@ -7,6 +7,7 @@
 """
 from __future__ import annotations
 
+import json
 import re
 import shutil
 import subprocess
@@ -639,3 +640,95 @@ def merge_authors_flow(apply: bool) -> int:
         _rebuild_indexes()
     print(f'合并作者: 共 {merged} 对已合并' if apply else 'dry-run: 未执行')
     return merged
+
+
+# ---------------------------------------------------------------------------
+# 合并手动维护的作者信息（author merge-info）
+# ---------------------------------------------------------------------------
+def merge_author_info(input_path: Path, apply: bool = False) -> int:
+    """从手动维护的信息文件合并作者信息（平台/团队/别名）进 authors.json。
+
+    输入 JSON 形如 {作者名: {platforms: {...}, team: "团队名", aliases: [...]}}，
+    键可用编号（如 "0045"）或任一作者名/别名（# 前缀可选），按规范化名匹配。
+    合并规则（幂等，不覆盖已有手写内容）：
+      platforms: 只补缺失的 http(s) 平台键（已有键不覆盖）；
+      team:      非空才写入；
+      aliases:   追加并与现有 name 规范化去重。
+    默认 dry-run 只报告计划；--apply 才写回 authors.json。返回更新的作者数。
+    """
+    path = lib_paths.data_path('author-info', 'authors.json')
+    data = lib_paths.load_json(path, {})
+    authors = data.get('authors') if isinstance(data, dict) else None
+    if not authors:
+        print('authors.json 缺失或为空，先运行 author rebuild 生成')
+        return 0
+    try:
+        updates = json.loads(input_path.read_text(encoding='utf-8-sig'))
+    except (OSError, ValueError):
+        print(f'输入文件无法解析或不存在: {input_path}')
+        return 0
+    if not isinstance(updates, dict) or not updates:
+        print(f'输入文件无有效作者信息: {input_path}')
+        return 0
+    # 规范化别名 -> 作者编号索引（输入键匹配用）
+    alias_index: dict[str, str] = {}
+    for aid, entry in authors.items():
+        for n in entry.get('name') or []:
+            norm = lib_readme.normalize_alias(n)
+            if norm:
+                alias_index.setdefault(norm, aid)
+
+    matched: list[tuple[str, list[str]]] = []   # (编号, 变更描述)
+    unmatched: list[str] = []
+    for key, upd in updates.items():
+        if not isinstance(upd, dict):
+            print(f'  跳过 {key!r}：值不是对象')
+            continue
+        aid = key if key in authors else alias_index.get(lib_readme.normalize_alias(key))
+        if aid is None:
+            unmatched.append(key)
+            continue
+        entry = authors[aid]
+        changes: list[str] = []
+        # 平台：只补缺失的 http(s) 键
+        for pkey, pval in (upd.get('platforms') or {}).items():
+            if not (isinstance(pval, str) and pval.startswith(('http://', 'https://'))):
+                continue
+            plat = entry.setdefault('platforms', {})
+            if pkey not in plat:
+                plat[pkey] = pval
+                changes.append(f'平台+{pkey}')
+        # 团队：非空才写入
+        team = str(upd.get('team') or '').strip()
+        if team and entry.get('team') != team:
+            entry['team'] = team
+            changes.append(f'team={team}')
+        # 别名：追加并规范化去重
+        extra = [str(a).strip() for a in (upd.get('aliases') or [])
+                 if isinstance(a, str) and a.strip()]
+        if extra:
+            existing = {lib_readme.normalize_alias(n) for n in (entry.get('name') or [])}
+            to_add = [a for a in extra
+                      if lib_readme.normalize_alias(a)
+                      and lib_readme.normalize_alias(a) not in existing]
+            if to_add:
+                entry.setdefault('name', []).extend(to_add)
+                changes.append(f'别名+{len(to_add)}')
+        if changes:
+            matched.append((aid, changes))
+
+    if not matched and not unmatched:
+        print('输入信息与 authors.json 无差异（无新增/变更）。')
+        return 0
+    for aid, changes in matched:
+        entry = authors[aid]
+        print(f'  {aid}  {" | ".join(entry.get("name") or [])}')
+        print(f'      -> {"、".join(changes)}')
+    for key in unmatched:
+        print(f'  [未匹配] {key}（authors.json 无此作者/别名，未合并）')
+    if not apply:
+        print(f'dry-run: 共 {len(matched)} 位作者待更新，{len(unmatched)} 个未匹配（加 --apply 写入）')
+        return 0
+    lib_paths.save_json(path, data)
+    print(f'已合并 {len(matched)} 位作者信息 -> {lib_paths.get_safe_relpath(path)}')
+    return len(matched)

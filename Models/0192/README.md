@@ -3,7 +3,6 @@
 ## Author
 
 - **Name**: #苏瑞铃 | #苏瑞铃_official
-- **Marks**: 👥 团队
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [苏瑞铃](https://space.bilibili.com/37942254)
 

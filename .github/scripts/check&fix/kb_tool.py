@@ -40,7 +40,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from lib import console as lib_console
 from lib import paths as lib_paths
 from lib.kb.authors import (
-    add_author_alias, merge_authors_flow, sync_authors_from_models,
+    add_author_alias, merge_author_info, merge_authors_flow, sync_authors_from_models,
     write_authors_data,
 )
 from lib.kb.cmds import (
@@ -58,7 +58,7 @@ OBJECTS = ("role", "work", "author")
 ACTIONS_BY_OBJECT: dict[str, list[str]] = {
     "role": ["add", "del", "list", "check", "merge", "suggest", "set-default"],
     "work": ["add", "del", "list", "check", "merge", "set-default", "rename"],
-    "author": ["merge", "sync", "rebuild", "check", "alias"],
+    "author": ["merge", "sync", "rebuild", "check", "alias", "patch"],
 }
 # 动作 → 可用对象（缺对象时的交互补全用）
 ACTION_OBJECTS: dict[str, list[str]] = {}
@@ -159,7 +159,7 @@ def main() -> int:
     # 作者维护
     p_author = sub.add_parser("author", help="作者维护")
     author_sub = p_author.add_subparsers(dest="action",
-                                         metavar="{merge,sync,rebuild,check,alias}")
+                                         metavar="{merge,sync,rebuild,check,alias,patch}")
     p_merge = author_sub.add_parser("merge", help="合并重复作者（候选逐对确认）")
     p_merge.add_argument("--apply", action="store_true", help="真正写盘（默认 dry-run）")
     p_sync = author_sub.add_parser("sync", help="从模型 .ysm 推导作者名并入 authors.json")
@@ -167,6 +167,14 @@ def main() -> int:
     author_sub.add_parser("rebuild", help="重建集中作者数据 authors.json")
     author_sub.add_parser("check", help="只检查 authors.json 差异（不写盘）")
     author_sub.add_parser("alias", help="为作者添加别名（交互）")
+    p_patch = author_sub.add_parser(
+        "patch", help="从手动信息文件合并作者信息（平台/团队/别名）")
+    p_patch.add_argument("file", metavar="FILE", help="手动维护的信息 JSON 文件")
+    p_patch.add_argument("--apply", action="store_true", help="真正写盘（默认 dry-run）")
+    p_merge_info = author_sub.add_parser(
+        "merge-info", help="从手动信息文件合并作者信息（平台/团队/别名）")
+    p_merge_info.add_argument("file", metavar="FILE", help="手动维护的信息 JSON 文件")
+    p_merge_info.add_argument("--apply", action="store_true", help="真正写盘（默认 dry-run）")
 
     # 缺对象时（第一个位置词是动作）交互补全对象，再解析
     args = parser.parse_args(_fill_missing_object(sys.argv[1:]))
@@ -204,6 +212,8 @@ def main() -> int:
             return write_authors_data(check_only=True)
         if act == "alias":
             return add_author_alias()
+        if act == "patch":
+            return merge_author_info(Path(args.file), apply_flag)
 
     # 角色维护
     if obj == "role":

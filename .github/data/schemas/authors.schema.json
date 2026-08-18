@@ -31,7 +31,11 @@
           "tags": {
             "type": "array",
             "items": { "type": "string" },
-            "description": "作者标记（recommended/high-output/r18/team）"
+            "description": "作者标记（recommended/high-output/r18）"
+          },
+          "team": {
+            "type": "string",
+            "description": "团队名（手动维护；有值则作者 README 显示 **team**: 且根 README 标 👥）"
           }
         }
       }
