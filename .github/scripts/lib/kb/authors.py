@@ -114,10 +114,21 @@ def build_authors_data() -> dict:
 
 
 def write_authors_data(check_only: bool = False) -> int:
-    """生成/检查 authors.json；check 只比较作者本体（generated 时间戳每次变）。"""
+    """生成/检查 authors.json；check 只比较作者本体（generated 时间戳每次变）。
+
+    重建时保留现有作者的额外键（tags/recommended 等手工标记），避免丢失。
+    """
     path = lib_paths.data_path('author-info', 'authors.json')
     data = build_authors_data()
     authors = data['authors']
+    # 合并保留现有额外键（非 name/readme/platforms 的字段，如 tags/recommended）
+    existing = lib_paths.load_json(path, {})
+    for aid, entry in authors.items():
+        old = (existing.get('authors') or {}).get(aid)
+        if old:
+            for k, v in old.items():
+                if k not in ('name', 'readme', 'platforms') and k not in entry:
+                    entry[k] = v
     platform_count = sum(bool(a['platforms']) for a in authors.values())
     if check_only:
         existing = lib_paths.load_json(path, None) or {}

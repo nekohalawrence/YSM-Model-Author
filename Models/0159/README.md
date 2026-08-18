@@ -3,6 +3,7 @@
 ## Author
 
 - **Name**: #兔兔猫officials | #阴阳兔兔猫offcial
+- **Marks**: 👥 团队
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [兔兔猫officials](https://space.bilibili.com/3546785165347464)
   - **SupportPlatform**: #Afdian

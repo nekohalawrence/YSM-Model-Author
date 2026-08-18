@@ -27,6 +27,11 @@
           "platforms": {
             "type": "object",
             "additionalProperties": { "type": "string" }
+          },
+          "tags": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "作者标记（recommended/high-output/r18/team）"
           }
         }
       }

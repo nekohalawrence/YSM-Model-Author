@@ -3,6 +3,7 @@
 ## Author
 
 - **Name**: #星屑海螺 | #磁小轨制作组（星屑海螺） | #不是海螺
+- **Marks**: 👥 团队
   - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [星屑海螺](https://space.bilibili.com/14975572)
     - **QQ**: 682546342

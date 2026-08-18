@@ -90,7 +90,7 @@
 | 0073 | [#MicroCraft_ \| #MicroCraft](.../../Models/0073) | 3 | [Bilibili](https://space.bilibili.com/701974112) |
 | 0074 | [#Killot \| #Killot945](.../../Models/0074) | 19 | [Bilibili](https://space.bilibili.com/6348825) · [Afdian](https://afdian.com/a/Killot945) |
 | 0075 | [#Wadanohara_Rika](.../../Models/0075) | 1 | [Bilibili](https://space.bilibili.com/397318084) |
-| 0076 | ⭐ [#White_clams白蛤蜊 \| #白蛤蜊 \| #White_Clams白蛤蜊](.../../Models/0076) | 16 | [Bilibili](https://space.bilibili.com/168185637) · [Afdian](https://afdian.com/a/whiteclams) |
+| 0076 | ⭐ [#White_clams白蛤蜊 \| #白蛤蜊 \| #White_Clams白蛤蜊](.../../Models/0076) | 16 | [Bilibili](https://space.bilibili.com/168185637) · [Afdian](https://afdian.com/a/whiteclams) · [bilibili](https://space.bilibili.com/168185637?spm_id_from=333.788.0.0) |
 | 0077 | [#旭门只玩驹 \| #Zeonjin-旭门只玩驹](.../../Models/0077) | 2 | [Bilibili](https://space.bilibili.com/183381720) · [Afdian](https://afdian.com/a/Zeonjin-Kogasa) · QQ: 2479819954 |
 | 0078 | [#LuXi233 \| #小早川希](.../../Models/0078) | 10 | [Bilibili](https://space.bilibili.com/183485702) |
 | 0079 | [#小多利鸭](.../../Models/0079) | 1 | [Bilibili](https://space.bilibili.com/295570429) |

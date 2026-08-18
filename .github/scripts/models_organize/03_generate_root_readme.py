@@ -26,6 +26,9 @@ from lib.kb.category import (  # noqa: E402
     build_category_map, update_readme_works_section,
 )
 from lib.kb.storage import load_kb_json  # noqa: E402
+from lib.author_readme import (  # noqa: E402
+    compute_author_marks, MARK_EMOJI,
+)
 
 WORKSPACE_ROOT = lib_paths.WORKSPACE_ROOT
 MODELS_DIR = WORKSPACE_ROOT / 'Models'
@@ -35,32 +38,6 @@ FOLDER_RE = re.compile(r'^(\d{4})$')
 # ---------------------------------------------------------------------------
 # --author：重建根 README 作者表（原 build_readme_authors.py）
 # ---------------------------------------------------------------------------
-# 作者标记阈值与判定关键词（标记为展示用，可调）
-HIGH_OUTPUT_THRESHOLD = 20          # 模型数 ≥ 此值 → 🔥 高产
-R18_KEYWORDS = ('nsfw', 'r18', 'r-18', '18+')          # 模型文件夹名含 → 🔞 R18
-TEAM_KEYWORDS = ('工作室', '制作组', '官方', 'official', 'team', '团队', '组')  # name 含 → 👥 团队
-
-
-def is_team_author(names: list[str]) -> bool:
-    """团队/工作室作者：任一别名含团队关键词（工作室/制作组/官方/Team 等，忽略大小写）。"""
-    for n in names:
-        nl = n.lower()
-        if any(kw in nl for kw in TEAM_KEYWORDS):
-            return True
-    return False
-
-
-def is_r18_author(author_dir: Path) -> bool:
-    """R18 作者：作者目录下存在模型文件夹名含 nsfw/r18/18+ 关键词（忽略大小写）。
-
-    自动判定仅为启发式（README 声明未给所有 R18 模型标 nsfw），
-    如有遗漏可在 authors.json 加 nsfw: true 人工修正（脚本暂不读该字段）。
-    """
-    pat = re.compile('|'.join(re.escape(k) for k in R18_KEYWORDS), re.IGNORECASE)
-    return any(pat.search(p.name) for p in author_dir.iterdir()
-               if p.is_dir() and not p.name.startswith('.'))
-
-
 def build_platform_cells(platforms: dict) -> str:
     """作者平台列：多平台用 · 连接；http 值渲染为链接，其余渲染为 平台: 值。"""
     cells = []
@@ -96,17 +73,9 @@ def build_readme_rows() -> list[tuple[str, str, int, str, str, str]]:
         model_count = sum(1 for sub in author_dir.iterdir()
                           if sub.is_dir() and not sub.name.startswith('.'))
 
-        # 标记：⭐ 推荐(authors.json) · 🔥 高产(≥阈值) · 🔞 R18 · 👥 团队
-        flags = []
-        if entry.get('recommended'):
-            flags.append('⭐')
-        if model_count >= HIGH_OUTPUT_THRESHOLD:
-            flags.append('🔥')
-        if is_r18_author(author_dir):
-            flags.append('🔞')
-        if is_team_author(names):
-            flags.append('👥')
-        flag_str = ' '.join(flags)
+        # 标记：⭐ 推荐 · 🔥 高产 · 🔞 R18 · 👥 团队（compute_author_marks 统一判定，两处共用）
+        marks = compute_author_marks(entry, model_count, author_dir)
+        flag_str = ' '.join(MARK_EMOJI[m] for m in marks)
 
         rows.append((folder, author_name, model_count, link, flag_str,
                      build_platform_cells(entry.get('platforms') or {})))

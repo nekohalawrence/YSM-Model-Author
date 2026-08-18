@@ -3,6 +3,7 @@
 ## Author
 
 - **Name**: #源石姬变体 | #raw_chicken | #鸡姬
+- **Marks**: 🔞 R18
   - **SocialPlatform**: #Bilibili #Pixiv
     - **Bilibili**: [源石姬变体](https://space.bilibili.com/219540765)
     - **Pixiv**: [源石姬变体](https://www.pixiv.net/users/31376770)

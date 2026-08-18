@@ -81,7 +81,8 @@ def main() -> int:
                             if p.is_dir() and not p.name.startswith('.')
                             and p.name.lower() != 'previews')
             readme = model_dir / 'README.md'
-            readme.write_text(render_author_readme(aid, entry, models), encoding='utf-8')
+            readme.write_text(render_author_readme(aid, entry, models, model_dir),
+                              encoding='utf-8')
             generated += 1
 
     if args.apply:

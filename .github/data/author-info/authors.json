@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-08-15T21:25:22.854393",
+  "generated": "2026-08-18T11:41:30+00:00",
   "authors": {
     "0000": {
       "name": [
@@ -30,8 +30,8 @@
       "readme": "Models/0002/README.md",
       "platforms": {
         "Bilibili": "https://space.bilibili.com/400235810",
-        "Afdian": "https://afdian.com/a/6TGESILA",
-        "QQ": "833187861"
+        "QQ": "833187861",
+        "Afdian": "https://afdian.com/a/6TGESILA"
       }
     },
     "0003": {
@@ -96,8 +96,8 @@
       "readme": "Models/0008/README.md",
       "platforms": {
         "Bilibili": "https://space.bilibili.com/175342453",
-        "Afdian": "https://afdian.com/a/bx233",
-        "QQ": "1067426280"
+        "QQ": "1067426280",
+        "Afdian": "https://afdian.com/a/bx233"
       }
     },
     "0009": {
@@ -127,8 +127,8 @@
       "readme": "Models/0011/README.md",
       "platforms": {
         "Bilibili": "https://space.bilibili.com/3546379886529242",
-        "Afdian": "https://afdian.com/a/114514ctjl",
-        "QQ": "981134198"
+        "QQ": "981134198",
+        "Afdian": "https://afdian.com/a/114514ctjl"
       }
     },
     "0012": {
@@ -197,8 +197,8 @@
       "readme": "Models/0018/README.md",
       "platforms": {
         "Bilibili": "https://space.bilibili.com/178099567",
-        "Afdian": "https://afdian.com/a/jxgf2077",
-        "QQ": "916346960"
+        "QQ": "916346960",
+        "Afdian": "https://afdian.com/a/jxgf2077"
       }
     },
     "0019": {
@@ -220,8 +220,8 @@
       "readme": "Models/0020/README.md",
       "platforms": {
         "Bilibili": "https://space.bilibili.com/29208164",
-        "Afdian": "https://afdian.com/a/15354qq",
-        "QQ": "1535492940"
+        "QQ": "1535492940",
+        "Afdian": "https://afdian.com/a/15354qq"
       }
     },
     "0021": {
@@ -251,8 +251,8 @@
       "readme": "Models/0023/README.md",
       "platforms": {
         "Bilibili": "https://space.bilibili.com/38974741",
-        "Afdian": "https://afdian.com/a/limin",
-        "QQ": "975530811"
+        "QQ": "975530811",
+        "Afdian": "https://afdian.com/a/limin"
       }
     },
     "0024": {
@@ -280,8 +280,8 @@
       "readme": "Models/0026/README.md",
       "platforms": {
         "Bilibili": "https://space.bilibili.com/13550783",
-        "Afdian": "https://afdian.com/a/luoren",
-        "QQ": "528146909"
+        "QQ": "528146909",
+        "Afdian": "https://afdian.com/a/luoren"
       }
     },
     "0027": {
@@ -301,8 +301,8 @@
       "readme": "Models/0028/README.md",
       "platforms": {
         "Bilibili": "https://space.bilibili.com/323374106",
-        "Afdian": "https://afdian.com/a/QwQlalalaKuroNe",
-        "QQ": "1050145781"
+        "QQ": "1050145781",
+        "Afdian": "https://afdian.com/a/QwQlalalaKuroNe"
       }
     },
     "0029": {
@@ -345,8 +345,8 @@
       "readme": "Models/0032/README.md",
       "platforms": {
         "Bilibili": "https://space.bilibili.com/400763031",
-        "Afdian": "https://afdian.com/a/ccnie",
-        "QQ": "1055945725"
+        "QQ": "1055945725",
+        "Afdian": "https://afdian.com/a/ccnie"
       }
     },
     "0033": {
@@ -436,8 +436,8 @@
       "readme": "Models/0041/README.md",
       "platforms": {
         "Bilibili": "https://space.bilibili.com/326133289",
-        "Afdian": "https://afdian.com/a/6Canim",
-        "QQ": "881921312"
+        "QQ": "881921312",
+        "Afdian": "https://afdian.com/a/6Canim"
       }
     },
     "0042": {
@@ -477,13 +477,15 @@
       "name": [
         "#雾雨波波沙"
       ],
-      "recommended": true,
       "readme": "Models/0045/README.md",
       "platforms": {
         "Bilibili": "https://space.bilibili.com/36761228",
-        "pixiv": "https://www.pixiv.net/users/26720481",
+        "Pixiv": "https://www.pixiv.net/users/26720481",
         "QQ": "530621549"
-      }
+      },
+      "tags": [
+        "recommended"
+      ]
     },
     "0046": {
       "name": [
@@ -515,8 +517,8 @@
       "readme": "Models/0048/README.md",
       "platforms": {
         "Bilibili": "https://space.bilibili.com/14975572",
-        "Afdian": "https://afdian.com/a/lucia2048",
-        "QQ": "682546342"
+        "QQ": "682546342",
+        "Afdian": "https://afdian.com/a/lucia2048"
       }
     },
     "0049": {
@@ -638,8 +640,8 @@
       "readme": "Models/0059/README.md",
       "platforms": {
         "Bilibili": "https://space.bilibili.com/647224460",
-        "Afdian": "https://afdian.com/a/wincatpro",
-        "QQ": "1037786416"
+        "QQ": "1037786416",
+        "Afdian": "https://afdian.com/a/wincatpro"
       }
     },
     "0060": {
@@ -658,8 +660,8 @@
       "readme": "Models/0061/README.md",
       "platforms": {
         "Bilibili": "https://space.bilibili.com/349150095",
-        "Afdian": "https://afdian.com/a/3256286845xingmang",
-        "QQ": "218129003"
+        "QQ": "218129003",
+        "Afdian": "https://afdian.com/a/3256286845xingmang"
       }
     },
     "0062": {
@@ -670,8 +672,8 @@
       "readme": "Models/0062/README.md",
       "platforms": {
         "Bilibili": "https://space.bilibili.com/28954757",
-        "Afdian": "https://afdian.com/a/Yunxxi_ugo",
-        "QQ": "924884449"
+        "QQ": "924884449",
+        "Afdian": "https://afdian.com/a/Yunxxi_ugo"
       }
     },
     "0063": {
@@ -700,12 +702,14 @@
       "name": [
         "#烛火的次元宇宙"
       ],
-      "recommended": true,
       "readme": "Models/0065/README.md",
       "platforms": {
         "Bilibili": "https://space.bilibili.com/57715833",
         "Afdian": "https://afdian.com/a/zhuhuo"
-      }
+      },
+      "tags": [
+        "recommended"
+      ]
     },
     "0066": {
       "name": [
@@ -721,23 +725,27 @@
       "name": [
         "#Almeta_owx"
       ],
-      "recommended": true,
       "readme": "Models/0067/README.md",
       "platforms": {
         "Bilibili": "https://space.bilibili.com/4328692",
         "Afdian": "https://afdian.com/a/Almeta"
-      }
+      },
+      "tags": [
+        "recommended"
+      ]
     },
     "0068": {
       "name": [
         "#AnluoSakura"
       ],
-      "recommended": true,
       "readme": "Models/0068/README.md",
       "platforms": {
         "Bilibili": "https://space.bilibili.com/1275761002",
         "Afdian": "https://afdian.com/a/AnluoSakura"
-      }
+      },
+      "tags": [
+        "recommended"
+      ]
     },
     "0069": {
       "name": [
@@ -777,8 +785,8 @@
       "readme": "Models/0072/README.md",
       "platforms": {
         "Bilibili": "https://space.bilibili.com/3546623741266008",
-        "Afdian": "https://afdian.com/a/Eivenly",
-        "QQ": "649086784"
+        "QQ": "649086784",
+        "Afdian": "https://afdian.com/a/Eivenly"
       }
     },
     "0073": {
@@ -817,12 +825,14 @@
         "#白蛤蜊",
         "#White_Clams白蛤蜊"
       ],
-      "recommended": true,
       "readme": "Models/0076/README.md",
       "platforms": {
         "Bilibili": "https://space.bilibili.com/168185637",
         "Afdian": "https://afdian.com/a/whiteclams"
-      }
+      },
+      "tags": [
+        "recommended"
+      ]
     },
     "0077": {
       "name": [
@@ -832,8 +842,8 @@
       "readme": "Models/0077/README.md",
       "platforms": {
         "Bilibili": "https://space.bilibili.com/183381720",
-        "Afdian": "https://afdian.com/a/Zeonjin-Kogasa",
-        "QQ": "2479819954"
+        "QQ": "2479819954",
+        "Afdian": "https://afdian.com/a/Zeonjin-Kogasa"
       }
     },
     "0078": {
@@ -1006,7 +1016,7 @@
       "readme": "Models/0095/README.md",
       "platforms": {
         "Bilibili": "https://space.bilibili.com/219540765",
-        "pixiv": "https://www.pixiv.net/users/31376770",
+        "Pixiv": "https://www.pixiv.net/users/31376770",
         "Afdian": "https://afdian.com/a/rawchicken",
         "Unifans": "https://app.unifans.io/c/rawchickenneg"
       }
@@ -1035,8 +1045,8 @@
       ],
       "readme": "Models/0098/README.md",
       "platforms": {
-        "Afdian": "https://afdian.com/a/coldMOON048",
-        "Bilibili": "https://space.bilibili.com/11382763"
+        "Bilibili": "https://space.bilibili.com/11382763",
+        "Afdian": "https://afdian.com/a/coldMOON048"
       }
     },
     "0099": {
@@ -1076,8 +1086,8 @@
       "platforms": {
         "Bilibili": "https://afdian.com/a/CommonMuJi",
         "WeChat": "MC_CommonMuJi",
-        "Afdian": "https://space.bilibili.com/768300",
-        "QQ": "1776296661"
+        "QQ": "1776296661",
+        "Afdian": "https://space.bilibili.com/768300"
       }
     },
     "0103": {
@@ -1087,8 +1097,8 @@
       "readme": "Models/0103/README.md",
       "platforms": {
         "Bilibili": "https://space.bilibili.com/24513198",
-        "Afdian": "https://afdian.com/a/tc_fox",
-        "QQ": "1063585053"
+        "QQ": "1063585053",
+        "Afdian": "https://afdian.com/a/tc_fox"
       }
     },
     "0104": {
@@ -1122,8 +1132,8 @@
       "readme": "Models/0107/README.md",
       "platforms": {
         "Bilibili": "https://space.bilibili.com/364412316/",
-        "Afdian": "https://ifdian.net/a/redder_p",
-        "QQ": "3249851858"
+        "QQ": "3249851858",
+        "Afdian": "https://ifdian.net/a/redder_p"
       }
     },
     "0108": {
@@ -1141,6 +1151,13 @@
         "#水神"
       ],
       "readme": "Models/0109/README.md",
+      "platforms": {}
+    },
+    "0110": {
+      "name": [
+        "雅音宫羽"
+      ],
+      "readme": "Models/0110/README.md",
       "platforms": {}
     },
     "0111": {
@@ -1164,8 +1181,8 @@
       "readme": "Models/0112/README.md",
       "platforms": {
         "Bilibili": "https://space.bilibili.com/385797854",
-        "Afdian": "https://afdian.com/a/mcz_8888",
-        "QQ": "167941105 已满"
+        "QQ": "167941105 已满",
+        "Afdian": "https://afdian.com/a/mcz_8888"
       }
     },
     "0113": {
@@ -1186,8 +1203,8 @@
       ],
       "readme": "Models/0114/README.md",
       "platforms": {
-        "E-mail": "3313645023@qq.com",
-        "QQ": "3313645023"
+        "QQ": "3313645023",
+        "E-mail": "3313645023@qq.com"
       }
     },
     "0115": {
@@ -1205,8 +1222,8 @@
       "readme": "Models/0116/README.md",
       "platforms": {
         "Bilibili": "https://space.bilibili.com/35073555",
-        "Afdian": "https://afdian.com/a/114514yire",
-        "QQ": "769939358"
+        "QQ": "769939358",
+        "Afdian": "https://afdian.com/a/114514yire"
       }
     },
     "0117": {
@@ -1220,6 +1237,13 @@
         "Bilibili": "https://space.bilibili.com/450162369",
         "Afdian": "https://afdian.com/a/yr9964332"
       }
+    },
+    "0118": {
+      "name": [
+        "Mr黄金君"
+      ],
+      "readme": "Models/0118/README.md",
+      "platforms": {}
     },
     "0119": {
       "name": [
@@ -1375,8 +1399,8 @@
       "readme": "Models/0135/README.md",
       "platforms": {
         "Bilibili": "https://space.bilibili.com/34068391",
-        "E-mail": "1477827530@qq.com",
-        "QQ": "1477827530"
+        "QQ": "1477827530",
+        "E-mail": "1477827530@qq.com"
       }
     },
     "0136": {
@@ -1467,8 +1491,8 @@
       ],
       "readme": "Models/0144/README.md",
       "platforms": {
-        "Afdian": "https://afdian.com/a/MitsukuDayo",
-        "QQ": "2780077625"
+        "QQ": "2780077625",
+        "Afdian": "https://afdian.com/a/MitsukuDayo"
       }
     },
     "0145": {
@@ -1577,6 +1601,13 @@
         "Afdian": "https://afdian.com/a/YWDM333"
       }
     },
+    "0156": {
+      "name": [
+        "赤恒RedConstant"
+      ],
+      "readme": "Models/0156/README.md",
+      "platforms": {}
+    },
     "0157": {
       "name": [
         "#Deovolente",
@@ -1660,8 +1691,8 @@
       "readme": "Models/0164/README.md",
       "platforms": {
         "Bilibili": "https://space.bilibili.com/1610653319",
-        "Afdian": "https://afdian.com/a/123456xianwan",
-        "QQ": "324563469"
+        "QQ": "324563469",
+        "Afdian": "https://afdian.com/a/123456xianwan"
       }
     },
     "0165": {
@@ -1769,8 +1800,8 @@
       "platforms": {
         "YouTube": "@rintaroA",
         "Twitter": "Torontopizza",
-        "Discord": "Bubuker",
-        "ko-fi": "rintaroa"
+        "ko-fi": "rintaroa",
+        "Discord": "Bubuker"
       }
     },
     "0177": {
@@ -1832,8 +1863,8 @@
       "readme": "Models/0183/README.md",
       "platforms": {
         "Bilibili": "https://space.bilibili.com/12133120",
-        "Afdian": "https://afdian.com/a/Aaaaaaafeng",
-        "QQ": "220993928"
+        "QQ": "220993928",
+        "Afdian": "https://afdian.com/a/Aaaaaaafeng"
       }
     },
     "0184": {
@@ -1907,27 +1938,6 @@
         "#咖喱饭饭好吃"
       ],
       "readme": "Models/0194/README.md",
-      "platforms": {}
-    },
-    "0110": {
-      "name": [
-        "雅音宫羽"
-      ],
-      "readme": "Models/0110/README.md",
-      "platforms": {}
-    },
-    "0118": {
-      "name": [
-        "Mr黄金君"
-      ],
-      "readme": "Models/0118/README.md",
-      "platforms": {}
-    },
-    "0156": {
-      "name": [
-        "赤恒RedConstant"
-      ],
-      "readme": "Models/0156/README.md",
       "platforms": {}
     }
   }

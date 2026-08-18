@@ -12,12 +12,65 @@
 from __future__ import annotations
 
 import re
+from pathlib import Path
 
 from lib import paths as lib_paths
 from lib import ysm as lib_ysm
 
 # 平台分类输出顺序（与模型 README 的 author_block 模板一致）
 PLATFORM_ORDER = ['SocialPlatform', 'SupportPlatform', 'OtherPlatform', 'GroupChat']
+
+# ---- 作者标记（根 README 与作者 README 共用，tags 键驱动） ----
+HIGH_OUTPUT_THRESHOLD = 20          # 模型数 ≥ 此值 → 🔥 高产
+R18_KEYWORDS = ('nsfw', 'r18', 'r-18', '18+')   # 模型文件夹名含 → 🔞 R18
+TEAM_KEYWORDS = ('工作室', '制作组', '官方', 'official', 'team', '团队', '组')
+# tag 键 → 展示（emoji / 中文名）
+MARK_EMOJI = {'recommended': '⭐', 'high-output': '🔥', 'r18': '🔞', 'team': '👥'}
+MARK_LABEL = {'recommended': '推荐', 'high-output': '高产', 'r18': 'R18', 'team': '团队'}
+
+
+def is_team_author(names: list[str]) -> bool:
+    """团队/工作室作者：任一别名含团队关键词（忽略大小写）。"""
+    for n in names:
+        nl = n.lower()
+        if any(kw in nl for kw in TEAM_KEYWORDS):
+            return True
+    return False
+
+
+def is_r18_author(author_dir: Path | None) -> bool:
+    """R18 作者：作者目录下存在模型文件夹名含 nsfw/r18/18+（忽略大小写）。
+
+    author_dir 为空（作者 README 渲染无目录时）返回 False，仅依赖 tags 人工标记。
+    """
+    if author_dir is None or not author_dir.is_dir():
+        return False
+    pat = re.compile('|'.join(re.escape(k) for k in R18_KEYWORDS), re.IGNORECASE)
+    return any(pat.search(p.name) for p in author_dir.iterdir()
+               if p.is_dir() and not p.name.startswith('.'))
+
+
+def compute_author_marks(entry: dict, model_count: int,
+                         author_dir: Path | None = None) -> list[str]:
+    """计算作者标记（tag 键名列表：recommended/high-output/r18/team）。
+
+    手工 tags（authors.json）+ 自动判定，根 README 与作者 README 共用：
+      recommended: tags 含 或 旧 recommended 字段（兼容迁移前）
+      high-output: model_count ≥ 阈值（自动）
+      r18: tags 含 或 目录下模型文件夹名含 nsfw/r18（人工+自动并集）
+      team: name 含团队关键词（自动）
+    """
+    tags = {str(t).lower() for t in (entry.get('tags') or []) if isinstance(t, str)}
+    marks: list[str] = []
+    if 'recommended' in tags or entry.get('recommended'):
+        marks.append('recommended')
+    if model_count >= HIGH_OUTPUT_THRESHOLD:
+        marks.append('high-output')
+    if 'r18' in tags or is_r18_author(author_dir):
+        marks.append('r18')
+    if is_team_author(entry.get('name') or []):
+        marks.append('team')
+    return marks
 
 
 def format_author_name(authors_str: str) -> str:
@@ -134,11 +187,13 @@ def render_models_section(models: list[str], work_names: dict[str, str],
 
 
 def render_author_readme(author_id: str, entry: dict,
-                         models: list[str] | None = None) -> str:
-    """按 authors.json 的 entry 生成作者 README（Name + 平台段 + 可选 Models 段）。
+                         models: list[str] | None = None,
+                         author_dir: Path | None = None) -> str:
+    """按 authors.json 的 entry 生成作者 README（Name + Marks + 平台段 + 可选 Models 段）。
 
-    entry: {'name': [...], 'platforms': {平台键: 值}}（authors.json 作者条目）。
+    entry: {'name': [...], 'platforms': {平台键: 值}, 'tags': [...]}（authors.json 作者条目）。
     models: 模型文件夹名列表（非空时渲染 ## Models 段，按作品分组折叠）。
+    author_dir: 作者目录（R18 自动判定用，可为空）。
     """
     names = entry.get('name') or []
     if isinstance(names, str):
@@ -148,6 +203,11 @@ def render_author_readme(author_id: str, entry: dict,
     label = names[0].lstrip('#＃') if names else name_str
 
     lines = [f'# {author_id}', '', '## Author', '', f'- **Name**: {name_str}']
+    # 作者标记（⭐ 推荐 · 🔥 高产 · 🔞 R18 · 👥 团队），与根 README 同判定
+    marks = compute_author_marks(entry, len(models) if models else 0, author_dir)
+    if marks:
+        mark_str = ' · '.join(f'{MARK_EMOJI[m]} {MARK_LABEL[m]}' for m in marks)
+        lines.append(f'- **Marks**: {mark_str}')
     classified = _classify_platforms(entry.get('platforms') or {},
                                      lib_ysm.load_platform_map())
     for field in PLATFORM_ORDER:

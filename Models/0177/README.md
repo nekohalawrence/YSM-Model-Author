@@ -3,6 +3,7 @@
 ## Author
 
 - **Name**: #永夜极星_official | #永夜极星
+- **Marks**: 👥 团队
   - **SocialPlatform**: #Bilibili #QQ
     - **Bilibili**: [永夜极星_official](https://space.bilibili.com/504612792)
     - **QQ**: 1909319978
