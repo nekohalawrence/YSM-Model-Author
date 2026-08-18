@@ -17,7 +17,7 @@
 </details>
 
 <details>
-<summary><b>VOCALOID | 博歌乐（1）</b></summary>
+<summary><b>VOCALOID | 虚拟歌姬（1）</b></summary>
 
 - [VOC_洛天依_世末系列_Luotianyi](VOC_洛天依_世末系列_Luotianyi)
 

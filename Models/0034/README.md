@@ -17,7 +17,7 @@
 </details>
 
 <details>
-<summary><b>VOCALOID | 博歌乐（2）</b></summary>
+<summary><b>VOCALOID | 虚拟歌姬（2）</b></summary>
 
 - [VOC_初音_Chuyin](VOC_初音_Chuyin)
 - [VOC_初音未来_Hatsune-Miku](VOC_初音未来_Hatsune-Miku)

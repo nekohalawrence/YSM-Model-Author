@@ -49,7 +49,7 @@
 </details>
 
 <details>
-<summary><b>VOCALOID | 博歌乐（1）</b></summary>
+<summary><b>VOCALOID | 虚拟歌姬（1）</b></summary>
 
 - [VOC_Miku(McDonald)-Nkrmc](VOC_Miku(McDonald)-Nkrmc)
 

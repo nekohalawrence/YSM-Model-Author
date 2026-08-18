@@ -101,7 +101,7 @@
 </details>
 
 <details>
-<summary><b>VOCALOID | 博歌乐（2）</b></summary>
+<summary><b>VOCALOID | 虚拟歌姬（2）</b></summary>
 
 - [VOC_初音未来_Hatsune-Miku_LB](VOC_初音未来_Hatsune-Miku_LB)
 - [VOC_洛天依_公式服_LuoTianYi_LB](VOC_洛天依_公式服_LuoTianYi_LB)

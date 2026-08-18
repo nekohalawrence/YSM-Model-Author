@@ -9,7 +9,7 @@
 ## Models
 
 <details>
-<summary><b>VOCALOID | 博歌乐（1）</b></summary>
+<summary><b>VOCALOID | 虚拟歌姬（1）</b></summary>
 
 - [VOC_初音未来_Hatsune-Miku](VOC_初音未来_Hatsune-Miku)
 
