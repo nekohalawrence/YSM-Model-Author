@@ -3,7 +3,7 @@
 ## Author
 
 - **Name**: #Dreamer | #普通的木屐
-- **tags**: 高产/High-Output
+- **tags**: #High-Output | #高产
 - **SocialPlatform**: #Bilibili #WeChat #QQ
   - **Bilibili**: [Dreamer](https://afdian.com/a/CommonMuJi)
   - **WeChat**: MC_CommonMuJi

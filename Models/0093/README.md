@@ -3,7 +3,7 @@
 ## Author
 
 - **Name**: #苏依凛 | #炽湮
-- **tags**: 高产/High-Output · 18禁/R18
+- **tags**: #High-Output #NSFW | #高产 #NSFW
 - **SocialPlatform**: #Bilibili
   - **Bilibili**: [苏依凛](https://space.bilibili.com/76987486)
 - **SupportPlatform**: #Afdian

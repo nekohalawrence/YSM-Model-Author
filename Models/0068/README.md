@@ -3,7 +3,7 @@
 ## Author
 
 - **Name**: #AnluoSakura
-- **tags**: 推荐/Recommended
+- **tags**: #Recommended | #推荐
 - **SocialPlatform**: #Bilibili
   - **Bilibili**: [AnluoSakura](https://space.bilibili.com/1275761002)
 - **SupportPlatform**: #Afdian

@@ -3,7 +3,7 @@
 ## Author
 
 - **Name**: #Almeta_owx
-- **tags**: 推荐/Recommended
+- **tags**: #Recommended | #推荐
 - **SocialPlatform**: #Bilibili
   - **Bilibili**: [Almeta_owx](https://space.bilibili.com/4328692)
 - **SupportPlatform**: #Afdian

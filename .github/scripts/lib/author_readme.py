@@ -204,18 +204,22 @@ def render_author_readme(author_id: str, entry: dict,
     team = str(entry.get('team') or '').strip()
     if team:
         lines.append(f'- **team**: {team}')
-    # 标签（词表驱动中英成对；人工 tags + 03 追加的自动标签；team 由独立行展示）
+    # 标签（词表驱动；英文一组 | 中文一组，先英后中；team 由独立行展示）
     marks = [m for m in dict.fromkeys(compute_author_marks(entry) + (auto_marks or []))
              if m != 'team']
     if marks:
         labels = load_tag_labels()
-        tag_strs = []
+        en_parts: list[str] = []
+        zh_parts: list[str] = []
         for m in sorted(marks, key=tag_order_key):
-            if m in labels:
-                tag_strs.append(format_tag(labels[m]))
-            else:
-                tag_strs.append(m)   # 词表未登记的新标签：显示键名兜底
-        lines.append(f'- **tags**: {" · ".join(tag_strs)}')
+            meta = labels.get(m) or {}
+            en = str(meta.get('en') or '').strip()
+            zh = str(meta.get('zh') or '').strip()
+            # 先英后中分组；自动补全缺失翻译（缺英文用中文/键名，缺中文用英文/键名）
+            en_parts.append('#' + (en or zh or m))
+            zh_parts.append('#' + (zh or en or m))
+        tag_str = ' '.join(en_parts) + (' | ' + ' '.join(zh_parts) if zh_parts else '')
+        lines.append(f'- **tags**: {tag_str}')
     classified = _classify_platforms(entry.get('platforms') or {},
                                      lib_ysm.load_platform_map())
     for field in PLATFORM_ORDER:

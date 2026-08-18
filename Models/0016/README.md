@@ -3,7 +3,7 @@
 ## Author
 
 - **Name**: #祸御神
-- **tags**: 高产/High-Output
+- **tags**: #High-Output | #高产
 - **SocialPlatform**: #Bilibili
   - **Bilibili**: [祸御神](https://space.bilibili.com/164557734)
 - **SupportPlatform**: #Afdian

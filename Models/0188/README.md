@@ -3,7 +3,7 @@
 ## Author
 
 - **Name**: #鸢尾
-- **tags**: 18禁/R18
+- **tags**: #NSFW | #NSFW
 
 ## Models
 

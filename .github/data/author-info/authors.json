@@ -65,7 +65,10 @@
         "Twitter": "https://x.com/wOelxdwlnwq5Zl0",
         "Afdian": "https://afdian.com/a/omomomomomomo",
         "Patreon": "https://www.patreon.com/c/omo595/posts"
-      }
+      },
+      "tags": [
+        "high-output"
+      ]
     },
     "0006": {
       "name": [
@@ -169,7 +172,11 @@
         "Bilibili": "https://space.bilibili.com/329066935",
         "YouTube": "https://www.youtube.com/@%E7%83%88%E9%B8%9F%E6%AF%94%E7%99%BE",
         "Afdian": "https://afdian.com/a/Aigoblin"
-      }
+      },
+      "tags": [
+        "high-output",
+        "r18"
+      ]
     },
     "0016": {
       "name": [
@@ -179,7 +186,10 @@
       "platforms": {
         "Bilibili": "https://space.bilibili.com/164557734",
         "Afdian": "https://afdian.com/a/YS444"
-      }
+      },
+      "tags": [
+        "high-output"
+      ]
     },
     "0017": {
       "name": [
@@ -324,7 +334,10 @@
         "Bilibili": "https://space.bilibili.com/167202500",
         "YouTube": "https://space.bilibili.com/167202500",
         "Afdian": "https://afdian.com/a/enenowo"
-      }
+      },
+      "tags": [
+        "high-output"
+      ]
     },
     "0031": {
       "name": [
@@ -460,7 +473,10 @@
       "platforms": {
         "Bilibili": "https://space.bilibili.com/393110",
         "Afdian": "https://afdian.com/a/AllFreeze"
-      }
+      },
+      "tags": [
+        "high-output"
+      ]
     },
     "0044": {
       "name": [
@@ -484,7 +500,8 @@
         "QQ": "530621549"
       },
       "tags": [
-        "recommended"
+        "recommended",
+        "high-output"
       ]
     },
     "0046": {
@@ -551,7 +568,10 @@
       "platforms": {
         "Bilibili": "https://space.bilibili.com/348421936/upload/video",
         "Afdian": "https://afdian.com/a/dyy114514"
-      }
+      },
+      "tags": [
+        "high-output"
+      ]
     },
     "0052": {
       "name": [
@@ -561,7 +581,10 @@
       "platforms": {
         "Bilibili": "https://space.bilibili.com/1268865161",
         "Afdian": "https://afdian.com/a/mj204"
-      }
+      },
+      "tags": [
+        "high-output"
+      ]
     },
     "0053": {
       "name": [
@@ -634,7 +657,10 @@
       "platforms": {
         "Bilibili": "https://space.bilibili.com/107318873",
         "QQ": "1320812591"
-      }
+      },
+      "tags": [
+        "high-output"
+      ]
     },
     "0059": {
       "name": [
@@ -699,7 +725,10 @@
       "platforms": {
         "Bilibili": "https://space.bilibili.com/1494015242",
         "QQ": "619035464"
-      }
+      },
+      "tags": [
+        "high-output"
+      ]
     },
     "0065": {
       "name": [
@@ -997,7 +1026,11 @@
       "platforms": {
         "Bilibili": "https://space.bilibili.com/76987486",
         "Afdian": "https://afdian.com/a/supermonsterking"
-      }
+      },
+      "tags": [
+        "high-output",
+        "r18"
+      ]
     },
     "0094": {
       "name": [
@@ -1022,7 +1055,10 @@
         "Pixiv": "https://www.pixiv.net/users/31376770",
         "Afdian": "https://afdian.com/a/rawchicken",
         "Unifans": "https://app.unifans.io/c/rawchickenneg"
-      }
+      },
+      "tags": [
+        "r18"
+      ]
     },
     "0096": {
       "name": [
@@ -1091,7 +1127,10 @@
         "WeChat": "MC_CommonMuJi",
         "QQ": "1776296661",
         "Afdian": "https://space.bilibili.com/768300"
-      }
+      },
+      "tags": [
+        "high-output"
+      ]
     },
     "0103": {
       "name": [
@@ -1102,7 +1141,10 @@
         "Bilibili": "https://space.bilibili.com/24513198",
         "QQ": "1063585053",
         "Afdian": "https://afdian.com/a/tc_fox"
-      }
+      },
+      "tags": [
+        "high-output"
+      ]
     },
     "0104": {
       "name": [
@@ -1186,7 +1228,10 @@
         "Bilibili": "https://space.bilibili.com/385797854",
         "QQ": "167941105 已满",
         "Afdian": "https://afdian.com/a/mcz_8888"
-      }
+      },
+      "tags": [
+        "high-output"
+      ]
     },
     "0113": {
       "name": [
@@ -1239,7 +1284,10 @@
       "platforms": {
         "Bilibili": "https://space.bilibili.com/450162369",
         "Afdian": "https://afdian.com/a/yr9964332"
-      }
+      },
+      "tags": [
+        "high-output"
+      ]
     },
     "0118": {
       "name": [
@@ -1350,7 +1398,10 @@
       "platforms": {
         "Bilibili": "https://space.bilibili.com/157282636",
         "QQ": "1087347018"
-      }
+      },
+      "tags": [
+        "high-output"
+      ]
     },
     "0130": {
       "name": [
@@ -1903,7 +1954,10 @@
         "#鸢尾"
       ],
       "readme": "Models/0188/README.md",
-      "platforms": {}
+      "platforms": {},
+      "tags": [
+        "r18"
+      ]
     },
     "0189": {
       "name": [

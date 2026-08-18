@@ -3,7 +3,7 @@
 ## Author
 
 - **Name**: #White_clams白蛤蜊 | #白蛤蜊 | #White_Clams白蛤蜊
-- **tags**: 推荐/Recommended
+- **tags**: #Recommended | #推荐
 - **SocialPlatform**: #Bilibili
   - **Bilibili**: [White_clams白蛤蜊](https://space.bilibili.com/168185637)
 - **SupportPlatform**: #Afdian

@@ -3,7 +3,7 @@
 ## Author
 
 - **Name**: #动员鼬
-- **tags**: 高产/High-Output
+- **tags**: #High-Output | #高产
 - **SocialPlatform**: #Bilibili
   - **Bilibili**: [动员鼬](https://space.bilibili.com/348421936/upload/video)
 - **SupportPlatform**: #Afdian

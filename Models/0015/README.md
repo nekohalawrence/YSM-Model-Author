@@ -3,7 +3,7 @@
 ## Author
 
 - **Name**: #寒叔hs | #烈鸟比百 | #Frosty_Uncle
-- **tags**: 高产/High-Output · 18禁/R18
+- **tags**: #High-Output #NSFW | #高产 #NSFW
 - **SocialPlatform**: #Bilibili #YouTube
   - **Bilibili**: [寒叔hs](https://space.bilibili.com/329066935)
   - **YouTube**: [寒叔hs](https://www.youtube.com/@%E7%83%88%E9%B8%9F%E6%AF%94%E7%99%BE)

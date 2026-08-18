@@ -3,7 +3,7 @@
 ## Author
 
 - **Name**: #伊洛是哥斯拉嘛 | #伊洛是哥斯拉吗 | #哥斯拉 | #落阳不养羊 | #黎家诚 | #BradKidd
-- **tags**: 高产/High-Output
+- **tags**: #High-Output | #高产
 - **SocialPlatform**: #Bilibili
   - **Bilibili**: [伊洛是哥斯拉嘛](https://space.bilibili.com/17798027)
 - **SupportPlatform**: #Afdian
