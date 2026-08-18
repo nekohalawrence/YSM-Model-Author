@@ -23,7 +23,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from lib import paths as lib_paths  # noqa: E402
 from lib import readme as lib_readme  # noqa: E402
 from lib.kb.category import (  # noqa: E402
-    build_category_map, update_readme_works_section,
+    build_category_map, count_models_by_work, update_readme_works_section,
 )
 from lib.kb.storage import load_kb_json  # noqa: E402
 from lib.author_readme import (  # noqa: E402
@@ -87,21 +87,21 @@ def build_readme_rows() -> list[tuple[str, str, int, str, str, str]]:
 def build_readme_table(rows: list[tuple[str, str, int, str, str, str]], is_en: bool) -> str:
     """渲染作者表（中/英表头；含标记 + 平台列；空表给占位行）。表上方附图例。"""
     if is_en:
-        header, empty_row = ('| ID | Author Name | Total Models | Platforms |',
-                             '| - | None | 0 |  |')
+        header, empty_row = ('| ID | Author Name | Platforms | Total Models |',
+                             '| - | None |  | 0 |')
         legend = '> Marks: ⭐ Recommended · 🔥 High-output · 🔞 R18 · 👥 Team (from authors.json tags)'
     else:
-        header, empty_row = ('| 编号 | 作者名称 | 收录数量 | 平台 |',
-                             '| - | 暂无 | 0 |  |')
+        header, empty_row = ('| 编号 | 作者名称 | 平台 | 收录数量 |',
+                             '| - | 暂无 |  | 0 |')
         legend = '> 标记：⭐ 推荐 · 🔥 高产 · 🔞 R18 · 👥 团队（authors.json tags 驱动）'
-    separator = '| --- | --- | ---: | --- |'
+    separator = '| --- | --- | --- | ---: |'
 
     lines = [legend, '', header, separator]
     for folder, author_name, model_count, link, flags, platforms in rows:
         safe = author_name.replace('|', '\\|')
         label = 'None' if (is_en and safe == '暂无') else safe
         name_cell = f'{flags} [{label}]({link})' if flags else f'[{label}]({link})'
-        lines.append(f'| {folder} | {name_cell} | {model_count} | {platforms} |')
+        lines.append(f'| {folder} | {name_cell} | {platforms} | {model_count} |')
     return '\n'.join(lines) if rows else f'{header}\n{separator}\n{empty_row}'
 
 
@@ -150,12 +150,16 @@ def build_category_map_cmd() -> int:
     """
     data = load_kb_json(lib_paths.MODEL_INFO_DIR)
     cat_map = build_category_map(data)
+    model_counts = count_models_by_work(
+        [WORKSPACE_ROOT / 'Models', WORKSPACE_ROOT / 'Other-YSM-Models'])
     un = [k for k, v in (data.get("works") or {}).items()
           if not (isinstance(v, dict) and v.get("category"))]
     total = sum(len(v) for v in cat_map.values())
-    print(f"分类（从 character/*.json 现算）: {total} 个作品分布在 {len(cat_map)} 个大类")
+    total_models = sum(model_counts.values())
+    print(f"分类（从 character/*.json 现算）: {total} 个作品、{total_models} 个模型"
+          f"分布在 {len(cat_map)} 个大类")
     changed, action = update_readme_works_section(
-        WORKSPACE_ROOT / "README.md", data)
+        WORKSPACE_ROOT / "README.md", data, model_counts)
     if changed:
         print(f"根 README 模型分类区块已{action}")
     if un:

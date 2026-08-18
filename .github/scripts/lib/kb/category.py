@@ -68,56 +68,90 @@ def _work_names(v, lang: str) -> list[str]:
     return v if isinstance(v, list) else ([v] if v else [])
 
 
-def _render_work_row(key: str, v) -> str:
-    en = ", ".join(_work_names(v, "en"))
-    cn = ", ".join(_work_names(v, "zh"))
-    ja = ", ".join(_work_names(v, "ja"))
-    row = en
-    if cn:
-        row += " | " + cn
-    if ja:
-        row += " | " + ja
-    return row
+def render_readme_works_section(data: dict,
+                                model_count_map: dict | None = None) -> str:
+    """渲染根 README 的"模型分类"区块（含 <details>，不含包裹 marker）。
 
-
-def render_readme_works_section(data: dict) -> str:
-    """渲染根 README 的"模型分类"区块（含 <details>，不含包裹 marker）。"""
+    方案 B：每个大类一个表格（作品键 | 英文名 | 中文名 | 模型数），大类标题带
+    作品/模型计数；区块开头加总览统计。model_count_map 为 {作品键小写: 模型数}
+    （由 count_models_by_work 扫描模型目录得出），缺省时模型数列显示 0。
+    """
     cat_map = build_category_map(data)
     works = data.get("works") or {}
+    mcounts = model_count_map or {}
+    total_models = sum(mcounts.values())
+    total_works = len(works)
     lines = [
         "<details>", "",
         "<summary>模型分类</summary>", "",
-        "> 本区块由 `.github/data/model-info/character/*.json` 自动生成"
-        "（`03_generate_root_readme.py --build-category-map`），手改请编辑对应作品文件。", "",
-        "> 文件夹命名规则", "",
-        "```",
+        f"> 共 {total_works} 个作品、{total_models} 个模型"
+        f"（由 `.github/data/model-info/character/*.json` 自动生成，手改请编辑对应作品文件）",
+        "", "> 文件夹命名规则", "", "```",
         "<英文作品名称>_<中文角色名>-[中文皮肤]_<英文角色名>-[英文皮肤]_<个人评定等级>",
-        "",
-        "个人评定等级: LA, LB, LC, LD",
-        "```", "",
+        "", "个人评定等级: LA, LB, LC, LD", "```", "",
     ]
     for cat in CATEGORIES:
         keys = cat_map.get(cat) or []
         if not keys:
             continue
-        lines.append(CATEGORY_TITLES[cat])
+        cat_models = sum(mcounts.get(k.lower(), 0) for k in keys)
+        lines.append(f"{CATEGORY_TITLES[cat]}（{len(keys)} 作品 · {cat_models} 模型）")
         lines.append("")
+        lines.append("| 作品键 | 英文名 | 中文名 | 模型数 |")
+        lines.append("| --- | --- | --- | ---: |")
         for k in sorted(keys):
-            row = _render_work_row(k, works.get(k))
-            if row:
-                lines.append("- " + row)
+            v = works.get(k) or {}
+            # 英文名只取规范名（首项）——别名多为其他缩写，与作品键重复
+            en_names = _work_names(v, "en")
+            en = en_names[0] if en_names else ""
+            cn = ", ".join(_work_names(v, "zh"))
+            lines.append(f"| {k} | {en} | {cn} | {mcounts.get(k.lower(), 0)} |")
         lines.append("")
     lines.append("</details>")
     return "\n".join(lines).rstrip() + "\n"
 
 
-def update_readme_works_section(readme_path: Path, data: dict) -> tuple[bool, str]:
+def _iter_model_dirs(d: Path):
+    """递归收集模型目录：目录含 .ysm 文件或 previews/ 即视为模型目录（同模型 README 规则）。"""
+    try:
+        entries = list(d.iterdir())
+    except OSError:
+        return
+    has_ysm = any(e.is_file() and e.suffix.lower() == ".ysm" for e in entries)
+    has_previews = any(e.is_dir() and e.name == "previews" for e in entries)
+    if has_ysm or has_previews:
+        yield d
+        return
+    for e in entries:
+        if e.is_dir() and e.name != "previews" and not e.name.startswith("."):
+            yield from _iter_model_dirs(e)
+
+
+def count_models_by_work(model_roots: list[Path]) -> dict[str, int]:
+    """扫描模型目录，按文件夹名前缀（作品键，小写）统计模型数。
+
+    前缀取模型文件夹名 `_` 前段（如 AK_嵯峨 -> 'ak'）；与模型 README 收集同规则
+    （含 .ysm 或 previews/ 的目录视为模型目录，递归）。用于作品说明表格的模型数列。
+    """
+    counts: dict[str, int] = {}
+    for root in model_roots:
+        if not root.is_dir():
+            continue
+        for md in _iter_model_dirs(root):
+            prefix = md.name.split("_")[0].strip().lower()
+            if prefix:
+                counts[prefix] = counts.get(prefix, 0) + 1
+    return counts
+
+
+def update_readme_works_section(readme_path: Path, data: dict,
+                                model_count_map: dict | None = None) -> tuple[bool, str]:
     """把渲染好的"模型分类"区块写入根 README。返回 (是否变更, 动作)。
 
     优先替换已有 marker 包裹的区块；无 marker 时替换旧版手写的
     `<details><summary>模型分类</summary>...</details>` 整块；均无则追加到末尾。
     """
-    section = render_readme_works_section(data)
+    section = render_readme_works_section(data, model_count_map)
     full = f"{README_START_MARKER}\n{section}{README_END_MARKER}"
     content = (readme_path.read_text(encoding="utf-8", errors="ignore")
                if readme_path.exists() else "")
