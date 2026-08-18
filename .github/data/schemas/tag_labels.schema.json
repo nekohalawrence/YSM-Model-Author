@@ -16,6 +16,10 @@
       "emoji": {
         "type": "string",
         "description": "根 README 标记列的 emoji（空串=不在根 README 表格显示）"
+      },
+      "order": {
+        "type": "integer",
+        "description": "显示顺序（小在前；图例/作者 README 标签按此排序）"
       }
     }
   }

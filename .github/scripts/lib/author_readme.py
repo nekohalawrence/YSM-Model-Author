@@ -21,8 +21,13 @@ from lib import ysm as lib_ysm
 PLATFORM_ORDER = ['SocialPlatform', 'SupportPlatform', 'OtherPlatform', 'GroupChat']
 
 # ---- 作者标签（词表 tag_labels.json 驱动；根 README 与作者 README 共用） ----
-# 标签显示顺序（词表键顺序；未收录的新标签排最后）
-TAG_ORDER = ['recommended', 'high-output', 'high-quality', 'r18', 'nsfw', 'team']
+
+
+def tag_order_key(k: str) -> tuple:
+    """标签排序键：按词表 order（小在前）；未收录/无 order 的新标签排最后。"""
+    meta = load_tag_labels().get(k) or {}
+    order = meta.get('order')
+    return (0, order) if isinstance(order, int) else (1, 0)
 
 
 _TAG_LABELS_CACHE: dict | None = None
@@ -205,8 +210,7 @@ def render_author_readme(author_id: str, entry: dict,
     if marks:
         labels = load_tag_labels()
         tag_strs = []
-        for m in sorted(marks, key=lambda k: TAG_ORDER.index(k) if k in TAG_ORDER
-                        else len(TAG_ORDER)):
+        for m in sorted(marks, key=tag_order_key):
             if m in labels:
                 tag_strs.append(format_tag(labels[m]))
             else:

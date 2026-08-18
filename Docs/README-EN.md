@@ -8,7 +8,7 @@
 <summary>Author Index</summary>
 
 <!-- AUTHORS_LIST_START -->
-> Marks: ⭐ Recommended · 🔥 High-output · 🔞 R18 · 👥 Team (from authors.json tags)
+> Marks: ⭐ Recommended · 🔥 High-Output · 🔞 R18 · 👥 Team
 
 | ID | Author Name | Platforms | Total Models |
 | --- | --- | --- | ---: |

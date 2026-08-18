@@ -28,7 +28,7 @@ from lib.kb.category import (  # noqa: E402
 )
 from lib.kb.storage import load_kb_json  # noqa: E402
 from lib.author_readme import (  # noqa: E402
-    compute_author_marks, load_tag_labels,
+    compute_author_marks, load_tag_labels, tag_order_key,
 )
 
 WORKSPACE_ROOT = lib_paths.WORKSPACE_ROOT
@@ -85,16 +85,30 @@ def build_readme_rows() -> list[tuple[str, str, int, str, str, str]]:
     return rows
 
 
+def build_legend(is_en: bool) -> str:
+    """作者表图例：从词表遍历「emoji + 名称」按 order 生成（仅含 emoji 非空标签）。"""
+    labels = load_tag_labels()
+    parts = []
+    for k in sorted(labels, key=tag_order_key):
+        meta = labels[k]
+        emoji = str(meta.get('emoji') or '')
+        if not emoji:
+            continue
+        name = str(meta.get('en' if is_en else 'zh') or '')
+        if name:
+            parts.append(f'{emoji} {name}')
+    return ('> Marks: ' if is_en else '> 标记：') + ' · '.join(parts)
+
+
 def build_readme_table(rows: list[tuple[str, str, int, str, str, str]], is_en: bool) -> str:
     """渲染作者表（中/英表头；含标记 + 平台列；空表给占位行）。表上方附图例。"""
     if is_en:
         header, empty_row = ('| ID | Author Name | Platforms | Total Models |',
                              '| - | None |  | 0 |')
-        legend = '> Marks: ⭐ Recommended · 🔥 High-output · 🔞 R18 · 👥 Team (from authors.json tags)'
     else:
         header, empty_row = ('| 编号 | 作者名称 | 平台 | 收录数量 |',
                              '| - | 暂无 |  | 0 |')
-        legend = '> 标记：⭐ 推荐 · 🔥 高产 · 🔞 R18 · 👥 团队（authors.json tags 驱动）'
+    legend = build_legend(is_en)
     separator = '| --- | --- | --- | ---: |'
 
     lines = [legend, '', header, separator]
