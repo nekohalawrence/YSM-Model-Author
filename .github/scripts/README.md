@@ -24,7 +24,7 @@
 
 | 脚本 | 职责 | 调用方式 |
 | --- | --- | --- |
-| **01_organize_models.py** | `.ysm` 归档：解析作者 → `Models/<编号>/`，未命中作者 → 按作品前缀分类到 `Other-YSM-Models/<作品>/`（未匹配 → `Unknown/`），新作者自动建目录；多作者/去重/同模型合并/附属文件跟随；`--apply` 后联动 authors → rename → readmes → authors 表 | `python .github/scripts/models_organize/01_organize_models.py <文件/目录> [--apply] [--root]` |
+| **01_organize_models.py** | `.ysm` 归档：解析作者 → 登记/合并 `authors.json` → `Models/<编号>/`（新作者补洞编号 + 建目录），未命中作者 → 按作品前缀分类到 `Other-YSM-Models/<作品>/`（未匹配 → `Unknown/`）；命名先合并内部名+文件名再 resolve_name3 格式化；去重/同模型合并/附属文件跟随；co-creator 丢弃；`--apply` 后联动 readmes → authors 表 | `python .github/scripts/models_organize/01_organize_models.py <文件/目录> [--apply] [--root] [--with-gen-readmes] [--with-readme-table]` |
 | **organize_previews.py**（check&fix/） | 预览图归入 `previews/` 并规范命名，之后重跑模型 README | `[--apply] [--rename] [<路径>...]` |
 | **02_rename_model_folders.py** | 模型文件夹**纯重命名**（原 naming/rename_model_folders.py）：按知识库把模型文件夹重命名为 `<作品>_<中文角色>[-皮肤]_<英文角色>_<评级>`；Unknown / 跨作品同名冲突**只标记跳过**（不收录数据库）；同名冲突自动加 `-数字` 副本序号。知识库维护已分离到 check&fix/kb_tool.py，实现复用于 `lib/kb/` | `[--apply] [--show*]` |
 | **02_rename_model_files.py** | 模型文件重命名（自 02 拆出）：`<文件夹名(去评级)>[变体][_v版本][_副本序号]<后缀>`，变体词经 skin_tags.json 标准化表规范化；默认 dry-run | `[--apply] [路径...]` |
@@ -94,8 +94,6 @@ cli.py flow（流程编排，内联自原 pipeline.py；workflow 与本地共用
   └─ rename / authors / readmes / authors-list / translate（单步）
 
 01_organize_models.py（--with-* 显式叠加，默认只归档）
-  ├─ --with-authors-index → 03_generate_root_readme.py --data
-  ├─ --with-rename        → 02_rename_model_folders.py ──→ lib/kb/*
   ├─ --with-gen-readmes   → 03_generate_model_readmes.py
   └─ --with-readme-table  → 03_generate_root_readme.py --author
 

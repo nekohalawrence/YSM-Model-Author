@@ -1,39 +1,34 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-YSM 模型归档工具（本仓库专用）——按作者将待归档的 .ysm 移入 Models/ 或 Other-YSM-Models/。
+YSM 模型归档工具（重构版）——按作者/作品将待归档的 .ysm 归位到仓库。
 
-作者识别数据源（按优先级）：
-  1. Models/<编号>/README.md 的 ## Author 段第一个 - **Name**:（编号 = 目录名）
-  2. 仓库根 README.md 的"作者索引"表格（仅当编号目录存在但缺 README 时补充）
+流程（6 层）：
+  ① 数据层   收集输入 / 加载作者索引、角色库、作品键表
+  ② 解析层   解析 .ysm → 模型元数据 + 作者块；登记/合并作者 → authors.json
+  ③ 决策层   命名（先合并 → resolve_name3 格式化）/ 归类 / 去重 / 版本化 / 合并 / sidecar
+  ④ 执行层   移动 / 复制 / 创建目录
+  ⑤ 联动层   --with-* 调下游
+  ⑥ 入口层   main 编排
 
-归档规则：
-  - 命中作者    -> Models/<编号>/<模型文件夹>/
-  - 未命中作者  -> Other-YSM-Models/<模型文件夹>/
-  - 未命中任何作者 -> 创建 Models/<max编号+1>/（README 请用 check&fix/generate_author_readmes.py 补生成），再建模型文件夹
-  - 同一模型的多个版本（如 神吞 / 神吞二阶段）自动合并进同一模型文件夹
-  - 同批处理的同作者文件共享同一作者编号（运行时索引回流，避免重复建目录）
-  - 移动时跟随同 stem 的附属文件（预览图 / 压缩包 / 说明文档）
-  - 目标已存在同名模型：先 sha256 检测是否同一文件（相同则去重跳过）；
-    内容不同则按文件大小加版本号（文件大=新版本 vN，小=旧版本 v1，如 xxx_v1.ysm/xxx_v2.ysm）
-  - 默认只归档；需要联动其他脚本时用 --with-* 显式叠加（也可用 pipeline.py 编排）
-
-模型文件夹命名：
-  - 取 ysm 内部 <name> 与文件名两个名称合并
-  - 语言不一致时用 _ 隔开（中文在前，英文在后）；语言一致时取更完整（更长）的名称
-  - 作者名支持 YSM 2.5+ 的 <author> 块结构（多作者按顺序列出，主作者在前）
+规则：
+  - 有作者 → 登记/合并 authors.json（新作者从 0000 起取空缺编号 + 升序 + 建目录；
+    旧作者补缺合并：别名去重追加末尾 / 平台补缺失 http 键），主作者 move、其他模型作者 copy
+  - 无作者 → 按作品归类到 Other-YSM-Models/<作品>/（未匹配 → Unknown）
+  - 命名：先 build_model_folder_name 合并内部 <name> 与文件名，再 resolve_name3 格式化
+    （参考 02_rename_model_folders.py），产出 <作品>_<中文角色>[_皮肤]_<英文角色>[_皮肤]_<评级>
+  - 去重：sha256 内容相同跳过；同名文件夹按文件大小版本化；同模型多版本合并；附属文件跟随
+  - 不写 co_creators.json（co-creator 作者丢弃）
 
 用法:
   python .github/scripts/models_organize/01_organize_models.py <文件或目录>... [选项]
 
 选项:
-  --apply               真正执行移动/创建（默认 dry-run，只打印计划）
-  --root PATH           指定仓库根目录（默认自动检测 cwd/脚本位置）
-  --with-authors-index  归档成功后重建作者数据 authors.json（03_generate_root_readme.py --data）
-  --with-rename         归档成功后运行 02_rename_model_folders.py --apply 格式化文件夹名
-  --with-gen-readmes    归档成功后运行 03_generate_model_readmes.py 生成模型 README
-  --with-readme-table   归档成功后运行 03_generate_root_readme.py --author 更新根 README 作者索引
-  --verbose             打印匹配细节
+  --apply                真正执行（默认 dry-run）
+  --root PATH            指定仓库根目录（默认自动检测 cwd/脚本位置）
+  --with-gen-readmes     归档成功后生成模型 README
+  --with-readme-table    归档成功后更新根 README 作者索引
+  --verbose              打印匹配细节
 """
 from __future__ import annotations
 
@@ -44,129 +39,199 @@ import re
 import shutil
 import subprocess
 import sys
-import unicodedata
 from pathlib import Path
-# 脚本按流程阶段分类到 scripts/<类别>/ 子目录：把 .github/scripts 加回 sys.path，
-# 保证 lib/ 与跨分类脚本可导入
+# 脚本按流程阶段分类到 scripts/<类别>/ 子目录：把 .github/scripts 加回 sys.path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-
 
 from lib import models as lib_models
 from lib import paths as lib_paths
 from lib import readme as lib_readme
 from lib import ysm as lib_ysm
+from lib.author_readme import format_author_name
+from lib.kb.cmds import build_indexes
+from lib.kb.parse2 import resolve_name3, build_cn_alias
+from lib.kb.storage import load_kb_json
+from lib.kb.sync import build_work_index
 
-# .ysm 解析/作者分类/平台映射（复用 lib/ysm.py；别名保留以兼容 verify_real_samples
-# 等外部按模块名引用的调用方）
+# ---- lib 绑定 ----
 extract_metadata = lib_ysm.extract_metadata
 classify_authors = lib_ysm.classify_authors
-load_platform_map = lib_ysm.load_platform_map
-map_platforms = lib_ysm.map_platforms
-
-# 新作者名规范化（lib/author_readme.py 提供；作者 README 生成已移至
-# models_organize/03_generate_author_readmes.py，本脚本只登记 authors.json）
-from lib.author_readme import format_author_name
-
-# 作者 README 解析相关（复用 lib/readme.py 统一实现；仅保留实际使用的绑定）
 normalize_alias = lib_readme.normalize_alias
 build_author_index = lib_readme.build_author_index
 find_author = lib_readme.find_author
-
-# 命名/评级/去重（复用 lib/models.py 统一实现）
+find_workspace_root = lib_paths.find_workspace_root
 has_cjk = lib_models.has_cjk
 normalize_name_for_cmp = lib_models.normalize_name_for_cmp
 clean_file_stem = lib_models.clean_file_stem
 same_model = lib_models.same_model
 detect_work_prefix = lib_models.detect_work_prefix
 
-# JSON/文本读写与路径（复用 lib/paths.py 统一实现）
-find_workspace_root = lib_paths.find_workspace_root
-
-
-
 # Windows 文件名非法字符与尾点/尾空格
 ILLEGAL_CHARS_RE = re.compile(r'[<>:"/\\|?*\x00-\x1f]')
 TRAILING_DOT_SPACE_RE = re.compile(r'[.\s]+$')
-
-WINDOWS_RESERVED = {
-    'CON', 'PRN', 'AUX', 'NUL',
-    *(f'COM{i}' for i in range(1, 10)),
-    *(f'LPT{i}' for i in range(1, 10)),
-}
-
-
+WINDOWS_RESERVED = {'CON', 'PRN', 'AUX', 'NUL',
+                    *(f'COM{i}' for i in range(1, 10)),
+                    *(f'LPT{i}' for i in range(1, 10))}
+# 附属文件扩展名（跟随移动/复制）
+SIDECAR_EXTS = {'.png', '.jpg', '.jpeg', '.webp', '.gif',
+                '.zip', '.7z', '.rar', '.txt', '.json'}
 
 
-
-# ---------------------------------------------------------------------------
-# 平台信息与 co_creators 数据（外置于 .github/data/author-info/）
-# ---------------------------------------------------------------------------
-def _meta_path(root: Path, fname: str) -> Path:
-    """数据路径：优先跟随调用方 root（临时仓库/测试），否则用 lib 语义路径。
-
-    与 lib/ysm.py 的 _meta_path 保持一致：临时仓库数据统一位于
-    .github/data/author-info/（历史命名 meta/ 已废弃，避免两处路径不一致）。
-    """
-    if root and root != lib_paths.WORKSPACE_ROOT:
-        return root / '.github' / 'data' / 'author-info' / fname
-    return lib_paths.data_path('author-info', fname)
-
-
+# ===========================================================================
+# ① 数据层
+# ===========================================================================
 def _work_map(root: Path) -> dict[str, str]:
-    """加载作品键表：{作品键大写: 规范写法}（来自 character/*.json 文件名）。
-
-    与 _meta_path 一致：临时仓库（root != 当前仓库）跟随 root 数据目录，
-    否则用 lib 语义路径（本仓库 .github/data/model-info/character/）。
-    """
-    char_dir = (root / '.github' / 'data' / 'model-info' / 'character'
-                if root and root != lib_paths.WORKSPACE_ROOT
-                else lib_paths.CHARACTER_DIR)
+    """加载作品键表：{作品键大写: 规范写法}（来自 character/*.json 文件名）。"""
+    char_dir = lib_paths.CHARACTER_DIR
+    if root and root != lib_paths.WORKSPACE_ROOT:
+        char_dir = root / '.github' / 'data' / 'model-info' / 'character'
     if not char_dir.is_dir():
         return {}
     return {f.stem.upper(): f.stem for f in char_dir.glob('*.json')}
 
 
+def load_role_kb(root: Path):
+    """加载角色知识库索引（resolve_name3 命名格式化用）。
+
+    返回 (roles, en_to_cn, cn_to_en, cn_alias)；与 02_rename_model_folders.py 一致。
+    """
+    kb_path = lib_paths.MODEL_INFO_DIR
+    if root and root != lib_paths.WORKSPACE_ROOT:
+        kb_path = root / '.github' / 'data' / 'model-info'
+    data = load_kb_json(kb_path)
+    build_work_index(data)
+    roles = list(data.get('roles') or [])
+    _cn_idx, _en_idx, en_to_cn, cn_to_en = build_indexes(roles)
+    cn_alias = build_cn_alias(roles)
+    return roles, en_to_cn, cn_to_en, cn_alias
 
 
+def collect_ysm_files(inputs: list[Path]) -> list[Path]:
+    """收集输入的 .ysm 文件（目录递归 *.ysm/*.YSM，按规范化路径去重）。"""
+    files: list[Path] = []
+    for inp in inputs:
+        if inp.is_file() and inp.suffix.lower() == '.ysm':
+            files.append(inp)
+        elif inp.is_dir():
+            found = list(inp.rglob('*.ysm')) + list(inp.rglob('*.YSM'))
+            files.extend(f for f in found if f.is_file())
+        else:
+            print(f"[错误] 输入不存在或非 .ysm 文件: {inp}")
+    seen: set[str] = set()
+    unique: list[Path] = []
+    for f in files:
+        key = os.path.normcase(str(f.resolve()))
+        if key not in seen:
+            seen.add(key)
+            unique.append(f)
+    return sorted(unique, key=lambda p: str(p))
 
-def load_co_creators(root: Path) -> dict:
-    """读取 co-creator 元数据（author-info/co_creators.json）"""
-    return lib_paths.load_json(_meta_path(root, 'co_creators.json'), {})
+
+# ===========================================================================
+# ② 解析层（含作者登记/合并 → authors.json）
+# ===========================================================================
+def next_free_author_id(models_dir: Path) -> str:
+    """返回 Models 下第一个空缺的 4 位编号（从 0000 起，补齐历史空洞）。"""
+    existing = {int(d.name) for d in models_dir.iterdir()
+                if d.is_dir() and re.fullmatch(r'\d{4}', d.name)}
+    i = 0
+    while i in existing:
+        i += 1
+    return f'{i:04d}'
 
 
-def save_co_creators(root: Path, meta: dict) -> None:
-    """写 co-creator 元数据（幂等合并由调用方保证）"""
-    lib_paths.save_json(_meta_path(root, 'co_creators.json'), meta)
+def merge_author_entry(entry: dict, block: dict) -> bool:
+    """补缺合并：别名归一化去重追加末尾；平台只补缺失的 http 键。返回是否有变化。"""
+    changed = False
+    known = {normalize_alias(n) for n in entry.get('name', [])}
+    for alias in format_author_name(block.get('name') or '').split('|'):
+        alias = alias.strip()
+        if alias and normalize_alias(alias) not in known:
+            entry.setdefault('name', []).append(alias)
+            known.add(normalize_alias(alias))
+            changed = True
+    platforms = entry.setdefault('platforms', {})
+    for key, value in (block.get('contacts') or {}).items():
+        if key not in platforms and isinstance(value, str) and value.startswith('http'):
+            platforms[key] = value
+            changed = True
+    return changed
 
 
-# ---------------------------------------------------------------------------
-# 模型文件夹命名
-# ---------------------------------------------------------------------------
+def register_or_merge_author(root: Path, models_dir: Path, author_id: str,
+                             block: dict) -> bool:
+    """把作者块登记或补缺合并进 authors.json；新作者建目录。返回是否有变化。
+
+    - 已存在：补缺合并（merge_author_entry），有变化才写盘（幂等）
+    - 新作者：写入完整条目 + 整体按键升序重排 + 创建 Models/<编号>/
+    """
+    path = lib_paths.data_path('author-info', 'authors.json')
+    data = lib_paths.load_json(path, {})
+    authors = data.setdefault('authors', {})
+    if author_id in authors:
+        changed = merge_author_entry(authors[author_id], block)
+    else:
+        names = [t.strip() for t in format_author_name(block.get('name') or '').split('|')
+                 if t.strip()]
+        authors[author_id] = {
+            'name': names,
+            'readme': f'Models/{author_id}/README.md',
+            'platforms': dict(block.get('contacts') or {}),
+        }
+        (models_dir / author_id).mkdir(parents=True, exist_ok=True)
+        changed = True
+    if changed:
+        authors = dict(sorted(authors.items(), key=lambda kv: int(kv[0])))
+        data['authors'] = authors
+        lib_paths.save_json(path, data)
+    return changed
+
+
+def resolve_and_register_author(block: dict, alias_to_id: dict, runtime_index: dict,
+                                root: Path, models_dir: Path, apply: bool,
+                                verbose: bool = False) -> tuple[str, bool]:
+    """匹配/分配作者编号并登记 authors.json；返回 (author_id, is_new)。
+
+    命中已有 → 旧作者（apply 时补缺合并）；未命中 → 新作者（补洞编号 + 登记 + 建目录）。
+    """
+    author_id, _ = find_author(block['name'], {**alias_to_id, **runtime_index}, verbose)
+    if author_id:
+        if apply:
+            register_or_merge_author(root, models_dir, author_id, block)
+        return author_id, False
+    new_id = next_free_author_id(models_dir)
+    key = normalize_alias(block['name'])
+    if key:
+        runtime_index.setdefault(key, new_id)
+    if apply:
+        register_or_merge_author(root, models_dir, new_id, block)
+        print(f"  新建作者目录 {new_id}（{block['name']}）")
+    else:
+        print(f"  [计划] 新建作者 {new_id}（{block['name']}）")
+    return new_id, True
+
+
+# ===========================================================================
+# ③ 决策层
+# ===========================================================================
 def build_model_folder_name(inner_name: str | None, file_stem: str) -> str:
-    """合并内部 <name> 与文件名：语言不一致 -> '中文_英文'；语言一致 -> 取更完整的。
-    单侧缺失时用另一侧；都缺失回退到文件主干。"""
+    """合并内部 <name> 与文件名：语言不一致 -> '中文_英文'；语言一致 -> 取更完整。"""
     a = (inner_name or '').strip()
     b = clean_file_stem(file_stem)
-
     if not a:
         return b or 'unnamed_model'
     if not b:
         return a
-
     if normalize_name_for_cmp(a) == normalize_name_for_cmp(b):
         return a
-
     a_cjk, b_cjk = has_cjk(a), has_cjk(b)
     if a_cjk != b_cjk:
         return f'{a}_{b}' if a_cjk else f'{b}_{a}'
-
-    # 语言一致：取更完整（更长）者；相同长度优先内部名
-    if len(a) >= len(b):
-        return a
-    return b
+    return a if len(a) >= len(b) else b
 
 
 def sanitize_folder_name(name: str) -> str:
+    """清理 Windows 非法字符、保留名、尾点/尾空格。"""
     name = ILLEGAL_CHARS_RE.sub('_', name)
     name = TRAILING_DOT_SPACE_RE.sub('', name)
     name = name.strip()
@@ -177,9 +242,19 @@ def sanitize_folder_name(name: str) -> str:
     return name
 
 
-# ---------------------------------------------------------------------------
-# 重复检测
-# ---------------------------------------------------------------------------
+def format_folder_name(candidate: str, kb, strip_unknown: bool) -> tuple[str, str]:
+    """resolve_name3 格式化（参考 02）→ 清理。返回 (最终文件夹名, 作品)。
+
+    strip_unknown=True（有作者）时去掉 Unknown_ 前缀——作者已确定，无需 Unknown 标记。
+    """
+    roles, en_to_cn, cn_to_en, cn_alias = kb
+    res = resolve_name3(candidate, roles, en_to_cn, cn_to_en, cn_alias)
+    new = res.get('new') or candidate
+    if strip_unknown and new.lower().startswith('unknown_'):
+        new = new[len('Unknown_'):] or candidate
+    return sanitize_folder_name(new), res.get('work') or ''
+
+
 def file_sha256(path: Path) -> str:
     h = hashlib.sha256()
     try:
@@ -194,22 +269,19 @@ def file_sha256(path: Path) -> str:
 def find_duplicate(target_author_dir: Path, folder_name: str,
                    input_sha: str, input_size: int = 0) -> tuple[str | None, str]:
     """在目标作者目录下查找重复。返回 (原因, 说明)；None 表示无重复。
-    优先内容(sha256)匹配，其次规范化同名文件夹。
 
-    性能：先按文件大小预筛——大小不同必不重复，跳过 sha256 全量读取
-    （大 .ysm 数十 MB，1400+ 模型时避免对每个已有文件重复哈希）。
+    优先内容(sha256)匹配，其次规范化同名文件夹；先按文件大小预筛。
     """
     norm_folder = normalize_name_for_cmp(folder_name)
-
     if target_author_dir.is_dir():
         for sub in target_author_dir.iterdir():
             if sub.is_dir() and not sub.name.startswith('.'):
                 if normalize_name_for_cmp(sub.name) == norm_folder:
-                    # 空壳同名文件夹（无 .ysm 内容）：优先填充而非视为重复
                     if not any(f.suffix.lower() == '.ysm'
                                for f in sub.rglob('*') if f.is_file()):
-                        continue
-                    return 'folder', f"已存在同名模型文件夹 Models/{target_author_dir.name}/{sub.name}"
+                        continue  # 空壳同名文件夹：优先填充而非视为重复
+                    return ('folder',
+                            f"已存在同名模型文件夹 Models/{target_author_dir.name}/{sub.name}")
                 for ysm in sub.rglob('*'):
                     if (ysm.is_file() and ysm.suffix.lower() == '.ysm'
                             and (input_size == 0 or ysm.stat().st_size == input_size)):
@@ -221,11 +293,7 @@ def find_duplicate(target_author_dir: Path, folder_name: str,
 
 def versionize_same_name(folder_dir: Path, folder_name: str,
                          input_path: Path, input_size: int) -> list[tuple[Path, str]]:
-    """同名文件夹内不同内容 -> 按文件大小统一版本化命名（大=新 vN，小=旧 v1）。
-
-    返回 [(源文件, 目标文件名), ...]（含 input 与已有 .ysm，按大小小->大排序，
-    目标名 = folder_name_v1..vN）；无法版本化（目录不存在/文件不足两个）返回 []。
-    """
+    """同名文件夹内不同内容 -> 按文件大小统一版本化命名（大=新 vN，小=旧 v1）。"""
     if not folder_dir.is_dir():
         return []
     ysms = [p for p in folder_dir.glob('*')
@@ -242,12 +310,8 @@ def versionize_same_name(folder_dir: Path, folder_name: str,
     return [(p, f"{folder_name}_v{i}.ysm") for i, (p, _) in enumerate(items, 1)]
 
 
-# ---------------------------------------------------------------------------
-# 同一模型的多个版本 -> 合并到已有文件夹（复用 lib/models.py 的 same_model）
-# ---------------------------------------------------------------------------
 def find_same_model_folder(target_dir: Path, folder_name: str) -> Path | None:
-    """在目标作者目录下找与 folder_name 属同一模型的已有文件夹（排除完全同名）。
-    命中则返回该文件夹路径（同模型多版本合并）；否则 None。"""
+    """在目标作者目录下找与 folder_name 属同一模型的已有文件夹（排除完全同名）。"""
     if not target_dir.is_dir():
         return None
     norm = normalize_name_for_cmp(folder_name)
@@ -255,16 +319,10 @@ def find_same_model_folder(target_dir: Path, folder_name: str) -> Path | None:
         if not (sub.is_dir() and not sub.name.startswith('.')):
             continue
         if normalize_name_for_cmp(sub.name) == norm:
-            continue  # 完全同名由重复检测处理
+            continue
         if same_model(folder_name, sub.name):
             return sub
     return None
-
-
-# ---------------------------------------------------------------------------
-# 附属文件跟随（预览图 / 压缩包 / 说明文档）
-# ---------------------------------------------------------------------------
-SIDECAR_EXTS = {'.png', '.jpg', '.jpeg', '.webp', '.gif', '.zip', '.7z', '.rar', '.txt', '.json'}
 
 
 def collect_sidecars(src_dir: Path, stem: str, src_path: Path) -> list[Path]:
@@ -282,73 +340,9 @@ def collect_sidecars(src_dir: Path, stem: str, src_path: Path) -> list[Path]:
     return sidecars
 
 
-# ---------------------------------------------------------------------------
-# 主流程
-# ---------------------------------------------------------------------------
-def collect_ysm_files(inputs: list[Path]) -> list[Path]:
-    files: list[Path] = []
-    for inp in inputs:
-        if inp.is_file() and inp.suffix.lower() == '.ysm':
-            files.append(inp)
-        elif inp.is_dir():
-            # Windows 文件系统大小写不敏感：两个 pattern 会重复命中，需按规范化路径去重
-            found = list(inp.rglob('*.ysm')) + list(inp.rglob('*.YSM'))
-            files.extend(f for f in found if f.is_file())
-        else:
-            print(f"[错误] 输入不存在或非 .ysm 文件: {inp}")
-    seen: set[str] = set()
-    unique: list[Path] = []
-    for f in files:
-        key = os.path.normcase(str(f.resolve()))
-        if key not in seen:
-            seen.add(key)
-            unique.append(f)
-    return sorted(unique, key=lambda p: str(p))
-
-
-def next_author_id(models_dir: Path) -> str:
-    ids = [int(d.name) for d in models_dir.iterdir()
-           if d.is_dir() and re.fullmatch(r'\d{4}', d.name)]
-    return f'{max(ids) + 1 if ids else 1:04d}'
-
-
-def update_root_readme(root: Path) -> None:
-    script = root / '.github' / 'scripts' / 'models_organize' / '03_generate_root_readme.py'
-    if not script.is_file():
-        print(f"  [警告] 未找到 {script}，跳过根 README 索引更新")
-        return
-    print("  更新根 README 作者索引...")
-    subprocess.run([sys.executable, str(script), '--author'], cwd=root, check=False)
-
-
-def build_authors_index(root: Path) -> None:
-    """重建集中作者数据 authors.json（新作者归档后供后续脚本统一读取）。"""
-    script = root / '.github' / 'scripts' / 'models_organize' / '03_generate_root_readme.py'
-    if not script.is_file():
-        print(f"  [警告] 未找到 {script}，跳过作者数据重建")
-        return
-    print("  重建集中作者数据 authors.json...")
-    subprocess.run([sys.executable, str(script), '--data'], cwd=root, check=False)
-
-
-def run_rename_model_folders(root: Path) -> None:
-    script = root / '.github' / 'scripts' / 'models_organize' / '02_rename_model_folders.py'
-    if not script.is_file():
-        print(f"  [警告] 未找到 {script}，跳过文件夹名称格式化")
-        return
-    print("  运行 02_rename_model_folders.py 格式化模型文件夹名称...")
-    subprocess.run([sys.executable, str(script), '--apply'], cwd=root, check=False)
-
-
-def run_generate_model_readmes(root: Path) -> None:
-    script = root / '.github' / 'scripts' / 'models_organize' / '03_generate_model_readmes.py'
-    if not script.is_file():
-        print(f"  [警告] 未找到 {script}，跳过模型 README 生成")
-        return
-    print("  运行 03_generate_model_readmes.py 生成模型 README...")
-    subprocess.run([sys.executable, str(script)], cwd=root, check=False)
-
-
+# ===========================================================================
+# ④ 执行层
+# ===========================================================================
 def archive_one(path: Path, target_dir: Path, folder_name: str, mode: str,
                 apply: bool, root: Path, verbose: bool) -> str | None:
     """把单个 .ysm 归档到目标作者目录。返回 'moved'/'copied'/'skipped'；dry-run 返回 None。
@@ -359,10 +353,8 @@ def archive_one(path: Path, target_dir: Path, folder_name: str, mode: str,
     input_size = path.stat().st_size if path.is_file() else 0
     dup_reason, dup_note = find_duplicate(target_dir, folder_name, input_sha, input_size)
     if dup_reason == 'content':
-        # hash 相同 = 同一文件 -> 去重跳过
         print(f"  [跳过] {dup_note}")
         return 'skipped'
-    # dup_reason == 'folder'：同名文件夹存在但内容不同 -> 按大小版本化（大=新，小=旧）
     version_plan: list[tuple[Path, str]] = []
     if dup_reason == 'folder':
         version_plan = versionize_same_name(target_dir / folder_name, folder_name,
@@ -394,7 +386,6 @@ def archive_one(path: Path, target_dir: Path, folder_name: str, mode: str,
         return None
 
     dest_dir.mkdir(parents=True, exist_ok=True)
-    # 版本化：先重命名已有同名 .ysm，避免与 input 目标名冲突
     for s, n in version_plan:
         if s != path:
             s.rename(dest_dir / n)
@@ -415,54 +406,35 @@ def archive_one(path: Path, target_dir: Path, folder_name: str, mode: str,
     return 'copied' if mode == 'copy' else 'moved'
 
 
-def upsert_author_index(root: Path, author_id: str, block: dict) -> None:
-    """把新作者增量写入集中作者数据 authors.json（不重建全部）；已存在则跳过。
-
-    新作者归档时即时登记，后续脚本（audit 合并、README 生成）无需先跑
-    build_authors_index 也能看到该作者。
-    """
-    path = lib_paths.data_path('author-info', 'authors.json')
-    data = lib_paths.load_json(path, {})
-    authors = data.setdefault('authors', {})
-    if author_id in authors:
+# ===========================================================================
+# ⑤ 联动层
+# ===========================================================================
+def _run_script(root: Path, rel: str, args: list[str], label: str) -> None:
+    script = root / '.github' / 'scripts' / rel
+    if not script.is_file():
+        print(f"  [警告] 未找到 {script}，跳过{label}")
         return
-    name_tags = format_author_name(block['name'])  # '#鸡姬 | #raw_chicken'
-    names = [t.strip() for t in name_tags.split('|') if t.strip()]
-    authors[author_id] = {
-        'name': names,
-        'readme': f'Models/{author_id}/README.md',
-        'platforms': dict(block.get('contacts') or {}),
-    }
-    lib_paths.save_json(path, data)
-    print(f"  已登记到 authors.json: {author_id} {names}")
+    print(f"  {label}...")
+    subprocess.run([sys.executable, str(script), *args], cwd=root, check=False)
 
 
-def resolve_author_id(block: dict, alias_to_id: dict, runtime_index: dict,
-                      root: Path, apply: bool, verbose: bool,
-                      result: dict) -> str:
-    """把作者块匹配/分配到作者编号；新作者时创建目录与 README 并注册运行时索引。"""
-    author_id, note = find_author(block['name'], {**alias_to_id, **runtime_index}, verbose)
-    if author_id:
-        return author_id
-    new_id = next_author_id(root / 'Models')
-    key = normalize_alias(block['name'])
-    if key:
-        runtime_index.setdefault(key, new_id)
-    result['new_author'] = True
-    target_dir = root / 'Models' / new_id
-    if apply:
-        target_dir.mkdir(parents=True, exist_ok=True)
-        upsert_author_index(root, new_id, block)
-        print(f"  新建作者目录 {new_id}（{block['name']}）")
-    else:
-        print(f"  [计划] 新建作者目录 {new_id}（{block['name']}）")
-    return new_id
+def run_generate_model_readmes(root: Path) -> None:
+    """归档成功后生成模型 README。"""
+    _run_script(root, 'models_organize/03_generate_model_readmes.py', [],
+                '生成模型 README')
 
 
-def process_file(path: Path, root: Path, alias_to_id: dict[str, str],
-                 runtime_index: dict[str, str], platform_map: dict[str, str],
-                 work_map: dict[str, str],
-                 apply: bool, verbose: bool) -> dict:
+def update_root_readme(root: Path) -> None:
+    """归档成功后更新根 README 作者索引。"""
+    _run_script(root, 'models_organize/03_generate_root_readme.py', ['--author'],
+                '更新根 README 作者索引')
+
+
+# ===========================================================================
+# ⑥ 入口层
+# ===========================================================================
+def process_file(path: Path, root: Path, alias_to_id: dict, runtime_index: dict,
+                 kb, work_map: dict, apply: bool, verbose: bool) -> dict:
     rel = path.relative_to(root) if path.is_relative_to(root) else path
     print(f"\n== {rel} ==")
     result = {'action': 'skipped', 'reason': '', 'new_author': False}
@@ -473,16 +445,15 @@ def process_file(path: Path, root: Path, alias_to_id: dict[str, str],
         return result
     inner_name = meta.get('name') or ''
     blocks = meta.get('author_blocks') or []
+    models_dir = root / 'Models'
+    candidate = build_model_folder_name(inner_name, path.stem)
 
     if not blocks:
-        # 无作者信息：按作品类型分类归档到 Other-YSM-Models/<作品缩写>/（不再平铺）；
-        # 前缀未匹配到作品键表的归 Unknown 子目录。
-        folder_name = sanitize_folder_name(build_model_folder_name(inner_name, path.stem))
-        work = detect_work_prefix(folder_name, work_map)
-        sub = work or 'Unknown'
+        # 无作者：命名 + 按作品归类
+        folder_name, work = format_folder_name(candidate, kb, strip_unknown=False)
+        sub = work or detect_work_prefix(folder_name, work_map) or 'Unknown'
         target_dir = root / 'Other-YSM-Models' / sub
-        print(f"  未识别到作者，按作品分类 -> Other-YSM-Models/{sub}"
-              + (f"（匹配作品 {work}）" if work else "（未匹配作品，归 Unknown）"))
+        print(f"  未识别到作者，按作品分类 -> Other-YSM-Models/{sub}")
         print(f"  模型文件夹名: {folder_name}")
         status = archive_one(path, target_dir, folder_name, 'move', apply, root, verbose)
         if status in ('moved', 'copied'):
@@ -491,64 +462,43 @@ def process_file(path: Path, root: Path, alias_to_id: dict[str, str],
             result['reason'] = '重复或冲突'
         return result
 
-    # 多作者分类：主作者（role 含"模型"，无则第一个）移动；其他 model 作者复制；其余记录为 co-creator
-    primary, model_blocks, co_creators = classify_authors(blocks)
-    print(f"  作者列表: " + ', '.join(
-        f"{b['name']}({'模型' if '模型' in (b.get('role') or '') else b.get('role') or '无角色'})"
-        for b in blocks))
-    print(f"  主作者(分类): {primary['name']}；归档目标 {len(model_blocks)} 个，co-creator {len(co_creators)} 个")
+    # 有作者：分类（co-creator 丢弃），逐个登记/合并 authors.json
+    primary, model_blocks, _ = classify_authors(blocks)
+    print(f"  作者列表: " + ', '.join(f"{b['name']}" for b in blocks))
+    print(f"  主作者(分类): {primary['name']}；归档目标 {len(model_blocks)} 个")
 
-    # 解析每个归档作者的编号（新作者建目录；主作者 mode=move，其余 mode=copy）
-    targets: list[tuple[str, str, dict]] = []  # (author_id, mode, block)
+    targets: list[tuple[str, str, dict]] = []
     for block in model_blocks:
-        aid = resolve_author_id(block, alias_to_id, runtime_index, root, apply, verbose, result)
+        aid, is_new = resolve_and_register_author(block, alias_to_id, runtime_index,
+                                                  root, models_dir, apply, verbose)
         mode = 'move' if block is primary else 'copy'
         targets.append((aid, mode, block))
+        if is_new:
+            result['new_author'] = True
     # 同编号去重：move 优先
     dedup: dict[str, tuple[str, dict]] = {}
     for aid, mode, block in targets:
         if aid not in dedup or (mode == 'move' and dedup[aid][0] != 'move'):
             dedup[aid] = (mode, block)
 
-    folder_name = sanitize_folder_name(build_model_folder_name(inner_name, path.stem))
+    folder_name, _ = format_folder_name(candidate, kb, strip_unknown=True)
     print(f"  模型文件夹名: {folder_name}")
 
     statuses = []
     # 先复制目标后移动主作者，保证 copy 时源文件（含 sidecar）仍存在
     for aid, (mode, block) in dedup.items():
         if mode == 'copy':
-            statuses.append(archive_one(path, root / 'Models' / aid, folder_name,
+            statuses.append(archive_one(path, models_dir / aid, folder_name,
                                         'copy', apply, root, verbose))
     for aid, (mode, block) in dedup.items():
         if mode == 'move':
-            statuses.append(archive_one(path, root / 'Models' / aid, folder_name,
+            statuses.append(archive_one(path, models_dir / aid, folder_name,
                                         'move', apply, root, verbose))
 
     if any(s in ('moved', 'copied') for s in statuses):
         result['action'] = 'moved' if 'moved' in statuses else 'copied'
     elif any(s == 'skipped' for s in statuses):
         result['reason'] = '重复或冲突'
-
-    # co-creator 与平台信息写入 co_creators（幂等，仅 apply 且确有归档时）
-    if apply and any(s in ('moved', 'copied') for s in statuses):
-        meta_data = load_co_creators(root)
-        changed = False
-        for aid, (mode, block) in dedup.items():
-            co = [b for b in blocks if b is not block]
-            if not co:
-                continue
-            entry = {'co_creators': [
-                {'name': b['name'], 'role': b.get('role', ''),
-                 'platforms': map_platforms(b.get('contacts') or {}, platform_map)}
-                for b in co]}
-            key = f'{aid}/{folder_name}'
-            if meta_data.get(key) != entry:
-                meta_data[key] = entry
-                changed = True
-        if changed:
-            save_co_creators(root, meta_data)
-            print(f"  已更新 co_creators.json（{sum(1 for k, v in meta_data.items() if v.get('co_creators'))} 条 co-creator 记录）")
-
     return result
 
 
@@ -558,14 +508,10 @@ def main() -> int:
     parser.add_argument('inputs', nargs='+', help='.ysm 文件或目录（目录递归收集 *.ysm）')
     parser.add_argument('--apply', action='store_true', help='真正执行（默认 dry-run）')
     parser.add_argument('--root', metavar='PATH', default=None, help='仓库根目录（默认自动检测）')
-    parser.add_argument('--with-authors-index', action='store_true',
-                        help='归档成功后重建集中作者数据 authors.json（author_index.py --data）')
-    parser.add_argument('--with-rename', action='store_true',
-                        help='归档成功后运行 rename_model_folders.py --apply 格式化文件夹名')
     parser.add_argument('--with-gen-readmes', action='store_true',
-                        help='归档成功后运行 generate_model_readmes.py 生成模型 README')
+                        help='归档成功后生成模型 README')
     parser.add_argument('--with-readme-table', action='store_true',
-                        help='归档成功后运行 03_generate_root_readme.py --author 更新根 README 作者索引')
+                        help='归档成功后更新根 README 作者索引')
     parser.add_argument('--verbose', action='store_true', help='打印匹配细节')
     args = parser.parse_args()
 
@@ -575,14 +521,11 @@ def main() -> int:
         print(f"错误: {models_dir} 目录不存在（可用 --root 指定仓库根目录）")
         return 2
 
-    if not args.inputs:
-        print("请提供 .ysm 文件/目录。")
-        return 2
     alias_to_id, id_to_name = build_author_index(models_dir, root / 'README.md')
     print(f"作者索引: {len(alias_to_id)} 个别名 / {len(id_to_name)} 位作者")
-    platform_map = load_platform_map(root)
+    kb = load_role_kb(root)
     work_map = _work_map(root)
-    print(f"作品键表: {len(work_map)} 个作品")
+    print(f"角色库: {len(kb[0])} 条  作品键表: {len(work_map)} 个")
 
     files = collect_ysm_files([Path(x) for x in args.inputs])
     if not files:
@@ -594,10 +537,10 @@ def main() -> int:
 
     moved = new_authors = skipped = 0
     moved_any = False
-    runtime_index: dict[str, str] = {}  # 本次运行新建的作者（同批同作者文件复用同一编号）
+    runtime_index: dict[str, str] = {}
     for f in files:
-        res = process_file(f, root, alias_to_id, runtime_index, platform_map,
-                           work_map, args.apply, args.verbose)
+        res = process_file(f, root, alias_to_id, runtime_index, kb, work_map,
+                           args.apply, args.verbose)
         if res['action'] in ('moved', 'copied'):
             moved += 1
             moved_any = True
@@ -606,13 +549,7 @@ def main() -> int:
         if res['new_author']:
             new_authors += 1
 
-    # 可选联动：默认只归档，用 --with-* 显式叠加其他脚本（顺序固定）
-    # 重建作者数据 → 格式化文件夹名 → 生成模型 README → 更新根 README 索引
     if args.apply and moved_any:
-        if args.with_authors_index:
-            build_authors_index(root)
-        if args.with_rename:
-            run_rename_model_folders(root)
         if args.with_gen_readmes:
             run_generate_model_readmes(root)
         if args.with_readme_table:

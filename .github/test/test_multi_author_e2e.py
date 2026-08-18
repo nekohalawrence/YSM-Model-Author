@@ -6,9 +6,9 @@
   ysm1 多作者模型：A作者(role=模型) 主 + B作者(role=动画) co-creator
   ysm2 双模型作者：A作者(role=模型) + B作者(role=模型) -> 主作者移动 + 其他复制
 预期：
-  1) ysm1 移入 Models/0001/，co_creators 记录 co-creator B（含平台信息）
+  1) ysm1 主作者 A 移入 Models/0001/（co-creator B 丢弃，不再写 co_creators.json）
   2) ysm2 同时出现在 Models/0001/ 与 Models/0002/（move + copy）
-  3) 联动生成模型 README：含 Co-creator Details；无预览图也有 README
+  3) 联动生成模型 README（无预览图也有 README）
 """
 import json
 import pathlib
@@ -100,7 +100,7 @@ def main():
     setup()
     r = subprocess.run([sys.executable, str(SCRIPTS / "models_organize" / "01_organize_models.py"),
                         str(ROOT / "inbox"), "--apply", "--root", str(ROOT),
-                        "--with-authors-index", "--with-gen-readmes", "--with-readme-table",
+                        "--with-gen-readmes", "--with-readme-table",
                         "--verbose"],
                        capture_output=True, text=True, encoding="utf-8",
                        errors="replace", cwd=str(ROOT))
@@ -115,25 +115,12 @@ def main():
     # 2 ysm2 复制到两个 model 作者目录（A 移动 + B 复制）
     checks.append((ROOT / "Models/0001/双模型作者/双模型作者.ysm").is_file())
     checks.append((ROOT / "Models/0002/双模型作者/双模型作者.ysm").is_file())
-    # 3 co_creators 记录 co-creator（键 0001/多作者模型，B作者 带平台）
-    meta = json.loads((ROOT / ".github/data/author-info/co_creators.json").read_text(encoding="utf-8"))
-    co1 = meta["0001/多作者模型"]["co_creators"]
-    checks.append(any(c["name"] == "B作者" and c["role"] == "动画" for c in co1))
-    b_platforms = next(c["platforms"] for c in co1 if c["name"] == "B作者")
-    checks.append("SocialPlatform" in b_platforms and "GroupChat" in b_platforms)
-    # 4 0002/双模型作者 的 co-creator 是 A作者
-    co2 = meta["0002/双模型作者"]["co_creators"]
-    checks.append(any(c["name"] == "A作者" for c in co2))
-    # 5 联动生成了 README：无预览图也生成 + 含 Co-creator 段（新格式二级标题）
+    # 3 联动生成了 README：无预览图也生成（co-creator 已丢弃，不检查 Co-creator 段）
     r1 = (ROOT / "Models/0001/多作者模型/README.md")
-    checks.append(r1.is_file() and "## Co-creator" in r1.read_text(encoding="utf-8"))
+    checks.append(r1.is_file() and "## Model Details" in r1.read_text(encoding="utf-8"))
     r2 = (ROOT / "Models/0002/双模型作者/README.md")
-    checks.append(r2.is_file() and "## Co-creator" in r2.read_text(encoding="utf-8"))
-    txt1 = r1.read_text(encoding="utf-8")
-    # 新格式:平台分类行 + 链接子行(authors.json/platform_map 数据驱动)
-    checks.append("- **Name**: B作者" in txt1
-                  and "    - **Bilibili**: [B作者](https://bili.example/B)" in txt1)
-    # 6 联动更新根 README 索引
+    checks.append(r2.is_file() and "## Model Details" in r2.read_text(encoding="utf-8"))
+    # 4 联动更新根 README 索引
     root_readme = (ROOT / "README.md").read_text(encoding="utf-8")
     checks.append("| 0002 |" in root_readme)
 
