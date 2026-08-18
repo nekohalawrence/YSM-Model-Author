@@ -47,7 +47,7 @@ jobs:
         run: python .github/scripts/cli.py check
 
       # 2. 变更检测：对比本次 push 前后改了哪些路径，决定跑哪些脚本（方案 A）。
-      #    - inbox:  推了 _Model-Inbox/** → 归档 + 全套刷新（flow inbox）
+      #    - inbox:  推了 _Model-Inbox/** → 归档 + 全套刷新（flow inbox；01 归档已含 resolve_name3 规范命名）
       #    - docs:   推了 Models/** / Blockbench-Models/** / Other-YSM-Models/** / README.md
       #              → 全套刷新（flow full，不含归档）
       #    - 均无 → 仅校验，跳过自动刷新（如手动改 README 错别字、workflow_dispatch）
