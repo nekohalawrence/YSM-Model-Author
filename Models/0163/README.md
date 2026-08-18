@@ -3,10 +3,10 @@
 ## Author
 
 - **Name**: #Rhein雨倩 | #雨倩先生
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [Rhein雨倩](https://space.bilibili.com/35515394)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [Rhein雨倩](https://afdian.com/a/Rheinyuq)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [Rhein雨倩](https://space.bilibili.com/35515394)
+- **SupportPlatform**: #Afdian
+  - **Afdian**: [Rhein雨倩](https://afdian.com/a/Rheinyuq)
 
 ## Models
 

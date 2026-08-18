@@ -3,10 +3,10 @@
 ## Author
 
 - **Name**: #荨蒿栗里 | #荨蒿之栗里 | #栗里
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [荨蒿栗里](https://space.bilibili.com/501046951)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [荨蒿栗里](https://ifdian.net/a/xphkvilili?tab=home)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [荨蒿栗里](https://space.bilibili.com/501046951)
+- **SupportPlatform**: #Afdian
+  - **Afdian**: [荨蒿栗里](https://ifdian.net/a/xphkvilili?tab=home)
 
 ## Models
 

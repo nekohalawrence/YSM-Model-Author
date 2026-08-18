@@ -3,11 +3,11 @@
 ## Author
 
 - **Name**: #池塘-tl | #池塘
-  - **SocialPlatform**: #Bilibili #QQ
-    - **Bilibili**: [池塘-tl](https://space.bilibili.com/3546379886529242)
-    - **QQ**: 981134198
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [池塘-tl](https://afdian.com/a/114514ctjl)
+- **SocialPlatform**: #Bilibili #QQ
+  - **Bilibili**: [池塘-tl](https://space.bilibili.com/3546379886529242)
+  - **QQ**: 981134198
+- **SupportPlatform**: #Afdian
+  - **Afdian**: [池塘-tl](https://afdian.com/a/114514ctjl)
 
 ## Models
 

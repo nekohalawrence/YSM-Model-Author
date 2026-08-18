@@ -3,10 +3,10 @@
 ## Author
 
 - **Name**: #幻梦星璇 | #-幻梦星璇-
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [幻梦星璇](https://space.bilibili.com/526060723)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [幻梦星璇](https://afdian.com/a/704550273Yy)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [幻梦星璇](https://space.bilibili.com/526060723)
+- **SupportPlatform**: #Afdian
+  - **Afdian**: [幻梦星璇](https://afdian.com/a/704550273Yy)
 
 ## Models
 

@@ -3,11 +3,11 @@
 ## Author
 
 - **Name**: #1111111re | #伊伊蕾
-  - **SocialPlatform**: #Bilibili #QQ
-    - **Bilibili**: [1111111re](https://space.bilibili.com/35073555)
-    - **QQ**: 769939358
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [1111111re](https://afdian.com/a/114514yire)
+- **SocialPlatform**: #Bilibili #QQ
+  - **Bilibili**: [1111111re](https://space.bilibili.com/35073555)
+  - **QQ**: 769939358
+- **SupportPlatform**: #Afdian
+  - **Afdian**: [1111111re](https://afdian.com/a/114514yire)
 
 ## Models
 

@@ -3,12 +3,12 @@
 ## Author
 
 - **Name**: #Nekuro | #NekuroMC
-  - **SocialPlatform**: #YouTube
-    - **YouTube**: [Nekuro](https://www.youtube.com/@NekuroMC)
-  - **SupportPlatform**: #ko-fi
-    - **ko-fi**: [Nekuro](https://ko-fi.com/nekuromc/shop)
-  - **OtherPlatform**: #Sketchfab
-    - **Sketchfab**: [Nekuro](https://sketchfab.com/NekuroMC/models)
+- **SocialPlatform**: #YouTube
+  - **YouTube**: [Nekuro](https://www.youtube.com/@NekuroMC)
+- **SupportPlatform**: #ko-fi
+  - **ko-fi**: [Nekuro](https://ko-fi.com/nekuromc/shop)
+- **OtherPlatform**: #Sketchfab
+  - **Sketchfab**: [Nekuro](https://sketchfab.com/NekuroMC/models)
 
 ## Models
 

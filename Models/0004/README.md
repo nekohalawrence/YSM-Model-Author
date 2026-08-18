@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #XG残党
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [XG残党](https://afdian.com/a/x416g)
+- **SupportPlatform**: #Afdian
+  - **Afdian**: [XG残党](https://afdian.com/a/x416g)
 
 ## Models
 

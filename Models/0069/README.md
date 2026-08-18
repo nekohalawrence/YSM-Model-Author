@@ -3,10 +3,10 @@
 ## Author
 
 - **Name**: #ccci202
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [ccci202](https://space.bilibili.com/2019133736)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [ccci202](https://afdian.com/a/ccci202)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [ccci202](https://space.bilibili.com/2019133736)
+- **SupportPlatform**: #Afdian
+  - **Afdian**: [ccci202](https://afdian.com/a/ccci202)
 
 ## Models
 

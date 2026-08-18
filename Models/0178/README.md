@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #qidai | #一点小期待
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [qidai](https://space.bilibili.com/172318031)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [qidai](https://space.bilibili.com/172318031)
 
 ## Models
 

@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #奇葩的小毛
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [奇葩的小毛](https://space.bilibili.com/642514655)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [奇葩的小毛](https://space.bilibili.com/642514655)
 
 ## Models
 

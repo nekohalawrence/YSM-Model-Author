@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #鹘鸦Yata
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [鹘鸦Yata](https://space.bilibili.com/402425842)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [鹘鸦Yata](https://space.bilibili.com/402425842)
 
 ## Models
 

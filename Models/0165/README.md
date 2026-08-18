@@ -3,10 +3,10 @@
 ## Author
 
 - **Name**: #默栖 | #某嘞个默栖 | #默嘞个某栖
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [默栖](https://space.bilibili.com/477165698)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [默栖](https://afdian.com/a/DLMoqi)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [默栖](https://space.bilibili.com/477165698)
+- **SupportPlatform**: #Afdian
+  - **Afdian**: [默栖](https://afdian.com/a/DLMoqi)
 
 ## Models
 

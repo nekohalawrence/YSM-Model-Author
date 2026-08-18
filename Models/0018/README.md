@@ -3,11 +3,11 @@
 ## Author
 
 - **Name**: #夹心果风
-  - **SocialPlatform**: #Bilibili #QQ
-    - **Bilibili**: [夹心果风](https://space.bilibili.com/178099567)
-    - **QQ**: 916346960
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [夹心果风](https://afdian.com/a/jxgf2077)
+- **SocialPlatform**: #Bilibili #QQ
+  - **Bilibili**: [夹心果风](https://space.bilibili.com/178099567)
+  - **QQ**: 916346960
+- **SupportPlatform**: #Afdian
+  - **Afdian**: [夹心果风](https://afdian.com/a/jxgf2077)
 
 ## Models
 

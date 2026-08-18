@@ -4,11 +4,11 @@
 
 - **Name**: #浅陌菌
 - **tags**: 高产/High-Output
-  - **SocialPlatform**: #Bilibili #QQ
-    - **Bilibili**: [浅陌菌](https://space.bilibili.com/24513198)
-    - **QQ**: 1063585053
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [浅陌菌](https://afdian.com/a/tc_fox)
+- **SocialPlatform**: #Bilibili #QQ
+  - **Bilibili**: [浅陌菌](https://space.bilibili.com/24513198)
+  - **QQ**: 1063585053
+- **SupportPlatform**: #Afdian
+  - **Afdian**: [浅陌菌](https://afdian.com/a/tc_fox)
 
 ## Models
 

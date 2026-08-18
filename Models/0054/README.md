@@ -3,9 +3,9 @@
 ## Author
 
 - **Name**: #一只霜狐Owo
-  - **SocialPlatform**: #Bilibili #QQ
-    - **Bilibili**: [一只霜狐Owo](https://space.bilibili.com/1214393496)
-    - **QQ**: 1048762984
+- **SocialPlatform**: #Bilibili #QQ
+  - **Bilibili**: [一只霜狐Owo](https://space.bilibili.com/1214393496)
+  - **QQ**: 1048762984
 
 ## Models
 

@@ -4,10 +4,10 @@
 
 - **Name**: #雾雨波波沙
 - **tags**: 推荐/Recommended · 高产/High-Output
-  - **SocialPlatform**: #Bilibili #Pixiv #QQ
-    - **Bilibili**: [雾雨波波沙](https://space.bilibili.com/36761228)
-    - **Pixiv**: [雾雨波波沙](https://www.pixiv.net/users/26720481)
-    - **QQ**: 530621549
+- **SocialPlatform**: #Bilibili #Pixiv #QQ
+  - **Bilibili**: [雾雨波波沙](https://space.bilibili.com/36761228)
+  - **Pixiv**: [雾雨波波沙](https://www.pixiv.net/users/26720481)
+  - **QQ**: 530621549
 
 ## Models
 

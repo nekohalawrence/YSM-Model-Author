@@ -3,10 +3,10 @@
 ## Author
 
 - **Name**: #迷糊晓雾
-  - **SocialPlatform**: #QQ
-    - **QQ**: 3313645023
-  - **OtherPlatform**: #E-mail
-    - **E-mail**: 3313645023@qq.com
+- **SocialPlatform**: #QQ
+  - **QQ**: 3313645023
+- **OtherPlatform**: #E-mail
+  - **E-mail**: 3313645023@qq.com
 
 ## Models
 

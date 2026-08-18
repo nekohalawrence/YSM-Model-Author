@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #天弓干亦 | #筅袔
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [天弓干亦](https://space.bilibili.com/13098279)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [天弓干亦](https://space.bilibili.com/13098279)
 
 ## Models
 

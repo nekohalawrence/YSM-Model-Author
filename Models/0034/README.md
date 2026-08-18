@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #平衡芝光
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [平衡芝光](https://space.bilibili.com/526319760)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [平衡芝光](https://space.bilibili.com/526319760)
 
 ## Models
 

@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #MicroCraft_ | #MicroCraft
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [MicroCraft_](https://space.bilibili.com/701974112)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [MicroCraft_](https://space.bilibili.com/701974112)
 
 ## Models
 

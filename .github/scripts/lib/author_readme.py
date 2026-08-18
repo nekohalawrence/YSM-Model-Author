@@ -219,12 +219,12 @@ def render_author_readme(author_id: str, entry: dict,
         if not pairs:
             continue
         tags = ' #'.join(key for key, _ in pairs)
-        lines.append(f'  - **{field}**: #{tags}')
+        lines.append(f'- **{field}**: #{tags}')
         for key, value in pairs:
             if value.startswith('http'):
-                lines.append(f'    - **{key}**: [{label}]({value})')
+                lines.append(f'  - **{key}**: [{label}]({value})')
             else:
-                lines.append(f'    - **{key}**: {value}')
+                lines.append(f'  - **{key}**: {value}')
 
     if models:
         lines.append('')

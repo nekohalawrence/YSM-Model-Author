@@ -3,9 +3,9 @@
 ## Author
 
 - **Name**: #泥泞中的小猫 | #PZGR.40
-  - **SocialPlatform**: #Bilibili #QQ
-    - **Bilibili**: [泥泞中的小猫](https://space.bilibili.com/87435859)
-    - **QQ**: 1012212180
+- **SocialPlatform**: #Bilibili #QQ
+  - **Bilibili**: [泥泞中的小猫](https://space.bilibili.com/87435859)
+  - **QQ**: 1012212180
 
 ## Models
 

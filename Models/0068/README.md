@@ -4,10 +4,10 @@
 
 - **Name**: #AnluoSakura
 - **tags**: 推荐/Recommended
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [AnluoSakura](https://space.bilibili.com/1275761002)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [AnluoSakura](https://afdian.com/a/AnluoSakura)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [AnluoSakura](https://space.bilibili.com/1275761002)
+- **SupportPlatform**: #Afdian
+  - **Afdian**: [AnluoSakura](https://afdian.com/a/AnluoSakura)
 
 ## Models
 

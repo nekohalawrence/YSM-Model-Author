@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #小多利鸭
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [小多利鸭](https://space.bilibili.com/295570429)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [小多利鸭](https://space.bilibili.com/295570429)
 
 ## Models
 

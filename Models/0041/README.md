@@ -3,11 +3,11 @@
 ## Author
 
 - **Name**: #提可拉
-  - **SocialPlatform**: #Bilibili #QQ
-    - **Bilibili**: [提可拉](https://space.bilibili.com/326133289)
-    - **QQ**: 881921312
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [提可拉](https://afdian.com/a/6Canim)
+- **SocialPlatform**: #Bilibili #QQ
+  - **Bilibili**: [提可拉](https://space.bilibili.com/326133289)
+  - **QQ**: 881921312
+- **SupportPlatform**: #Afdian
+  - **Afdian**: [提可拉](https://afdian.com/a/6Canim)
 
 ## Models
 

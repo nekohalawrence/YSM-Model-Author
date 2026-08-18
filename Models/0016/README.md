@@ -4,10 +4,10 @@
 
 - **Name**: #祸御神
 - **tags**: 高产/High-Output
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [祸御神](https://space.bilibili.com/164557734)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [祸御神](https://afdian.com/a/YS444)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [祸御神](https://space.bilibili.com/164557734)
+- **SupportPlatform**: #Afdian
+  - **Afdian**: [祸御神](https://afdian.com/a/YS444)
 
 ## Models
 

@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #酷酷の霜叶小姐姐
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [酷酷の霜叶小姐姐](https://space.bilibili.com/106626083)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [酷酷の霜叶小姐姐](https://space.bilibili.com/106626083)
 
 ## Models
 

@@ -3,11 +3,11 @@
 ## Author
 
 - **Name**: #Lvara
-  - **SocialPlatform**: #Bilibili #QQ
-    - **Bilibili**: [Lvara](https://space.bilibili.com/34068391)
-    - **QQ**: 1477827530
-  - **OtherPlatform**: #E-mail
-    - **E-mail**: 1477827530@qq.com
+- **SocialPlatform**: #Bilibili #QQ
+  - **Bilibili**: [Lvara](https://space.bilibili.com/34068391)
+  - **QQ**: 1477827530
+- **OtherPlatform**: #E-mail
+  - **E-mail**: 1477827530@qq.com
 
 ## Models
 

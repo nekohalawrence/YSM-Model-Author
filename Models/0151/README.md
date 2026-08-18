@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #WisteriaZy | #大触紫衣
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [WisteriaZy](https://space.bilibili.com/694519335)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [WisteriaZy](https://space.bilibili.com/694519335)
 
 ## Models
 

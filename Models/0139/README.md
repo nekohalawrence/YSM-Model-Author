@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #穿越小魔王
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [穿越小魔王](https://space.bilibili.com/1562115685)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [穿越小魔王](https://space.bilibili.com/1562115685)
 
 ## Models
 

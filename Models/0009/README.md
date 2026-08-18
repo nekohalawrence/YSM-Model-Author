@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #白亚奈Anay
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [白亚奈Anay](https://space.bilibili.com/454110884)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [白亚奈Anay](https://space.bilibili.com/454110884)
 
 ## Models
 

@@ -4,10 +4,10 @@
 
 - **Name**: #聚模道 | #聚核重工Minecraft | #语文喵喵拳
 - **tags**: 高产/High-Output
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [聚模道](https://space.bilibili.com/450162369)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [聚模道](https://afdian.com/a/yr9964332)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [聚模道](https://space.bilibili.com/450162369)
+- **SupportPlatform**: #Afdian
+  - **Afdian**: [聚模道](https://afdian.com/a/yr9964332)
 
 ## Models
 

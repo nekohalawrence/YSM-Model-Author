@@ -3,10 +3,10 @@
 ## Author
 
 - **Name**: #菊姥爷
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [菊姥爷](https://space.bilibili.com/376780490)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [菊姥爷](https://afdian.com/a/julaoye)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [菊姥爷](https://space.bilibili.com/376780490)
+- **SupportPlatform**: #Afdian
+  - **Afdian**: [菊姥爷](https://afdian.com/a/julaoye)
 
 ## Models
 

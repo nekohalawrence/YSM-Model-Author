@@ -3,11 +3,11 @@
 ## Author
 
 - **Name**: #Fllz
-  - **SocialPlatform**: #Facebook #Pixiv
-    - **Facebook**: [Fllz](https://www.facebook.com/asche.scheer)
-    - **Pixiv**: [Fllz](https://www.pixiv.net/users/34822407)
-  - **OtherPlatform**: #VGen
-    - **VGen**: [Fllz](https://vgen.co/fllz)
+- **SocialPlatform**: #Facebook #Pixiv
+  - **Facebook**: [Fllz](https://www.facebook.com/asche.scheer)
+  - **Pixiv**: [Fllz](https://www.pixiv.net/users/34822407)
+- **OtherPlatform**: #VGen
+  - **VGen**: [Fllz](https://vgen.co/fllz)
 
 ## Models
 

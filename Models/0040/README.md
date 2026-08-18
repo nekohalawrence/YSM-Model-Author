@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #碎de帆
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [碎de帆](https://space.bilibili.com/381524342)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [碎de帆](https://space.bilibili.com/381524342)
 
 ## Models
 

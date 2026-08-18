@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #泉溪鸽
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [泉溪鸽](https://space.bilibili.com/44619913)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [泉溪鸽](https://space.bilibili.com/44619913)
 
 ## Models
 

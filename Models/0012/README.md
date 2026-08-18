@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #赤恒-AzaMire
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [赤恒-AzaMire](https://space.bilibili.com/235888316)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [赤恒-AzaMire](https://space.bilibili.com/235888316)
 
 ## Models
 

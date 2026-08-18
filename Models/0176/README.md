@@ -3,13 +3,13 @@
 ## Author
 
 - **Name**: #Bubuker | #rintaroa | #Torontopizza | #rintaroA
-  - **SocialPlatform**: #YouTube #Twitter
-    - **YouTube**: @rintaroA
-    - **Twitter**: Torontopizza
-  - **SupportPlatform**: #ko-fi
-    - **ko-fi**: rintaroa
-  - **GroupChat**: #Discord
-    - **Discord**: Bubuker
+- **SocialPlatform**: #YouTube #Twitter
+  - **YouTube**: @rintaroA
+  - **Twitter**: Torontopizza
+- **SupportPlatform**: #ko-fi
+  - **ko-fi**: rintaroa
+- **GroupChat**: #Discord
+  - **Discord**: Bubuker
 
 ## Models
 

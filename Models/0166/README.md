@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #棒锤锤 | #棒锤锤QWQ
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [棒锤锤](https://afdian.com/a/bbc6868)
+- **SupportPlatform**: #Afdian
+  - **Afdian**: [棒锤锤](https://afdian.com/a/bbc6868)
 
 ## Models
 

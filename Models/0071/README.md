@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #Dr咕咚
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [Dr咕咚](https://space.bilibili.com/5950899)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [Dr咕咚](https://space.bilibili.com/5950899)
 
 ## Models
 

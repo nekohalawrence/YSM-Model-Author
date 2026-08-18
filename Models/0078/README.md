@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #LuXi233 | #小早川希
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [LuXi233](https://space.bilibili.com/183485702)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [LuXi233](https://space.bilibili.com/183485702)
 
 ## Models
 

@@ -3,9 +3,9 @@
 ## Author
 
 - **Name**: #星语TAT
-  - **SocialPlatform**: #Bilibili #QQ
-    - **Bilibili**: [星语TAT](https://space.bilibili.com/316739550)
-    - **QQ**: 1039376704
+- **SocialPlatform**: #Bilibili #QQ
+  - **Bilibili**: [星语TAT](https://space.bilibili.com/316739550)
+  - **QQ**: 1039376704
 
 ## Models
 

@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #小萌新idjdkd
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [小萌新idjdkd](https://space.bilibili.com/1573788561)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [小萌新idjdkd](https://space.bilibili.com/1573788561)
 
 ## Models
 

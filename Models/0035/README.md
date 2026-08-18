@@ -3,10 +3,10 @@
 ## Author
 
 - **Name**: #谱露阿凯 | #饭
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [谱露阿凯](https://space.bilibili.com/426183597)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [谱露阿凯](https://afdian.com/a/11434fan)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [谱露阿凯](https://space.bilibili.com/426183597)
+- **SupportPlatform**: #Afdian
+  - **Afdian**: [谱露阿凯](https://afdian.com/a/11434fan)
 
 ## Models
 

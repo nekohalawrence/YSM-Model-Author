@@ -3,11 +3,11 @@
 ## Author
 
 - **Name**: #喵Kuroneko | #KuroNeko
-  - **SocialPlatform**: #Bilibili #QQ
-    - **Bilibili**: [喵Kuroneko](https://space.bilibili.com/323374106)
-    - **QQ**: 1050145781
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [喵Kuroneko](https://afdian.com/a/QwQlalalaKuroNe)
+- **SocialPlatform**: #Bilibili #QQ
+  - **Bilibili**: [喵Kuroneko](https://space.bilibili.com/323374106)
+  - **QQ**: 1050145781
+- **SupportPlatform**: #Afdian
+  - **Afdian**: [喵Kuroneko](https://afdian.com/a/QwQlalalaKuroNe)
 
 ## Models
 

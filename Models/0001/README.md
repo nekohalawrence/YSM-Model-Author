@@ -3,9 +3,9 @@
 ## Author
 
 - **Name**: #02Bunny | #蓝玫瑰
-  - **SocialPlatform**: #Bilibili #QQ
-    - **Bilibili**: [02Bunny](https://space.bilibili.com/11814817)
-    - **QQ**: 584570528
+- **SocialPlatform**: #Bilibili #QQ
+  - **Bilibili**: [02Bunny](https://space.bilibili.com/11814817)
+  - **QQ**: 584570528
 
 ## Models
 

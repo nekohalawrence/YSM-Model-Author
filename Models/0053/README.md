@@ -3,9 +3,9 @@
 ## Author
 
 - **Name**: #羊毛毛毛毛_Official喵
-  - **SocialPlatform**: #Bilibili #QQ
-    - **Bilibili**: [羊毛毛毛毛_Official喵](https://space.bilibili.com/85335217)
-    - **QQ**: 1018367746
+- **SocialPlatform**: #Bilibili #QQ
+  - **Bilibili**: [羊毛毛毛毛_Official喵](https://space.bilibili.com/85335217)
+  - **QQ**: 1018367746
 
 ## Models
 

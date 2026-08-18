@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #平行Rosmontis
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [平行Rosmontis](https://space.bilibili.com/473170444)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [平行Rosmontis](https://space.bilibili.com/473170444)
 
 ## Models
 

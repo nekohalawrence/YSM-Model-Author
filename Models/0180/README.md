@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #杂果沙拉
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [杂果沙拉](https://space.bilibili.com/21032727)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [杂果沙拉](https://space.bilibili.com/21032727)
 
 ## Models
 

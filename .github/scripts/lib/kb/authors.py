@@ -329,7 +329,7 @@ def _merge_platform_lines(keep_content: str, drop_content: str, keep_readme: Pat
             continue
         key = m.group(1).strip()
         indent = line[:len(line) - len(line.lstrip())]
-        is_sub = len(indent.expandtabs(4)) >= 4
+        is_sub = len(indent.expandtabs(4)) >= 2
         if is_sub:
             if key.lower() in have or not m.group(2).strip():
                 continue  # keep 已有该平台或无值：跳过
@@ -458,7 +458,7 @@ def _count_mergeable_platform_lines(keep_content: str, drop_content: str) -> int
             continue
         key = m.group(1).strip()
         indent = line[:len(line) - len(line.lstrip())]
-        if len(indent.expandtabs(4)) >= 4:
+        if len(indent.expandtabs(4)) >= 2:
             if key.lower() not in have and m.group(2).strip():
                 n += 1
                 have.add(key.lower())

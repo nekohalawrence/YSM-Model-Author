@@ -3,9 +3,9 @@
 ## Author
 
 - **Name**: #原原本本空空
-  - **SocialPlatform**: #Bilibili #QQ
-    - **Bilibili**: [原原本本空空](https://space.bilibili.com/407818720)
-    - **QQ**: 1082258207
+- **SocialPlatform**: #Bilibili #QQ
+  - **Bilibili**: [原原本本空空](https://space.bilibili.com/407818720)
+  - **QQ**: 1082258207
 
 ## Models
 

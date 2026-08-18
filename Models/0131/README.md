@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #星璇_tbod
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [星璇_tbod](https://space.bilibili.com/2123185882)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [星璇_tbod](https://space.bilibili.com/2123185882)
 
 ## Models
 

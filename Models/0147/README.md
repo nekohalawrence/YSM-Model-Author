@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #清晨的一阵风
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [清晨的一阵风](https://space.bilibili.com/510956578)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [清晨的一阵风](https://space.bilibili.com/510956578)
 
 ## Models
 

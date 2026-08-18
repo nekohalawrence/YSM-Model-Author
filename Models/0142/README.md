@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #Omegaff0048 | #FF0048
-  - **SocialPlatform**: #YouTube
-    - **YouTube**: [Omegaff0048](https://www.youtube.com/@omegaff0048)
+- **SocialPlatform**: #YouTube
+  - **YouTube**: [Omegaff0048](https://www.youtube.com/@omegaff0048)
 
 ## Models
 

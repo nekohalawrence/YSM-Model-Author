@@ -3,11 +3,11 @@
 ## Author
 
 - **Name**: #狸民limin | #狸民 | #limin
-  - **SocialPlatform**: #Bilibili #QQ
-    - **Bilibili**: [狸民limin](https://space.bilibili.com/38974741)
-    - **QQ**: 975530811
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [狸民limin](https://afdian.com/a/limin)
+- **SocialPlatform**: #Bilibili #QQ
+  - **Bilibili**: [狸民limin](https://space.bilibili.com/38974741)
+  - **QQ**: 975530811
+- **SupportPlatform**: #Afdian
+  - **Afdian**: [狸民limin](https://afdian.com/a/limin)
 
 ## Models
 

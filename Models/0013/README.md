@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #对羧基苯酚
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [对羧基苯酚](https://space.bilibili.com/3461562335496256)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [对羧基苯酚](https://space.bilibili.com/3461562335496256)
 
 ## Models
 

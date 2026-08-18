@@ -4,10 +4,10 @@
 
 - **Name**: #Almeta_owx
 - **tags**: 推荐/Recommended
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [Almeta_owx](https://space.bilibili.com/4328692)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [Almeta_owx](https://afdian.com/a/Almeta)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [Almeta_owx](https://space.bilibili.com/4328692)
+- **SupportPlatform**: #Afdian
+  - **Afdian**: [Almeta_owx](https://afdian.com/a/Almeta)
 
 ## Models
 

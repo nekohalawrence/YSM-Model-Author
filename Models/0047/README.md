@@ -3,9 +3,9 @@
 ## Author
 
 - **Name**: #Nicy_奈汐 | #苏溟0w0 | #沐星喵OwO
-  - **SocialPlatform**: #Bilibili #QQ
-    - **Bilibili**: [Nicy_奈汐](https://space.bilibili.com/3494363390806334)
-    - **QQ**: 743807609
+- **SocialPlatform**: #Bilibili #QQ
+  - **Bilibili**: [Nicy_奈汐](https://space.bilibili.com/3494363390806334)
+  - **QQ**: 743807609
 
 ## Models
 

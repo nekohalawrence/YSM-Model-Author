@@ -3,10 +3,10 @@
 ## Author
 
 - **Name**: #兔兔猫officials | #阴阳兔兔猫offcial
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [兔兔猫officials](https://space.bilibili.com/3546785165347464)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [兔兔猫officials](https://ifdian.net/a/RABET)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [兔兔猫officials](https://space.bilibili.com/3546785165347464)
+- **SupportPlatform**: #Afdian
+  - **Afdian**: [兔兔猫officials](https://ifdian.net/a/RABET)
 
 ## Models
 

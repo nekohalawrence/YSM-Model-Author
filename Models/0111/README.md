@@ -3,10 +3,10 @@
 ## Author
 
 - **Name**: #奶油桃NaytoTime | #奶油桃
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [奶油桃NaytoTime](https://space.bilibili.com/74167922)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [奶油桃NaytoTime](https://afdian.com/a/liberstellae)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [奶油桃NaytoTime](https://space.bilibili.com/74167922)
+- **SupportPlatform**: #Afdian
+  - **Afdian**: [奶油桃NaytoTime](https://afdian.com/a/liberstellae)
 
 ## Models
 

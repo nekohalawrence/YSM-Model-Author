@@ -3,10 +3,10 @@
 ## Author
 
 - **Name**: #幻古诗
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [幻古诗](https://space.bilibili.com/443702321)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [幻古诗](https://afdian.com/a/huangushi)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [幻古诗](https://space.bilibili.com/443702321)
+- **SupportPlatform**: #Afdian
+  - **Afdian**: [幻古诗](https://afdian.com/a/huangushi)
 
 ## Models
 

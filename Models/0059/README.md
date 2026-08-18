@@ -3,11 +3,11 @@
 ## Author
 
 - **Name**: #瀛猫
-  - **SocialPlatform**: #Bilibili #QQ
-    - **Bilibili**: [瀛猫](https://space.bilibili.com/647224460)
-    - **QQ**: 1037786416
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [瀛猫](https://afdian.com/a/wincatpro)
+- **SocialPlatform**: #Bilibili #QQ
+  - **Bilibili**: [瀛猫](https://space.bilibili.com/647224460)
+  - **QQ**: 1037786416
+- **SupportPlatform**: #Afdian
+  - **Afdian**: [瀛猫](https://afdian.com/a/wincatpro)
 
 ## Models
 

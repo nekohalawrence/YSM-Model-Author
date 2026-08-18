@@ -4,10 +4,10 @@
 
 - **Name**: #苏依凛 | #炽湮
 - **tags**: 高产/High-Output · 18禁/R18
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [苏依凛](https://space.bilibili.com/76987486)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [苏依凛](https://afdian.com/a/supermonsterking)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [苏依凛](https://space.bilibili.com/76987486)
+- **SupportPlatform**: #Afdian
+  - **Afdian**: [苏依凛](https://afdian.com/a/supermonsterking)
 
 ## Models
 

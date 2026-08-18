@@ -3,11 +3,11 @@
 ## Author
 
 - **Name**: #你个人机cc | #cc
-  - **SocialPlatform**: #Bilibili #QQ
-    - **Bilibili**: [你个人机cc](https://space.bilibili.com/400763031)
-    - **QQ**: 1055945725
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [你个人机cc](https://afdian.com/a/ccnie)
+- **SocialPlatform**: #Bilibili #QQ
+  - **Bilibili**: [你个人机cc](https://space.bilibili.com/400763031)
+  - **QQ**: 1055945725
+- **SupportPlatform**: #Afdian
+  - **Afdian**: [你个人机cc](https://afdian.com/a/ccnie)
 
 ## Models
 

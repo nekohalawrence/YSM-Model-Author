@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #XGancheng_Tao
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [XGancheng_Tao](https://space.bilibili.com/1406170630)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [XGancheng_Tao](https://space.bilibili.com/1406170630)
 
 ## Models
 

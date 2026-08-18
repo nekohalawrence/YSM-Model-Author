@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #ナヒーダ
-  - **SocialPlatform**: #QQ
-    - **QQ**: 639518184
+- **SocialPlatform**: #QQ
+  - **QQ**: 639518184
 
 ## Models
 

@@ -3,11 +3,11 @@
 ## Author
 
 - **Name**: #狱际星芒
-  - **SocialPlatform**: #Bilibili #QQ
-    - **Bilibili**: [狱际星芒](https://space.bilibili.com/349150095)
-    - **QQ**: 218129003
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [狱际星芒](https://afdian.com/a/3256286845xingmang)
+- **SocialPlatform**: #Bilibili #QQ
+  - **Bilibili**: [狱际星芒](https://space.bilibili.com/349150095)
+  - **QQ**: 218129003
+- **SupportPlatform**: #Afdian
+  - **Afdian**: [狱际星芒](https://afdian.com/a/3256286845xingmang)
 
 ## Models
 

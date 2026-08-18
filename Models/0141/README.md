@@ -3,10 +3,10 @@
 ## Author
 
 - **Name**: #映白L | #映白
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [映白L](https://space.bilibili.com/10208258)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [映白L](https://afdian.com/a/ehaku)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [映白L](https://space.bilibili.com/10208258)
+- **SupportPlatform**: #Afdian
+  - **Afdian**: [映白L](https://afdian.com/a/ehaku)
 
 ## Models
 

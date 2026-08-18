@@ -3,10 +3,10 @@
 ## Author
 
 - **Name**: #墨染逝羽 | #Feather_aya
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [墨染逝羽](https://space.bilibili.com/5718046)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [墨染逝羽](https://afdian.com/a/FliegeSA)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [墨染逝羽](https://space.bilibili.com/5718046)
+- **SupportPlatform**: #Afdian
+  - **Afdian**: [墨染逝羽](https://afdian.com/a/FliegeSA)
 
 ## Models
 

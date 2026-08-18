@@ -14,11 +14,11 @@ INDEX_ROW_RE = re.compile(r'^\|\s*(\d{4})\s*\|\s*\[([^\]]+)\]\(([^)]*)\)\s*\|')
 # 作者字符串分隔符（全/半角）与 "中文(English)" 拆分
 AUTHOR_SPLIT_RE = re.compile(r'[\s|｜,，、;/；]+')
 PAREN_PAIR_RE = re.compile(r'^([^()（）]*)[(（]([^)）]*)[)）]$')
-# 作者 README 中 4 空格缩进的平台账号行（如 "    - **Bilibili**: [name](url)"）
-PLATFORM_LINE_RE = re.compile(r'^    - \*\*([^*]+)\*\*\s*[:：]\s*(.+)$')
-# 宽松版平台行（2-4 空格缩进、冒号可选）：audit_models 合并平台行时使用，
+# 作者 README 中 2 空格缩进的平台账号子行（如 "  - **Bilibili**: [name](url)"）
+PLATFORM_LINE_RE = re.compile(r'^  - \*\*([^*]+)\*\*\s*[:：]\s*(.+)$')
+# 宽松版平台行（0-2 空格缩进、冒号可选）：audit_models 合并平台行时使用，
 # 兼容容器行（- **SocialPlatform**: #Bilibili）与子行（- **Bilibili**: [..](..)）
-PLATFORM_ANY_LINE_RE = re.compile(r'^\s{2,4}-\s*\*\*([^*]+)\*\*\s*[:：]?\s*(.*)$')
+PLATFORM_ANY_LINE_RE = re.compile(r'^\s{0,2}-\s*\*\*([^*]+)\*\*\s*[:：]?\s*(.*)$')
 # 根 README 作者表自动生成区域标记（03_generate_root_readme.py --author 写入、translate_readme 保护）
 AUTHORS_LIST_START = '<!-- AUTHORS_LIST_START -->'
 AUTHORS_LIST_END = '<!-- AUTHORS_LIST_END -->'

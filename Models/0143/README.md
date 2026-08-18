@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #yuoke | #bili_yuoyuoyuo
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [yuoke](https://space.bilibili.com/497425837)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [yuoke](https://space.bilibili.com/497425837)
 
 ## Models
 

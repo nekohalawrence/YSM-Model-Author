@@ -3,11 +3,11 @@
 ## Author
 
 - **Name**: #旭门只玩驹 | #Zeonjin-旭门只玩驹
-  - **SocialPlatform**: #Bilibili #QQ
-    - **Bilibili**: [旭门只玩驹](https://space.bilibili.com/183381720)
-    - **QQ**: 2479819954
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [旭门只玩驹](https://afdian.com/a/Zeonjin-Kogasa)
+- **SocialPlatform**: #Bilibili #QQ
+  - **Bilibili**: [旭门只玩驹](https://space.bilibili.com/183381720)
+  - **QQ**: 2479819954
+- **SupportPlatform**: #Afdian
+  - **Afdian**: [旭门只玩驹](https://afdian.com/a/Zeonjin-Kogasa)
 
 ## Models
 

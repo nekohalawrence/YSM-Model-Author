@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #九碳糖 | #九碳糖BI3NVZ
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [九碳糖](https://space.bilibili.com/543291461)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [九碳糖](https://space.bilibili.com/543291461)
 
 ## Models
 

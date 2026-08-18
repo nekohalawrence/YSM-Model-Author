@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #MC-ZBM
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [MC-ZBM](https://space.bilibili.com/604228173)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [MC-ZBM](https://space.bilibili.com/604228173)
 
 ## Models
 

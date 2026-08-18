@@ -3,11 +3,11 @@
 ## Author
 
 - **Name**: #白色北熊
-  - **SocialPlatform**: #Bilibili #QQ
-    - **Bilibili**: [白色北熊](https://space.bilibili.com/175342453)
-    - **QQ**: 1067426280
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [白色北熊](https://afdian.com/a/bx233)
+- **SocialPlatform**: #Bilibili #QQ
+  - **Bilibili**: [白色北熊](https://space.bilibili.com/175342453)
+  - **QQ**: 1067426280
+- **SupportPlatform**: #Afdian
+  - **Afdian**: [白色北熊](https://afdian.com/a/bx233)
 
 ## Models
 

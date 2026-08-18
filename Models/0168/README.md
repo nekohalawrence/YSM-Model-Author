@@ -3,10 +3,10 @@
 ## Author
 
 - **Name**: #丁真蟹 | #ZHEN
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [丁真蟹](https://space.bilibili.com/652519489)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [丁真蟹](https://afdian.com/a/ZHEN2023)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [丁真蟹](https://space.bilibili.com/652519489)
+- **SupportPlatform**: #Afdian
+  - **Afdian**: [丁真蟹](https://afdian.com/a/ZHEN2023)
 
 ## Models
 

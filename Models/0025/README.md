@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #绫独之落
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [绫独之落](https://space.bilibili.com/39655169)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [绫独之落](https://space.bilibili.com/39655169)
 
 ## Models
 

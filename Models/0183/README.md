@@ -3,11 +3,11 @@
 ## Author
 
 - **Name**: #Aaaaaaafeng
-  - **SocialPlatform**: #Bilibili #QQ
-    - **Bilibili**: [Aaaaaaafeng](https://space.bilibili.com/12133120)
-    - **QQ**: 220993928
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [Aaaaaaafeng](https://afdian.com/a/Aaaaaaafeng)
+- **SocialPlatform**: #Bilibili #QQ
+  - **Bilibili**: [Aaaaaaafeng](https://space.bilibili.com/12133120)
+  - **QQ**: 220993928
+- **SupportPlatform**: #Afdian
+  - **Afdian**: [Aaaaaaafeng](https://afdian.com/a/Aaaaaaafeng)
 
 ## Models
 

@@ -3,10 +3,10 @@
 ## Author
 
 - **Name**: #咕咕鸡 | #咕咕叫的小菜鸡
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [咕咕鸡](https://space.bilibili.com/11989730)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [咕咕鸡](https://afdian.com/a/GuGuChicken)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [咕咕鸡](https://space.bilibili.com/11989730)
+- **SupportPlatform**: #Afdian
+  - **Afdian**: [咕咕鸡](https://afdian.com/a/GuGuChicken)
 
 ## Models
 

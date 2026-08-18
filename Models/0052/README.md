@@ -4,10 +4,10 @@
 
 - **Name**: #゚烟雨画桥
 - **tags**: 高产/High-Output
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [゚烟雨画桥](https://space.bilibili.com/1268865161)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [゚烟雨画桥](https://afdian.com/a/mj204)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [゚烟雨画桥](https://space.bilibili.com/1268865161)
+- **SupportPlatform**: #Afdian
+  - **Afdian**: [゚烟雨画桥](https://afdian.com/a/mj204)
 
 ## Models
 

@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #辅助EinHeld
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [辅助EinHeld](https://space.bilibili.com/483015918)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [辅助EinHeld](https://space.bilibili.com/483015918)
 
 ## Models
 

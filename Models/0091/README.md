@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #trita
-  - **SocialPlatform**: #QQ
-    - **QQ**: 3490790346
+- **SocialPlatform**: #QQ
+  - **QQ**: 3490790346
 
 ## Models
 

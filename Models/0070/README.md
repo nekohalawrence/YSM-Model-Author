@@ -3,10 +3,10 @@
 ## Author
 
 - **Name**: #Dashcode | #ASHES356
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [Dashcode](https://space.bilibili.com/51204057)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [Dashcode](https://afdian.com/a/ashes356)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [Dashcode](https://space.bilibili.com/51204057)
+- **SupportPlatform**: #Afdian
+  - **Afdian**: [Dashcode](https://afdian.com/a/ashes356)
 
 ## Models
 

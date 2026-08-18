@@ -3,11 +3,11 @@
 ## Author
 
 - **Name**: #宇宙影帝の终焉
-  - **SocialPlatform**: #Bilibili #QQ
-    - **Bilibili**: [宇宙影帝の终焉](https://space.bilibili.com/364412316/)
-    - **QQ**: 3249851858
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [宇宙影帝の终焉](https://ifdian.net/a/redder_p)
+- **SocialPlatform**: #Bilibili #QQ
+  - **Bilibili**: [宇宙影帝の终焉](https://space.bilibili.com/364412316/)
+  - **QQ**: 3249851858
+- **SupportPlatform**: #Afdian
+  - **Afdian**: [宇宙影帝の终焉](https://ifdian.net/a/redder_p)
 
 ## Models
 

@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #无名氏
-  - **SocialPlatform**: #QQ
-    - **QQ**: 2568904644
+- **SocialPlatform**: #QQ
+  - **QQ**: 2568904644
 
 ## Models
 

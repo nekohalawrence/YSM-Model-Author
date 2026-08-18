@@ -3,9 +3,9 @@
 ## Author
 
 - **Name**: #夜森岚_Noxsil
-  - **SocialPlatform**: #Bilibili #QQ
-    - **Bilibili**: [夜森岚_Noxsil](https://space.bilibili.com/3706963248548243)
-    - **QQ**: 3910084829
+- **SocialPlatform**: #Bilibili #QQ
+  - **Bilibili**: [夜森岚_Noxsil](https://space.bilibili.com/3706963248548243)
+  - **QQ**: 3910084829
 
 ## Models
 

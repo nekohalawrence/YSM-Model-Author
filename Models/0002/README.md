@@ -3,11 +3,11 @@
 ## Author
 
 - **Name**: #映素 | #映素作坊
-  - **SocialPlatform**: #Bilibili #QQ
-    - **Bilibili**: [映素](https://space.bilibili.com/400235810)
-    - **QQ**: 833187861
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [映素](https://afdian.com/a/6TGESILA)
+- **SocialPlatform**: #Bilibili #QQ
+  - **Bilibili**: [映素](https://space.bilibili.com/400235810)
+  - **QQ**: 833187861
+- **SupportPlatform**: #Afdian
+  - **Afdian**: [映素](https://afdian.com/a/6TGESILA)
 
 ## Models
 

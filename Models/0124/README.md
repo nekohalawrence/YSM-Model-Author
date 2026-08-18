@@ -3,9 +3,9 @@
 ## Author
 
 - **Name**: #超吊的点点
-  - **SocialPlatform**: #Bilibili #QQ
-    - **Bilibili**: [超吊的点点](https://space.bilibili.com/123656442)
-    - **QQ**: 581856520
+- **SocialPlatform**: #Bilibili #QQ
+  - **Bilibili**: [超吊的点点](https://space.bilibili.com/123656442)
+  - **QQ**: 581856520
 
 ## Models
 

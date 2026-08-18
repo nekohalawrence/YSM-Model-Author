@@ -4,9 +4,9 @@
 
 - **Name**: #纸盒ALifang | #Cc-纸盒 | #Cc纸盒
 - **tags**: 高产/High-Output
-  - **SocialPlatform**: #Bilibili #QQ
-    - **Bilibili**: [纸盒ALifang](https://space.bilibili.com/1494015242)
-    - **QQ**: 619035464
+- **SocialPlatform**: #Bilibili #QQ
+  - **Bilibili**: [纸盒ALifang](https://space.bilibili.com/1494015242)
+  - **QQ**: 619035464
 
 ## Models
 

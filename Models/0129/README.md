@@ -4,9 +4,9 @@
 
 - **Name**: #Dr观星 | #Dr-观星
 - **tags**: 高产/High-Output
-  - **SocialPlatform**: #Bilibili #QQ
-    - **Bilibili**: [Dr观星](https://space.bilibili.com/157282636)
-    - **QQ**: 1087347018
+- **SocialPlatform**: #Bilibili #QQ
+  - **Bilibili**: [Dr观星](https://space.bilibili.com/157282636)
+  - **QQ**: 1087347018
 
 ## Models
 

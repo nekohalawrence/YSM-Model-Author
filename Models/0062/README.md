@@ -3,11 +3,11 @@
 ## Author
 
 - **Name**: #云曦-Yunxxi_ugo | #云曦
-  - **SocialPlatform**: #Bilibili #QQ
-    - **Bilibili**: [云曦-Yunxxi_ugo](https://space.bilibili.com/28954757)
-    - **QQ**: 924884449
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [云曦-Yunxxi_ugo](https://afdian.com/a/Yunxxi_ugo)
+- **SocialPlatform**: #Bilibili #QQ
+  - **Bilibili**: [云曦-Yunxxi_ugo](https://space.bilibili.com/28954757)
+  - **QQ**: 924884449
+- **SupportPlatform**: #Afdian
+  - **Afdian**: [云曦-Yunxxi_ugo](https://afdian.com/a/Yunxxi_ugo)
 
 ## Models
 

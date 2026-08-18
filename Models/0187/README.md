@@ -3,10 +3,10 @@
 ## Author
 
 - **Name**: #爱听书的旅人 | #爱听小说的旅人
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [爱听书的旅人](https://space.bilibili.com/128909195)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [爱听书的旅人](https://afdian.com/a/ATSDLR)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [爱听书的旅人](https://space.bilibili.com/128909195)
+- **SupportPlatform**: #Afdian
+  - **Afdian**: [爱听书的旅人](https://afdian.com/a/ATSDLR)
 
 ## Models
 

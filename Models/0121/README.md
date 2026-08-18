@@ -3,9 +3,9 @@
 ## Author
 
 - **Name**: #准尉werner
-  - **SocialPlatform**: #Bilibili #QQ
-    - **Bilibili**: [准尉werner](https://space.bilibili.com/23427031)
-    - **QQ**: 1102665952
+- **SocialPlatform**: #Bilibili #QQ
+  - **Bilibili**: [准尉werner](https://space.bilibili.com/23427031)
+  - **QQ**: 1102665952
 
 ## Models
 

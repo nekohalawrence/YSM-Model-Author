@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #安欣
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [安欣](https://afdian.com/a/Anxin520X)
+- **SupportPlatform**: #Afdian
+  - **Afdian**: [安欣](https://afdian.com/a/Anxin520X)
 
 ## Models
 

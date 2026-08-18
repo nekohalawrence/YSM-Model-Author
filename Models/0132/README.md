@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #qf欸 | #qf
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [qf欸](https://space.bilibili.com/452194950)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [qf欸](https://space.bilibili.com/452194950)
 
 ## Models
 

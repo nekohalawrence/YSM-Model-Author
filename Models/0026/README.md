@@ -3,11 +3,11 @@
 ## Author
 
 - **Name**: #雒仁
-  - **SocialPlatform**: #Bilibili #QQ
-    - **Bilibili**: [雒仁](https://space.bilibili.com/13550783)
-    - **QQ**: 528146909
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [雒仁](https://afdian.com/a/luoren)
+- **SocialPlatform**: #Bilibili #QQ
+  - **Bilibili**: [雒仁](https://space.bilibili.com/13550783)
+  - **QQ**: 528146909
+- **SupportPlatform**: #Afdian
+  - **Afdian**: [雒仁](https://afdian.com/a/luoren)
 
 ## Models
 

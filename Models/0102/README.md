@@ -4,12 +4,12 @@
 
 - **Name**: #Dreamer | #普通的木屐
 - **tags**: 高产/High-Output
-  - **SocialPlatform**: #Bilibili #WeChat #QQ
-    - **Bilibili**: [Dreamer](https://afdian.com/a/CommonMuJi)
-    - **WeChat**: MC_CommonMuJi
-    - **QQ**: 1776296661
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [Dreamer](https://space.bilibili.com/768300)
+- **SocialPlatform**: #Bilibili #WeChat #QQ
+  - **Bilibili**: [Dreamer](https://afdian.com/a/CommonMuJi)
+  - **WeChat**: MC_CommonMuJi
+  - **QQ**: 1776296661
+- **SupportPlatform**: #Afdian
+  - **Afdian**: [Dreamer](https://space.bilibili.com/768300)
 
 ## Models
 

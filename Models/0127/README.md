@@ -3,10 +3,10 @@
 ## Author
 
 - **Name**: #总督神绮
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [总督神绮](https://space.bilibili.com/37854534)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [总督神绮](https://ifdian.net/a/sShinki)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [总督神绮](https://space.bilibili.com/37854534)
+- **SupportPlatform**: #Afdian
+  - **Afdian**: [总督神绮](https://ifdian.net/a/sShinki)
 
 ## Models
 

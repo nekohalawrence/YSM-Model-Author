@@ -3,9 +3,9 @@
 ## Author
 
 - **Name**: #A_su杏仁
-  - **SocialPlatform**: #Bilibili #QQ
-    - **Bilibili**: [A_su杏仁](https://space.bilibili.com/524666730)
-    - **QQ**: 1019752550
+- **SocialPlatform**: #Bilibili #QQ
+  - **Bilibili**: [A_su杏仁](https://space.bilibili.com/524666730)
+  - **QQ**: 1019752550
 
 ## Models
 

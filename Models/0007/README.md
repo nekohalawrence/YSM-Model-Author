@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #啊这-_-0 | #伍炎
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [啊这-_-0](https://space.bilibili.com/347376421)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [啊这-_-0](https://space.bilibili.com/347376421)
 
 ## Models
 

@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #哈雷汰多
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [哈雷汰多](https://space.bilibili.com/385810311)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [哈雷汰多](https://space.bilibili.com/385810311)
 
 ## Models
 

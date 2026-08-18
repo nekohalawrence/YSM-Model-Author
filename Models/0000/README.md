@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #-OMEGAZERO-
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [-OMEGAZERO-](https://space.bilibili.com/359658906)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [-OMEGAZERO-](https://space.bilibili.com/359658906)
 
 ## Models
 

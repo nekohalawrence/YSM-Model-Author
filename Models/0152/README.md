@@ -3,10 +3,10 @@
 ## Author
 
 - **Name**: #wwww琨
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [wwww琨](https://space.bilibili.com/99065359)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [wwww琨](https://afdian.com/a/wwwwkun)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [wwww琨](https://space.bilibili.com/99065359)
+- **SupportPlatform**: #Afdian
+  - **Afdian**: [wwww琨](https://afdian.com/a/wwwwkun)
 
 ## Models
 

@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #Anrieal
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [Anrieal](https://space.bilibili.com/1421932069)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [Anrieal](https://space.bilibili.com/1421932069)
 
 ## Models
 

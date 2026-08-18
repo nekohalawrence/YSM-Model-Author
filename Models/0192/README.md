@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #苏瑞铃 | #苏瑞铃_official
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [苏瑞铃](https://space.bilibili.com/37942254)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [苏瑞铃](https://space.bilibili.com/37942254)
 
 ## Models
 

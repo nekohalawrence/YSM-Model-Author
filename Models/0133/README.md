@@ -3,10 +3,10 @@
 ## Author
 
 - **Name**: #SI_VD
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [SI_VD](https://space.bilibili.com/1413470251)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [SI_VD](https://ifdian.net/a/3832254VD)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [SI_VD](https://space.bilibili.com/1413470251)
+- **SupportPlatform**: #Afdian
+  - **Afdian**: [SI_VD](https://ifdian.net/a/3832254VD)
 
 ## Models
 

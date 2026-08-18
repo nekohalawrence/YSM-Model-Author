@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #Tu_tou
-  - **SocialPlatform**: #QQ
-    - **QQ**: 126088260
+- **SocialPlatform**: #QQ
+  - **QQ**: 126088260
 
 ## Models
 

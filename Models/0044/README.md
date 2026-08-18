@@ -3,9 +3,9 @@
 ## Author
 
 - **Name**: #韦懦夫斯菲尔 | #汪
-  - **SocialPlatform**: #Bilibili #QQ
-    - **Bilibili**: [韦懦夫斯菲尔](https://space.bilibili.com/3546753760496536)
-    - **QQ**: 624971642
+- **SocialPlatform**: #Bilibili #QQ
+  - **Bilibili**: [韦懦夫斯菲尔](https://space.bilibili.com/3546753760496536)
+  - **QQ**: 624971642
 
 ## Models
 

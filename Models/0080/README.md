@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #Nona_Reeves | #Nona_reeves | #Nona-Reeves
-  - **SocialPlatform**: #QQ
-    - **QQ**: 1926615510
+- **SocialPlatform**: #QQ
+  - **QQ**: 1926615510
 
 ## Models
 

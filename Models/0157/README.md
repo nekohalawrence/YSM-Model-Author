@@ -3,10 +3,10 @@
 ## Author
 
 - **Name**: #Deovolente | #GhastRiv
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [Deovolente](https://space.bilibili.com/188295)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [Deovolente](https://afdian.com/a/Deovolente)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [Deovolente](https://space.bilibili.com/188295)
+- **SupportPlatform**: #Afdian
+  - **Afdian**: [Deovolente](https://afdian.com/a/Deovolente)
 
 ## Models
 

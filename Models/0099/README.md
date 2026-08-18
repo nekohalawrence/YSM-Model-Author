@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #Dumnheint
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [Dumnheint](https://space.bilibili.com/36644599)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [Dumnheint](https://space.bilibili.com/36644599)
 
 ## Models
 

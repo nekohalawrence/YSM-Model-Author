@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #Kria月明
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [Kria月明](https://space.bilibili.com/182808322)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [Kria月明](https://space.bilibili.com/182808322)
 
 ## Models
 

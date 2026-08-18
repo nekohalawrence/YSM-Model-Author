@@ -3,10 +3,10 @@
 ## Author
 
 - **Name**: #叁雫MitsukuDayo
-  - **SocialPlatform**: #QQ
-    - **QQ**: 2780077625
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [叁雫MitsukuDayo](https://afdian.com/a/MitsukuDayo)
+- **SocialPlatform**: #QQ
+  - **QQ**: 2780077625
+- **SupportPlatform**: #Afdian
+  - **Afdian**: [叁雫MitsukuDayo](https://afdian.com/a/MitsukuDayo)
 
 ## Models
 

@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #失语喵
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [失语喵](https://space.bilibili.com/171415484)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [失语喵](https://space.bilibili.com/171415484)
 
 ## Models
 

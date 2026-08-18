@@ -56,7 +56,7 @@ def author_entries(models_dir: Path,
 # ---------------------------------------------------------------------------
 TEAM_LINE_RE = re.compile(r'^\s*-\s*\*\*team\*\*\s*[:：]\s*(?P<val>.+)$',
                           re.MULTILINE | re.IGNORECASE)
-PLATFORM_SUB_RE = re.compile(r'^\s{4,}-\s*\*\*(?P<key>[^*]+)\*\*\s*[:：]\s*(?P<val>.*)$')
+PLATFORM_SUB_RE = re.compile(r'^\s{2,}-\s*\*\*(?P<key>[^*]+)\*\*\s*[:：]\s*(?P<val>.*)$')
 
 
 def parse_readme_author_info(text: str) -> dict:

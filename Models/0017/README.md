@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #寄水晶
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [寄水晶](https://space.bilibili.com/505272945)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [寄水晶](https://space.bilibili.com/505272945)
 
 ## Models
 

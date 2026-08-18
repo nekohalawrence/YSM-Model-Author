@@ -4,12 +4,12 @@
 
 - **Name**: #源石姬变体 | #raw_chicken | #鸡姬
 - **tags**: 18禁/R18
-  - **SocialPlatform**: #Bilibili #Pixiv
-    - **Bilibili**: [源石姬变体](https://space.bilibili.com/219540765)
-    - **Pixiv**: [源石姬变体](https://www.pixiv.net/users/31376770)
-  - **SupportPlatform**: #Afdian #Unifans
-    - **Afdian**: [源石姬变体](https://afdian.com/a/rawchicken)
-    - **Unifans**: [源石姬变体](https://app.unifans.io/c/rawchickenneg)
+- **SocialPlatform**: #Bilibili #Pixiv
+  - **Bilibili**: [源石姬变体](https://space.bilibili.com/219540765)
+  - **Pixiv**: [源石姬变体](https://www.pixiv.net/users/31376770)
+- **SupportPlatform**: #Afdian #Unifans
+  - **Afdian**: [源石姬变体](https://afdian.com/a/rawchicken)
+  - **Unifans**: [源石姬变体](https://app.unifans.io/c/rawchickenneg)
 
 ## Models
 

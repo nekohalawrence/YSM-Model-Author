@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #油七桶
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [油七桶](https://space.bilibili.com/4896879)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [油七桶](https://space.bilibili.com/4896879)
 
 ## Models
 

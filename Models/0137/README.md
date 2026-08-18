@@ -3,9 +3,9 @@
 ## Author
 
 - **Name**: #Maks | #Maks怜悯
-  - **SocialPlatform**: #Bilibili #QQ
-    - **Bilibili**: [Maks](https://space.bilibili.com/352177387)
-    - **QQ**: 1047117247
+- **SocialPlatform**: #Bilibili #QQ
+  - **Bilibili**: [Maks](https://space.bilibili.com/352177387)
+  - **QQ**: 1047117247
 
 ## Models
 

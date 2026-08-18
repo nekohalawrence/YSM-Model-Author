@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #鼠标会梦到光猫吗
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [鼠标会梦到光猫吗](https://space.bilibili.com/3546800153692981)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [鼠标会梦到光猫吗](https://space.bilibili.com/3546800153692981)
 
 ## Models
 

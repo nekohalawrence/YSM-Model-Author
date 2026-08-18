@@ -3,8 +3,8 @@
 ## Author
 
 - **Name**: #Wadanohara_Rika
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [Wadanohara_Rika](https://space.bilibili.com/397318084)
+- **SocialPlatform**: #Bilibili
+  - **Bilibili**: [Wadanohara_Rika](https://space.bilibili.com/397318084)
 
 ## Models
 
