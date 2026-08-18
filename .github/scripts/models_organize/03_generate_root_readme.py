@@ -8,8 +8,9 @@
 （作品分类区块），供 cli / pipeline / organize / audit 调用。
 
 用法：
-  python 03_generate_root_readme.py --author              # 重建根 README / README-EN 作者表（默认）
-  python 03_generate_root_readme.py --build-category-map  # 更新根 README 模型分类区块（从 character/*.json 现算）
+  python 03_generate_root_readme.py                        # 默认：同时构建作者索引 + 作品说明
+  python 03_generate_root_readme.py --author               # 只重建根 README 作者索引
+  python 03_generate_root_readme.py --build-category-map   # 只更新根 README 作品说明（模型分类区块）
 """
 import argparse
 import re
@@ -171,15 +172,17 @@ def build_category_map_cmd() -> int:
 def main() -> int:
     parser = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument('--author', action='store_true', help='重建根 README 作者表（默认）')
+    parser.add_argument('--author', action='store_true', help='只重建根 README 作者索引')
     parser.add_argument('--build-category-map', action='store_true',
-                        help='更新根 README 模型分类区块（从 character/*.json 现算）')
+                        help='只更新根 README 作品说明（模型分类区块）')
     args = parser.parse_args()
 
-    # 作品分类区块：独立功能，优先处理
-    if args.build_category_map:
-        return build_category_map_cmd()
-    return write_root_readmes()
+    # 默认同时构建作者索引 + 作品说明；传单一参数则只构建对应区块
+    if args.author != args.build_category_map:
+        return write_root_readmes() if args.author else build_category_map_cmd()
+    code = write_root_readmes()
+    build_category_map_cmd()
+    return code
 
 
 if __name__ == '__main__':
