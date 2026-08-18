@@ -394,49 +394,15 @@ Personal Rating: LA, LB, LC, LD
 
 > Below is an overview of the main directories in this repository. This may be adjusted as content continues to evolve.
 
-```text
-YSM-Model-Author/
-│
-├── Models/                        # Main YSM model library: grouped by author ID (0000 ~ 9999, currently up to 0192)
-│   ├── 0000/                      # ── Author ID directory ──
-│   │   ├── README.md              #     Author metadata (author name, platform, characters, team)
-│   │   └── <Model Name>/          # ── Individual model directory ──
-│   │       ├── README.md          #     Model metadata
-│   │       ├── preview*.png/.jpg  #     Preview images
-│   │       ├── *.ysm              #     Encrypted model file
-│   │       ├── *.zip              #     Archive containing source files
-│   │       ├── <Voice Pack>/      #     Additional resources (voice packs, etc.)
-│   │       └── *.txt              #     Update and usage notes
-│   ├── .../
-│   └── 9999/
-│
-├── Skins/                         # Vanilla Minecraft skins, grouped by author ID
-│   └── 0000/
-│   │   ├── README.md
-│   │   └── *.zip                  # Skin archives
-│   ├── ..../
-│   └── 9999/
-│
-├── Other-YSM-Models/              # Collection of other YSM models: one directory per model
-│   └── <Model Name>/
-│       ├── README.md
-│       ├── preview*.png / .jpg
-│       └── *.ysm
-│
-├── Blockbench-Models/             # Blockbench source project files (.bbmodel, containing model source files)
-│   └── 0000/
-│   │   ├── README.md
-│   │   └── *.bbmodel              # Model source files
-│   ├── ..../
-│   └── 9999/
-│
-├── First-Person-Mods/             # First-person related mod configurations
-│
-├── TACZ-Gun-Packs/                # TACZ gun pack resources (*.zip)
-│
-└── TLM-Maid-Packs/                # TLM maid-related resource packs (*.zip)
-
-```
+| Directory | Description |
+| --- | --- |
+| `Models/` | Main YSM model library, grouped by author ID |
+| `Other-YSM-Models/` | Collection of other YSM models: one directory per model |
+| `Skins/` | Vanilla Minecraft skins, grouped by author ID |
+| `Blockbench-Models/` | Blockbench source project files |
+| `First-Person-Mods/` | First-person related mod configurations |
+| `TACZ-Gun-Packs/` | TACZ gun pack resources (*.zip) |
+| `TLM-Maid-Packs/` | TLM maid-related resource packs (*.zip) |
 
 ## Notes
 

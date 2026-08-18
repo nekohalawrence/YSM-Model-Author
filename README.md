@@ -220,14 +220,6 @@
 
 > 共 158 个作品、1413 个模型（由 `.github/data/model-info/character/*.json` 自动生成，手改请编辑对应作品文件）
 
-> 文件夹命名规则
-
-```
-<英文作品名称>_<中文角色名>-[中文皮肤]_<英文角色名>-[英文皮肤]_<个人评定等级>
-
-个人评定等级: LA, LB, LC, LD
-```
-
 ## 游戏（77 作品 · 690 模型）
 
 | 作品键 | 英文名 | 中文名 | 模型数 |
@@ -419,15 +411,16 @@
 
 > 下面是当前仓库的主要目录说明，后续可能会根据内容继续调整。
 
-```
-- Models:             # YSM 主模型库：按作者编号分组
-- Other-YSM-Models:   # 其他 YSM 模型集合：每个模型一个目录
-- Skins:              # 原版我的世界皮肤，按作者编号分组
-- Blockbench-Models:  # Blockbench 源工程文件
-- First-Person-Mods:  # 第一人称相关模组配置
-- TACZ-Gun-Packs:     # TACZ 枪械包资源
-- TLM-Maid-Packs:     # TLM 女仆相关资源包
-```
+| 目录 | 说明 |
+| --- | --- |
+| `Models/` | YSM 主模型库，按作者编号分组 |
+| `Other-YSM-Models/` | 其他 YSM 模型集合，每个模型一个目录 |
+| `Skins/` | 原版我的世界皮肤，按作者编号分组 |
+| `Blockbench-Models/` | Blockbench 源工程文件 |
+| `First-Person-Mods/` | 第一人称相关模组配置 |
+| `TACZ-Gun-Packs/` | TACZ 枪械包资源 |
+| `TLM-Maid-Packs/` | TLM 女仆相关资源包 |
+
 
 ## 注意事项
 
