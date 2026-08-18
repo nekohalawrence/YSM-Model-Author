@@ -9,13 +9,15 @@ YSM 作者 README 生成工具——按 authors.json 数据生成作者 README�
 模型级（co_creators.json / .ysm 作者块）。
 
 用法:
-  python .github/scripts/models_organize/03_generate_author_readmes.py              # 全量预览（dry-run）
-  python .github/scripts/models_organize/03_generate_author_readmes.py 0058 0093    # 指定编号（dry-run）
-  python .github/scripts/models_organize/03_generate_author_readmes.py --apply      # 真正写入
+  python .github/scripts/models_organize/03_generate_author_readmes.py                       # 合并模式预览（dry-run）
+  python .github/scripts/models_organize/03_generate_author_readmes.py --apply               # 合并模式：先反向合并 README 手写信息进 authors.json，再生成 README
+  python .github/scripts/models_organize/03_generate_author_readmes.py --overwrite --apply   # 覆盖模式：专门从 authors.json 生成 README（忽略手写）
+  python .github/scripts/models_organize/03_generate_author_readmes.py 0058 0093             # 指定编号（合并模式 dry-run）
 """
 from __future__ import annotations
 
 import argparse
+import re
 import sys
 from pathlib import Path
 
@@ -25,6 +27,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from lib import paths as lib_paths
 from lib import readme as lib_readme
 from lib.author_readme import render_author_readme
+from lib.kb.authors import merge_author_updates
 
 REPO_ROOT = lib_paths.WORKSPACE_ROOT
 MODELS_DIR = REPO_ROOT / 'Models'
@@ -48,6 +51,80 @@ def author_entries(models_dir: Path,
     return out
 
 
+# ---------------------------------------------------------------------------
+# 合并模式：把作者 README 的手写信息（team/平台）反向合并进 authors.json
+# ---------------------------------------------------------------------------
+TEAM_LINE_RE = re.compile(r'^\s*-\s*\*\*team\*\*\s*[:：]\s*(?P<val>.+)$',
+                          re.MULTILINE | re.IGNORECASE)
+PLATFORM_SUB_RE = re.compile(r'^\s{4,}-\s*\*\*(?P<key>[^*]+)\*\*\s*[:：]\s*(?P<val>.*)$')
+
+
+def parse_readme_author_info(text: str) -> dict:
+    """从作者 README 提取可反向合并的作者信息：{team, platforms}。
+
+    team 取 `- **team**: <值>` 行（忽略大小写）；平台取缩进子行
+    `    - **Key**: [label](url)` / `    - **Key**: 值`（[label](url) 还原为 url）。
+    供合并模式反向同步 authors.json 用；无信息返回 {}。
+    """
+    info: dict = {}
+    m = TEAM_LINE_RE.search(text)
+    if m and m.group('val').strip():
+        info['team'] = m.group('val').strip()
+    platforms: dict[str, str] = {}
+    for line in text.splitlines():
+        m = PLATFORM_SUB_RE.match(line)
+        if not m:
+            continue
+        key = m.group('key').strip()
+        val = m.group('val').strip()
+        if not val:
+            continue
+        um = re.match(r'^\[[^\]]*\]\((?P<url>https?://[^)]+)\)$', val)
+        if um:
+            val = um.group('url')
+        platforms[key] = val
+    if platforms:
+        info['platforms'] = platforms
+    return info
+
+
+def merge_readmes_to_authors(models_dir: Path,
+                             entries: list[tuple[str, dict]],
+                             apply: bool) -> int:
+    """合并模式：把作者 README 手写的 team/平台信息反向合并进 authors.json。
+
+    解析每个作者 README → merge_author_updates 按编号/别名匹配合并
+    （幂等：平台只补缺失、team 非空写）→ --apply 写回 authors.json。
+    返回合并的作者数。
+    """
+    path = lib_paths.data_path('author-info', 'authors.json')
+    data = lib_paths.load_json(path, {})
+    authors = data.get('authors') if isinstance(data, dict) else None
+    if not authors:
+        print('authors.json 缺失或为空，跳过合并。')
+        return 0
+    updates: dict[str, dict] = {}
+    for aid, _entry in entries:
+        readme = models_dir / aid / 'README.md'
+        if not readme.is_file():
+            continue
+        info = parse_readme_author_info(
+            readme.read_text(encoding='utf-8', errors='ignore'))
+        if info:
+            updates[aid] = info
+    matched, unmatched = merge_author_updates(authors, updates)
+    for aid, changes in matched:
+        print(f'  [合并] {aid}  {"、".join(changes)}')
+    for key in unmatched:
+        print(f'  [未匹配] {key}（authors.json 无此作者，未合并）')
+    if matched and apply:
+        lib_paths.save_json(path, data)
+        print(f'已合并 {len(matched)} 位作者的 README 信息 -> authors.json')
+    elif matched:
+        print(f'合并模式: 共 {len(matched)} 位作者待合并（加 --apply 写入 authors.json）')
+    return len(matched)
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -57,6 +134,9 @@ def main() -> int:
                         help='仓库根目录（默认自动检测）')
     parser.add_argument('--apply', action='store_true',
                         help='真正写入（默认 dry-run 只预览）')
+    parser.add_argument('--overwrite', action='store_true',
+                        help='覆盖模式：忽略 README 手写信息，专门从 authors.json 生成 README'
+                             '（默认合并模式：先反向合并 README 的 team/平台进 authors.json 再生成）')
     args = parser.parse_args()
 
     models_dir = Path(args.root).resolve() / 'Models' if args.root else MODELS_DIR
@@ -70,7 +150,14 @@ def main() -> int:
         print('authors.json 中没有可生成的作者。')
         return 0
 
-    print(f'将按 authors.json 生成 {len(entries)} 位作者的 README：')
+    mode = '覆盖' if args.overwrite else '合并'
+    print(f'将按 authors.json 处理 {len(entries)} 位作者的 README（{mode}模式）：')
+    if not args.overwrite:
+        # 合并模式：先把 README 手写的 team/平台反向合并进 authors.json
+        merge_readmes_to_authors(models_dir, entries, args.apply)
+        # 重新读取合并后的 authors.json，渲染使用最新 team/平台
+        entries = author_entries(models_dir, only)
+
     generated = 0
     for aid, entry in entries:
         names = ' | '.join(entry.get('name') or [])

@@ -670,7 +670,35 @@ def merge_author_info(input_path: Path, apply: bool = False) -> int:
     if not isinstance(updates, dict) or not updates:
         print(f'输入文件无有效作者信息: {input_path}')
         return 0
-    # 规范化别名 -> 作者编号索引（输入键匹配用）
+    matched, unmatched = merge_author_updates(authors, updates)
+    if not matched and not unmatched:
+        print('输入信息与 authors.json 无差异（无新增/变更）。')
+        return 0
+    for aid, changes in matched:
+        entry = authors[aid]
+        print(f'  {aid}  {" | ".join(entry.get("name") or [])}')
+        print(f'      -> {"、".join(changes)}')
+    for key in unmatched:
+        print(f'  [未匹配] {key}（authors.json 无此作者/别名，未合并）')
+    if not apply:
+        print(f'dry-run: 共 {len(matched)} 位作者待更新，{len(unmatched)} 个未匹配（加 --apply 写入）')
+        return 0
+    lib_paths.save_json(path, data)
+    print(f'已合并 {len(matched)} 位作者信息 -> {lib_paths.get_safe_relpath(path)}')
+    return len(matched)
+
+
+def merge_author_updates(authors: dict,
+                         updates: dict) -> tuple[list[tuple[str, list[str]]], list[str]]:
+    """把手动信息 {键: {platforms, team, aliases}} 按编号或规范化名匹配合并进 authors。
+
+    匹配：键=编号直接命中，否则按规范化别名；未匹配的键进 unmatched。
+    合并规则（幂等，不覆盖已有手写内容）：
+      platforms: 只补缺失的 http(s) 平台键（已有键不覆盖）；
+      team:      非空才写入；
+      aliases:   追加并与现有 name 规范化去重。
+    返回 (matched, unmatched)；不写盘，由调用方负责保存。
+    """
     alias_index: dict[str, str] = {}
     for aid, entry in authors.items():
         for n in entry.get('name') or []:
@@ -716,19 +744,4 @@ def merge_author_info(input_path: Path, apply: bool = False) -> int:
                 changes.append(f'别名+{len(to_add)}')
         if changes:
             matched.append((aid, changes))
-
-    if not matched and not unmatched:
-        print('输入信息与 authors.json 无差异（无新增/变更）。')
-        return 0
-    for aid, changes in matched:
-        entry = authors[aid]
-        print(f'  {aid}  {" | ".join(entry.get("name") or [])}')
-        print(f'      -> {"、".join(changes)}')
-    for key in unmatched:
-        print(f'  [未匹配] {key}（authors.json 无此作者/别名，未合并）')
-    if not apply:
-        print(f'dry-run: 共 {len(matched)} 位作者待更新，{len(unmatched)} 个未匹配（加 --apply 写入）')
-        return 0
-    lib_paths.save_json(path, data)
-    print(f'已合并 {len(matched)} 位作者信息 -> {lib_paths.get_safe_relpath(path)}')
-    return len(matched)
+    return matched, unmatched
