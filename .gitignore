@@ -13,3 +13,4 @@ AGENTS.md
 __pycache__
 .vscode
 .github/scripts/check&fix
+.github/docs
