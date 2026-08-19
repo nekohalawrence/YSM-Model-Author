@@ -53,6 +53,8 @@ jobs:
       #    - inbox:  推了 _Model-Inbox/** → 归档 + 全套刷新（flow inbox；01 归档已含 resolve_name3 规范命名）
       #    - docs:   推了 Models/** / Blockbench-Models/** / Other-YSM-Models/** / README.md
       #              → 全套刷新（flow full，不含归档）
+      #    - inbox_residue: 兜底检查——无论本次 push 是否改过 _Model-Inbox，只要 checkout 后
+      #      目录里仍残留 .ysm（上次归档失败/未触发而滞留在云端），也执行归档，避免文件永久滞留。
       #    - 均无 → 仅校验，跳过自动刷新（如手动改 README 错别字、workflow_dispatch）
       #    文件夹重命名不在自动流程内（需人工 review，可手动跑 cli.py flow rename）。
       - name: Step 2 - Detect changed paths
@@ -68,24 +70,30 @@ jobs:
           fi
           echo "inbox=$(printf '%s\n' "$CHANGED" | grep -c '^_Model-Inbox/' || true)" >> "$GITHUB_OUTPUT"
           echo "docs=$(printf '%s\n' "$CHANGED" | grep -cE '^(Models/|Blockbench-Models/|Other-YSM-Models/|README\.md)' || true)" >> "$GITHUB_OUTPUT"
+          # 兜底：检查 _Model-Inbox 是否残留待归档 .ysm（归档的真正对象；bbmodel 等需人工归位）
+          if find _Model-Inbox -name '*.ysm' -type f 2>/dev/null | grep -q .; then
+            echo "inbox_residue=1" >> "$GITHUB_OUTPUT"
+          else
+            echo "inbox_residue=0" >> "$GITHUB_OUTPUT"
+          fi
 
-      # 3a. 推了新模型到 inbox → 归档 + 全套刷新（顺序在同一 workflow 内完成）
+      # 3a. 推了新模型到 inbox，或云端 _Model-Inbox 仍残留 .ysm（兜底）→ 归档 + 全套刷新
       - name: Step 3a - Inbox archive & refresh
-        if: steps.detect.outputs.inbox != '0'
+        if: steps.detect.outputs.inbox != '0' || steps.detect.outputs.inbox_residue == '1'
         run: python .github/scripts/cli.py flow inbox
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
 
-      # 3b. 模型/文档有变更但无 inbox → 全套刷新（作者数据 → 模型 README → 作者表 → 翻译）
+      # 3b. 模型/文档有变更且无 inbox 待归档 → 全套刷新（作者数据 → 模型 README → 作者表 → 翻译）
       - name: Step 3b - Refresh docs & index
-        if: steps.detect.outputs.inbox == '0' && steps.detect.outputs.docs != '0'
+        if: steps.detect.outputs.inbox == '0' && steps.detect.outputs.inbox_residue == '0' && steps.detect.outputs.docs != '0'
         run: python .github/scripts/cli.py flow full
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
 
       # 3c. 均无变更 → 跳过刷新，提示
       - name: Step 3c - No refresh needed
-        if: steps.detect.outputs.inbox == '0' && steps.detect.outputs.docs == '0'
+        if: steps.detect.outputs.inbox == '0' && steps.detect.outputs.inbox_residue == '0' && steps.detect.outputs.docs == '0'
         run: echo "本次无模型/文档/inbox 变更，仅完成数据校验，跳过自动刷新。"
 
       # 1. 统一提交推送
