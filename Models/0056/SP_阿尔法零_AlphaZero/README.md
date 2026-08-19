@@ -18,7 +18,7 @@
 <details>
 <summary>Expand/Collapse</summary>
 
-- **Name**: #阿尔法零 | #AlphaZero
+- **Name**: #阿尔法零 | #AlphaZero-SP
 - **Category**: #Unknown
   - **Game**: #Unknown
 

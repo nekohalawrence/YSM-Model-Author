@@ -22,7 +22,7 @@
 
 - **Name**: #试刀 | #试Tj
   - **Author ID**: `0038`
-  - **Role**: #单主
+  - **Role**: #做者
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [试刀](https://space.bilibili.com/543273563)
   - **SupportPlatform**: #Afdian
@@ -30,11 +30,9 @@
 
 ## Co-creator
 
-- **Name**: 试刀
-  - **Role**: #做者
+- **Name**: 清澄アキラ
+  - **Role**: #单主
   - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [试刀](https://space.bilibili.com/543273563?spm_id_from=333.788.0.0)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [试刀](https://ifdian.net/a/SDA114)
+    - **Bilibili**: [清澄アキラ](https://space.bilibili.com/1000649474)
 
 </details>

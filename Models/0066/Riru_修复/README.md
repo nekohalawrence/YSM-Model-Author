@@ -16,7 +16,7 @@
 <details>
 <summary>Expand/Collapse</summary>
 
-- **Name**: 
+- **Name**: #Riru
 - **Category**: #Unknown
   - **Game**: #Unknown
 

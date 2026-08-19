@@ -3,8 +3,10 @@
 
 替代 parse.py 的「格式化→分段→补丁」式解析：
 - 按语言块 tokenize：下划线/连字符/无分隔/间隔号/空格 统一处理；
-- 每个 token 用数据库归类（作品/角色/皮肤/评级/Unknown）；
-- 按 <作品>_<中文角色>[_中文皮肤]_<英文角色>[_英文皮肤]_<评级> 重组。
+- 每个 token 用数据库归类（作品/角色/评级/Unknown）；
+- 识别段按 <作品>_<中文角色>[_中文附加段]_<英文角色>[_英文附加段]_<评级> 重组；
+- 未识别段（数据库无收录，含形态/皮肤词）不做语义判定，一律保留原位：
+  中文段并入中文侧（_ 连接）、英文段并入英文侧（- 连接、保留原始大小写）。
 
 与 parse.resolve_name 返回结构兼容，可无缝替换（02_rename 等调用方不改）。
 """
@@ -78,6 +80,12 @@ def _segment_spans(name: str) -> list[tuple[str, int, int]]:
                 cur_start, cur_kind = None, ""
             continue
         kind = "cjk" if has_cjk(ch) else "ascii"
+        # 编号后缀"号"（如 21号/1号）：紧贴前一个纯数字段时并入整体一段，
+        # 避免拆成 21 + 号（对齐 TOKEN_RE 的 \d+号 整体 token 规则）。
+        if (ch == '号' and cur_kind == 'ascii' and cur_start is not None
+                and name[cur_start:i].isdigit()):
+            cur_kind = 'cjk'
+            continue
         if cur_start is None:
             cur_start, cur_kind = i, kind
         elif cur_kind != kind:
@@ -179,10 +187,10 @@ def _seg_combos(segs: list[str]) -> list[tuple[int, int, str]]:
 
 
 def _eng_groups(segs: list[str]) -> list[tuple[int, int, str]]:
-    """识别连续英文段组：返回 (start, end, 剔除标签/皮肤后的组合串)。
+    """识别连续英文段组：返回 (start, end, 剔除内容标签后的组合串)。
 
     英文角色名须整体匹配（防单段误配：如 tachibana 撞其他作品单段角色）；
-    组内内容标签（nsfw/sfw）与皮肤词不参与组合。
+    组内内容标签（nsfw/sfw）不参与组合。
     """
     out: list[tuple[int, int, str]] = []
     i, n = 0, len(segs)
@@ -270,33 +278,47 @@ def resolve_name3(name: str, roles: list[dict],
     orig = name
     notes: list[str] = []
     problems: list[str] = []
-    candidate_skins: set[str] = set()
     filled: list[str] = []
     role_zh, role_en = build_norm_role_index(roles)
 
     # 第 1 步：格式化 + 去评级
     fmt, grade, spans = format_name(name)
     segs = fmt.split("_") if fmt else []
-    # Unknown 前缀剥离（同步去掉首段）
+    # Unknown 前缀剥离（同步去掉首段）。剥离后按正常名称匹配（恢复前缀累积），
+    # 便于 Unknown_HI3刻律德菈 把 HI3 识别为作品前缀并剥离；Unknown_Rei-Ayanami
+    # 的 rei 非作品键不会被误当作品（match_work 前缀累积只认 get_work_canonical 命中）。
     unknown_seen = False
     if segs and segs[0].lower() == "unknown":
         unknown_seen = True
         segs, spans = segs[1:], spans[1:]
         fmt = "_".join(segs)
 
-    # 第 2 步：作品 + 角色匹配。Unknown_ 前缀输入禁用前缀累积（防英文角色名误当作品）
-    work, work_source, prefix_end = match_work(fmt, allow_prefix=not unknown_seen)
-    # 未命中已知作品但首段是 ASCII 独立段：保留为作品候选（如 DMC_xxx 的 DMC，
-    # 其 abbr 未注册进作品名映射），用原始大小写（spans 首段）。
-    # Unknown_ 前缀输入不猜前缀作品（Unknown_Rei-Ayanami 的 Rei 是角色英文名）。
-    if (not work and not unknown_seen and segs and len(segs) > 1
-            and segs[0].isascii() and len(segs[0]) >= 2):
-        work, work_source, prefix_end = spans[0][0], "prefix", 1
-    cn, en, role_works, kind, hit_key, hit_s, hit_e, en_range = match_role(
-        fmt, role_zh, role_en, prefix_end)
-    # 中文命中但无匹配英文时：若有英文组（未收录英文名，如 Exusiae-The-New-Covenant），
-    # 消费为 en（保留作者原始写法），防未收录英文段重复并入
-    if hit_key and en_range is None and segs:
+    # 第 2 步：作品 + 角色匹配（Unknown_ 前缀已剥离，前缀累积恢复启用）
+    work, work_source, prefix_end = match_work(fmt, allow_prefix=True)
+    # 作品锁定（2026-08-19）：匹配到数据库作品后，角色只在该作品下匹配，不再全局
+    # 匹配 + 事后归属校验（归属判定随之简化）。
+    # 收紧：不再把任意 ASCII 首段当作品候选（原逻辑会把 Rei-Ayanami 的 rei 误当
+    # 作品前缀，且配合"无角色保留前缀"会产出 Rei_Ayanami 这种错误前缀）——只认
+    # 数据库真实作品键；未注册缩写走"无作品 -> 角色匹配"。
+    if work and work != "Unknown":
+        # 作品限定角色索引：只保留归属当前 work 的角色条目
+        role_zh_scope = {k: {(n, w) for n, w in vs if w == work}
+                         for k, vs in role_zh.items()
+                         if any(w == work for _n, w in vs)}
+        role_en_scope = {k: {(n, w) for n, w in vs if w == work}
+                         for k, vs in role_en.items()
+                         if any(w == work for _n, w in vs)}
+        cn, en, role_works, kind, hit_key, hit_s, hit_e, en_range = match_role(
+            fmt, role_zh_scope, role_en_scope, prefix_end)
+    else:
+        cn, en, role_works, kind, hit_key, hit_s, hit_e, en_range = match_role(
+            fmt, role_zh, role_en, prefix_end)
+    # 英文组消费为 en：仅在「中文角色未命中」时进行（纯英文/英文开头输入，如
+    # Unknown_Lingsha），把英文名设为 en 供下方 en→cn 反查补全中文名。
+    # 中文命中时英文组一律不消费——未识别英文段统一由第 3 步重组原位保留
+    # （en_parts，- 连接、保留原始大小写），不做「角色英文名/皮肤附加段」判定，
+    # 避免被下方补全/标准化覆盖而丢失（如 初音Bunnygirl 的 Bunnygirl）。
+    if not hit_key and en_range is None and segs:
         for s, e, c in _eng_groups(segs):
             if get_work_canonical(segs[s]):
                 continue  # 跳过作品段
@@ -315,38 +337,16 @@ def resolve_name3(name: str, roles: list[dict],
         if raw_en and _related(en, raw_en):
             en = raw_en
 
-    # 归属判定（作品-角色一致）。前缀作品只在中英文都命中且归属一致指向别处时才纠正
-    # （对齐 r2 6.5 保守版）；单语言命中他作时走 6.5c（方案 B：前缀库非空且无此角色
-    # + 唯一归属他作才纠正，否则仅标记问题提示）。
-    # OC/VTuber 豁免：角色无法穷举收录，前缀可信赖，不参与"前缀 vs 角色归属"纠正
-    # （否则 OC_泠鸢_Jk 会因未识别英文段 Jk 被误当作中英都命中而纠正成 VTuber）。
+    # 归属判定（作品锁定简化版，2026-08-19）：
+    #   - 有作品：角色命中 -> 直接用该作品；角色未命中 -> 保留前缀，只作品标准化
+    #     （不再降级 Unknown，也不做跨作品前缀纠错）
+    #   - 无作品 + 角色命中：唯一归属 -> 反查加前缀；多归属 -> unknown 前缀
+    #   - 无作品 + 无角色：unknown
     conflict = False
     conflict_works: list[str] = []
-    if work and work != "Unknown" and work not in NO_ROLE_VALIDATION_WORKS and (cn or en):
-        if role_works and work not in role_works:
-            if cn and en:
-                # 中英文都命中：归属一致才纠正（保守，防跨作品/库不完整误伤）
-                if len(role_works) == 1:
-                    new_work = next(iter(role_works))
-                    notes.append(f"work corrected: {work} -> {new_work}（角色归属）")
-                    work, work_source = new_work, "corrected"
-                elif len(role_works) > 1:
-                    conflict = True
-                    conflict_works = sorted(role_works)
-                    work, work_source = "Unknown", "conflict"
-            elif work not in NO_ROLE_VALIDATION_WORKS:
-                # 6.5c：单语言命中他作（方案 B）——前缀库非空且无此角色 + 唯一归属
-                # 他作 -> 高置信度纠正；库空（NEKOPARA）/多作品归属 -> 仅标记提示。
-                if (len(role_works) == 1
-                        and _norm_work_has_roles(role_zh, role_en, work)):
-                    new_work = next(iter(role_works))
-                    notes.append(f"work corrected: {work} -> {new_work}（角色归属校验）")
-                    work, work_source = new_work, "corrected"
-                else:
-                    problems.append("works")
-                    notes.append(
-                        f"prefix work mismatch: {work} has no role, "
-                        f"role belongs to {sorted(role_works)}")
+    if work and work != "Unknown":
+        if not cn and not en:
+            notes.append(f"work locked: {work} has no role match in db, keep prefix")
     elif not work and (cn or en):
         if len(role_works) == 1:
             work, work_source = next(iter(role_works)), "kb"
@@ -356,12 +356,6 @@ def resolve_name3(name: str, roles: list[dict],
             work, work_source = "Unknown", "conflict"
     elif not work and not (cn or en):
         work, work_source = "Unknown", "none"
-
-    # 6.5b：前缀作品但角色无命中 -> Unknown（OC/VTuber 豁免：角色无法穷举收录）
-    if (work_source == "prefix" and work and work != "Unknown"
-            and work not in NO_ROLE_VALIDATION_WORKS and not cn and not en):
-        notes.append(f"work unmatched: {work} has no known role, set Unknown")
-        work, work_source = "Unknown", "unmatched"
 
     # 别名归一（规范名替换）
     if cn and cn_alias and cn in cn_alias:
@@ -392,11 +386,16 @@ def resolve_name3(name: str, roles: list[dict],
                     en = cand
                     filled.append("EN standardized: " + cand)
 
-    # 第 3 步：残留段分类 + 重组（皮肤词不再特殊识别，作为普通词独立段保留原位）
+    # 第 3 步：残留段分类 + 重组。不做皮肤/附加段语义判定：未识别段一律保留原位
+    # （中文 -> cn_extra，_ 连接；英文 -> en_parts，- 连接、保留原始大小写；
+    #   紧贴中文角色段的英文 -> 并入中文名，与前紧贴残留对称）。
     content_tag = ""
-    cn_blocks: list[str] = []  # 中文段块，块间用 _ 连接（独立段保留）
+    cn_extra: list[str] = []  # 未识别中文段（原位保留）
     en_parts: list[str] = []
-    pending_pre = ""  # 角色前紧贴残留（原始无分隔，合并进角色块）
+    pending_pre = ""  # 角色前紧贴残留（原始无分隔，最后并入核心 cn）
+    # cn 规范名内嵌的英文 token（如 穆小泠Official 的 official、酒狐H 的 h）——
+    # 它们是角色名的一部分，残留/en 合并时不再重复进英文名（防重名，非皮肤判定）。
+    cn_inner_tokens = set(normalize_en_key(w) for w in re.findall(r'[A-Za-z]+', cn)) if cn else set()
     for i, seg in enumerate(segs):
         if i < prefix_end:
             continue  # 前缀作品段（含多词作品后半段，如 Magia Record 的 record）
@@ -405,15 +404,13 @@ def resolve_name3(name: str, roles: list[dict],
             content_tag = CONTENT_CANON[low]
             continue
         if hit_key and hit_s <= i < hit_e:
-            # 角色段（可能跨多段）：只处理首段，段内剩余合并进角色名
+            # 中文角色段：核心 cn（匹配/补全后的规范名）承载角色名；
+            # 段内附加（rem，如 小花子 的 小）并入 cn（只处理首段）
             if i == hit_s:
                 full = "_".join(segs[hit_s:hit_e])
                 rem = full.replace(hit_key, "", 1) if hit_key in full else ""
-                core = cn
                 if rem:
-                    core = (cn + rem) if full.startswith(hit_key) else (rem + cn)
-                cn_blocks.append(pending_pre + core)  # 前紧贴残留合并（xiao月雪宫子）
-                pending_pre = ""
+                    cn = (cn + rem) if full.startswith(hit_key) else (rem + cn)
             continue
         # 英文组已消费（en 命中段）-> 跳过，防英文段重复（如 Exusiai-The-New-Covenant）
         if en_range and en_range[0] <= i < en_range[1]:
@@ -428,38 +425,64 @@ def resolve_name3(name: str, roles: list[dict],
         if seg in role_en and work and work != "Unknown":
             if any(w == work for _n, w in role_en[seg]):
                 continue
-        # 角色段前紧贴残留（原始无分隔，如 xiao）-> 累积，角色段时合并
+        # 角色段前紧贴残留（原始无分隔，如 xiao）-> 累积，最后并入核心 cn
         if hit_key and i == hit_s - 1 and spans[i][2] == spans[hit_s][1]:
             pending_pre += seg
             continue
-        # 角色段后紧贴残留 -> 合并进角色块
+        # 角色段后紧贴残留（如 穆小泠Official 的 Official、初音Bunnygirl 的 Bunnygirl）
+        # ——紧贴中文角色段（原始无分隔）的英文段是中文名的紧贴部分，保留在中文位
+        #   （与前紧贴残留 pending_pre 对称）；cn 规范名已含该英文（Official/H）
+        #   则是角色名内嵌，不重复。
         if hit_key and i == hit_e and spans[hit_e - 1][2] == spans[i][1]:
-            if cn_blocks:
-                cn_blocks[-1] = cn_blocks[-1] + seg
+            if cn:
+                if normalize_en_key(seg) in cn_inner_tokens:
+                    continue  # 角色名已含该英文（Official/H 是角色名一部分），不重复
+                cn += spans[i][0]  # 紧贴未识别英文段（如 Bunnygirl）并入中文名，保留原始大小写
             else:
-                cn_blocks.append(seg)
+                cn_extra.append(seg)
             continue
         if has_cjk(seg):
-            cn_blocks.append(seg)  # 独立未识别中文段（含皮肤词，独立保留）
+            cn_extra.append(seg)  # 独立未识别中文段，原位保留
         else:
             # 未识别英文保留原始大小写（spans 原始文本），不强制 init_caps
             en_parts.append(spans[i][0])
-    cn_seg_str = "_".join(cn_blocks)
+    if pending_pre:
+        cn = pending_pre + cn
+    # 中文主块 = 核心 cn（匹配/补全后的规范名，直接参与组装）+ 未识别中文段（_ 连接）
+    cn_seg_str = cn if cn else ""
+    if cn_extra:
+        cn_seg_str = "_".join([cn_seg_str] + cn_extra) if cn_seg_str else "_".join(cn_extra)
 
-    # 未识别英文并入 en（- 连接）：数据库/补全部分 init_caps，未识别部分保留原始；
-    # 已含在补全 en 里的段（如 Shiroko ⊂ Sunaookami-Shiroko）不重复并入。
+    # 未识别英文并入 en（- 连接）：数据库/补全部分 init_caps，未识别部分保留原始。
+    # 防重名规则（非语义判定，仅字符串包含判断）：
+    #   - 单个附加段已含完整角色英文写法（如 AronaBunnygirl ⊃ 补全的 Arona）→
+    #     说明原始名已带完整英文名，保留原始写法，避免 Arona-AronaBunnygirl 重复；
+    #   - 附加段是补全 en 的子串（如 MuXiaoLing ⊂ ...）或已含在中文名里的段
+    #     （如 穆小泠Official 的 Official）不重复并入。
     if en_parts:
         enk = normalize_en_key(en) if en else ""
-        kept = [p for p in en_parts
-                if not (enk and normalize_en_key(p) and normalize_en_key(p) in enk)]
-        if kept:
-            extra = "-".join(kept)
-            if en:
-                en = init_caps(en) + "-" + extra  # 数据库部分标准，extra 原始
-            else:
-                en = extra  # 纯未识别：保留原始大小写（如 PUR）
+        if (enk and len(en_parts) == 1
+                and normalize_en_key(en_parts[0]) and enk in normalize_en_key(en_parts[0])):
+            en = en_parts[0]
+        else:
+            kept = [p for p in en_parts
+                    if not (enk and normalize_en_key(p) and normalize_en_key(p) in enk)
+                    and normalize_en_key(p) not in cn_inner_tokens]
+            if kept:
+                extra = "-".join(kept)
+                if en:
+                    en = init_caps(en) + "-" + extra  # 数据库部分标准，extra 原始
+                else:
+                    en = extra  # 纯未识别：保留原始大小写（如 PUR）
     elif en:
         en = init_caps(en)
+    # en 中若含 cn 内嵌的英文 token（如 穆小泠Official 的 official、酒狐H 的 h），
+    # 剔除避免重复——cn（角色名）已含该英文，不应再进英文名。
+    if cn_inner_tokens and en:
+        parts = en.split('-')
+        kept = [p for p in parts if normalize_en_key(p) not in cn_inner_tokens]
+        if kept and len(kept) < len(parts):
+            en = '-'.join(kept)
 
     new = work
     if cn_seg_str:
@@ -486,7 +509,7 @@ def resolve_name3(name: str, roles: list[dict],
         "filled": "; ".join(filled), "work": work, "zh": cn, "en": en, "grade": grade,
         "cn_skin": "", "en_skin": "", "conflict": conflict,
         "conflict_works": conflict_works, "work_source": work_source,
-        "problems": problems, "candidate_skins": sorted(candidate_skins),
+        "problems": problems, "candidate_skins": [],  # 皮肤判定已移除，恒为空（兼容返回结构）
     }
 
 

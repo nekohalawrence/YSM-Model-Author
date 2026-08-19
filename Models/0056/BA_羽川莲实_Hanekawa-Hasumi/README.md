@@ -32,13 +32,4 @@
   - **SupportPlatform**: #Afdian
     - **Afdian**: [伊洛是哥斯拉嘛](https://afdian.com/a/6TGESILA)
 
-## Co-creator
-
-- **Name**: 狱际星芒
-  - **Role**: #作者
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: 哔哩哔哩关注狱际星芒
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: 爱发电搜狱际星芒
-
 </details>

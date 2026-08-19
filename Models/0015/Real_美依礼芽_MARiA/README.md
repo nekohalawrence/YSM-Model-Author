@@ -14,7 +14,7 @@
 <details>
 <summary>Expand/Collapse</summary>
 
-- **Name**: #美依礼芽 | #MARiA
+- **Name**: #美依礼芽 | #MARiA-Real
 - **Category**: #Unknown
   - **Game**: #Unknown
 

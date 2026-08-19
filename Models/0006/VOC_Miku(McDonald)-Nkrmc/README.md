@@ -16,9 +16,9 @@
 <details>
 <summary>Expand/Collapse</summary>
 
-- **Name**: #Miku-McDonald-Nkrmc
+- **Name**: #McDonald-Nkrmc
 - **Category**: #Music
-  - **Game**: #VOCALOID #VOC #博歌乐 #V 家 #术力口 #虚拟歌手 #虚拟歌姬
+  - **Game**: #VOCALOID #VOC #虚拟歌姬 #V 家 #术力口 #虚拟歌手
 
 ## Author
 

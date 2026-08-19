@@ -20,7 +20,7 @@
 <details>
 <summary>Expand/Collapse</summary>
 
-- **Name**: #千早爱音 | #Chihaya-Anon
+- **Name**: #Chihaya-Anon
 - **Category**: #Anime
   - **Game**: #BanG Dream! Ave Mujica #AveMujica #颂乐人偶
 

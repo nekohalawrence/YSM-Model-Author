@@ -28,9 +28,9 @@
 
 ## Author
 
-- **Name**: #omo仙贝2号 | #omo | #FujiwaranoMoku114514
+- **Name**: #omo仙贝2号 | #omo | #mo | #FujiwaranoMoku114514
   - **Author ID**: `0005`
-  - **Role**: #模型 | #Model
+  - **Role**: #全部
   - **SocialPlatform**: #Bilibili #YouTube #Twitter
     - **Bilibili**: [omo仙贝2号](https://space.bilibili.com/1959304255)
     - **YouTube**: [omo仙贝2号](https://www.youtube.com/@%E8%97%A4%E5%8E%9F%E5%A6%B9%E7%BA%A2-i3q)
@@ -41,15 +41,10 @@
 
 ## Co-creator
 
-- **Name**: mo
-  - **Role**: #全部
-  - **SocialPlatform**: #Twitter #YouTube
-    - **Twitter**: @wOelxdwlnwq5Zl0
-    - **YouTube**: [mo](https://www.youtube.com/@%E8%97%A4%E5%8E%9F%E5%A6%B9%E7%BA%A2-i3q)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [mo](https://afdian.com/a/omomomomomomo)
-
 - **Name**: 甜粽子
   - **Role**: #动画 | #Animation
+
+- **Name**: 艾尔莎_Channel
+  - **Role**: #模型 | #Model
 
 </details>

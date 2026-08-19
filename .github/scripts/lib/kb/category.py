@@ -186,10 +186,19 @@ def get_work_entry(works: dict, prefix: str):
 
 
 def get_work_tags(works: dict, prefix: str) -> str:
-    """作品标签（模型 README 的 Game 字段）：该作品全部名称 -> '#名称' 空格连接。"""
+    """作品标签（模型 README 的 Game 字段）：缩写在前、全称在后 -> '#名称' 空格连接。"""
     v = get_work_entry(works, prefix)
     if v is None:
         return "#Unknown"
-    names = (_work_names(v, "en") + _work_names(v, "zh") + _work_names(v, "ja"))
-    names = [n for n in names if n]
-    return " ".join(f"#{n}" for n in names) or "#Unknown"
+    abbr = str(v.get('abbr') or '').strip()
+    names = ([abbr] if abbr else [])
+    names += _work_names(v, "en") + _work_names(v, "zh") + _work_names(v, "ja")
+    # 去重保序（abbr 可能已含在 en/aliases 里）
+    seen: set[str] = set()
+    out: list[str] = []
+    for n in names:
+        n = str(n).strip()
+        if n and n.lower() not in seen:
+            seen.add(n.lower())
+            out.append(n)
+    return " ".join(f"#{n}" for n in out) or "#Unknown"

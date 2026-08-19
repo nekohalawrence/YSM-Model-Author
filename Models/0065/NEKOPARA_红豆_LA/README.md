@@ -20,7 +20,7 @@
 <details>
 <summary>Expand/Collapse</summary>
 
-- **Name**: #红豆
+- **Name**: 
 - **Category**: #Game
   - **Game**: #NEKOPARA #巧克力与香子兰 #猫娘乐园 #ネコぱら
 

@@ -14,7 +14,7 @@
 <details>
 <summary>Expand/Collapse</summary>
 
-- **Name**: #穆小泠Official
+- **Name**: 
 - **Category**: #Original
   - **Game**: #Original Character #OC #原创角色
 

@@ -31,9 +31,9 @@
 - **Name**: #雾雨波波沙
   - **Author ID**: `0045`
   - **Role**: #模型 | #Model
-  - **SocialPlatform**: #Bilibili #pixiv #QQ
+  - **SocialPlatform**: #Bilibili #Pixiv #QQ
     - **Bilibili**: [雾雨波波沙](https://space.bilibili.com/36761228)
-    - **pixiv**: [雾雨波波沙](https://www.pixiv.net/users/26720481)
+    - **Pixiv**: [雾雨波波沙](https://www.pixiv.net/users/26720481)
     - **QQ**: 530621549
 
 ## Co-creator

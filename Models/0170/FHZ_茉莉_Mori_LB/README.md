@@ -18,7 +18,7 @@
 <details>
 <summary>Expand/Collapse</summary>
 
-- **Name**: #茉莉 | #Mori
+- **Name**: #茉莉 | #Mori-FHZ
 - **Category**: #Unknown
   - **Game**: #Unknown
 

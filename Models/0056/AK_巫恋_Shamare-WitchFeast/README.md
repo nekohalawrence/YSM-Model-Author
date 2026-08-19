@@ -45,12 +45,4 @@
   - **SupportPlatform**: #Afdian
     - **Afdian**: [星屑海螺](https://afdian.com/a/lucia2048)
 
-- **Name**: Fllz
-  - **Role**: #模型 | #Model
-  - **OtherPlatform**: #VGen #Linktree
-    - **VGen**: [Fllz](https://vgen.co/fllz)
-    - **Linktree**: [Fllz](https://linktr.ee/fllz)
-  - **GroupChat**: #Discord
-    - **Discord**: fllz
-
 </details>

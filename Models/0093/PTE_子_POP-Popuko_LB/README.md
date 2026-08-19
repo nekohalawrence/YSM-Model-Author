@@ -6,13 +6,13 @@
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
-![preview.png](previews/preview.png)
-
 ![preview01.png](previews/preview01.png)
 
 ![preview02.png](previews/preview02.png)
 
 ![preview03.png](previews/preview03.png)
+
+![preview04.png](previews/preview04.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
 
@@ -22,7 +22,7 @@
 <details>
 <summary>Expand/Collapse</summary>
 
-- **Name**: #POP-Popuko
+- **Name**: #POP
 - **Category**: #Anime
   - **Game**: #Pop Team Epic #PTE #pop 子和 pipi 美的日常 #ポプテピピック
 

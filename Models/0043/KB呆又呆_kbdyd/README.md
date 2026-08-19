@@ -14,7 +14,7 @@
 <details>
 <summary>Expand/Collapse</summary>
 
-- **Name**: #kbdyd
+- **Name**: #KB-kbdyd
 - **Category**: #Unknown
   - **Game**: #Unknown
 

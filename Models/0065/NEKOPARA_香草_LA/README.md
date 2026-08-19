@@ -6,8 +6,6 @@
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
-![preview.png](previews/preview.png)
-
 ![preview01.png](previews/preview01.png)
 
 ![preview02.png](previews/preview02.png)
@@ -21,6 +19,8 @@
 ![preview06.png](previews/preview06.png)
 
 ![preview07.png](previews/preview07.png)
+
+![preview08.png](previews/preview08.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
 

@@ -8,7 +8,7 @@ YSM 模型仓库统一命令行入口（人工使用）。
 
 子命令对应脚本一览（--list 查看）：
   organize       归档 .ysm → models_organize/01_organize_models.py
-  previews       预览图归位 → check&fix/organize_previews.py
+  previews       预览图归位 → models_organize/01_organize_previews.py
   rename-files   重命名模型文件 → models_organize/02_rename_model_files.py
   rename-folders 重命名模型文件夹（纯重命名） → models_organize/02_rename_model_folders.py
   kb             知识库维护(角色/作品增删改查/合并/默认名/重命名键) → check&fix/kb_tool.py
@@ -49,13 +49,14 @@ REPO_ROOT = lib_paths.WORKSPACE_ROOT
 COMMANDS: dict[str, tuple[str, list[str], str]] = {
     'organize': ('models_organize/01_organize_models.py', [], '归档 .ysm 到 Models/<编号>/'),
     'audit': ('check&fix/model_check&fix.py', [], '库整理:重新分类/合并作者/空壳报告/缺失(无分类无预览图)'),
-    'previews': ('check&fix/organize_previews.py', [], '预览图归入 previews/ 并规范命名'),
+    'previews': ('models_organize/01_organize_previews.py', [], '预览图归入 previews/ 并规范命名'),
     'rename-files': ('models_organize/02_rename_model_files.py', [], '重命名模型文件（独立脚本）'),
     'rename-folders': ('models_organize/02_rename_model_folders.py', [],
                        '重命名模型文件夹（纯重命名；知识库维护用 kb）'),
     'kb': ('check&fix/kb_tool.py', [], '知识库维护:角色/作品增删改查/合并/默认名/重命名键'),
     'authors': ('check&fix/kb_tool.py', ['--authors-data'], '重建集中作者数据 authors.json'),
     'readmes': ('models_organize/03_generate_model_readmes.py', [], '生成/重写模型 README'),
+    'other-index': ('models_organize/03_generate_other_models_index.py', [], '生成 Other-YSM-Models 模型总索引'),
     'authors-list': ('models_organize/03_generate_root_readme.py', ['--author'], '更新根 README 作者表格'),
     'category-map': ('models_organize/03_generate_root_readme.py', ['--build-category-map'], '更新根 README 模型分类区块'),
     'format': ('check&fix/format_author_readme.py', [], '格式化作者级 README（作者推导已移至 kb --sync-authors）'),
@@ -93,22 +94,36 @@ def print_commands() -> None:
 # ---------------------------------------------------------------------------
 # 流程编排（合并自原 pipeline.py）：cli.py flow 子命令的内联实现
 # ---------------------------------------------------------------------------
-# 每个步骤 = (脚本相对 scripts/ 的路径, 传给该脚本的参数)；顺序即执行顺序
-PIPELINE_STEPS: dict[str, list[tuple[str, list[str]]]] = {
+# 每个步骤 = (脚本相对 scripts/ 的路径, 传给该脚本的参数[, 是否致命])；顺序即执行顺序
+#   第三元素可省略（默认 True=失败即中止流程）；False=非致命：子脚本失败只警告，
+#   继续后续步骤（如预览图归位 previews，冲突文件不阻断核心 README/翻译流程）
+PIPELINE_STEPS: dict[str, list[tuple[str, list[str]] | tuple[str, list[str], bool]]] = {
     'inbox': [
         ('models_organize/01_organize_models.py', ['_Model-Inbox', '--apply']),
+        # 预览图归位（--rename 统一命名为 preview01..99），必须在 README 生成前
+        # （03_generate_model_readmes.py 引用 previews/ 下的预览图）；非致命
+        ('models_organize/01_organize_previews.py', ['--apply', '--rename'], False),
         ('check&fix/kb_tool.py', ['--authors-data']),
         ('models_organize/03_generate_model_readmes.py', []),
+        # Other-YSM-Models 模型总索引（归档时未命中作者的模型可能归入该目录）
+        ('models_organize/03_generate_other_models_index.py', ['--apply']),
         ('check&fix/format_author_readme.py', []),
         ('models_organize/03_generate_root_readme.py', ['--author']),
         ('models_organize/05_translate_readme.py', []),
     ],
     'full': [
+        # 预览图归位同样适用于模型/文档变更后的全量刷新；非致命
+        ('models_organize/01_organize_previews.py', ['--apply', '--rename'], False),
         ('check&fix/kb_tool.py', ['--authors-data']),
         ('models_organize/03_generate_model_readmes.py', []),
+        # Other-YSM-Models 模型总索引（workflow 触发路径含 Other-YSM-Models/**）
+        ('models_organize/03_generate_other_models_index.py', ['--apply']),
         ('check&fix/format_author_readme.py', []),
         ('models_organize/03_generate_root_readme.py', ['--author']),
         ('models_organize/05_translate_readme.py', []),
+    ],
+    'other-index': [
+        ('models_organize/03_generate_other_models_index.py', ['--apply']),
     ],
     'rename': [
         ('models_organize/02_rename_model_folders.py', ['--apply']),
@@ -130,8 +145,10 @@ PIPELINE_STEPS: dict[str, list[tuple[str, list[str]]]] = {
 # 每个脚本的一句话说明（flow --list 用）
 FLOW_STEP_DESC = {
     'models_organize/01_organize_models.py': '归档 .ysm 到 Models/<编号>/',
+    'models_organize/01_organize_previews.py': '预览图归入 previews/ 并规范命名(--rename)',
     'models_organize/03_generate_root_readme.py': '根 README 展示(作者表/分类区块；authors.json 已移至 kb --authors-data)',
     'models_organize/03_generate_model_readmes.py': '生成模型 README',
+    'models_organize/03_generate_other_models_index.py': 'Other-YSM-Models 模型总索引(按作品分组)',
     'check&fix/format_author_readme.py': '格式化作者级 README',
     'models_organize/05_translate_readme.py': '翻译 README → README-EN',
     'models_organize/02_rename_model_folders.py': '重命名模型文件夹',
@@ -154,10 +171,13 @@ def run_flow(argv: list[str]) -> int:
     if args.list:
         for name, steps in PIPELINE_STEPS.items():
             print(f'[{name}]')
-            for rel, step_args in steps:
+            for step in steps:
+                rel, step_args, *rest = step
+                fatal = rest[0] if rest else True
                 desc = FLOW_STEP_DESC.get(rel, '')
                 suffix = f" {' '.join(step_args)}" if step_args else ''
-                print(f'    {rel}{suffix}  {desc}')
+                tag = '' if fatal else '  (非致命)'
+                print(f'    {rel}{suffix}{tag}  {desc}')
         return 0
 
     if args.flow not in PIPELINE_STEPS:
@@ -165,19 +185,26 @@ def run_flow(argv: list[str]) -> int:
         return 2
 
     print(f'== pipeline: {args.flow} ==')
-    for rel, step_args in PIPELINE_STEPS[args.flow]:
+    for step in PIPELINE_STEPS[args.flow]:
+        rel, step_args, *rest = step
+        fatal = rest[0] if rest else True  # 第三元素可选，默认致命（失败中止）
         script = SCRIPT_DIR / rel
         if not script.is_file():
             print(f"  [错误] 未找到脚本: {script}", file=sys.stderr)
             return 2
         desc = FLOW_STEP_DESC.get(rel, '')
-        print(f"  → {rel} {' '.join(step_args) if step_args else ''}  {desc}")
+        tag = '' if fatal else '（非致命）'
+        print(f"  → {rel} {' '.join(step_args) if step_args else ''}  {desc}{tag}")
         if args.dry_run:
             print('    (dry-run) 未执行')
             continue
         code = subprocess.run([sys.executable, str(script), *step_args],
                               cwd=REPO_ROOT, env=os.environ).returncode
         if code != 0:
+            if not fatal:
+                # 非致命步骤：只警告，继续后续步骤（如预览图归位冲突不阻断核心流程）
+                print(f"  [警告] {rel} 退出码 {code}（非致命，继续后续步骤）", file=sys.stderr)
+                continue
             print(f"流程中止: {rel} 退出码 {code}", file=sys.stderr)
             return code
     print('== pipeline 完成 ==')

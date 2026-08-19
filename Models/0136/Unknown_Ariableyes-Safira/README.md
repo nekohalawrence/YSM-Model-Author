@@ -48,11 +48,4 @@
   - **SupportPlatform**: #Afdian
     - **Afdian**: [星屑海螺](https://afdian.com/a/lucia2048)
 
-- **Name**: Fllz
-  - **Role**: #模型 | #Model
-  - **SocialPlatform**: #Facebook
-    - **Facebook**: [Fllz](https://www.facebook.com/asche.scheer)
-  - **OtherPlatform**: #Linktree
-    - **Linktree**: [Fllz](https://linktr.ee/fllz)
-
 </details>

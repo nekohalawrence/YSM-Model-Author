@@ -18,7 +18,7 @@
 <details>
 <summary>Expand/Collapse</summary>
 
-- **Name**: #伊地知虹夏 | #Nijika-Ijichi
+- **Name**: #Nijika-Ijichi
 - **Category**: #Anime
   - **Game**: #Bocchi-the-Rock! #BtR #孤独摇滚！
 

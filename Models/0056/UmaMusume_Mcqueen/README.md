@@ -6,7 +6,7 @@
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
-![preview011.png](previews/preview011.png)
+![preview01.png](previews/preview01.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
 

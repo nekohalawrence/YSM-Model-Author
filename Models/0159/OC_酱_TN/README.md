@@ -26,7 +26,7 @@
 
 - **Name**: #兔兔猫officials | #阴阳兔兔猫offcial
   - **Author ID**: `0159`
-  - **Role**: #oc方
+  - **Role**: #全部（）
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [兔兔猫officials](https://space.bilibili.com/3546785165347464)
   - **SupportPlatform**: #Afdian
@@ -34,11 +34,9 @@
 
 ## Co-creator
 
-- **Name**: 兔兔猫officials
-  - **Role**: #全部（）
+- **Name**: 支离破碎的TN酱
+  - **Role**: #oc方
   - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [兔兔猫officials](https://space.bilibili.com/13875779)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [兔兔猫officials](https://ifdian.net/a/RABET)
+    - **Bilibili**: [支离破碎的TN酱](https://space.bilibili.com/77479483)
 
 </details>

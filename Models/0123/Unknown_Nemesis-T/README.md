@@ -28,4 +28,11 @@
   - **SocialPlatform**: #Bilibili
     - **Bilibili**: [Anrieal](https://space.bilibili.com/1421932069)
 
+## Co-creator
+
+- **Name**: こまいぬ通り
+  - **Role**: #模型 | #Model
+  - **OtherPlatform**: #Booth
+    - **Booth**: [こまいぬ通り](https://booth.pm/zh-cn/items/5986971)
+
 </details>

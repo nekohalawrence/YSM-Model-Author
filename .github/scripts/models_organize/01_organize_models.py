@@ -15,8 +15,9 @@ YSM 模型归档工具（重构版）——按作者/作品将待归档的 .ysm 
   - 有作者 → 登记/合并 authors.json（新作者从 0000 起取空缺编号 + 升序 + 建目录；
     旧作者补缺合并：别名去重追加末尾 / 平台补缺失 http 键），主作者 move、其他模型作者 copy
   - 无作者 → 按作品归类到 Other-YSM-Models/<作品>/（未匹配 → Unknown）
-  - 命名：先 build_model_folder_name 合并内部 <name> 与文件名，再 resolve_name3 格式化
-    （参考 02_rename_model_folders.py），产出 <作品>_<中文角色>[_皮肤]_<英文角色>[_皮肤]_<评级>
+  - 命名：resolve_folder_name —— 优先用文件内 <name>（无则文件名）作匹配主体，resolve_name3 匹配出
+    作品则标准化（作品/角色，其余字段原位）；匹配不出则兜底用内部 <name> 命名（去装饰符号）。
+    （产出 <作品>_<中文角色>[_皮肤]_<英文角色>[_皮肤]_<评级>）
   - 去重：sha256 内容相同跳过；同名文件夹按文件大小版本化；同模型多版本合并；附属文件跟随
   - 不写 co_creators.json（co-creator 作者丢弃）
 
@@ -214,20 +215,52 @@ def resolve_and_register_author(block: dict, alias_to_id: dict, runtime_index: d
 # ===========================================================================
 # ③ 决策层
 # ===========================================================================
-def build_model_folder_name(inner_name: str | None, file_stem: str) -> str:
-    """合并内部 <name> 与文件名：语言不一致 -> '中文_英文'；语言一致 -> 取更完整。"""
+# 内部 <name> 的装饰符号（✟☪★☆ 等）在兜底命名时直接删除，只保留
+# 中文/假名/英文/数字/常用分隔符——兜底直接用作者写的 name 作为文件夹名。
+_DECOR_KEEP_RE = re.compile(r"[^\w\u4e00-\u9fff\u3040-\u30ff\-_·.\s()（）]")
+
+
+def _clean_inner_name(name: str) -> str:
+    """清理内部 name 的装饰符号，保留中文/假名/英文/数字/分隔符。"""
+    return _DECOR_KEEP_RE.sub('', name).strip()
+
+
+def resolve_folder_name(inner_name: str | None, file_stem: str, kb) -> tuple[str, str]:
+    """按命名规则决定文件夹名与作品（2026-08-19，替代 build_model_folder_name + format_folder_name）。
+
+    规则：
+      1. 匹配主体优先用文件内 <name>（作者自写更可靠），无 name 才用文件名；两者都做
+         符号→_、英文小写 格式化后进入 resolve_name3 匹配（resolve_name3 内部 format_name）。
+      2. resolve_name3 匹配出作品（work 非 Unknown）→ 用其标准化结果：作品标准化 + 该作品下
+         角色命中则角色也标准化、其余字段原位（有作品无角色则只作品标准化）。
+      3. 未匹配出作品（无作品 / 角色多归属冲突 / 完全失败）→ 兜底：用内部 name 原样命名
+         （仅清理装饰符号与 Windows 非法字符）；无内部 name 才用文件名。
+    """
     a = (inner_name or '').strip()
     b = clean_file_stem(file_stem)
-    if not a:
-        return b or 'unnamed_model'
-    if not b:
-        return a
-    if normalize_name_for_cmp(a) == normalize_name_for_cmp(b):
-        return a
-    a_cjk, b_cjk = has_cjk(a), has_cjk(b)
-    if a_cjk != b_cjk:
-        return f'{a}_{b}' if a_cjk else f'{b}_{a}'
-    return a if len(a) >= len(b) else b
+    if not a and not b:
+        return 'unnamed_model', ''
+    candidate = a if a else b  # 主候选：优先内部 name
+    backup = b if (a and b and normalize_name_for_cmp(a) != normalize_name_for_cmp(b)) else ''
+
+    def _match(name: str) -> tuple[str, str] | None:
+        res = resolve_name3(name, *kb)
+        work = res.get('work') or ''
+        if work and work != 'Unknown':
+            # 统一清理装饰符号（resolve_name3 的 format_name 不识别 ✟☪★☆ 等）
+            return sanitize_folder_name(_clean_inner_name(res.get('new') or name)), work
+        return None
+
+    got = _match(candidate)
+    if got:
+        return got
+    if backup:
+        got = _match(backup)
+        if got:
+            return got
+    # 兜底：内部 name 原样（去装饰符号 + 清理非法字符）；无 name 用文件名
+    fallback = _clean_inner_name(a) if a else sanitize_folder_name(b or 'unnamed_model')
+    return sanitize_folder_name(fallback or 'unnamed_model'), ''
 
 
 def sanitize_folder_name(name: str) -> str:
@@ -240,19 +273,6 @@ def sanitize_folder_name(name: str) -> str:
     if name.upper() in WINDOWS_RESERVED:
         name = '_' + name
     return name
-
-
-def format_folder_name(candidate: str, kb, strip_unknown: bool) -> tuple[str, str]:
-    """resolve_name3 格式化（参考 02）→ 清理。返回 (最终文件夹名, 作品)。
-
-    strip_unknown=True（有作者）时去掉 Unknown_ 前缀——作者已确定，无需 Unknown 标记。
-    """
-    roles, en_to_cn, cn_to_en, cn_alias = kb
-    res = resolve_name3(candidate, roles, en_to_cn, cn_to_en, cn_alias)
-    new = res.get('new') or candidate
-    if strip_unknown and new.lower().startswith('unknown_'):
-        new = new[len('Unknown_'):] or candidate
-    return sanitize_folder_name(new), res.get('work') or ''
 
 
 def file_sha256(path: Path) -> str:
@@ -310,8 +330,13 @@ def versionize_same_name(folder_dir: Path, folder_name: str,
     return [(p, f"{folder_name}_v{i}.ysm") for i, (p, _) in enumerate(items, 1)]
 
 
-def find_same_model_folder(target_dir: Path, folder_name: str) -> Path | None:
+def find_same_model_folder(target_dir: Path, folder_name: str, kb=None,
+                           probes=()) -> Path | None:
     """在目标作者目录下找与 folder_name 属同一模型的已有文件夹（排除完全同名）。
+
+    同模型判定优先用角色知识库：对新模型的可解析候选（内部 name / 文件名 / 兜底文件夹名）
+    和已有文件夹各跑 resolve_name3，若"作品 + 中文角色"相同则视为同一模型（容忍别名，
+    如 本子魔法使 ≡ 本子魔法师）。知识库判不出才回退字面子串 same_model。
 
     排除纯 Unknown 文件夹（Other-YSM 的兜底目录）：'Unknown' 是任意
     'Unknown_xxx' 的子串，会被 same_model 误判为同模型。
@@ -319,6 +344,16 @@ def find_same_model_folder(target_dir: Path, folder_name: str) -> Path | None:
     if not target_dir.is_dir():
         return None
     norm = normalize_name_for_cmp(folder_name)
+    # 新模型可解析出的角色键集合（作品, 中文角色规范化）
+    new_keys: set[tuple[str, str]] = set()
+    for probe in probes:
+        if not probe or not kb:
+            continue
+        res = resolve_name3(probe, *kb)
+        work = res.get('work') or ''
+        zh = (res.get('zh') or '').strip()
+        if work and work != 'Unknown' and zh:
+            new_keys.add((work, normalize_name_for_cmp(zh)))
     for sub in sorted(target_dir.iterdir()):
         if not (sub.is_dir() and not sub.name.startswith('.')):
             continue
@@ -327,6 +362,15 @@ def find_same_model_folder(target_dir: Path, folder_name: str) -> Path | None:
             continue  # 纯 Unknown 兜底文件夹：不参与同模型合并
         if sub_norm == norm:
             continue
+        # 角色知识库判定：作品+中文角色相同 → 同模型（多版本合并）
+        if new_keys and kb:
+            res_sub = resolve_name3(sub.name, *kb)
+            work_sub = res_sub.get('work') or ''
+            zh_sub = (res_sub.get('zh') or '').strip()
+            if work_sub and work_sub != 'Unknown' and zh_sub:
+                if (work_sub, normalize_name_for_cmp(zh_sub)) in new_keys:
+                    return sub
+        # 兜底：字面子串
         if same_model(folder_name, sub.name):
             return sub
     return None
@@ -351,10 +395,12 @@ def collect_sidecars(src_dir: Path, stem: str, src_path: Path) -> list[Path]:
 # ④ 执行层
 # ===========================================================================
 def archive_one(path: Path, target_dir: Path, folder_name: str, mode: str,
-                apply: bool, root: Path, verbose: bool) -> str | None:
+                apply: bool, root: Path, verbose: bool,
+                kb=None, probes=()) -> str | None:
     """把单个 .ysm 归档到目标作者目录。返回 'moved'/'copied'/'skipped'；dry-run 返回 None。
 
     处理重复检测、同模型多版本合并、sidecar 跟随。mode='move'（主作者）或 'copy'。
+    kb/probes：供 find_same_model_folder 用角色知识库判定同模型（多版本合并到已有文件夹）。
     """
     input_sha = file_sha256(path)
     input_size = path.stat().st_size if path.is_file() else 0
@@ -370,7 +416,7 @@ def archive_one(path: Path, target_dir: Path, folder_name: str, mode: str,
             print(f"  [跳过] {dup_note}")
             return 'skipped'
 
-    dest_dir = find_same_model_folder(target_dir, folder_name)
+    dest_dir = find_same_model_folder(target_dir, folder_name, kb=kb, probes=probes)
     if dest_dir is not None:
         print(f"  合并进已有模型文件夹: {dest_dir.relative_to(root)}")
     else:
@@ -453,16 +499,17 @@ def process_file(path: Path, root: Path, alias_to_id: dict, runtime_index: dict,
     inner_name = meta.get('name') or ''
     blocks = meta.get('author_blocks') or []
     models_dir = root / 'Models'
-    candidate = build_model_folder_name(inner_name, path.stem)
 
     if not blocks:
         # 无作者：命名 + 按作品归类
-        folder_name, work = format_folder_name(candidate, kb, strip_unknown=False)
+        folder_name, work = resolve_folder_name(inner_name, path.stem, kb)
         sub = work or detect_work_prefix(folder_name, work_map) or 'Unknown'
         target_dir = root / 'Other-YSM-Models' / sub
         print(f"  未识别到作者，按作品分类 -> Other-YSM-Models/{sub}")
         print(f"  模型文件夹名: {folder_name}")
-        status = archive_one(path, target_dir, folder_name, 'move', apply, root, verbose)
+        probes = (inner_name, path.stem, folder_name)
+        status = archive_one(path, target_dir, folder_name, 'move', apply, root, verbose,
+                             kb=kb, probes=probes)
         if status in ('moved', 'copied'):
             result['action'] = status
         elif status == 'skipped':
@@ -488,19 +535,22 @@ def process_file(path: Path, root: Path, alias_to_id: dict, runtime_index: dict,
         if aid not in dedup or (mode == 'move' and dedup[aid][0] != 'move'):
             dedup[aid] = (mode, block)
 
-    folder_name, _ = format_folder_name(candidate, kb, strip_unknown=True)
+    folder_name, _ = resolve_folder_name(inner_name, path.stem, kb)
     print(f"  模型文件夹名: {folder_name}")
 
+    probes = (inner_name, path.stem, folder_name)
     statuses = []
     # 先复制目标后移动主作者，保证 copy 时源文件（含 sidecar）仍存在
     for aid, (mode, block) in dedup.items():
         if mode == 'copy':
             statuses.append(archive_one(path, models_dir / aid, folder_name,
-                                        'copy', apply, root, verbose))
+                                        'copy', apply, root, verbose,
+                                        kb=kb, probes=probes))
     for aid, (mode, block) in dedup.items():
         if mode == 'move':
             statuses.append(archive_one(path, models_dir / aid, folder_name,
-                                        'move', apply, root, verbose))
+                                        'move', apply, root, verbose,
+                                        kb=kb, probes=probes))
 
     if any(s in ('moved', 'copied') for s in statuses):
         result['action'] = 'moved' if 'moved' in statuses else 'copied'

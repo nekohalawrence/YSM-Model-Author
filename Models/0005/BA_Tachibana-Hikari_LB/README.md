@@ -24,7 +24,7 @@
 
 ## Author
 
-- **Name**: #omo仙贝2号 | #omo | #FujiwaranoMoku114514
+- **Name**: #omo仙贝2号 | #omo | #mo | #FujiwaranoMoku114514
   - **Author ID**: `0005`
   - **Role**: #全部
   - **SocialPlatform**: #Bilibili #YouTube #Twitter

@@ -14,7 +14,7 @@
 <details>
 <summary>Expand/Collapse</summary>
 
-- **Name**: #mod步兵 | #Alert-2
+- **Name**: #mod步兵 | #Alert-2-Red
 - **Category**: #Unknown
   - **Game**: #Unknown
 

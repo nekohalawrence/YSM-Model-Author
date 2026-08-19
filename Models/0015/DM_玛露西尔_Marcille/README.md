@@ -22,7 +22,7 @@
 <details>
 <summary>Expand/Collapse</summary>
 
-- **Name**: #玛露西尔 | #Marcille
+- **Name**: #玛露西尔 | #Marcille-DM
 - **Category**: #Unknown
   - **Game**: #Unknown
 

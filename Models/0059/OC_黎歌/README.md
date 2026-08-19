@@ -14,7 +14,7 @@
 <details>
 <summary>Expand/Collapse</summary>
 
-- **Name**: #黎歌Neeko
+- **Name**: 
 - **Category**: #Original
   - **Game**: #Original Character #OC #原创角色
 

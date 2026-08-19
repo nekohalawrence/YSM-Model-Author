@@ -14,7 +14,7 @@
 <details>
 <summary>Expand/Collapse</summary>
 
-- **Name**: #95大头兵 | #Alert-95
+- **Name**: #95大头兵 | #Alert-Red-95
 - **Category**: #Unknown
   - **Game**: #Unknown
 

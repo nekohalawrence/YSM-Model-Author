@@ -16,7 +16,7 @@
 <details>
 <summary>Expand/Collapse</summary>
 
-- **Name**: #北方栖姬 | #Northern-Princess
+- **Name**: #北方栖姬 | #Northern-Princess-KanCollect
 - **Category**: #Unknown
   - **Game**: #Unknown
 

@@ -14,7 +14,7 @@
 <details>
 <summary>Expand/Collapse</summary>
 
-- **Name**: #丽莎 | #Lisa
+- **Name**: 
 - **Category**: #Game
   - **Game**: #Honkai-Impact-3 #HI3 #崩坏 3
 

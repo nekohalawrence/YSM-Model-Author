@@ -25,7 +25,7 @@
 | 脚本 | 职责 | 调用方式 |
 | --- | --- | --- |
 | **01_organize_models.py** | `.ysm` 归档：解析作者 → 登记/合并 `authors.json` → `Models/<编号>/`（新作者补洞编号 + 建目录），未命中作者 → 按作品前缀分类到 `Other-YSM-Models/<作品>/`（未匹配 → `Unknown/`）；命名先合并内部名+文件名再 resolve_name3 格式化；去重/同模型合并/附属文件跟随；co-creator 丢弃；`--apply` 后联动 readmes → authors 表 | `python .github/scripts/models_organize/01_organize_models.py <文件/目录> [--apply] [--root] [--with-gen-readmes] [--with-readme-table]` |
-| **organize_previews.py**（check&fix/） | 预览图归入 `previews/` 并规范命名，之后重跑模型 README | `[--apply] [--rename] [<路径>...]` |
+| **01_organize_previews.py**（models_organize/） | 预览图归入 `previews/` 并规范命名；`--with-gen-readmes` 联动重跑模型 README（默认不联动） | `[--apply] [--rename] [--with-gen-readmes] [<目录>...]` |
 | **02_rename_model_folders.py** | 模型文件夹**纯重命名**（原 naming/rename_model_folders.py）：按知识库把模型文件夹重命名为 `<作品>_<中文角色>[-皮肤]_<英文角色>_<评级>`；Unknown / 跨作品同名冲突**只标记跳过**（不收录数据库）；同名冲突自动加 `-数字` 副本序号。知识库维护已分离到 check&fix/kb_tool.py，实现复用于 `lib/kb/` | `[--apply] [--show*]` |
 | **02_rename_model_files.py** | 模型文件重命名（自 02 拆出）：`<文件夹名(去评级)>[变体][_v版本][_副本序号]<后缀>`，变体词经 skin_tags.json 标准化表规范化；默认 dry-run | `[--apply] [路径...]` |
 | **kb_tool.py**（check&fix/） | 知识库维护（原 02/03 分离）：`--roles` 角色综合菜单 / `--add`/`--del`/`--list`/`--check`/`--merge`/`--set-default`/`--rename`/`--suggest`（操作 × 对象 role/work）；`--rename-work` 重命名作品键；`--authors-data` 重建 authors.json（原 03 --data）；`--sync-authors` 从模型 .ysm 推导作者并入 authors.json | `python .github/scripts/check&fix/kb_tool.py [--roles/--add/--del/--authors-data/--sync-authors]` |
@@ -97,7 +97,7 @@ cli.py flow（流程编排，内联自原 pipeline.py；workflow 与本地共用
   ├─ --with-gen-readmes   → 03_generate_model_readmes.py
   └─ --with-readme-table  → 03_generate_root_readme.py --author
 
-check&fix/organize_previews.py (--apply 后) ──→ 03_generate_model_readmes.py
+models_organize/01_organize_previews.py (--apply + --with-gen-readmes) ──→ 03_generate_model_readmes.py
 全部脚本 ──→ lib/*（公共库）
 ```
 
@@ -111,7 +111,7 @@ python .github/scripts/cli.py <子命令> [参数...]   # 参数原样转发给�
 | 子命令 | 目标脚本 |
 | --- | --- |
 | `organize` | models_organize/01_organize_models.py |
-| `previews` | check&fix/organize_previews.py |
+| `previews` | models_organize/01_organize_previews.py |
 | `rename-files` | models_organize/02_rename_model_files.py（模型文件重命名） |
 | `rename-folders` | models_organize/02_rename_model_folders.py（模型文件夹纯重命名） |
 | `kb` | check&fix/kb_tool.py（知识库维护 / --authors-data / --sync-authors） |

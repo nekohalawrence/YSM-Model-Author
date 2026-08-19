@@ -6,11 +6,11 @@
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
-![preview.png](previews/preview.png)
-
 ![preview01.png](previews/preview01.png)
 
 ![preview02.png](previews/preview02.png)
+
+![preview03.png](previews/preview03.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
 
@@ -22,7 +22,7 @@
 
 - **Name**: #初音未来 | #Hatsune-Miku
 - **Category**: #Music
-  - **Game**: #VOCALOID #VOC #博歌乐 #V 家 #术力口 #虚拟歌手 #虚拟歌姬
+  - **Game**: #VOCALOID #VOC #虚拟歌姬 #V 家 #术力口 #虚拟歌手
 
 ## Author
 

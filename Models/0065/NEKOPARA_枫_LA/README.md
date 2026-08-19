@@ -6,13 +6,13 @@
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
-![preview.png](previews/preview.png)
-
 ![preview01.png](previews/preview01.png)
 
 ![preview02.png](previews/preview02.png)
 
 ![preview03.png](previews/preview03.png)
+
+![preview04.png](previews/preview04.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
 
@@ -22,7 +22,7 @@
 <details>
 <summary>Expand/Collapse</summary>
 
-- **Name**: #枫
+- **Name**: 
 - **Category**: #Game
   - **Game**: #NEKOPARA #巧克力与香子兰 #猫娘乐园 #ネコぱら
 

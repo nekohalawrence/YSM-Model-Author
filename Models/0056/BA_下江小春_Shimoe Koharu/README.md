@@ -34,13 +34,4 @@
   - **SupportPlatform**: #Afdian
     - **Afdian**: [伊洛是哥斯拉嘛](https://afdian.com/a/6TGESILA)
 
-## Co-creator
-
-- **Name**: 狱际星芒
-  - **Role**: #作者
-  - **SocialPlatform**: #Bilibili
-    - **Bilibili**: [狱际星芒](https://space.bilibili.com/349150095)
-  - **SupportPlatform**: #Afdian
-    - **Afdian**: [狱际星芒](https://afdian.com/a/3256286845xingmang)
-
 </details>

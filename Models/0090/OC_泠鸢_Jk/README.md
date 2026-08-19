@@ -18,7 +18,7 @@
 <details>
 <summary>Expand/Collapse</summary>
 
-- **Name**: #泠鸢 | #Jk
+- **Name**: #Jk
 - **Category**: #Original
   - **Game**: #Original Character #OC #原创角色
 

@@ -18,7 +18,7 @@
 <details>
 <summary>Expand/Collapse</summary>
 
-- **Name**: #黑塔 | #Herta
+- **Name**: #Heita
 - **Category**: #Game
   - **Game**: #Genshin Impact #Genshin #GI #原神
 

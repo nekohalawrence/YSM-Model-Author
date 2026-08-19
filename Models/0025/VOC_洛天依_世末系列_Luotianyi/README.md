@@ -16,7 +16,7 @@
 
 - **Name**: #洛天依 | #Luotianyi
 - **Category**: #Music
-  - **Game**: #VOCALOID #VOC #博歌乐 #V 家 #术力口 #虚拟歌手 #虚拟歌姬
+  - **Game**: #VOCALOID #VOC #虚拟歌姬 #V 家 #术力口 #虚拟歌手
 
 ## Author
 

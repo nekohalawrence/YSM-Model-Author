@@ -14,7 +14,7 @@
 <details>
 <summary>Expand/Collapse</summary>
 
-- **Name**: #mod步兵
+- **Name**: 
 - **Category**: #Game
   - **Game**: #Command & Conquer Generals: Zero Hour #Zero Hour #ZH #命令与征服：绝命时刻
 

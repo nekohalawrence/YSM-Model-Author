@@ -14,7 +14,7 @@
 <details>
 <summary>Expand/Collapse</summary>
 
-- **Name**: #芬妮 | #Fanny
+- **Name**: #Fannie-Hunsha
 - **Category**: #Game
   - **Game**: #Snowbreak: Containment Zone #snowbreak #尘白禁区
 

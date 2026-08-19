@@ -16,13 +16,13 @@
 <details>
 <summary>Expand/Collapse</summary>
 
-- **Name**: #Asuka-Langley
+- **Name**: #Langley
 - **Category**: #Game
   - **Game**: #Neon-Genesis-Evangelion #NGE #EVA #新世纪福音战士
 
 ## Author
 
-- **Name**: #omo仙贝2号 | #omo | #FujiwaranoMoku114514
+- **Name**: #omo仙贝2号 | #omo | #mo | #FujiwaranoMoku114514
   - **Author ID**: `0005`
   - **Role**: #模型 #动作 #动画 | #Model #Motion #Animation
   - **SocialPlatform**: #Bilibili #YouTube #Twitter

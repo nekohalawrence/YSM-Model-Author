@@ -18,7 +18,7 @@
 <details>
 <summary>Expand/Collapse</summary>
 
-- **Name**: #维吉尔 | #Vergil
+- **Name**: #维吉尔 | #Vergil-DMC
 - **Category**: #Unknown
   - **Game**: #Unknown
 

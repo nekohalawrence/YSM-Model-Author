@@ -164,26 +164,62 @@ def model_owner(model_dir: Path) -> tuple[str | None, str]:
 
 
 # ---------------------------------------------------------------------------
-# 多作者分类：主作者 = 第一个 role 含"模型"的作者；无则第一个作者
+# 多作者分类（三级制作者信号 + 形象来源排除）
+#   - 形象来源/版权/设定类 role（如"模型OC"）即使含"模型"也归 co-creator
+#   - primary = 制作者信号最强的第一个块：模型类(P1) > 全包类(P2) > 作者自述(P3)
+#   - model_blocks = 所有 P1/P2/P3 块（主作者 move、其他 copy）
+#   - 无任何制作者信号时取第一个非形象来源块兜底
 # ---------------------------------------------------------------------------
+# 形象来源/版权/设定类：永不作为模型制作者（如 模型OC / 原型人物 / 原IP / 单主）
+_OC_ROLE_MARKERS = ('OC', '原型', '原IP', 'IP', '版权', '形象', '立绘', '原画',
+                    '角色', '吉祥物', '人设', '设主', '单主', '系列二创', '原始模型指向')
+# P1 显式模型/建模（强）：模型、模型作者、模型制作、生物建模、Model author...
+_P1_ROLE_MARKERS = ('模型', '建模', 'Model', 'model')
+# P2 全包类（中）：模型+动画+物理全做，如 全部 / ALL / 都是我做哒 / 全部制作工作
+_P2_ROLE_MARKERS = ('全部', 'ALL', 'All', 'all', '都是我做', '全包', '全做', '制作工作')
+# P3 作者自述（弱）：精确匹配，避免"武器作者""物理/粒子插件作者"等领域词误伤
+_P3_ROLE_EXACT = ('作者', 'Author', 'author', '做者', '是作者')
+
+
+def _is_oc_role(role: str) -> bool:
+    """role 是否为形象来源/版权/设定类（含"模型"也不算制作者）。"""
+    return any(m in role for m in _OC_ROLE_MARKERS)
+
+
+def _maker_level(role: str) -> int:
+    """返回制作者信号强度：0=非制作者，1=P1 模型类，2=P2 全包类，3=P3 作者自述。"""
+    if _is_oc_role(role):
+        return 0
+    if any(m in role for m in _P1_ROLE_MARKERS):
+        return 1
+    if any(m in role for m in _P2_ROLE_MARKERS):
+        return 2
+    if role in _P3_ROLE_EXACT or role.startswith('是作者'):
+        return 3
+    return 0
+
+
 def classify_authors(author_blocks: list[dict]) -> tuple[dict | None, list[dict], list[dict]]:
     """返回 (primary, model_blocks, co_creator_blocks)。
 
-    primary: 第一个 role 含"模型"的块；没有任何块含"模型"时取第一个块。
-    model_blocks: 所有 role 含"模型"的块（含 primary，可能多个 -> 复制到各作者目录）。
-    co_creator_blocks: 其余块（非"模型"角色，仅记录不归档）。
+    primary: 制作者信号最强的第一个块（P1 模型类 > P2 全包类 > P3 作者自述），
+             同级别取先出现的块；无任何制作者信号时取第一个非形象来源块。
+    model_blocks: 所有制作者块（含 primary，可能多个 -> 主作者 move、其他 copy）。
+    co_creator_blocks: 其余块（形象来源/动画/物理/服务等，仅记录不归档）。
     """
     if not author_blocks:
         return None, [], []
-    primary: dict | None = None
-    model_blocks: list[dict] = []
-    for b in author_blocks:
-        if '模型' in (b.get('role') or ''):
-            if primary is None:
-                primary = b
-            model_blocks.append(b)
-    if primary is None:
-        primary = author_blocks[0]
+    makers = [(b, _maker_level(b.get('role') or '')) for b in author_blocks]
+    makers = [(b, lv) for b, lv in makers if lv > 0]
+    if makers:
+        # 信号最强 = level 数值最小（1 最强）；同级别保持作者块原有顺序
+        best_level = min(lv for _, lv in makers)
+        primary = next(b for b, lv in makers if lv == best_level)
+        model_blocks = [b for b, _ in makers]
+    else:
+        # 无制作者信号：避免把形象来源（如"模型OC"）当主作者归档，取第一个非 OC 块
+        primary = next((b for b in author_blocks
+                        if not _is_oc_role(b.get('role') or '')), author_blocks[0])
         model_blocks = [primary]
     co_creators = [b for b in author_blocks if b not in model_blocks]
     return primary, model_blocks, co_creators

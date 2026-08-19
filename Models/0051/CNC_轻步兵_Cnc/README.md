@@ -14,7 +14,7 @@
 <details>
 <summary>Expand/Collapse</summary>
 
-- **Name**: #mod步兵
+- **Name**: 
 - **Category**: #Game
   - **Game**: #Command & Conquer #CNC #命令与征服
 

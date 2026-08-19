@@ -16,7 +16,7 @@
 <details>
 <summary>Expand/Collapse</summary>
 
-- **Name**: #Alice-In-Wonderland-Alice
+- **Name**: #In-Wonderland
 - **Category**: #Game
   - **Game**: #Goddess of Victory: Nikke #Nikke #胜利女神：妮姬
 
@@ -30,15 +30,5 @@
     - **Pixiv**: [Fllz](https://www.pixiv.net/users/34822407)
   - **OtherPlatform**: #VGen
     - **VGen**: [Fllz](https://vgen.co/fllz)
-
-## Co-creator
-
-- **Name**: Fllz
-  - **Role**: #模型 | #Model
-  - **OtherPlatform**: #Linktree #VGen
-    - **Linktree**: [Fllz](https://linktr.ee/fllz)
-    - **VGen**: [Fllz](https://vgen.co/fllz)
-  - **GroupChat**: #Discord
-    - **Discord**: fllz
 
 </details>

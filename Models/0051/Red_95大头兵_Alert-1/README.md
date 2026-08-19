@@ -14,7 +14,7 @@
 <details>
 <summary>Expand/Collapse</summary>
 
-- **Name**: #95-Alert-1
+- **Name**: #Red-95-Alert-1
 - **Category**: #Unknown
   - **Game**: #Unknown
 

@@ -6,9 +6,9 @@
 
 <!-- GENERATED MODEL PREVIEW README START -->
 
-![preview.png](previews/preview.png)
-
 ![preview01.png](previews/preview01.png)
+
+![preview02.png](previews/preview02.png)
 
 <!-- GENERATED MODEL PREVIEW README END -->
 
@@ -24,7 +24,7 @@
 
 ## Author
 
-- **Name**: #omo仙贝2号 | #omo | #FujiwaranoMoku114514
+- **Name**: #omo仙贝2号 | #omo | #mo | #FujiwaranoMoku114514
   - **Author ID**: `0005`
   - **Role**: #模型 | #Model
   - **SocialPlatform**: #Bilibili #YouTube #Twitter

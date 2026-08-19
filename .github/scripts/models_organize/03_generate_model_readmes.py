@@ -121,6 +121,8 @@ def load_works() -> dict:
                         if a and str(a) not in arr:
                             arr.append(str(a))
                     meta[lang] = arr
+                # 作品缩写（作品键，如 AK）供 Game 标签简写在前
+                meta['abbr'] = str(abbr)
                 if work.get('category') is not None:
                     meta['category'] = work['category']
                 if any(meta.get(fd) for fd in ('en', 'zh', 'ja', 'category')):
@@ -197,7 +199,8 @@ def get_role_parser() -> tuple[list, dict, dict, dict]:
 
 
 def get_main_author_role(model_dir: Path) -> str:
-    """从模型 .ysm 主作者块取 role（第一个 role 含"模型"的作者块）；无 .ysm 返回空。
+    """从模型 .ysm 主作者块取 role（lib_ysm.classify_authors 三级信号判定的 primary 块，
+    与 01_organize_models 的归档分类一致）；无 .ysm 返回空。
 
     模型 README 的 Author Role 以模型内容（.ysm）为准，authors.json 无 role 时用它；
     .ysm 也没有 role 时由渲染层回退到模板默认值。
@@ -256,8 +259,8 @@ def get_co_creators(model_dir: Path) -> list[dict]:
 def co_creators_from_ysm(model_dir: Path) -> list[dict]:
     """解析模型目录下全部 .ysm，把非主作者块合并成 co-creator 记录（co_creators 兜底）。
 
-    主作者 = role 含"模型"的第一个块（与归档分类 classify_authors 一致）；其余块即
-    co-creator。多 .ysm 目录（同一模型的多个版本/变体）会**扫描全部文件并去重合并**，
+    主作者 = 制作者信号最强的块（与归档分类 classify_authors 一致，见 lib/ysm.py）；其余
+    块即 co-creator。多 .ysm 目录（同一模型的多个版本/变体）会**扫描全部文件并去重合并**，
     避免只取第一个文件而漏掉其他版本的合作作者。返回格式与 co_creators 的
     co_creators 相同：[{'name', 'role', 'platforms': {字段: [值]}}]。
     """
