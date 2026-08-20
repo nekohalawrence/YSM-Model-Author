@@ -60,6 +60,7 @@ classify_authors = lib_ysm.classify_authors
 normalize_alias = lib_readme.normalize_alias
 build_author_index = lib_readme.build_author_index
 find_author = lib_readme.find_author
+match_author_id = lib_readme.match_author_id
 find_workspace_root = lib_paths.find_workspace_root
 has_cjk = lib_models.has_cjk
 normalize_name_for_cmp = lib_models.normalize_name_for_cmp
@@ -195,7 +196,7 @@ def resolve_and_register_author(block: dict, alias_to_id: dict, runtime_index: d
 
     命中已有 → 旧作者（apply 时补缺合并）；未命中 → 新作者（补洞编号 + 登记 + 建目录）。
     """
-    author_id, _ = find_author(block['name'], {**alias_to_id, **runtime_index}, verbose)
+    author_id, _ = match_author_id(block['name'], alias_to_id, runtime_index, verbose)
     if author_id:
         if apply:
             register_or_merge_author(root, models_dir, author_id, block)

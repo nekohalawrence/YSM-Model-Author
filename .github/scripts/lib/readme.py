@@ -107,6 +107,19 @@ def find_author(authors_str: str, alias_to_id: dict[str, str],
     return None, "未命中任何已收录作者"
 
 
+def match_author_id(name: str, alias_to_id: dict[str, str],
+                    runtime_index: dict[str, str] | None = None,
+                    verbose: bool = False) -> tuple[str | None, str]:
+    """匹配作者编号（纯查询，无副作用）；归档与重新分类共用的唯一入口。
+
+    与 organize_models 归档时的判定完全一致（同一函数）：
+    alias_to_id 为静态别名→编号索引，runtime_index 为本次运行新增的作者（归档时
+    逐条并入，重新分类场景为空）；返回 (编号 或 None, 匹配说明)。
+    """
+    idx = {**alias_to_id, **(runtime_index or {})}
+    return find_author(name, idx, verbose)
+
+
 def extract_platforms(content: str) -> dict[str, str]:
     """从作者 README 的 Author 段提取平台账号（孙项行）。
     值为 Markdown 链接时取 URL，否则取文本（如 QQ 号）。"""

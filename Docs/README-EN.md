@@ -17,14 +17,14 @@
 | 0002 | [#映素 \| #映素作坊](.../../Models/0002) | [Bilibili](https://space.bilibili.com/400235810) · QQ: 833187861 · [Afdian](https://afdian.com/a/6TGESILA) | 14 |
 | 0003 | [#XGancheng_Tao](.../../Models/0003) | [Bilibili](https://space.bilibili.com/1406170630) | 2 |
 | 0004 | [#XG残党](.../../Models/0004) | [Afdian](https://afdian.com/a/x416g) | 1 |
-| 0005 | 🔥 [#omo仙贝2号 \| #omo \| #FujiwaranoMoku114514](.../../Models/0005) | [Bilibili](https://space.bilibili.com/1959304255) · [YouTube](https://www.youtube.com/@%E8%97%A4%E5%8E%9F%E5%A6%B9%E7%BA%A2-i3q) · [Twitter](https://x.com/wOelxdwlnwq5Zl0) · [Afdian](https://afdian.com/a/omomomomomomo) · [Patreon](https://www.patreon.com/c/omo595/posts) | 23 |
+| 0005 | 🔥 [#omo仙贝2号 \| #omo \| #mo \| #FujiwaranoMoku114514](.../../Models/0005) | [Bilibili](https://space.bilibili.com/1959304255) · [YouTube](https://www.youtube.com/@%E8%97%A4%E5%8E%9F%E5%A6%B9%E7%BA%A2-i3q) · [Twitter](https://x.com/wOelxdwlnwq5Zl0) · [Afdian](https://afdian.com/a/omomomomomomo) · [Patreon](https://www.patreon.com/c/omo595/posts) | 23 |
 | 0006 | [#Nekuro \| #NekuroMC](.../../Models/0006) | [YouTube](https://www.youtube.com/@NekuroMC) · [ko-fi](https://ko-fi.com/nekuromc/shop) · [Sketchfab](https://sketchfab.com/NekuroMC/models) | 12 |
 | 0007 | [#啊这-_-0 \| #伍炎](.../../Models/0007) | [Bilibili](https://space.bilibili.com/347376421) | 5 |
 | 0008 | [#白色北熊](.../../Models/0008) | [Bilibili](https://space.bilibili.com/175342453) · QQ: 1067426280 · [Afdian](https://afdian.com/a/bx233) | 8 |
 | 0009 | [#白亚奈Anay](.../../Models/0009) | [Bilibili](https://space.bilibili.com/454110884) | 1 |
 | 0010 | [#波普Popu](.../../Models/0010) | [Bilibili](https://space.bilibili.com/446941285) · QQ: 3612246475 | 1 |
 | 0011 | [#池塘-tl \| #池塘](.../../Models/0011) | [Bilibili](https://space.bilibili.com/3546379886529242) · QQ: 981134198 · [Afdian](https://afdian.com/a/114514ctjl) | 2 |
-| 0012 | [#赤恒-AzaMire](.../../Models/0012) | [Bilibili](https://space.bilibili.com/235888316) | 11 |
+| 0012 | [#赤恒-AzaMire \| 赤恒RedConstant](.../../Models/0012) | [Bilibili](https://space.bilibili.com/235888316) | 11 |
 | 0013 | [#对羧基苯酚](.../../Models/0013) | [Bilibili](https://space.bilibili.com/3461562335496256) | 1 |
 | 0014 | [#哈雷汰多](.../../Models/0014) | [Bilibili](https://space.bilibili.com/385810311) | 2 |
 | 0015 | 🔥 🔞 [#寒叔hs \| #烈鸟比百 \| #Frosty_Uncle](.../../Models/0015) | [Bilibili](https://space.bilibili.com/329066935) · [YouTube](https://www.youtube.com/@%E7%83%88%E9%B8%9F%E6%AF%94%E7%99%BE) · [Afdian](https://afdian.com/a/Aigoblin) | 68 |
@@ -168,7 +168,7 @@
 | 0153 | [#绘飞](.../../Models/0153) | [Bilibili](https://space.bilibili.com/8714030) · [Afdian](https://afdian.com/a/huifei) | 1 |
 | 0154 | [#银河铁道CRH2](.../../Models/0154) | [Bilibili](https://space.bilibili.com/1605920) · [Afdian](https://afdian.com/a/CRH233) | 1 |
 | 0155 | [#叶无道_M](.../../Models/0155) | [Bilibili](https://space.bilibili.com/11897609) · [Afdian](https://afdian.com/a/YWDM333) | 1 |
-| 0156 | [赤恒RedConstant](.../../Models/0156) |  | 1 |
+| 0156 | [None](.../../Models/0156) |  | 1 |
 | 0157 | [#Deovolente \| #GhastRiv](.../../Models/0157) | [Bilibili](https://space.bilibili.com/188295) · [Afdian](https://afdian.com/a/Deovolente) | 2 |
 | 0158 | [#TiRLey \| #TiRLey二号机](.../../Models/0158) | [Bilibili](https://space.bilibili.com/494506386) · [Afdian](https://afdian.com/a/HSTVsuckBVMrelikt) | 1 |
 | 0159 | [#兔兔猫officials \| #阴阳兔兔猫offcial](.../../Models/0159) | [Bilibili](https://space.bilibili.com/3546785165347464) · [Afdian](https://ifdian.net/a/RABET) | 2 |
@@ -356,40 +356,6 @@ Personal Rating: LA, LB, LC, LD
 
 </details>
 
-<details>
-
-<summary>Author Recommendations</summary>
-
-> Recommended high-quality model authors
-
-- 0045: [#雾雨波波沙](Models/0045)
-- 0065: [#烛火的次元宇宙](Models/0065)
-- 0067: [#Almeta_owx](Models/0067)
-- 0068: [#AnluoSakura](Models/0068)
-- 0076: [#White_clams白蛤蜊](Models/0076)
-
-</details>
-
-<details>
-<summary>Tool Recommendations</summary>
-
-- [ysm-model-manager](https://github.com/eghrhegpe/ysm-model-manager)
-	- Description: YSM model management software
-- [YSMParser](https://github.com/OpenYSM/YSMParser)
-	- Description: A Parser to recover Yes-Steve-Model Encrypted Binaries.
-- [YSMParser](https://github.com/OpenYSMDev/YSMParser)
-	- Description: One-click decryption of .ysm models and conversion to Blockbench projects, supporting all encryption format versions.
-- [YSMViewer](https://github.com/DrAbcOfficial/YSMViewer)
-	- Description: A cross-platform 3D model viewer for ".ysm" files — an encrypted binary format for storing player models in Minecraft. Built with Avalonia.
-- [YesSteveModel](https://github.com/YesSteveModel/YesSteveModel)
-	- Description: Open-sourced
-- [OpenYSM](https://github.com/OpenYSM/OpenYSM)
-	- Description: OpenYSM is a mod based on Yes Steve Model that modifies the vanilla player model. It uses the GeckoLib library at its core and adopts Minecraft Bedrock Edition model and animation files, allowing players to customize their player models and animations as they wish.
-- [ModernYSM](https://github.com/OpenYSMDev/ModernYSM)
-    - Description: OpenYSM is a mod based on Yes Steve Model that modifies the vanilla player model. It uses the GeckoLib library at its core and adopts Minecraft Bedrock Edition model and animation files, allowing players to customize their player models and animations as they wish.
-
-</details>
-
 ## Project Structure
 
 > Below is an overview of the main directories in this repository. This may be adjusted as content continues to evolve.
@@ -422,72 +388,3 @@ Personal Rating: LA, LB, LC, LD
 - [https://github.com/Elaina69/Yes-Steve-Model-Repo](https://github.com/Elaina69/Yes-Steve-Model-Repo): Source of most free models
 - @[LuckyPotion](https://space.bilibili.com/1739798750): Source of some specific author models
 - QQ-tomysh's Hospital Ward - 752713566: Source of some specific author models
-
-## Changelog
-
-<details>
-<summary>Click to view changelog</summary>
-
-# 2026-08-09
-
-- file: Removed the changelog generation action
-
-# 2026-08-01
-
-- feat: Added automatic changelog generation action
-
-# 2026-07-30
-
-- format: Noticed that some game or anime names are **too long**, making it hard to see the **character** names. Henceforth, game and anime names will be changed to **abbreviations**
-
-# 2026-07-27
-
-- feat: Added Touhou maid packs and TACZ gun packs
-
-# 2026-07-25
-
-- ps: There are way too many obscure games out there
-- ps: Note that some models without preview images are unusable. I saved them while browsing authors, which modified some characters and corrupted the original files, rendering those models unusable.
-- ps: Major mistake discovered — I found that most models viewed through Obsidian are corrupted!!!!!!!! I've only now figured out the cause; the history on Git hasn't been deleted.
-
-# 2026-07-23
-
-- ps: Thanks to [LuckyPotion](https://space.bilibili.com/1739798750) for publicly sharing a collection of paid models from a certain team. I may gradually update preview images for various models in the future.
-- ps: Quark Cloud: https://pan.quark.cn/s/77a16d314a11 Extraction code: ajVD (expired)
-- ps: Baidu Cloud: https://pan.baidu.com/s/1FFSrd_YG-1Eat_DQD7hziw Extraction code: xiao
-- ps: Models are not being added to the repository for now; download them yourself if needed
-- chore: Planning to add an action to generate a `README.md` for each model to make preview images easier to view. If you have a better approach, please let me know via an issue (I don't know how to code — AI wrote everything for me 😭)
-- chore: For naming consistency, all folder names for games will be changed to English from now on, except for games exclusive to China. A translation reference list will be provided later.
-
-# 2026-07-19
-
-- chore: Converted some models with source files into archives for easier downloading
-- chore: Fixed some incorrect or duplicate authors
-- chore: Re-categorized old models by author
-
-# 2026-07-18
-
-- ps: Some creators belong to the same team. I'm not sure if there's a good way to categorize them — if you have suggestions, feel free to share
-- chore: Reorganized a large number of models
-- chore: The reorganized models include new models and re-categorized [existing models](https://github.com/Elaina69/Yes-Steve-Model-Repo)
-
-# 2026-06-29
-
-- chore: Merged some team models — only the author who created a model releases it, while other authors are listed as contributors for their respective parts.
-- ps: After organizing for a while, I feel this categorization approach still has issues — it's hard to find the models you want. Essentially, this is a collection of free models; many paid models are not included. When categorizing by author, only a few authors consistently produce high-quality free models. Categorizing by the model's subject matter might be a better approach.
-
-# 2026-05-21
-
-- ps: Most models don't work in newer versions. It's recommended to only use newer encrypted models (decrypt with ysmpaser — older models cannot be decrypted either), or models with source files.
-
-# 2026-05-11
-
-- chore: Removed the pages site. I'll revisit it once I figure out a suitable content presentation format.
-- chore: Plan to update all author metadata by the end of this year. ~If time permits, I'll add preview images for every model.~
-
-# 2026-05-03
-
-- ps: Decided to only update higher-quality models; other models will no longer be collected.
-- chore: Updated the high-quality mod branch, keeping only the latest mod
-
-</details>

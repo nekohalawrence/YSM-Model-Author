@@ -137,12 +137,14 @@
     },
     "0012": {
       "name": [
-        "#赤恒-AzaMire"
+        "#赤恒-AzaMire",
+        "赤恒RedConstant"
       ],
       "readme": "Models/0012/README.md",
       "platforms": {
         "Bilibili": "https://space.bilibili.com/235888316"
-      }
+      },
+      "tags": []
     },
     "0013": {
       "name": [
@@ -1656,13 +1658,6 @@
         "Afdian": "https://afdian.com/a/YWDM333"
       }
     },
-    "0156": {
-      "name": [
-        "赤恒RedConstant"
-      ],
-      "readme": "Models/0156/README.md",
-      "platforms": {}
-    },
     "0157": {
       "name": [
         "#Deovolente",
@@ -1939,6 +1934,15 @@
       "readme": "Models/0185/README.md",
       "platforms": {}
     },
+    "0186": {
+      "name": [
+        "#裤管炸了救救我"
+      ],
+      "readme": "Models/0186/README.md",
+      "platforms": {
+        "Bilibili": "https://space.bilibili.com/243846071"
+      }
+    },
     "0187": {
       "name": [
         "#爱听书的旅人",
@@ -1989,6 +1993,15 @@
       "readme": "Models/0192/README.md",
       "platforms": {
         "Bilibili": "https://space.bilibili.com/37942254"
+      }
+    },
+    "0193": {
+      "name": [
+        "#裤管炸了救救我"
+      ],
+      "readme": "Models/0193/README.md",
+      "platforms": {
+        "Bilibili": "https://space.bilibili.com/243846071"
       }
     },
     "0194": {
