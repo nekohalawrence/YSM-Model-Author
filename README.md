@@ -1,3 +1,6 @@
+# 注意：本仓库的大部分模型在我测试之后都是损坏的，所以只建议作为作者索引
+# Note: Most models in this repository are corrupted after my testing. This repo is only recommended for author indexing purposes.
+
 # 重要公告
 
 > 由于我个人技术问题，本仓库不再更新，模型都放在 `main` 分支。
